@@ -40,19 +40,7 @@ function closeBookplate() {
   } 
 
 
-  function switchMode() {
-    let moon = document.getElementById ("moon");
-      if(moon.className=="moon"){
-        moon.className="sun";
-        document.body.style.backgroundColor = "#141D26";
-        document.body.style.color = "#fff";
-      }
-    else {
-      moon.className ="moon";
-      document.body.style.backgroundColor = "#fff";
-      document.body.style.color = "#000";
-    }
-  }
+
 
   
   
@@ -128,23 +116,23 @@ function scrollFunction() {
 
  function Sepia(e)
 {
-var container = document.body;
+var container1 = document.body;
 var val = e.value;
-container.setAttribute("style", "filter: sepia("+val+"%);");
+container1.setAttribute("style", "filter: sepia("+val+"%);");
 }
 
 function Contrast(e)
 {
-var container = document.body;
+var container2 = document.body;
 var val = e.value;
-container.setAttribute("style", "filter: contrast("+val+"%);");
+container2.setAttribute("style", "filter: contrast("+val+"%);");
 }
 
 function Brightness(e)
 {
-var container = document.body;
+var container3 = document.body;
 var val = e.value;
-container.setAttribute("style", "filter: brightness("+val+"%);");
+container3.setAttribute("style", "filter: brightness("+val+"%);");
 }
 
 /*

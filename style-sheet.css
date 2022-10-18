@@ -731,7 +731,10 @@ font-variant-caps: all-small-caps;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    overflow: hidden;
   }
+
+  .main {overflow: hidden;}
   
   /* Main column */
     
@@ -1629,16 +1632,42 @@ h6 {
 } 
 
 
-#container {
+#container1 {
     width: 100%;
     height: 100%;
     z-index: -10;
     position: absolute;
     background-color:white;
     top: 0;
+    overflow: hidden;
   }
 
-  .container-night {background-color: #202124 !important;}
+  .container1-night {background-color: #202124 !important;}
+
+  #container2 {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    position: absolute;
+    background-color:white;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .container2-night {background-color: #202124 !important;}
+
+  #container3 {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    position: absolute;
+    background-color:white;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .container3-night {background-color: #202124 !important;}
+
 
 
   #brightness-range {
