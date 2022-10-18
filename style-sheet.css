@@ -1,0 +1,1717 @@
+/*TRACTATUS AYYEW BOOKAPP VERSION 0.1*/
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("fonts/CooperLightBT.ttf");
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("fonts/CooperLtBTLightItalic.ttf");
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("fonts/CooperMediumBT.ttf");
+ }
+
+
+#book-title {
+  height: 200px;
+  background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat white;
+  background-size: 30px;
+  
+}
+  
+
+#book-box {
+  display: block;
+  width: 100%;
+  padding: 0px;
+  margin: auto;
+  font-family: "Mulish";
+  display: inline;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+
+/*
+.book-box-day {  
+  background: rgb(250, 249, 249);
+  color: #202124;
+}
+.book-box-day a{  
+  background: blue;
+  color: #202124;;
+}
+}*/
+
+#book-box a{  
+  color: #202124;
+  background: url(svgs/content-arrow.svg) left center no-repeat white;
+  background-size: 30px;
+  background-position-x: 18px;
+}
+
+#book-box a:hover{  
+  color: black;
+  background: url(svgs/content-arrow-45.svg) left center no-repeat rgb(250, 249, 249);
+  background-size: 30px;
+  background-position-x: 18px;
+  ;
+}
+
+
+.book-box-night a {
+  background: url(svgs/content-arrow-night.svg) left center no-repeat  #202124  !important;
+  background-size: 30px !important;
+  background-position-x: 18px !important;
+  border:  rgb(90, 90, 90);
+  color: #BDC1C6 !important;
+}
+
+.book-box-night a:hover{
+  background: url(svgs/content-arrow-45-night.svg) left center no-repeat #17181b  !important;
+  background-size: 30px !important;
+  background-position-x: 18px !important;  
+  color: white !important;
+}
+
+.chapter-top {
+  border-radius: 20px 20px 0px 0px;
+  border-width: 1px;
+  border-color:inherit;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0px;
+  border-style: solid;
+  cursor: pointer;
+  align-items: stretch;
+  z-index: 9;
+  background: inherit;
+  font-family: inherit;
+  
+}
+
+.chapter-middle {
+  border-radius: 0px 0px 0px 0px;
+  
+  border-width: 1px;
+  border-color:inherit;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0px;
+  border-style: solid;
+  cursor: pointer;
+  align-items: stretch;
+  z-index: 9;
+  border-top: none;
+  background: inherit;
+  
+}
+
+.chapter-bottom {
+  border-radius: 0px 0px 25px 25px;
+  font-family: inherit;
+  
+  border-width: 1px;
+  border-color:inherit;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0px;
+  border-style: solid;
+  cursor: pointer;
+  align-items: stretch;
+  z-index: 9;
+  border-top: none;
+  background: inherit;
+  
+}
+
+
+  /*
+  #chapter-bottom:hover, #chapter-middle:hover, #chapter-top:hover { 
+    filter:   brightness(100%);
+
+    }
+
+  .chapter-hover-night:hover {
+    background-color: #17181b  !important;
+  }
+
+.chapter-icon img{ 
+  flex-direction: row;
+  width: 30px;
+
+}
+
+.chapter-icon { 
+  padding: 15px 25px 15px 20px;
+}*/
+
+
+.chapter-name {
+  flex: 80%;
+  padding: 15px 25px 15px 70px;
+  margin:  auto 0px auto 0px;
+  /*background-image: src('svgs/content-arrow.svg');
+  background: url(svgs/content-arrow.svg) left center no-repeat;
+  background-size: 30px;
+  background-position-x: 18px;*/
+  display: flex;
+  z-index: 10;
+}
+
+
+.chapter-name:hover + .word-count {
+  display: block;
+}
+
+.word-count {
+  padding: 15px 35px 15px 0px;
+  margin:  auto 0px auto 0px;
+  color: grey;
+  text-align: right;
+  flex: 20%;
+  display: none;
+  font-family: 'CooperLT';
+}
+
+
+#navbar-bottom-day {
+  
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  height: fit-content;
+  padding: 10px 10px 25px 10px;
+  border-top: 1px;
+  border-style: solid;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  border-color: rgb(163, 163, 163);
+  color:  #202124 ;
+  z-index: 12;  
+  box-shadow: 0 0px 15px rgba(85, 84, 84, 0.08);overflow: hidden;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 60px;
+  background: url(svgs/earthen-logo-grey.svg) center no-repeat;
+  background-color: rgb(251, 251, 251);
+  
+}
+
+.navbar-bottom-night {
+  filter: invert(88%);
+  /*background-color: #202124 !important;
+  border-color: rgb(66, 66, 66) !important;
+  color: white !important;*/
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3) !important;
+}
+
+.footer-icon { 
+  padding: 10px 10px 10px 10px;
+  text-align: left;
+  width: 30px;
+}
+
+.footer-left {
+  
+  text-align: left;
+  flex: auto;
+  display: flex;
+  /*margin: auto;
+  
+  padding: 10px 10px 10px 30px;*/
+  height: 100%;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.footer-middle {
+ /*flex: auto;
+  margin-top: -10px;
+  padding: 0px 0px 15px 0px;*/
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  font-family: 'CooperLt';
+  font-size: 1.5em;
+  line-height: 65px;
+}
+
+.what-is {
+  text-align: right;
+  width: fit-content;
+  display: flex;
+  transition: 0.5s;
+  order: 1;
+  opacity: 0;
+  margin-right: -50px
+
+}
+
+
+.an-earthbook {
+  text-align: center;
+  width: fit-content;
+  padding-left: 6px;
+  transition: 0.5s;
+  order: 2;
+ 
+}
+
+.question {
+  text-align: left;
+  width: fit-content;
+  display: flex;
+  transition: 0.5s;
+  order: 3;
+  opacity: 0;
+  margin-left: -8px;
+
+}
+
+.footer-middle:hover > .an-earthbook + .what-is  {
+  opacity: 0.8;
+  margin-right: 0px;
+  
+ }
+
+/*
+.an-earthbook:hover + .what-is {
+  display: flex;
+  opacity: 1;
+  margin-right: 0px;
+}*/
+
+.footer-middle:hover > .question {
+  opacity: 1;
+  margin-left: 0px;
+}
+
+
+
+
+.footer-right {
+  
+  
+  text-align: right;
+  
+  display: inherit;
+  align-items: center;
+
+  /*padding:  40px 30px 10px 40px;
+  
+  flex: auto;*/
+  flex-grow: 1;
+  flex-direction: row-reverse;
+}
+
+
+
+
+
+
+#text-adjust {
+margin-bottom: 35px;
+}
+
+#increase-plugin-ac  {
+  padding: 20px;
+border: rgb(116, 116, 116);
+background: rgb(250, 249, 249);
+color: black;
+border-style: solid;
+border-radius: 40px 10px 10px 40px;
+border-width: 1px;
+font-size: 25px;
+margin: 20px;
+font-family: "Mulish";
+display: inline;
+text-align: center;
+text-decoration: none;
+margin: auto;
+cursor: pointer;
+    }
+
+#normal-plugin-ac {
+  padding: 20px;
+  border: rgb(116, 116, 116);
+  background: rgb(250, 249, 249);
+  color: black;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  font-size: 25px;
+  margin: 20px;
+  font-family: "Mulish";
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  cursor: pointer;
+    }
+
+#decrease-plugin-ac {
+  padding: 20px;
+  border: rgb(116, 116, 116);
+  background: rgb(250, 249, 249);
+  color: black;
+  border-style: solid;
+  border-radius: 10px 40px 40px 10px;
+  border-width: 1px;
+  font-size: 25px;
+  margin: 20px;
+  font-family: "Mulish";
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  cursor: pointer;
+    }
+
+
+#toggle-btn {
+padding: 11px;
+border: white;
+background: black;
+border-style: solid;
+border-radius: 25px;
+border-width: 1px;
+color: white;
+font-size: 20px;
+margin: 20px;
+font-family: "Mulish";
+display: block;
+text-align: center;
+text-decoration: none;
+margin: auto;
+}
+
+.toggle-btn-night {
+    color: #363535 !important;
+    border: gray !important;
+    background: white !important;
+}
+
+.text-btn {
+    padding: 20px;
+    border: white;
+    background: black;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    font-family: "CooperLt";
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    }
+
+
+/* ACTION BUTTONS  */
+
+.action-btn {
+    border: rgb(163, 163, 163);
+    background: #F9F9F9;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    color: #363535;
+    font-family: "Mulish";
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;  
+}
+
+.action-btn-night {
+  background: #17181b  !important;
+  color: #969BA1 !important;
+  border-color:  rgb(56, 56, 56) !important;
+  }
+
+  .action-btn-night a {
+    
+    color: #969BA1 !important;
+    
+    }
+
+.action-btn:hover {
+    background: white;
+    font-weight: 500;
+  }
+
+  .action-btn-night:hover {
+    background:  #27282c !important;
+  }
+
+.action-btn a:link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .action-btn {
+
+    padding-top: 8px;
+    padding-bottom:8px;
+      font-size: 1.1em;
+      margin: 10px;
+      flex-grow: 1;
+
+  }
+}
+
+  
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+
+    .action-btn {
+
+      padding-top: 9px;
+      padding-bottom:9px;
+      font-size: 1.2em;
+      margin: 20px;
+
+
+  }
+}
+  
+  @media screen and (min-width: 1325px) {
+
+    .action-btn {
+
+      padding-top: 11px;
+      padding-bottom: 11px;
+      font-size: 1.3em;
+      margin: 20px;
+      display: block;
+  }
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .button-row {
+    display: flex;
+    flex: row;
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .button-row {
+      display: block;
+      flex: row;}
+    }
+
+@media screen and (min-width: 1325px) {
+  .button-row {
+      display: block;
+        }
+      }
+
+
+/*Main Title*/
+
+#title {
+    text-align: center;
+}
+
+#main-title {
+    font-size: 3em;
+    font-family: "CooperLT";
+    padding: 40px 10px 18px 10px;
+    font-variant-caps: small-caps;
+    transition: 0.4s;
+    text-shadow: 0 0 3px #ffffff;
+  }
+
+  .main-title-night {
+    text-shadow: 0 0 3px #000000 !important;
+  }
+
+#sub-title {
+    font-family: "CooperLT";
+    font-style: italic;
+    font-size: 1.8em;
+    margin-top: -8px;
+}
+
+#sub-earthbook {
+  font-family: "Mulish";
+  color: grey;
+  font-size: 1.3em;
+  margin: 12px 0px 15px 0px;
+  letter-spacing: 5px;
+
+font-variant-caps: all-small-caps;
+ /* font-weight: bold;
+ text-shadow: 0 0 45px rgba(1, 1, 1, 0.9);*/
+}
+
+#menu-button {
+    position: absolute;
+    /*font-size: 50px;*/
+    /*padding: 7px 10px 10px 20px;*/
+    margin: 70px 0px 5px -35px;
+    left: 0px;
+    transition: 0.5s;
+    background: white; /*#F9F9F9*/
+    border-radius: 35px;
+    height: 60px;
+    box-shadow: 0 4px 15px rgba(85, 84, 84, 0.08);
+}
+
+@media screen and (max-width: 699px) {
+  #menu-button {
+    margin: 112px 0px 5px -35px;
+    left: -12px;
+  }
+}
+
+@media screen and (min-width: 699px) {
+  #menu-button {
+    margin: 70px 0px 5px -35px;
+    left: 0px;
+  }
+}
+
+#menu-button:hover {
+  left: 15px;
+  transition: 0.5s;
+  background-color: white;
+}
+
+#menu-button img {
+  height: 60px;
+}
+
+.menu-button-night {
+  background-color:  #17181b   !important;
+}
+
+.menu-button-night:hover {
+  background-color: #242529 !important;
+}
+
+
+#menu-settings {
+    position: absolute;
+    /*
+    font-size: 50px;padding: 18px 65px 30px 10px;*/
+    /*margin: 10px -7px 5px 0px;*/
+    top: 0;
+    transition: 0.3s;
+    background: white; /*#F9F9F9*/
+    border-radius: 35px;
+    height: 60px;
+    box-shadow: 0 4px 12px rgba(85, 84, 84, 0.08);
+    transition: 0.3s
+  }
+
+  @media screen and (max-width: 699px) {
+    #menu-settings {
+      right: -30px;
+      margin-top: 112px;
+
+    }
+  }
+
+    @media screen and (min-width: 699px) {
+      #menu-settings {
+        right: -18px;
+        margin: 70px -20px 5px 0px;
+      }
+    }
+
+
+.menu-settings-night {
+  background-color:  #17181b  !important;
+}
+
+.menu-settings-night:hover {
+  background-color: #242529 !important;
+}
+
+#menu-settings:hover {
+  right: -4px;
+  transition: 0.3s;
+  background-color: white;
+
+}
+
+#menu-settings img {
+  height: 60px;
+}
+
+.icon-buttons-night {
+  filter: contrast(0%) !important;}
+
+ 
+ /*Full Page Layout System*/
+
+
+
+
+#main-page {
+    margin: auto;
+    box-sizing: border-box;
+    padding-bottom: 180px;
+
+  }
+
+  @media screen and (max-width: 699px) {
+    #main-page {
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 170px;
+    }
+  }
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    #main-page {
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 220px;
+    }
+  }
+  @media screen and (min-width: 1325px) {
+    #main-page {
+      margin-left: 15%;
+      margin-right: 15%;
+        margin-top: 225px;
+        overflow-x: hidden
+    }
+  }
+
+
+
+/* COLUMN DESIGN */
+
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+  
+  /* Main column */
+    
+@media screen and (max-width: 700px) {
+  .main {
+    flex: 100%;
+    padding: 5px;
+  }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+  .main {
+    width:74%;
+    padding: 15px;
+    box-sizing: border-box;
+    float: right;
+    margin-left: 28%;
+  }
+  }
+
+  @media screen and (min-width: 1325px) {
+    .main {
+
+      padding: 15px;
+      box-sizing: border-box;
+      /*width: 70%;*/
+      float: right; 
+      margin-left: 28%;
+      margin-right: 10%
+    }
+
+    }
+
+  
+  
+
+/* Sidebar/right column 
+@media screen and (max-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+@media screen and (min-width: 1325px)
+  */
+
+  #side { transition: 0.3s}
+
+@media screen and (max-width: 700px) {
+	#side {
+	/*padding: 20px;*/
+	box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  margin-top: 80px;
+	}
+	}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+
+    #side {
+    width: 26%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    border-radius: 20px;
+    text-align: center;
+    position: fixed;
+    
+    }
+    }
+
+@media screen and (min-width: 1325px) {
+
+    #side {
+  
+        padding: 15px;
+        box-sizing: border-box;
+        margin-top: 38px;
+        position: fixed;
+        width:18%;
+        text-align: center;
+        }
+        }
+
+
+.book-pic {
+    padding: 60px;
+    width: 50%;
+    text-align: right;}
+
+
+.side-book-pic {
+    width: 100%;
+    }
+
+#side img {
+    text-align: center;
+    width: fit-content;
+    max-width: 375px;
+    /*border: 1px solid;
+    border-color: rgb(163, 163, 163);*/
+    border-radius: 12px;
+    margin: auto;
+    width: 83%;
+    box-shadow: 0 4px 15px rgba(85, 84, 84, 0.4);
+}
+
+
+/*TABLE OF CONTENTS*/
+
+ /* Table of Contents Menu (background) */
+ #left-table-of-contents {
+  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+ /* background-position-y: -55px;*/
+ background-size: contain;
+  background-color: rgb(226, 226, 226); 
+  background-color: rgba(231, 231, 231); 
+  color: black;
+}
+
+.left-table-of-contents-night {
+  background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
+  background-size: contain !important;
+  background-color: #232323 !important; 
+  color: white !important;
+}
+
+.left-table-of-contents-night a:hover{
+
+  color: rgb(255, 253, 253) !important;
+}
+
+.left-table-of-contents-night a{
+
+  color: rgb(224, 224, 224) !important;
+}
+
+.settings-label {
+  font-family: 'Mulish';
+font-size: 1.2em;
+margin: 20px 0px 10px 0px;
+}
+
+ .overlay-tc {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 21; /* Sit on top */
+    left: 0;
+    top: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+  
+  /* Position the content inside the overlay */
+  .overlay-content-tc {
+    position: relative;
+    top: 8%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    text-align: center;
+    font-family: "CooperLT";
+}
+
+.contents-title {
+  font-family: 'CooperLt';
+  font-size: 2.1em;
+  font-variant-caps: small-caps;
+  padding: 10px;
+}
+
+  
+  /* The navigation links inside the overlay */
+  .overlay-tc a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay-tc a:hover, .overlay a:focus {
+    color: inherit;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay-tc .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 700px) {
+    .overlay-tc a {
+      font-size: 20px;
+      }
+
+    .overlay-tc .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 15px;
+    }
+  } 
+
+
+/*ABOUT EARTHBOOK OVERLAY */
+
+
+/*SETTINGS OVERLAY*/
+
+.languages {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding: 10px;
+  background: #ffffff84;
+  border-radius: 25px;
+  width: 50%;
+
+}
+
+.language-selector {
+  font-family: 'Mulish';
+  padding: 10px 10px 10px 10px;
+  background: #80808036;
+  border-radius: 10px;
+  color: white;
+  margin: 10px;
+  filter: invert(100);
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+#right-settings {
+    background-color: rgb(226, 226, 226); 
+    background-color: rgba(231, 231, 231); 
+    color: black;
+}
+
+ /* Table of Contents Menu (background) */
+ .overlay-settings {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 21; /* Sit on top */
+    right: 0;
+    top: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay-settings-night {
+    background-color: rgb(37, 37, 37) !important; 
+    background-color: rgba(0, 0, 0, 0.95) !important; 
+    color: white !important;
+}
+  
+  /* Position the content inside the overlay */
+  .overlay-content-settings {
+    position: initial;
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: "CooperLT";
+    font-size: 18px;
+    padding: 20px;
+    margin: auto;  
+}
+
+
+@media screen and (max-width: 700px) {
+    .overlay-content-settings {
+      width: 65%;
+      font-size: 0.9em;
+      margin-top: 6%;
+  }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .overlay-content-settings {
+      width: 55%;
+      font-size: 0.9em;
+      margin-top: 2%;
+  }
+  }
+
+  @media screen and (min-width: 1325px) {
+      .overlay-content-settings {
+        width: 65%;
+        margin: auto;
+      }
+  }
+
+  /* The navigation links inside the overlay */
+  .overlay-settings a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay-settings a:hover, .overlay a:focus {
+    color: white;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay-settings .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 50px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 700px) {
+    .overlay-settings a {
+    font-size: 20px;
+    }
+
+    .overlay-settings .closebtn {
+    font-size: 40px;
+    top: 15px;
+    left: 15px;
+    }
+  } 
+
+
+
+/*BOOKPLATE OVERLAY*/
+
+#top-bookplate {
+    background-color: rgb(226, 226, 226); 
+    background-color: rgba(231, 231, 231, 0.95); 
+    color: black;
+    z-index: 21;
+}
+
+ /* Table of Contents Menu (background) */
+.overlay-bookplate {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-bookplate-night {
+    background-color: rgb(37, 37, 37) !important; 
+    background-color: rgba(31, 31, 31, 0.9) !important; 
+    color: white !important;
+}
+
+.mandala-night {
+    filter: contrast(10%) brightness(90);
+}
+  
+  /* Position the content inside the overlay */
+.overlay-content-bookplate {
+    position: initial;
+    /*top: 12%; /* 25% from the top */
+     /* width: 65%; 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 10px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 30px;   
+}
+
+.bookplate-title { 
+    font-variant-caps: small-caps;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 700px) {
+    .overlay-content-bookplate {
+      width: 70%;
+      margin-top: 13%;
+  }
+
+    #mandala-day img {
+      width: 45%;}
+
+    .bookplate-title { 
+      padding: 15px;
+  }
+
+    .bookplate-subtitle {
+      padding: 10px;
+  }
+  }
+
+@media screen and (min-width: 700px) and (max-width: 1034px) {
+    .overlay-content-bookplate {
+      width: 90%;
+    }
+    #mandala-day img {width: 30%}
+    }
+
+@media screen and (min-width: 1325px) {
+    .overlay-content-bookplate {
+      width: 65%;
+    }
+    #mandala-day img {width: 30%}
+  }
+ 
+  /* The navigation links inside the overlay */
+  .overlay-bookplate a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay-bookplate a:hover, .overlay a:focus {
+    color: white;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay-bookplate .closebtn {
+    position: absolute;
+    bottom: 20px;
+    left: 47%;
+    font-size: 50px;
+    background: inherit;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    margin: auto;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay-bookplate a {font-size: 20px}
+    .overlay-bookplate .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  } 
+
+
+
+/*EarthBook OVERLAY*/
+
+#bottom-earthbook {
+  background-color: rgb(226, 226, 226); 
+  background-color: rgba(231, 231, 231, 0.95); 
+  color: black;
+  z-index: 21;
+}
+
+/* Table of Contents Menu (background) */
+.overlay-earthbook {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-earthbook-night {
+  background-color: rgb(37, 37, 37) !important; 
+  background-color: rgba(31, 31, 31, 0.9) !important; 
+  color: white !important;
+}
+
+/*
+.mandala-night {
+  filter: contrast(10%) brightness(90);
+}
+
+/* Position the content inside the overlay */
+.overlay-content-earthbook {
+  position: initial;
+  /*top: 12%; /* 25% from the top */
+   /* width: 65%; 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  padding: 0px;
+  margin: auto;
+  margin-top: 3%;   
+}
+
+
+
+.bookplate-title { 
+  font-variant-caps: small-caps;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 700px) {
+  .overlay-content-earthbook {
+    width: 90%;
+    margin-top: 6%;
+}
+
+.virtue img {
+  width: 90px;
+}
+
+.virtue {
+  padding: 8px;
+  width: 120px;
+  font-size: 0.6;
+}
+
+.virtue-desc {
+  display: none;
+}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .overlay-content-earthbook {
+    width: 90%;
+    margin-top: 5%;
+  }
+  .virtue img {
+    width: 110px;
+  }
+  
+  .virtue {
+    padding: 13px;
+    width: 140px;
+  }
+  }
+
+@media screen and (min-width: 1325px) {
+  .overlay-content-earthbook {
+    width: 84%;
+    margin-top: 6%;
+  }
+
+  .virtue img {
+    width: 150px;
+  }
+  
+  .virtue {
+    padding: 15px;
+    width: 220px;
+  }
+
+}
+
+/* The navigation links inside the overlay */
+.overlay-earthbook a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay-earthbook a:hover, .overlay a:focus {
+  color: white;
+}
+
+/* Position the close button (top right corner) */
+.overlay-earthbook .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay-earthbook a {font-size: 20px}
+  .overlay-earthbook .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+} 
+
+#virtue-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+
+
+.virtue-desc {
+  font-family: 'Mulish';
+  font-size: 0.8em;
+  color: inherit;
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+
+  
+
+
+  /*Text And FOnts */
+
+  
+  body {
+      margin: 0px;
+      background-color: white;
+      color: #202124;
+      position: absolute;
+      z-index: 0;
+      overflow-x: hidden; /*ARG WHY OVERFLOW?*/
+
+        }
+
+
+  .dark-mode {
+    background-color: #202124  !important;
+    color: #BDC1C6 !important;
+  }
+
+p {
+  font-family: 'CooperLt', Georgia, serif;
+  text-rendering: optimizeLegibility;
+  }
+
+h1 {
+  font-family: 'CooperLt', Georgia, serif;
+  font-size: 3.3em;
+}
+
+h2 {
+  font-family: 'CooperLt', Georgia, serif;
+  font-size: 2em;
+}
+
+h3 {    
+  font-family: 'CooperLt', Georgia, serif;
+  font-size: 1.7em;
+  font-weight: 300;}
+
+h4 { 
+  font-family: 'CooperLt', Georgia, serif;
+  font-size: 1.4em;
+  font-weight: 300;}
+
+h5 { 
+    font-family: 'Mulish', Arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;}
+
+h6 { 
+  font-family: 'CooperLt', Georgia, serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.6}
+
+
+
+  a {
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+
+    a:hover {
+      text-decoration: none;
+      filter: opacity(80%);
+    }
+
+    .dark-link {
+      color: black;
+      border-color: rgb(163, 163, 163);
+    }
+  
+     .dark-link {
+        text-decoration: none;
+        filter: opacity(80%);
+      }
+    
+    
+
+.lead-page-paragraph {
+    font-size: 2em;
+}
+
+.page-paragraph {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: -10px;
+}
+
+.lead-text {
+    font-family: 'Mulish', Arial, sans-serif;
+    font-size: 1.2em;
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+#line {
+  border-color: rgb(163, 163, 163);
+  border-style: dashed ;
+  margin: 15px 0px 20px 0px;
+  border-width: 1px;}
+
+.line-night {
+  border-color: rgb(90,90,90) !important;
+}
+
+
+#navbar-day {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    height: fit-content;
+    padding: 0px 0px 0px 0px;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-style: solid;
+    background-color: rgb(244, 242, 242);
+    border-color: rgb(163, 163, 163);
+    color:  #202124 ;
+    z-index: 12;  
+    box-shadow: 0 4px 15px rgba(85, 84, 84, 0.08);
+    text-align: center;
+    align-content: center;
+    transition: 0.3s;
+}
+
+
+#book-title {
+  height: 208px;
+  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+ /* background-position-y: -55px;*/
+ background-size: 60%;
+  margin: auto;
+  transition: 0.4s;
+}
+
+.book-title-night {
+  background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
+}
+
+
+.navbar-night {
+
+    background-color: #1c1d20 !important;
+    border-color: rgb(66, 66, 66) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(7, 7, 7, 0.3) !important;
+
+  } 
+
+
+/* ACCORDION */
+#accordion {
+    box-sizing: border-box;
+    display: flex;
+    font-family: 'Mulish', Arial, sans-serif;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.accordion-select {
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.accordion-title {
+    position: relative;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    border: 1px dashed transparent; /*DIVIDER LINE*/
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.accordion-title span {
+    bottom: 0px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.accordion-content {
+    box-sizing: border-box;
+    overflow: auto;
+    position: relative;
+    transition: margin 0.3s ease 0.1s;
+}
+
+.accordion-select:checked + .accordion-title + .accordion-content {
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
+/* Generated styles starts here */
+
+#accordion {
+  border-color: #848484;
+  border-color: white;
+    border-radius: 17px;
+    border-style: solid;
+    border-width: 1px;
+    flex-direction: column;
+    height: auto;
+    background-color: #ffffff;
+  color: #464848;
+  border-style: dashed;
+  border-bottom-color: #848484;
+    border-right-color: #848484;
+    border-top-color: #848484;
+    border-left-color: #848484;
+} 
+
+.accordion-title,
+.accordion-select  {
+  /*background-color: #ffffff;
+  color: #464848;*/
+  background-color: inherit;
+  color: inherit;
+    width: 100%;
+    height: 57px;
+    font-size: 21px;
+}
+
+.accordion-select {
+    margin-bottom: -57px;
+    margin-right: -65px;
+}
+
+.accordion-title:not(:nth-last-child(2))::after {
+    /*border-bottom-color: #c0c0c0;*/
+    border-bottom-color: inherit;
+    border-right-color: transparent;
+} 
+
+.accordion-select:hover + .accordion-title,
+.accordion-select:checked + .accordion-title {
+    /*background-color: #f1f1f1;*/
+    background-color: inherit;
+} 
+
+ .accordion-title span  {	
+    transform: rotate(0deg);
+    -ms-writing-mode: lr-tb;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+    padding-left: 29px;
+    padding-right: 29px;
+    line-height: 57px;
+} 
+
+.accordion-content {
+    /*background-color: #f7f7f7;
+    color: #7f8787;*/
+    background-color: inherit;
+    color: inherit;
+    height: 130px;
+    margin-bottom: -130px;
+    margin-right: 0;
+    padding: 29px;
+    width: 100%;
+
+    font-family: 'CooperLt', Georgia, serif;
+  font-size: 1.2em;
+  font-weight: 300;
+} 
+
+
+#container {
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    position: absolute;
+    background-color:white;
+    top: 0;
+  }
+
+  .container-night {background-color: #202124 !important;}
+
+
+  #brightness-range {
+    width: 50%;
+-webkit-appearance: none;
+background: #5c5c5c;
+height: 3px;
+outline: none;
+cursor: pointer;
+margin-top: 7px;
+margin-bottom: 14px;
+border-radius: 8px;
+border-width: 1px;
+border-color: #8b8a8a;
+border-style: solid;
+  }
+
+  #brightness-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+       
+  }
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	Toggle Switch
+/* -------------------------------------------------------------------------- */
+
+.night-toggle {
+  width: 33px;
+  height: 33px;
+  margin: auto;
+  position: block;
+  }
+  .night-toggle:hover{
+    cursor: pointer;
+  }
+  .moon {
+    background-color: transparent;
+    box-shadow: -6px 1px 0 3px #275e8e;
+    border-left:3px solid #27476D;
+    border-radius:50%;
+    width: 20px;
+    height: 20px;
+    margin-left:8px;
+    margin-top:0px;
+    transition: 2s;
+  }
+  .sun {
+    background-color: #fdd462;
+    box-shadow: 2px 0px 0px 1px #D19C29;
+    border-radius:50%;
+    width: 26px;
+    height: 26px;
+    transition: 2s;
+  }
+  
+  /* ----- optional ----- */
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+  .opt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-family: sans-serif;
+    margin-top:5%;
+    text-align:center;
+  }
+  
