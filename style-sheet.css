@@ -738,6 +738,8 @@ font-variant-caps: all-small-caps;
   
   /* Main column */
     
+
+  
 @media screen and (max-width: 700px) {
   .main {
     flex: 100%;
