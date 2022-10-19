@@ -1,50 +1,48 @@
 /* Open table of contents someone clicks on the span element */
 function openContents() {
   document.getElementById("left-table-of-contents").style.width = "100%";
+  document.body.style.overflowY = "hidden";
 }
-
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeContents() {
   document.getElementById("left-table-of-contents").style.width = "0%";
+  document.body.style.overflowY = "unset";
 } 
 
 
 /* Open settings when someone clicks on the span element */
 function openSettings() {
     document.getElementById("right-settings").style.width = "100%";
+    document.body.style.overflowY = "hidden";
   }
-  
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeSettings() {
     document.getElementById("right-settings").style.width = "0%";
+    document.body.style.overflowY = "unset";
   } 
 
   /* Open settings when someone clicks on the span element */
 function openBookplate() {
   document.getElementById("top-bookplate").style.height = "100%";
+  document.body.style.overflowY = "hidden";
 }
-
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeBookplate() {
   document.getElementById("top-bookplate").style.height = "0%";
+  document.body.style.overflowY = "unset";
 } 
 
   /* Open settings when someone clicks on the span element */
   function openEarthbook() {
     document.getElementById("bottom-earthbook").style.height = "100%";
+    document.body.style.overflowY = "hidden";
   }
-  
+
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeEarthbook() {
     document.getElementById("bottom-earthbook").style.height = "0%";
+    document.body.style.overflowY = "unset";
   } 
-
-
-
-
-  
-  
-
 
 
  function toggleDark() {
@@ -58,13 +56,14 @@ function closeBookplate() {
     element.classList.toggle("action-btn-night");
     var element = document.getElementById("pdf-btn");
     element.classList.toggle("action-btn-night");
-    var element = document.getElementById("container");
+    var element = document.getElementById("containerSepia");
     element.classList.toggle("container-night");
- //   var element = document.getElementById("toggle-btn");
- //   element.classList.toggle("toggle-btn-night");
+    var element = document.getElementById("containerBrightness");
+    element.classList.toggle("container-night");
+    var element = document.getElementById("containerContrast");
+    element.classList.toggle("container-night");
     var element = document.getElementById("right-settings");
     element.classList.toggle("overlay-settings-night");
- 
     var element = document.getElementById("top-bookplate");
     element.classList.toggle("overlay-bookplate-night");
     var element = document.getElementById("mandala-day");
@@ -116,32 +115,22 @@ function scrollFunction() {
 
  function Sepia(e)
 {
-var container1 = document.body;
+var containerSepia = document.body;
 var val = e.value;
-container1.setAttribute("style", "filter: sepia("+val+"%);");
+containerSepia.setAttribute("style", "filter: sepia("+val+"%);");
 }
 
 function Contrast(e)
 {
-var container2 = document.body;
+var containerContrast = document.body;
 var val = e.value;
-container2.setAttribute("style", "filter: contrast("+val+"%);");
+containerContrast.setAttribute("style", "filter: contrast("+val+"%);");
 }
 
 function Brightness(e)
 {
-var container3 = document.body;
+var containerBrightness = document.body;
 var val = e.value;
-container3.setAttribute("style", "filter: brightness("+val+"%);");
+containerBrightness.setAttribute("style", "filter: brightness("+val+"%);");
 }
 
-/*
-$(function() {
-  $('.chapter-top').hover(function() {
-    $('.chapter-icon').css('background-color', 'yellow');
-  }, function() {
-    // on mouseout, reset the background colour
-    $('.chapter-icon').css('background-color', '');
-  });
-});
-*/

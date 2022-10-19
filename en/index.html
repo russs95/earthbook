@@ -44,24 +44,15 @@
 
  <!--INCLUDES-->   
 
- <script src="includes/header.js" type="text/javascript" defer></script>
+<script src="../java-script.js" defer></script>
+
+ <script src="includes/header-component.js" type="text/javascript" defer></script>
  <script src="includes/content-curtain.js" type="text/javascript" defer></script>
  <script src="includes/settings-curtain.js" type="text/javascript" defer></script>
+ <script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
+ <script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
+ <script src="includes/footer-component.js" type="text/javascript" defer></script>
 
- <!--
- <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-</script>
-
-<script>
-$(function(){
-    $("#header").load("includes/header.html"); 
-    $("#footer").load("footer.html"); 
-  });
-  </script> 
-  -->
 
   <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
@@ -82,187 +73,39 @@ $(function(){
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Roboto&display=swap" rel="stylesheet"> 
 
-<!-- Main Scripts-->
-<script src="../java-script.js" defer></script>
 
-
-<!-- This calls GEA typography
-<link rel="preconnect" href="/fonts/">
-<link rel="preconnect" href="/fonts/" crossorigin> -->
-
-<!-- Mulish loads first for first page view
-<link href="../fonts/family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
--->
+<!-- This calls GEA typography-->
+<link rel="preconnect" href="../fonts/">
+<link rel="preconnect" href="../fonts/" crossorigin> 
 	
-<style>
-@font-face {
-  font-family: "CooperLt";
-  font-style: normal;
-  src: url("../fonts/CooperLightBT.ttf");
- }
-
- @font-face {
-  font-family: "CooperLt";
-  font-style: italic;
-  src: url("../fonts/CooperLtBTLightItalic.ttf");
- }
-
- @font-face {
-  font-family: "CooperLtMedium";
-  src: url("../fonts/CooperMediumBT.ttf");
- }
-	</style>
-
-
 </head>
 
-<BODY class="accessibility-plugin-ac">
-<a name="top"></a>
 
-<!--NAvBAR-->
+
+<BODY class="accessibility-plugin-ac">
+
+    <a name="top"></a>
+
+<!--HEADER NAVBAR-->
 <header-component></header-component>
     
 
 <!--CONTENTS MENU-->
-
-
 <content-curtain></content-curtain>
 
 
 <!--SETTINGS-MENU-->
-
 <settings-curtain></settings-curtain>
 
 
 <!--BOOK PLATE-->
 
-<div id="top-bookplate" class="overlay-bookplate">
-    
-    <a href="javascript:void(0)" class="closebtn" onclick="closeBookplate()">&times;</a>
-    
-    <div class="overlay-content-bookplate">
-
-        <div class="tc-list">
-            <div id="mandala-day" class="tc-list">
-                <img src="../svgs/tractatus-mandala-full-black.svg">
-            </div>
-            
-            <h1 class="bookplate-title">Tractatus Ayyew</h1>
-        
-            <h2 class="bookplate-subtitle"><i>An Earthen Ethics</i></h2>
-        
-            <h3 class="bookplate-authors">Banayan & Russell Maier</h3>
-        
-            <h4 class="bookplate-motto"><i>Ad Pax Ayyew</i></h4>
-        
-           
-
-            <p><i>Towards a green world for humanity <br>& a thriving common home for all.</i></p>
-
-            <h5 class="bookplate-year">M M X X I I</h5>
-
-            <div id="line" style="width: 30%; margin: auto;"></div>
-        
-            <h6 class="bookplate-publisher">Print, eBook, & EarthBook published by Earthen.io<br>First presented at the Bandung Spirit Conference in 2021</h6>
-        </div>   
-    </div>                                                                
-</div>
+<bookplate-curtain></bookplate-curtain>
 
 <!--ABOUT EARTHBOOK-->
 
-<div id="bottom-earthbook" class="overlay-earthbook">
+<earthbook-curtain></earthbook-curtain>
 
-    <a href="javascript:void(0)" class="closebtn" onclick="closeEarthbook()">&times;</a>
-
-    <div class="overlay-content-earthbook">
-        <div class="tc-list">
-    
-            
-            <h1>An Earthbook is for readers, writers & Earth.</h1>
-            <h3>Earthbooks embody the principles of regenerative and Earthen social and ecological principles in their writing and publishing.</h3>
-        
-        
-
-            <div id="virtue-box">
-
-                <div class="virtue"><img src="../svgs/icon-opensource.svg"><div class="virtue-desc">Both the earthBook and manuscript source and content are available under a GNU license on Github.</div>
-                </div>
-
-                <div class="virtue"><img src="../svgs/icon-biodiversity.svg"><div class="virtue-desc">A list of the species supported by the physical space of the book's enterprise is tracked and disclosed.</div>
-                </div>
-
-                <div class="virtue"><img src="../svgs/icon-ecoaccounting.svg"><div class="virtue-desc">The ecological accounting of the enterprise of writing and publishing are tracked and disclosed.</div>
-                </div>
-
-                <div class="virtue"><img src="../svgs/icon-for-earth.svg"><div class="virtue-desc">The net impact of the writing and publishing of the book was the subtraction of carbon.</div>
-                </div>
-
-                <div class="virtue"><img src="../svgs/icon-carbonseq.svg"><div class="virtue-desc">The enterprise of writing and publishing this book is not-for-profit and for-Earth.</div>
-                </div>
-
-                <div class="virtue"><img src="../svgs/icon-creativecommons.svg"><div class="virtue-desc">The source code and content of this book are licensed under a Creative Commons Share-Alike, No-Derivatives 4.0 License.</div>
-                </div>
-
-                <div class="virtue"><img src="../svgs/icon-readfreely.svg"><div class="virtue-desc">This book is available to read freely online and as a downloadable PDF.</div>
-                </div>
-
-                <div class="virtue"><img src="../svgs/icon-revenue.svg"><div class="virtue-desc">Purchasing this book generates revenue direct to the author with no intermediaries.</div>
-                </div>
-
-                <div class="virtue"><img src="../svgs/icon-accessibility.svg"><div class="virtue-desc">Earthbooks are designed from the ground up to be easy on the eyes, accessible, and multi-lingual.</div>
-                </div>
-
-                
-            
-            </div>
-
-            <h3><i>The Medium is the Message.</i></h3>
-
-   
-	    <div id="wcb" class="carbonbadge wcb-d" style="color: inherit"></div>
-	    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-
-        </div>
-            
-    </div>
-</div>
-
-
-   <!--<hr>
-                
-                <p class="bookplate-whatis">What is an EarthBook?  EarthBooks are are net-green books that disclose their carbon and biodiversity accounting, that are made freely available under an open source license, using the open source EarthBook format.</h6>
-                </div>
-
-                <div class="footer-conclusion">	
-                    <div class="row">
-            
-                        <div class="virtue">
-                            <a href="about"><img src="/banners/forearth-dark-350px.png" width="225px" height="" alt="Learn more about our Earth Enterprise structure" title="Learn more about our Earth Enterprise structure" loading="lazy"></a>
-                        </div>
-            
-                        <div class="virtue">
-                            <a href="https://www.gobrik.com/#my-catalyst/enterprise-disclosure/5b8c2b0922ddfb2591bf67be/" target="_blank"><img src="/banners/762-disclose-light-350px.png" width="225px" height="" alt="Proudly Net-Green: We track, disclose and accelerate our plastic transition. View our 2022 Report." title="Click through to see a our 2022 Plastic Transition Report" loading="lazy"></a>
-                        </div>
-                    
-            
-                        <div class="virtue">
-                            <a href="open-books.php"><img src="banners/openbooks-dark-350px.png" width="325px" height="" alt="Click through to see our current enterprise open books accounting." title="Click through to see our open books accounting." loading="lazy"></a>
-                        </div>
-                        
-                    </div>
-            
-                    
-                   
-                                <br><br>
-        
-                    <div class="footer-conclusion">	
-                        <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons BY SA 4.0 License" style="border-width:0" src="icons/cc-by-sa.svg" width="200px" height="45px" loading="lazy"/> </a>
-                    </div>
-                    
-                    <div class="footer-conclusion">	
-                        The EarthBook source code and the content of this book are available for improvement, comment and forking on Github.
-                        <br><br>
-                    </div>-->
 
 <!-- PAGE CONTENT-->
 
@@ -294,9 +137,6 @@ $(function(){
             <div class="lead-text">
             As we become more aware of the ecological challenges created by our modern world we long to better our ways and to participate positively-- to be <i>green</i>.  But what exactly should green mean?  This book lays out an ecological ethic inspired by the Igorots of Northern Luzon and based on the character of our planet.
             </div>
-
-            <div id="header"></div>
-            
             
             <div id="line"></div>
 
@@ -304,7 +144,7 @@ $(function(){
                 <p><b>Quick Start</b></p>
             </div>
 
-             <div id="book-box" class="book-box-day">
+            <div id="book-box" class="book-box-day">
                 <a href="preface">
                 <div class="chapter-top">    
                     <div class="chapter-name">Preface</div>
@@ -334,218 +174,212 @@ $(function(){
                 </a>
         
 
-            <div class="page-paragraph">
-                <p><b>Book One</b></p>
-            </div>
+                <div class="page-paragraph">
+                    <p><b>Book One</b></p>
+                </div>
 
-            <a href="preface">
-            <div class="chapter-top">    
-                <div class="chapter-name">Imagine</div>
-                <div class="word-count"><i>1,095 words</i></div>
-            </div>
-            </a>
+                <a href="preface">
+                <div class="chapter-top">    
+                    <div class="chapter-name">Imagine</div>
+                    <div class="word-count"><i>1,095 words</i></div>
+                </div>
+                </a>
 
-            <a href="preface">
-            <div class="chapter-middle">  
-                <div class="chapter-name">Plastic 1.0</div>
-                <div class="word-count"><i>623 words</i></div>
-            </div>
-            </a>
+                <a href="preface">
+                <div class="chapter-middle">  
+                    <div class="chapter-name">Plastic 1.0</div>
+                    <div class="word-count"><i>623 words</i></div>
+                </div>
+                </a>
 
-            <a href="preface">
-            <div class="chapter-middle">
-                <div class="chapter-name">A Stellar Story</div>
-                <div class="word-count"><i>1,021 words</i></div>
-            </div>
-            </a>
-
-            <a href="preface">
+                <a href="preface">
                 <div class="chapter-middle">
                     <div class="chapter-name">A Stellar Story</div>
                     <div class="word-count"><i>1,021 words</i></div>
                 </div>
                 </a>
 
-            <a href="preface">
+                <a href="preface">
+                    <div class="chapter-middle">
+                        <div class="chapter-name">A Stellar Story</div>
+                        <div class="word-count"><i>1,021 words</i></div>
+                    </div>
+                    </a>
+
+                <a href="preface">
+                    <div class="chapter-middle">
+                        <div class="chapter-name">Patterns of Process</div>
+                        <div class="word-count"><i>837 words</i></div>
+                </div>
+                </a>
+
+                <a href="preface">
+                    <div class="chapter-middle">
+                        <div class="chapter-name">Kindred Relations</div>
+                        <div class="word-count"><i>1,508 words</i></div>
+                </div>
+                </a>
+
+                <a href="preface">
+                    <div class="chapter-middle">
+                        <div class="chapter-name">Nature's Fallacy</div>
+                        <div class="word-count"><i>973 words</i></div>
+                </div>
+                </a>
+
+                <a href="preface"><div class="chapter-bottom">
+                    <div class="chapter-name">The Earthen Ways</div>
+                    <div class="word-count"><i>784 words</i></div>
+                </div>
+                </a>
+            
+
+                <div class="page-paragraph">
+                    <p><b>Book Two</b></p>
+                </div>
+
+            
+                <a href="preface">
+                <div class="chapter-top">    
+                    <div class="chapter-name">1  |  Cycles that Spiral</div>
+                    <div class="word-count"><i>1,682 words</i></div>
+                </div>
+                </a>
+
+                <a href="preface">
+                <div class="chapter-middle">  
+                    <div class="chapter-name">2  |  The Salmon's Spiral</div>
+                    <div class="word-count"><i>2,294 words</i></div>
+                </div>
+                </a>
+
+                <a href="preface">
                 <div class="chapter-middle">
-                    <div class="chapter-name">Patterns of Process</div>
-                    <div class="word-count"><i>837 words</i></div>
-            </div>
-            </a>
-
-            <a href="preface">
-                <div class="chapter-middle">
-                    <div class="chapter-name">Kindred Relations</div>
-                    <div class="word-count"><i>1,508 words</i></div>
-            </div>
-            </a>
-
-            <a href="preface">
-                <div class="chapter-middle">
-                    <div class="chapter-name">Nature's Fallacy</div>
-                    <div class="word-count"><i>973 words</i></div>
-            </div>
-            </a>
-
-            <a href="preface"><div class="chapter-bottom">
-                <div class="chapter-name">The Earthen Ways</div>
-                <div class="word-count"><i>784 words</i></div>
-            </div>
-            </a>
-        
-
-            <div class="page-paragraph">
-                <p><b>Book Two</b></p>
-            </div>
-
-        
-            <a href="preface">
-            <div class="chapter-top">    
-                <div class="chapter-name">1  |  Cycles that Spiral</div>
-                <div class="word-count"><i>1,682 words</i></div>
-            </div>
-            </a>
-
-            <a href="preface">
-            <div class="chapter-middle">  
-                <div class="chapter-name">2  |  The Salmon's Spiral</div>
-                <div class="word-count"><i>2,294 words</i></div>
-            </div>
-            </a>
-
-            <a href="preface">
-            <div class="chapter-middle">
-                <div class="chapter-name">3  |  The Ammonite's Example</div>
-                <div class="word-count"><i>not yet published</i></div>
-            </div>
-            </a>
-
-            <a href="preface">
-                <div class="chapter-middle">
-                    <div class="chapter-name">4  |  The Polyp's Pattern</div>
+                    <div class="chapter-name">3  |  The Ammonite's Example</div>
                     <div class="word-count"><i>not yet published</i></div>
                 </div>
                 </a>
 
-            <a href="preface">
+                <a href="preface">
+                    <div class="chapter-middle">
+                        <div class="chapter-name">4  |  The Polyp's Pattern</div>
+                        <div class="word-count"><i>not yet published</i></div>
+                    </div>
+                    </a>
+
+                <a href="preface">
+                    <div class="chapter-bottom">
+                        <div class="chapter-name">5  |  The Mycorrhyzal's Awareness</div>
+                        <div class="word-count"><i>not yet published</i></div>
+                </div>
+                </a>
+
+            
+
+                <div class="page-paragraph">
+                    <p><b>Book Three</b></p>
+                </div>
+
+                
+                <a href="preface">
+                <div class="chapter-top">    
+                    <div class="chapter-name">Plastic 2.0</div>
+                    <div class="word-count"><i>not yet published</i></div>
+                </div>
+                </a>
+
+                <a href="preface">
+                <div class="chapter-middle">  
+                    <div class="chapter-name">Plastic Sequestration</div>
+                    <div class="word-count"><i>not yet published</i></div>
+                </div>
+                </a>
+
+                <a href="preface">
+                    <div class="chapter-middle">  
+                        <div class="chapter-name">Petro-capital Transition</div>
+                        <div class="word-count"><i>not yet published</i></div>
+                    </div>
+                    </a>
+
+                <a href="preface">
                 <div class="chapter-bottom">
-                    <div class="chapter-name">5  |  The Mycorrhyzal's Awareness</div>
-                    <div class="word-count"><i>not yet published</i></div>
-            </div>
-            </a>
-
-        
-
-            <div class="page-paragraph">
-                <p><b>Book Three</b></p>
-            </div>
-
-            
-            <a href="preface">
-            <div class="chapter-top">    
-                <div class="chapter-name">Plastic 2.0</div>
-                <div class="word-count"><i>not yet published</i></div>
-            </div>
-            </a>
-
-            <a href="preface">
-            <div class="chapter-middle">  
-                <div class="chapter-name">Plastic Sequestration</div>
-                <div class="word-count"><i>not yet published</i></div>
-            </div>
-            </a>
-
-            <a href="preface">
-                <div class="chapter-middle">  
-                    <div class="chapter-name">Petro-capital Transition</div>
+                    <div class="chapter-name">Ad Pax Ayyew</div>
                     <div class="word-count"><i>not yet published</i></div>
                 </div>
+            
+
+                <div class="page-paragraph">
+                    <p><b>Appendixes</b></p>
+                </div>
+            
+                <a href="preface">
+                <div class="chapter-top">    
+                    <div class="chapter-name">Dedication</div>
+                    <div class="word-count"><i>26 words</i></div>
+                </div>
                 </a>
 
-            <a href="preface">
-            <div class="chapter-bottom">
-                <div class="chapter-name">Ad Pax Ayyew</div>
-                <div class="word-count"><i>not yet published</i></div>
+                <a href="preface">
+                <div class="chapter-middle">  
+                    <div class="chapter-name">Ecological Accounting</div>
+                    <div class="word-count"><i>48 words</i></div>
+                </div>
+                </a>
+
+                <a href="preface">
+                    <div class="chapter-middle">  
+                        <div class="chapter-name">For-Earth Enterprise</div>
+                        <div class="word-count"><i>20 words</i></div>
+                    </div>
+                    </a>
+                
+                <a href="preface">
+                    <div class="chapter-middle">  
+                        <div class="chapter-name">Credits & Acknowledgements</div>
+                        <div class="word-count"><i>218 words</i></div>
+                    </div>
+                    </a>
+                
+                <a href="preface">
+                    <div class="chapter-middle">  
+                        <div class="chapter-name">Writing & Publishment</div>
+                        <div class="word-count"><i>80 words</i></div>
+                    </div>
+                    </a>
+                
+                <a href="preface">
+                    <div class="chapter-middle">  
+                        <div class="chapter-name">Banayan & Russell</div>
+                        <div class="word-count"><i>153 words</i></div>
+                    </div>
+                    </a>
+                
+                <a href="preface">
+                    <div class="chapter-middle">  
+                        <div class="chapter-name">Select Bibliography</div>
+                        <div class="word-count"><i>728 words</i></div>
+                    </div>
+                    </a>
+
+                <a href="preface">
+                <div class="chapter-bottom">
+                    <div class="chapter-name">Glossary</div>
+                    <div class="word-count"><i>342 words</i></div>
+                </div>
+                </a>
             </div>
+            
+        </div>
         
+    </div>
+    
+</div>
 
-            <div class="page-paragraph">
-                <p><b>Appendixes</b></p>
-            </div>
-        
-            <a href="preface">
-            <div class="chapter-top">    
-                <div class="chapter-name">Dedication</div>
-                <div class="word-count"><i>26 words</i></div>
-            </div>
-            </a>
-
-            <a href="preface">
-            <div class="chapter-middle">  
-                <div class="chapter-name">Ecological Accounting</div>
-                <div class="word-count"><i>48 words</i></div>
-            </div>
-            </a>
-
-            <a href="preface">
-                <div class="chapter-middle">  
-                    <div class="chapter-name">For-Earth Enterprise</div>
-                    <div class="word-count"><i>20 words</i></div>
-                </div>
-                </a>
-            
-            <a href="preface">
-                <div class="chapter-middle">  
-                    <div class="chapter-name">Credits & Acknowledgements</div>
-                    <div class="word-count"><i>218 words</i></div>
-                </div>
-                </a>
-            
-            <a href="preface">
-                <div class="chapter-middle">  
-                    <div class="chapter-name">Writing & Publishment</div>
-                    <div class="word-count"><i>80 words</i></div>
-                </div>
-                </a>
-            
-            <a href="preface">
-                <div class="chapter-middle">  
-                    <div class="chapter-name">Banayan & Russell</div>
-                    <div class="word-count"><i>153 words</i></div>
-                </div>
-                </a>
-            
-            <a href="preface">
-                <div class="chapter-middle">  
-                    <div class="chapter-name">Select Bibliography</div>
-                    <div class="word-count"><i>728 words</i></div>
-                </div>
-                </a>
-
-            <a href="preface">
-            <div class="chapter-bottom">
-                <div class="chapter-name">Glossary</div>
-                <div class="word-count"><i>342 words</i></div>
-            </div>
-            </a>
 
  <!--FOOTER-->
-
-    <div id="navbar-bottom-day">
-        <div class="footer-left"><div style="padding-right:5px"><img src="../svgs/tractatus-simple-mandala.svg" width="40px"></div><div><p><i>Tractatus Ayyew</i></p></div></div>
-
+<footer-component></footer-component>
         
-        <div class="footer-middle" style="cursor:pointer" onclick="openEarthbook()"><div class="an-earthbook">an Earthbook</div><div class="what-is"><i>What is</i></div><div class="question">?</div></div>
-        
-        <div class="footer-right"><div style="padding-left:5px"><img src="../svgs/to-the-top-arrow.svg" width="30px"></div><div><p><i>An Earthen Ethics</i></p></div></div>
-    </div>
-        
-</div>
-    <div id="container1"></div>
-    <div id="container2"></div>
-    <div id="container3"></div>
-    </div>
-
 
 </body>
 </html>
