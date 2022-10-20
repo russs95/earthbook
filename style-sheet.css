@@ -559,7 +559,7 @@ a:active {
 }
 
 #main-title {
-    font-size: 3em;
+   
     font-family: "CooperLT";
     padding: 40px 10px 18px 10px;
     font-variant-caps: small-caps;
@@ -570,6 +570,33 @@ a:active {
   .main-title-night {
     text-shadow: 0 0 3px #000000 !important;
   }
+
+  @media screen and (max-width: 700px) { 
+    
+    #main-title {
+      font-size: 1.5em;
+  }
+}
+
+
+
+
+    @media screen and (min-width: 700px) and (max-width: 1324px) {
+
+      #main-title {
+        font-size: 2.2em;
+    }
+  }
+
+
+      @media screen and (min-width: 1325px) {
+
+        #main-title {
+          font-size: 2.9em;
+      }
+    }
+
+
 
 #sub-title {
     font-family: "CooperLT";
@@ -1255,7 +1282,9 @@ margin: 18px 0px 8px 0px;
   font-size: smaller;
 }
 
-
+.virtue-desc {
+  display: none;
+}
 
 .bookplate-title { 
   font-variant-caps: small-caps;
@@ -1309,6 +1338,36 @@ margin: 18px 0px 8px 0px;
     padding: 15px;
     width: 190px;
   }
+
+}
+
+.virtue:hover 
+ {
+  width: 200px;
+  padding: 10px;
+  font-size: 1em;
+  height: 250px;
+  transition: 0.3s;
+  flex-grow: 3;
+  max-width:200px;
+  cursor: pointer;
+  
+}
+
+.virtue:hover > .virtue-desc
+ {
+  display: contents;
+  font-size: 1.5em;
+ 
+
+}
+
+.virtue:hover > img
+ {
+
+  width: 155px;
+  display: none;
+  transition: 0.3s;
 
 }
 
