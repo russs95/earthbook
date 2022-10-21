@@ -622,7 +622,7 @@ a:active {
 
 
 #sub-earthbook {
-  margin: 30px 0px 45px 0px;
+  margin: 25px 0px 0px 0px;
   letter-spacing: 4px;
   font-variant-caps: all-small-caps;
   font-weight: 500;
@@ -1584,6 +1584,29 @@ margin: 18px 0px 8px 0px;
 p {
   font-family: 'CooperLt', Georgia, serif;
   text-rendering: optimizeLegibility;
+  font-weight: 300;
+  }
+
+  @media screen and (max-width: 699px) {
+    p {
+      font-size: 1.2em;
+      line-height: 1.3;
+    }
+  }
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+    p {
+      font-size: 1.3;
+      line-height: 1.3;
+    }
+  }
+
+@media screen and (min-width: 1325px) {
+
+    P {
+      font-size: 1.4em;
+      line-height: 1.3;
+    }
   }
 
 
@@ -1743,6 +1766,7 @@ h6 {
 
 .lead-page-paragraph {
     font-size: 1.2em;
+    margin-top: 30px;
 }
 }
 
@@ -1790,7 +1814,7 @@ h6 {
     border-right: 0px;
     border-left: 0px;
     border-style: solid;
-    background-color: rgb(253, 252, 252);
+    background-color: rgb(237, 237, 237);
     border-color: rgb(163, 163, 163);
     color:  #202124 ;
   
