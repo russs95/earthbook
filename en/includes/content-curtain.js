@@ -12,8 +12,8 @@ class ContentCurtain extends HTMLElement {
         
         <div class="overlay-content-tc">
 
-            <div><h2>BOOK ONE</h2></div>
-            <div class="contents-title">Table of Contents</div>
+            
+            <div class="contents-title">Book One</div>
             
             <a href="preface">
             <div class="tc-item">

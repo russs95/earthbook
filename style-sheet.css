@@ -1025,7 +1025,7 @@ margin: 18px 0px 8px 0px;
 
 @media screen and (max-width: 700px) {
   .overlay-content-tc {
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -1048,6 +1048,8 @@ margin: 18px 0px 8px 0px;
   font-size: 1.5em;
   font-variant-caps: small-caps;
   padding-bottom: 20px;
+  letter-spacing: 4px;
+  width: 100%;
 }
 
 @media screen and (max-width: 700px) {
@@ -1108,10 +1110,10 @@ display: flex;
 
 .chapter-name-tc {
   flex: fit-content;
-  background-image: src('svgs/content-arrow.svg');
+ /* background-image: src('svgs/content-arrow.svg');
   background: url(svgs/content-arrow.svg) left center no-repeat;
   background-size: 30px;
-  background-position-x: 18px;
+  background-position-x: 18px;*/
   display: flex;
   z-index: 10;
   text-align: left;
@@ -1119,7 +1121,7 @@ display: flex;
 
 @media screen and (max-width: 700px) {
   .chapter-name-tc {
-    padding: 15px 25px 15px 35px;
+    padding: 13px 5px 13px 15px;
     margin:  auto 0px auto 0px;
   }
 }
@@ -1148,6 +1150,28 @@ display: flex;
   flex: fit-content;
   font-family: 'CooperLT';
 }
+
+
+@media screen and (max-width: 700px) {
+  .word-count-tc {
+    padding: 13px 15px 13px 5px;
+    margin:  auto 0px auto 0px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .word-count-tc{
+    padding: 15px 35px 15px 0px;
+    margin:  auto 0px auto 0px;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .word-count-tc {
+    padding: 15px 35px 15px 0px;
+    margin:  auto 0px auto 0px;
+    }
+  }
 
 
 /*Gave up on this!
