@@ -1,3 +1,34 @@
+/*function scrollFunction() {
+  //AFTER
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar-day").style.height = "75px";
+    document.getElementById("navbar-day").style.overflowY = "unset";
+    document.getElementById("bookplate-content").style.display = "none";
+    document.getElementById("mandala-day").style.width = "60px";
+    document.getElementById("mandala-day").style.background = "url('../svgs/tractatus-simple-mandala.svg') center no-repeat";
+    document.getElementById("mandala-day").style.backgroundSize ="contain";
+    document.getElementById("navbar-day").style.position = "fixed";
+
+    document.getElementById("menu-settings").style.margin = "0px -20px 0px 0px";
+    document.getElementById("menu-button").style.margin = "0px 0px 0px -35px";
+
+  } else {
+    //BEFORE
+    document.getElementById("navbar-day").style.height = "100vh";
+    document.getElementById("bookplate-content").style.display = "contents";
+    document.getElementById("mandala-day").style.width = "";
+    document.getElementById("mandala-day").style.background = "";
+
+
+    document.getElementById("menu-settings").style.margin = "0px -20px 0px 0px";
+    document.getElementById("menu-button").style.margin = "0px 0px 0px -35px";
+    document.getElementById("main").style.marginTop = "0px";
+    document.getElementById("navbar-day").style.position = "relative";
+
+  }
+}*/
+ 
+
 /* Open table of contents someone clicks on the span element */
 function openContents() {
   document.getElementById("left-table-of-contents").style.width = "100%";
@@ -23,13 +54,31 @@ function openSettings() {
 
   /* Open settings when someone clicks on the span element */
 function openBookplate() {
-  document.getElementById("top-bookplate").style.height = "100%";
+  document.getElementById("navbar-day").style.height = "100vh";
+  document.getElementById("bookplate-content").style.display = "contents";
+  document.getElementById("mandala-day").style.width = "";
+  document.getElementById("mandala-day").style.background = "";
+  //document.getElementById("menu-settings").style.right = "-80px";
+  //document.getElementById("menu-button").style.margin = "0px 0px 0px -35px";
   document.body.style.overflowY = "hidden";
+  document.getElementById("bookplate-button").style.display = "";
+
 }
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeBookplate() {
-  document.getElementById("top-bookplate").style.height = "0%";
+  document.getElementById("navbar-day").style.height = "75px";
+  document.getElementById("navbar-day").style.overflowY = "unset";
+  document.getElementById("bookplate-content").style.display = "none";
+  document.getElementById("mandala-day").style.width = "60px";
+  document.getElementById("mandala-day").style.background = "url('../svgs/tractatus-simple-mandala.svg') center no-repeat";
+  document.getElementById("mandala-day").style.backgroundSize ="contain";
+  document.getElementById("navbar-day").style.position = "fixed";
+
+  //document.getElementById("menu-settings").style.right = "-85px";
+  //document.getElementById("menu-button").style.margin = "0px 0px 0px -35px";
   document.body.style.overflowY = "unset";
+  document.getElementById("bookplate-button").style.display = "none";
+  
 } 
 
   /* Open settings when someone clicks on the span element */
@@ -89,6 +138,16 @@ function closeBookplate() {
   // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
+
+/*
+
+ setTimeout(() => {
+      document.getElementById("main").style.position ="relative";
+    
+      // 👇️ if you used `display` to hide element
+      // el.style.display = 'block';
+    }, 2000); // 👈️ delay in milliseconds
+
 function scrollFunction() {
   //AFTER
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -109,7 +168,7 @@ function scrollFunction() {
     document.getElementById("menu-button").style.margin = "70px 0px 5px -35px";
     document.getElementById("side").style.marginTop = "30px";
   }
-}
+}*/
 
 
 
