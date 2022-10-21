@@ -622,7 +622,7 @@ a:active {
 
 
 #sub-earthbook {
-  margin: 50px 0px 45px 0px;
+  margin: 30px 0px 45px 0px;
   letter-spacing: 10px;
   font-variant-caps: all-small-caps;
   font-weight: 500;
@@ -630,7 +630,7 @@ a:active {
   user-select: none;  
   
   color: white;
-  background: repeating-linear-gradient(-45deg, white, black, grey, rgb(0, 234, 255));
+  background: repeating-linear-gradient(-45deg,  white, grey,  rgb(0, 234, 255)) black, grey,;
   background-size: 600vw 600vw;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -676,7 +676,7 @@ box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);;
     transition: 0.5s;
     background: white; /*#F9F9F9*/
     border-radius: 50px;
-    height: 100px;
+    height: 85px;
     box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
   /*  border: solid 1px gray;*/
   padding-left: 40px;
@@ -734,7 +734,7 @@ margin-left: -42px;
     box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
     transition: 0.3s;
     border-radius: 70px;
-    height: 100px;
+    height: 85px;
     padding-right: 70px;
     right: -85px;
     
@@ -1681,8 +1681,26 @@ h4 {
 
 h5 { 
     font-family: 'Mulish', Arial, sans-serif;
-    font-size: 1em;
     font-weight: 300;}
+
+
+    @media screen and (max-width: 699px) {
+      h5 {
+        font-size: 0.9em;
+      }
+    }
+    
+    @media screen and (min-width: 700px) and (max-width: 1324px) {
+      h5 {
+        font-size: 1.1em;
+      }
+    }
+    
+    @media screen and (min-width: 1325px) {
+      h5 {
+        font-size: 1.3em;
+      }
+    }
 
 h6 { 
   font-family: 'CooperLt', Georgia, serif;
@@ -1745,6 +1763,7 @@ h6 {
 
 #navbar-day {
   height: 100%;
+  max-height: 100%;
   position: fixed; /* Stay in place */
   z-index: 21; /* Sit on top */
   top: 0;
