@@ -622,7 +622,7 @@ a:active {
 
 
 #sub-earthbook {
-  margin: 25px 0px 0px 0px;
+  margin: 20px 0px 50px 0px;
   letter-spacing: 4px;
   font-variant-caps: all-small-caps;
   font-weight: 500;
@@ -631,7 +631,7 @@ a:active {
   
   
   color: white;
-  background: repeating-linear-gradient(-45deg,   rgb(0, 234, 255)), black, grey;
+  background: repeating-linear-gradient(-45deg, white, black, grey);
   background-size: 600vw 600vw;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -730,7 +730,7 @@ margin-left: -42px;
     position: absolute;
     right: 0px;
     transition: 0.3s;
-    background: white; /*#F9F9F9*/
+    background-color: white; /*#F9F9F9*/
     border-color: black;
     /*box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);*/
     transition: 0.3s;
@@ -738,8 +738,6 @@ margin-left: -42px;
     height: 85px;
     padding-right: 70px;
     right: -85px;
-    
-
   }
 
   /*
@@ -760,9 +758,8 @@ margin-left: -42px;
 
     */
 
-
 .menu-settings-night {
-  background-color:  #17181b  !important;
+  background-color:  #292a2d  !important;
 }
 
 .menu-settings-night:hover {
@@ -817,7 +814,7 @@ margin-right: -42px;
     #main-page {
       margin-left: 15%;
       margin-right: 15%;
-        margin-top: 100px;
+        margin-top: 120px;
         overflow-x: hidden
     }
   }
@@ -840,7 +837,6 @@ margin-right: -42px;
   #main {
     overflow: hidden;
     transition: 0.4s;
-    margin-top: -30px;
     }
   
   
@@ -1618,6 +1614,7 @@ h1 {
 @media screen and (max-width: 699px) {
     h1 {
       font-size: 2em;
+      box-shadow: 0 0px 4px #ffffff;
     }
   }
 
@@ -1783,6 +1780,7 @@ h6 {
     font-size: 1.5em;
   font-weight: 300;
   padding-bottom: 35px;
+  margin-top: 20px;
 }
 
 #line {
@@ -1814,7 +1812,7 @@ h6 {
     border-right: 0px;
     border-left: 0px;
     border-style: solid;
-    background-color: #ededed;
+    background-color: #f4f4f4;
     border-color: rgb(163, 163, 163);
     color:  #202124 ;
   
