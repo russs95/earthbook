@@ -629,12 +629,13 @@ a:active {
  text-shadow: 0 0 45px rgba(1, 1, 1, 0.1);
   user-select: none;  
   
-  color: white;
+  
+  /*color: white;
   background: repeating-linear-gradient(-45deg,  white, grey,  rgb(0, 234, 255)) black, grey,;
   background-size: 600vw 600vw;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  animation: slide 10s linear infinite forwards;
+  animation: slide 10s linear infinite forwards;*/
 }
 
 @keyframes slide {
@@ -677,7 +678,7 @@ box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);;
     background: white; /*#F9F9F9*/
     border-radius: 50px;
     height: 85px;
-    box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+    /*box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);*/
   /*  border: solid 1px gray;*/
   padding-left: 40px;
   left: -77px;
@@ -731,7 +732,7 @@ margin-left: -42px;
     transition: 0.3s;
     background: white; /*#F9F9F9*/
     border-color: black;
-    box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
+    /*box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);*/
     transition: 0.3s;
     border-radius: 70px;
     height: 85px;
@@ -1738,10 +1739,14 @@ h6 {
       }
     
     
+@media screen and (max-width: 699px) {
 
 .lead-page-paragraph {
-    font-size: 2em;
+    font-size: 1.2em;
 }
+}
+
+
 
 .page-paragraph {
     font-size: 1.5em;
