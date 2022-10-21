@@ -102,17 +102,19 @@
 
 .chapter-middle {
   border-radius: 0px 0px 0px 0px;
-  
+  border-top: none;
   border-width: 1px;
   border-color:inherit;
-  display: flex;
-  flex-flow: row nowrap;
-  padding: 0px;
   border-style: solid;
   cursor: pointer;
   align-items: stretch;
+
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0px;
+
   z-index: 9;
-  border-top: none;
+
   background: inherit;
   
 }
@@ -961,7 +963,7 @@ margin-right: -42px;
 
  /* Table of Contents Menu (background) */
  #left-table-of-contents {
-  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+  background: url(svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
  /* background-position-y: -55px;*/
  background-size: contain;
   background-color: rgb(226, 226, 226); 
@@ -992,6 +994,7 @@ font-size: 1.2em;
 margin: 18px 0px 8px 0px;
 }
 
+
  .overlay-tc {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 100%;
@@ -1008,7 +1011,7 @@ margin: 18px 0px 8px 0px;
   .overlay-content-tc {
     position: relative;
     /* 25% from the top */
-    width: 100%; /* 100% width */
+    width: 75%; /* 100% width */
     text-align: center; /* Centered text/links */
     /* 30px top margin to avoid conflict with the close button on smaller screens */
     text-align: center;
@@ -1018,36 +1021,119 @@ margin: 18px 0px 8px 0px;
     justify-content: center;
     flex-flow: column;
     height:100%;
-    font-size: smaller;
 }
 
+
 .contents-title {
-  font-family: 'CooperLt';
-  font-size: 2.1em;
+  font-family: 'Mulish';
+  font-size: 1.5em;
   font-variant-caps: small-caps;
-  padding: 10px;
+  padding-bottom: 20px;
 }
+
+.tc-item {
+  font-family: 'Mulish';
+  font-size: 1.1em;
+  padding: 0px;
+  border-width: 1px;
+  border-color:inherit;
+  border-style: solid;
+  cursor: pointer;
+  align-items: stretch;
+  border-bottom: none;
+border-right: none;
+border-left: none;
+display: flex;
+
+
+}
+
+
+.chapter-name-tc {
+  flex: fit-content;
+  padding: 15px 25px 15px 35px;
+  margin:  auto 0px auto 0px;
+  /*background-image: src('svgs/content-arrow.svg');
+  background: url(svgs/content-arrow.svg) left center no-repeat;
+  background-size: 30px;
+  background-position-x: 18px;*/
+  display: flex;
+  z-index: 10;
+  text-align: left;
+}
+
+
+
+.word-count-tc {
+  padding: 15px 35px 15px 0px;
+  margin:  auto 0px auto 0px;
+  color: grey;
+  text-align: right;
+  flex: fit-content;
+  font-family: 'CooperLT';
+}
+
+
+/*Gave up on this!
+.dotted-line {
+  width: 50%;
+height: 1px;
+align-content: center;
+align-self: center;
+border-top: gray;
+  border-top-style: none;
+  border-top-width: medium;
+border-style: dotted;
+  border-bottom-style: dotted;
+border-bottom: none;
+  border-bottom-width: medium;
+border-width: 1px;
+border-spacing: 1px;
+display: none;
+}
+
+.magic-circle {
+  width: 10px;
+height: 18px;
+background: #d4d1d1;
+border: 1px grey;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+border-style: solid;
+border-radius: 100px;
+padding: 10px;
+margin: auto;
+  margin-right: auto;
+margin-right: -15px;
+display: none;
+}
+
+*/
+
 
   
   /* The navigation links inside the overlay */
   .overlay-tc a {
-    padding: 8px;
     text-decoration: none;
-    font-size: 1.5em;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
+
   }
   
   /* When you mouse over the navigation links, change their color */
   .overlay-tc a:hover, .overlay a:focus {
     color: inherit;
+    font-weight: bolder;
+    color: black;
   }
   
   /* Position the close button (top right corner) */
   .overlay-tc .closebtn {
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 20px;
     font-size: 60px;
     z-index: 22;
   }

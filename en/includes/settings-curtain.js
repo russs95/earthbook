@@ -29,15 +29,15 @@ class SettingsCurtain extends HTMLElement {
             <br><br>
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Sepia</div></div>
-            <input type="range" id="brightness-range"   min="100" max="0" value="0" onchange="Sepia(this)">
+            <input type="range" id="brightness-range"   min="0" max="100" value="0" onchange="Sepia(this)">
 
             <div class="settings-label">
             <div class="accessibility-plugin-ac">Contrast</div>
             </div>
-            <input type="range" id="brightness-range" min="100" max="0" value="0" onchange="Contrast(this)">
+            <input type="range" id="brightness-range" min="0" max="100" value="0" onchange="Contrast(this)">
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Brightness</div></div>
-            <input type="range" id="brightness-range" min="100" max="0" value="0" onchange="Brightness(this)"> 
+            <input type="range" id="brightness-range" min="0" max="100" value="0" onchange="Brightness(this)"> 
 
             <br><br>
             <div class="settings-label"><div class="accessibility-plugin-ac">Select Language</div></div>
