@@ -623,7 +623,7 @@ a:active {
 
 #sub-earthbook {
   margin: 30px 0px 45px 0px;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
   font-variant-caps: all-small-caps;
   font-weight: 500;
  text-shadow: 0 0 45px rgba(1, 1, 1, 0.1);
@@ -952,6 +952,13 @@ margin-right: -42px;
     box-shadow: 0 4px 15px rgba(85, 84, 84, 0.4);
 }
 
+@media screen and (max-width: 700px) {
+  #side img {
+    width: 300px;
+    border-radius: 12px;
+  }
+}
+  
 
 /*TABLE OF CONTENTS*/
 
@@ -1686,19 +1693,19 @@ h5 {
 
     @media screen and (max-width: 699px) {
       h5 {
-        font-size: 0.9em;
+        font-size: 1.1em;
       }
     }
     
     @media screen and (min-width: 700px) and (max-width: 1324px) {
       h5 {
-        font-size: 1.1em;
+        font-size: 1.3em;
       }
     }
     
     @media screen and (min-width: 1325px) {
       h5 {
-        font-size: 1.3em;
+        font-size: 1.4em;
       }
     }
 
