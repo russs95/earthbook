@@ -31,10 +31,10 @@ class Header extends HTMLElement {
 
           <h4 class="bookplate-motto"><i>Ad Pax Ayyew</i></h4>
 
-          <h5 class="bookplate-year">M M X X I I</h5>
+          <h4 class="bookplate-year">M M X X I I</h4>
 
           <!--<div id="line" style="width: 30%; margin: 10px auto;"></div>-->
-          <div id="sub-earthbook">earthBook edition<br><br></div>  
+          <div id="sub-earthbook"><h5>earthBook edition.</h5></div>  
           
           
         </div>
