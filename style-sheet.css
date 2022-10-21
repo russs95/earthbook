@@ -493,11 +493,11 @@ a:active {
 
   .action-btn {
 
-    padding-top: 8px;
-    padding-bottom:8px;
-      font-size: 1.1em;
-      margin: 10px;
-      flex-grow: 1;
+    padding-top: 6px;
+    padding-bottom:6px;
+    font-size: 1em;
+    margin: 9px;
+    flex-grow: 1;
 
   }
 }
@@ -711,7 +711,7 @@ box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);;
 
 #menu-button img {
   height: 60px;
-padding-top: 20px;
+padding-top: 15px;
 padding-left: 40px;
 margin-left: -42px;
 }
@@ -777,7 +777,7 @@ margin-left: -42px;
 
 #menu-settings img {
   height: 60px;
-  padding-top: 20px;
+  padding-top: 14px;
 padding-right: 17px;
 margin-right: -42px;
 }
@@ -954,8 +954,8 @@ margin-right: -42px;
 
 @media screen and (max-width: 700px) {
   #side img {
-    width: 300px;
-    border-radius: 12px;
+    width: 200px;
+    border-radius: 10px;
   }
 }
   
