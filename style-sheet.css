@@ -1023,6 +1023,25 @@ margin: 18px 0px 8px 0px;
     height:100%;
 }
 
+@media screen and (max-width: 700px) {
+  .overlay-content-tc {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .overlay-content-tc {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .overlay-content-tc {
+      width: 55%;
+    }
+  }
+
+
 
 .contents-title {
   font-family: 'Mulish';
@@ -1030,6 +1049,25 @@ margin: 18px 0px 8px 0px;
   font-variant-caps: small-caps;
   padding-bottom: 20px;
 }
+
+@media screen and (max-width: 700px) {
+  .contents-title {
+    width: 1.4em;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .contents-title {
+    width: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .contents-title {
+    font-size: 1.6em;
+    padding-bottom: 20px;
+    }
+  }
 
 .tc-item {
   font-family: 'Mulish';
@@ -1044,23 +1082,61 @@ margin: 18px 0px 8px 0px;
 border-right: none;
 border-left: none;
 display: flex;
-
-
 }
+
+@media screen and (max-width: 700px) {
+  .tc-item {
+    font-size: 0.9em;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .tc-item {
+    font-size: 1em;
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .tc-item {
+    font-size: 1.1em;
+    padding: 0px;
+    }
+  }
 
 
 .chapter-name-tc {
   flex: fit-content;
-  padding: 15px 25px 15px 35px;
-  margin:  auto 0px auto 0px;
-  /*background-image: src('svgs/content-arrow.svg');
+  background-image: src('svgs/content-arrow.svg');
   background: url(svgs/content-arrow.svg) left center no-repeat;
   background-size: 30px;
-  background-position-x: 18px;*/
+  background-position-x: 18px;
   display: flex;
   z-index: 10;
   text-align: left;
 }
+
+@media screen and (max-width: 700px) {
+  .chapter-name-tc {
+    padding: 15px 25px 15px 35px;
+    margin:  auto 0px auto 0px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .chapter-name-tc {
+    padding: 15px 25px 15px 35px;
+    margin:  auto 0px auto 0px;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .chapter-name-tc {
+    padding: 15px 25px 15px 35px;
+    margin:  auto 0px auto 0px;
+    }
+  }
 
 
 
