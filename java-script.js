@@ -66,7 +66,7 @@ function openBookplate() {
 }
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeBookplate() {
-  document.getElementById("navbar-day").style.height = "75px";
+  document.getElementById("navbar-day").style.height = "65px";
   document.getElementById("navbar-day").style.overflowY = "unset";
   document.getElementById("bookplate-content").style.display = "none";
   document.getElementById("mandala-day").style.width = "60px";

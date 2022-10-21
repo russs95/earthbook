@@ -804,14 +804,14 @@ margin-right: -42px;
     #main-page {
         margin-left: 3%;
         margin-right: 3%;
-        margin-top: 170px;
+        margin-top: 100px;
     }
   }
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     #main-page {
       margin-left: 5%;
       margin-right: 5%;
-      margin-top: 220px;
+      margin-top: 100px;
     }
   }
   @media screen and (min-width: 1325px) {
@@ -841,7 +841,7 @@ margin-right: -42px;
   #main {
     overflow: hidden;
     transition: 0.4s;
-    margin-top: 0px;
+    margin-top: -30px;
     }
   
   
@@ -1256,26 +1256,25 @@ margin: 18px 0px 8px 0px;
     font-variant-caps: small-caps;
     font-weight: 500;
     margin-top: 0.6em;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 
 .bookplate-subtitle {
-  margin-top: 0em;
+  margin-top: -0.1em;
   font-weight: 300;
 }
 
 .bookplate-authors {
-  margin-top: 0em;
+  margin-top: -0.1em;
 }
 
 .bookplate-year {
-  margin-top: 0em;
+  margin-top: -0.2em;
 }
 
 .bookplate-motto {
-  margin-top: 0em;
-  font-size: 1.5em;
+  margin-top: -0.1em;
 }
 
 
@@ -1589,7 +1588,7 @@ h1 {
 
 @media screen and (max-width: 699px) {
     h1 {
-      font-size: 2.2em;
+      font-size: 2em;
     }
   }
 
@@ -1613,7 +1612,7 @@ h2 {
 
 @media screen and (max-width: 699px) {
   h2 {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 }
 
@@ -1638,7 +1637,7 @@ h3 {
 
   @media screen and (max-width: 699px) {
     h3 {
-      font-size: 1.35em;
+      font-size: 1.2em;
     }
   }
   
@@ -1662,9 +1661,29 @@ h4 {
   font-size: 1.4em;
   font-weight: 300;}
 
+  @media screen and (max-width: 699px) {
+    h4 {
+      font-size: 1.06em;
+    }
+  }
+  
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    h4 {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media screen and (min-width: 1325px) {
+    h4 {
+      font-size: 1.4em;
+    }
+  }
+
+
+
 h5 { 
     font-family: 'Mulish', Arial, sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 300;}
 
 h6 { 
@@ -1709,9 +1728,9 @@ h6 {
 
 .lead-text {
     font-family: 'Mulish', Arial, sans-serif;
-    font-size: 1.2em;
+    font-size: 1.5em;
   font-weight: 300;
-  padding-bottom: 10px;
+  padding-bottom: 35px;
 }
 
 #line {
