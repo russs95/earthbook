@@ -630,12 +630,12 @@ a:active {
   user-select: none;  
   
   
-  /*color: white;
-  background: repeating-linear-gradient(-45deg,  white, grey,  rgb(0, 234, 255)) black, grey,;
+  color: white;
+  background: repeating-linear-gradient(-45deg,   rgb(0, 234, 255)), black, grey;
   background-size: 600vw 600vw;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  animation: slide 10s linear infinite forwards;*/
+  animation: slide 10s linear infinite forwards;
 }
 
 @keyframes slide {
@@ -1814,7 +1814,7 @@ h6 {
     border-right: 0px;
     border-left: 0px;
     border-style: solid;
-    background-color: rgb(237, 237, 237);
+    background-color: #ededed;
     border-color: rgb(163, 163, 163);
     color:  #202124 ;
   
