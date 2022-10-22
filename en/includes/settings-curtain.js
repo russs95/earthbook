@@ -13,8 +13,13 @@ class SettingsCurtain extends HTMLElement {
     <div class="overlay-content-settings">
             
             <div class="lead-page-paragraph">
-                <p class="accessibility-plugin-ac">Adjust the display of the EarthBook.</p></div>
+                <p class="accessibility-plugin-ac">Adjust the presentation of the EarthBook.</p></div>
             
+            <div id="languages">
+            <a href="../en/index.html"><div class="language-selector">EN</div></a>
+                <div class="language-selector" title="Désolé, pas encore traduit !">FR</div>
+                <div class="language-selector" title="Maaf, belum diterjemahkan!">IN</div>
+            </div> 
 
             <div id="text-adjust">
                 <button id="increase-plugin-ac">+A</button>
@@ -32,24 +37,16 @@ class SettingsCurtain extends HTMLElement {
             <div class="settings-label">
             <div class="accessibility-plugin-ac">Contrast</div>
             </div>
-            <input type="range" id="brightness-range" min="0" max="100" value="100" onchange="Contrast(this)">
+            <input type="range" id="range-scale" min="0" max="100" value="100" onchange="Contrast(this)">
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Sepia</div></div>
-            <input type="range" id="brightness-range"   min="0" max="100" value="0" onchange="Sepia(this)">
+            <input type="range" id="range-scale"  min="0" max="100" value="0" onchange="Sepia(this)">
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Brightness</div></div>
-            <input type="range" id="brightness-range" min="0" max="100" value="100" onchange="Brightness(this)">
+            <input type="range" id="range-scale" min="0" max="100" value="100" onchange="Brightness(this)">
             
 
-
-            <br><br>
-            <div class="settings-label"><div class="accessibility-plugin-ac">Select Language</div></div>
-
-            <div class="languages">
-                <div class="language-selector">EN</div>
-                <div class="language-selector">FR</div>
-                <div class="language-selector">IN</div>
-            </div> 
+        
         </div>                                                              
 </div>
 
