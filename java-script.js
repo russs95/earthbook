@@ -192,7 +192,7 @@ containerSepia.setAttribute("style", "filter: sepia("+val+"%); max-height:100vh;
 
 function Contrast(e)
 {
-var containerContrast = document.html;
+var containerContrast = document.body;
 var val = e.value;
 containerContrast.setAttribute("style", "filter: contrast("+val+"%); max-height:100vh; overflow-y:hidden;");
 }

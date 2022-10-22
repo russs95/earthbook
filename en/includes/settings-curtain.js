@@ -28,16 +28,19 @@ class SettingsCurtain extends HTMLElement {
             <label for="darkmode-toggle" style="text-align: center;margin: 10px auto;"></label>
             <br><br>
 
-            <div class="settings-label"><div class="accessibility-plugin-ac">Sepia</div></div>
-            <input type="range" id="brightness-range"   min="0" max="100" value="0" onchange="Sepia(this)">
-
+         
             <div class="settings-label">
             <div class="accessibility-plugin-ac">Contrast</div>
             </div>
-            <input type="range" id="brightness-range" min="0" max="100" value="0" onchange="Contrast(this)">
+            <input type="range" id="brightness-range" min="0" max="100" value="100" onchange="Contrast(this)">
+
+            <div class="settings-label"><div class="accessibility-plugin-ac">Sepia</div></div>
+            <input type="range" id="brightness-range"   min="0" max="100" value="0" onchange="Sepia(this)">
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Brightness</div></div>
-            <input type="range" id="brightness-range" min="0" max="100" value="100" onchange="Brightness(this)"> 
+            <input type="range" id="brightness-range" min="0" max="100" value="100" onchange="Brightness(this)">
+            
+
 
             <br><br>
             <div class="settings-label"><div class="accessibility-plugin-ac">Select Language</div></div>
