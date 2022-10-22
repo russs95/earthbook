@@ -44,12 +44,13 @@ function closeContents() {
 /* Open settings when someone clicks on the span element */
 function openSettings() {
     document.getElementById("right-settings").style.width = "100%";
-    document.body.style.overflowY = "hidden";
+ 
   }
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeSettings() {
     document.getElementById("right-settings").style.width = "0%";
     document.body.style.overflowY = "unset";
+
   } 
 
   /* Open settings when someone clicks on the span element */
@@ -179,12 +180,14 @@ function scrollFunction() {
 {
 var containerSepia = document.body;
 var val = e.value;
-containerSepia.setAttribute("style", "filter: sepia("+val+"%);");
+containerSepia.setAttribute("style", "filter: sepia("+val+"%); max-height:100vh; overflow-y:hidden");
+
+
 }
 
 function Contrast(e)
 {
-var containerContrast = document.body;
+var containerContrast = document.html;
 var val = e.value;
 containerContrast.setAttribute("style", "filter: contrast("+val+"%);");
 }
