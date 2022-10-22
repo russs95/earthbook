@@ -19,7 +19,7 @@
   src: url("fonts/CooperMediumBT.ttf");
  }
 
-
+/*
 
 #book-title {
   height: 200px;
@@ -27,7 +27,7 @@
   background-size: 30px;
   
 }
-  
+  */
 
 #book-box {
   display: block;
@@ -211,7 +211,7 @@
   justify-content: center;
   height: 60px;
   background: url(svgs/earthen-logo-grey.svg) center no-repeat;
-  background-color: rgb(251, 251, 251);
+  background-color: #F4F2F2;
   
 }
 
@@ -240,6 +240,8 @@
   height: 100%;
   align-items: center;
   flex-grow: 1;
+  font-family: "Mulish";
+  font-size: 1em;
 }
 
 .footer-middle {
@@ -323,6 +325,8 @@
   flex: auto;*/
   flex-grow: 1;
   flex-direction: row-reverse;
+  font-family: "Mulish";
+  font-size: 1em;
 }
 
 
@@ -557,7 +561,7 @@ a:active {
       }
 
 
-/*Main Title
+/*Main Title*/
 
 #title {
     text-align: center;
@@ -594,7 +598,7 @@ a:active {
     }
 
 
-/*
+
 #sub-title {
     font-family: "CooperLT";
     font-style: italic;
@@ -621,7 +625,7 @@ a:active {
   }
 
 
-*/
+
 
 
 
@@ -634,13 +638,15 @@ a:active {
  text-shadow: 0 0 45px rgba(1, 1, 1, 0.1);
   user-select: none;  
   
-  
   color: white;
-  background: repeating-linear-gradient(-45deg, white, black, grey);
+  background: repeating-linear-gradient(-45deg, white, black, grey, rgb(0, 183, 255));
   background-size: 600vw 600vw;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   animation: slide 10s linear infinite forwards;
+  font-family: "Mulish";
+
+
 }
 
 @keyframes slide {
@@ -667,6 +673,8 @@ background-color: white;
 padding-bottom: 70px;
 margin-bottom: -80px;
 box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+
+display: none;
 }
 
 #bookplate-button:hover {
@@ -698,6 +706,7 @@ box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
   /*  border: solid 1px gray;*/
   padding-left: 40px;
   left: -77px;
+  z-index: 50;
 }
 
 #menu-button:hover {
@@ -784,21 +793,21 @@ margin-right: -42px;
     #main-page {
         margin-left: 3%;
         margin-right: 3%;
-        margin-top: 100px;
+        margin-top: 200px;
     }
   }
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     #main-page {
       margin-left: 5%;
       margin-right: 5%;
-      margin-top: 100px;
+      margin-top: 220px;
     }
   }
   @media screen and (min-width: 1325px) {
     #main-page {
       margin-left: 15%;
       margin-right: 15%;
-        margin-top: 120px;
+        margin-top: 250px;
         overflow-x: hidden
     }
   }
@@ -1267,7 +1276,7 @@ display: none;
 }
 
 .language-selector a:hover {
-  filter: invert(100);
+  color: grey;
 }
 
 .language-selector a {
@@ -1278,6 +1287,7 @@ display: none;
     background-color: rgb(226, 226, 226); 
     background-color: rgba(231, 231, 231); 
     color: black;
+    z-index: 26;
 }
 
  /* Table of Contents Menu (background) */
@@ -1341,10 +1351,16 @@ display: none;
     color: black;
     transition: 0.3s; /* Transition effects on hover (color) */
   }
+
+  .overlay-settings-night a {
+
+    color: white;
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
   
   /* When you mouse over the navigation links, change their color */
   .overlay-settings a:hover, .overlay a:focus {
-    color: white;
+    color: rgb(216, 215, 215);
   }
   
   /* Position the close button (top right corner) */
@@ -1420,16 +1436,22 @@ display: none;
 
 #mandala-day {
   margin: auto;
+  /*background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;*/
   background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;
   width: 100%;
   background-size: contain;
+  transition: 0.3s;
+  display: none;
+
 }
 
 
 #bookplate-content {
-  display: contents;
+  display: none;
   transition: 0.3s;
   text-shadow: 0 0px 4px #ffffff;
+
+
 }
 
 .bookplate-content-night {
@@ -1442,6 +1464,8 @@ display: none;
     font-weight: 500;
     margin-top: 0.6em;
     letter-spacing: 1px;
+
+
     
 }
 
@@ -1449,18 +1473,25 @@ display: none;
 .bookplate-subtitle {
   margin-top: -0.1em;
   font-weight: 300;
+
+
 }
 
 .bookplate-authors {
   margin-top: -0.1em;
+
+
 }
 
 .bookplate-year {
   margin-top: -0.2em;
+
+
 }
 
 .bookplate-motto {
   margin-top: -0.1em;
+
 }
 
 
@@ -1524,6 +1555,7 @@ display: none;
     text-align: center;
     border-radius: 25px;
     margin: auto;
+    font-weight: lighter;
   }
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -1761,7 +1793,7 @@ display: none;
       z-index: 0;
       overflow-x: hidden; /*ARG WHY OVERFLOW?*/
       max-width: 100%;
-      overflow-y: hidden;
+ 
         }
 
 
@@ -2005,7 +2037,7 @@ h6 {
 
 
 #navbar-day {
-  height: 100%;
+  height: 200px;
   max-height: 100%;
   position: fixed; /* Stay in place */
   z-index: 21; /* Sit on top */
@@ -2014,14 +2046,14 @@ h6 {
   overflow-y: hidden;
     width: 100%;
     z-index: 12;
-    transition: 0.9s;
+    transition: 0.3s;
 
     border-bottom: 1px;
     border-top: 0px;
     border-right: 0px;
     border-left: 0px;
     border-style: solid;
-    background-color: #f4f4f4;
+    background-color: rgb(244, 242, 242);
     border-color: rgb(163, 163, 163);
     color:  #202124 ;
   
@@ -2032,20 +2064,26 @@ h6 {
     justify-content: center;
     flex-flow: column;
     margin: auto;
-
-
+    z-index: 20;
 }
-
-
 
 
 #book-title {
   height: 208px;
-  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+ background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
  /* background-position-y: -55px;*/
  background-size: 60%;
   margin: auto;
+
   transition: 0.4s;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: unset;
+  cursor: pointer;
+ 
 }
 
 .book-title-night {

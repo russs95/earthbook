@@ -13,12 +13,15 @@ class Header extends HTMLElement {
         </div>
 
         <span style="cursor:pointer" onclick="openBookplate()">
-        <div id="mandala-day">
-       
-        </div>
+        <div id="mandala-day"></div>
         </span>
         
-
+        
+        <div id="book-title" style="background-size: 60%;" onclick="openBookplate()">
+            <div id="main-title" style="padding: 40px 10px 18px; font-size: 3.2em;">Tractatus Ayyew</div>
+            <div id="sub-title"><i>An Earthen Ethics</i></div>
+            <div id="sub-earthbook">earthBook edition</div>
+        </div>
         <div id="bookplate-content"> 
           <h1 class="bookplate-title">Tractatus Ayyew</h1>
 

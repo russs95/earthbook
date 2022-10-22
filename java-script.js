@@ -1,32 +1,40 @@
-/*function scrollFunction() {
+function scrollFunction() {
   //AFTER
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    
+    //document.getElementById("mandala-day").style.filter = "none";
     document.getElementById("navbar-day").style.height = "75px";
-    document.getElementById("navbar-day").style.overflowY = "unset";
-    document.getElementById("bookplate-content").style.display = "none";
+    //document.getElementById("navbar-day").style.overflowY = "unset";
     document.getElementById("mandala-day").style.width = "60px";
-    document.getElementById("mandala-day").style.background = "url('../svgs/tractatus-simple-mandala.svg') center no-repeat";
-    document.getElementById("mandala-day").style.backgroundSize ="contain";
-    document.getElementById("navbar-day").style.position = "fixed";
+   document.getElementById("mandala-day").style.background = "url('../svgs/tractatus-simple-mandala.svg') center no-repeat";
+    document.getElementById("mandala-day").style.backgroundSize = "contain";
+    document.getElementById("mandala-day").style.display = "block"; 
 
-    document.getElementById("menu-settings").style.margin = "0px -20px 0px 0px";
-    document.getElementById("menu-button").style.margin = "0px 0px 0px -35px";
+   // document.getElementById("mandala-day").style.display ="contents";
+    document.getElementById("navbar-day").style.position = "fixed";
+    document.getElementById("book-title").style.display = "none";
+    document.getElementById("side").style.marginTop = "-100px";
+
+    
+
 
   } else {
     //BEFORE
-    document.getElementById("navbar-day").style.height = "100vh";
-    document.getElementById("bookplate-content").style.display = "contents";
-    document.getElementById("mandala-day").style.width = "";
-    document.getElementById("mandala-day").style.background = "";
+    document.getElementById("navbar-day").style.height = "200px";
+    //document.getElementById("mandala-day").style.width = "";
+    //document.getElementById("mandala-day").style.background = "";
+    //document.getElementById("book-title").style.display = "unset";
+    document.getElementById("book-title").style.display = "unset";
+    document.getElementById("mandala-day").style.display = "none";
+    document.getElementById("side").style.marginTop = "0px";
 
 
-    document.getElementById("menu-settings").style.margin = "0px -20px 0px 0px";
-    document.getElementById("menu-button").style.margin = "0px 0px 0px -35px";
-    document.getElementById("main").style.marginTop = "0px";
-    document.getElementById("navbar-day").style.position = "relative";
+
+  
+
 
   }
-}*/
+}
  
 
 /* Open table of contents someone clicks on the span element */
@@ -64,10 +72,15 @@ function openBookplate() {
   document.getElementById("bookplate-content").style.display = "contents";
   document.getElementById("mandala-day").style.width = "";
   document.getElementById("mandala-day").style.background = "";
-  //document.getElementById("menu-settings").style.right = "-80px";
-  //document.getElementById("menu-button").style.margin = "0px 0px 0px -35px";
   document.body.style.overflowY = "hidden";
-  document.getElementById("bookplate-button").style.display = "";
+  document.getElementById("bookplate-button").style.display = "unset";
+  document.getElementById("book-title").style.display = "none";
+  document.getElementById("menu-button").style.display = "none";
+  document.getElementById("menu-settings").style.display = "none";
+  document.getElementById("mandala-day").style.display = "block";
+  //document.getElementById("mandala-day").style.width = "100%";
+   //document.getElementById("mandala-day").style.background = "url('../svgs/tractatus-mandala-full-black.svg') center no-repeat";
+   //document.getElementById("mandala-day").style.backgroundSize = "constrain";
 
 }
 /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -84,7 +97,8 @@ function closeBookplate() {
   //document.getElementById("menu-button").style.margin = "0px 0px 0px -35px";
   document.body.style.overflowY = "unset";
   document.getElementById("bookplate-button").style.display = "none";
-  
+  document.getElementById("menu-button").style.display = "unset";
+  document.getElementById("menu-settings").style.display = "unset";
 } 
 
   /* Open settings when someone clicks on the span element */

@@ -7,9 +7,9 @@ class FooterComponent extends HTMLElement {
     this.innerHTML = `
 
     <div id="navbar-bottom-day">
-    <div class="footer-left">
+        <div class="footer-left" style="cursor:pointer;" onclick="openBookplate()">
         <div style="padding-right:5px"><img src="../svgs/tractatus-simple-mandala.svg" width="40px"></div>
-        <div><p><i>Tractatus Ayyew</i></p></div>
+        <div>about</div>
     </div>
 
 
@@ -21,7 +21,7 @@ class FooterComponent extends HTMLElement {
 
     <div class="footer-right">
         <div style="padding-left:5px"><a href="#top"><img src="../svgs/to-the-top-arrow.svg" width="30px"></a></div>
-        <div><p><i>An Earthen Ethics</i></p></div>
+        <div>top</div>
     </div>
 </div>
 
