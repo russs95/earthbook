@@ -127,21 +127,25 @@ function closeBookplate() {
     element.classList.toggle("menu-settings-night");
     var element = document.getElementById("menu-button");
     element.classList.toggle("menu-button-night");
-    element.classList.toggle("left-table-of-contents-night");
+    var element = document.getElementById("languages");
+    element.classList.toggle("languages-night");
     var element = document.getElementById("bookplate-button");
     element.classList.toggle("bookplate-button-night");
-    var element = document.getElementById("book-box");
-    element.classList.toggle("book-box-night");
     var element = document.getElementById("line");
     element.classList.toggle("line-night");
     var element = document.getElementById("navbar-bottom-day");
     element.classList.toggle("navbar-bottom-night");
+    var element = document.getElementById("left-table-of-contents");
+    element.classList.toggle("left-table-of-contents-night");
+    
+    var element = document.getElementById("bookplate-content");
+    element.classList.toggle("bookplate-content-night");
+    var element = document.getElementById("book-box");
+    element.classList.toggle("book-box-night");
     var element = document.getElementById("main-title");
     element.classList.toggle("main-title-night");
     var element = document.getElementById("book-title");
     element.classList.toggle("book-title-night");
-    var element = document.getElementById("left-table-of-contents");
-
   } 
 
   // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
@@ -149,6 +153,8 @@ window.onscroll = function() {scrollFunction()};
 
 
 /*
+
+
 
  setTimeout(() => {
       document.getElementById("main").style.position ="relative";
