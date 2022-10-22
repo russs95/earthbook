@@ -113,7 +113,7 @@ function closeBookplate() {
     element.classList.toggle("container-night");
     var element = document.getElementById("right-settings");
     element.classList.toggle("overlay-settings-night");
-    var element = document.getElementById("top-bookplate");
+    var element = document.getElementById("navbar-day");
     element.classList.toggle("overlay-bookplate-night");
     var element = document.getElementById("mandala-day");
     element.classList.toggle("mandala-night");
@@ -121,6 +121,9 @@ function closeBookplate() {
     element.classList.toggle("menu-settings-night");
     var element = document.getElementById("menu-button");
     element.classList.toggle("menu-button-night");
+    element.classList.toggle("left-table-of-contents-night");
+    var element = document.getElementById("bookplate-button");
+    element.classList.toggle("bookplate-button-night");
     var element = document.getElementById("book-box");
     element.classList.toggle("book-box-night");
     var element = document.getElementById("line");
@@ -132,7 +135,7 @@ function closeBookplate() {
     var element = document.getElementById("book-title");
     element.classList.toggle("book-title-night");
     var element = document.getElementById("left-table-of-contents");
-    element.classList.toggle("left-table-of-contents-night");
+
   } 
 
   // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size

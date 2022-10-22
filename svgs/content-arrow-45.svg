@@ -42,12 +42,12 @@
     <circle
        style="fill:#ffffff;stroke:#666666;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
        id="circle92826"
-       cx="-6.9313812"
-       cy="189.38649"
+       cx="88.686607"
+       cy="119.01064"
        r="37.221638" />
     <g
        id="g120457"
-       transform="rotate(-44.162962,129.97547,273.60321)"
+       transform="rotate(-44.162962,91.046646,120.56667)"
        style="stroke-width:2.2;stroke-miterlimit:4;stroke-dasharray:none">
       <path
          style="fill:#666666;stroke:#000000;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -65,19 +65,5 @@
          id="path120445"
          sodipodi:nodetypes="cc" />
     </g>
-    <circle
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.407;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
-       id="circle3562"
-       cx="88.831459"
-       cy="119.15548"
-       r="27.779295" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.15484;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 89.154119,96.439394 V 142.07262"
-       id="path4110" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1.15484;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 111.97073,119.25601 H 66.337505"
-       id="path4192" />
   </g>
 </svg>
