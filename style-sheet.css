@@ -332,6 +332,10 @@
 
 #text-adjust {
 margin: 10px auto 30px auto;
+margin: 10px auto 30px auto;
+width: fit-content;
+background: #80808011;
+border-radius: 55px;
 
 }
 
@@ -349,7 +353,7 @@ font-family: "Mulish";
 display: inline;
 text-align: center;
 text-decoration: none;
-margin: auto;
+margin: 10px;
 cursor: pointer;
     }
 
@@ -367,7 +371,7 @@ cursor: pointer;
   display: inline;
   text-align: center;
   text-decoration: none;
-  margin: auto;
+  margin: 10px;
   cursor: pointer;
     }
 
@@ -385,7 +389,7 @@ cursor: pointer;
   display: inline;
   text-align: center;
   text-decoration: none;
-  margin: auto;
+  margin: 10px;
   cursor: pointer;
     }
 
@@ -500,7 +504,6 @@ a:active {
     font-size: 1em;
     margin: 9px;
     flex-grow: 1;
-
   }
 }
 
@@ -1299,7 +1302,7 @@ display: none;
 
 @media screen and (max-width: 700px) {
     .overlay-content-settings {
-      width: 65%;
+      width: 85%;
       font-size: 0.9em;
       /*margin-top: 6%;*/
   }
@@ -1307,7 +1310,7 @@ display: none;
 
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     .overlay-content-settings {
-      width: 55%;
+      width: 65%;
       font-size: 0.9em;
       /*margin-top: 2%;*/
   }
@@ -1315,7 +1318,7 @@ display: none;
 
   @media screen and (min-width: 1325px) {
       .overlay-content-settings {
-        width: 65%;
+        width: 69%;
         margin: auto;
       }
   }
@@ -1735,12 +1738,13 @@ display: none;
   
   body {
       margin: 0px;
-      background-color: white;
+      background-color: rgb(252, 251, 251);
       color: #202124;
       position: absolute;
       z-index: 0;
       overflow-x: hidden; /*ARG WHY OVERFLOW?*/
       max-width: 100%;
+      overflow-y: hidden;
         }
 
 

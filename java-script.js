@@ -33,23 +33,28 @@
 function openContents() {
   document.getElementById("left-table-of-contents").style.width = "100%";
   document.body.style.overflowY = "hidden";
+  document.body.style.maxHeight = "100vh";
 }
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeContents() {
   document.getElementById("left-table-of-contents").style.width = "0%";
   document.body.style.overflowY = "unset";
+  document.body.style.maxHeight = "unset";
 } 
 
 
 /* Open settings when someone clicks on the span element */
 function openSettings() {
     document.getElementById("right-settings").style.width = "100%";
+    document.body.style.overflowY = "hidden";
+    document.body.style.maxHeight = "100vh";
  
   }
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeSettings() {
     document.getElementById("right-settings").style.width = "0%";
     document.body.style.overflowY = "unset";
+    document.body.style.maxHeight = "unset";
 
   } 
 
@@ -180,7 +185,7 @@ function scrollFunction() {
 {
 var containerSepia = document.body;
 var val = e.value;
-containerSepia.setAttribute("style", "filter: sepia("+val+"%); max-height:100vh; overflow-y:hidden");
+containerSepia.setAttribute("style", "filter: sepia("+val+"%); max-height:100vh; overflow-y:hidden;");
 
 
 }
@@ -189,13 +194,13 @@ function Contrast(e)
 {
 var containerContrast = document.html;
 var val = e.value;
-containerContrast.setAttribute("style", "filter: contrast("+val+"%);");
+containerContrast.setAttribute("style", "filter: contrast("+val+"%); max-height:100vh; overflow-y:hidden;");
 }
 
 function Brightness(e)
 {
 var containerBrightness = document.body;
 var val = e.value;
-containerBrightness.setAttribute("style", "filter: brightness("+val+"%);");
+containerBrightness.setAttribute("style", "filter: brightness("+val+"%); max-height:100vh; overflow-y:hidden;");
 }
 
