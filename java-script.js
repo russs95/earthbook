@@ -1,6 +1,39 @@
-function scrollFunction() {
+
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+        //document.getElementById("mandala-day").style.filter = "none";
+        document.getElementById("navbar-day").style.height = "75px";
+        //document.getElementById("navbar-day").style.overflowY = "unset";
+        document.getElementById("mandala-day").style.width = "60px";
+       document.getElementById("mandala-day").style.background = "url('../svgs/tractatus-simple-mandala.svg') center no-repeat";
+        document.getElementById("mandala-day").style.backgroundSize = "contain";
+        document.getElementById("mandala-day").style.display = "block"; 
+    
+       // document.getElementById("mandala-day").style.display ="contents";
+        document.getElementById("navbar-day").style.position = "fixed";
+        document.getElementById("book-title").style.display = "none";
+        document.getElementById("side").style.marginTop = "-100px";;
+  } else {
+    document.getElementById("navbar-day").style.height = "200px";
+    //document.getElementById("mandala-day").style.width = "";
+    //document.getElementById("mandala-day").style.background = "";
+    //document.getElementById("book-title").style.display = "unset";
+    document.getElementById("book-title").style.display = "unset";
+    document.getElementById("mandala-day").style.display = "none";
+    document.getElementById("side").style.marginTop = "0px";
+  }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+
+
+
+
   //AFTER
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if ((x.matches)) {
     
     //document.getElementById("mandala-day").style.filter = "none";
     document.getElementById("navbar-day").style.height = "75px";
@@ -15,9 +48,6 @@ function scrollFunction() {
     document.getElementById("book-title").style.display = "none";
     document.getElementById("side").style.marginTop = "-100px";
 
-    
-
-
   } else {
     //BEFORE
     document.getElementById("navbar-day").style.height = "200px";
@@ -28,13 +58,18 @@ function scrollFunction() {
     document.getElementById("mandala-day").style.display = "none";
     document.getElementById("side").style.marginTop = "0px";
 
+  }
+}
 
 
   
+var x = window.matchMedia("(max-width: 700px)")
+scrollFunction(x) // Call listener function at run time
+x.addListener(scrollFunction) // Attach listener function on state changes
 
 
-  }
-}
+
+
  
 
 /* Open table of contents someone clicks on the span element */
