@@ -1972,9 +1972,25 @@ h6 {
     font-family: 'Mulish', Arial, sans-serif;
     font-size: 1.5em;
   font-weight: 300;
-  padding-bottom: 35px;
-  margin-top: 20px;
 }
+
+@media screen and (max-width: 699px) {
+  .lead-text {
+      font-size: 1.2em;
+      margin-top: 20px;
+      padding-bottom: 35px;
+  }
+  }
+
+  @media screen and (min-width: 700px) {
+    .lead-text {
+        font-size: 1.5em;
+        margin-top: 20px;
+        padding-bottom: 35px;
+    }
+    }
+
+
 
 #line {
   border-color: rgb(163, 163, 163);
