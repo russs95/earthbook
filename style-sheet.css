@@ -1,6 +1,34 @@
 /*TRACTATUS AYYEW BOOKAPP VERSION 0.1*/
 
 
+label .kn-label {display:none;}
+
+.input {
+  
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1em;
+    color: #363636;
+    display: inline-flex;
+    font-size: 14px;
+height: 32px;
+justify-content: flex-start;
+line-height: 24px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    vertical-align: top;
+    box-shadow: inset 0 1px 2px hsla(0,0%,4%,.1);
+    max-width: 100%;
+    width: 100%;
+}
+
 
 @font-face {
   font-family: "CooperLt";
