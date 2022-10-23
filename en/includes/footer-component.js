@@ -7,21 +7,27 @@ class FooterComponent extends HTMLElement {
     this.innerHTML = `
 
     <div id="navbar-bottom-day">
+
         <div class="footer-left" style="cursor:pointer;" onclick="openBookplate()">
-        <div style="padding-right:5px"><img src="../svgs/tractatus-simple-mandala.svg" width="40px"></div>
-        <div>about</div>
-    </div>
+             <div class="footer-icon-left">
+             <img src="../svgs/tractatus-simple-mandala.svg" width="40px">
+            </div> <div class="footer-word">about</div>
+        </div>
+
 
 
     <div class="footer-middle" style="cursor:pointer" onclick="openEarthbook()">
         <div class="an-earthbook">an Earthbook</div>
-        <div class="what-is"><i>What is</i></div>
+        <div class="what-is">What is</div>
         <div class="question">?</div>
     </div>
 
+    
     <div class="footer-right">
-        <div style="padding-left:5px"><a href="#top"><img src="../svgs/to-the-top-arrow.svg" width="30px"></a></div>
-        <div>top</div>
+       
+        <div class="footer-icon-right">
+        <a href="#top"><img src="../svgs/to-the-top-arrow.svg" width="35px"></div></a>
+        <div class="footer-word">top</div>
     </div>
 </div>
 

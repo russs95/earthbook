@@ -9,7 +9,7 @@ class Header extends HTMLElement {
     <div id="navbar-day">
         <div id="menu-button">
             <span style="cursor:pointer" onclick="openContents()"><img src="../svgs/right-menu.svg"></span>
-            <!--<span style="cursor:pointer" onclick="openContents()">&#9776;</span>-->
+           
         </div>
 
         <span style="cursor:pointer" onclick="openBookplate()">
@@ -22,13 +22,11 @@ class Header extends HTMLElement {
             <div id="sub-title"><i>An Earthen Ethics</i></div>
             <div id="sub-earthbook">earthBook edition</div>
         </div>
+
         <div id="bookplate-content"> 
           <h1 class="bookplate-title">Tractatus Ayyew</h1>
 
           <h2 class="bookplate-subtitle"><i>An Earthen Ethics</i></h2>
-
-      
-
 
           <h3 class="bookplate-authors">Banayan & Russell Maier</h3>
 
@@ -36,7 +34,6 @@ class Header extends HTMLElement {
 
           <h4 class="bookplate-year">M M X X I I</h4>
 
-          <!--<div id="line" style="width: 30%; margin: 10px auto;"></div>-->
           <div id="sub-earthbook"><h5>earthBook edition</h5></div>  
           
           
@@ -45,10 +42,8 @@ class Header extends HTMLElement {
        
         <div id="menu-settings">
         <span style="cursor:pointer" onclick="openSettings()"><img src="../svgs/left-menu.svg"></span>
-        <!-- <span style="cursor:pointer" onclick="openSettings()">&#9881;</span>-->
     </div>
-       
-       
+      
        
        
        
@@ -64,20 +59,3 @@ class Header extends HTMLElement {
 }
 
 customElements.define('header-component', Header);
-
-
-/*     
-       
-       
-       
-        <div id="book-title">
-            <div id="main-title">Tractatus Ayyew</div>
-            <div id="sub-title"><i>An Earthen Ethics</i></div>
-            <div id="sub-earthbook">earthBook edition</div>
-        </div></span>
-    
-        <div id="menu-settings">
-        <span style="cursor:pointer" onclick="openSettings()"><img src="../svgs/left-menu.svg"></span>
-        <!-- <span style="cursor:pointer" onclick="openSettings()">&#9881;</span>-->
-    </div>
-    </div>*/
