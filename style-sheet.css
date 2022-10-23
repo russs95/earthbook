@@ -2,8 +2,8 @@
 
 
 label {
-  width:500px;
-  height:200px;
+  width:50%;
+  height:20%;
   position: relative;
   display: block;
   background: #ebebeb;
@@ -129,27 +129,22 @@ label {
 
 .chapter-middle {
   border-radius: 0px 0px 0px 0px;
-  border-top: none;
   border-width: 1px;
   border-color:inherit;
   border-style: solid;
   cursor: pointer;
   align-items: stretch;
-
   display: flex;
   flex-flow: row nowrap;
   padding: 0px;
-
   z-index: 9;
-
   background: inherit;
-  
+  border-top: none;
 }
 
 .chapter-bottom {
   border-radius: 0px 0px 25px 25px;
   font-family: inherit;
-  
   border-width: 1px;
   border-color:inherit;
   display: flex;
@@ -188,7 +183,7 @@ label {
 
 .chapter-name {
   flex: 80%;
-  padding: 15px 16px 15px 65px;
+  padding: 15px 16px 15px 63px;
   margin:  auto 0px auto 0px;
   /*background-image: src('svgs/content-arrow.svg');
   background: url(svgs/content-arrow.svg) left center no-repeat;
@@ -1266,6 +1261,7 @@ display: none;
     left: 20px;
     font-size: 60px;
     z-index: 22;
+    font-weight: lighter;
   }
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
