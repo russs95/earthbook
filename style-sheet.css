@@ -827,6 +827,12 @@ margin-right: -42px;
     width: 100%;
   }
 
+  @media screen and (max-width: 700px) {
+    #row {
+      margin-top: -90px;
+  }
+}
+
   #main {
     overflow: hidden;
     transition: 0.4s;
@@ -887,7 +893,7 @@ margin-right: -42px;
 	box-sizing: border-box;
   text-align: center;
   margin: 0px auto;
-  margin-top: 0px;
+  margin-top: 1px !important;
 	}
 	}
 
@@ -1444,6 +1450,15 @@ display: none;
   display: none;
 
 }
+
+@media screen and (max-width: 699px) {
+  #mandala-day {
+    background: url(svgs/tractatus-simple-mandala.svg) center no-repeat;
+    width: 60px;
+    background-size: contain;
+    display: block;
+  }
+  }
 
 
 #bookplate-content {
@@ -2068,6 +2083,17 @@ h6 {
 }
 
 
+@media screen and (max-width: 699px) {
+  #navbar-day {
+    height: 75px;
+  }
+}
+
+
+
+
+
+
 #book-title {
   height: 208px;
  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
@@ -2085,6 +2111,12 @@ h6 {
   cursor: pointer;
  
 }
+
+@media screen and (max-width: 699px) {
+  #book-title {
+    display: none;
+  }
+  }
 
 .book-title-night {
   background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;

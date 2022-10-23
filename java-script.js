@@ -1,39 +1,29 @@
-
+/*
 function myFunction(x) {
   if (x.matches) { // If media query matches
-        //document.getElementById("mandala-day").style.filter = "none";
-        document.getElementById("navbar-day").style.height = "75px";
-        //document.getElementById("navbar-day").style.overflowY = "unset";
-        document.getElementById("mandala-day").style.width = "60px";
-       document.getElementById("mandala-day").style.background = "url('../svgs/tractatus-simple-mandala.svg') center no-repeat";
-        document.getElementById("mandala-day").style.backgroundSize = "contain";
-        document.getElementById("mandala-day").style.display = "block"; 
-    
-       // document.getElementById("mandala-day").style.display ="contents";
-        document.getElementById("navbar-day").style.position = "fixed";
-        document.getElementById("book-title").style.display = "none";
-        document.getElementById("side").style.marginTop = "-100px";;
+    document.body.style.backgroundColor = "yellow";
   } else {
-    document.getElementById("navbar-day").style.height = "200px";
-    //document.getElementById("mandala-day").style.width = "";
-    //document.getElementById("mandala-day").style.background = "";
-    //document.getElementById("book-title").style.display = "unset";
-    document.getElementById("book-title").style.display = "unset";
-    document.getElementById("mandala-day").style.display = "none";
-    document.getElementById("side").style.marginTop = "0px";
+    document.body.style.backgroundColor = "pink";
   }
 }
 
 var x = window.matchMedia("(max-width: 700px)")
 myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+x.addListener(myFunction) // Attach listener function on state changes 
 
 
+  if ((Type == 2 && PageCount == 0) || (Type == 2 && PageCount == '')) {
+    PageCount = document.getElementById('<%=hfPageCount.ClientID %>').value;
+}*/
 
+
+function scrollFunction() {
+
+  const mediaQuery = window.matchMedia('(max-width: 700px)')
 
 
   //AFTER
-  if ((x.matches)) {
+  if ((mediaQuery.matches)  || (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)) {
     
     //document.getElementById("mandala-day").style.filter = "none";
     document.getElementById("navbar-day").style.height = "75px";
@@ -44,7 +34,7 @@ x.addListener(myFunction) // Attach listener function on state changes
     document.getElementById("mandala-day").style.display = "block"; 
 
    // document.getElementById("mandala-day").style.display ="contents";
-    document.getElementById("navbar-day").style.position = "fixed";
+    //document.getElementById("navbar-day").style.position = "fixed";
     document.getElementById("book-title").style.display = "none";
     document.getElementById("side").style.marginTop = "-100px";
 
@@ -63,9 +53,7 @@ x.addListener(myFunction) // Attach listener function on state changes
 
 
   
-var x = window.matchMedia("(max-width: 700px)")
-scrollFunction(x) // Call listener function at run time
-x.addListener(scrollFunction) // Attach listener function on state changes
+
 
 
 
@@ -113,6 +101,8 @@ function openBookplate() {
   document.getElementById("menu-button").style.display = "none";
   document.getElementById("menu-settings").style.display = "none";
   document.getElementById("mandala-day").style.display = "block";
+  document.getElementById("mandala-day").style.width = "170px";
+  document.getElementById("mandala-day").style.height = "170px";
   //document.getElementById("mandala-day").style.width = "100%";
    //document.getElementById("mandala-day").style.background = "url('../svgs/tractatus-mandala-full-black.svg') center no-repeat";
    //document.getElementById("mandala-day").style.backgroundSize = "constrain";
