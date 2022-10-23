@@ -441,9 +441,12 @@ margin: auto;
     }
 
 
-/* ACTION BUTTONS  */
-
+/* ACTION BUTTONS 
 #knack-dist2 {height: 60px;}
+ */
+
+
+.kn-label {display: none;}
 
 .action-btn {
     border: rgb(163, 163, 163);
