@@ -171,6 +171,7 @@
   background-position-x: 18px;*/
   display: flex;
   z-index: 10;
+  font-family: "Mulish";
 }
 
 
@@ -2015,13 +2016,17 @@ h6 {
 }
 }
 
-
+/*
 
 .page-paragraph {
     font-size: 1.5em;
     margin-top: 30px;
     margin-bottom: -10px;
 }
+*/
+
+
+
 
 .lead-text {
     font-family: 'Mulish', Arial, sans-serif;
