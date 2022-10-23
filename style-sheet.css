@@ -52,7 +52,7 @@
 .book-box-header {
   font-family: 'CooperLt';
   font-size: 1.3em;
-  padding: 15px 0px 8px 0px;
+  padding: 25px 10px 10px 0px;
   color: inherit;
 }
 
@@ -179,7 +179,7 @@
 
 .chapter-name {
   flex: 80%;
-  padding: 15px 20px 15px 70px;
+  padding: 15px 16px 15px 65px;
   margin:  auto 0px auto 0px;
   /*background-image: src('svgs/content-arrow.svg');
   background: url(svgs/content-arrow.svg) left center no-repeat;
