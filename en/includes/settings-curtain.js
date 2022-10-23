@@ -28,16 +28,10 @@ class SettingsCurtain extends HTMLElement {
             </div>
 
      
-            <div class="settings-label"><div class="accessibility-plugin-ac">Toggle Dark Mode</div></div>
+        
 
-            <input type="checkbox" id="darkmode-toggle" onclick="toggleDark()"/>
-            <label for="darkmode-toggle" style="text-align: center;margin: 10px auto;" class="toggle"></label>
-            <br>
-
-
-<!--
-            <input type="checkbox" id="darkmode-toggle"/>
-            <label for="darkmode-toggle" class="toggle" style="text-align: center;margin: 10px auto;">
+            <input type="checkbox" id="darkmode-toggle" onclick="toggleDark()" class="darkmoder"/>
+            <label for="darkmode-toggle" class="toggle" style="text-align: center;margin: 0px auto 20px auto;">
                 <svg version="1.1" class="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
     
@@ -66,6 +60,7 @@ class SettingsCurtain extends HTMLElement {
                 <rect x="424" y="240" width="72" height="16"/>
                 <rect x="389.911" y="62.091" transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)" width="16" height="71.999"/>
     </svg>
+
          <svg version="1.1" class="moon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 49.739 49.739" style="enable-background:new 0 0 49.739 49.739;" xml:space="preserve">
          <path d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
@@ -74,7 +69,7 @@ class SettingsCurtain extends HTMLElement {
            C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
            c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
            c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z"/></svg>
-            </label>-->
+            </label>
 
 
 
