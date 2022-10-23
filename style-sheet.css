@@ -402,6 +402,11 @@ input:checked + label.toggle svg.moon {
 
 }
 
+@media screen and (max-width: 699px) {
+  .question {
+    opacity: 1;
+  }
+
 .footer-middle:hover > .an-earthbook + .what-is  {
   opacity: 0.8;
   margin-right: 0px;
@@ -901,21 +906,21 @@ margin-right: -42px;
     #main-page {
         margin-left: 3%;
         margin-right: 3%;
-        margin-top: 200px;
+        padding-top: 200px;
     }
   }
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     #main-page {
       margin-left: 5%;
       margin-right: 5%;
-      margin-top: 220px;
+      padding-top: 220px;
     }
   }
   @media screen and (min-width: 1325px) {
     #main-page {
       margin-left: 15%;
       margin-right: 15%;
-        margin-top: 250px;
+        padding-top: 250px;
         overflow-x: hidden
     }
   }
@@ -1919,12 +1924,24 @@ display: none;
       max-width: 100%;
  
         }
-
+    
+  #underlayer {
+    margin: 0px;
+    background-color: rgb(252, 251, 251);
+    max-width: 100%;
+    height: 100%;
+  }
 
   .dark-mode {
     background-color: #202124  !important;
     color: #BDC1C6 !important;
   }
+
+  @media screen and (max-width: 699px) {
+  .no-mobile {
+    display: none;
+  }
+}
 
 p {
   font-family: 'CooperLt', Georgia, serif;

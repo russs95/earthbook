@@ -33,8 +33,9 @@ class FooterComponent extends HTMLElement {
 
 </div>
     <div id="containerSepia"></div>
-    <div id="containerBrightness"></div>
     <div id="containerContrast"></div>
+    <div id="containerBrightness"></div>
+    
 </div>
 
     `;

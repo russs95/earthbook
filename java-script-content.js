@@ -171,6 +171,8 @@ function closeBookplate() {
     element.classList.toggle("main-title-night");
     var element = document.getElementById("book-title");
     element.classList.toggle("book-title-night");
+    var element = document.getElementById("underlayer");
+    element.classList.toggle("dark-mode");
   } 
 
   // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
@@ -225,7 +227,7 @@ function Contrast(e)
 {
 var containerContrast = document.body;
 var val = e.value;
-containerContrast.setAttribute("style", "filter: contrast("+val+"%); max-height:100vh; overflow-y:hidden;");
+containerContrast.setAttribute("style", "filter: contrast("+val+"%); max-height:100vh; overflow:hidden;");
 }
 
 function Brightness(e)
