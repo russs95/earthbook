@@ -14,6 +14,8 @@ function scrollFunction() {
     document.getElementById("ct-chapter-top").style.marginTop = "-45px";
     document.getElementById("ct-word-count").style.display = "none";
     document.getElementById("ct-share-link").style.display = "none";
+    document.getElementById("mandala-day").style.opacity = "0.5";
+    document.getElementById("ct-chapter-title").style.fontWeight = "bolder";
 
 
 
@@ -26,6 +28,7 @@ function scrollFunction() {
     document.getElementById("ct-word-count").style.display = "block";
     document.getElementById("ct-share-link").style.display = "block";
     document.getElementById("ct-chapter-top").style.marginTop = "20px";
+    document.getElementById("mandala-day").style.opacity = "0";
 
     
 
