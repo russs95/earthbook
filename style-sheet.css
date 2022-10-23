@@ -1,7 +1,16 @@
 /*TRACTATUS AYYEW BOOKAPP VERSION 0.1*/
 
 
-
+label {
+  width:500px;
+  height:200px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+  cursor: pointer;
+}
 
 
 @font-face {
@@ -52,7 +61,7 @@
 .book-box-header {
   font-family: 'CooperLt';
   font-size: 1.3em;
-  padding: 25px 10px 10px 0px;
+  padding: 28px 0px 12px 5px;
   color: inherit;
 }
 
@@ -854,7 +863,7 @@ margin-right: -42px;
 
   @media screen and (max-width: 700px) {
     #row {
-      margin-top: -90px;
+      margin-top: -95px;
   }
 }
 
