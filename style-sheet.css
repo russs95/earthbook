@@ -43,6 +43,19 @@
   font-size: 1.1em;
 }
 
+@media screen and (max-width: 700px) {
+  #book-box {
+  font-size: 0.95em;
+  }
+}
+
+.box-box-header {
+  font-family: 'CooperLt';
+  font-size: 1.3em;
+  padding: 15px 0px 8px 0px;
+  color: inherit;
+}
+
 
 /*
 .book-box-day {  
@@ -101,11 +114,7 @@
   font-family: inherit;
 }
 
-@media screen and (max-width: 700px) {
-  .chapter-top {
-  font-size: 1.2em;
-  }
-}
+
 
 
 
