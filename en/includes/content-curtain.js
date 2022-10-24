@@ -15,7 +15,7 @@ class ContentCurtain extends HTMLElement {
             
             <div class="contents-title">Book One</div>
             
-            <a href="preface">
+            <a href="preface.html">
             <div class="tc-item">
               <div class="magic-circle"></div>
               <div class="chapter-name-tc">Preface</div>
@@ -23,7 +23,7 @@ class ContentCurtain extends HTMLElement {
               <div class="word-count-tc"><i>8 words</i></div>
             </div></a>
 
-            <a href="quickstart">
+            <a href="quickstart.html">
             <div class="tc-item">
                 <div class="chapter-name-tc">Quick start</div>
                 <div class="word-count-tc"><i>35 words</i></div>

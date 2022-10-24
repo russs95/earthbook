@@ -110,9 +110,9 @@ text-align: center;
 display: flex;
 flex-flow: column;
 justify-content: center;
-padding: 60px 30px 60px 30px;
+padding: 60px 0px 60px 0px;
 transition: 0.4s;
-  width: 60%;
+  width: fit-content;
   top: 0;
   bottom: 0;
   right: 0;
@@ -125,6 +125,11 @@ transition: 0.4s;
   margin-top: 20px;
 }
 
+#mandala-day {width: 300%;
+opacity: 0.1;
+filter: inverse(100);
+z-index: 12;}
+
 .book-title-night {
   background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
 }
@@ -132,7 +137,7 @@ transition: 0.4s;
 #ct-chapter-title {
     font-family: 'CooperLt';
     font-weight: 500;
-    font-size: 6em;
+    font-size: 3.6em;
     color: inherit;
     font-variant-caps: all-petite-caps;
     transition: 0.3s;
@@ -148,8 +153,6 @@ transition: 0.4s;
     margin-top: 10px;
     display: block;
     transition: 0.3s;
-
-    
 }
 
 #ct-word-count {
@@ -201,14 +204,14 @@ transition: 0.4s;
     #ct-main {
         margin-left: 4%;
         margin-right: 4%;
-        margin-top: 200px;
+        margin-top: 80px;
     }
   }
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     #ct-main {
       margin-left: 8%;
       margin-right: 8%;
-      margin-top: 220px;
+      margin-top: 80px;
     }
   }
   @media screen and (min-width: 1325px) {
@@ -225,11 +228,23 @@ transition: 0.4s;
 
     margin: 40px 20px 40px 10px;
     padding: 0px 25px 0px 25px;
-    border-left: 5px grey solid;
+    border-left: 3px rgb(25, 25, 25) solid;
     font-style: italic;
   }
 
-
+.next-button {
+  background: black;
+  font-family: 'Mulish';
+  font-size: 1.3em;
+  padding: 8px 20px 8px 20px;
+  color: white;
+  border-radius: 55px;
+  width: fit-content;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
 
 
 </style>
@@ -245,7 +260,7 @@ transition: 0.4s;
 <!--HEADER NAVBAR-->
 <header-component></header-component>
 <div id="ct-chapter-top">
-    <div id="ct-chapter-title">Summaries</div>
+    <div id="ct-chapter-title">Quick Start</div>
     <div id="ct-book-title">Book One | Tractatus Ayyew</div>
     <div id="ct-word-count"><i>543 words</i></div>
     <div id="ct-share-link">&#9758;</div>
@@ -300,13 +315,13 @@ transition: 0.4s;
 
             <p>Now, let’s put our ethic within the broader context that we’ll be exploring:</p>
 
-            <div class="quote"><p>Certain societies have mastered the art of ecological integration far better than others.  Rather than deplete the ecosystems of which they were a part, they steadily enriched them.  Our modern civilization has been doing the just opposite.  The pattern of our modern processes— including those we aspire to be green (in fact, especially these ones!)—  is systematically ecologically depleting.  Like our plastic.  Derived as it is from fossil-fuels, plastic holds within it our modern story and Earth’s story.  By retracing plastic’s full multi-billion year story, we can see the characteristic pattern by which our planet greened the biosphere:  the way in which Earth’s spiraled its matter and energy inwards and outwards to the benefit of all.  Through this dual spiral, Earth’s systems unfurled into ever more vital and diverse systems that grew more consciousness of their interconnection.  Looking at ecological enriching cultures we can see this same pattern in their ecological integration.  To follow their example, we must first amend our metaphysics to add human ecological contribution to our imagination.  What we call ‘green’.  Then, to be green our processes must likewise embody Earth’s pattern in managing their energy and matter.  To do so, our enterprises must account for their ecological impacts and show that they have indeed achieved a net-dispersal of energy, a net-concentration of matter and a vitalization of the diversity and consciousness of the ecosystems that they are a part of.  Following the Earth’s example we can return to our plastic and embody the pattern of contribution into its management.  This way we can transition our plastic management (and our other processes) from depletion to contribution— from grey to green.</p></div>
+            <div class="quote"><p>As we become more aware of the ecological crises of our modern age, we long to amend and 'green' our ways.  Our modern problem with plastic represents both the essence of modern crises and our longing to do better.  As a fossil-fuel by-product, plastic embodies the planetary and human stories of both the biosphere's primordial flourishing and its modern depletion.  By retracing plastic’s full multi-billion year story, not only can we understand the source of our plastic, we also can observe the ways in which the Earth systematically enriched the biosphere to enable our modern moment.  In particular: the ways in which Earth’s spiraled its matter and energy inwards and outwards to unfurl ever greater vitality, diversity and consciousness.  Observing societies that have long mastered their ecological integration we can see this same pattern embodied in their cultures.  To follow their example, we must amend our metaphysics to recognize 'human ecological contribution'.  Then, to achieve it (to be green) our processes require the embodiment of Earth’s pattern in the management of their energy and matter.  Specifically, our enterprises must account and disclose their ecological impacts to show a net-dispersal of energy, a net-concentration of matter and a vitalization of the diversity and consciousness of the ecosystems that they are a part of.  Finally, we can return to our plastic and embody the pattern of contribution into its management.  This way, following Earth's example we can transition our plastic (and more) from a depletion to a contribution— from grey to green.
+            </p></div>
 
-            <p>Yes, that’s a tad technical!  However, our seeds sown, we now know where our roots are headed and how our branches will unfurl.   
+            <p>Our seeds sown, we now know where our roots are headed and how our branches will unfurl.   
             </p>
 
-            <p>So let’s begin. 
-            </p>
+          <div class="next-button">Next: Imagine</div>
 </div>
 
 

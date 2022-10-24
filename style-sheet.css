@@ -399,13 +399,13 @@ input:checked + label.toggle svg.moon {
   order: 3;
   opacity: 0;
   margin-left: -8px;
-
 }
 
 @media screen and (max-width: 699px) {
   .question {
     opacity: 1;
   }
+}
 
 .footer-middle:hover > .an-earthbook + .what-is  {
   opacity: 0.8;
@@ -423,8 +423,6 @@ input:checked + label.toggle svg.moon {
 
 
 .footer-right {
-
-  
   text-align: right;
   display: flex;
   flex: auto;
@@ -579,6 +577,7 @@ margin: auto;
     color: #969BA1 !important;
     
     }
+  
 
 .action-btn:hover {
     background: white;
@@ -1951,14 +1950,14 @@ p {
 
   @media screen and (max-width: 699px) {
     p {
-      font-size: 1.0em;
+      font-size: 1.3em;
       line-height: 1.3;
     }
   }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
     p {
-      font-size: 1.3;
+      font-size: 1.5em;
       line-height: 1.3;
     }
   }
@@ -2146,7 +2145,7 @@ h6 {
 
 
 .lead-text {
-    font-family: 'Mulish', Arial, sans-serif;
+    font-family: 'CooperLT';
     font-size: 1.5em;
   font-weight: 300;
 }
