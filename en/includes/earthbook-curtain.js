@@ -11,7 +11,7 @@ class Earthbook extends HTMLElement {
       <div class="overlay-content-earthbook">         
             <div>
                 <h1>Earthbooks are for readers, writers & Earth.</h1>
-                <h3>Earthbooks embody the principles of regenerative and Earthen social and ecological principles in their writing and publishing.</h3>
+                <h3>An Earthbook embodies the principles of regenerative social and ecological principles in its writing, publishing and presentation.</h3>
             </div>
 
             <div id="virtue-box">
@@ -45,7 +45,7 @@ class Earthbook extends HTMLElement {
 
             </div>
 
-            <div><h3><i>The Medium is the Message.</i></h3></div>
+            <div><h2><i>The Medium is the Message.</i></h2></div>
 
    
 	      <div id="wcb" class="carbonbadge wcb-d"></div>
