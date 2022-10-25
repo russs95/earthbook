@@ -1,0 +1,51 @@
+
+
+
+function scrollFunction() {
+
+
+  if ( document.body.scrollTop > 30 || document.documentElement.scrollTop > 30 ) {
+    
+    //AFTERmargin-top: -67px;
+    document.getElementById("navbar-day").style.height = "70px";
+    document.getElementById("ct-chapter-title").style.fontSize = "1.2em";
+    document.getElementById("ct-book-title").style.fontSize = "0.9em";
+    document.getElementById("ct-book-title").style.marginTop = "2px";
+    document.getElementById("ct-chapter-top").style.marginTop = "-67px";
+    document.getElementById("ct-word-count").style.display = "none";
+    document.getElementById("ct-share-link").style.display = "none";
+    document.getElementById("mandala-day").style.opacity = "0.5";
+    document.getElementById("ct-chapter-title").style.fontWeight = "bolder";
+
+
+
+
+  } else {
+    //BEFORE
+    document.getElementById("navbar-day").style.height = "400px";
+    document.getElementById("ct-chapter-title").style.fontSize = "6em";
+    document.getElementById("ct-book-title").style.display = "1.4em";
+    document.getElementById("ct-word-count").style.display = "block";
+    document.getElementById("ct-share-link").style.display = "block";
+    document.getElementById("ct-chapter-top").style.marginTop = "20px";
+    document.getElementById("mandala-day").style.opacity = "0";
+
+  }
+}
+
+
+  
+
+
+/* Open table of contents someone clicks on the span element */
+function openContents2() {
+  document.getElementById("left-table-of-contents").style.width = "100%";
+  document.body.style.overflowY = "hidden";
+  document.body.style.maxHeight = "100vh";
+}
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeContents2() {
+  document.getElementById("left-table-of-contents").style.width = "0%";
+  document.body.style.overflowY = "unset";
+  document.body.style.maxHeight = "unset";
+} 

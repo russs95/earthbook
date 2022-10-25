@@ -302,15 +302,12 @@ input:checked + label.toggle svg.moon {
   justify-content: center;
   height: 60px;
 
-  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+  /*background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;*/
   background-size: 60%;
   background-color: rgb(244, 242, 242);
   border-color: rgb(163, 163, 163);
   color:  #202124 ;
-
-
 }
-
 
 
 .navbar-bottom-night {
@@ -319,7 +316,91 @@ input:checked + label.toggle svg.moon {
   border-color: rgb(66, 66, 66) !important;
   color: white !important;*/
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3) !important;
+  z-index: 14;
 }
+
+#footer-content {
+  
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  padding: 0px;
+  border-top: 1px;
+  border-style: solid;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  border-color: rgb(163, 163, 163);
+  color:  #202124 ;
+  z-index: 12;  
+  box-shadow: 0 0px 15px rgba(85, 84, 84, 0.08);overflow: hidden;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 150px;
+  width: 100%;
+
+  /*background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;*/
+  background-size: 60%;
+  background-color: rgb(244, 242, 242);
+  border-color: rgb(163, 163, 163);
+  color:  #202124 ;
+  z-index: 15;
+}
+
+
+.next-section {
+  display: block;
+  text-align:left;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.next-sec {
+  font-family: 'Mulish';
+  font-weight: bold;
+  font-size: 1.1em
+}
+
+.sec-name {
+  font-family: 'CooperLt';
+  font-size: 1em
+}
+
+
+.prev-button {
+  background: rgb(235, 235, 235);
+  font-family: 'Mulish';
+  font-size: 1.3em;
+  padding: 8px 20px 8px 20px;
+  color: rgb(121, 121, 121);
+  border-radius: 55px 0px 0px 55px;
+  width: fit-content;
+  margin-right: 20px;
+  margin-left: auto;
+  text-align: center;
+  margin-right: -90px;
+}
+
+
+.next-button {
+  background: black;
+  font-family: 'Mulish';
+  font-size: 1.3em;
+  padding: 8px 20px 8px 20px;
+  color: white;
+  border-radius: 0px 55px 55px 0px;
+ 
+  width: fit-content;
+  margin-right: 20px;
+  margin-left: auto;
+  text-align: center;
+}
+
 
 .footer-icon-left { 
   padding: 20px 10px 20px 20px;
@@ -1019,8 +1100,7 @@ margin-right: -42px;
     border-radius: 20px;
     text-align: center;
     position: fixed;
-   
-    
+  
     }
     }
 
@@ -1702,7 +1782,6 @@ display: none;
 
 #bottom-earthbook {
   background-color: rgb(226, 226, 226); 
-  background-color: rgba(231, 231, 231, 0.95); 
   color: black;
   z-index: 21;
 }
@@ -1748,9 +1827,14 @@ display: none;
   font-size: smaller;
 }
 
-.virtue-desc {
-  display: none;
+.virtue {
+  margin: auto; 
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
 }
+
+
 
 .bookplate-title { 
   font-variant-caps: small-caps;
@@ -1798,44 +1882,46 @@ display: none;
 
   .virtue img {
     width: 135px;
+  
+    opacity: 1;
   }
   
   .virtue {
     padding: 15px;
-    width: 190px;
-  }
+    width: 170px;
+    height: 150px;
+    cursor: pointer;
+  } 
 
+  .virtue-desc
+ {
+  opacity: 0;
+  margin-top: -100px;
+  font-size: 1.5em;
 }
 
 .virtue:hover 
  {
-  width: 200px;
-  padding: 10px;
-  font-size: 1em;
-  height: 250px;
-  transition: 0.3s;
-  flex-grow: 3;
-  max-width:200px;
+  padding: 15px;
+  width: 170px;
+  height: 150px;
   cursor: pointer;
-  
 }
 
 .virtue:hover > .virtue-desc
  {
-  display: contents;
+  opacity: 1;
   font-size: 1.5em;
- 
-
 }
 
 .virtue:hover > img
  {
-
-  width: 155px;
-  display: none;
-  transition: 0.3s;
-
+  width: 135px;
+  opacity: 0;
+  transition: 0.5s;
 }
+}
+
 
 /* The navigation links inside the overlay */
 .overlay-earthbook a {
@@ -1876,6 +1962,11 @@ display: none;
   flex-direction: row;
   justify-content: center;
   align-content: center;
+  padding-bottom: 50px; 
+}
+
+.virtue-box-night {
+  filter: inverse(100%);
 }
 
 
@@ -1885,7 +1976,7 @@ display: none;
   font-size: 0.8em;
   color: inherit;
   text-align: center;
-  padding: 5px;
+  color: black;
 }
 
 #wcb.wcb-d #wcb_a {

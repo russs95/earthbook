@@ -1,46 +1,6 @@
 
 
 
-function scrollFunction() {
-
-
-  if ( document.body.scrollTop > 30 || document.documentElement.scrollTop > 30 ) {
-    
-    //AFTER
-    document.getElementById("navbar-day").style.height = "70px";
-    document.getElementById("ct-chapter-title").style.fontSize = "1.2em";
-    document.getElementById("ct-book-title").style.fontSize = "0.9em";
-    document.getElementById("ct-book-title").style.marginTop = "2px";
-    document.getElementById("ct-chapter-top").style.marginTop = "-45px";
-    document.getElementById("ct-word-count").style.display = "none";
-    document.getElementById("ct-share-link").style.display = "none";
-    document.getElementById("mandala-day").style.opacity = "0.5";
-    document.getElementById("ct-chapter-title").style.fontWeight = "bolder";
-
-
-
-
-  } else {
-    //BEFORE
-    document.getElementById("navbar-day").style.height = "400px";
-    document.getElementById("ct-chapter-title").style.fontSize = "6em";
-    document.getElementById("ct-book-title").style.display = "1.4em";
-    document.getElementById("ct-word-count").style.display = "block";
-    document.getElementById("ct-share-link").style.display = "block";
-    document.getElementById("ct-chapter-top").style.marginTop = "20px";
-    document.getElementById("mandala-day").style.opacity = "0";
-
-    
-
-
-
-  }
-}
-
-
-  
-
-
 
 
 
@@ -58,7 +18,6 @@ function closeContents() {
   document.body.style.overflowY = "unset";
   document.body.style.maxHeight = "unset";
 } 
-
 
 /* Open settings when someone clicks on the span element */
 function openSettings() {
@@ -173,44 +132,14 @@ function closeBookplate() {
     element.classList.toggle("book-title-night");
     var element = document.getElementById("underlayer");
     element.classList.toggle("dark-mode");
+    var element = document.getElementById("bottom-earthbook");
+    element.classList.toggle("dark-mode");
+    var element = document.getElementById("virtue-box");
+    element.classList.toggle("virtue-box-night");
   } 
 
   // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
-
-
-/*
-
-
-
- setTimeout(() => {
-      document.getElementById("main").style.position ="relative";
-    
-      // 👇️ if you used `display` to hide element
-      // el.style.display = 'block';
-    }, 2000); // 👈️ delay in milliseconds
-
-function scrollFunction() {
-  //AFTER
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar-day").style.height = "75px";
-    document.getElementById("book-title").style.backgroundSize = "0%";
-    document.getElementById("main-title").style.padding = "15px 10px 50px 10px";
-    document.getElementById("main-title").style.fontSize = "2.2em";
-    document.getElementById("menu-settings").style.margin = "8px -38px 5px 0px";
-    document.getElementById("menu-button").style.margin = "8px -27px 5px -50px";
-    document.getElementById("side").style.marginTop = "-100px";
-  } else {
-    //BEFORE
-    document.getElementById("navbar-day").style.height = "208px";
-    document.getElementById("book-title").style.backgroundSize = "60%";
-    document.getElementById("main-title").style.padding = "40px 10px 18px 10px";
-    document.getElementById("main-title").style.fontSize = "3.2em";
-    document.getElementById("menu-settings").style.margin = "70px -20px 5px 0px";
-    document.getElementById("menu-button").style.margin = "70px 0px 5px -35px";
-    document.getElementById("side").style.marginTop = "30px";
-  }
-}*/
 
 
 
