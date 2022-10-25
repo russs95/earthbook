@@ -12,18 +12,18 @@ class Header extends HTMLElement {
            
         </div>
 
-        <span style="cursor:pointer" onclick="openBookplate()">
-        <div id="mandala-day"></div>
+        <span style="cursor:pointer" onclick="openContents()">
+        <!--<div id="mandala-day"></div>-->
         </span>
         
         
-        <div id="book-title" style="background-size: 60%;" onclick="openBookplate()">
+        <div id="book-title" style="background-size: 60%;" onclick="openContents()">
             <div id="main-title" style="padding: 40px 10px 18px; font-size: 3.2em;">Tractatus Ayyew</div>
             <div id="sub-title"><i>An Earthen Ethics</i></div>
             <div id="sub-earthbook">earthBook edition</div>
         </div>
 
-        <div id="bookplate-content"> 
+       <!-- <div id="bookplate-content"> 
           <h1 class="bookplate-title">Tractatus Ayyew</h1>
 
           <h2 class="bookplate-subtitle"><i>An Earthen Ethics</i></h2>
@@ -39,7 +39,7 @@ class Header extends HTMLElement {
           
         </div>
         <div id="bookplate-button" style="cursor:pointer" onclick="closeBookplate()"><span><img src="../svgs/up-arrow.svg" style="width:100px;"></span></div>
-       
+       -->
         <div id="menu-settings">
         <span style="cursor:pointer" onclick="openSettings()"><img src="../svgs/left-menu.svg"></span>
     </div>

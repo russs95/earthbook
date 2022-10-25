@@ -8,7 +8,7 @@ class FooterComponent extends HTMLElement {
 
     <div id="navbar-bottom-day">
 
-        <div class="footer-left" style="cursor:pointer;" onclick="openBookplate()">
+        <div class="footer-left" style="cursor:pointer;" onclick="openBookplate2()">
              <div class="footer-icon-left">
              <img src="../svgs/tractatus-simple-mandala.svg" width="40px">
             </div> <div class="footer-word">about</div>

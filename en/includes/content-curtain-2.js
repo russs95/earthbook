@@ -6,31 +6,12 @@ class ContentCurtain2 extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 
-    <div id="left-table-of-contents" class="overlay-tc">
+    <div id="table-of-contents" class="overlay-tc">
         
         <a href="javascript:void(0)" class="closebtn" onclick="closeContents()">&times;</a>
         
         <div class="overlay-content-tc">
 
-            <div id="row">
-                <div id="side2">
-
-                    <img src="../photos/cover-500px.webp" alt="Tractatus Ayyew - EarthBook">
-
-                    <!--<div class="welcome-to">Welcome to the <b><span style="cursor:pointer" onclick="openEarthbook()">EarthBook</span></b> edition of the Tractatus Ayyew.</div>-->
-
-                    <div class="button-row">
-                        <div id="read-btn" class="action-btn"><a href="index.html">Dashboard</a></div>
-                        <div id="buy-btn" class="action-btn"><a href="buy">🛒 Buy</a></div>
-                        <div id="pdf-btn" class="action-btn"><a href="pdf"> ↓ PDF</a></div>
-                    </div>
-                
-                    <div id="knack-dist_2"><h5 style="padding-bottom: 20px;margin-top: 30px;margin-bottom: 80px;font-size: 1em;">Get our updates...</h5></div>
-                    <br><br>
-                
-                </div>
-
-                <div id="main2">
                     <div class="contents-title">Book One</div>
                     
                     <a href="preface.html">
@@ -103,8 +84,28 @@ class ContentCurtain2 extends HTMLElement {
                         
                     </div>
                     </a>
+
+
+                    <div class="tc-button-row">
+                        <div id="read-btn" class="action-btn" style="height: 26px; flex-grow: 1"><a href="index.html"><i style="background-image: url(../icons/dash.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Dashboard</a></div>
+
+                       <!-- <div><img src="../photos/cover-500px.webp" alt="Tractatus Ayyew - EarthBook" style="width: 100px;border-radius: 5px;"></div>-->
+
+                     
+                        <div id="buy-btn" class="action-btn" style="height: 26px;flex-grow: 1"><a href="buy"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</a></div>
+                
+                        <div id="pdf-btn" class="action-btn" style="height: 26px; flex-grow: 1"><a href="pdf"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>
+
+                        <div id="knack-dist_2"><div class="action-btn" style="height: 26px; flex-grow: 1">Get our updates...</div></div>
+
+            <br><br>
                 </div>
+                </div>
+                
+
             </div>
+
+            <div id="tc-button" style="cursor:pointer" onclick="closeContents()"><span><img src="../svgs/up-arrow.svg" style="width:100px;"></span></div>
     </div>
 
 

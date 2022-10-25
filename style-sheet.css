@@ -380,10 +380,15 @@ input:checked + label.toggle svg.moon {
   color: rgb(121, 121, 121);
   border-radius: 55px 0px 0px 55px;
   width: fit-content;
-  margin-right: 20px;
   margin-left: auto;
   text-align: center;
-  margin-right: -90px;
+  z-index: 9;
+}
+
+.prev-button:hover {
+  padding-right: 30px;
+  background: white;
+  color:black;
 }
 
 
@@ -394,11 +399,18 @@ input:checked + label.toggle svg.moon {
   padding: 8px 20px 8px 20px;
   color: white;
   border-radius: 0px 55px 55px 0px;
- 
   width: fit-content;
   margin-right: 20px;
   margin-left: auto;
   text-align: center;
+  z-index: 10;
+}
+
+.next-button:hover {
+  
+  padding-right: 30px;
+  margin-right: 10px;
+
 }
 
 
@@ -424,6 +436,23 @@ input:checked + label.toggle svg.moon {
   font-family: "Mulish";
   font-size: 1em;
 }
+
+
+
+.footer-right {
+  text-align: right;
+  display: flex;
+  flex: auto;
+  height: 100%;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+  font-family: "Mulish";
+  font-size: 1em;
+  margin: auto;
+}
+
+
 
 .footer-middle {
 
@@ -500,20 +529,6 @@ input:checked + label.toggle svg.moon {
   margin-left: 0px;
 }
 
-
-
-
-.footer-right {
-  text-align: right;
-  display: flex;
-  flex: auto;
-  height: 100%;
-  align-items: center;
-  flex-grow: 1;
-  flex-direction: row-reverse;
-  font-family: "Mulish";
-  font-size: 1em;
-}
 
 
 
@@ -851,6 +866,7 @@ a:active {
   }
 }
 
+
 #bookplate-button {
   position: absolute;
   width: fit-content;
@@ -866,8 +882,6 @@ background-color: white;
 padding-bottom: 70px;
 margin-bottom: -80px;
 box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-
-display: none;
 }
 
 #bookplate-button:hover {
@@ -883,6 +897,118 @@ display: none;
   bottom: 40px !important;
 }
 
+
+#tbookplatec-button {
+  position: absolute;
+  width: fit-content;
+  margin: auto;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  padding: 30px;
+  padding-bottom: 30px;
+border-radius: 50px;
+background-color: white;
+padding-bottom: 70px;
+margin-bottom: -80px;
+box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+z-index: 30;
+}
+
+#bookplate-button:hover {
+  bottom: 40px;
+}
+
+.bookplate-button-night {
+  background-color:  #292a2d !important;
+}
+
+.bookplate-button-night:hover {
+  background-color: #242529 !important;
+  bottom: 40px !important;
+}
+
+.bookplate-button-row {
+  display: flex;
+  flex: row;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+
+#bookplate-button {
+  position: absolute;
+  width: fit-content;
+  margin: auto;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  padding: 30px;
+  padding-bottom: 30px;
+border-radius: 50px;
+background-color: white;
+padding-bottom: 70px;
+margin-bottom: -80px;
+box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+}
+
+#bookplate-button:hover {
+  bottom: 40px;
+}
+
+.bookplate-button-night {
+  background-color:  #292a2d !important;
+}
+
+.bookplate-button-night:hover {
+  background-color: #242529 !important;
+  bottom: 40px !important;
+}
+
+
+#tc-button {
+  position: absolute;
+  width: fit-content;
+  margin: auto;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  padding: 30px;
+  padding-bottom: 30px;
+border-radius: 50px;
+background-color: white;
+padding-bottom: 70px;
+margin-bottom: -80px;
+box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+z-index: 30;
+display: none;
+}
+
+#tc-button:hover {
+  bottom: 40px;
+}
+
+.tc-button-night {
+  background-color:  #292a2d !important;
+}
+
+.tc-button-night:hover {
+  background-color: #242529 !important;
+  bottom: 40px !important;
+}
+
+.tc-button-row {
+  display: flex;
+  flex: row;
+  align-items: stretch;
+  justify-content: center;
+  margin-top: 30px;
+}
 
 
 #menu-button {
@@ -1151,7 +1277,7 @@ margin-right: -42px;
 /*TABLE OF CONTENTS*/
 
  /* Table of Contents Menu (background) */
- #left-table-of-contents {
+ #table-of-contents {
   background: url(svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
  /* background-position-y: -55px;*/
  background-size: contain;
@@ -1186,8 +1312,8 @@ margin: 18px 0px 8px 0px;
 
  .overlay-tc {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
-    width: 0;
+    height: 0;
+    width: 100%;
     position: fixed; /* Stay in place */
     z-index: 21; /* Sit on top */
     left: 0;
@@ -1234,7 +1360,6 @@ margin: 18px 0px 8px 0px;
 
 .contents-title {
   font-family: 'CooperLt';
-  font-size: 1.5em;
   font-variant-caps: small-caps;
   padding-bottom: 20px;
   letter-spacing: 4px;
@@ -1243,20 +1368,22 @@ margin: 18px 0px 8px 0px;
 
 @media screen and (max-width: 700px) {
   .contents-title {
-    font-size: 1.6em;
+    font-size: 1.7em;
+    padding-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   .contents-title {
-    font-size: 1.7em;
+    font-size: 2em;
+    padding-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 1325px) {
   .contents-title {
-    font-size: 2.1em;
-    padding-bottom: 20px;
+    font-size: 2.6em;
+    padding-bottom: 40px;
     }
   }
 
@@ -1421,7 +1548,7 @@ display: none;
   .overlay-tc .closebtn {
     position: absolute;
     top: 20px;
-    left: 20px;
+    right: 49%;
     font-size: 60px;
     z-index: 22;
     font-weight: lighter;
@@ -1590,7 +1717,6 @@ display: none;
 
 #top-bookplate {
     background-color: rgb(226, 226, 226); 
-    background-color: rgba(231, 231, 231, 0.95); 
     color: black;
     z-index: 21;
 }
@@ -1631,16 +1757,17 @@ display: none;
     flex-flow: column;
     height:100%;
     font-size: smaller;
+    
 }
 
 #mandala-day {
-  margin: auto;
-  /*background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;*/
+  
+  /*margin: auto;*/
+
   background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;
   width: 100%;
   background-size: contain;
   transition: 0.3s;
-  display: none;
 
 }
 
@@ -1655,7 +1782,7 @@ display: none;
 
 
 #bookplate-content {
-  display: none;
+
   transition: 0.3s;
   text-shadow: 0 0px 4px #ffffff;
 
@@ -1711,6 +1838,7 @@ display: none;
     height: 200px;
   background-size: contain;}
   
+
   .overlay-content-bookplate {
       width: 70%;
 

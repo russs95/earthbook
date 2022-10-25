@@ -124,11 +124,12 @@
   margin-top: 20px;
 }
 
+/*
 #mandala-day {width: 300%;
   opacity: 0.1;
   filter: inverse(100);
   z-index: 12;
-}
+}*/
 
 .book-title-night {
   background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
@@ -216,8 +217,8 @@
    }
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     #ct-main {
-      margin-left: 15%;
-      margin-right: 15%;
+      width: 70%;
+      margin: auto;
       margin-top: 80px;
     }
     #ct-chapt-graphic {
@@ -226,8 +227,7 @@
 
     }
     .footer-size {
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 70%
    }
   }
   @media screen and (min-width: 1325px) {
@@ -402,7 +402,7 @@ margin-top: 1px !important;
 <!--HEADER NAVBAR-->
 <header-component></header-component>
 <div id="ct-chapter-top">
-  <span style="cursor:pointer" onclick="openContents2()">
+  <span style="cursor:pointer" onclick="openContents()">
     <div id="ct-chapter-title">Quick Start</div>
     <div id="ct-book-title">Book One | Tractatus Ayyew</div>
     <div id="ct-word-count"><i>543 words</i></div>
@@ -421,9 +421,9 @@ margin-top: 1px !important;
 <settings-curtain></settings-curtain>
 
 
-<!--BOOK PLATE
+<!--BOOK PLATE-->
 
-<bookplate-curtain></bookplate-curtain>-->
+<bookplate-curtain></bookplate-curtain>
 
 <!--ABOUT EARTHBOOK-->
 
@@ -441,25 +441,29 @@ margin-top: 1px !important;
 <div id="ct-main">
 <!-- The flexible grid (content) -->
 
-            
-            
-        <div class="lead-page-paragraph">
-            <p>Two sentences and two paragraphs.</p>
-        </div>
-            
-            <p>1. Earthen ethics can be summed up in a simple proposition:
+<br><br>
+<a name="short"></a>
+            <h2>1. A short sentence</h2>
+            <p>Earthen ethics can be summed up in a simple proposition:
             </p>
 
             <div class="quote"><p>A process that follows the Earth’s example in its management of matter and energy is green.</p></div>
-
-            <p>2. By adding 'must' and some more speficis we have the basic Earthen ethic: </p>
+            <br><br>
+            <a name="long"></a>
+            <h2>2. A long sentence</h2>
+            
+            <p>By adding 'must' and some more speficis we have the basic Earthen ethic: </p>
 
             <div class="quote"><p>To be green a process must be an ecological contribution and embody Earth’s pattern of concentrating matter and dispersing energy to cyclicly enrich the vibrancy, diversity and consciousness of the system of which it is a part.
             </p></div>
 
-            <p>3. Now, let’s put our ethic within the broader context that we’ll be exploring:</p>
+            <br><br>
+            <a name="paragraph"></a>
+            <h2>3. A paragraph</h2>
+            
+            <p>Now, let’s put our ethic within the broader context that we’ll be exploring:</p>
 
-            <div class="quote"><p>As we become more aware of the ecological crises of our modern age, we long to amend and 'green' our ways.  Our plastic represents both the essence of our modern crises and our longing to do better.  As a fossil-fuel by-product, plastic embodies both the biosphere's primordial flourishing and its modern depletion.  By retracing plastic’s full multi-billion year story, not only can we understand the source of our plastic, we also can observe the ways in which the Earth systematically enriched the biosphere to enable our modern moment.  In particular: the ways in which Earth’s spiraled its matter and energy inwards and outwards to unfurl ever greater vitality, diversity and consciousness.  Observing societies that have long mastered their ecological integration we can see this same pattern embodied in their cultures.  To follow their example, we must amend our metaphysics to recognize the human capacity for ecological contribution.  Then, to achieve it-- to be green-- our processes must embody Earth’s pattern in the management of their energy and matter.  Specifically, our enterprises must account and disclose their ecological impacts to show a net-dispersal of energy, a net-concentration of matter and a vitalization of the diversity and consciousness of the ecosystems that they are a part of.  This way, following Earth's example we can transition our plastic (and more) from a depletion to a contribution— from grey to green.
+            <div class="quote"><p>As we become more aware of the ecological crises of our modern age, we long to amend and 'green' our ways.  Our plastic represents both the essence of our modern crises and our longing to do better.  As a fossil-fuel by-product, plastic embodies both the biosphere's primordial flourishing and its modern depletion.  By retracing plastic’s full multi-billion year story, not only can we understand the source of our plastic, we also can observe the ways in which the Earth systematically enriched the biosphere to enable our modern moment.  In particular: the ways in which Earth’s spiraled its matter and energy inwards and outwards to unfurl ever greater vitality, diversity and consciousness.  Observing societies that have long mastered their ecological integration we can see this same pattern embodied in their cultures.  To follow their example, we must amend our metaphysics to recognize the human capacity for ecological contribution.  Then, to achieve it-- to be green-- our processes must embody Earth’s pattern in the management of their energy and matter.  Specifically, our enterprises must account and disclose their ecological impacts to show a net-dispersal of energy, a net-concentration of matter and a vitalization of the diversity and consciousness of the ecosystems that they are a part of.  This way, following Earth's example we can transform our otherwise grey processes (like our plastic) to ones that we can be confident are green.
             </p></div>
             
       
@@ -475,6 +479,15 @@ margin-top: 1px !important;
 
   <div class="footer-size">
     <div class="footer-left">
+
+      <a href="#top"><div class="footer-icon-left">
+        <img src="../svgs/to-the-top-arrow.svg" width="35px" title="Back to the top">
+       </div></a>
+       
+      <div class="footer-icon-left" style="cursor:pointer;" onclick="openBookplate2()">
+        <img src="../svgs/tractatus-simple-mandala.svg" width="40px" title="Tractatus Ayyew bookplate">
+       </div>
+       
         <div class="next-section">
             <div class="next-sec">Next section:</div>
             <div class="sec-name"><i>Chapter 1 | Imagine</i></div>
@@ -482,8 +495,8 @@ margin-top: 1px !important;
     </div>
     <div class="footer-right">
      
-      <div class="next-button">Next ➔</div>
-      <div class="prev-button">￩ Previous</div>
+      <a href="imagine.html"><div class="next-button">Next ➔</div></a>
+      <a href="preface.html"><div class="prev-button">￩ Previous</div></a>
     </div>
   </div>
 </div>
