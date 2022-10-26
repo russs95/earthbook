@@ -303,57 +303,23 @@ containerBrightness.setAttribute("style", "filter: brightness("+val+"%); max-hei
 
 
 
-let body = document.querySelector("body");
-let content = document.getElementById("main-page");
 
-window
-	.matchMedia("(prefers-color-scheme: dark)")
-	.addEventListener("change", function (e) {
-		const colorScheme = e.matches ? "dark" : "light";
-		console.log(colorScheme);
+/*SHARE CURTAIN COPY SCRIPT
 
-		if (colorScheme === "dark") {
-			body.style.backgroundColor = "red";
-			content.setAttribute("class", "dark");
-		} else {
-			body.style.backgroundColor = "green";
-			content.setAttribute("class", "light");
-		}
-	});
+Thanks to https://codepen.io/sebastian-jagoe/pen/xxZqwPW*/
 
+//Inititalize ClipboardJS
+new ClipboardJS('.btnClipboardJS');
 
-/*dark mode toggle*/
-
-let darkModeState = false;
-
-const button = document.querySelector(".btn");
-
-// MediaQueryList object
-const useDark = window.matchMedia("(prefers-color-scheme: dark)");
-
-// Toggles the "dark-mode" class
-function toggleDarkMode(state) {
-  document.documentElement.classList.toggle("dark-mode", state);
-  darkModeState = state;
+// SET data-clipboard-text TO CURRENT URL ON PAGE LOAD
+window.onload = function currentURL() {
+  const URL = window.location.href;
+  document.getElementById('copy-button').innerHTML = '<a onClick="copiedToClipboard()" class="btn btn-outline-secondary btn-lg btnClipboardJS" data-clipboard-text="' + URL + '" id="alertCard"><i class="fa fa-link" aria-hidden="true"></i> Copy URL</a>'
 }
 
-// Sets localStorage state
-function setDarkModeLocalStorage(state) {
-  localStorage.setItem("dark-mode", state);
+// If you only want the functionality, but not the visual effect, ignore the following function. 
+
+// AESTHETIC: CHANGE INNER HTML
+function copiedToClipboard() { document.getElementById('alertCard').innerHTML = '<i class="fa fa-check" aria-hidden="true"></i> URL Copied!';
+  setTimeout(function(){document.getElementById('alertCard').innerHTML = '<i class="fa fa-link" aria-hidden="true"></i> Copy URL Again';}, 3000);
 }
-
-// Initial setting
-toggleDarkMode(localStorage.getItem("dark-mode") == "true");
-
-// Listen for changes in the OS settings.
-// Note: the arrow function shorthand works only in modern browsers,
-// for older browsers define the function using the function keyword.
-useDark.addListener((evt) => toggleDarkMode(evt.matches));
-
-// Toggles the "dark-mode" class on click and sets localStorage state
-button.addEventListener("click", () => {
-  darkModeState = !darkModeState;
-
-  toggleDarkMode(darkModeState);
-  setDarkModeLocalStorage(darkModeState);
-});
