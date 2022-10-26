@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="embed_files/svg-pan-zoom.js"></script>
+  </head>
+
+  <body cz-shortcut-listen="true">
+    <h1>Demo for svg-pan-zoom: SVG in HTML 'embed' element</h1>
+    <embed id="demo-tiger" type="image/svg+xml" style="width: 500px; height: 500px; border:1px solid black; " src="embed_files/tiger.svg">
+
+    <script>
+      // Don't use window.onLoad like this in production, because it can only listen to one function.
+      window.onload = function() {
+        svgPanZoom('#demo-tiger', {
+          zoomEnabled: true,
+          controlIconsEnabled: true
+        });
+      };
+    </script>
+
+  
+
+
+</body></html>

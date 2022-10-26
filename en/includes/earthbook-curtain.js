@@ -22,7 +22,7 @@ class Earthbook extends HTMLElement {
                 <div class="virtue"><img src="../svgs/icon-biodiversity.svg"><div class="virtue-desc">A list of the species supported by the physical space of the book's enterprise is tracked and disclosed.</div>
                 </div>
 
-                <div class="virtue"><img src="../svgs/icon-ecoaccounting.svg"><div class="virtue-desc">The ecological accounting of the enterprise of writing and publishing are tracked and disclosed.</div>
+                <div class="virtue"><img src="../svgs/icon-ecoaccounting.svg"><div class="virtue-desc">Throughout the enterprise of writing and publishing an Earthbook ecological impacts are tracked and accounted for.</div>
                 </div>
 
                 <div class="virtue"><img src="../svgs/icon-for-earth.svg"><div class="virtue-desc">The net impact of the writing and publishing of the book was the subtraction of carbon.</div>

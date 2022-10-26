@@ -55,6 +55,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
  <script src="includes/settings-curtain.js" type="text/javascript" defer></script>
  <script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
+ <script src="includes/share-curtain.js" type="text/javascript" defer></script>
  <script src="includes/footer-component.js" type="text/javascript" defer></script>
 
 
@@ -84,10 +85,10 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <link rel="preconnect" href="../fonts/">
 <link rel="preconnect" href="../fonts/" crossorigin> 
 
-<script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js"></script>
+<!--KNACK OFF
+<script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js"></script>-->
 
-<script src="https://kit.fontawesome.com/735e38ff98.js" crossorigin="anonymous"></script>
-	
+
 </head>
 
 
@@ -103,7 +104,6 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 <!--HEADER NAVBAR-->
 <header-component></header-component>
-<header-end></header-end>
     
 
 <!--CONTENTS MENU-->
@@ -113,10 +113,13 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <!--SETTINGS-MENU-->
 <settings-curtain></settings-curtain>
 
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
 
-<!--BOOK PLATE
 
-<bookplate-curtain></bookplate-curtain>-->
+<!--BOOK PLATE-->
+
+<bookplate-curtain></bookplate-curtain>
 
 <!--ABOUT EARTHBOOK-->
 
@@ -138,6 +141,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
                 <div id="read-btn" class="action-btn"><a href="preamble"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</a></div>
                 <div id="buy-btn" class="action-btn"><a href="buy"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</a></div>
                 <div id="pdf-btn" class="action-btn"><a href="pdf"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>
+                <button class="btn">Toggle mode</button>
             </div>
           
             <div id="knack-dist_2"><h5 style="padding-bottom: 20px;margin-top: 30px;margin-bottom: 80px;font-size: 1em;">Get our updates...</h5></div>
@@ -153,7 +157,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
             </div>-->
 
             <div class="lead-text">
-            Today we're striving to green our homes, enterprises and economies.  However, what in fact should green really mean?  Inspired by cultures and creatures that have mastered the art of ecological integration, this book lays out an ecological ethics guided by Earth's example.
+            As we become more and more aware of the ecological crises caused by our modern age, we long to amend and green our ways.  However, what in fact should green really mean?  Inspired by ancient cultures and creatures that have long mastered the art of ecological integration, this book lays out an ecological ethics guided by Earth's example.
             </div>
 
             <div id="line" style="margin-top: 15px"  class="no-mobile"></div>

@@ -1,84 +1,220 @@
-/*TRACTATUS AYYEW BOOKAPP VERSION 0.1*/
+/*TRACTATUS AYYEW BOOKAPP VERSION 1.0
+
+CSS Version 1.0
+Orginal Author:  Russell Maier
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+*/
 
 
-label.toggle {
-  width:140px;
-  height:60px;
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+	1.  Typography
+	2.  TOP Earthbook Navigation Bar
+  3.	LEFT Settings Curtain
+	4. 	RIGHT Share Curtain
+	5. 	BOTTOM Bookplate 
+  6.  Main page content 
+	6.	Footer
+	7.      Forms
+	8. 	Notifications
+	9. 	Needs Review
+	10.  	New
+
+    
+Media Query parameters used throughout:
+
+@media screen and (max-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+@media screen and (min-width: 1325px)
+
+@media (prefers-contrast) {
+@media (prefers-color-scheme: dark) {
+
+/* BASICS */
+
+
+body {
+  margin: 0px;
+  background-color: rgb(252, 251, 251);
+  color: #202124;
+  position: absolute;
+  z-index: 0;
+  overflow-x: hidden; /*ARG WHY OVERFLOW?*/
+  max-width: 100%;
+    }
+
+#underlayer {   /*THis enables sepia/contrast/brightness*/
+  margin: 0px;
+  background-color: rgb(252, 251, 251);
+  max-width: 100%;
+  height: 100%;
+  }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #202124;
+    color: #BDC1C6;
+    }
+
+    #underlayer {   /*THis enables sepia/contrast/brightness*/
+      background-color: #202124;
+  }
+}
+
+@media (prefers-contrast) {
+
+  body {
+    background-color: #040404  !important;
+    color: #ffffff !important;
+    }
+  }
+
+
+
+
+@media screen and (max-width: 699px) {
+.no-mobile {
+display: none;
+}
+}
+
+
+ /*Full Page Layout System*/
+
+
+ #main-page {
+  margin: auto;
+  box-sizing: border-box;
+  padding-bottom: 180px;
+
+}
+
+@media screen and (max-width: 699px) {
+  #main-page {
+      margin-left: 3%;
+      margin-right: 3%;
+      padding-top: 200px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  #main-page {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 220px;
+  }
+}
+@media screen and (min-width: 1325px) {
+  #main-page {
+    margin-left: 15%;
+    margin-right: 15%;
+      padding-top: 250px;
+      overflow-x: hidden
+  }
+}
+
+
+/* COLUMN DESIGN */
+
+#row {  
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  overflow: hidden;
   position: relative;
-  display: block;
-  background: #ebebeb;
-  border-radius: 200px;
-  box-shadow: inset 0px 4px 12px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
-  cursor: pointer;
+  width: 100%;
 }
 
-label.toggle:after  {
-  content: "";
-  width:52px;
-  height: 52px;
-  position: absolute;
-  top:4px;
-  left:5px;
-  background: linear-gradient(180deg,#ffcc89,#d8860b);
-  border-radius: 180px;
-  box-shadow: 1px 5px 11px rgba(0,0,0,0.2);
+@media screen and (max-width: 700px) {
+  #row {
+    margin-top: -95px;
+}
 }
 
+#main {
+  overflow: hidden;
+  transition: 0.4s;
+  }
 
- input.darkmoder {
-  width: 0;
-  height: 0;
-  visibility: hidden;
+
+/* Main column */
+  
+@media screen and (max-width: 700px) {
+#main {
+  flex: 100%;
+  padding: 12px;
+}
 }
 
-input:checked + label {
-  background: #242424;
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+#main {
+  width:74%;
+  padding: 15px;
+  box-sizing: border-box;
+  float: right;
+  margin-left: 28%;
 }
-input:checked + label:after {
-  left:135px;
-  transform: translateX(-100%);
-  background: linear-gradient(180deg,#777,#3a3a3a);
-}
-label.toggle, label.toggle:after {
-  transition: 0.3s
 }
 
-label.toggle:active:after{ 
-  width: 100px; 
-}
+@media screen and (min-width: 1325px) {
+  #main {
 
-input:checked + label.toggle + .background {
-  background:#242424;
-}
+    padding: 15px;
+    box-sizing: border-box;
+    margin-left: 28%;
+    margin-right: 10%;
+
+  }
+
+  }
 
 
-label.toggle svg {
-  position: absolute;
-
-top: 12px;
-z-index: 100;
-
-}
-label.toggle svg.sun {
-  left:12px;
-  fill:#fff;
+#side { 
   transition: 0.3s;
-  width: 35px;
-  height: 35px;
+  box-sizing: border-box;
+  text-align: center;
 }
-label.toggle svg.moon {
-  left:95px;
-  fill:#7e7e7e;
-  transition: 0.3s;
-  width: 33px;
-  height: 33px;
+
+@media screen and (max-width: 700px) {
+#side {
+padding: 12px;
+margin: 0px auto;
+margin-top: 1px !important;
 }
-input:checked + label.toggle svg.sun {
-  fill:#7e7e7e;
 }
-input:checked + label.toggle svg.moon {
-  fill:#fff;
-}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+
+  #side {
+  width: 26%;
+  padding: 20px;
+  margin-top: 0px;
+  border-radius: 20px;
+  position: fixed;
+  }
+  }
+
+@media screen and (min-width: 1325px) {
+
+  #side {
+      padding: 15px;
+      margin-top: 0px;
+      position: fixed;
+      width:18%;
+      }
+      }
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	1. Typography
+
+/* -------------------------------------------------------------------------- */
 
 
 @font-face {
@@ -98,15 +234,1032 @@ input:checked + label.toggle svg.moon {
   src: url("fonts/CooperMediumBT.ttf");
  }
 
-/*
+
+p {
+  font-family: 'CooperLt', Georgia, serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  }
+
+  @media screen and (max-width: 699px) {
+    p {
+      font-size: 1.3em;
+      line-height: 1.3;
+    }
+  }
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+    p {
+      font-size: 1.5em;
+      line-height: 1.3;
+    }
+  }
+
+@media screen and (min-width: 1325px) {
+
+    P {
+      font-size: 1.6em;
+      line-height: 1.6;
+    }
+  }
+
+
+
+h1 {
+  font-family: 'CooperLt', Georgia, serif;
+}
+
+@media screen and (max-width: 699px) {
+    h1 {
+      font-size: 2em;
+      
+    }
+  }
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+    h1 {
+      font-size: 3.1em;
+    }
+  }
+
+@media screen and (min-width: 1325px) {
+
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+
+
+h2 {
+  font-family: 'CooperLt', Georgia, serif;
+}
+
+@media screen and (max-width: 699px) {
+  h2 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+
+
+h3 {    
+  font-family: 'CooperLt', Georgia, serif;
+  font-size: 1.7em;
+  font-weight: 300;}
+
+  @media screen and (max-width: 699px) {
+    h3 {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    h3 {
+      font-size: 1.6em;
+    }
+  }
+  
+  @media screen and (min-width: 1325px) {
+    h3 {
+      font-size: 1.8em;
+    }
+  }
+
+h4 { 
+  font-family: 'CooperLt', Georgia, serif;
+  font-size: 1.4em;
+  font-weight: 300;}
+
+  @media screen and (max-width: 699px) {
+    h4 {
+      font-size: 1.06em;
+    }
+  }
+  
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    h4 {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media screen and (min-width: 1325px) {
+    h4 {
+      font-size: 1.4em;
+    }
+  }
+
+
+h5 { 
+    font-family: 'Mulish', Arial, sans-serif;
+    font-weight: 300;}
+
+
+    @media screen and (max-width: 699px) {
+      h5 {
+        font-size: 1.1em;
+      }
+    }
+    
+    @media screen and (min-width: 700px) and (max-width: 1324px) {
+      h5 {
+        font-size: 1.3em;
+      }
+    }
+    
+    @media screen and (min-width: 1325px) {
+      h5 {
+        font-size: 1.4em;
+      }
+    }
+
+
+h6 { 
+  font-family: 'CooperLt', Georgia, serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.6}
+
+
+
+  a {
+    color: rgb(32, 32, 32);
+    border-color: rgb(163, 163, 163);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    a {
+      color: rgb(225, 225, 225);
+      border-color: rgb(84, 84, 84);
+    }
+
+  }
+
+  @media (prefers-contrast) {
+    a {
+      color: black;
+      border-color: white;
+    }
+  }
+
+    a:hover {
+      color: black;
+      border-color: rgb(99, 99, 99);
+      text-decoration: underline;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      a:hover {
+        color: white;
+        border-color: rgb(99, 99, 99);
+        text-decoration: none;
+      }
+    }
+
+
+
+/*DARK OFF
+    .dark-link {
+      color: black;
+      border-color: rgb(163, 163, 163);
+    }
+  
+     .dark-link {
+        text-decoration: none;
+        filter: opacity(80%);
+      }
+    */
+
+
+    
+
+
+
+@media screen and (max-width: 699px) {  /*??*/
+
+  .lead-page-paragraph {
+      font-size: 1.2em;
+      margin-top: 30px;
+  }
+  }
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	2. Earthbook Top Navigation Bar
+
+/* -------------------------------------------------------------------------- */
+
+
+#earthbook-navbar {
+  height: 200px;
+  max-height: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 21; /* Sit on top */
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  z-index: 12;
+  transition: 0.3s;
+  border-bottom: 1px;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: solid;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  margin: auto;
+  z-index: 20;
+
+  background-color: rgb(244, 242, 242);
+  border-color: rgb(163, 163, 163);
+  color:  #202124 ;
+  box-shadow: 0 4px 15px rgba(85, 84, 84, 0.3);
+}
+
+
+@media screen and (max-width: 699px) {
+  #earthbook-navbar {
+    height: 75px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #earthbook-navbar {
+    background-color: #1c1d20 !important;
+    border-color: rgb(66, 66, 66) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(7, 7, 7, 0.3) !important;
+  }
+}
+
+  /*DARK OFF
+  .navbar-night {
+    background-color: #1c1d20 !important;
+    border-color: rgb(66, 66, 66) !important;
+    color: white !important;
+    box-shadow: 0 4px 15px rgba(7, 7, 7, 0.3) !important;
+
+  } */
+
+
+
+  #settings-menu {
+    position: absolute;
+    left: 0px;
+    transition: 0.5s;
+    background: white;
+    border-radius: 50px;
+    height: 85px;
+    box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+    border: solid 1px gray;
+    padding-left: 40px;
+    left: -77px;
+    z-index: 50;
+}
+
+#settings-menu:hover {
+  left: -40px;
+  transition: 0.5s;
+  background-color: white;
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+
+#settings-menu {
+  background:  #252525   !important;
+}
+
+#settings-menu:hover {
+  background: #242529 !important;
+}
+}
+
+#settings-menu img {
+  height: 60px;
+  padding-top: 15px;
+  padding-left: 40px;
+  margin-left: -42px;
+}
+
+
+
+/*Share Button*/
+
+#share-menu {
+    position: absolute;
+    right: 0px;
+    transition: 0.3s;
+    background-color: white; /*#F9F9F9*/
+    box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+    border: solid 1px gray;
+    transition: 0.3s;
+    border-radius: 70px;
+    height: 85px;
+    padding-right: 70px;
+    right: -85px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+
+    #share-menu {
+      background:  #252525   !important;
+    }
+    
+    #share-menu:hover {
+      background: #242529 !important;
+    }
+    }
+
+#share-menu:hover {
+  right: -55px;
+  transition: 0.3s;
+  background-color: white;
+  box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
+
+}
+
+#share-menu img {
+  height: 60px;
+  padding-top: 14px;
+padding-right: 17px;
+margin-right: -42px;
+}
+
+.icon-buttons-night {
+  filter: contrast(0%) !important;}
+
+
 
 #book-title {
-  height: 200px;
-  background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat white;
-  background-size: 30px;
+  height: 208px;
+  background-size: 60%;
+  margin: auto;
+  transition: 0.4s;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: unset;
+  cursor: pointer;
+
+  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+}
+
+@media (prefers-color-scheme: dark) {
+  #book-title { 
+  background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
+}
+  }
+
+@media screen and (max-width: 699px) {
+  #book-title {
+    display: none;
+  }
+  }
+
+
+/*Book Logo*/
+
+#mandala-day {  
+  background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;
+  width: 100%;
+  background-size: contain;
+  transition: 0.3s;
+  
+  }
+  
+  @media screen and (max-width: 699px) {
+  #mandala-day {
+    background: url(svgs/tractatus-simple-mandala.svg) center no-repeat;
+    width: 60px;
+    background-size: contain;
+    display: block;
+  }
+  }
+  
+
+  @media screen and (max-width: 700px) {  
+  #mandala-day {
+    height: 200px;
+    background-size: contain;
+}
+  }
+  
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+  #mandala-day {
+    height: 350px;
+    display: none;
+  }
+  }
+
+  
+  @media screen and (min-width: 1325px) {
+  #mandala-day {
+    height: 300px;
+    display: none;
+    }
+  }
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	3. Left Settings Overlay
+
+/* -------------------------------------------------------------------------- */
+
+#left-settings-overlay {
+  background-color: rgb(226, 226, 226); 
+  background-color: rgba(231, 231, 231); 
+  color: black;
+  z-index: 26;
+}
+
+@media (prefers-color-scheme: dark) {
+  #left-settings-overlay {
+    background-color: #232323 !important;  
+    color: white !important;
+    }
+}
+
+/* Table of Contents Menu (background) */
+.overlay-settings {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 21; /* Sit on top */
+  left: 0;
+  top: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+.overlay-content-settings {
+  position: initial;
+  text-align: center; /* Centered text/links */
+   /*margin-top: 30px; 30px top margin to avoid conflict with the close button on smaller screens */
+  font-family: "CooperLT";
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  height:100%;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 700px) {
+  .overlay-content-settings {
+    width: 85%;
+    font-size: 0.9em;
+    /*margin-top: 6%;*/
+}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .overlay-content-settings {
+    width: 65%;
+    font-size: 0.9em;
+    /*margin-top: 2%;*/
+}
+}
+
+@media screen and (min-width: 1325px) {
+    .overlay-content-settings {
+      width: 69%;
+      margin: auto;
+    }
+}
+
+
+
+/* DARK OBSOLTE??  The navigation links inside the overlay 
+.overlay-settings a {
+
+  color: black;
+  transition: 0.3s; /* Transition effects on hover (color) 
+}
+
+.overlay-settings-night a {
+
+  color: white;
+  transition: 0.3s; /* Transition effects on hover (color) 
+}
+
+/* When you mouse over the navigation links, change their color 
+.overlay-settings a:hover, .overlay a:focus {
+  color: rgb(216, 215, 215);
+}
+
+
+/* Position the close button (top right corner) */
+.overlay-settings .closebtn {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 700px) {
+  .overlay-settings a {
+  font-size: 20px;
+  }
+
+  .overlay-settings .closebtn {
+  font-size: 40px;
+  top: 15px;
+  left: 15px;
+  }
+} 
+
+
+#languages {
+  display: flex;
+  margin: 10px auto 10px auto;
+  justify-content: center;
+  padding: 5px 30px 5px 30px;
+  background: white;
+  border-radius: 55px;
+  width: fit-content;
+
+}
+
+
+.language-selector {
+  font-family: 'Mulish';
+  padding: 10px 20px 10px 20px;
+  background: #878787;
+  border-radius: 10px;
+  margin: 10px;
+  filter: invert(100);
+  font-size: 1.1em;
+  cursor: pointer;
+
+}
+
+.language-selector a:hover {
+  color: grey;
+}
+
+.language-selector a {
+  color: white;
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+#languages  {
+  background-color:  #363636;
+}
+
+
+.language-selector a:hover {
+  color: red;
+  /*color: rgb(249, 249, 249) !important;*/
+  background: #151515 !important;
+}
+
+.language-selector a {
+  color: rgb(30, 30, 30);
+  background: #878787;
+}
+
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	4. Right Share Overlay
+
+/* -------------------------------------------------------------------------- */
+
+
+
+#right-share-overlay {
+  background-color: rgb(226, 226, 226); 
+  color: black;
+  z-index: 26;
+}
+
+@media (prefers-color-scheme: dark) {
+  #right-share-overlay {
+    background-color: #232323 !important;  
+    color: white !important;
+    }
+}
+
+
+/* Table of Contents Menu (background) */
+.share-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 21; /* Sit on top */
+  right: 0;
+  top: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+.share-overlay-content {
+  position: initial;
+  text-align: center; /* Centered text/links */
+   /*margin-top: 30px; 30px top margin to avoid conflict with the close button on smaller screens */
+  font-family: "CooperLT";
+  font-size: smaller;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  height:100%;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 700px) {
+  .share-overlay-content {
+    width: 85%;
+    font-size: 0.9em;
+    /*margin-top: 6%;*/
+}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .share-overlay-content {
+    width: 65%;
+    font-size: 0.9em;
+    /*margin-top: 2%;*/
+}
+}
+
+@media screen and (min-width: 1325px) {
+    .share-overlay-content {
+      width: 69%;
+      margin: auto;
+    }
+}
+
+
+/*DARK OBSOLTE??
+.share-overlay-night {
+  background-color: #232323 !important;  
+  color: white !important;
+}
+/* The navigation links inside the overlay 
+.share-overlay a {
+
+  color: black;
+  transition: 0.3s; /* Transition effects on hover (color) 
+}
+
+.share-overlay-night a {
+
+  color: white;
+  transition: 0.3s; /* Transition effects on hover (color) 
+}
+
+/* When you mouse over the navigation links, change their color 
+.share-overlay a:hover, .overlay a:focus {
+  color: rgb(216, 215, 215);
+}
+
+/* Position the close button (top right corner) */
+.share-overlay .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 700px) {
+  .share-overlay a {
+  font-size: 20px;
+  }
+
+  .share-overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 15px;
+  }
+} 
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	5. Bookplate Overlay
+
+/* -------------------------------------------------------------------------- */
+
+
+
+/*BOOKPLATE OVERLAY*/
+
+#top-bookplate {
+  background-color: rgb(226, 226, 226); 
+  color: black;
+  z-index: 21;
+  text-shadow: 0 0px 4px #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  #top-bookplate {
+  background-color: rgb(37, 37, 37) !important; 
+  color: white !important;
+  text-shadow: 0 0px 4px #000000 !important;
+}
+}
+
+/* Table of Contents Menu (background) */
+.overlay-bookplate {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+
+
+/* Position the content inside the overlay */
+.overlay-content-bookplate {
+  position: initial;
+  /*top: 12%; /* 25% from the top */
+   /* width: 65%; 100% width */
+  text-align: center; /* Centered text/links */
+  margin: auto; 
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  height:100%;
+  font-size: smaller;
   
 }
-  */
+
+.bookplate-title { 
+  font-variant-caps: small-caps;
+  font-weight: 500;
+  margin-top: 0.6em;
+  letter-spacing: 1px;
+}
+
+
+.bookplate-subtitle {
+margin-top: -0.1em;
+font-weight: 300;
+}
+
+.bookplate-authors {
+margin-top: -0.1em;
+}
+
+.bookplate-year {
+margin-top: -0.2em;
+}
+
+.bookplate-motto {
+margin-top: -0.1em;
+}
+
+
+/*DARK OBSOLTE
+/*
+#bookplate-content {
+transition: 0.3s;
+text-shadow: 0 0px 4px #ffffff;
+}
+
+.bookplate-content-night {
+text-shadow: 0 0px 4px #000000 !important;
+}
+/* The navigation links inside the overlay 
+.overlay-bookplate a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block; /* Display block instead of inline 
+  transition: 0.3s; /* Transition effects on hover (color) 
+}
+
+/* When you mouse over the navigation links, change their color 
+.overlay-bookplate a:hover, .overlay a:focus {
+  color: white;
+}
+
+/* Position the close button (top right corner) */
+.overlay-bookplate .closebtn {
+  position: absolute;
+  bottom: 20px;
+  right: 47%;
+  font-size: 50px;
+  background: inherit;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin: auto;
+  font-weight: lighter;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay-bookplate a {font-size: 20px}
+  .overlay-bookplate .closebtn {
+    font-size: 40px;
+    top: 15px;
+    left: 35px;
+  }
+} 
+
+
+#bookplate-img {
+  background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;
+  width: 100%;
+  background-size: contain;
+  transition: 0.3s;
+}
+
+@media (prefers-color-scheme: dark) {
+  #bookplate-img {
+    background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+    width: 100%;
+    background-size: contain;
+  }
+  }
+
+
+
+@media screen and (max-width: 699px) {
+#bookplate-img {
+  background: url(svgs/tractatus-simple-mandala.svg) center no-repeat;
+  width: 60px;
+  background-size: contain;
+  display: block;
+}
+}
+
+@media screen and (max-width: 700px) {
+  #bookplate-img {
+  height: 200px;
+  background-size: contain;}
+
+
+.overlay-content-bookplate {
+  width: 70%;
+}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  #bookplate-img {height: 350px;
+}
+}
+
+.overlay-content-bookplate {
+    width: 90%;
+  }
+
+
+@media screen and (min-width: 1325px) {
+  .overlay-content-bookplate {
+    width: 65%;
+  }
+  #bookplate-img {
+    height: 300px;
+  }
+}
+
+
+
+#bookplate-button {
+  position: absolute;
+  width: fit-content;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.3s;
+  padding: 30px;
+  padding-bottom: 30px;
+border-radius: 50px;
+background-color: white;
+padding-top: 70px;
+margin-top: -80px;
+box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+
+display: none;
+}
+
+#bookplate-button:hover {
+  top: 40px;
+}
+
+.bookplate-button-night {
+  background-color:  #292a2d !important;
+}
+
+.bookplate-button-night:hover {
+  background-color: #242529 !important;
+  bottom: 40px !important;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	6. DASHBOARD Content Box Breakdown
+
+/* -------------------------------------------------------------------------- */
+
+
+.welcome-to {
+  font-size: 1.3em;
+  line-height: 1.3;
+  font-family: 'CooperLt', Georgia, serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+
+/*Knack subscribe box*/
+
+
+#knack-dist_2 {font-family: 'Mulish';}
+
+.kn-label {display: none;}
+
+
+/*Main section*/
+
+.lead-text {   /*for the first paragraph of the dashboard*/
+    font-family: 'CooperLT';
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 699px) {
+  .lead-text {
+      font-size: 1.2em;
+      margin-top: 20px;
+      padding-bottom: 35px;
+  }
+  }
+
+  @media screen and (min-width: 700px) {
+    .lead-text {
+        font-size: 1.5em;
+        margin-top: 20px;
+        padding-bottom: 35px;
+    }
+    }
+
+#line {
+  border-color: rgb(163, 163, 163);
+  border-style: dashed ;
+  margin: 15px 0px 20px 0px;
+  border-width: 1px;
+  margin: 0px;}
+
+
+  @media (prefers-color-scheme: dark) {
+    #line {
+      border-color: rgb(90,90,90);
+    }
+  }
+
+/*
+.line-night {
+  border-color: rgb(90,90,90) !important;
+}*/
 
 #book-box {
   display: block;
@@ -134,17 +1287,6 @@ input:checked + label.toggle svg.moon {
 }
 
 
-/*
-.book-box-day {  
-  background: rgb(250, 249, 249);
-  color: #202124;
-}
-.book-box-day a{  
-  background: blue;
-  color: #202124;;
-}
-}*/
-
 #book-box a{  
   color: #202124;
   background: url(svgs/content-arrow.svg) left center no-repeat white;
@@ -152,7 +1294,7 @@ input:checked + label.toggle svg.moon {
   background-position-x: 18px;
 }
 
-#book-box a:hover{  
+#book-box a:hover {  
   color: black;
   background: url(svgs/content-arrow-45.svg) left center no-repeat rgb(250, 249, 249);
   background-size: 30px;
@@ -160,8 +1302,8 @@ input:checked + label.toggle svg.moon {
   ;
 }
 
-
-.book-box-night a {
+@media (prefers-color-scheme: dark) {
+  #book-box a  {
   background: url(svgs/content-arrow-night.svg) left center no-repeat  #202124  !important;
   background-size: 30px !important;
   background-position-x: 18px !important;
@@ -169,11 +1311,12 @@ input:checked + label.toggle svg.moon {
   color: #BDC1C6 !important;
 }
 
-.book-box-night a:hover{
+#book-box a:hover {
   background: url(svgs/content-arrow-45-night.svg) left center no-repeat #17181b  !important;
   background-size: 30px !important;
   background-position-x: 18px !important;  
   color: white !important;
+}
 }
 
 .chapter-top {
@@ -190,10 +1333,6 @@ input:checked + label.toggle svg.moon {
   background: inherit;
   font-family: inherit;
 }
-
-
-
-
 
 .chapter-middle {
   border-radius: 0px 0px 0px 0px;
@@ -228,26 +1367,6 @@ input:checked + label.toggle svg.moon {
 }
 
 
-  /*
-  #chapter-bottom:hover, #chapter-middle:hover, #chapter-top:hover { 
-    filter:   brightness(100%);
-
-    }
-
-  .chapter-hover-night:hover {
-    background-color: #17181b  !important;
-  }
-
-.chapter-icon img{ 
-  flex-direction: row;
-  width: 30px;
-
-}
-
-.chapter-icon { 
-  padding: 15px 25px 15px 20px;
-}*/
-
 
 .chapter-name {
   flex: 80%;
@@ -278,6 +1397,16 @@ input:checked + label.toggle svg.moon {
 }
 
 
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	7. Footer Content
+
+/* -------------------------------------------------------------------------- */
+
+
+
 #navbar-bottom-day {
   
   overflow: hidden;
@@ -292,10 +1421,7 @@ input:checked + label.toggle svg.moon {
   border-bottom: none;
   border-right: none;
   border-left: none;
-  border-color: rgb(163, 163, 163);
-  color:  #202124 ;
-  z-index: 12;  
-  box-shadow: 0 0px 15px rgba(85, 84, 84, 0.08);overflow: hidden;
+  
   left: 0;
   display: flex;
   flex-direction: row;
@@ -307,16 +1433,20 @@ input:checked + label.toggle svg.moon {
   background-color: rgb(244, 242, 242);
   border-color: rgb(163, 163, 163);
   color:  #202124 ;
+  z-index: 12;  
+  box-shadow: 0 0px 15px rgba(85, 84, 84, 0.08);overflow: hidden;
 }
 
-
-.navbar-bottom-night {
+@media (prefers-color-scheme: dark) {
+  #navbar-bottom-day {
   filter: invert(88%);
   /*background-color: #202124 !important;
   border-color: rgb(66, 66, 66) !important;
   color: white !important;*/
   box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3) !important;
   z-index: 14;
+}
+
 }
 
 #footer-content {
@@ -352,6 +1482,9 @@ input:checked + label.toggle svg.moon {
   z-index: 15;
 }
 
+
+
+/*COntent footer*/
 
 .next-section {
   display: block;
@@ -410,7 +1543,6 @@ input:checked + label.toggle svg.moon {
   
   padding-right: 30px;
   margin-right: 10px;
-
 }
 
 
@@ -438,7 +1570,6 @@ input:checked + label.toggle svg.moon {
 }
 
 
-
 .footer-right {
   text-align: right;
   display: flex;
@@ -455,7 +1586,6 @@ input:checked + label.toggle svg.moon {
 
 
 .footer-middle {
-
   flex-grow: 1;
   display: flex;
   flex-direction: row;
@@ -533,11 +1663,14 @@ input:checked + label.toggle svg.moon {
 
 
 
+/* -------------------------------------------------------------------------- */
 
+/*	8. Text Adjust 
+
+/* -------------------------------------------------------------------------- */
 
 #text-adjust {
-margin: 10px auto 30px auto;
-margin: 10px auto 30px auto;
+margin: 10px auto 12px auto;
 width: fit-content;
 background: #80808011;
 border-radius: 55px;
@@ -599,6 +1732,8 @@ cursor: pointer;
     }
 
 
+
+/*
 #toggle-btn {
 padding: 11px;
 border: white;
@@ -639,14 +1774,15 @@ margin: auto;
     margin: auto;
     }
 
+*/
 
-/* ACTION BUTTONS 
 
- */
+/* -------------------------------------------------------------------------- */
 
- #knack-dist_2 {font-family: 'Mulish';}
+/*	9. ACTION BUTTONS
 
-.kn-label {display: none;}
+/* -------------------------------------------------------------------------- */
+
 
 .action-btn {
     border: rgb(163, 163, 163);
@@ -661,6 +1797,18 @@ margin: auto;
     transition: 0.3s;
     cursor: pointer;  
 }
+
+
+@media (prefers-color-scheme: dark) {
+
+  .action-btn {
+    background: #17181b  !important;
+    color: #969BA1 !important;
+    border-color:  rgb(56, 56, 56) !important;
+    }
+  }
+
+
 
 .action-btn-night {
   background: #17181b  !important;
@@ -678,6 +1826,7 @@ margin: auto;
 .action-btn:hover {
     background: white;
     font-weight: 500;
+    color: rgb(15, 147, 255);
   }
 
   .action-btn-night:hover {
@@ -769,7 +1918,13 @@ a:active {
       }
 
 
-/*Main Title*/
+
+/* -------------------------------------------------------------------------- */
+
+/*	10. ??? 
+
+/* -------------------------------------------------------------------------- */
+
 
 #title {
     text-align: center;
@@ -832,12 +1987,6 @@ a:active {
     }
   }
 
-
-
-
-
-
-
 #sub-earthbook {
   margin: 20px 0px 50px 0px;
   letter-spacing: 4px;
@@ -867,416 +2016,13 @@ a:active {
 }
 
 
-#bookplate-button {
-  position: absolute;
-  width: fit-content;
-  margin: auto;
-  bottom: 30px;
-  left: 0;
-  right: 0;
-  transition: 0.3s;
-  padding: 30px;
-  padding-bottom: 30px;
-border-radius: 50px;
-background-color: white;
-padding-bottom: 70px;
-margin-bottom: -80px;
-box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-}
 
-#bookplate-button:hover {
-  bottom: 40px;
-}
+/* -------------------------------------------------------------------------- */
 
-.bookplate-button-night {
-  background-color:  #292a2d !important;
-}
+/*	11. TABLE OF CONTENTS
 
-.bookplate-button-night:hover {
-  background-color: #242529 !important;
-  bottom: 40px !important;
-}
+/* -------------------------------------------------------------------------- */
 
-
-#tbookplatec-button {
-  position: absolute;
-  width: fit-content;
-  margin: auto;
-  bottom: 30px;
-  left: 0;
-  right: 0;
-  transition: 0.3s;
-  padding: 30px;
-  padding-bottom: 30px;
-border-radius: 50px;
-background-color: white;
-padding-bottom: 70px;
-margin-bottom: -80px;
-box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-z-index: 30;
-}
-
-#bookplate-button:hover {
-  bottom: 40px;
-}
-
-.bookplate-button-night {
-  background-color:  #292a2d !important;
-}
-
-.bookplate-button-night:hover {
-  background-color: #242529 !important;
-  bottom: 40px !important;
-}
-
-.bookplate-button-row {
-  display: flex;
-  flex: row;
-  align-items: stretch;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-
-
-#bookplate-button {
-  position: absolute;
-  width: fit-content;
-  margin: auto;
-  bottom: 30px;
-  left: 0;
-  right: 0;
-  transition: 0.3s;
-  padding: 30px;
-  padding-bottom: 30px;
-border-radius: 50px;
-background-color: white;
-padding-bottom: 70px;
-margin-bottom: -80px;
-box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-}
-
-#bookplate-button:hover {
-  bottom: 40px;
-}
-
-.bookplate-button-night {
-  background-color:  #292a2d !important;
-}
-
-.bookplate-button-night:hover {
-  background-color: #242529 !important;
-  bottom: 40px !important;
-}
-
-
-#tc-button {
-  position: absolute;
-  width: fit-content;
-  margin: auto;
-  bottom: 30px;
-  left: 0;
-  right: 0;
-  transition: 0.3s;
-  padding: 30px;
-  padding-bottom: 30px;
-border-radius: 50px;
-background-color: white;
-padding-bottom: 70px;
-margin-bottom: -80px;
-box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-z-index: 30;
-display: none;
-}
-
-#tc-button:hover {
-  bottom: 40px;
-}
-
-.tc-button-night {
-  background-color:  #292a2d !important;
-}
-
-.tc-button-night:hover {
-  background-color: #242529 !important;
-  bottom: 40px !important;
-}
-
-.tc-button-row {
-  display: flex;
-  flex: row;
-  align-items: stretch;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-
-#menu-button {
-    position: absolute;
-    /*font-size: 50px;*/
-    /*padding: 7px 10px 10px 20px;*/
-    /*margin: 70px 0px 5px -35px;*/
-    left: 0px;
-    transition: 0.5s;
-    background: white; /*#F9F9F9*/
-    border-radius: 50px;
-    height: 85px;
-    /*box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);*/
-  /*  border: solid 1px gray;*/
-  padding-left: 40px;
-  left: -77px;
-  z-index: 50;
-}
-
-#menu-button:hover {
-  left: -40px;
-  transition: 0.5s;
-  background-color: white;
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-}
-
-
-
-
-#menu-button img {
-  height: 60px;
-padding-top: 15px;
-padding-left: 40px;
-margin-left: -42px;
-}
-
-.menu-button-night {
-  background-color:  #252525   !important;
-}
-
-.menu-button-night:hover {
-  background-color: #242529 !important;
-}
-
-
-#menu-settings {
-    position: absolute;
-    right: 0px;
-    transition: 0.3s;
-    background-color: white; /*#F9F9F9*/
-    border-color: black;
-    /*box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);*/
-    transition: 0.3s;
-    border-radius: 70px;
-    height: 85px;
-    padding-right: 70px;
-    right: -85px;
-  }
-
-
-.menu-settings-night {
-  background-color:  #292a2d !important;
-}
-
-.menu-settings-night:hover {
-  background-color: #242529 !important;
-}
-
-#menu-settings:hover {
-  right: -55px;
-  transition: 0.3s;
-  background-color: white;
-  box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
-
-}
-
-#menu-settings img {
-  height: 60px;
-  padding-top: 14px;
-padding-right: 17px;
-margin-right: -42px;
-}
-
-.icon-buttons-night {
-  filter: contrast(0%) !important;}
-
- 
- /*Full Page Layout System*/
-
-
-
-
-#main-page {
-    margin: auto;
-    box-sizing: border-box;
-    padding-bottom: 180px;
-
-  }
-
-  @media screen and (max-width: 699px) {
-    #main-page {
-        margin-left: 3%;
-        margin-right: 3%;
-        padding-top: 200px;
-    }
-  }
-  @media screen and (min-width: 700px) and (max-width: 1324px) {
-    #main-page {
-      margin-left: 5%;
-      margin-right: 5%;
-      padding-top: 220px;
-    }
-  }
-  @media screen and (min-width: 1325px) {
-    #main-page {
-      margin-left: 15%;
-      margin-right: 15%;
-        padding-top: 250px;
-        overflow-x: hidden
-    }
-  }
-
-
-
-/* COLUMN DESIGN */
-
-
-#row {  
-    display: flex;
-
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-  }
-
-  @media screen and (max-width: 700px) {
-    #row {
-      margin-top: -95px;
-  }
-}
-
-  #main {
-    overflow: hidden;
-    transition: 0.4s;
-    }
-  
-  
-  /* Main column */
-    
-
-  
-@media screen and (max-width: 700px) {
-  #main {
-    flex: 100%;
-    padding: 12px;
-  }
-  }
-
-  @media screen and (min-width: 700px) and (max-width: 1324px) {
-  #main {
-    width:74%;
-    padding: 15px;
-    box-sizing: border-box;
-    float: right;
-    margin-left: 28%;
-  }
-  }
-
-  @media screen and (min-width: 1325px) {
-    #main {
-
-      padding: 15px;
-      box-sizing: border-box;
-      /*width: 70%;     float: right; */
- 
-      margin-left: 28%;
-      margin-right: 10%;
-
-    }
-
-    }
-
-  
-  
-
-/* Sidebar/right column 
-@media screen and (max-width: 700px) {
-@media screen and (min-width: 700px) and (max-width: 1324px) {
-@media screen and (min-width: 1325px)
-  */
-
-  #side { transition: 0.3s;
-
-  }
-
-@media screen and (max-width: 700px) {
-	#side {
-	padding: 12px;
-	box-sizing: border-box;
-  text-align: center;
-  margin: 0px auto;
-  margin-top: 1px !important;
-	}
-	}
-
-@media screen and (min-width: 700px) and (max-width: 1324px) {
-
-    #side {
-    width: 26%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 0px;
-    border-radius: 20px;
-    text-align: center;
-    position: fixed;
-  
-    }
-    }
-
-@media screen and (min-width: 1325px) {
-
-    #side {
-  
-        padding: 15px;
-        box-sizing: border-box;
-        margin-top: 0px;
-        position: fixed;
-        width:18%;
-        text-align: center;
-        }
-        }
-
-
-.book-pic {
-    padding: 60px;
-    width: 50%;
-    text-align: right;}
-
-
-.side-book-pic {
-    width: 100%;
-    }
-
-#side img {
-    text-align: center;
-    width: fit-content;
-    max-width: 375px;
-    /*border: 1px solid;
-    border-color: rgb(163, 163, 163);*/
-    border-radius: 12px;
-    margin: auto;
-    width: 83%;
-    box-shadow: 0 4px 15px rgba(85, 84, 84, 0.4);
-}
-
-@media screen and (max-width: 700px) {
-  #side img {
-    width: 225px;
-    border-radius: 10px;
-  }
-}
-  
-
-/*TABLE OF CONTENTS*/
-
- /* Table of Contents Menu (background) */
  #table-of-contents {
   background: url(svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
  /* background-position-y: -55px;*/
@@ -1286,21 +2032,24 @@ margin-right: -42px;
   color: black;
 }
 
-.left-table-of-contents-night {
+@media (prefers-color-scheme: dark) {
+
+  #table-of-contents {
   background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
   background-size: contain !important;
   background-color: #232323 !important; 
   color: white !important;
 }
 
-.left-table-of-contents-night a:hover{
-
+/*
+#table-of-contents a:hover{
   color: rgb(255, 253, 253) !important;
 }
 
-.left-table-of-contents-night a{
 
+#table-of-contents  a {
   color: rgb(224, 224, 224) !important;
+}*/
 }
 
 .settings-label {
@@ -1489,6 +2238,124 @@ display: flex;
   }
 
 
+  /*DARK OBSOLOTE
+  
+  /* The navigation links inside the overlay 
+  .overlay-tc a {
+    text-decoration: none;
+    display: block; /* Display block instead of inline 
+    transition: 0.3s; /* Transition effects on hover (color) 
+
+  }
+  
+  /* When you mouse over the navigation links, change their color 
+  .overlay-tc a:hover, .overlay a:focus {
+    color: inherit;
+    font-weight: bolder;
+    color: black;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay-tc .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 49%;
+    font-size: 60px;
+    z-index: 22;
+    font-weight: lighter;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 700px) {
+    .overlay-tc a {
+      font-size: 20px;
+      }
+
+    .overlay-tc .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 15px;
+    }
+  } 
+
+
+
+  #tc-button {
+    position: absolute;
+    width: fit-content;
+    margin: auto;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    transition: 0.3s;
+    padding: 30px;
+    padding-bottom: 30px;
+  border-radius: 50px;
+  background-color: white;
+  padding-bottom: 70px;
+  margin-bottom: -80px;
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+  z-index: 30;
+  display: none;
+  margin: 20px auto 20px auto;
+  width: 80%;
+  }
+  
+  #tc-button:hover {
+    bottom: 40px;
+  }
+  
+  .tc-button-night {
+    background-color:  #292a2d !important;
+  }
+  
+  .tc-button-night:hover {
+    background-color: #242529 !important;
+    bottom: 40px !important;
+  }
+  
+  .tc-button-row {
+    display: flex;
+    flex: row;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  
+   
+  
+  .book-pic {
+      padding: 60px;
+      width: 50%;
+      text-align: right;}
+  
+  
+  .side-book-pic {
+      width: 100%;
+      }
+  
+  #side img {
+      text-align: center;
+      width: fit-content;
+      max-width: 375px;
+      /*border: 1px solid;
+      border-color: rgb(163, 163, 163);*/
+      border-radius: 12px;
+      margin: auto;
+      width: 83%;
+      box-shadow: 0 4px 15px rgba(85, 84, 84, 0.4);
+  }
+  
+  @media screen and (max-width: 700px) {
+    #side img {
+      width: 225px;
+      border-radius: 10px;
+    }
+  }
+
+
+
 /*Gave up on this!
 .dotted-line {
   width: 50%;
@@ -1528,391 +2395,29 @@ display: none;
 */
 
 
-  
-  /* The navigation links inside the overlay */
-  .overlay-tc a {
-    text-decoration: none;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
 
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay-tc a:hover, .overlay a:focus {
-    color: inherit;
-    font-weight: bolder;
-    color: black;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay-tc .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 49%;
-    font-size: 60px;
-    z-index: 22;
-    font-weight: lighter;
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 700px) {
-    .overlay-tc a {
-      font-size: 20px;
-      }
 
-    .overlay-tc .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 15px;
-    }
-  } 
 
+/* -------------------------------------------------------------------------- */
 
-/*ABOUT EARTHBOOK OVERLAY */
+/*	12. EARTHBOOK OVERLAY
 
+/* -------------------------------------------------------------------------- */
 
-/*SETTINGS OVERLAY*/
-
-#languages {
-  display: flex;
-  margin: 10px auto 10px auto;
-  justify-content: center;
-  padding: 5px 30px 5px 30px;
-  background: white;
-  border-radius: 55px;
-  width: fit-content;
-
-}
-
-.languages-night {
-  background-color:  #363636   !important;
-}
-
-
-.language-selector {
-  font-family: 'Mulish';
-  padding: 10px 20px 10px 20px;
-  background: #878787;
-  border-radius: 10px;
-  margin: 10px;
-  filter: invert(100);
-  font-size: 1.1em;
-  cursor: pointer;
-
-}
-
-.language-selector a:hover {
-  color: grey;
-}
-
-.language-selector a {
-  color: white;
-}
-
-#right-settings {
-    background-color: rgb(226, 226, 226); 
-    background-color: rgba(231, 231, 231); 
-    color: black;
-    z-index: 26;
-}
-
- /* Table of Contents Menu (background) */
- .overlay-settings {
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 21; /* Sit on top */
-    right: 0;
-    top: 0;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-.overlay-settings-night {
-  background-color: #232323 !important;  
-    color: white !important;
-}
-  
-  /* Position the content inside the overlay */
-  .overlay-content-settings {
-    position: initial;
-    text-align: center; /* Centered text/links */
-     /*margin-top: 30px; 30px top margin to avoid conflict with the close button on smaller screens */
-    font-family: "CooperLT";
-    font-size: smaller;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    height:100%;
-    margin: auto;
-}
-
-
-@media screen and (max-width: 700px) {
-    .overlay-content-settings {
-      width: 85%;
-      font-size: 0.9em;
-      /*margin-top: 6%;*/
-  }
-  }
-
-  @media screen and (min-width: 700px) and (max-width: 1324px) {
-    .overlay-content-settings {
-      width: 65%;
-      font-size: 0.9em;
-      /*margin-top: 2%;*/
-  }
-  }
-
-  @media screen and (min-width: 1325px) {
-      .overlay-content-settings {
-        width: 69%;
-        margin: auto;
-      }
-  }
-
-  /* The navigation links inside the overlay */
-  .overlay-settings a {
-
-    color: black;
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-
-  .overlay-settings-night a {
-
-    color: white;
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay-settings a:hover, .overlay a:focus {
-    color: rgb(216, 215, 215);
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay-settings .closebtn {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 50px;
-    font-weight: lighter;
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 700px) {
-    .overlay-settings a {
-    font-size: 20px;
-    }
-
-    .overlay-settings .closebtn {
-    font-size: 40px;
-    top: 15px;
-    left: 15px;
-    }
-  } 
-
-
-
-/*BOOKPLATE OVERLAY*/
-
-#top-bookplate {
-    background-color: rgb(226, 226, 226); 
-    color: black;
-    z-index: 21;
-}
-
- /* Table of Contents Menu (background) */
-.overlay-bookplate {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-y: hidden;
-    transition: 0.5s;
-}
-
-.overlay-bookplate-night {
-    background-color: rgb(37, 37, 37) !important; 
-    background-color: rgba(31, 31, 31, 0.9) !important; 
-    color: white !important;
-}
-
-.mandala-night {
-    filter: contrast(10%) brightness(90);
-}
-  
-  /* Position the content inside the overlay */
-.overlay-content-bookplate {
-    position: initial;
-    /*top: 12%; /* 25% from the top */
-     /* width: 65%; 100% width */
-    text-align: center; /* Centered text/links */
-    margin: auto; 
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    height:100%;
-    font-size: smaller;
-    
-}
-
-#mandala-day {
-  
-  /*margin: auto;*/
-
-  background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;
-  width: 100%;
-  background-size: contain;
-  transition: 0.3s;
-
-}
-
-@media screen and (max-width: 699px) {
-  #mandala-day {
-    background: url(svgs/tractatus-simple-mandala.svg) center no-repeat;
-    width: 60px;
-    background-size: contain;
-    display: block;
-  }
-  }
-
-
-#bookplate-content {
-
-  transition: 0.3s;
-  text-shadow: 0 0px 4px #ffffff;
-
-
-}
-
-.bookplate-content-night {
-  text-shadow: 0 0px 4px #000000 !important;
-
-}
-
-.bookplate-title { 
-    font-variant-caps: small-caps;
-    font-weight: 500;
-    margin-top: 0.6em;
-    letter-spacing: 1px;
-
-
-    
-}
-
-
-.bookplate-subtitle {
-  margin-top: -0.1em;
-  font-weight: 300;
-
-
-}
-
-.bookplate-authors {
-  margin-top: -0.1em;
-
-
-}
-
-.bookplate-year {
-  margin-top: -0.2em;
-
-
-}
-
-.bookplate-motto {
-  margin-top: -0.1em;
-
-}
-
-
-
-
-@media screen and (max-width: 700px) {
- 
-  #mandala-day {
-    height: 200px;
-  background-size: contain;}
-  
-
-  .overlay-content-bookplate {
-      width: 70%;
-
-  }
-
-  }
-
-@media screen and (min-width: 700px) and (max-width: 1324px) {
-  #mandala-day {height: 350px;
-  }
-}
- 
-  .overlay-content-bookplate {
-      width: 90%;
-    }
-
-
-@media screen and (min-width: 1325px) {
-    .overlay-content-bookplate {
-      width: 65%;
-    }
-    #mandala-day {
-      height: 300px;
-    }
-  }
- 
-  /* The navigation links inside the overlay */
-  .overlay-bookplate a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: black;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay-bookplate a:hover, .overlay a:focus {
-    color: white;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay-bookplate .closebtn {
-    position: absolute;
-    bottom: 20px;
-    left: 47%;
-    font-size: 50px;
-    background: inherit;
-    width: 100%;
-    text-align: center;
-    border-radius: 25px;
-    margin: auto;
-    font-weight: lighter;
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay-bookplate a {font-size: 20px}
-    .overlay-bookplate .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  } 
-
-
-
-/*EarthBook OVERLAY*/
 
 #bottom-earthbook {
   background-color: rgb(226, 226, 226); 
   color: black;
   z-index: 21;
 }
+
+@media (prefers-color-scheme: dark) {
+  #bottom-earthbook {
+    background-color: rgb(37, 37, 37) !important; 
+    color: white !important;
+  }
+}
+
 
 /* Table of Contents Menu (background) */
 .overlay-earthbook {
@@ -1922,22 +2427,10 @@ display: none;
   z-index: 1;
   bottom: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
   overflow-y: hidden;
   transition: 0.5s;
 }
 
-.overlay-earthbook-night {
-  background-color: rgb(37, 37, 37) !important; 
-  background-color: rgba(31, 31, 31, 0.9) !important; 
-  color: white !important;
-}
-
-/*
-.mandala-night {
-  filter: contrast(10%) brightness(90);
-}
 
 /* Position the content inside the overlay */
 .overlay-content-earthbook {
@@ -1961,13 +2454,13 @@ display: none;
   justify-content: center;
   flex-flow: column;
 }
+@media (prefers-color-scheme: dark) {
+  .virtue img {
+    filter: invert(100%);
+  }
+  }
 
 
-
-.bookplate-title { 
-  font-variant-caps: small-caps;
-  font-weight: 300;
-}
 
 @media screen and (max-width: 700px) {
   .overlay-content-earthbook {
@@ -1977,6 +2470,8 @@ display: none;
 .virtue img {
   width: 90px;
 }
+
+
 
 .virtue {
   padding: 8px;
@@ -2010,7 +2505,6 @@ display: none;
 
   .virtue img {
     width: 135px;
-  
     opacity: 1;
   }
   
@@ -2051,17 +2545,17 @@ display: none;
 }
 
 
-/* The navigation links inside the overlay */
+/* DARK OBSOLETE  The navigation links inside the overlay 
 .overlay-earthbook a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
   color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+  display: block; /* Display block instead of inline 
+  transition: 0.3s; /* Transition effects on hover (color) 
 }
 
-/* When you mouse over the navigation links, change their color */
+/* When you mouse over the navigation links, change their color 
 .overlay-earthbook a:hover, .overlay a:focus {
   color: white;
 }
@@ -2084,6 +2578,7 @@ display: none;
   }
 } 
 
+
 #virtue-box {
   display: flex;
   flex-wrap: wrap;
@@ -2093,10 +2588,11 @@ display: none;
   padding-bottom: 50px; 
 }
 
-.virtue-box-night {
+@media (prefers-color-scheme: dark) {
+  #virtue-box {
   filter: inverse(100%);
 }
-
+}
 
 
 .virtue-desc {
@@ -2106,6 +2602,13 @@ display: none;
   text-align: center;
   color: black;
 }
+
+@media (prefers-color-scheme: dark) {
+  .virtue-desc { color: white;
+  }}
+
+
+/*Carbon Badge 
 
 #wcb.wcb-d #wcb_a {
   color: #252b4d !important;
@@ -2118,492 +2621,22 @@ display: none;
   border: 0.2em solid #8cbdda !important;
 }
 
-
-.welcome-to {
-  font-size: 1.3em;
-  line-height: 1.3;
-  font-family: 'CooperLt', Georgia, serif;
-  text-rendering: optimizeLegibility;
-  font-weight: 300;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-  /*Text And FOnts */
-
-  
-  body {
-      margin: 0px;
-      background-color: rgb(252, 251, 251);
-      color: #202124;
-      position: absolute;
-      z-index: 0;
-      overflow-x: hidden; /*ARG WHY OVERFLOW?*/
-      max-width: 100%;
- 
-        }
-    
-  #underlayer {
-    margin: 0px;
-    background-color: rgb(252, 251, 251);
-    max-width: 100%;
-    height: 100%;
-  }
-
-  .dark-mode {
-    background-color: #202124  !important;
-    color: #BDC1C6 !important;
-  }
-
-  @media screen and (max-width: 699px) {
-  .no-mobile {
-    display: none;
-  }
-}
-
-p {
-  font-family: 'CooperLt', Georgia, serif;
-  text-rendering: optimizeLegibility;
-  font-weight: 300;
-  }
-
-  @media screen and (max-width: 699px) {
-    p {
-      font-size: 1.3em;
-      line-height: 1.3;
-    }
-  }
-
-@media screen and (min-width: 700px) and (max-width: 1324px) {
-    p {
-      font-size: 1.5em;
-      line-height: 1.3;
-    }
-  }
-
-@media screen and (min-width: 1325px) {
-
-    P {
-      font-size: 1.6em;
-      line-height: 1.6;
-    }
-  }
-
-
-
-h1 {
-  font-family: 'CooperLt', Georgia, serif;
-}
-
-@media screen and (max-width: 699px) {
-    h1 {
-      font-size: 2em;
-      
-    }
-  }
-
-@media screen and (min-width: 700px) and (max-width: 1324px) {
-    h1 {
-      font-size: 3.1em;
-    }
-  }
-
-@media screen and (min-width: 1325px) {
-
-    h1 {
-      font-size: 3.5em;
-    }
-  }
-
-
-h2 {
-  font-family: 'CooperLt', Georgia, serif;
-}
-
-@media screen and (max-width: 699px) {
-  h2 {
-    font-size: 1.4em;
-  }
-}
-
-@media screen and (min-width: 700px) and (max-width: 1324px) {
-  h2 {
-    font-size: 1.8em;
-  }
-}
-
-@media screen and (min-width: 1325px) {
-  h2 {
-    font-size: 2em;
-  }
-}
-
-
-
-h3 {    
-  font-family: 'CooperLt', Georgia, serif;
-  font-size: 1.7em;
-  font-weight: 300;}
-
-  @media screen and (max-width: 699px) {
-    h3 {
-      font-size: 1.2em;
-    }
-  }
-  
-  @media screen and (min-width: 700px) and (max-width: 1324px) {
-    h3 {
-      font-size: 1.6em;
-    }
-  }
-  
-  @media screen and (min-width: 1325px) {
-    h3 {
-      font-size: 1.8em;
-    }
-  }
-
-
-
-
-h4 { 
-  font-family: 'CooperLt', Georgia, serif;
-  font-size: 1.4em;
-  font-weight: 300;}
-
-  @media screen and (max-width: 699px) {
-    h4 {
-      font-size: 1.06em;
-    }
-  }
-  
-  @media screen and (min-width: 700px) and (max-width: 1324px) {
-    h4 {
-      font-size: 1.2em;
-    }
-  }
-  
-  @media screen and (min-width: 1325px) {
-    h4 {
-      font-size: 1.4em;
-    }
-  }
-
-
-
-h5 { 
-    font-family: 'Mulish', Arial, sans-serif;
-    font-weight: 300;}
-
-
-    @media screen and (max-width: 699px) {
-      h5 {
-        font-size: 1.1em;
-      }
-    }
-    
-    @media screen and (min-width: 700px) and (max-width: 1324px) {
-      h5 {
-        font-size: 1.3em;
-      }
-    }
-    
-    @media screen and (min-width: 1325px) {
-      h5 {
-        font-size: 1.4em;
-      }
-    }
-
-h6 { 
-  font-family: 'CooperLt', Georgia, serif;
-  font-size: 0.9em;
-  font-weight: 300;
-  line-height: 1.6}
-
-
-
-  a {
-    color: black;
-    border-color: rgb(163, 163, 163);
-  }
-
-    a:hover {
-      text-decoration: none;
-      filter: opacity(80%);
-    }
-
-    .dark-link {
-      color: black;
-      border-color: rgb(163, 163, 163);
-    }
-  
-     .dark-link {
-        text-decoration: none;
-        filter: opacity(80%);
-      }
-    
-    
-@media screen and (max-width: 699px) {
-
-.lead-page-paragraph {
-    font-size: 1.2em;
-    margin-top: 30px;
-}
-}
-
-/*
-
-.page-paragraph {
-    font-size: 1.5em;
-    margin-top: 30px;
-    margin-bottom: -10px;
-}
 */
 
 
 
+  /*Text And FOnts */
 
-.lead-text {
-    font-family: 'CooperLT';
-    font-size: 1.5em;
-  font-weight: 300;
-}
-
-@media screen and (max-width: 699px) {
-  .lead-text {
-      font-size: 1.2em;
-      margin-top: 20px;
-      padding-bottom: 35px;
-  }
-  }
-
-  @media screen and (min-width: 700px) {
-    .lead-text {
-        font-size: 1.5em;
-        margin-top: 20px;
-        padding-bottom: 35px;
-    }
-    }
-
-
-
-#line {
-  border-color: rgb(163, 163, 163);
-  border-style: dashed ;
-  margin: 15px 0px 20px 0px;
-  border-width: 1px;
-  margin: 0px;}
-
-.line-night {
-  border-color: rgb(90,90,90) !important;
-}
-
-
-#navbar-day {
-  height: 200px;
-  max-height: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 21; /* Sit on top */
-  top: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
-    width: 100%;
-    z-index: 12;
-    transition: 0.3s;
-
-    border-bottom: 1px;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
-    border-style: solid;
-    background-color: rgb(244, 242, 242);
-    border-color: rgb(163, 163, 163);
-    color:  #202124 ;
   
-    box-shadow: 0 4px 15px rgba(85, 84, 84, 0.3);
-    text-align: center;
-
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    margin: auto;
-    z-index: 20;
-}
-
-
-@media screen and (max-width: 699px) {
-  #navbar-day {
-    height: 75px;
-  }
-}
 
 
 
 
+/* -------------------------------------------------------------------------- */
 
+/*	Sepia, Contrast, Brightness Sliders
 
-#book-title {
-  height: 208px;
- background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
- /* background-position-y: -55px;*/
- background-size: 60%;
-  margin: auto;
-
-  transition: 0.4s;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  display: unset;
-  cursor: pointer;
- 
-}
-
-@media screen and (max-width: 699px) {
-  #book-title {
-    display: none;
-  }
-  }
-
-.book-title-night {
-  background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
-}
-
-
-.navbar-night {
-
-    background-color: #1c1d20 !important;
-    border-color: rgb(66, 66, 66) !important;
-    color: white !important;
-    box-shadow: 0 4px 15px rgba(7, 7, 7, 0.3) !important;
-
-  } 
-
-
-/* ACCORDION */
-#accordion {
-    box-sizing: border-box;
-    display: flex;
-    font-family: 'Mulish', Arial, sans-serif;
-    overflow: hidden;
-    width: 100%;
-    margin-top: 25px;
-}
-
-.accordion-select {
-    cursor: pointer;
-    margin: 0;
-    opacity: 0;
-    z-index: 1;
-}
-
-.accordion-title {
-    position: relative;
-}
-
-.accordion-title:not(:nth-last-child(2))::after {
-    border: 1px dashed transparent; /*DIVIDER LINE*/
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.accordion-title span {
-    bottom: 0px;
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    white-space: nowrap;
-    width: 100%;
-}
-
-.accordion-content {
-    box-sizing: border-box;
-    overflow: auto;
-    position: relative;
-    transition: margin 0.3s ease 0.1s;
-}
-
-.accordion-select:checked + .accordion-title + .accordion-content {
-    margin-bottom: 0;
-    margin-right: 0;
-}
-
-/* Generated styles starts here */
-
-#accordion {
-  border-color: #848484;
-  border-color: white;
-    border-radius: 17px;
-    border-style: solid;
-    border-width: 1px;
-    flex-direction: column;
-    height: auto;
-    background-color: #ffffff;
-  color: #464848;
-  border-style: dashed;
-  border-bottom-color: #848484;
-    border-right-color: #848484;
-    border-top-color: #848484;
-    border-left-color: #848484;
-} 
-
-.accordion-title,
-.accordion-select  {
-  /*background-color: #ffffff;
-  color: #464848;*/
-  background-color: inherit;
-  color: inherit;
-    width: 100%;
-    height: 57px;
-    font-size: 21px;
-}
-
-.accordion-select {
-    margin-bottom: -57px;
-    margin-right: -65px;
-}
-
-.accordion-title:not(:nth-last-child(2))::after {
-    /*border-bottom-color: #c0c0c0;*/
-    border-bottom-color: inherit;
-    border-right-color: transparent;
-} 
-
-.accordion-select:hover + .accordion-title,
-.accordion-select:checked + .accordion-title {
-    /*background-color: #f1f1f1;*/
-    background-color: inherit;
-} 
-
- .accordion-title span  {	
-    transform: rotate(0deg);
-    -ms-writing-mode: lr-tb;
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
-    padding-left: 29px;
-    padding-right: 29px;
-    line-height: 57px;
-} 
-
-.accordion-content {
-    /*background-color: #f7f7f7;
-    color: #7f8787;*/
-    background-color: inherit;
-    color: inherit;
-    height: 130px;
-    margin-bottom: -130px;
-    margin-right: 0;
-    padding: 29px;
-    width: 100%;
-
-    font-family: 'CooperLt', Georgia, serif;
-  font-size: 1.2em;
-  font-weight: 300;
-} 
+/* -------------------------------------------------------------------------- */
 
 
 #container1 {
@@ -2685,10 +2718,6 @@ margin-left: auto;
   }
 
 
-
-
-
-
   #brightness-range::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 25px;
@@ -2699,8 +2728,88 @@ margin-left: auto;
   }
 
 
+  /*DARK MODE TOGGLE SWITCH*/
 
-/* -------------------------------------------------------------------------- */
 
-/*	Toggle Switch
-/* -------------------------------------------------------------------------- */
+
+label.toggle {
+  width:140px;
+  height:60px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 4px 12px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+
+label.toggle:after  {
+  content: "";
+  width:52px;
+  height: 52px;
+  position: absolute;
+  top:4px;
+  left:5px;
+  background: linear-gradient(180deg,#ffcc89,#d8860b);
+  border-radius: 180px;
+  box-shadow: 1px 5px 11px rgba(0,0,0,0.2);
+}
+
+
+ input.darkmoder {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+input:checked + label {
+  background: #242424;
+}
+input:checked + label:after {
+  left:135px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg,#777,#3a3a3a);
+}
+label.toggle, label.toggle:after {
+  transition: 0.3s
+}
+
+label.toggle:active:after{ 
+  width: 100px; 
+}
+
+input:checked + label.toggle + .background {
+  background:#242424;
+}
+
+
+label.toggle svg {
+  position: absolute;
+
+top: 12px;
+z-index: 100;
+
+}
+label.toggle svg.sun {
+  left:12px;
+  fill:#fff;
+  transition: 0.3s;
+  width: 35px;
+  height: 35px;
+}
+label.toggle svg.moon {
+  left:95px;
+  fill:#7e7e7e;
+  transition: 0.3s;
+  width: 33px;
+  height: 33px;
+}
+input:checked + label.toggle svg.sun {
+  fill:#7e7e7e;
+}
+input:checked + label.toggle svg.moon {
+  fill:#fff;
+}
+
+
+

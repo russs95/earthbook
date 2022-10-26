@@ -6,7 +6,7 @@ class SettingsCurtain extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 
-    <div id="right-settings" class="overlay-settings">
+    <div id="left-settings-overlay" class="overlay-settings">
     
     <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>
     
@@ -26,9 +26,6 @@ class SettingsCurtain extends HTMLElement {
                 <button id="normal-plugin-ac">A</button>
                 <button id="decrease-plugin-ac">A-</button>
             </div>
-
-     
-        
 
             <input type="checkbox" id="darkmode-toggle" onclick="toggleDark()" class="darkmoder"/>
             <label for="darkmode-toggle" class="toggle" style="text-align: center;margin: 0px auto 20px auto;">
@@ -72,16 +69,6 @@ class SettingsCurtain extends HTMLElement {
             </label>
 
 
-
-
-
-
-
-
-
-
-
-         
             <div class="settings-label">
             <div class="accessibility-plugin-ac">Contrast</div>
             </div>
