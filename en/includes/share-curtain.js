@@ -14,12 +14,14 @@ class ShareCurtain extends HTMLElement {
             
             <div class="lead-page-paragraph">
                 <p class="accessibility-plugin-ac">Earthbooks are made for sharing.  Copy and share the link to this chapter:</p></div>
+                <div>
                 <script>
                 document.getElementById("demo").innerHTML = 
                 "The full URL of this page is:<br>" + window.location.href;
-                </script>
+                </script></div>
+                
 
-                <div id="copy-button"></div>
+                <div id="copy-button">Test Two</div>
            
         
         </div>                                                              
