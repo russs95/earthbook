@@ -591,7 +591,7 @@ h6 {
     border-radius: 70px;
     height: 85px;
     padding-right: 70px;
-    right: -85px;
+    right: -70px;
   }
 
   @media (prefers-color-scheme: dark) {
