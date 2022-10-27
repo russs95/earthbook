@@ -2,6 +2,32 @@
 Scripts used on all Earthbook pages to pull in the various screen overlays*/
 
 
+/*Share curtain get url of page script
+
+document.getElementById("page-url").innerHTML = 
+    "URL:" + window.location.href;*/
+
+
+
+
+/*SHARE CURTAIN COPY SCRIPT
+*/
+
+
+var $temp = $("<input>");
+var $url = $(location).attr('href');
+
+$('.clipboard').on('click', function() {
+  $("body").append($temp);
+  $temp.val($url).select();
+  document.execCommand("copy");
+  $temp.remove();
+  $("p").text("URL copied!");
+})
+
+
+
+
 
 /* LEFT SETTINGS OVERLAY */
 function openSettings() {
@@ -302,24 +328,3 @@ containerBrightness.setAttribute("style", "filter: brightness("+val+"%); max-hei
 }
 
 
-
-
-/*SHARE CURTAIN COPY SCRIPT
-
-Thanks to https://codepen.io/sebastian-jagoe/pen/xxZqwPW*/
-
-//Inititalize ClipboardJS
-new ClipboardJS('.btnClipboardJS');
-
-// SET data-clipboard-text TO CURRENT URL ON PAGE LOAD
-window.onload = function currentURL() {
-  const URL = window.location.href;
-  document.getElementById('copy-button').innerHTML = '<a onClick="copiedToClipboard()" class="btn btn-outline-secondary btn-lg btnClipboardJS" data-clipboard-text="' + URL + '" id="alertCard"><i class="fa fa-link" aria-hidden="true"></i> Copy URL</a>'
-}
-
-// If you only want the functionality, but not the visual effect, ignore the following function. 
-
-// AESTHETIC: CHANGE INNER HTML
-function copiedToClipboard() { document.getElementById('alertCard').innerHTML = '<i class="fa fa-check" aria-hidden="true"></i> URL Copied!';
-  setTimeout(function(){document.getElementById('alertCard').innerHTML = '<i class="fa fa-link" aria-hidden="true"></i> Copy URL Again';}, 3000);
-}

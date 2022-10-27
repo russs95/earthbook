@@ -58,7 +58,8 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
  <script src="includes/share-curtain.js" type="text/javascript" defer></script>
  <script src="includes/footer-component.js" type="text/javascript" defer></script>
 
-
+ <script src="../clip/dist/clipboard.min.js"></script>
+ 
   <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
@@ -66,6 +67,13 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 <script src="../accessibility.js"></script>
 <link rel="stylesheet" href="../acessibilidade.css" />
+
+<script>
+    document.getElementById("#page-url").innerHTML = 
+    "URL:" + window.location.href;
+</script>
+
+
 
 <!-- Arc CDN Script without delay
 <script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
@@ -88,6 +96,33 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 <!--KNACK OFF
 <script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js"></script>-->
+
+<style>
+   
+    
+    .copy-box { background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+    border-radius: 3px;
+}
+
+.btn {
+    font-size: 12px;
+    padding: 8px;
+    width: 50%;
+    }
+</style>
 
 
 </head>
@@ -126,6 +161,30 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 <earthbook-curtain></earthbook-curtain>
 
+  
+    
+    
+     <!-- 2. Include library -->
+   
+    
+     <!-- 3. Instantiate clipboard -->
+     <script>
+       var clipboard = new ClipboardJS('.btn');
+    
+       clipboard.on('success', function (e) {
+         console.info('Action:', e.action);
+         console.info('Text:', e.text);
+         console.info('Trigger:', e.trigger);
+       });
+    
+       clipboard.on('error', function (e) {
+         console.info('Action:', e.action);
+         console.info('Text:', e.text);
+         console.info('Trigger:', e.trigger);
+       });
+     </script>
+    </div></div>
+
 
 <!-- PAGE CONTENT-->
 
@@ -162,6 +221,9 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
             </div>
 
          
+                
+
+              
 
 
             <div id="line" style="margin-top: 15px"  class="no-mobile"></div>
@@ -385,6 +447,8 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
     
 </div>
+
+
 
 
  <!--FOOTER-->
