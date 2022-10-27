@@ -1,31 +1,42 @@
-/*UNIVERSAL JAVASCRIPTS
-Scripts used on all Earthbook pages to pull in the various screen overlays*/
+/*TRACTATUS AYYEW BOOKAPP VERSION 1.0
 
+JAVASCRIPT Version 1.0
+Original Author:  Russell Maier
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
 
-/*Share curtain get url of page script
-
-document.getElementById("page-url").innerHTML = 
-    "URL:" + window.location.href;*/
-
-
-
-
-/*SHARE CURTAIN COPY SCRIPT
+Here are all the scripts useScripts used on all Earthbook pages to pull in the various screen overlays
 */
 
 
-var $temp = $("<input>");
-var $url = $(location).attr('href');
 
-$('.clipboard').on('click', function() {
-  $("body").append($temp);
-  $temp.val($url).select();
-  document.execCommand("copy");
-  $temp.remove();
-  $("p").text("URL copied!");
-})
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+	1.  Overlay Curtains
+	2.  TOP Earthbook Navigation Bar
+  3.	LEFT Settings Curtain
+	4. 	RIGHT Share Curtain
+	5. 	BOTTOM Bookplate 
+  6.  Main page content 
+	6.	Footer
+	7.      Forms
+	8. 	Notifications
+	9. 	Needs Review
+	10.  	New
+
+*/
 
 
+
+/* -------------------------------------------------------------------------- */
+
+/*	1. Curtain Overlays
+
+/* -------------------------------------------------------------------------- */
 
 
 
@@ -79,6 +90,24 @@ function openShare() {
 
   } 
 
+/* BUY SHARE OVERLAY 
+
+Triggers the right share link panel*/
+
+function openBuy() {
+  document.getElementById("buy-curtain").style.width = "100%";
+  document.body.style.overflowY = "hidden";
+  document.body.style.maxHeight = "100vh";
+
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeBuy() {
+  document.getElementById("buy-curtain").style.width = "0%";
+  document.body.style.overflowY = "unset";
+  document.body.style.maxHeight = "unset";
+
+} 
 
 
 /* BOOKPLATE OVERLAY
@@ -119,6 +148,7 @@ Opens up the Earthbook overlay from the bottom up*/
     document.getElementById("bottom-earthbook").style.height = "0%";
     document.body.style.overflowY = "unset";
   } 
+
 
 
 
@@ -164,6 +194,15 @@ function closeBookplate() {
   document.getElementById("menu-button").style.display = "unset";
   document.getElementById("menu-settings").style.display = "unset";
 } 
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	1. Night and Day Mode
+
+/* -------------------------------------------------------------------------- */
+
 
 
 /*NIGHT AND DAY VIEWS
@@ -302,6 +341,12 @@ if (preference.matches) {
 */
 
 
+/* -------------------------------------------------------------------------- */
+
+/*	3. Screen Adjustments
+
+/* -------------------------------------------------------------------------- */
+
 
 
  function Sepia(e)
@@ -326,5 +371,13 @@ var containerBrightness = document.body;
 var val = e.value;
 containerBrightness.setAttribute("style", "filter: brightness("+val+"%); max-height:100vh; overflow-y:hidden;");
 }
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	4. Misc
+
+/* -------------------------------------------------------------------------- */
+
 
 

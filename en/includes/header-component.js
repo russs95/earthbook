@@ -13,7 +13,7 @@ class Header extends HTMLElement {
         </div>
 
         <span style="cursor:pointer" onclick="openContents()">
-        <div id="mandala-day"></div>
+        <div id="book-header-logo"></div>
         </span>
         
         

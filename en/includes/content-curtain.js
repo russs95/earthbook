@@ -96,7 +96,8 @@ class ContentCurtain extends HTMLElement {
                 
                         <div id="pdf-btn" class="action-btn" style="height: 26px; flex-grow: 1"><a href="pdf"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>
 
-                        <div id="knack-dist_2"><div class="action-btn" style="height: 26px; flex-grow: 1">Get our updates...</div></div>
+                        <!--<div id="knack-dist_2"><div class="action-btn" style="height: 26px; flex-grow: 1">Get our updates...</div>-->
+                        </div>
 
             <br><br>
                 </div>

@@ -1,11 +1,12 @@
 /*TRACTATUS AYYEW BOOKAPP VERSION 1.0
 
 CSS Version 1.0
-Orginal Author:  Russell Maier
+Original Author:  Russell Maier
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
 License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
 */
 
 
@@ -196,13 +197,14 @@ display: none;
   transition: 0.3s;
   box-sizing: border-box;
   text-align: center;
+  margin-top: 0px;
 }
 
 @media screen and (max-width: 700px) {
 #side {
 padding: 12px;
 margin: 0px auto;
-margin-top: 1px !important;
+/*margin-top: 1px !important;*/
 }
 }
 
@@ -211,7 +213,6 @@ margin-top: 1px !important;
   #side {
   width: 26%;
   padding: 20px;
-  margin-top: 0px;
   border-radius: 20px;
   position: fixed;
   }
@@ -221,7 +222,6 @@ margin-top: 1px !important;
 
   #side {
       padding: 15px;
-      margin-top: 0px;
       position: fixed;
       width:18%;
       }
@@ -547,7 +547,7 @@ h6 {
     box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
     border: solid 1px gray;
     padding-left: 40px;
-    left: -77px;
+    left: -66px;
     z-index: 50;
 }
 
@@ -591,7 +591,7 @@ h6 {
     border-radius: 70px;
     height: 85px;
     padding-right: 70px;
-    right: -70px;
+    right: -60px;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -606,7 +606,7 @@ h6 {
     }
 
 #share-menu:hover {
-  right: -55px;
+  right: -35px;
   transition: 0.3s;
   background-color: white;
   box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
@@ -635,15 +635,16 @@ margin-right: -42px;
   bottom: 0;
   right: 0;
   left: 0;
-  display: unset;
+  display: block;
   cursor: pointer;
 
   background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+  
 }
 
 @media (prefers-color-scheme: dark) {
   #book-title { 
-  background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
+  background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat;
 }
   }
 
@@ -656,29 +657,40 @@ margin-right: -42px;
 
 /*Book Logo*/
 
-#mandala-day {  
-  background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;
+#book-header-logo {  
+  background: url(svgs/my-book-header-logo-day.svg) center no-repeat;
   width: 100%;
   background-size: contain;
   transition: 0.3s;
-  
+  background-size: contain;
+  display: none;
+  transition: 0.3s;
+  filter: brightness(75%);
   }
 
+
   @media (prefers-color-scheme: dark) {
-    #mandala-day {  
-      background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+    #book-header-logo {  
+      background: url(svgs/my-book-header-logo-night.svg) center no-repeat;
       width: 100%;
       background-size: contain;
       transition: 0.3s;
+      display: none;
+      filter: brightness(75%);
     }
   }
+
+  #book-header-logo:hover {
+    filter:brightness(100%);
+  }
+ 
   
+  /*
   @media screen and (max-width: 699px) {
   #mandala-day {
     background: url(svgs/tractatus-simple-mandala.svg) center no-repeat;
     width: 60px;
-    background-size: contain;
-    display: block;
+    
   }
   }
   
@@ -892,8 +904,8 @@ margin-right: -42px;
 
 @media (prefers-color-scheme: dark) {
   #right-share-overlay {
-    background-color: #232323 !important;  
-    color: white !important;
+    background-color: #232323;  
+    color: white;
     }
 }
 
@@ -948,24 +960,72 @@ margin-right: -42px;
     }
 }
 
-
-/*DARK OBSOLTE??
-.share-overlay-night {
-  background-color: #232323 !important;  
-  color: white !important;
-}
-/* The navigation links inside the overlay 
-.share-overlay a {
-
-  color: black;
-  transition: 0.3s; /* Transition effects on hover (color) 
+.copy-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+ 
 }
 
-.share-overlay-night a {
+.copy-box { background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+  border-radius: 5px;
+  margin-right: -20%;
+  padding-right: 22%;
+  text-align: left;
+  justify-content: center;
+}
 
+.btn {
+  font-size: 12px;
+  padding: 8px;
+  width: 10%;
+  border: 1px solid rgb(33, 33, 33);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  border-radius: 5px;
+  font-weight: bolder;
+  background: grey;
+  align-self: center;
+  cursor: pointer;
   color: white;
-  transition: 0.3s; /* Transition effects on hover (color) 
-}
+  }
+
+  .btn:hover {color: black;}
+
+  .copy-check {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    padding: 8px;
+    width: 10%;
+    font-weight: bolder;
+    color: green !important;
+    align-self: center;
+    }
+
+  #check {display: none;}
+
+  #check2 {display: none;}
+
+  @media (prefers-color-scheme: dark) {
+
+    #check2 {color: green;}
+  }
+
 
 /* When you mouse over the navigation links, change their color 
 .share-overlay a:hover, .overlay a:focus {
@@ -993,6 +1053,104 @@ margin-right: -42px;
   right: 15px;
   }
 } 
+
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	5. Buy Overlay
+
+/* -------------------------------------------------------------------------- */
+
+
+
+#buy-curtain {
+  background-color: rgb(226, 226, 226); 
+  color: black;
+  z-index: 26;
+}
+
+@media (prefers-color-scheme: dark) {
+  #buy-curtain {
+    background-color: #232323;  
+    color: white;
+    }
+}
+
+
+/* Table of Contents Menu (background) */
+.buy-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 21; /* Sit on top */
+  right: 0;
+  top: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+.share-overlay-content {
+  position: initial;
+  text-align: center; /* Centered text/links */
+   /*margin-top: 30px; 30px top margin to avoid conflict with the close button on smaller screens */
+  font-family: "CooperLT";
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  height:100%;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 700px) {
+  .share-overlay-content {
+    width: 85%;
+    font-size: 0.9em;
+    /*margin-top: 6%;*/
+}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .share-overlay-content {
+    width: 65%;
+    font-size: 0.9em;
+    /*margin-top: 2%;*/
+}
+}
+
+@media screen and (min-width: 1325px) {
+    .share-overlay-content {
+      width: 69%;
+      margin: auto;
+    }
+}
+
+
+/* Position the close button (top right corner) */
+.share-overlay .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 700px) {
+  .share-overlay a {
+  font-size: 20px;
+  }
+
+  .share-overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 15px;
+  }
+} 
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -1483,7 +1641,6 @@ display: none;
   position: absolute;
   bottom: 0;
   right: 0;
-  left: 0;
 
   padding: 0px;
   border-top: 1px;
@@ -1491,10 +1648,7 @@ display: none;
   border-bottom: none;
   border-right: none;
   border-left: none;
-  border-color: rgb(163, 163, 163);
-  color:  #202124 ;
-  z-index: 12;  
-  box-shadow: 0 0px 15px rgba(85, 84, 84, 0.08);overflow: hidden;
+  z-index: 15; 
   left: 0;
   display: flex;
   flex-direction: row;
@@ -1507,8 +1661,19 @@ display: none;
   background-color: rgb(244, 242, 242);
   border-color: rgb(163, 163, 163);
   color:  #202124 ;
-  z-index: 15;
+  box-shadow: 0 0px 15px rgba(85, 84, 84, 0.08);overflow: hidden;
+
 }
+
+@media (prefers-color-scheme: dark) {
+  #footer-content {
+  background-color: #1C1D20;
+  border-color: #424242;
+  color:  #ebecec ;
+  box-shadow: 0 0px 15px rgba(208, 208, 208, 0.08);overflow: hidden;
+  }
+} 
+
 
 
 
@@ -2058,6 +2223,7 @@ a:active {
   background-color: rgb(226, 226, 226); 
   background-color: rgba(231, 231, 231); 
   color: black;
+ 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2286,7 +2452,7 @@ display: flex;
   /* Position the close button (top right corner) */
   .overlay-tc .closebtn {
     position: absolute;
-    top: 20px;
+    top: 30px;
     right: 49%;
     font-size: 60px;
     z-index: 22;

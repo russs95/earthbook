@@ -1,3 +1,6 @@
+
+
+
 class ShareCurtain extends HTMLElement {
   constructor() {
     super();
@@ -6,43 +9,69 @@ class ShareCurtain extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 
-
     <div id="right-share-overlay" class="share-overlay">
     
     <a href="javascript:void(0)" class="closebtn" onclick="closeShare()">&times;</a>
     
-    <div class="share-overlay-content">
+      <div class="share-overlay-content">
             
             <div>
                 <h1 class="accessibility-plugin-ac">Earthbooks are made for sharing.</h1> 
-                <h3> Copy and share the link to this chapter...</h3></div>
-                
-               
-                <!--<div class="copy-url" class="copy-box">--><div id="page-url"  style="border-left-color: orange;"></div>
-     <button
-       class="btn"
-       data-clipboard-action="copy"
-       data-clipboard-target="#page-url"
-     >
-       Copy
-     </button></div>
+                <h3>Copy and share the link to this chapter...</h3>
+            </div>
+            
+            <div class="copy-section">
+              <div id="page-url" class="copy-box" style="border-left-color: orange;" >
+              </div>
 
-    <h4>Or copy the main URL of the book:</h4>
-    <div class="copy-url"><div id="page-url-main" class="copy-box" style="border-left-color: rgb(0, 255, 34);">https://book.earthen.io</div>
+              
+              <div class="copy-check"><div id="check" style="color:green">✔️</div></div>
+              <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url" onclick="confirmCopy()">Copy</button>
+              
+            </div>
 
-     <button
-       class="btn"
-       data-clipboard-action="copy"
-       data-clipboard-target="#page-url-main"
-       onclick="closeShare()"
-     >  Copy
-    </button></div>
-    <div><h5 style="font-size: 1em">The content of this Earthbook is under a creative commons license.  This means you can freely share the links to this page, quote passages, download and share the PDF as long as you attribute it to this Earthbook.  In addition, you can access the EarthBooks source code and content on Github where you can fork this book to make your own (or to create a translation of this one).</h5></div>
-</div>
+      <div>
+        <h4>Or copy the main URL of the book:</h4>
+      </div>
 
-
+      <div class="copy-section">
+          <div id="page-url-main" class="copy-box" style="border-left-color: rgb(0, 255, 34);">
+          https://book.earthen.io
+          </div>
+          <div class="copy-check"><div id="check2">✔️</div></div>
+          <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url-main" onclick="confirmCopy2()">Copy</button>
+      </div>
+      <div>
+        <h5>The content of this Earthbook is under a creative commons license.  This means you can freely share the links to this page, quote passages, download and share the PDF as long as you attribute it to this Earthbook.  In addition, you can access the EarthBooks source code and content on Github where you can fork this book to make your own (or to create a translation of this one).</h5>
+      </div>
+        <img src="../icons/cc-by-sa.svg" style="height: 35px">
+  </div>
+</div>  
     `;
 }
 }
 
 customElements.define('share-curtain', ShareCurtain);
+
+document.getElementById("page-url").innerHTML = 
+"" + window.location.href;
+
+
+function confirmCopy() {
+  var x = document.getElementById("check");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function confirmCopy2() {
+  var x = document.getElementById("check2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    x.style.color = "green";
+  } else {
+    x.style.display = "block";
+  }
+}

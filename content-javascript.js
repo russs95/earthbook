@@ -1,34 +1,30 @@
-
-
+window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-
 
   if ( document.body.scrollTop > 30 || document.documentElement.scrollTop > 30 ) {
     
     //AFTERmargin-top: -67px;
-    document.getElementById("navbar-day").style.height = "70px";
+    document.getElementById("earthbook-navbar").style.height = "70px";
     document.getElementById("ct-chapter-title").style.fontSize = "1.2em";
     document.getElementById("ct-book-title").style.fontSize = "0.9em";
     document.getElementById("ct-book-title").style.marginTop = "2px";
     document.getElementById("ct-chapter-top").style.marginTop = "-67px";
     document.getElementById("ct-word-count").style.display = "none";
-    document.getElementById("ct-share-link").style.display = "none";
-    document.getElementById("mandala-day").style.opacity = "0.5";
+    document.getElementById("book-header-logo").style.display = "none";
     document.getElementById("ct-chapter-title").style.fontWeight = "bolder";
-
-
 
 
   } else {
     //BEFORE
-    document.getElementById("navbar-day").style.height = "400px";
+    document.getElementById("earthbook-navbar").style.height = "400px";
     document.getElementById("ct-chapter-title").style.fontSize = "6em";
-    document.getElementById("ct-book-title").style.display = "1.4em";
-    document.getElementById("ct-word-count").style.display = "block";
-    document.getElementById("ct-share-link").style.display = "block";
+    document.getElementById("ct-book-title").style.fontSize = "1.4em";
+    document.getElementById("ct-book-title").style.marginTop = "10px";
     document.getElementById("ct-chapter-top").style.marginTop = "20px";
-    document.getElementById("mandala-day").style.opacity = "0";
+    document.getElementById("ct-word-count").style.display = "block";
+    //
+    document.getElementById("book-header-logo").style.display = "none";
 
   }
 }

@@ -10,6 +10,13 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+ <!--Page Icons-->
+ <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+ <link rel="manifest" href="../favicons/site.webmanifest">
+
+
 	
 <link rel="canonical" href="https://book.earthen.io/en/"> 
 <link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" />
@@ -49,80 +56,36 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 <script src="../index-javascripts.js" defer></script>
 <script src="../universal-javascript.js" defer></script>
-
- <script src="includes/header-component.js" type="text/javascript" defer></script>
- <script src="includes/content-curtain.js" type="text/javascript" defer></script>
- <script src="includes/settings-curtain.js" type="text/javascript" defer></script>
- <script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
- <script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
- <script src="includes/share-curtain.js" type="text/javascript" defer></script>
- <script src="includes/footer-component.js" type="text/javascript" defer></script>
-
- <script src="../clip/dist/clipboard.min.js"></script>
- 
-  <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
-  <link rel="manifest" href="../favicons/site.webmanifest">
-
+<script src="../clip/dist/clipboard.min.js"></script>
 <script src="../accessibility.js"></script>
+
+<!-- Style Sheets -->
+<link rel="stylesheet" type="text/css" href="../style-sheet.css?v1.2">
 <link rel="stylesheet" href="../acessibilidade.css" />
 
-<script>
-    document.getElementById("#page-url").innerHTML = 
-    "URL:" + window.location.href;
-</script>
+<!-- Fonts-->
+<link rel="preconnect" href="../fonts/">
+<link rel="preconnect" href="../fonts/" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Roboto&display=swap" rel="stylesheet"> 
 
+<script src="includes/header-component.js" type="text/javascript" defer></script>
+ <script src="includes/settings-curtain.js" type="text/javascript" defer></script>
+ <script src="includes/content-curtain.js" type="text/javascript" defer></script>
+ <script src="includes/share-curtain.js" type="text/javascript" defer></script>
+ <script src="includes/buy-curtain.js" type="text/javascript" defer></script>
+ <script src="includes/footer-component.js" type="text/javascript" defer></script>
+ <script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
+ <script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
 
 
 <!-- Arc CDN Script without delay
 <script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
 
-<!-- Style Sheets -->
-<link rel="stylesheet" type="text/css" href="../style-sheet.css?v1.2">
-
 <!--
-<link rel="stylesheet" type="text/css" href="../styles-toggle-button.css" />-->
+<script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js"></script>-->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Roboto&display=swap" rel="stylesheet"> 
-
-
-
-<!-- This calls GEA typography-->
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-
-<script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js"></script>
-
-<style>
-   
-    
-    .copy-box { background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid;
-    color: #666;
-    page-break-inside: avoid;
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
-    border-radius: 3px;
-}
-
-.btn {
-    font-size: 12px;
-    padding: 8px;
-    width: 50%;
-    }
-</style>
 
 
 </head>
@@ -149,10 +112,6 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <!--SETTINGS-MENU-->
 <settings-curtain></settings-curtain>
 
-<!--SHARE-MENU-->
-<share-curtain></share-curtain>
-
-
 <!--BOOK PLATE-->
 
 <bookplate-curtain></bookplate-curtain>
@@ -161,8 +120,11 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 <earthbook-curtain></earthbook-curtain>
 
-  
-    
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--SHARE-MENU-->
+<buy-curtain></buy-curtain>
     
      <!-- 2. Include library -->
    
@@ -198,8 +160,8 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
             <div class="welcome-to">Welcome to the <b><span style="cursor:pointer" onclick="openEarthbook()">EarthBook</span></b> edition of the Tractatus Ayyew.</div>
 
             <div class="button-row">
-                <div id="read-btn" class="action-btn"><a href="preamble"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</a></div>
-                <div id="buy-btn" class="action-btn"><a href="buy"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</a></div>
+                <div id="read-btn" class="action-btn"><a href="preface.html"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</a></div>
+                <div id="buy-btn" class="action-btn"><a href="" onclick="openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</a></div>
                 <div id="pdf-btn" class="action-btn"><a href="pdf"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>
                 
             </div>
@@ -214,7 +176,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 
             <div class="lead-text">
-            As we become more and more aware of the ecological crises caused by our modern age, we long to amend and green our ways.  However, what in fact should green really mean?  Guided by ancient cultures and magnificent creatures that have long mastered the art of ecological enrichment, this book lays out an ethics of green and grey based on Earth's example.
+            As we become more and more aware of the ecological crises caused by our modern age, we long to amend and green our ways.  However, what in fact should green mean?  Guided by the enriching examples of kincentric cultures and magnificent creatures, this book lays out an ethics of green and grey based on Earth's cosmological character.
             </div>
 
             <div id="line" style="margin-top: 15px"  class="no-mobile"></div>
