@@ -663,6 +663,15 @@ margin-right: -42px;
   transition: 0.3s;
   
   }
+
+  @media (prefers-color-scheme: dark) {
+    #mandala-day {  
+      background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+      width: 100%;
+      background-size: contain;
+      transition: 0.3s;
+    }
+  }
   
   @media screen and (max-width: 699px) {
   #mandala-day {
@@ -1128,19 +1137,20 @@ text-shadow: 0 0px 4px #000000 !important;
     background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
     width: 100%;
     background-size: contain;
+    transition: 0.3s;
   }
   }
 
 
-
+/*
 @media screen and (max-width: 699px) {
 #bookplate-img {
   background: url(svgs/tractatus-simple-mandala.svg) center no-repeat;
   width: 60px;
   background-size: contain;
-  display: block;
+ 
 }
-}
+}*/
 
 @media screen and (max-width: 700px) {
   #bookplate-img {
@@ -1239,7 +1249,7 @@ display: none;
 /*Main section*/
 
 .lead-text {   /*for the first paragraph of the dashboard*/
-    font-family: 'CooperLT';
+    font-family: 'Mulish';
     font-size: 1.5em;
     font-weight: 300;
 }
@@ -1248,7 +1258,7 @@ display: none;
   .lead-text {
       font-size: 1.2em;
       margin-top: 20px;
-      padding-bottom: 35px;
+      padding-bottom: 25px;
   }
   }
 
