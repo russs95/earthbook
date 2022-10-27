@@ -18,7 +18,7 @@ class ShareCurtain extends HTMLElement {
                 <h3> Copy and share the link to this chapter...</h3></div>
                 
                
-                <div class="copy-url"><div id="page-url" class="copy-box" style="border-left-color: orange;"></div>
+                <!--<div class="copy-url" class="copy-box">--><div id="page-url"  style="border-left-color: orange;"></div>
      <button
        class="btn"
        data-clipboard-action="copy"
