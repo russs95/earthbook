@@ -1159,7 +1159,7 @@ padding-right: 22%;
 
 
 /* Position the content inside the overlay */
-.share-overlay-content {
+.buy-overlay-content {
   position: initial;
   text-align: center; /* Centered text/links */
    /*margin-top: 30px; 30px top margin to avoid conflict with the close button on smaller screens */
@@ -1173,7 +1173,7 @@ padding-right: 22%;
 
 
 @media screen and (max-width: 700px) {
-  .share-overlay-content {
+  .buy-overlay-content {
     width: 85%;
     font-size: 0.9em;
     /*margin-top: 6%;*/
@@ -1181,7 +1181,7 @@ padding-right: 22%;
 }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
-  .share-overlay-content {
+  .buy-overlay-content {
     width: 65%;
     font-size: 0.9em;
     /*margin-top: 2%;*/
@@ -1189,7 +1189,7 @@ padding-right: 22%;
 }
 
 @media screen and (min-width: 1325px) {
-    .share-overlay-content {
+    .buy-overlay-content {
       width: 69%;
       margin: auto;
     }
@@ -1197,7 +1197,7 @@ padding-right: 22%;
 
 
 /* Position the close button (top right corner) */
-.share-overlay .closebtn {
+.buy-overlay .closebtn {
   position: absolute;
   top: 15px;
   right: 20px;
@@ -1207,11 +1207,11 @@ padding-right: 22%;
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 700px) {
-  .share-overlay a {
+  .buy-overlay a {
   font-size: 20px;
   }
 
-  .share-overlay .closebtn {
+  .buy-overlay .closebtn {
   font-size: 40px;
   top: 15px;
   right: 15px;
