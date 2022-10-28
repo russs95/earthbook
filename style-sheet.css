@@ -2260,10 +2260,10 @@ a:active {
 
   .action-btn {
 
-    padding: 6px 4px 6px 4px;
-    margin: 8px;
+    padding: 6px 5px 6px 5px;
+    margin: 5px;
     flex-grow: 1;
-    font-size: 0.9em;
+    font-size: 0.88em;
   }
 }
 
@@ -2559,13 +2559,14 @@ margin: 18px 0px 8px 0px;
     font-variant-caps: small-caps;
     font-family: 'CooperLt';
     font-variant-caps: small-caps;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 700px) {
     .tc-a-book {
     letter-spacing: 4px;
     padding: 15px 15px 15px 15px;
-    font-size: 2em;
+    font-size: 1.5em;
     }
   }
 
@@ -2573,7 +2574,8 @@ margin: 18px 0px 8px 0px;
     .tc-a-book {
     letter-spacing: 5px;
     padding: 5px 15px 5px 15px;
-    font-size: 3em;
+    font-size: 2.2em;
+    
     }
   }
 
