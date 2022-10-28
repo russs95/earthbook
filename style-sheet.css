@@ -2506,37 +2506,90 @@ margin: 18px 0px 8px 0px;
   }
 
 
+.contents-title-box {
+  text-align: center;
+  width: 100%;
+  margin: 50px auto 0px auto;
+  
+}
 
 .contents-title {
   font-family: 'CooperLt';
   font-variant-caps: small-caps;
-  padding-bottom: 25px;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   width: 100%;
-  display: flex;
+  display: block;
+  margin: 0px;
 
 }
 
 @media screen and (max-width: 700px) {
   .contents-title {
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   .contents-title {
-    font-size: 2em;
-    padding-bottom: 20px;
+    font-size: 2.2em;
+    padding-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 1325px) {
   .contents-title {
-    font-size: 2.6em;
-    padding-bottom: 40px;
+    font-size: 3.6em;
+    padding-bottom: 0px;
     }
   }
+
+
+  .contents-books123 {
+   
+    padding-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    height:fit-content;
+  
+  }
+  
+  .tc-a-book {
+    font-family: 'Mulish';
+    font-variant-caps: small-caps;
+    font-size: 3em;
+    font-family: 'CooperLt';
+    font-variant-caps: small-caps;
+    letter-spacing: 5px;
+    padding: 5px 15px 5px 15px;
+  }
+
+  
+  @media screen and (max-width: 700px) {
+    .contents-title {
+      font-size: 1.3em;
+      padding-bottom: 10px;
+    }
+  }
+  
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .contents-title {
+      font-size: 1.5em;
+      padding-bottom: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 1325px) {
+    .contents-title {
+      font-size: 1.6em;
+      padding-bottom: 40px;
+      }
+    }
+  
+
+
 
 .tc-item {
   font-family: 'Mulish';
@@ -2657,25 +2710,31 @@ display: flex;
   .overlay-tc a:hover, .overlay a:focus {
     color: inherit;
     font-weight: bolder;
-    color: black;
+    
   }
   
   /* Position the close button (top right corner) */
   .overlay-tc .closebtn {
     position: absolute;
-    top: 20px;
-    right: 49%;
-    font-size: 60px;
     z-index: 22;
     font-weight: lighter;
   }
+
+  @media screen and (min-height: 700px) {
+    .overlay-tc .closebtn {
+      top: 20px;
+      right: 49%;
+      font-size: 60px;
+  }
+}
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 700px) {
+  @media screen and (max-height: 699px) {
     .overlay-tc .closebtn {
-      font-size: 30px;
-      top: 0px;
-      font-weight: lighter;
+     
+      top: 5px;
+      right: 49%;
+       font-size: 30px;
     }
   } 
 
@@ -2723,6 +2782,7 @@ display: flex;
     margin-top: 30px;
   }
   
+
   
    
   
