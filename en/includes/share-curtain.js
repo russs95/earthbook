@@ -42,7 +42,7 @@ class ShareCurtain extends HTMLElement {
           <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url-main" onclick="confirmCopy2()">Copy</button>
       </div>
       <div>
-        <h5>The content of this Earthbook is under a creative commons license.  This means you can freely share the links to this page, quote passages, download and share the PDF as long as you attribute it to this Earthbook.  In addition, you can access the EarthBooks source code and content on Github where you can fork this book to make your own (or to create a translation of this one).</h5>
+        <h6>The content of this Earthbook is under a Creative-Commons ND-SA-AT 4.0 license .  This means you can freely share the links to this page, quote passages, download and share the PDF as long as you attribute it to this Earthbook.  In addition, you can access the EarthBooks source code and content on Github where you can fork this book to make your own (or to create a translation of this one).</h6>
       </div>
         <img src="../icons/cc-by-sa.svg" style="height: 35px">
   </div>
