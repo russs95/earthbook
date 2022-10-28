@@ -12,8 +12,10 @@ class ContentCurtain extends HTMLElement {
         
         <div class="overlay-content-tc">
 
-                    <div class="contents-title"><div>Books One</div><div>Two</div><div>Three</div></div>
-                    
+                    <div class="contents-title">
+                        <div class="books" style="flex-flow:column">Books</div>
+                        <div style="flex-flow:row">One</div><div style="color:grey; flex-flow:row">Two</div><div style="color:grey; flex-flow:row">Three</div></div>
+                    </div>
                     <a href="preface.html">
                     <div class="tc-item">
                     <div class="magic-circle"></div>

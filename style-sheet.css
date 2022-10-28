@@ -2260,9 +2260,10 @@ a:active {
 
   .action-btn {
 
-    padding: 6px 10px 6px 10px;
+    padding: 6px 6px 6px 6px;
     margin: 8px;
     flex-grow: 1;
+    font-size: 1.1em;
   }
 }
 
@@ -2662,7 +2663,7 @@ display: flex;
   /* Position the close button (top right corner) */
   .overlay-tc .closebtn {
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 49%;
     font-size: 60px;
     z-index: 22;
@@ -2673,8 +2674,7 @@ display: flex;
   @media screen and (max-height: 700px) {
     .overlay-tc .closebtn {
       font-size: 30px;
-      top: 15px;
-      right: 15px;
+      top: 0px;
       font-weight: lighter;
     }
   } 

@@ -39,7 +39,7 @@ class ShareCurtain extends HTMLElement {
           https://book.earthen.io
           </div>
           
-          <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url-main" onclick="confirmCopy2()">Copy <div class="copy-check"><div id="check2">✓</div></div></button>
+          <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url-main" onclick="confirmCopy2()">Copy<div class="copy-check"><div id="check2" style="color:green">✓</div></div></button>
       </div>
       <div>
         <h6>The content of this Earthbook is under a Creative-Commons ND-SA-AT 4.0 license .  This means you can freely share the links to this page, quote passages, download and share the PDF as long as you attribute it to this Earthbook.  In addition, you can access the EarthBooks source code and content on Github where you can fork this book to make your own (or to create a translation of this one).</h6>
