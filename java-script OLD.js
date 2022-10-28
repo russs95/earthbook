@@ -45,7 +45,7 @@ function scrollFunction() {
     //document.getElementById("mandala-day").style.background = "";
     //document.getElementById("book-title").style.display = "unset";
     document.getElementById("book-title").style.display = "unset";
-    document.getElementById("mandala-day").style.display = "none";
+    document.getElementById("mandala-day").style.opacity = "0";
     document.getElementById("side").style.marginTop = "0px";
 
   }
