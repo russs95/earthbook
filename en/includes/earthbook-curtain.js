@@ -49,11 +49,11 @@ class Earthbook extends HTMLElement {
 
    
 	      <div id="wcb" class="carbonbadge wcb-d"></div>
-	      <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+	      
         <br>
-        <!--
+        
         <div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons BY SA 4.0 License" style="border-width:0" src="icons/cc-by-sa.svg" width="200px" height="45px" loading="lazy"/> </a>
-        </div>-->
+        
         
             
     </div>

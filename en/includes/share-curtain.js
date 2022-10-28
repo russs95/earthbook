@@ -16,8 +16,8 @@ class ShareCurtain extends HTMLElement {
       <div class="share-overlay-content">
             
             <div>
-                <h1 class="accessibility-plugin-ac">Earthbooks are made for sharing.</h1> 
-                <h3>Copy and share the link to this chapter...</h3>
+                <h1 class="accessibility-plugin-ac">Share. Freely.</h1> 
+                <h3>Earthbooks are designed to enable you to easily share chapters.  Copy and share the link to this chapter...</h3>
             </div>
             
             <div class="copy-section">

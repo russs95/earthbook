@@ -3,21 +3,21 @@ window.onscroll = function() {scrollFunction()};
 //Scroll on arrival 
 function scrollFunction() {
 
-  const mediaQuery = window.matchMedia('(max-width: 700px)')
+  const mediaQuery = window.matchMedia('(min-width: 700px)')
  
  
    //AFTER
    if ((mediaQuery.matches)  || (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)) {
     
    
-     document.getElementById("earthbook-navbar").style.height = "70px";
+     document.getElementById("earthbook-navbar").style.height = "60px";
      document.getElementById("main-title").style.opacity = "0";
      document.getElementById("sub-title").style.display = "none";
      document.getElementById("sub-earthbook").style.display = "none";
      document.getElementById("side").style.marginTop = "-100px"
      document.getElementById("book-header-logo").style.opacity = "1"; 
      //document.getElementById("book-header-logo").style.width = "160px";
-    document.getElementById("book-header-logo").style.height = "60px";
+    document.getElementById("book-header-logo").style.height = "52px";
     document.getElementById("book-header-logo").style.top = "5px";
     
     //document.getElementById("book-header-logo").style.margin = "auto";
@@ -43,7 +43,8 @@ function scrollFunction() {
  
    }
  }
- 
+
+
 
 
 
