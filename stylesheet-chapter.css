@@ -55,16 +55,11 @@
     display: block;
   }
   
-  #ct-share-link {
-    font-size: 2em;
-    padding: 10px;
-    display:block;
-  }
   
   #ct-chapt-graphic {
     background: rgb(227, 226, 226);
     padding: 20px;
-    height: 400px;
+    height: 444px;
   }
   
   @media (prefers-color-scheme: dark) {
@@ -72,11 +67,6 @@
     background: #141516;
     }
   }
-  
-  
-  
-  
-  
   
   #progress-bar {
       text-align: left;
