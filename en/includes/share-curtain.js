@@ -25,8 +25,8 @@ class ShareCurtain extends HTMLElement {
               </div>
 
               
-              <div class="copy-check"><div id="check" style="color:green">✓</div></div>
-              <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url" onclick="confirmCopy()">Copy</button>
+              
+              <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url" onclick="confirmCopy()">Copy<div class="copy-check"><div id="check" style="color:green">✓</div></div></button>
               
             </div>
 
@@ -38,8 +38,8 @@ class ShareCurtain extends HTMLElement {
           <div id="page-url-main" class="copy-box" style="border-left-color: rgb(0, 255, 34);">
           https://book.earthen.io
           </div>
-          <div class="copy-check"><div id="check2">✔️</div></div>
-          <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url-main" onclick="confirmCopy2()">Copy</button>
+          
+          <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url-main" onclick="confirmCopy2()">Copy <div class="copy-check"><div id="check2">✓</div></div></button>
       </div>
       <div>
         <h6>The content of this Earthbook is under a Creative-Commons ND-SA-AT 4.0 license .  This means you can freely share the links to this page, quote passages, download and share the PDF as long as you attribute it to this Earthbook.  In addition, you can access the EarthBooks source code and content on Github where you can fork this book to make your own (or to create a translation of this one).</h6>
@@ -60,18 +60,19 @@ document.getElementById("page-url").innerHTML =
 function confirmCopy() {
   var x = document.getElementById("check");
   if (x.style.display === "none") {
-    x.style.display = "block";
+    x.style.display = "inline";
+    x.style.color = "green";
   } else {
-    x.style.display = "block";
+    x.style.display = "inline";
   }
 }
 
 function confirmCopy2() {
   var x = document.getElementById("check2");
   if (x.style.display === "none") {
-    x.style.display = "block";
+    x.style.display = "inline";
     x.style.color = "green";
   } else {
-    x.style.display = "block";
+    x.style.display = "inline";
   }
 }
