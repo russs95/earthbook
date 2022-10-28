@@ -5,14 +5,16 @@ function scrollFunction() {
   if ( document.body.scrollTop > 30 || document.documentElement.scrollTop > 30 ) {
     
     //AFTERmargin-top: -67px;
-    document.getElementById("earthbook-navbar").style.height = "70px";
-    document.getElementById("ct-chapter-title").style.fontSize = "1.2em";
-    document.getElementById("ct-book-title").style.fontSize = "0.9em";
-    document.getElementById("ct-book-title").style.marginTop = "2px";
-    document.getElementById("ct-chapter-top").style.marginTop = "-67px";
+    document.getElementById("earthbook-navbar").style.height = "60px";
+    document.getElementById("ct-chapter-title").style.fontSize = "1.1em";
+    document.getElementById("ct-book-title").style.fontSize = "0.8em";
+    document.getElementById("ct-book-title").style.marginTop = "0px";
+    document.getElementById("ct-chapter-top").style.marginTop = "-70px";  
     document.getElementById("ct-word-count").style.display = "none";
     document.getElementById("book-header-logo").style.display = "none";
     document.getElementById("ct-chapter-title").style.fontWeight = "bolder";
+    document.getElementById("settings-menu").style.opacity = "1";
+    document.getElementById("share-menu").style.opacity = "1";
 
 
   } else {
@@ -25,10 +27,12 @@ function scrollFunction() {
     document.getElementById("ct-word-count").style.display = "block";
     //
     document.getElementById("book-header-logo").style.display = "none";
+    document.getElementById("settings-menu").style.opacity = "0.1";
+    document.getElementById("share-menu").style.opacity = "0.1";
 
   }
 }
-
+ 
 
   
 

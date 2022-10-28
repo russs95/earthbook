@@ -263,21 +263,21 @@ p {
   @media screen and (max-width: 699px) {
     p {
       font-size: 1.3em;
-      line-height: 1.3;
+      line-height: 1.4;
     }
   }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
     p {
-      font-size: 1.5em;
-      line-height: 1.3;
+      font-size: 1.4em;
+      line-height: 1.5;
     }
   }
 
 @media screen and (min-width: 1325px) {
 
     P {
-      font-size: 1.6em;
+      font-size: 1.4em;
       line-height: 1.6;
     }
   }
@@ -479,15 +479,31 @@ h6 {
     */
 
 
-    
+.lead-page-paragraph {
+  font-family: 'CooperLt', Georgia, serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+}
 
+.lead-page-paragraph:first-child:first-letter {
+  color: rgb(131, 131, 131);
+  float: left;
+  font-family: "CooperCT";
+  font-size: 8em;
+  line-height: 6.5em;
+  margin-top: -20px;
+  padding-right: 25px;
+  margin-left: -20px;
+  margin-bottom: 5px;
+
+}
 
 
 @media screen and (max-width: 699px) {  /*??*/
 
   .lead-page-paragraph {
-      font-size: 1.5em;
-      line-height: 1.4;
+      font-size: 1.6em;
+      line-height: 2;
   }
   }
 
@@ -495,16 +511,16 @@ h6 {
   @media screen and (min-width: 700px) and (max-width: 1324px) {
 
     .lead-page-paragraph {
-      font-size: 1.1em;
-      line-height:1.6;
+      font-size: 1.5em;
+      line-height:1.5;
     }
     }
 
     @media screen and (min-width: 1325px) {
 
       .lead-page-paragraph {
-        font-size: 1.1em;
-        line-height:1.6;
+        font-size: 1.5em;
+        line-height:1.6em;
     }
     }
 
@@ -566,7 +582,6 @@ h6 {
     border-color: rgb(66, 66, 66) !important;
     color: white !important;
     box-shadow: 0 4px 15px rgba(7, 7, 7, 0.3) !important;
-
   } */
 
 
@@ -683,11 +698,12 @@ margin-left: 0px;
 }
   }
 
+  /*
 @media screen and (max-width: 699px) {
   #book-title {
     display: none;
   }
-  }
+  }*/
 
 
 /*Book Logo*/
@@ -1840,109 +1856,6 @@ display: none;
   z-index: 14;
 }
 
-}
-
-#footer-content {
-  
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-
-  padding: 0px;
-  border-top: 1px;
-  border-style: solid;
-  border-bottom: none;
-  border-right: none;
-  border-left: none;
-  z-index: 15; 
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height: 150px;
-  width: 100%;
-
-  /*background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;*/
-  background-size: 60%;
-  background-color: rgb(244, 242, 242);
-  border-color: rgb(163, 163, 163);
-  color:  #202124 ;
-  box-shadow: 0 0px 15px rgba(85, 84, 84, 0.08);overflow: hidden;
-
-}
-
-@media (prefers-color-scheme: dark) {
-  #footer-content {
-  background-color: #1C1D20;
-  border-color: #424242;
-  color:  #ebecec ;
-  box-shadow: 0 0px 15px rgba(208, 208, 208, 0.08);overflow: hidden;
-  }
-} 
-
-
-
-
-/*COntent footer*/
-
-.next-section {
-  display: block;
-  text-align:left;
-  margin-left: 20px;
-  margin-right: auto;
-}
-
-.next-sec {
-  font-family: 'Mulish';
-  font-weight: bold;
-  font-size: 1.1em
-}
-
-.sec-name {
-  font-family: 'CooperLt';
-  font-size: 1em
-}
-
-
-.prev-button {
-  background: rgb(235, 235, 235);
-  font-family: 'Mulish';
-  font-size: 1.3em;
-  padding: 8px 20px 8px 20px;
-  color: rgb(121, 121, 121);
-  border-radius: 55px 0px 0px 55px;
-  width: fit-content;
-  margin-left: auto;
-  text-align: center;
-  z-index: 9;
-}
-
-.prev-button:hover {
-  padding-right: 30px;
-  background: white;
-  color:black;
-}
-
-
-.next-button {
-  background: black;
-  font-family: 'Mulish';
-  font-size: 1.3em;
-  padding: 8px 20px 8px 20px;
-  color: white;
-  border-radius: 0px 55px 55px 0px;
-  width: fit-content;
-  margin-right: 20px;
-  margin-left: auto;
-  text-align: center;
-  z-index: 10;
-}
-
-.next-button:hover {
-  
-  padding-right: 30px;
-  margin-right: 10px;
 }
 
 

@@ -29,11 +29,11 @@
   #ct-chapter-title {
     font-family: 'CooperLt';
     font-weight: 500;
-    font-size: 3.6em;
+    font-size: 20vmin;
     color: inherit;
     font-variant-caps: all-petite-caps;
     transition: 0.3s;
-    letter-spacing: 4px;
+    letter-spacing: 8px;
   }
   
   #ct-book-title {
@@ -59,11 +59,16 @@
   #ct-chapt-graphic {
     background: rgb(227, 226, 226);
     padding: 20px;
-    height: 444px;
+    height: 424px;
+    margin: auto;
+    width:100%;
+    border-bottom: 1px grey solid;
+    
   }
   
   @media (prefers-color-scheme: dark) {
     #ct-chapt-graphic {
+    background: url(pngs/background-shadow.png) repeat-y bottom;
     background: #141516;
     }
   }
@@ -96,11 +101,6 @@
         
       }
   
-      #ct-chapt-graphic {
-        margin-left: 5%;
-          margin-right: 5%;
-      }
-
       .footer-size {
         margin-left: 5%;
         margin-right: 5%;
@@ -110,7 +110,7 @@
 
 
    
-
+.footer-size {height: 350px;}
 
 
     @media screen and (min-width: 700px) and (max-width: 1324px) {
@@ -119,15 +119,13 @@
         margin: auto;
         margin-top: 80px;
       }
-      #ct-chapt-graphic {
-        margin-left: 15%;
-        margin-right: 15%;
-  
-      }
+ 
+
       .footer-size {
       width: 70%
      }
     }
+
     @media screen and (min-width: 1325px) {
       #ct-main {
         width: 50%;
@@ -138,10 +136,6 @@
           
       }
   
-      #ct-chapt-graphic {
-        width: 50%;
-        margin: auto;
-      }
   
       .footer-size {
         width: 50%;
@@ -173,22 +167,109 @@
       }}
     
   
-  /*
-      @media screen and (max-width: 700px) {
-    .overlay-content-tc {
-      width: 90%;
-    }
-  }
+
+
+
+#footer-chapter {
   
-  @media screen and (min-width: 700px) and (max-width: 1324px) {
-    .overlay-content-tc {
-      width: 80%;
-    }
-  }
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  padding: 0px;
+  border-top: 1px;
+  border-style: solid;
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  z-index: 15; 
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   
-  @media screen and (min-width: 1325px) {
-    .overlay-content-tc {
-        width: 85%;
-      }
-    }
-  */
+  padding-bottom: 100px;
+  width: 100%;
+
+  /*background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;*/
+  background-size: 60%;
+  background-color: rgb(244, 242, 242);
+  border-color: rgb(163, 163, 163);
+  color:  #202124 ;
+  box-shadow: 0 0px 15px rgba(85, 84, 84, 0.08);overflow: hidden;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  #footer-chapter {
+  background-color: #1C1D20;
+  border-color: #424242;
+  color:  #ebecec ;
+  box-shadow: 0 0px 15px rgba(208, 208, 208, 0.08);overflow: hidden;
+  }
+} 
+
+
+
+
+/*COntent footer*/
+
+.next-section {
+  display: block;
+  text-align:left;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.next-sec {
+  font-family: 'Mulish';
+  font-weight: bold;
+  font-size: 1.1em
+}
+
+.sec-name {
+  font-family: 'CooperLt';
+  font-size: 1em
+}
+
+
+.prev-button {
+  background: rgb(235, 235, 235);
+  font-family: 'Mulish';
+  font-size: 1.3em;
+  padding: 8px 20px 8px 20px;
+  color: rgb(121, 121, 121);
+  border-radius: 55px 0px 0px 55px;
+  width: fit-content;
+  margin-left: auto;
+  text-align: center;
+  z-index: 9;
+}
+
+.prev-button:hover {
+  padding-right: 30px;
+  background: white;
+  color:black;
+}
+
+
+.next-button {
+  background: black;
+  font-family: 'Mulish';
+  font-size: 1.3em;
+  padding: 8px 20px 8px 20px;
+  color: white;
+  border-radius: 0px 55px 55px 0px;
+  width: fit-content;
+  margin-right: 20px;
+  margin-left: auto;
+  text-align: center;
+  z-index: 10;
+}
+
+.next-button:hover {
+  
+  padding-right: 30px;
+  margin-right: 10px;
+}
