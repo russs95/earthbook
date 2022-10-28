@@ -91,22 +91,22 @@ function openShare() {
   } 
 
 /* BUY SHARE OVERLAY 
-
+  
 Triggers the right share link panel*/
 
 function openBuy() {
-  document.getElementById("buy-curtain").style.width = "100%";
+  document.getElementById("buy-curtain").style.height = "100vh";
   document.body.style.overflowY = "hidden";
   document.body.style.maxHeight = "100vh";
 
 }
 
+
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeBuy() {
-  document.getElementById("buy-curtain").style.width = "0%";
+  document.getElementById("buy-curtain").style.height = "0vh";
   document.body.style.overflowY = "unset";
   document.body.style.maxHeight = "unset";
-
 } 
 
 

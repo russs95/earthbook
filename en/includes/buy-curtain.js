@@ -7,7 +7,7 @@ class BuyCurtain extends HTMLElement {
     this.innerHTML = `
 
     <div id="buy-curtain" class="buy-overlay">
-    
+     
     <a href="javascript:void(0)" class="closebtn" onclick="closeBuy()">&times;</a>
     
       <div class="buy-overlay-content">
@@ -47,7 +47,7 @@ class BuyCurtain extends HTMLElement {
 
 
             </div>
-          <div>
+          </div>
 
     `;
 }
