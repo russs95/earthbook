@@ -713,7 +713,7 @@ margin-right: -42px;
       width: 100%;
       background-size: contain;
       transition: 0.3s;
-      opacity: 0;
+
       filter: brightness(75%);
     }
   }
@@ -722,6 +722,15 @@ margin-right: -42px;
     filter:brightness(100%);
   }
  
+  @media screen and (max-width: 699px) {
+    #book-header-logo { 
+      opacity: 1;
+    }
+
+    @media screen and (min-width: 700px) {
+      #book-header-logo { 
+        opacity: 0;
+      }
   
   /*
   @media screen and (max-width: 699px) {
