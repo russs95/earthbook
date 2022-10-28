@@ -12,7 +12,7 @@ class ContentCurtain extends HTMLElement {
         
         <div class="overlay-content-tc">
 
-                    <div class="contents-title">Book One</div>
+                    <div class="contents-title"><div>Books One</div><div>Two</div><div>Three</div></div>
                     
                     <a href="preface.html">
                     <div class="tc-item">

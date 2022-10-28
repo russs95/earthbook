@@ -876,7 +876,7 @@ margin-left: 0px;
 
   .overlay-settings .closebtn {
   font-size: 40px;
-  top: 15px;
+  top: 0px;
   left: 15px;
   }
 } 
@@ -1045,16 +1045,9 @@ margin-left: 0px;
 
 #check2 {display: none;}
 
-@media (prefers-color-scheme: dark) {
-
-  #check2 {color: green;}
-}
 
 .btn {
-
-
   border: 1px solid rgb(33, 33, 33);
-
   font-weight: bolder;
   background: grey;
   align-self: center;
@@ -1081,7 +1074,7 @@ margin-left: 0px;
 }
   .btn {
     padding: 8px;
-    width: 15%;
+    width: fit-content;
     font-size: 12px;
     border-radius: 5px;
   
@@ -1090,8 +1083,6 @@ margin-left: 0px;
  
 .copy-check {
   display: inline;
-
-
 
   }
   }
@@ -1113,7 +1104,7 @@ margin-left: 0px;
 }
 .btn {
   padding: 8px;
-  width: 15%;
+  width: fit-content;
   font-size: 12px;
   border-radius: 5px;
 }
@@ -1142,7 +1133,7 @@ margin-left: 0px;
   .btn {
     font-size: 12px;
     padding: 8px;
-    width: 10%;
+    width: fit-content;
     font-size: 15px;
     line-height: 1.6;
     border-radius: 5px;
@@ -2520,14 +2511,16 @@ margin: 18px 0px 8px 0px;
 .contents-title {
   font-family: 'CooperLt';
   font-variant-caps: small-caps;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   letter-spacing: 4px;
   width: 100%;
+  display: flex;
+
 }
 
 @media screen and (max-width: 700px) {
   .contents-title {
-    font-size: 1.7em;
+    font-size: 1.5em;
     padding-bottom: 10px;
   }
 }
@@ -2554,10 +2547,14 @@ margin: 18px 0px 8px 0px;
   border-style: solid;
   cursor: pointer;
   align-items: stretch;
-  border-bottom: none;
+  border-top: none;
 border-right: none;
 border-left: none;
 display: flex;
+}
+
+.tc-item:hover {
+  border-width: 2px;
 }
 
 @media screen and (max-width: 700px) {
@@ -2647,7 +2644,6 @@ display: flex;
     }
   }
 
-
   /*DARK OBSOLOTE
   
   /* The navigation links inside the overlay 
@@ -2658,7 +2654,7 @@ display: flex;
 
   }
   
-  /* When you mouse over the navigation links, change their color 
+  /* When you mouse over the navigation links, change their color */
   .overlay-tc a:hover, .overlay a:focus {
     color: inherit;
     font-weight: bolder;
@@ -2677,14 +2673,11 @@ display: flex;
   
   /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
   @media screen and (max-height: 700px) {
-    .overlay-tc a {
-      font-size: 20px;
-      }
-
     .overlay-tc .closebtn {
-      font-size: 40px;
+      font-size: 30px;
       top: 15px;
       right: 15px;
+      font-weight: lighter;
     }
   } 
 
