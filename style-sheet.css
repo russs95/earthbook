@@ -637,6 +637,7 @@ margin-right: -42px;
   left: 0;
   display: block;
   cursor: pointer;
+  margin-top: -10px;
 
   background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
   
@@ -663,9 +664,12 @@ margin-right: -42px;
   background-size: contain;
   transition: 0.3s;
   background-size: contain;
-  display: none;
+  opacity: 0;
   transition: 0.3s;
   filter: brightness(75%);
+  position: absolute;
+  top: 50px;
+
   }
 
 
@@ -675,7 +679,7 @@ margin-right: -42px;
       width: 100%;
       background-size: contain;
       transition: 0.3s;
-      display: none;
+      opacity: 0;
       filter: brightness(75%);
     }
   }
