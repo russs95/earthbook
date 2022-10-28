@@ -3,8 +3,7 @@ window.onscroll = function() {scrollFunction()};
 //Scroll on arrival 
 function scrollFunction() {
 
-  const mediaQuery = window.matchMedia('(min-width: 700px)')
- 
+  const mediaQuery = window.matchMedia('(max-width: 700px)')
  
    //AFTER
    if ((mediaQuery.matches)  || (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30)) {

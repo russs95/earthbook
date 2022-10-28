@@ -11,8 +11,8 @@ class BuyCurtain extends HTMLElement {
     <a href="javascript:void(0)" class="closebtn" onclick="closeBuy()">&times;</a>
     
       <div class="buy-overlay-content">
-
       
+      <div><h2>Buy a premium format and support independent and regenerative publishing.</h2></div>
             <!--
             <div class="three-books">
               <div class="buy-book">
