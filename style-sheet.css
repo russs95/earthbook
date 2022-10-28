@@ -290,7 +290,7 @@ h1 {
 
 @media screen and (max-width: 699px) {
     h1 {
-      font-size: 2em;
+      font-size: 2.4em;
       
     }
   }
@@ -412,7 +412,7 @@ h6 {
 
 @media screen and (max-width: 699px) {
   h6 {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 }
 
@@ -1040,14 +1040,10 @@ margin-right: -42px;
 }
 
 .btn {
-  font-size: 12px;
-  padding: 8px;
-  width: 10%;
+
+
   border: 1px solid rgb(33, 33, 33);
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  border-radius: 5px;
+
   font-weight: bolder;
   background: grey;
   align-self: center;
@@ -1055,39 +1051,35 @@ margin-right: -42px;
   color: white;
   }
 
-
-
   .btn:hover {color: black;}
 
  
-
-
-
   @media screen and (max-width: 700px) {
     .copy-box { 
 
-  font-size: 10px;
-  line-height: 1.2;
-  margin: auto;
-  border-radius: 4px;
-  margin-right: -6%;
-  padding-right: 6%;
-  margin-bottom: 1.6em;
-width: 100%;
-  padding: 10px;
+      font-size: 10px;
+      line-height: 1.2;
+      margin: auto;
+      border-radius: 4px;
+      margin-right: -6%;
+      padding-right: 6%;
+      margin-bottom: 1.6em;
+      width: 100%;
+      padding: 10px;
 
 }
   .btn {
-    margin: auto;
-    padding: 2px;
-
+    padding: 8px;
+    width: 15%;
+    font-size: 12px;
+    border-radius: 5px;
   }
 
   .copy-check {
     position: absolute;
-right: 80px;
-top: 10;
-margin-top: 21px;
+    right: 20%;
+    top: 10;
+    margin-top: 18px;
   }
   }
 
@@ -1103,9 +1095,17 @@ margin-top: 21px;
     margin-right: -10%;
     padding-right: 10%;
     margin-bottom: 1.6em;
-width: 100%;
-padding: 15px;
-  
+    width: 100%;
+    padding: 15px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 8px;
+    width: 10%;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    border-radius: 5px;
   }
 }
 
@@ -1113,21 +1113,25 @@ padding: 15px;
 
   .copy-box { 
 
-font-size: 15px;
-line-height: 1.6;
-margin-bottom: 1.6em;
-width: 100%;
-padding: 1em 1.5em;
-border-radius: 5px;
-margin-right: -20%;
-padding-right: 22%;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    width: 100%;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+    margin-right: -20%;
+    padding-right: 22%;
 
   }
 
   .btn {
-    margin-bottom:1.6em;
+    font-size: 12px;
+    padding: 8px;
+    width: 10%;
+    font-size: 15px;
     line-height: 1.6;
-
+    margin-bottom: 1.6em;
+    border-radius: 5px;
   }
 }
 
@@ -1529,10 +1533,10 @@ display: none;
 @media screen and (max-width: 699px) {
   .lead-text {
       font-size: 1.1em;
-      margin-top: 17px;
+
       padding-bottom: 27px;
       line-height: 1.3;
-      padding: 0px 4px 0px 4px;
+      padding: 15px 4px 8px 4px;
   }
   }
 
