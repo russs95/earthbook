@@ -31,7 +31,11 @@ class Bookplate extends HTMLElement {
 
           <h4 class="bookplate-year">M M X X I I</h4>
 
-          <div id="sub-earthbook"><h5>earthBook edition</h5></div>  
+          <div id="sub-earthbook"><h5>earthBook edition</h5></div> 
+          
+          <div id="line" style="width:50%; margin:auto"></div>
+
+          <h6>Print, PDF & Earthbook editions published by Earthen.io</h6>
           
           <a href="javascript:void(0)" class="closebtn" onclick="closeBookplate()">&times;</a>
         </div>
