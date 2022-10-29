@@ -62,6 +62,9 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 
 <!-- Style Sheets -->
+
+
+<link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" type="text/css" href="../style-sheet.css?v1.2">
 <link rel="stylesheet" href="../acessibilidade.css" />
 
@@ -81,7 +84,20 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
  <!--7--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--8--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
 
+ <script>
+    // If `prefers-color-scheme` is not supported, fall back to light mode.
+    // In this case, light.css will be downloaded with `highest` priority.
+    if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
+    document.documentElement.style.display = 'none';
+    document.head.insertAdjacentHTML(
+    'beforeend',
+    '<link rel="stylesheet" href="/light.css" onload="document.documentElement.style.display = ``">'
+    );
+    }
+   </script>
 
+<link rel="stylesheet" href="/dark.css" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
 <!-- Arc CDN Script without delay
 <script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
 
