@@ -16,7 +16,7 @@
     display: unset;
     cursor: pointer;
     position: fixed;
-    height: 200px;
+    height: 33vh;
     margin: 0px auto;
     margin-top: 20px;
   }
@@ -39,7 +39,7 @@
   #ct-book-title {
     font-family: 'Mulish';
     font-weight: 300;
-    font-size: 1.6em;
+    font-size: 4vmin;
     color: inherit;
     font-variant-caps: petite-caps;
     margin-top: 10px;
@@ -50,7 +50,7 @@
   #ct-word-count {
     font-family: 'CooperLt';
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 2vmin;
     padding: 10px;
     display: block;
   }
@@ -68,8 +68,10 @@
   
   @media (prefers-color-scheme: dark) {
     #ct-chapt-graphic {
-    background: url(pngs/background-shadow.png) repeat-y bottom;
-    background: #141516;
+      background: #141516;
+      background: url(svgs/tractatus-mandala-full-grey.svg) no-repeat center;
+    background-size: cover;
+   
     }
   }
   
@@ -95,8 +97,8 @@
   
     @media screen and (max-width: 699px) {
       #ct-main {
-          margin-left: 5%;
-          margin-right: 5%;
+          margin-left: 7%;
+          margin-right: 7%;
           margin-top: 80px;
         
       }
@@ -108,7 +110,7 @@
     }
 
 
-
+#book-title {opacity: 0;}
    
 .footer-size {height: 350px;}
 

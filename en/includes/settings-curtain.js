@@ -8,7 +8,7 @@ class SettingsCurtain extends HTMLElement {
 
     <div id="left-settings-overlay" class="overlay-settings">
 
-    <div id="settings-menu">
+    <div id="left-close-button">
             <span style="cursor:pointer" onclick="closeSettings()"><img src="../svgs/left-x.svg"></span>
         </div>
     
