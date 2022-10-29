@@ -31,6 +31,33 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 */
 
 
+ // If `prefers-color-scheme` is not supported, fall back to light mode.
+ // In this case, light.css will be downloaded with `highest` priority.
+ if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
+ document.documentElement.style.display = 'none';
+ document.head.insertAdjacentHTML(
+ 'beforeend',
+ '<link rel="stylesheet" href="/light.css" onload="document.documentElement.style.display = ``">'
+ );
+ }
+
+ const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+ darkModeMediaQuery.addListener((e) => {
+ const darkModeOn = e.matches;
+ console.log(`Dark mode is ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
+ });
+
+
+
+/*Conditionally either load the light or the dark stylesheet. The matching file
+ will be downloaded with `highest`, the non-matching file with `lowest`
+ priority. If the browser doesn't support `prefers-color-scheme`, the media
+ query is unknown and the files are downloaded with `lowest` priority (but
+ above I already force `highest` priority for my default light experience).
+-->*/
+
+
+
 
 /* -------------------------------------------------------------------------- */
 
