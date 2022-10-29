@@ -10,7 +10,8 @@
 
   body {
     background-color: #202124;
-    color: #BDC1C6;
+    color: red !important;
+    /*#BDC1C6;*/
     }
 
     #underlayer {   /*THis enables sepia/contrast/brightness*/
