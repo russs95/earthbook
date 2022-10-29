@@ -933,7 +933,7 @@ margin-left: 0px;
 
 #bottom-close-button {
   position: absolute;
-  transition: 0.5s;
+  transition: 0.3s;
   background: white;
   border-radius: 30px;
   height: 85px;
@@ -945,14 +945,21 @@ margin-left: 0px;
   margin-left: auto; 
   margin-right: auto; 
   z-index: 50;
-  bottom: -25px;
-  padding: 0px 20px 10px 10px;
-  width: 150px;
+  bottom: -35px;
+  padding: 0px 10px 10px 10px;
+  width: 150px; 
 }
 
 #bottom-close-button:hover {
   padding-bottom:25px;
 }
+
+/*
+#bottom-close-button:active {
+  opacity:0;
+  transition: 1s;
+  
+}*/
 
 #bottom-close-button {
 background-color: white;
@@ -972,9 +979,8 @@ background: #242529 !important;
 
 #bottom-close-button img {
 height: 50px;
-padding-top: 20px;
-padding-left: 7px;
-margin-left: 0px;
+padding-top: 10px;
+
 }  
 
 
@@ -1629,6 +1635,7 @@ margin-left: 0px;
     width: 90%;
     flex-direction: row;
   }
+  
   }
 
 
@@ -2713,7 +2720,7 @@ margin: 18px 0px 8px 0px;
 .contents-title-box {
   text-align: center;
   width: 100%;
-  margin: 50px auto 0px auto;
+  margin: 40px auto 0px auto;
   
 }
 
@@ -2729,8 +2736,8 @@ margin: 18px 0px 8px 0px;
 
 @media screen and (max-width: 700px) {
   .contents-title {
-    font-size: 1.8em;
-    padding-bottom: 10px;
+    font-size: 1.6em;
+    padding-bottom: 7px;
   }
 }
 

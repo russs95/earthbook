@@ -16,8 +16,8 @@ class SettingsCurtain extends HTMLElement {
     
     <div class="overlay-content-settings">
             
-            <div class="lead-page-paragraph">
-                <p class="accessibility-plugin-ac">Adjust the presentation of the EarthBook.</p></div>
+    <!--<div class="lead-page-paragraph">
+                <p class="accessibility-plugin-ac">Adjust the presentation of the EarthBook.</p></div>-->
             
             <div id="languages">
             <a href="../en/index.html"><div class="language-selector">EN</div></a>

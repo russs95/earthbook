@@ -24,7 +24,7 @@ class BuyCurtain extends HTMLElement {
                   <img src="../photos/cover-epub-400px.webp" alt="The Epub version of the book is best for iphone and android ereaders." title="The Epub version of the book is best for iphone and android ereaders.">
 
                   <div class="book-buy-info">
-                    <p><b>Ebook Edition</b><p>
+                  <p style="margin:-10px"><b>Ebook Edition</b><p>
                     <h6>The optimal reading format for iPhones and Android e-Book apps.</h6>
 
                     <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy: 10$</a>
@@ -39,7 +39,7 @@ class BuyCurtain extends HTMLElement {
                 <div class="book-listing">
                   <img src="../photos/cover-print-400px.webp"  alt="The print version of the book" title="The print version of the book">
                   <div class="book-buy-info">
-                  <p><b>Print Edition</b><p>
+                  <p style="margin:-10px"><b>Print Edition</b><p>
 
                     <h6>The print version of the book is coming soon.  </h6>
 
@@ -56,7 +56,7 @@ class BuyCurtain extends HTMLElement {
                   <img src="../photos/cover-mobi-400px.webp"  alt="The Kindle format, and for other select eReaders" title="The Kindle format, and for other select eReaders">
                     
                   <div class="book-buy-info">
-                  <p><b>Kindle Edition</b><p>
+                  <p style="margin:-10px"><b>Kindle Edition</b><p>
                       <h6>The Mobi format which works best on Amazon e-readers.</h6>
                       <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy: 10$</a>
                   </div>
