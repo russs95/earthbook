@@ -702,6 +702,7 @@ margin-left: 0px;
   height: 85px;
   padding-right: 70px;
   right: -60px;
+  top: -20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1425,7 +1426,7 @@ margin-left: 0px;
   }
 
     .book-buy-info h6 {
-      font-size: 1.5em;
+      font-size: 1.1em;
       text-align: left;
       margin: 20px 0px 10px 0px;
     }
@@ -2416,7 +2417,7 @@ a:active {
 
 /* -------------------------------------------------------------------------- */
 
-/*	10. ??? 
+/*	10. Earthbook Navbar
 
 /* -------------------------------------------------------------------------- */
 
@@ -2433,13 +2434,17 @@ a:active {
     text-shadow: 0 0 3px #ffffff;
   }
 
-  .main-title-night {
+  @media (prefers-color-scheme: dark) {
+    
+    #main-title {
     text-shadow: 0 0 3px #000000 !important;
   }
+}
 
   @media screen and (max-width: 700px) { 
     #main-title {
       font-size: 1.7em;
+      display: none;
   } 
 }
 
@@ -2670,7 +2675,7 @@ margin: 18px 0px 8px 0px;
     .tc-a-book {
     letter-spacing: 5px;
     padding: 5px 15px 5px 15px;
-    font-size: 2.2em;
+    font-size: 1.9em;
     
     }
   }
@@ -2694,7 +2699,7 @@ margin: 18px 0px 8px 0px;
   
   @media screen and (max-width: 700px) {
     .contents-title {
-      font-size: 1.3em;
+      font-size: 1.15em;
       padding-bottom: 10px;
     }
   }

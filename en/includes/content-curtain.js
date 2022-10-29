@@ -9,7 +9,7 @@ class ContentCurtain extends HTMLElement {
     <div id="table-of-contents" class="overlay-tc">
 
     <div id="right-close-button">
-    <span style="cursor:pointer" onclick="closeComments()"><img src="../svgs/right-x.svg"></span>
+    <span style="cursor:pointer" onclick="closeContents()"><img src="../svgs/right-x.svg"></span>
 </div>
         
     <!--    <a href="javascript:void(0)" class="closebtn" onclick="closeContents()">&times;</a>-->
