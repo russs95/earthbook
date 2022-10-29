@@ -25,12 +25,18 @@ class ShareCurtain extends HTMLElement {
             </div>
             
             <div class="copy-section">
+              
               <div id="page-url" class="copy-box" style="border-left-color: orange;" >
               </div>
-
-              
             
-              <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url" onclick="confirmCopy()"><div class="copy-check"><div id="check" style="color:green"><span>✓</span></div></div><span style="align-self:center";>Copy</span></button>
+              <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url" onclick="confirmCopy()">
+                <div class="copy-check">
+                  <div id="check" style="color:green">
+                    <span>✓</span>
+                  </div>
+                </div>
+                <span style="align-self:center";>Copy</span>
+              </button>
               
             </div>
 

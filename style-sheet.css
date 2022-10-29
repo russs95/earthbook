@@ -883,11 +883,12 @@ padding-left: 7px;
 margin-left: 0px;
 }  
 
+/*Bottom Left CLLLose Button
 
 
-/*Bottom CLose Button*/
+/*Left CLose Button*/
 
-#bottom-close-button {
+#bottom-left-close-button {
   position: absolute;
   left: 0px;
   transition: 0.5s;
@@ -902,9 +903,58 @@ margin-left: 0px;
   bottom: -10px;
 }
 
-#bottom-close-button {
+#bottom-left-close-button {
 left: -40px;
 transition: 0.5s;
+background-color: white;
+box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  #bottom-left-close-button {
+background:  #252525   !important;
+}
+
+#bottom-left-close-button:hover {
+background: #242529 !important;
+}
+}
+
+#bottom-left-close-button img {
+height: 50px;
+padding-top: 20px;
+padding-left: 7px;
+margin-left: 0px;
+}  
+
+
+/*Bottom CLose Button*/
+
+#bottom-close-button {
+  position: absolute;
+  transition: 0.5s;
+  background: white;
+  border-radius: 30px;
+  height: 85px;
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+  border: solid 1px gray;
+  padding-left: 40px;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  z-index: 50;
+  bottom: -25px;
+  padding: 0px 20px 10px 10px;
+  width: 150px;
+}
+
+#bottom-close-button:hover {
+  padding-bottom:25px;
+}
+
+#bottom-close-button {
 background-color: white;
 box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
 }
@@ -1304,16 +1354,19 @@ margin-left: 0px;
   display: block;
   text-align: left;
   justify-content: center;
+  border-radius: 5px 0px 0px 5px;
+  margin-right: -5px;
 }
 
 .copy-check {
   font-size: 15px;
   line-height: 1.6;
-  padding: 8px;
+  padding-right: 10px;
   width: 10%;
   font-weight: bolder;
   color: green !important;
   align-self: center;
+  height: 100%;
   }
 
 #check {display: none;}
@@ -1349,29 +1402,24 @@ margin-left: 0px;
       margin-right: -6%;
       padding-right: 6%;
       width: 100%;
-      padding: 10px 35px 10px 10px;
+      padding: 10px 45px 10px 10px;    
+      }
 
-     
-}
-  .btn {
-    padding: 8px;
-    width: fit-content;
-    font-size: 12px;
-    border-radius: 5px;
-  
-  }
+    .btn {
+      font-size: 12px;
+      height: 100%;
+      width: 20%;
+    }
 
  
-.copy-check {
-  display: inline;
-
-  }
-  }
+  .copy-check {
+    display: inline;
+    }
+      }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
 
   .copy-box { 
-
     font-size: 10px;
     line-height: 1.2;
     margin: auto;
@@ -1380,24 +1428,20 @@ margin-left: 0px;
     padding-right: 6%;
     width: 100%;
     padding: 10px;
- 
-
-}
-.btn {
-  font-size: 12px;
-}
+  }
+  .btn {
+    font-size: 12px;
+    height: 100%;
+    width: 20%;
+  }
 
 .copy-check {
   display: inline;
-
-
-}
+  }
 }
 
 @media screen and (min-width: 1325px) {
-
   .copy-box { 
-
     font-size: 15px;
     line-height: 1.6;
     width: 100%;
@@ -1405,7 +1449,6 @@ margin-left: 0px;
     border-radius: 5px 0px 0px 5px;
     margin-right: -5px;
     padding-right: 0%;
-
   }
 
   .btn {
@@ -1413,7 +1456,6 @@ margin-left: 0px;
     height: 100%;
     width: 20%;
     font-size: 18px;
-    
   }
 }
 
@@ -1508,7 +1550,7 @@ margin-left: 0px;
 
 @media screen and (max-width: 700px) {
   .buy-overlay-content {
-    width: 95%;
+    width: 92%;
 
    
 }
@@ -1564,7 +1606,7 @@ margin-left: 0px;
   }
 
   .book-listing img  {
-    width: 50%;
+    width: 48%;
     max-width:175px;
     text-align:right;
     height: fit-content;
@@ -1575,7 +1617,7 @@ margin-left: 0px;
   }
 
     .book-buy-info h6 {
-      font-size: 1.0em;
+      font-size: 0.9em;
       text-align: left;
       margin: 30px 0px 10px 0px;
     }
