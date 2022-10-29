@@ -38,21 +38,34 @@ Media Query parameters used throughout:
 
 /* BASICS */
 
+:root {
+  color-scheme: light dark;
+ }
+ /*
+ body {
+  color: var(--color);
+  background-color: var(--background-color);
+ }*/  
 
-.clipboard {
-  border: 0;
-  padding: 15px;
-  border-radius: 3px;
-  background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
-  cursor: pointer;
-  color: #04048c;
-  font-family: 'Karla', sans-serif;
-  font-size: 16px;
-  position: relative;
-  top: 0;
-  transition: all .2s ease;
+ /* style.css */
+img[src*=".svg"]:hover {
+  filter: var(--icon-filter_hover);
+ }
+ 
+ /*
+ body {
+  --duration: 0.5s;
+  --timing: ease;
+ 
+ color: var(--color);
+  background-color: var(--background-color);
+ 
+ transition:
+  color var(--duration) var(--timing),
+  background-color var(--duration) var(--timing);
+ }*/
+ 
 
-  }
 
 
 /*LIVE*/
@@ -60,8 +73,8 @@ Media Query parameters used throughout:
 
 body {
   margin: 0px;
-  background-color: rgb(252, 251, 251);
-  color: #202124;
+ /* background-color: rgb(252, 251, 251);
+  color: #202124;*/
   position: absolute;
   z-index: 0;
   overflow-x: hidden; /*ARG WHY OVERFLOW?*/
@@ -70,21 +83,22 @@ body {
 
 #underlayer {   /*THis enables sepia/contrast/brightness*/
   margin: 0px;
-  background-color: rgb(252, 251, 251);
+  /*background-color: rgb(252, 251, 251);*/
   max-width: 100%;
   height: 100%;
   }
 
+  /*
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #202124;
     color: #BDC1C6;
     }
 
-    #underlayer {   /*THis enables sepia/contrast/brightness*/
+    #underlayer {   
       background-color: #202124;
   }
-}
+}*/
 
 @media (prefers-contrast) {
 
@@ -489,11 +503,11 @@ h6 {
   color: rgb(131, 131, 131);
   float: left;
   font-family: "CooperCT";
-  font-size: 8em;
-  line-height: 6.5em;
-  margin-top: -20px;
-  padding-right: 25px;
-  margin-left: -20px;
+  font-size: 4em;
+  line-height: 4.5em;
+  margin-top: -10px;
+  padding-right: 10px;
+  margin-left: -10px;
   margin-bottom: 5px;
 
 }
@@ -502,8 +516,8 @@ h6 {
 @media screen and (max-width: 699px) {  /*??*/
 
   .lead-page-paragraph {
-      font-size: 1.6em;
-      line-height: 2;
+      font-size: 1.2em;
+      line-height: 1.3;
   }
   }
 
@@ -511,8 +525,8 @@ h6 {
   @media screen and (min-width: 700px) and (max-width: 1324px) {
 
     .lead-page-paragraph {
-      font-size: 1.5em;
-      line-height:1.5;
+      font-size: 1.3em;
+      line-height:1.3;
     }
     }
 
@@ -2479,7 +2493,7 @@ margin: 18px 0px 8px 0px;
     .tc-a-book {
     letter-spacing: 4px;
     padding: 15px 15px 15px 15px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     }
   }
 
