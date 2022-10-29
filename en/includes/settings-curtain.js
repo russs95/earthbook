@@ -7,8 +7,12 @@ class SettingsCurtain extends HTMLElement {
     this.innerHTML = `
 
     <div id="left-settings-overlay" class="overlay-settings">
+
+    <div id="settings-menu">
+            <span style="cursor:pointer" onclick="closeSettings()"><img src="../svgs/left-x.svg"></span>
+        </div>
     
-    <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>
+   <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>-->
     
     <div class="overlay-content-settings">
             

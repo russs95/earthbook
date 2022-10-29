@@ -9,7 +9,6 @@ class Header extends HTMLElement {
     <div id="earthbook-navbar">
         <div id="settings-menu">
             <span style="cursor:pointer" onclick="openSettings()"><img src="../svgs/left-menu.svg"></span>
-           
         </div>
 
         <span style="cursor:pointer" onclick="openContents()">

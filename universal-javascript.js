@@ -374,13 +374,13 @@ if (preference.matches) {
 
 /* -------------------------------------------------------------------------- */
 
-
+/*max-height:100vh; overflow:hidden;*/
 
  function Sepia(e)
 {
 var containerSepia = document.body;
 var val = e.value;
-containerSepia.setAttribute("style", "filter: sepia("+val+"%); max-height:100vh; overflow-y:hidden;");
+containerSepia.setAttribute("style", "filter: sepia("+val+"%);");
 
 
 }
@@ -389,14 +389,14 @@ function Contrast(e)
 {
 var containerContrast = document.body;
 var val = e.value;
-containerContrast.setAttribute("style", "filter: contrast("+val+"%); max-height:100vh; overflow:hidden;");
+containerContrast.setAttribute("style", "filter: contrast("+val+"%); ");
 }
 
 function Brightness(e)
 {
 var containerBrightness = document.body;
 var val = e.value;
-containerBrightness.setAttribute("style", "filter: brightness("+val+"%); max-height:100vh; overflow-y:hidden;");
+containerBrightness.setAttribute("style", "filter: brightness("+val+"%);");
 }
 
 

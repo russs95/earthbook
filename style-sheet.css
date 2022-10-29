@@ -599,6 +599,7 @@ h6 {
   } */
 
 
+/*Setting Menu Button on Lef*/
 
   #settings-menu {
     position: absolute;
@@ -641,7 +642,7 @@ margin-left: 0px;
 
 
 
-/*Share Button*/
+/*Share Menu Button*/
 
 #share-menu {
     position: absolute;
@@ -686,6 +687,98 @@ margin-left: 0px;
 .icon-buttons-night {
   filter: contrast(0%) !important;}
 
+
+/*Right Close Button*/
+
+#right-close-button {
+  position: absolute;
+  right: 0px;
+  transition: 0.3s;
+  background-color: white; /*#F9F9F9*/
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+  border: solid 1px gray;
+  transition: 0.3s;
+  border-radius: 70px;
+  height: 85px;
+  padding-right: 70px;
+  right: -60px;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  #right-close-button {
+    background:  #252525   !important;
+  }
+  
+  #right-close-button:hover {
+    background: #242529 !important;
+  }
+  }
+
+  #right-close-button:hover {
+right: -35px;
+transition: 0.3s;
+background-color: white;
+box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
+
+}
+
+#right-close-button img {
+height: 50px;
+padding-top: 20px;
+padding-right: 24px;
+margin-right: -42px;
+}
+
+.icon-buttons-night {
+filter: contrast(0%) !important;}
+
+
+
+/*Left CLose Button*/
+
+#left-close-button {
+  position: absolute;
+  left: 0px;
+  transition: 0.5s;
+  background: white;
+  border-radius: 50px;
+  height: 85px;
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+  border: solid 1px gray;
+  padding-left: 40px;
+  left: -66px;
+  z-index: 50;
+}
+
+#left-close-button {
+left: -40px;
+transition: 0.5s;
+background-color: white;
+box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  #left-close-button {
+background:  #252525   !important;
+}
+
+#left-close-button:hover {
+background: #242529 !important;
+}
+}
+
+#left-close-button img {
+height: 50px;
+padding-top: 20px;
+padding-left: 7px;
+margin-left: 0px;
+}  
+
+
+
+/*what this?*/
 
 
 #book-title {
@@ -1048,7 +1141,7 @@ margin-left: 0px;
 
 .copy-box { 
   background: #f4f4f4;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-left: 3px solid;
   color: #666;
   page-break-inside: avoid;
@@ -1077,12 +1170,18 @@ margin-left: 0px;
 
 
 .btn {
-  border: 1px solid rgb(33, 33, 33);
+  border: 2px solid #ddd;
   font-weight: bolder;
   background: grey;
   align-self: center;
   cursor: pointer;
   color: white;
+  justify-content: center;
+  border-radius: 0px 5px 5px 0px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+
   }
 
   .btn:hover {color: black;}
@@ -1133,10 +1232,7 @@ margin-left: 0px;
 
 }
 .btn {
-  padding: 8px;
-  width: fit-content;
   font-size: 12px;
-  border-radius: 5px;
 }
 
 .copy-check {
@@ -1154,19 +1250,18 @@ margin-left: 0px;
     line-height: 1.6;
     width: 100%;
     padding: 1em 1.5em;
-    border-radius: 5px;
-    margin-right: -20%;
-    padding-right: 22%;
+    border-radius: 5px 0px 0px 5px;
+    margin-right: -5px;
+    padding-right: 0%;
 
   }
 
   .btn {
     font-size: 12px;
-    padding: 8px;
-    width: fit-content;
-    font-size: 15px;
-    line-height: 1.6;
-    border-radius: 5px;
+    height: 100%;
+    width: 20%;
+    font-size: 18px;
+    
   }
 }
 
@@ -1258,40 +1353,34 @@ margin-left: 0px;
 }
 
 
+
 @media screen and (max-width: 700px) {
   .buy-overlay-content {
-    width: 85%;
+    width: 95%;
     font-size: 0.9em;
     /*margin-top: 6%;*/
+   
 }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   .buy-overlay-content {
-    width: 65%;
+    width: 95%;
     font-size: 0.9em;
     /*margin-top: 2%;*/
+
 }
 }
 
 @media screen and (min-width: 1325px) {
     .buy-overlay-content {
-      width: 69%;
+      width: 80%;
       margin: auto;
     }
 }
 
 
-/* Position the close button (top right corner) */
-.buy-overlay .closebtn {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 50px;
-  font-weight: lighter;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* 
 @media screen and (max-height: 700px) {
   .buy-overlay a {
   font-size: 20px;
@@ -1303,6 +1392,83 @@ margin-left: 0px;
   right: 15px;
   }
 } 
+*/
+.three-books {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-direction: row;
+
+}
+
+@media screen and (max-width: 700px) {
+  .three-books {
+    flex-direction: column;
+    align-self: end;
+    /*margin-top: 6%;*/
+  }
+
+  .book-buy-info  {
+    width: 60%;
+    text-align: left;
+  }
+
+  .book-listing img  {
+    width: 50%;
+    max-width:175px;
+    text-align:right;
+    height: fit-content;
+  }
+
+  .book-buy-info .action-btn {
+    width: 200px !important;
+  }
+
+    .book-buy-info h6 {
+      font-size: 1.5em;
+      text-align: left;
+      margin: 20px 0px 10px 0px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+.buy-book {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 10px 0px;
+  width: 33%;
+}
+
+@media screen and (max-width: 700px) {
+  .buy-book {
+    width: 100%;
+}
+}
+
+.book-listing {
+  flex-direction: column;
+  display: flex;
+  
+  height:fit-content;
+  align-self: top;
+}
+
+
+@media screen and (max-width: 700px) {
+  .book-listing {
+    flex-direction: row;
+}
+}
+
+
 
 
 
@@ -2123,6 +2289,9 @@ margin: auto;
     text-decoration: none;
     transition: 0.3s;
     cursor: pointer;  
+
+    display: block;
+    margin: auto;
 }
 
 

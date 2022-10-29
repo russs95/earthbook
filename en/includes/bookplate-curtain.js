@@ -35,7 +35,7 @@ class Bookplate extends HTMLElement {
           
           <div id="line" style="width:50%; margin:auto"></div>
 
-          <h6>Print, PDF & Earthbook editions published by Earthen.io</h6>
+          <h6 style="color:grey">Published by Earthen.io</h6>
           
           <a href="javascript:void(0)" class="closebtn" onclick="closeBookplate()">&times;</a>
         </div>
