@@ -8,7 +8,7 @@ class ContentCurtain extends HTMLElement {
 
     <div id="table-of-contents" class="overlay-tc">
 
-    <div id="bottom-close-button">
+    <div id="top-close-button">
         <span style="cursor:pointer" onclick="closeContents()"><img src="../svgs/bottom-x.svg"></span>
     </div>
         

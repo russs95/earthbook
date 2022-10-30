@@ -941,14 +941,13 @@ margin-left: 0px;
   height: 85px;
   box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
   border: solid 1px gray;
-  padding-left: 40px;
   left: 0; 
   right: 0; 
   margin-left: auto; 
   margin-right: auto; 
   z-index: 50;
   bottom: -35px;
-  padding: 0px 10px 10px 10px;
+ text-align: center;
   width: 150px; 
 }
 
@@ -971,19 +970,77 @@ box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
 @media (prefers-color-scheme: dark) {
 
   #bottom-close-button {
-background:  #252525   !important;
+    background: #1f1f20;;
+    border-color:  rgb(81, 81, 81) !important;
 }
 
 #bottom-close-button:hover {
-background: #242529 !important;
+background: #17181b;
 }
 }
 
 #bottom-close-button img {
-height: 50px;
+height: 30px;
+padding-top: 36px;
+
+}  
+
+
+
+/*Top CLose Button*/
+
+#top-close-button {
+  position: absolute;
+  transition: 0.3s;
+  background: white;
+  border-radius: 30px;
+  height: 85px;
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+  border: solid 1px gray;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  z-index: 50;
+  top: -35px;
+ text-align: center;
+  width: 170px; 
+}
+
+#top-close-button:hover {
+  padding-top:25px;
+}
+
+/*
+#bottom-close-button:active {
+  opacity:0;
+  transition: 1s;
+  
+}*/
+
+#top-close-button {
+background-color: white;
+box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  #top-close-button {
+    background: #1f1f20;;
+    border-color:  rgb(81, 81, 81) !important;
+}
+
+#top-close-button:hover {
+background: #17181b;
+}
+}
+
+#top-close-button img {
+height: 40px;
 padding-top: 10px;
 
 }  
+
 
 
 

@@ -73,9 +73,8 @@
     #ct-chapt-graphic {
       background: #141516;
       background: url(svgs/tractatus-mandala-full-grey.svg) no-repeat center;
-    background-size: contain;
+    background-size: 90%;
     border-color: rgb(66, 66, 66) !important;
-   
     }
   }
   

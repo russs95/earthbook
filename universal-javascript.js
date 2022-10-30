@@ -87,6 +87,7 @@ Triggers the downwards swing of the TC*/
 
 function openContents() {
   document.getElementById("table-of-contents").style.height = "100%";
+  document.getElementById("table-of-contents").style.overflowY = "hidden";
   document.body.style.overflowY = "hidden";
   document.body.style.maxHeight = "100vh";
 }
@@ -94,6 +95,7 @@ function openContents() {
 
 function closeContents() {
   document.getElementById("table-of-contents").style.height = "0%";
+  document.getElementById("table-of-contents").style.overflowY = "unset";
   document.body.style.overflowY = "unset";
   document.body.style.maxHeight = "unset";
 } 
