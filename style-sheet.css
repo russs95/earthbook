@@ -1578,19 +1578,12 @@ padding-top: 10px;
 }
 
 
-/* 
+
 @media screen and (max-height: 700px) {
-  .buy-overlay a {
-  font-size: 20px;
+  .buy-overlay a:hover {
+  color:white;
   }
 
-  .buy-overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 15px;
-  }
-} 
-*/
 
 .three-books {
   display: flex;
@@ -1625,9 +1618,22 @@ padding-top: 10px;
     .book-buy-info h6 {
       font-size: 0.9em;
       text-align: left;
-      margin: 30px 0px 10px 0px;
+      margin: 10px 0px 10px 0px;
     }
+  
+
+  .book-buy-info p {
+    font-size: 0.9em;
+    text-align: left;
+    margin: 30px 0px 10px 0px;
   }
+
+
+.book-buy-info .action-button {
+
+  margin-left: auto;
+}
+}
 
   @media screen and (min-width: 700px) {
 
