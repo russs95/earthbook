@@ -75,12 +75,3 @@ function confirmCopy() {
   }
 }
 
-function confirmCopy2() {
-  var x = document.getElementById("check2");
-  if (x.style.display === "none") {
-    x.style.display = "inline";
-    x.style.color = "green";
-  } else {
-    x.style.display = "inline";
-  }
-}
