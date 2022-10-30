@@ -346,6 +346,7 @@ padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   width: 100%;
+  max-width: 100vw;
 
   background-color: rgb(19, 19, 19);
   padding-top: 100px;
@@ -358,4 +359,11 @@ padding-bottom: 10px;
 .footer-settings-icon img{
   height: 50px;
   padding-right: 15px;
+}
+
+@media screen and (max-width: 699px) {
+  .footer-settings-icon img{
+    height: 20px;
+    padding-right: 10px;
+  }
 }
