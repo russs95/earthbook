@@ -9,20 +9,21 @@ function scrollFunction() {
     document.getElementById("ct-chapter-title").style.fontSize = "1.1em";
     document.getElementById("ct-book-title").style.fontSize = "0.8em";
     document.getElementById("ct-book-title").style.marginTop = "0px";
-    document.getElementById("ct-chapter-top").style.marginTop = "-70px";  
+    document.getElementById("ct-chapter-top").style.marginTop = "-85px";    
     document.getElementById("ct-word-count").style.display = "none";
     document.getElementById("book-header-logo").style.display = "none";
     document.getElementById("ct-chapter-title").style.fontWeight = "bolder";
     document.getElementById("settings-menu").style.opacity = "1";
     document.getElementById("share-menu").style.opacity = "1";
+    document.getElementById("ct-chapter-top").style.height = "145px"; 
 
 
   } else {
     //BEFORE
     document.getElementById("earthbook-navbar").style.height = "400px";
-    document.getElementById("ct-chapter-title").style.fontSize = "14vmin";
-    document.getElementById("ct-book-title").style.fontSize = "5vmin";
-    document.getElementById("ct-word-count").style.fontSize = "3.5vmin";
+    document.getElementById("ct-chapter-title").style.fontSize = "";
+    document.getElementById("ct-book-title").style.fontSize = "";
+    document.getElementById("ct-word-count").style.fontSize = "";
     document.getElementById("ct-book-title").style.marginTop = "10px";
     document.getElementById("ct-chapter-top").style.marginTop = "20px";
     document.getElementById("ct-word-count").style.display = "block";
@@ -30,6 +31,7 @@ function scrollFunction() {
     document.getElementById("book-header-logo").style.display = "none";
     document.getElementById("settings-menu").style.opacity = "0.1";
     document.getElementById("share-menu").style.opacity = "0.1";
+    document.getElementById("ct-chapter-top").style.height = "40vh"; 
 
   }
 }
