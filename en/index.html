@@ -84,6 +84,9 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
  <!--7--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--8--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
 
+
+ <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+
  <script>
     // If `prefers-color-scheme` is not supported, fall back to light mode.
     // In this case, light.css will be downloaded with `highest` priority.
@@ -98,6 +101,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 <link rel="stylesheet" href="/dark.css" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+
 <!-- Arc CDN Script without delay
 <script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
 
@@ -193,6 +197,15 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
             <div class="lead-text">
             As we become more and more aware of the ecological crises triggered by our modern age, we long to green our ways.  However, what does 'green' actually mean?  And what exactly does it require?  Inspired by magnificent creatures, great cultures and our planet's pattern this book lays out an ethics guided by Earth's example.
             </div>
+
+            <dark-mode-toggle
+      id="dark-mode-toggle-1"
+      legend="Theme Switcher"
+      appearance="switch"
+      dark="Dark"
+      light="Light"
+      remember="Remember this"
+  ></dark-mode-toggle>
 
             <div id="line" style="margin-top: 15px"  class="no-mobile"></div>
 

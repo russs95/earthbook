@@ -21,9 +21,9 @@ class BuyCurtain extends HTMLElement {
 
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Ebook Edition</div>
-                  <div class="buy-book-info-text">The optimal reading format for iPhones and Android e-Book apps.</div>
+                  <div class="buy-book-info-text">The optimal format for iPhones and Android e-Book apps.</div>
 
-                    <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>10$</a>
+                    <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
 
                   </div>
                 </div>
@@ -37,9 +37,9 @@ class BuyCurtain extends HTMLElement {
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Print Edition</div>
 
-                  <div class="buy-book-info-text">The print version of the book is on its way.  Preorder here.</div>
+                  <div class="buy-book-info-text">The print edition of the book is on its way.  Preorder yours.</div>
 
-                    <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>10$</a>
+                    <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Pre-order: 10$</a>
 
                   </div>
                 </div>
@@ -54,7 +54,7 @@ class BuyCurtain extends HTMLElement {
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Kindle Edition</div>
                   <div class="buy-book-info-text">The Mobi format which works best on Amazon e-readers.</div>
-                      <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>10$</a>
+                      <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
                   </div>
                   
                 </div>
@@ -64,9 +64,7 @@ class BuyCurtain extends HTMLElement {
             <div id="bottom-close-button">
             <span style="cursor:pointer" onclick="closeBuy()"><img src="../svgs/left-x.svg"></span>
         </div>
-
-           <!-- <div><p>Prices in USD.  Processing through Paypal.</p></div>-->
-        </div>
+      </div>
             
     </div>
     

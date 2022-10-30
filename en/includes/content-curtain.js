@@ -103,7 +103,7 @@ class ContentCurtain extends HTMLElement {
                        <!-- <div><img src="../photos/cover-500px.webp" alt="Tractatus Ayyew - EarthBook" style="width: 100px;border-radius: 5px;"></div>-->
 
                      
-                        <div id="buy-btn" class="action-btn" onclick="closeContents()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> Buy</div>
+                        <div id="buy-btn" class="action-btn" onclick="openBuy()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> Buy</div>
                 
                         <div id="pdf-btn" class="action-btn" style="height: 24px; flex-grow: 1"><a href="pdf"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>
 

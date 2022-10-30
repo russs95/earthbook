@@ -7,8 +7,8 @@ class Header extends HTMLElement {
     this.innerHTML = `
 
     <div id="earthbook-navbar">
-        <div id="settings-menu">
-            <span style="cursor:pointer" onclick="openSettings()"><img src="../svgs/left-menu.svg"></span>
+        <div id="settings-menu" style="cursor:pointer" onclick="openSettings()">
+            <span ><img src="../svgs/left-menu.svg"></span>
         </div>
 
         <span style="cursor:pointer" onclick="openContents()">
@@ -16,10 +16,10 @@ class Header extends HTMLElement {
         </span>
         
         
-        <div id="book-title" style="background-size: 60%;" onclick="openContents()">
-            <div id="main-title" style="padding: 40px 10px 18px; font-size: 3.2em;">Tractatus Ayyew</div>
+        <div id="book-title" style="background-size: 60%;">
+            <div onclick="openContents()"><div id="main-title" style="padding: 40px 10px 18px; font-size: 3.2em;">Tractatus Ayyew</div>
             <div id="sub-title"><i>An Earthen Ethics</i></div>
-            <div id="sub-earthbook">earthBook edition</div>
+            <div id="sub-earthbook">earthBook edition</div></div>
         </div>
 
         <div id="share-menu">
