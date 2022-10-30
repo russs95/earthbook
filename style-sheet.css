@@ -1622,19 +1622,19 @@ padding-top: 10px;
     .book-buy-info h6 {
       font-size: 0.9em;
       text-align: left;
-      margin: 10px 0px 10px 0px;
+      margin: 10px 0px 15px 0px;
     }
   
 
   .book-buy-info p {
-    font-size: 0.9em;
+    
     text-align: left;
-    margin: 30px 0px 10px 0px;
+    margin: 40px 0px 0px 10px;
   }
 
 
 .book-buy-info .action-button {
-  margin-left: auto;
+  margin-left: 20px;
 }
 }
 
