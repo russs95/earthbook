@@ -9,18 +9,17 @@
     /*padding: 80px 0px 60px 0px;*/
     transition: 0.4s;
     width: 70%;
-    max-width: 100%;
-    overflow-x: hidden;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     display: unset;
-    cursor: pointer;
     position: fixed;
-    height: 33vh;
+    height: 40vh;
     margin: 0px auto;
     margin-top: 20px;
+    overflow: hidden;
+
   }
   
   /*

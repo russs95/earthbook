@@ -1668,6 +1668,7 @@ justify-content: flex-start;
 .buy-book-info-text {
   font-family: 'Mulish';
   height: fit-content;
+  font-weight: 300;
 
 }
 
@@ -1709,13 +1710,32 @@ justify-content: flex-start;
     float: right;
     margin-top: 10px;
   }
-
-  
-
-
 }
 
 
+
+
+@media screen and (min-width: 700px) {
+
+
+
+
+  .buy-book-info-title {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .buy-book-info-text {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .book-buy-info .action-btn {
+
+    margin-top: 20px;
+  }
+}
 
 
 
