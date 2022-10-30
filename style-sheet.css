@@ -1666,7 +1666,7 @@ justify-content: flex-start;
   height: fit-content;
 }
 
-.bu-book-info-text {
+.buy-book-info-text {
   font-family: 'Mulish';
   font-size: 1.0em;
   height: fit-content;
@@ -1697,6 +1697,7 @@ justify-content: flex-start;
   .book-buy-info .action-btn {
     width: 140px !important;
     float: right;
+    margin-top: 10px;
   }
 
   /*
