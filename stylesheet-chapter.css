@@ -6,7 +6,7 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    /*padding: 80px 0px 60px 0px;*/
+    padding: 80px 0px 60px 0px;
     transition: 0.4s;
     width: 100%;
     max-width: 100%;
@@ -60,11 +60,12 @@
   
   #ct-chapt-graphic {
     background: rgb(227, 226, 226);
-    padding: 20px;
-    height: 424px;
+    padding: 0px;
+    height: 66vh;
     margin: auto;
     width:100%;
-    border-bottom: 1px grey solid;
+    border-bottom: 1px rgb(163, 163, 163) solid;
+    overflow-x: hidden;
     
   }
   
@@ -72,7 +73,8 @@
     #ct-chapt-graphic {
       background: #141516;
       background: url(svgs/tractatus-mandala-full-grey.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
+    border-color: rgb(66, 66, 66) !important;
    
     }
   }
@@ -99,8 +101,8 @@
   
     @media screen and (max-width: 699px) {
       #ct-main {
-          margin-left: 8%;
-          margin-right: 8%;
+          margin-left: 7%;
+          margin-right: 7%;
           margin-top: 80px;
         
       }
