@@ -6,7 +6,7 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    padding: 80px 0px 60px 0px;
+    /*padding: 80px 0px 60px 0px;*/
     transition: 0.4s;
     width: 100%;
     max-width: 100%;
