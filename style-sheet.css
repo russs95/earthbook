@@ -1662,14 +1662,13 @@ justify-content: flex-start;
 
 .buy-book-info-title {
   font-family: 'CooperLt';
-
   height: fit-content;
 }
 
 .buy-book-info-text {
   font-family: 'Mulish';
   height: fit-content;
-  margin-top: 8px;
+
 }
 
 
@@ -1687,9 +1686,20 @@ justify-content: flex-start;
     text-align: left;
   }
 
+  .buy-book-info-title {
+    font-size: 1.4em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .buy-book-info-text {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+
   .book-listing img  {
-    width: 48%;
-    max-width:175px;
+    width: 56%;
+    max-width:200px;
     text-align:right;
     height: fit-content;
   }
@@ -1701,9 +1711,7 @@ justify-content: flex-start;
   }
 
   
-    .book-buy-info h6 {
-      margin: -5px 0px 5px 0px;
-    }
+
 
 }
 
