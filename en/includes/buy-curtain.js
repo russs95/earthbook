@@ -52,8 +52,8 @@ class BuyCurtain extends HTMLElement {
                   <img src="../photos/cover-mobi-400px.webp"  alt="The Kindle format, and for other select eReaders" title="The Kindle format, and for other select eReaders">
                     
                   <div class="book-buy-info">
-                  <div class="buy-book-info-title">Kindle Edition</div>
-                  <div class="buy-book-info-text">The Mobi format which works best on Amazon e-readers.</div>
+                  <div class="buy-book-info-title"><h4>Kindle Edition</h4></div>
+                  <div class="buy-book-info-text"><h6>The Mobi format which works best on Amazon e-readers.</h6></div>
                       <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>10$</a>
                   </div>
                   
