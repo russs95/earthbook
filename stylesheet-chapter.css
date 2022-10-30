@@ -29,7 +29,7 @@
   #ct-chapter-title {
     font-family: 'CooperLt';
     font-weight: 500;
-    font-size: 12vmin;
+    font-size: 15vmin;
     color: inherit;
     font-variant-caps: all-petite-caps;
     transition: 0.3s;
@@ -39,7 +39,7 @@
   #ct-book-title {
     font-family: 'Mulish';
     font-weight: 300;
-    font-size: 4vmin;
+    font-size: 8vmin;
     color: inherit;
     font-variant-caps: petite-caps;
     margin-top: 10px;
@@ -50,7 +50,7 @@
   #ct-word-count {
     font-family: 'CooperLt';
     font-weight: 300;
-    font-size: 2vmin;
+    font-size: 6vmin;
     padding: 10px;
     display: block;
   }
