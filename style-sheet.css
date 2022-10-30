@@ -1578,11 +1578,12 @@ padding-top: 10px;
 }
 
 
-
-@media screen and (max-height: 700px) {
+/*??*/
+@media screen and (max-width: 700px) {
   .buy-overlay a:hover {
   color:white;
   }
+}
 
 
 .three-books {
@@ -1590,9 +1591,12 @@ padding-top: 10px;
   justify-content: center;
   flex-direction: row;
   margin: 0px auto 0px auto;
+    width: 90%;
+
 }
 
 @media screen and (max-width: 700px) {
+
   .three-books {
     flex-direction: column;
     align-self: center;
@@ -1630,22 +1634,9 @@ padding-top: 10px;
 
 
 .book-buy-info .action-button {
-
   margin-left: auto;
 }
 }
-
-  @media screen and (min-width: 700px) {
-
-  .three-books {
-    width: 90%;
-    flex-direction: row;
-  }
-  
-  }
-
-
-
 
 
 
