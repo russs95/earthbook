@@ -20,9 +20,9 @@ function scrollFunction() {
   } else {
     //BEFORE
     document.getElementById("earthbook-navbar").style.height = "400px";
-    document.getElementById("ct-chapter-title").style.fontSize = "15vmin";
-    document.getElementById("ct-book-title").style.fontSize = "8vmin";
-    document.getElementById("ct-word-count").style.fontSize = "6vmin";
+    document.getElementById("ct-chapter-title").style.fontSize = "14vmin";
+    document.getElementById("ct-book-title").style.fontSize = "5vmin";
+    document.getElementById("ct-word-count").style.fontSize = "3.5vmin";
     document.getElementById("ct-book-title").style.marginTop = "10px";
     document.getElementById("ct-chapter-top").style.marginTop = "20px";
     document.getElementById("ct-word-count").style.display = "block";
