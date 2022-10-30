@@ -27,10 +27,19 @@
     --accent-color: rgb(5, 5, 5);
    }
 
-   /* dark.css */
+   /* dark.css 
 --icon-filter: invert(100%);
 --icon-filter_hover: invert(40%);
 
 img[src*=".svg"] {
  filter: var(--icon-filter);
+}
+*/
+
+#earthbook-navbar {
+  background-color: #1c1d20 !important;
+  border-color: rgb(66, 66, 66) !important;
+  color: white !important;
+  box-shadow: 0 4px 15px rgba(7, 7, 7, 0.3) !important;
+
 }
