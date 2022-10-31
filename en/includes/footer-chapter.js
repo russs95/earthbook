@@ -40,7 +40,7 @@ class FooterChapter extends HTMLElement {
     </div>
   </div>
 </div>
-
+<!--
 <div id="footer-settings">
   <a href="index.html"><div class="footer-settings-icon" style="cursor:pointer" ><img src="../icons/dash.svg"></div></a>
 
@@ -56,7 +56,7 @@ class FooterChapter extends HTMLElement {
 
   <a href="#top"><div class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg"></div></a>
   <div class="footer-settings-icon" style="cursor:pointer" onclick="openEarthbook()">What is an Earthbook?</div>
-</div>
+</div>-->
 
     `;
 }

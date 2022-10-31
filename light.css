@@ -29,37 +29,37 @@ body {
 }
 
 #main-title {
-  text-shadow: 0 0 3px #ffffff;
+  text-shadow: 0 0 3px #ffffff !important;
 }
 
 #settings-menu {
-  background: rgb(235, 235, 235);
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-  border: solid 1px gray;
+  background: rgb(235, 235, 235) !important;
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1) !important;
+  border: solid 1px gray !important;
 }
 
 #settings-menu:hover {
-  background-color: white;
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+  background-color: white !important;
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1) !important;
 }
 
 #share-menu {
-  background-color: rgb(235, 235, 235); 
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-  border: solid 1px gray;
+  background-color: rgb(235, 235, 235) !important; 
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1) !important;
+  border: solid 1px gray !important;
 }
 
 #share-menu:hover {
-  background-color: white;
-  box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
+  background-color: white !important;
+  box-shadow:0 1px 15px rgba(85, 84, 84, 0.1) !important;
 
 }
 
 
 #right-close-button {
-  border: solid 1px gray;
-  background-color: white; /*#F9F9F9*/
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+  border: solid 1px gray !important;
+  background-color: white !important; /*#F9F9F9*/
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1) !important;
 }
 
 
