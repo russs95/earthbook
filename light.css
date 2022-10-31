@@ -5,7 +5,7 @@
 
    :root {
     --text-color: #222222;
-    --background-color: rgb(250, 250, 250) !important;; /*button hover*/
+    --background-color: rgb(250, 250, 250) ; /*button hover*/
     --link-color:  #222222 ;
     --nav-bar-accent: rgb(244, 242, 242); /*navbar, footer, button color*/
     --deeper-accent-color: rgb(235, 235, 235) ; /*main chart hover, top menu button backgrounds*/ 
@@ -41,30 +41,29 @@ body {
 }
 
 
-/*
+
 #settings-menu {
-  background: rgb(235, 235, 235) !important;
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1) !important;
-  border: solid 1px gray !important;
+  background: var(--deeper-accent-color) !important;
+  box-shadow: var(--element-shadow) !important;
+  border: solid 1px var(--fainter-border-color) !important;
 }
 
 #settings-menu:hover {
-  background-color: white !important;
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1) !important;
+  background: var(--background-color) !important;
+  box-shadow: var(--element-shadow) !important;
 }
 
 #share-menu {
-  background-color: rgb(235, 235, 235) !important; 
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1) !important;
-  border: solid 1px gray !important;
+  background: var(--deeper-accent-color) !important;
+  box-shadow: var(--element-shadow) !important;
+  border: solid 1px var(--fainter-border-color) !important;
 }
 
 #share-menu:hover {
-  background-color: white !important;
-  box-shadow:0 1px 15px rgba(85, 84, 84, 0.1) !important;
-
+  background: var(--background-color) !important;
+  box-shadow: var(--element-shadow) !important;
 }
-*/
+
 
 #right-close-button {
   border: solid 1px gray !important;
