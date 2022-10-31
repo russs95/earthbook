@@ -716,9 +716,10 @@ font-family: "Mulish";
     box-shadow: var(--element-shadow);
     border: solid 1px var(--thin-border-color);
 
-    /*background: rgb(235, 235, 235);
-    box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-    border: solid 1px gray;*/
+    /*backup for offline testing*/
+    background: rgb(235, 235, 235);
+    box-shadow: 0 1px 15px rgba(7, 7, 7, 0.3);;
+    border: solid 1px rgb(163, 163, 163);
 }
 
 #settings-menu:hover {
@@ -727,7 +728,7 @@ font-family: "Mulish";
   
   background-color: var(--background-color);
   box-shadow: var(--element-shadow);
-  
+
   /*background-color: white;
   box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);*/
 }
@@ -772,18 +773,17 @@ margin-left: 0px;
     box-shadow: var(--element-shadow);
     border: solid 1px var(--thin-border-color);
 
-     /* background-color: rgb(235, 235, 235); 
-    box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-    border: solid 1px gray;*/
+     /*backup for offline testing*/
+    background: rgb(235, 235, 235);
+    box-shadow: 0 1px 15px rgba(7, 7, 7, 0.15);;
+    border: solid 1px rgb(163, 163, 163);
   }
 
-  /*
-  @media (prefers-color-scheme: dark) {
 
+  @media (prefers-color-scheme: dark) {
     #share-menu {
-      background:  #252525   !important;
+      background:  #1c1d20;
     }
-    
     #share-menu:hover {
       background: #242529 !important;
     }
