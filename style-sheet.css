@@ -724,10 +724,16 @@ font-family: "Mulish";
 #settings-menu:hover {
   left: -40px;
   transition: 0.5s;
+  
+  background-color: var(--background-color);
+  box-shadow: var(--element-shadow);
+  
   /*background-color: white;
   box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);*/
 }
 
+
+/*
 @media (prefers-color-scheme: dark) {
 
 #settings-menu {
@@ -737,7 +743,9 @@ font-family: "Mulish";
 #settings-menu:hover {
   background: #242529 !important;
 }
-}
+}*/
+
+
 
 #settings-menu img {
   height: 50px;
@@ -760,11 +768,16 @@ margin-left: 0px;
     padding-right: 70px;
     right: -60px;
 
-   /* background-color: rgb(235, 235, 235); 
+    background: var(--deeper-accent-color);
+    box-shadow: var(--element-shadow);
+    border: solid 1px var(--thin-border-color);
+
+     /* background-color: rgb(235, 235, 235); 
     box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
     border: solid 1px gray;*/
   }
 
+  /*
   @media (prefers-color-scheme: dark) {
 
     #share-menu {
@@ -774,11 +787,14 @@ margin-left: 0px;
     #share-menu:hover {
       background: #242529 !important;
     }
-    }
+    }*/
 
 #share-menu:hover {
   right: -35px;
   transition: 0.3s;
+
+  background-color: var(--background-color);
+  box-shadow: var(--element-shadow);
   /*background-color: white;
   box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);*/
 }
