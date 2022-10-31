@@ -195,6 +195,7 @@
       flex-grow: 1;
       font-family: "Mulish";
       font-size: 1em;
+      margin-left: -5px;
     }
 
     #footer-icon-left { 
@@ -446,7 +447,7 @@ padding-bottom: 10px;
   .next-button {
     font-size: 1.3em;
     padding: 6px 20px 6px 20px;
-    border-radius: 30px;
+    border-radius: 15px;
     z-index: 10;
   }
 
@@ -501,7 +502,7 @@ padding-bottom: 10px;
   }
 
   .footer-settings-icon {
-    font-size: 0.9em;
+    font-size: 0.8em;
     height: 30px;
   }
 }

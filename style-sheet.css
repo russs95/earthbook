@@ -2265,6 +2265,15 @@ display: none;
     padding-left: 15px;
     padding-top: 6px;
   }
+
+
+  @media screen and (max-width: 699px) {
+    .footnote-text { 
+      font-size: 0.9em;
+    line-height: 1.0;
+    }
+  }
+
   
 /*
   @media screen and (max-width: 699px) {

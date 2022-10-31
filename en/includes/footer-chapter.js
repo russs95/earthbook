@@ -52,7 +52,7 @@ class FooterChapter extends HTMLElement {
     <div class="footer-settings-icon"><img src="../icons/content.svg" style="cursor:pointer" onclick="openShare()"></div>
 
    
-    <div class="footer-settings-icon" style="cursor:pointer; text-align:center; flex-grow:5;" onclick="openEarthbook()">What is an Earthbook?</a></div>
+    <div class="footer-settings-icon" style="cursor:pointer; text-align:center; flex-grow:5; padding-right:5px; align-self:center;" onclick="openEarthbook()">What is an Earthbook?</a></div>
 
     <div class="footer-settings-icon"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page"></div></a>
 
