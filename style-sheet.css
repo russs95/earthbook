@@ -41,6 +41,32 @@ Media Query parameters used throughout:
 :root {
   color-scheme: light dark;
  }
+
+
+
+ :root {
+  --text-color: #222222;
+  --background-color: rgb(250, 250, 250); /*button hover*/
+  --link-color:  #222222 ;
+  --navbar-accent: rgb(244, 242, 242); /*navbar, footer, button color*/
+  --deeper-accent-color: rgb(235, 235, 235) ; /*main chart hover, top menu button backgrounds*/ 
+  --thin-border-color: rgb(163, 163, 163); /*border color for almost everything*/
+  --fainter-border-color:  rgb(208, 207, 207); /*border color for the menu buttons*/
+  --element-shadow: 0 1px 15px rgba(7, 7, 7, 0);  /*whenever a shadow is added*/
+
+  --text-color-dark: rgb(250, 250, 250);
+  --background-color-dark: #1c1d20;
+  --link-color-dark:  rgb(250, 250, 250);
+  --navbar-accent-dark: rgb(66, 66, 66); /*navbar, footer, button color*/
+  --deeper-accent-color-dark: #17181B ; /*main chart hover, top menu button backgrounds*/
+  --thin-border-color-dark: rgb(66, 66, 66); /*border color for almost everything*/
+  --fainter-border-color-dark: rgb(85, 85, 85); /*border color for the menu buttons*/
+  --element-shadow-dark: 0 4px 15px rgba(3, 3, 3, 0.9); /*whenever a shadow is added*/
+ }
+
+
+
+
  /*
  body {
   color: var(--color);
@@ -716,33 +742,33 @@ font-family: "Mulish";
     box-shadow: var(--element-shadow);
     border: solid 1px var(--fainter-border-color);
 
-    /*backup for offline testing*/
+    /*backup for offline testing
     background: rgb(235, 235, 235);
     box-shadow: 0 1px 15px rgba(7, 7, 7, 0.3);
-    border: solid 1px rgb(208, 207, 207);
+    border: solid 1px rgb(208, 207, 207);*/
 }
 
 #settings-menu:hover {
   left: -40px;
   transition: 0.5s;
-  background-color: var(--background-color);
+  background: var(--background-color);
   box-shadow: var(--element-shadow);
 
-  /*backup for offline testing*/
+  /*backup for offline testing
   background-color: rgb(235, 235, 235);
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);*/
 }
 
 
 
 @media (prefers-color-scheme: dark) {
 #settings-menu {
-  background:  #1c1d20;
-  border: solid 1px rgb(85, 85, 85);
+  background:  var(--deeper-accent-color-dark);
+  border: solid 1px var(--fainter-border-color-dark);
 }
 
 #settings-menu:hover {
-  background: #17181B ;
+  background: var(--background-color-dark);
 }
 }
 
@@ -774,10 +800,10 @@ font-family: "Mulish";
     box-shadow: var(--element-shadow);
     border: solid 1px var(--fainter-border-color);
 
-     /*backup for offline testing*/
+     /*backup for offline testing
     background: rgb(235, 235, 235);
     box-shadow: 0 1px 15px rgba(7, 7, 7, 0.15);;
-    border: solid 1px rgb(163, 163, 163);
+    border: solid 1px rgb(163, 163, 163);*/
   }
 
   #share-menu:hover {
@@ -786,23 +812,22 @@ font-family: "Mulish";
     background-color: var(--background-color);
     box-shadow: var(--element-shadow);
   
-    /*backup for offline testing*/
+    /*backup for offline testing
     background-color: rgb(244, 242, 242);
-    box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
+    box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);*/
   }
 
 
-  
 /*backup for offline testing*/
   @media (prefers-color-scheme: dark) {
 
     #share-menu {
-      background-color:  #1c1d20;
-      border: solid 1px rgb(85, 85, 85);
+      background-color:  var(--deeper-accent-color-dark);
+      border: solid 1px var(--fainter-border-color-dark);
     }
 
     #share-menu:hover {
-      background-color: #17181B;
+      background-color:var(--background-color-dark);
     }
   }
 

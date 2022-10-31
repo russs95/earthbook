@@ -3,14 +3,14 @@
 /* dark.css: 👉 light-on-dark */
 
 :root {
-  --text-color: rgb(250, 250, 250) !important;
-  --background-color: #1c1d20  !important;
-  --link-color:  rgb(250, 250, 250)  !important;
-  --nav-bar-accent: rgb(66, 66, 66)  !important; /*navbar, footer, button color*/
-  --deeper-accent-color: #17181B  !important; /*main chart hover, top menu button backgrounds*/
-  --thin-border-color: rgb(66, 66, 66)  !important; /*border color for almost everything*/
-  --fainter-border-color: rgb(85, 85, 85) !important; /*border color for the menu buttons*/
-  --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.9)  !important; /*whenever a shadow is added*/
+  --text-color: rgb(250, 250, 250);
+  --background-color: #1c1d20;
+  --link-color:  rgb(250, 250, 250);
+  --nav-bar-accent: rgb(66, 66, 66); /*navbar, footer, button color*/
+  --deeper-accent-color: #17181B ; /*main chart hover, top menu button backgrounds*/
+  --thin-border-color: rgb(66, 66, 66); /*border color for almost everything*/
+  --fainter-border-color: rgb(85, 85, 85); /*border color for the menu buttons*/
+  --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.9); /*whenever a shadow is added*/
  }
 
 
