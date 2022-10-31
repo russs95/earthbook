@@ -10,30 +10,7 @@ class FooterChapter extends HTMLElement {
     this.innerHTML = `
 
   
-<div id="footer-chapter" style="margin-bottom: 0px;">
 
-  <div class="footer-size">
-    
-    <div class="footer-left">
-
-      <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
-    
-     
-      <div class="next-section">
-          <div class="next-sec">Next section:</div>
-          <div class="sec-name"><i>Quick Start | Three Summaries</i></div>
-      </div>
-
-      
-    </div>
-    
-    <div class="footer-right">
-   
-      <a href="quickstart.html"><div class="next-button">Next ➔</div></a>
-
-    </div>
-  </div>
-</div>
 
 <div id="footer-settings">
 
