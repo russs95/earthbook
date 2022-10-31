@@ -714,50 +714,52 @@ font-family: "Mulish";
 
     background: var(--deeper-accent-color);
     box-shadow: var(--element-shadow);
-    border: solid 1px var(--thin-border-color);
+    border: solid 1px var(--fainter-border-color);
 
     /*backup for offline testing*/
     background: rgb(235, 235, 235);
-    box-shadow: 0 1px 15px rgba(7, 7, 7, 0.3);;
-    border: solid 1px rgb(163, 163, 163);
+    box-shadow: 0 1px 15px rgba(7, 7, 7, 0.3);
+    border: solid 1px rgb(208, 207, 207);
 }
 
 #settings-menu:hover {
   left: -40px;
   transition: 0.5s;
-  
   background-color: var(--background-color);
   box-shadow: var(--element-shadow);
 
-  /*background-color: white;
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);*/
+  /*backup for offline testing*/
+  background-color: rgb(235, 235, 235);
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
 }
 
 
-/*
-@media (prefers-color-scheme: dark) {
 
+@media (prefers-color-scheme: dark) {
 #settings-menu {
-  background:  #252525   !important;
+  background:  #1c1d20;
+  border: solid 1px rgb(85, 85, 85);
 }
 
 #settings-menu:hover {
-  background: #242529 !important;
+  background: #17181B ;
 }
-}*/
+}
 
 
 
 #settings-menu img {
   height: 50px;
-padding-top: 20px;
-padding-left: 7px;
-margin-left: 0px;
+  padding-top: 20px;
+  padding-left: 7px;
+  margin-left: 0px;
 }  
 
 
 
 /*Share Menu Button*/
+
+
 
 #share-menu {
     position: absolute;
@@ -768,10 +770,9 @@ margin-left: 0px;
     height: 85px;
     padding-right: 70px;
     right: -60px;
-
     background: var(--deeper-accent-color);
     box-shadow: var(--element-shadow);
-    border: solid 1px var(--thin-border-color);
+    border: solid 1px var(--fainter-border-color);
 
      /*backup for offline testing*/
     background: rgb(235, 235, 235);
@@ -779,25 +780,38 @@ margin-left: 0px;
     border: solid 1px rgb(163, 163, 163);
   }
 
+  #share-menu:hover {
+    right: -35px;
+    transition: 0.3s;
+    background-color: var(--background-color);
+    box-shadow: var(--element-shadow);
+  
+    /*backup for offline testing*/
+    background-color: rgb(244, 242, 242);
+    box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
+  }
 
+
+  
+/*backup for offline testing*/
   @media (prefers-color-scheme: dark) {
+
     #share-menu {
-      background:  #1c1d20;
+      background-color:  #1c1d20;
+      border: solid 1px rgb(85, 85, 85);
     }
+
     #share-menu:hover {
-      background: #242529 !important;
+      background-color: #17181B;
     }
-    }*/
+  }
 
-#share-menu:hover {
-  right: -35px;
-  transition: 0.3s;
 
-  background-color: var(--background-color);
-  box-shadow: var(--element-shadow);
-  /*background-color: white;
-  box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);*/
-}
+
+
+
+
+
 
 #share-menu img {
   height: 50px;
@@ -805,6 +819,9 @@ margin-left: 0px;
   padding-right: 24px;
   margin-right: -42px;
 }
+
+
+
 
 .icon-buttons-night {
   filter: contrast(0%) !important;
