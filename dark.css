@@ -33,13 +33,37 @@
 
   #settings-menu {
     background:  #252525   !important;
+    box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+    border: solid 1px gray;
   }
   
   #settings-menu:hover {
     background: #242529 !important;
+    box-shadow: 0 1px 15px rgba(244, 244, 244, 0.1);
   }
 
+
+  #share-menu {
+    background:  #252525   !important;
+  }
   
+  #share-menu:hover {
+    background: #242529 !important;
+  }
+
+  #right-close-button {
+    background:  #252525   !important;
+  }
+  
+  #right-close-button:hover {
+    background: #242529 !important;
+  }
+
+  #book-title { 
+    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat;
+  }
+
+
 
 
    /* dark.css 

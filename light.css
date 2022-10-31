@@ -1,10 +1,10 @@
 /*LIGHT STYLE SHEET*/
 
-/* light.css: 👉 dark-on-light */
+/* light.css: 👉 dark-on-light 
 :root {
     --color: rgb(5, 5, 5);
     --background-color: rgb(250, 250, 250);
-   }
+   }*/
    
 
 body {
@@ -32,7 +32,6 @@ body {
   text-shadow: 0 0 3px #ffffff;
 }
 
-
 #settings-menu {
   background: rgb(235, 235, 235);
   box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
@@ -43,6 +42,31 @@ body {
   background-color: white;
   box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
 }
+
+#share-menu {
+  background-color: rgb(235, 235, 235); 
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+  border: solid 1px gray;
+}
+
+#share-menu:hover {
+  background-color: white;
+  box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
+
+}
+
+
+#right-close-button {
+  border: solid 1px gray;
+  background-color: white; /*#F9F9F9*/
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+}
+
+
+#book-title {
+  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+}
+
 
 
 

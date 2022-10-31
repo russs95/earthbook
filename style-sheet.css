@@ -748,14 +748,15 @@ margin-left: 0px;
     position: absolute;
     right: 0px;
     transition: 0.3s;
-    background-color: white; /*#F9F9F9*/
-    box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-    border: solid 1px gray;
     transition: 0.3s;
     border-radius: 70px;
     height: 85px;
     padding-right: 70px;
     right: -60px;
+
+   /* background-color: rgb(235, 235, 235); 
+    box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+    border: solid 1px gray;*/
   }
 
   @media (prefers-color-scheme: dark) {
@@ -772,9 +773,8 @@ margin-left: 0px;
 #share-menu:hover {
   right: -35px;
   transition: 0.3s;
-  background-color: white;
-  box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);
-
+  /*background-color: white;
+  box-shadow:0 1px 15px rgba(85, 84, 84, 0.1);*/
 }
 
 #share-menu img {
@@ -785,7 +785,8 @@ margin-left: 0px;
 }
 
 .icon-buttons-night {
-  filter: contrast(0%) !important;}
+  filter: contrast(0%) !important;
+}
 
 
 /*Right Close Button*/
@@ -794,17 +795,20 @@ margin-left: 0px;
   position: absolute;
   right: 0px;
   transition: 0.3s;
-  background-color: white; /*#F9F9F9*/
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
-  border: solid 1px gray;
   transition: 0.3s;
   border-radius: 70px;
   height: 85px;
   padding-right: 70px;
   right: -60px;
   top: -20px;
+
+ /* border: solid 1px gray;
+  background-color: white; 
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);*/
 }
 
+
+/*
 @media (prefers-color-scheme: dark) {
 
   #right-close-button {
@@ -815,6 +819,9 @@ margin-left: 0px;
     background: #242529 !important;
   }
   }
+*/
+
+/*To here*/
 
   #right-close-button:hover {
 right: -35px;
@@ -1055,15 +1062,17 @@ padding-top: 36px;
   cursor: pointer;
   margin-top: -10px;
 
-  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
-  
+ /* background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;*/
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   #book-title { 
   background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat;
 }
   }
+
+*/
 
   /*
 @media screen and (max-width: 699px) {
