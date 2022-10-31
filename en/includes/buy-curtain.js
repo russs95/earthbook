@@ -82,43 +82,42 @@ class BuyCurtain extends HTMLElement {
 customElements.define('buy-curtain', BuyCurtain);
 
 
-<script>
-                function initPayPalButton() {
-                  paypal.Buttons({
-                    style: {
-                      shape: 'pill',
-                      color: 'gold',
-                      layout: 'vertical',
-                      label: 'buynow',
-                      
-                    },
+
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'buynow',
+          
+        },
+
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"description":"Tractatus Ayyew - Epub Edition","amount":{"currency_code":"USD","value":10}}]
+          });
+        },
+
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
             
-                    createOrder: function(data, actions) {
-                      return actions.order.create({
-                        purchase_units: [{"description":"Tractatus Ayyew - Epub Edition","amount":{"currency_code":"USD","value":10}}]
-                      });
-                    },
+            // Full available details
+            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+            // Show a success message within this page, e.g.
+            const element = document.getElementById('paypal-button-container');
+            element.innerHTML = '';
+            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+            // Or go to another URL:  actions.redirect('thank_you.html');
             
-                    onApprove: function(data, actions) {
-                      return actions.order.capture().then(function(orderData) {
-                        
-                        // Full available details
-                        console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-            
-                        // Show a success message within this page, e.g.
-                        const element = document.getElementById('paypal-button-container');
-                        element.innerHTML = 'You can now download your Epub version of the Tractatus Ayyew';
-                        element.innerHTML = '<h3>Thank you for your payment!</h3>';
-            
-                        // Or go to another URL:  actions.redirect('thank_you.html');
-                        
-                      });
-                    },
-            
-                    onError: function(err) {
-                      console.log(err);
-                    }
-                  }).render('#paypal-button-container')
-                }
-                initPayPalButton();
-              </script>
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
