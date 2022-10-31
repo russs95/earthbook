@@ -3,13 +3,13 @@
 /* dark.css: 👉 light-on-dark */
 
 :root {
-  --text-color: #222222;
-  --background-color: rgb(250, 250, 250);
-  --link-color:  #222222;
-  --nav-bar-accent: rgb(66, 66, 66) ; /*navbar, footer, button color*/
-  --deeper-accent-color: rgb(235, 235, 235); /*main chart hover, top menu button backgrounds*/
-  --thin-border-color: rgb(163, 163, 163); /*border color for almost everything*/
-  --element-shadow: 0 4px 15px rgba(7, 7, 7, 0.3); /*whenever a shadow is added*/
+  --text-color: #222222 !important;
+  --background-color: #1c1d20  !important;
+  --link-color:  #222222  !important;
+  --nav-bar-accent: rgb(66, 66, 66)  !important; /*navbar, footer, button color*/
+  --deeper-accent-color: #17181B  !important; /*main chart hover, top menu button backgrounds*/
+  --thin-border-color: rgb(66, 66, 66)  !important; /*border color for almost everything*/
+  --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.9)  !important; /*whenever a shadow is added*/
  }
 
 
@@ -19,8 +19,7 @@
     background-color: #1c1d20 !important;
     border-color: rgb(66, 66, 66) !important;
     color: white !important;
-    box-shadow: 0 4px 15px rgba(7, 7, 7, 0.3) !important;
-  
+    box-shadow: 0 1px 15px rgba(7, 7, 7, 0.15) !important;
   }
 
   #main-title {
