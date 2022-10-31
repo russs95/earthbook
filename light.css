@@ -17,6 +17,7 @@ body {
 }
 
 
+/*NAVBAR TOP*/
 
 #earthbook-navbar {
 
@@ -26,6 +27,23 @@ body {
   box-shadow: 0 4px 15px rgba(85, 84, 84, 0.3);
 
 }
+
+#main-title {
+  text-shadow: 0 0 3px #ffffff;
+}
+
+
+#settings-menu {
+  background: rgb(235, 235, 235);
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+  border: solid 1px gray;
+}
+
+#settings-menu:hover {
+  background-color: white;
+  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);
+}
+
 
 
 /* light.css

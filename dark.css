@@ -17,8 +17,7 @@
       background-color: #202124;
     }
 
-
-
+  /*NAVBAR TOP*/
 
    #earthbook-navbar {
     background-color: #1c1d20 !important;
@@ -28,6 +27,19 @@
   
   }
 
+  #main-title {
+    text-shadow: 0 0 3px #000000 !important;
+  }
+
+  #settings-menu {
+    background:  #252525   !important;
+  }
+  
+  #settings-menu:hover {
+    background: #242529 !important;
+  }
+
+  
 
 
    /* dark.css 
