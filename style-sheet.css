@@ -760,17 +760,17 @@ font-family: "Mulish";
 }
 
 
-
+/*
 @media (prefers-color-scheme: dark) {
 #settings-menu {
   background:  var(--deeper-accent-color-dark);
   border: solid 1px var(--fainter-border-color-dark);
 }
-
+  
 #settings-menu:hover {
   background: var(--background-color-dark);
 }
-}
+}*/
 
 
 
@@ -819,6 +819,8 @@ font-family: "Mulish";
 
 
 /*backup for offline testing*/
+
+/*
   @media (prefers-color-scheme: dark) {
 
     #share-menu {
@@ -830,7 +832,7 @@ font-family: "Mulish";
       background-color:var(--background-color-dark);
     }
   }
-
+*/
 
 
 
