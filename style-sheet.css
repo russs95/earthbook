@@ -272,6 +272,7 @@ p {
   font-family: 'CooperLt', Georgia, serif;
   text-rendering: optimizeLegibility;
   font-weight: 300;
+  text-align: justify;
   }
 
   @media screen and (max-width: 699px) {
@@ -497,6 +498,7 @@ h6 {
   font-family: 'CooperLt', Georgia, serif;
   text-rendering: optimizeLegibility;
   font-weight: 300;
+  text-align: justify;
 }
 
 .lead-page-paragraph:first-child:first-letter {
@@ -510,7 +512,6 @@ h6 {
   margin-left: -10px;
   margin-bottom: 5px;
   font-weight:400;
-
 }
 
 
@@ -520,6 +521,7 @@ h6 {
       font-size: 1.1em;
       line-height: 1.3;
       
+      
   }
   }
 
@@ -527,7 +529,7 @@ h6 {
   @media screen and (min-width: 700px) and (max-width: 1324px) {
 
     .lead-page-paragraph {
-      font-size: 1.3em;
+      font-size: 1.6em;
       line-height:1.3;
     }
     }
@@ -535,7 +537,7 @@ h6 {
     @media screen and (min-width: 1325px) {
 
       .lead-page-paragraph {
-        font-size: 1.5em;
+        font-size: 1.8em;
         line-height:1.6em;
     }
     }
@@ -698,7 +700,7 @@ font-family: "Mulish";
 }
 
 
-/*Setting Menu Button on Lef*/
+/*Setting Menu Button on Left*/
 
   #settings-menu {
     position: absolute;
@@ -709,6 +711,10 @@ font-family: "Mulish";
     padding-left: 40px;
     left: -66px;
     z-index: 50;
+
+    background: var(--deeper-accent-color);
+    box-shadow: var(--element-shadow);
+    border: solid 1px var(--thin-border-color);
 
     /*background: rgb(235, 235, 235);
     box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);

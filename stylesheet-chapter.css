@@ -1,5 +1,48 @@
 
 
+/*This CSS clears out the navbar from the mainpage settings*/
+
+
+#earthbook-navbar {
+  height: 400px;
+}
+
+#book-title {
+  height: 400px;
+}
+
+#main-title {
+display: none;
+}
+
+#sub-title { 
+display: none;
+}
+
+#sub-earthbook {
+display: none;
+}
+
+#main-page { 
+margin-top: 40px;
+}
+
+#settings-menu {
+opacity: 0;
+z-index: 22;
+}
+
+#share-menu {
+opacity: 0;
+z-index: 22;
+}
+
+#book-header-logo {
+display: none;
+}
+
+/*Constructive CSS*/
+
 #ct-chapter-top {
     z-index: 20;
     text-align: center;
