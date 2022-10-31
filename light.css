@@ -16,7 +16,19 @@ body {
     background-color: rgb(252, 251, 251);
 }
 
-/* light.css */
+
+
+#earthbook-navbar {
+
+  background-color: rgb(244, 242, 242);
+  border-color: rgb(163, 163, 163);
+  color:  #202124 ;
+  box-shadow: 0 4px 15px rgba(85, 84, 84, 0.3);
+
+}
+
+
+/* light.css
 :root {
     --color: rgb(5, 5, 5);
     --background-color: rgb(250, 250, 250);
@@ -30,12 +42,3 @@ body {
 /* light.css 
 --icon-filter_hover: invert(60%);*/
 
-
-#earthbook-navbar {
-
-  background-color: rgb(244, 242, 242);
-  border-color: rgb(163, 163, 163);
-  color:  #202124 ;
-  box-shadow: 0 4px 15px rgba(85, 84, 84, 0.3);
-
-}
