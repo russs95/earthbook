@@ -21,10 +21,10 @@ body {
 
 #earthbook-navbar {
 
-  background-color: rgb(244, 242, 242);
-  border-color: rgb(163, 163, 163);
-  color:  #202124 ;
-  box-shadow: 0 4px 15px rgba(85, 84, 84, 0.3);
+  background-color: rgb(244, 242, 242)  !important;
+  border-color: rgb(163, 163, 163)  !important;
+  color:  #202124  !important;
+  box-shadow: 0 4px 15px rgba(85, 84, 84, 0.3)  !important;
 
 }
 
@@ -64,7 +64,7 @@ body {
 
 
 #book-title {
-  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat !important;
 }
 
 

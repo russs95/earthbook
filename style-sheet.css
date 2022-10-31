@@ -570,10 +570,10 @@ h6 {
   margin: auto;
   z-index: 20;
 
-  /*background-color: rgb(244, 242, 242);
+  background-color: rgb(244, 242, 242);
   border-color: rgb(163, 163, 163);
   color:  #202124 ;
-  box-shadow: 0 4px 15px rgba(85, 84, 84, 0.3);*/
+  box-shadow: 0 4px 15px rgba(85, 84, 84, 0.3);
 }
 
 
@@ -583,7 +583,7 @@ h6 {
   }
 }
 
-/*
+
 @media (prefers-color-scheme: dark) {
   #earthbook-navbar {
     background-color: #1c1d20 !important;
@@ -591,7 +591,7 @@ h6 {
     color: white !important;
     box-shadow: 0 4px 15px rgba(7, 7, 7, 0.3) !important;
   }
-}*/
+}
 
 
 /*Titles*/
@@ -1045,7 +1045,7 @@ padding-top: 36px;
 
 
 
-/*what this?*/
+/*Gives the mandala on the top earthbook nav bar?*/
 
 
 #book-title {
@@ -1062,17 +1062,17 @@ padding-top: 36px;
   cursor: pointer;
   margin-top: -10px;
 
- /* background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;*/
+background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
 }
 
-/*
+
 @media (prefers-color-scheme: dark) {
   #book-title { 
   background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat;
 }
   }
 
-*/
+
 
   /*
 @media screen and (max-width: 699px) {

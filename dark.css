@@ -60,7 +60,7 @@
   }
 
   #book-title { 
-    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat;
+    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat  !important;
   }
 
 
