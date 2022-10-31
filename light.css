@@ -39,6 +39,8 @@ body {
   text-shadow: 0 0 3px #ffffff !important;
 }
 
+
+/*
 #settings-menu {
   background: rgb(235, 235, 235) !important;
   box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1) !important;
@@ -61,7 +63,7 @@ body {
   box-shadow:0 1px 15px rgba(85, 84, 84, 0.1) !important;
 
 }
-
+*/
 
 #right-close-button {
   border: solid 1px gray !important;
