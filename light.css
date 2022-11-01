@@ -7,6 +7,7 @@
     --text-color: #242424;
     --background-color: rgb(250, 250, 250) ; /*button hover*/
     --link-color:  #030303 ;
+    --pre-link-color:  #3c3c3c ;
     --nav-bar-accent: rgb(244, 242, 242); /*OBSOLETE? navbar, footer, button color*/
     --deeper-accent-color: rgb(235, 235, 235) ; /*main chart hover, top menu button backgrounds*/ 
     --thin-border-color: rgb(163, 163, 163); /*border color for almost everything*/
@@ -56,14 +57,14 @@
 
 
 #book-box a {  
-  color: var(--text-color);
+
   background: url(svgs/content-arrow.svg) left center no-repeat var(--header-footer);
   background-size: 30px;
   background-position-x: 18px;
 }
 
 #book-box a:hover {  
-  color: var(--link-color);
+
   background: url(svgs/content-arrow-45.svg) left center no-repeat var(--deeper-accent-color);
   background-size: 30px;
   background-position-x: 18px;
