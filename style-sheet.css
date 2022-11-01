@@ -2496,7 +2496,7 @@ a:active {
   background: url(svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
  /* background-position-y: -55px;*/
   background-size: contain;
-  background-color: var(--slider); 
+  background: var(--slider); 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2504,7 +2504,7 @@ a:active {
   #table-of-contents {
   background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
   background-size: contain !important;
-  background-color: var(--slider) !important; 
+  background: var(--slider) !important; 
   color: var(--drop-cap);
 }
 }
