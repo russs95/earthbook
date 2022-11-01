@@ -681,6 +681,7 @@ h6 {
   padding: 40px 10px 18px 10px;
   font-variant-caps: small-caps;
   transition: 0.4s;
+  color: var(--text-color);
   /*text-shadow: 0 0 3px #ffffff;*/
 }
 
@@ -718,6 +719,7 @@ h6 {
   font-style: italic;
   font-size: 1.5em;
   margin-top: -8px;
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 700px) { 
@@ -2891,7 +2893,7 @@ display: none;
 
 #bottom-earthbook {
   background-color: var(--slider); 
-  color: var(--color);
+  color: var(--text-color);
   z-index: 21;
 }
 
