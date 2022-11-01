@@ -453,6 +453,8 @@ padding-bottom: 10px;
 
 .next-button:hover {
   text-align: right;
+  color: var(--text-color);
+  background: var(--background-color);
 }
 
 .footer-settings-button {
