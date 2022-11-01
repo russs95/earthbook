@@ -1837,7 +1837,7 @@ padding-top: 36px;
   margin-bottom: 22px;
 }
 
-.welcome-to a:hover {text-decoration: underline !important;}
+.welcome-to:hover {text-decoration: underline !important;}
 
 
 /*Knack subscribe box*/

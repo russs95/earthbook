@@ -30,7 +30,13 @@ class SettingsCurtain extends HTMLElement {
                 <button id="normal-plugin-ac">A</button>
                 <button id="decrease-plugin-ac">A-</button>
             </div>
-
+            <dark-mode-toggle
+            id="dark-mode-toggle-1"
+            appearance="switch"
+            dark="Dark"
+            light="Light"
+            remember="Remember this"
+            ></dark-mode-toggle>
             <input type="checkbox" id="darkmode-toggle" onclick="toggleDark()" class="darkmoder"/>
             <label for="darkmode-toggle" class="toggle" style="text-align: center;margin: 0px auto 20px auto;">
                 <svg version="1.1" class="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -83,14 +89,7 @@ class SettingsCurtain extends HTMLElement {
             <div class="settings-label"><div class="accessibility-plugin-ac">Brightness</div></div>
             <input type="range" id="range-scale" min="0" max="100" value="100" onchange="Brightness(this)">
             
-            <dark-mode-toggle
-id="dark-mode-toggle-1"
-legend="Theme Switcher"
-appearance="switch"
-dark="Dark"
-light="Light"
-remember="Remember this"
-></dark-mode-toggle>
+            
 
         
         </div>                                                              
