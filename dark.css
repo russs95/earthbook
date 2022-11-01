@@ -53,15 +53,17 @@
 
   #table-of-contents {
     background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
-    background-size: contain;
+    background-size: contain !important;
+    background: var(--slider) !important; 
+    color: var(--drop-cap);
   }
-
+  
 
   .virtue img {
     filter: invert(100%);
   }
 
-  
+
   /*
   #settings-menu {
     background: var(--deeper-accent-color) !important;

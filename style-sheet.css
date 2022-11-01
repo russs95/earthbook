@@ -2490,11 +2490,10 @@ a:active {
 
 /*	11. TABLE OF CONTENTS
 
-/* -------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
 
  #table-of-contents {
   background: url(svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
- /* background-position-y: -55px;*/
   background-size: contain;
   background: var(--slider); 
 }
@@ -2507,7 +2506,7 @@ a:active {
   background: var(--slider) !important; 
   color: var(--drop-cap);
 }
-}
+} */
 
 
 
