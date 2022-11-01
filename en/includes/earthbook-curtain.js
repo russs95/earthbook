@@ -51,10 +51,10 @@ class Earthbook extends HTMLElement {
    
             <div id="wcb" class="carbonbadge wcb-d"></div>
 	      
-        
+            <span style="cursor:pointer" onclick="closeEarthbook()">
         <div id="bottom-close-button">
-        <span style="cursor:pointer" onclick="closeEarthbook()"><img src="../svgs/bottom-x.svg"></span>
-      </div>
+        <img src="../svgs/bottom-x.svg">
+      </div></span>
             
     </div>
 </div>
