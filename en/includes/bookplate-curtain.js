@@ -29,9 +29,9 @@ class Bookplate extends HTMLElement {
 
           <h6 style="color:grey">Published by Earthen.io</h6>
           
-
-          <div id="bottom-close-button">
-            <span style="cursor:pointer" onclick="closeBookplate()"><img src="../svgs/left-x.svg"></span>
+        
+          <div id="bottom-close-button" style="cursor:pointer" onclick="closeBookplate()">
+            <img src="../svgs/left-x.svg">
         </div>
 
   
