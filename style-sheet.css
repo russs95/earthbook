@@ -89,15 +89,17 @@ img[src*=".svg"]:hover {
  
  
  body {
+
+  /*
   --duration: 0.5s;
-  --timing: ease;
+  --timing: ease;*/
  
   color: var(--text-color);
   background-color: var(--background-color);
  
-  transition:
+  /*transition:
   color var(--duration) var(--timing),
-  background-color var(--duration) var(--timing);
+  background-color var(--duration) var(--timing);*/
 
   margin: 0px;
   position: absolute;
