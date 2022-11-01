@@ -530,7 +530,7 @@ h6 {
 
   a {
     color: var(--text-color);
-    border-color: var(--fainter-border-color);
+    /*border-color: var(--fainter-border-color);*/
   }
 
   /*
@@ -2398,12 +2398,18 @@ cursor: pointer;
     background:  #27282c !important;
   }*/
 
+  .action-btn a {
+    text-decoration: none;
+    font-weight: 300;
+    color: var(--pre-link-color) !important;
+  }
+
 
 
 .action-btn a:link {
   text-decoration: none;
   font-weight: 500;
-  color: var(--text-color) !important;
+  color: var(--pre-link-color) !important;
 }
 
 
