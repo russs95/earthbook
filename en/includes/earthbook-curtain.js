@@ -7,9 +7,7 @@ class Earthbook extends HTMLElement {
     this.innerHTML = `
   <div id="bottom-earthbook" class="overlay-earthbook">
     
-  <div id="bottom-close-button">
-  <span style="cursor:pointer" onclick="closeEarthbook()"><img src="../svgs/bottom-x.svg"></span>
-</div>
+
 
       <div class="overlay-content-earthbook">         
             <div>
@@ -53,8 +51,10 @@ class Earthbook extends HTMLElement {
    
             <div id="wcb" class="carbonbadge wcb-d"></div>
 	      
-        <br>
-
+        
+        <div id="bottom-close-button">
+        <span style="cursor:pointer" onclick="closeEarthbook()"><img src="../svgs/bottom-x.svg"></span>
+      </div>
             
     </div>
 </div>

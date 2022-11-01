@@ -793,9 +793,9 @@ font-family: "Mulish";
   right: -60px;
   top: -20px;
 
- /* border: solid 1px gray;
-  background-color: white; 
-  box-shadow: 0 1px 15px rgba(85, 84, 84, 0.1);*/
+  border: solid 1px var(--thin-border-color);
+  background-color: var(--deeper-accent-color); 
+  box-shadow: var(--element-shadow)
 }
 
 
@@ -840,18 +840,18 @@ filter: contrast(0%) !important;}
   position: absolute;
   left: 0px;
   transition: 0.5s;
-  background: var(--background-color);
   border-radius: 50px;
   height: 85px;
-  box-shadow: var(--element-shadow);
-  border: solid 1px var(--thin-border-color);
   padding-left: 40px;
   left: -66px;
   z-index: 50;
   top: -10px;
+  border: solid 1px var(--thin-border-color);
+  background-color: var(--deeper-accent-color); 
+  box-shadow: var(--element-shadow)
 }
 
-#left-close-button {
+#left-close-button:hover {
 left: -40px;
 transition: 0.5s;
 background-color: var(--background-color);
