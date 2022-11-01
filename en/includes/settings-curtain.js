@@ -73,9 +73,8 @@ class SettingsCurtain extends HTMLElement {
             </label>
 
 
-            <div class="settings-label">
-            <div class="accessibility-plugin-ac">Contrast</div>
-            </div>
+            <div class="settings-label"><div class="accessibility-plugin-ac">Contrast</div></div>
+            
             <input type="range" id="range-scale" min="0" max="100" value="100" onchange="Contrast(this)">
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Sepia</div></div>
@@ -84,6 +83,14 @@ class SettingsCurtain extends HTMLElement {
             <div class="settings-label"><div class="accessibility-plugin-ac">Brightness</div></div>
             <input type="range" id="range-scale" min="0" max="100" value="100" onchange="Brightness(this)">
             
+            <dark-mode-toggle
+id="dark-mode-toggle-1"
+legend="Theme Switcher"
+appearance="switch"
+dark="Dark"
+light="Light"
+remember="Remember this"
+></dark-mode-toggle>
 
         
         </div>                                                              

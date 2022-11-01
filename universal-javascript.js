@@ -33,6 +33,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 
  // If `prefers-color-scheme` is not supported, fall back to light mode.
  // In this case, light.css will be downloaded with `highest` priority.
+ 
  if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
  document.documentElement.style.display = 'none';
  document.head.insertAdjacentHTML(
@@ -58,6 +59,8 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  above I already force `highest` priority for my default light experience).
 -->*/
 
+
+/* COPY FUNTION ON SHARE CURTAIN */
 
 var clipboard = new ClipboardJS('.btn');
     
