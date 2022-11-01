@@ -1131,7 +1131,7 @@ padding-top: 36px;
 /* -------------------------------------------------------------------------- */
 
 #left-settings-overlay {
-  background-color: var(--slider); 
+  background-color: var(--deeper-accent-color); 
   color: var(--text-color);
   z-index: 26;
 }
@@ -3086,7 +3086,7 @@ display: none;
 /* -------------------------------------------------------------------------- */
 
 
-#SepiaContainer {
+#containerSepia {
     width: 100%;
     height: 100%;
     z-index: -10;
@@ -3096,7 +3096,7 @@ display: none;
     overflow: hidden;
   }
 
-  #ContrastContainer {
+  #containerContrast {
     width: 100%;
     height: 100%;
     z-index: -10;
@@ -3107,7 +3107,7 @@ display: none;
   }
 
 
-  #BrightnessContainer {
+  #containerBrightness {
     width: 100%;
     height: 100%;
     z-index: -10;

@@ -28,7 +28,11 @@ class BuyCurtain extends HTMLElement {
                     <div id="paypal-button-container"></div>
                   </div>
                 </div>
-              <script src="https://www.paypal.com/sdk/js?client-id=ARxl4xAwtTlVO5a-mo7DafJUm6jcBsjn5BUSlLvwocvyzOhIA0eACTv-6htl&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+
+                <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
+
+
+              <!--<script src="https://www.paypal.com/sdk/js?client-id=ARxl4xAwtTlVO5a-mo7DafJUm6jcBsjn5BUSlLvwocvyzOhIA0eACTv-6htl&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>-->
               
 
                   </div>
@@ -82,7 +86,7 @@ class BuyCurtain extends HTMLElement {
 customElements.define('buy-curtain', BuyCurtain);
 
 
-
+/*
     function initPayPalButton() {
       paypal.Buttons({
         style: {
@@ -121,3 +125,5 @@ customElements.define('buy-curtain', BuyCurtain);
       }).render('#paypal-button-container');
     }
     initPayPalButton();
+
+    */
