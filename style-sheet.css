@@ -1731,22 +1731,11 @@ padding-top: 36px;
 
 /*darkified*/
 
-#bookplate-img {
-  /*background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;*/
-  width: 100%;
-  background-size: contain;
-  transition: 0.3s;
-}
 
 
 /*
 @media (prefers-color-scheme: dark) {
-  #bookplate-img {
-    background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
-    width: 100%;
-    background-size: contain;
-    transition: 0.3s;
-  }
+
   }
 */
 
@@ -2422,15 +2411,15 @@ a:link {
 }
 
 a:visited {
-  text-decoration: none;
+  text-decoration: var(--text-color);
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: var(--text-color);
 }
 
 a:active {
-  text-decoration: none;
+  text-decoration: var(--text-color);
 }
 
 

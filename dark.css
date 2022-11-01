@@ -50,6 +50,9 @@
 
   #bookplate-img {
     background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+    width: 100%;
+    background-size: contain;
+    transition: 0.3s;
   }
 
   #table-of-contents {
