@@ -529,7 +529,7 @@ h6 {
 
 
   a {
-    color: var(--link-color);
+    color: var(--text-color);
     border-color: var(--fainter-border-color);
   }
 
@@ -551,7 +551,7 @@ h6 {
   }
 
     a:hover {
-      color: black;
+      color: var(--link-color);
       border-color: var(--thin-border-color);
       text-decoration: underline;
     }
@@ -1837,7 +1837,7 @@ padding-top: 36px;
   margin-bottom: 22px;
 }
 
-.welcome-to a {text-decoration: underline !important;}
+.welcome-to a:hover {text-decoration: underline !important;}
 
 
 /*Knack subscribe box*/
@@ -1943,23 +1943,23 @@ padding-top: 36px;
 }
 
 
-#book-box a{  
+#book-box a {  
   color: var(--text-color);
-  background: url(svgs/content-arrow.svg) left center no-repeat var(--header-footer);
+  /*background: url(svgs/content-arrow.svg) left center no-repeat var(--header-footer);
   background-size: 30px;
-  background-position-x: 18px;
+  background-position-x: 18px;*/
 }
 
 #book-box a:hover {  
   color: var(--link-color);
-  background: url(svgs/content-arrow-45.svg) left center no-repeat var(--deeper-accent-color);
+  /*background: url(svgs/content-arrow-45.svg) left center no-repeat var(--deeper-accent-color);
   background-size: 30px;
-  background-position-x: 18px;
+  background-position-x: 18px;*/
   ;
 }
 
 
-/*Arg keep?*/
+/*Arg keep?
 @media (prefers-color-scheme: dark) {
   #book-box a  {
   background: url(svgs/content-arrow-night.svg) left center no-repeat  var(--header-footer);
@@ -1975,7 +1975,7 @@ padding-top: 36px;
   background-position-x: 18px !important;  
   color: var(--link-color);
 }
-}
+}*/
 
 .chapter-top {
   border-radius: 20px 20px 0px 0px;
