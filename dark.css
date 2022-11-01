@@ -64,24 +64,23 @@
   }
 
 
-  @media (prefers-color-scheme: dark) {
     #book-box a  {
     background: url(svgs/content-arrow-night.svg) left center no-repeat  var(--header-footer);
     background-size: 30px !important;
     background-position-x: 18px !important;
     border:  var(--thin-border-color);
-    color: var(--text-color);
+
   }
   
   #book-box a:hover {
     background: url(svgs/content-arrow-45-night.svg) left center no-repeat var(--deeper-accent-color);
     background-size: 30px !important;
     background-position-x: 18px !important;  
-    color: var(--link-color);
-  }
-  }
 
+  }
   
+
+
   /*
   #settings-menu {
     background: var(--deeper-accent-color) !important;
