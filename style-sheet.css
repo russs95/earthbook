@@ -39,15 +39,18 @@ Media Query parameters used throughout:
 /* BASICS */
 
 /*DARKER VARIABLES*/
+
+
+/*
 :root {
   --text-color: rgb(250, 250, 250);
   --background-color: #1c1d20 ;
   --link-color:  rgb(250, 250, 250);
-  --nav-bar-accent: rgb(66, 66, 66); /*navbar, footer, button color*/
-  --deeper-accent-color: #17181B ; /*main chart hover, top menu button backgrounds*/
-  --thin-border-color: rgb(66, 66, 66); /*border color for almost everything*/
-  --fainter-border-color: rgb(85, 85, 85); /*border color for the menu buttons*/
-  --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.173); /*whenever a shadow is added*/
+  --nav-bar-accent: rgb(66, 66, 66); 
+  --deeper-accent-color: #17181B ; 
+  --thin-border-color: rgb(66, 66, 66); 
+  --fainter-border-color: rgb(85, 85, 85); 
+  --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.173); 
   --drop-cap: rgb(200, 200, 200);
   --header-footer: #202124;
   --slider: #232323;
@@ -89,7 +92,7 @@ img[src*=".svg"]:hover {
   --duration: 0.5s;
   --timing: ease;
  
-  color: var(--color);
+  color: var(--text-color);
   background-color: var(--background-color);
  
   transition:
@@ -1228,7 +1231,7 @@ padding-top: 36px;
 }
 
 .language-selector a {
-  color: var(--color);
+  color: var(--text-color);
 }
 
 
@@ -1969,7 +1972,7 @@ padding-top: 36px;
   background: url(svgs/content-arrow-45-night.svg) left center no-repeat var(--deeper-accent-color);
   background-size: 30px !important;
   background-position-x: 18px !important;  
-  color: var(--color);
+  color: var(--text-color);
 }
 }
 
