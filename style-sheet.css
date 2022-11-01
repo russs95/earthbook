@@ -2685,7 +2685,7 @@ a:active {
 .tc-item {
   font-family: 'Mulish';
   padding: 0px;
-  border-width: 1px;
+  border-bottom-width: 1px;
   border-color:inherit;
   border-style: solid;
   cursor: pointer;
@@ -2694,10 +2694,13 @@ a:active {
 border-right: none;
 border-left: none;
 display: flex;
+border-bottom-color: var(--fainter-border-color);
 }
 
+
+
 .tc-item:hover {
-  border-width: 2px;
+  border-bottom-width: var(--thin-border-color);
 }
 
 @media screen and (max-width: 700px) {
