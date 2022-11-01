@@ -137,15 +137,14 @@ display: none;
     left: -66px;
     z-index: 50;
 
-    background: var(--deeper-accent-color);
-    box-shadow: var(--element-shadow);
+    background: var(--background-color);
     border: solid 1px var(--fainter-border-color);
 }
 
 #settings-menu:hover {
   left: -40px;
   transition: 0.5s;
-  background: var(--background-color);
+  background: var(--deeper-accent-color);
   box-shadow: var(--element-shadow);
 }
 
@@ -175,7 +174,6 @@ display: none;
     padding-right: 70px;
     right: -60px;
     background-color: var(--background-color);
-    box-shadow: var(--element-shadow);
     border: solid 1px var(--fainter-border-color);
   }
 
@@ -1672,7 +1670,7 @@ padding-top: 36px;
 /*BOOKPLATE OVERLAY*/
 
 #top-bookplate {
-  background-color: var(--deeper-accent-color); 
+  background-color: var(--slider); 
   z-index: 21;
   text-shadow: 0 0px 4px var(--background-color);
 }
@@ -1830,7 +1828,7 @@ padding-top: 36px;
 
 .welcome-to {
   font-size: 1.3em;
-  line-height: 1.3;
+  line-height: 1.2;
   font-family: 'CooperLt', Georgia, serif;
   text-rendering: optimizeLegibility;
   font-weight: 300;
