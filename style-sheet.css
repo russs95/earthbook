@@ -2585,14 +2585,14 @@ a:active {
 @media screen and (max-width: 700px) {
   .contents-title {
     font-size: 1.6em;
-    padding-bottom: 7px;
+    padding-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   .contents-title {
     font-size: 2.2em;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
   }
 }
 
@@ -2658,21 +2658,21 @@ a:active {
   @media screen and (max-width: 700px) {
     .contents-title {
       font-size: 1.15em;
-      padding-bottom: 10px;
+      margin-top: 10px;
     }
   }
   
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     .contents-title {
       font-size: 1.5em;
-      padding-bottom: 20px;
+      margin-top: 20px;
     }
   }
   
   @media screen and (min-width: 1325px) {
     .contents-title {
       font-size: 1.6em;
-      padding-bottom: 40px;
+      margin-top: 30px;
       }
     }
   
