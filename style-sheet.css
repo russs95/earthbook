@@ -568,7 +568,7 @@ h6 {
 }
 
 .lead-page-paragraph:first-child:first-letter {
-  color: var(--drop-cap);
+  color: var(--pre-link-color);
   float: left;
   font-family: "CooperLt";
   font-size: 4em;
@@ -2404,7 +2404,7 @@ cursor: pointer;
   .action-btn a {
     text-decoration: none;
     font-weight: 300;
-    color: var(--pre-link-color) !important;
+    color: var(--text-color);
   }
 
 
@@ -2412,7 +2412,7 @@ cursor: pointer;
 .action-btn a:link {
   text-decoration: none;
   font-weight: 500;
-  color: var(--pre-link-color) !important;
+  color: var(--link-color);
 }
 
 

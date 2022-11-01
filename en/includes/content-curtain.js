@@ -38,7 +38,7 @@ class ContentCurtain extends HTMLElement {
                     <a href="quickstart.html">
                     <div class="tc-item">
                         <div class="chapter-name-tc">Quickstart</div>
-                        <div class="word-count-tc"><i>212 words</i></div>
+                        <div class="word-count-tc"><i>540 words</i></div>
                     </div></a>
 
                     <a href="imagine">
