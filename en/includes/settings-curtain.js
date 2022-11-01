@@ -30,13 +30,14 @@ class SettingsCurtain extends HTMLElement {
                 <button id="normal-plugin-ac">A</button>
                 <button id="decrease-plugin-ac">A-</button>
             </div>
-            <dark-mode-toggle
-            id="dark-mode-toggle-1"
-            appearance="switch"
-            dark="Dark"
-            light="Light"
-            remember="Remember this"
-            ></dark-mode-toggle>
+<dark-mode-toggle
+id="dark-mode-toggle-1"
+legend=""
+appearance="switch"
+dark="Dark"
+light="Light"
+remember="Remember this"
+></dark-mode-toggle>
             <input type="checkbox" id="darkmode-toggle" onclick="toggleDark()" class="darkmoder"/>
             <label for="darkmode-toggle" class="toggle" style="text-align: center;margin: 0px auto 20px auto;">
                 <svg version="1.1" class="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

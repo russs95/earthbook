@@ -58,7 +58,7 @@
 
 #book-box a {  
 
-  background: url(svgs/content-arrow.svg) left center no-repeat var(--header-footer);
+  background: url(svgs/content-arrow.svg) left center no-repeat var(--background-color);
   background-size: 30px;
   background-position-x: 18px;
 }

@@ -1945,6 +1945,7 @@ padding-top: 36px;
 
 #book-box a {  
   color: var(--pre-link-color);
+
   /*background: url(svgs/content-arrow.svg) left center no-repeat var(--header-footer);
   background-size: 30px;
   background-position-x: 18px;*/

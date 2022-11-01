@@ -438,11 +438,11 @@ padding-bottom: 10px;
 
 
 .next-button {
-  background: var(--pre-link-color);
+  background: var(--text-color);
   font-family: 'Mulish';
   font-size: 1.3em;
   padding: 8px 20px 8px 20px;
-  color: var(--text-color);
+  color: var(--background-color);
   border-radius: 55px 55px 55px 55px;
   width: fit-content;
   text-align: center;
@@ -525,7 +525,7 @@ padding-bottom: 10px;
   width: 100%;
   max-width: 100vw;
 
-  background-color: var(--pre-link-color);
+  background-color: var(--deeper-accent-color);
   padding-top: 00px;
   justify-content: center;
 }
