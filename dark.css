@@ -6,11 +6,12 @@
   --text-color: rgb(250, 250, 250);
   --background-color: #1c1d20 ;
   --link-color:  rgb(250, 250, 250);
+  --drop-cap: rgb(200, 200, 200);
   --nav-bar-accent: rgb(66, 66, 66); /*navbar, footer, button color*/
   --deeper-accent-color: #17181B ; /*main chart hover, top menu button backgrounds*/
   --thin-border-color: rgb(66, 66, 66); /*border color for almost everything*/
   --fainter-border-color: rgb(85, 85, 85); /*border color for the menu buttons*/
-  --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.9); /*whenever a shadow is added*/
+  --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.173); /*whenever a shadow is added*/
  }
 
 
@@ -19,18 +20,39 @@
 
 
  
-  /*NAVBAR TOP*/
+  /*NAVBAR TOP*
 
    #earthbook-navbar {
     background-color: #1c1d20 !important;
     border-color: rgb(66, 66, 66) !important;
     color: white !important;
     box-shadow: 0 1px 15px rgba(7, 7, 7, 0.15) !important;
-  }
+  }*/
 
   #main-title {
     text-shadow: 0 0 3px #000000 !important;
   }
+
+  #book-title { 
+    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat  !important;
+  }
+
+  #book-header-logo {  
+    background: url(svgs/my-book-header-logo-night.svg) center no-repeat;
+    width: 100%;
+    background-size: contain;
+    transition: 0.3s;
+    filter: brightness(75%);
+  }
+
+  #top-bookplate {
+    text-shadow: 0 0px 4px #000000 !important;
+  }
+
+  #bookplate-img {
+    background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+  }
+
 
 
 
@@ -66,9 +88,6 @@
   }
 */
 
-  #book-title { 
-    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat  !important;
-  }
 
 
 

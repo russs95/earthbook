@@ -14,6 +14,39 @@
     --element-shadow: 0 1px 15px rgba(7, 7, 7, 0.05 );  /*whenever a shadow is added*/
    }
    
+
+#main-title {
+  text-shadow: 0 0 3px #ffffff !important;
+}
+
+
+#book-title {
+  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat !important;
+}
+
+#book-header-logo {  
+  background: url(svgs/my-book-header-logo-day.svg) center no-repeat;
+  width: 100%;
+  background-size: contain;
+  transition: 0.3s;
+  background-size: contain;
+  transition: 0.3s;
+  filter: brightness(75%);
+  position: absolute;
+ 
+  }
+
+
+#top-bookplate {
+  text-shadow: 0 0px 4px #ffffff !important;
+}
+
+#bookplate-img {
+  background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;
+}
+
+
+
 /*
 body {
   background-color: rgb(250, 250, 250) !important;
@@ -25,7 +58,7 @@ body {
 }*/
 
 
-/*NAVBAR TOP*/
+/*NAVBAR TOP
 
 #earthbook-navbar {
 
@@ -36,9 +69,6 @@ body {
 
 }
 
-#main-title {
-  text-shadow: 0 0 3px #ffffff !important;
-}
 
 /*
 
@@ -72,9 +102,6 @@ body {
 }
 
 
-#book-title {
-  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat !important;
-}
 
 
 

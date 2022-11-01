@@ -8,15 +8,7 @@ class Bookplate extends HTMLElement {
 
     <div id="top-bookplate" class="overlay-bookplate">
 
-    
-
     <div class="overlay-content-bookplate">
-    
-        <!--
-        </div>
-        <div id="bookplate-button" style="cursor:pointer" onclick="closeBookplate()"><span><img src="../svgs/up-arrow.svg" style="width:100px;"></span></div>
-    </div>-->
-
 
         <div id="bookplate-img"></div>
 

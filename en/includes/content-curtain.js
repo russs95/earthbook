@@ -25,18 +25,22 @@ class ContentCurtain extends HTMLElement {
                         </div>
                     </div>
 
+                    <a href="preamble.html">
+                    <div class="tc-item">
+                        <div class="chapter-name-tc">Preamble</div>
+                        <div class="word-count-tc"><i>244 words</i></div>
+                    </div></a>
+
                     <a href="preface.html">
                     <div class="tc-item">
-                    <div class="magic-circle"></div>
-                    <div class="chapter-name-tc">Preface</div>
-                    <div class="dotted-line"></div>
-                    <div class="word-count-tc"><i>8 words</i></div>
+                        <div class="chapter-name-tc">Preface</div>
+                        <div class="word-count-tc"><i>823 words</i></div>
                     </div></a>
 
                     <a href="quickstart.html">
                     <div class="tc-item">
-                        <div class="chapter-name-tc">Quick start</div>
-                        <div class="word-count-tc"><i>35 words</i></div>
+                        <div class="chapter-name-tc">Quickstart</div>
+                        <div class="word-count-tc"><i>212 words</i></div>
                     </div></a>
 
                     <a href="imagine">

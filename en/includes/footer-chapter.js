@@ -18,7 +18,7 @@ class FooterChapter extends HTMLElement {
 
     <div class="footer-settings-icon" style="cursor:pointer" ><a href="index.html"><img src="../icons/dash.svg"></a></div>
 
-    <div class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()"><img src="../svgs/tractatus-simple-mandala-grey.svg" title="Tractatus Ayyew bookplate"></div>
+    <div class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew bookplate"></div>
     
     <div class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()"></div>
 
