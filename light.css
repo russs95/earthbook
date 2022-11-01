@@ -7,11 +7,14 @@
     --text-color: #222222;
     --background-color: rgb(250, 250, 250) ; /*button hover*/
     --link-color:  #222222 ;
-    --nav-bar-accent: rgb(244, 242, 242); /*navbar, footer, button color*/
+    --nav-bar-accent: rgb(244, 242, 242); /*OBSOLETE? navbar, footer, button color*/
     --deeper-accent-color: rgb(235, 235, 235) ; /*main chart hover, top menu button backgrounds*/ 
     --thin-border-color: rgb(163, 163, 163); /*border color for almost everything*/
     --fainter-border-color:  rgb(208, 207, 207); /*border color for the menu buttons*/
     --element-shadow: 0 1px 15px rgba(7, 7, 7, 0.05 );  /*whenever a shadow is added*/
+    --drop-cap: rgb(200, 200, 200);
+    --header-footer: #f4f2f2;
+    --slider: rgba(231, 231, 231);
    }
    
 
@@ -42,10 +45,13 @@
 }
 
 #bookplate-img {
-  background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;
+  background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat !important;
 }
 
-
+#table-of-contents {
+  background: url(svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
+  background-size: contain;
+}
 
 /*
 body {

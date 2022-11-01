@@ -12,8 +12,6 @@ class ContentCurtain extends HTMLElement {
         <span style="cursor:pointer" onclick="closeContents()"><img src="../svgs/bottom-x.svg"></span>
     </div>
         
-    <!--    <a href="javascript:void(0)" class="closebtn" onclick="closeContents()">&times;</a>-->
-        
         <div class="overlay-content-tc">
 
                     <div class="contents-title-box">
@@ -121,7 +119,8 @@ class ContentCurtain extends HTMLElement {
 
             </div>
 
-            <div id="tc-button" style="cursor:pointer" onclick="closeContents()"><span><img src="../svgs/up-arrow.svg" style="width:100px;"></span></div>
+          <!--  <div id="tc-button" style="cursor:pointer" onclick="closeContents()"><span><img src="../svgs/up-arrow.svg" style="width:100px;"></span></div>-->
+
     </div>
 
 

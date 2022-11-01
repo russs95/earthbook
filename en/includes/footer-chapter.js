@@ -37,6 +37,8 @@ class FooterChapter extends HTMLElement {
 
 </div>
 
+
+
     `;
 }
 }

@@ -73,7 +73,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 function openSettings() {
   document.getElementById("left-settings-overlay").style.width = "100%";
   document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "100vh";
+  //document.body.style.maxHeight = "100vh";
 
 }
 /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -81,7 +81,7 @@ function closeSettings() {
   document.getElementById("left-settings-overlay").style.width = "0%";
   document.body.style.overflowY = "unset";
   document.body.style.maxHeight = "unset";
-} 
+  document.body.style.height = "unset";} 
 
  
 /* TABLE OF CONTENTS OVERLAY
@@ -384,23 +384,22 @@ if (preference.matches) {
 {
 var containerSepia = document.body;
 var val = e.value;
-containerSepia.setAttribute("style", "filter: sepia("+val+"%);");
-
-
+containerSepia.setAttribute("style", "filter: sepia("+val+"%); height: 100vh; overflow-y: hidden;");
 }
 
 function Contrast(e)
 {
 var containerContrast = document.body;
 var val = e.value;
-containerContrast.setAttribute("style", "filter: contrast("+val+"%); ");
+containerContrast.setAttribute("style", "filter: contrast("+val+"%); height: 100vh; overflow-y: hidden;");
 }
 
 function Brightness(e)
 {
 var containerBrightness = document.body;
 var val = e.value;
-containerBrightness.setAttribute("style", "filter: brightness("+val+"%);");
+containerBrightness.setAttribute("style", "filter: brightness("+val+"%); height: 100vh; overflow-y: hidden;");
+
 }
 
 

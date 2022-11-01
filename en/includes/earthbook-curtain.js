@@ -6,7 +6,10 @@ class Earthbook extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
   <div id="bottom-earthbook" class="overlay-earthbook">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeEarthbook()">&times;</a>
+    
+  <div id="bottom-close-button">
+  <span style="cursor:pointer" onclick="closeEarthbook()"><img src="../svgs/bottom-x.svg"></span>
+</div>
 
       <div class="overlay-content-earthbook">         
             <div>
@@ -48,13 +51,10 @@ class Earthbook extends HTMLElement {
             <div><h2><i>The Medium is the Message.</i></h2></div>
 
    
-	      <div id="wcb" class="carbonbadge wcb-d"></div>
+            <div id="wcb" class="carbonbadge wcb-d"></div>
 	      
         <br>
-        
-        <div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons BY SA 4.0 License" style="border-width:0" src="icons/cc-by-sa.svg" width="200px" height="45px" loading="lazy"/> </a>
-        
-        
+
             
     </div>
 </div>

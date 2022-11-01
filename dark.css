@@ -4,6 +4,7 @@
 
 :root {
   --text-color: rgb(250, 250, 250);
+  --drop-cap: rgb(200, 200, 200); /*drop cap, bookbox text*/
   --background-color: #1c1d20 ;
   --link-color:  rgb(250, 250, 250);
   --drop-cap: rgb(200, 200, 200);
@@ -12,12 +13,9 @@
   --thin-border-color: rgb(66, 66, 66); /*border color for almost everything*/
   --fainter-border-color: rgb(85, 85, 85); /*border color for the menu buttons*/
   --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.173); /*whenever a shadow is added*/
+  --header-footer: #202124;
+  --slider: #232323;
  }
-
-
-
-
-
 
  
   /*NAVBAR TOP*
@@ -53,9 +51,17 @@
     background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
   }
 
+  #table-of-contents {
+    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
+    background-size: contain;
+  }
 
 
+  .virtue img {
+    filter: invert(100%);
+  }
 
+  
   /*
   #settings-menu {
     background: var(--deeper-accent-color) !important;
