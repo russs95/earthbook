@@ -181,7 +181,7 @@ display: none;
     margin: auto;
     width:100%;
     border-bottom: 1px solid var(--thin-border-color);
-    background-color: var(--header-footer);
+    background-color: var(--slider);
 
     /*overflow-x: hidden;
     background: url(svgs/tractatus-mandala-full-white.svg) no-repeat center;
@@ -428,12 +428,15 @@ margin: auto;
   font-family: 'Mulish';
   font-weight: bold;
   font-size: 1.3em;
-padding-bottom: 10px;
+  padding-bottom: 10px;
+  color: var(--pre-link-color);
 }
 
 .sec-name {
   font-family: 'CooperLt';
-  font-size: 1.1em
+  font-size: 1.1em;
+  color: var(--text-color);
+
 }
 
 
