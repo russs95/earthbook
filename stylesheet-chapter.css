@@ -5,6 +5,7 @@
 
 #earthbook-navbar {
   height: 400px;
+  border-bottom-color: var(--strong-border);
 }
 
 #book-title {

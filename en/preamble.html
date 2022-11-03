@@ -129,7 +129,6 @@ Must be updated for each page-->
   #ct-chapt-graphic {
   background: url(svgs/tractatus-mandala-full-grey.svg) no-repeat center;
 background-size: contain;
-background-position-y: 200px;
 }
 
 </style>
@@ -150,7 +149,7 @@ background-position-y: 200px;
 <header-component></header-component>
 
 <div id="ct-chapter-top">
-    <div id="ct-tc-menu"><img src="../svgs/tc-button.svg" style="width:40px; padding:10px; cursor:pointer" onclick="openContents()"></div>
+    <div id="ct-tc-menu" onclick="openContents()"></div>
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
       <div id="ct-chapter-title">Preamble</div>
       <div id="ct-book-title">Book One | Tractatus Ayyew</div>
@@ -180,7 +179,7 @@ background-position-y: 200px;
 
 <!-- Page Title Section-->
 
-<div id="ct-chapt-graphic" style="opacity: 1;"></div>
+<div id="ct-chapt-graphic"></div>
 <div id="progress-bar">
   <div class="progress"></div>
 </div>
@@ -193,7 +192,7 @@ background-position-y: 200px;
 
 <div class="lead-page-paragraph">
 
- <p>DO YOU like to have a glimpse of a book's background before you begin?  Or perhaps you appreciate a quick summary before jump in?  Well, either way, you're in luck.</p>
+ DO YOU like to have a glimpse of a book's background before you begin?  Or perhaps you appreciate a quick summary before jump in?  Well, either way, you're in luck.
 
 </div>
 
@@ -208,6 +207,8 @@ background-position-y: 200px;
 
     <p>It is this ayyew ethos which inspires the theory of green and grey presented in the Tractatus Ayyew—   what we call an <i>Earthen ethics</i>.
     </p>
+
+
   
 </div>
 
