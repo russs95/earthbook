@@ -197,11 +197,29 @@ display: none;
     font-family: 'CooperLT';
     font-size: 1.4em;
     font-style: italic;
-    width: 50%;
-    color: grey;
+    
+    color: var(--text-color);
     align-self: center;
     padding-bottom: 20px;
     line-height: 1.5;
+  }
+
+  @media screen and (max-width: 699px) {
+    .ct-chapter-quote {
+      width: 90%;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .ct-chapter-quote {
+      width: 70%;
+    }
+  }
+    
+  @media screen and (min-width: 1325px) {
+    .ct-chapter-quote {
+    width: 50%;
+    }
   }
 
   .ct-quote-source {
@@ -373,7 +391,7 @@ margin: auto;
     .quote {
   
       margin: 40px 0px 40px 8px;
-      padding: 0px 25px 0px 25px;
+      padding: 0px 5px 0px 25px;
       border-left: 3px solid var(--text-color);
       font-style: italic;
       font-size: 0.95em;

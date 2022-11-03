@@ -33,7 +33,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 
  // If `prefers-color-scheme` is not supported, fall back to light mode.
  // In this case, light.css will be downloaded with `highest` priority.
- 
+
  if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
  document.documentElement.style.display = 'none';
  document.head.insertAdjacentHTML(
@@ -58,6 +58,13 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  query is unknown and the files are downloaded with `lowest` priority (but
  above I already force `highest` priority for my default light experience).
 -->*/
+
+$(function() {
+  $('#footer-icon-left ').click(function() {
+    $(this).css('background-image', 'url(svgs/footer-settings-button-up.png)');
+  });
+});
+
 
 
 /* COPY FUNTION ON SHARE CURTAIN */
