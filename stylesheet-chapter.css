@@ -63,8 +63,6 @@ display: none;
     height: 40vh;
     margin: 0px auto;
     margin-top: 20px;
- 
-
   }
   
   /*
@@ -181,7 +179,7 @@ display: none;
     margin: auto;
     width:100%;
     border-bottom: 1px solid var(--thin-border-color);
-    background-color: var(--link-color);
+    background-color: var(--slider);
 
     display: flex;
   flex-flow: column;
