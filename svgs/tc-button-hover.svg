@@ -8,7 +8,7 @@
    version="1.1"
    id="svg23743"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
-   sodipodi:docname="tc-button.svg"
+   sodipodi:docname="tc-button-hover.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@
        id="path78405" />
     <path
        style="fill:none;fill-opacity:1;stroke:#808080;stroke-width:3.42215;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 62.805529,172.91452 38.331781,0.21107 43.68361,-0.21107"
+       d="m 62.805529,172.91452 40.614761,17.62346 41.40063,-17.62346"
        id="path78407"
        sodipodi:nodetypes="ccc" />
   </g>
