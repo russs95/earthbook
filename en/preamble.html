@@ -1,7 +1,7 @@
 <!--EARTHBOOK CHAPTER PAGE - TEMPLATE
 Design by Russell Maier
 
-CSS Version 1.0
+CSS Version 0.7.0
 Original Author:  Russell Maier
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -9,7 +9,6 @@ All files, unless otherwise stated, are released under the GNU General Public
 License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
 See full project repository at: https://github.com/russs95/earthbook
 */
-
 -->
 
 
@@ -33,37 +32,13 @@ These tags will be consistent for the whole book-->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
 <link rel="manifest" href="../favicons/site.webmanifest">
 
-
-<!--PAGE LINKS
-Must be updated for each page-->
-
-<link rel="canonical" href="https://book.earthen.io/en/preamble.html"> 
-<link rel="alternate" href="https://book.earthen.io/en/preamble.html" hreflang="en" />
-<!--<link rel="alternate" href="https://book.earthen.io/fr/preamble.html" hreflang="fr" />
-<link rel="alternate" href="https://book.earthen.io/es/preamble.html" hreflang="es" />
-<link rel="alternate" href="https://book.earthen.io/id/preamble.html" hreflang="id" />-->
-<link rel="alternate" href="http://book.org/en/preamble.html" hreflang="x-default" />
-
-<!--META TAGS
-Must be updated for each page-->
-
-<title>Preamble | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Preamble, Introduction, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
-
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="2 minutes" /> 
-	
-<!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:url"           content="https://book.earthen.io/en/preface.html">
-<meta property="og:type"          content="website">
-<meta property="og:title"         content="Preamble | Tratatus Ayyew - Earthbook">
-<meta property="og:description"   content="A short introduction to the Tractus Ayyew"/>
+<meta property="og:type"          content="book">
 <meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg"/>
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1000px" />
 <meta property="og:image:height" content="1500px" />
+
 <meta property="og:locale" content="en_GB" />
 
 
@@ -100,10 +75,9 @@ All the page components required to build this page-->
  <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
  <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
  <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
- <!--6-->
- <!--7--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
- <!--8--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
- <!--9--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
+ <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
+ <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
+ <!--8b--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
 
 
  <!-- Fonts
@@ -115,15 +89,51 @@ The requisite typography for the page-->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Roboto&display=swap" rel="stylesheet"> 
 	
+<!--Preload graphics-->
+<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
+
+
+<!--END OF GENERIC CONTENT-->
+
+<!--PAGE LINKS
+Must be updated for each page-->
+
+<link rel="canonical" href="https://book.earthen.io/en/preamble.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/preamble.html" hreflang="en" />
+<link rel="alternate" href="http://book.org/en/preamble.html" hreflang="x-default" />
+<!--<link rel="alternate" href="https://book.earthen.io/fr/preamble.html" hreflang="fr" />
+<link rel="alternate" href="https://book.earthen.io/es/preamble.html" hreflang="es" />
+<link rel="alternate" href="https://book.earthen.io/id/preamble.html" hreflang="id" />-->
+
+<!--META TAGS
+Must be updated for each page-->
+
+<title>Preamble | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
+
+
+<meta name="twitter:label1" content="Est. reading time" />
+<meta name="twitter:data1" content="3 minutes" /> 
+	
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:url"           content="https://tractatus.earthen.io/en/preamble.html">
+<meta property="og:title"         content="Preamble | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="Let's start by telling some stories."/>
+
 
 <style>
-
-#ct-chapt-graphic {
+  
+  #ct-chapt-graphic {
   background: url(svgs/tractatus-mandala-full-grey.svg) no-repeat center;
 background-size: contain;
 background-position-y: 200px;
 }
+
 </style>
+
 </head>
 
 
