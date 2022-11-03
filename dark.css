@@ -9,13 +9,13 @@
   --link-color:  rgb(250, 250, 250);
   --pre-link-color:  #d5d5d5 ;
   --drop-cap: rgb(200, 200, 200);
-  --nav-bar-accent: rgb(66, 66, 66); /*navbar, footer, button color*/
+  --nav-bar-accent: rgb(43, 43, 48); /*navbar, footer, button color*/
   --deeper-accent-color: #17181B ; /*main chart hover, top menu button backgrounds*/
-  --thin-border-color: rgb(66, 66, 66); /*border color for almost everything*/
-  --fainter-border-color: rgb(85, 85, 85); /*border color for the menu buttons*/
+  --thin-border-color: rgb(50, 51, 56); /*border color for almost everything*/
+  --fainter-border-color: rgb(72, 72, 80); /*border color for the menu buttons*/
   --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.173); /*whenever a shadow is added*/
-  --header-footer: #2c2727;
-  --slider: #1a1818;
+  --header-footer: #27272c;
+  --slider: #18181a;
  }
 
  
