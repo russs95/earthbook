@@ -251,6 +251,7 @@ display: none;
       padding: 12px 30px 10px 0px;
       width: 60px;
       border-right: 1px solid;
+      border-color: var(--thin-border-color);
       height: 45px;
       background: url(svgs/footer-settings-button.svg) no-repeat left;
       background-size: 70px;
