@@ -177,11 +177,11 @@ display: none;
   #ct-chapt-graphic {
     
     padding: 0px;
-    height: 66vh;
+    height: 75vh;
     margin: auto;
     width:100%;
     border-bottom: 1px solid var(--thin-border-color);
-    background-color: var(--slider);
+    background-color: var(--link-color);
 
     display: flex;
   flex-flow: column;
@@ -202,6 +202,8 @@ display: none;
     width: 50%;
     color: grey;
     align-self: center;
+    padding-bottom: 20px;
+    line-height: 1.5;
   }
 
   .ct-quote-source {
@@ -210,6 +212,8 @@ display: none;
     font-size: 1.0em;
     width: 50%;
     color: grey;
+    padding-bottom: 50px;
+align-self: center;
   }
   
   /*
@@ -370,11 +374,11 @@ margin: auto;
   
     .quote {
   
-      margin: 40px 20px 40px 8px;
+      margin: 40px 0px 40px 8px;
       padding: 0px 25px 0px 25px;
       border-left: 3px solid var(--text-color);
       font-style: italic;
-      font-size: 0.9em;
+      font-size: 0.95em;
     }
 
 
