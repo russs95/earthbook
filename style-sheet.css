@@ -1728,29 +1728,6 @@ padding-top: 36px;
 }
 
 
-/*darkified*/
-
-
-
-/*
-@media (prefers-color-scheme: dark) {
-
-  }
-*/
-
-
-
-/*  pretty sure can delte??
-@media screen and (max-width: 699px) {
-#bookplate-img {
-  background: url(svgs/tractatus-simple-mandala.svg) center no-repeat;
-  width: 60px;
-  background-size: contain;
- 
-}
-}*/
-
-
 
 
 @media screen and (max-width: 700px) {
@@ -1784,7 +1761,7 @@ padding-top: 36px;
 }
 
 
-
+/*
 #bookplate-button {
   position: absolute;
   width: fit-content;
@@ -1806,6 +1783,7 @@ padding-top: 36px;
 #bookplate-button:hover {
   top: 40px;
 }
+*/
 
 
 
