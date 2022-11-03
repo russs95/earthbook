@@ -130,7 +130,7 @@ Must be updated for each page-->
   #ct-chapt-graphic {
   background: url(svgs/tractatus-mandala-full-grey.svg) no-repeat center;
 background-size: contain;
-background-position-y: 200px;
+background-color: var(--slider);
 }
 
 </style>
@@ -148,7 +148,7 @@ background-position-y: 200px;
 <header-component></header-component>
 
 <div id="ct-chapter-top">
-    <div id="ct-tc-menu"><img src="../svgs/tc-button.svg" style="width:40px; padding:10px; cursor:pointer" onclick="openContents()"></div>
+    <div id="ct-tc-menu"></div>
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
       <div id="ct-chapter-title">Preface</div>
       <div id="ct-book-title">Book One | Tractatus Ayyew</div>
@@ -178,7 +178,13 @@ background-position-y: 200px;
 
 <!-- Page Title Section-->
 
-<div id="ct-chapt-graphic" style="opacity: 1;"></div>
+<div id="ct-chapt-graphic">
+  <div class="ct-chapter-quote">
+    “Ayka ta man gagayam ta"  |  "Come, let’s tell some stories”
+  </div>
+  <div class="ct-quote-source">
+   ― Igorot expression
+</div>
 <div id="progress-bar">
   <div class="progress"></div>
 </div>
@@ -192,7 +198,6 @@ background-position-y: 200px;
 <div class="lead-page-paragraph">
 
     TEN YEARS AGO, Banayan Angway and I met in the land of her people, the Igorots, in the Northern Luzon in the West Philippines Sea.  We immediately connected around a shared resolve to stem the flow of plastic making its way into the Chico river that winds through the mountainous region.  With our vastly different backgrounds, our unlikely collaboration kindled a novel means of plastic management.  Our variation of a simple technique of manually packing used plastic rapidly spread from village to village.  Over the next year our variation of ‘ecobricking’, would spread from villages to cities across the Philippines. Later, other South East Asian countries would adapt it-- then to Europe.  Recently, in the UK the word ‘ecobricking’ was the answer on the iTV’s version of Jeopardy.
-
 </div>
 
 
@@ -204,36 +209,7 @@ background-position-y: 200px;
 
     <p>In Latin, the word <i>tractatus</i> refers to the philosophical tradition of a treatise— a systematic exposition of a particular concept.  In Kan’kan’ue, the word Ayyew refers to the virtue of cyclic ecological integration that guides the culture of the Igorot people. </p>
 
-    <p>It is this ayyew ethos, and our experience of it, which inspires the theory of green and grey presented in the Tractatus Ayyew—   what we call an Earthen ethics.
-    </p>
-
-    <p>In the chapters ahead, we lay out our theory in three books.</p>
-
-    <p>To begin, we provide a short sentence, a long sentence and a paragraph summary of Earthen Ethics.</p>
-
-    <p>In Book One we clear the ground and establish the foundation of our Earth based ethics.
-    </p>
-
-    <p>In Book Two we dedicate a chapter to each of the five Earthen ethics.  
-    </p>
-
-    <p>In Book Three we conclude with our solution for the management of plastic that provides an application of each Earthen principle. 
-    </p>
-
-    <p>In this way, the Tractatus Ayyew aims to be a tool kit rather than a manifesto.  
-    </p>
-
-    <p>While the Tractatus progresses sequentially, each chapter is written as a standalone essay that represents one facet Earthen ethics.   To represent this modular approach, each chapter’s first page begins with a mandalic representation of its place within the whole.  This way each may be readily referenced to address particular issues, yet at a glance its connection to our broader theory is clear.
-    </p>
-
-    <p>To facilitate sharing, the Tractatus is published as an Earthbook—  an Earth and reader friendly website in which each chapter can be easily and freely shared. For example, this particular section can be found at https://book.earthen.io/preface. 
-    </p>
-
-    <p>As an Earthbook, the Tractatus is open to collaborative improvement, translation and contextualization.  Each chapter’s code and content is maintained in a github open-source repository. Fixes, updates, improvements and translation can be pushed by the reader.  New versions and translations may be forked.  </p>
-
-    <p>While the content and code of the Tractatus Ayyew are made freely available, the published eBook and print versions are available for sale on the Earthbook site.</p>
-
-    <p>The full content of the Tractatus Ayyew is licensed under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook code (developed specifically for the Tractatus Ayyew) is made available under a GNU 3.0 license.</p>
+   
   
 </div>
 
