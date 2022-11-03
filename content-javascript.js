@@ -16,6 +16,7 @@ function scrollFunction() {
     document.getElementById("settings-menu").style.opacity = "1";
     document.getElementById("share-menu").style.opacity = "1";
     document.getElementById("ct-chapter-top").style.height = "145px"; 
+    document.getElementById("ct-chapter-top").style.height = "145px"; 
 
 
   } else {
