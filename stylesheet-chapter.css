@@ -201,6 +201,13 @@ display: none;
     font-style: italic;
     width: 50%;
   }
+
+  .ct-chapter-quote-source {
+    text-align: right;
+    font-family: 'Mulish';
+    font-size: 1.0em;
+    width: 50%;
+  }
   
   /*
   @media (prefers-color-scheme: dark) {
