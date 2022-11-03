@@ -195,18 +195,21 @@ display: none;
   }
 
   .ct-chapter-quote {
-    text-align: right;
+    text-align: center;
     font-family: 'CooperLT';
     font-size: 1.4em;
     font-style: italic;
     width: 50%;
+    color: grey;
+    align-self: center;
   }
 
-  .ct-chapter-quote-source {
+  .ct-quote-source {
     text-align: right;
     font-family: 'Mulish';
     font-size: 1.0em;
     width: 50%;
+    color: grey;
   }
   
   /*
