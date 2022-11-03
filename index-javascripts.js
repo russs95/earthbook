@@ -18,7 +18,7 @@ function scrollFunction() {
      document.getElementById("book-header-logo").style.display = "block"; 
      //document.getElementById("book-header-logo").style.width = "160px";
     document.getElementById("book-header-logo").style.height = "52px";
-    document.getElementById("book-header-logo").style.top = "5px";
+    document.getElementById("book-header-logo").style.top = "0px";
     
     //document.getElementById("book-header-logo").style.margin = "auto";
            

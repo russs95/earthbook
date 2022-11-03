@@ -208,10 +208,16 @@ display: none;
     .ct-chapter-quote {
       width: 90%;
     }
+    .ct-quote-source {
+      width: 90%;
+    }
   }
 
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     .ct-chapter-quote {
+      width: 70%;
+    }
+    .ct-quote-source {
       width: 70%;
     }
   }
@@ -219,6 +225,9 @@ display: none;
   @media screen and (min-width: 1325px) {
     .ct-chapter-quote {
     width: 50%;
+    }
+    .ct-quote-source {
+      width: 50%;
     }
   }
 
