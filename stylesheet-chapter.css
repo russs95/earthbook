@@ -122,7 +122,7 @@ display: none;
   }
 
   #ct-tc-menu {
-    margin: auto;
+    margin: 15px auto 0px auto;
     padding: 10px;
     width: 20px;
     height: 30px;
@@ -141,7 +141,7 @@ display: none;
 
       
     #ct-chapter-title {
-      padding-top: 27px;  
+      padding-top: 20px;  
       font-size: 11vmin;
       letter-spacing: 8px;
     }
@@ -165,7 +165,7 @@ display: none;
 
       
     #ct-chapter-title {
-      padding-top: 27px;
+      padding-top: 20px;
       font-size: 12vmin;
       letter-spacing: 12px;
     }
@@ -189,7 +189,7 @@ display: none;
 
       
     #ct-chapter-title {
-      padding-top: 27px;
+      padding-top: 20px;
       font-size: 12vmin;
       letter-spacing: 15px;
     }
