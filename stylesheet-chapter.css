@@ -4,11 +4,11 @@
 
 
 #earthbook-navbar {
-  height: 30vh;
+  height: 400px;
 }
 
 #book-title {
-  height: 30vh;
+  height: 400px;
 }
 
 #main-title {
@@ -60,6 +60,7 @@ display: none;
     left: 0;
     display: unset;
     position: fixed;
+    height: 400px;
 
     margin: 0px auto;
     margin-top: 20px;
@@ -175,9 +176,9 @@ display: none;
   #ct-chapt-graphic {
     
     padding: 0px;
-    height: 55vh;
+    height: 400px;
     margin: auto;
-    margin-top: 30vh;
+    margin-top: 400px;
     width:100%;
     border-bottom: 1px solid var(--thin-border-color);
     background-color: var(--slider);

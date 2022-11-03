@@ -32,8 +32,8 @@ function scrollFunction() {
     document.getElementById("book-header-logo").style.display = "none";
     document.getElementById("settings-menu").style.opacity = "0.1";
     document.getElementById("share-menu").style.opacity = "0.1";
-    document.getElementById("ct-chapter-top").style.height = "30vh"; 
-    document.getElementById("ct-chapt-graphic").style.marginTop = "30vh"; 
+    document.getElementById("ct-chapter-top").style.height = "400px"; 
+    document.getElementById("ct-chapt-graphic").style.marginTop = "400px"; 
 
   }
 }
