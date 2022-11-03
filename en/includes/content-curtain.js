@@ -100,10 +100,10 @@ class ContentCurtain extends HTMLElement {
 
 
                     <div class="tc-button-row">
-                    <a href="index.html" style="height: 24px; flex-grow: 1"><div id="read-btn" class="action-btn" ><i style="background-image: url(../icons/dash.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Dashboard</div></a>
+                        <a href="index.html" style="height: 24px; flex-grow: 1"><div id="read-btn" class="action-btn" ><i style="background-image: url(../icons/dash.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Home</div></a>
 
-                       <!-- <div><img src="../photos/cover-500px.webp" alt="Tractatus Ayyew - EarthBook" style="width: 100px;border-radius: 5px;"></div>-->
-
+           
+                       <div id="buy-btn" class="action-btn" onclick="openBookplate()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> About</div>
                      
                         <div id="buy-btn" class="action-btn" onclick="openBuy()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> Buy</div>
                 
