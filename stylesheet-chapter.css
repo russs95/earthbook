@@ -60,7 +60,7 @@ display: none;
     left: 0;
     display: unset;
     position: fixed;
-    height: 40vh;
+    height: 30vh;
     margin: 0px auto;
     margin-top: 20px;
   }
@@ -175,7 +175,7 @@ display: none;
   #ct-chapt-graphic {
     
     padding: 0px;
-    height: 75vh;
+    height: 95vh;
     margin: auto;
     width:100%;
     border-bottom: 1px solid var(--thin-border-color);
@@ -301,8 +301,7 @@ align-self: center;
     #footer-icon-left { 
       padding: 12px 20px 10px 0px;
       width: 60px;
-      border-right: 1px solid;
-      border-right-color: var(--thin-border-color);
+      border-right: 1px solid grey;
       height: 45px;
       background: url(svgs/footer-settings-button.svg) no-repeat left;
       background-size: 70px;
