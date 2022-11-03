@@ -64,7 +64,32 @@ display: none;
 
     margin: 0px auto;
     margin-top: 20px;
+    text-shadow: 0 0px 4px var(--background-color);
   }
+
+   
+  #ct-chapt-graphic {
+    
+    padding: 0px;
+    height: 400px;
+    margin: auto;
+    margin-top: 200px;
+    padding-top: 200px;
+    width:100%;
+    border-bottom: 1px solid var(--thin-border-color);
+    background-color: var(--slider);
+
+    display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+    /*overflow-x: hidden;
+    background: url(svgs/tractatus-mandala-full-white.svg) no-repeat center;
+    background-size: contain;
+    background-position-y: 200px;*/
+    
+  }
+
   
   /*
   .book-title-night {
@@ -172,27 +197,7 @@ display: none;
     }
   }
   
-  
-  #ct-chapt-graphic {
-    
-    padding: 0px;
-    height: 400px;
-    margin: auto;
-    margin-top: 400px;
-    width:100%;
-    border-bottom: 1px solid var(--thin-border-color);
-    background-color: var(--slider);
-
-    display: flex;
-  flex-flow: column;
-  justify-content: center;
-
-    /*overflow-x: hidden;
-    background: url(svgs/tractatus-mandala-full-white.svg) no-repeat center;
-    background-size: contain;
-    background-position-y: 200px;*/
-    
-  }
+ 
 
   .ct-chapter-quote {
     text-align: center;

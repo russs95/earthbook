@@ -33,7 +33,7 @@ function scrollFunction() {
     document.getElementById("settings-menu").style.opacity = "0.1";
     document.getElementById("share-menu").style.opacity = "0.1";
     document.getElementById("ct-chapter-top").style.height = "400px"; 
-    document.getElementById("ct-chapt-graphic").style.marginTop = "400px"; 
+    document.getElementById("ct-chapt-graphic").style.marginTop = "200px"; 
 
   }
 }
