@@ -4,11 +4,11 @@
 
 
 #earthbook-navbar {
-  height: 400px;
+  height: 30vh;
 }
 
 #book-title {
-  height: 400px;
+  height: 30vh;
 }
 
 #main-title {
@@ -60,7 +60,7 @@ display: none;
     left: 0;
     display: unset;
     position: fixed;
-    height: 30vh;
+
     margin: 0px auto;
     margin-top: 20px;
   }
