@@ -26,7 +26,7 @@ class FooterChapter extends HTMLElement {
 
     <div class="footer-settings-icon"><img src="../icons/share.svg" style="cursor:pointer" onclick="openShare()"></div>
 
-    <div class="footer-settings-icon"><img src="../icons/content.svg" style="cursor:pointer" onclick="openContent()"></div>
+    <div class="footer-settings-icon"><img src="../icons/content.svg" style="cursor:pointer" onclick="openContents()"></div>
 
    
     <div class="footer-settings-icon" style="cursor:pointer; text-align:center; flex-grow:5; padding-right:8px; align-self:center;" onclick="openEarthbook()">What is an Earthbook?</a></div>
