@@ -183,11 +183,23 @@ display: none;
     border-bottom: 1px solid var(--thin-border-color);
     background-color: var(--slider);
 
+    display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+
     /*overflow-x: hidden;
     background: url(svgs/tractatus-mandala-full-white.svg) no-repeat center;
     background-size: contain;
     background-position-y: 200px;*/
     
+  }
+
+  .ct-chapter-quote {
+    text-align: right;
+    font-family: 'CooperLT';
+    font-size: 1.4em;
+    font-style: italic;
+    width: 50%;
   }
   
   /*
