@@ -176,8 +176,8 @@ display: none;
     
     padding: 0px;
     height: 55vh;
-    margin-top: 30vh;
     margin: auto;
+    margin-top: 30vh;
     width:100%;
     border-bottom: 1px solid var(--thin-border-color);
     background-color: var(--slider);
@@ -203,6 +203,15 @@ display: none;
     align-self: center;
     padding-bottom: 20px;
     line-height: 1.5;
+    height: fit-content;
+  }
+
+  .ct-quote-source {
+    text-align: right;
+    font-family: 'Mulish';
+    color: grey;
+    padding-bottom: 50px;
+    align-self: center;
   }
 
   @media screen and (max-width: 699px) {
@@ -212,7 +221,7 @@ display: none;
     }
     .ct-quote-source {
       width: 90%;
-      font-size: 1.3em;
+      font-size: 1em;
     }
   }
 
@@ -223,27 +232,22 @@ display: none;
     }
     .ct-quote-source {
       width: 70%;
+      font-size: 1em;
     }
   }
     
   @media screen and (min-width: 1325px) {
     .ct-chapter-quote {
     width: 50%;
+    font-size: 1.4em;
     }
     .ct-quote-source {
       width: 50%;
+      font-size: 1em;
     }
   }
 
-  .ct-quote-source {
-    text-align: right;
-    font-family: 'Mulish';
-    font-size: 1.0em;
-    width: 50%;
-    color: grey;
-    padding-bottom: 50px;
-align-self: center;
-  }
+
   
   /*
   @media (prefers-color-scheme: dark) {
@@ -303,12 +307,13 @@ align-self: center;
     }
 
     #footer-icon-left { 
-      padding: 12px 20px 10px 0px;
+      padding: 18px 12px 10px 0px;
       width: 60px;
       border-right: 1px solid grey;
       height: 45px;
       background: url(svgs/footer-settings-button.svg) no-repeat left;
       background-size: 70px;
+      margin-top: 8px;
     }
 
     #footer-icon-left:hover { 
