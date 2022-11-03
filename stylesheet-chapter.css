@@ -64,7 +64,7 @@ display: none;
 
     margin: 0px auto;
     margin-top: 20px;
-    text-shadow: 0 0px 4px var(--background-color);
+  
   }
 
    
@@ -102,6 +102,7 @@ display: none;
     color: inherit;
     font-variant-caps: all-petite-caps;
     transition: 0.3s;
+    text-shadow: 0 1px 10px var(--slider);
 
   }
   
@@ -123,14 +124,16 @@ display: none;
   #ct-tc-menu {
     margin: auto;
     padding: 10px;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 30px;
     cursor: pointer;
     background: url(svgs/tc-button.svg) center no-repeat;
+    background-size: contain;
   }
 
   #ct-tc-menu:hover {
     background: url(svgs/tc-button-hover.svg) center no-repeat;
+    background-size: contain;
   }
 
 
@@ -206,7 +209,7 @@ display: none;
  
 
   .ct-chapter-quote {
-    text-align: center;
+    text-align: left;
     font-family: 'CooperLT';
     
     font-style: italic;
