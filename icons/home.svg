@@ -41,7 +41,7 @@
      transform="translate(-49.84432,-80.168355)">
     <path
        style="fill:#333333;fill-opacity:1;stroke:#808080;stroke-width:3.48097;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 70.188169,135.80506 -7.67e-4,-24.66287"
+       d="M 72.304837,135.80506 72.30407,111.14219"
        id="path78323"
        sodipodi:nodetypes="cc" />
     <circle
@@ -52,7 +52,7 @@
        r="37.221638" />
     <path
        style="fill:#333333;fill-opacity:1;stroke:#808080;stroke-width:3.48097;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 107.86656,135.80506 -7.7e-4,-24.66287"
+       d="m 105.74988,135.80506 -7.7e-4,-24.66287"
        id="path42314"
        sodipodi:nodetypes="cc" />
     <path
