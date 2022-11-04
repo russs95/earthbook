@@ -19,8 +19,7 @@ class BuyCurtain extends HTMLElement {
 
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Ebook Edition</div>
-                  <div class="buy-book-info-text">The optimal format for iPhones and Android e-Book apps.</div>
-                  <h6>Price: 10$ USD</h6>
+                  <div class="buy-book-info-text">The optimal format for iPhones and Android e-Book apps.<Br><b>Price: 10$ USD</b></div>
 
                   <div id="smart-button-container">
                   <div style="text-align: center;">

@@ -11,7 +11,7 @@
   --drop-cap: rgb(200, 200, 200);
   --nav-bar-accent: rgb(43, 43, 48); /*navbar, footer, button color*/
   --deeper-accent-color: #17181B ; /*main chart hover, top menu button backgrounds*/
-  --thin-border-color: rgb(50, 51, 56); /*border color for almost everything*/
+  --thin-border-color: rgb(59, 60, 67); /*border color for almost everything*/
   --fainter-border-color: rgb(72, 72, 80); /*border color for the menu buttons*/
   --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.173); /*whenever a shadow is added*/
   --header-footer: #27272c;

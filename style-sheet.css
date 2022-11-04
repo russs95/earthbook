@@ -1828,9 +1828,10 @@ text-align: center;}
 color: var(--text-color);
 text-align: center;
 padding-bottom: 10px;
+margin-bottom: 55px;
 }
 
-.kn-input {padding:5px;}
+.kn-input {padding: 15px;}
 
 /*Main section*/
 
@@ -2451,7 +2452,9 @@ a:active {
 }
 
 
-
+.button-row {
+  margin-bottom: 20px;
+}
 
 @media screen and (max-width: 700px) {
   .button-row {
