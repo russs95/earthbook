@@ -11,8 +11,6 @@ class BuyCurtain extends HTMLElement {
 
       <div class="buy-overlay-content">
       
-      <!--<h2>Buy the eBook or print edition.</h2>-->
-            
             <div class="three-books">
               <div class="buy-book">
                 <div class="book-listing">
@@ -22,6 +20,7 @@ class BuyCurtain extends HTMLElement {
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Ebook Edition</div>
                   <div class="buy-book-info-text">The optimal format for iPhones and Android e-Book apps.</div>
+                  <h6>Price: 10$ USD</h6>
 
                   <div id="smart-button-container">
                   <div style="text-align: center;">
@@ -29,10 +28,10 @@ class BuyCurtain extends HTMLElement {
                   </div>
                 </div>
 
-                <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
+                <!--<a href="link" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>-->
 
 
-              <!--<script src="https://www.paypal.com/sdk/js?client-id=ARxl4xAwtTlVO5a-mo7DafJUm6jcBsjn5BUSlLvwocvyzOhIA0eACTv-6htl&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>-->
+              <script src="https://www.paypal.com/sdk/js?client-id=ARxl4xAwtTlVO5a-mo7DafJUm6jcBsjn5BUSlLvwocvyzOhIA0eACTv-6htl&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
               
 
                   </div>
@@ -49,7 +48,7 @@ class BuyCurtain extends HTMLElement {
 
                   <div class="buy-book-info-text">The print edition of the book is on its way.  Preorder yours.</div>
 
-                    <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Pre-order: 10$</a>
+                    <a href="link" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Pre-order: 10$</a>
 
                   </div>
                 </div>
@@ -64,7 +63,7 @@ class BuyCurtain extends HTMLElement {
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Kindle Edition</div>
                   <div class="buy-book-info-text">The Mobi format which works best on Amazon e-readers.</div>
-                      <a href="paypal" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
+                      <a href="link" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
                   </div>
                   
                 </div>
@@ -86,13 +85,13 @@ class BuyCurtain extends HTMLElement {
 customElements.define('buy-curtain', BuyCurtain);
 
 
-/*
+
     function initPayPalButton() {
       paypal.Buttons({
         style: {
           shape: 'pill',
-          color: 'gold',
-          layout: 'vertical',
+          color: 'black',
+          layout: 'horizontal',
           label: 'buynow',
           
         },
@@ -126,4 +125,4 @@ customElements.define('buy-curtain', BuyCurtain);
     }
     initPayPalButton();
 
-    */
+  
