@@ -507,14 +507,14 @@ margin: auto;
 .next-sec {
   font-family: 'Mulish';
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1em;
   padding-bottom: 10px;
   color: var(--pre-link-color);
 }
 
 .sec-name {
   font-family: 'CooperLt';
-  font-size: 1.1em;
+  font-size: 0.9em;
   color: var(--text-color);
 
 }
@@ -523,8 +523,8 @@ margin: auto;
 .next-button {
   background: var(--text-color);
   font-family: 'Mulish';
-  font-size: 1.3em;
-  padding: 8px 20px 8px 20px;
+  font-size: 1.2em;
+  padding: 8px 15px 8px 15px;
   color: var(--background-color);
   border-radius: 55px 55px 55px 55px;
   width: fit-content;
