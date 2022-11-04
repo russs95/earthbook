@@ -21,19 +21,17 @@
    
 
 #main-title {
-  text-shadow: 0 0 3px #ffffff !important;
+  text-shadow: 0 0 3px #ffffff;
 }
 
 
 #book-title {
-  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat !important;
+  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
 }
 
 #book-header-logo {  
   background: url(svgs/my-book-header-logo-day.svg) center no-repeat;
   width: 100%;
-  background-size: contain;
-  transition: 0.3s;
   background-size: contain;
   transition: 0.3s;
   filter: brightness(75%);

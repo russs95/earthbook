@@ -30,11 +30,11 @@
   }*/
 
   #main-title {
-    text-shadow: 0 0 3px #000000 !important;
+    text-shadow: 0 0 3px #000000;
   }
 
   #book-title { 
-    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat  !important;
+    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat ;
   }
 
   #book-header-logo {  
@@ -43,10 +43,11 @@
     background-size: contain;
     transition: 0.3s;
     filter: brightness(75%);
+    position: absolute;
   }
 
   #top-bookplate {
-    text-shadow: 0 0px 4px #000000 !important;
+    text-shadow: 0 0px 4px #000000 ;
   }
 
   #bookplate-img {

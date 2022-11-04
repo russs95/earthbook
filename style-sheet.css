@@ -1804,8 +1804,8 @@ padding-top: 36px;
   font-family: 'CooperLt', Georgia, serif;
   text-rendering: optimizeLegibility;
   font-weight: 300;
-  margin-top: 15px;
-  margin-bottom: 22px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 /*.welcome-to:hover {text-decoration: underline !important;}*/
@@ -1817,6 +1817,9 @@ padding-top: 36px;
 #knack-dist_2 {font-family: 'Mulish';}
 
 .kn-label {display: none;}
+
+.kn-message-body {color: var(--text-color);
+text-align: center;}
 
 
 /*Main section*/
@@ -1877,7 +1880,7 @@ padding-top: 36px;
 
 @media screen and (max-width: 700px) {
   #side img {
-    width: 225px;
+    width: 235px;
     border-radius: 10px;
   }
 }
