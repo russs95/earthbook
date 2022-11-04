@@ -1109,7 +1109,7 @@ padding-top: 36px;
   @media screen and (max-width: 699px) {
     #book-header-logo { 
       opacity: 1;
-      top: 5px;
+      top: 14px;
       height: 62px;
     }
   }
