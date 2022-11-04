@@ -215,7 +215,7 @@ display: none;
     
     font-style: italic;
     
-    color: var(--text-color);
+    color: var(--drop-cap);
     align-self: center;
     padding-bottom: 20px;
     line-height: 1.5;
@@ -226,7 +226,6 @@ display: none;
     text-align: right;
     font-family: 'Mulish';
     color: grey;
-    padding-bottom: 50px;
     align-self: center;
   }
 

@@ -57,9 +57,9 @@
   }
 
   #table-of-contents {
-    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
-    background-size: contain !important;
-    background: var(--slider) !important; 
+    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat;
+    background-size: contain;
+    background-color: var(--slider); 
     color: var(--drop-cap);
   }
   

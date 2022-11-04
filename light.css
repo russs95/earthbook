@@ -57,7 +57,7 @@
 #table-of-contents {
   background: url(svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
   background-size: contain;
-  background: var(--slider); 
+  background-color: var(--slider); 
 }
 
 

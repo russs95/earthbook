@@ -2317,7 +2317,7 @@ cursor: pointer;
     border-style: solid;
     border-radius: 25px;
     border-width: 1px;
-    color: var(--drop-cap);
+    color: var(--text-color);
     font-family: "Mulish";
     text-align: center;
     text-decoration: none;
@@ -2362,10 +2362,6 @@ cursor: pointer;
     color: var(--link-color);
   }
 
- /* 
-  .action-btn-night:hover {
-    background:  #27282c !important;
-  }*/
 
   .action-btn a {
     text-decoration: none;
@@ -2601,8 +2597,9 @@ a:active {
   @media screen and (max-width: 700px) {
     .tc-a-book {
     letter-spacing: 5px;
-    padding: 5px 15px 5px 15px;
+    padding: 3px 15px 3px 15px;
     font-size: 1.9em;
+    margin: 3px 0px 2px 0px;
     
     }
   }
@@ -2610,16 +2607,18 @@ a:active {
     @media screen and (min-width: 700px) and (max-width: 1324px) {
     .tc-a-book {
     letter-spacing: 5px;
-    padding: 25px 15px 25px 15px;
+    padding: 5px 15px 5px 15px;
     font-size: 2.5em;
+    margin: 10px 0px 5px 0px;
     }
   }
 
   @media screen and (min-width:  1325px) {
     .tc-a-book {
-    letter-spacing: 5px;
-    padding: 25px 20px 25px 20px;
-    font-size: 3em;
+      letter-spacing: 5px;
+      padding: 5px 20px 5px 20px;
+      font-size: 3em;
+      margin: 10px 0px 5px 0px;
     }
   }
 
