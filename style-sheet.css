@@ -75,6 +75,9 @@ Media Query parameters used throughout:
   color-scheme: light dark;
  }
 
+ html {
+  overflow-x: hidden;
+ }
 
  body {
   color: var(--text-color);
@@ -1805,7 +1808,7 @@ padding-top: 36px;
   margin-bottom: 22px;
 }
 
-.welcome-to:hover {text-decoration: underline !important;}
+/*.welcome-to:hover {text-decoration: underline !important;}*/
 
 
 /*Knack subscribe box*/
@@ -3264,5 +3267,11 @@ input:checked + label.toggle svg.moon {
   fill:#fff;
 }
 
+
+.paypal-button-container {
+  background-color: var(--deeper-accent-color);
+  width: 50%;
+  float: right;
+}
 
 

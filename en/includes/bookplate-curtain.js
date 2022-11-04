@@ -17,7 +17,7 @@ class Bookplate extends HTMLElement {
 
           <h2 class="bookplate-subtitle"><i>An Earthen Ethics</i></h2>
 
-          <h3 class="bookplate-authors">Banayan & Russell Maier</h3>
+          <h3 class="bookplate-authors">Banayan Angway & Russell Maier</h3>
 
           <h4 class="bookplate-motto"><i>Ad Pax Ayyew</i></h4>
 
