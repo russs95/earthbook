@@ -96,6 +96,11 @@ display: none;
   .book-title-night {
     background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
   }*/
+
+  .ct-holder {
+    width: 100%;
+    overflow-x:hidden;
+  }
   
   #ct-chapter-title {
     font-family: 'CooperLt';
@@ -210,7 +215,7 @@ display: none;
  
 
   .ct-chapter-quote {
-    text-align: left;
+    text-align: center;
     font-family: 'CooperLT';
     
     font-style: italic;
