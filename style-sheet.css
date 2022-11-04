@@ -3287,7 +3287,7 @@ input:checked + label.toggle svg.moon {
 
 
 .paypal-button-container {
-  background-color: var(--deeper-accent-color);
+  background-color: var(--deeper-accent-color) !important;
   width: 50%;
   float: right;
 }
