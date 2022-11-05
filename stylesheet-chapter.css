@@ -118,6 +118,15 @@ display: none;
     display: block;
     transition: 0.3s;
   }
+
+  #ct-chap-location {
+    font-family: 'CooperLt';
+    font-weight: 300;
+    color: inherit;
+    font-variant-caps: petite-caps;
+    display: block;
+    transition: 0.3s;
+  }
   
   #ct-word-count {
     font-family: 'CooperLt';
@@ -155,6 +164,13 @@ display: none;
       margin-top: 15px;
       letter-spacing: 1px;
     }
+
+    #ct-chap-location {
+      font-size: 4.2vmin;
+      margin-top: 15px;
+      letter-spacing: 1px;
+    }
+    
     
     #ct-word-count {
       font-size: 3.2vmin;
@@ -175,6 +191,12 @@ display: none;
     }
     
     #ct-book-title {
+      font-size: 2.7vmin;
+      margin-top: 15px;
+      letter-spacing: 1px;
+    }
+
+    #ct-chap-location {
       font-size: 2.7vmin;
       margin-top: 15px;
       letter-spacing: 1px;
@@ -202,6 +224,12 @@ display: none;
       font-size: 2.8vmin;
       margin-top: 10px;
       letter-spacing: 3px;
+    }
+
+    #ct-chapt-location {
+      font-size: 2.7vmin;
+      margin-top: 15px;
+      letter-spacing: 1px;
     }
     
     #ct-word-count {
