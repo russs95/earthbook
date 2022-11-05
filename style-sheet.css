@@ -1835,7 +1835,7 @@ padding-top: 36px;
       font-size: 1.1em;
       padding-bottom: 27px;
       line-height: 1.3;
-      padding: 15px 4px 8px 4px;
+      padding: 15px 4px 18px 4px;
       text-align: center;
   }
   }
@@ -2222,6 +2222,7 @@ padding-top: 36px;
 @media screen and (max-width: 699px) {
   .question {
     opacity: 1;
+    margin-left: 0px;
   }
 }
 
@@ -2443,7 +2444,7 @@ a:active {
 
 
 .button-row {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 700px) {
