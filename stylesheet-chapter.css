@@ -154,8 +154,8 @@ display: none;
 
       
     #ct-chapter-title {
-      padding-top: 20px;  
-      font-size: 11vmin;
+      padding-top: 45px;  
+      font-size: 12vmin;
       letter-spacing: 8px;
     }
     
@@ -185,7 +185,7 @@ display: none;
 
       
     #ct-chapter-title {
-      padding-top: 20px;
+      padding-top: 45px;
       font-size: 12vmin;
       letter-spacing: 12px;
     }
@@ -215,7 +215,7 @@ display: none;
 
       
     #ct-chapter-title {
-      padding-top: 20px;
+      padding-top: 60px;
       font-size: 12vmin;
       letter-spacing: 15px;
     }
