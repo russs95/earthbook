@@ -23,7 +23,7 @@ class BuyCurtain extends HTMLElement {
 
                   <div id="smart-button-container">
                   <div style="text-align: center;">
-                    <div id="paypal-button-container" style="background-color:var(--header-footer) !important"></div>
+                    <div id="paypal-button-container" style="background:var(--header-footer) !important"></div>
                   </div>
                 </div>
 
