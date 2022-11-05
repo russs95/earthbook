@@ -1355,7 +1355,6 @@ padding-top: 36px;
 
 #check {display: none;}
 
-#check2 {display: none;}
 
 
 .btn {
@@ -1441,6 +1440,10 @@ padding-top: 36px;
     width: 20%;
     font-size: 18px;
   }
+
+  .copy-check {
+    line-height: 2.9; 
+    } 
 }
 
 

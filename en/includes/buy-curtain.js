@@ -23,7 +23,7 @@ class BuyCurtain extends HTMLElement {
 
                   <div id="smart-button-container">
                   <div style="text-align: center;">
-                    <div id="paypal-button-container"></div>
+                    <div id="paypal-button-container" style="background-color:black !important"></div>
                   </div>
                 </div>
 
@@ -69,8 +69,8 @@ class BuyCurtain extends HTMLElement {
               </div>
             </div>
 
-            <div id="bottom-close-button">
-            <span style="cursor:pointer" onclick="closeBuy()"><img src="../svgs/left-x.svg"></span>
+            <div id="bottom-close-button" style="cursor:pointer" onclick="closeBuy()">
+            <img src="../svgs/left-x.svg">
         </div>
       </div>
             

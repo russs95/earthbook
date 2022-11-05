@@ -25,6 +25,18 @@ class SettingsCurtain extends HTMLElement {
                 <div class="language-selector" title="Maaf, belum diterjemahkan!">IN</div>
             </div> 
 
+            <form method="get" id="ddgSearch" action="https://duckduckgo.com/">
+    <input type="hidden" name="sites" value="https://book.earthen.io"/>
+    <input type="hidden" name="k7" value="#ffffff"/>
+    <input type="hidden" name="k8" value="#222222"/>
+    <input type="hidden" name="k9" value="#00278e"/>
+    <input type="hidden" name="kx" value="#20692b"/>
+    <input type="hidden" name="kj" value="#fafafa"/>
+    <input type="hidden" name="kt" value="a"/>
+    <input type="text" name="q" placeholder="Search the book" aria-label="Search https://book.earthen.io on DuckDuckGo"/>
+    <button type="submit">Search</button>
+</form>
+
             <div id="text-adjust">
                 <button id="increase-plugin-ac">+A</button>
                 <button id="normal-plugin-ac">A</button>
