@@ -12,7 +12,7 @@
     --deeper-accent-color: rgb(235, 235, 235) ; /*main chart hover, top menu button backgrounds*/ 
     --thin-border-color: rgb(163, 163, 163); /*border color for almost everything*/
     --fainter-border-color:  rgb(208, 207, 207); /*border color for the menu buttons*/
-    --element-shadow: 0 1px 15px rgba(7, 7, 7, 0.05 );  /*whenever a shadow is added*/
+    --element-shadow: 0 1px 15px rgba(7, 7, 7, 0.15 );  /*whenever a shadow is added*/
     --drop-cap: rgb(63, 63, 63);
     --header-footer: #f4f2f2;
     --slider: rgb(228, 228, 228);

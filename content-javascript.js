@@ -25,7 +25,7 @@ function scrollFunction() {
     document.getElementById("earthbook-navbar").style.height = "50vh";
     document.getElementById("ct-chapter-title").style.fontSize = "";
     document.getElementById("ct-book-title").style.fontSize = "";
-    document.getElementById("ct-chap-location").style.fontSize = "";
+    document.getElementById("ct-chap-location").display = "block";
     document.getElementById("ct-word-count").style.fontSize = "";
     document.getElementById("ct-book-title").style.marginTop = "10px";
     document.getElementById("ct-chapter-top").style.marginTop = "20px";
