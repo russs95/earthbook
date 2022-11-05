@@ -1820,20 +1820,6 @@ padding-top: 36px;
 
 #knack-dist_2 {font-family: 'Mulish';}
 
-.kn-label {display: none;}
-
-.kn-message-body {color: var(--text-color);
-text-align: center;}
-
-.ang-link {display: none;}
-
-.kn-description {
-  font-family: 'Mulish';
-color: var(--text-color);
-text-align: center;
-padding-bottom: 10px;
-margin-bottom: 55px;
-}
 
 /*
 .kn-input {padding: 15px;}*/
@@ -3311,10 +3297,10 @@ input:checked + label.toggle svg.moon {
 [part="darkLabel"]::before {
   filter: var(--dark-mode-toggle-icon-filter, none);
   background-image: var(--dark-mode-toggle-dark-icon, url("https://googlechromelabs.github.io/dark-mode-toggle/demo/moon.png"));
-  height: 30px;
-  width: 30px;
-  background-size: contain;
-  margin-left: 20px;
+  height: 30px !important;
+  width: 30px!important;
+  background-size: contain!important;
+  margin-left: 20px!important;
 }
 
 [part="lightLabel"]::before {
