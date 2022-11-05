@@ -9,7 +9,7 @@ function scrollFunction() {
     document.getElementById("ct-chapter-title").style.fontSize = "1.0em";
     document.getElementById("ct-book-title").style.fontSize = "0.66em";
     document.getElementById("ct-book-title").style.marginTop = "0px";
-    document.getElementById("ct-chapter-top").style.marginTop = "-50px";    
+    document.getElementById("ct-chapter-top").style.marginTop = "-100px";    
     document.getElementById("ct-chap-location").style.display = "none";
     document.getElementById("ct-word-count").style.display = "none";
     document.getElementById("book-header-logo").style.display = "none";
@@ -28,7 +28,7 @@ function scrollFunction() {
     document.getElementById("ct-chap-location").display = "block";
     document.getElementById("ct-word-count").style.fontSize = "";
     document.getElementById("ct-book-title").style.marginTop = "10px";
-    document.getElementById("ct-chapter-top").style.marginTop = "20px";
+    document.getElementById("ct-chapter-top").style.marginTop = "0px";
     document.getElementById("ct-word-count").style.display = "block";
     //
     document.getElementById("book-header-logo").style.display = "none";
