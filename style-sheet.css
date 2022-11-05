@@ -3293,12 +3293,11 @@ input:checked + label.toggle svg.moon {
 
 .buttons-container {
   background-color: var(--deeper-accent-color) !important;
-  width: 50%;
-  float: right;
+
 }
 
 .paypal-button-tagline {
-  display: none;
+  display: none !important;
 }
 
 

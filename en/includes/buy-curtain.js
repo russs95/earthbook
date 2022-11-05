@@ -19,18 +19,18 @@ class BuyCurtain extends HTMLElement {
 
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Ebook Edition</div>
-                  <div class="buy-book-info-text">The optimal format for iPhones and Android e-Book apps.<Br><b>Price: 10$ USD</b></div>
+                  <div class="buy-book-info-text">The optimal format for iPhones and Android e-Book apps. Price: <b>10$ USD</b></div>
 
                   <div id="smart-button-container">
                   <div style="text-align: center;">
-                    <div id="paypal-button-container" style="background-color:black !important"></div>
+                    <div id="paypal-button-container" style="background-color:var(--header-footer) !important"></div>
                   </div>
                 </div>
 
                 <!--<a href="link" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>-->
 
 
-              <script src="https://www.paypal.com/sdk/js?client-id=ARxl4xAwtTlVO5a-mo7DafJUm6jcBsjn5BUSlLvwocvyzOhIA0eACTv-6htl&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+              <!--<script src="https://www.paypal.com/sdk/js?client-id=ARxl4xAwtTlVO5a-mo7DafJUm6jcBsjn5BUSlLvwocvyzOhIA0eACTv-6htl&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>-->
               
 
                   </div>
@@ -75,7 +75,6 @@ class BuyCurtain extends HTMLElement {
       </div>
             
     </div>
-    
 
     `;
 }
