@@ -2,7 +2,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 
-  if ( document.body.scrollTop > 30 || document.documentElement.scrollTop > 30 ) {
+  if ( document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ) {
     
     //AFTERmargin-top: -67px;
     document.getElementById("earthbook-navbar").style.height = "60px";
@@ -21,7 +21,7 @@ function scrollFunction() {
 
   } else {
     //BEFORE
-    document.getElementById("earthbook-navbar").style.height = "400px";
+    document.getElementById("earthbook-navbar").style.height = "50vh";
     document.getElementById("ct-chapter-title").style.fontSize = "";
     document.getElementById("ct-book-title").style.fontSize = "";
     document.getElementById("ct-word-count").style.fontSize = "";
@@ -32,8 +32,8 @@ function scrollFunction() {
     document.getElementById("book-header-logo").style.display = "none";
     document.getElementById("settings-menu").style.opacity = "0.1";
     document.getElementById("share-menu").style.opacity = "0.1";
-    document.getElementById("ct-chapter-top").style.height = "400px"; 
-    document.getElementById("ct-chapt-graphic").style.marginTop = "200px"; 
+    //document.getElementById("ct-chapter-top").style.height = "400px"; 
+    //document.getElementById("ct-chapt-graphic").style.marginTop = "200px"; 
 
   }
 }
