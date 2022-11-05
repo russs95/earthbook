@@ -129,9 +129,43 @@ Must be updated for each page-->
 <style>
   
   #ct-chapt-graphic {
-  background: url(svgs/01-imagine.svg) no-repeat center;
-background-size: contain;
+  background: url(../svgs/01-imagine.svg) no-repeat center;
+  background-size: contain;
 }
+
+
+@media screen and (max-width: 699px) {
+    .ct-chapter-quote {
+      width: 90%;
+      font-size: 1em;
+    }
+    .ct-quote-source {
+      width: 90%;
+      font-size: 0.9em;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .ct-chapter-quote {
+      width: 70%;
+      font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 70%;
+      font-size: 1em;
+    }
+  }
+    
+  @media screen and (min-width: 1325px) {
+    .ct-chapter-quote {
+    width: 50%;
+    font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
 
 
 </style>
