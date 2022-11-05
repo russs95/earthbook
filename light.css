@@ -13,9 +13,9 @@
     --thin-border-color: rgb(163, 163, 163); /*border color for almost everything*/
     --fainter-border-color:  rgb(208, 207, 207); /*border color for the menu buttons*/
     --element-shadow: 0 1px 15px rgba(7, 7, 7, 0.05 );  /*whenever a shadow is added*/
-    --drop-cap: rgb(200, 200, 200);
+    --drop-cap: rgb(63, 63, 63);
     --header-footer: #f4f2f2;
-    --slider: rgba(231, 231, 231);
+    --slider: rgb(233, 221, 221);
     --strong-border: rgb(185, 188, 209);
    }
    
@@ -76,6 +76,11 @@
 
 
 /*CHAPTERS*/
+
+#ct-chapt-graphic .background-1 {
+  background: url(../svgs/01-imagine-white.svg) no-repeat center;
+  background-size: contain;
+}
 
 /*
 body {

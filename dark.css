@@ -87,7 +87,10 @@
   
 /*CHAPTERS*/
 
-
+#ct-chapt-graphic .background-1 {
+  background: url(../svgs/01-imagine.svg) no-repeat center;
+  background-size: contain;
+}
 
 
 
