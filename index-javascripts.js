@@ -13,7 +13,7 @@ function scrollFunction() {
      document.getElementById("main-title").style.opacity = "0";
      document.getElementById("sub-title").style.display = "none";
      document.getElementById("sub-earthbook").style.display = "none";
-     document.getElementById("side").style.marginTop = "-100px"
+     document.getElementById("side").style.marginTop = "-125px"
      document.getElementById("book-header-logo").style.opacity = "1"; 
      document.getElementById("book-header-logo").style.display = "block"; 
      //document.getElementById("book-header-logo").style.width = "160px";

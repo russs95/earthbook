@@ -568,13 +568,14 @@ h6 {
   text-rendering: optimizeLegibility;
   font-weight: 300;
   text-align: justify;
+  padding-top: 20px;
 }
 
 .lead-page-paragraph:first-child::first-letter {
   color: var(--pre-link-color);
   float: left;
   font-family: "CooperLt";
-  font-size: 5.5em;
+  font-size: 4.8em;
   line-height: 0.85;
   margin-top: -10px;
   padding-right: 10px;
@@ -1477,7 +1478,7 @@ padding-top: 36px;
 
 
 #buy-curtain {
-  background-color: var(--deeper-accent-color); 
+  background-color: var(--header-footer); 
   z-index: 26;
 }
 
@@ -3286,10 +3287,37 @@ input:checked + label.toggle svg.moon {
 }
 
 
-.paypal-button-container {
+.buttons-container {
   background-color: var(--deeper-accent-color) !important;
   width: 50%;
   float: right;
 }
+
+.paypal-button-tagline {
+  display: none;
+}
+
+
+/*Dark Toggler Compromise*/
+
+.compro-toggle {
+  font-family: 'Mulish' !important;
+  font-size: 1em;
+}
+
+[part="darkLabel"]::before {
+  filter: var(--dark-mode-toggle-icon-filter, none);
+  background-image: var(--dark-mode-toggle-dark-icon, url("https://googlechromelabs.github.io/dark-mode-toggle/demo/moon.png"));
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  margin-left: 20px;
+}
+
+[part="lightLabel"]::before {
+  background-image: var(--dark-mode-toggle-light-icon, url("https://googlechromelabs.github.io/dark-mode-toggle/demo/sun.png"));
+  height: 40px;
+  width: 40px;
+  background-size: contain;}
 
 

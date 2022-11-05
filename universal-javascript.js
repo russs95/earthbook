@@ -59,11 +59,12 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  above I already force `highest` priority for my default light experience).
 -->*/
 
+/*
 $(function() {
   $('#footer-icon-left ').click(function() {
     $(this).css('background-image', 'url(svgs/footer-settings-button-up.png)');
   });
-});
+});*/
 
 
 
