@@ -2804,12 +2804,7 @@ display: none;
     cursor: pointer;
   } 
 
-  .virtue-desc
- {
-  opacity: 0;
-  margin-top: -100px;
-  font-size: 1.5em;
-}
+
 
 .virtue:focus 
  {
@@ -2817,18 +2812,23 @@ display: none;
   width: 170px;
   height: 150px;
   cursor: pointer;
+
 }
 
 .virtue:focus > .virtue-desc
  {
   opacity: 1;
   font-size: 1.5em;
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 200px;
+  display: contents;
 }
 
 .virtue:hover > img
  {
   width: 135px;
-  opacity: 0;
+  opacity: 1;
   transition: 0.5s;
 }
 }
@@ -2855,6 +2855,7 @@ width: 100%;
   color: inherit;
   text-align: center;
   color: var(--text-color);
+  display: none;
 }
 
 
