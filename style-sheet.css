@@ -2921,12 +2921,7 @@ display: none;
   flex-flow: column;
 }
 
-/*!!!*/
-@media (prefers-color-scheme: dark) {
-  .virtue img {
-    filter: invert(100%);
-  }
-  }
+
 
 
 
@@ -3289,7 +3284,7 @@ input:checked + label.toggle svg.moon {
 
 .compro-toggle {
   font-family: 'Mulish' !important;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 [part="darkLabel"]::before {
@@ -3312,6 +3307,6 @@ input:checked + label.toggle svg.moon {
   }
 
 
- input [part="darkLabel"]  {padding-left: 20px;
+ [part="darkLabel"]  {margin-left: 20px;
   
  }
