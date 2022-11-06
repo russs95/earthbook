@@ -2054,7 +2054,7 @@ padding-top: 36px;
   font-size: 1.2em;
   font-weight: 500;
   font-style: italic;
-  padding: 2px 0px 0px 0px;
+  padding: 15px 0px 0px 0px;
   width: 15px;
   text-align: right;
   opacity: 0.85;
@@ -2063,12 +2063,11 @@ padding-top: 36px;
   .footnote-text {  
     font-family: 'Mulish';
     font-size: 1.13em;
-    line-height: 1.2;
     font-weight: 300;
     opacity: 0.85;
     width: 90%;
     padding-left: 15px;
-    padding-top: 6px;
+    padding-top: 15px;
   }
 
 
@@ -3276,7 +3275,7 @@ input:checked + label.toggle svg.moon {
 }
 
 
-.buttons-container {
+#smart-button-container {
   background-color: var(--deeper-accent-color) !important;
 
 }
