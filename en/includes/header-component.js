@@ -26,36 +26,8 @@ class Header extends HTMLElement {
         <span style="cursor:pointer" onclick="openShare()"><img src="../svgs/right-menu.svg"></span>
     </div>
       
-       
-       
-       
-       
-       
-       
-       
-       
-  
-
     `;
 }
 }
 
 customElements.define('header-component', Header);
-
-      /* <div id="bookplate-content"> 
-          <h1 class="bookplate-title">Tractatus Ayyew</h1>
-
-          <h2 class="bookplate-subtitle"><i>An Earthen Ethics</i></h2>
-
-          <h3 class="bookplate-authors">Banayan & Russell Maier</h3>
-
-          <h4 class="bookplate-motto"><i>Ad Pax Ayyew</i></h4>
-
-          <h4 class="bookplate-year">M M X X I I</h4>
-
-          <div id="sub-earthbook"><h5>earthBook edition</h5></div>  
-          
-          
-        </div>
-        <div id="bookplate-button" style="cursor:pointer" onclick="closeBookplate()"><span><img src="../svgs/up-arrow.svg" style="width:100px;"></span></div>
-       -->*/

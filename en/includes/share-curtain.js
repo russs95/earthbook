@@ -56,6 +56,9 @@ class ShareCurtain extends HTMLElement {
 
 customElements.define('share-curtain', ShareCurtain);
 
+
+
+/*
 document.getElementById("page-url").innerHTML = 
 "" + window.location.href;
 
@@ -73,5 +76,5 @@ function confirmCopy() {
   } else {
     x.style.display = "inline";
   }
-}
+}*/
 
