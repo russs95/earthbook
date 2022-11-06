@@ -93,6 +93,12 @@
 }
 
 
+.background-2 {
+  background: url(svgs/01-plastic1-dark.svg) no-repeat center;
+  background-size: contain;
+}
+
+
 
   /*
   #settings-menu {
