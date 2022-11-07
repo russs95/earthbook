@@ -48,27 +48,27 @@ class Earthbook extends HTMLElement {
 
             <div id="virtue-box-mobile">
 
-            <div class="virtue"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Open Source" alt="Open Source"><div class="virtue-desc">The EarthBook source code is open to review, improvement and forking <a href="https://github.com/russs95/earthbook">on Github</a>.  This means that publishing an Earthbook can be done by anyone anywhere.</div>
+              <div class="virtue"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Open Source" alt="Open Source"><div class="virtue-desc">The EarthBook source code is open to review, improvement and forking <a href="https://github.com/russs95/earthbook">on Github</a>.  This means that publishing an Earthbook can be done by anyone anywhere.</div>
+              </div>
+
+              <div class="virtue"><img src="../svgs/icon-biodiversity.svg"  width="100%" height="100%" title="Supporting Biodiveristy" alt="Supporting Biodiversity"><div class="virtue-desc">During the writing and publishing of this book, the species supported in the enterprise physical space was tracked and accounted for.  <a href="https://russs.net/forest" target="_blank">See the publisher's full life list.</a></div>
+              </div>
+
+              <div class="virtue"><img src="../svgs/icon-ecoaccounting.svg"  width="100%" height="100%" title="Ecological Accounting Kept" alt="Ecological Accounting Kept"><div class="virtue-desc">Throughout the enterprise of writing and publishing an Earthbook impac, the carbon, plastic and biodiversity impacts were tracked, accounted and annually disclosed.  See the full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></div>
+              </div>
+
             </div>
 
-            <div class="virtue"><img src="../svgs/icon-biodiversity.svg"  width="100%" height="100%" title="Supporting Biodiveristy" alt="Supporting Biodiversity"><div class="virtue-desc">During the writing and publishing of this book, the species supported in the enterprise physical space was tracked and accounted for.  <a href="https://russs.net/forest" target="_blank">See the publisher's full life list.</a></div>
-            </div>
+            <div id="virtue-box-mobile">
 
-            <div class="virtue"><img src="../svgs/icon-ecoaccounting.svg"  width="100%" height="100%" title="Ecological Accounting Kept" alt="Ecological Accounting Kept"><div class="virtue-desc">Throughout the enterprise of writing and publishing an Earthbook impac, the carbon, plastic and biodiversity impacts were tracked, accounted and annually disclosed.  See the full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></div>
-            </div>
+              <div class="virtue"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="For-Earth Enterprise" alt="For-earth Enterprise"><div class="virtue-desc">The net impact of the writing and publishing of the book was the subtraction of carbon.</div>
+              </div>
 
-          </div>
+              <div class="virtue"><img src="../svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Net-Subtractive Carbon Impact" alt="Net-Subtractive Carbon Impact"><div class="virtue-desc">The Earthbook format is designed from the ground up to have a minimal carbon footprint.  <div id="wcb" class="carbonbadge wcb-d"></div></div>
+              </div>
 
-          <div id="virtue-box-mobile">
-
-            <div class="virtue"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="For-Earth Enterprise" alt="For-earth Enterprise"><div class="virtue-desc">The net impact of the writing and publishing of the book was the subtraction of carbon.</div>
-            </div>
-
-            <div class="virtue"><img src="../svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Net-Subtractive Carbon Impact" alt="Net-Subtractive Carbon Impact"><div class="virtue-desc">The Earthbook format is designed from the ground up to have a minimal carbon footprint.  <div id="wcb" class="carbonbadge wcb-d"></div></div>
-            </div>
-
-            <div class="virtue"><img src="../svgs/icon-creativecommons.svg"  width="100%" height="100%" title="Creative Commons" alt="Creative Commons License"><div class="virtue-desc">The code and content of this book are licensed under a Creative Commons BY-SA-ND 4.0 License.</div>
-            </div>
+              <div class="virtue"><img src="../svgs/icon-creativecommons.svg"  width="100%" height="100%" title="Creative Commons" alt="Creative Commons License"><div class="virtue-desc">The code and content of this book are licensed under a Creative Commons BY-SA-ND 4.0 License.</div>
+              </div>
 
           </div>
 
