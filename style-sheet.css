@@ -2755,7 +2755,26 @@ display: none;
 
 
 @media screen and (max-width: 700px) {
-  .overlay-content-earthbook {
+  
+  
+  #virtue-box {
+    display: none;
+  }
+
+  #virtue-box-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 175px; 
+    box-sizing: border-box;
+    height: fit-content;
+    width: 100%;
+  }
+    
+    .overlay-content-earthbook {
     width: 90%;
 }
 /*
@@ -2779,7 +2798,9 @@ display: none;
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   
-  
+  #virtue-box-mobile {
+    display: none;}
+
   .overlay-content-earthbook {
     width: 90%;
   }
@@ -2807,6 +2828,11 @@ display: none;
 
 
 @media screen and (min-width: 1325px) {
+
+  #virtue-box-mobile {
+    display: none;}
+
+
   .overlay-content-earthbook {
     width: 84%;
   }
@@ -2835,10 +2861,7 @@ display: none;
 
 
 
-.virtue:hover > .virtue-desc
- {
-  opacity: 1;
-}
+
 
 .virtue:hover + .virtue-desc
  {
