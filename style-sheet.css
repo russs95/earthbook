@@ -2717,6 +2717,20 @@ display: none;
 }
 
 
+
+
+
+.virtue {
+  margin: auto; 
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  flex: 50%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
 .virtue-desc {
   font-family: 'Mulish';
   font-size: 1.3em;
@@ -2731,19 +2745,12 @@ display: none;
   margin: auto;
 }
 
-
-.virtue {
-  margin: auto; 
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  flex: 50%;
-  opacity: 0.8;
-  cursor: pointer;
+.medium-message {
+  position: absolute;
+  right: 0;
+  left:0;
+  bottom: 180px
 }
-
-
-
 
 
 
