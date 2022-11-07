@@ -2825,8 +2825,11 @@ display: none;
   position: absolute;
   bottom: 200px;
   display: contents;
-}
 
+bottom: 200px;
+right: 0;
+left: 0;
+}
 /*
 .virtue:hover > img
  {
