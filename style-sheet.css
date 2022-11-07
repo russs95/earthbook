@@ -2724,11 +2724,13 @@ display: none;
   color: var(--text-color);
   display: none;
   position: absolute;
-  bottom: 20;
+  bottom: 200%;
   width: 80%;
   right: 0;
   left: 0;
+  margin: auto;
 }
+
 
 .virtue {
   margin: auto; 
@@ -2737,6 +2739,7 @@ display: none;
   flex-flow: column;
   flex: 50%;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 
@@ -2755,13 +2758,9 @@ display: none;
 
 .virtue {
   padding: 8px;
-
   font-size: 0.6;
 }
 
-.virtue-desc {
-  display: none;
-}
 }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
@@ -2784,34 +2783,6 @@ display: none;
     cursor: pointer;
   } 
 
-
-  .virtue-desc
- {
-  opacity: 0;
-  margin-top: -80px;
-  font-size: 1.2em;
-}
-
-.virtue:focus 
- {
-  padding: 10px;
- /* width: 150px;
-  height: 150px;*/
-  cursor: pointer;
-}
-
-.virtue:focus > .virtue-desc
- {
-  opacity: 1;
-  font-size: 1.5em;
-}
-
-.virtue:hover > img
- {
- /* width: 135px;*/
-  opacity: 1;
-  transition: 0.5s;
-}
 }
 
 
@@ -2832,30 +2803,25 @@ display: none;
     cursor: pointer;
   } 
 
+}
+
+
 .virtue:hover 
  {
-  padding: 15px;
- /* width: 170px;
-  height: 150px;*/
-  cursor: pointer;
   opacity: 1;
-
+;
 }
 
 .virtue:hover > .virtue-desc
  {
-  opacity: 1;
-  font-size: 1.5em;
-  display: contents;
-
+  display: block;
 }
-/*
+
 .virtue:hover > img
  {
-  width: 135px;
+ /* width: 135px;*/
   opacity: 1;
   transition: 0.5s;
-}*/
 }
 
 
