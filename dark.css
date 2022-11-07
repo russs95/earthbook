@@ -103,6 +103,10 @@
   background-size: contain;
 }
 
+.background-4 {
+  background: url(svgs/04-patterns-dark.svg) no-repeat center;
+  background-size: contain;
+}
 
   /*
   #settings-menu {

@@ -1,0 +1,379 @@
+<!--EARTHBOOK CHAPTER PAGE - TEMPLATE
+Design by Russell Maier
+
+CSS Version 0.7.0
+Original Author:  Russell Maier
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
+*/
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2022-10-31T09:14:13+00:00" />
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta property="og:site_name" content="Tractatus Ayyew" />
+<meta property="article:publisher" content="Earthen.io" />
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta property="og:type" content="book" />
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<link rel="manifest" href="../favicons/site.webmanifest">
+
+<meta name="twitter:card" content="summary" />
+<meta property="og:type"          content="book">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg"/>
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1000px" />
+<meta property="og:image:height" content="1500px" />
+
+<meta property="og:locale" content="en_GB" />
+
+ <!-- INCLUDES
+ Main Scripts-->   
+
+ <script src="../content-javascript.js" defer></script>
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../clip/dist/clipboard.min.js"></script>
+ <script src="../accessibility.js"></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+ <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+
+ <!-- Style Sheets 
+All the css needed for this page-->
+ 
+ <link rel="stylesheet" href="/dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+ <link rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
+<link rel="stylesheet" href="../acessibilidade.css" />
+<link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">
+
+ 
+
+ <!--Page Components
+All the page components required to build this page-->
+
+ <!--1--><script src="includes/header-component.js" type="text/javascript" defer></script>
+ <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
+ <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
+ <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
+ <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
+ <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
+ <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
+ <!--8b--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
+
+
+ <!-- Fonts
+The requisite typography for the page-->
+
+<link rel="preconnect" href="../fonts/">
+<link rel="preconnect" href="../fonts/" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&family=Roboto&display=swap" rel="stylesheet"> 
+	
+<!--Preload graphics-->
+<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
+<link rel="preload" as="image" href="../svgs/tc-button-hover.svg">
+<link rel="preload" as="image" href="../svgs/tc-button.svg">
+
+
+<!--END OF GENERIC CONTENT-->
+
+<!--PAGE LINKS
+
+**** Must be updated for each unique page ****-->
+
+<link rel="canonical" href="https://book.earthen.io/en/patterns.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/stellar.html" hreflang="en" />
+<link rel="alternate" href="http://book.org/en/patterns.html" hreflang="x-default" />
+<!--<link rel="alternate" href="https://book.earthen.io/fr/patterns.html" hreflang="fr" />
+<link rel="alternate" href="https://book.earthen.io/es/patterns.html" hreflang="es" />
+<link rel="alternate" href="https://book.earthen.io/id/patterns.html" hreflang="id" />-->
+
+<!--META TAGS
+Must be updated for each page-->
+
+<title>Patterns of Process | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="Patterns of Process, cosmological character, planetary patterns, pattern, plastic, carbon emissions, petro-capital economy, human nature, nature of plastic, "> 
+<meta name="description" content="A brief history of plastic's stellar origins, Earth's creation and humanity's rise.">
+
+
+<meta name="twitter:label1" content="Est. reading time" />
+<meta name="twitter:data1" content="8 minutes" /> 
+	
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:url"           content="https://tractatus.earthen.io/en/patterns.html">
+<meta property="og:title"         content="Patterns of Process | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="."/>
+
+
+<style>
+  
+
+@media screen and (max-width: 699px) {
+    .ct-chapter-quote {
+      width: 87%;
+      font-size: 1em;
+    }
+    .ct-quote-source {
+      width: 80%;
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .ct-chapter-quote {
+      width: 70%;
+      font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 70%;
+      font-size: 1em;
+    }
+  }
+    
+  @media screen and (min-width: 1325px) {
+    .ct-chapter-quote {
+    width: 50%;
+    font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
+
+  #ct-chapter-title {
+      padding-top: 45px;
+      font-size: 11vmin;
+      letter-spacing: 5px;
+    }
+
+</style>
+
+</head>
+
+<!--MAIN HTML Begins-->
+
+<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
+<div id="underlayer">
+
+  <a id="top"></a>
+
+  <!--HEADER NAVBAR-->
+  <header-component></header-component>
+
+  <div id="ct-chapter-top">
+      <div id="ct-tc-menu" onclick="openContents()"></div>
+      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+        <div id="ct-chapter-title">Patterns of Process</div>
+        <div id="ct-book-title">Tractatus Ayyew</div>
+        <div id="ct-chap-location">Book One | Chapter Four</div>
+        <div id="ct-word-count"><i>623 words</i></div>
+      </div>
+  </div>
+
+  <!--CONTENTS MENU-->
+  <content-curtain></content-curtain>
+
+  <!--SETTINGS-MENU-->
+  <settings-curtain></settings-curtain>
+
+  <!--BOOK PLATE-->
+  <bookplate-curtain></bookplate-curtain>
+
+  <!--ABOUT EARTHBOOK-->
+  <earthbook-curtain></earthbook-curtain>
+
+  <!--SHARE-MENU-->
+  <share-curtain></share-curtain>
+
+  <!--BUY-CURTAIN-->
+  <buy-curtain></buy-curtain>
+
+<!-- Page Title Section-->
+
+  <div id="ct-chapt-graphic" class="background-4">
+    <!--<div class="ct-chapter-quote">
+      “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.”
+    </div>
+    <div class="ct-quote-source">
+     ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a id="2-up"><a href="#2-down">²</a></a>
+    </div>-->
+  </div>
+
+  <div id="progress-bar">
+    <div class="progress" width="12%"></div>
+  </div>
+
+  <div id="ct-main">
+
+
+<!-- MAIN TEXT CONTENT of the Page
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ¹⁰
+-->
+
+     <div class="lead-page-paragraph">
+        OVER THE LAST FOUR BILLION YEARS, the singular combination of our planet's orbit, spin, chemistry and magnetosphere has played out.  As this unique configuration of matter and energy has unfolded, a once barren rock has transformed into the thriving biosphere that is our common home today.  Of all that we know of other planets in our solar system and galaxy, it is an extraordinary and epic story.  However, what makes the story even more remarkable is that the tellers of the tale are thoroughly part of it.
+     </div>
+
+    <div class="page-paragraph">
+
+    <p>Our telling of Earth's tale is only possible through a vast and unique confluence of matter and energy; the spiral of carbon into ever more concentrated and complex configurations, the dispersion of the sun's energy into ever more diverse organisms and ecosystems; and through it all the inexorable unfolding of consciousness in a myriad of forms.  Powered by ancient compacted carbon, our last centuries of science have been able to illuminate both Earth’s story and our own.</p>
+
+      <p id="5-up">From this vast vantage we must revisit our judgments of ourselves and of plastic.</p>
+
+
+      <p id="10-up">Rather than be mired in despair at our modern moment of ecological depletion, we can be awed by Earth’s momentous act of ecological enrichment!</p>
+
+      <p id="12-up">The way our planet— as a uniquely configured cosmological system— has managed its matter and energy has led to the steady greening of its surface; the cultivation of ever greater diversity, vibrancy and abundance of life.1  And finally, through the resulting emergence of consciousness, we have been propelled to the telling and pondering of the story itself.</p>
+
+      <p>So, where do we go from here?</p>
+
+      <p>First, let us hold fast to our vantage and the vast view it affords.</p>
+
+      <p>From here we can observe another pivotal planetary phenomenon. Aside from meteor strikes and massive volcanoes, it is a phenomenon unseen on the planet for millions of years.  Because of the doings of modern humanity, never before have Earth’s processes, cycles and systems so abruptly added more carbon into the atmosphere than they removed.</p>
+
+      <p>The abrupt decline that has ensued of the vitality and diversity of the biosphere is a direct challenge to our last century of carbon play.</p>
+
+      <p>For those who have observed a child building with blocks for the first time, our moment is remarkably similar. After the thrill of assembling a grand construction, when the pieces inevitably tumble down, when the results aren’t as intended, the upset youngster invariably blames themselves and the blocks.</p>
+
+      <p>Of course, neither are to blame!</p>
+      
+      <p>Only through the first fall can the child grasp how the play is played.</p>
+
+      <p>There is no other way.</p>
+
+     <p>Likewise, our disruption of ecological cycles is not a consequence of our nature any more than it is the nature of carbon.1  Rather, it is the way of our play: the fundamental pattern by which our processes have managed their energy and their matter. </p>
+
+     <p>As we saw in plastic’s story, our modern processes have increasingly intended patterns of energy and matter that have dispersed carbon, concentrated energy, reduced biodiversity and stifled ecological awareness.  In sharp contrast, Earth's processes have inexorably tended towards just the opposite:  the concentration of carbon, the dispersal of energy, the increase of diversity and the cultivation of consciousness. Whereas our modern pattern of process has degraded ecosystems, Earth’s has systematically enriched them— making them ever more diverse, vibrant and abundant.1</p>
+
+     <p>Like a despairing and determined child on a second-go at blocks, we’re trying harder than ever before. With a shame at our failings, we have our heads down, striving valiantly to build stronger and higher: to make our processes less polluting, less damaging, less grey. However, no matter how hard we have striven, our polluting has continued to increase unabated.  Over time, any improvements in the efficiency of our grey processes have been inevitably eclipsed by their very proliferation and increase. For with the underlying pattern of our processes unchanged, even if they are less harmful— harmful they remain.1</p>
+
+     <p>Banayan and I have come to see that it is time to raise our heads from the toil.</p>
+
+     <p>And the judgment.</p>
+
+     <p>Again, rather than despair, we can be awed.</p>
+
+     <p>Our once-in-a-million-years phenomenon of additive carbon usage is in fact a tremendous opportunity.</p>
+
+     <p>For the first time, with our usage of carbon as a foil, the difference between our modern human-ways and the ways of Earth’s can be observed with unprecedented clarity.  In the stark contrast of patterns, we can begin to discern the cosmological character that has underlaid the Earth’s transformation of a barren planet into a thriving biosphere: the pattern by which Earth has managed its matter and energy through processes, cycles and systems towards the enrichment of all.</p>
+
+     <p>And in a similar way, through our modern society’s ecological dissonance, so too can our modern gaze can now recognize those societies—  ancient and ongoing— that have long attained resonance with Earth’s ways.1</p>
+
+     <p>Nations that just by thriving, enriched the vitality, diversity and abundance of the ecosystems of which they were part.</p>
+
+     <p>Nations that, just like Earth, cultivated common homes for all.</p>
+
+     <p>Unabated, the grey flows of plastic and pollution continued to grow.</p>
+
+     <p>And so too our despair.</p>
+
+  
+    </div><!--closes page text content-->
+
+<!--FOOTNOTES SECTION-->
+
+    <div class="footnote-section">
+
+      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+
+      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+      
+        <a href="#13-up" class="footnote">   
+        <div class="footnote-number">26.</div>
+        <div class="footnote-text">Going forward we will refer to Earth in ways that imply agency (i.e. “Earth managed its matter”). While it is more than possible to conceive Earth as a sentient entity, a divine being, or the active creation of a divine being(s), such claims are beyond the scope of this essay. Instead we imply agency simply in as much as any singular self-contained system has its own unique patterns, character and tendencies.  i.e. “Big Ben kept time”, “Mont Blanc stood tall”, “Uranus spins slowly around the sun”.</div>
+        </a>
+
+        <a href="#5-up" class="footnote">   
+        <div class="footnote-number">27.</div>
+        <div class="footnote-text">“The present atmospheric content [of CO2] exceeds anything Earth has experienced in the last million years and possibly the last 20 million years” David Beerling, The Emerald Planet, (Oxford University Press, 2017). </div>
+        </a>
+
+        <a href="#5-up" class="footnote">   
+        <div class="footnote-number">28.</div>
+        <div class="footnote-text">Are humans inherently destructive or contributory?  Competitive or collaborative?  In the chapters ahead, we take a firm position in this ongoing debate:  in discarding the empirically and rationally untenable view of humans as central and exceptional to the biosphere, and instead as subsets systems within it, our Earthen character becomes clear.  See:  Rutger Bregman, Humankind: A Hopeful History, (Little, Brown and Company, 2019).
+        </div>
+        </a>
+
+        <a href="#5-up" class="footnote">   
+        <div class="footnote-number">29.</div>
+        <div class="footnote-text">Here and throughout the Tractatus, we refer to the cumulative four billion years of the Earth’s history. Over the full period of the Earth’s history, there have been tremendous swings in the abundance and diversity of the biosphere– extinctions, depletion and lulls where for millions of years life was severely stifled. However, despite these declines, we observe that on the whole the net-biodiversity and abundance of the biosphere has steadily increased.  We will examine each facet of the planet’s net-enrichment in the five chapters of book 2.</div>
+        </a>
+
+        <a href="#5-up" class="footnote">   
+        <div class="footnote-number" id="3-down">30.</div>
+        <div class="footnote-text">Hope is often placed on increases in efficiency to decrease the cumulative environmental impact of human processes (i.e. “more efficient coal powered steam engines will decrease London’s pollution”). However, historically, advances in technological efficiency have in fact resulted in increased environmental impact.  This is known as Jevon’s Paradox: as efficiency increases, so too does the adoption and spread of the technology, inevitably leading to a net-increase in environmental impact.  Our argument is complimentary: we observe that processes, cycles and systems have an inherent pattern that will unfold regardless of efficiency or scale.</div>
+        </a>
+
+        <a href="#5-up" class="footnote">   
+        <div class="footnote-number" id="3-down">31.</div>
+        <div class="footnote-text">See Banayan’s work laying out the Ayyew Ethos of her people:  Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12 (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014). </div>
+        </a>
+
+        
+
+
+
+    </div><!--Closes footnote section-->
+          
+  </div><!--Closes main content block-->
+
+  <!--Footer Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+
+    <div class="footer-size">
+    
+      <div class="footer-left">
+
+        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+    
+     
+        <div class="next-section">
+            <div class="next-sec">Next chapter:</div>
+            <div class="sec-name"><i>Kindred Relations</i></div>
+        </div>
+
+      </div>
+    
+
+      <div class="footer-right">
+    
+        <a href="kindred.html"><div class="next-button">Next ➔</div></a>
+
+      </div>
+    </div>
+  </div>
+
+  <footer-chapter></footer-chapter>
+          
+  <div id="containerSepia"></div>
+  <div id="containerContrast"></div>
+  <div id="containerBrightness"></div>
+
+</div>
+
+
+</body>
+</html>
+

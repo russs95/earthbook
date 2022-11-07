@@ -2806,13 +2806,9 @@ display: none;
 }
 
 
-.virtue:hover 
- {
-  opacity: 1;
-;
-}
 
-.virtue:hover > .virtue-desc
+
+.virtue:focus > .virtue-desc
  {
   display: block;
 }
