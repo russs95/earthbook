@@ -17,7 +17,7 @@ class Earthbook extends HTMLElement {
 
             <div id="virtue-box">
 
-                <div class="virtue"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Open Source" alt="Open Source"><div class="virtue-desc">Both the earthBook and manuscript source and content are available under a GNU license on Github.</div>
+                <div class="virtue"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Open Source" alt="Open Source">
                 </div>
 
                 <div class="virtue"><img src="../svgs/icon-biodiversity.svg"  width="100%" height="100%" title="Supporting Biodiveristy" alt="Supporting Biodiversity"><div class="virtue-desc">A list of the species supported by the physical space of the book's enterprise is tracked and disclosed.</div>
@@ -46,6 +46,8 @@ class Earthbook extends HTMLElement {
 
             </div>
 
+            
+
             <div><h2><i>The Medium is the Message.</i></h2></div>
 
    
@@ -64,3 +66,15 @@ class Earthbook extends HTMLElement {
 }
 
 customElements.define('earthbook-curtain', Earthbook);
+
+
+/*  <div class="virtue-display">
+              
+              <div class="virtue-text1"><div class="virtue-styled">Both the earthBook and manuscript source and content are available under a GNU license on Github.</div>
+              </div>
+
+              <div class="virtue-text2">
+                <div class="virtue-styled">A list of the species supported by the physical space of the book's enterprise is tracked and disclosed.</div>
+              </div>
+            
+            </div>*/
