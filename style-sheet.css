@@ -2722,7 +2722,7 @@ display: none;
   font-size: 1.3em;
   text-align: center;
   color: var(--text-color);
-  display: none;
+  opacity: 0;
   position: absolute;
   bottom: 200px;
   width: 80%;
@@ -2810,7 +2810,7 @@ display: none;
 
 .virtue:focus > .virtue-desc
  {
-  display: block;
+  opacity: 1;
 }
 
 .virtue:hover > img
