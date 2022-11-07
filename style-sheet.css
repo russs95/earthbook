@@ -2807,13 +2807,22 @@ display: none;
 
 
 
-
 .virtue:focus > .virtue-desc
  {
   opacity: 1;
 }
 
-.virtue:hover > img
+.virtue:hover > .virtue-desc
+ {
+  opacity: 1;
+}
+
+.virtue:hover + .virtue-desc
+ {
+  opacity: 1;
+}
+
+.virtue:hover
  {
  /* width: 135px;*/
   opacity: 1;
