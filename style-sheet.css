@@ -2703,6 +2703,35 @@ display: none;
 }
 
 
+#virtue-box {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 50px; 
+  box-sizing: border-box;
+  height: fit-content;
+  width: 100%;
+}
+
+
+.virtue-desc {
+  font-family: 'Mulish';
+  font-size: 0.8em;
+  color: inherit;
+  text-align: center;
+  color: var(--text-color);
+  display: none;
+  position: absolute;
+  bottom: 200px;
+  display: contents;
+  width: 80%;
+  bottom: 200px;
+  right: 0;
+  left: 0;
+}
 
 .virtue {
   margin: auto; 
@@ -2713,15 +2742,6 @@ display: none;
   opacity: 0.8;
 }
 
-.virtue-desc {
-  position: absolute;
-  bottom: 200px;
-  display: contents;
-  width: 80%;
-  bottom: 200px;
-  right: 0;
-  left: 0;
-}
 
 
 
@@ -2815,8 +2835,6 @@ display: none;
     cursor: pointer;
   } 
 
-
-
 .virtue:hover 
  {
   padding: 15px;
@@ -2845,28 +2863,6 @@ display: none;
 
 
 
-#virtue-box {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  padding-bottom: 50px; 
-  box-sizing: border-box;
-height: fit-content;
-width: 100%;
-}
-
-
-.virtue-desc {
-  font-family: 'Mulish';
-  font-size: 0.8em;
-  color: inherit;
-  text-align: center;
-  color: var(--text-color);
-  display: none;
-}
 
 
 /*Carbon Badge 

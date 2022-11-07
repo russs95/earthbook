@@ -98,6 +98,10 @@
   background-size: contain;
 }
 
+.background-3 {
+  background: url(svgs/03-stellar-dark.svg) no-repeat center;
+  background-size: contain;
+}
 
 
   /*
