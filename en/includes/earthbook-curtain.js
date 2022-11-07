@@ -37,7 +37,7 @@ class Earthbook extends HTMLElement {
 
                 <div class="virtue"><img src="../svgs/icon-readfreely.svg"  width="100%" height="100%" title="Read Freely" alt="Read Freely"><div class="virtue-desc">This book is available to read freely online and as a downloadable PDF.</div>
                 </div>
-
+ 
                 <div class="virtue"><img src="../svgs/icon-revenue.svg"  width="100%" height="100%" title="Support Independent Publishing" alt="Support Independent Publishing"><div class="virtue-desc">Purchasing this book generates revenue direct to the author with no intermediaries.</div>
                 </div>
 
