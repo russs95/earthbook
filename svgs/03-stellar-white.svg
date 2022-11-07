@@ -28,15 +28,15 @@
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="5.3444804"
-     inkscape:cx="253.15838"
-     inkscape:cy="235.8508"
+     inkscape:zoom="1.3361201"
+     inkscape:cx="276.92121"
+     inkscape:cy="280.28917"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g65351">
+     inkscape:current-layer="g4499">
     <sodipodi:guide
        position="27.103775,11.402458"
        orientation="1,0"
@@ -267,10 +267,10 @@
            r="24.096409" />
         <g
            id="g59266"
-           transform="translate(-0.20578873,0.28880577)"
-           style="stroke:#ededed;stroke-width:0.98379827;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+           transform="translate(0.72550507,1.2200996)"
+           style="stroke:#ededed;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
           <circle
-             style="display:inline;fill:none;stroke:#ededed;stroke-width:0.57516406;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             style="display:inline;fill:none;stroke:#ededed;stroke-width:0.575164;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="circle2265"
              cx="-30.34091"
              cy="258.35876"
@@ -278,7 +278,7 @@
              transform="matrix(1.2730025,1.1424346,-1.1424346,1.2730025,524.73447,-86.067561)" />
           <path
              sodipodi:type="spiral"
-             style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#ededed;stroke-width:3.78880201;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#ededed;stroke-width:3.7888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="path2267"
              sodipodi:cx="221.35513"
              sodipodi:cy="282.80667"
@@ -290,25 +290,25 @@
              transform="matrix(-0.2404136,0.09810369,0.09810369,0.2404136,215.93314,116.91212)"
              d="m 220.76277,282.64544 c -0.45091,-0.78162 0.43091,-1.59268 1.11945,-1.77522 1.88428,-0.49956 3.40134,1.37183 3.60545,3.06129 0.41797,3.45972 -2.9287,5.9807 -6.09905,6.09993 -5.5315,0.20804 -9.36548,-5.13447 -9.28037,-10.28607 0.13411,-8.118 8.01426,-13.5823 15.66355,-13.16505 11.23384,0.61278 18.65311,11.58847 17.76985,22.26532 -1.23191,14.89115 -15.87441,24.59667 -30.12026,23.10874 -19.10048,-1.99497 -31.42944,-20.8871 -29.19427,-39.25362 2.90506,-23.87114 26.63989,-39.16617 49.68792,-36.03782 29.21156,3.96495 47.82022,33.1448 43.64979,61.4435 -5.17709,35.12944 -40.41273,57.40384 -74.53892,52.03981 -15.3829,-2.41791 -29.69829,-10.0296 -40.53708,-21.17608" />
           <circle
-             style="fill:none;stroke:#ededed;stroke-width:0.98379827;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             style="fill:none;stroke:#ededed;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="circle4530"
              cx="190.48434"
              cy="213.02791"
              r="24.096409" />
         </g>
         <circle
-           style="fill:none;stroke:#ededed;stroke-width:0.98379827;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:none;stroke:#ededed;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="circle4532"
-           cx="115.22839"
+           cx="114.2971"
            cy="158.64238"
            r="24.096409" />
       </g>
       <circle
-         style="display:inline;fill:none;stroke:#ededed;stroke-width:0.56738417;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="display:inline;fill:none;stroke:#ededed;stroke-width:0.56039;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="circle60091"
          cx="208.2121"
          cy="116.70655"
-         r="61.049744" />
+         r="60.297157" />
       <circle
          style="display:inline;fill:none;stroke:#ededed;stroke-width:0.56738417;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="circle60195"

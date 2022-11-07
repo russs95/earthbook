@@ -2719,12 +2719,12 @@ display: none;
 
 .virtue-desc {
   font-family: 'Mulish';
-  font-size: 1em;
+  font-size: 1.3em;
   text-align: center;
   color: var(--text-color);
   display: none;
   position: absolute;
-  bottom: 200%;
+  bottom: 200px;
   width: 80%;
   right: 0;
   left: 0;
