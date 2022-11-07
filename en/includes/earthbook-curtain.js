@@ -48,7 +48,7 @@ class Earthbook extends HTMLElement {
 
             
 
-            <div class="medium-message" padding-top:100px;><h2><i>The Medium is the Message.</i></h2></div>
+            <div class="medium-message"><h2><i>The Medium is the Message.</i></h2></div>
 
    
             
