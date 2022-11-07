@@ -566,7 +566,7 @@ margin: auto;
 .next-button:hover {
   text-align: right;
   color: var(--text-color);
-  background: var(--background-color);
+  background: grey;
 }
 
 .footer-settings-button {
