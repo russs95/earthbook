@@ -2710,7 +2710,7 @@ display: none;
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  padding-bottom: 150px; 
+  padding-bottom: 175px; 
   box-sizing: border-box;
   height: fit-content;
   width: 100%;
@@ -2733,12 +2733,12 @@ display: none;
 
 .virtue-desc {
   font-family: 'Mulish';
-  font-size: 1.3em;
+ 
   text-align: center;
   color: var(--text-color);
   opacity: 0;
   position: absolute;
-  bottom: 250px;
+  bottom: 290px;
   width: 80%;
   right: 0;
   left: 0;
@@ -2771,6 +2771,7 @@ display: none;
 .virtue-desc {
   bottom: 250px;
   width: 85%;
+  font-size: 1.3em;
 }
 
 
@@ -2797,8 +2798,9 @@ display: none;
   } 
 
   .virtue-desc {
-    bottom: 250px;
+    bottom: 280px;
     width: 75%;
+    font-size: 1.4em;
   }
 
 }
@@ -2822,8 +2824,9 @@ display: none;
   } 
 
   .virtue-desc {
-    bottom: 250px;
+    bottom: 290px;
     width: 55%;
+    font-size: 1.5em;
   }
 
 }
