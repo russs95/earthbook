@@ -2768,6 +2768,12 @@ display: none;
   font-size: 0.6;
 }
 
+.virtue-desc {
+  bottom: 250px;
+  width: 85%;
+}
+
+
 }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
@@ -2790,6 +2796,11 @@ display: none;
     cursor: pointer;
   } 
 
+  .virtue-desc {
+    bottom: 250px;
+    width: 75%;
+  }
+
 }
 
 
@@ -2809,6 +2820,11 @@ display: none;
     height: 150px;*/
     cursor: pointer;
   } 
+
+  .virtue-desc {
+    bottom: 250px;
+    width: 55%;
+  }
 
 }
 
