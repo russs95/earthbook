@@ -87,6 +87,11 @@
   
 /*CHAPTERS*/
 
+.background-0 {
+  background: url(svgs/00-preamble-dark.svg) no-repeat center;
+  background-size: contain;
+}
+
 .background-1 {
   background: url(svgs/01-imagine.svg) no-repeat center;
   background-size: contain;

@@ -77,6 +77,12 @@
 
 /*CHAPTERS*/
 
+
+.background-0 {
+  background: url(svgs/00-preamble-white.svg) no-repeat center;
+  background-size: contain;
+}
+
 #ct-chapt-graphic.background-1 {
   background: url(svgs/01-imagine-white.svg) no-repeat center;
   background-size: contain;
