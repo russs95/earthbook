@@ -108,6 +108,11 @@
   background-size: contain;
 }
 
+.background-5 {
+  background: url(svgs/05-kincentric-dark.svg) no-repeat center;
+  background-size: contain;
+}
+
   /*
   #settings-menu {
     background: var(--deeper-accent-color) !important;
