@@ -2868,13 +2868,13 @@ display: none;
 
 
 
-.virtue:hover > .virtue-desc
+.virtue:hover > .virtue-desc, .virtue:active > .virtue-desc
  {
   opacity: 1;
 }
 
 
-.virtue:hover
+.virtue:hover, .virtue:active
  {
  /* width: 135px;*/
   opacity: 1;

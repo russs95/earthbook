@@ -17,7 +17,7 @@ class Earthbook extends HTMLElement {
 
             <div id="virtue-box">
 
-                <div class="virtue"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Open Source" alt="Open Source"><div class="virtue-desc">The EarthBook source code is open to review, improvement and forking <a href="https://github.com/russs95/earthbook">on Github</a>.  This means that publishing an Earthbook can be done by anyone anywhere.</div>
+                <div class="virtue" style="cursor:pointer" onclick="openOS()"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Open Source" alt="Open Source"><div id="OS" class="virtue-desc">The EarthBook source code is open to review, improvement and forking <a href="https://github.com/russs95/earthbook">on Github</a>.  This means that publishing an Earthbook can be done by anyone anywhere.</div>
                 </div>
 
                 <div class="virtue"><img src="../svgs/icon-biodiversity.svg"  width="100%" height="100%" title="Supporting Biodiveristy" alt="Supporting Biodiversity"><div class="virtue-desc">During the writing and publishing of this book, the species supported in the enterprise physical space was tracked and accounted for.  <a href="https://russs.net/forest" target="_blank">See the publisher's full life list.</a></div>
@@ -48,7 +48,7 @@ class Earthbook extends HTMLElement {
 
             <div id="virtue-box-mobile">
 
-              <div class="virtue"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Open Source" alt="Open Source"><div class="virtue-desc">The EarthBook source code is open to review, improvement and forking <a href="https://github.com/russs95/earthbook">on Github</a>.  This means that publishing an Earthbook can be done by anyone anywhere.</div>
+              <div class="virtue" style="cursor:pointer" onclick="openOS()"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Open Source" alt="Open Source"><div class="virtue-desc">The EarthBook source code is open to review, improvement and forking <a href="https://github.com/russs95/earthbook">on Github</a>.  This means that publishing an Earthbook can be done by anyone anywhere.</div>
               </div>
 
               <div class="virtue"><img src="../svgs/icon-biodiversity.svg"  width="100%" height="100%" title="Supporting Biodiveristy" alt="Supporting Biodiversity"><div class="virtue-desc">During the writing and publishing of this book, the species supported in the enterprise physical space was tracked and accounted for.  <a href="https://russs.net/forest" target="_blank">See the publisher's full life list.</a></div>
@@ -107,7 +107,21 @@ class Earthbook extends HTMLElement {
 customElements.define('earthbook-curtain', Earthbook);
 
 
-/*  <div class="virtue-display">
+/*  
+
+
+function openOS() {
+  var x = document.getElementById("OS");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+  
+  } else {
+    x.style.opacity = "0";
+}
+}
+
+
+<div class="virtue-display">
               
               <div class="virtue-text1"><div class="virtue-styled">Both the earthBook and manuscript source and content are available under a GNU license on Github.</div>
               </div>
