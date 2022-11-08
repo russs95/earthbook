@@ -12,7 +12,7 @@ class Earthbook extends HTMLElement {
       <div class="overlay-content-earthbook">         
             <div>
                 <h1>Earthbooks are for Readers, Writers & Earth.</h1>
-                <h3>An Earthbook embodies regenerative principles in its writing, publishing & presentation.  Learn more:</h3>
+                <h3>An Earthbook embodies regenerative principles in its writing, publishing & presentation.</h3>
             </div>
 
             <div id="virtue-box">
@@ -38,7 +38,7 @@ class Earthbook extends HTMLElement {
                 <div class="virtue"><img src="../svgs/icon-readfreely.svg"  width="100%" height="100%" title="Read Freely" alt="Read Freely"><div class="virtue-desc">This book is available to read freely online and as a downloadable PDF.</div>
                 </div>
  
-                <div class="virtue"><img src="../svgs/icon-revenue.svg"  width="100%" height="100%" title="Support Independent Publishing" alt="Support Independent Publishing"><div class="virtue-desc">Earthbook are 100% independent of corporate platforms and enable author's to publish and sell their own work without a middle man.  97% of the proceeds of the <span style="cursor:pointer" onclick="openBuy()">sale of this book</span> go to the authors.</div>
+                <div class="virtue"><img src="../svgs/icon-revenue.svg"  width="100%" height="100%" title="Support Independent Publishing" alt="Support Independent Publishing"><div class="virtue-desc">Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of the <span style="cursor:pointer" onclick="openBuy()">sales of book sales</span> go to the authors.</div>
                 </div>
 
                 <div class="virtue"><img src="../svgs/icon-accessibility.svg"  width="100%" height="100%" title="Accessibility Maximized" alt="Accessibility Maximized"><div class="virtue-desc">Earthbooks are designed from the ground up to be easy on the eyes, accessible, and multi-lingual.</div>
