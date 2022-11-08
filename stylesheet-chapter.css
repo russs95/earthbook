@@ -73,7 +73,7 @@ display: none;
     padding: 0px;
     height: 50vh;
     margin: auto;
-    padding-top: 30vh;
+    padding-top: 50vh;
     width:100%;
     border-bottom: 1px solid var(--thin-border-color);
     background-color: var(--slider);
@@ -453,7 +453,24 @@ margin: auto;
     }
   
 
+ 
+
+
+    @media screen and (max-width: 700px) {
+
+ 
+      .quote {
   
+        margin: 40px 0px 40px 10px;
+        padding: 0px 5px 0px 20px;
+        border-left: 2px solid var(--text-color);
+        font-style: italic;
+        font-size: 0.95em;
+      }
+    }
+
+      @media screen and (min-width: 700px) {
+         
     .quote {
   
       margin: 40px 0px 40px 8px;
@@ -462,6 +479,7 @@ margin: auto;
       font-style: italic;
       font-size: 0.95em;
     }
+  }
 
 
     /*
