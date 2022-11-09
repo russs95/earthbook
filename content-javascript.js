@@ -22,7 +22,7 @@ function scrollFunction() {
 
   } else {
     //BEFORE
-    document.getElementById("earthbook-navbar").style.height = "50vh";
+    document.getElementById("earthbook-navbar").style.height = "55vh";
     document.getElementById("ct-chapter-title").style.fontSize = "";
     document.getElementById("ct-book-title").style.fontSize = "";
     document.getElementById("ct-chap-location").style.display = "block";
@@ -34,7 +34,7 @@ function scrollFunction() {
     document.getElementById("book-header-logo").style.display = "none";
     document.getElementById("settings-menu").style.opacity = "0.1";
     document.getElementById("share-menu").style.opacity = "0.1";
-    document.getElementById("ct-chapter-top").style.height = "50vh"; 
+    document.getElementById("ct-chapter-top").style.height = "55vh"; 
     //document.getElementById("ct-chapt-graphic").style.marginTop = "200px"; 
 
   }
