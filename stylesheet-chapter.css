@@ -4,7 +4,7 @@
 
 
 #earthbook-navbar {
-  height: 50vh;
+  height: 60vh;
   border-bottom-color: var(--strong-border);
 }
 
@@ -61,7 +61,7 @@ display: none;
     left: 0;
     display: unset;
     position: fixed;
-    height: 65vh;
+    height: 60vh;
     margin: 0px auto;
     margin-top: 0px;
   
@@ -72,7 +72,7 @@ display: none;
     
     padding: 0px;
     height: 50vh;
-    background-position-y: 15vh;
+    background-position-y: 10vh;
     margin: auto;
     padding-top: 50vh;
     width:100%;
@@ -80,8 +80,8 @@ display: none;
     background-color: var(--slider);
 
     display: flex;
-  flex-flow: column;
-  justify-content: center;
+    flex-flow: column;
+    justify-content: center;
 
     /*overflow-x: hidden;
     background: url(svgs/tractatus-mandala-full-white.svg) no-repeat center;

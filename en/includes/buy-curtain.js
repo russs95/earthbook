@@ -15,7 +15,7 @@ class BuyCurtain extends HTMLElement {
               <div class="buy-book">
                 <div class="book-listing">
 
-                  <img src="../photos/cover-epub-400px.webp" alt="The Epub version of the book is best for iphone and android eEeaders." title="The Epub version of the book is best for iphone and android ereaders."  width="600" height="710">
+                  <img src="../photos/cover-epub-400px.webp" alt="The Epub version of the book is best for iphone and android eEeaders." title="The Epub version of the book is best for iphone and android ereaders.">
 
                   <div class="book-buy-info">
                     <div class="buy-book-info-title">Ebook Edition</div>
@@ -31,7 +31,7 @@ class BuyCurtain extends HTMLElement {
               
               <div class="buy-book">
                 <div class="book-listing">
-                  <img src="../photos/cover-print-400px.webp"  alt="The print version of the book" title="The print version of the book"  width="600" height="710">
+                  <img src="../photos/cover-print-400px.webp"  alt="The print version of the book" title="The print version of the book">
                   <div class="book-buy-info">
                     <div class="buy-book-info-title">Print Edition</div>
 
@@ -47,7 +47,7 @@ class BuyCurtain extends HTMLElement {
              
               <div class="buy-book">
                 <div class="book-listing">
-                  <img src="../photos/cover-mobi-400px.webp"  alt="The Kindle format, and for other select eReaders" title="The Kindle format, and for Amazon eReaders" width="600" height="710">
+                  <img src="../photos/cover-mobi-400px.webp"  alt="The Kindle format, and for other select eReaders" title="The Kindle format, and for Amazon eReaders" >
                     
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Kindle Edition</div>
