@@ -118,6 +118,11 @@
   background-size: contain;
 }
 
+.background-6 {
+  background: url(svgs/06-nature-dark.svg) no-repeat center;
+  background-size: contain;
+}
+
   /*
   #settings-menu {
     background: var(--deeper-accent-color) !important;

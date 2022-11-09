@@ -61,7 +61,7 @@ display: none;
     left: 0;
     display: unset;
     position: fixed;
-    height: 50vh;
+    height: 65vh;
     margin: 0px auto;
     margin-top: 0px;
   
@@ -72,6 +72,7 @@ display: none;
     
     padding: 0px;
     height: 50vh;
+    background-position-y: 15vh;
     margin: auto;
     padding-top: 50vh;
     width:100%;
@@ -85,7 +86,7 @@ display: none;
     /*overflow-x: hidden;
     background: url(svgs/tractatus-mandala-full-white.svg) no-repeat center;
     background-size: contain;
-    background-position-y: 200px;*/
+    */
     
   }
 

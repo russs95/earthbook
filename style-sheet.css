@@ -1446,7 +1446,7 @@ padding-top: 36px;
     width: 56%;
     max-width:200px;
     text-align:right;
-    height: fit-content;
+    
   }
 
   .book-buy-info .action-btn {
@@ -1495,8 +1495,6 @@ padding-top: 36px;
 .book-listing {
   flex-direction: column;
   display: flex;
-  
-  height:fit-content;
   align-self: top;
 }
 
