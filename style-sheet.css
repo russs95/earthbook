@@ -2354,7 +2354,7 @@ a:active {
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   .contents-title {
-    font-size: 2.2em;
+    font-size: 2.0em;
     padding-bottom: 0px;
   }
 }
@@ -2384,19 +2384,19 @@ a:active {
     cursor: pointer;
   }
 
-  @media screen and (max-width: 700px) {
+ /* @media screen and (max-width: 700px) {
     .tc-a-book {
     letter-spacing: 4px;
     padding: 15px 15px 15px 15px;
     font-size: 1.3em;
     }
-  }
+  }*/
 
   @media screen and (max-width: 700px) {
     .tc-a-book {
     letter-spacing: 5px;
     padding: 3px 15px 3px 15px;
-    font-size: 1.9em;
+    font-size: 1.8em;
     margin: 3px 0px 2px 0px;
     
     }
@@ -2405,9 +2405,9 @@ a:active {
     @media screen and (min-width: 700px) and (max-width: 1324px) {
     .tc-a-book {
     letter-spacing: 5px;
-    padding: 5px 15px 5px 15px;
-    font-size: 2.5em;
-    margin: 10px 0px 5px 0px;
+    padding: 2px 15px 2px 15px;
+    font-size: 2.3em;
+    margin: 6px 0px 2px 0px;
     }
   }
 
@@ -2430,8 +2430,8 @@ a:active {
   
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     .contents-title {
-      font-size: 1.5em;
-      margin-top: 20px;
+      font-size: 1.3em;
+      margin-top: 10px;
     }
   }
   
@@ -2475,7 +2475,7 @@ border-bottom-color: var(--fainter-border-color);
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   .tc-item {
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 0px;
   }
 }
@@ -2508,7 +2508,7 @@ border-bottom-color: var(--fainter-border-color);
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   .chapter-name-tc {
-    padding: 15px 25px 15px 35px;
+    padding: 12px 25px 12px 35px;
     margin:  auto 0px auto 0px;
   }
 }
@@ -2541,7 +2541,7 @@ border-bottom-color: var(--fainter-border-color);
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   .word-count-tc{
-    padding: 15px 35px 15px 0px;
+    padding: 12px 35px 12px 0px;
     margin:  auto 0px auto 0px;
   }
 }
@@ -2608,7 +2608,7 @@ border-bottom-color: var(--fainter-border-color);
   flex: row;
   align-items: stretch;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 
