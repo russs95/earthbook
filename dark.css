@@ -123,6 +123,11 @@
   background-size: contain;
 }
 
+.background-7 {
+  background: url(svgs/07-earthen-dark.svg) no-repeat center;
+  background-size: contain;
+}
+
   /*
   #settings-menu {
     background: var(--deeper-accent-color) !important;
