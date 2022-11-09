@@ -89,7 +89,7 @@ class ContentCurtain extends HTMLElement {
                     </div>
                     </a>
 
-                    <a href="earthen-ways">
+                    <a href="earthen">
                     <div class="tc-item">
                         <div class="chapter-name-tc">The Earthen Ways</div>
                         <div class="dotted-line"></div>
