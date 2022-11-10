@@ -17,7 +17,7 @@ function scrollFunction() {
     document.getElementById("settings-menu").style.opacity = "1";
     document.getElementById("share-menu").style.opacity = "1";
     document.getElementById("ct-chapter-top").style.height = "145px"; 
-   // document.getElementById("ct-chapt-graphic").style.marginTop = "60px"; 
+    document.getElementById("ct-chapt-graphic").style.paddingTop = "65vh"; 
 
 
   } else {
@@ -35,7 +35,7 @@ function scrollFunction() {
     document.getElementById("settings-menu").style.opacity = "0.1";
     document.getElementById("share-menu").style.opacity = "0.1";
     document.getElementById("ct-chapter-top").style.height = "50vh"; 
-    //document.getElementById("ct-chapt-graphic").style.marginTop = "200px"; 
+    document.getElementById("ct-chapt-graphic").style.paddingTop = "50vh"; 
 
   }
 }
