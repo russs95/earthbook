@@ -198,12 +198,14 @@ Opens up the Earthbook overlay from the bottom up*/
   function openEarthbook() {
     document.getElementById("bottom-earthbook").style.height = "100%";
     document.body.style.overflowY = "hidden";
+    document.body.style.maxHeight = "100vh";
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeEarthbook() {
     document.getElementById("bottom-earthbook").style.height = "0%";
     document.body.style.overflowY = "unset";
+    document.body.style.maxHeight = "unset";
   } 
 
 
@@ -216,12 +218,14 @@ Opens up the Earthbook overlay from the bottom up*/
   function openEco() {
     document.getElementById("eco-curtain").style.height = "100%";
     document.body.style.overflowY = "hidden";
+    document.body.style.maxHeight = "100vh";
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeEco() {
     document.getElementById("eco-curtain").style.height = "0%";
     document.body.style.overflowY = "unset";
+    document.body.style.maxHeight = "unset";
   } 
 
 

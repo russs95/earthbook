@@ -6,8 +6,6 @@ class EcoCurtain extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
   <div id="eco-curtain" class="eco-overlay">
-    
-
 
       <div class="overlay-content-eco">         
             <div>
@@ -16,19 +14,18 @@ class EcoCurtain extends HTMLElement {
                 <h3>An Earthbook is designed from the ground up to track, disclose and account for its net-green impact.</h3>
             </div>
 
-            <div class="virtue-desc">Throughout the enterprise of writing and publishing an Earthbook impac, the carbon, plastic and biodiversity impacts were tracked, accounted and annually disclosed.  See the full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></div>
+            <div class="virtue-desc">Throughout the enterprise of writing and publishing an Earthbook impact, the carbon, plastic and biodiversity impacts were tracked, accounted and annually disclosed.  See the full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></div>
 
            
             <div class="virtue">
             <a href="about"><img src="https://ecobricks.org/banners/forearth-dark-350px.png" width="325px" height="" alt="Learn more about our Earth Enterprise structure" title="Learn more about our Earth Enterprise structure" loading="lazy"></a>
-        </div>
+            </div>
 
-    <div class="virtue">
-        <a href="https://www.gobrik.com/#my-catalyst/enterprise-disclosure/5b8c2b0922ddfb2591bf67be/" target="_blank"><img src="https://ecobricks.org/banners/762-disclose-light-350px.png" width="325px" height="" alt="Proudly Net-Green: We track, disclose and accelerate our plastic transition. View our 2022 Report." title="Click through to see a our 2022 Plastic Transition Report" loading="lazy"></a>
-    </div>
+            <div class="virtue">
+                <a href="https://www.gobrik.com/#my-catalyst/enterprise-disclosure/5b8c2b0922ddfb2591bf67be/" target="_blank"><img src="https://ecobricks.org/banners/762-disclose-light-350px.png" width="325px" height="" alt="Proudly Net-Green: We track, disclose and accelerate our plastic transition. View our 2022 Report." title="Click through to see a our 2022 Plastic Transition Report" loading="lazy"></a>
+            </div>
 
-    <div id="wcb" class="carbonbadge wcb-d"></div>
-    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+            <div id="wcb" class="carbonbadge wcb-d"></div>
             
 
             <div class="medium-message"><h2><i>The Medium is the Message.</i></h2></div>
