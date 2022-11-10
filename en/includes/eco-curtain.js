@@ -48,7 +48,7 @@ class EcoCurtain extends HTMLElement {
 }
 }
 
-customElements.define('eco-curtain', Earthbook);
+customElements.define('eco-curtain', EcoCurtain);
 
 
 /*  
