@@ -207,6 +207,23 @@ Opens up the Earthbook overlay from the bottom up*/
   } 
 
 
+  /*ECO OVERLAY
+
+Opens up the Earthbook overlay from the bottom up*/
+
+
+  /* Open settings when someone clicks on the span element */
+  function openEco() {
+    document.getElementById("eco-curtain").style.height = "100%";
+    document.body.style.overflowY = "hidden";
+  }
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeEco() {
+    document.getElementById("eco-curtain").style.height = "0%";
+    document.body.style.overflowY = "unset";
+  } 
+
 
 
   /*Still in use??
