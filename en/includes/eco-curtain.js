@@ -16,7 +16,7 @@ class EcoCurtain extends HTMLElement {
                 <h3>An Earthbook is designed from the ground up to track, disclose and account for its net-green impact.</h3>
 
             <div class="eco-text">
-                <p width="65%">Throughout the enterprise of writing and publishing an Earthbook impact, the carbon, plastic and biodiversity impacts were tracked, accounted and annually disclosed.  See the full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></p>
+                Throughout the enterprise of writing and publishing an Earthbook impact, the carbon, plastic and biodiversity impacts were tracked, accounted and annually disclosed.  See the full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
             </div>
 
             <div>
@@ -31,7 +31,7 @@ class EcoCurtain extends HTMLElement {
 
             <div><h2><i>The Medium is the Message.</i></h2></div>
 
-            <div id="wcb" class="carbonbadge wcb-d"></div>
+            <div id="wcb" class="carbonbadge wcb-d">Test badge</div>
 	      
             <span style="cursor:pointer" onclick="closeEco()">
              <div id="bottom-close-button">
