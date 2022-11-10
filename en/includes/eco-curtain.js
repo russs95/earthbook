@@ -15,12 +15,13 @@ class EcoCurtain extends HTMLElement {
                 <h1>Earthbooks are Green.</h1>
                 <h3>An Earthbook is designed from the ground up to track, disclose and account for its net-green impact.</h3>
 
-            <div>
+            <div class="eco-text">
                 <p width="65%">Throughout the enterprise of writing and publishing an Earthbook impact, the carbon, plastic and biodiversity impacts were tracked, accounted and annually disclosed.  See the full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></p>
             </div>
 
             <div>
                 <a href="about"><img src="https://ecobricks.org/banners/forearth-dark-350px.png" width="325px" height="" alt="Learn more about our Earth Enterprise structure" title="Learn more about our Earth Enterprise structure" loading="lazy"></a>
+                <br>
                 </div>
 
                 <div>
