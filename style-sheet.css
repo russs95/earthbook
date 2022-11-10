@@ -3125,6 +3125,12 @@ input:checked + label.toggle svg.moon {
   }
 
 
- [part="darkLabel"]  {margin-left: 20px;
+ [part="darkLabel"]  {
+  margin-left: 20px !important;
   
  }
+
+
+ label  {
+  margin: 20px !important;}
+ 

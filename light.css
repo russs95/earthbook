@@ -14,7 +14,7 @@
     --fainter-border-color:  rgb(208, 207, 207); /*border color for the menu buttons*/
     --element-shadow: 0 1px 15px rgba(7, 7, 7, 0.15 );  /*whenever a shadow is added*/
     --drop-cap: rgb(63, 63, 63);
-    --header-footer: #f4f2f2;
+    --header-footer: #e7e7e7;
     --slider: rgb(228, 228, 228);
     --strong-border: rgb(185, 188, 209);
    }

@@ -4,12 +4,12 @@
 
 
 #earthbook-navbar {
-  height: 55vh;
+  height: 50vh;
   border-bottom-color: var(--strong-border);
 }
 
 #book-title {
-  height: 55vh;
+  height: 50vh;
 }
 
 #main-title {
@@ -74,7 +74,7 @@ display: none;
     height: 50vh;
     /*background-position-y: 10vh;*/
     margin: auto;
-    padding-top: 55vh;
+    padding-top: 50vh;
     width:100%;
     border-bottom: 1px solid var(--thin-border-color);
     background-color: var(--slider);
