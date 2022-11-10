@@ -25,7 +25,7 @@ class SettingsCurtain extends HTMLElement {
                 legend=""
                 appearance="switch"
                 dark="Dark"
-                light="Light"
+                light="Light  ."
                 remember="Remember this"
                 ></dark-mode-toggle>
                             </div>
