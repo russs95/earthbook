@@ -28,15 +28,15 @@
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="3.0691868"
-     inkscape:cx="181.4813"
-     inkscape:cy="223.34906"
+     inkscape:zoom="1.0851214"
+     inkscape:cx="328.99545"
+     inkscape:cy="301.80955"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g59125">
+     inkscape:current-layer="g4499">
     <sodipodi:guide
        position="27.103775,11.402458"
        orientation="1,0"
@@ -190,7 +190,7 @@
            transform="translate(0.35628301,-0.14966453)"
            style="stroke:#858585;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843">
           <circle
-             style="display:inline;fill:none;stroke:#ececec;stroke-width:0.575164;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843"
+             style="display:inline;fill:none;stroke:#fafafa;stroke-width:0.575164;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.56470591"
              id="path1298"
              cx="169.72188"
              cy="93.92292"
@@ -198,7 +198,7 @@
              transform="matrix(-1.7104654,0,0,1.7104654,524.73447,-86.067561)" />
           <path
              sodipodi:type="spiral"
-             style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#ececec;stroke-width:3.7888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843"
+             style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#fafafa;stroke-width:3.7888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.56470591"
              id="path1437"
              sodipodi:cx="221.35513"
              sodipodi:cy="282.80667"
@@ -254,12 +254,13 @@
              cy="213.02791"
              r="24.096409" />
         </g>
-        <circle
-           style="fill:none;stroke:#858585;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843"
+        <ellipse
+           style="fill:none;stroke:#848484;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="circle4532"
            cx="115.22839"
            cy="158.64238"
-           r="24.096409" />
+           rx="24.0961"
+           ry="24.096409" />
       </g>
       <circle
          style="display:inline;fill:none;stroke:#212121;stroke-width:0.483076;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
