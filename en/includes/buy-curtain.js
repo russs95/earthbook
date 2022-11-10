@@ -19,7 +19,7 @@ class BuyCurtain extends HTMLElement {
 
                   <div class="book-buy-info">
                     <div class="buy-book-info-title">Ebook Edition</div>
-                    <div class="buy-book-info-text">The .EPUB format is ideal for reading on iPhones and and Android e-Book apps.</div>
+                    <div class="buy-book-info-text">The .EPUB format is ideal for  iPhones and and Android e-Book apps.</div>
 
                     <a href="https://buy.stripe.com/28og1Z9OS3f7eqc6op" class="action-btn" style="cursor:pointer; width:90%;"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
 

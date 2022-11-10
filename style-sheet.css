@@ -720,7 +720,7 @@ text-shadow: 0 0 45px rgba(1, 1, 1, 0.1);
 user-select: none;  
 
 color: white;
-background: repeating-linear-gradient(-45deg, white, black, grey, rgb(0, 183, 255));
+background: repeating-linear-gradient(-45deg, white,  rgb(0, 183, 255), black,  rgb(0, 183, 255), white,);
 background-size: 600vw 600vw;
 -webkit-text-fill-color: transparent;
 -webkit-background-clip: text;
