@@ -34,9 +34,11 @@ class FooterChapter extends HTMLElement {
     <div class="footer-settings-icon"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page"></div></a>
 
   </div>
+  <div class="gitub-source">The source code for this page can be accessed and edited at:<br>
+      <a href="https://github.com/russs95/earthbook/preamble.html">https://github.com/russs95/earthbook/preamble.html</a></div>
 
 </div>
-
+  
 </div>
     <div id="containerSepia"></div>
     <div id="containerContrast"></div>
