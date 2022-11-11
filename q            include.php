@@ -4,7 +4,7 @@ function doDB() {
 global $mysqli;
 
 //connect to server and select database
-$mysqli = mysqli_connect("localhost", "earthbook",
+$mysqli = mysqli_connect("localhost", "ecobricks_earthbook",
           "ayyew", "ecobricks_tractatus");
 
       //if connection fails, stop script execution
