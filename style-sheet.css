@@ -343,6 +343,7 @@ margin: 0px auto !important;
   font-size: 0.8em;
   color: grey;
   text-align: left;
+  width: 100%;
 }
 
 @font-face {
@@ -391,9 +392,6 @@ p {
       line-height: 1.6;
     }
   }
-
-
-
 
 
   li {
