@@ -62,7 +62,7 @@ customElements.define('footer-chapter', FooterChapter);
 function openFooter() {
   var x = document.getElementById("footer-chapter");
   if (x.style.marginBottom === "0px") {
-    x.style.marginBottom = "100px";
+    x.style.marginBottom = "150px";
   
   } else {
     x.style.marginBottom = "0px";
