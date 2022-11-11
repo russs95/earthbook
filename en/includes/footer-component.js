@@ -16,20 +16,23 @@ class FooterComponent extends HTMLElement {
 
 
 
-    <div class="footer-middle" style="cursor:pointer" onclick="openEarthbook()">
-        <div class="an-earthbook">an Earthbook</div>
-        <div class="what-is">What is</div>
-        <div class="question">?</div>
-    </div>
+        <div class="footer-middle" style="cursor:pointer" onclick="openEarthbook()">
+            <div class="an-earthbook">an Earthbook</div>
+            <div class="what-is">What is</div>
+            <div class="question">?</div>
+        </div>
 
     
-    <div class="footer-right">
-       
-        <div class="footer-icon-right">
-        <a href="#top"><img src="../svgs/to-the-top-arrow.svg" width="35px" title="Back to the top of the page"></div></a>
-        <div class="footer-word">top</div>
-    </div>
+        <div class="footer-right">
+        
+            <div class="footer-icon-right">
+            <a href="#top"><img src="../svgs/to-the-top-arrow.svg" width="35px" title="Back to the top of the page"></div></a>
+            <div class="footer-word">top</div>
+        </div>
 </div>
+
+<div class="gitub-source">The source code for this page can be accessed and edited at:<br>
+      <a href="https://github.com/russs95/earthbook/preamble.html">https://github.com/russs95/earthbook/preamble.html</a></div>
 
 </div>
     <div id="containerSepia"></div>
