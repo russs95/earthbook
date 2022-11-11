@@ -5,7 +5,7 @@ global $mysqli;
 
 //connect to server and select database
 $mysqli = mysqli_connect("localhost", "earthbook",
-          "ayyew", "tractatus");
+          "ayyew", "ecobricks_tractatus");
 
       //if connection fails, stop script execution
       if (mysqli_connect_errno()) {
