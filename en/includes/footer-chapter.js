@@ -35,12 +35,14 @@ class FooterChapter extends HTMLElement {
 
   </div>
   
-</div>
 
 <div class="gitub-source">The source code for this page can be accessed and edited at:<br>
-      <a href="https://github.com/russs95/earthbook/">https://github.com/russs95/earthbook/</a></div>
+<a href="https://github.com/russs95/earthbook/">https://github.com/russs95/earthbook/</a></div>
 
-  
+
+
+</div>
+
 </div>
     <div id="containerSepia"></div>
     <div id="containerContrast"></div>
