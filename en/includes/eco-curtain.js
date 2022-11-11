@@ -22,19 +22,7 @@ class EcoCurtain extends HTMLElement {
             <div id="wcb" class="carbonbadge wcb-d"></div>
             <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"></script>
 
-<!--
-            <div>
 
-           
-
-                <a href="about"><img src="https://ecobricks.org/banners/forearth-dark-350px.png" width="325px" height="" alt="Learn more about our Earth Enterprise structure" title="Learn more about our Earth Enterprise structure" loading="lazy"></a>
-                <br>
-                </div>
-
-                <div>
-                    <a href="https://www.gobrik.com/#my-catalyst/enterprise-disclosure/5b8c2b0922ddfb2591bf67be/" target="_blank"><img src="https://ecobricks.org/banners/762-disclose-light-350px.png" width="325px" height="" alt="Proudly Net-Green: We track, disclose and accelerate our plastic transition. View our 2022 Report." title="Click through to see a our 2022 Plastic Transition Report" loading="lazy"></a>
-                </div>
-            </div>-->
 
             <div><h2><i>The Medium is the Message.</i></h2></div>
 
@@ -54,3 +42,16 @@ class EcoCurtain extends HTMLElement {
 
 customElements.define('eco-curtain', EcoCurtain);
 
+/*
+<div>
+
+           
+
+<a href="about"><img src="https://ecobricks.org/banners/forearth-dark-350px.png" width="325px" height="" alt="Learn more about our Earth Enterprise structure" title="Learn more about our Earth Enterprise structure" loading="lazy"></a>
+<br>
+</div>
+
+<div>
+    <a href="https://www.gobrik.com/#my-catalyst/enterprise-disclosure/5b8c2b0922ddfb2591bf67be/" target="_blank"><img src="https://ecobricks.org/banners/762-disclose-light-350px.png" width="325px" height="" alt="Proudly Net-Green: We track, disclose and accelerate our plastic transition. View our 2022 Report." title="Click through to see a our 2022 Plastic Transition Report" loading="lazy"></a>
+</div>
+</div>-->*/
