@@ -18,8 +18,15 @@ class EcoCurtain extends HTMLElement {
             <div class="eco-text">
                 Throughout the enterprise of writing and publishing an Earthbook impact, the carbon, plastic and biodiversity impacts were tracked, accounted and annually disclosed.  See the full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
             </div>
+
+            <div id="wcb" class="carbonbadge wcb-d"></div>
+            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"></script>
+
 <!--
             <div>
+
+           
+
                 <a href="about"><img src="https://ecobricks.org/banners/forearth-dark-350px.png" width="325px" height="" alt="Learn more about our Earth Enterprise structure" title="Learn more about our Earth Enterprise structure" loading="lazy"></a>
                 <br>
                 </div>
