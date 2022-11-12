@@ -54,7 +54,7 @@ if (!$_POST) {
               mysqli_close($mysqli);
           } else {
               //print failure message
-              $display_block = "<h5>You're already subscribed!</h5>";
+              $display_block = "<h5>You're already subscribed! 🤔</h5>";
           }
       }
   } else if (($_POST) && ($_POST['action'] == "unsub")) {
@@ -75,7 +75,7 @@ if (!$_POST) {
               mysqli_free_result($check_res);
 
               //print failure message
-              $display_block = "<p>Couldn't find your address!</p>
+              $display_block = "<p>Couldn't find your address! 🤔</p>
               <p>No action was taken.</p>";
           } else {
               //get value of ID from result
@@ -88,7 +88,7 @@ if (!$_POST) {
                           WHERE id = ".$id;
               $del_res = mysqli_query($mysqli, $del_sql)
                          or die(mysqli_error($mysqli));
-              $display_block = "<p>You're unsubscribed!</p>";
+              $display_block = "<p>You're unsubscribed! 😢</p>";
           }
           mysqli_close($mysqli);
       }
