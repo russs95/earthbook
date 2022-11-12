@@ -184,7 +184,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
               The carbon impact of an EarthBook is independently audited:<br><br>
           </div>-->
 
-<div id="eco-curtain" class="eco-overlay">
+<div id="eco-curtain2" class="eco-overlay">
   <div class="overlay-content-eco">         
       <div>
           <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
@@ -194,7 +194,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
           <div id="wcb" class="carbonbadge"></div>
           <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
       <div class="eco-text">
-        <p>In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></p>
+        In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
       </div>
       <div><h3><i>The Medium is the Message.</i></h3></div>
       <span style="cursor:pointer" onclick="closeEco()">

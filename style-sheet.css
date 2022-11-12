@@ -2935,7 +2935,7 @@ display: none;
 /* -------------------------------------------------------------------------- */
 
 
-#eco-curtain {
+#eco-curtain2 {
   background-color: var(--slider); 
   color: var(--text-color);
   z-index: 21;

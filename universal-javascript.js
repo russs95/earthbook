@@ -216,14 +216,14 @@ Opens up the Earthbook overlay from the bottom up*/
 
   /* Open settings when someone clicks on the span element */
   function openEco() {
-    document.getElementById("eco-curtain").style.height = "100%";
+    document.getElementById("eco-curtain2").style.height = "100%";
     document.body.style.overflowY = "hidden";
     document.body.style.maxHeight = "100vh";
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeEco() {
-    document.getElementById("eco-curtain").style.height = "0%";
+    document.getElementById("eco-curtain2").style.height = "0%";
     document.body.style.overflowY = "unset";
     document.body.style.maxHeight = "unset";
   } 
