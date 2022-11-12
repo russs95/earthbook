@@ -58,7 +58,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <script src="../universal-javascript.js" defer></script>
 <script src="../clipboard.min.js"></script>
 <script src="../accessibility.js"></script>
-<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=1.0"></script>
 <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
 
 <!--
@@ -68,7 +68,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 
 <!-- Style Sheets -->
-<link rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
+<link rel="stylesheet" type="text/css" href="../style-sheet.css?v1.4">
 <link rel="stylesheet" href="/dark.css?v=1" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="/light.css?v=1" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
 <link rel="stylesheet" href="../acessibilidade.css" />
@@ -88,7 +88,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
  <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
  <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
-<!--9--><script src="includes/eco-curtain.js" type="text/javascript" defer></script>
+<!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
 
 
 
@@ -184,33 +184,28 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
               The carbon impact of an EarthBook is independently audited:<br><br>
           </div>-->
 
-
-<div id="eco-curtain" class="eco-overlay">
-    <div class="overlay-content-eco">         
-        <div>
-            <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
-        </div>  
-            <h1>Earthbooks are Green.</h1>
-            <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint. 
-        <div id="wcb" class="carbonbadge wcb-d"></div>
-        <div><h2><i>The Medium is the Message.</i></h2></div>
-        <span style="cursor:pointer" onclick="closeEco()">
-            <div id="bottom-close-button">
-                <img src="../svgs/bottom-x.svg">
-            </div>
-        </span>
-    </div>
+<div id="eco-curtain2" class="eco-overlay">
+  <div class="overlay-content-eco">        
+      <div>
+          <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
+      </div>  
+          <h1>EarthBooks are Green.</h1>
+          <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3>
+          <div id="wcb" class="carbonbadge"></div>
+      <div class="eco-text">
+        In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
+      </div>
+      <div><h3><i>The Medium is the Message.</i></h3></div>
+      <span style="cursor:pointer" onclick="closeEco()">
+          <div id="bottom-close-button">
+              <img src="../svgs/bottom-x.svg">
+          </div>
+      </span>
+  </div>
 </div>
 
-    
-     
- 
-    
-     <!-- 3. Instantiate clipboard
-     <script>
 
-     </script>
-    </div></div> -->
+    
 
 
 <!-- PAGE CONTENT-->
@@ -236,7 +231,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
             <?php require_once ("../manage.php");?>
           
-            <!--<div style="margin-top:-140px"></div>-->
+         
         </div>
 
 		<div id="main">
@@ -284,49 +279,49 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
                 <div class="book-box-header">Book One</div>
 
-                <a href="imagine">
+                <a href="imagine.html">
                 <div class="chapter-top">    
                     <div class="chapter-name">Imagine</div>
                     <div class="word-count"><i>1,095 words</i></div>
                 </div>
                 </a>
 
-                <a href="plastic1">
+                <a href="plastic1.html">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Plastic 1.0</div>
                     <div class="word-count"><i>623 words</i></div>
                 </div>
                 </a>
 
-                <a href="stellar">
+                <a href="stellar.html">
                 <div class="chapter-middle">
                     <div class="chapter-name">A Stellar Story</div>
                     <div class="word-count"><i>1,021 words</i></div>
                 </div>
                 </a>
 
-                <a href="patterns">
+                <a href="patterns.html">
                     <div class="chapter-middle">
                         <div class="chapter-name">Patterns of Process</div>
                         <div class="word-count"><i>837 words</i></div>
                 </div>
                 </a>
 
-                <a href="kincentric">
+                <a href="kincentric.html">
                     <div class="chapter-middle">
                         <div class="chapter-name">Kindred Relations</div>
                         <div class="word-count"><i>1,508 words</i></div>
                 </div>
                 </a>
 
-                <a href="nature">
+                <a href="nature.html">
                     <div class="chapter-middle">
                         <div class="chapter-name">Nature's Fallacy</div>
                         <div class="word-count"><i>973 words</i></div>
                 </div>
                 </a>
 
-                <a href="earthen"><div class="chapter-bottom">
+                <a href="earthen.html"><div class="chapter-bottom">
                     <div class="chapter-name">The Earthen Ways</div>
                     <div class="word-count"><i>784 words</i></div>
                 </div>
@@ -350,21 +345,21 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
                 </div>
                 </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">
                     <div class="chapter-name">3  |  The Ammonite's Example</div>
                     <div class="word-count"><i>not yet published</i></div>
                 </div>
                 </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                     <div class="chapter-middle">
                         <div class="chapter-name">4  |  The Polyp's Pattern</div>
                         <div class="word-count"><i>not yet published</i></div>
                     </div>
                     </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                     <div class="chapter-bottom">
                         <div class="chapter-name">5  |  The Mycorrhyzal's Awareness</div>
                         <div class="word-count"><i>not yet published</i></div>
@@ -376,7 +371,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
                 <div class="book-box-header">Book Three</div>
 
                 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-top">    
                     <div class="chapter-name">Plastic 2.0</div>
                     <div class="word-count"><i>not yet published</i></div>
@@ -384,7 +379,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
             </a>
                 
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Plastic Sequestration</div>
                     <div class="word-count"><i>not yet published</i></div>
@@ -392,13 +387,13 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
             </a>
                 
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Petro-capital Transition</div>
                     <div class="word-count"><i>not yet published</i></div>
                 </div>
                     
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-bottom">
                     <div class="chapter-name">Ad Pax Ayyew</div>
                     <div class="word-count"><i>not yet published</i></div>
@@ -407,56 +402,56 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
                 
                 <div class="book-box-header">Appendix</div>
             
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-top">    
                     <div class="chapter-name">Dedication</div>
                     <div class="word-count"><i>26 words</i></div>
                 </div>
             </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Ecological Accounting</div>
                     <div class="word-count"><i>48 words</i></div>
                 </div>
             </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">For-Earth Enterprise</div>
                     <div class="word-count"><i>20 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Credits & Acknowledgements</div>
                     <div class="word-count"><i>218 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Writing & Publishing</div>
                     <div class="word-count"><i>80 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Banayan & Russell</div>
                     <div class="word-count"><i>153 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Select Bibliography</div>
                     <div class="word-count"><i>728 words</i></div>
                 </div>
             </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-bottom">
                     <div class="chapter-name">Glossary</div>
                     <div class="word-count"><i>342 words</i></div>
@@ -465,7 +460,9 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
     
             </div>
 
-            <div id="wcb" class="carbonbadge wcb-d"></div>
+            
+
+</div>
             
         </div>
 
@@ -475,8 +472,6 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
  <!--FOOTER-->
 <footer-component></footer-component>
-
-
 
 
         
