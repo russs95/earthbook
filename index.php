@@ -68,7 +68,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 
 <!-- Style Sheets -->
-<link rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
+<link rel="stylesheet" type="text/css" href="../style-sheet.css?v1.4">
 <link rel="stylesheet" href="/dark.css?v=1" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="/light.css?v=1" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
 <link rel="stylesheet" href="../acessibilidade.css" />
@@ -185,7 +185,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
           </div>-->
 
 <div id="eco-curtain2" class="eco-overlay">
-  <div class="overlay-content-eco">         
+  <div class="overlay-content-eco">        
       <div>
           <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
       </div>  

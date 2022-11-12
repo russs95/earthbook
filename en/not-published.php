@@ -48,7 +48,7 @@ These tags will be consistent for the whole book-->
  <script src="../universal-javascript.js" defer></script>
  <script src="../clip/dist/clipboard.min.js"></script>
  <script src="../accessibility.js"></script>
- <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
  <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
  
  <!-- Arc CDN Script without delay
@@ -77,7 +77,7 @@ All the page components required to build this page-->
  <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
  <!--8b--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
-  <!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
+  <!--9--><script src="includes/eco-curtain.js" type="text/javascript" defer></script>
 
 
  <!-- Fonts
@@ -103,28 +103,28 @@ The requisite typography for the page-->
 
 **** Must be updated for each unique page ****-->
 
-<link rel="canonical" href="https://book.earthen.io/en/preamble.html"> 
-<link rel="alternate" href="https://book.earthen.io/en/preamble.html" hreflang="en" />
-<link rel="alternate" href="http://book.org/en/preamble.html" hreflang="x-default" />
-<!--<link rel="alternate" href="https://book.earthen.io/fr/preamble.html" hreflang="fr" />
-<link rel="alternate" href="https://book.earthen.io/es/preamble.html" hreflang="es" />
-<link rel="alternate" href="https://book.earthen.io/id/preamble.html" hreflang="id" />-->
+<link rel="canonical" href="https://book.earthen.io/en/not-published.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/not-published.html" hreflang="en" />
+<link rel="alternate" href="http://book.org/en/not-published.html" hreflang="x-default" />
+<!--<link rel="alternate" href="https://book.earthen.io/fr/not-published.html" hreflang="fr" />
+<link rel="alternate" href="https://book.earthen.io/es/not-published.html" hreflang="es" />
+<link rel="alternate" href="https://book.earthen.io/id/not-published.html" hreflang="id" />-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Preamble | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-<meta name="description" content="Welcome to the Earthbook edition of the Tractatus Ayyew">
+<title>Not yet published | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="Not yet published, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="3 minutes" /> 
+<meta name="twitter:data1" content="1 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:url"           content="https://tractatus.earthen.io/en/preamble.html">
-<meta property="og:title"         content="Preamble | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew"/>
+<meta property="og:title"         content="Not yet Published | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="Sorry, this chapter isn't yet published."/>
 
 
 <style>
@@ -158,10 +158,10 @@ background-color: var(--slider);
 <div id="ct-chapter-top">
   <div id="ct-tc-menu" onclick="openContents()"></div>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-    <div id="ct-chapter-title">Preamble</div>   
+    <div id="ct-chapter-title">Not Yet Published</div>   
     <div id="ct-book-title">Tractatus Ayyew</div>
-    <div id="ct-chap-location">Introduction</div>
-    <div id="ct-word-count"><i>501 words</i></div>
+    <div id="ct-chap-location">Sorry!</div>
+    <div id="ct-word-count"><i>This chapter hasn't yet been released.</i></div>
   </div>
 </div>
 
@@ -183,92 +183,31 @@ background-color: var(--slider);
 <!--BUY-CURTAIN-->
 <buy-curtain></buy-curtain>
 
-<!--ECO-CURTAIN
-<eco-curtain></eco-curtain>-->
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
 
-
-<div id="eco-curtain2" class="eco-overlay">
-  <div class="overlay-content-eco">         
-      <div>
-          <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
-      </div>  
-          <h1>Earthbooks are Green.</h1>
-          <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3>
-          <div id="wcb" class="carbonbadge"></div>
-          <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
-      <div class="eco-text">
-        <p>In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></p>
-      </div>
-      <div><h3><i>The Medium is the Message.</i></h3></div>
-      <span style="cursor:pointer" onclick="closeEco()">
-          <div id="bottom-close-button">
-              <img src="../svgs/bottom-x.svg">
-          </div>
-      </span>
-  </div>
-</div>
+    
 
 
 
 <!-- Page Title Section-->
 
 <div id="ct-chapt-graphic" class="background-0">
-</div>
 
+</div>
+<div id="progress-bar">
+  <div class="progress"></div>
+</div>
 <div id="ct-main">
 
+  <p>Register to our newsletter to be notified when this and other chapters are posted.</p>
 
-<!-- MAIN TEXT CONTENT of the Page
-  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
--->
-
-<div class="lead-page-paragraph">
-
- DO YOU like to have a glimpse of a book's background before you begin?  Or perhaps you appreciate a quick summary before jump in?  Well, either way, you're in luck.
-
-</div>
-
-
-<div class="page-paragraph">
-     
-    <p>In the culture of the Igorot people of Northern Luzon that inspires this particular book, story telling is central.  In the stone plazas (<i>dap'ay</i>) that are found at center of every village, stories are told to introduce people, lessons and ideas.  It is an example, that we will follow in the chapters ahead.</p>
-
-    <p>Banayan and I will begin with our own story— how we came to meet and how this book was begun.  We then provide a short sentence, a long sentence and a paragraph that summarizes this book and the theory it contains.</p>
-
-    <p>Of course, the means by which a story (and a theory) is told is just as important as the place it is told.  In the dap'ay, stories were best told around a fire, with the listeners gathered around in a circle.<p>
-
-    <p>While, our book can't recreate that particular atmosphere, we've nonetheless put great care in its presentation and publication.  We felt it that the medium by which our theory is published, read and distributed is just as important as the words it contains.  Afterall, what good would an ethics be, if it couldn't follow its coucil?  In this way, the book before you is what we're calling, <i>an Earthbook</i>—  an Earth and reader friendly digital format that embodies regenerative social and ecological principles.
-      
-
-    <p>Hand coded from the ground up, the Earthbook format is optimized to green its ecological impacts.  Designed for ultra-low-file size, fast and efficient loading to minimize its digital emissions impact while enabling the the authors to track, account, disclose their carbon, plastic and biodiversity impacts.
-    
-    <p>Speaking of code, the Earthbook is 100% open source.  Crafted from fully open and non-proprietary web protocols so that it can be easily and freely read on any device using a web browser.  You can find a link at the bottom of each page to its page code and content hosted in an open github repository.  In this way, the Earthbook is open to collaborative improvement, translation and contextualization.  Fixes, updates, improvements and translation can be pushed by the reader.  New versions and translations may be forked.</p>
-
-    <p>Finally, Earthbooks are designed to be easily shared and referenced. Each section of the book has its own webpage and URL.  For example, this particular section can be found at https://book.earthen.io/preamble.html  </p>
-
-    <p>While the content and code of the Earthbook are made freely available, the published eBook and print versions are available for sale on the site. Sales are 100% independent of corporate platforms and middlemen. 97% of the payment goes direct to the authors.</p>
-
-    <p>The full content of the Tractatus Ayyew is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook code (developed specifically for the Tractatus Ayyew) is made available under a GNU 3.0 license.</p>
-
-    <br><br><br><br><br><br>
-
+  <?php require_once ("../manage.php");?>
   
-</div>
-
-
-
-</div>
+    </div>
 
           
-
-    Hello?
-
-  <div class="github-source">Page source code:<br>
-    <a href="https://github.com/russs95/earthbook/preamble.html">github.com/russs95/earthbook/preamble.html</a></div>
-
-
-
-
+</div>
 
 <div id="footer-chapter" style="margin-bottom: 0px;">
 
@@ -280,8 +219,8 @@ background-color: var(--slider);
     
      
       <div class="next-section">
-          <div class="next-sec">Next section:</div>
-          <div class="sec-name"><i>Preface</i></div>
+          <div class="next-sec">To the begining:</div>
+          <div class="sec-name"><i>Chapt.1 / Imagine</i></div>
       </div>
 
     </div>
@@ -289,15 +228,11 @@ background-color: var(--slider);
 
     <div class="footer-right">
    
-      <a href="preface.html"><div class="next-button">Next ➔</div></a>
-      
-
+      <a href="imagine.html"><div class="next-button">Go to Start ➔</div></a>
 
     </div>
   </div>
-  
 </div>
-
 
 <footer-chapter></footer-chapter>
           

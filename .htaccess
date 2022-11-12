@@ -1,16 +1,15 @@
 
-# END Wordfence WAF
-php_value max_execution_time = 180
 
-# New Ecobricks.org landing
 
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|webp|gif|js|swf|svg)$">
-Header set Cache-Control "max-age=31536000, public"
-</FilesMatch>
+# EartBook landing
 
-<FilesMatch "\.(css)$">
-Header set Cache-Control "max-age=536000, public"
-</FilesMatch>
+#<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|webp|gif|js|swf|svg)$">
+#Header set Cache-Control "max-age=31536000, public"
+#</FilesMatch>
+
+#<FilesMatch "\.(css)$">
+#Header set Cache-Control "max-age=536000, public"
+#</FilesMatch>
 
 #Alternate default index pages
 
