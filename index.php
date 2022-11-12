@@ -200,7 +200,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
             <br>
           
 
-          <div><h2><i>The Medium is the Message.</i></h2></div>
+          <div><h4><i>The Medium is the Message.</i></h4></div>
 
           
         
