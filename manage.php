@@ -11,7 +11,6 @@ if (!$_POST) {
            size="40" maxlength="150"  /></p></div>
 
     <fieldset>
-    <legend>Action:</legend><br/>
     <input type="radio" id="action_sub" name="action"
            value="sub" checked />
     <label for="action_sub">subscribe</label><br/>
@@ -19,8 +18,7 @@ if (!$_POST) {
            value="unsub" />
     <label for="action_unsub">unsubscribe</label>
     </fieldset>
-
-    <button type="submit" name="submit"  value="submit">Submit</button>
+    <button type="submit" name="submit"  value="submit" class="e-reg">Register</button>
     </form>
   END_OF_BLOCK;
   } else if (($_POST) && ($_POST['action'] == "sub")) {
