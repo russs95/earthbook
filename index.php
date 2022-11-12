@@ -193,7 +193,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
           </div>
           
               <h1>Earthbooks are Green.</h1>
-              <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint. 
+              <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3> 
 
           <div id="wcb" class="carbonbadge wcb-d"></div>
     
@@ -212,14 +212,6 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 </div>
 
     
-     
- 
-    
-     <!-- 3. Instantiate clipboard
-     <script>
-
-     </script>
-    </div></div> -->
 
 
 <!-- PAGE CONTENT-->
@@ -245,7 +237,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
             <?php require_once ("../manage.php");?>
           
-            <!--<div style="margin-top:-140px"></div>-->
+         
         </div>
 
 		<div id="main">
@@ -293,49 +285,49 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
                 <div class="book-box-header">Book One</div>
 
-                <a href="imagine">
+                <a href="imagine.html">
                 <div class="chapter-top">    
                     <div class="chapter-name">Imagine</div>
                     <div class="word-count"><i>1,095 words</i></div>
                 </div>
                 </a>
 
-                <a href="plastic1">
+                <a href="plastic1.html">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Plastic 1.0</div>
                     <div class="word-count"><i>623 words</i></div>
                 </div>
                 </a>
 
-                <a href="stellar">
+                <a href="stellar.html">
                 <div class="chapter-middle">
                     <div class="chapter-name">A Stellar Story</div>
                     <div class="word-count"><i>1,021 words</i></div>
                 </div>
                 </a>
 
-                <a href="patterns">
+                <a href="patterns.html">
                     <div class="chapter-middle">
                         <div class="chapter-name">Patterns of Process</div>
                         <div class="word-count"><i>837 words</i></div>
                 </div>
                 </a>
 
-                <a href="kincentric">
+                <a href="kincentric.html">
                     <div class="chapter-middle">
                         <div class="chapter-name">Kindred Relations</div>
                         <div class="word-count"><i>1,508 words</i></div>
                 </div>
                 </a>
 
-                <a href="nature">
+                <a href="nature.html">
                     <div class="chapter-middle">
                         <div class="chapter-name">Nature's Fallacy</div>
                         <div class="word-count"><i>973 words</i></div>
                 </div>
                 </a>
 
-                <a href="earthen"><div class="chapter-bottom">
+                <a href="earthen.html"><div class="chapter-bottom">
                     <div class="chapter-name">The Earthen Ways</div>
                     <div class="word-count"><i>784 words</i></div>
                 </div>

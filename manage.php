@@ -8,7 +8,7 @@ if (!$_POST) {
 
      <!--<p><label for="email">Your E-Mail Address:</label><br/>-->
     <input type="email" id="email" name="email"
-           size="40" maxlength="150" /></p>
+           size="40" maxlength="150" class="e-register" /></p>
 
            <fieldset>
     <legend>Action:</legend><br/>

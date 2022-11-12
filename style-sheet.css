@@ -3188,7 +3188,7 @@ input:checked + label.toggle svg.moon {
   display: none !important;
 }
 
-#side input {
+input .e-register {
 -moz-appearance: none;
     -webkit-appearance: none;
     align-items: center;
