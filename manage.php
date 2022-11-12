@@ -7,8 +7,8 @@ if (!$_POST) {
      <form method="POST" action="$_SERVER[PHP_SELF]">
 
      <!--<p><label for="email">Your E-Mail Address:</label><br/>-->
-    <input type="email" id="email" name="email"
-           size="40" maxlength="150" class="e-register" /></p>
+    <div class="this-one"><input type="email" id="email" name="email"
+           size="40" maxlength="150"  /></p></div>
 
            <fieldset>
     <legend>Action:</legend><br/>
