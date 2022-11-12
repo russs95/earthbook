@@ -39,7 +39,8 @@ class FooterChapter extends HTMLElement {
   
   <div class="footer-size" style="height:30px;">
 
-    <div class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px;" onclick="openEarthbook()">What is an Earthbook?</a></div>
+    <div class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px; padding-top: 20px;
+    padding-bottom: 20px;" onclick="openEarthbook()">What is an Earthbook?</a></div>
 
     <div class="github-source">Page source code:<br>
     <a href="https://github.com/russs95/earthbook/">github.com/russs95/earthbook/</a></div>
@@ -68,7 +69,7 @@ customElements.define('footer-chapter', FooterChapter);
 function openFooter() {
   var x = document.getElementById("footer-chapter");
   if (x.style.marginBottom === "0px") {
-    x.style.marginBottom = "140px";
+    x.style.marginBottom = "150px";
   
   } else {
     x.style.marginBottom = "0px";
