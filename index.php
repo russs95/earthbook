@@ -193,11 +193,15 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
           </div>
           
               <h1>Earthbooks are Green.</h1>
-              <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3><br> 
+              <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3>
 
-              <div id="wcb" class="carbonbadge wcb-d"></div>
+              <div id="wcb" class="carbonbadge wcb"></div>
            
             <br>
+            <div class="eco-text">
+                In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
+            </div>
+
           
 
           <div><h4><i>The Medium is the Message.</i></h4></div>

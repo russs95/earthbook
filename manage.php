@@ -48,7 +48,7 @@ if (!$_POST) {
                          VALUES('".$safe_email."')";
               $add_res = mysqli_query($mysqli, $add_sql)
                          or die(mysqli_error($mysqli));
-              $display_block = "<h5>Thanks for signing up!</h5>";
+              $display_block = "<h5>👍 You're signed up!</h5>";
 
               //close connection to MySQL
               mysqli_close($mysqli);
