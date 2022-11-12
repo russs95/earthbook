@@ -186,29 +186,20 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 
 <div id="eco-curtain" class="eco-overlay">
-
     <div class="overlay-content-eco">         
-          <div>
-              <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
-          </div>
-          
-              <h1>Earthbooks are Green.</h1>
-              <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint. 
-
-          <div id="wcb" class="carbonbadge wcb-d"></div>
-    
-          
-
-          <div><h2><i>The Medium is the Message.</i></h2></div>
-
-          
-        
-          <span style="cursor:pointer" onclick="closeEco()">
-           <div id="bottom-close-button">
-               <img src="../svgs/bottom-x.svg">
-           </div></span>
-          
-  </div>
+        <div>
+            <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
+        </div>  
+            <h1>Earthbooks are Green.</h1>
+            <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint. 
+        <div id="wcb" class="carbonbadge wcb-d"></div>
+        <div><h2><i>The Medium is the Message.</i></h2></div>
+        <span style="cursor:pointer" onclick="closeEco()">
+            <div id="bottom-close-button">
+                <img src="../svgs/bottom-x.svg">
+            </div>
+        </span>
+    </div>
 </div>
 
     
