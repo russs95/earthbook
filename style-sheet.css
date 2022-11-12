@@ -2251,7 +2251,7 @@ a:active {
   .action-btn {
 
     padding: 9px 5px 9px 5px;
-    
+    margin: 5px;
     flex-grow: 1;
     font-size: 0.88em;
   }
