@@ -14,12 +14,12 @@ Header set Cache-Control "max-age=536000, public"
 
 #Alternate default index pagesffffff
 
-DirectoryIndex  index.html index.php
+DirectoryIndex  index.php 
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^book.earthen.io$ 
-RewriteRule (.*)$ https://book.earthen.io/en/$ [R=301,L]
+RewriteCond %{HTTP_HOST} ^book.earthen.io
+RewriteRule (.*)$ https://book.earthen.io/en/index.php [R=301,L]
 </IfModule>
 
 
