@@ -10,7 +10,7 @@ if (!$_POST) {
     <div class="this-one"><input type="email" id="email" name="email"
            size="40" maxlength="150"  /></p></div>
 
-           <fieldset>
+        <!--   <fieldset>
     <legend>Action:</legend><br/>
     <input type="radio" id="action_sub" name="action"
            value="sub" checked />
@@ -18,7 +18,7 @@ if (!$_POST) {
     <input type="radio" id="action_unsub" name="action"
            value="unsub" />
     <label for="action_unsub">unsubscribe</label>
-    </fieldset>
+    </fieldset>-->
 
     <button type="submit" name="submit" placeholder="Type your email.." value="submit">Submit</button>
     </form>
@@ -45,13 +45,13 @@ if (!$_POST) {
                          VALUES('".$safe_email."')";
               $add_res = mysqli_query($mysqli, $add_sql)
                          or die(mysqli_error($mysqli));
-              $display_block = "<p>Thanks for signing up!</p>";
+              $display_block = "<h5>Thanks for signing up!</h5>";
 
               //close connection to MySQL
               mysqli_close($mysqli);
           } else {
               //print failure message
-              $display_block = "<p>You're already subscribed!</p>";
+              $display_block = "<h5>You're already subscribed!</h5>";
           }
       }
   } else if (($_POST) && ($_POST['action'] == "unsub")) {
