@@ -184,6 +184,8 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
               The carbon impact of an EarthBook is independently audited:<br><br>
           </div>-->
 
+         
+
 <div id="eco-curtain2" class="eco-overlay">
   <div class="overlay-content-eco">        
       <div>
