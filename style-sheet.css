@@ -2196,7 +2196,8 @@ cursor: pointer;
     text-align: center;
     text-decoration: none;
     transition: 0.3s;
-    cursor: pointer;  
+    cursor: pointer; 
+    margin: 5px; 
 
     display: block;
     margin: auto;
@@ -2250,8 +2251,8 @@ a:active {
 
   .action-btn {
 
-    padding: 6px 5px 6px 5px;
-    margin: 5px;
+    padding: 8px 5px 8px 5px;
+    
     flex-grow: 1;
     font-size: 0.88em;
   }
