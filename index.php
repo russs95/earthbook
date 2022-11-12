@@ -184,12 +184,12 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
               The carbon impact of an EarthBook is independently audited:<br><br>
           </div>-->
 
-          <div id="eco-curtain" class="eco-overlay">
+<div id="eco-curtain" class="eco-overlay">
   <div class="overlay-content-eco">         
       <div>
           <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
       </div>  
-          <h1>Earthbooks are Green.</h1>
+          <h1>EarthBooks are Green.</h1>
           <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3>
           <div id="wcb" class="carbonbadge"></div>
           <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
