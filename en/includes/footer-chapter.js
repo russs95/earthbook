@@ -36,6 +36,23 @@ class FooterChapter extends HTMLElement {
 
   </div>
   
+  <div class="footer-size" style="height:20px;">
+    
+  <div class="github-source">The source code for this page can be accessed and edited at:<br>
+    <a href="https://github.com/russs95/earthbook/">https://github.com/russs95/earthbook/</a></div>
+
+</div>
+
+
+
+</div>
+
+</div>
+    <div id="containerSepia"></div>
+    <div id="containerContrast"></div>
+    <div id="containerBrightness"></div>
+    
+</div>
 
 
 
