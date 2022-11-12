@@ -193,10 +193,11 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
           </div>
           
               <h1>Earthbooks are Green.</h1>
-              <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3> 
+              <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3><br> 
 
-          <div id="wcb" class="carbonbadge wcb-d"></div>
-    
+              <div id="wcb" class="carbonbadge wcb-d"></div>
+            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"></script>
+            <br>
           
 
           <div><h2><i>The Medium is the Message.</i></h2></div>
