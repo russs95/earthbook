@@ -338,11 +338,11 @@ margin: 0px auto !important;
 /* -------------------------------------------------------------------------- */
 
 
-.gitub-source {
+.github-source {
   font-family: 'Mulish';
   font-size: 0.8em;
   color: grey;
-  text-align: center;
+  text-align: right;
 margin: auto;
 padding-bottom: 20px;
 margin-top: -10px;
