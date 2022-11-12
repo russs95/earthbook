@@ -38,9 +38,10 @@ class FooterChapter extends HTMLElement {
   
   <div class="footer-size" style="height:20px;">
     
-  <div class="github-source">The source code for this page can be accessed and edited at:<br>
-    <a href="https://github.com/russs95/earthbook/">https://github.com/russs95/earthbook/</a></div>
-
+  <div class="github-source">Page source code:<br>
+  <a href="https://github.com/russs95/earthbook/preamble.html">github.com/russs95/earthbook/preamble.html</a>
+  </div>
+  
 </div>
 
 
