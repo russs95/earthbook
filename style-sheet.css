@@ -2995,6 +2995,15 @@ margin: 20px auto 20px auto;
   text-decoration: underline;
 }
 
+.eco-medium {
+  font-family: 'CooperLt', serif;
+  font-weight: 300;
+  font-style: italic;
+text-align: center;
+width: 100%;
+
+}
+
 
 
 @media screen and (max-width: 700px) {
@@ -3006,10 +3015,16 @@ margin: 20px auto 20px auto;
 .eco-header  {
   font-size: 1.7em;
   }
-  
+
 .eco-text {
 font-size: 1em;
 padding-bottom: 15px;
+}
+
+
+.eco-medium {
+  font-size: 1.8em;
+  margin: 20px auto 20px auto;
 }
 
 
@@ -3024,17 +3039,21 @@ padding-bottom: 15px;
     width: 80%;
   }
 
- 
-
   .eco-header  {
-    font-size: 3em;
-    padding-bottom: 20px;
+    font-size: 3.2em;
+    padding-bottom: 17px;
     }
 
     .eco-text {
-      font-size: 1.5em;
-      padding-bottom: 30px;
+      font-size: 1.7em;
+      padding-bottom: 35px;
       }
+
+      .eco-medium {
+        font-size: 2.3em;
+        margin: 20px auto 20px auto;
+      }
+      
 
 }
 
@@ -3050,6 +3069,16 @@ padding-bottom: 15px;
 padding-bottom: 40px;
     }
 
+    .eco-text {
+      font-size: 2em;
+      padding-bottom: 40px;
+      }
+
+      .eco-medium {
+        font-size: 2.6em;
+        margin: 20px auto 20px auto;
+      }
+      
 }
 
 

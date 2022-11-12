@@ -189,7 +189,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
           <div class="eco-header">The Earthbook format is hand-coded from the ground up to be Green.</div>
 
           <div class="eco-text">
-        In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
+        In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
       </div>
 
          
@@ -204,7 +204,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" preload></script>
          
       <br><br>
-      <div><h3><i>The Medium is the Message.</i></h3></div>
+      <div class="eco-medium">The Medium is the Message.</div>
       <span style="cursor:pointer" onclick="closeEco()">
           <div id="bottom-close-button">
               <img src="../svgs/bottom-x.svg">
