@@ -2978,12 +2978,12 @@ display: none;
 }
 
 .eco-header {
-  font-family: 'Mulish';
+  font-family:  'CooperLt', serif;
   text-align: center;
 }
 
 .eco-text {
-  font-family: 'CooperLt';
+  font-family: 'CooperLt', serif;
   font-weight: 300;
 font-size: 1.1em;
 text-align: center;
@@ -3021,8 +3021,13 @@ font-size: 0.9em;
     width: 80%;
   }
 
+  .eco-text {
+    font-size: 1.3em;
+    }
+
   .eco-header  {
-    font-size: 1.75em;
+    font-size: 3em;
+    padding-bottom: 40px;
     }
 
 }
@@ -3035,7 +3040,8 @@ font-size: 0.9em;
   }
 
   .eco-header  {
-    font-size: 2.5em;
+    font-size: 4em;
+padding-bottom: 40px;
     }
 
 }
