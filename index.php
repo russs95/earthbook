@@ -88,7 +88,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
  <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
  <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
-<!--9--><script src="includes/eco-curtain.js" type="text/javascript" defer></script>
+<!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
 
 
 
