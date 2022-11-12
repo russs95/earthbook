@@ -2980,6 +2980,10 @@ width: 70%;
 margin: 0px auto;
 }
 
+.eco-text a {
+  text-decoration: underline;
+}
+
 /*Carbon Badge 
 
 #wcb.wcb-d #wcb_a {

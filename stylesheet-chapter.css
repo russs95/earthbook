@@ -660,6 +660,7 @@ margin: auto;
 
   background-color: var(--deeper-accent-color);
   padding-top: 20px;
+  padding-bottom: 40px;
   justify-content: center;
 }
 
