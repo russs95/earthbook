@@ -3210,6 +3210,8 @@ input:checked + label.toggle svg.moon {
     border-radius: 25px;
     height: 42px;
     z-index: 10;
-    margin: 8px !important;
+    margin-top: 5px;
+    width: 80%;
+    padding: 0px 0px 0px 15px;
 
 }
