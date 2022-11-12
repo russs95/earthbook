@@ -33,7 +33,7 @@ class FooterChapter extends HTMLElement {
    
    
 
-    <div class="footer-settings-icon"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer; text-align:right; flex-grow:4; padding-right:0px; align-self:end;"></div></a>
+    <div class="footer-settings-icon" style="flex-grow:4; align-self:end;"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;"></div></a>
 
   </div>
   
