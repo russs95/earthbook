@@ -40,7 +40,7 @@ class FooterChapter extends HTMLElement {
   <div class="footer-size" style="height:30px;">
 
     <div class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px; padding-top: 20px;
-    padding-bottom: 20px;" onclick="openEarthbook()">What is an Earthbook?</a></div>
+    padding-bottom: 0px;" onclick="openEarthbook()">What is an Earthbook?</a></div>
 
     <div class="github-source">Page source code:<br>
     <a href="https://github.com/russs95/earthbook/">github.com/russs95/earthbook/</a></div>
