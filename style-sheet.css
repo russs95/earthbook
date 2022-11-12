@@ -3003,13 +3003,16 @@ margin: 20px auto 20px auto;
     width: 90%;
 }
 
+.eco-header  {
+  font-size: 1.7em;
+  }
+  
 .eco-text {
-font-size: 0.9em;
+font-size: 1em;
+padding-bottom: 15px;
 }
 
-.eco-header  {
-  font-size: 1.55em;
-  }
+
 
 
 
