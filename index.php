@@ -184,37 +184,27 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
               The carbon impact of an EarthBook is independently audited:<br><br>
           </div>-->
 
-
-<div id="eco-curtain" class="eco-overlay">
-
-    <div class="overlay-content-eco">         
-          <div>
-              <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
+          <div id="eco-curtain" class="eco-overlay">
+  <div class="overlay-content-eco">         
+      <div>
+          <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
+      </div>  
+          <h1>Earthbooks are Green.</h1>
+          <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3>
+          <div id="wcb" class="carbonbadge"></div>
+          <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+      <div class="eco-text">
+        <p>In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></p>
+      </div>
+      <div><h3><i>The Medium is the Message.</i></h3></div>
+      <span style="cursor:pointer" onclick="closeEco()">
+          <div id="bottom-close-button">
+              <img src="../svgs/bottom-x.svg">
           </div>
-          
-              <h1>Earthbooks are Green.</h1>
-              <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3>
-
-              <div id="wcb" class="carbonbadge wcb"></div>
-           
-            <br>
-            <div class="eco-text">
-                In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
-            </div>
-
-          
-
-          <div><h4><i>The Medium is the Message.</i></h4></div>
-
-          
-        
-          <span style="cursor:pointer" onclick="closeEco()">
-           <div id="bottom-close-button">
-               <img src="../svgs/bottom-x.svg">
-           </div></span>
-          
+      </span>
   </div>
 </div>
+
 
     
 
