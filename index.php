@@ -475,9 +475,6 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <footer-component></footer-component>
 
 
-<div class="arg">Page source code:<br>
-  <a href="https://github.com/russs95/earthbook/preamble.html">github.com/russs95/earthbook/preamble.html</a></div>
-
         
 </div>
 </body>
