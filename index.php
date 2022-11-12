@@ -58,7 +58,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <script src="../universal-javascript.js" defer></script>
 <script src="../clipboard.min.js"></script>
 <script src="../accessibility.js"></script>
-<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=1.0"></script>
 <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
 
 <!--
@@ -196,7 +196,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
               <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3><br> 
 
               <div id="wcb" class="carbonbadge wcb-d"></div>
-            <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"></script>
+           
             <br>
           
 
