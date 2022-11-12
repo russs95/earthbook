@@ -186,7 +186,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
         <img src="../icons/eco-green.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
       </div>  -->
         
-          <h2>The Earthbook format is hand-coded from the ground up to be Green.</h2>
+          <div class="eco-header">The Earthbook format is hand-coded from the ground up to be Green.</div>
 
          
 
