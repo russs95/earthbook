@@ -6,7 +6,7 @@ if (!$_POST) {
      $display_block = <<<END_OF_BLOCK
      <form method="POST" action="$_SERVER[PHP_SELF]">
 
-     <p><label for="email">Your E-Mail Address:</label><br/>
+     <!--<p><label for="email">Your E-Mail Address:</label><br/>-->
     <input type="email" id="email" name="email"
            size="40" maxlength="150" /></p>
 
@@ -20,7 +20,7 @@ if (!$_POST) {
     <label for="action_unsub">unsubscribe</label>
     </fieldset>
 
-    <button type="submit" name="submit" value="submit">Submit</button>
+    <button type="submit" name="submit" placeholder="Type your email.." value="submit">Submit</button>
     </form>
   END_OF_BLOCK;
   } else if (($_POST) && ($_POST['action'] == "sub")) {

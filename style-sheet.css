@@ -3187,3 +3187,33 @@ input:checked + label.toggle svg.moon {
 .paypal-button-tagline {
   display: none !important;
 }
+
+#side input {
+-moz-appearance: none;
+    -webkit-appearance: none;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid  rgb(163, 163, 163);
+    color: #363636;
+    display: inline-flex;
+    font-size: 15px;
+    height: 32px;
+    
+    line-height: 24px;
+
+
+    position: relative;
+    vertical-align: top;
+    box-shadow: inset 0 1px 2px hsla(0,0%,4%,.1);
+    max-width: 100%;
+    width: 100%;
+
+    color: #363535;
+  
+    transition: 0.3s;
+    border-radius: 25px;
+    height: 42px;
+    z-index: 10;
+    margin: 8px !important;
+
+}
