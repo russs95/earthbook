@@ -11,7 +11,7 @@ if (!$_POST) {
            size="40" maxlength="150"  /></p></div>
 
     
-    <button type="submit" name="submit"  value="submit" class="action-btn" style="width: 70%;
+    <button type="submit" name="submit"  value="submit" class="action-btn" style="width: 65%;
    
     font-size: 1.1em;
     margin: -25px auto;

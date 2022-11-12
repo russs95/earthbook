@@ -2197,8 +2197,7 @@ cursor: pointer;
     text-decoration: none;
     transition: 0.3s;
     cursor: pointer; 
-    margin: 5px; 
-
+    margin: 6px; 
     display: block;
     margin: auto;
 }
