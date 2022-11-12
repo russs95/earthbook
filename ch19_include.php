@@ -19,7 +19,7 @@ $mysqli = mysqli_connect("localhost", "ecobricks_earthbook",
 
      //check that email is not already in list
      $safe_email = mysqli_real_escape_string($mysqli, $email);
-     $check_sql = "SELECT id FROM SUBSCRIBERS
+     $check_sql = "SELECT id FROM subscribers
           WHERE email = '".$safe_email."'";
      $check_res = mysqli_query($mysqli, $check_sql)
           or die(mysqli_error($mysqli));
