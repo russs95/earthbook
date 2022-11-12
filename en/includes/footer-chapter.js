@@ -14,7 +14,7 @@ class FooterChapter extends HTMLElement {
 
 <div id="footer-settings">
 
-  <div class="footer-size" style="height:100px;">
+  <div class="footer-size" style="height:70px;">
 
     <div class="footer-settings-icon" style="cursor:pointer" ><a href="index.html"><img src="../icons/dash.svg"></a></div>
 
