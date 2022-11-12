@@ -3021,14 +3021,17 @@ font-size: 0.9em;
     width: 80%;
   }
 
-  .eco-text {
-    font-size: 1.3em;
-    }
+ 
 
   .eco-header  {
     font-size: 3em;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     }
+
+    .eco-text {
+      font-size: 1.5em;
+      padding-bottom: 30px;
+      }
 
 }
 
@@ -3050,16 +3053,15 @@ padding-bottom: 40px;
 /*Carbon Badge */
 
 #wcb.wcb-d #wcb_a {
-  color: #252b4d !important;
-  background: #8cbdda !important;
-  border-color: #529bc2 !important;
+  color: #2e2e2e !important;
+background: #27ad37 !important;
+border-color: #00a112 !important;
 }
 
 #wcb #wcb_a,
 #wcb #wcb_g {
-  border: 0.2em solid #8cbdda !important;
+  border: 0.2em solid #2cb03c !important;
 }
-*/  
 
 
 
