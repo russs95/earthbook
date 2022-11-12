@@ -58,7 +58,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <script src="../universal-javascript.js" defer></script>
 <script src="../clipboard.min.js"></script>
 <script src="../accessibility.js"></script>
-<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=1.0"></script>
+
 <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
 
 <!--
@@ -191,7 +191,8 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
       </div>  
           <h1>EarthBooks are Green.</h1>
           <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3>
-          <div id="wcb" class="carbonbadge"></div>
+          <div id="wcb" class="carbonbadge wcb-d"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
       <div class="eco-text">
         In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
       </div>
