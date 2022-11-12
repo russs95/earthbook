@@ -33,13 +33,13 @@ class FooterChapter extends HTMLElement {
    
    
 
-    <div class="footer-settings-icon"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page"></div></a>
+    <div class="footer-settings-icon"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer; text-align:right; flex-grow:4; padding-right:0px; align-self:end;"></div></a>
 
   </div>
   
   <div class="footer-size" style="height:30px;">
 
-    <div class="footer-settings-icon" style="cursor:pointer; text-align:center; flex-grow:5; padding-right:8px; align-self:center;" onclick="openEarthbook()">What is an Earthbook?</a></div>
+    <div class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px;" onclick="openEarthbook()">What is an Earthbook?</a></div>
 
     <div class="github-source">Page source code:<br>
     <a href="https://github.com/russs95/earthbook/">github.com/russs95/earthbook/</a></div>
