@@ -10,7 +10,13 @@ if (!$_POST) {
     <div class="this-one"><input type="email" id="email" name="email"  placeholder="Want more? Enter email.."
            size="40" maxlength="150"  /></p></div>
 
-    <fieldset style="display:none;">
+    
+    <button type="submit" name="submit"  value="submit" class="action-btn" style="width: 70%;
+    margin-top: -30px;
+    font-size: 1.1em;
+    margin: -30px auto;
+    border-radius: 0px 0px 20px 20px;">Register</button>
+    <fieldset>
     <input type="radio" id="action_sub" name="action"
            value="sub" checked />
     <label for="action_sub">subscribe</label><br/>
@@ -18,11 +24,6 @@ if (!$_POST) {
            value="unsub" />
     <label for="action_unsub">unsubscribe</label>
     </fieldset>
-    <button type="submit" name="submit"  value="submit" class="action-btn" style="width: 70%;
-    margin-top: -30px;
-    font-size: 1.1em;
-    margin: -30px auto;
-    border-radius: 0px 0px 20px 20px;">Register</button>
     </form>
   END_OF_BLOCK;
   } else if (($_POST) && ($_POST['action'] == "sub")) {
