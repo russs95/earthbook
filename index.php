@@ -461,7 +461,10 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
     
             </div>
 
-            <div id="wcb" class="carbonbadge wcb-d"></div>
+            <div class="arg">Page source code:<br>
+  <a href="https://github.com/russs95/earthbook/preamble.html">github.com/russs95/earthbook/preamble.html</a></div>
+
+</div>
             
         </div>
 
