@@ -2980,8 +2980,7 @@ display: none;
 .eco-text {
   font-family: 'Mulish';
 font-size: 1.1em;
-text-align: center !important;
-width: 70%;
+text-align: center;
 margin: 20px auto 20px auto;
 }
 

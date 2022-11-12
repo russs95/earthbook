@@ -177,24 +177,28 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <buy-curtain></buy-curtain>
 
 <!--ECO-CURTAIN
-<eco-curtain></eco-curtain>
-<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></h3>
+<eco-curtain></eco-curtain>-->
+ 
 
-          <div class="eco-text">
-              The carbon impact of an EarthBook is independently audited:<br><br>
-          </div>-->
+<div id="eco-curtain2" class="eco-overlay">
+  <div class="overlay-content-eco">         
+       <!-- <div>
+        <img src="../icons/eco-green.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
+      </div>  -->
+        
+          <h2>The Earthbook format is hand-coded from the ground up to be Green.</h2>
 
          
 
-<div id="eco-curtain2" class="eco-overlay">
-  <div class="overlay-content-eco">        
-      <div>
-          <img src="../icons/eco.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
-      </div>  
-          <h1>EarthBooks are Green.</h1>
-          <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3>
-          <div id="wcb" class="carbonbadge wcb-d"></div>
-<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">
+  <div><img src="../banners/disclose-light-350px.png" width="300px"></div></a>
+
+  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">
+    <div><img src="../banners/forearth-dark-350px.png" width="300px"></div></a>
+
+     <div id="wcb" class="carbonbadge wcb-d"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" preload></script>
+         
       <div class="eco-text">
         In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
       </div>
