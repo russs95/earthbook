@@ -7,10 +7,10 @@ if (!$_POST) {
      <form method="POST" action="$_SERVER[PHP_SELF]">
 
      <!--<p><label for="email">Your E-Mail Address:</label><br/>-->
-    <div class="this-one"><input type="email" id="email" name="email"
+    <div class="this-one"><input type="email" id="email" name="email"  placeholder="Want more? Enter email.."
            size="40" maxlength="150"  /></p></div>
 
-        <!--   <fieldset>
+    <fieldset>
     <legend>Action:</legend><br/>
     <input type="radio" id="action_sub" name="action"
            value="sub" checked />
@@ -18,9 +18,9 @@ if (!$_POST) {
     <input type="radio" id="action_unsub" name="action"
            value="unsub" />
     <label for="action_unsub">unsubscribe</label>
-    </fieldset>-->
+    </fieldset>
 
-    <button type="submit" name="submit" placeholder="Type your email.." value="submit">Submit</button>
+    <button type="submit" name="submit"  value="submit">Submit</button>
     </form>
   END_OF_BLOCK;
   } else if (($_POST) && ($_POST['action'] == "sub")) {
