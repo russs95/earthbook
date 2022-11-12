@@ -59,11 +59,11 @@
 
   #table-of-contents {
     background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat;
-    background-size: contain;
+    background-size: 30%;
     background-color: var(--slider); 
     color: var(--drop-cap);
   }
-  
+    
 
   .virtue img {
     filter: invert(100%);
