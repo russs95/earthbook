@@ -18,7 +18,7 @@ if (!$_POST) {
            value="unsub" />
     <label for="action_unsub">unsubscribe</label>
     </fieldset>
-    <button type="submit" name="submit"  value="submit" class="e-reg">Register</button>
+    <button type="submit" name="submit"  value="submit" class="action-btn">Register</button>
     </form>
   END_OF_BLOCK;
   } else if (($_POST) && ($_POST['action'] == "sub")) {
