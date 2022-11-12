@@ -387,8 +387,9 @@ display: none;
       font-family: "Mulish";
       font-size: 1em;
       margin: auto;
+      margin-right: 20px;
       flex-flow: row;
-      justify-content: center;
+      justify-content: end;
     }
 
     @media screen and (max-width: 699px) {
