@@ -16,7 +16,7 @@ class FooterChapter extends HTMLElement {
 
   <div class="footer-size" style="height:70px;">
 
-    <div class="footer-settings-icon" style="cursor:pointer" ><a href="index.html"><img src="../icons/dash.svg"></a></div>
+    <div class="footer-settings-icon" style="cursor:pointer" ><a href="index.php"><img src="../icons/home.svg"></a></div>
 
     <div class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew bookplate"></div>
     
