@@ -2989,6 +2989,36 @@ margin: 0px auto;
   text-decoration: underline;
 }
 
+
+
+@media screen and (max-width: 700px) {
+  
+  .overlay-content-eco {
+    width: 90%;
+}
+
+
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  
+  .overlay-content-eco {
+    width: 80%;
+  }
+
+}
+
+
+@media screen and (min-width: 1325px) {
+
+  .overlay-content-eco {
+    width: 75%;
+  }
+
+}
+
+
 /*Carbon Badge 
 
 #wcb.wcb-d #wcb_a {
