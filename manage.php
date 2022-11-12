@@ -91,13 +91,13 @@ if (!$_POST) {
       }
   }
   ?>
-  <!DOCTYPE html>
+  <!--<!DOCTYPE html>
   <html>
   <head>
   <title>Subscribe/Unsubscribe to a Mailing List</title>
   </head>
-  <body>
+  <body>-->
  <h1>Subscribe/Unsubscribe to a Mailing List</h1>
  <?php echo "$display_block"; ?>
- </body>
- </html>
+ <!--</body>
+ </html>-->
