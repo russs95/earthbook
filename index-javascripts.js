@@ -18,13 +18,7 @@ function scrollFunction() {
      document.getElementById("book-header-logo").style.display = "block"; 
      //document.getElementById("book-header-logo").style.width = "160px";
     document.getElementById("book-header-logo").style.height = "52px";
-    document.getElementById("book-header-logo").style.top = "5px";
-    
-    //document.getElementById("book-header-logo").style.margin = "auto";
-           
-    //document.getElementById("book-header-logo").style.marginBottom = "0"; 
-    //document.getElementById("mandala-day").style.background = "url('../svgs/tractatus-simple-mandala.svg') center no-repeat";
-     
+    document.getElementById("book-header-logo").style.top = "5px"
  
    } else {
      //BEFORE
@@ -47,18 +41,3 @@ function scrollFunction() {
    }
  }
 
-
-
-
-
-
-
-
-//document.getElementById("mandala-day").style.width = "60px";
-//
- //
- //document.getElementById("book-title").style.display = "none";
-
-     //document.getElementById("mandala-day").style.width = "";
-    //document.getElementById("mandala-day").style.background = "";
-    //document.getElementById("book-title").style.display = "unset";

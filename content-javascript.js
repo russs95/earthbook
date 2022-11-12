@@ -41,18 +41,3 @@ function scrollFunction() {
 }
  
 
-  
-
-
-/* Open table of contents someone clicks on the span element */
-function openContents2() {
-  document.getElementById("left-table-of-contents").style.width = "100%";
-  document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "100vh";
-}
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeContents2() {
-  document.getElementById("left-table-of-contents").style.width = "0%";
-  document.body.style.overflowY = "unset";
-  document.body.style.maxHeight = "unset";
-} 

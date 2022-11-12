@@ -192,7 +192,6 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
           <h1>EarthBooks are Green.</h1>
           <h3>An Earthbook is hand coded from the ground up to minimize its digital carbon footprint.</h3>
           <div id="wcb" class="carbonbadge"></div>
-          <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
       <div class="eco-text">
         In the writing and publishing an Earthbook, carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
       </div>
@@ -346,21 +345,21 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
                 </div>
                 </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">
                     <div class="chapter-name">3  |  The Ammonite's Example</div>
                     <div class="word-count"><i>not yet published</i></div>
                 </div>
                 </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                     <div class="chapter-middle">
                         <div class="chapter-name">4  |  The Polyp's Pattern</div>
                         <div class="word-count"><i>not yet published</i></div>
                     </div>
                     </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                     <div class="chapter-bottom">
                         <div class="chapter-name">5  |  The Mycorrhyzal's Awareness</div>
                         <div class="word-count"><i>not yet published</i></div>
@@ -372,7 +371,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
                 <div class="book-box-header">Book Three</div>
 
                 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-top">    
                     <div class="chapter-name">Plastic 2.0</div>
                     <div class="word-count"><i>not yet published</i></div>
@@ -380,7 +379,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
             </a>
                 
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Plastic Sequestration</div>
                     <div class="word-count"><i>not yet published</i></div>
@@ -388,13 +387,13 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
             </a>
                 
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Petro-capital Transition</div>
                     <div class="word-count"><i>not yet published</i></div>
                 </div>
                     
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-bottom">
                     <div class="chapter-name">Ad Pax Ayyew</div>
                     <div class="word-count"><i>not yet published</i></div>
@@ -403,56 +402,56 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
                 
                 <div class="book-box-header">Appendix</div>
             
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-top">    
                     <div class="chapter-name">Dedication</div>
                     <div class="word-count"><i>26 words</i></div>
                 </div>
             </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Ecological Accounting</div>
                     <div class="word-count"><i>48 words</i></div>
                 </div>
             </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">For-Earth Enterprise</div>
                     <div class="word-count"><i>20 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Credits & Acknowledgements</div>
                     <div class="word-count"><i>218 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Writing & Publishing</div>
                     <div class="word-count"><i>80 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Banayan & Russell</div>
                     <div class="word-count"><i>153 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Select Bibliography</div>
                     <div class="word-count"><i>728 words</i></div>
                 </div>
             </a>
 
-                <a href="not-published.html">
+                <a href="not-published.php">
                 <div class="chapter-bottom">
                     <div class="chapter-name">Glossary</div>
                     <div class="word-count"><i>342 words</i></div>
