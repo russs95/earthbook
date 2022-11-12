@@ -19,7 +19,7 @@ DirectoryIndex  index.html index.php
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^book.earthen.io$ 
-RewriteRule (.*)$ https://book.earthen.io/en/ [R=301,L]
+RewriteRule (.*)$ https://book.earthen.io/en/$ [R=301,L]
 </IfModule>
 
 
