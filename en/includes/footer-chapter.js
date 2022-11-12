@@ -28,7 +28,6 @@ class FooterChapter extends HTMLElement {
 
     <div class="footer-settings-icon"><img src="../icons/content.svg" style="cursor:pointer" onclick="openContents()"></div>
 
-    <div class="footer-settings-icon"><img src="../icons/eco.svg" style="cursor:pointer" onclick="openEco()"></div>
    
     <div class="footer-settings-icon" style="cursor:pointer; text-align:center; flex-grow:5; padding-right:8px; align-self:center;" onclick="openEarthbook()">What is an Earthbook?</a></div>
 
@@ -36,13 +35,9 @@ class FooterChapter extends HTMLElement {
 
   </div>
   
-  <div class="footer-size" style="height:20px;">
-    
-  <div class="github-source">Page source code:<br>
-  <a href="https://github.com/russs95/earthbook/preamble.html">github.com/russs95/earthbook/preamble.html</a>
-  </div>
-  
-</div>
+
+<div class="gitub-source">The source code for this page can be accessed and edited at:<br>
+<a href="https://github.com/russs95/earthbook/">https://github.com/russs95/earthbook/</a></div>
 
 
 
