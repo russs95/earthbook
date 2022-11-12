@@ -14,7 +14,7 @@ Header set Cache-Control "max-age=536000, public"
 
 #Alternate default index pagesffffff
 
-DirectoryIndex index.html index.php
+DirectoryIndex index.php index.html 
 
 <IfModule mod_rewrite.c>
 RewriteEngine On

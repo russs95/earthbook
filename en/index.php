@@ -61,8 +61,8 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
 <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
 
-
-<script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js" defer></script>
+<!--
+<script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js" defer></script>-->
 
 
 
