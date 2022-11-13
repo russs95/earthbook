@@ -2794,6 +2794,7 @@ display: none;
   right: 0;
   left: 0;
   margin: auto;
+  display: none;
 }
 
 .medium-message {
@@ -2939,7 +2940,7 @@ display: none;
 }*/
 
 
-.virtue img:hover, .virtue img:active
+.virtue:hover, .virtue:active
  {
  /* width: 135px;*/
   opacity: 1;
