@@ -120,7 +120,7 @@ function openOS() {
   var c = document.getElementById("free");
   var d = document.getElementById("rev");
   var e = document.getElementById("max");
-  if (x.style.opacity === "0") {
+  if (x.style.display === "none") {
     x.style.display = "block";
     y.style.display = "none";
     w.style.display = "none";
@@ -148,19 +148,19 @@ function openBio() {
   var c = document.getElementById("free");
   var d = document.getElementById("rev");
   var e = document.getElementById("max");
-  if (y.style.opacity === "0") {
-    x.style.opacity = "0";
-    y.style.opacity = "1";
-    w.style.opacity = "0";
-    z.style.opacity = "0";
-    a.style.opacity = "0";
-    b.style.opacity = "0";
-    c.style.opacity = "0";
-    d.style.opacity = "0";
-    e.style.opacity = "0";
+  if (y.style.display === "none") {
+    x.style.display = "none";
+    y.style.display = "block";
+    w.style.display = "none";
+    z.style.display = "none";
+    a.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "none";
+    d.style.display = "none";
+    e.style.display = "none";
 
   } else {
-    y.style.opacity = "0";
+    y.style.display = "none";
 }
 }
 
