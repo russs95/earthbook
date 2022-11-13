@@ -31,7 +31,7 @@ class FooterChapter extends HTMLElement {
    
    
 
-    <div class="footer-settings-icon" style="flex-grow:4; align-self:end;"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;"></div></a>
+    <div class="footer-settings-icon" style="flex-grow:4; align-self:center;"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;"></div></a>
 
   </div>
   
@@ -66,14 +66,20 @@ customElements.define('footer-chapter', FooterChapter);
 
 function openFooter() {
   var x = document.getElementById("footer-chapter");
+  var y = document.getElementById("footer-icon-left");
   if (x.style.marginBottom === "0px") {
     x.style.marginBottom = "150px";
+    y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
+ 
   
   } else {
     x.style.marginBottom = "0px";
+    y.style.background = "url(../svgs/footer-settings-button.svg) no-repeat left";
+
 }
 }
 
+/*
 function arrowUp() {
 var y = document.getElementById("footer-icon-left");
 if (y.style.backgroundSize === "45px") {
@@ -85,7 +91,7 @@ if (y.style.backgroundSize === "45px") {
   y.style.backgroundSize = "45px";
 
 }
-}
+}*/
 
 /*next:
  x.style.background = "url(svgs/footer-settings-button-over.svg) no-repeat center;";
