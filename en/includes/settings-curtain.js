@@ -9,15 +9,10 @@ class SettingsCurtain extends HTMLElement {
     <div id="left-settings-overlay" class="overlay-settings">
 
     <div id="left-close-button">
-            <span style="cursor:pointer" onclick="closeSettings()"><img src="../svgs/left-x.svg"></span>
+            <span style="cursor:pointer" onclick="closeSettings()" aria-label="Click to close settings page"><img src="../svgs/left-x.svg" alt="Close settings button"></span>
         </div>
     
-   <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeSettings()">&times;</a>-->
-    
     <div class="overlay-content-settings">
-            
-    <!--<div class="lead-page-paragraph">
-                <p class="accessibility-plugin-ac">Adjust the presentation of the EarthBook.</p></div>-->
             
                 <div class="compro-toggle">
                 <dark-mode-toggle
@@ -31,17 +26,17 @@ class SettingsCurtain extends HTMLElement {
                             </div>
                             
             <div id="languages">
-            <a href="../en/index.html"><div class="language-selector">EN</div></a>
-                <div class="language-selector" title="Désolé, pas encore traduit !">FR</div>
-                <div class="language-selector" title="Maaf, belum diterjemahkan!">IN</div>
+            <a href="../en/index.html" aria-label="Switch to the English version"><div class="language-selector">EN</div></a>
+                <div class="language-selector" title="Désolé, pas encore traduit !" aria-label="French not yet active">FR</div>
+                <div class="language-selector" title="Maaf, belum diterjemahkan!" aria-label="Indonesian not active">IN</div>
             </div> 
 
          
 
             <div id="text-adjust">
-                <button id="increase-plugin-ac">+A</button>
-                <button id="normal-plugin-ac">A</button>
-                <button id="decrease-plugin-ac">A-</button>
+                <button id="increase-plugin-ac" aria-label="Increase Text Size">+A</button>
+                <button id="normal-plugin-ac" aria-label="Return Text Size to Default">A</button>
+                <button id="decrease-plugin-ac" aria-label="Decrease Text Size">A-</button>
             </div>
 
             
@@ -92,17 +87,14 @@ class SettingsCurtain extends HTMLElement {
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Contrast</div></div>
             
-            <input type="range" id="range-scale" min="0" max="100" value="100" onchange="Contrast(this)">
+            <input label="Adjust EarthBook Contrast" type="range" id="range-scale" min="0" max="100" value="100" onchange="Contrast(this)">
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Sepia</div></div>
-            <input type="range" id="range-scale"  min="0" max="100" value="0" onchange="Sepia(this)">
+            <input label="Adjust EarthBook Sepia" type="range" id="range-scale"  min="0" max="100" value="0" onchange="Sepia(this)">
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Brightness</div></div>
-            <input type="range" id="range-scale" min="0" max="100" value="100" onchange="Brightness(this)">
+            <input label="Ajust Earthbook Brightness" type="range" id="range-scale" min="0" max="100" value="100" onchange="Brightness(this)">
             
-            
-
-        
         </div>                                                              
 </div>
 

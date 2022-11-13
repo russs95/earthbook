@@ -12,10 +12,8 @@ class ShareCurtain extends HTMLElement {
     <div id="right-share-overlay" class="share-overlay">
 
     <div id="right-close-button">
-        <span style="cursor:pointer" onclick="closeShare()"><img src="../svgs/right-x.svg"></span>
+        <span style="cursor:pointer" onclick="closeShare()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
     </div>
-    <!--
-    <a href="javascript:void(0)" class="closebtn" onclick="closeShare()">&times;</a>-->
     
       <div class="share-overlay-content">
             
@@ -29,7 +27,7 @@ class ShareCurtain extends HTMLElement {
               <div id="page-url" class="copy-box" style="border-left-color: orange;" >
               </div>
             
-              <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url" onclick="confirmCopy()">
+              <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url" onclick="confirmCopy()" aria-label="Click to copy this chapter's URL to your clipboard">
                 <div class="copy-check">
                   <div id="check" style="color:green">
                     <span>✓</span>
@@ -41,13 +39,13 @@ class ShareCurtain extends HTMLElement {
             </div>
 
       <div>
-        <h4>Or copy the <a href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;">main URL</a> of the book.</h4>
+        <h4>Or copy the <a href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;" aria-label="Or copy the main Earthbook URL">main URL</a> of the book.</h4>
       </div>
 
       <div>
         <h6>And... no worries!  The content of this Earthbook is under a Creative-Commons ND-SA-AT 4.0 license .  This means you can freely share the links to this page, quote passages, download and share the PDF-- just be sure to attribute to this Earthbook and share in the way.</h6>
       </div>
-        <div><img src="../icons/cc-by-sa.svg" style="height: 35px"></div>
+        <div><img src="../icons/cc-by-sa.svg" alt="Creative Commons CC-BY-SA icon" style="height: 35px"></div>
   </div>
 </div>  
     `;

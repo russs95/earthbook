@@ -10,7 +10,7 @@ class Bookplate extends HTMLElement {
 
     <div class="overlay-content-bookplate">
 
-        <div id="bookplate-img"></div>
+        <div id="bookplate-img" alt="The Tractatus Ayyew Mandala"></div>
 
         <div id="bookplate-content"> 
           <h1 class="bookplate-title">Tractatus Ayyew</h1>
@@ -30,8 +30,8 @@ class Bookplate extends HTMLElement {
           <h6 style="color:grey">Published by Earthen.io</h6>
           
         
-          <div id="bottom-close-button" style="cursor:pointer" onclick="closeBookplate()">
-            <img src="../svgs/left-x.svg">
+          <div id="bottom-close-button" style="cursor:pointer" onclick="closeBookplate()" aria-label="Close this pop-up page">
+            <img src="../svgs/left-x.svg" alt="Bookplate close button">
         </div>
 
   
