@@ -148,7 +148,7 @@ function openBio() {
   var c = document.getElementById("free");
   var d = document.getElementById("rev");
   var e = document.getElementById("max");
-  if (x.style.opacity === "0") {
+  if (y.style.opacity === "0") {
     x.style.opacity = "0";
     y.style.opacity = "1";
     w.style.opacity = "0";
@@ -174,7 +174,7 @@ function openAcc() {
   var c = document.getElementById("free");
   var d = document.getElementById("rev");
   var e = document.getElementById("max");
-  if (x.style.opacity === "0") {
+  if (w.style.opacity === "0") {
     x.style.opacity = "0";
     y.style.opacity = "0";
     w.style.opacity = "1";
@@ -200,7 +200,7 @@ function openForE() {
   var c = document.getElementById("free");
   var d = document.getElementById("rev");
   var e = document.getElementById("max");
-  if (x.style.opacity === "0") {
+  if (z.style.opacity === "0") {
     x.style.opacity = "0";
     y.style.opacity = "0";
     w.style.opacity = "0";
@@ -226,7 +226,7 @@ function openCo2() {
   var c = document.getElementById("free");
   var d = document.getElementById("rev");
   var e = document.getElementById("max");
-  if (x.style.opacity === "0") {
+  if (a.style.opacity === "0") {
     x.style.opacity = "0";
     y.style.opacity = "0";
     w.style.opacity = "0";
@@ -254,7 +254,7 @@ function openCc() {
   var c = document.getElementById("free");
   var d = document.getElementById("rev");
   var e = document.getElementById("max");
-  if (x.style.opacity === "0") {
+  if (b.style.opacity === "0") {
     x.style.opacity = "0";
     y.style.opacity = "0";
     w.style.opacity = "0";
@@ -282,7 +282,7 @@ function openFree() {
   var c = document.getElementById("free");
   var d = document.getElementById("rev");
   var e = document.getElementById("max");
-  if (x.style.opacity === "0") {
+  if (c.style.opacity === "0") {
     x.style.opacity = "0";
     y.style.opacity = "0";
     w.style.opacity = "0";
@@ -309,7 +309,7 @@ function openRev() {
   var c = document.getElementById("free");
   var d = document.getElementById("rev");
   var e = document.getElementById("max");
-  if (x.style.opacity === "0") {
+  if (d.style.opacity === "0") {
     x.style.opacity = "0";
     y.style.opacity = "0";
     w.style.opacity = "0";
@@ -337,7 +337,7 @@ function openMax() {
   var c = document.getElementById("free");
   var d = document.getElementById("rev");
   var e = document.getElementById("max");
-  if (x.style.opacity === "0") {
+  if (e.style.opacity === "0") {
     x.style.opacity = "0";
     y.style.opacity = "0";
     w.style.opacity = "0";
@@ -349,7 +349,7 @@ function openMax() {
     e.style.opacity = "1";
 
   } else {
-  ed.style.opacity = "0";
+  e.style.opacity = "0";
 }
 }
 
