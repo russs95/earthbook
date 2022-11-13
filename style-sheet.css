@@ -349,8 +349,14 @@ padding-top: 10px;
 
 }
 
+.github-source a {
+  color: grey;
+}
 
-
+.github-source a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
 
 
 @font-face {
