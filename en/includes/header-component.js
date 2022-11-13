@@ -7,7 +7,7 @@ class Header extends HTMLElement {
     this.innerHTML = `
 
     <div id="earthbook-navbar">
-        <div id="settings-menu" style="cursor:pointer" onclick="openSettings()" aria-label="Open Reader Settings">
+        <div id="settings-menu" style="cursor:pointer" onclick="openSettings()" aria-label="Open Settings">
             <span ><img src="../svgs/left-menu.svg" alt="Settings icon"></span>
         </div>
 
@@ -23,7 +23,8 @@ class Header extends HTMLElement {
         </div>
 
         <div id="share-menu">
-        <span style="cursor:pointer" onclick="openShare()" aria-label="Click to open share book tool"><img src="../svgs/right-menu.svg" alt="Share icon"></span>
+          <span style="cursor:pointer" onclick="openShare()" aria-label="Click to open share book tool"><img src="../svgs/right-menu.svg" alt="Share icon"></span>
+        </div>
     </div>
       
     `;
