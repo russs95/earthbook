@@ -68,8 +68,8 @@ See full project repository at: https://github.com/russs95/earthbook
 
  <!--INCLUDES-->   
 
-<script src="../index-javascripts.js" defer></script>
-<script src="../universal-javascript.js" defer></script>
+<script src="../index-javascripts.js"></script>
+<script src="../universal-javascript.js"></script>
 <script src="../clipboard.min.js"></script>
 <script src="../accessibility.js"></script>
 
@@ -195,8 +195,6 @@ Must be updated for each page-->
 
 </style>
 
-
-
 </head>
 
 
@@ -210,7 +208,6 @@ Must be updated for each page-->
 <!--HEADER NAVBAR-->
 <header-component></header-component>
     
-
 <!--CONTENTS MENU-->
 <content-curtain></content-curtain>
 
