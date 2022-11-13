@@ -76,13 +76,13 @@ function openFooter() {
 
 function arrowUp() {
 var y = document.getElementById("footer-icon-left");
-if (y.style.width === "36px") {
-  y.style.width = "37px";
-  y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left 45px";
+if (y.style.backgroundSize === "45px") {
+  y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
+  y.style.backgroundSize = "46px";
 
 } else {
-  y.style.width = "36px";
-  y.style.background = "url(../svgs/footer-settings-button.svg) no-repeat left 45px";
+  y.style.background = "url(../svgs/footer-settings-button.svg) no-repeat left";
+  y.style.backgroundSize = "45px";
 
 }
 }
