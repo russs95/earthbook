@@ -85,8 +85,6 @@ See full project repository at: https://github.com/russs95/earthbook
 <link rel="preload" href="../light.css?v1.4" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../style-sheet.css?v1.4" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
-
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  
