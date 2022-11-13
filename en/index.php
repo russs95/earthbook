@@ -22,49 +22,66 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2022-10-31T09:14:13+00:00" />
 
-<!--BOOK META TAGS
-These tags will be consistent for the whole book-->
 
+ <!--Page Icons-->
+ <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+ <link rel="manifest" href="../favicons/site.webmanifest">
+
+
+	
+<link rel="canonical" href="https://book.earthen.io/en/"> 
+<link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" />
+<link rel="alternate" href="https://book.earthen.io/en/" hreflang="x-default" />
+
+<!--META TAGS-->
+
+<title>Tractatus Ayyew | An Earthen Ethic - Earthbook</title>
+
+<meta name="keywords" content="Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+
+<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
+
+<meta name="author" content="Earthen.io">
+<meta property="og:type" content="book" />
+<meta property="article:modified_time" content="2022-10-24T09:14:13+00:00" />
+<meta property="og:image:type" content="image/png" />
+<meta name="author" content="Tractatus Ayyew | An Earthen Ethic - Earthbook" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:label1" content="Est. reading time" />
+<meta name="twitter:data1" content="2 hours" /> 
+	
+<!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:site_name" content="Tractatus Ayyew" />
 <meta property="article:publisher" content="Earthen.io" />
-<meta name="author" content="Russell Maier & Banayan Angway">
-<meta property="og:type" content="book" />
-<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
-<link rel="manifest" href="../favicons/site.webmanifest">
+<meta property="og:url"           content="https://book.earthen.io/en/">
+<meta property="og:type"          content="website">
+<meta property="og:title"         content="Tractatus Ayyew - An Earthen Ethics">
+<meta property="og:description"   content="By Banayan Angway & Russell Maier  | Earthbook Edition."/>
+<meta property="og:image"         content="https://book.earthen.io/photos/earth-book-cover-1000px.jpg"/>
+<meta property="og:image:width" content="1000" />
+<meta property="og:image:height" content="1500" />
+<meta property="og:image:alt"     content="The Earth and its geometric pattern floating in space"/>
+  <meta property="og:locale" content="en_GB" />
 
-<meta name="twitter:card" content="summary" />
-<meta property="og:type"          content="book">
-<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg"/>
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1000px" />
-<meta property="og:image:height" content="1500px" />
+ <!--INCLUDES-->   
 
-<meta property="og:locale" content="en_GB" />
+<script src="../index-javascripts.js" defer></script>
+<script src="../universal-javascript.js" defer></script>
+<script src="../clipboard.min.js"></script>
+<script src="../accessibility.js"></script>
 
- <!-- INCLUDES
- Main Scripts-->   
- <script src="../index-javascripts.js" defer></script>
- 
- <script src="../universal-javascript.js" defer></script>
- <script src="../clip/dist/clipboard.min.js"></script>
- <script src="../accessibility.js" defer></script>
- <script type="module" src="https://unpkg.com/dark-mode-toggle" async></script>
- 
- <!-- Arc CDN Script without delay
-<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+<script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+
+<!--
+<script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js" defer></script>-->
 
 
- <!-- Style Sheets   
-All the css needed for this page-->
- 
- 
- <!--<link  rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
-<link rel="stylesheet" href="../acessibilidade.css" />
-<link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
+
+
+<!-- Style Sheets -->
 <link rel="preload" href="../light.css?v1.4" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../style-sheet.css?v1.4" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
@@ -73,9 +90,6 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  
-
- <!--Page Components
-All the page components required to build this page-->
 
  <!--1--><script src="includes/header-component.js" type="text/javascript" defer></script>
  <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
@@ -86,6 +100,7 @@ All the page components required to build this page-->
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
  <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
 <!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
+
 
  <!-- Fonts
 The requisite typography for the page-->
