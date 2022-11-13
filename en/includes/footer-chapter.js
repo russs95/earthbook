@@ -76,6 +76,22 @@ function openFooter() {
 
 function arrowUp() {
 var y = document.getElementById("footer-icon-left");
+if (y.style.width === "36px") {
+  y.style.width = "50px";
+
+} else {
+  y.style.width = "36px";
+
+}
+}
+
+/*next:
+ x.style.background = "url(svgs/footer-settings-button-over.svg) no-repeat center;";
+ 
+ url(svgs/footer-settings-button-up.svg) no-repeat left;
+ 
+function arrowUp() {
+var y = document.getElementById("footer-icon-left");
 if (y.style.background === "url(svgs/footer-settings-button-over.svg) no-repeat left;") {
   y.style.background = "url(svgs/footer-settings-button-up.svg) no-repeat left;";
 
@@ -85,5 +101,4 @@ if (y.style.background === "url(svgs/footer-settings-button-over.svg) no-repeat 
 }
 }
 
-/*next:
- x.style.background = "url(svgs/footer-settings-button-over.svg) no-repeat center;";*/
+*/
