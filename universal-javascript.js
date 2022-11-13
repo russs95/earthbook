@@ -52,6 +52,34 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 
 
 
+
+ function openOS() {
+  var x = document.getElementById("OS");
+  var y = document.getElementById("bio");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+    y.style.opacity = "0";
+  
+  } else {
+    x.style.opacity = "0";
+}
+}
+
+
+function openBio() {
+  var y = document.getElementById("bio");
+  var x = document.getElementById("OS");
+  if (y.style.opacity === "0") {
+    y.style.opacity = "1";
+    x.style.opacity = "0";
+  
+  } else {
+    y.style.opacity = "0";
+}
+}
+
+
+
 /*Conditionally either load the light or the dark stylesheet. The matching file
  will be downloaded with `highest`, the non-matching file with `lowest`
  priority. If the browser doesn't support `prefers-color-scheme`, the media

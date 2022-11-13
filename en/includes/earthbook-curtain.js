@@ -12,7 +12,7 @@ class Earthbook extends HTMLElement {
       <div class="overlay-content-earthbook">         
             <div>
                 <h1>Earthbooks are for Readers, Writers & Earth.</h1>
-                <h3>An Earthbook embodies regenerative principles in its writing, publishing & presentation.</h3>
+                <h3>An Earthbook embodies regenerative principles in its writing, publishing & presentation.  Click to learn more:</h3>
             </div>
 
             <div id="virtue-box">
@@ -109,26 +109,7 @@ customElements.define('earthbook-curtain', Earthbook);
 
 
 
-function openOS() {
-  var x = document.getElementById("OS");
-  if (x.style.opacity === "0") {
-    x.style.opacity = "1";
-  
-  } else {
-    x.style.opacity = "0";
-}
-}
 
-
-function openBio() {
-  var x = document.getElementById("bio");
-  if (x.style.opacity === "0") {
-    x.style.opacity = "1";
-  
-  } else {
-    x.style.opacity = "0";
-}
-}
 
 
 /*
