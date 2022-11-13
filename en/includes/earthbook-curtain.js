@@ -17,10 +17,10 @@ class Earthbook extends HTMLElement {
 
             <div id="virtue-box">
 
-                <div class="virtue" ><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Open Source" alt="Open Source" style="cursor:pointer" onclick="openOS()"><div id="OS" class="virtue-desc">The EarthBook source code is open to review, improvement and forking <a href="https://github.com/russs95/earthbook">on Github</a>.  This means that publishing an Earthbook can be done by anyone anywhere.</div>
+                <div class="virtue"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Open Source Code" alt="Open Source Code" style="cursor:pointer" onclick="openOS()"><div id="OS" class="virtue-desc">The EarthBook source code is open to review, improvement and forking <a href="https://github.com/russs95/earthbook">on Github</a>.  This means that publishing an Earthbook can be done by anyone anywhere.</div>
                 </div>
 
-                <div class="virtue" style="cursor:pointer" onclick="openBio()"><img src="../svgs/icon-biodiversity.svg"  width="100%" height="100%" title="Supporting Biodiveristy" alt="Supporting Biodiversity"><div id="bio" class="virtue-desc">During the writing and publishing of this book, the species supported in the enterprise physical space was tracked and accounted for.  <a href="https://russs.net/forest" target="_blank">See the publisher's full life list.</a></div>
+                <div class="virtue"><div style="cursor:pointer" onclick="openBio()"><img src="../svgs/icon-biodiversity.svg"  width="100%" height="100%" title="Supporting Biodiveristy" alt="Supporting Biodiversity"></div><div id="bio" class="virtue-desc">During the writing and publishing of this book, the species supported in the enterprise physical space was tracked and accounted for.  <a href="https://russs.net/forest" target="_blank">See the publisher's full life list.</a></div>
                 </div>
 
                 <div class="virtue" style="cursor:pointer" onclick="openAcc()"><img src="../svgs/icon-ecoaccounting.svg"  width="100%" height="100%" title="Ecological Accounting Kept" alt="Ecological Accounting Kept"><div id="acc" class="virtue-desc">Throughout the enterprise of writing and publishing an Earthbook impac, the carbon, plastic and biodiversity impacts were tracked, accounted and annually disclosed.  See the full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></div>
