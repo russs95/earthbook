@@ -2921,12 +2921,12 @@ display: none;
 
 
 
-
+/*
 
 .virtue:hover > .virtue-desc, .virtue:active > .virtue-desc
  {
   opacity: 1;
-}
+}*/
 
 
 .virtue:hover, .virtue:active
