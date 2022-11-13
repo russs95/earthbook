@@ -10,8 +10,6 @@ class FooterChapter extends HTMLElement {
     this.innerHTML = `
 
   
-
-
 <div id="footer-settings">
 
   <div class="footer-size" style="height:70px;">
