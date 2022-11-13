@@ -604,7 +604,7 @@ margin: auto;
   #footer-icon-left { 
     padding: 12px 20px 20px 0px;
     width: 36px;
-    background: url(svgs/footer-settings-button-up.svg) no-repeat left;
+    background: url(svgs/footer-settings-button.svg) no-repeat left;
     background-size: contain;
  
   }
