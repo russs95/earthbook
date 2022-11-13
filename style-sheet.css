@@ -2910,7 +2910,6 @@ display: none;
     padding: 15px;
  /*   width: 170px;
     height: 150px;*/
-    cursor: pointer;
   } 
 
   .virtue-desc {
@@ -2927,7 +2926,7 @@ display: none;
 }
 
 .virtue-desc a:hover {
-  text-decoration: none;
+  font-weight: 500;
 }
 
 
