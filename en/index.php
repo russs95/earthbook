@@ -77,17 +77,15 @@ All the css needed for this page-->
  <!--Page Components
 All the page components required to build this page-->
 
- <!--1--><script src="includes/header-component.js" type="text/javascript" async></script>
+ <!--1--><script src="includes/header-component.js" type="text/javascript" defer></script>
  <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
  <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
  <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
  <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
  <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
- <!--8--><script src="includes/footer-component.js" type="text/javascript" defer></script>
- <!--8b<script src="includes/footer-chapter.js" type="text/javascript" defer></script>-->
-  <!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
-
+ <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
+<!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
 
  <!-- Fonts
 The requisite typography for the page-->
