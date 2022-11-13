@@ -1,7 +1,7 @@
 <!--Welcome to the EarthBook Source code!  Composed of nothing but CSS, javascript and html the EarthBook format can be forked and used as the frame for your own book.  Just fill in your content.
 
-Concept and first version by Russell Maier, October 24th, 2022.  First used for the book Tractus Ayyew - An Earthen Ethics (all forked generic versions of the Earthbook are requested to leave this book in as the place holder text)-->
-    
+Concept and first version by Russell Maier, October 24th, 2022.  First used for the book Tractus Ayyew - An Earthen Ethics (all forked generic versions of the Earthbook are requested to leave this book in as the place holder text)
+
 Design by Russell Maier
 
 CSS Version 0.7.3
@@ -84,7 +84,8 @@ All the page components required to build this page-->
  <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
  <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
- <!--8b--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
+ <!--8--><script src="includes/footer-component.js" type="text/javascript" defer></script>
+ <!--8b<script src="includes/footer-chapter.js" type="text/javascript" defer></script>-->
   <!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
 
 
