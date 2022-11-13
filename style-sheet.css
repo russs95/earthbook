@@ -2815,7 +2815,7 @@ display: none;
     font-size: 1.1em;
   }
 
-  #virtue-box-box {
+  .virtue-box-box {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -2864,7 +2864,7 @@ display: none;
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   
-  #virtue-box-box {
+  .virtue-box-box {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -2910,7 +2910,7 @@ display: none;
 
 @media screen and (min-width: 1325px) {
 
-  #virtue-box-box {
+  .virtue-box-box {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
