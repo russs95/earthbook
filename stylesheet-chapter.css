@@ -362,13 +362,13 @@ display: none;
       border-right: 1px solid grey;
       height: 45px;
       background: url(svgs/footer-settings-button.svg) no-repeat left;
-      background-size: 70px;
+      background-size: contain;
       margin-top: 8px;
     }
 
     #footer-icon-left:hover { 
       background: url(svgs/footer-settings-button-over.svg) no-repeat left;
-      background-size: 70px;
+      background-size: contain;
     }
 
 
@@ -605,13 +605,13 @@ margin: auto;
     padding: 12px 20px 20px 0px;
     width: 36px;
     background: url(svgs/footer-settings-button.svg) no-repeat left;
-    background-size: 45px;
+    background-size: contain;
  
   }
 
   #footer-icon-left:hover { 
     background: url(svgs/footer-settings-button-over.svg) no-repeat left;
-    background-size: 45px;
+    background-size: contain;
   }
 
   .next-section {
