@@ -57,18 +57,21 @@ These tags will be consistent for the whole book-->
  <!-- Style Sheets   
 All the css needed for this page-->
  
- <link rel="stylesheet" href="/dark.css" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
- <link rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
+ <link rel="stylesheet" href="/dark.css" media="(prefers-color-scheme: dark)">
+ <!--<link  rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
 <link rel="stylesheet" href="../acessibilidade.css" />
-<link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">
+<link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
 
+<link rel="preload" href="../style-sheet.css?v1.4" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
  
 
  <!--Page Components
 All the page components required to build this page-->
 
- <!--1--><script src="includes/header-component.js" type="text/javascript" defer></script>
+ <!--1--><script src="includes/header-component.js" type="text/javascript" preload></script>
  <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
  <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
  <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
@@ -240,7 +243,7 @@ background-color: var(--slider);
 
     <p>Alas, while our book can't recreate that particular atmosphere, we've nonetheless put great care into its presentation and publication.  After all, the way an idea is expressed says just as much about it as the words it contains.  In this way, the Tractatus Ayyew is published first as an <i>Earthbook</i>—  an Earth and reader friendly format that is hand coded from the ground up to embody the principles that we'll be developing in the Tractatus Ayyew.</p>
 
-    <p>The culmination of a decade of dialogue and reflection that Banayan and I have shared,  the <i>Tractatus Ayyew</i> represents our culminating conviction that when it comes to the way we do things (from publishing a book, to managing an economy), the wisdom traditions of ancient indigenous cultures (like the Igorots) are of critical modern relevance.</p>
+    <p>The culmination of a decade of dialogue and reflection that Banayan and I have shared,  the <i>Tractatus Ayyew</i> represents our culminating conviction that when it comes to the way we do things (from publishing a book, to managing an economy), the wisdom traditions of ancient indigenous cultures<a href="footnotes">¹</a> (like the Igorots) are of critical modern relevance.</p>
 
     <p>Our title reflects this intersection of worlds.  In Latin, the word <i>tractatus</i> refers to the philosophical tradition of a treatise— a systematic exposition of a particular concept.  In Kan’kan’ue, the word <i>ayyew</i> refers to the virtue of cyclic ecological integration that guides the culture of the Igorot people. </p>
 
