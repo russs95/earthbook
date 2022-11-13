@@ -2920,6 +2920,14 @@ display: none;
 }
 
 
+.virtue-desc a {
+  text-decoration: underline;
+}
+
+.virtue-desc a:hover {
+  text-decoration: none;
+}
+
 
 /*
 

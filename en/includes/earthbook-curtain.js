@@ -26,22 +26,22 @@ class Earthbook extends HTMLElement {
                 <div class="virtue" style="cursor:pointer" onclick="openAcc()"><img src="../svgs/icon-ecoaccounting.svg"  width="100%" height="100%" title="Ecological Accounting Kept" alt="Ecological Accounting Kept"><div id="acc" class="virtue-desc">Throughout the enterprise of writing and publishing an Earthbook impac, the carbon, plastic and biodiversity impacts were tracked, accounted and annually disclosed.  See the full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a></div>
                 </div>
 
-                <div class="virtue" style="cursor:pointer" onclick="openForE()"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="For-Earth Enterprise" alt="For-earth Enterprise"><div id="forE" class="virtue-desc">The net impact of the writing and publishing of the book was the subtraction of carbon.</div>
+                <div class="virtue" style="cursor:pointer" onclick="openForE()"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="For-Earth Enterprise" alt="For-earth Enterprise"><div id="fore" class="virtue-desc">The net impact of the writing and publishing of the book was the subtraction of carbon.</div>
                 </div>
 
-                <div class="virtue"><img src="../svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Net-Subtractive Carbon Impact" alt="Net-Subtractive Carbon Impact"><div class="virtue-desc">The Earthbook format is designed from the ground up to have a minimal carbon footprint.  <div id="wcb" class="carbonbadge wcb-d"></div></div>
+                <div class="virtue" style="cursor:pointer" onclick="openCo2()"><img src="../svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Net-Subtractive Carbon Impact" alt="Net-Subtractive Carbon Impact"><div id="CO2" class="virtue-desc">The Earthbook format is designed from the ground up to have a minimal carbon footprint.</div>
                 </div>
 
-                <div class="virtue"><img src="../svgs/icon-creativecommons.svg"  width="100%" height="100%" title="Creative Commons" alt="Creative Commons License"><div class="virtue-desc">The code and content of this book are licensed under a Creative Commons BY-SA-ND 4.0 License.</div>
+                <div class="virtue" style="cursor:pointer" onclick="openCc()"><img src="../svgs/icon-creativecommons.svg"  width="100%" height="100%" title="Creative Commons" alt="Creative Commons License"><div id="cc" class="virtue-desc">The code and content of this book are licensed under a Creative Commons BY-SA-ND 4.0 License.</div>
                 </div>
 
-                <div class="virtue"><img src="../svgs/icon-readfreely.svg"  width="100%" height="100%" title="Read Freely" alt="Read Freely"><div class="virtue-desc">This book is available to read freely online and as a downloadable PDF.</div>
+                <div class="virtue" style="cursor:pointer" onclick="openFree()"><img src="../svgs/icon-readfreely.svg"  width="100%" height="100%" title="Read Freely" alt="Read Freely"><div id="free" class="virtue-desc">This book is available to read freely online and as a downloadable PDF.</div>
                 </div>
  
-                <div class="virtue"><img src="../svgs/icon-revenue.svg"  width="100%" height="100%" title="Support Independent Publishing" alt="Support Independent Publishing"><div class="virtue-desc">Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of the <span style="cursor:pointer" onclick="openBuy()">sales of book sales</span> go to the authors.</div>
+                <div class="virtue" style="cursor:pointer" onclick="openRev()"><img src="../svgs/icon-revenue.svg"  width="100%" height="100%" title="Support Independent Publishing" alt="Support Independent Publishing"><div id="rev" class="virtue-desc">Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of the <span style="cursor:pointer" onclick="openBuy()">sales of book sales</span> go to the authors.</div>
                 </div>
 
-                <div class="virtue"><img src="../svgs/icon-accessibility.svg"  width="100%" height="100%" title="Accessibility Maximized" alt="Accessibility Maximized"><div class="virtue-desc">Earthbooks are designed from the ground up to be easy on the eyes, accessible, and multi-lingual.</div>
+                <div class="virtue" style="cursor:pointer" onclick="openMax()"><img src="../svgs/icon-accessibility.svg"  width="100%" height="100%" title="Accessibility Maximized" alt="Accessibility Maximized"><div id="max" class="virtue-desc">Earthbooks are designed from the ground up to be easy on the eyes, accessible, and multi-lingual.</div>
                 </div>
 
             </div>
@@ -114,12 +114,22 @@ function openOS() {
   var x = document.getElementById("OS");
   var y = document.getElementById("bio");
   var w = document.getElementById("acc");
-  var z = document.getElementById("ForE");
+  var z = document.getElementById("fore");
+  var a = document.getElementById("co2");
+  var b = document.getElementById("cc");
+  var c = document.getElementById("free");
+  var d = document.getElementById("rev");
+  var e = document.getElementById("max");
   if (x.style.opacity === "0") {
     x.style.opacity = "1";
     y.style.opacity = "0";
     w.style.opacity = "0";
     z.style.opacity = "0";
+    a.style.opacity = "0";
+    b.style.opacity = "0";
+    c.style.opacity = "0";
+    d.style.opacity = "0";
+    e.style.opacity = "0";
 
   } else {
     x.style.opacity = "0";
@@ -127,21 +137,222 @@ function openOS() {
 }
 
 
+
 function openBio() {
-  var y = document.getElementById("bio");
   var x = document.getElementById("OS");
+  var y = document.getElementById("bio");
   var w = document.getElementById("acc");
-  var z = document.getElementById("ForE");
-  if (y.style.opacity === "0") {
-    y.style.opacity = "1";
+  var z = document.getElementById("fore");
+  var a = document.getElementById("co2");
+  var b = document.getElementById("cc");
+  var c = document.getElementById("free");
+  var d = document.getElementById("rev");
+  var e = document.getElementById("max");
+  if (x.style.opacity === "0") {
     x.style.opacity = "0";
+    y.style.opacity = "1";
     w.style.opacity = "0";
     z.style.opacity = "0";
-  
+    a.style.opacity = "0";
+    b.style.opacity = "0";
+    c.style.opacity = "0";
+    d.style.opacity = "0";
+    e.style.opacity = "0";
+
   } else {
     y.style.opacity = "0";
 }
 }
+
+function openAcc() {
+  var x = document.getElementById("OS");
+  var y = document.getElementById("bio");
+  var w = document.getElementById("acc");
+  var z = document.getElementById("fore");
+  var a = document.getElementById("co2");
+  var b = document.getElementById("cc");
+  var c = document.getElementById("free");
+  var d = document.getElementById("rev");
+  var e = document.getElementById("max");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "0";
+    y.style.opacity = "0";
+    w.style.opacity = "1";
+    z.style.opacity = "0";
+    a.style.opacity = "0";
+    b.style.opacity = "0";
+    c.style.opacity = "0";
+    d.style.opacity = "0";
+    e.style.opacity = "0";
+
+  } else {
+    w.style.opacity = "0";
+}
+}
+
+function openForE() {
+  var x = document.getElementById("OS");
+  var y = document.getElementById("bio");
+  var w = document.getElementById("acc");
+  var z = document.getElementById("fore");
+  var a = document.getElementById("co2");
+  var b = document.getElementById("cc");
+  var c = document.getElementById("free");
+  var d = document.getElementById("rev");
+  var e = document.getElementById("max");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "0";
+    y.style.opacity = "0";
+    w.style.opacity = "0";
+    z.style.opacity = "1";
+    a.style.opacity = "0";
+    b.style.opacity = "0";
+    c.style.opacity = "0";
+    d.style.opacity = "0";
+    e.style.opacity = "0";
+
+  } else {
+    z.style.opacity = "0";
+}
+}
+
+function openCo2() {
+  var x = document.getElementById("OS");
+  var y = document.getElementById("bio");
+  var w = document.getElementById("acc");
+  var z = document.getElementById("fore");
+  var a = document.getElementById("co2");
+  var b = document.getElementById("cc");
+  var c = document.getElementById("free");
+  var d = document.getElementById("rev");
+  var e = document.getElementById("max");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "0";
+    y.style.opacity = "0";
+    w.style.opacity = "0";
+    z.style.opacity = "0";
+    a.style.opacity = "1";
+    b.style.opacity = "0";
+    c.style.opacity = "0";
+    d.style.opacity = "0";
+    e.style.opacity = "0";
+
+  } else {
+    a.style.opacity = "0";
+}
+}
+
+
+
+function openCc() {
+  var x = document.getElementById("OS");
+  var y = document.getElementById("bio");
+  var w = document.getElementById("acc");
+  var z = document.getElementById("fore");
+  var a = document.getElementById("co2");
+  var b = document.getElementById("cc");
+  var c = document.getElementById("free");
+  var d = document.getElementById("rev");
+  var e = document.getElementById("max");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "0";
+    y.style.opacity = "0";
+    w.style.opacity = "0";
+    z.style.opacity = "0";
+    a.style.opacity = "0";
+    b.style.opacity = "1";
+    c.style.opacity = "0";
+    d.style.opacity = "0";
+    e.style.opacity = "0";
+
+  } else {
+    b.style.opacity = "0";
+}
+}
+
+
+
+function openFree() {
+  var x = document.getElementById("OS");
+  var y = document.getElementById("bio");
+  var w = document.getElementById("acc");
+  var z = document.getElementById("fore");
+  var a = document.getElementById("co2");
+  var b = document.getElementById("cc");
+  var c = document.getElementById("free");
+  var d = document.getElementById("rev");
+  var e = document.getElementById("max");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "0";
+    y.style.opacity = "0";
+    w.style.opacity = "0";
+    z.style.opacity = "0";
+    a.style.opacity = "0";
+    b.style.opacity = "0";
+    c.style.opacity = "1";
+    d.style.opacity = "0";
+    e.style.opacity = "0";
+
+  } else {
+    c.style.opacity = "0";
+}
+}
+
+
+function openRev() {
+  var x = document.getElementById("OS");
+  var y = document.getElementById("bio");
+  var w = document.getElementById("acc");
+  var z = document.getElementById("fore");
+  var a = document.getElementById("co2");
+  var b = document.getElementById("cc");
+  var c = document.getElementById("free");
+  var d = document.getElementById("rev");
+  var e = document.getElementById("max");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "0";
+    y.style.opacity = "0";
+    w.style.opacity = "0";
+    z.style.opacity = "0";
+    a.style.opacity = "0";
+    b.style.opacity = "0";
+    c.style.opacity = "0";
+    d.style.opacity = "1";
+    e.style.opacity = "0";
+
+  } else {
+    d.style.opacity = "0";
+}
+}
+
+
+
+function openMax() {
+  var x = document.getElementById("OS");
+  var y = document.getElementById("bio");
+  var w = document.getElementById("acc");
+  var z = document.getElementById("fore");
+  var a = document.getElementById("co2");
+  var b = document.getElementById("cc");
+  var c = document.getElementById("free");
+  var d = document.getElementById("rev");
+  var e = document.getElementById("max");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "0";
+    y.style.opacity = "0";
+    w.style.opacity = "0";
+    z.style.opacity = "0";
+    a.style.opacity = "0";
+    b.style.opacity = "0";
+    c.style.opacity = "0";
+    d.style.opacity = "0";
+    e.style.opacity = "1";
+
+  } else {
+  ed.style.opacity = "0";
+}
+}
+
 
 
 
