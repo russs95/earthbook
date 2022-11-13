@@ -3,7 +3,8 @@
 Concept and first version by Russell Maier, October 24th, 2022.  First used for the book Tractus Ayyew - An Earthen Ethics (all forked generic versions of the Earthbook are requested to leave this book in as the place holder text)-->
     
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    
 <head>
 
 <meta charset="UTF-8"> 

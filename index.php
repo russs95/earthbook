@@ -4,7 +4,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
     
 <!DOCTYPE html>
 <html>
-<head>
+<head> 
 
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
