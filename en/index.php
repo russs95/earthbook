@@ -47,7 +47,7 @@ These tags will be consistent for the whole book-->
 
  <!-- INCLUDES
  Main Scripts-->   
-
+ <script src="../index-javascripts.js" defer></script>
  <script src="../content-javascript.js" defer></script>
  <script src="../universal-javascript.js" defer></script>
  <script src="../clip/dist/clipboard.min.js"></script>
