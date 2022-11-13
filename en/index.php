@@ -88,7 +88,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
  <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
  <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
-<!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
+<!--9--><script src="includes/eco-curtain.js" type="text/javascript" defer></script>
 
 
 
@@ -176,42 +176,9 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <!--BUY-CURTAIN-->
 <buy-curtain></buy-curtain>
 
-<!--ECO-CURTAIN
-<eco-curtain></eco-curtain>-->
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
  
-
-<div id="eco-curtain2" class="eco-overlay">
-  <div class="overlay-content-eco">         
-       <!-- <div>
-        <img src="../icons/eco-green.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
-      </div>  -->
-        
-          <div class="eco-header">The Earthbook format is hand-coded from the ground up to be Green.</div>
-
-          <div class="eco-text">
-        In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
-      </div>
-
-         
-<!--
-<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">
-  <div><img src="../banners/disclose-light-350px.png" width="300px"></div></a>-->
-
-  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">
-    <div><img src="../banners/forearth-dark-350px.png" width="300px"></div></a>
-
-     <div id="wcb" class="carbonbadge wcb-d"></div>
-<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" preload></script>
-         
-      <br><br>
-      <div class="eco-medium">The Medium is the Message.</div>
-      <span style="cursor:pointer" onclick="closeEco()">
-          <div id="bottom-close-button">
-              <img src="../svgs/bottom-x.svg">
-          </div>
-      </span>
-  </div>
-</div>
 
 
     
