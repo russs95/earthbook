@@ -363,17 +363,20 @@ padding-top: 10px;
   font-family: "CooperLt";
   font-style: normal;
   src: url("fonts/CooperLightBT.ttf");
+  font-display: swap;
  }
 
  @font-face {
   font-family: "CooperLt";
   font-style: italic;
   src: url("fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
  }
 
  @font-face {
   font-family: "CooperLtMedium";
   src: url("fonts/CooperMediumBT.ttf");
+  font-display: swap;
  }
 
 
