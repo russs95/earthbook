@@ -23,21 +23,25 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.77403547"
-     inkscape:cx="391.45493"
-     inkscape:cy="499.33112"
+     inkscape:zoom="1.5480709"
+     inkscape:cx="336.54788"
+     inkscape:cy="523.55482"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g120457"
+     inkscape:current-layer="layer1"
      showguides="true"
      inkscape:guide-bbox="true">
     <sodipodi:guide
        position="180.60943,28.456608"
        orientation="0,-1"
        id="guide21364" />
+    <sodipodi:guide
+       position="83.437628,36.788541"
+       orientation="1,0"
+       id="guide1476" />
   </sodipodi:namedview>
   <defs
      id="defs2" />
@@ -52,11 +56,11 @@
        id="path14586" />
     <g
        id="g120457"
-       transform="matrix(0.73363972,-0.79816866,0.79816866,0.73363972,-41.744217,154.60443)"
+       transform="matrix(0.62209973,-0.63705337,0.67681791,0.58555001,-18.868072,141.70023)"
        style="stroke:#808080;stroke-width:2.42448;stroke-miterlimit:4;stroke-dasharray:none">
       <g
          id="g22814"
-         transform="matrix(-0.08410273,0.99645709,0.99645709,0.08410273,-33.758747,30.366493)">
+         transform="matrix(-0.08410273,0.99645709,0.99645709,0.08410273,-42.742922,38.624343)">
         <path
            style="fill:#666666;stroke:#808080;stroke-width:2.8215;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="m 65.699256,131.62116 36.547134,1.71702"
@@ -64,8 +68,8 @@
            sodipodi:nodetypes="cc" />
         <path
            style="fill:#666666;stroke:#808080;stroke-width:2.8215;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="M 65.699256,131.62116 66.244114,94.169305"
-           id="path1407"
+           d="M 65.454478,131.35472 66.817256,94.792705"
+           id="path1474"
            sodipodi:nodetypes="cc" />
       </g>
     </g>

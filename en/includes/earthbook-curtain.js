@@ -120,7 +120,7 @@ function openOS() {
 }
 
 
-function openOS() {
+function openBio() {
   var x = document.getElementById("bio");
   if (x.style.opacity === "0") {
     x.style.opacity = "1";
