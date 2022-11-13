@@ -107,7 +107,6 @@ class Earthbook extends HTMLElement {
 customElements.define('earthbook-curtain', Earthbook);
 
 
-/*  
 
 
 function openOS() {
@@ -120,6 +119,26 @@ function openOS() {
 }
 }
 
+
+
+/*
+
+function openOS() {
+  var x = document.getElementById("OS");
+  var y = document.getElementById("footer-icon-left");
+  if (x.style.marginBottom === "0px") {
+    x.style.marginBottom = "150px";
+    y.style.background = "url(../svgs/footer-settings-button.svg) no-repeat left";
+    y.style.backgroundSize = "contain";
+ 
+  
+  } else {
+    x.style.marginBottom = "0px";
+    y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
+    y.style.backgroundSize = "contain";
+
+}
+}
 
 <div class="virtue-display">
               
