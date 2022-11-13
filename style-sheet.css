@@ -2939,7 +2939,7 @@ display: none;
 }*/
 
 
-.virtue:hover, .virtue:active
+.virtue img:hover, .virtue img:active
  {
  /* width: 135px;*/
   opacity: 1;
