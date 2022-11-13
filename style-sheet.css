@@ -2815,8 +2815,10 @@ display: none;
     font-size: 1.1em;
   }
 
-  #virtue-box {
-    display: none;
+  #virtue-box-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   #virtue-box-mobile {
@@ -2862,6 +2864,12 @@ display: none;
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   
+  #virtue-box-box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  
   #virtue-box-mobile {
     display: flex;
     flex-wrap: nowrap;
@@ -2902,6 +2910,12 @@ display: none;
 
 @media screen and (min-width: 1325px) {
 
+  #virtue-box-box {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  
   #virtue-box-mobile {
     display: flex;
     flex-wrap: nowrap;
