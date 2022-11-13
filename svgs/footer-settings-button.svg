@@ -54,16 +54,20 @@
        id="g120457"
        transform="matrix(0.73363972,-0.79816866,0.79816866,0.73363972,-41.744217,154.60443)"
        style="stroke:#808080;stroke-width:2.42448;stroke-miterlimit:4;stroke-dasharray:none">
-      <path
-         style="fill:#666666;stroke:#808080;stroke-width:2.8215;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 76.480266,121.71186 36.547224,1.71702"
-         id="path120443"
-         sodipodi:nodetypes="cc" />
-      <path
-         style="fill:#666666;stroke:#808080;stroke-width:2.8215;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="M 76.480266,121.71186 77.025124,84.259885"
-         id="path1407"
-         sodipodi:nodetypes="cc" />
+      <g
+         id="g22814"
+         transform="matrix(-0.08410273,0.99645709,0.99645709,0.08410273,-47.77406,43.248739)">
+        <path
+           style="fill:#666666;stroke:#808080;stroke-width:2.8215;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="m 65.699256,131.62116 36.547134,1.71702"
+           id="path120443"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:#666666;stroke:#808080;stroke-width:2.8215;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           d="M 65.699256,131.62116 66.244114,94.169305"
+           id="path1407"
+           sodipodi:nodetypes="cc" />
+      </g>
     </g>
   </g>
 </svg>
