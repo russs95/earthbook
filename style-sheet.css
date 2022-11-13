@@ -2775,7 +2775,7 @@ display: none;
   justify-content: center;
   flex-flow: column;
   flex: 50%;
-  opacity: 0.8;
+  opacity: 0.7;
   cursor: pointer;
 }
 
@@ -2881,9 +2881,9 @@ display: none;
   } 
 
   .virtue-desc {
-    bottom: 280px;
+    bottom: 300px;
     width: 75%;
-    font-size: 1.9em;
+    font-size: 2.1em;
   }
 
 }
@@ -2912,9 +2912,9 @@ display: none;
   } 
 
   .virtue-desc {
-    bottom: 290px;
+    bottom: 320px;
     width: 55%;
-    font-size: 1.5em;
+    font-size: 2.2em;
   }
 
 }
