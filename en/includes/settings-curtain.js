@@ -87,13 +87,13 @@ class SettingsCurtain extends HTMLElement {
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Contrast</div></div>
             
-            <input aria-label="Contrast" type="range" id="range-scale" min="0" max="100" value="100" onchange="Contrast(this)">
+            <input aria-label="Contrast" type="range" id="contrast-range-scale" min="0" max="100" value="100" onchange="Contrast(this)">
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Sepia</div></div>
-            <input aria-label="Sepia" type="range" id="range-scale"  min="0" max="100" value="0" onchange="Sepia(this)">
+            <input aria-label="Sepia" type="range" id="sepia-range-scale"  min="0" max="100" value="0" onchange="Sepia(this)">
 
             <div class="settings-label"><div class="accessibility-plugin-ac">Brightness</div></div>
-            <input aria-label="Brightness" type="range" id="range-scale" min="0" max="100" value="100" onchange="Brightness(this)">
+            <input aria-label="Brightness" type="range" id="brightness-range-scale" min="0" max="100" value="100" onchange="Brightness(this)">
             
         </div>                                                              
 </div>

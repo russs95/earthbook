@@ -13,7 +13,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 <meta charset="UTF-8"> 
@@ -57,15 +57,17 @@ These tags will be consistent for the whole book-->
  <!-- Style Sheets   
 All the css needed for this page-->
  
- <link rel="stylesheet" href="/light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
- <link rel="stylesheet" href="/dark.css" media="(prefers-color-scheme: dark)">
+ 
  <!--<link  rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
 <link rel="stylesheet" href="../acessibilidade.css" />
 <link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
-
+<link rel="preload" href="../light.css?v1.4" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../style-sheet.css?v1.4" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
+
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  
 
  <!--Page Components
@@ -95,8 +97,7 @@ The requisite typography for the page-->
 <link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
 <link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
 <link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
-<link rel="preload" as="image" href="../svgs/tc-button-hover.svg">
-<link rel="preload" as="image" href="../svgs/tc-button.svg">
+
 
 
 <!--END OF GENERIC CONTENT-->
@@ -205,9 +206,9 @@ background-color: var(--slider);
     <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" preload></script>
 
     <div class="eco-medium">The Medium is the Message.</div>
-    <span style="cursor:pointer" onclick="closeEco()">
+    <span style="cursor:pointer" onclick="closeEco()" aria-label="Close">
         <div id="bottom-close-button">
-            <img src="../svgs/bottom-x.svg" alt="button to close info screen">
+            <img src="../svgs/bottom-x.svg" alt="Close button">
         </div>
     </span>
   </div>
