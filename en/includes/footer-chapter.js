@@ -70,7 +70,7 @@ function openFooter() {
   if (x.style.marginBottom === "0px") {
     x.style.marginBottom = "150px";
     y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
-    y.style.backgroundSize = "46px";
+    y.style.backgroundSize = "contain";
  
   
   } else {
