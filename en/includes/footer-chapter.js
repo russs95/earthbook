@@ -41,7 +41,7 @@ class FooterChapter extends HTMLElement {
     padding-bottom: 0px;" onclick="openEarthbook()">What is an Earthbook?</a></div>
 
     <div class="github-source">Page source code:<br>
-    <a href="https://github.com/russs95/earthbook/">github.com/russs95/earthbook/</a></div>
+    <a href="https://github.com/russs95/earthbook/" target="_blank">github.com/russs95/earthbook/</a></div>
   </div>
 
 

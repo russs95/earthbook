@@ -222,7 +222,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
             <div class="button-row">
                 <div id="read-btn" class="action-btn"><a href="preamble.html"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</a></div>
                 <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</a></div>
-                <div id="pdf-btn" class="action-btn"><a href="https://files.earthen.io/s/ZjS9TgWk5Tr7b4q"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>
+                <div id="pdf-btn" class="action-btn"><a href="https://files.earthen.io/s/ZjS9TgWk5Tr7b4q" target="_blank"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>
                 
             </div>
           
