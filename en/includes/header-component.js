@@ -11,7 +11,7 @@ class Header extends HTMLElement {
             <span ><img src="../svgs/left-menu.svg" alt="Settings icon"></span>
         </div>
 
-        <span style="cursor:pointer" onclick="openContents()" aria-label="Open Table of Contents">
+        <span style="cursor:pointer" onclick="openContents()" aria-label="Open Contents">
         <div id="book-header-logo"></div>
         </span>
         

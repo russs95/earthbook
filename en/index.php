@@ -30,8 +30,6 @@ See full project repository at: https://github.com/russs95/earthbook
  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
  <link rel="manifest" href="../favicons/site.webmanifest">
 
-
-	
 <link rel="canonical" href="https://book.earthen.io/en/"> 
 <link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" />
 <link rel="alternate" href="https://book.earthen.io/en/" hreflang="x-default" />
@@ -68,12 +66,12 @@ See full project repository at: https://github.com/russs95/earthbook
 
  <!--INCLUDES-->   
 
-<script src="../index-javascripts.js"></script>
-<script src="../universal-javascript.js"></script>
+<script src="../index-javascripts.js" async></script>
+<script src="../universal-javascript.js" async></script>
 <script src="../clipboard.min.js"></script>
 <script src="../accessibility.js"></script>
 
-<script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+<script type="module" src="https://unpkg.com/dark-mode-toggle" async></script>
 
 <!--
 <script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js" defer></script>-->
@@ -89,7 +87,8 @@ See full project repository at: https://github.com/russs95/earthbook
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  
 
- <!--1--><script src="includes/header-component.js" type="text/javascript" defer></script>
+ <!--1--><script src="includes/header-component.js" type="text/javascript" async></script>
+
  <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
  <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
  <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
@@ -115,8 +114,14 @@ The requisite typography for the page-->
 	
 <!--Preload graphics-->
 <link rel="preload" as="image" href="../photos/cover-500px.webp">
-
-
+<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
+<link rel="preload" as="image" href="../svgs/left-menu.svg">
+<link rel="preload" as="image" href="../svgs/right-menu.svg">
+<link rel="preload" as="image" href="../icons/reader.svg">
+<link rel="preload" as="image" href="../pdf/reader.svg">
+<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
+<link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
+<link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
 
 
 <!--END OF GENERIC CONTENT-->
