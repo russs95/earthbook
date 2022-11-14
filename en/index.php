@@ -224,11 +224,8 @@ Must be updated for each page-->
             </div>
 
             <?php require_once ("../manage.php");?>
-          
-         
         </div>
-
-
+        
  <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
  <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
  <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
