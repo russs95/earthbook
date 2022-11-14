@@ -65,7 +65,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <script src="../index-javascripts.js" async></script>
 <script src="../universal-javascript.js" async></script>
-<script src="../clipboard.min.js"></script>
+<script src="../clip/dist/clipboard.min.js"></script>
 <script src="../accessibility.js"></script>
 
 <script type="module" src="https://unpkg.com/dark-mode-toggle" async></script>
@@ -107,7 +107,8 @@ The requisite typography for the page-->
 <link rel="preload" as="image" href="../svgs/left-menu.svg">
 <link rel="preload" as="image" href="../svgs/right-menu.svg">
 <link rel="preload" as="image" href="../icons/reader.svg">
-<link rel="preload" as="image" href="../pdf/reader.svg">
+<link rel="preload" as="image" href="../icons/pdf.svg">
+<link rel="preload" as="image" href="../icons/buy.svg">
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
@@ -221,9 +222,6 @@ Must be updated for each page-->
                 <div id="pdf-btn" class="action-btn"><a href="https://files.earthen.io/s/ZjS9TgWk5Tr7b4q" target="_blank"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>
                 
             </div>
-          
-            <!--<div id="knack-dist_2"><h5 style="padding-bottom: 20px;margin-top: 30px;margin-bottom: 80px;font-size: 1em;">Get our updates...</h5></div>
-            <br><br>-->
 
             <?php require_once ("../manage.php");?>
           
@@ -240,7 +238,6 @@ Must be updated for each page-->
  <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
 <!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
 
-    
 <!--CONTENTS MENU-->
 <content-curtain></content-curtain>
 
