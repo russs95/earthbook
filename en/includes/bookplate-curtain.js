@@ -27,7 +27,7 @@ class Bookplate extends HTMLElement {
           
           <div id="line" style="width:50%; margin:auto"></div>
 
-          <p style="color:grey">Published by Earthen.io</p>
+          <h6 style="color:grey">Published by Earthen.io</h6>
           
         
           <div id="bottom-close-button" style="cursor:pointer" onclick="closeBookplate()" aria-label="Close this pop-up page">

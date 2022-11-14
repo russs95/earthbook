@@ -2804,6 +2804,8 @@ display: none;
   right: 0;
   left:0;
   bottom: 130px;
+  font-family: "CooperLT", serif;
+  font-style: italic;
 }
 
 
@@ -2817,6 +2819,8 @@ display: none;
   .overlay-content-earthbook h3 {
     font-size: 1.1em;
   }
+
+
 
   .virtue-box-box {
     display: flex;
@@ -2860,6 +2864,7 @@ display: none;
   right: 0;
   left:0;
   bottom: 70px;
+  font-size: 1.3em;
 }
 
 
@@ -2908,6 +2913,10 @@ display: none;
     font-size: 2.1em;
   }
 
+  .medium-message {
+    font-size: 1.5em;
+
+}
 }
 
 
@@ -2952,6 +2961,10 @@ display: none;
     width: 65%;
     font-size: 2.2em;
   }
+
+  .medium-message {
+    font-size: 1.8em;
+}
 
 }
 

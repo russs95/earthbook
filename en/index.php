@@ -84,12 +84,7 @@ The requisite typography for the page-->
 
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
 
- <!--INCLUDES   
-
- <link rel="preload" href="../index-javascripts.js" as="script" />
- <link rel="preload" href="../universal-javascript.js" as="script" />
- <link rel="preload" href="https://unpkg.com/dark-mode-toggle" as="script" />-->
-
+ <!--INCLUDES -->
  
 <script src="../index-javascripts.js"></script>
 <script src="../universal-javascript.js"></script>
@@ -100,15 +95,8 @@ The requisite typography for the page-->
 
 <!--1--><script src="includes/header-component.js" type="text/javascript"></script>
 
-<!--
-<script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js" defer></script>-->
 
 
-
-
-
-
-	
 <!--Preload graphics   media="(max-width: 700px)"-->
 <link rel="preload" as="image" href="../photos/cover-500px.webp">
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
@@ -209,9 +197,6 @@ Must be updated for each page-->
 <!--HEADER NAVBAR-->
 <header-component></header-component>
 
-
-
-
 <!-- PAGE CONTENT-->
 
 <div id="main-page">
@@ -261,8 +246,6 @@ Must be updated for each page-->
 <!--BUY-CURTAIN-->
 <buy-curtain></buy-curtain>
     
- 
-
 <!--ECO-CURTAIN
 <eco-curtain></eco-curtain>-->
  
