@@ -75,6 +75,7 @@ See full project repository at: https://github.com/russs95/earthbook
 <script src="../accessibility.js"></script>
 
 
+<!--1--><script src="includes/header-component.js" type="text/javascript"></script>
 
 <!--
 <script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js" defer></script>-->
@@ -233,7 +234,6 @@ Must be updated for each page-->
         </div>
 
 
-<!--1--><script src="includes/header-component.js" type="text/javascript"></script>
  <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
  <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
  <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
