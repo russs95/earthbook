@@ -61,11 +61,11 @@ See full project repository at: https://github.com/russs95/earthbook
 <meta property="og:image:alt"     content="The Earth and its geometric pattern floating in space"/>
   <meta property="og:locale" content="en_GB" />
 
- <!--INCLUDES-->   
+ <!--INCLUDES   
 
  <link rel="preload" href="../index-javascripts.js" as="script" />
  <link rel="preload" href="../universal-javascript.js" as="script" />
- <link rel="preload" href="https://unpkg.com/dark-mode-toggle" as="script" />
+ <link rel="preload" href="https://unpkg.com/dark-mode-toggle" as="script" />-->
 
  <!--
 <script src="../index-javascripts.js" async></script>
