@@ -8,7 +8,7 @@ class Header extends HTMLElement {
 
     <div id="earthbook-navbar">
         <div id="settings-menu" style="cursor:pointer" onclick="openSettings()" aria-label="Open Settings">
-            <span ><img src="../svgs/left-menu.svg" alt="Settings icon"></span>
+            <span ><img src="https://book.earthen.io/svgs/left-menu.svg" alt="Settings icon"></span>
         </div>
 
         <span style="cursor:pointer" onclick="openContents()" aria-label="Open Contents">
@@ -23,7 +23,7 @@ class Header extends HTMLElement {
         </div>
 
         <div id="share-menu">
-          <span style="cursor:pointer" onclick="openShare()" aria-label="Click to open share book tool"><img src="../svgs/right-menu.svg" alt="Share icon"></span>
+          <span style="cursor:pointer" onclick="openShare()" aria-label="Click to open share book tool"><img src="https://book.earthen.io/svgs/right-menu.svg" alt="Share icon"></span>
         </div>
     </div>
       

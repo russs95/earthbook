@@ -62,8 +62,8 @@ See full project repository at: https://github.com/russs95/earthbook
   <meta property="og:locale" content="en_GB" />
 
 
-  <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
-  
+
+
   <!-- Style Sheets -->
 <link rel="preload" href="../light.css?v1.4" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../style-sheet.css?v1.4" as="style" onload="this.rel='stylesheet'">
@@ -72,7 +72,9 @@ See full project repository at: https://github.com/russs95/earthbook
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  
- 
+ <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
+  <link rel="preload" as="image" href="https://book.earthen.io/svgs/left-menu.svg">
+<link rel="preload" as="image" href="https://book.earthen.io/svgs/right-menu.svg">
 
  <!-- Fonts
 The requisite typography for the page-->
@@ -89,7 +91,7 @@ The requisite typography for the page-->
  <!--INCLUDES -->
  
 <script src="../index-javascripts.js"></script>
-<script src="../universal-javascript.js"></script>
+<script src="../universal-javascript.js" defer></script>
 <script type="module" src="https://unpkg.com/dark-mode-toggle" defer></script>-->
 <script src="../clip/dist/clipboard.min.js" defer></script>
 <script src="../accessibility.js" defer></script>
@@ -102,8 +104,7 @@ The requisite typography for the page-->
 <!--Preload graphics   media="(max-width: 700px)"-->
 
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
-<link rel="preload" as="image" href="../svgs/left-menu.svg">
-<link rel="preload" as="image" href="../svgs/right-menu.svg">
+
 <link rel="preload" as="image" href="../icons/reader.svg">
 <link rel="preload" as="image" href="../icons/pdf.svg">
 <link rel="preload" as="image" href="../icons/buy.svg">
