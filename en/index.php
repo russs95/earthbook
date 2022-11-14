@@ -30,9 +30,6 @@ See full project repository at: https://github.com/russs95/earthbook
  <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
  <link rel="manifest" href="../favicons/site.webmanifest">
 
-<link rel="canonical" href="https://book.earthen.io/en/"> 
-<link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" />
-<link rel="alternate" href="https://book.earthen.io/en/" hreflang="x-default" />
 
 <!--META TAGS-->
 
@@ -89,14 +86,6 @@ See full project repository at: https://github.com/russs95/earthbook
 
  <!--1--><script src="includes/header-component.js" type="text/javascript" async></script>
 
- <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
- <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
- <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
- <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
- <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
- <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
- <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
-<!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
 
 
  <!-- Fonts
@@ -130,12 +119,12 @@ The requisite typography for the page-->
 
 **** Must be updated for each unique page ****-->
 
-<link rel="canonical" href="https://book.earthen.io/en"> 
-<link rel="alternate" href="https://book.earthen.io/en" hreflang="en" />
-<link rel="alternate" href="https://book.earthen.io/en" hreflang="x-default" />
-<!--<link rel="alternate" href="https://book.earthen.io/fr" hreflang="fr" />
-<link rel="alternate" href="https://book.earthen.io/es" hreflang="es" />
-<link rel="alternate" href="https://book.earthen.io/id" hreflang="id" />-->
+<link rel="canonical" href="https://book.earthen.io/en/"> 
+<link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" />
+<link rel="alternate" href="https://book.earthen.io/en/" hreflang="x-default" />
+<!--<link rel="alternate" href="https://book.earthen.io/fr/" hreflang="fr" />
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" />
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" />-->
 
 <!--META TAGS
 Must be updated for each page-->
@@ -210,6 +199,47 @@ Must be updated for each page-->
 
 <!--HEADER NAVBAR-->
 <header-component></header-component>
+
+
+    
+
+
+<!-- PAGE CONTENT-->
+
+<div id="main-page">
+<!-- The flexible grid (content) -->
+	<div id="row">
+        <div id="side">
+
+            <img src="../photos/cover-500px.webp" alt="Tractatus Ayyew - EarthBook Cover">
+
+            <div class="welcome-to">Welcome to the <b><span style="cursor:pointer; text-decoration:underline;" onclick="openEarthbook()">EarthBook</span></b> edition of the Tractatus Ayyew.</div>
+
+            <div class="button-row">
+                <div id="read-btn" class="action-btn"><a href="preamble.html"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</a></div>
+                <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</a></div>
+                <div id="pdf-btn" class="action-btn"><a href="https://files.earthen.io/s/ZjS9TgWk5Tr7b4q" target="_blank"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>
+                
+            </div>
+          
+            <!--<div id="knack-dist_2"><h5 style="padding-bottom: 20px;margin-top: 30px;margin-bottom: 80px;font-size: 1em;">Get our updates...</h5></div>
+            <br><br>-->
+
+            <?php require_once ("../manage.php");?>
+          
+         
+        </div>
+
+
+ <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
+ <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
+ <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
+ <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
+ <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
+ <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
+ <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
+<!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
+
     
 <!--CONTENTS MENU-->
 <content-curtain></content-curtain>
@@ -257,34 +287,6 @@ Must be updated for each page-->
   </div>
 </div>
 
-    
-
-
-<!-- PAGE CONTENT-->
-
-<div id="main-page">
-<!-- The flexible grid (content) -->
-	<div id="row">
-        <div id="side">
-
-            <img src="../photos/cover-500px.webp" alt="Tractatus Ayyew - EarthBook Cover">
-
-            <div class="welcome-to">Welcome to the <b><span style="cursor:pointer; text-decoration:underline;" onclick="openEarthbook()">EarthBook</span></b> edition of the Tractatus Ayyew.</div>
-
-            <div class="button-row">
-                <div id="read-btn" class="action-btn"><a href="preamble.html"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</a></div>
-                <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</a></div>
-                <div id="pdf-btn" class="action-btn"><a href="https://files.earthen.io/s/ZjS9TgWk5Tr7b4q" target="_blank"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>
-                
-            </div>
-          
-            <!--<div id="knack-dist_2"><h5 style="padding-bottom: 20px;margin-top: 30px;margin-bottom: 80px;font-size: 1em;">Get our updates...</h5></div>
-            <br><br>-->
-
-            <?php require_once ("../manage.php");?>
-          
-         
-        </div>
 
 		<div id="main">
 
