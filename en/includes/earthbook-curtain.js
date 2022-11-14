@@ -56,7 +56,7 @@ class Earthbook extends HTMLElement {
             </div>
           </div>
          
-          <div class="medium-message"><i>The Medium is the Message.</i></div>
+          <div class="medium-message">The Medium is the Message.</div>
 
           <span style="cursor:pointer" onclick="closeEarthbook()" aria-label="Click to close this pop-up page">
         <div id="bottom-close-button">
