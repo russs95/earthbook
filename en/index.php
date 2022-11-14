@@ -98,7 +98,7 @@ The requisite typography for the page-->
 
 
 <!--Preload graphics   media="(max-width: 700px)"-->
-<link rel="preload" as="image" href="../photos/cover-500px.webp">
+<link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
 <link rel="preload" as="image" href="../svgs/left-menu.svg">
 <link rel="preload" as="image" href="../svgs/right-menu.svg">
@@ -204,7 +204,7 @@ Must be updated for each page-->
 	<div id="row">
         <div id="side">
 
-            <img src="../photos/cover-500px.webp" alt="Tractatus Ayyew - EarthBook Cover">
+            <img src="https://book.earthen.io/photos/cover-500px.webp" width="300px" height="415px" alt="Tractatus Ayyew - EarthBook Cover">
 
             <div class="welcome-to">Welcome to the <b><span style="cursor:pointer; text-decoration:underline;" onclick="openEarthbook()">EarthBook</span></b> edition of the Tractatus Ayyew.</div>
 
