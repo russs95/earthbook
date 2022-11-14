@@ -62,6 +62,8 @@ See full project repository at: https://github.com/russs95/earthbook
   <meta property="og:locale" content="en_GB" />
 
 
+  <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
+  
   <!-- Style Sheets -->
 <link rel="preload" href="../light.css?v1.4" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../style-sheet.css?v1.4" as="style" onload="this.rel='stylesheet'">
@@ -98,7 +100,7 @@ The requisite typography for the page-->
 
 
 <!--Preload graphics   media="(max-width: 700px)"-->
-<link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
+
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
 <link rel="preload" as="image" href="../svgs/left-menu.svg">
 <link rel="preload" as="image" href="../svgs/right-menu.svg">

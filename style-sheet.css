@@ -1774,6 +1774,7 @@ padding-top: 36px;
     width: 83%;
     height:auto;
     box-shadow: 0 4px 15px rgba(85, 84, 84, 0.4);
+    background-color: #242424;
 }
 
 @media screen and (max-width: 700px) {
@@ -1781,6 +1782,7 @@ padding-top: 36px;
     width: 235px;
     height: 325px;
     border-radius: 10px;
+    background-color: #242424;
 
   }
 }
