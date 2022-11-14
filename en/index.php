@@ -93,7 +93,7 @@ See full project repository at: https://github.com/russs95/earthbook
  <link rel="preload" href="includes/header-component.js" as="script" />
 
 
- <!--1<script src="includes/header-component.js" type="text/javascript" async></script>-->
+ <!--1--><script src="includes/header-component.js" type="text/javascript"></script>
  <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
  <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
  <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
