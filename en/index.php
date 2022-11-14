@@ -90,19 +90,10 @@ See full project repository at: https://github.com/russs95/earthbook
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  
- <link rel="preload" href="includes/header-component.js" as="script" />
+ <link rel="preload" href="includes/header-component.js" as="text/javascript" />
 
 
- <!--1--><script src="includes/header-component.js" type="text/javascript"></script>
- <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
- <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
- <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
- <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
- <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
- <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
- <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
-<!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
-
+ 
 
  <!-- Fonts
 The requisite typography for the page-->
@@ -219,25 +210,6 @@ Must be updated for each page-->
 
 
 
-<!--CONTENTS MENU-->
-<content-curtain></content-curtain>
-
-<!--SETTINGS-MENU-->
-<settings-curtain></settings-curtain>
-
-<!--BOOK PLATE-->
-<bookplate-curtain></bookplate-curtain>
-
-<!--ABOUT EARTHBOOK-->
-<earthbook-curtain></earthbook-curtain>
-
-<!--SHARE-MENU-->
-<share-curtain></share-curtain>
-
-<!--BUY-CURTAIN-->
-<buy-curtain></buy-curtain>
-    
-
 
 <!-- PAGE CONTENT-->
 
@@ -259,6 +231,36 @@ Must be updated for each page-->
 
             <?php require_once ("../manage.php");?>
         </div>
+
+
+<!--1--><script src="includes/header-component.js" type="text/javascript"></script>
+ <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
+ <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
+ <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
+ <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
+ <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
+ <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
+ <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
+<!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+    
  
 
 <!--ECO-CURTAIN
