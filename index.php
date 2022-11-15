@@ -58,7 +58,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 <script src="../universal-javascript.js" defer></script>
 <script src="../clipboard.min.js"></script>
 <script src="../accessibility.js"></script>
-<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=1.0"></script>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=1.1"></script>
 <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
 
 <!--
