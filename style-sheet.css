@@ -317,6 +317,7 @@ margin: 0px auto !important;
   padding: 20px;
   border-radius: 20px;
   position: fixed;
+  margin-top: -50px;
   }
   }
 
@@ -1498,7 +1499,7 @@ padding-top: 36px;
 
   .book-listing img  {
     width: 56%;
-    max-width:200px;
+    max-width:180px;
     text-align:right;
     
   }
@@ -1511,7 +1512,15 @@ padding-top: 36px;
 }
 
 
+@media screen and (min-width: 701px) and (max-width: 1324px) {
 
+  .book-listing img  {
+    width: 56%;
+    max-width:180px;
+    text-align:right;
+    
+  }
+}
 
 @media screen and (min-width: 700px) {
 
@@ -1557,6 +1566,9 @@ padding-top: 36px;
   .book-listing {
     flex-direction: row;
 }
+
+
+
 }
 
 
@@ -1775,6 +1787,7 @@ padding-top: 36px;
     height:auto;
     box-shadow: 0 4px 15px rgba(85, 84, 84, 0.4);
     background-color: #242424;
+    -moz-box-sizing: border-box;
 }
 
 @media screen and (max-width: 700px) {
