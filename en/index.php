@@ -467,35 +467,35 @@ Must be updated for each page-->
                 </div>
             </a>
                 
-                <a href="not-published.php">
+                <a href="acknowledgements.html">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">Credits & Acknowledgements</div>
+                    <div class="chapter-name">Acknowledgements</div>
                     <div class="word-count"><i>218 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.php">
+                <a href="writing.html">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Writing & Publishing</div>
                     <div class="word-count"><i>80 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.php">
+                <a href="authors.html">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Banayan & Russell</div>
                     <div class="word-count"><i>153 words</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.php">
+                <a href="bibliography.html">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Select Bibliography</div>
-                    <div class="word-count"><i>728 words</i></div>
+                    <div class="word-count"><i>740 words</i></div>
                 </div>
             </a>
 
-                <a href="not-published.php">
+                <a href="glossary.html">
                 <div class="chapter-bottom">
                     <div class="chapter-name">Glossary</div>
                     <div class="word-count"><i>342 words</i></div>
