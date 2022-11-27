@@ -1601,8 +1601,6 @@ padding-top: 36px;
   left: 0;
   overflow-y: hidden;
   transition: 0.5s;
-
-
 /*
   overflow-x: hidden;  Disable horizontal scroll */
 }
@@ -1620,8 +1618,6 @@ padding-top: 36px;
   margin: auto;
 }
 
-
-
 @media screen and (max-width: 700px) {
   .read-overlay-content {
     width: 92%; 
@@ -1630,17 +1626,18 @@ padding-top: 36px;
 }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
-  .buy-overlay-content {
+  .read-overlay-content {
     width: 95%;
     flex-flow: row;
 }
 }
 
 @media screen and (min-width: 1325px) {
-    .buy-overlay-content {
+    .read-overlay-content {
       width: 90%;
       margin: auto;
       flex-flow: row;
+      
     }
 }
 
@@ -1650,7 +1647,6 @@ padding-top: 36px;
   justify-content: center;
   flex-direction: row;
   margin: 0px auto 0px auto;
-
 }
 
 .read-book-info {
@@ -1683,6 +1679,7 @@ padding-top: 36px;
   .read-book-info  {
     width: 100%;
     text-align: center;
+    margin-bottom: 50px;
   }
 
   .read-book-info-title {
