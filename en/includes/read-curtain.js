@@ -11,8 +11,7 @@ class ReadCurtain extends HTMLElement {
 
       <div class="read-overlay-content">
       
-            <div class="three-books">
-              <div class="buy-book">
+           
                 <div class="read-book-pic">
 
                   <img src="../covers/read-cover.webp" loading="lazy" alt="Read the Tractatus Ayyew in a variety of formats." title="Read the Tractatus Ayyew in a variety of formats.">
@@ -42,8 +41,7 @@ class ReadCurtain extends HTMLElement {
                      </div>
 
                   </div>
-                </div>
-              </div>
+               
               
 
 
