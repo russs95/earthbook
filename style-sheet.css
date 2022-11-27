@@ -1634,7 +1634,7 @@ padding-top: 36px;
 
 @media screen and (min-width: 1325px) {
     .read-overlay-content {
-      width: 90%;
+      width: 80%;
       margin: auto;
       flex-flow: row;
       
@@ -1667,13 +1667,12 @@ padding-top: 36px;
 
 }
 
-
 @media screen and (max-width: 700px) {
 
   .read-book-pic img{
     flex-direction: column;
     align-self: center;
-    width: 100%;
+    width: 325px;
   }
 
   .read-book-info  {
@@ -1693,12 +1692,6 @@ padding-top: 36px;
     margin-bottom: 6px;
   }
 
-  .book-listing img  {
-    width: 56%;
-    max-width:180px;
-    text-align:right;
-    
-  }
 
 }
 
@@ -1706,12 +1699,13 @@ padding-top: 36px;
 @media screen and (min-width: 701px) and (max-width: 1324px) {
 
   .read-book-pic img  {
-    width: 56%;
-    max-width:180px;
+    width: 400px; /*56%;*/
     text-align:right;
-    
+    height: auto;
   }
 }
+
+
 
 @media screen and (min-width: 700px) {
 
@@ -1731,13 +1725,6 @@ padding-top: 36px;
   }*/
 }
 
-
-
-@media screen and (max-width: 700px) {
-  .buy-book {
-    width: 100%;
-}
-}
 
 .book-listing {
   flex-direction: column;
