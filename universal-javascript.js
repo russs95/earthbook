@@ -218,6 +218,26 @@ Opens up the Earthbook overlay from the bottom up*/
   } 
 
 
+    /*READ OVERLAY
+
+Opens up the Earthbook overlay from the bottom up*/
+
+
+  /* Open settings when someone clicks on the span element */
+  function openRead() {
+    document.getElementById("read-curtain").style.height = "100%";
+    document.body.style.overflowY = "hidden";
+    document.body.style.maxHeight = "100vh";
+  }
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeRead() {
+    document.getElementById("read-curtain").style.height = "0%";
+    document.body.style.overflowY = "unset";
+    document.body.style.maxHeight = "unset";
+  } 
+
+
 
   /*Still in use??
 

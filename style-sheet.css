@@ -1577,6 +1577,195 @@ padding-top: 36px;
 
 /* -------------------------------------------------------------------------- */
 
+/*	5. Read Overlay Curtain
+
+/* -------------------------------------------------------------------------- */
+
+
+
+#read-curtain {
+  background-color: var(--header-footer); 
+  z-index: 26;
+}
+
+
+
+/* Table of Contents Menu (background) */
+.read-overlay {
+
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 25;
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  transition: 0.5s;
+
+
+/*
+  overflow-x: hidden;  Disable horizontal scroll */
+}
+
+
+/* Position the content inside the overlay */
+.read-overlay-content {
+  position: initial;
+  text-align: center; /* Centered text/links */
+   /*margin-top: 30px; 30px top margin to avoid conflict with the close button on smaller screens */
+  font-family: "CooperLT";
+  display: flex;
+  justify-content: center;
+  height:100%;
+  margin: auto;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .read-overlay-content {
+    width: 92%; 
+    flex-flow: column;  
+}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .buy-overlay-content {
+    width: 95%;
+    flex-flow: row;
+}
+}
+
+@media screen and (min-width: 1325px) {
+    .buy-overlay-content {
+      width: 90%;
+      margin: auto;
+      flex-flow: row;
+    }
+}
+
+
+.read-book-pic {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0px auto 0px auto;
+
+}
+
+.read-book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.read-book-title {
+  font-family: 'CooperLt';
+  height: fit-content;
+}
+
+.read-book-info-text {
+  font-family: 'Mulish';
+  height: fit-content;
+  font-weight: 300;
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+  .read-book-pic img{
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+  }
+
+  .read-book-info  {
+    width: 100%;
+    text-align: center;
+  }
+
+  .read-book-info-title {
+    font-size: 1.6em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .read-book-info-text {
+    font-size: 0.9em;
+    margin-bottom: 6px;
+  }
+
+  .book-listing img  {
+    width: 56%;
+    max-width:180px;
+    text-align:right;
+    
+  }
+
+}
+
+
+@media screen and (min-width: 701px) and (max-width: 1324px) {
+
+  .read-book-pic img  {
+    width: 56%;
+    max-width:180px;
+    text-align:right;
+    
+  }
+}
+
+@media screen and (min-width: 700px) {
+
+  .read-book-info-title {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .read-book-info-text {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+/*
+  .book-buy-info .action-btn {
+    margin-top: 20px;
+  }*/
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .buy-book {
+    width: 100%;
+}
+}
+
+.book-listing {
+  flex-direction: column;
+  display: flex;
+  align-self: top;
+}
+
+
+@media screen and (max-width: 700px) {
+  .book-listing {
+    flex-direction: row;
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+
 /*	5. Bookplate Overlay
 
 /* -------------------------------------------------------------------------- */
