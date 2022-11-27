@@ -52,6 +52,6 @@ class ReadCurtain extends HTMLElement {
 }
 }
 
-customElements.define('buy-curtain', BuyCurtain);
+customElements.define('read-curtain', ReadCurtain);
 
 

@@ -218,7 +218,7 @@ Opens up the Earthbook overlay from the bottom up*/
   } 
 
 
-    /*READ OVERLAY
+/*READ OVERLAY
 
 Opens up the Earthbook overlay from the bottom up*/
 

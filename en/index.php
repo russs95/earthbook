@@ -229,7 +229,7 @@ Must be updated for each page-->
  <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
  <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
-<!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
+<!--9--><script src="includes/read-curtain.js" type="text/javascript" defer></script>
 
 <!--CONTENTS MENU-->
 <content-curtain></content-curtain>
@@ -248,6 +248,9 @@ Must be updated for each page-->
 
 <!--BUY-CURTAIN-->
 <buy-curtain></buy-curtain>
+
+<!--READ-CURTAIN-->
+<read-curtain></read-curtain>
     
 <!--ECO-CURTAIN
 <eco-curtain></eco-curtain>-->
