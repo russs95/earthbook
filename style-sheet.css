@@ -1666,9 +1666,12 @@ padding-top: 36px;
   font-family: 'Mulish';
   height: fit-content;
   font-weight: 300;
- 
-
 }
+
+.button-row-read {
+  display: flex;
+}
+ 
 
 @media screen and (max-width: 700px) {
 
@@ -1697,6 +1700,9 @@ padding-top: 36px;
     margin-bottom: 6px;
   }
 
+  .button-row-read {
+    flex-direction: row;
+  }
 
 }
 
@@ -1721,6 +1727,10 @@ padding-top: 36px;
     margin-bottom: 10px;
     text-align: left;
   }
+
+  .button-row-read {
+    flex-direction: column;
+  }
 }
 
 
@@ -1744,6 +1754,10 @@ padding-top: 36px;
     font-size: 1.5em;
     margin-bottom: 10px;
     text-align: left;
+  }
+
+  .button-row-read {
+    flex-direction: column;
   }
 }
 
