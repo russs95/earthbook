@@ -1646,7 +1646,8 @@ padding-top: 36px;
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin: 0px auto 0px auto;
+  margin: auto;
+  height: fit-content;
 }
 
 .read-book-info {
@@ -1658,12 +1659,14 @@ padding-top: 36px;
 .read-book-title {
   font-family: 'CooperLt';
   height: fit-content;
+
 }
 
 .read-book-info-text {
   font-family: 'Mulish';
   height: fit-content;
   font-weight: 300;
+ 
 
 }
 
@@ -1673,12 +1676,14 @@ padding-top: 36px;
     flex-direction: column;
     align-self: center;
     width: 325px;
+    height: fit-content;
   }
 
   .read-book-info  {
     width: 100%;
     text-align: center;
     margin-bottom: 50px;
+    
   }
 
   .read-book-info-title {
@@ -1713,11 +1718,13 @@ padding-top: 36px;
     font-size: 2em;
     margin-top: 20px;
     margin-bottom: 10px;
+    text-align: left;
   }
 
   .read-book-info-text {
     font-size: 1.5em;
     margin-bottom: 10px;
+    text-align: left;
   }
 /*
   .book-buy-info .action-btn {
@@ -1726,24 +1733,7 @@ padding-top: 36px;
 }
 
 
-.book-listing {
-  flex-direction: column;
-  display: flex;
-  align-self: top;
-}
-
-
-@media screen and (max-width: 700px) {
-  .book-listing {
-    flex-direction: row;
-}
-
-
-
-}
-
-
-
+  
 
 
 
