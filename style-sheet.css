@@ -1621,7 +1621,7 @@ padding-top: 36px;
 @media screen and (max-width: 700px) {
   .read-overlay-content {
     width: 92%; 
-    flex-flow: row;  
+    flex-flow: column;  
 }
 }
 
@@ -1692,9 +1692,7 @@ padding-top: 36px;
   .read-book-info  {
     width: 100%;
     text-align: center;
-    margin-bottom: 170px;
-
-    
+    margin-bottom: 170px;    
   }
 
   .read-book-info-title {
@@ -1709,7 +1707,7 @@ padding-top: 36px;
   }
 
   .button-row-read {
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 20px;
   }
 
