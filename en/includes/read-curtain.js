@@ -21,7 +21,7 @@ class ReadCurtain extends HTMLElement {
                   <div class="read-book-info">
                     <div class="read-book-info-title">Read. Freely.</div>
                     <div class="read-book-info-text">
-                      The Earthbook version of the Tractatus Ayyew is freely available.  Read now on the web (we'll set you up so you can read both online and off). Alternatively, you can download the PDF version or purchase the eBook versions in EPUB or MOBI formats.
+                      The Earthbook version of the Tractatus Ayyew is freely available.  Read now on the web (on and offline). Alternatively, you can download the PDF version or purchase the eBook versions in EPUB or MOBI formats.
                     </div>
 
                     <div class="button-row-read">
