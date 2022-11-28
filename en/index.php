@@ -246,11 +246,13 @@ Must be updated for each page-->
 <!--SHARE-MENU-->
 <share-curtain></share-curtain>
 
+<!--READ-CURTAIN-->
+<read-curtain></read-curtain>
+
 <!--BUY-CURTAIN-->
 <buy-curtain></buy-curtain>
 
-<!--READ-CURTAIN-->
-<read-curtain></read-curtain>
+
     
 <!--ECO-CURTAIN
 <eco-curtain></eco-curtain>-->
