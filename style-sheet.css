@@ -1685,30 +1685,30 @@ padding-top: 36px;
   .read-book-pic img{
     flex-direction: column;
     align-self: center;
-    width: 325px;
+    width: 305px;
     height: fit-content;
   }
 
   .read-book-info  {
     width: 100%;
     text-align: center;
-    margin-bottom: 170px;    
+    margin-bottom: 100px;    
   }
 
   .read-book-info-title {
     font-size: 1.6em;
-    margin-top: 20px;
+    margin-top: 18px;
     margin-bottom: 10px;
   }
 
   .read-book-info-text {
     font-size: 1em;
-    margin-bottom: 6px;
+    margin-bottom: 0px;
   }
 
   .button-row-read {
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .button-row-read .action-btn {
