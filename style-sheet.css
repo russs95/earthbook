@@ -1710,6 +1710,11 @@ padding-top: 36px;
     flex-direction: row;
     margin-top: 20px;
   }
+
+  .button-row-read .action-btn {
+    width: 90px !important;
+    margin-top: 10px;
+  }
 }
 
 
