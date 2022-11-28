@@ -1654,6 +1654,7 @@ padding-top: 36px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'CooperLt';
 }
 
 .read-book-title {
@@ -1678,6 +1679,10 @@ padding-top: 36px;
 
 @media screen and (max-width: 700px) {
 
+  .read-book-pic {
+    margin: auto auto 0px auto;
+  }
+
   .read-book-pic img{
     flex-direction: column;
     align-self: center;
@@ -1688,7 +1693,8 @@ padding-top: 36px;
   .read-book-info  {
     width: 100%;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 170px;
+
     
   }
 
@@ -1705,6 +1711,7 @@ padding-top: 36px;
 
   .button-row-read {
     flex-direction: column;
+    margin-top: 20px;
   }
 
 }
