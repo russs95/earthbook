@@ -91,8 +91,8 @@ The requisite typography for the page-->
  <!--INCLUDES -->
  
 <script src="../index-javascripts.js"></script>
-<script src="../universal-javascript.js" defer></script>
-<script type="module" src="https://unpkg.com/dark-mode-toggle" defer></script>-->
+<script src="../universal-javascript.js"></script>
+<script type="module" src="https://unpkg.com/dark-mode-toggle" defer></script>
 <script src="../clip/dist/clipboard.min.js" defer></script>
 <script src="../accessibility.js" defer></script>
 
@@ -261,7 +261,7 @@ Must be updated for each page-->
 <div id="eco-curtain2" class="eco-overlay">
   <div class="overlay-content-eco">         
         
-    <div class="eco-header">The Earthbook format is hand-coded from the ground up to be Green.</div>
+    <div class="eco-header">The Earthbook format is hand-coded from the ground up to be green.</div>
 
     <div class="eco-text">
     In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">Regenerativity Report.</a>
@@ -310,13 +310,6 @@ Must be updated for each page-->
                     <div class="word-count"><i>557 words</i></div>
                 </div>
                 </a>
-
-                <!--<a href="quickstart.html#2">
-                <div class="chapter-middle">
-                    <div class="chapter-name">A long sentence</div>
-                    <div class="word-count"><i>35 words</i></div>
-                </div>
-                </a>-->
 
                 <a href="quickstart.html">
                 <div class="chapter-bottom">
@@ -410,7 +403,7 @@ Must be updated for each page-->
 
                 <a href="not-published.php">
                     <div class="chapter-bottom">
-                        <div class="chapter-name">5  |  The Mycorrhyzal's Awareness</div>
+                        <div class="chapter-name">5  |  The Means of the Mycorrhyzal's</div>
                         <div class="word-count"><i>not yet published</i></div>
                 </div>
                 </a>
@@ -435,7 +428,6 @@ Must be updated for each page-->
                 </div>
             </a>
                 
-
                 <a href="not-published.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Petro-capital Transition</div>
@@ -508,6 +500,7 @@ Must be updated for each page-->
             </a>
     
             </div>
+            <br><br><br><br>
 
             
 
