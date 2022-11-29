@@ -1627,14 +1627,14 @@ padding-top: 36px;
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   .read-overlay-content {
-    width: 95%;
+    width: 75%;
     flex-flow: row;
 }
 }
 
 @media screen and (min-width: 1325px) {
     .read-overlay-content {
-      width: 80%;
+      width: 60%;
       margin: auto;
       flex-flow: row;
       
