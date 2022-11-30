@@ -1686,7 +1686,7 @@ padding-top: 36px;
     flex-direction: column;
     align-self: center;
     width: 305px;
-    height: fit-content;
+    height: 361px;
   }
 
   .read-book-info  {
@@ -1725,7 +1725,7 @@ padding-top: 36px;
   .read-book-pic img  {
     width: 400px; /*56%;*/
     text-align:right;
-    height: auto;
+    height: 473px;
   }
 
   .read-book-info-title {
@@ -1758,7 +1758,7 @@ padding-top: 36px;
   .read-book-pic img  {
     width: 500px; /*56%;*/
     text-align:right;
-    height: auto;
+    height: 591px;
   }
 
   .read-book-info-title {

@@ -459,7 +459,7 @@ Must be updated for each page-->
                 </div>
             </a>
 
-                <a href="not-published.php">
+                <a href="for-earth">
                 <div class="chapter-middle">  
                     <div class="chapter-name">For-Earth Enterprise</div>
                     <div class="word-count"><i>20 words</i></div>
