@@ -28,10 +28,13 @@ class ReadCurtain extends HTMLElement {
                       <a href="preamble.html">
                       <div id="read-btn" class="action-btn">
 
-                        <i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Web
+                        <i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Read Here & Now (Web)
                         
                       </div>
                       </a>
+                    </div>
+
+                    <div class="button-row-read">
 
                       <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()">
                       <i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>eBook</a>
