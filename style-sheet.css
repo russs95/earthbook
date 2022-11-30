@@ -1715,6 +1715,11 @@ padding-top: 36px;
     width: 90px !important;
     margin-top: 10px;
   }
+
+  .button-row-read2 .action-btn {
+    width: 200px !important;
+    margin-top: 10px;
+  }
 }
 
 
@@ -1749,6 +1754,11 @@ padding-top: 36px;
     width: 140px !important;
     margin-top: 10px;
   }
+
+  .button-row-read2 .action-btn {
+    width: 300px !important;
+    margin-top: 10px;
+  }
 }
 
 
@@ -1780,6 +1790,11 @@ padding-top: 36px;
 
   .button-row-read .action-btn {
     width: 140px !important;
+    margin-top: 10px;
+  }
+
+  .button-row-read2 .action-btn {
+    width: 300px !important;
     margin-top: 10px;
   }
 
