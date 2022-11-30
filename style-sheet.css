@@ -1712,12 +1712,13 @@ padding-top: 36px;
   }
 
   .button-row-read .action-btn {
-    width: 90px !important;
+    width: 120px ;
+    max-width: 120px ;
     margin-top: 10px;
   }
 
   .button-row-read2 .action-btn {
-    width: 200px !important;
+    width: 300px !important;
     margin-top: 10px;
   }
 }
