@@ -193,18 +193,17 @@ background-color: var(--slider);
 <!-- Page Title Section-->
 
 <div id="ct-chapt-graphic" class="background-0">
-
 </div>
 <div id="progress-bar">
   <div class="progress"></div>
 </div>
+
+
 <div id="ct-main">
 
   <p>Register to our newsletter to be notified when this and other chapters are posted.</p>
 
   <?php require_once ("../manage.php");?>
-  
-    </div>
 
           
 </div>

@@ -441,16 +441,18 @@ Must be updated for each page-->
                 </div>
             </a>
                 
+
+
                 <div class="book-box-header">Appendix</div>
             
-                <a href="not-published.php">
+                <a href="dedication.html">
                 <div class="chapter-top">    
                     <div class="chapter-name">Dedication</div>
                     <div class="word-count"><i>26 words</i></div>
                 </div>
             </a>
 
-                <a href="not-published.php">
+                <a href="accounting.html">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Ecological Accounting</div>
                     <div class="word-count"><i>48 words</i></div>
