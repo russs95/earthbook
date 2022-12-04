@@ -212,7 +212,7 @@ Must be updated for each page-->
      
       <div class="next-section">
           <div class="next-sec">Next:</div>
-          <div class="sec-name"><i>Epigraph</i></div>
+          <div class="sec-name"><i>Imagine</i></div>
       </div>
 
     </div>
@@ -220,7 +220,7 @@ Must be updated for each page-->
 
     <div class="footer-right">
    
-      <a href="epigraph.php"><div class="next-button">Next ➔</div></a>
+      <a href="imagine.html"><div class="next-button">Next ➔</div></a>
 
     </div>
   </div>
