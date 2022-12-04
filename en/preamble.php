@@ -146,7 +146,11 @@ background-color: var(--slider);
 #up-arrow {
     text-align: center;
 position: absolute;
-width: 100%;}
+width: 100%;
+margin-top:auto;
+margin-bottom: 10px;}
+
+#up-arrow img {width: 140px;}
 
 </style>
 
@@ -229,7 +233,7 @@ width: 100%;}
 
     <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters, each with their own URL. Consequently, each chapter is written as a standalone essay so that its facet of the theory may be readily referenced to address particular issues or arguments elsewhere. For example, this section of the book can be found (and shared) using https://book.earthen.io/preamble </p>
     
-    <p>To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory and its integration of chapters is represented geometrically by the mandala above.</p>
+    <p>To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory and each chapter’s integration is represented by the mandala above.</p>
 
     <p>As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the published eBook and print versions of the <i>Tractatus Ayyew</i> are <span style="cursor:pointer" onclick="openBuy()" aria-label="Open">for sale</a> here on the Earthbook site. Sales are independent of middlemen, with 97% of book sales going direct to the authors.</p>
 
