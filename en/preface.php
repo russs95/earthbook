@@ -181,21 +181,6 @@ Must be updated for each page-->
 </div>
 
 
-<!-- Page Title Section-->
-
-<div id="ct-chapt-graphic">
-  <div class="ct-chapter-quote">
-    “Ayka ta man gagayam ta"<br>
-    (Come, let’s tell some stories)
-  </div>
-  <div class="ct-quote-source">
-   ― Igorot expression
-   </div>
-</div>
-<div id="ct-main">
-
-
-
 <!--CONTENTS MENU-->
 <content-curtain></content-curtain>
 
@@ -218,6 +203,25 @@ Must be updated for each page-->
  
 <?php require_once ("includes/eco-curtain.php");?>
  
+
+
+
+<!-- Page Title Section-->
+
+<div id="ct-chapt-graphic">
+  <div class="ct-chapter-quote">
+    “Ayka ta man gagayam ta"<br>
+    (Come, let’s tell some stories)
+  </div>
+  <div class="ct-quote-source">
+   ― Igorot expression
+   </div>
+</div>
+
+<div id="up-arrow"></div>
+
+<div id="ct-main">
+
 
 
 <!-- MAIN TEXT CONTENT of the Page
