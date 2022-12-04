@@ -132,16 +132,21 @@ Must be updated for each page-->
     <div class="ct-chapter-quote">
       “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.  First History passed, now Nature is next.  This is the moment to take green seriously.”
     </div>
-    <div class="ct-quote-source">
-     ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a href="#footnotes">²</a>
-    </div>
+    
   </div>
 
 <div id="up-arrow"></div>
 
 <div id="ct-main">
 
+<div class="ct-quote-source">
+     ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a href="#footnotes">²</a>
+    </div>
+
    <div class="footnote-section">
+
+   <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+  
 
     <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Footnotes</p>
   
