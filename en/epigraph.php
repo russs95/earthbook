@@ -70,7 +70,7 @@ Must be updated for each page-->
 
     #ct-chapt-graphic {
       height: 40vh;
-      padding-top: 6vh;
+      margin-top: 8vh;
     }
 
   }
