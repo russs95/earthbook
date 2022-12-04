@@ -127,6 +127,12 @@
   background-size: contain;
 }
 
+#up-arrow {
+  background: url(svgs/up-arrow-light.svg) center no-repeat;
+  background-size: 140px;
+
+}
+
 /*
 body {
   background-color: rgb(250, 250, 250) !important;
