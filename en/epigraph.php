@@ -145,7 +145,7 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-    ― Régis Debray, <i>(Le siècle vert. Un changement de civilisation</i>, Editions Gallimard, January 2020 (<i>The Green Age: A Change of Civilizations</i>)
+    ― Régis Debray, <i>Le siècle vert. Un changement de civilisation</i>, Editions Gallimard, January 2020<br><br>(<i>The Green Age: A Change of Civilizations</i>)
     </div>
 
    <!--<div class="footnote-section">
