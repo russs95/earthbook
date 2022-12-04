@@ -143,6 +143,11 @@ background-color: var(--slider);
 }
 */
 
+#up-arrow {
+    text-align: center;
+position: absolute;
+width: 100%;}
+
 </style>
 
 </head>
@@ -192,7 +197,7 @@ background-color: var(--slider);
 <!--ECO-CURTAIN
 <eco-curtain></eco-curtain>-->
 
-<?php require_once ("../manage.php");?>
+<?php require_once ("includes/eco-curtain.php");?>
  
 
 
@@ -200,7 +205,7 @@ background-color: var(--slider);
 <!-- Page Title Section-->
 
 <div id="ct-chapt-graphic" class="background-0">
-<div id="up-arrow"><img src="../svgs/up-arrow"></div>
+<div id="up-arrow"><img src="../svgs/up-arrow.svg"></div>
 </div>
 
 <div id="ct-main">
@@ -216,21 +221,21 @@ background-color: var(--slider);
 
 
 <div class="page-paragraph">
-    <p>To start, Banayan and I will share <a href="imagine">the story</a> of the pollution, short-falls and questions that sparked this book's unlikely beginning.  We then provide <a href="quickstart"> a quick start for the eager reader:</a> a short sentence, a long sentence and a paragraph that summarize the theory of Earthen ethics that we'll be laying out.</p>
+    <p>To start, Banayan and I will share <a href="imagine">the story</a> of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader keen for an overview of what lies ahead, we also provide <a href="summaries.php">a short sentence, a long sentence and a paragraph</a> that summarize theory of Earthen ethics that we lay out in this book.</p>
 
     <p>Of course, how a story is told (or a theory for that matter) is just as important as the sentences and paragraphs it contains.  In the dap'ay, both the tale and the telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
 
-    <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the Tractatus Ayyew is published as an <i>Earthbook</i>—  an Earth and reader friendly format that embodies the principles that we'll be laying out ahead.</p>
+    <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span style="cursor:pointer" onclick="openEarthbook()" aria-label="Open"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics.</p>
 
-    <p>Like most theories, the Tractatus progresses sequentially.  However, unlike most books, the Earthbook format enables a modular arrangement of chapters, each with their own URL.  Consequently, each chapter is written as a standalone essay that may be readily referenced.  This way, its facet of the theory may be easily shared to address particular issues or arguments elsewhere. For example, this section of the book is located at https://book.earthen.io/preamble.php which can be copied and shared using the top right menu. </p>
+    <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters, each with their own URL. Consequently, each chapter is written as a standalone essay so that its facet of the theory may be readily referenced to address particular issues or arguments elsewhere. For example, this section of the book can be found (and shared) using https://book.earthen.io/preamble </p>
     
-    <p>To represent the modular geometry of the Tractatus Ayyew, each chapter begins with a mandalic representation of its place within the whole.  The full theory is represented by the mandala above.</p>
+    <p>To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory and its integration of chapters is represented geometrically by the mandala above.</p>
 
-    <p>While the content and code of the Earthbook are made freely available, the published eBook and print versions are for sale on the site. Sales are independent of middlemen, with 97% of book sales going direct to the authors.</p>
+    <p>As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the published eBook and print versions of the <i>Tractatus Ayyew</i> are <span style="cursor:pointer" onclick="openBuy()" aria-label="Open">for sale</a> here on the Earthbook site. Sales are independent of middlemen, with 97% of book sales going direct to the authors.</p>
 
-    <p>As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting is publicly disclosed in the Eartbook's<span style="cursor:pointer" onclick="openEco()" aria-label="Open"> regenerative reporting.</span></p>
+    <p>As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's<span style="cursor:pointer" onclick="openEco()" aria-label="Open"> regenerative reporting.</span></p>
 
-    <p>The full content of the Tractatus Ayyew is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook code (developed specifically for the Tractatus Ayyew) is made available under a GNU 3.0 license.</p>
+    <p>The full content of the <i>Tractatus Ayyew</i> is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook code (developed first for the <i>Tractatus Ayyew</i>) is made available under a GNU 3.0 license.</p>
 
 
     </div>
@@ -246,11 +251,11 @@ background-color: var(--slider);
       <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"; ></div> 
       <div class="next-section">
           <div class="next-sec">Next section:</div>
-          <div class="sec-name"><i>Preface</i></div>
+          <div class="sec-name"><i>Epigraph</i></div>
       </div>
     </div>
     <div class="footer-right">
-      <a href="preface.html" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+      <a href="epigraph.php" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
     </div>
   </div>
 </div>
