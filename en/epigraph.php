@@ -29,8 +29,9 @@ $name = $parts [count($parts)-1];
 if (strcmp($name, "welcome.php") == 0)
 $name = "";
 
-require_once ("../header.php");
 ?>
+
+<?php require_once ("../header.php");?>
 
 
 <!--END OF GENERIC CONTENT-->
