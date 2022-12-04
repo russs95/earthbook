@@ -152,11 +152,46 @@ Must be updated for each page-->
 <meta property="og:description"   content="Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear..."/>
 
 
-<style>
 
-/*#ct-chapt-graphic {height: 40vh;}*/
+<style>
   
+
+@media screen and (max-width: 699px) {
+    .ct-chapter-quote {
+      width: 87%;
+      font-size: 1em;
+    }
+    .ct-quote-source {
+      width: 80%;
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .ct-chapter-quote {
+      width: 70%;
+      font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 70%;
+      font-size: 1em;
+    }
+  }
+    
+  @media screen and (min-width: 1325px) {
+    .ct-chapter-quote {
+    width: 50%;
+    font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
+
 </style>
+
+
 </head>
 
 
@@ -225,6 +260,8 @@ Must be updated for each page-->
    <div class="footnote-section">
 
     <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+
+    <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
   
     <a href="#2-up" class="footnote">   
       <div class="footnote-number">2.</div>
