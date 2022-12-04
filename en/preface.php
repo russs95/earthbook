@@ -149,7 +149,7 @@ Must be updated for each page-->
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:url"           content="https://tractatus.earthen.io/en/preface.php">
 <meta property="og:title"         content="Preface | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="The the tale of our title and the story of our theory."/>
+<meta property="og:description"   content="The tale of the Tractatus and its Ayyew inspiration."/>
 
 
 <style>
