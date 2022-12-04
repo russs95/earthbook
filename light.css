@@ -92,7 +92,7 @@
   background-size: contain;
 }
 
-#ct-chapt-graphic.background-1 {
+.background-1 {
   background: url(svgs/01-imagine-white.svg) no-repeat center;
   background-size: contain;
 }

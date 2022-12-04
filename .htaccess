@@ -13,9 +13,25 @@ Redirect /index.php /en/index.php
 Redirect /preamble /en/preamble.php
 Redirect /preamble.html /en/preamble.php
 Redirect /preamble.php /en/preamble.php
-
 Redirect en/preamble.html /en/preamble.php
 Redirect en/preamble /en/preamble.php
 
+Redirect /preface /en/preface.php
+Redirect /preface.html /en/preface.php
+Redirect /preface.php /en/preface.php
+Redirect en/preface.html /en/preface.php
+Redirect en/preface /en/preface.php
+
+Redirect /epigraph /en/epigraph.php
+Redirect /epigraph.html /en/epigraph.php
+Redirect /epigraph.php /en/epigraph.php
+Redirect en/epigraph.html /en/epigraph.php
+Redirect en/epigraph /en/epigraph.php
+
+Redirect /imagine /en/imagine.php
+Redirect /imagine.html /en/imagine.php
+Redirect /imagine.php /en/imagine.php
+Redirect en/imagine.html /en/imagine.php
+Redirect en/imagine /en/imagine.php
 
 AddType text/cache-manifest .appcache

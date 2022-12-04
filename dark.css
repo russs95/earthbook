@@ -105,7 +105,6 @@
 .background-1 {
   background: url(svgs/01-imagine-dark.svg) no-repeat center  !important;
   background-size: contain;
-  background-color: var(--slider);
 }
 
 
