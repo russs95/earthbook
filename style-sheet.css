@@ -3641,12 +3641,14 @@ fieldset {margin-top: 50px;
 
 
 
-/*Dark Toggler Compromise
+/*Dark Toggler Compromise*/
 
 .compro-toggle {
   font-family: 'Mulish' !important;
-  font-size: 1.2em;
+  font-size: 1.23em;
 }
+
+/*
 
 [part="darkLabel"]::before {
   filter: var(--dark-mode-toggle-icon-filter, none);
