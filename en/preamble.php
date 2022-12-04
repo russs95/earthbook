@@ -1,6 +1,6 @@
 <!--EARTHBOOK CHAPTER PAGE - TEMPLATE
 
-PHP Page Version 1.0
+PHP Page Version 1.0.0
 Design by Russell Maier
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -12,33 +12,22 @@ See full project repository at: https://github.com/russs95/earthbook
 
 
 <!-- PHP starts by laying out canonical URLs for the page and language -->
+
+<!DOCTYPE html>
+
 <meta charset="UTF-8"> 
 
-<?php
-	$parts = explode ("/", $_SERVER['SCRIPT_NAME']);
-	$name = $parts [count($parts)-1];
-	if (strcmp($name, "welcome.php") == 0)
-  $name = "";
-	;?>
-	
-
-
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
+
 echo <<<_END
+<html lang="$lang" manifest="../offline.appcache">
+_END;
 
-<!DOCTYPE html>
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables-->
-
-<html lang="$lang">
-
-_END;?>
-
-
-
-
-<!DOCTYPE html>
-<html lang="en" manifest="../offline.appcache">
+$parts = explode ("/", $_SERVER['SCRIPT_NAME']);
+$name = $parts [count($parts)-1];
+if (strcmp($name, "welcome.php") == 0)
+$name = "";?>
 
 <head>
 
@@ -184,6 +173,7 @@ background-color: var(--slider);
 <!--MAIN HTML Begins-->
 
 <BODY class="accessibility-plugin-ac">
+    
   <div id="underlayer">
 
     <a name="top"></a>
@@ -279,11 +269,11 @@ background-color: var(--slider);
       <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"; ></div> 
       <div class="next-section">
           <div class="next-sec">Next section:</div>
-          <div class="sec-name"><i>Epigraph</i></div>
+          <div class="sec-name"><i>Preface</i></div>
       </div>
     </div>
     <div class="footer-right">
-      <a href="epigraph.php" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+      <a href="preface.php" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
     </div>
   </div>
 </div>
@@ -294,9 +284,6 @@ background-color: var(--slider);
 <footer-chapter></footer-chapter>
           
 
-
- <!--FOOTER-- onclick="openFooter()"
-  <script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js" defer></script>>-->
         
 
 </body>
