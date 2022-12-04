@@ -144,11 +144,11 @@ Must be updated for each page-->
 
 <div id="ct-main">
 
-<div class="page-paragraph">
-     ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a href="#footnotes">²</a>
+<div class="page-paragraph" style="text-align:center;">
+    <p> ― Régis Debray, <i>The Green Age: A Change of Civilizations</i> / <i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, January 2020)</p>
     </div>
 
-   <div class="footnote-section">
+   <!--<div class="footnote-section">
 
    <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
   
@@ -160,7 +160,7 @@ Must be updated for each page-->
       <div class="footnote-text">Régis Debray, <i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, January 2020)</div>
       </a>
      
-      </div><!--Closes footnote section-->
+      </div>--><!--Closes footnote section-->
           
     </div><!--Closes main content block-->
   
