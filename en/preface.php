@@ -154,7 +154,7 @@ Must be updated for each page-->
 
 <style>
 
-#ct-chapt-graphic {height: 30vh;}
+#ct-chapt-graphic {height: 40vh;}
   
 </style>
 </head>
@@ -227,9 +227,10 @@ Must be updated for each page-->
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
 -->
-<br><br>
+<br><br><br>
 <div class="lead-page-paragraph">
-  ALAS, not all books have beautiful beginnings.<br>  
+  ALAS, not all books have beautiful beginnings.
+  <br><br>  
 </div>
 
 
