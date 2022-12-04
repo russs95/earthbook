@@ -3681,8 +3681,11 @@ fieldset {margin-top: 50px;
 
 #up-arrow {
   text-align: center;
-  width: 100%;
-  margin-top:-30px;
+  width: 140px;
+  height: 42px;
+  margin-top:-40px;
+  background: url(svgs/up-arrow.svg) center no-repeat var(--header-footer);
+  background-size: 140px;
+  margin-left: auto;
+  margin-right: auto;
 }
-  
-  #up-arrow img {width: 140px;}

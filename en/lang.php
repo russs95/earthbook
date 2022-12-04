@@ -1,1 +1,1 @@
-en
+<?php $lang='en';?>
