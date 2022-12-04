@@ -16,7 +16,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="offline.appcache">
 
 <head>
 
@@ -148,43 +148,6 @@ Must be updated for each page-->
 
 <style>
 
-/*Dark Toggler Compromise
-
-.compro-toggle {
-  font-family: 'Mulish' !important;
-  font-size: 1.2em;
-}
-
-[part="darkLabel"]::before {
-  filter: var(--dark-mode-toggle-icon-filter, none);
-  background-image: var(--dark-mode-toggle-dark-icon, url("https://googlechromelabs.github.io/dark-mode-toggle/demo/moon.png"));
-  height: 30px !important;
-  width: 30px!important;
-  background-size: contain!important;
-  margin-left: 20px!important;
-}
-
-[part="lightLabel"]::before {
-  background-image: var(--dark-mode-toggle-light-icon, url("https://googlechromelabs.github.io/dark-mode-toggle/demo/sun.png"));
-  height: 40px;
-  width: 40px;
-  background-size: contain;}
-
-  form:nth-child(2) > fieldset:nth-child(1) > label:nth-child(5) {padding-left: 20px;
-  
-  }
-
-
- [part="darkLabel"]  {
-  margin-left: 20px !important;
-  
- }
-
-
- label  {
-  margin: 20px !important;}
- 
-*/
 </style>
 
 </head>
@@ -257,31 +220,7 @@ Must be updated for each page-->
 <!--ECO-CURTAIN
 <eco-curtain></eco-curtain>-->
  
-
-<div id="eco-curtain2" class="eco-overlay">
-  <div class="overlay-content-eco">         
-        
-    <div class="eco-header">The Earthbook format is hand-coded from the ground up to be green.</div>
-
-    <div class="eco-text">
-    In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">Regenerativity Report.</a>
-    </div>
-
-    <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
-
-     <div id="wcb" class="carbonbadge wcb-d"></div>
-    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" preload></script>
-
-    <div class="eco-medium">The Medium is the Message.</div>
-    <span style="cursor:pointer" onclick="closeEco()" aria-label="Close">
-        <div id="bottom-close-button">
-            <img src="../svgs/bottom-x.svg" alt="Close button">
-        </div>
-    </span>
-  </div>
-</div>
-
+<?php require_once ("includes/eco-curtain.php.php");?>
 
 		<div id="main">
 
@@ -311,9 +250,9 @@ Must be updated for each page-->
                 </div>
                 </a>
 
-                <a href="quickstart.html">
+                <a href="epigraph.php">
                 <div class="chapter-bottom">
-                    <div class="chapter-name">Two Sentences & a paragraph</div>
+                    <div class="chapter-name">Quickstart Summaries</div>
                     <div class="word-count"><i>540 words</i></div>
                 </div>
                 </a>
@@ -444,6 +383,12 @@ Must be updated for each page-->
 
 
                 <div class="book-box-header">Appendix</div>
+
+                <a href="summaries.php">
+                <div class="chapter-bottom">
+                    <div class="chapter-name">Summaries</div>
+                    <div class="word-count"><i>540 words</i></div>
+                </div>
             
                 <a href="dedication.html">
                 <div class="chapter-top">    

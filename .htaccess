@@ -8,3 +8,9 @@ DirectoryIndex index.php
 
 
 Redirect /index.php /en/index.php
+
+
+Redirect /preamble /en/preamble.html
+Redirect /preamble.html /en/preamble.php
+
+AddType text/cache-manifest .appcache
