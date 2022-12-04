@@ -3684,7 +3684,7 @@ fieldset {margin-top: 50px;
   width: 140px;
   height: 42px;
   margin-top:-40px;
-  background: url(svgs/up-arrow.svg) center no-repeat var(--header-footer);
+  background: url(svgs/up-arrow-dark.svg) center no-repeat var(--header-footer);
   background-size: 140px;
   margin-left: auto;
   margin-right: auto;
