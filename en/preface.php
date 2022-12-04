@@ -138,7 +138,7 @@ The requisite typography for the page-->
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Preface | Tratatus Ayyew - Earthbook</title>
+<title>Preface | Tratatus Ayyew - An Earthbook</title>
 <meta name="keywords" content="Preface, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
 <meta name="description" content="A Theory of Grey & Green based on Earth's example.">
 

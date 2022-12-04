@@ -139,7 +139,7 @@ The requisite typography for the page-->
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Preamble | Tractatus Ayyew - Earthbook</title>
+<title>Preamble | Tractatus Ayyew - An Earthbook</title>
 <meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
 <meta name="description" content="Welcome to the Earthbook edition of the Tractatus Ayyew">
 
