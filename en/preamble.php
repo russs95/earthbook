@@ -202,11 +202,11 @@ background-color: var(--slider);
 <!-- Page Title Section-->
 
 <div id="ct-chapt-graphic" class="background-0">
-<div id="up-arrow"><img src="../svgs/up-arrow.svg"></div>
+
 </div>
 
 <div id="ct-main">
-
+<div id="up-arrow"><img src="../svgs/up-arrow.svg"></div>
 
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
@@ -224,11 +224,11 @@ background-color: var(--slider);
 
     <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span style="cursor:pointer; text-decoration: underline;" onclick="openEarthbook()" aria-label="Open"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics.</p>
 
-    <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters, each with their own URL. Consequently, each chapter is written as a standalone essay so that its facet of the theory may be readily referenced to address particular issues or arguments elsewhere. For example, this section of the book can be found (and shared) using https://book.earthen.io/preamble </p>
+    <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced elsewhere. For example, this section of the book can be found and shared using https://book.earthen.io/preamble </p>
     
-    <p>To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory and each chapter’s integration is represented by the mandala at the top of this page.</p>
+    <p>To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory, and each chapter’s integration within it, is represented by the mandala at the top of this page.</p>
 
-    <p>As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the published eBook and print versions of the <i>Tractatus Ayyew</i> are <span style="cursor:pointer; text-decoration: underline;" onclick="openBuy()" aria-label="Open">for sale</a> here on the Earthbook site. Sales are independent of middlemen, with 97% of book sales going direct to the authors.</p>
+    <p>As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the published eBook and print versions of the <i>Tractatus Ayyew</i> are <span style="cursor:pointer; text-decoration: underline;" onclick="openBuy()" aria-label="Open">for sale</span> here on the Earthbook site. Sales are independent of middlemen, with 97% of book sales going direct to the authors.</p>
 
     <p>As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's<span style="cursor:pointer" onclick="openEco()" aria-label="Open"> regenerative reporting.</span></p>
 
