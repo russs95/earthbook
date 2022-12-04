@@ -69,9 +69,9 @@ display: none;
 
    
   #ct-chapt-graphic {
-    
+
     padding: 0px;
-    height: 46vh;
+ 
     /*background-position-y: 10vh;*/
     margin: auto;
     padding-top: 50vh;
@@ -154,7 +154,11 @@ display: none;
   @media screen and (max-width: 699px) {
 
       
-    #ct-chapter-title {
+    #ct-chapt-graphic {
+      height: 40vh;
+    }
+      
+      #ct-chapter-title {
       padding-top: 45px;  
       font-size: 12vmin;
       letter-spacing: 8px;
@@ -184,6 +188,9 @@ display: none;
   @media screen and (min-width: 700px) and (max-width: 1324px) {
 
 
+    #ct-chapt-graphic {
+      height: 47vh;
+    }
       
     #ct-chapter-title {
       padding-top: 45px;
@@ -213,7 +220,9 @@ display: none;
   
   @media screen and (min-width: 1325px) {
 
-
+    #ct-chapt-graphic {
+      height: 46vh;
+    }
       
     #ct-chapter-title {
       padding-top: 45px;
