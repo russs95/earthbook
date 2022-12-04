@@ -227,9 +227,9 @@ Must be updated for each page-->
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
 -->
-
+<br><br>
 <div class="lead-page-paragraph">
-  ALAS, not all books have beautiful beginnings.  
+  ALAS, not all books have beautiful beginnings.<br>  
 </div>
 
 
@@ -250,7 +250,9 @@ Must be updated for each page-->
     
     <p>It just so happened that my colleagues and I had been experimenting with a new   technique from South America in which plastic bottles were packed full of sand to make building blocks. Fortuitously, the river sand pit and the local dump-site were side by side. After making several sand bottle-bricks, we decided to try packing them with plastic instead.</p>
 
-   <p>The experiment was a success! Not only were we able to make bottle-bricks that were just as effective as those packed with sand, we’d been able to secure a great deal of plastic that would have otherwise scattered into the river.</p>
+   <p>The experiment was a success!</p>
+   
+   <p>Not only were we able to make bottle-bricks that were just as effective as those packed with sand, we’d been able to secure a great deal of plastic that would have otherwise scattered into the river.</p>
 
    <p>At my home, I began to experiment with packing my own used plastic into a bottle. I made a small garden with the result. Everyone was delighted. The nearby school, which was struggling to dispose the plastic of hundreds of students, asked to be shown how it was done. After a day of packing plastic, making bricks and building a composter, I and the community were excited to this alternative to burning and dumping plastic in the river.</p>
   
@@ -280,11 +282,11 @@ Must be updated for each page-->
     
     <p>In particular: <i>What in fact should green really mean?</i></p>
 
-    <p>Observing how ecobricking can go astray, our suspicion has grown that that solving plastic (and being ‘green’) has little to do with new techniques and technologies. While Banayan ad I continue to ecobrick our own used plastic, we've come to see that no matter <i>what</i> we do, far more crucial is <i>how</i> and <i>why</i> we do it.</p>
+    <p>Observing how ecobricking can go astray, our suspicion has grown that solving plastic (and being ‘green’) has little to do with new techniques and technologies. While Banayan ad I continue to ecobrick our own used plastic, we've come to see that no matter <i>what</i> we do, far more crucial is <i>how</i> and <i>why</i> we do it.</p>
 
-    <p>After a decade of delving and dialogue, the Tractatus Ayyew represents our culminating conviction that the wisdom traditions of ancient indigenous cultures<a href="#footnotes">¹</a> are of critical relevance to our modern attempts at green.</p>
+    <p>After a decade of delving and dialogue, the Tractatus Ayyew represents our culminating conviction that the wisdom traditions of ancient indigenous cultures<a href="#footnotes">¹</a> are of critical relevance to the how and why of our modern attempts at green.</p>
 
-    <p>Our <i>Tractatus Ayyew</i> title, reflects this intersection of worlds.</p>
+    <p>The <i>Tractatus Ayyew</i> title, reflects this intersection of worlds.</p>
     
     <p>In Latin, the word <i>tractatus</i> refers to the philosophical tradition of a treatise— a systematic exposition of a particular concept.  In Kan'kan'ue, the language of the Igorots, the word <i>ayyew</i> refers to the virtue of cyclic ecological integration that guides their culture.</p>
 
@@ -294,7 +296,7 @@ Must be updated for each page-->
 
     <p>In Book Two we dedicate a chapter to each of the five Earthen ethics. </p>
 
-    <p>In Book Three we conclude with our five-fold Earthen solution for plastic.</p>
+    <p>In Book Three we conclude with a five-fold Earthen solution for plastic.</p>
 
     <p>In this way, through chapters and books that each present a requisite facet of green enterprise, the Tractatus Ayyew aims to be a tool kit rather than a manifesto.</p>
 
