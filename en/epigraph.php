@@ -61,17 +61,13 @@ Must be updated for each page-->
 @media screen and (max-width: 699px) {
     .ct-chapter-quote {
       width: 87%;
-      font-size: 1.1em;
+      font-size: 1em;
     }
     .ct-quote-source {
       width: 80%;
       font-size: 0.8em;
     }
 
-    #ct-chapt-graphic {
-      height: 70vh;
-      padding-top: 20vh;
-    }
   }
 
   @media screen and (min-width: 700px) and (max-width: 1324px) {
