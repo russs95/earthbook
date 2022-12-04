@@ -11,6 +11,32 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
+<!-- PHP starts by laying out canonical URLs for the page and language -->
+<meta charset="UTF-8"> 
+
+<?php
+	$parts = explode ("/", $_SERVER['SCRIPT_NAME']);
+	$name = $parts [count($parts)-1];
+	if (strcmp($name, "welcome.php") == 0)
+  $name = "";
+	;?>
+	
+
+
+<?php require_once ("lang.php");
+echo <<<_END
+
+<!DOCTYPE html>
+
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables-->
+
+<html lang="$lang">
+
+_END;?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" manifest="../offline.appcache">
 
@@ -41,6 +67,24 @@ These tags will be consistent for the whole book-->
 
 <meta property="og:locale" content="en_GB" />
 
+ <!-- Style Sheets   
+All the css needed for this page-->
+ 
+ 
+ <!--<link  rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
+<link rel="stylesheet" href="../acessibilidade.css" />
+<link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
+
+<link rel="preload" href="../style-sheet.css?v1.6" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../light.css?v1.5" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
+
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ 
+
+
  <!-- INCLUDES
  Main Scripts-->   
 
@@ -54,21 +98,6 @@ These tags will be consistent for the whole book-->
 <script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
 
 
- <!-- Style Sheets   
-All the css needed for this page-->
- 
- 
- <!--<link  rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
-<link rel="stylesheet" href="../acessibilidade.css" />
-<link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
-<link rel="preload" href="../light.css?v1.5" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../style-sheet.css?v1.5" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
-
-<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
- 
 
  <!--Page Components
 All the page components required to build this page-->
@@ -226,7 +255,7 @@ background-color: var(--slider);
 
     <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span style="cursor:pointer; text-decoration: underline;" onclick="openEarthbook()" aria-label="Open"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics.</p>
 
-    <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced elsewhere. For example, this section of the book can be found and shared using https://book.earthen.io/preamble </p>
+    <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced elsewhere. For example, this section of the book can be found and shared using https://book.earthen.io/<?php echo ($lang); ;?>/<?php echo ($name); ;?> </p>
     
     <p>To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory, and each chapter’s integration within it, is represented by the mandala at the top of this page.</p>
 
