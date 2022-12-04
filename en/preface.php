@@ -232,8 +232,6 @@ Must be updated for each page-->
   ALAS, not all books have beautiful beginnings.  
 </div>
 </div>
-
-<br><br>
 <div class="page-paragraph">
    <p>In 2011, the amount of dirty diapers, sandals, bags and wrappers entering the Chico River had reached a breaking point. Overwhelmed by the ever arriving slew of plastic, the downriver Filipino province of Kalinga took action to sue the upriver town of Bontoc. The mayor and governor took the charges seriously. They set about shutting down the numerous dumpsites along the river's winding course through the remote region.</p>
      
