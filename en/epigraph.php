@@ -128,28 +128,28 @@ The requisite typography for the page-->
 
 **** Must be updated for each unique page ****-->
 
-<link rel="canonical" href="https://book.earthen.io/en/preface.php"> 
-<link rel="alternate" href="https://book.earthen.io/en/preface.php" hreflang="en" />
-<link rel="alternate" href="http://book.org/en/preface.php" hreflang="x-default" />
-<!--<link rel="alternate" href="https://book.earthen.io/fr/preface.php" hreflang="fr" />
-<link rel="alternate" href="https://book.earthen.io/es/preface.php" hreflang="es" />
-<link rel="alternate" href="https://book.earthen.io/id/preface.php" hreflang="id" />-->
+<link rel="canonical" href="https://book.earthen.io/en/epigraph.php"> 
+<link rel="alternate" href="https://book.earthen.io/en/epigraph.php" hreflang="en" />
+<link rel="alternate" href="http://book.org/en/epigraph.php" hreflang="x-default" />
+<!--<link rel="alternate" href="https://book.earthen.io/fr/epigraph.php" hreflang="fr" />
+<link rel="alternate" href="https://book.earthen.io/es/epigraph.php" hreflang="es" />
+<link rel="alternate" href="https://book.earthen.io/id/epigraph.php" hreflang="id" />-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Preface | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Preface, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
+<title>Epigraph | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="epigraph, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="description" content="Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear...">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
 <meta name="twitter:data1" content="3 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:url"           content="https://tractatus.earthen.io/en/preface.php">
-<meta property="og:title"         content="Preface | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="The the tale of our title and the story of our theory."/>
+<meta property="og:url"           content="https://tractatus.earthen.io/en/epigraph.php">
+<meta property="og:title"         content="Epigraph | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear..."/>
 
 
 <style>
@@ -173,10 +173,10 @@ Must be updated for each page-->
 <div id="ct-chapter-top">
     <div id="ct-tc-menu" onclick="openContents()"></div>
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
-      <div id="ct-chapter-title">Preface</div>   
+      <div id="ct-chapter-title">Epigraph</div>   
       <div id="ct-book-title">Tractatus Ayyew</div>
       <div id="ct-chap-location">Introduction</div>
-      <div id="ct-word-count"><i>557 words</i></div>
+      <div id="ct-word-count"><i>60 words</i></div>
     </div>
 </div>
 
@@ -211,7 +211,7 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-00">
     <div class="ct-chapter-quote">
-      “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.”
+      “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.  First, History passed away, Nature is now next.  This is the moment to take green seriously.”
     </div>
     <div class="ct-quote-source">
      ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a href="#footnotes">²</a>
@@ -224,7 +224,7 @@ Must be updated for each page-->
 
    
     <div class="ct-chapter-quote">
-      “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.”
+    “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.  First, History passed away, Nature is now next.  This is the moment to take green seriously.”
     </div>
     <div class="ct-quote-source">
      ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a href="#footnotes">²</a>
