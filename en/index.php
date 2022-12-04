@@ -16,7 +16,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 
 <!DOCTYPE html>
-<html lang="en" manifest="offline.appcache">
+<html lang="en" manifest="../offline.appcache">
 
 <head>
 

@@ -10,7 +10,12 @@ DirectoryIndex index.php
 Redirect /index.php /en/index.php
 
 
-Redirect /preamble /en/preamble.html
+Redirect /preamble /en/preamble.php
 Redirect /preamble.html /en/preamble.php
+Redirect /preamble.php /en/preamble.php
+
+Redirect en/preamble.html /en/preamble.php
+Redirect en/preamble /en/preamble.php
+
 
 AddType text/cache-manifest .appcache

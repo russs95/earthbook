@@ -12,7 +12,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="../offline.appcache">
 
 <head>
 
@@ -61,8 +61,8 @@ All the css needed for this page-->
  <!--<link  rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
 <link rel="stylesheet" href="../acessibilidade.css" />
 <link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
-<link rel="preload" href="../light.css?v1.4" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../style-sheet.css?v1.4" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../light.css?v1.5" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../style-sheet.css?v1.5" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
 
@@ -109,12 +109,12 @@ The requisite typography for the page-->
 
 **** Must be updated for each unique page ****-->
 
-<link rel="canonical" href="https://book.earthen.io/en/preamble.html"> 
-<link rel="alternate" href="https://book.earthen.io/en/preamble.html" hreflang="en" />
-<link rel="alternate" href="http://book.org/en/preamble.html" hreflang="x-default" />
-<!--<link rel="alternate" href="https://book.earthen.io/fr/preamble.html" hreflang="fr" />
-<link rel="alternate" href="https://book.earthen.io/es/preamble.html" hreflang="es" />
-<link rel="alternate" href="https://book.earthen.io/id/preamble.html" hreflang="id" />-->
+<link rel="canonical" href="https://book.earthen.io/en/preamble.php"> 
+<link rel="alternate" href="https://book.earthen.io/en/preamble.php" hreflang="en" />
+<link rel="alternate" href="http://book.org/en/preamble.php" hreflang="x-default" />
+<!--<link rel="alternate" href="https://book.earthen.io/fr/preamble.php" hreflang="fr" />
+<link rel="alternate" href="https://book.earthen.io/es/preamble.php" hreflang="es" />
+<link rel="alternate" href="https://book.earthen.io/id/preamble.php" hreflang="id" />-->
 
 <!--META TAGS
 Must be updated for each page-->
@@ -128,7 +128,7 @@ Must be updated for each page-->
 <meta name="twitter:data1" content="3 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:url"           content="https://tractatus.earthen.io/en/preamble.html">
+<meta property="og:url"           content="https://tractatus.earthen.io/en/preamble.php">
 <meta property="og:title"         content="Preamble | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew"/>
 
@@ -195,34 +195,12 @@ background-color: var(--slider);
 <?php require_once ("../manage.php");?>
  
 
-<div id="eco-curtain2" class="eco-overlay">
-  <div class="overlay-content-eco">         
-        
-    <div class="eco-header">The Earthbook format is hand-coded from the ground up to be Green.</div>
-
-    <div class="eco-text">
-    In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">Regenerativity Report.</a>
-    </div>
-
-    <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
-
-     <div id="wcb" class="carbonbadge wcb-d"></div>
-    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" preload></script>
-
-    <div class="eco-medium">The Medium is the Message.</div>
-    <span style="cursor:pointer" onclick="closeEco()" aria-label="Close">
-        <div id="bottom-close-button">
-            <img src="../svgs/bottom-x.svg" alt="Close button">
-        </div>
-    </span>
-  </div>
-</div>
 
 
 <!-- Page Title Section-->
 
 <div id="ct-chapt-graphic" class="background-0">
+<div id="up-arrow"><img src="../svgs/up-arrow"></div>
 </div>
 
 <div id="ct-main">
@@ -244,7 +222,7 @@ background-color: var(--slider);
 
     <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the Tractatus Ayyew is published as an <i>Earthbook</i>—  an Earth and reader friendly format that embodies the principles that we'll be laying out ahead.</p>
 
-    <p>Like most theories, the Tractatus progresses sequentially.  However, unlike most books, the Earthbook format enables a modular arrangement of chapters, each with their own URL.  Consequently, each chapter is written as a standalone essay that may be readily referenced.  This way, its facet of the theory may be easily shared to address particular issues or arguments elsewhere. For example, this section of the book is located at https://book.earthen.io/preamble.html which can be copied and shared using the top right menu. </p>
+    <p>Like most theories, the Tractatus progresses sequentially.  However, unlike most books, the Earthbook format enables a modular arrangement of chapters, each with their own URL.  Consequently, each chapter is written as a standalone essay that may be readily referenced.  This way, its facet of the theory may be easily shared to address particular issues or arguments elsewhere. For example, this section of the book is located at https://book.earthen.io/preamble.php which can be copied and shared using the top right menu. </p>
     
     <p>To represent the modular geometry of the Tractatus Ayyew, each chapter begins with a mandalic representation of its place within the whole.  The full theory is represented by the mandala above.</p>
 

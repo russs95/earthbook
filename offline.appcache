@@ -1,0 +1,44 @@
+CACHE MANIFEST
+# 2010-06-18:v2
+
+# Explicitly cached 'master entries'.
+CACHE:
+favicons/apple-touch-icon.png
+favicons/favicon-32x32.png
+favicons/favicon-16x16.png
+photos/cover-500px.webp
+svgs/left-menu.svg
+svgs/right-menu.svg
+icons/reader.svg
+
+index-javascripts.js
+universal-javascript.js
+https://unpkg.com/dark-mode-toggle
+clip/dist/clipboard.min.js
+accessibility.js
+
+includes/header-component.js
+
+
+light.css
+dark.css
+style-sheet.css
+acessibilidade.css
+
+
+index.html
+stylesheet.css
+images/logo.png
+scripts/main.js
+
+# Resources that require the user to be online.
+NETWORK:
+*
+
+# static.html will be served if main.py is inaccessible
+# offline.jpg will be served in place of all images in images/large/
+# offline.html will be served in place of all other .html files
+FALLBACK:
+
+#/main.py /static.html
+#images/large/ images/offline.jpg
