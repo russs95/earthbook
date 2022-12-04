@@ -68,6 +68,11 @@ Must be updated for each page-->
       font-size: 0.8em;
     }
 
+    #ct-chapt-graphic {
+      height: 40vh;
+      padding-top: 6vh;
+    }
+
   }
 
   @media screen and (min-width: 700px) and (max-width: 1324px) {
