@@ -176,7 +176,7 @@ Must be updated for each page-->
       <div id="ct-chapter-title">Preface</div>   
       <div id="ct-book-title">Tractatus Ayyew</div>
       <div id="ct-chap-location">Introduction</div>
-      <div id="ct-word-count"><i>557 words</i></div>
+      <div id="ct-word-count"><i>1,220 words</i></div>
     </div>
 </div>
 
@@ -231,7 +231,8 @@ Must be updated for each page-->
 <div><div class="lead-page-paragraph">
   ALAS, not all books have beautiful beginnings.  
 </div>
-</div>
+</div>  
+<br><br>
 <div class="page-paragraph">
    <p>In 2011, the amount of dirty diapers, sandals, bags and wrappers entering the Chico River had reached a breaking point. Overwhelmed by the ever arriving slew of plastic, the downriver Filipino province of Kalinga took action to sue the upriver town of Bontoc. The mayor and governor took the charges seriously. They set about shutting down the numerous dumpsites along the river's winding course through the remote region.</p>
      

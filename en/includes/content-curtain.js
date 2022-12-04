@@ -23,22 +23,22 @@ class ContentCurtain extends HTMLElement {
                         </div>
                     </div>
 
-                    <a href="preamble.html">
+                    <a href="preamble.php">
                     <div class="tc-item">
                         <div class="chapter-name-tc">Preamble</div>
-                        <div class="word-count-tc"><i>244 words</i></div>
+                        <div class="word-count-tc"><i>431 words</i></div>
                     </div></a>
 
-                    <a href="preface.html">
+                    <a href="preface.php">
                     <div class="tc-item">
                         <div class="chapter-name-tc">Preface</div>
-                        <div class="word-count-tc"><i>823 words</i></div>
+                        <div class="word-count-tc"><i>1,220 words</i></div>
                     </div></a>
 
-                    <a href="quickstart.html">
+                    <a href="epigraph.php">
                     <div class="tc-item">
-                        <div class="chapter-name-tc">Quickstart</div>
-                        <div class="word-count-tc"><i>540 words</i></div>
+                        <div class="chapter-name-tc">Epigraph</div>
+                        <div class="word-count-tc"><i>67 words</i></div>
                     </div></a>
 
                     <a href="imagine.html">

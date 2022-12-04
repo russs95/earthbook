@@ -190,7 +190,7 @@ background-color: var(--slider);
     <div id="ct-chapter-title">Preamble</div>   
     <div id="ct-book-title">Tractatus Ayyew</div>
     <div id="ct-chap-location">Introduction</div>
-    <div id="ct-word-count"><i>501 words</i></div>
+    <div id="ct-word-count"><i>431 words</i></div>
   </div>
 </div>
 

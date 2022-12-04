@@ -194,31 +194,6 @@ Must be updated for each page-->
  <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
 <!--9--><script src="includes/read-curtain.js" type="text/javascript" defer></script>
 
-<!--CONTENTS MENU-->
-<content-curtain></content-curtain>
-
-<!--SETTINGS-MENU-->
-<settings-curtain></settings-curtain>
-
-<!--BOOK PLATE-->
-<bookplate-curtain></bookplate-curtain>
-
-<!--ABOUT EARTHBOOK-->
-<earthbook-curtain></earthbook-curtain>
-
-<!--SHARE-MENU-->
-<share-curtain></share-curtain>
-
-<!--READ-CURTAIN-->
-<read-curtain></read-curtain>
-
-<!--BUY-CURTAIN-->
-<buy-curtain></buy-curtain>
-
-
-    
-<!--ECO-CURTAIN
-<eco-curtain></eco-curtain>-->
  
 <?php require_once ("includes/eco-curtain.php.php");?>
 
@@ -233,17 +208,17 @@ Must be updated for each page-->
 
             <div id="book-box" class="book-box-day">
 
-                <div class="book-box-header">Quick Start</div>
+                <div class="book-box-header">Introduction</div>
 
-                <a href="preamble.html">
+                <a href="preamble.php">
                 <div class="chapter-top">
                     <div class="earth-buller"></div>    
                     <div class="chapter-name">Preamble</div>
-                    <div class="word-count"><i>200 words</i></div>
+                    <div class="word-count"><i>431 words</i></div>
                 </div>
                 </a>
 
-              <a href="preface.html">
+              <a href="preface.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Preface</div>
                     <div class="word-count"><i>557 words</i></div>
@@ -252,15 +227,15 @@ Must be updated for each page-->
 
                 <a href="epigraph.php">
                 <div class="chapter-bottom">
-                    <div class="chapter-name">Quickstart Summaries</div>
-                    <div class="word-count"><i>540 words</i></div>
+                    <div class="chapter-name">Epigraph</div>
+                    <div class="word-count"><i>67 words</i></div>
                 </div>
                 </a>
         
 
                 <div class="book-box-header">Book One</div>
 
-                <a href="imagine.html">
+                <a href="imagine.php">
                 <div class="chapter-top">    
                     <div class="chapter-name">Imagine</div>
                     <div class="word-count"><i>1,095 words</i></div>
@@ -387,7 +362,7 @@ Must be updated for each page-->
                 <a href="summaries.php">
                 <div class="chapter-bottom">
                     <div class="chapter-name">Summaries</div>
-                    <div class="word-count"><i>540 words</i></div>
+                    <div class="word-count"><i>501 words</i></div>
                 </div>
             
                 <a href="dedication.html">

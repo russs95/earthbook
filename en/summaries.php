@@ -80,7 +80,7 @@ Must be updated for each page-->
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Summaries</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-        <div id="ct-chap-location">Introduction</div>
+        <div id="ct-chap-location">Appendix</div>
         <div id="ct-word-count"><i>540 words</i></div>
       </div>
   </div>
