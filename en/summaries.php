@@ -95,12 +95,12 @@ background-position-y: 200px;
 
 <!-- Page Title Section-->
 
-  <div id="ct-chapt-graphic">
+  <div id="ct-chapt-graphic" class="background-00">
   </div>
 
 
 
-
+  <div id="up-arrow"></div>
   <div id="ct-main">
 
 
