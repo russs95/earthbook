@@ -228,8 +228,9 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
 -->
 <br><br><br>
-<div class="lead-page-paragraph">
+<div><div class="lead-page-paragraph">
   ALAS, not all books have beautiful beginnings.  
+</div>
 </div>
 
 <br><br>
