@@ -65,7 +65,7 @@ Must be updated for each page-->
     }
     .ct-quote-source {
       width: 80%;
-      font-size: 0.8em;
+      font-size: 0.9em;
     }
 
     #ct-chapt-graphic {
@@ -82,7 +82,7 @@ Must be updated for each page-->
     }
     .ct-quote-source {
       width: 70%;
-      font-size: 1em;
+      font-size: 1.3em;
     }
   }
     
@@ -93,7 +93,7 @@ Must be updated for each page-->
     }
     .ct-quote-source {
       width: 50%;
-      font-size: 1em;
+      font-size: 1.3em;
     }
   }
 
@@ -145,7 +145,7 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-    ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><br><i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, January 2020)
+    ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><br><br><i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, January 2020)
     </div>
 
    <!--<div class="footnote-section">

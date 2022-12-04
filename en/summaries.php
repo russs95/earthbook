@@ -53,15 +53,7 @@ Must be updated for each page-->
 
 
 <style>
-  /*
-  #ct-chapt-graphic {
-  background: url(svgs/tractatus-mandala-full-grey.svg) no-repeat center;
-background-size: contain;
-background-position-y: 200px;
-}
-*/
 
-#ct-chapt-graphic {height: 10vh;}
 
 #ct-chapter-title {
       padding-top: 45px;
