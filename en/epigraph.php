@@ -36,18 +36,6 @@ $name = "";?>
 
 
 
- <!--Page Components
-All the page components required to build this page-->
-
- <!--1--><script src="includes/header-component.js" type="text/javascript" preload></script>
- <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
- <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
- <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
- <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
- <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
- <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
- <!--8b--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
-
 <!--END OF GENERIC CONTENT-->
 
 <!--META TAGS
