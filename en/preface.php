@@ -220,7 +220,7 @@ Must be updated for each page-->
 
 <!-- Page Title Section-->
 
-<div id="ct-chapt-graphic">
+<div id="ct-chapt-graphic" class="background-000">
   <div class="ct-chapter-quote">
     “Ayka ta man gagayam ta"<br>
     (Come, let’s tell some stories)
