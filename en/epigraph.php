@@ -159,7 +159,7 @@ Must be updated for each page-->
 @media screen and (max-width: 699px) {
     .ct-chapter-quote {
       width: 87%;
-      font-size: 1em;
+      font-size: 1.1em;
     }
     .ct-quote-source {
       width: 80%;
@@ -170,7 +170,7 @@ Must be updated for each page-->
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     .ct-chapter-quote {
       width: 70%;
-      font-size: 1.4em;
+      font-size: 1.7em;
     }
     .ct-quote-source {
       width: 70%;
@@ -181,7 +181,7 @@ Must be updated for each page-->
   @media screen and (min-width: 1325px) {
     .ct-chapter-quote {
     width: 50%;
-    font-size: 1.4em;
+    font-size: 1.7em;
     }
     .ct-quote-source {
       width: 50%;
@@ -259,13 +259,13 @@ Must be updated for each page-->
 
    <div class="footnote-section">
 
-    <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+    <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:50%; text-align:left;"></div>
 
-    <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+    <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Footnotes</p>
   
     <a href="#2-up" class="footnote">   
       <div class="footnote-number">2.</div>
-      <div class="footnote-text">Régis Debray, Le siècle vert. Un changement de civilisation (Editions Gallimard, 2020)</div>
+      <div class="footnote-text">Régis Debray, <i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, 2020)</div>
       </a>
      
       </div><!--Closes footnote section-->
