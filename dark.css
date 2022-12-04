@@ -103,7 +103,7 @@
 }
 
 .background-1 {
-  background: url(svgs/01-imagine-dark.svg) no-repeat center  !important;
+  background: url(svgs/01-imagine-dark.svg) no-repeat center;
   background-size: contain;
 }
 
