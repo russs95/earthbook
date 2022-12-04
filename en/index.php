@@ -195,7 +195,7 @@ Must be updated for each page-->
 <!--9--><script src="includes/read-curtain.js" type="text/javascript" defer></script>
 
  
-<?php require_once ("includes/eco-curtain.php.php");?>
+<?php require_once ("includes/eco-curtain.php");?>
 
 		<div id="main">
 
