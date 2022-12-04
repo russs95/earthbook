@@ -3689,3 +3689,7 @@ fieldset {margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.page-paragraph a {text-decoration: underline !important;}
+
+.page-paragraph a:hover {text-decoration: none;}

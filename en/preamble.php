@@ -234,7 +234,7 @@ background-color: var(--slider);
 
 </div>
 
-<div id="up-arrow"><img src="../svgs/up-arrow-dark.svg"></div>
+<div id="up-arrow"></div>
 
 <div id="ct-main">
 
@@ -259,11 +259,11 @@ background-color: var(--slider);
     
     <p>To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory, and each chapter’s integration within it, is represented by the mandala at the top of this page.</p>
 
-    <p>As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the published eBook and print versions of the <i>Tractatus Ayyew</i> are <span style="cursor:pointer; text-decoration: underline;" onclick="openBuy()" aria-label="Open">for sale</span> here on the Earthbook site. Sales are independent of middlemen, with 97% of book sales going direct to the authors.</p>
+    <p>As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the published eBook and print versions of the <i>Tractatus Ayyew</i> are <span style="cursor:pointer; text-decoration: underline;" onclick="openBuy()" aria-label="Open">for sale</span> here on the Earthbook site. Sales are independent of middle-men, with 97% of book sales going direct to the authors.</p>
 
     <p>As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's <span style="cursor:pointer; text-decoration: underline;" onclick="openEco()" aria-label="Open">regenerative reporting.</span></p>
 
-    <p>The full content of the <i>Tractatus Ayyew</i> is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ">code</a> (developed first for the <i>Tractatus Ayyew</i>) is made available under a GNU 3.0 license.</p>
+    <p>The full content of the <i>Tractatus Ayyew</i> is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Go to the Earthbook Github repository">>code</a> (developed first for the <i>Tractatus Ayyew</i>) is made available under a GNU 3.0 license.</p>
 
 
     </div>
