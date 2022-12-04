@@ -1,6 +1,6 @@
-<!--EARTHBOOK CHAPTER PAGE - TEMPLATE
+<!--EARTHBOOK CHAPTER PAGE TEMPLATE
 
-PHP Page Version 1.0.0
+PHP Page Version 1.0.1
 Design by Russell Maier
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -139,7 +139,7 @@ Must be updated for each page-->
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
       <div id="ct-chapter-title">Epigraph</div>   
       <div id="ct-book-title">Tractatus Ayyew</div>
-      <div id="ct-chap-location">Introduction</div>
+      <div id="ct-chap-location">Book One</div>
       <div id="ct-word-count"><i>67 words</i></div>
     </div>
 </div>
@@ -220,7 +220,7 @@ Must be updated for each page-->
 
     <div class="footer-right">
    
-      <a href="imagine.html"><div class="next-button">Next ➔</div></a>
+      <a href="imagine.php"><div class="next-button">Next ➔</div></a>
 
     </div>
   </div>

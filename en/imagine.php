@@ -1,8 +1,7 @@
-<!--EARTHBOOK CHAPTER PAGE - TEMPLATE
-Design by Russell Maier
+<!--EARTHBOOK CHAPTER PAGE TEMPLATE
 
-CSS Version 0.7.3
-Original Author:  Russell Maier
+PHP Page Version 1.0.1
+Design by Russell Maier
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -12,35 +11,30 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
+<!-- PHP starts by laying out canonical URLs for the page and language -->
+
 <!DOCTYPE html>
-<html lang="en">
+
+<meta charset="UTF-8"> 
+
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
+<?php require_once ("lang.php");
+
+echo <<<_END
+<html lang="$lang" manifest="../offline.appcache">
+_END;
+
+$parts = explode ("/", $_SERVER['SCRIPT_NAME']);
+$name = $parts [count($parts)-1];
+if (strcmp($name, "welcome.php") == 0)
+$name = "";?>
 
 <head>
 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2022-10-31T09:14:13+00:00" />
 
-<!--BOOK META TAGS
-These tags will be consistent for the whole book-->
+<?php require_once ("../header.php");?>
 
-<meta property="og:site_name" content="Tractatus Ayyew" />
-<meta property="article:publisher" content="Earthen.io" />
-<meta name="author" content="Russell Maier & Banayan Angway">
-<meta property="og:type" content="book" />
-<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
-<link rel="manifest" href="../favicons/site.webmanifest">
 
-<meta name="twitter:card" content="summary" />
-<meta property="og:type"          content="book">
-<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg"/>
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1000px" />
-<meta property="og:image:height" content="1500px" />
-
-<meta property="og:locale" content="en_GB" />
 
  <!-- INCLUDES
  Main Scripts-->   
@@ -55,21 +49,6 @@ These tags will be consistent for the whole book-->
 <script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
 
 
- <!-- Style Sheets   
-All the css needed for this page-->
- 
- 
- <!--<link  rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
-<link rel="stylesheet" href="../acessibilidade.css" />
-<link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
-<link rel="preload" href="../light.css?v1.4" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../style-sheet.css?v1.4" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
-
-<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
- 
 
  <!--Page Components
 All the page components required to build this page-->
@@ -82,41 +61,9 @@ All the page components required to build this page-->
  <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
  <!--8b--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
-  <!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
-
-
- <!-- Fonts
-The requisite typography for the page-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Mulish loads first for first page view-->
-
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
-
-	
-<!--Preload graphics-->
-<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
-<link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
-<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
-
 
 
 <!--END OF GENERIC CONTENT-->
-
-<!--PAGE LINKS
-
-**** Must be updated for each unique page ****-->
-
-<link rel="canonical" href="https://book.earthen.io/en/imagine.html"> 
-<link rel="alternate" href="https://book.earthen.io/en/imagine.html" hreflang="en" />
-<link rel="alternate" href="http://book.org/en/imagine.html" hreflang="x-default" />
-<!--<link rel="alternate" href="https://book.earthen.io/fr/imagine.html" hreflang="fr" />
-<link rel="alternate" href="https://book.earthen.io/es/imgaine.html" hreflang="es" />
-<link rel="alternate" href="https://book.earthen.io/id/imagine.html" hreflang="id" />-->
 
 <!--META TAGS
 Must be updated for each page-->
@@ -130,7 +77,7 @@ Must be updated for each page-->
 <meta name="twitter:data1" content="6 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:url"           content="https://tractatus.earthen.io/en/imagine.html">
+<meta property="og:url"           content="https://tractatus.earthen.io/en/imagine.php">
 <meta property="og:title"         content="Imagine | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part."/>
 
@@ -162,16 +109,7 @@ Must be updated for each page-->
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-1">
-    <div class="ct-chapter-quote">
-      “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.”
-    </div>
-    <div class="ct-quote-source">
-     ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a href="#footnotes">²</a>
-    </div>
-  </div>
 
-  <div id="progress-bar">
-    <div class="progress" width="12%"></div>
   </div>
 
 
@@ -198,31 +136,10 @@ Must be updated for each page-->
 <!--ECO-CURTAIN
 <eco-curtain></eco-curtain>-->
  
+<?php require_once ("includes/eco-curtain.php");?>
+ 
 
-<div id="eco-curtain2" class="eco-overlay">
-  <div class="overlay-content-eco">         
-        
-    <div class="eco-header">The Earthbook format is hand-coded from the ground up to be Green.</div>
-
-    <div class="eco-text">
-    In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">Regenerativity Report.</a>
-    </div>
-
-    <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
-
-     <div id="wcb" class="carbonbadge wcb-d"></div>
-    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" async></script>
-
-    <div class="eco-medium">The Medium is the Message.</div>
-    <span style="cursor:pointer" onclick="closeEco()" aria-label="Close">
-        <div id="bottom-close-button">
-            <img src="../svgs/bottom-x.svg" alt="Close button">
-        </div>
-    </span>
-  </div>
-</div>
-
+<div id="up-arrow"></div>
 
   <div id="ct-main">
 
