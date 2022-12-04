@@ -234,7 +234,7 @@ background-color: var(--slider);
 
 </div>
 
-<div id="up-arrow"><img src="../svgs/up-arrow.svg"></div>
+<div id="up-arrow"><img src="../svgs/up-arrow-dark.svg"></div>
 
 <div id="ct-main">
 
@@ -263,7 +263,7 @@ background-color: var(--slider);
 
     <p>As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's<span style="cursor:pointer; text-decoration: underline;" onclick="openEco()" aria-label="Open"> regenerative reporting.</span></p>
 
-    <p>The full content of the <i>Tractatus Ayyew</i> is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook <a href="https://github.com/russs95/earthbook/">code</a> (developed first for the <i>Tractatus Ayyew</i>) is made available under a GNU 3.0 license.</p>
+    <p>The full content of the <i>Tractatus Ayyew</i> is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ">code</a> (developed first for the <i>Tractatus Ayyew</i>) is made available under a GNU 3.0 license.</p>
 
 
     </div>
