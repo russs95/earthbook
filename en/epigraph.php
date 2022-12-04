@@ -144,7 +144,7 @@ Must be updated for each page-->
 
 <div id="ct-main">
 
-<div class="ct-quote-source">
+<div class="page-paragraph">
      ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a href="#footnotes">²</a>
     </div>
 
