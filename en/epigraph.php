@@ -209,7 +209,7 @@ Must be updated for each page-->
 <!-- Page Title Section-->
 
 
-<div id="ct-chapt-graphic" class="background-00">
+<div id="ct-chapt-graphic" class="background-0">
     <div class="ct-chapter-quote">
       “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.  First, History passed away, Nature is now next.  This is the moment to take green seriously.”
     </div>
