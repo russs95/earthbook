@@ -35,21 +35,6 @@ $name = "";?>
 <?php require_once ("../header.php");?>
 
 
-
- <!-- INCLUDES
- Main Scripts-->   
-
- <script src="../content-javascript.js" defer></script>
- <script src="../universal-javascript.js" defer></script>
- <script src="../clip/dist/clipboard.min.js"></script>
- <script src="../accessibility.js" defer></script>
- <script type="module" src="https://unpkg.com/dark-mode-toggle" async></script>
- 
- <!-- Arc CDN Script without delay
-<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
-
-
-
  <!--Page Components
 All the page components required to build this page-->
 
