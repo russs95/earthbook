@@ -62,7 +62,6 @@ Must be updated for each page-->
 <meta name="twitter:data1" content="3 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:url"           content="https://tractatus.earthen.io/en/epigraph.php">
 <meta property="og:title"         content="Epigraph | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear..."/>
 
