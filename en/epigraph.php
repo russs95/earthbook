@@ -118,25 +118,6 @@ Must be updated for each page-->
 </div>
 
 
-<!--CONTENTS MENU-->
-<content-curtain></content-curtain>
-
-<!--SETTINGS-MENU-->
-<settings-curtain></settings-curtain>
-
-<!--BOOK PLATE-->
-<bookplate-curtain></bookplate-curtain>
-
-<!--ABOUT EARTHBOOK-->
-<earthbook-curtain></earthbook-curtain>
-
-<!--SHARE-MENU-->
-<share-curtain></share-curtain>
-
-<!--BUY-CURTAIN-->
-<buy-curtain></buy-curtain>
-
-<!--ECO-CURTAIN-->
  
 <?php require_once ("includes/eco-curtain.php");?>
  
@@ -165,7 +146,7 @@ Must be updated for each page-->
   
     <a href="#2-up" class="footnote">   
       <div class="footnote-number">2.</div>
-      <div class="footnote-text">Régis Debray, <i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, 2020)</div>
+      <div class="footnote-text">Régis Debray, <i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, January 2020)</div>
       </a>
      
       </div><!--Closes footnote section-->
