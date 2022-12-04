@@ -176,7 +176,7 @@ Must be updated for each page-->
       <div id="ct-chapter-title">Epigraph</div>   
       <div id="ct-book-title">Tractatus Ayyew</div>
       <div id="ct-chap-location">Introduction</div>
-      <div id="ct-word-count"><i>60 words</i></div>
+      <div id="ct-word-count"><i>67 words</i></div>
     </div>
 </div>
 
@@ -209,9 +209,9 @@ Must be updated for each page-->
 <!-- Page Title Section-->
 
 
-<div id="ct-chapt-graphic" class="background-0">
+<div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-      “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.  First, History passed away, Nature is now next.  This is the moment to take green seriously.”
+      “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.  First History passed, now Nature is next.  This is the moment to take green seriously.”
     </div>
     <div class="ct-quote-source">
      ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a href="#footnotes">²</a>
@@ -221,16 +221,6 @@ Must be updated for each page-->
 <div id="up-arrow"></div>
 
 <div id="ct-main">
-
-   
-    <div class="ct-chapter-quote">
-    “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.  First, History passed away, Nature is now next.  This is the moment to take green seriously.”
-    </div>
-    <div class="ct-quote-source">
-     ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a href="#footnotes">²</a>
-    </div>
-  
-  </div>
 
    <div class="footnote-section">
 

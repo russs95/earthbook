@@ -77,6 +77,11 @@
 
 /*CHAPTERS*/
 
+.background-000 {
+  background: url(svgs/00-light.svg) no-repeat center;
+  background-size: contain;
+}
+
 .background-00 {
   background: url(svgs/tractatus-mandala-full-grey-grey.svg) no-repeat center;
   background-size: contain;
