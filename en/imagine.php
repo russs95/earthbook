@@ -98,7 +98,7 @@ Must be updated for each page-->
      
 
       <div class="page-paragraph"><p><i>
-      Imagine a world where the way we live is steadily enriching the ecosystems of which we are part.  It is a world where our households and communities, just by thriving, make the biosphere a more abundant, vibrant and hospitable home for us and all our kindred creatures.  Rather than strive to reduce our environmental harm, in this world we strive to maximize our ecological contributions.  To do so, the way we manage our matter and energy has shifted accordingly.  No longer do our enterprises operate merely in circles—  so too do they spiral; with each spin overpaying its ecological debt and dispersing its surpluses.   No longer do our enterprises merely reduce the amount of carbon and other elements they let loose— so too do they capture and secure more than they release.  And, no longer do we merely admire the tapestry of life around us— so too do we play an active role in its vitalization as we share space other organisms.  As we all thrive together in this common home, the awareness of our ecological interconnection ever augments, and with it, the sync of our cycles of enterprise and ecosystem, economy and biome, humanity and biosphere— a harmony rising up with us towards the stars.</i></p>
+      Imagine a world where the way we live is steadily enriching the ecosystems of which we are part.  It is a world where our households and communities, just by thriving, make the biosphere a more abundant, vibrant and hospitable home for us and all our kin.  Rather than strive to reduce our environmental harm, in this world we have come together to maximize our ecological contribution.  To do so, the way we manage our matter and energy has shifted.  No longer do our enterprises operate merely in circles—  so too do they spiral; with each spin overpaying its debts and dispersing its surpluses.   No longer do our enterprises merely reduce the amount of carbon and other elements they let loose— so too do they capture more than they release.  No longer do we merely admire the tapestry of organisms and ecosystems around us— so too do we play an active part in its vitality and diversification.  As we all thrive together in this common home, the awareness of our ecological interconnection ever augments, and with it, the sync of our cycles of enterprise and ecosystem, economy and biome, humanity and biosphere— a harmony rising up with us towards the stars.</i></p>
      </div>
      <br><br>
 
@@ -108,15 +108,15 @@ Must be updated for each page-->
 <div>
      <div class="lead-page-paragraph">
 
-      TODAY, as we become more and more aware of the degradation and depletion inherent in our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in resolution, never before has it been more important to recognize that the foundations of the new green age to which we aspire have already been laid.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve great heights of social and ecological harmony, abundance and vitality. Only to the extent that we can recognize these enlightened moments, we can imagine our own.  And insofar as we can imagine, the realization of a green world world for all is not nearly as distant as many of us despair.
+     TODAY, AS WE BECOME more and more aware of the degradation and depletion inherent in our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been walked.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of cultural and ecological harmony, abundance and vitality that far exceed our modern environmental vision, values and virtues. Only to the extent that we can recognize these enlightened moments, can we imagine our own. For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair. 
       </p>
 
     </div>
 
 
-      <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes">³</a>, she and I have to come to see that the potential for authentic green participation unites us all as humans— and even deeper, our longing to do so. </p>
+      <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes">³</a>, she and I have to come to see that the longing and the potential for ecological contribution unites us all on planet Earth. </p>
 
-      <p>Across cultures and continents, we long to contribute to that which we are part:  to sync with those with whom we sing; to harmonize with those with whom we relate; to enrich the communities in which we partake.  Consequently, as the parts we play in our local ecosystems and global biomes becomes clearer, so too does our yearning to participate positively in them and contribute to a common harmony, vitality and abundance.  
+      <p>Across cultures and continents, we long to contribute to that which we are part: to harmonize with those with whom we relate; to add to the communities in which we belong, to harmonize with our neighbours, to sync with those with whom we sing.  Consequently, as the parts we play in our local ecosystems and global biomes becomes clearer, so too does our yearning to participate positively in them and contribute to a common harmony, vitality and abundance.  
       </p>
 
       <p>Indeed, Banayan and I have come to see that the transition to households, communities and enterprises that are in-and-of-themselves ecological contributions is the next stage of an epic planetary story whose direction is, quite literally, in our hands.</p>
@@ -125,7 +125,7 @@ Must be updated for each page-->
 
       <p>One word:</p>
 
-      <p>Plastic.</p>
+      <p><i>Plastic.</i></p>
 
       <p>Therein this problematic modern material lies our way forward.</p>
 
@@ -141,29 +141,33 @@ Must be updated for each page-->
      
      <p>By confronting plastic's full billion year story, we can face our own within the same frame.</p>
 
-     <p>Then, in seeing our reflection with unprecedented lucidity, we can know our plastic— and ourselves— anew.</p>
+     <p>Then, in seeing our reflection with unprecedented clarity, we can know our plastic— and ourselves— anew.</p>
 
      <p>Above all, we can renew our ecological understanding of positive human participation: <i>what green should really mean.</i></p>
 
-     <p>Banayan and I, in struggling to manage our own plastic positively, have come to see that the current concept of green is lacking and incomplete.  Seen through the lens of the  ecological ayyew ethos of her people, we observe that the modern ethic of green is merely about reducing harm— while the concept of contribution has remained all but un-imagined.  It is a view of human ecological potential that sharply contradicts the lived experience of Banayan and her people.</p>
+     <p>Banayan and I, in struggling to manage our own plastic positively, have come to see that the current concept of green is lacking and incomplete.</p>
+     
+     <p>Seen through the lens of the  ecological ayyew ethos of her people, we observe that the modern ethic of green is merely about reducing <i>harm</i>— while the concept of <i>contribution</i> has remained all but un-imagined.</p>
+     
+     <p>It is a view of human ecological potential that sharply contradicts the lived experience of Banayan and her people.</p>
 
      <p>As we shall see in the chapters ahead, ecological contribution has in fact been the overwhelming tendency on Earth— a unique planetary pattern of matter and energy that, from the very beginning, has permeated all of Earth's processes, cycles and systems.</p>
 
      <p>And our own.</p>
 
-     <p>To the extent that this Earthen pattern has been reflected within the values and virtues of certain cultures, the societies that have ensued have systematically enriched the ecosystems of which they are a part.</p>
+     <p>To the extent that this Earthen pattern has been reflected within the values and virtues a culture, the societies that have ensued have systematically enriched the ecosystems of which they are a part.</p>
 
-     <p>Conversely, to the extent that a culture’s pattern has differed, systematic depletion and degradation have been the inexorable result.</p>
+     <p>Conversely, to the extent that a culture’s pattern has differed from Earth’s, systematic depletion and degradation have been the inexorable result.</p>
 
-     <p>The discernment of this Earthen pattern, shall be our chief task in the Tractatus Ayyew.</p>
+     <p>The discernment of this Earthen pattern, shall be our chief task in the <i>Tractatus Ayyew.</i></p>
 
-     <p>Through the combination of our two ancestral perspectives, Banayan’s Igorot heritage and my European, her indigenous culture and my settler, her agrarian upbringing and my industrial, we will investigate the shortcomings of our modern ethical understanding. In particular, the long buried metaphysical misconceptions at the very root of all modern ecological malaise.</p>
+     <p>Through the combination of our two ancestral perspectives, Banayan’s Igorot heritage and my European, her indigenous culture and my settler, her agrarian upbringing and my industrial, we will investigate the shortcomings of our modern ethical understanding. In particular, the misconceived human exceptionalism that we observe is at the root of all our modern ecological malaise.</p>
 
-     <p>With ancient error excised, we shall then lay out a new theory of green based upon the cosmological character of our planet.</p>
+     <p>With this metaphysical error excised, we shall then lay out a new theory of green based upon the cosmological character of our planet.</p>
 
-     <p>Guided by the insights of great green nations, the ways of magnificently contributive creatures and the latest insights of scientists, we shall lay out each of the principles that composes the Earth’s five-fold pattern of ecological enrichment.</p>
+     <p>Guided by the insights of great green nations, the ways of magnificently contributive creatures and the insights of Earth science, we shall lay out each of the principles that composes our planet’s five-fold pattern of ecological enrichment.</p>
 
-     <p>The resulting Earthen ethics will help us to make sense of our modern processes, technologies and enterprises— a means by which we can discern that which is enriching (<i>what is green</i>) from that what is depleting (<i>what is grey</i>); and that which is a contribution— from that which is not.</p>
+     <p>The resulting <i>Earthen ethics</i> will help us to make sense of our modern processes, technologies and enterprises by proving a means by which we can discern that which is enriching from that which is degrading; that which is an ecological contribution from that which is a depletion; and that which is <i>green</i> from that which is <i>grey</i>.</p>
 
       <p>In this way, with Earth’s example as our guide to green, can move forward with unprecedented clarity and confidence to embody the geometry of contribution in all our processes, cycles and systems.  </p>
 
