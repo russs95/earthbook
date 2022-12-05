@@ -54,39 +54,6 @@ Must be updated for each page-->
 
 <style>
   
-/*
-@media screen and (max-width: 699px) {
-    .ct-chapter-quote {
-      width: 87%;
-      font-size: 1em;
-    }
-    .ct-quote-source {
-      width: 80%;
-      font-size: 0.8em;
-    }
-  }
-
-  @media screen and (min-width: 700px) and (max-width: 1324px) {
-    .ct-chapter-quote {
-      width: 70%;
-      font-size: 1.4em;
-    }
-    .ct-quote-source {
-      width: 70%;
-      font-size: 1em;
-    }
-  }
-    
-  @media screen and (min-width: 1325px) {
-    .ct-chapter-quote {
-    width: 50%;
-    font-size: 1.4em;
-    }
-    .ct-quote-source {
-      width: 50%;
-      font-size: 1em;
-    }
-  }*/
 
   #ct-chapter-title {
       padding-top: 45px;
@@ -117,11 +84,13 @@ Must be updated for each page-->
       </div>
   </div>
 
+  <?php require_once ("includes/eco-curtain.php");?>
+
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-2">
   </div>
-
+  <div id="up-arrow"></div>
 
   <div id="ct-main">
 
@@ -131,7 +100,7 @@ Must be updated for each page-->
 -->
 
      <div class="lead-page-paragraph">
-        LIKE NO OTHER MATERIAL, plastic has been made entirely for the use and benefit of humans.   For the last half-century we have loved it: steadily incorporating plastic into every aspect of our modern lives.  However, of no use to other creatures, plastic has come to clog ecological cycles on land, in river and at sea.  The polluting consequences of our human-centered creation is now the focus of great hate and humiliation.  Though our various other ecological crises— ocean acidification, climate change, species extinction— may be far more dire; nonetheless, as we survey sullied beaches, choked rivers and beached whales, plastic pollution certainly causes us the most shame.
+        LIKE NO OTHER MATERIAL, plastic has been made entirely for the use and benefit of humans.   For the last half-century we have loved it: steadily incorporating plastic into every aspect of our modern lives.  However, of no use to other creatures, plastic has come to clog ecological cycles on land, in river and at sea.  The polluting consequences of our human-centered creation is now the focus of great hate and humiliation.  Though our various other ecological crises— ocean acidification, climate change, species extinction— may be far more dire; nonetheless, as we survey sullied beaches, choked rivers and beached whales, it is plastic pollution that causes us the most shame.
      </div>
 
     <div class="page-paragraph">
@@ -147,23 +116,24 @@ Must be updated for each page-->
       <p id="12-up">However, such judgments are entirely misplaced.<a href="#footnotes">¹²</a>
       </p>
 
-      <p>While we’re now seeing clearly where our plastic ends up, this is only half the story.  Our century-long account of plastic as human-made and managed has been woefully short-sighted. Until now, we haven’t truly grasped where plastic begins– both physically and philosophically.</p>
+      <p>While we’re now seeing clearly where our plastic ends up, this is only half the story.  Our century-long account of plastic as human-made and managed has been woefully short-sighted. Until now, we haven’t truly grasped where our plastic <i>begins</i>– both physically and philosophically.</p>
 
-      <p>Oft-unknown: plastic’s matter is a by-product of the extraction and refinement of the fossil carbon that powers our modern age.  And the fossil carbon itself?  It is in fact the by-product of ancient Earth’s epic unfolding into a greener and greener biosphere— an ecological act of which we have much to learn.</p>
+      <p>Oft-unknown: plastic’s matter is a by-product of the extraction and refinement of the fossil carbon that powers our modern age.  And the fossil carbon itself?  It is in fact the by-product of Earth’s epic unfolding of a greener and greener biosphere— an ecological act of which we have much to learn.</p>
 
       <p>So, while our slumber has been stirred by observing plastic’s destiny, our full awakening shall come with an understanding of its origins.  For therein plastic’s primordial story lies the key to the reversal of plastic's polluting— and, incidentally, to the reversal of all our other ecological crises.  For while plastic pollution, ocean acidification, climate change and  species extinction may seem disparate and unconnected, they share a common cause in the dissonance of Earth and modern humanity’s patterns of process.</p>
 
-      <p>From its petroleum genesis, to the way it is made only for humans, to its dispersal into the biosphere, to its acceleration of for-profit enterprise, plastic embodies the elements of our modern ecological crises like nothing else.  Thus, as plastic passes through our hands each day, through it we can quite literally touch the paradigm that powers our age of depletion.  Through this touch, we have a unique opportunity to shift plastic’s fate— and so too shift the values and ethics that loom unseen behind it and our modern world. </p>
+      <p>From its petroleum derivation to its human-centered design; from its inevitable dispersal to its polluting consequences; our plastic embodies the root aspects of all modern ecological crises like nothing else.</p>
 
-      <p>It is the requisite first step to ushering in a green age for humanity and thriving common home for all.</p>
+      <p>In this way, plastic holds an ecological value that our modern society has completely overlooked.  </p>
 
-      <p>For truly, if we cannot resolve the small pieces of plastic that pass through our hands each day, how can we hope to resolve the other ecological crises that loom large on our horizon? </p>
-      
+      <p>For as plastic passes through our hands each day, through it we can quite literally touch the paradigm and pattern that powers our age of depletion.  Through this touch, we have a unique opportunity to shift plastic’s fate— and so too shift the values and ethics that loom unseen behind it and our modern world. </p>
+
+  
       <p>But to grasp this momentous opportunity, we must first transcend our judgments and condemnations of plastic— and of ourselves.</p>
 
       <p>To do so we must go back and look at how plastic arrived into our hands in the first place.  </p>
 
-     <p>To do so we must start from the very beginning. </p>
+     <p>To do so we must go back to the very beginning of planet Earth. </p>
 
   
     </div><!--closes page text content-->
@@ -247,7 +217,7 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="stellar.html"><div class="next-button">Next ➔</div></a>
+        <a href="stellar.php"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>

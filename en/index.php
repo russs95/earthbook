@@ -2,29 +2,13 @@
 
 Concept and first version by Russell Maier, October 24th, 2022.  First used for the book Tractus Ayyew - An Earthen Ethics (all forked generic versions of the Earthbook are requested to leave this book in as the place holder text)
 
-Design by Russell Maier
-
-CSS Version 0.7.3
+PHP Page Version 1.0.1
 Original Author:  Russell Maier
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
 License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
 See full project repository at: https://github.com/russs95/earthbook
-*/
--->
-
-
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
-
-PHP Page Version 1.0.1
-Design by Russell Maier
-License: GNU General Public License v2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-All files, unless otherwise stated, are released under the GNU General Public
-License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
-See full project repository at: https://github.com/russs95/earthbook
-*/
 -->
 
 
@@ -43,7 +27,7 @@ _END;
 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
+if (strcmp($name, "index.php") == 0)
 $name = "";?>
 
 <head>
@@ -87,7 +71,6 @@ $name = "";?>
 <!--Preload graphics   media="(max-width: 700px)"-->
 
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
-
 <link rel="preload" as="image" href="../icons/reader.svg">
 <link rel="preload" as="image" href="../icons/pdf.svg">
 <link rel="preload" as="image" href="../icons/buy.svg">
@@ -109,6 +92,9 @@ $name = "";?>
 <!--HEADER NAVBAR-->
 <header-component></header-component>
 
+<!--READ CURTAIN-->
+<read-curtain></read-curtain>
+
 <!-- PAGE CONTENT-->
 
 <div id="main-page">
@@ -118,7 +104,7 @@ $name = "";?>
 
             <img src="https://book.earthen.io/photos/cover-500px.webp" width="300px" height="415px" alt="Tractatus Ayyew - EarthBook Cover">
 
-            <div class="welcome-to">Welcome to the <b><span style="cursor:pointer; text-decoration:underline;" onclick="openEarthbook()">EarthBook</span></b> edition of the Tractatus Ayyew.</div>
+            <div class="welcome-to">Welcome to the <span style="cursor:pointer; text-decoration:underline;" onclick="openEarthbook()">EarthBook</span> edition of the Tractatus Ayyew.</div>
 
             <div class="button-row">
                 <div id="read-btn" class="action-btn"  style="cursor:pointer;" onclick="openRead()"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</a></div>
@@ -128,14 +114,12 @@ $name = "";?>
             </div>
 
             <?php require_once ("../manage.php");?>
+
         </div>
-
-
  
-<?php require_once ("includes/eco-curtain.php");?>
+        <?php require_once ("includes/eco-curtain.php");?>
 
 		<div id="main">
-
 
             <div class="lead-text">
             As we become more and more aware of the ecological crises triggered by our modern age, we long to green our ways.  However, what does 'green' actually mean and what exactly should it require?  Inspired by magnificent creatures, great cultures and our planet's pattern this book lays out an ethics anchored in Earth's example.
