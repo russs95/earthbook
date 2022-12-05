@@ -177,7 +177,7 @@ Must be updated for each page-->
             <div class="button-row">
                 <div id="read-btn" class="action-btn"  style="cursor:pointer;" onclick="openRead()"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</a></div>
                 <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</a></div>
-                <div id="pdf-btn" class="action-btn" style="cursor:pointer;" onclick="openEarthbook()"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> About</a></div>
+                <div id="pdf-btn" class="action-btn" style="cursor:pointer;" onclick="openBookplate()"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> About</a></div>
                 
             </div>
 
@@ -193,7 +193,7 @@ Must be updated for each page-->
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
  <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
 <!--9--><script src="includes/read-curtain.js" type="text/javascript" defer></script>
-
+ 
  
 <?php require_once ("includes/eco-curtain.php");?>
 
@@ -242,7 +242,7 @@ Must be updated for each page-->
                 </div>
                 </a>
 
-                <a href="plastic1.html">
+                <a href="plastic.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Plastic 1.0</div>
                     <div class="word-count"><i>623 words</i></div>

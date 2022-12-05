@@ -98,7 +98,7 @@ Must be updated for each page-->
      
 
       <div class="page-paragraph"><p><i>
-      Imagine a world where the way we live is steadily enriching the ecosystems of which we are part.  It is a world where our households and communities, just by thriving, make the biosphere a more abundant, vibrant and hospitable home for us and all our kin.  Rather than strive to reduce our environmental harm, in this world we have come together to maximize our ecological contribution.  To do so, the way we manage our matter and energy has shifted.  No longer do our enterprises operate merely in circles—  so too do they spiral; with each spin overpaying its debts and dispersing its surpluses.   No longer do our enterprises merely reduce the amount of carbon and other elements they let loose— so too do they capture more than they release.  No longer do we merely admire the tapestry of organisms and ecosystems around us— so too do we play an active part in its vitality and diversification.  As we all thrive together in this common home, the awareness of our ecological interconnection ever augments, and with it, the sync of our cycles of enterprise and ecosystem, economy and biome, humanity and biosphere— a harmony rising up with us towards the stars.</i></p>
+      Imagine a world where the way we live is steadily enriching the ecosystems of which we are part.  It is a world where our households and communities, just by thriving, make the biosphere a more abundant, vibrant and hospitable home for us and all our kin.  Rather than strive to reduce our environmental harm, in this world we have come together to maximize our ecological contribution.  To do so, the way we manage our matter and energy has shifted.  No longer do our enterprises operate merely in circles—  so too do they spiral; each spin overpaying its debts and dispersing its surpluses.   No longer do our enterprises merely reduce the amount of carbon and other elements they let loose— so too do they capture more than they release.  No longer do we merely admire the tapestry of organisms and ecosystems around us— so too do we play a part in its vitality and diversification.  As we all thrive together in this common home, the awareness of our interconnection ever augments, and with it, the sync of our cycles of enterprise and ecosystem, economy and biome, humanity and biosphere— a harmony rising up with us towards the stars.</i></p>
      </div>
      <br><br>
 
@@ -108,7 +108,9 @@ Must be updated for each page-->
 <div>
      <div class="lead-page-paragraph">
 
-     TODAY, AS WE BECOME more and more aware of the degradation and depletion inherent in our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been walked.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of cultural and ecological harmony, abundance and vitality that far exceed our modern environmental vision, values and virtues. Only to the extent that we can recognize these enlightened moments, can we imagine our own. For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair. 
+     TODAY, AS WE BECOME more and more aware of the degradation and depletion inherent in our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been walked.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of cultural and ecological harmony, abundance and vitality that far exceed our modern environmental vision, values and virtues. Only to the extent that we can recognize these enlightened moments, can we imagine our own.</p>
+     
+     <p>For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair. 
       </p>
 
     </div>
@@ -145,7 +147,7 @@ Must be updated for each page-->
 
      <p>Above all, we can renew our ecological understanding of positive human participation: <i>what green should really mean.</i></p>
 
-     <p>Banayan and I, in struggling to manage our own plastic positively, have come to see that the current concept of green is lacking and incomplete.</p>
+     <p>Banayan and I, in struggling to manage our own plastic positively, have come to see that the contemporary concept of green is lacking and incomplete.</p>
      
      <p>Seen through the lens of the  ecological ayyew ethos of her people, we observe that the modern ethic of green is merely about reducing <i>harm</i>— while the concept of <i>contribution</i> has remained all but un-imagined.</p>
      
@@ -188,12 +190,12 @@ Must be updated for each page-->
     
       <a href="#3-up" class="footnote">   
       <div class="footnote-number" id="3-down">3.</div>
-      <div class="footnote-text">In particular the Igorot Ayyew ecological ethos.  See: Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12 (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).  </div>
+      <div class="footnote-text">In particular the Igorot Ayyew ecological ethos.  See: Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).  </div>
       </a>
 
       <a href="#4-up" class="footnote">   
       <div class="footnote-number">4.</div>
-      <div class="footnote-text">The first principle of permaculture.  Bill Mollison, Principles from Permaculture a Designers' Manual, (Tagari Publishers: 1988).</div>
+      <div class="footnote-text">The first principle of permaculture.  Bill Mollison, <i>Principles from Permaculture a Designers' Manual</i>, (Tagari Publishers: 1988).</div>
       </a>
 
 
@@ -222,7 +224,7 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="plastic1.html"><div class="next-button">Next ➔</div></a>
+        <a href="plastic.php"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
@@ -235,8 +237,6 @@ Must be updated for each page-->
   <div id="containerBrightness"></div>
 
 </div>
-<!--
-<script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js" defer></script>-->
 
 </body>
 </html>
