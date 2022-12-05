@@ -34,4 +34,12 @@ Redirect /imagine.php /en/imagine.php
 Redirect en/imagine.html /en/imagine.php
 Redirect en/imagine /en/imagine.php
 
+Redirect /plastic /en/plastic.php
+Redirect /plastic.html /en/plastic.php
+Redirect /plastic.php /en/plastic.php
+Redirect en/plastic.html /en/plastic.php
+Redirect en/plastic /en/plastic.php
+
+
+
 AddType text/cache-manifest .appcache
