@@ -82,8 +82,9 @@ $name = "";?>
 
  <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
  <script src="../index-javascripts.js"></script>
- <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
 
+
+<!--Preload graphics   media="(max-width: 700px)"-->
 
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
 
@@ -94,6 +95,17 @@ $name = "";?>
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
 
+
+
+ <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
+ <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
+ <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
+ <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
+ <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
+ <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
+ <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
+<!--9--><script src="includes/read-curtain.js" type="text/javascript" defer></script>
+ 
 
 </head>
 
