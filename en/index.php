@@ -15,21 +15,44 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
+<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+
+PHP Page Version 1.0.1
+Design by Russell Maier
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
+*/
+-->
+
+
+<!-- PHP starts by laying out canonical URLs for the page and language -->
+
 <!DOCTYPE html>
-<html lang="en" manifest="../offline.appcache">
+
+<meta charset="UTF-8"> 
+
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
+<?php require_once ("lang.php");
+
+echo <<<_END
+<html lang="$lang" manifest="../offline.appcache">
+_END;
+
+$parts = explode ("/", $_SERVER['SCRIPT_NAME']);
+$name = $parts [count($parts)-1];
+if (strcmp($name, "welcome.php") == 0)
+$name = "";?>
 
 <head>
 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<?php require_once ("../header.php");?>
 
 
- <!--Page Icons-->
- <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
- <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
- <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
- <link rel="manifest" href="../favicons/site.webmanifest">
-
+<!--END OF GENERIC CONTENT-->
 
 <!--META TAGS-->
 
@@ -51,57 +74,16 @@ See full project repository at: https://github.com/russs95/earthbook
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:site_name" content="Tractatus Ayyew" />
 <meta property="article:publisher" content="Earthen.io" />
-<meta property="og:url"           content="https://book.earthen.io/en/">
 <meta property="og:type"          content="website">
 <meta property="og:title"         content="Tractatus Ayyew - An Earthen Ethics">
 <meta property="og:description"   content="By Banayan Angway & Russell Maier  | Earthbook Edition."/>
-<meta property="og:image"         content="https://book.earthen.io/photos/earth-book-cover-1000px.jpg"/>
-<meta property="og:image:width" content="1000" />
-<meta property="og:image:height" content="1500" />
-<meta property="og:image:alt"     content="The Earth and its geometric pattern floating in space"/>
-  <meta property="og:locale" content="en_GB" />
 
+ <!--SPECIAL INDEX INCLUDES -->
 
-
-
-  <!-- Style Sheets -->
-<link rel="preload" href="../light.css?v1.4" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../style-sheet.css?v1.4" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
-
-<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
- 
  <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
-  <link rel="preload" as="image" href="https://book.earthen.io/svgs/left-menu.svg">
-<link rel="preload" as="image" href="https://book.earthen.io/svgs/right-menu.svg">
+ <script src="../index-javascripts.js"></script>
+ <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
 
- <!-- Fonts
-The requisite typography for the page-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- Mulish loads first for first page view-->
-
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
-
- <!--INCLUDES -->
- 
-<script src="../index-javascripts.js"></script>
-<script src="../universal-javascript.js"></script>
-<script type="module" src="https://unpkg.com/dark-mode-toggle" defer></script>
-<script src="../clip/dist/clipboard.min.js" defer></script>
-<script src="../accessibility.js" defer></script>
-
-
-<!--1--><script src="includes/header-component.js" type="text/javascript"></script>
-
-
-
-<!--Preload graphics   media="(max-width: 700px)"-->
 
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
 
@@ -112,43 +94,6 @@ The requisite typography for the page-->
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
 
-
-<!--END OF GENERIC CONTENT-->
-
-<!--PAGE LINKS
-
-**** Must be updated for each unique page ****-->
-
-<link rel="canonical" href="https://book.earthen.io/en/"> 
-<link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" />
-<link rel="alternate" href="https://book.earthen.io/en/" hreflang="x-default" />
-<!--<link rel="alternate" href="https://book.earthen.io/fr/" hreflang="fr" />
-<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" />
-<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" />-->
-
-<!--META TAGS
-Must be updated for each page-->
-
-
-<title>Tractatus Ayyew | An Earthen Ethic - Earthbook</title>
-
-<meta name="keywords" content="Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-
-<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
-
-
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="3 minutes" /> 
-	
-<!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:url"           content="https://tractatus.earthen.io/en">
-<meta property="og:title"         content="Tractatus Ayyew | An Earthen Ethic - Earthbook">
-<meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew"/>
-
-
-<style>
-
-</style>
 
 </head>
 
@@ -185,15 +130,6 @@ Must be updated for each page-->
         </div>
 
 
- <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
- <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
- <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
- <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
- <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
- <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
- <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
-<!--9--><script src="includes/read-curtain.js" type="text/javascript" defer></script>
- 
  
 <?php require_once ("includes/eco-curtain.php");?>
 
@@ -360,13 +296,13 @@ Must be updated for each page-->
                 <div class="book-box-header">Appendix</div>
 
                 <a href="summaries.php">
-                <div class="chapter-bottom">
+                <div class="chapter-top">
                     <div class="chapter-name">Summaries</div>
                     <div class="word-count"><i>501 words</i></div>
                 </div>
             
                 <a href="dedication.html">
-                <div class="chapter-top">    
+                <div class="chapter-middle">    
                     <div class="chapter-name">Dedication</div>
                     <div class="word-count"><i>26 words</i></div>
                 </div>

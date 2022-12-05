@@ -158,8 +158,8 @@ Must be updated for each page-->
     
      
         <div class="next-section">
-            <div class="next-sec">Next section:</div>
-            <div class="sec-name"><i>Chapter 1 | Imagine</i></div>
+            <div class="next-sec">Next:</div>
+            <div class="sec-name"><i>Dedication</i></div>
         </div>
 
       </div>
