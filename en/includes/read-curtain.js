@@ -25,10 +25,10 @@ class ReadCurtain extends HTMLElement {
                     </div>
 
                     <div class="button-row-read2">
-                      <a href="preamble.html">
+                      <a href="preamble.php">
                       <div id="read-btn" class="action-btn">
 
-                        <i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Read Here & Now (Web)
+                        <i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Read Here & Now (Web Earthbook)
                         
                       </div>
                       </a>
