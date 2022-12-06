@@ -120,7 +120,7 @@ Must be updated for each page-->
   <?php require_once ("includes/eco-curtain.php");?>
 
 
-  <div id="ct-chapt-graphic" class="background-00"></div>
+  <div id="ct-chapt-graphic" class="background-000"></div>
 
   <div id="up-arrow"></div>
 
@@ -131,7 +131,7 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 
-<div class="page-paragraph"><i>
+<div class="page-paragraph" style="text-align:center"><i>
 
     <p>To our mothers and fathers,<p>
     

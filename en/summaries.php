@@ -87,7 +87,7 @@ Must be updated for each page-->
 
 <!-- Page Title Section-->
 
-  <div id="ct-chapt-graphic" class="background-00">
+  <div id="ct-chapt-graphic" class="background-000">
   </div>
 
 
