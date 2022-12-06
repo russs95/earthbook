@@ -117,13 +117,13 @@ Must be updated for each page-->
 
       <p>Rather than be mired in despair at our modern moment of ecological depletion we can be awed by Earth’s momentous act of ecological enrichment!</p>
 
-      <p id="26-up">The way our planet— as a uniquely configured cosmological system— has managed its matter and energy has led to the steady greening of its surface; the cultivation of ever greater diversity, vibrancy and abundance of life.<a href="footnotes">²⁶</a>  And finally, through the resulting emergence of consciousness, we have been propelled to the telling and pondering of the story itself.</p>
+      <p id="26-up">The way our planet— as a uniquely configured cosmological system— has managed its matter and energy has led to the steady greening of its surface; the cultivation of ever greater diversity, vibrancy and abundance of life.<a href="#footnotes">²⁶</a>  And finally, through the resulting emergence of consciousness, we have been propelled to the telling and pondering of the story itself.</p>
 
       <p>So, where do we go from here?</p>
 
       <p>First, let us hold fast to our vantage and the vast view it affords.</p>
 
-      <p id="27">From here we can observe another pivotal planetary phenomenon. Aside from meteor strikes and massive volcanoes, it is a phenomenon unseen on the planet for millions of years.  Because of the doings of modern humanity, never before have Earth’s processes, cycles and systems so abruptly added more carbon into the atmosphere than they removed.<a href="footnotes">²⁷</a></p>
+      <p id="27">From here we can observe another pivotal planetary phenomenon. Aside from meteor strikes and massive volcanoes, it is a phenomenon unseen on the planet for millions of years.  Because of the doings of modern humanity, never before have Earth’s processes, cycles and systems so abruptly added more carbon into the atmosphere than they removed.<a href="#footnotes">²⁷</a></p>
 
       <p>The ensuing decline of the vitality and diversity of the biosphere is a direct challenge to our last century of carbon play.</p>
 
@@ -135,11 +135,11 @@ Must be updated for each page-->
 
       <p>There is no other way.</p>
 
-     <p id="28">Likewise, our disruption of ecological cycles is not a consequence of our nature any more than it is the nature of carbon.<a href="footnotes">²⁸</a>  Rather, it is the way of our play: the fundamental pattern by which our processes have managed their energy and their matter. </p>
+     <p id="28">Likewise, our disruption of ecological cycles is not a consequence of our nature any more than it is the nature of carbon.<a href="#footnotes">²⁸</a>  Rather, it is the way of our play: the fundamental pattern by which our processes have managed their energy and their matter. </p>
 
-     <p id="29">As we saw in plastic’s story, our modern processes have increasingly intended patterns of energy and matter that have dispersed carbon, concentrated energy, reduced biodiversity and stifled ecological awareness.  In sharp contrast, Earth's processes have inexorably tended towards just the opposite:  the concentration of carbon, the dispersal of energy, the increase of diversity and the cultivation of consciousness. Whereas our modern pattern of process has degraded ecosystems, Earth’s has systematically enriched them— making them ever more diverse, vibrant and abundant.<a href="footnotes">²⁹</a></p>
+     <p id="29">As we saw in plastic’s story, our modern processes have increasingly intended patterns of energy and matter that have dispersed carbon, concentrated energy, reduced biodiversity and stifled ecological awareness.  In sharp contrast, Earth's processes have inexorably tended towards just the opposite:  the concentration of carbon, the dispersal of energy, the increase of diversity and the cultivation of consciousness. Whereas our modern pattern of process has degraded ecosystems, Earth’s has systematically enriched them— making them ever more diverse, vibrant and abundant.<a href="#footnotes">²⁹</a></p>
 
-     <p id="30">Like a despairing and determined child on a second-go at blocks, we’re trying harder than ever before. With a shame at our failings, we have our heads down, striving valiantly to build stronger and higher: to make our processes less polluting, less damaging, less grey. However, no matter how hard we have striven, our polluting has continued to increase unabated.  Over time, any improvements in the efficiency of our grey processes have been inevitably eclipsed by their very proliferation and increase. For with the underlying pattern of our processes unchanged, even if they are less harmful— <i>harmful they remain</i>.<a href="footnotes">³⁰</a></p>
+     <p id="30">Like a despairing and determined child on a second-go at blocks, we’re trying harder than ever before. With a shame at our failings, we have our heads down, striving valiantly to build stronger and higher: to make our processes less polluting, less damaging, less grey. However, no matter how hard we have striven, our polluting has continued to increase unabated.  Over time, any improvements in the efficiency of our grey processes have been inevitably eclipsed by their very proliferation and increase. For with the underlying pattern of our processes unchanged, even if they are less harmful— <i>harmful they remain</i>.<a href="#footnotes">³⁰</a></p>
 
      <p>Banayan and I have come to see that it is time to raise our heads from the toil.</p>
 
@@ -151,7 +151,7 @@ Must be updated for each page-->
 
      <p>For the first time, with our usage of carbon as a foil, the difference between our modern ways and the ways of Earth’s can be observed with unprecedented clarity.  In the stark contrast of patterns, we can begin to discern the cosmological character that has underlaid the Earth’s transformation of a barren planet into a thriving biosphere: the pattern by which Earth has managed its matter and energy through processes, cycles and systems towards the enrichment of all.</p>
 
-     <p id="31">And in a similar way, through our modern society’s ecological dissonance, so too can our modern gaze can now recognize those societies—  ancient and ongoing— that have long attained resonance with Earth’s pattern and character.<a href="footnotes">³¹</a></p>
+     <p id="31">And in a similar way, through our modern society’s ecological dissonance, so too can our modern gaze can now recognize those societies—  ancient and ongoing— that have long attained resonance with Earth’s pattern and character.<a href="#footnotes">³¹</a></p>
 
      <p>Nations that just by thriving, enriched the vitality, diversity and abundance of the ecosystems of which they were part.</p>
 

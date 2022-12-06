@@ -110,12 +110,12 @@ Must be updated for each page-->
 
     <p>While great greening societies have thrived around the planet, there is no more dramatic an example than the nations that first inhabited the Americas.</p>
 
-      <p id="32">Five hundred years ago, prior to the cataclysmic arrival of germs, animals and humans from Europe, the Americas were then home to hundreds of thriving, independent and prosperous nations.<a href="footnotes">³²</a>  Contemporary estimates of the population of the continents at the time range in the tens of millions to over one hundred million<a href="footnotes">³³</a> with many towns and cities ranging in size from tens of thousands to over a hundred thousand inhabitants.<a href="footnotes">³⁴</a></p>
+      <p id="32">Five hundred years ago, prior to the cataclysmic arrival of germs, animals and humans from Europe, the Americas were then home to hundreds of thriving, independent and prosperous nations.<a href="#footnotes">³²</a>  Contemporary estimates of the population of the continents at the time range in the tens of millions to over one hundred million<a href="#footnotes">³³</a> with many towns and cities ranging in size from tens of thousands to over a hundred thousand inhabitants.<a href="#footnotes">³⁴</a></p>
 
 
       <p>Like all nations and cities, such concentrations of humanity had a significant impact on the ecosystems and continental biomes of which they were a part.</p>
 
-      <p id="35-up">Having settled the continent over ten thousand years ago, these nations had long acquired sophisticated hunting, fishing and gathering technologies. Also common was the use of fire to effect huge swaths of land.  In all respects, these nations were more than capable of over-hunting, overfishing, over-gathering<a href="footnotes">³⁵</a> and depleting the carrying capacities of the ecosystems of which they depended.   </p>
+      <p id="35-up">Having settled the continent over ten thousand years ago, these nations had long acquired sophisticated hunting, fishing and gathering technologies. Also common was the use of fire to effect huge swaths of land.  In all respects, these nations were more than capable of over-hunting, overfishing, over-gathering<a href="#footnotes">³⁵</a> and depleting the carrying capacities of the ecosystems of which they depended.   </p>
 
       <p>However, over-consumption and exploitation did not occur.  Nor the depletion of the continent’s ecosystems.</p>
 
@@ -127,46 +127,48 @@ Must be updated for each page-->
 
       <p>From South America to North, explorers recorded dazzled accounts of the ecological vitality they observed: Rivers overflowing with fish; grasslands filled with countless grazing beasts; forests full of animals, birds, and trees of colossal size;  coastal shoals overflowing with marine life.</p>
 
-      <p>Alas, the newcomers lacked the conceptual ability to truly see what they were seeing.   Seeped a culture, in which food largely came from single crops and domesticated animals, the explorers and the colonists to follow, mistook the abundant ecosystems they encountered to be the work of ‘nature’ alone:</p>
+      <p>Alas, the newcomers lacked the conceptual ability to truly see what they were seeing.   Alas, the newcomers lacked the conceptual ability to truly see what they were seeing.   Seeped a culture in which food largely came from single crops and domesticated animals, the explorers and colonists, mistook the abundant ecosystems they encountered to be the work of ‘nature’:</p>
       
       <div class="quote"><p id="36">“…the country before us exhibited every thing that bounteous nature could be expected to draw into one point of view.  As we had no reason to imagine that this country had ever been indebted for any of its decorations to the hand of man, I could not possibly believe that any uncultivated country had ever been discovered exhibiting so rich a picture.”</p></div>
 
-      <p style="text-align:right;font-size:1em; margin-top:-10px; margin-bottom:20px">— Captain Vancouver’s observations of the Pacific Northwest Coast in 1792<a href="footnotes">³⁶</a></p>
+      <p style="text-align:right;font-size:1em; margin-top:-10px; margin-bottom:20px">— Captain Vancouver’s observations of the Pacific Northwest Coast in 1792<a href="#footnotes">³⁶</a></p>
       
 
      <p>Today, we know now that this inference was gravely mistaken.  Modern research has confirmed what the descendants of these nations have known all along.  The thriving ecosystems of the time were not the result of a lack of human participation, but rather the consequence of it.   </p>
 
-     <p id="37">Where these nations foraged, forests are today demonstrably more abundant and biodiverse than adjacent un-managed ecosystems<a href="footnotes">³⁷</a>.  Where nations fished, the rivers are today more abundant than others<a href="footnotes">³⁸</a>.  Where they sourced their shellfish and clams, the shoals today host more species than adjacent un-cultivated, or ‘natural’, ecosystems<a href="footnotes">³⁹</a>.  The very manner that these societies interacted with an ecosystem was instrumental to its exceptional flourishing.  Even the Amazon rain-forest, long seen as the paragon of wild ‘bounteous nature’, has been revealed to have been the site of pre-Columbian agriculture, gardens, towns and cities.<a href="footnotes">⁴⁰</a></p>
+     <p id="37">Where these nations foraged, forests are demonstrably more abundant and biodiverse than adjacent un-managed ecosystems<a href="#footnotes">³⁷</a>.  Where nations fished, the rivers are more abundant than others<a href="#footnotes">³⁸</a>.  Where they sourced their shellfish and clams, the shoals host more species than adjacent un-cultivated, or ‘natural’, ecosystems<a href="#footnotes">³⁹</a>.  The very manner that these societies interacted with an ecosystem was instrumental to its exceptional flourishing.  Even the Amazon rain-forest, long seen as the paragon of wild ‘bounteous nature’, has been revealed to have been the site of pre-Columbian agriculture, gardens, towns and cities.<a href="#footnotes">⁴⁰</a></p>
 
-     <p id="40">Significantly, the various cultural structures by which these nations came to integrate with their ecosystems were just as diverse as the ecosystems themselves.  Agriculture, languages and political systems varied tremendously up and down the continent.  While some were patriarchal, others were matriarchal.  While some were kingdoms, others were confederacies.  While some sought peace, others sought war.</p>
+     <p id="41">Significantly, the various cultural structures by which these nations came to integrate with their ecosystems were just as diverse as the ecosystems themselves.  While some were patriarchal, others were matriarchal; while some were kingdoms, others were confederacies; while some sought peace, others sought war.<a href="#footnotes">⁴¹</a></p>
 
-     <p id="41">However, despite the wide diversity in culture and politics, beneath it all lay a relatively consistent foundational view of themselves and the world— especially as compared to that of the arriving Europeans.<a href="footnotes">⁴¹</a> In much the same way that the disparate nations of Europe shared a continental and cultural provenance, so too did the nations of the Americas.<a href="footnotes">⁴²</a> Consequently, just as the ideas of ancient Greece and Rome gave nations as disparate as England and Russia, Finland and France, a shared underlying view of ‘man and nature’, so too did the first nations of the Americas have their own view in which all creatures were seen as kin.</p>
+     <p id="42">However, despite the wide diversity in culture and politics, beneath it all lay a relatively consistent foundational view of themselves and the world— especially as compared to that of the arriving Europeans<a href="#footnotes">⁴²</a>. In much the same way that the disparate nations of Europe shared a continental and cultural provenance, so too did the nations of the Americas. Consequently, just as the ideas of ancient Greece and Rome gave nations as disparate as England and Russia, Finland and France, a shared underlying view of ‘man and nature’, so too did the first nations of the Americas have their own underlying view of the world.</p>
 
-     <p id="43">Across the Americas, nations, clans and tribes shared an underlying metaphysics in which humans, animals and plants were understood as members of a common family.  For these nations all organisms were equally integral parts of the living land— <i>a community of kindred beings sharing ancestry and origins</i>.<a href="footnotes">⁴³</a></p>
+     <p id="43">Across the Americas, nations, clans and tribes shared an underlying metaphysics in which humans, animals and plants were understood as members of a common family.  For these nations all organisms were equally integral parts of the living land— <i>a community of kindred relations sharing ancestry and origins</i>.<a href="#footnotes">⁴³</a></p>
 
-     <p id="44">From this 'kincentric' world view, animals and plants were respected as kindred relations: elder brothers or sisters, grandmothers or grandfathers.<a href="footnotes">⁴⁴</a>  Then, just as one learns from a distinguished elder, these cultures paid special attention to those particularly distinguished organisms around them. Creatures that in elegance, ingenuity and beauty had magnificently mastered their ecological integration.</p>
+     <p id="44">From this 'kincentric' world view, animals and plants were respected as kin: elder brothers or sisters, grandmothers or grandfathers.<a href="#footnotes">⁴⁴</a>  Then, just as one learns from a distinguished elder, these cultures paid special attention to those particularly distinguished organisms around them. Beings that in elegance, ingenuity and beauty had magnificently mastered their ecological integration.</p>
 
      <p>From a scientific perspective, we can today appreciate the depth of their world view.</p>
 
-     <p>Just as brothers, sisters, aunts and uncles are parts of a family because of their shared ancestry, so too are plants, insects, animals, and humans parts of an ecological family connected by lineages that reach far back into time.  Just as a son, parent and grandparent are subsets of a family system so too are humans, plants and animals all subsets systems of the ecosystems of which they are part. And just as younger and elder family members differ in their accumulation of wisdom and mastery, so too do members of an ecosystem vary in the adaption and integration to it.  From this kincentric view, plants and animals, having had millions of years longer than humans to integrate into a particular ecosystem have invaluable systemic adaptations for humans to learn from.</p>
+     <p>Just as brothers, sisters, aunts and uncles are parts of a family because of their shared ancestry, so too are plants, insects, animals, and humans parts of an ecological family connected by lineages that reach far back into time.  Just as a son, parent and grandparent are subsets of a family system so too are humans, plants and animals all subsets systems of the ecosystems of which they are part.</p> 
+        
+     <p>In this way, just as younger and elder family members differ in their accumulation of wisdom and mastery, so too do members of an ecosystem vary in the adaption and integration to it.  From this kincentric view, plants and animals, having had millions of years longer than humans to integrate into a particular ecosystem have invaluable systemic adaptations for humans to learn from.</p>
 
      <p>Indeed, a salmon and an eagle, an oyster and a pine tree, all embody the culmination of hundreds of millions of years of behavioral and evolutionary trial and error— the result of innumerable interactions, adaptations and optimizations to integrate within a particular environment. In comparison, the first humans to settle in the Americas (only a few tens of thousands of years ago!) were newcomers— ecological younglings who had much to learn from their resident elders.</p>
 
      <p>And so they did.</p>
 
-     <p>As early Americans observed the way in which the lives of plants and animals synced with the cycles of an ecosystem, tendencies were noted, characters discerned and virtuosity honored.  From the cooperation of crows to the diligence of a deer, from the strength of a bear to the endurance of an elk, stories about particular creature and the virtue that it most illuminated, were passed down over the generations.</p>
+     <p>As early Americans observed the way in which the lives of plants and animals synced with the cycles of an ecosystem, tendencies were noted, characters observed and virtues discerned.  From the cooperation of crows to the diligence of a deer, from the strength of a bear to the endurance of an elk, stories about particular creature and the virtue that it most illuminated, were passed down over the generations.</p>
 
-     <p id="45">Often, a tribe, resonating with the character of a particular creature would adopt it as their representative and guide. Almost all North American first nations contained clans that took an animal as their totem.<a href="footnotes">⁴⁵</a> Through stories and myths, they were inspired by the animal's ecological example to lay out their clan’s principal values and ethics.</p>
+     <p id="45">Often, a tribe, resonating with the character of a particular creature would adopt it as their representative and guide. Almost all North American first nations contained clans that took an animal as their totem.<a href="#footnotes">⁴⁵</a> Through stories and myths, they were inspired by the animal's ecological example to lay out their clan’s principal values and ethics.</p>
 
-     <p id="46">So grounded in values and virtues, kincentric societies were able to weave ecological mastery into the fabric of their language, grammar and values.<a href="footnotes">⁴⁶</a> In so doing they were able to by-pass the tedious, million-year process of evolutionary trial and error and dramatically fast forward their ecological awareness, integration and the collective well-being of themselves and their kindred relations.  In this way their cultures came to sync with the cycles of the creatures they admired most— the migration of geese, the return of salmon, the coming and going of whales and elk.</p>
+     <p id="46">So grounded in values and virtues, kincentric societies were able to weave ecological mastery into the fabric of their language, grammar and values.<a href="#footnotes">⁴⁶</a> In so doing they were able to by-pass the tedious, million-year process of evolutionary trial and error and dramatically fast forward their ecological awareness, integration and collective well-being.  In this way, their cultures came to sync with the cycles of the creatures they admired most— the migration of geese, the return of salmon, the coming and going of whales and elk.</p>
 
      <p>And precisely because these life-cycles continued to thrive, so could they continue to learn from them.  </p>
 
      <p>In a spiral of ever deeper knowing, awareness and consciousness, kincentric cultures steadily enhanced the harmony of the ecosystems of which they were part. With the momentum of millennia of compounding insights, their way of knowing steadily led to an ecological understanding of unparalleled lucidity.  Steadily, these societies were able to effectively co-create with plants and animals a common home for all to thrive.</p>
 
-     <p>Today, in realizing the great green feats of these nations, in turn we can learn from them and follow their example.  </p>
+     <p>Today, in realizing the great green feats of these nations, in turn we can learn from them and follow their example.</p>
 
-     <p>To do so, the recognition of the power and potential of kincentric knowing is key. </p>
+     <p>To do so, the recognition of the power and potential of kincentric knowing is requisite. </p>
 
      <p>Only then can we realize its absence in our modern way of seeing the world.</p>
 
@@ -202,7 +204,7 @@ Must be updated for each page-->
 
         <a href="#35-up" class="footnote">   
         <div class="footnote-number">35.</div>
-        <div class="footnote-text">“With their technology the people could have captured every fish, but that would have made no sense.  River groups agreed to remove traps periodically to allow enough fish upstream to spawn and keep the run healthy.  Spaces between weir stakes were also calibrated to allow smaller fish to ascend unimpeded.  The fishery was so well managed that when the settlers arrived it is estimated that returning salmon numbered in the millions.” Arthur C. Ballard, The Salmon Weir on Green River in Western Washington, (Davidson Journal of Anthropology, 1957) Vol. 3 No. 1, Summer, pp. 37-54.</div>
+        <div class="footnote-text">“With their technology the people could have captured every fish, but that would have made no sense.  River groups agreed to remove traps periodically to allow enough fish upstream to spawn and keep the run healthy.  Spaces between weir stakes were also calibrated to allow smaller fish to ascend unimpeded.  The fishery was so well managed that when the settlers arrived it is estimated that returning salmon numbered in the millions.” David M. Buerge, (2017), <i>Chief Seattle and the Town that Took his Name</i>, Sasquatch Books. Referencing: <i>The Salmon Weir on Green River in Western Washington</i>, Davidson Journal of Anthropology, Vol. 3 №1, Summer, 1957 pp. 37–54.</div>
         </a>
 
         <a href="#36-up" class="footnote">   
@@ -231,14 +233,14 @@ Must be updated for each page-->
         <div class="footnote-text">“They practiced agriculture here [in the Amazon] for centuries… but instead of destroying the soil, they improved it, and that is something we don’t know how to do today...in tropical soils” Charles C. Man, 1491, (Vintage Publishing, 2006).  Chapter 8, quoting Bruno Glaser, Institute of Soil Science and Social Geography, University of Bayreuth, Germany.</div>
         </a>
 
-        <a href="#40-up" class="footnote">   
+        <a href="#41-up" class="footnote">   
         <div class="footnote-number" id="3-down">41.</div>
-        <div class="footnote-text">The prevalence of a vast disparity of social structures and political systems throughout the pre-Columbian Americas (and the rest of the world) is the main argument of archaeologist and anthropologist Graeber and Wengrow.  See: David Graeber, David Wengrow, The Dawn of Everything: A New History of Humanity, (Signal Publishing, 2021).</div>
+        <div class="footnote-text">The prevalence of a vast disparity of social structures and political systems throughout the pre-Columbian Americas (and the rest of the world) is the main argument of archaeologist and anthropologist Graeber and Wengrow.  See: David Graeber, David Wengrow, <i>The Dawn of Everything: A New History of Humanity</i>, (Signal Publishing, 2021).</div>
         </a>
 
-        <a href="#40-up" class="footnote">   
+        <a href="#42-up" class="footnote">   
         <div class="footnote-number" id="3-down">42.</div>
-        <div class="footnote-text">Jack D. Forbes, Indigenous Americans: Spirituality and Ecos, (Dædalus, 2021).</div>
+        <div class="footnote-text">For an in-depth overview of commonalities in native american spirituality see: Jack D. Forbes, <i>Indigenous Americans: Spirituality and Ecos</i>, (Dædalus, 2021).</div>
         </a>
 
         <a href="#43-up" class="footnote">   
@@ -248,18 +250,18 @@ Must be updated for each page-->
 
         <a href="#43-up" class="footnote">   
         <div class="footnote-number" id="3-down">44.</div>
-        <div class="footnote-text">We are applying Enrique Salmon’s term ‘kincentric’ to describes cultures that relate to the plants and animals with which they share an ecosystem as kin: “Indigenous cultural models of nature include humans as one aspect of the complexity of life.” Enrique Salmón, Kincentric Ecology: Indigenous Perceptions of the Human-Nature Relationship, Ecological Applications, (Ecological Society of America, Oct., 2000)  Vol. 10, No. 5, pp. 1327-1332.</div>
+        <div class="footnote-text">We are applying Enrique Salmon’s term ‘kincentric’ to describes cultures that relate to the plants and animals with which they share an ecosystem as kin: “Indigenous cultural models of nature include humans as one aspect of the complexity of life.” Enrique Salmón, <i>Kincentric Ecology: Indigenous Perceptions of the Human-Nature Relationship</i>, Ecological Applications, (Ecological Society of America, Oct., 2000)  Vol. 10, No. 5, pp. 1327-1332.</div>
         </a>
 
 
         <a href="#45-up" class="footnote">   
         <div class="footnote-number" id="3-down">45.</div>
-        <div class="footnote-text">“A North American 500 years ago could travel from the shores of the Great Lakes to the Lousiana bayous and still find settlements – speaking languages entirely unrelated to their own- with members of their own Bear, Elk or Beaver Clans who were obliged to host and feed them.” David Graeber, David Wengrow, The Dawn of Everything: A New History of Humanity, (Signal Publishing, 2021) Chapter 4. Free People, the Origin of Cultures, p. 123</div>
+        <div class="footnote-text">“A North American 500 years ago could travel from the shores of the Great Lakes to the Lousiana bayous and still find settlements – speaking languages entirely unrelated to their own- with members of their own Bear, Elk or Beaver Clans who were obliged to host and feed them.” David Graeber, David Wengrow, <i>The Dawn of Everything: A New History of Humanity</i>, (Signal Publishing, 2021) Chapter 4. Free People, the Origin of Cultures, p. 123</div>
         </a>
 
         <a href="#46-up" class="footnote">   
         <div class="footnote-number" id="3-down">46.</div>
-        <div class="footnote-text">Ecological cosmology is deeply embedded in the Banayan’s Kan’kan’nue language and so too other kincentric cultures.  See: Matthew C. Bronson, Lessons in the Old Language, (Global Oneness Project, 2018). </div>
+        <div class="footnote-text">Ecological cosmology is deeply embedded in the Banayan’s Kan’kan’nue language and so too other kincentric cultures.  See: Matthew C. Bronson, <i>Lessons in the Old Language</i>, (Global Oneness Project, 2018). </div>
         </a>
 
         
