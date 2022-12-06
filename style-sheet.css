@@ -342,7 +342,7 @@ margin-top: 20px;
 
 .github-source {
   font-family: 'Mulish';
-  font-size: 0.5em !important;
+  font-size: 0.7em !important;
   color: grey;
   text-align: right;
 margin: auto;
@@ -1688,8 +1688,8 @@ padding-top: 36px;
   .read-book-pic img{
     flex-direction: column;
     align-self: center;
-    width: 305px;
-    height: 361px;
+    width: 300px;
+    height: 353px;
   }
 
   .read-book-info  {
@@ -1706,12 +1706,13 @@ padding-top: 36px;
 
   .read-book-info-text {
     font-size: 1em;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
   }
 
   .button-row-read {
     flex-direction: row;
-    margin-top: 15px;
+    margin-top: 0px;
+
   }
 
   .button-row-read .action-btn {
@@ -1752,6 +1753,7 @@ padding-top: 36px;
 
   .button-row-read {
     flex-direction: row;
+    justify-content: center;
   }
 
   .button-row-read .action-btn {
