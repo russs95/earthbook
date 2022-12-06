@@ -188,17 +188,17 @@ Must be updated for each page-->
       
         <a href="#32-up" class="footnote">   
         <div class="footnote-number">32.</div>
-        <div class="footnote-text">This biological encounter, after hundreds of thousands of years of continental ecological separation, was to have a seismic impact on the biomes and civilizations of the Americas.  Diseases spread like wildfire ahead of European explorers killing 90-95% of human populations.  Only several years later, explorers encountering the decimated villages and cities made gravely inaccurate assumptions about the sparse human habitation they observed.  Their estimations of human population and ecological consequence were thus woefully low.   Population estimates weren’t rectified until centuries later by anthropologists such as Henry Dobyns.</div>
+        <div class="footnote-text">This biological encounter, after hundreds of thousands of years of continental ecological separation, was to have a seismic impact on the biomes and civilizations of the Americas.  Diseases spread like wildfire ahead of European explorers killing 90-95% of human populations.  Only several years later, explorers encountering the decimated villages and cities made gravely inaccurate assumptions about the sparse human habitation they observed.  Their estimations of human population and ecological consequence were thus woefully low.   Population estimates weren’t rectified until centuries later by anthropologists such as Henry Dobyns.  See footnote #33.</div>
         </a>
 
         <a href="#33-up" class="footnote">   
         <div class="footnote-number">33.</div>
-        <div class="footnote-text">Henry Dobyns estimated a 1492 population of the Americas ranging from 90.04-112.55 million inhabitants. Dobyns, Henry F., An Appraisal of Techniques with a New Hemispheric Estimate, (Current Anthropology, 1966) Issue 7, no. 4 : p395–416. </div>
+        <div class="footnote-text">Henry Dobyns estimated a 1492 population of the Americas ranging from 90.04-112.55 million inhabitants. Dobyns, Henry F., <i>An Appraisal of Techniques with a New Hemispheric Estimate</i>, (Current Anthropology, 1966) Issue 7, no. 4 : p395–416. </div>
         </a>
 
         <a href="#34-up" class="footnote">   
         <div class="footnote-number">34.</div>
-        <div class="footnote-text">Charles C. Man provides a comprehensive survey of his field and academic research which has revealed Mesoamerican and North American population centers exceeding 100,000 prior to the arrival of Europeans  Charles C. Man, 1491, (Vintage Publishing, 2006).
+        <div class="footnote-text">Charles C. Man provides a comprehensive survey of his field and academic research which has revealed Mesoamerican and North American population centers exceeding 100,000 prior to the arrival of Europeans  Charles C. Man, <i>1491</i>, (Vintage Publishing, 2006).
         </div>
         </a>
 
@@ -209,28 +209,28 @@ Must be updated for each page-->
 
         <a href="#36-up" class="footnote">   
         <div class="footnote-number" id="3-down">36.</div>
-        <div class="footnote-text">George Vancouver, A Voyage of Discovery to the North Pacific Ocean, and Round the World, vol. 2 (London: G. G. and J. Robinson, Paternoster-Row; and J. Edwards, Pall-Mall, 1798), 220–28, 288–89. Chapter 4, 2nd of May 1792</div>
+        <div class="footnote-text">George Vancouver, <i>A Voyage of Discovery to the North Pacific Ocean</i>, and Round the World, vol. 2 (London: G. G. and J. Robinson, Paternoster-Row; and J. Edwards, Pall-Mall, 1798), 220–28, 288–89. Chapter 4, 2nd of May 1792</div>
         </a>
 
         <a href="#37-up" class="footnote">   
         <div class="footnote-number" id="3-down">37.</div>
-        <div class="footnote-text">“Patches of forest cleared and tended by indigenous communities but lost to time still show more food bounty for humans and animals than surrounding forests. [These] 'forest gardens’ show how Native land stewardship can outdo nature”, Gabriel Popkin, Forest Gardens Show how native land stewardship can outdo nature, (National Geographic: 2021)</div>
+        <div class="footnote-text">“Patches of forest cleared and tended by indigenous communities but lost to time still show more food bounty for humans and animals than surrounding forests. [These] 'forest gardens’ show how Native land stewardship can outdo nature”, Gabriel Popkin, <i>Forest Gardens Show how native land stewardship can outdo nature</i>, (National Geographic: 2021)</div>
         </a>
 
         <a href="#37-up" class="footnote">   
         <div class="footnote-number" id="3-down">38.</div>
-        <div class="footnote-text">“Persistence in the fishery [of salmon over the last 7,500 years] is not due simply to a lack of perturbation, but rather indicates resilience in the ecological–human system” Campbell, S. K., and V. L. Butler, Archaeological Evidence for Resilience of Pacific Northwest Salmon Populations and the Socioecological System over the last ~7,500 years, (Ecology & Science, 2021) Vol. 15, No. 1, Art. 17</div>
+        <div class="footnote-text">“Persistence in the fishery [of salmon over the last 7,500 years] is not due simply to a lack of perturbation, but rather indicates resilience in the ecological–human system” Campbell, S. K., and V. L. Butler, <i>Archaeological Evidence for Resilience of Pacific Northwest Salmon Populations and the Socioecological System over the last ~7,500 years</i>, (Ecology & Science, 2021) Vol. 15, No. 1, Art. 17</div>
         </a>
 
 
         <a href="#37-up" class="footnote">   
         <div class="footnote-number" id="3-down">39.</div>
-        <div class="footnote-text">A. Groesbeck AS, Rowell K, Lepofsky D, Salomon AK, Ancient Clam Gardens Increased Shellfish Production: Adaptive Strategies from the Past Can Inform Food Security Today. (PLoS ONE, 2014) 9(3): e91235.</div>
+        <div class="footnote-text">A. Groesbeck AS, Rowell K, Lepofsky D, Salomon AK, <i>Ancient Clam Gardens Increased Shellfish Production: Adaptive Strategies from the Past Can Inform Food Security Today</i>. (PLoS ONE, 2014) 9(3): e91235.</div>
         </a>
 
         <a href="#40-up" class="footnote">   
         <div class="footnote-number" id="3-down">40.</div>
-        <div class="footnote-text">“They practiced agriculture here [in the Amazon] for centuries… but instead of destroying the soil, they improved it, and that is something we don’t know how to do today...in tropical soils” Charles C. Man, 1491, (Vintage Publishing, 2006).  Chapter 8, quoting Bruno Glaser, Institute of Soil Science and Social Geography, University of Bayreuth, Germany.</div>
+        <div class="footnote-text">“They practiced agriculture here [in the Amazon] for centuries… but instead of destroying the soil, they improved it, and that is something we don’t know how to do today...in tropical soils” Charles C. Man, <i>1491</i>, (Vintage Publishing, 2006).  Chapter 8, quoting Bruno Glaser, Institute of Soil Science and Social Geography, University of Bayreuth, Germany.</div>
         </a>
 
         <a href="#41-up" class="footnote">   
