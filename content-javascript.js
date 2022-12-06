@@ -41,3 +41,20 @@ function scrollFunction() {
 }
  
 
+
+function openFooter() {
+  var x = document.getElementById("footer-chapter");
+  var y = document.getElementById("footer-icon-left");
+  if (x.style.marginBottom === "0px") {
+    x.style.marginBottom = "150px";
+    y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
+    y.style.backgroundSize = "contain";
+ 
+  
+  } else {
+    x.style.marginBottom = "0px";
+    y.style.background = "url(../svgs/footer-settings-button.svg) no-repeat left";
+    y.style.backgroundSize = "contain";
+
+}
+}

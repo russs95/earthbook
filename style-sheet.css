@@ -342,7 +342,7 @@ margin-top: 20px;
 
 .github-source {
   font-family: 'Mulish';
-  font-size: 0.8em;
+  font-size: 0.65em;
   color: grey;
   text-align: right;
 margin: auto;
@@ -351,7 +351,7 @@ padding-top: 10px;
 }
 
 .github-source a {
-  color: grey;
+  color: grey !important;
 }
 
 .github-source a:hover {
