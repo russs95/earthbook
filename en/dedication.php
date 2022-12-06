@@ -134,7 +134,9 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 
-<div class="page-paragraph" style="text-align:center;"><i>
+<div class="page-paragraph" style="text-align:center;">
+
+<br><br><br><i>
 
     <p>To our mothers and fathers,<p>
     
@@ -144,7 +146,11 @@ Must be updated for each page-->
        
        <p>loving the wild and learning its leaves.</p>
     </i>
+
+    <br>
    <div>
+
+
 
 
   
