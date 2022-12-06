@@ -108,9 +108,10 @@ Must be updated for each page-->
 
       <p>In the same way that kincentric societies have been guided by the example of ancient masters of ecological integration, so too can we be guided by the example of Earth. </p>
 
-      <p>Observing the planet’s shift over the eons from grey to green we can discern an underlying pattern in the Earth’s ways.<a href="#footnotes">⁵³</a>  In the resonance of our scientific and kincentric knowing, we can discern five principles that compose the Earth’s underlying pattern of process:</p>
+      <p>Observing the planet’s shift over the eons from barren to bounteous, from grey to green, we can discern an underlying pattern in the Earth’s ways.<a href="#footnotes">⁵³</a>  In the resonance of our scientific and kincentric knowing, we can discern five principles that compose the Earth’s underlying pattern of process:</p>
+    </div>
 
-
+    <div class="page-paragraph" style="padding:15px">
       <p>1. <i>The Earth’s processes tend towards cycles that spiral.</i></p>
   
       <p>2. <i>The Earth’s cycles tend towards the outwards dissipation of energy.</i></p>
@@ -120,16 +121,17 @@ Must be updated for each page-->
       <p>4. <i>The Earth’s spirals of energy and matter tend toward diverse systems.</i></p>
       
       <p>5. <i>The Earth’s systems tend towards ever greater consciousness of their interconnection.</i></p>
+</div>
 
-
+    <div class="page-paragraph">
 
       <p id="54-up">From organism to ecosystem, from biome to biosphere, we are surrounded with the verdant consequences of these primordial principles unfurling through space and time.  Whether the process is minute or massive, ancient or ongoing, in looking closely, we can glimpse the same Earthen ways reflected and embodied— a microcosm of the macro— within every organism and ecosystem.  Within the life-cycles of everything from a forest to a tree, a bird to a flea, we can observe the tendencies of Earth’s character expressed— a vast symphony of a trillion processes, cycles and systems all tending towards a more resilient, livable, vibrant and abundant biosphere for all.<a href="#footnotes">⁵⁴</a></p>
 
       <p id="55-up">While there are hints of these tendencies upon other planets, upon ours, they definitively incline the cycles of matter and energy<a href="#footnotes">⁵⁵</a>, setting Earth apart in their clarity of expression and consequence.</p>
       
-      <p>Yet Earth is not in this way an exception.  Given the unique stellar confluence of every planet, each has its own unique cosmological configuration and character.  From the endless storms of Jupiter to the endemic volcanoes of Venus to the very color of Mars, each planet’s character tends towards its own expressions of surface, ocean and atmosphere.</p>
+      <p>Yet Earth is not an exception in having a cosmological character all its own.  Given the unique stellar confluence of every planet, each has its own configuration and characterstic unfurling.  From the endless storms of Jupiter to the endemic volcanoes of Venus to the very color of Mars, each planet’s character tends towards its own expressions of surface, ocean and atmosphere.</p>
 
-     <p id="56-up">Nevertheless, each planet’s tendencies are not hard and fast rules.  Not all storms on Jupiter turn to giant red spots, not all Venusian mountains erupt and not all rocks on Mars are red.  Likewise, not all of the Earth’s cycles express Earthen tendencies with equal clarity and consequence.<a href="#footnotes">⁵⁶</a></p>
+     <p id="56-up">Nevertheless, each planet’s tendencies are not hard and fast rules.  Not all storms on Jupiter turn to giant red spots, not all Venusian mountains erupt and not all rocks on Mars are red.  Likewise, not all of the Earth’s systems express Earthen tendencies with equal clarity and consequence.<a href="#footnotes">⁵⁶</a></p>
 
      <p id="57-up">In this way, over the eons, certain Earthen organisms and ecosystems have come to express the Earth’s tendencies more than others.<a href="#footnotes">⁵⁷</a></p>
 
@@ -141,11 +143,11 @@ Must be updated for each page-->
 
      <p>Applying these Earthen ethics, we can confidently discern and define what is <i>green</i> (what is an ecological contribution) and what is <i>grey</i> (what is not).</p>
 
-     <p>What is green is that which embodies the five-fold geometry of Earthen principles and leads to processes, cycles and systems that are more vibrant, stable, resilient, abundant and conscious.</p>
+     <p>What is green is that which embodies the five-fold geometry of Earthen principles and leads to processes, cycles and systems that are ever more vibrant, stable, resilient, abundant and conscious.</p>
 
      <p>What is grey is that which conflicts with any one of the Earthen principles, leading to the opposite— lowering consciousness, reducing biome abundance, vibrancy and stability, and decreasing resiliency. </p>
 
-     <p>Let us move forward now to discern in detail the five parameters of ecological enrichment on planet Earth— the requisite five pillars of a green age for humans, and a thriving common home for all.</p>
+     <p>Let us move forward now to discern in detail the five parameters of ecological enrichment on planet Earth— the requisite five pillars of a new green age and a thriving common home for all.</p>
      <br><br>
 
   
