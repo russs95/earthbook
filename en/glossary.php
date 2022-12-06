@@ -83,14 +83,14 @@ Must be updated for each page-->
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Glossary</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-       <div id="ct-chap-location"><br>An Earthen Ethics</div>
-        <div id="ct-word-count"><i>Appendix</i></div>
+       <div id="ct-chap-location">Appendix</div>
+        <div id="ct-word-count"><i>An Earthen Ethics</i></div>
       </div>
   </div>
 
 <!-- Page Title Section-->
 
-  <div id="ct-chapt-graphic" class="background-00">
+  <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
       Key terms and their definitions.
     </div>
@@ -100,9 +100,11 @@ Must be updated for each page-->
 
   <?php require_once ("includes/eco-curtain.php");?>
 
+  <div id="up-arrow"></div>
+  
   <div id="ct-main">
 
-  <div id="up-arrow"></div>
+ 
 
 
 <!-- MAIN TEXT CONTENT of the Page

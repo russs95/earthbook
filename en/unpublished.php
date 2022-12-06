@@ -183,7 +183,7 @@ Must be updated for each page-->
 
     <div class="footer-right">
    
-      <a href="spirals.php"><div class="next-button">Preamble ➔</div></a>
+      <a href="preamble.php"><div class="next-button">Preamble ➔</div></a>
 
     </div>
   </div>
