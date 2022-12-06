@@ -306,7 +306,7 @@ display: none;
 #side {
 padding: 12px;
 margin: 0px auto !important;
-margin-top: 20px;
+margin-top: 50px;
 }
 }
 
@@ -327,6 +327,7 @@ margin-top: 20px;
       padding: 15px;
       position: fixed;
       width:18%;
+      margin-top: 0px;
       }
       }
 
@@ -342,7 +343,6 @@ margin-top: 20px;
 
 .github-source {
   font-family: 'Mulish';
-  font-size: 0.7em !important;
   color: grey;
   text-align: right;
 margin: auto;
@@ -352,7 +352,7 @@ padding-top: 10px;
 @media screen and (max-width: 700px) {
 
   .github-source {
-    font-size: 0.65em !important;
+    font-size: 0.6em !important;
   }
 }
 
@@ -1726,6 +1726,11 @@ padding-top: 36px;
   .button-row-read {
     flex-direction: row;
     margin-top: 0px;
+    justify-content: center;
+
+  }
+
+  .button-row-read2 {
     justify-content: center;
 
   }

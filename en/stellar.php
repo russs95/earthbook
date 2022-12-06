@@ -109,7 +109,7 @@ Must be updated for each page-->
 
     <div class="page-paragraph">
 
-    <p id="14-up">Like all its orbiting neighbours, our planet began a barren and desolate place.  For Earth’s first two billion years, its atmosphere was full of carbon dioxide, making its climate hot, harsh and unstable.<a href="#footnotes">¹⁴</a> For eons, the planet’s surface was distinguished solely by raw Earthen cycles: the ebb and flow of tectonic plates, of ocean currents and atmospheric flows.  However, as these primordial cycles spun under the relentless shine of the sun, the Earth we know now began to emerge.  </p>
+    <p id="14-up">Like all its orbital neighbours, our planet began a barren and desolate place.  For Earth’s first two billion years, its atmosphere was full of carbon dioxide, making its climate hot, harsh and unstable.<a href="#footnotes">¹⁴</a> For eons, the planet’s surface was distinguished solely by raw Earthen cycles: the ebb and flow of tectonic plates, of ocean currents and atmospheric flows.  However, as these primordial cycles spun under the relentless shine of the sun, the Earth we know now began to emerge.  </p>
 
       <p id="15-up">For as the sun shone down, entropy demanded dissipation.<a href="#footnotes">¹⁵</a>  Like the run of rain down a hillside cascading into the twists and turns of a stream, the sun’s ever arriving blaze cascaded across Earth’s surface.  Just as a mountain’s contoured character leads to streams and rivers that are all its own, so too the Earth’s planetary character led to processes, cycles and systems all its own and unique among its solar system siblings.</p>
 
