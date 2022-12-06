@@ -147,7 +147,7 @@ Must be updated for each page-->
 <div class="ct-quote-source" style="width:100% !important;">
     ― Ruthanna Emrys<br><i>A Half-Built Garden</i>
 
-    <br><br><br><br><p>Book two of the Tractatus Ayyew is not yet published.  What follows is a sample chapter.</p>
+    <br><br><br><br><p>Book two of the <i>Tractatus Ayyew</i> is not yet published.   <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.  What follows is a bonus chapter from Book Two...</p>
     </div>
 
    <!--<div class="footnote-section">
