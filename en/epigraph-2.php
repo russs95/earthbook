@@ -118,7 +118,7 @@ Must be updated for each page-->
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
       <div id="ct-chapter-title">Epigraph</div>   
       <div id="ct-book-title">Tractatus Ayyew</div>
-      <div id="ct-chap-location">Book One</div>
+      <div id="ct-chap-location">Book Two</div>
       <div id="ct-word-count"><i>67 words</i></div>
     </div>
 </div>
@@ -135,7 +135,7 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-    “If we don’t do things the right way, it poisons the outcome”
+    “If we don’t do things the right way, it poisons the outcome.”
     </div>
     
   </div>
