@@ -191,7 +191,7 @@ Must be updated for each page-->
 
         <a href="#55-up" class="footnote">   
         <div class="footnote-number">57.</div>
-        <div class="footnote-text">Although it is beyond the scope of the Tractatus, a logical extension of our argument is that Earth’s patterns are in fact the requisite tendencies for the unfurling of life on any planet.  In this interpretation, the Earth’s ways are not unique to Earth, but rather the Earth embodies the ideal cosmological context for these tendencies to express themselves.  While this requires far more proof to be established than is available, should it be true, it would not be antithetical to the Earthen ethics developed in the Tractatus.  Rather it would simply place them in a broader context. 
+        <div class="footnote-text">Although it is beyond the scope of the Tractatus, a logical extension of our argument is that Earth’s patterns are in fact the requisite tendencies for the unfurling of life on any planet.  In this interpretation, the Earth’s ways are not unique to Earth, but rather the Earth embodies the ideal cosmological context for these tendencies to express themselves.  While this requires far more proof to be established than is available, should it be true, it would not be antithetical to the Earthen ethics developed in the Tractatus.  Rather it would simply place them in a broader context and provide further substantiation for their merit as ethical guidance for sentient beings. 
         </div>
         </a>
 
