@@ -137,20 +137,19 @@ Must be updated for each page-->
     <div class="ct-chapter-quote">
     This chapter hasn't yet been released.
     </div>
-    
-  </div>
+</div>
 
 <div id="up-arrow"></div>
 
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-    Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.   <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.</p>
-    </div>
+    Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.   <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.
+</div>
 
-    
+
           
-    </div><!--Closes main content block-->
+</div><!--Closes main content block-->
 
     
   

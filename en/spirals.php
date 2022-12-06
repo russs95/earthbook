@@ -126,7 +126,8 @@ Must be updated for each page-->
 
   <div id="ct-chapt-graphic" class="background-8">
     <div class="ct-chapter-quote">
-      “Observe the way the Earth tends its processes towards cycles that spiral.”
+      <span style="background-color:white;
+ padding:0.1em 0.2em;">“Observe the way the Earth tends its processes towards cycles that spiral.”</span>
     </div>
     <div class="ct-quote-source">
      ― Earthen Ethic No.1
@@ -288,11 +289,8 @@ Must be updated for each page-->
     </div>
   </div>
 
-  <footer-chapter></footer-chapter>
-          
-  <div id="containerSepia"></div>
-  <div id="containerContrast"></div>
-  <div id="containerBrightness"></div>
+  <?php require_once ("includes/chap-footer.php");?>
+
 
 </div>
 
