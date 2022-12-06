@@ -349,6 +349,20 @@ margin: auto;
 padding-top: 10px;
 }
 
+@media screen and (max-width: 700px) {
+
+  .github-source {
+    font-size: 0.65em !important;
+  }
+}
+
+@media screen and (min-width: 700px) {
+
+  .github-source {
+    font-size: 0.73em !important;
+  }
+}
+
 .github-source a {
   color: grey !important;
 }
@@ -1706,24 +1720,25 @@ padding-top: 36px;
 
   .read-book-info-text {
     font-size: 1em;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .button-row-read {
     flex-direction: row;
     margin-top: 0px;
+    justify-content: center;
 
   }
 
   .button-row-read .action-btn {
     width: 120px ;
     max-width: 120px ;
-    margin-top: 10px;
+    margin-top: 8px;
   }
 
   .button-row-read2 .action-btn {
     width: 300px !important;
-    margin-top: 10px;
+    margin-top: 0px;
   }
 }
 
@@ -1753,7 +1768,7 @@ padding-top: 36px;
 
   .button-row-read {
     flex-direction: row;
-    justify-content: center;
+
   }
 
   .button-row-read .action-btn {
@@ -1762,8 +1777,8 @@ padding-top: 36px;
   }
 
   .button-row-read2 .action-btn {
-    width: 300px !important;
-    margin-top: 10px;
+    width: 360px !important;
+    margin-top: 0px;
   }
 }
 
@@ -1800,7 +1815,7 @@ padding-top: 36px;
   }
 
   .button-row-read2 .action-btn {
-    width: 300px !important;
+    width: 360px !important;
     margin-top: 10px;
   }
 

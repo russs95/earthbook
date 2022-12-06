@@ -265,7 +265,7 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="patterns.html"><div class="next-button">Next ➔</div></a>
+        <a href="patterns.php"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
