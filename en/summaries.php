@@ -105,7 +105,7 @@ Must be updated for each page-->
 
 
       <h2>1. A short sentence</h2>
-      <p>The Earthen ethics concept of 'green' can be summed up in a simple proposition:
+      <p>The Earthen ethics concept of 'green' can be summed up in a simple two part proposition:
       </p>
 
       <div class="quote"><p>A process is green to the extent that it is an ecological contribution and it is an ecological contribution to the extent that it follows Earth's example.</p></div>
@@ -113,7 +113,7 @@ Must be updated for each page-->
       <a name="long"></a>
       <h2>2. A longer sentence</h2>
       
-      <p>By adding 'must' we have then have the basic Earthen ethic: </p>
+      <p>By adding 'must' we have the core Earthen ethic: </p>
 
       <div class="quote"><p>To be an ecological contribution a process must embody Earth’s pattern of concentrating matter and dispersing energy to cyclically enrich the vibrancy, diversity and consciousness of the system of which it is a part.
       </p></div>
@@ -124,26 +124,10 @@ Must be updated for each page-->
       
       <p>Now, let’s place it within within our contemporary context:</p>
 
-      <div class="quote"><p>As we become more and more aware of the ecological degradation caused by our modern age, we long to amend and to green our ways. Of all our ecological crises, plastic pollution is particularly representative of our modern planetary predicament. As a fossil-fuel by-product, plastic embodies a direct connection to both the biosphere's multi-billion year pattern of enrichment and our modern pattern of depletion. By retracing plastic’s full multi-billion year story, we can observe the sharp contrast in these two patterns. In particular, the ways in which Earth’s spiraled its matter inwards and energy outwards to unfurl ever greater vitality, diversity and consciousness. Learning from cultures that have long embodied this very pattern to master their own ecological integration, we can amend our metaphysics to recognize ecological contribution as our basis for green.  Accordingly, we can ensure that our processes, cycles and systems embody Earth’s pattern of energy and matter management, declare their for-Earth intention, vitalize biodiversity and raise awareness of their ecological impacts.  Starting with our plastic, we can follow Earth's example in this way to ensure that our enterprises systematically enrich the ecosystems of which they are a part.  
+      <div class="quote"><p>As we become more and more aware of the ecological degradation caused by our modern age, we long to amend our ways. Of all our ecological crises, plastic pollution is particularly representative of our challenge. As a fossil-fuel by-product, plastic embodies a direct connection to both the biosphere's multi-billion year pattern of enrichment and our modern pattern of depletion. By retracing plastic’s and Earth's primordial story, we can observe the sharp contrast in these two patterns. In particular, the ways in which Earth’s spiraled its matter inwards and energy outwards to unfurl ever greater vitality, diversity and consciousness. Learning from cultures that have long embodied this very pattern to master their own ecological integration, we can amend our metaphysics to recognize ecological contribution as our basis for green.  Accordingly, we can ensure that our processes, cycles and systems embody Earth’s pattern of energy and matter management, declare their for-Earth intention, vitalize biodiversity and raise awareness of their ecological impact.  Starting with our plastic, we can follow Earth's example in this way to ensure that our enterprises systematically enrich the ecosystems of which they are a part. 
       </p></div>
   
     </div><!--closes page text content-->
-
-<!--FOOTNOTES SECTION
-
-    <div class="footnote-section">
-
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
-
-      <p style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
-      
-      <a name="2-down"></a>
-      <a href="#2-up" class="footnote">   
-      <div class="footnote-number">2.</div>
-      <div class="footnote-text">Régis Debray, Le siècle vert. Un changement de civilisation (Editions Gallimard, 2020)</div>
-      </a>-->
-
-    </div><!--Closes footnote section-->
           
   </div><!--Closes main content block-->
 
@@ -167,17 +151,15 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="imagine.html"><div class="next-button">Next ➔</div></a>
+        <a href="dedication.php"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
   </div>
 
-  <footer-chapter></footer-chapter>
-          
-  <div id="containerSepia"></div>
-  <div id="containerContrast"></div>
-  <div id="containerBrightness"></div>
+
+  <?php require_once ("includes/chap-footer.php");?>
+
 
 </div>
 

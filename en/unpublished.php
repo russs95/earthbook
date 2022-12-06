@@ -117,9 +117,9 @@ Must be updated for each page-->
     <div id="ct-tc-menu" onclick="openContents()"></div>
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
       <div id="ct-chapter-title">Pending</div>   
-      <div id="ct-book-title">Tractatus Ayyew</div>
-      <div id="ct-chap-location">An Earthen Ethics</div>
-      <div id="ct-word-count"><i>Chapter not yet published</i></div>
+      <div id="ct-book-title">Chapter not yet published</div>
+      <div id="ct-chap-location">Tractatus Ayyew</div>
+      <div id="ct-word-count"><i>An Earthen Ethics</i></div>
     </div>
 </div>
 
@@ -141,9 +141,13 @@ Must be updated for each page-->
 
 <div class="ct-quote-source" style="width:90% !important;">
     Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.  <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.
+
+    <br><br>
+
+    <?php require_once ("../manage.php");?>
 </div>
 
-<?php require_once ("../manage.php");?>
+
 
 
           

@@ -133,7 +133,6 @@ $name = "";?>
 
                 <a href="preamble.php">
                 <div class="chapter-top">
-                    <div class="earth-buller"></div>    
                     <div class="chapter-name">Preamble</div>
                     <div class="word-count"><i>431 words</i></div>
                 </div>
@@ -184,21 +183,21 @@ $name = "";?>
                 </div>
                 </a>
 
-                <a href="kincentric.html">
+                <a href="kincentric.php">
                     <div class="chapter-middle">
                         <div class="chapter-name">Kindred Relations</div>
                         <div class="word-count"><i>1,508 words</i></div>
                 </div>
                 </a>
 
-                <a href="nature.html">
+                <a href="nature.php">
                     <div class="chapter-middle">
                         <div class="chapter-name">Nature's Fallacy</div>
                         <div class="word-count"><i>973 words</i></div>
                 </div>
                 </a>
 
-                <a href="earthen.html"><div class="chapter-bottom">
+                <a href="earthen.php"><div class="chapter-bottom">
                     <div class="chapter-name">The Earthen Ways</div>
                     <div class="word-count"><i>784 words</i></div>
                 </div>
@@ -208,35 +207,35 @@ $name = "";?>
                 <div class="book-box-header">Book Two</div>
 
             
-                <a href="cycles.html">
+                <a href="spirals.php">
                 <div class="chapter-top">    
                     <div class="chapter-name">1  |  Cycles that Spiral</div>
                     <div class="word-count"><i>1,682 words</i></div>
                 </div>
                 </a>
 
-                <a href="energy.html">
+                <a href="unpublished.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">2  |  The Salmon's Spiral</div>
                     <div class="word-count"><i>2,294 words</i></div>
                 </div>
                 </a>
 
-                <a href="not-published.php">
+                <a href="unpublished.php">
                 <div class="chapter-middle">
                     <div class="chapter-name">3  |  The Ammonite's Example</div>
                     <div class="word-count"><i>not yet published</i></div>
                 </div>
                 </a>
 
-                <a href="not-published.php">
+                <a href="unpublished.php">
                     <div class="chapter-middle">
                         <div class="chapter-name">4  |  The Polyp's Pattern</div>
                         <div class="word-count"><i>not yet published</i></div>
                     </div>
                     </a>
 
-                <a href="not-published.php">
+                <a href="unpublished.php">
                     <div class="chapter-bottom">
                         <div class="chapter-name">5  |  The Means of the Mycorrhyzal's</div>
                         <div class="word-count"><i>not yet published</i></div>
@@ -248,7 +247,7 @@ $name = "";?>
                 <div class="book-box-header">Book Three</div>
 
                 
-                <a href="not-published.php">
+                <a href="unpublished.php">
                 <div class="chapter-top">    
                     <div class="chapter-name">Plastic 2.0</div>
                     <div class="word-count"><i>not yet published</i></div>
@@ -256,20 +255,20 @@ $name = "";?>
             </a>
                 
 
-                <a href="not-published.php">
+                <a href="unpublished.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Plastic Sequestration</div>
                     <div class="word-count"><i>not yet published</i></div>
                 </div>
             </a>
                 
-                <a href="not-published.php">
+                <a href="unpublished.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Petro-capital Transition</div>
                     <div class="word-count"><i>not yet published</i></div>
                 </div>
                     
-                <a href="not-published.php">
+                <a href="unpublished.php">
                 <div class="chapter-bottom">
                     <div class="chapter-name">Ad Pax Ayyew</div>
                     <div class="word-count"><i>not yet published</i></div>
@@ -286,56 +285,56 @@ $name = "";?>
                     <div class="word-count"><i>501 words</i></div>
                 </div>
             
-                <a href="dedication.html">
+                <a href="dedication.php">
                 <div class="chapter-middle">    
                     <div class="chapter-name">Dedication</div>
                     <div class="word-count"><i>26 words</i></div>
                 </div>
             </a>
 
-                <a href="accounting.html">
+                <a href="accounting.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Ecological Accounting</div>
                     <div class="word-count"><i>48 words</i></div>
                 </div>
             </a>
 
-                <a href="for-earth">
+                <a href="for-earth.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">For-Earth Enterprise</div>
                     <div class="word-count"><i>20 words</i></div>
                 </div>
             </a>
                 
-                <a href="acknowledgements.html">
+                <a href="acknowledgements.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Acknowledgements</div>
                     <div class="word-count"><i>218 words</i></div>
                 </div>
             </a>
                 
-                <a href="writing.html">
+                <a href="writing.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Writing & Publishing</div>
                     <div class="word-count"><i>80 words</i></div>
                 </div>
             </a>
                 
-                <a href="authors.html">
+                <a href="authors.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Banayan & Russell</div>
                     <div class="word-count"><i>153 words</i></div>
                 </div>
             </a>
                 
-                <a href="bibliography.html">
+                <a href="bibliography.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Select Bibliography</div>
                     <div class="word-count"><i>740 words</i></div>
                 </div>
             </a>
 
-                <a href="glossary.html">
+                <a href="glossary.php">
                 <div class="chapter-bottom">
                     <div class="chapter-name">Glossary</div>
                     <div class="word-count"><i>342 words</i></div>
