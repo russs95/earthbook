@@ -98,7 +98,7 @@ Must be updated for each page-->
   }
 
   #ct-main .action-btn {
-    margin: -35px auto 0px auto;
+    margin: -35px auto 0px auto !important;
   }
 
 </style>
