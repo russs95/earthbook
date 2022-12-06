@@ -92,8 +92,7 @@ Must be updated for each page-->
 
 <!-- Page Title Section-->
 
-  <div id="ct-chapt-graphic" class="background-4">
-  </div>
+  <div id="ct-chapt-graphic" class="background-4"></div>
 
   <div id="up-arrow"></div>
 
@@ -106,7 +105,7 @@ Must be updated for each page-->
 
 
      <div class="lead-page-paragraph">
-        OVER THE LAST FOUR BILLION YEARS, the singular combination of our planet's orbit, spin, chemistry and magnetosphere has played out.  As this unique configuration of matter and energy has unfolded, a once barren rock has transformed into the thriving biosphere that is our common home today.  Of all that we know of other planets in our solar system and galaxy, it is an extraordinary and epic story.  However, what makes the story even more remarkable is that the tellers of the tale are thoroughly part of it.
+        OVER THE LAST FOUR BILLION YEARS, the singular combination of our planet's orbit, spin, composition and chemistry has played out.  As this unique configuration of matter and energy has unfolded, a once barren rock has transformed into the thriving biosphere that is our common home today.  Of all that we know of other planets in our solar system and galaxy, it is an extraordinary and epic story.  However, what makes the story even more remarkable is that the tellers of the tale are thoroughly part of it.
      </div>
 
     <div class="page-paragraph">
@@ -116,7 +115,7 @@ Must be updated for each page-->
       <p>From this vast vantage we must revisit our judgments of ourselves and of plastic.</p>
 
 
-      <p>Rather than be mired in despair at our modern moment of ecological depletion, we can be awed by Earth’s momentous act of ecological enrichment!</p>
+      <p>Rather than be mired in despair at our modern moment of ecological depletion we can be awed by Earth’s momentous act of ecological enrichment!</p>
 
       <p id="26-up">The way our planet— as a uniquely configured cosmological system— has managed its matter and energy has led to the steady greening of its surface; the cultivation of ever greater diversity, vibrancy and abundance of life.<a href="footnotes">²⁶</a>  And finally, through the resulting emergence of consciousness, we have been propelled to the telling and pondering of the story itself.</p>
 
@@ -126,9 +125,9 @@ Must be updated for each page-->
 
       <p id="27">From here we can observe another pivotal planetary phenomenon. Aside from meteor strikes and massive volcanoes, it is a phenomenon unseen on the planet for millions of years.  Because of the doings of modern humanity, never before have Earth’s processes, cycles and systems so abruptly added more carbon into the atmosphere than they removed.<a href="footnotes">²⁷</a></p>
 
-      <p>The abrupt decline that has ensued of the vitality and diversity of the biosphere is a direct challenge to our last century of carbon play.</p>
+      <p>The ensuing decline of the vitality and diversity of the biosphere is a direct challenge to our last century of carbon play.</p>
 
-      <p>For those who have observed a child building with blocks for the first time, our moment is remarkably similar. After the thrill of assembling a grand construction, when the pieces inevitably tumble down, when the results aren’t as intended, the upset youngster invariably blames themselves and the blocks.</p>
+      <p>Much like a child building with blocks for the first time, we have much to learn from our moment. After the thrill of assembling a grand construction, when the pieces inevitably tumble down, when the results aren’t as intended, the upset youngster invariably blames themselves and the blocks.</p>
 
       <p>Of course, neither are to blame!</p>
       
@@ -150,9 +149,9 @@ Must be updated for each page-->
 
      <p>Our once-in-a-million-years phenomenon of additive carbon usage is in fact a tremendous opportunity.</p>
 
-     <p>For the first time, with our usage of carbon as a foil, the difference between our modern human-ways and the ways of Earth’s can be observed with unprecedented clarity.  In the stark contrast of patterns, we can begin to discern the cosmological character that has underlaid the Earth’s transformation of a barren planet into a thriving biosphere: the pattern by which Earth has managed its matter and energy through processes, cycles and systems towards the enrichment of all.</p>
+     <p>For the first time, with our usage of carbon as a foil, the difference between our modern ways and the ways of Earth’s can be observed with unprecedented clarity.  In the stark contrast of patterns, we can begin to discern the cosmological character that has underlaid the Earth’s transformation of a barren planet into a thriving biosphere: the pattern by which Earth has managed its matter and energy through processes, cycles and systems towards the enrichment of all.</p>
 
-     <p id="31">And in a similar way, through our modern society’s ecological dissonance, so too can our modern gaze can now recognize those societies—  ancient and ongoing— that have long attained resonance with Earth’s ways.<a href="footnotes">³¹</a></p>
+     <p id="31">And in a similar way, through our modern society’s ecological dissonance, so too can our modern gaze can now recognize those societies—  ancient and ongoing— that have long attained resonance with Earth’s pattern and character.<a href="footnotes">³¹</a></p>
 
      <p>Nations that just by thriving, enriched the vitality, diversity and abundance of the ecosystems of which they were part.</p>
 
