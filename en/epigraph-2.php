@@ -41,7 +41,7 @@ $name = "";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Epigraph | Tratatus Ayyew - Earthbook</title>
+<title>Epigraph Book 2 | Tratatus Ayyew - Earthbook</title>
 <meta name="keywords" content="epigraph, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
 <meta name="description" content="Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear...">
 
@@ -50,7 +50,7 @@ Must be updated for each page-->
 <meta name="twitter:data1" content="3 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Epigraph | Tratatus Ayyew - Earthbook.">
+<meta property="og:title"         content="Epigraph Book 2 | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear..."/>
 
 
@@ -135,7 +135,7 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-      “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.  First History passed, now Nature is next.  This is the moment to take green seriously.”
+    “If we don’t do things the right way, it poisons the outcome”
     </div>
     
   </div>
@@ -145,7 +145,9 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-    ― Régis Debray, <i>Le siècle vert. Un changement de civilisation</i><br><br>(<i>The Green Age: A Change of Civilizations</i>)
+    ― Ruthanna Emrys<br><i>A Half-Built Garden</i>
+
+    <br><br><br><br><p>Book two of the Tractatus Ayyew is not yet published.  What follows is a sample chapter.</p>
     </div>
 
    <!--<div class="footnote-section">
@@ -177,7 +179,7 @@ Must be updated for each page-->
      
       <div class="next-section">
           <div class="next-sec">Next:</div>
-          <div class="sec-name"><i>Chapter 1 | Imagine</i></div>
+          <div class="sec-name"><i>1 | Cycles that Spiral</i></div>
       </div>
 
     </div>
@@ -185,7 +187,7 @@ Must be updated for each page-->
 
     <div class="footer-right">
    
-      <a href="imagine.php"><div class="next-button">Next ➔</div></a>
+      <a href="spirals.php"><div class="next-button">Next ➔</div></a>
 
     </div>
   </div>

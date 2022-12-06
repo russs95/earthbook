@@ -28,9 +28,9 @@
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="8.3435483"
-     inkscape:cx="153.65165"
-     inkscape:cy="109.84535"
+     inkscape:zoom="1.4749449"
+     inkscape:cx="206.10939"
+     inkscape:cy="306.11313"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -179,7 +179,7 @@
                d="m 220.76322,282.6438 c -0.44771,-0.78222 0.43524,-1.58958 1.12372,-1.76984 1.88275,-0.49294 3.39193,1.37958 3.59076,3.06708 0.40702,3.45445 -2.94033,5.96122 -6.10523,6.07113 -5.52077,0.19172 -9.33194,-5.15048 -9.2324,-10.29143 0.15683,-8.10006 8.03507,-13.53059 15.66678,-13.09272 11.20685,0.643 18.57896,11.61455 17.66779,22.26505 -1.27072,14.85326 -15.9062,24.49574 -30.11508,22.9715 -19.04974,-2.04352 -31.29727,-20.92507 -29.01627,-39.24208 2.9645,-23.80562 26.6845,-38.99824 49.66853,-35.81337 29.12929,4.0364 47.61193,33.19649 43.37315,61.41472 -5.26175,35.02839 -40.47196,57.15051 -74.49921,51.70514 -15.92385,-2.54829 -30.663,-10.67678 -41.57975,-22.50826" />
           </g>
           <circle
-             style="fill:none;stroke:#858585;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843;stroke-linecap:round"
+             style="fill:none;stroke:#fafafa;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.97254902;stroke-linecap:round"
              id="circle4495"
              cx="142.34222"
              cy="69.487465"
@@ -217,12 +217,13 @@
              rx="24.096897"
              ry="24.096409" />
         </g>
-        <circle
-           style="fill:none;stroke:#f9f9f9;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.709804;stroke-linecap:round"
+        <ellipse
+           style="fill:none;stroke:#f9f9f9;stroke-width:0.983798;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="circle4528"
            cx="265.57343"
            cy="159.98541"
-           r="24.096409" />
+           rx="24.0961"
+           ry="24.096409" />
         <g
            id="g59266"
            transform="translate(-0.20578873,0.28880577)"
@@ -305,7 +306,7 @@
          inkscape:transform-center-x="1.635231e-05" />
       <path
          sodipodi:type="star"
-         style="display:inline;opacity:1;fill:none;stroke:#858585;stroke-width:2.44242;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078;stroke-linecap:round"
+         style="display:inline;opacity:1;fill:none;stroke:#858585;stroke-width:2.44006434;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.996078;stroke-linecap:round;stroke-linejoin:round"
          id="path2469"
          inkscape:flatsided="false"
          sodipodi:sides="5"
