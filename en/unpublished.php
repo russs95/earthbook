@@ -117,9 +117,9 @@ Must be updated for each page-->
     <div id="ct-tc-menu" onclick="openContents()"></div>
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
       <div id="ct-chapter-title">Pending</div>   
-      <div id="ct-book-title">Chapter not yet published</div>
-      <div id="ct-chap-location">TRACTATUS AYYEW</div>
-      <div id="ct-word-count"><i>An Earthen Ethics</i></div>
+      <div id="ct-book-title">Tractatus Ayyew</div>
+      <div id="ct-chap-location">An Earthen Ethics</div>
+      <div id="ct-word-count"><i>Chapter not yet published</i></div>
     </div>
 </div>
 
@@ -131,7 +131,7 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-    This chapter hasn't yet been released.
+    We're still working on it!  This chapter hasn't yet been released.
     </div>
 </div>
 
