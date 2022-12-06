@@ -39,14 +39,16 @@ $name = "";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Dedication | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="dedication, father, mother, thank, gratitude"> 
-<meta name="description" content="Our Dedication of the Tractatus Ayyew">
+<title>Writing & Publishing | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="writing, publishing, software, accounting, fonts, typefaces, store, purchase, brikcoins"> 
+
+<meta name="description" content="The technical details of the book.">
 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Dedication | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Our dedication of the Tractatus Ayyew"/>
+<meta property="og:url"           content="https://tractatus.earthen.io/en/cycles.html">
+<meta property="og:title"         content="Writing & Publishing | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="The technical details of the book."/>
 
 
 <style>
@@ -90,12 +92,9 @@ Must be updated for each page-->
       /*padding-top: 45px;
       */font-size: 10vmin;
       letter-spacing: 2px;
-  }
-
-
-.page-paragraph p {text-align: center !important;}
       
-    
+    }
+
 </style>
 
 </head>
@@ -113,45 +112,48 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
       <div id="ct-tc-menu" onclick="openContents()"></div>
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">Dedication</div>   
+        <div id="ct-chapter-title">Writing & Publishing</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-        <div id="ct-chap-location"><br>An Earthen Ethics</div>
-        <div id="ct-word-count"><i>Appendix</i></div>
+       <div id="ct-chap-location">An Earthen Ethics</div>
+        <div id="ct-word-count"><i>* * *</i></div>
       </div>
+  </div>
+
+<!-- Page Title Section-->
+
+  <div id="ct-chapt-graphic" class="background-000">
+    <!--<div class="ct-chapter-quote">
+      “Observe the way the Earth tends its processes towards cycles that spiral.”
+    </div>
+    <div class="ct-quote-source">
+     ― Earthen Ethic No.1
+    </div>-->
   </div>
 
   <?php require_once ("includes/eco-curtain.php");?>
 
-
-  <div id="ct-chapt-graphic" class="background-000"></div>
+  <div id="ct-main">
 
   <div id="up-arrow"></div>
-
-  <div id="ct-main">
 
 
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
+<div class="lead-page-paragraph">
 
-<div class="page-paragraph" style="text-align:center;">
+THE TRACTATUS AYYEW was written and published using 100% open source hardware and software developed by not-for-profit enterprises. Written using Libre Office 7, on a Purism Librem 3 laptop, running Ubuntu while hosted on an Ubuntu server running NextCloud. 
 
-<br><br><br><i>
+</div>
 
-    <p>To our mothers and fathers,<p>
-    
-        <p>who let us play in the forests and fields,</p>
-       
-        <p>tasting berries and climbing trees,</p>
-       
-       <p>loving the wild and learning its leaves.</p>
-    </i>
+<div class="page-paragraph">
 
-    <br>
-   <div>
+  <p>The book is for sale on the GoBrik store where it’s sale in Brikcoins directly corresponds to the sequestration of plastic out of the biosphere.<p>
 
+   <p>The book is type set in Cooper LT Light and Regular by Oswald Cooper and Bitstream as well as Mulish Light & Regular by Vernon Adams, Cyreal, Jacques Le Bailly.
+  </p>
 
-
+  <p>For a full break down of these ecological impacts see our 2022 Regenerativity Report at https://book.earthen.io/accounting</p>
 
   
     </div><!--closes page text content-->
@@ -170,8 +172,8 @@ Must be updated for each page-->
     
      
         <div class="next-section">
-            <div class="next-sec">Next:</div>
-            <div class="sec-name"><i>Ecological Accounting</i></div>
+            <div class="next-sec">Next chapter:</div>
+            <div class="sec-name"><i>The Authors</i></div>
         </div>
 
       </div>
@@ -179,13 +181,16 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="accounting.php"><div class="next-button">Next ➔</div></a>
+        <a href="authors.php"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
   </div>
 
   <?php require_once ("includes/chap-footer.php");?>
+
+</div>
+
 
 </body>
 </html>

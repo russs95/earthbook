@@ -36,66 +36,31 @@ $name = "";?>
 
 <!--END OF GENERIC CONTENT-->
 
+
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Dedication | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="dedication, father, mother, thank, gratitude"> 
-<meta name="description" content="Our Dedication of the Tractatus Ayyew">
+<title>Authors | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="authors, russell, maier, banayan, irene, angway "> 
+
+<meta name="description" content="About the authors of the Tractatus Ayyew">
 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Dedication | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Our dedication of the Tractatus Ayyew"/>
-
+<meta property="og:title"         content="Authors | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="About the authors of the Tractatus Ayyew"/>
 
 <style>
   
 
-@media screen and (max-width: 699px) {
-    .ct-chapter-quote {
-      width: 87%;
-      font-size: 1.4em;
-    }
-    .ct-quote-source {
-      width: 80%;
-      font-size: 0.8em;
-    }
-  }
-
-  @media screen and (min-width: 700px) and (max-width: 1324px) {
-    .ct-chapter-quote {
-      width: 70%;
-      font-size: 1.8em;
-    }
-    .ct-quote-source {
-      width: 70%;
-      font-size: 1em;
-    }
-  }
-    
-  @media screen and (min-width: 1325px) {
-    .ct-chapter-quote {
-    width: 50%;
-    font-size: 2em;
-    text-shadow: 0px 0px 12px var(--slider);
-    }
-    .ct-quote-source {
-      width: 50%;
-      font-size: 1em;
-    }
-  }
 
   #ct-chapter-title {
       /*padding-top: 45px;
       */font-size: 10vmin;
       letter-spacing: 2px;
-  }
-
-
-.page-paragraph p {text-align: center !important;}
       
-    
+    }
+
 </style>
 
 </head>
@@ -113,46 +78,45 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
       <div id="ct-tc-menu" onclick="openContents()"></div>
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">Dedication</div>   
+        <div id="ct-chapter-title">The Authors</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-        <div id="ct-chap-location"><br>An Earthen Ethics</div>
+       <div id="ct-chap-location">An Earthen Ethics</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>
 
+<!-- Page Title Section-->
+
+  <div id="ct-chapt-graphic" class="background-000">
+ 
+  </div>
   <?php require_once ("includes/eco-curtain.php");?>
 
-
-  <div id="ct-chapt-graphic" class="background-000"></div>
+  <div id="ct-main">
 
   <div id="up-arrow"></div>
-
-  <div id="ct-main">
 
 
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 
-<div class="page-paragraph" style="text-align:center;">
+        <h2>Banayan Angway</h2>
 
-<br><br><br><i>
+        <div class="page-paragraph">
 
-    <p>To our mothers and fathers,<p>
-    
-        <p>who let us play in the forests and fields,</p>
-       
-        <p>tasting berries and climbing trees,</p>
-       
-       <p>loving the wild and learning its leaves.</p>
-    </i>
+        <p>Banayan was the superintendent of Kalinga Mt. Province DEPED from 2015-2021.  She oversaw the development of the Indigenous Culture component of the Kalinga and Mt. Province curriculum's where she integrated and developed the Ayyew concept into textbooks and lessons.    As the indigenous peoples education coordinator for Mountain Province from 2011-2015 Banayan facilitated planning, implementation and evaluation of related activities that made her program known nationwide.</p> 
 
-    <br>
-   <div>
+        </div>
+        <br><br>
 
+        <h2>Russell Maier</h2>
 
+        <div class="page-paragraph">
+        
+        <p>Russell is an inventor and regenerative philosopher, currently based in Gianyar, Indonesia.  Russell is one of the principals of the Global Ecobrick Alliance and writes regularly on Earthen.io.  He travels around South East Asia observing the impact of human systems on biological diversity, in order to maximize human ecological contribution.</p>
 
-
+      </div>
   
     </div><!--closes page text content-->
 
@@ -170,8 +134,8 @@ Must be updated for each page-->
     
      
         <div class="next-section">
-            <div class="next-sec">Next:</div>
-            <div class="sec-name"><i>Ecological Accounting</i></div>
+            <div class="next-sec">Next chapter:</div>
+            <div class="sec-name"><i>Bibliography</i></div>
         </div>
 
       </div>
@@ -179,13 +143,16 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="accounting.php"><div class="next-button">Next ➔</div></a>
+        <a href="bibliography.php"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
   </div>
 
-  <?php require_once ("includes/chap-footer.php");?>
+  
+
+<?php require_once ("includes/chap-footer.php");?>
+
 
 </body>
 </html>
