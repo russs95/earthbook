@@ -147,9 +147,9 @@ Must be updated for each page-->
     <p id="58-up"><i>
       The rugged green mountains of Northern Luzon have been the home of the Igorot people for untold generations.  Each season, with the arrival of the migratory kilin bird, the planting of rice begins. Then, once the crop has turned gold and the kilin have flown on to the forest — the harvest. And then… always a little more. For after the rice has been taken home to dry, it is time for a ritual as old as the harvest itself. One by one, rocks are gathered up from the river to shore up the sides of the field. Stone by stone, the paddy is improved to better capture and disperse the flow of rain down the hillside. Season by season, the garden is  enriched— becoming not just a better home for rice, but a better common home for crabs, frogs, snails, mud fish and more. With each season the Igorots’ management of soil and sun steadily augments the vibrancy of the ecosystem. Over the generations the soil's fertility increased and the harvest's grew in yield.  Igorot society thrived. Rivers remained clean and clear. The forests were respected and the kilin would always return. And then the next cycle would spin —  always a little greener than before<a href="#footnotes">⁵⁸</a> </i>
      </p></div>
-
+    <br><br>
      <div id="line" style="margin-bottom: 30px;"></div>
-
+<br><br>
     <div>
     <div class="lead-page-paragraph">
       TODAY as we seek to green our modern ways, we have much to learn from the way the Igorots managed their energy and matter.  At the heart of their kincentric culture is an ancient ecological ethos that can help us make sense of the latest breakthroughs in thermodynamic theory and planetary science.  As we shall see, both the ways of Earth and  Igorots share a geometric resonance.   Both tend their processes towards cycles that spiral and enrich. This vortical pattern underlies not only how the Igorots steadily enriched their ecosystem— but also the way our once barren planet greened. This first aspect of Earth’s cosmological character, can show us the geometric shortcomings of our modern linear and circular processes — and point us towards the green way forward.</div>
@@ -282,7 +282,7 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="not-published.html"><div class="next-button">Next ➔</div></a>
+        <a href="unpublished.php"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
