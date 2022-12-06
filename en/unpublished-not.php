@@ -139,7 +139,7 @@ Must be updated for each page-->
 
 <div id="ct-main">
 
-<div class="page-paragraph" style="text-align:center; !important;">
+<div class="page-paragraph" style="width:100% !important;">
     Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.  <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.
 </div>
 
