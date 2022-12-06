@@ -1701,8 +1701,8 @@ padding-top: 36px;
   .read-book-pic img{
     flex-direction: column;
     align-self: center;
-    width: 280px;
-    height: 320px;
+    width: 260px;
+    height: 307px;
   }
 
   .read-book-info  {
@@ -1730,9 +1730,9 @@ padding-top: 36px;
   }
 
   .button-row-read2 {
+    flex-direction: row;
     justify-content: center;
     text-align: center;
-
   }
 
   .button-row-read .action-btn {
@@ -1743,8 +1743,7 @@ padding-top: 36px;
 
   .button-row-read2 .action-btn {
     width: 300px !important;
-    margin: auto;
-    margin-top: 0px;
+    margin: 0px auto 0px auto !important;
   }
 }
 
