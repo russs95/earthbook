@@ -166,7 +166,7 @@ Must be updated for each page-->
 
       <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
 
-      <p id="#footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
       
         <a href="#13-up" class="footnote">   
         <div class="footnote-number">13.</div>
