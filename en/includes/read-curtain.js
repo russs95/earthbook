@@ -28,7 +28,7 @@ class ReadCurtain extends HTMLElement {
                       <a href="preamble.php">
                       <div id="read-btn" class="action-btn">
 
-                        <i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Read Here & Now (Web Earthbook)
+                        <i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Read Here (Web Earthbook)
                         
                       </div>
                       </a>

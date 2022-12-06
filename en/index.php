@@ -170,14 +170,14 @@ $name = "";?>
                 </div>
                 </a>
 
-                <a href="stellar.html">
+                <a href="stellar.php">
                 <div class="chapter-middle">
                     <div class="chapter-name">A Stellar Story</div>
                     <div class="word-count"><i>1,021 words</i></div>
                 </div>
                 </a>
 
-                <a href="patterns.html">
+                <a href="patterns.php">
                     <div class="chapter-middle">
                         <div class="chapter-name">Patterns of Process</div>
                         <div class="word-count"><i>837 words</i></div>

@@ -41,7 +41,7 @@ class ContentCurtain extends HTMLElement {
                         <div class="word-count-tc"><i>67 words</i></div>
                     </div></a>
 
-                    <a href="imagine.html">
+                    <a href="imagine.php">
                     <div class="tc-item">
                         <div class="chapter-name-tc">Imagine</div>
                         <div class="dotted-line"></div>
@@ -49,7 +49,7 @@ class ContentCurtain extends HTMLElement {
                     </div>
                     </a>
 
-                    <a href="plastic1.html">
+                    <a href="plastic1.php">
                     <div class="tc-item">
                         <div class="chapter-name-tc">Plastic 1.0</div>
                         <div class="dotted-line"></div>
@@ -57,7 +57,7 @@ class ContentCurtain extends HTMLElement {
                     </div>
                     </a>
 
-                    <a href="stellar.html">
+                    <a href="stellar.php">
                     <div class="tc-item">
                         <div class="chapter-name-tc">A Stellar Story</div>
                         <div class="dotted-line"></div>
@@ -65,7 +65,7 @@ class ContentCurtain extends HTMLElement {
                     </div>
                     </a>
 
-                    <a href="patterns.html">
+                    <a href="patterns.php">
                     <div class="tc-item">
                     <div class="chapter-name-tc">Patterns of Process</div>
                     <div class="dotted-line"></div>
@@ -73,7 +73,7 @@ class ContentCurtain extends HTMLElement {
                     </div>
                     </a>
 
-                    <a href="kincentric.html">
+                    <a href="kincentric.php">
                     <div class="tc-item">
                     <div class="chapter-name-tc">Kindred Relations</div>
                     <div class="dotted-line"></div>
@@ -81,7 +81,7 @@ class ContentCurtain extends HTMLElement {
                     </div>
                     </a>
 
-                    <a href="nature.html">
+                    <a href="nature.php">
                     <div class="tc-item">
                     <div class="chapter-name-tc">Nature's Fallacy</div>
                     <div class="dotted-line"></div>
@@ -89,7 +89,7 @@ class ContentCurtain extends HTMLElement {
                     </div>
                     </a>
 
-                    <a href="earthen.html">
+                    <a href="earthen.php">
                     <div class="tc-item">
                         <div class="chapter-name-tc">The Earthen Ways</div>
                         <div class="dotted-line"></div>

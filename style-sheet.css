@@ -342,12 +342,11 @@ margin-top: 20px;
 
 .github-source {
   font-family: 'Mulish';
-  font-size: 0.65em;
+  font-size: 0.5em !important;
   color: grey;
   text-align: right;
 margin: auto;
 padding-top: 10px;
-
 }
 
 .github-source a {
