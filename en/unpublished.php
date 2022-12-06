@@ -123,17 +123,13 @@ Must be updated for each page-->
     </div>
 </div>
 
-
  
 <?php require_once ("includes/eco-curtain.php");?>
  
-
-
-
 <!-- Page Title Section-->
 
 
-<div id="ct-chapt-graphic" class="background-000">
+<div id="ct-chapt-graphic" class="background-000"></div>
     <div class="ct-chapter-quote">
     This chapter hasn't yet been released.
     </div>
@@ -147,6 +143,7 @@ Must be updated for each page-->
     Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.   <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.
 </div>
 
+<?php require_once ("../manage.php");?>
 
           
 </div><!--Closes main content block-->
