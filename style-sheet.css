@@ -354,6 +354,10 @@ padding-top: 10px;
   color: grey !important;
 }
 
+.github-source a:link {
+  color: grey !important;
+}
+
 .github-source a:hover {
   color: var(--text-color);
   text-decoration: underline;
