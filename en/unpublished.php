@@ -41,17 +41,17 @@ $name = "";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Epigraph Book 2 | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="epigraph, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-<meta name="description" content="Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear...">
+<title>Not yet published | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="not yet published, epigraph, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="description" content="This chapter hasn't yet been published.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="3 minutes" /> 
+<meta name="twitter:data1" content="1 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Epigraph Book 2 | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear..."/>
+<meta property="og:title"         content="Not yet published | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="This chapter hasn't yet been published."/>
 
 
 
@@ -139,7 +139,7 @@ Must be updated for each page-->
 
 <div id="ct-main">
 
-<div class="ct-quote-source" style="width:90% !important;">
+<div class="ct-quote-source" style="width:100% !important;">
     Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.  <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.
 
     <br><br>
