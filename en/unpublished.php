@@ -145,12 +145,10 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-    
-
-    <br><br><br><br>Book two and three of the <i>Tractatus Ayyew</i> is not yet published.   <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.</p>
+    Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.   <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.</p>
     </div>
 
-    <?php require_once ("../manage.php");?>
+    
           
     </div><!--Closes main content block-->
 
