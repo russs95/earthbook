@@ -90,9 +90,12 @@ Must be updated for each page-->
       /*padding-top: 45px;
       */font-size: 10vmin;
       letter-spacing: 2px;
-      
-    }
+  }
 
+
+.page-paragraph p {text-align: center !important;}
+      
+    
 </style>
 
 </head>
@@ -131,7 +134,7 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 
-<div class="page-paragraph" style="text-align:center"><i>
+<div class="page-paragraph" style="text-align:center;"><i>
 
     <p>To our mothers and fathers,<p>
     
