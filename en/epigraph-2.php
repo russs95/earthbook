@@ -140,7 +140,7 @@ Must be updated for each page-->
     
   </div>
 
-<div id="up-arrow"></div>
+<div id="up-arrow"></div> 
 
 <div id="ct-main">
 

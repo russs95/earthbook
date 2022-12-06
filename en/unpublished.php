@@ -116,10 +116,10 @@ Must be updated for each page-->
 <div id="ct-chapter-top">
     <div id="ct-tc-menu" onclick="openContents()"></div>
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
-      <div id="ct-chapter-title">Not Published</div>   
-      <div id="ct-book-title">Tractatus Ayyew</div>
-      <div id="ct-chap-location">An Earthen Ethics</div>
-      <div id="ct-word-count"><i>Pending Release</i></div>
+      <div id="ct-chapter-title">Pending</div>   
+      <div id="ct-book-title">Chapter not yet published</div>
+      <div id="ct-chap-location">TRACTATUS AYYEW</div>
+      <div id="ct-word-count"><i>An Earthen Ethics</i></div>
     </div>
 </div>
 
@@ -129,7 +129,7 @@ Must be updated for each page-->
 <!-- Page Title Section-->
 
 
-<div id="ct-chapt-graphic" class="background-000"></div>
+<div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
     This chapter hasn't yet been released.
     </div>
@@ -143,7 +143,6 @@ Must be updated for each page-->
     Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.   <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.
 </div>
 
-<?php require_once ("../manage.php");?>
 
           
 </div><!--Closes main content block-->
