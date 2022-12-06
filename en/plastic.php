@@ -1,6 +1,6 @@
 <!--EARTHBOOK CHAPTER PAGE TEMPLATE
 
-PHP Page Version 1.0.1
+PHP Page Version 1.0.2
 Design by Russell Maier
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -223,12 +223,8 @@ Must be updated for each page-->
     </div>
   </div>
 
-  <footer-chapter></footer-chapter>
-          
-  <div id="containerSepia"></div>
-  <div id="containerContrast"></div>
-  <div id="containerBrightness"></div>
-
+  <?php require_once ("includes/chap-footer.php");?>
+  
 </div>
 
 

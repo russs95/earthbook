@@ -240,11 +240,7 @@ Must be updated for each page-->
 </div>
 
 <?php require_once ("includes/chap-footer.php");?>
-  <!--<footer-chapter></footer-chapter>
-          
-  <div id="containerSepia"></div>
-  <div id="containerContrast"></div>
-  <div id="containerBrightness"></div>-->
+
 
 </body>
 </html>

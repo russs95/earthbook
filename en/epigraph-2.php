@@ -165,6 +165,8 @@ Must be updated for each page-->
       </div>--><!--Closes footnote section-->
           
     </div><!--Closes main content block-->
+
+    
   
     <!--Footer Next Chapter Section: Requires customization-->
 
