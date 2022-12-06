@@ -305,8 +305,7 @@ display: none;
 @media screen and (max-width: 700px) {
 #side {
 padding: 12px;
-margin: 0px auto !important;
-margin-top: 50px;
+margin: 20px auto 0px auto !important;
 }
 }
 
@@ -1782,8 +1781,8 @@ padding-top: 36px;
   }
 
   .button-row-read2 .action-btn {
-    width: 360px !important;
-    margin-top: 0px;
+    width: 370px !important;
+    margin-top: 20px;
   }
 }
 
@@ -1820,8 +1819,8 @@ padding-top: 36px;
   }
 
   .button-row-read2 .action-btn {
-    width: 360px !important;
-    margin-top: 10px;
+    width: 370px !important;
+    margin-top: 20px;
   }
 
   
