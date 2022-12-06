@@ -116,20 +116,16 @@ Must be updated for each page-->
 <div id="ct-chapter-top">
     <div id="ct-tc-menu" onclick="openContents()"></div>
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
-      <div id="ct-chapter-title">Epigraph</div>   
-      <div id="ct-book-title">Tractatus Ayyew</div>
-      <div id="ct-chap-location">Book Two</div>
-      <div id="ct-word-count"><i>67 words</i></div>
+      <div id="ct-chapter-title">Pending</div>   
+      <div id="ct-book-title">Chapter not yet published</div>
+      <div id="ct-chap-location">TRACTATUS AYYEW</div>
+      <div id="ct-word-count"><i>An Earthen Ethics</i></div>
     </div>
 </div>
-
 
  
 <?php require_once ("includes/eco-curtain.php");?>
  
-
-
-
 <!-- Page Title Section-->
 
 
@@ -137,32 +133,19 @@ Must be updated for each page-->
     <div class="ct-chapter-quote">
     This chapter hasn't yet been released.
     </div>
-    
-  </div>
+</div>
 
-<div id="up-arrow"></div> 
+<div id="up-arrow"></div>
 
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.  <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.
-    </div>
+    Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.  <a href="index.php">Subscribe to Earthen</a> to be notified of new chapter releases.
+</div>
 
-   <!--<div class="footnote-section">
 
-   <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
-  
-
-    <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Footnotes</p>
-  
-    <a href="#2-up" class="footnote">   
-      <div class="footnote-number">2.</div>
-      <div class="footnote-text">Régis Debray, <i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, January 2020)</div>
-      </a>
-     
-      </div>--><!--Closes footnote section-->
           
-    </div><!--Closes main content block-->
+</div><!--Closes main content block-->
 
     
   
@@ -178,8 +161,8 @@ Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.  <a href=
     
      
       <div class="next-section">
-          <div class="next-sec">Next:</div>
-          <div class="sec-name"><i>1 | Cycles that Spiral</i></div>
+          <div class="next-sec">Back to the start:</div>
+          <div class="sec-name"><i>Introduction</i></div>
       </div>
 
     </div>
@@ -187,7 +170,7 @@ Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published.  <a href=
 
     <div class="footer-right">
    
-      <a href="spirals.php"><div class="next-button">Next ➔</div></a>
+      <a href="spirals.php"><div class="next-button">Preamble ➔</div></a>
 
     </div>
   </div>

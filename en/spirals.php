@@ -126,7 +126,7 @@ Must be updated for each page-->
 
   <div id="ct-chapt-graphic" class="background-8">
     <div class="ct-chapter-quote">
-      <span style="background-color:white;
+      <span style="background-color:var(--nav-bar-accent);
  padding:0.1em 0.2em;">“Observe the way the Earth tends its processes towards cycles that spiral.”</span>
     </div>
     <div class="ct-quote-source">
