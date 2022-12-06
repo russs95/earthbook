@@ -109,6 +109,7 @@ img[src*=".svg"]:hover {
   z-index: 0;
   overflow-x: hidden; /*ARG WHY OVERFLOW?*/
   max-width: 100%;
+  width: 100%;
 
  }
 
