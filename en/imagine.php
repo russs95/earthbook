@@ -109,11 +109,11 @@ Must be updated for each page-->
      <div class="lead-page-paragraph">
 
      TODAY, AS WE BECOME more and more aware of the degradation and depletion inherent in our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been walked.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of cultural and ecological harmony, abundance and vitality that far exceed our modern environmental vision, values and virtues. Only to the extent that we can recognize these enlightened moments, can we imagine our own.</p>
-     
-     <p>For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair. 
-      </p>
 
     </div>
+
+    <p>For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair. 
+      </p>
 
 
       <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes">³</a>, she and I have to come to see that the longing and the potential for ecological contribution unites us all on planet Earth. </p>
