@@ -88,7 +88,7 @@ $(function() {
 function openSettings() {
   document.getElementById("left-settings-overlay").style.width = "100%";
   document.body.style.overflowY = "hidden";
-  //document.body.style.maxHeight = "100vh";
+  document.body.style.maxHeight = "100vh";
 
 }
 /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -106,7 +106,7 @@ function openContents() {
   document.getElementById("table-of-contents").style.height = "105%";
   document.getElementById("table-of-contents").style.overflowY = "hidden";
   document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "105%";
+  document.body.style.maxHeight = "110vh";
 }
 /* Triggers the upwards reset of the TC */
 
