@@ -800,12 +800,12 @@ animation: slide 10s linear infinite forwards;*/
 font-family: "Mulish";
 }
 
-/*
+
 @media screen and (max-width: 700px) { 
 #sub-earthbook {
   display: none;
 } 
-}*/
+}
 
 @keyframes slide {
 0%{
@@ -1978,6 +1978,20 @@ padding-top: 36px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width: 699px) {
+  .welcome-to {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .welcome-to {
+    font-size: 1.4em;
+  }
+}
+
+
 
 /*.welcome-to:hover {text-decoration: underline !important;}*/
 

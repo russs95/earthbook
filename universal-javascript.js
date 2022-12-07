@@ -176,6 +176,7 @@ function closeBookplate() {
   document.getElementById("sub-earthbook").style.display = "none";
   document.getElementById("bookplate-button").style.display = "none";
   document.getElementById("bookplate-img").style.display = "none";
+
 } 
 
 /*EARTHBOOK OVERLAY
