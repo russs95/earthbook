@@ -7,7 +7,7 @@ if (!$_POST) {
      <form method="POST" action="$_SERVER[PHP_SELF]">
 
      <!--<p><label for="email">Your E-Mail Address:</label><br/>-->
-    <div class="this-one"><input type="email" id="email" name="email"  placeholder="Want more? Enter email.."
+    <div class="this-one"><input type="email" id="email" name="email"  placeholder="Want more? Enter email..."
            size="40" maxlength="150"  /></p></div>
 
     

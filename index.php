@@ -217,7 +217,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
             <img src="../photos/cover-500px.webp" alt="Tractatus Ayyew - EarthBook">
 
-            <div class="welcome-to">Welcome to the <b><span style="cursor:pointer; text-decoration:underline;" onclick="openEarthbook()">EarthBook</span></b> edition of the Tractatus Ayyew.</div>
+            <div class="welcome-to">Welcome to the <b><span style="cursor:pointer; text-decoration:underline;" onclick="openEarthbook()">EarthBook</span></b> edition of the Tractatus Ayyew</div>
 
             <div class="button-row">
                 <div id="read-btn" class="action-btn"><a href="preamble.html"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</a></div>
