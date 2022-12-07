@@ -164,9 +164,8 @@ function openBookplate() {
   document.getElementById("top-bookplate").style.height = "100vh";
   document.body.style.overflowY = "hidden";
   document.body.style.maxHeight = "100vh";
-  document.getElementById("sub-earthbook").style.display = "block";
+  document.getElementById("sub-earthbook").style.display = "block!important";
   document.getElementById("bookplate-img").style.display = "block";
-
 }
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeBookplate() {
