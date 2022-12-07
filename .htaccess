@@ -7,7 +7,7 @@ Header set Cache-Control "max-age=31536000, public"
 DirectoryIndex index.php
 
 
-Redirect / /en/index.php
+Redirect /index.php /en/index.php
 
 
 Redirect /preamble /en/preamble.php
