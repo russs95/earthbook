@@ -35,12 +35,6 @@ class ContentCurtain extends HTMLElement {
                         <div class="word-count-tc"><i>1,220 words</i></div>
                     </div></a>
 
-                    <a href="epigraph.php">
-                    <div class="tc-item">
-                        <div class="chapter-name-tc">Epigraph</div>
-                        <div class="word-count-tc"><i>67 words</i></div>
-                    </div></a>
-
                     <a href="imagine.php">
                     <div class="tc-item">
                         <div class="chapter-name-tc">Imagine</div>
