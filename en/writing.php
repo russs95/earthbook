@@ -112,27 +112,23 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
       <div id="ct-tc-menu" onclick="openContents()"></div>
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">Writing & Publishing</div>   
+        <div id="ct-chapter-title">The Writing</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
        <div id="ct-chap-location">An Earthen Ethics</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>
 
-<!-- Page Title Section-->
-
-  <div id="ct-chapt-graphic" class="background-000">
-    <!--<div class="ct-chapter-quote">
-      “Observe the way the Earth tends its processes towards cycles that spiral.”
-    </div>
-    <div class="ct-quote-source">
-     ― Earthen Ethic No.1
-    </div>-->
-  </div>
 
   <?php require_once ("includes/eco-curtain.php");?>
 
+
+
+<!-- Page Title Section-->
+
+  <div id="ct-chapt-graphic" class="background-000">
   <img src="../svgs/icon-opensource.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+  </div>
 
 
   <div id="up-arrow"></div>
