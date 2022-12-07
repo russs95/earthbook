@@ -123,7 +123,7 @@ Must be updated for each page-->
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-000">
-
+  <img src="../icons/eco.svg" style="width:20%; height:20%;">
   </div>
 
   <?php require_once ("includes/eco-curtain.php");?>
@@ -141,10 +141,10 @@ Must be updated for each page-->
 <div class="page-paragraph">
 
   <p>
-    The ecological impact of the printing, publishing and reading of the Tractatus Ayyew is tracked, accounted and disclosed.  You can see the 2022 Regen Report here:</p>
-
-   ,<p> <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">https://files.earthen.io/s/ioobYWRRKGEpPp4</a>
+    The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  Download the <i>2022 Tractatus Ayyew Regen Report</i> here:  
+<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">https://files.earthen.io/s/ioobYWRRKGEpPp4</a>
   </p>
+  <br><br><br><br>
 
   
     </div><!--closes page text content-->

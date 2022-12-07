@@ -57,7 +57,7 @@ Must be updated for each page-->
 
 @media screen and (max-width: 699px) {
     .ct-chapter-quote {
-      width: 87%;
+      width: 80%;
       font-size: 1.4em;
     }
     .ct-quote-source {
@@ -68,7 +68,7 @@ Must be updated for each page-->
 
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     .ct-chapter-quote {
-      width: 70%;
+      width: 50%;
       font-size: 1.8em;
     }
     .ct-quote-source {
@@ -79,7 +79,7 @@ Must be updated for each page-->
     
   @media screen and (min-width: 1325px) {
     .ct-chapter-quote {
-    width: 50%;
+    width: 40%;
     font-size: 2em;
     text-shadow: 0px 0px 12px var(--slider);
     }

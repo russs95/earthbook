@@ -147,8 +147,6 @@ Must be updated for each page-->
 -->
 
 <div class="page-paragraph" style="text-align:center;">
-
-<br><br>
    <div>
 
 
