@@ -1705,6 +1705,8 @@ padding-top: 40px;
     align-self: center;
     width: 260px;
     height: 307px;
+
+    display: none;
   }
 
   .read-book-info  {
@@ -1714,7 +1716,7 @@ padding-top: 40px;
   }
 
   .read-book-info-title {
-    font-size: 1.6em;
+    font-size: 1.8em;
     margin-top: 18px;
     margin-bottom: 10px;
   }
