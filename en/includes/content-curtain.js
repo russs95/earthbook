@@ -97,15 +97,13 @@ class ContentCurtain extends HTMLElement {
                         <a href="index.php" style="height: 24px; flex-grow: 1"><div id="read-btn" class="action-btn" ><i style="background-image: url(../icons/home.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Home</div></a>
 
            
-                       <div id="buy-btn" class="action-btn" onclick="openBookplate()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> About</div>
+                       <div id="buy-btn" class="action-btn" onclick="openBookplate()" style="height: 22px;flex-grow: 1"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> About</div>
                      
                         <div id="buy-btn" class="action-btn" onclick="openBuy()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> Buy</div>
 
                         <div id="buy-btn" class="action-btn" onclick="openEco()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 0px; cursor:pointer;"></i></div>
                     
-                        <!--<div id="pdf-btn" class="action-btn" style="height: 24px; flex-grow: 1"><a href="pdf"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</a></div>-->
-
-                        <!--<div id="knack-dist_2"><div class="action-btn" style="height: 24px; flex-grow: 1">Get our updates...</div>-->
+                       
                         </div>
 
             <br><br>
