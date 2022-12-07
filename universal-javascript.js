@@ -103,10 +103,10 @@ function closeSettings() {
 Triggers the downwards swing of the TC*/
 
 function openContents() {
-  document.getElementById("table-of-contents").style.height = "105%";
+  document.getElementById("table-of-contents").style.height = "101vh";
   document.getElementById("table-of-contents").style.overflowY = "hidden";
   document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "110vh";
+  document.body.style.maxHeight = "101vh";
 }
 /* Triggers the upwards reset of the TC */
 
