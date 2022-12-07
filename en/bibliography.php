@@ -216,7 +216,7 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="glossary.html"><div class="next-button">Next ➔</div></a>
+        <a href="glossary.php"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
