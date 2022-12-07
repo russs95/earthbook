@@ -86,7 +86,7 @@ $(function() {
 
 /* LEFT SETTINGS OVERLAY */
 function openSettings() {
-  document.getElementById("left-settings-overlay").style.width = "101vh";
+  document.getElementById("left-settings-overlay").style.width = "100%";
   document.body.style.overflowY = "hidden";
   document.body.style.maxHeight = "101vh";
 
@@ -103,7 +103,7 @@ function closeSettings() {
 Triggers the downwards swing of the TC*/
 
 function openContents() {
-  document.getElementById("table-of-contents").style.height = "101vh";
+  document.getElementById("table-of-contents").style.height = "100%";
   document.getElementById("table-of-contents").style.overflowY = "hidden";
   document.body.style.overflowY = "hidden";
   document.body.style.maxHeight = "101vh";
@@ -122,7 +122,7 @@ function closeContents() {
 Triggers the right share link panel*/
 
 function openShare() {
-    document.getElementById("right-share-overlay").style.width = "101vh";
+    document.getElementById("right-share-overlay").style.width = "100%";
     document.body.style.overflowY = "hidden";
     document.body.style.maxHeight = "101vh";
  
