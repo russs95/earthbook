@@ -123,14 +123,14 @@ Must be updated for each page-->
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-000">
-  <img src="../icons/eco.svg" style="width:30%; height:30%; margin:auto;  text-align:center">
+  <img src="../icons/eco.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
   </div>
 
   <?php require_once ("includes/eco-curtain.php");?>
-
+  <div id="up-arrow"></div>
   <div id="ct-main">
 
-  <div id="up-arrow"></div>
+ 
 
 
 <!-- MAIN TEXT CONTENT of the Page
@@ -144,6 +144,11 @@ Must be updated for each page-->
     The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  Download the <i>2022 Tractatus Ayyew Regen Report</i> here:  
 <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">https://files.earthen.io/s/ioobYWRRKGEpPp4</a>
   </p>
+  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
+    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
+
+     <div id="wcb" class="carbonbadge wcb-d"></div>
+    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" preload></script>
   <br><br><br><br>
 
   

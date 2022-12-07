@@ -115,7 +115,7 @@ Must be updated for each page-->
         <div id="ct-chapter-title">Writing & Publishing</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
        <div id="ct-chap-location">An Earthen Ethics</div>
-        <div id="ct-word-count"><i>* * *</i></div>
+        <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>
 
@@ -132,9 +132,14 @@ Must be updated for each page-->
 
   <?php require_once ("includes/eco-curtain.php");?>
 
-  <div id="ct-main">
+  <img src="../svgs/icon-opensource.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+
 
   <div id="up-arrow"></div>
+  
+  <div id="ct-main">
+
+  
 
 
 <!-- MAIN TEXT CONTENT of the Page

@@ -120,7 +120,7 @@ Must be updated for each page-->
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-000">
-  <img src="../svgs/icon-for-earth.svg" style="width:30%; height:30%; margin:auto;  text-align:center">
+  <img src="../svgs/icon-for-earth.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
 
   </div>
 
@@ -145,6 +145,12 @@ Must be updated for each page-->
   <p>
     In the disclosure of the Tractatus Ayyew’s ecological accounting and biodiversity impacts, the authors and publisher express their commitment to net-green, for-Earth enterprise.  
   </p>
+
+  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
+    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
+
+     <div id="wcb" class="carbonbadge wcb-d"></div>
+    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" preload></script>
 
   
     </div><!--closes page text content-->
