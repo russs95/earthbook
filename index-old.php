@@ -107,7 +107,7 @@ Concept and first version by Russell Maier, October 24th, 2022.  First used for 
 
 .compro-toggle {
   font-family: 'Mulish' !important;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 [part="darkLabel"]::before {
