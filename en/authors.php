@@ -79,8 +79,8 @@ Must be updated for each page-->
       <div id="ct-tc-menu" onclick="openContents()"></div>
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">The Authors</div>   
-        <div id="ct-book-title">Tractatus Ayyew</div>
-       <div id="ct-chap-location">An Earthen Ethics</div>
+        <div id="ct-book-title">Declaration of Interests</div>
+       <div id="ct-chap-location">Tractatus Ayyew</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>

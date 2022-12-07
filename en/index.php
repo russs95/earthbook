@@ -322,8 +322,8 @@ $name = "";?>
                 
                 <a href="authors.php">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">Banayan & Russell</div>
-                    <div class="word-count"><i>153 words</i></div>
+                    <div class="chapter-name">Authors & Declaration of Interests</div>
+                    <div class="word-count"><i>213 words</i></div>
                 </div>
             </a>
                 
