@@ -2653,6 +2653,7 @@ a:active {
     justify-content: center;
     flex-flow: column;
     height:100%;
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 700px) {
@@ -2956,9 +2957,6 @@ border-bottom-color: var(--fainter-border-color);
   justify-content: center;
   margin-top: 20px;
 }
-
-
-
 
 
 /*Gave up on this!

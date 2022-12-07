@@ -106,7 +106,7 @@ function openContents() {
   document.getElementById("table-of-contents").style.height = "100%";
   document.getElementById("table-of-contents").style.overflowY = "hidden";
   document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "100vh";
+  document.body.style.maxHeight = "fit-content";
 }
 /* Triggers the upwards reset of the TC */
 
