@@ -1108,7 +1108,7 @@ padding-top: 44px;
 
 @media screen and (max-width: 700px) {
   .overlay-content-settings {
-    width: 85%;
+    width: 77%;
     font-size: 0.9em;
     /*margin-top: 6%;*/
 }
@@ -1447,7 +1447,8 @@ padding-top: 44px;
 
 @media screen and (max-width: 700px) {
   .buy-overlay-content {
-    width: 92%;   
+    width: 92%;  
+    padding-top: 30px; 
 }
 }
 
@@ -1520,7 +1521,7 @@ padding-top: 44px;
   .book-listing img  {
     width: 120px;
     height: 140px;
-    text-align:right;
+    text-align:center;
     
   }
 
@@ -2561,7 +2562,7 @@ a:active {
 
   .action-btn {
 
-    padding: 7px 5px 7px 5px;
+    padding: 7px 5px 10px 5px;
     margin: 5px;
     flex-grow: 1;
     font-size: 0.88em;
