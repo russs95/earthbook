@@ -246,13 +246,13 @@ Must be updated for each page-->
 
         <a href="#55-up" class="footnote">   
         <div class="footnote-number">61.</div>
-        <div class="footnote-text">Jeremy L. England et al. (2015), Dissipative adaptation in driven self-assembly, Nature Nanotechnology.  
+        <div class="footnote-text">Jeremy L. England et al., <i>Dissipative adaptation in driven self-assembly</i>, (Nature Nanotechnology, 2015)  
         </div>
         </a>
 
         <a href="#56-up" class="footnote">   
         <div class="footnote-number">62.</div>
-        <div class="footnote-text">The term ‘technical nutrient’ was first proposed by William McDonough in a theory of circular design that embodies the various conceptual problems we highlight here.  See: William McDonough, Michael Braungart (2002), <i>Cradle to Cradle - Remaking the Way We Make Things</i>, North Point Press.   
+        <div class="footnote-text">The term ‘technical nutrient’ was first proposed by William McDonough in a theory of circular design that embodies the conceptual geometric problem we highlight here.  See: William McDonough, Michael Braungart (2002), <i>Cradle to Cradle - Remaking the Way We Make Things</i>, North Point Press.   
         </div>
         </a>
 
