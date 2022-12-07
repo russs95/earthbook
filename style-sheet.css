@@ -2655,7 +2655,7 @@ a:active {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 @media screen and (max-width: 700px) {
@@ -2696,7 +2696,7 @@ a:active {
 
 @media screen and (max-width: 700px) {
   .contents-title {
-    font-size: 1.6em;
+    font-size: 1.5em;
     padding-bottom: 0px;
   }
 }
@@ -2745,7 +2745,7 @@ a:active {
     .tc-a-book {
     letter-spacing: 5px;
     padding: 3px 15px 2px 15px;
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin: 3px 0px 1px 0px;
 
     
@@ -2773,7 +2773,7 @@ a:active {
   
   @media screen and (max-width: 700px) {
     .contents-title {
-      font-size: 1.15em;
+      font-size: 1.05em;
       margin-top: 10px;
     }
   }
@@ -2818,7 +2818,7 @@ border-bottom-color: var(--fainter-border-color);
 
 @media screen and (max-width: 700px) {
   .tc-item {
-    font-size: 0.9em;
+    font-size: 0.85em;
     padding: 0px;
   }
 }
@@ -2851,7 +2851,7 @@ border-bottom-color: var(--fainter-border-color);
 
 @media screen and (max-width: 700px) {
   .chapter-name-tc {
-    padding: 13px 5px 13px 15px;
+    padding: 11px 5px 11px 15px;
     margin:  auto 0px auto 0px;
   }
 }
@@ -2873,10 +2873,10 @@ border-bottom-color: var(--fainter-border-color);
 
 
 .word-count-tc {
-  padding: 15px 35px 15px 0px;
+  padding: 11px 35px 11px 0px;
   margin:  auto 0px auto 0px;
   color: grey;
-  text-align: right;
+  text-align: right !important;
   flex: fit-content;
   font-family: 'CooperLT';
 }
