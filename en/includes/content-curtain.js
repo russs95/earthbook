@@ -9,7 +9,7 @@ class ContentCurtain extends HTMLElement {
     <div id="table-of-contents" class="overlay-tc">
 
     <div id="top-close-button" style="cursor:pointer" onclick="closeContents()">
-       <img src="../svgs/bottom-x.svg" alt="Close Button">
+    <img src="../svgs/bottom-x.svg" alt="Close Button"><img src="../svgs/bottom-x.svg" alt="Close Button">
     </div>
         
         <div class="overlay-content-tc">
