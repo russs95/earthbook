@@ -15,7 +15,7 @@ class BuyCurtain extends HTMLElement {
               <div class="buy-book">
                 <div class="book-listing">
 
-                  <img src="../photos/cover-epub-400px.webp" loading="lazy" alt="The Epub version of the book is best for iphone and android eEeaders." title="The Epub version of the book is best for iphone and android ereaders.">
+                  <img src="../photos/cover-epub-400px.webp" loading="lazy" alt="The Epub version of the book is best for iphone and android eReaders." title="The Epub version of the book is best for iphone and android eReaders.">
 
                   <div class="book-buy-info">
                     <div class="buy-book-info-title">Ebook Edition</div>
