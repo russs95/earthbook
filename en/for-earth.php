@@ -117,6 +117,9 @@ Must be updated for each page-->
       </div>
   </div>
 
+  <?php require_once ("includes/eco-curtain.php");?>
+
+
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-000">
@@ -125,7 +128,6 @@ Must be updated for each page-->
   </div>
 
 
-<?php require_once ("includes/eco-curtain.php");?>
 <div id="up-arrow"></div>
 <div id="ct-main">
 
