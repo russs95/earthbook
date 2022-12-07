@@ -123,7 +123,7 @@ Must be updated for each page-->
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-000">
-  <img src="../icons/eco.svg" style="width:20%; height:20%;">
+  <img src="../icons/eco.svg" style="width:30%; height:30%; text-align:center">
   </div>
 
   <?php require_once ("includes/eco-curtain.php");?>
