@@ -1421,6 +1421,7 @@ padding-top: 40px;
   left: 0;
   overflow-y: hidden;
   transition: 0.5s;
+  display: flex;
 
 
 /*
@@ -1533,7 +1534,8 @@ padding-top: 40px;
 @media screen and (min-width: 701px) and (max-width: 1324px) {
 
   .book-listing img  {
-    width: 56%;
+    width: 280px;
+    height: 332px;
     max-width:180px;
     text-align:right;
     
