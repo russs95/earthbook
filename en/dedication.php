@@ -132,7 +132,7 @@ Must be updated for each page-->
   tasting berries and climbing trees,<br>
    
    loving the wild and learning its leaves.<br>
-   🙏
+  
 </i>
   </div>
   </div>
@@ -148,25 +148,14 @@ Must be updated for each page-->
 
 <div class="page-paragraph" style="text-align:center;">
 
-<br><br><br><i>
-
-    <p>To our mothers and fathers,<p>
-    
-        <p>who let us play in the forests and fields,</p>
-       
-        <p>tasting berries and climbing trees,</p>
-       
-       <p>loving the wild and learning its leaves.</p>
-    </i>
-
-    <br>
+<br><br>
    <div>
 
 
 
 
   
-    </div><!--closes page text content-->
+    </div><!--closes page text content  🙏-->
 
           
   </div><!--Closes main content block-->
