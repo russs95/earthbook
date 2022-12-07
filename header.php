@@ -12,10 +12,10 @@
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Tractatus Ayyew - EarthBook">
-<meta name="apple-mobile-web-app-status-bar-style" content="var(--header-footer);">
+<meta name="apple-mobile-web-app-status-bar-style" content="pink">
 
 
-<!--BOOK META TAGS
+<!--BOOK META TAGS var(--header-footer);
 These tags will be consistent for the whole book-->
 
 <meta property="og:site_name" content="Tractatus Ayyew" />

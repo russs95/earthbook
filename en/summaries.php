@@ -86,13 +86,19 @@ Must be updated for each page-->
   </div>
 
 <!-- Page Title Section-->
+<?php require_once ("includes/eco-curtain.php");?>
+
+
+<!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-000">
+  <div class="ct-chapter-quote">
+    A short sentence, a long sentence & a paragraph summary of Earthen Ethics.
   </div>
-
-
-
+  </div>
+  
   <div id="up-arrow"></div>
+
   <div id="ct-main">
 
 

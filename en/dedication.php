@@ -115,7 +115,7 @@ Must be updated for each page-->
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Dedication</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-        <div id="ct-chap-location"><br>An Earthen Ethics</div>
+        <div id="ct-chap-location">An Earthen Ethics</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>
@@ -123,7 +123,19 @@ Must be updated for each page-->
   <?php require_once ("includes/eco-curtain.php");?>
 
 
-  <div id="ct-chapt-graphic" class="background-000"></div>
+  <div id="ct-chapt-graphic" class="background-000">
+  <div class="ct-chapter-quote"><i>
+  To our mothers and fathers,<br>
+    
+  who let us play in the forests and fields,<br>
+   
+  tasting berries and climbing trees,<br>
+   
+   loving the wild and learning its leaves.<br>
+   🙏
+</i>
+  </div>
+  </div>
 
   <div id="up-arrow"></div>
 
