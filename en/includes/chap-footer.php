@@ -30,8 +30,8 @@
   <div class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px; padding-top: 20px;
   padding-bottom: 0px;" onclick="openEarthbook()" aria-label="Learn what an Earthbook is">What is an Earthbook?</a></div>
 
-  <div class="github-source">Page source code:<br>
-  <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Go to the Earthbook Github repository">github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?></a></div>
+  <div class="github-source">Page source code on Github:<br>
+  <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Go to the Earthbook Github repository">➔ /russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?></a></div>
 </div>
 
 

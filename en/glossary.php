@@ -84,7 +84,7 @@ Must be updated for each page-->
         <div id="ct-chapter-title">Glossary</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
        <div id="ct-chap-location">Appendix</div>
-        <div id="ct-word-count"><i>An Earthen Ethics</i></div>
+        <div id="ct-word-count">.  .  .</div>
       </div>
   </div>
 
