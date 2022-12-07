@@ -161,9 +161,9 @@ function closeBuy() {
 Opens the bookplate overlay from the top up*/
 
 function openBookplate() {
-  document.getElementById("top-bookplate").style.height = "100vh";
+  document.getElementById("top-bookplate").style.height = "101vh";
   document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "100vh";
+  document.body.style.maxHeight = "101vh";
   document.getElementById("sub-earthbook").style.display = "block!important";
   document.getElementById("bookplate-img").style.display = "block";
 }
