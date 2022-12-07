@@ -10,6 +10,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="article:modified_time" content="2022-12-03T09:14:13+00:00" />
 
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tractatus Ayyew - EarthBook">
+<meta name="apple-mobile-web-app-status-bar-style" content="var(--header-footer);">
+
+
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
 
