@@ -42,9 +42,9 @@ class ShareCurtain extends HTMLElement {
         <h4>Or copy the <a href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;" aria-label="Or copy the main Earthbook URL">main URL</a> of the book.</h4>
       </div>
 
-      <div>
-        <p>And... no worries!  The content of this Earthbook is under a Creative-Commons ND-SA-AT 4.0 license .  This means you can freely share the links to this page, quote passages, download and share the PDF-- just be sure to attribute to this Earthbook and share in the way.</p>
-      </div>
+      <!--<div>
+        <p>The content of an Earthbook is under a Creative-Commons ND-SA-AT 4.0 license which means you can freely share the links to this page, quote passages, download and share the PDF-- just be sure to attribute to this Earthbook and share in the way.</p>
+      </div>-->
         <div><img src="../icons/cc-by-sa.svg" alt="Creative Commons CC-BY-SA icon" style="height: 35px"></div>
   </div>
 </div>  

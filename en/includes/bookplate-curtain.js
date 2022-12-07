@@ -25,9 +25,9 @@ class Bookplate extends HTMLElement {
 
           <div id="sub-earthbook"><h5>earthBook edition</h5></div> 
           
-          <div id="line" style="width:50%; margin:auto"></div>
+          <!--<div id="line" style="width:50%; margin:auto"></div>-->
 
-          <h6 style="color:grey">Composed in Kalinga (Ph), Bali (Id). First presented at the Bandung Spirit Conference 12.02.2021, Université Le Havre. Earthen.io edition 22.02.2022, Earthbook edition 22.12.22</h6>
+          <h6 style="color:grey">Composed in Kalinga (Ph), Bali (Id). First presented at the Bandung Spirit Conference 12.02.2021, Université Le Havre. Earthen.io edition 22.02.2022, Earthbook edition 22.12.22. Copyright Russell Maier & Banayan Angway.</h6>
           
         
           <div id="bottom-close-button" style="cursor:pointer" onclick="closeBookplate()" aria-label="Close this pop-up page">
