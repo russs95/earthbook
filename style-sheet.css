@@ -2695,8 +2695,9 @@ a:active {
 
 @media screen and (max-width: 700px) {
   .contents-title {
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding-bottom: 0px;
+    padding-top: 13px;
   }
 }
 
