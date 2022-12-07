@@ -51,7 +51,7 @@ class BuyCurtain extends HTMLElement {
                     
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Kindle Edition</div>
-                  <div class="buy-book-info-text">The Amazon .mobi format for Kindles.</div>
+                  <div class="buy-book-info-text">The Amazon MOBI format for all Kindle devices.</div>
                       <a href="https://buy.stripe.com/aEU7vt9OSdTLbe03cc" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the .mobi Kindle version of the book for 10$"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
                   </div>
                   
