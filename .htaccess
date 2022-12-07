@@ -7,7 +7,7 @@ Header set Cache-Control "max-age=31536000, public"
 DirectoryIndex index.php
 
 
-Redirect /index.php /en/index.php
+Redirect / /en/index.php
 
 
 Redirect /preamble /en/preamble.php
@@ -39,6 +39,45 @@ Redirect /plastic.html /en/plastic.php
 Redirect /plastic.php /en/plastic.php
 Redirect en/plastic.html /en/plastic.php
 Redirect en/plastic /en/plastic.php
+
+Redirect /stellar /en/stellar.php
+Redirect /stellar.html /en/stellar.php
+Redirect /stellar.php /en/stellar.php
+Redirect en/stellar.html /en/stellar.php
+Redirect en/stellar /en/stellar.php
+
+Redirect /patterns /en/patterns.php
+Redirect /patterns.html /en/patterns.php
+Redirect /patterns.php /en/patterns.php
+Redirect en/patterns.html /en/patterns.php
+Redirect en/patterns /en/patterns.php
+
+Redirect /kincentric /en/kincentric.php
+Redirect /kincentric.html /en/kincentric.php
+Redirect /kincentric.php /en/kincentric.php
+Redirect en/kincentric.html /en/kincentric.php
+Redirect en/kincentric /en/kincentric.php
+
+Redirect /nature /en/nature.php
+Redirect /nature.html /en/nature.php
+Redirect /nature.php /en/nature.php
+Redirect en/nature.html /en/nature.php
+Redirect en/nature /en/nature.php
+
+Redirect /earthen /en/earthen.php
+Redirect /earthen.html /en/earthen.php
+Redirect /earthen.php /en/earthen.php
+Redirect en/earthen.html /en/earthen.php
+Redirect en/earthen /en/earthen.php
+
+Redirect /spirals /en/spirals.php
+Redirect /spirals.html /en/spirals.php
+Redirect /spirals.php /en/spirals.php
+Redirect en/spirals.html /en/spirals.php
+Redirect en/spirals /en/spirals.php
+
+
+
 
 
 

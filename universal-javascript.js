@@ -86,9 +86,9 @@ $(function() {
 
 /* LEFT SETTINGS OVERLAY */
 function openSettings() {
-  document.getElementById("left-settings-overlay").style.width = "100%";
+  document.getElementById("left-settings-overlay").style.width = "101vh";
   document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "100vh";
+  document.body.style.maxHeight = "101vh";
 
 }
 /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -122,9 +122,9 @@ function closeContents() {
 Triggers the right share link panel*/
 
 function openShare() {
-    document.getElementById("right-share-overlay").style.width = "100%";
+    document.getElementById("right-share-overlay").style.width = "101vh";
     document.body.style.overflowY = "hidden";
-    document.body.style.maxHeight = "100vh";
+    document.body.style.maxHeight = "101vh";
  
   }
 
@@ -141,9 +141,9 @@ function openShare() {
 Triggers the right share link panel*/
 
 function openBuy() {
-  document.getElementById("buy-curtain").style.height = "100vh";
+  document.getElementById("buy-curtain").style.height = "101vh";
   document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "100vh";
+  document.body.style.maxHeight = "101vh";
 
 }
 
@@ -185,9 +185,9 @@ Opens up the Earthbook overlay from the bottom up*/
 
   /* Open settings when someone clicks on the span element */
   function openEarthbook() {
-    document.getElementById("bottom-earthbook").style.height = "100%";
+    document.getElementById("bottom-earthbook").style.height = "101vh";
     document.body.style.overflowY = "hidden";
-    document.body.style.maxHeight = "100vh";
+    document.body.style.maxHeight = "101vh";
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -205,9 +205,9 @@ Opens up the Earthbook overlay from the bottom up*/
 
   /* Open settings when someone clicks on the span element */
   function openEco() {
-    document.getElementById("eco-curtain2").style.height = "100%";
+    document.getElementById("eco-curtain2").style.height = "101vh";
     document.body.style.overflowY = "hidden";
-    document.body.style.maxHeight = "100vh";
+    document.body.style.maxHeight = "101vh";
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -225,9 +225,9 @@ Opens up the Earthbook overlay from the bottom up*/
 
   /* Open settings when someone clicks on the span element */
   function openRead() {
-    document.getElementById("read-curtain").style.height = "100%";
+    document.getElementById("read-curtain").style.height = "101vh";
     document.body.style.overflowY = "hidden";
-    document.body.style.maxHeight = "100vh";
+    document.body.style.maxHeight = "101vh";
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */

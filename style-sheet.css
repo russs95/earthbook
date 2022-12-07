@@ -1440,6 +1440,7 @@ padding-top: 40px;
   flex-flow: column;
   /*height:100%;*/
   margin: auto;
+  padding-top: 20px;
 }
 
 
@@ -1536,7 +1537,6 @@ padding-top: 40px;
   .book-listing img  {
     width: 280px;
     height: 332px;
-    max-width:180px;
     text-align:right;
     
   }
