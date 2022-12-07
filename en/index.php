@@ -104,7 +104,7 @@ $name = "";?>
 
             <img src="https://book.earthen.io/photos/cover-500px.webp" width="300px" height="415px" alt="Tractatus Ayyew - EarthBook Cover">
 
-            <div class="welcome-to">Welcome to the <span style="cursor:pointer; text-decoration:underline;" onclick="openEarthbook()">EarthBook</span> edition of the Tractatus Ayyew</div>
+            <div class="welcome-to">Welcome to the <span style="cursor:pointer; text-decoration:underline;" onclick="openEarthbook()">EarthBook</span> edition of the Tractatus Ayyew.</div>
 
             <div class="button-row">
                 <div id="read-btn" class="action-btn"  style="cursor:pointer;" onclick="openRead()"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</a></div>
