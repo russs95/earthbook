@@ -991,9 +991,9 @@ padding-top: 14px;
   margin-left: auto; 
   margin-right: auto; 
   z-index: 50;
-  top: -35px;
+  top: -40px;
  text-align: center;
-  width: 170px; 
+  width: 160px; 
 }
 
 #top-close-button:hover {
@@ -1015,8 +1015,8 @@ box-shadow: var(--element-shadow);
 
 
 #top-close-button img {
-height: 40px;
-padding-top: 36px;
+height: 35px;
+padding-top: 40px;
 
 }  
 
@@ -2741,9 +2741,9 @@ a:active {
   @media screen and (max-width: 700px) {
     .tc-a-book {
     letter-spacing: 5px;
-    padding: 3px 15px 3px 15px;
-    font-size: 1.8em;
-    margin: 3px 0px 2px 0px;
+    padding: 3px 15px 2px 15px;
+    font-size: 1.6em;
+    margin: 3px 0px 1px 0px;
     
     }
   }
@@ -2954,7 +2954,7 @@ border-bottom-color: var(--fainter-border-color);
   flex: row;
   align-items: stretch;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 
