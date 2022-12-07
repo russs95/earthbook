@@ -2652,8 +2652,8 @@ a:active {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    height:100%;
-    margin-top: 30px;
+    height:105%;
+    margin-top: 40px;
 }
 
 @media screen and (max-width: 700px) {
