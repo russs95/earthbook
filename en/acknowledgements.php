@@ -128,10 +128,10 @@ Must be updated for each page-->
   </div>
 
   <?php require_once ("includes/eco-curtain.php");?>
-
+  <div id="up-arrow"></div>
   <div id="ct-main">
 
-  <div id="up-arrow"></div>
+ 
 
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
