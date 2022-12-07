@@ -53,6 +53,39 @@ Must be updated for each page-->
 
 <style>
   
+@media screen and (max-width: 699px) {
+    .ct-chapter-quote {
+      width: 80%;
+      font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 80%;
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .ct-chapter-quote {
+      width: 50%;
+      font-size: 1.8em;
+    }
+    .ct-quote-source {
+      width: 70%;
+      font-size: 1em;
+    }
+  }
+    
+  @media screen and (min-width: 1325px) {
+    .ct-chapter-quote {
+    width: 40%;
+    font-size: 2em;
+    text-shadow: 0px 0px 12px var(--slider);
+    }
+    .ct-quote-source {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
 
   #ct-chapter-title {
       /*padding-top: 45px;
@@ -83,8 +116,8 @@ Must be updated for each page-->
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Glossary</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-       <div id="ct-chap-location">Appendix</div>
-        <div id="ct-word-count">.  .  .</div>
+       <div id="ct-chap-location">An Earthen Ethics</div>
+        <div id="ct-word-count">Appendix</div>
       </div>
   </div>
 
@@ -92,7 +125,7 @@ Must be updated for each page-->
 
   <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-      Key terms and their definitions.
+      Key terms & their definitions.
     </div>
     <div class="ct-quote-source">
     </div>

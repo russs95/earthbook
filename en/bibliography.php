@@ -83,13 +83,15 @@ Must be updated for each page-->
       </div>
   </div>
 
-  <div id="ct-chapt-graphic" class="background-000"></div>
-
   <?php require_once ("includes/eco-curtain.php");?>
 
+  <div id="ct-chapt-graphic" class="background-000"></div>
+
+  
+  <div id="up-arrow"></div>
   <div id="ct-main">
 
-  <div id="up-arrow"></div>
+  
 
 
 <!-- MAIN TEXT CONTENT of the Page
@@ -99,8 +101,11 @@ Must be updated for each page-->
 <div class="page-paragraph">
 
     <p>Sources listed in order of appearance in the book.</p>
+    <br>
 
     <div id="line" style="margin-top: 15px"></div>
+
+    <br><br><br>
     
     <p>Régis Debray, <i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, 2020) 
 
@@ -211,7 +216,7 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="glossary.php"><div class="next-button">Next ➔</div></a>
+        <a href="glossary.html"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
