@@ -1641,7 +1641,7 @@ padding-top: 40px;
 
 @media screen and (max-width: 700px) {
   .read-overlay-content {
-    width: 92%; 
+    width: 88%; 
     flex-flow: column;  
 }
 }
@@ -2658,6 +2658,8 @@ a:active {
     display: flex;
     justify-content: center;
     flex-flow: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 700px) {
@@ -2700,7 +2702,7 @@ a:active {
   .contents-title {
     font-size: 1.4em;
     padding-bottom: 0px;
-    padding-top: 13px;
+    
   }
 }
 
@@ -3382,7 +3384,7 @@ padding-bottom: 15px;
 
 
 .eco-medium {
-  font-size: 1.8em;
+  font-size: 1.2em;
   margin: 20px auto 20px auto;
 }
 
@@ -3409,7 +3411,7 @@ padding-bottom: 15px;
       }
 
       .eco-medium {
-        font-size: 1.6em;
+        font-size: 1.3em;
         margin: 27px auto 20px auto;
       }
       
@@ -3434,7 +3436,7 @@ padding-bottom: 20px;
       }
 
       .eco-medium {
-        font-size: 2.6em;
+        font-size: 1.9em;
         margin: 40px auto 20px auto;
       }
       
