@@ -115,22 +115,24 @@ Must be updated for each page-->
         </div>
         <br><br>
 
-        <h2>Declation of Interests & Funding</h2>
+        <h2>Russell Maier</h2>
 
         <div class="page-paragraph">
-        
-        <p>Banayan and Russell are co-founders of the <a href="https://ecobricks.org/about" target="_blank">Global Ecobrick Alliance</a>.  Banyan is a paid employee of the Cordillera Adminstrative Region of the Philippines Department of Education (Kalinga Province).  Russell receives commissions on GEA trainer and is an active principal in the organization.</p>
-        <p>Neither Russell or Banayan received any grants, sponsorships from any organizations, companies, governments or corporations in the writing of the Tractatus Ayyew or at any time for any other work.  A private donation of 2500$ USD was received in 2020 to purchase the <a href="/writing.php">Librem laptop and  upon which this work was written.  A second donation of 3000$ was received to publish the <i>Tractatus Ayyew Earthbook edition</i> in August 2022.</p>
-
+        <p>Russell is an inventor and regenerative philosopher, currently based in Gianyar, Indonesia.  Russell is one of the principals of the Global Ecobrick Alliance and writes regularly on Earthen.io.  He travels around South East Asia observing the impact of human systems on biological diversity, in order to maximize human ecological contribution.</p>
+      
       </div>
+      <br><br>
 
       <div id="line"></div>
-     <br><br>
-     <h2>Declaration of Interest</h2>
+     <br><br><br>
+
+     <h2>Declation of Interests & Funding</h2>
 
      <div class="page-paragraph">
+
+     <p>Banayan and Russell are co-founders of the <a href="https://ecobricks.org/about" target="_blank">Global Ecobrick Alliance</a>.  Banyan is a paid employee of the Cordillera Adminstrative Region of the Philippines Department of Education (Kalinga Province).  Russell receives commissions on GEA trainer and is an active principal in the organization.</p>
+        <p>Neither Russell or Banayan received any grants, sponsorships from any organizations, companies, governments or corporations in the writing of the Tractatus Ayyew or at any time for any other work.  A private donation by Trisha Joe of 2500$ USD was received in 2020 to purchase the <a href="/writing.php">Librem laptop</a> and  upon which this work was written.  A second donation of 3000$ by the same supporter was received to publish the <i>Tractatus Ayyew Earthbook edition</i> in 2022.</p>
         
-        <p>Russell is an inventor and regenerative philosopher, currently based in Gianyar, Indonesia.  Russell is one of the principals of the Global Ecobrick Alliance and writes regularly on Earthen.io.  He travels around South East Asia observing the impact of human systems on biological diversity, in order to maximize human ecological contribution.</p>
 
       </div>
   
