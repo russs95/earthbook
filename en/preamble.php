@@ -54,14 +54,7 @@ Must be updated for each page-->
 <meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew"/>
 
 
-<style>
-  
-
-</style>
-
 </head>
-
-
 
 
 <!--MAIN HTML Begins-->
@@ -89,8 +82,6 @@ Must be updated for each page-->
 <?php require_once ("includes/eco-curtain.php");?>
  
 
-
-
 <!-- Page Title Section-->
 
 <div id="ct-chapt-graphic" class="background-0">
@@ -112,13 +103,13 @@ Must be updated for each page-->
 
 
 <div class="page-paragraph">
-    <p>To start, Banayan and I will share <a href="imagine">the story</a> of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader keen for an overview of what lies ahead, we also provide <a href="summaries.php">a short sentence, a long sentence and a paragraph</a> that summarize theory of Earthen ethics that we lay out in this book.</p>
+    <p>To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader keen for an overview of what lies ahead, we also provide <a href="summaries.php">a short sentence, a long sentence and a paragraph</a> that summarize theory of Earthen ethics that we lay out in this book.</p>
 
     <p>Of course, how a story is told (or a theory for that matter) is just as important as the sentences and paragraphs it contains.  In the dap'ay, both the tale and the telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
 
     <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span style="cursor:pointer; text-decoration: underline;" onclick="openEarthbook()" aria-label="Open"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics.</p>
 
-    <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced elsewhere. For example, this section of the book can be found and shared using:<br>https://book.earthen.io/<?php echo ($lang); ;?>/preamble</p>
+    <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced elsewhere. For example, this section of the book can be found and shared using: book.earthen.io/<?php echo ($lang); ;?>/preamble</p>
     
     <p>To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory, and each chapter’s integration within it, is represented by the mandala at the top of this page.</p>
 
