@@ -18,6 +18,11 @@ class ReadCurtain extends HTMLElement {
                 
                   </div>
 
+                  <div class="read-book-icon">
+                     <img src="../icons/reader.svg" width="200px" width="400px" alt="Read the Tractatus Ayyew in a variety of formats." title="Read the Tractatus Ayyew in a variety of formats.">
+                  </div>
+                
+
                   <div class="read-book-info">
                     <div class="read-book-info-title">Read. Freely.</div>
                     <div class="read-book-info-text">
