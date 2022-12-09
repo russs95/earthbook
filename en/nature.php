@@ -39,7 +39,7 @@ $name = "";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Nature's Fallacy | Tratatus Ayyew - Earthbook</title>
+<title>Nature's Fallacy | Tractatus Ayyew - Earthbook edition</title>
 <meta name="keywords" content="Nature's fallacy, nature, environment, problem with nature, humancentric, humancentricism, anthropocentric, petro-capital economy, human nature, nature of plastic, "> 
 <meta name="description" content="Beneath our modern environmentalism lurks a fundamental ontological error that destines even the greenest of intentions to grey.">
 

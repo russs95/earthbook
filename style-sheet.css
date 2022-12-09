@@ -1836,8 +1836,17 @@ padding-top: 44px;
 }
 
 
+.read-book-icon {
+  display: none;
+  margin: 0px auto 18px auto;
+}
 
 
+  @media screen and (min-width: 700px) {
+    .read-book-icon {
+    display: none;
+}
+  }
 
 
 
