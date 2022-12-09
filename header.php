@@ -100,3 +100,15 @@ All the page components required to build this page-->
  <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
  <!--8b--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G5VT56C7XD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G5VT56C7XD');
+</script>
