@@ -115,8 +115,8 @@ Must be updated for each page-->
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">The Salmon's Spin</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-        <div id="ct-chap-location">Book Two | Earthen Principle No. 2</div>
-        <div id="ct-word-count"><i>2,307 words</i></div>
+        <div id="ct-chap-location">Earthen Principle No. 2 | Energy</div>
+        <div id="ct-word-count"><i>Book Two | 2,307 words</i></div>
       </div>
   </div>
 
