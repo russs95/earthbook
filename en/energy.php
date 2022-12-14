@@ -86,6 +86,7 @@ Must be updated for each page-->
     .ct-quote-source {
       width: 50%;
       font-size: 1em;
+      text-shadow: 0px 0px 10px var(--slider);
     }
   }
 
