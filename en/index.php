@@ -214,7 +214,7 @@ $name = "";?>
                 </div>
                 </a>
 
-                <a href="unpublished.php">
+                <a href="energy.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">2  |  The Salmon's Spiral</div>
                     <div class="word-count"><i>2,294 words</i></div>
