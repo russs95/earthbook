@@ -103,7 +103,7 @@ Must be updated for each page-->
 
 
 <div class="page-paragraph">
-    <p>To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the keen reader we also provide <a href="summaries.php">a short sentence, a long sentence and a paragraph</a> summary of the theory of Earthen ethics that we lay out in this book.</p>
+    <p>To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader eager for an overview we provide <a href="summaries.php">a short sentence, a long sentence and a paragraph</a> that each summarize the theory of Earthen ethics that we develop in this book.</p>
 
     <p>Of course, how a story is told (or a theory for that matter) is just as important as the sentences and paragraphs it contains.  In the dap'ay, both the tale and the telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
 
