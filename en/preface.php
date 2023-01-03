@@ -132,11 +132,11 @@ Must be updated for each page-->
 
     <p>For those of us living along the river, the challenge was palpable.</p>
       
-    <p>For centuries, the tribes of the region, collectively known as the Igorots, have thrived in fierce independence from the rest of the Filipino archipelago. Insulated by a rugged, chain of verdant mountains, the Igorots have remained largely immune to three hundred years of colonization further South. However, over the last decades, modern goods have reached even the most remote villages. Whereas the leaves, wood and vines that had long served as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade when discarded.</p>
+    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Filipino archipelago. Insulated by a rugged chain of verdant mountains, the Igorots have remained largely immune to three hundred years of colonization further South. However, over the last decades, modern goods have reached even the most remote villages. Whereas the leaves, wood and vines that had long served as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade when discarded.</p>
 
     <p>However, the Igorots had not been sitting idly by.</p>
     
-    <p>In the Igorot culture, the art of ecological integration is highly esteemed— in much the same way that painting or sculpture is in other societies. Consequently, the region had become a hot-bed of up-cycling innovations. In town old tires were being cut up to make remarkably functional chairs and tables. In the mines used dynamite cable was being woven to make traditional backpacks. In the villages straws and wrappers were being used to weave mats, purses, wallets and containers of all kinds.  </p>
+    <p>In the Igorot culture, the art of ecological integration is highly esteemed— in much the same way that painting or sculpture is in other societies. Consequently, the region had become a hot-bed of up-cycling innovations. In town, old tires were being cut up to make remarkably functional chairs and tables. In the mines, used dynamite cable was being woven to make traditional backpacks. In homes, straws and wrappers were being used to weave mats, purses, wallets and containers of all kinds.  </p>
 
    <p>Both myself and Banayan were fascinated and engaged by the local upcycling movement. Whereas Banayan had been developing arts and crafts education, I was involved in improving designs to make saleable products. However, in the face of the ever-growing flow of discarded plastic, our success was limited. As the legal stand-off in Bontoc intensified, we realized that securing plastic out of the environment was far more vital than making or teaching handicrafts. </p>
     
@@ -148,7 +148,7 @@ Must be updated for each page-->
 
    <p>At my home, I began to experiment with packing my own used plastic into a bottle. I made a small garden with the result. Everyone was delighted. The nearby school, which was struggling to dispose the plastic of hundreds of students, asked to be shown how it was done. After a day of packing plastic, making bricks and building a composter, I and the community were excited to this alternative to burning and dumping plastic in the river.</p>
   
-   <p>As, the technique began to spread to other schools, Banayan stepped in. She realized the potential for raising the awareness around the ecological issues. We worked together to create a reporting system and a guidebook. Through her coordination, what was soon to be called ‘ecobricking’, spread out to hundreds of schools in the province.</p>
+   <p>As the technique began to spread to other schools, Banayan stepped in. She realized the potential for raising the awareness around the ecological issues. We worked together to create a reporting system and a guidebook. Through her coordination, what was soon to be called ‘ecobricking’, spread out to hundreds of schools in the province.</p>
 
    <p>And then to thousands.</p>
 
@@ -166,7 +166,7 @@ Must be updated for each page-->
 
   <p>Some local governments put their ecobricks to use in gardens in which they were fully exposed to the sun.  After several years, the bottles had disintegrated and all the plastic inside had scattered.  In other cases, ecobricks were put to use with cement.  It soon became clear that at the end of the construction, the cement would crumble and inevitably rupture the soft plastic of the ecobrick bottle.</p>
 
-    <p>Banayan and I, observing these phenomena in our local communities as well as in the global ecobrick movement, were troubled.  Were ecobricks truly being of ecological service?  Or were they simply delaying the problem?  More troubling, were ecobricks in fact accelerating the consumption of plastic?</p>
+    <p>Banayan and I, observing these phenomena in our local communities as well as in the global ecobrick movement, were troubled.  Were ecobricks truly being of ecological service?  Or were they simply delaying the problem?  More worrisome: we're ecobricks in fact accelerating the consumption of plastic?</p>
       
     <p>Over the last decade these questions have compelled us re-examine not only ecobricks as a 'solution to plastic', but so too what constitutes an 'ecological solution' in the first place.</p>
 
