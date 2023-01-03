@@ -108,12 +108,10 @@ Must be updated for each page-->
 <div>
      <div class="lead-page-paragraph">
 
-     TODAY, AS WE BECOME more and more aware of the degradation and depletion inherent in our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been walked.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of cultural and ecological harmony, abundance and vitality that far exceed our modern environmental vision, values and virtues. Only to the extent that we can recognize these enlightened moments, can we imagine our own.</p>
+     TODAY, AS WE BECOME more and more aware of the degradation and depletion inherent in our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been layed.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that far exceed our modern imagination. Only to the extent that we can recognize these enlightened moments, can we imagine our own.  For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair</p>
 
     </div>
 
-    <p>For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair. 
-      </p>
 
 
       <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes">³</a>, she and I have to come to see that the longing and the potential for ecological contribution unites us all on planet Earth. </p>
@@ -151,7 +149,7 @@ Must be updated for each page-->
      
      <p>Seen through the lens of the  ecological ayyew ethos of her people, we observe that the modern ethic of green is merely about reducing <i>harm</i>— while the concept of <i>contribution</i> has remained all but un-imagined.</p>
      
-     <p>It is a view of human ecological potential that sharply contradicts the lived experience of Banayan and her people.</p>
+     <p>It is a view of human ecological potential that sharply contradicts the lived experience of Banayan and her ancestors.</p>
 
      <p>As we shall see in the chapters ahead, ecological contribution has in fact been the overwhelming tendency on Earth— a unique planetary pattern of matter and energy that, from the very beginning, has permeated all of Earth's processes, cycles and systems.</p>
 
