@@ -121,9 +121,9 @@ Must be updated for each page-->
         
          <p>Russell Maier, <i>Recycling: The Evil Illusion</i>, (Medium.com, 2016).</p>
         
-        <p>“It's super painful to be a human being right now at this point in history." Mike Pearl, Climate Despair' Is Making People Give Up on Life (Vice Magazine, 2019).</p>
+	<pMike Pearl, <i>Climate Despair Is Making People Give Up on Life</i> (Vice Magazine, 2019).</p>
         
-        <p>See also: “Climate change can directly affect the emotional well-being of Earth scientists and professionals. Like the physical processes of climate change, the emotional effects are complex and multifaceted.” D. Gilford et al, (2019) The Emotional Toll of Climate Change on Science Professionals.</p>
+	<p>D. Gilford et al, <i>The Emotional Toll of Climate Change on Science Professionals</i>, (2019) </p>
         
         <p>Steven W. Running, <i>The 5 Stages of Climate Grief</i> (University of Montana, Missoula: Numerical Terradynamic Simulation Group Publications: 2017).</p>
         
@@ -139,7 +139,7 @@ Must be updated for each page-->
         
         <p>David M. Raup and J. John Sepkoski, Jr., <i>Mass Extinctions in the Marine Fossil Record</i>, (American Association for the Advancement of Science, 1982) Vol 215, Issue 4539.</p>
         
-       <p> UK Oil consumption, (British Plastics Federation, 2008), Ref PD/LFH/19/8/08. </p>
+	<p> <i>UK Oil consumption</i>, (British Plastics Federation, 2008), Ref PD/LFH/19/8/08. </p>
         
         <p>Russell Maier, Ani Himawati, <i>The Rise of the Regenerative Ecobrick Movement</i>, (Le Havre University: Bandung Spirit Conference, 2019).</p>
         
@@ -153,7 +153,7 @@ Must be updated for each page-->
         
         <p>David Beerling, (2007) <i>The Emerald Planet, Oxford University Press</i></p>
         
-         <p>Rutger Bergman, Humankind: A Hopeful History, (Little, Brown and Company, 2019).</p>
+	<p>Rutger Bergman, <i>Humankind: A Hopeful History</i>, (Little, Brown and Company, 2019).</p>
         
         <p>Dobyns, Henry F., An Appraisal of Techniques with a New Hemispheric Estimate, (Current Anthropology, 1966) Issue 7, no. 4 : p395–416. </p>
         
@@ -165,23 +165,25 @@ Must be updated for each page-->
         
         <p>Gabriel Popkin, <i>Forest Gardens Show how native land stewardship can outdo nature,</i> (National Geographic: 2021)</p>
         
-        <p>Campbell, S. K., and V. L. Butler, Archaeological Evidence for Resilience of Pacific Northwest Salmon Populations and the Socioecological System over the last ~7,500 years, (Ecology & Science, 2021) Vol. 15, No. 1, Art. 17</p>
+        <p>Campbell, S. K., and V. L. Butler, <i>Archaeological Evidence for Resilience of Pacific Northwest Salmon Populations and the Socioecological System over the last ~7,500 years</i>, (Ecology & Science, 2021) Vol. 15, No. 1, Art. 17</p>
         
-        <p>A. Groesbeck AS, Rowell K, Lepofsky D, Salomon AK, Ancient Clam Gardens Increased Shellfish Production: Adaptive Strategies from the Past Can Inform Food Security Today. (PLoS ONE, 2014) 9(3): e91235.</p>
+        <p>A. Groesbeck AS, Rowell K, Lepofsky D, Salomon AK, <i>Ancient Clam Gardens Increased Shellfish Production: Adaptive Strategies from the Past Can Inform Food Security Today</i>, (PLoS ONE, 2014) 9(3): e91235.</p>
         
-        <p> David Graeber, David Wengrow, The Dawn of Everything: A New History of Humanity, (Signal Publishing, 2021).</p>
+	<p> David Graeber, David Wengrow, <i>The Dawn of Everything: A New History of Humanity</i>, (Signal Publishing, 2021).</p>
         
-        <p>Jack D. Forbes, Indigenous Americans: Spirituality and Ecos, (Dædalus, 2021).</p>
+	<p>Jack D. Forbes, <i>Indigenous Americans: Spirituality and Ecos</i>, (Dædalus, 2021).</p>
         
-        <p>Enrique Salmón, Kincentric Ecology: Indigenous Perceptions of the Human-Nature Relationship, Ecological Applications, (Ecological Society of America, Oct., 2000)  Vol. 10, No. 5, pp. 1327-1332.</p>
+        <p>Enrique Salmón, <i>Kincentric Ecology: Indigenous Perceptions of the Human-Nature Relationship</i>, Ecological Applications, (Ecological Society of America, Oct., 2000)  Vol. 10, No. 5, pp. 1327-1332.</p>
         
-        <p>Berkes, F., Sacred Ecology. Third edition.  (New York: Routledge 2012) Chapter 5, p.105.</p>
+	<p>Berkes, F., <i>Sacred Ecolog</i>. Third edition.  (New York: Routledge 2012) Chapter 5, p.105.</p>
 
-        <p>Carolyn Merchant, The Death of Nature: Women, Ecology and the Scientific Revolution, (Harper & Row, 1980).</p>
+        <p>Carolyn Merchant, <i>The Death of Nature: Women, Ecology and the Scientific Revolution</i>, (Harper & Row, 1980).</p>
         
-        <p>Theodore Hieber, Retranslating Genesis 1–2: Reconnecting Biblical Thought and Contemporary Experience, (Sage Journals, 2019) Vol 70, Issue 3.</p>
+        <p>Theodore Hieber, <i>Retranslating Genesis 1–2: Reconnecting Biblical Thought and Contemporary Experience</i> (Sage Journals, 2019) Vol 70, Issue 3.</p>
         
-        <p>Timothy Morton, Ecology without Nature: Rethinking Environmental Aesthetics, (Harvard University Press, (2007).</p> 	
+	<p>Daniel Pinchbeck, Sting, Russell Brand <i>How Soon is Now: From Personal Initiation to Global Transformation</i>, (Publisher: Watkins Publishing, 2017)
+	
+	<p>Timothy Morton, Ecology without Nature: Rethinking Environmental Aesthetics, (Harvard University Press, (2007).</p> 	
         
        <p>Seline Meijer, People and nature blur in the world's indigenous languages, (IUCN: Planet at the Crossroads, 2017).</p>
         
