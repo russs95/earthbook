@@ -198,7 +198,7 @@ Must be updated for each page-->
 
 	<a href="#5-up" class="footnote">   
       <div class="footnote-number">5.</div>
-      <div class="footnote-text">"We can think of our current civilization - its technical and sociopolitical infrastructure, its ideology and beliefs -- as an operating system, much like the software that runs our computers.  Now we need to reboot and install a new system software". Daniel Pinchbeck, Sting, Russell Brand <i>How Soon is Now: From Personal Initiation to Global Transformation</i>, (Publisher: Watkins Publishing, 2017) Chapter 2, p.105</div>
+      <div class="footnote-text">"We can think of our current civilization-- its technical and sociopolitical infrastructure, its ideology and beliefs-- as an operating system, much like the software that runs our computers.  Now we need to reboot and install a new system software".  Daniel Pinchbeck, <i>How Soon is Now: From Personal Initiation to Global Transformation</i>, (Publisher: Watkins Publishing, 2017) Chapter 2, p.105</div>
       </a>
 
 
