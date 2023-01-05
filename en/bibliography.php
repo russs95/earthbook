@@ -111,7 +111,9 @@ Must be updated for each page-->
 
         <p>Bill Mollison, <i>Principles from Permaculture a Designers' Manual</i>, (Tagari Publishers: 1988).</p>
         
-       <p><i>Sustainable Packaging: Consumer View</i>, (Global Web Index: 2020)</p>
+       <p>Daniel Pinchbeck, Sting, Russell Brand <i>How Soon is Now: From Personal Initiation to Global Transformation</i>, (Publisher: Watkins Publishing, 2017)</p>
+	
+	<p><i>Sustainable Packaging: Consumer View</i>, (Global Web Index: 2020)</p>
         
        <p> R. Geyer, et al., <i>Production, use and fate of all plastics ever made </i>(Science Advances, 2017) Vol. 3, no. 7.</p>
         
@@ -121,7 +123,7 @@ Must be updated for each page-->
         
          <p>Russell Maier, <i>Recycling: The Evil Illusion</i>, (Medium.com, 2016).</p>
         
-	<pMike Pearl, <i>Climate Despair Is Making People Give Up on Life</i> (Vice Magazine, 2019).</p>
+	<p>Mike Pearl, <i>Climate Despair Is Making People Give Up on Life</i> (Vice Magazine, 2019).</p>
         
 	<p>D. Gilford et al, <i>The Emotional Toll of Climate Change on Science Professionals</i>, (2019) </p>
         
@@ -180,8 +182,7 @@ Must be updated for each page-->
         <p>Carolyn Merchant, <i>The Death of Nature: Women, Ecology and the Scientific Revolution</i>, (Harper & Row, 1980).</p>
         
         <p>Theodore Hieber, <i>Retranslating Genesis 1–2: Reconnecting Biblical Thought and Contemporary Experience</i> (Sage Journals, 2019) Vol 70, Issue 3.</p>
-        
-	<p>Daniel Pinchbeck, Sting, Russell Brand <i>How Soon is Now: From Personal Initiation to Global Transformation</i>, (Publisher: Watkins Publishing, 2017)
+       
 	
 	<p>Timothy Morton, Ecology without Nature: Rethinking Environmental Aesthetics, (Harvard University Press, (2007).</p> 	
         
