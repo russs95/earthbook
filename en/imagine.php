@@ -169,7 +169,7 @@ Must be updated for each page-->
 
      <p>The resulting <i>Earthen ethics</i> will help us to make sense of our modern processes, technologies and enterprises by proving a means by which we can discern that which is enriching from that which is degrading; that which is an ecological contribution from that which is a depletion; and that which is <i>green</i> from that which is <i>grey</i>.</p>
 
-      <p>In this way, with Earth’s example as our guide to green, can move forward with unprecedented clarity and confidence to embody the geometry of contribution in all our processes, cycles and systems.  </p>
+      <p>In this way, with Earth’s example as our guide to green, can move forward with unprecedented clarity and confidence to embody the geometry of contribution in all our processes, cycles and systems.<a href="#footnotes">⁵</a></p>
 
      <p>Let us start with that troublesome material we so love to hate.</p>
   
@@ -194,6 +194,11 @@ Must be updated for each page-->
       <a href="#4-up" class="footnote">   
       <div class="footnote-number">4.</div>
       <div class="footnote-text">The first principle of permaculture.  Bill Mollison, <i>Principles from Permaculture a Designers' Manual</i>, (Tagari Publishers: 1988).</div>
+      </a>
+
+	<a href="#5-up" class="footnote">   
+      <div class="footnote-number">5.</div>
+      <div class="footnote-text">"We can think of our current civilization - its technical and sociopolitical infrastructure, its ideology and beliefs -- as an operating system, much like the software that runs our computers.  Now we need to reboot and install a new system software". Daniel Pinchbeck, Sting, Russell Brand <i>How Soon is Now: From Personal Initiation to Global Transformation</i>, (Publisher: Watkins Publishing, 2017) Chapter 2, p.105</div>
       </a>
 
 
