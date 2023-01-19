@@ -231,7 +231,6 @@ Must be updated for each page-->
 
     </div>
     
-
     <div class="footer-right">
    
       <a href="epigraph.php"><div class="next-button">Next ➔</div></a>
@@ -241,6 +240,25 @@ Must be updated for each page-->
 </div>
 
 <?php require_once ("includes/chap-footer.php");?>
+	  
+<div id="footer-settings">
+
+<div class="footer-size" style="height:70px;">
+	
+	<p style="font-variant-caps: all-petite-caps; color:grey">Reader Comments</p>
+	
+</div>
+
+<div class="footer-size" style="height:70px;">
+	
+	<p style="font-variant-caps: all-petite-caps; color:grey">Search Book</p>
+	
+</div>
+<div class="footer-size" style="height:70px;">
+	
+	<p style="font-variant-caps: all-petite-caps; color:grey">Contribute</p>
+	
+</div>
 
 
 </body>
