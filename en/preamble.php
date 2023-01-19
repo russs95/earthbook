@@ -1,6 +1,6 @@
 <!--EARTHBOOK CHAPTER PAGE TEMPLATE
 
-PHP Page Version 1.0.2
+Page Version 1.0.2
 Design by Russell Maier
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -99,7 +99,7 @@ Must be updated for each page-->
 
 <div class="lead-page-paragraph">
 
-  IN THE CULTURE of the Igorot people of Northern Luzon in the West Philippine Sea, story telling is central. In their <i>dap'ay</i>— stone plazas at center of every village— stories are told to introduce people, lessons and ideas. It is an example, that we will follow in the pages ahead of the <i>Tractatus Ayyew</i>.</div>
+  IN THE CULTURE of the Igorot people of Northern Luzon in the West Philippine Sea, story telling is central. In their <i>dap'ay</i>— stone plazas at the center of every village— stories are told to introduce people, lessons and ideas. It is an example that we will follow in the pages ahead of the <i>Tractatus Ayyew</i>.</div>
 
 
 <div class="page-paragraph">
@@ -107,7 +107,7 @@ Must be updated for each page-->
 
     <p>Of course, how a story is told (or a theory for that matter) is just as important as the sentences and paragraphs it contains.  In the dap'ay, both the tale and the telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
 
-    <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span style="cursor:pointer; text-decoration: underline;" onclick="openEarthbook()" aria-label="Open"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics.</p>
+    <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span style="cursor:pointer; text-decoration: underline;" onclick="openEarthbook()" aria-label="Open" title="Jump to summaries"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics.</p>
 
     <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced and shared. For example, this section of the book can be found at book.earthen.io/<?php echo ($lang); ;?>/preamble</p>
     
