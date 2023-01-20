@@ -132,7 +132,7 @@ Must be updated for each page-->
 
     <p>For those of us living along the river, the challenge was palpable.</p>
       
-    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Filipino archipelago. Insulated by a rugged chain of verdant mountains, the Igorots have remained largely immune to three hundred years of colonization further South. However, over the last decades, modern goods have reached even the most remote villages. Whereas the leaves, wood and vines that had long served as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade when discarded.</p>
+    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Philippine archipelago. Insulated by a rugged chain of verdant mountains, the Igorots have remained largely immune to three hundred years of colonization further South. However, over the last decades, modern goods have reached even the most remote villages. Whereas the leaves, wood and vines that had long served as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade when discarded.</p>
 
     <p>However, the Igorots had not been sitting idly by.</p>
     
@@ -220,7 +220,6 @@ Must be updated for each page-->
   <div class="footer-size">
     
     <div class="footer-left">
-
       <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
     
      
@@ -238,7 +237,7 @@ Must be updated for each page-->
     </div>
   </div>
 
-	<!-- attempted add-->
+	<!-- attempted add
 	<br>
 
 <div id="comments-box" style="width:100%">
@@ -250,7 +249,7 @@ Must be updated for each page-->
 	</div>
 </div>
 	
-	<!-- attempted add-->
+	attempted add-->
 	
 </div>
 
