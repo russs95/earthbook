@@ -160,7 +160,7 @@ Must be updated for each page-->
 
    <p>As the ecobrick movement spread, we observed that often, in providing a solution for plastic, the continued consumption of plastic was legitimized.</p>
 
-   <p>In some schools we observed a jump in the purchase of soft-drinks in order to procure bottles for ecobricking. In other locations we observed an increase in junk food consumption so that their would be wrappers to pack.<p>
+   <p>In some schools we observed a jump in the purchase of soft-drinks in order to procure bottles for ecobricking. In other locations we observed an increase in junk food consumption so that there would be wrappers to pack.<p>
 
   <p>We also began to observe troubling building applications.</p>
 
@@ -239,6 +239,7 @@ Must be updated for each page-->
   </div>
 
 	<!-- attempted add-->
+	<br>
 
 <div id="comments-box" style="width:100%">
 	
