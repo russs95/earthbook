@@ -152,7 +152,7 @@ Must be updated for each page-->
 
    <p>And then to thousands.</p>
 
-   <p>With a year, as the entire Northern Philippines department of education, the Catholic and Protestant Churches, and various municipal and provincial governments came on board, ecobricking fast became an alternative for millions of Filipinos to manage their plastic.</p>
+   <p>Within a year, as the entire Northern Philippines department of education, the Catholic and Protestant Churches, and various municipal and provincial governments came on board, ecobricking fast became an alternative for millions of Filipinos to manage their plastic.</p>
 
    <p>Banayan and I have watched with both joy and trepidation as the ecobrick movement has spread.</p>
 
@@ -237,7 +237,7 @@ Must be updated for each page-->
 
     </div>
   </div>
-</div>
+
 	<!-- attempted add-->
 
 <div id="comments-box" style="width:100%">
