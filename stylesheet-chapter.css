@@ -520,7 +520,7 @@ margin: auto;
   z-index: 15; 
   left: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
 
@@ -535,16 +535,6 @@ margin: auto;
   transition: 0.3s;
 }
 
-
-/*
-@media (prefers-color-scheme: dark) {
-  #footer-chapter {
-  background-color: #1C1D20;
-  border-color: #424242;
-  color:  #ebecec ;
-  box-shadow: 0 0px 15px rgba(1, 1, 1, 0.5);overflow: hidden;
-  }
-} */
 
 @media screen and (max-width: 699px) {
   #footer-chapter {
