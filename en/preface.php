@@ -146,7 +146,7 @@ Must be updated for each page-->
    
    <p>Not only were we able to make bottle-bricks that were just as effective as those packed with sand, we’d been able to secure a great deal of plastic that would have otherwise scattered into the river.</p>
 
-   <p>At my home, I began to experiment with packing my own used plastic into a bottle. I made a small garden with the result. Everyone was delighted. The nearby school, which was struggling to dispose the plastic of hundreds of students, asked to be shown how it was done. After a day of packing plastic, making bricks and building a composter, I and the community were excited to this alternative to burning and dumping plastic in the river.</p>
+   <p>At my home, I began to experiment with packing my own used plastic into a bottle. I made a small garden with the result. Everyone was delighted. The nearby school, which was struggling to dispose of the plastic of hundreds of students, asked to be shown how it was done. After a day of packing plastic, making bricks and building a composter, I and the community were excited to discover this simple alternative to burning and dumping plastic in the river.</p>
   
    <p>As the technique began to spread to other schools, Banayan stepped in. She realized the potential for raising the awareness of the ecological impacts of plastic. We worked together to create a reporting system and a guidebook. Through her coordination, what was soon to be called ‘ecobricking’ spread out to hundreds of schools in the province.</p>
 
@@ -240,13 +240,17 @@ Must be updated for each page-->
 </div>
 	<!-- attempted add-->
 
-<div id="footer-chapter" style="margin-bottom: 0px;">
+<div id="comments-box" style="width:100%">
 	
 	<div class="footer-size" style="height:70px;">
 	
 		<p style="font-variant-caps: all-petite-caps; color:grey">Reader Comments</p>
 	
 	</div>
+</div>
+	
+	<!-- attempted add-->
+	
 </div>
 
 
