@@ -42,7 +42,7 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>Preface | Tratatus Ayyew - An Earthbook</title>
-<meta name="keywords" content="Preface, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="keywords" content="Preface, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> epigraph
 <meta name="description" content="A Theory of Grey & Green based on Earth's example.">
 
 
@@ -138,7 +138,7 @@ Must be updated for each page-->
     
     <p>In the Igorot society, the art of ecological integration is highly esteemed— in much the same way that painting or sculpture is in other cultures. Consequently, the region had become a hot-bed of up-cycling innovations. In town, old tires were being cut up to make remarkably functional chairs and tables. In the mines, used dynamite cable was being woven to make traditional backpacks. In homes, straws and wrappers were being used to weave mats, purses, wallets and containers of all kinds.  </p>
 
-   <p>Both myself and Banayan were so fascinated by this upcycling movement, that we had become part of it ourselves. Whereas Banayan had been developing arts and crafts education, I was involved in improving designs to make saleable products. However, in the face of the ever-growing flow of discarded plastic, our success was limited. As the legal stand-off in Bontoc intensified, we realized that securing plastic out of the environment was far more vital than making or teaching handicrafts. </p>
+   <p>Both myself and Banayan were so fascinated by this upcycling movement, that we had become part of it ourselves. While Banayan had been integrating upcycled arts and crafts into school curriculums, I was involved in improving designs to make saleable upcycled products. However, in the face of the ever-growing flow of discarded plastic, our success was limited. As the legal stand-off in Bontoc intensified, we realized that securing plastic out of the environment was far more vital than making or teaching handicrafts. </p>
     
     <p>It just so happened that my colleagues and I had been experimenting with a new   technique from South America in which plastic bottles were packed full of sand to make building blocks. Providentially, the river sand pit and the local dump-site were side by side. After making several sand bottle-bricks, we decided to try packing them with plastic instead.</p>
 
@@ -237,28 +237,30 @@ Must be updated for each page-->
 
     </div>
   </div>
+	<!-- attempted add-->
+
+	<div class="footer-size" style="height:70px;">
+	
+		<p style="font-variant-caps: all-petite-caps; color:grey">Reader Comments</p>
+	
+	</div>
+
+	<div class="footer-size" style="height:70px;">
+	
+		<p style="font-variant-caps: all-petite-caps; color:grey">Search Book</p>
+	
+	</div>
+
+	<div class="footer-size" style="height:70px;">
+	
+		<p style="font-variant-caps: all-petite-caps; color:grey">Contribute</p>
+	
+	</div>
+
 </div>
 
 <?php require_once ("includes/chap-footer.php");?>
 	  
-<div id="footer-settings">
-
-<div class="footer-size" style="height:70px;">
-	
-	<p style="font-variant-caps: all-petite-caps; color:grey">Reader Comments</p>
-	
-</div>
-
-<div class="footer-size" style="height:70px;">
-	
-	<p style="font-variant-caps: all-petite-caps; color:grey">Search Book</p>
-	
-</div>
-<div class="footer-size" style="height:70px;">
-	
-	<p style="font-variant-caps: all-petite-caps; color:grey">Contribute</p>
-	
-</div>
 
 
 </body>
