@@ -12,7 +12,7 @@ class Earthbook extends HTMLElement {
       <div class="overlay-content-earthbook">         
             <div>
                 <h1>What is an Earthbook?</h1>
-                <h3>Following regenerative principles, Earthbooks are for readers, writers & Earth.  Double-tap to learn more:</h3>
+                <h3>Earthbooks are for readers, writers & Earth.  Click to learn about the guiding principles:</h3>
                 <!--Earthbook's writing & publishing embodies regenerative principles.-->
             </div>
 
