@@ -237,19 +237,7 @@ Must be updated for each page-->
     </div>
   </div>
 
-	<!-- attempted add
-	<br>
 
-<div id="comments-box" style="width:100%">
-	
-	<div class="footer-size" style="height:70px;">
-	
-		<p style="font-variant-caps: all-petite-caps; color:grey">Reader Comments</p>
-	
-	</div>
-</div>
-	
-	attempted add-->
 	
 </div>
 
