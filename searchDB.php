@@ -14,8 +14,8 @@ $password = "ayyew";
 $dbName = "ecobricks_tractatus";   
    
 // connect to database   
-$con = new mysqli( $localhost, $ecobricks_earthbook, $ayyew, $ecobricks_tractatus );   
-   
+$con = new mysqli( $host, $user, $password, $dbName );  
+
 // query the database, limiting results to 10 at a time starting from last loaded result   
 $sql = 'SELECT * FROM post WHERE MATCH( title, description, keywords ) AGAINST( "' . $search . '" ) LIMIT ' . $offset . ', 10;';   
 $result = $con->query( $sql );   
