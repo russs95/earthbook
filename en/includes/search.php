@@ -1,13 +1,5 @@
 
 
-<!--
-class SearchCurtain extends HTMLElement {
-  constructor() {
-    super();
-  }
-
-  connectedCallback() {
-    this.innerHTML = `-->
 
     <div id="right-search-overlay" class="share-overlay">
 
@@ -69,15 +61,10 @@ echo( json_encode( $output ) );
 ?>
       </div>
 
-      <!--<div>
-        <p>The content of an Earthbook is under a Creative-Commons ND-SA-AT 4.0 license which means you can freely share the links to this page, quote passages, download and share the PDF-- just be sure to attribute to this Earthbook and share in the way.</p>
-      </div>-->
-        <div><img src="../icons/cc-by-sa.svg" alt="Creative Commons CC-BY-SA icon" style="height: 35px"></div>
+    
   </div>
 </div>  
-    `;
-}
-}
+
 
 
 <script>
@@ -129,7 +116,7 @@ echo( json_encode( $output ) );
     };  
       
     // send request to fetch searchDB.php  
-    xmlhttp.open( "GET", "searchDB.php?search=" + query + "&loaded=" + loadedResults, true );  
+    xmlhttp.open( "GET", "search.php?search=" + query + "&loaded=" + loadedResults, true );  
     xmlhttp.send();  
 }
   
