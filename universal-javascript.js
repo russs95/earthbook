@@ -536,7 +536,7 @@ containerBrightness.setAttribute("style", "filter: brightness("+val+"%); height:
     };  
       
     // send request to fetch searchDB.php  
-    xmlhttp.open( "GET", "search.php?search=" + query + "&loaded=" + loadedResults, true );  
+    xmlhttp.open( "GET", "searchDB.php?search=" + query + "&loaded=" + loadedResults, true );  
     xmlhttp.send();  
 }
 
