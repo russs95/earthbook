@@ -7,7 +7,6 @@
     <div id="right-close-button">
         <span style="cursor:pointer" onclick="closeSearch()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
     </div>
-    
       <div class="search-overlay-content">
             
             <div>
