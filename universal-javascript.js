@@ -239,6 +239,28 @@ Opens up the Earthbook overlay from the bottom up*/
 
 
 
+/* RIGHT SEARCH OVERLAY 
+
+Triggers the right share link panel*/
+
+function openShare() {
+    document.getElementById("right-search-overlay").style.width = "100%";
+    document.body.style.overflowY = "hidden";
+    document.body.style.maxHeight = "101vh";
+ 
+  }
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeShare() {
+    document.getElementById("right-search-overlay").style.width = "0%";
+    document.body.style.overflowY = "unset";
+    document.body.style.maxHeight = "unset";
+
+  } 
+
+
+
+
   /*Still in use??
 
 
