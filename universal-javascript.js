@@ -480,15 +480,7 @@ containerBrightness.setAttribute("style", "filter: brightness("+val+"%); height:
 
 }
 
-
-/* -------------------------------------------------------------------------- */
-
-/*	4. SEARCH
-
-/* -------------------------------------------------------------------------- */
-
-
- function searchPosts( loadedResults ){  
+function searchPosts( loadedResults ){  
       
     var query = document.getElementById( "search_input" ).value;  
       
@@ -539,4 +531,3 @@ containerBrightness.setAttribute("style", "filter: brightness("+val+"%); height:
     xmlhttp.open( "GET", "searchDB.php?search=" + query + "&loaded=" + loadedResults, true );  
     xmlhttp.send();  
 }
-
