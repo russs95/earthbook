@@ -128,7 +128,7 @@ Must be updated for each page-->
   <div id="ct-chapt-graphic" class="background-8">
     <div class="ct-chapter-quote">
       <span style="background-color:var(--nav-bar-accent);
- padding:0.1em 0.2em;">“The Earth’s cycles tend towards the outwards dissipation of energy.”</span>
+ padding:0.1em 0.2em;">“Earth’s cycles tend towards the outwards dissipation of energy.”</span>
     </div>
     <div class="ct-quote-source">
      ― Earthen Ethic No.2
@@ -321,12 +321,10 @@ Must be updated for each page-->
       </div>
     </div>
 	  
-	  
-	<br>
 
 <div id="searching-box" style="width:100%">
 	
-	<div class="footer-size" style="height:70px;cursor:pointer;" onclick="openSearch()">>
+	<div class="footer-size" style="height:70px;cursor:pointer;" onclick="openSearch()">
 	
 		<p style="font-variant-caps: all-petite-caps; color:grey">Search Book</p>
 	
