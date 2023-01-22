@@ -42,7 +42,7 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>Epigraph | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="epigraph, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="keywords" content="epigraph, introduction, stories, nature, history, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth,green, green ethics, environmental ethics, deep ecology, ecological, ethics, Régis Debray, Le siècle vert, Un changement de civilisation, The Green Age, A Change of Civilizations"> 
 <meta name="description" content="Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear...">
 
 
