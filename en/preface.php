@@ -42,8 +42,8 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>Preface | Tratatus Ayyew - An Earthbook</title>
-<meta name="keywords" content="Preface, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> epigraph
-<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
+<meta name="keywords" content="Preface, introduction, stories, dapay, Earth ethics, earthen ethics, bontoc, philipines, igorot, russell, irene, banyan, ecobricks, plastic, indigenous philosophy, philosophy, what should green mean, deped, irene, banayan, russell, maier">
+<meta name="description" content="The story behind the beginning, the writing and the title of the Tractatus Ayyew.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
