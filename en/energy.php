@@ -321,10 +321,10 @@ Must be updated for each page-->
       </div>
     </div>
 	  
-	  	<!-- attempted add
+	  
 	<br>
 
-<div id="comments-box" style="width:100%">
+<div id="searching-box" style="width:100%">
 	
 	<div class="footer-size" style="height:70px;cursor:pointer;" onclick="openSearch()">>
 	
@@ -332,8 +332,7 @@ Must be updated for each page-->
 	
 	</div>
 </div>
-	
-	attempted add-->
+
 	  
   </div>
 
