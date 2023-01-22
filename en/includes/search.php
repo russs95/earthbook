@@ -12,9 +12,9 @@
             
             <div>
                 <h1 class="accessibility-plugin-ac">Search the book</h1> 
-                <!--<h3>Earthbooks are designed to enable you to easily share chapters.  Copy and share the link to this chapter...</h3>-->
+              <h3>Search by keyword or phrase.</h3>-->
             </div>
-            
+          
             <div class="search-box">
               
               <input id="search_input" type="text" placeholder="Search...">   
