@@ -76,7 +76,7 @@ Redirect /spirals.php /en/spirals.php
 Redirect en/spirals.html /en/spirals.php
 Redirect en/spirals /en/spirals.php
 
-ErrorDocument 404 /404.html
+ErrorDocument 404 /404.php
 
 
 
