@@ -1598,7 +1598,7 @@ padding-top: 44px;
 
 /* -------------------------------------------------------------------------- */
 
-/*	5. Read Overlay Curtain
+/*	6. Read Overlay Curtain
 
 /* -------------------------------------------------------------------------- */
 
@@ -1851,7 +1851,7 @@ padding-top: 44px;
 
 /* -------------------------------------------------------------------------- */
 
-/*	5. Bookplate Overlay
+/*	7. Bookplate Overlay
 
 /* -------------------------------------------------------------------------- */
 
@@ -1974,11 +1974,232 @@ padding-top: 44px;
 */
 
 
+/* -------------------------------------------------------------------------- */
+
+/*	8. Right Search Overlay
+
+/* -------------------------------------------------------------------------- */
+
+
+
+#right-search-overlay {
+  background-color: var(--deeper-accent-color); 
+  color: inherit;
+  z-index: 26;
+}
+
+
+
+
+/* Table of Contents Menu (background) */
+.search-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 21; /* Sit on top */
+  right: 0;
+  top: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+/* Position the content inside the overlay */
+.search-overlay-content {
+  position: initial;
+  text-align: center; /* Centered text/links */
+   /*margin-top: 30px; 30px top margin to avoid conflict with the close button on smaller screens */
+  font-family: "CooperLT";
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  height:100%;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 700px) {
+  .search-overlay-content {
+    width: 85%;
+    font-size: 0.9em;
+    /*margin-top: 6%;*/
+}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .search-overlay-content {
+    width: 65%;
+    font-size: 0.9em;
+    /*margin-top: 2%;*/
+}
+}
+
+@media screen and (min-width: 1325px) {
+    .search-overlay-content {
+      width: 69%;
+      margin: auto;
+    }
+}
+
+/*Not darkified!*/
+
+.copy-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.copy-box { 
+  background: #f4f4f4;
+  border: 2px solid #ddd;
+  border-left: 3px solid;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  width: 100%;
+  overflow: auto;
+  word-wrap: break-word;
+  display: block;
+  text-align: left;
+  justify-content: center;
+  border-radius: 5px 0px 0px 5px;
+  margin-right: -5px;
+}
+
+.copy-check {
+  font-size: 15px;
+  line-height: 1.6;
+  padding-right: 10px;
+  width: 10%;
+  font-weight: bolder;
+  color: green !important;
+  align-self: center;
+  height: 100%;
+  }
+
+#check {display: none;}
+
+
+
+.btn {
+  border: 2px solid #ddd;
+  font-weight: bolder;
+  background: grey;
+  align-self: center;
+  cursor: pointer;
+  color: white;
+  justify-content: center;
+  border-radius: 0px 5px 5px 0px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+
+  }
+
+  .btn:hover {color: black;}
+
+ 
+  @media screen and (max-width: 700px) {
+    .copy-box { 
+
+      font-size: 10px;
+      line-height: 1.2;
+      margin: auto;
+      border-radius: 4px;
+      margin-right: -6%;
+      padding-right: 6%;
+      width: 100%;
+      padding: 10px 45px 10px 10px;    
+      }
+
+    .btn {
+      font-size: 12px;
+      height: 100%;
+      width: 20%;
+    }
+
+ 
+  .copy-check {
+    display: inline;
+    }
+      }
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+
+  .copy-box { 
+    font-size: 10px;
+    line-height: 1.2;
+    margin: auto;
+    border-radius: 4px;
+    margin-right: -6%;
+    padding-right: 6%;
+    width: 100%;
+    padding: 10px;
+  }
+  .btn {
+    font-size: 12px;
+    height: 100%;
+    width: 20%;
+  }
+
+.copy-check {
+  display: inline;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .copy-box { 
+    font-size: 15px;
+    line-height: 1.6;
+    width: 100%;
+    padding: 1em 1.5em;
+    border-radius: 5px 0px 0px 5px;
+    margin-right: -5px;
+    padding-right: 0%;
+  }
+
+  .btn {
+    font-size: 12px;
+    height: 100%;
+    width: 20%;
+    font-size: 18px;
+  }
+
+  .copy-check {
+    line-height: 2.9; 
+    } 
+}
+
+
+
+/* Position the close button (top right corner) */
+.search-overlay .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 700px) {
+  .search-overlay a {
+  font-size: 20px;
+  }
+
+  .search-overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 15px;
+  }
+} 
+
 
 
 /* -------------------------------------------------------------------------- */
 
-/*	6. DASHBOARD Content Box Breakdown
+/*	8. DASHBOARD Content Box Breakdown
 
 /* -------------------------------------------------------------------------- */
 
