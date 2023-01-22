@@ -41,8 +41,8 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>Preamble | Tractatus Ayyew - An Earthbook</title>
-<meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-<meta name="description" content="Welcome to the Earthbook edition of the Tractatus Ayyew">
+<meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics, preamble, intro, "> 
+<meta name="description" content="An introduction to the Earthbook edition of the Tractatus Ayyew">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
