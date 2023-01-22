@@ -49,7 +49,7 @@ Must be updated for each page-->
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:title"         content="Cycles that Spiral | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Observe the way the Earth tends its processes towards cycles that spiral."/>
+<meta property="og:description"   content="Earth’s cycles tend towards the outwards dissipation of energy.."/>
 
 
 <style>
@@ -122,6 +122,8 @@ Must be updated for each page-->
   </div>
 
   <?php require_once ("includes/eco-curtain.php");?>
+	
+ <?php require_once ("includes/search.php");?>
 
 <!-- Page Title Section-->
 
@@ -324,7 +326,7 @@ Must be updated for each page-->
 
 <div id="searching-box" style="width:100%">
 	
-	<div class="footer-size" style="height:70px;cursor:pointer;" onclick="openSearch()">
+	<div class="footer-size" style="height:70px; cursor:pointer;" onclick="openSearch()">
 	
 		<p style="font-variant-caps: all-petite-caps; color:grey">Search Book</p>
 	
