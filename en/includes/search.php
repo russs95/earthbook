@@ -35,7 +35,7 @@ $offset = $_GET[ "loaded" ];
 // declare database credentials   
 $host = "localhost";   
 $user = "ecobricks_earthbook";   
-$password = "ayyew";   
+$password = "ayyewhhh";   
 $dbName = "ecobricks_tractatus";   
    
 // connect to database   
