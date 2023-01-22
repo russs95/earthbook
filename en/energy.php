@@ -320,6 +320,21 @@ Must be updated for each page-->
 
       </div>
     </div>
+	  
+	  	<!-- attempted add
+	<br>
+
+<div id="comments-box" style="width:100%">
+	
+	<div class="footer-size" style="height:70px;cursor:pointer;" onclick="openSearch()">>
+	
+		<p style="font-variant-caps: all-petite-caps; color:grey">Search Book</p>
+	
+	</div>
+</div>
+	
+	attempted add-->
+	  
   </div>
 
   <?php require_once ("includes/chap-footer.php");?>
