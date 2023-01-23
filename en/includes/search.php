@@ -1,8 +1,4 @@
-
-
-
-
-    <div id="right-search-overlay" class="search-overlay">
+ <div id="right-search-overlay" class="search-overlay">
 
     <div id="right-close-button">
         <span style="cursor:pointer" onclick="closeSearch()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
@@ -20,9 +16,8 @@
                 
 <button onclick="searchPosts(0)">Search</button>   
    
-<div id="search results"></div>  
+<div id="search_results"></div>  
               
-        
               
       </div>
 
