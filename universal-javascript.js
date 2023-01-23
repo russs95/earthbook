@@ -480,6 +480,15 @@ containerBrightness.setAttribute("style", "filter: brightness("+val+"%); height:
 
 }
 
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	4. SEARCH
+/* -------------------------------------------------------------------------- */
+
+
+
 function searchPosts( loadedResults ){  
       
     var query = document.getElementById( "search_input" ).value;  
@@ -488,7 +497,7 @@ function searchPosts( loadedResults ){
       
     // clear results container if no previous results have been loaded  
     if( loadedResults === 0 ){  
-        resultsContainer.innerHTML = "No results";  
+        resultsContainer.innerHTML = "";  
     }  
       
     // create XMLHttpRequest object  
@@ -512,7 +521,7 @@ function searchPosts( loadedResults ){
             // iterate over results  
             for( var i = 0; i < outputPosts.length; i++ ){  
                 // append result to result container, link to url of post  
-                resultsContainer.innerHTML += "<div id='result_" + i + "'><a href='http://" + outputPosts[ i ].url + "'><h3>" + outputPosts[ i ].title + "</h3>" + outputPosts[ i ].description + "</a><div>";  
+                resultsContainer.innerHTML += "<div id='result_" + i + "'><a href='https://" + outputPosts[ i ].url + "'><h3>" + outputPosts[ i ].title + "</h3>" + outputPosts[ i ].description + "</a><div>";  
             }  
             // add button to load more results starting from the last loaded result (remove any existing button first if one exists)  
             try{  
