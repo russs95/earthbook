@@ -1,5 +1,5 @@
 
-              <?php   
+<?php   
    
 // search query   
 $search = $_GET[ "search" ];   
