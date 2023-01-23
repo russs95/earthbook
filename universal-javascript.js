@@ -307,8 +307,8 @@ function searchPosts( loadedResults ){
     var resultsContainer = document.getElementById( "search_results" );  
       
     // clear results container if no previous results have been loaded  
-    if( loadedResults === 0 ){  
-     resultsContainer.innerHTML = "";  
+    if( loadedResults === null ){  
+     resultsContainer.innerHTML = "No results";  
     }  
       
     // create XMLHttpRequest object  
