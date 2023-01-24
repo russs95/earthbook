@@ -127,6 +127,90 @@ display: none;
 }
 
 
+/*SEARCH*/
+
+#search_input {
+
+background: #f4f4f4;
+border: 2px solid #ddd;
+  border-left-color: rgb(221, 221, 221);
+  border-left-style: solid;
+  border-left-width: 2px;
+border-left-color: rgb(221, 221, 221);
+border-left-style: solid;
+border-left-width: 2px;
+border-left: 3px solid;
+  border-left-color: currentcolor;
+border-left-color: currentcolor;
+color: #666;
+page-break-inside: avoid;
+font-family: monospace;
+width: 100%;
+overflow: auto;
+word-wrap: break-word;
+display: block;
+text-align: left;
+justify-content: center;
+border-radius: 5px 0px 0px 5px;
+margin-right: -5px;
+font-size: 15px;
+line-height: 1.6;
+width: 100%;
+padding: 1em 1.5em;
+  padding-right: 1.5em;
+padding-right: 1.5em;
+border-radius: 5px 0px 0px 5px;
+margin-right: -5px;
+padding-right: 0%;
+border-left-color: orange;
+
+}
+
+
+
+.footer-function {
+  height: 200px;
+  display: flex;
+flex-direction: row;
+margin: auto;
+
+font-family: 'Mulish';
+padding: 0px;
+border-top-width: 1px;
+border-color: inherit;
+border-style: solid;
+cursor: pointer;
+border-bottom: none;
+border-right: none;
+border-left: none;
+display: flex;
+border-bottom-color: var(--fainter-border-color);
+}
+
+
+
+@media screen and (max-width: 700px) {
+.footer-function {
+  width: 90% }
+}
+
+
+    @media screen and (min-width: 700px) and (max-width: 1324px) {
+      .footer-size {
+      width: 70%
+     }
+    }
+
+    @media screen and (min-width: 1325px) {
+      .footer-function {
+        width: 50%;
+        margin: auto;
+     }
+    }
+  
+
+
+
 
 /*BUTTONS*/
 
