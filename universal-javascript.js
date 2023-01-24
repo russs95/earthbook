@@ -334,6 +334,8 @@ function searchPosts( loadedResults ){
                 // append result to result container, link to url of post  
                 resultsContainer.innerHTML += "<div id='result_" + i + "'><a href='https://" + outputPosts[ i ].url + "'><h3>" + outputPosts[ i ].title + "</h3>" + outputPosts[ i ].description + "</a><div>";  
             }  
+
+            
             // add button to load more results starting from the last loaded result (remove any existing button first if one exists)  
             try{  
                 document.getElementById( "load_button" ).remove();  
