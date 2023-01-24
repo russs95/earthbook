@@ -332,7 +332,7 @@ function searchPosts( loadedResults ){
             // iterate over results  
             for( var i = 0; i < outputPosts.length; i++ ){  
                 // append result to result container, link to url of post  
-                resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "'><div class=\"chapter-name-tc\"><b><a href='" + outputPosts[ i ].url + "'>" + outputPosts[ i ].title + "</b>:  " + outputPosts[ i ].description + "</div>";  
+                resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "'><div class=\"chapter-name-tc\"><b><a href='" + outputPosts[ i ].url + "'>" + outputPosts[ i ].title + "</b>:  " + outputPosts[ i ].description + "<br>Chapter " + outputPosts[ i ].chapter + "  | Book " + outputPosts[ i ].book + "  |  Words:" + outputPosts[ i ].words + "</div>";  
             }  
 
 

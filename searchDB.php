@@ -17,7 +17,7 @@ $dbName = "ecobricks_tractatus";
 $con = new mysqli( $host, $user, $password, $dbName );  
 
 // query the database, limiting results to 10 at a time starting from last loaded result   
-$sql = 'SELECT * FROM post WHERE MATCH( title, description, keywords ) AGAINST( "' . $search . '" ) LIMIT ' . $offset . ', 10;';   
+$sql = 'SELECT * FROM post WHERE MATCH( title, keywords ) AGAINST( "' . $search . '" ) LIMIT ' . $offset . ', 10;';   
 $result = $con->query( $sql );   
    
 // declare array variable to store results   
@@ -26,7 +26,7 @@ $output = array();
 if( $result->num_rows > 0 ) {   
     while( $row = $result->fetch_assoc() ){   
         // add row to output array in the form of an associative array   
-        $output[] = array( "title" => $row[ "title" ], "description" => $row[ "description" ], "url" => $row[ "url" ] );   
+        $output[] = array( "title" => $row[ "title" ], "description" => $row[ "description" ], "url" => $row[ "url",  "language" => $row[ "language", "book" => $row[ "book", "words" => $row[ "words", "image_url" => $row[ "image_url" ] );   
     }   
 }   
 $con->close();   

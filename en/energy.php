@@ -328,6 +328,16 @@ Must be updated for each page-->
 		<p style="font-variant-caps: all-petite-caps; color:grey">ᐳ Search Book</p>
 	
 	</div>
+  <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
+	
+		<p style="font-variant-caps: all-petite-caps; color:grey">ᐳ Chatper Comments</p>
+	
+	</div>
+  <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
+	
+		<p style="font-variant-caps: all-petite-caps; color:grey">ᐳ Chapter Source Code</p>
+	
+	</div>
 </div>
 
 	  
