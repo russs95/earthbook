@@ -149,104 +149,101 @@ Must be updated for each page-->
 
 <div class="page-paragraph">
     <p id="58-up"><i>
-    Twelve thousand years ago, as trillion ton ice sheets retreated leaving nothing but rocks and rivers, the salmon found their niche on North America's Pacific coast.  There, hundreds of kilometers inland, they began a seasonal cycle that has spun to this day.  Every year, come the thaw of winter ice, tiny hatch-lings emerge from batches of eggs hidden on the bottom of streams and creeks. Over the spring, the tiny fish gather their strength, consuming insects and waterborne larvae.  Come summer, they set out on a journey downriver to the Pacific. Once arrived, they feast on nutrient rich marine life, steadily gathering fats and amassing proteins. After several years, having reached their full size and strength they are ready to head home.  In autumn, as they retrace their original river route, the waters boil with their determination– and an entire ecosystem revels in their return! Bears, eagles and humans gather for grand fishing feasts.  Even the bugs partake! Discarded carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slip by continue to the waters where their lives began.  There, they use the last of their strength to deposit batches of roe and cover them with gravel.  With their eggs safe, the salmon die; their decomposing bodies a final nutrient-rich gift to the river ecosystem that their roe will soon run.<a href="#footnotes">⁵⁸</a> </i>
+    Twelve thousand years ago, trillion ton ice sheets retreated leaving nothing but a barren landscape of rocks on North on America's Pacific coast.  It was there, in glacial rivers and streams, that a spiraling cycle emerged that would assist in the dramatic transformation of the continent.   Proliferating stream by steam down the warming coast, tiny Salmon hatch-lings would emerged from batches of carefully hidden eggs each Spring. There, the tiny fish gathered their strength, consuming insects and waterborne larvae.  Come summer, they set out on a journey downriver to the Pacific. Once arrived, they feasted on nutrient rich marine life, steadily gathering fats and amassing proteins. After several years at sea, having reached their full size and strength, they were began their journey home.  As they retraced their original river route, the waters boiled with their determination– and an entire ecosystem would revel in their return! Bears, eagles and humans would gather for grand fishing feasts.  Even the bugs partook! Consumed and discarded carcasses nourished the insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by continued to the very waters where their lives began.  There, they used the last of their strength to deposit batches of roe and hid them with gravel.  With their eggs safe, the salmon died; their decomposing bodies a final nutrient-rich gift to the river ecosystem that their roe will soon run.  In this way, over the ten thousand years, as their cycles have relentlessly spun, the dispersal of Salmon nutrients inland played a key role in greening a once desolate and lifeless coast into what is today a thriving biome of tens of thousands of species.<a href="#footnotes">⁵⁸</a> </i>
      </p></div>
     <br><br>
      <div id="line" style="margin-bottom: 30px;"></div>
 <br><br>
     <div>
     <div class="lead-page-paragraph">
-    FOR OVER THE LAST MILLENNIA, the Pacific Salmon have played a key role in regenerating the barren desolation left by the glaciers that once covered America's Pacific Coast.  Year after year, their cycles have relentlessly spun, inexorably distributing nutrients up and down the coastal interior.  Today, the continent's coast is a thriving biome of tens of thousands of species.  The vast and verdant transformation is a reminder to us humans of our own regenerative potential.</div>
+    OVER THE LAST MILLENIA, kincentric cultures have lived side by side the Salmon’s masterful management of energy and matter.  Through their view of the salmon as kin— as a brother and sisters living as subset of systems of a common home (see Chapter 4)— they were able to gain not just insight into the workings of their world— but so too ethical inspiration.  Today, as we strive to ensure that our modern enterprises are green, we too have much to learn from the ways of the salmon— in particular, the way in which they managed their energy to enrich both themselves and the ecosystems of which they were a part. As we will see, the Salmon’s inward spiral of energy emulates the vortical pattern by which the Earth has greened the biosphere.  This pattern, which has long under-laid the ethics, traditions and language of kincentric cultures such as the Haida, Dakelh, and the Wetʼsuwetʼen, provides the geometry for our second Earthen ethic.  With its help, we can make sense of the depletion wrought by the modern enterprises manage their financial energy— the capital and currency that powers their operations.  Finally, through the guidance of Earth’s example, we can discern the requisite energetic structure for our enterprises that are keen to be green.</div>
       </div>
 
     <div class="page-paragraph">
 
-      <p>As we saw in our chapter Nature's Fallacy, contrary to long held misconception, humans are not separate from 'nature'— rather, we are subset systems of the biosphere— and by extension, so too are our enterprises and economies. In this way, the masterful management of energy and matter by our Earthen kin, can provide us not just insight, but inspiration.  Indeed, as we strive to ensure that our modern enterprises are green we have much to learn from the ways of the salmon'— in particular, the way in which they manage their energy to enrich both themselves and the ecosystems of which they were a part. As we will see, the Salmon’s inward spiral of energy emulates the vortical pattern by which the Earth has greened the biosphere.  This pattern, which has long under-laid the ethics, traditions and language of kincentric cultures, provides the geometry for our second Earthen ethic.  With its help, we can make sense of the depletion wrought by the purposes for which our modern enterprises operate— and discern the requisite energetic structure for our enterprises that are keen to be green.</p>
+      <p>However, to truly understand the Earthen pattern of energy management, we must return once again to our planet's primordial origins.</p>
 
 
-      <p>Just as we move on from our old view of humans as separate and exceptional to the biosphere, so too must we move on from a similar view of our enterprises.  With an understanding of the inextricable immersion of our economies within the Earth’s systems, we can see the capital and currency that energize our enterprises from a fresh, planetary perspective.</p>
+      <p id="59-up">As we saw in Earth’s Stellar story, over the last four billion years of our planet's unfolding, the energy of the Sun's relentless blaze coursed through the Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, converted, stored, then dispersed energy ever outwards towards equilibrium.</p>
 
-<!--Delete this para?-->
-
-      <p id="59-up">Just like organisms and ecosystems, our enterprises and economies are energy systems that circulate the transmuted energy of the sun.  As each circulate energy, all operate as subset systems of the biosphere and share important parallels.1.  As each circulate energy, all operate as subset systems of the biosphere and share important parallels.<a href="#footnotes">⁵⁹</a>  Whereas an organism manages energy in the form of proteins, fats and carbohydrates, an enterprise manages assets, capital and currency.  Whereas an organism manages its give and take of nutrients over seasonal cycles, an enterprises manages its revenues and expenses over fiscal cycles.  Whether organism or enterprise, ecology or economy, as their cycles spin, their particular give and take of energy creates a pattern all their own—  especially in the inclination of their cycles.</p>
+      <p id="59-up">Soon the sun’s shine was being stored in complex, energy-dense molecules such as fats, proteins and carbohydrates that were interchangeable among cellular systems. As one organism lived and died, it was consumed by its fellows and the energy embodied within its nutrients was passed on. As organisms gained the energy of those before them, they reproduced and proliferated. In this way, each cycle of life steadily spun its nutrient energy outwards to other organisms all across the planet’s surface.</p>
 
 
 
-      <p>Whereas an organism manages energy in the form of proteins, fats and carbohydrates, an enterprise manages assets, capital and currency.  Whereas an organism manages its give and take of nutrients over seasonal cycles, an enterprises manages its revenues and expenses over fiscal cycles.  Whether organism or enterprise, as their processes spin, their particular give and take of energy creates a pattern all their own— especially in the inclination of their cycles.</p>
+      <p>With countless life cycles spinning, collectives of organisms became systems unto themselves.  These systems of systems then spun their energy upwards again. From organism to ecosystem, from ecosystem to biome, energy was spiraled ever outwards towards the enrichment of all.</p>
 
-      <p id="60-up">As we saw in our last chapter, cyclic repetitions always incline in one direction or another, spiraling inward or outward; tending towards either depletion or enrichment<a href="#footnotes">⁶⁰</a>.  In order to emulate the enriching inclinations of organisms like the salmon, our enterprises must embody the same cyclical pattern— a spiral geometry that is rooted in the cosmological character of the Earth.</p>
+      <p id="60-up">And Earth’s biosphere blossomed!</p>
       
-      <p>To understand the underlying Earthen pattern of energy management, we must return once again to our planet's primordial origins.</p>
+      <p>Looking closely at the life cycle of the salmon, we can see that their pattern is a magnificent reflection of Earth’s.</p>
 
-     <p id="61-up">Over the last four billion years of our planet's unfolding, the energy of the Sun's relentless blaze coursed through the Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, converted, stored, then dispersed energy ever outwards towards equilibrium.<a href="#footnotes">⁶⁰</a></p>
+     <p id="61-up">Just as Earth’s accumulation of solar energy powers its planetary processes, the salmon’s steady accumulation of nutrient energy powers its life process. As it eats, nutrient energy is gathered and converted into the fish's fats and proteins while carbohydrates power its swim. Then, just as Earthen cycles disperse energy out to all, so too did the cycles of the Salmon:  as the salmon are preyed upon and consumed, their accumulated nutrients are spun outwards to the broader system of which they are a part.<a href="#footnotes">⁶⁰</a></p>
 
-     <p>Soon the sun’s shine was being stored in complex, energy-dense molecules such as fats, proteins and carbohydrates that were interchangeable among cellular systems. As one organism lived and died, it was consumed by others and the energy embodied within its nutrients was passed on. As organisms gained the energy of those before them, they reproduced and proliferated. In this way, each cycle of life steadily spun its nutrient energy outwards to other organisms all across the planet’s surface.</p>
+     <p>In this way, over the course of a single cycle, a batch of Salmon distribute more nutrients out to their ecosystem than they keep for themselves.  From a single batch of 2000 to 5200 eggs (weighing only several kilograms) the resulting salmon can accumulate a biomass of several tons.  Yet from this great concentrated mass of complex nutrients, at the end of a batch’s cycle only 20-50 salmon return to spawn.  In the end, only several kilograms of eggs remain for the next cycle to begin-- the rest having been widely dispersed into the inland ecosystem.</p>
 
-     <p>With countless life cycles spinning, collectives of organisms became systems unto themselves.  These systems of systems then spun their energy upwards again. From organism to ecosystem, from ecosystem to biome, energy was spiraled ever outwards towards the enrichment of all.</p>
+     <p>Not only did this pattern contribute to a common home for many creatures to thrive, the spiral continually optimized the conditions for the Salmon’s own subsequent generations!</p>
 
-     <p>And the biosphere blossomed.</p>
+     <p>Through this virtuous cycle, the salmon proliferated in rivers up and down the North Pacific coast of America, contributing to the inexorable enrichment of the land.</p>
 
-     <p>Looking closely at the life cycle of the salmon, we can see that their pattern is a magnificent reflection of the Earth’s.</p>
+     <p>Today, as we focus our efforts on reducing the ecological harm of our modern enterprises, it is critical to recall that humans also played a part in the flourishing of the continent’s coast over the last twelve thousand years.</p>
 
-     <p>Just as the Earth’s accumulation of solar energy powers its planetary processes, the salmon’s steady accumulation of nutrient energy powers its life process. As it eats, nutrient energy is gathered and converted into the fish's fats and proteins while carbohydrates power its swim. Then, just as the cycles of the Earth disperse energy out to all, as the salmon are preyed upon and consumed, their accumulated nutrients are spun outwards to their ecosystem.</p>
+     <p>All this time, nations such as the Haida, Dakelh, and the Wetʼsuwetʼen, have lived side by side the salmon– and learned from them.  Seeing the salmon as ecological elders, they wove the salmon's dispersion lessons into the stories, morals and languages of their culture.</p>
 
-     <p>In the end, a batch of Salmon distribute far more nutrients out to their ecosystem than they keep for themselves.  In fact, this ratio of distribution is precisely what makes the salmon so exceptional.  From a single batch of 2000 to 5200 eggs the resulting salmon can accumulate a biomass of several tons.  Yet at the end of their cycle only 20-50 salmon return to spawn, leaving only several kilograms of eggs for next cycle to begin.1 </p>
+     <p>In Haida stories, the Salmon were seen as a type of people who taught important lessons about respecting one another.  In particular, that the bones of the Salmon were always to be dispersed back to the rivers just as the Salmon’s bodies were to be dispersed among the community.</p>
 
-     <p>Not only does this contribute to a common home for many creatures to thrive, the spiral continually optimizes the conditions for their own subsequent generations.  In this way, the salmon proliferated in rivers up and down the North Pacific coast, contributing to the enrichment of rivers, forests and human cultures over the last twelve thousand years.1 </p>
+     <p>In Wetʼsuwetʼen culture, this ethic of dispersion was codified in tradition.  The first Salmon caught of the season would be shared with every member of the community, meticulously ensuring that every morsel was consumed and each bone returned to the water.</p>
 
-     <p>Today, as we focus our efforts on reducing the ecological harm of our modern enterprises, we often forget that we too are organisms capable of contribution.</p>
+     <p>In the Dakelh culture, dispersion was embodied in their Carrier language. Grammatically, it is impossible to speak of 'my salmon' only of 'our salmon'</p>
 
-     <p>As we saw earlier, we humans have not only lived on America’s Pacific Northwest Coast since the last ice age, we too played a key role in the ecological enrichment of the continent.</p>
+     <p>For the Haida, Dakelh, and the Wetʼsuwetʼen their was no distinction between ecology and economy.  Whether discussing precious blankets or precious berries, an ethic of take only what is needed, and distribute what is taken underlaid their ways of life.  In this way, honor and respect were gained not by wealth itself, but by its flow.  Rather than measure wealth by how much was gathered, it was measured by how much was given back to both people and the land.</p>
 
-     <p>Nations such as the Haida, Dakelh, and the Wetʼsuwetʼen, among many others, are renowned for the ecological vitality of the lands they have long presided over.  They have lived side by side the salmon for countless generations– and learned from them.  Seeing the salmon as ecological elders, they wove the salmon's dispersion lessons into the stories, morals and languages of their culture.</p>
+     <p>In the deep resonance in the distributive ways of the Haida, Wet’su’weten, Babine the Salmon and the the Earth, we find our second Earth ethic.</p>
 
-     <p id ="62-up">In Haida stories, the Salmon were seen as a type of people.  They taught important lessons about respecting one another.  In particular, that the bones of the Salmon were always to be dispersed back to the rivers just as the Salmon’s bodies were to be dispersed among the community.</p>
+     <p id ="62-up">Just as the Earth tended its cycles towards the spin of energy outwards to the benefit of all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
 
-     <p>In Wetʼsuwetʼen culture, this ethic of dispersion was codified in tradition.  The first Salmon caught of the season would be shared with every member of the community, meticulously ensuring that every morsel was consumed and each bone returned to the water.</p>
+     <p>As we strive to ensure our modern enterprises are green, the second Earthen ethic shows us that their pattern of energy is key.</p>
 
-     <p>In the Dakelh culture, dispersion was embodied in their Carrier language. Grammatically, it is impossible to speak of 'my salmon' only of 'our salmon'.1  </p>
+     <p>Most importantly, we must expand our concept of capital and currency.
+</p>
 
-     <p>In the deep resonance in the distributive ways of the Igorots, Haida, Wet’su’weten, Babine the Salmon and the the Earth, we find our second Earth ethic. </p>
+     <p>Just as we move on from our old view of humans as separate and exceptional to the biosphere, so too must we move on from a similar view of our enterprises.  With an understanding of the inextricable immersion of our economies within the Earth’s systems, we can see the capital and currency that energize our enterprises also operate as subset energy systems of the biosphere. Whereas an organism manages energy in the form of proteins, fats and carbohydrates, an enterprise manages assets, capital and currency.  Whereas an organism manages its give and take of nutrients over seasonal cycles, an enterprises manages its revenues and expenses over fiscal cycles. Whether organism or enterprise, ecology or economy, as their cycles spin, their particular give and take of energy creates a pattern all their own—  especially in the inclination of their cycles.</p>
 
-     <p>For the Haida, Dakelh, and the Wetʼsuwetʼen an ethic of take only what is needed, and distribute what is taken underlaid their ways of life– making no distinction between economy and ecology.  Just as we saw in the Igorot Ayyew ethos, honor and respect were gained not by wealth itself, but by its flow; not by how much was gathered, but by how much was given back to both people and the land.</p>
+     <p>When it comes to our enterprises, their pattern of energy management is determined by the purpose for which the enterprise is established.  The for-what of an enterprise determines how and why it receives revenues and expends expenses— as well as the how and why of its ecological give and take.</p>
 
-    <p>In the deep resonance in the distributive ways of the Igorots, Haida, Wetʼsuwetʼen, Dakelh, the Salmon and the Earth, we find our second Earth ethic. </p>
+    <p>While most enterprises operate with the purpose of meeting human wants and needs— such as for the provision of products and for the delivery of services— often modern enterprises are structured for a deeper reason.</p>
 
-    <p>Just as the Earth tended its cycles towards the spin of energy outwards to the benefit of all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
+    <p>Certain enterprises are established by their owners for the purpose of profit: generating more energy than they give back.  This excess energy, although often sourced ecologically, is defined strictly in financial terms. While these for-profit enterprises may provide products, services and even ecological benefits, their structure dictates that their financial surpluses are directed to their owners (or shareholders as the case may be) at the end of each financial cycle. The result is a process of accumulation that over many financial cycles, steadily depletes the ecological and social systems of which it is part.
+</p>
 
-    <p>As we strive to ensure our modern enterprises are green, the second Earthen ethic shows us that their pattern of energy is key. </p>
+    <p>In this way, the energetic inclination of a for-profit enterprise, spins in opposition to the pattern of Earth.  No matter how green-intentioned, no matter how green its short-term impacts may seem, its management of energy is the very opposite of ecological contribution.</p>
 
-    <p>When it comes to our enterprises, their pattern of energy management is determined by the purpose for which the enterprise is established.  The for-what of an enterprise determines how and why it receives revenues and expends expenses— as well as the how and why of its ecological give and take.</p>
+    <p>Of course, not all modern enterprises operate for-profit.</p>
 
-    <p>While most enterprises operate with the purpose of meeting human wants and needs— such as for the provision of products and for the delivery of services— often modern enterprises are structured for a deeper reason.
+    <p>Today, more and more enterprises are aware of the depleting dynamic of profit in-and-of-itself.  In order to contribute to their social and ecological environment, many enterprises choose a ‘not-for-profit’ energetic structure.  These enterprises strive to return all their revenues back to the pursuit of their social or ecological purpose.
      </p>
 
-     <p>Certain enterprises are established by their owners for the purpose of profit: generating more energy than they give back.  This excess energy, although often sourced ecologically, is defined strictly in financial terms. While these for-profit enterprises may provide products, services and even ecological benefits, their structure dictates that their financial surpluses are directed to their owners (or shareholders as the case may be) at the end of each financial cycle. The result is a process of accumulation that over many financial cycles, steadily depletes the ecological and social systems of which it is part.</p>
+     <p>However, insofar as a not-for-profit enterprise remains fully immersed within the paradigm of profit— where energy is accounted for strictly as revenues and expenses— their energetic structure is insufficient to be green.</p>
 
-     <p>In this way, the energetic inclination of a for-profit enterprise, spins in opposition to the pattern of the Earth.  No matter how green-intentioned, no matter how green its short-term impacts may seem, its management of energy is the very opposite of ecological contribution.</p>
+     <p>While an enterprise may ensure that all its revenues go out to its social or ecological purpose, insofar as its energy is accounted for solely in financial terms, it will fail to account for its ecological give and take.  In particular: its give and take of carbon, its support or depletion of biodiversity and its raising or lowering of awareness (our next three Earthen ethics).   In this way, a not-for-profit enterprise may return all of its financial energy back to its purpose, yet still be complicit in the systematic depletion of the ecosystems, biomes and the biosphere of which it is part.
+</p>
 
-     <p>Of course, not all modern enterprises operate for-profit. </p>
+     <p>In other words, without both not-for-profit and net-green intentions— and an accounting of both— an enterprise cannot be green.  
+</p>
 
-     <p>Today, more and more enterprises are aware of the depleting dynamic of profit in-and-of-itself.  In order to contribute to their social and ecological environment, many enterprises choose a ‘not-for-profit’ energetic structure.  These enterprises strive to return all their revenues back to the pursuit of their social or ecological purpose.</p>
+     <p>While in the short-term, an enterprise may sequester much carbon, plant many trees and support many species; without an accounting thereof, one cannot be certain, whether these impacts are in fact a net-contribution.  It could well be that more carbon is emitted, more trees are cut, and more species are depleted to achieve these results!  
+</p>
 
-     <p>However, insofar as a not-for-profit enterprise remains fully immersed within the paradigm of profit— where energy is accounted for strictly as revenues and expenses— their energetic structure is insufficient to be green.  </p>
+     <p>However, the path to net-green has never been clearer.  
+</p>
 
-     <p>While an enterprise may ensure that all its revenues go out to its social or ecological purpose, insofar as its energy is accounted for solely in financial terms, it will fail to account for its ecological give and take.  In particular: its give and take of carbon, its support or depletion of biodiversity and its raising or lowering of awareness (our next three Earthen ethics).   In this way, a not-for-profit enterprise may return all of its financial energy back to its purpose, yet still be complicit in the systematic depletion of the ecosystems, biomes and the biosphere of which it is part.</p>
+     <p>Just as a shoal of salmon directs all their energy towards their out-to-all journey home, our green-intentioned enterprises must direct all their energy towards an out-to-all-purpose.</p>
 
-     <p>In other words, without both not-for-profit and net-green intentions— and an accounting of both— an enterprise cannot be green.   </p>
+     <p>Learning from kincentric cultures, such a purpose must embrace both the social and the ecological, recognizing that both, from the perspective of the Earth, are one and the same. This dual not-for-profit and net-green intention, must be declared and accounted for— ensuring that all the enterprises revenues go towards this for-Earth purpose and that all the other Earthen ethics are fully met.   </p>
 
-     <p>While in the short-term, an enterprise may sequester much carbon, plant many trees and support many species; without an accounting thereof, one cannot be certain, whether these impacts are in fact a net-contribution.  It could well be that more carbon is emitted, more trees are cut, and more species are depleted to achieve these results!  </p>
-
-     <p>However, the path to net-green has never been clearer.  </p>
-
-     <p>Just as a shoal of salmon direct all their energy towards their out-to-all journey home, our green-intentioned enterprises must direct all their energy towards an out-to-all-purpose.</p>
-
-
-     <p>Learning from kincentric cultures, such a purpose must embrace both the social and the ecological, recognizing that both, from the perspective of the Earth, are one and the same. This dual not-for-profit and net-green intention, must be declared and accounted for— ensuring that all the enterprises revenues go towards this for-Earth purpose and that all the other Earthen ethics are fully met.</p>
-
-     <p>That said, the outwards spiral of energy is only half of the Earth's spiral pattern of enrichment. </p>
+     <p>That said, the outwards spiral of energy is only half of the Earth's spiral pattern of enrichment.
+</p>
 
      <p>There is yet the matter... of our matter.</p>
+
 
      <p>Our next Earthen ethic.</p>
 
@@ -324,11 +321,11 @@ Must be updated for each page-->
     </div>
 	  
 
-<div id="searching-box" style="width:100%">
+<div id="footer-functions-box" style="width:100%">
 	
-	<div class="footer-size" style="height:70px; cursor:pointer;" onclick="openSearch()">
+	<div class="footer-function" style="cursor:pointer;" onclick="openSearch()">
 	
-		<p style="font-variant-caps: all-petite-caps; color:grey">Search Book</p>
+		<p style="font-variant-caps: all-petite-caps; color:grey">ᐳ Search Book</p>
 	
 	</div>
 </div>
