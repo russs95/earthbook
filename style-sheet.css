@@ -169,8 +169,7 @@ border-left-color: orange;
 
 
 .footer-function {
-  height: 200px;
-  display: flex;
+display: flex;
 flex-direction: row;
 margin: auto;
 
@@ -178,7 +177,7 @@ font-family: 'Mulish';
 padding: 0px;
 border-top-width: 1px;
 border-color: inherit;
-border-style: solid;
+border-style: dotted;
 cursor: pointer;
 border-bottom: none;
 border-right: none;

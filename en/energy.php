@@ -321,7 +321,7 @@ Must be updated for each page-->
     </div>
 	  
 
-<div id="footer-functions-box" style="width:100%">
+<div id="footer-functions-box" style="width:100%; padding-top: 25px;">
 	
 	<div class="footer-function" style="cursor:pointer;" onclick="openSearch()">
 	
