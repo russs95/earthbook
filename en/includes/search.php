@@ -11,17 +11,15 @@
             </div>
           
             <div class="search-box">
+              <div class="copy-section">
               
               <input id="search_input" type="text" placeholder="Search...">   
                 
-<button class="btn" onclick="searchPosts(0)">🔎 Search</button>   
+              <button class="btn" onclick="searchPosts(0)">Search</button> 
+            </div>  
    
-<div id="search_results"></div>  
-              
-              
-      </div>
-
-    
+            <div id="search_results"></div>  
+          </div>
   </div>
 </div>  
 
