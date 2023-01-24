@@ -27,9 +27,10 @@ $output = array();
 if( $result->num_rows > 0 ) {   
     while( $row = $result->fetch_assoc() ){   
         // add row to output array in the form of an associative array   
-        $output[] = array( "title" => $row[ "title" ], "description" => $row[ "description" ], "url" => $row[ "url" ],  "language" => $row[ "language" ], "book" => $row[ "book" ], "words" => $row[ "words" ], "image_url" => $row[ "image_url" ] );   
+        $output[] = array( "title" => $row[ "title" ], "description" => $row[ "description" ], "url" => $row[ "url" ] );   
     }   
 }   
+
 $con->close();   
    
 // convert to JSON and output   
