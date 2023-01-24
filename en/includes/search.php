@@ -14,7 +14,7 @@
               
               <input id="search_input" type="text" placeholder="Search...">   
                 
-<button onclick="searchPosts(0)">Search</button>   
+<button class="btn" onclick="searchPosts(0)">🔎 Search</button>   
    
 <div id="search_results"></div>  
               
