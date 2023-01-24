@@ -325,17 +325,17 @@ Must be updated for each page-->
 	
 	<div class="footer-function" style="cursor:pointer;" onclick="openSearch()">
 	
-		<p style="font-variant-caps: all-petite-caps; color:grey">ᐳ Search Book</p>
+		<p style="font-variant-caps: all-petite-caps; color:grey">Search EarthBook</p>
 	
 	</div>
   <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
 	
-		<p style="font-variant-caps: all-petite-caps; color:grey">ᐳ Chatper Comments</p>
+		<p style="font-variant-caps: all-petite-caps; color:grey">Chapter Reader Comments</p>
 	
 	</div>
   <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
 	
-		<p style="font-variant-caps: all-petite-caps; color:grey">ᐳ Chapter Source Code</p>
+		<p style="font-variant-caps: all-petite-caps; color:grey">Chapter Source Code</p>
 	
 	</div>
 </div>

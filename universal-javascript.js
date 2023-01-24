@@ -336,7 +336,6 @@ function searchPosts( loadedResults ){
           }  
               
          
-
             
             // add button to load more results starting from the last loaded result (remove any existing button first if one exists)  
             try{  
