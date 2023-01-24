@@ -332,10 +332,11 @@ function searchPosts( loadedResults ){
             // iterate over results  
             for( var i = 0; i < outputPosts.length; i++ ){  
                 // append result to result container, link to url of post  
-                resultsContainer.innerHTML += "<hr> <div id='result_" + i + "'><a href='https://" + outputPosts[ i ].url + "'><h4>" + outputPosts[ i ].title + "</h4><p>" + outputPosts[ i ].description + "</p></a><div>";  
+                resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "'><div class=\"chapter-name-tc\"><a href='" + outputPosts[ i ].url + "'>" + outputPosts[ i ].title + "</div><div class=\"word-count-tc\">" + outputPosts[ i ].description + "</div><div>";  
             }  
 
 
+            
             // add button to load more results starting from the last loaded result (remove any existing button first if one exists)  
             try{  
                 document.getElementById( "load_button" ).remove();  
