@@ -65,15 +65,15 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../acessibilidade.css" />
 <link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
 
-<link rel="preload" href="../style-sheet.css?v1.7" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../light.css?v1.7" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../style-sheet.css?v1.8" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../light.css?v1.8" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
 <link rel="preload" as="image" href="../svgs/up-arrow-light.svg">
 
-<link rel="stylesheet" href="../light.css?v1.7" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css?v1.7" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="../light.css?v1.8" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css?v1.8" media="(prefers-color-scheme: dark)">
  
  <!-- INCLUDES
  Main Scripts-->   
