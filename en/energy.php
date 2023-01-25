@@ -321,23 +321,25 @@ Must be updated for each page-->
     </div>
 	  
 
-<div id="footer-functions-box" style="width:100%; padding-top: 25px;">
-	
-	<div class="footer-function" style="cursor:pointer;" onclick="openSearch()">
-	
-		<div><p style="font-variant-caps: all-petite-caps; color:grey">Search EarthBook</p></div>
-    <div>🔎</div>
-  <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
-	
-		<div><p style="font-variant-caps: all-petite-caps; color:grey">Chapter Reader Comments</p></div>
-    <div>🗨</div>
-  <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
-	
-		<div><p style="font-variant-caps: all-petite-caps; color:grey">Chapter Source Code</p></div>
-    <div>✏</div>
-</div>
+    <div id="footer-functions-box" style="width:100%; padding-top: 25px;">
+      
+      <div class="footer-function" style="cursor:pointer;" onclick="openSearch()">
+        <div><p style="font-variant-caps: all-petite-caps; color:grey">Search EarthBook</p></div>
+        <div>🔎</div>
+      </div>
 
-	  
+      <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
+        <div><p style="font-variant-caps: all-petite-caps; color:grey">Chapter Reader Comments</p></div>
+        <div>🗨</div>
+      </div>
+
+      <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
+        <div><p style="font-variant-caps: all-petite-caps; color:grey">Chapter Source Code</p></div>
+        <div>✏</div>
+      </div>
+
+    </div>
+
   </div>
 
   <?php require_once ("includes/chap-footer.php");?>
