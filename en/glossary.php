@@ -41,7 +41,7 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>Glossary | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="sources, biblioraphy, tractatus ayyew, references, Ayyew, Biome, Biosphere, Biodiversity, Ecology, Green, earth, Earth, Grey, Earthen, Ecological Contribution, Ecological Consciousness, Fossil Fuels, Igorot, Petro-Capital Economy, Plastic Sequestration, Plastic’s Stellar Story, Plastic 1.0, Plastic 2.0, Regenerative, cosmological character, kan'ka'nue, wet'su'weten, dapay, "> 
+<meta name="keywords" content="ayyew, biome, biosphere, biodiversity, cosmological, character, dapay, earth, Eartch, Earthen, earthen, Earthen ethics, Earth Enterprise, Ecological contribution, ecological consciousness, ecology, green, grey, fossil fuels, igorot, kan'ka'nue, kankanue,petro-capital, petrocapital, economy, plastic sequestration, plastic's stellar sotry, plastic 1.0, plastic 2.0, regenerative, wet'su'weten "> 
 
 <meta name="description" content="A list of the key terms and their definitions as they are used throughout the Tractatus Ayyew">
 
@@ -209,6 +209,10 @@ Must be updated for each page-->
 <p><i>Plastic 2.0: </i> The paradigm of plastic as a part of the Earth’s billion year process of cultivating the biosphere and as representation of our petro-capital economy.</p>
 
 <p><i>Regenerative</i>:  A greening process whose subtractive impact is over twice that of its additive impact.</p>
+
+<p><i>Wet'su'weten</i>:  Wetʼsuwetʼen are a First Nations people who live on the Bulkley River and around Burns Lake, Broman Lake, and Francois Lake in the northwestern Central Interior of British Columbia. The name they call themselves, Wetʼsuwetʼen, means "People of the Wa Dzun Kwuh River"</p>
+
+
 
      </p>
      <br><br>

@@ -40,15 +40,15 @@ $name = "";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Authors | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="authors, russell, maier, banayan, irene, angway "> 
+<title>Declaration of Author Interests | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="declaration, financing, supporters, patrons, helpers, grants, sponsors, statement, interests, investments, connections, biases, authors, russ, russell, maier, banayan, irene, angway "> 
 
-<meta name="description" content="About the authors of the Tractatus Ayyew">
+<meta name="description" content="A statement of the interests and investments of the authors.">
 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Authors | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="About the authors of the Tractatus Ayyew"/>
+<meta property="og:title"         content="Declaration | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="A statement of the interests and investments of the authors."/>
 
 <style>
   
@@ -78,8 +78,8 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
       <div id="ct-tc-menu" onclick="openContents()"></div>
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">The Authors</div>   
-        <div id="ct-book-title">Declaration of Interests</div>
+        <div id="ct-chapter-title">Declaration</div>   
+        <div id="ct-book-title">Investments & Interests</div>
        <div id="ct-chap-location">Tractatus Ayyew</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
@@ -106,24 +106,15 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 
-        <h2>Banayan Angway</h2>
+        <h2>Banayan & Russell</h2>
 
-        <div class="page-paragraph">
+     <div class="page-paragraph">
 
-        <p>Banayan was the superintendent of Kalinga Mt. Province DEPED from 2015-2021.  She oversaw the development of the Indigenous Culture component of the Kalinga and Mt. Province curriculum's where she integrated and developed the Ayyew concept into textbooks and lessons.    As the indigenous peoples education coordinator for Mountain Province from 2011-2015 Banayan facilitated planning, implementation and evaluation of related activities that made her program known nationwide.</p> 
+     <p>Banayan and Russell are co-founders of the <a href="https://ecobricks.org/about" target="_blank">Global Ecobrick Alliance</a>.  Banyan is a paid employee of the Cordillera Adminstrative Region of the Philippines Department of Education (Kalinga Province).  Russell receives commissions on GEA trainer and is an active principal in the organization.</p>
+        <p>Neither Russell or Banayan received any grants, sponsorships from any organizations, companies, governments or corporations in the writing of the Tractatus Ayyew or at any time for any other work.  A private donation by Trisha Joe of 2500$ USD was received in 2020 to purchase the <a href="/writing.php">Librem laptop</a> and  upon which this work was written.  A second donation of 3000$ by the same supporter was received to publish the <i>Tractatus Ayyew Earthbook edition</i> in 2022.</p>
+        
 
-        </div>
-        <br><br>
-
-        <h2>Russell Maier</h2>
-
-        <div class="page-paragraph">
-        <p>Russell is an inventor and regenerative philosopher, currently based in Gianyar, Indonesia.  Russell is one of the principals of the Global Ecobrick Alliance and writes regularly on Earthen.io.  He travels around South East Asia observing the impact of human systems on biological diversity, in order to maximize human ecological contribution.</p>
-      
       </div>
-      <br><br>
-
-  
   
     </div><!--closes page text content-->
 
@@ -142,7 +133,7 @@ Must be updated for each page-->
      
         <div class="next-section">
             <div class="next-sec">Next chapter:</div>
-            <div class="sec-name"><i>Declaration of Author Interests & Investments</i></div>
+            <div class="sec-name"><i>Bibliography</i></div>
         </div>
 
       </div>
@@ -150,7 +141,7 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="declaration.php"><div class="next-button">Next ➔</div></a>
+        <a href="bibliography.php"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>

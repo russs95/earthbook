@@ -322,8 +322,15 @@ $name = "";?>
                 
                 <a href="authors.php">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">Authors & Declaration of Interests</div>
+                    <div class="chapter-name">About the Authors</div>
                     <div class="word-count"><i>213 words</i></div>
+                </div>
+            </a>
+
+            <a href="declaration.php">
+                <div class="chapter-middle">  
+                    <div class="chapter-name">Author Declaration of Interests & Investments</div>
+                    <div class="word-count"><i>367 words</i></div>
                 </div>
             </a>
                 

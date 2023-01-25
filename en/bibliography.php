@@ -41,12 +41,12 @@ Must be updated for each page-->
 
 <title>Bibliography | Tratatus Ayyew - Earthbook</title>
 <meta name="keywords" content="sources, biblioraphy, tractatus ayyew, references,"> 
-<meta name="description" content="Biblioraphy of sources for the Tractatus Ayyew">
+<meta name="description" content="Biblioraphy of sources used during the writing of the Tractatus Ayyew">
 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:title"         content="Bibilography | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Biblioraphy of sources for the Tractatus Ayyew"/>
+<meta property="og:description"   content="Biblioraphy of sources used during the writing of the Tractatus Ayyew"/>
 
 
 <style>
