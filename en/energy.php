@@ -324,18 +324,18 @@ Must be updated for each page-->
     <div id="footer-functions-box" style="width:100%; padding-top: 25px;">
       
       <div class="footer-function" style="cursor:pointer;" onclick="openSearch()">
-        <div><p style="font-variant-caps: all-petite-caps; color:grey">Search EarthBook</p></div>
-        <div>🔎</div>
+        <div><p style="font-variant-caps: all-petite-caps; color:grey; margin: auto auto auto 0px;padding-left: 5%;">Search EarthBook</p></div>
+        <div style="margin: auto 0px auto auto;padding-right: 5%;">🔎</div>
       </div>
 
       <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
         <div><p style="font-variant-caps: all-petite-caps; color:grey">Chapter Reader Comments</p></div>
-        <div>🗨</div>
+        <div style="margin: auto 0px auto auto;padding-right: 5%;">🗨</div>
       </div>
 
       <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
         <div><p style="font-variant-caps: all-petite-caps; color:grey">Chapter Source Code</p></div>
-        <div>✏</div>
+        <div style="margin: auto 0px auto auto;padding-right: 5%;">✏</div>
       </div>
 
     </div>
