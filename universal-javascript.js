@@ -332,7 +332,7 @@ function searchPosts( loadedResults ){
                // iterate over results  
                for( var i = 0; i < outputPosts.length; i++ ){  
                 // append result to result container, link to url of post  
-                resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + " style='display:flex'><div class=\"chapter_pic\" style=\"width=100px\"><img src=\"" + outputPosts[ i ].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b><a href='" + outputPosts[ i ].url + "'>" + outputPosts[ i ].title + "</b>:  " + outputPosts[ i ].chap_description + "<br>" + outputPosts[ i ].chapter + "  |  " + outputPosts[ i ].book + "  |  Words: " + outputPosts[ i ].words + "  |  Words: " + outputPosts[ i ].language + "</div>";  
+                resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + " style=\"display:flex; text-align:left;\"><div class=\"chapter_pic\" style=\"width=100px\"><img src=\"" + outputPosts[ i ].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b><a href='" + outputPosts[ i ].url + "'>" + outputPosts[ i ].title + "</b><br><br>" + outputPosts[ i ].chap_description + "<br><br>" + outputPosts[ i ].chapter + "  |  " + outputPosts[ i ].book + "  |  Words: " + outputPosts[ i ].words + "  |  " + outputPosts[ i ].language + "</div>";  
             }  
 
 
