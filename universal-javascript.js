@@ -332,7 +332,7 @@ function searchPosts( loadedResults ){
                // iterate over results  
                for( var i = 0; i < outputPosts.length; i++ ){  
                 // append result to result container, link to url of post  
-                resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding:23px;\"><div class=\"chapter_pic\" style=\"width=100px\"><img src=\"" + outputPosts[ i ].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><h4><a href='" + outputPosts[ i ].url + "'>" + outputPosts[ i ].title + "</h4><h5>" + outputPosts[ i ].chap_description + "</h5><h6>" + outputPosts[ i ].chapter + "  |  " + outputPosts[ i ].book + "  |  Words: " + outputPosts[ i ].words + "  |  " + outputPosts[ i ].language + "</h6></div>";  
+                resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding: 23px;\"><div class=\"chapter_pic\" style=\"width=100px\"><img src=\"" + outputPosts[ i ].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:larger;\"><a href='" + outputPosts[ i ].url + "'>" + outputPosts[ i ].title + "</b><br><span style=\"font-size:medium;\">" + outputPosts[ i ].chap_description + "</span><br><span style=\"font-size:smaller;\">" + outputPosts[ i ].chapter + "  |  " + outputPosts[ i ].book + "  |  Words: " + outputPosts[ i ].words + "  |  " + outputPosts[ i ].language + "</div>";  
             }  
 
 
