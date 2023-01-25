@@ -48,7 +48,7 @@ Must be updated for each page-->
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:url"           content="https://tractatus.earthen.io/en/cycles.html">
 <meta property="og:title"         content="Writing & Publishing | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="The technical details of the book."/>
+<meta property="og:description"   content="The open hardware and software used in the writing and publishing of the Earthbook."/>
 
 
 <style>
@@ -143,13 +143,13 @@ Must be updated for each page-->
 -->
 <div class="lead-page-paragraph">
 
-THE TRACTATUS AYYEW was written and published using 100% open source hardware and software developed by not-for-profit enterprises. Written using Libre Office 7, on a Purism Librem 3 laptop, running Ubuntu while hosted on an Ubuntu server running NextCloud. 
+THE TRACTATUS AYYEW was written and published using 100% open source hardware and software developed by not-for-profit enterprises. Written using <a href="https://www.libreoffice.org/">Libre Office</a>, using a <a href="https://puri.sm/" target="_blank">>Purism Librem 13 laptop</a> running <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> and a <a href="https://frame.work/" target="_blank">Framework laptop</a> running <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>.  The Earthbook's cloud files for writing and all final published files are hosted on an Ubuntu server running <a href="https://nextcloud.com">NextCloud</a>.  
 
 </div>
 
 <div class="page-paragraph">
 
-  <p>The book is for sale on the GoBrik store where it’s sale in Brikcoins directly corresponds to the sequestration of plastic out of the biosphere.<p>
+  <p>The book is for sale on the <a href="https"//gobrik.com/regen">GoBrik store</a> where it’s sale in Brikcoins directly corresponds to the sequestration of plastic out of the biosphere.<p>
 
    <p>The book is type set in Cooper LT Light and Regular by Oswald Cooper and Bitstream as well as Mulish Light & Regular by Vernon Adams, Cyreal, Jacques Le Bailly.
   </p>
