@@ -38,15 +38,15 @@ $name = "";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<title>For-Earth | Tratatus Ayyew - Earthbook</title>
+<title>For-Earth | Appendix | Tratatus Ayyew - Earthbook</title>
 <meta name="keywords" content="for-earth, intention, statement, acknowledgements, thank yous, grattitude, credits "> 
 
-<meta name="description" content="Our not-for profit, for-Earth intention statement">
+<meta name="description" content="Our not-for profit, for-Earth statement of intention for our enterprise of writing and publishing this EarthBook">
 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:title"         content="For-Earth | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Our not-for profit, for-Earth intention statement."/>
+<meta property="og:description"   content="Our not-for profit, for-Earth statement of intention for our enterprise of writing and publishing this EarthBook"/>
 
 
 <style>
@@ -153,6 +153,11 @@ Must be updated for each page-->
 
      <div id="wcb" class="carbonbadge wcb-d"></div>
     <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" preload></script>
+
+    <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
+
+    <p>The concept of a For-Earth enterprise is based on the five principles of Earthen Ethics.  See in particular <a href="energy.php">Chapter 9</a> which deals with the distinction between both for-profit and not-for-profit enterprise, and for-Earth enterprise.</p>
+
 
   
     </div><!--closes page text content-->

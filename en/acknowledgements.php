@@ -43,7 +43,7 @@ Must be updated for each page-->
 <title>Acknowledgements | Tratatus Ayyew - Earthbook</title>
 <meta name="keywords" content="acknowledgements, thank yous, grattitude, credits "> 
 
-<meta name="description" content="Biblioraphy of sources for the Tractatus Ayyew">
+<meta name="description" content="Our thanks to the many who made this project possible and published.">
 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
@@ -166,7 +166,13 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
         <p>Thank you to Enrique Salmon for his pioneering work developing the concept of “kincentric ecology” as a means of distinguishing Rarámuri metaphysics (and that of other fist nations) from modern views of nature.  His work and term underlie our term ‘kincentric culture’ and have been invaluable to advancing our theory.</p>
 
-        <p>Russell acknowledges the land of Banjar Sumampan, Gianyar, Indonesia, the ancestral home of the Balinese, as base for the writing and publishing of this book.</p>
+        <p>Thank you to the open source developers and their various projects upon which the EarthBook platform is built.  Thank you to <a href="www.fabiodeveloper.com">Fábio Almeida</a> for his Accessibilidade CSS script which enables readers to increase and decrease the text of the EarthBook.  Thank you to Zeno Rocha for his continued development of <a href="https://clipboardjs.com">>ClipboardJS</a>, the elegant Javascript on our Share page.  Thank you to <a href="https://dewaweb.com">DewaWeb Indonesia</a> who are generously hosting this EarthBook project without charge on their Singapore servers.  Thank you to <a href="https://www.websitecarbon.com">WebsiteCarbon </a> who enable the automated Carbon impact auditing of each Earthbook page.
+          Thank you to <a href="https://instructobit.com/tutorial/95/How-to-create-a-search-function-for-your-website-using-Javascript%2C-PHP-and-MySQL">Christopher Thorton</a> for his development and sharing of an elegant PHP search which is used in the EarthBook search functionality.  Thank you to <a href="https://commentics.com">Stephen for his Commentics php code base</a> which powers the EarthBook chapter comments.  Thank you to Thomas Steiner for his <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle">Dark Mode Toggle code</a> which powers the Night/Day mode swithching of the Earthbook.</p>
+    
+
+        <p>Russell acknowledges the land of Banjar Sumampan, Gianyar, Indonesia, the ancestral home of the Balinese, as base for the writing and publishing of this book.  Banayan acknowledge the land of the Igorot people and their wisdom tradition which inspired, nurtured and enabled this book, her oversight and contribution.</p>
+
+        <p>
 
 
   
