@@ -39,9 +39,9 @@ $name = "";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Cycles that Spiral | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Igorots, Ayyew, cycles that spiral, spiral design, linear vs circular, circular, green, energy, matter, Earthen ethics, five principles, Earthen principles, Earthen, cosmology, planetary character, Earth's character, "> 
-<meta name="description" content="Observe the way the Earth tends its processes towards cycles that spiral.">
+<title>Cycles that Spiral | Book Two |  Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="igorots, ayyew, cycles, spirals, energy, matter, entropy, thermodynamics, jeremy england, pigs, fertilizer, rice paddy, terraces, hydrologic, linear, circular, circular design, circular economy, plastic, recycling, degrading, enriching, grey, green, gray,  linear vs circular, circular"> 
+<meta name="description" content="Observe the way Earth tends its processes towards cycles that spiral.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
@@ -49,7 +49,7 @@ Must be updated for each page-->
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:title"         content="Cycles that Spiral | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Observe the way the Earth tends its processes towards cycles that spiral."/>
+<meta property="og:description"   content="Observe the way Earth tends its processes towards cycles that spiral."/>
 
 
 <style>
@@ -127,7 +127,7 @@ Must be updated for each page-->
   <div id="ct-chapt-graphic" class="background-8">
     <div class="ct-chapter-quote">
       <span style="background-color:var(--nav-bar-accent);
- padding:0.1em 0.2em;">“Observe the way the Earth tends its processes towards cycles that spiral.”</span>
+ padding:0.1em 0.2em;">“Observe the way Earth tends its processes towards cycles that spiral.”</span>
     </div>
     <div class="ct-quote-source">
      ― Earthen Ethic No.1
@@ -183,7 +183,7 @@ Must be updated for each page-->
 
      <p>When there are leftovers from a process (burned rice, banana peels, grass cuttings, etc.) ayyew guides their transition to a subsequent cycle. Rather than simply compost the organic matter, it is more respectable, more ayyew, to feed them to the neighborhood pigs. While both methods lead to fertilizer, the resulting manure is far more concentrated in carbon and microorganisms, making it more effective at spreading over fields and gardens to disperse its nutrients out to the ecosystem at large.</p>
 
-     <p>Finally, ayyew guides the Igorot’s relations with the land. While the destruction of the forest is despised (how can one achieve any richer system of cycling?) the long labor of transitioning a grassy slope to a bio-diverse and fertile ecosystem is admired above all. Rather than the rush of rain down the hillside, instead it is caught in a fractal of zigs and zags. This way the downward flow of the hydrologic cycle (rain-river-evaporation-and-rain-again) is dispersed outwards and ever more equitably throughout the hillside ecosystem. Each terrace is thus enriched— but ‘riches’ not just in yield.   Most especially riches of the planetary kind: ecological stability, resiliency, diversity, vitality and abundance — the very same characteristics that the Earth unfurled on our once barren planet.</p>
+     <p>Finally, ayyew guides the Igorot’s relations with the land. While the destruction of the forest is despised (how can one achieve any richer system of cycling?) the long labor of transitioning a grassy slope to a bio-diverse and fertile ecosystem is admired above all. Rather than the rush of rain down the hillside, instead it is caught in a fractal of zigs and zags. This way the downward flow of the hydrologic cycle (rain-river-evaporation-and-rain-again) is dispersed outwards and ever more equitably throughout the hillside ecosystem. Each terrace is thus enriched— but ‘riches’ not just in yield.   Most especially riches of the planetary kind: ecological stability, resiliency, diversity, vitality and abundance — the very same characteristics that Earth unfurled on our once barren planet.</p>
 
      <p>Within the deep resonance of the Ayyew ethos and Earth’s cosmological character, lies our first Earthen ethic.</p>
 
@@ -235,7 +235,7 @@ Must be updated for each page-->
 
         <a href="#59-up" class="footnote">   
         <div class="footnote-number">59.</div>
-        <div class="footnote-text">Entropy research by theoretical physicists posit a pattern of adaptive dissipation in the way matter organizes itself in the presence of sustained energy inputs. Meanwhile, parallel breakthroughs in cosmological epistemology help make sense of the Earth’s unfolding kinetic character. </div>
+        <div class="footnote-text">Entropy research by theoretical physicists posit a pattern of adaptive dissipation in the way matter organizes itself in the presence of sustained energy inputs. Meanwhile, parallel breakthroughs in cosmological epistemology help make sense of Earth’s unfolding kinetic character. </div>
         </a>
 
         <a href="#60-up" class="footnote">   

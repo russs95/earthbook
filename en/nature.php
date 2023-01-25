@@ -40,8 +40,8 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>Nature's Fallacy | Tractatus Ayyew - Earthbook edition</title>
-<meta name="keywords" content="Nature's fallacy, nature, environment, problem with nature, humancentric, humancentricism, anthropocentric, petro-capital economy, human nature, nature of plastic, "> 
-<meta name="description" content="Beneath our modern environmentalism lurks a fundamental ontological error that destines even the greenest of intentions to grey.">
+<meta name="keywords" content="Nature's fallacy, nature, environment, problem with nature, humancentric, humancentricism, human, centric, kincentric, greek, roman, environ, harm reduction, natural, natural world, anthropocentric "> 
+<meta name="description" content="Beneath modern environmentalism and its 'conservation of nature' lies a fundamental error that destines even the greenest of intentions to grey.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
@@ -125,7 +125,7 @@ Must be updated for each page-->
 
       <p>In modern terminology, there is no word more imbued with the cumbersome weight of ancient metaphysical misconception than that of ‘Nature’.    This term, used so poetically by environmentalists to compel conservation and protection of ‘the natural’ world, is alas seeped in irredeemable dualistic fallacy:  the ancient error of delineating man and nature, culture and ecology,  the natural and the human.</p>
 
-      <p id="47-up">Upon this stark division not only is modern society built, but so too our most fervent environmental attempts and endeavors.  Derived from the Middle-English term environ, meaning to circle or surround, ‘the environment’ has come to mean, that which is around us humans, but not that which is us.<a href="#footnotes">⁴⁷</a></p>
+      <p id="47-up">Upon this stark division not only is modern society built, but so too our most fervent environmental attempts and endeavors.  Derived from the Middle-English term <i>environ</i>, meaning to circle or surround, ‘the environment’ has come to mean, that which is around us humans, but not that which is us.<a href="#footnotes">⁴⁷</a></p>
 
       <p id="48-up">Over the last decades, feminists<a href="#footnotes">⁴⁸</a>, theologians<a href="#footnotes">⁴⁹</a> and philosophers<a href="#footnotes">⁵⁰</a> have observed that the modern environmental ethics that results from this foundation (laws, sustainability guidelines, UN goals, etc.) are thus locked into a perspective of human-time, human-space and human-needs, and consequently: of human rights, interests and economy. From this view, ‘nature’ is inevitably objectified as something with which humanity is ever interacting: managing, dominating, stewarding. Our ‘green’ endeavors that follow, thus strive to reduce their harm, to protect and to conserve the ‘natural’ world from human touch and contamination.</p>
       

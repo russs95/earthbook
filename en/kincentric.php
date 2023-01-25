@@ -41,8 +41,8 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>Kindred Relations | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Kincentric ecology, kincentricism, kin, kindred relations, Enqrique Salmon, ecological contribution, first nations, metaphisics, cosmological character, planetary patterns, pattern, plastic, carbon emissions, petro-capital economy, human nature, nature of plastic, "> 
-<meta name="description" content="We have much to learn from those cultures that, rather than deplete ecosystems, presided over their systematic enrichment.">
+<meta name="keywords" content="kincentric ecology, kincentricism, kin, kindred relations, Enqrique Salmon, ecological contribution, first nations, metaphysics, world view, cosmology, 1492, north america, first nations, recognition, ecological tradition knowledge, etk, kincentric knowing"> 
+<meta name="description" content="Over human history certain cultures came to understand the creatures around them as kin.  Rather than cultivate human-centered societies, theirs crafted common homes for all.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />

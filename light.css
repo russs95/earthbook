@@ -132,6 +132,16 @@
   background-size: contain;
 }
 
+.background-9 {
+  background: url(svgs/09-energy-white.svg) no-repeat center;
+  background-size: contain;
+}
+
+.background-10 {
+  background: url(svgs/10-matter-white.svg) no-repeat center;
+  background-size: contain;
+}
+
 #up-arrow {
   background: url(svgs/up-arrow-light.svg) center no-repeat;
   background-size: 140px;

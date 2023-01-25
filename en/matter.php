@@ -39,17 +39,17 @@ $name = "";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<title>The Salmon's Spin | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Salmon, spin, energy, inwards, for-profit, not-for-profit, earth enterprise, for Earth, Earthen, Igorots, Ayyew, cycles that spiral, spiral design, linear vs circular, circular, green, energy, matter, Earthen ethics, five principles, Earthen principles, Earthen, cosmology, planetary character, Earth's character, "> 
-<meta name="description" content="The Earth’s cycles tend towards the outwards dissipation of energy.">
+<title>The Mollusc's Means of Matter |  Book Two | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="mollusc, means, matter, spiral, principle 3"> 
+<meta name="description" content="Earthen Principle No.3: Earth’s cycles tend towards the inwards concentration of matter.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
 <meta name="twitter:data1" content="16 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Cycles that Spiral | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Observe the way the Earth tends its processes towards cycles that spiral."/>
+<meta property="og:title"         content="The Mollusc's Means of Matter | Book Two  | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="Earthen Principle No.3: Earth’s cycles tend towards the inwards concentration of matter."/>
 
 
 <style>
@@ -114,9 +114,9 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
       <div id="ct-tc-menu" onclick="openContents()"></div>
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">The Mollusc's Means</div>   
+        <div id="ct-chapter-title">The Mollusc's Means of Matter</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-        <div id="ct-chap-location">Earthen Principle No. 3 | Energy</div>
+        <div id="ct-chap-location">Earthen Principle No. 3 | Matter</div>
         <div id="ct-word-count"><i>Book Two | 2,307 words</i></div>
       </div>
   </div>
@@ -125,13 +125,13 @@ Must be updated for each page-->
 
 <!-- Page Title Section-->
 
-  <div id="ct-chapt-graphic" class="background-8">
+  <div id="ct-chapt-graphic" class="background-10">
     <div class="ct-chapter-quote">
       <span style="background-color:var(--nav-bar-accent);
- padding:0.1em 0.2em;">“The Earth’s cycles tend towards the inwards concentration of matter.”</span>
+ padding:0.1em 0.2em;">“Earth’s cycles tend towards the inwards concentration of matter.”</span>
     </div>
     <div class="ct-quote-source">
-     ― Earthen Ethic No.2
+     ― Earthen Ethic No.3
     </div>
   </div>
 

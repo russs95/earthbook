@@ -40,15 +40,14 @@ $name = "";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Accounting | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="ecological, accounting, carbon, co2, biodiversity, plastic,impact, disclosure, ecological accounting, eco accounting"> 
+<title>Ecological Accounting | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="regen report, regen, regenerativity, report, ecological, accounting, carbon, co2, biodiversity, plastic, impact, disclosure, ecological accounting, eco accounting"> 
 
-<meta name="description" content="The carbon, plastic and biodiversity ecological accounting of the book's writing and publishing">
+<meta name="description" content="The carbon, plastic and biodiversity ecological accounting of this Earthbook's writing and publishing">
 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:url"           content="https://tractatus.earthen.io/en/cycles.html">
-<meta property="og:title"         content="Accounting | Tratatus Ayyew - Earthbook.">
+<meta property="og:title"         content="Ecological Accounting | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="The carbon, plastic and biodiversity ecological accounting of the book's writing and publishing."/>
 
 

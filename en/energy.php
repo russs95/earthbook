@@ -40,16 +40,16 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>The Salmon's Spin | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Salmon, spin, energy, inwards, for-profit, not-for-profit, earth enterprise, for Earth, Earthen, Igorots, Ayyew, cycles that spiral, spiral design, linear vs circular, circular, green, energy, matter, Earthen ethics, five principles, Earthen principles, Earthen, cosmology, planetary character, Earth's character, "> 
-<meta name="description" content="The Earth’s cycles tend towards the outwards dissipation of energy.">
+<meta name="keywords" content="salmon, spin, energy, inwards, capital, currency, for-profit, not-for-profit, earth enterprise, for Earth, forEarth, Haida, Dakelh, Wetʼsuwetʼen, nutrients, roe, dispersal, concentration, Earthen, Igorots, Ayyew, cycles that spiral, spiral design, linear vs circular, circular, green, Earthen ethics, principle two, Earthen principles, Earthen, cosmology, planetary character, Earth's character, "> 
+<meta name="description" content="Earthen Principle No.2: Observe how Earth’s cycles tend towards the outwards dissipation of energy.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
 <meta name="twitter:data1" content="16 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Cycles that Spiral | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Earth’s cycles tend towards the outwards dissipation of energy.."/>
+<meta property="og:title"         content="The Salmon's Spin |  Book two | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="Earthen Principle No.2: Observe how Earth’s cycles tend towards the outwards dissipation of energy."/>
 
 
 <style>
@@ -127,7 +127,7 @@ Must be updated for each page-->
 
 <!-- Page Title Section-->
 
-  <div id="ct-chapt-graphic" class="background-8">
+  <div id="ct-chapt-graphic" class="background-9">
     <div class="ct-chapter-quote">
       <span style="background-color:var(--nav-bar-accent);
  padding:0.1em 0.2em;">“Earth’s cycles tend towards the outwards dissipation of energy.”</span>
@@ -164,7 +164,7 @@ Must be updated for each page-->
       <p>However, to truly understand the Earthen pattern of energy management, we must return once again to our planet's primordial origins.</p>
 
 
-      <p id="59-up">As we saw in Earth’s Stellar story, over the last four billion years of our planet's unfolding, the energy of the Sun's relentless blaze coursed through the Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, converted, stored, then dispersed energy ever outwards towards equilibrium.</p>
+      <p id="59-up">As we saw in Earth’s Stellar story, over the last four billion years of our planet's unfolding, the energy of the Sun's relentless blaze coursed through Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, converted, stored, then dispersed energy ever outwards towards equilibrium.</p>
 
       <p id="59-up">Soon the sun’s shine was being stored in complex, energy-dense molecules such as fats, proteins and carbohydrates that were interchangeable among cellular systems. As one organism lived and died, it was consumed by its fellows and the energy embodied within its nutrients was passed on. As organisms gained the energy of those before them, they reproduced and proliferated. In this way, each cycle of life steadily spun its nutrient energy outwards to other organisms all across the planet’s surface.</p>
 
@@ -205,9 +205,9 @@ Must be updated for each page-->
      <p>Most importantly, we must expand our concept of capital and currency.
 </p>
 
-     <p>Just as we move on from our old view of humans as separate and exceptional to the biosphere, so too must we move on from a similar view of our enterprises.  With an understanding of the inextricable immersion of our economies within the Earth’s systems, we can see the capital and currency that energize our enterprises also operate as subset energy systems of the biosphere. Whereas an organism manages energy in the form of proteins, fats and carbohydrates, an enterprise manages assets, capital and currency.  Whereas an organism manages its give and take of nutrients over seasonal cycles, an enterprises manages its revenues and expenses over fiscal cycles. Whether organism or enterprise, ecology or economy, as their cycles spin, their particular give and take of energy creates a pattern all their own—  especially in the inclination of their cycles.</p>
+     <p>Just as we move on from our old view of humans as separate and exceptional to the biosphere, so too must we move on from a similar view of our enterprises.  With an understanding of the inextricable immersion of our economies within Earth’s systems, we can see the capital and currency that energize our enterprises also operate as subset energy systems of the biosphere. Whereas an organism manages energy in the form of proteins, fats and carbohydrates, an enterprise manages assets, capital and currency.  Whereas an organism manages its give and take of nutrients over seasonal cycles, an enterprises manages its revenues and expenses over fiscal cycles. Whether organism or enterprise, ecology or economy, as their cycles spin, their particular give and take of energy creates a pattern all their own—  especially in the inclination of their cycles.</p>
 
-     <p>When it comes to our enterprises, their pattern of energy management is determined by the purpose for which the enterprise is established.  The for-what of an enterprise determines how and why it receives revenues and expends expenses— as well as the how and why of its ecological give and take.</p>
+     <p>When it comes to our enterprises, their pattern of energy management is determined by the purpose for which the enterprise is established.  The <i>for-what</i> of an enterprise determines how and why it receives revenues and expends expenses— as well as the how and why of its ecological give and take.</p>
 
     <p>While most enterprises operate with the purpose of meeting human wants and needs— such as for the provision of products and for the delivery of services— often modern enterprises are structured for a deeper reason.</p>
 
@@ -237,9 +237,9 @@ Must be updated for each page-->
 
      <p>Just as a shoal of salmon directs all their energy towards their out-to-all journey home, our green-intentioned enterprises must direct all their energy towards an out-to-all-purpose.</p>
 
-     <p>Learning from kincentric cultures, such a purpose must embrace both the social and the ecological, recognizing that both, from the perspective of the Earth, are one and the same. This dual not-for-profit and net-green intention, must be declared and accounted for— ensuring that all the enterprises revenues go towards this for-Earth purpose and that all the other Earthen ethics are fully met.   </p>
+     <p>Learning from kincentric cultures, such a purpose must embrace both the social and the ecological, recognizing that both, from the perspective of Earth, are one and the same. This dual not-for-profit and net-green intention, must be declared and accounted for— ensuring that all the enterprises revenues go towards this for-Earth purpose and that all the other Earthen ethics are fully met.   </p>
 
-     <p>That said, the outwards spiral of energy is only half of the Earth's spiral pattern of enrichment.
+     <p>That said, the outwards spiral of energy is only half of Earth's spiral pattern of enrichment.
 </p>
 
      <p>There is yet the matter... of our matter.</p>
@@ -256,7 +256,7 @@ Must be updated for each page-->
 
     <div class="footnote-section">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
 
       <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
       
@@ -267,7 +267,7 @@ Must be updated for each page-->
 
         <a href="#59-up" class="footnote">   
         <div class="footnote-number">59.</div>
-        <div class="footnote-text">Entropy research by theoretical physicists posit a pattern of adaptive dissipation in the way matter organizes itself in the presence of sustained energy inputs. Meanwhile, parallel breakthroughs in cosmological epistemology help make sense of the Earth’s unfolding kinetic character. </div>
+        <div class="footnote-text">Entropy research by theoretical physicists posit a pattern of adaptive dissipation in the way matter organizes itself in the presence of sustained energy inputs. Meanwhile, parallel breakthroughs in cosmological epistemology help make sense of Earth’s unfolding kinetic character. </div>
         </a>
 
         <a href="#60-up" class="footnote">   
@@ -325,18 +325,17 @@ Must be updated for each page-->
 	
 	<div class="footer-function" style="cursor:pointer;" onclick="openSearch()">
 	
-		<p style="font-variant-caps: all-petite-caps; color:grey">Search EarthBook</p>
+		<div><p style="font-variant-caps: all-petite-caps; color:grey">Search EarthBook</p></div>🔎<div>
 	
 	</div>
   <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
 	
-		<p style="font-variant-caps: all-petite-caps; color:grey">Chapter Reader Comments</p>
+		<div><p style="font-variant-caps: all-petite-caps; color:grey">Chapter Reader Comments</p></div><div>🗨
 	
 	</div>
   <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
 	
-		<p style="font-variant-caps: all-petite-caps; color:grey">Chapter Source Code</p>
-	
+		<div><p style="font-variant-caps: all-petite-caps; color:grey">Chapter Source Code</p></div><div>✏	
 	</div>
 </div>
 

@@ -41,8 +41,8 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>Patterns of Process | Tractatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Patterns of Process, cosmological character, planetary patterns, pattern, plastic, carbon emissions, petro-capital economy, human nature, nature of plastic, "> 
-<meta name="description" content="Rather than be mired in self-judgment at our play with carbon, we can be dazzled by Earth’s.">
+<meta name="keywords" content="patterns of process, cosmological character, planetary patterns, pattern, patterns, blocks, judgements, despair, depletion, enrichment, plastic, carbon emissions, petro-capital economy, human nature, nature of plastic, jevon's paradox, jevon"> 
+<meta name="description" content="Observing our and Earth's evolution we can discern two patterns at play.  Rather than be mired in self-judgment at our play with carbon, we can be dazzled by Earth’s.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
@@ -149,7 +149,7 @@ Must be updated for each page-->
 
      <p>Our once-in-a-million-years phenomenon of additive carbon usage is in fact a tremendous opportunity.</p>
 
-     <p>For the first time, with our usage of carbon as a foil, the difference between our modern ways and the ways of Earth’s can be observed with unprecedented clarity.  In the stark contrast of patterns, we can begin to discern the cosmological character that has underlaid the Earth’s transformation of a barren planet into a thriving biosphere: the pattern by which Earth has managed its matter and energy through processes, cycles and systems towards the enrichment of all.</p>
+     <p>For the first time, with our usage of carbon as a foil, the difference between our modern ways and of Earth’s can be observed with unprecedented clarity.  In the stark contrast of patterns, we can begin to discern the cosmological character that has underlaid the Earth’s transformation of a barren planet into a thriving biosphere: the pattern by which Earth has managed its matter and energy through processes, cycles and systems towards the enrichment of all.</p>
 
      <p id="31-up">And in a similar way, through our modern society’s ecological dissonance, so too can our modern gaze can now recognize those societies—  ancient and ongoing— that have long attained resonance with Earth’s pattern and character.<a href="#footnotes">³¹</a></p>
 

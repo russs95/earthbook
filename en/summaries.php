@@ -21,7 +21,7 @@ See full project repository at: https://github.com/russs95/earthbook
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
+<html lang="$lang" manifest="../offline.appcache"> 
 _END;
 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
@@ -40,8 +40,8 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>Summaries | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
+<meta name="keywords" content="summaries, sentence, paragraph, earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="description" content="A short sentence, a long sentence and a paragraph summary of Earthen ethics.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />

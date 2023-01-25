@@ -40,15 +40,15 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>A Stellar Story | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Plastic, 1.0, plastic pollution, petro-capital economy, human nature, nature of plastic, "> 
-<meta name="description" content="A brief history of plastic's stellar origins, Earth's creation and humanity's rise.">
+<meta name="keywords" content="cosmology, cosmological character, entropy, thermodynamics, dissipation, carbon, spiral, fossil fuels, petrocapital, economy, polymers, plastic, billiard balls, profit, recycle, recycling, technology, industry, grey, history, humanity, human "> 
+<meta name="description" content="A brief history of plastic's stellar origins, Earth's creation and the rise of modern humanity's ecological relationship.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
 <meta name="twitter:data1" content="6 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="A Stellar Story | Tratatus Ayyew - Earthbook.">
+<meta property="og:title"         content="A Stellar Story | Tratatus Ayyew - Earthbook">
 <meta property="og:description"   content="A brief history of plastic's stellar origins, Earth's creation and humanity's rise."/>
 
 

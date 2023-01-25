@@ -40,8 +40,8 @@ $name = "";?>
 Must be updated for each page-->
 
 <title>The Five Earthen Ways | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Earthen ethics, five principles, Earthen principles, Earthen, cosmology, planetary character, Earth's character, "> 
-<meta name="description" content="In our planet's relentless shift from grey to green over the eons we can observe five principles that compose Earth’s pattern of process.">
+<meta name="keywords" content="Earth, cosmological pattern, comsmological character, green, cycles, dissipation, concentraction, diversification, physics, biology and astronomy, consciounsness, character, contribution, vibrant, stable, resilient, abundant, conscious, Earthen ethics, five principles, Earthen principles, Earthen, cosmology, planetary character, Earth's character"> 
+<meta name="description" content="In our planet's transition from a barren rock to a thriving biosphere we find five principles that compose Earth’s cosmological character and that guide our enterprises to be truly green.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
@@ -49,7 +49,7 @@ Must be updated for each page-->
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:title"         content="The Five Earthen Ways | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="In our planet's relentless shift from grey to green over the eons we can observe five principles that compose Earth’s pattern of process."/>
+<meta property="og:description"   content="In our planet's transition from a barren rock to a thriving biosphere we find five principles that compose Earth’s cosmological character and that guide our enterprises to be truly green."/>
 
 
 <style>
