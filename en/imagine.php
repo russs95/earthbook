@@ -108,7 +108,7 @@ Must be updated for each page-->
 <div>
      <div class="lead-page-paragraph">
 
-     TODAY, AS WE BECOME more and more aware of the degradation and depletion inherent in our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been layed.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that far exceed our modern imagination. Only to the extent that we can recognize these enlightened moments, can we imagine our own.  For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair</p>
+     TODAY, AS WE BECOME more and more aware of the ecological degradation and inherent to our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been layed.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that far exceed our modern imagination. Only to the extent that we can recognize these enlightened moments, can we imagine our own.  For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair</p>
 
     </div>
 
@@ -116,12 +116,12 @@ Must be updated for each page-->
 
       <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes">³</a>, she and I have to come to see that the longing and the potential for ecological contribution unites us all on planet Earth. </p>
 
-      <p>Across cultures and continents, we long to contribute to that which we are part: to harmonize with those with whom we relate; to add to the communities in which we belong, to harmonize with our neighbours, to sync with those with whom we sing.  Consequently, as the parts we play in our local ecosystems and global biomes becomes clearer, so too does our yearning to participate positively in them and contribute to a common harmony, vitality and abundance.  
+      <p>Across cultures and continents, we long to contribute to that which we are part: to add to the communities in which we belong, to harmonize with our neighbours, to sync with those with whom we sing.  Consequently, as the parts we play in our local ecosystems and global biomes becomes clearer, so too does our yearning to participate positively in them and contribute to their harmony, vitality and abundance.  
       </p>
 
       <p>Indeed, Banayan and I have come to see that the transition to households, communities and enterprises that are in-and-of-themselves ecological contributions is the next stage of an epic planetary story whose direction is, quite literally, in our hands.</p>
 
-      <p>So how do we arrive at this thriving common home for all that that we all long to see?</p>
+      <p>So how do we arrive at this thriving common home that we all long to see?</p>
 
       <p>One word:</p>
 
@@ -133,7 +133,7 @@ Must be updated for each page-->
       
       <p id="4-up">Gardeners have long observed that the problem is always the solution—  weeds, pests and pollutants are always, with a shift of perspective and approach, the very nutrients, fertilizers and medicines that bring a struggling garden to thrive.<a href="#footnotes">⁴</a></p>
 
-      <p>Like nothing else, plastic embodies the definitive facets of our modern moment.   Derived from ancient fossilized carbon, plastic allows us to touch the primordial story that has enabled our own.  Bought and sold, plastic is a physical manifestation of the petro-capital economy that powers our global age.  Crafted by humans, entirely for humans, plastic is a shimmering reflection of our modern, human centered civilization.</p>
+      <p>Like nothing else, plastic embodies the definitive facets of our modern moment.   Derived from ancient fossilized carbon, plastic allows us to touch the primordial story that has enabled our own.  Bought and sold, plastic is a physical manifestation of the petro-capital economy that powers our global age.  Crafted by humans, entirely for humans, plastic is a vivid reflection of our modern, human-centered civilization.</p>
 
      <p>In this way, our plastic is in fact a mirror. </p>
 
@@ -143,7 +143,7 @@ Must be updated for each page-->
 
      <p>Then, in seeing our reflection with unprecedented clarity, we can know our plastic— and ourselves— anew.</p>
 
-     <p>Above all, we can renew our ecological understanding of positive human participation: <i>what green should really mean.</i></p>
+     <p>Above all, we can renew our understanding of positive human ecological participation: <i>what green should really mean.</i></p>
 
      <p>Banayan and I, in struggling to manage our own plastic positively, have come to see that the contemporary concept of green is lacking and incomplete.</p>
      
@@ -155,7 +155,7 @@ Must be updated for each page-->
 
      <p>And our own.</p>
 
-     <p>To the extent that this Earthen pattern has been reflected within the values and virtues a culture, the societies that have ensued have systematically enriched the ecosystems of which they are a part.</p>
+     <p>To the extent that this Earthen pattern has been reflected within the values and virtues of a culture, the societies that have ensued have systematically enriched the ecosystems of which they are a part.</p>
 
      <p>Conversely, to the extent that a culture’s pattern has differed from Earth’s, systematic depletion and degradation have been the inexorable result.</p>
 
@@ -163,7 +163,7 @@ Must be updated for each page-->
 
      <p>Through the combination of our two ancestral perspectives, Banayan’s Igorot heritage and my European, her indigenous culture and my settler, her agrarian upbringing and my industrial, we will investigate the shortcomings of our modern ethical understanding. In particular, the misconceived human exceptionalism that we observe is at the root of all our modern ecological malaise.</p>
 
-     <p>With this metaphysical error excised, we shall then lay out a new theory of green based upon the cosmological character of our planet.</p>
+     <p>With this metaphysical error excised, we shall then lay out a new theory of green anchored upon the cosmological character of our planet.</p>
 
      <p>Guided by the insights of great green nations, the ways of magnificently contributive creatures and the insights of Earth science, we shall lay out each of the principles that composes our planet’s five-fold pattern of ecological enrichment.</p>
 
