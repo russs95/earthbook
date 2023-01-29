@@ -302,7 +302,7 @@ Must be updated for each page-->
     
       <div class="footer-left">
 
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
     
      
         <div class="next-section">
@@ -324,18 +324,23 @@ Must be updated for each page-->
     <div id="footer-functions-box" style="width:100%; padding-top: 25px;">
       
       <div class="footer-function" style="cursor:pointer;" onclick="openSearch()">
-        <div><p style="font-variant-caps: all-petite-caps; color:grey; margin: auto auto auto 0px;padding-left: 5%;">Search EarthBook</p></div>
-        <div style="margin: auto 0px auto auto;padding-right: 5%;"><i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
+        <div><p style="font-variant-caps: all-petite-caps; color:grey;">Search EarthBook</p></div>
+        <div style="margin: auto 0px auto auto;padding-right: 7%;padding-left: 7%;"><i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
       </div>
 
       <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
         <div><p style="font-variant-caps: all-petite-caps; color:grey">Chapter Reader Comments</p></div>
-        <div style="margin: auto 0px auto auto;padding-right: 5%;"><i style="background-image: url(../icons/comments.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
+        <div style="margin: auto 0px auto auto;padding-right: 7%;padding-left: 7%;"><i style="background-image: url(../icons/comments.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
       </div>
 
       <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
         <div><p style="font-variant-caps: all-petite-caps; color:grey">Chapter Source Code</p></div>
-        <div style="margin: auto 0px auto auto;padding-right: 5%;"><i style="background-image: url(../icons/code.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
+        <div style="margin: auto 0px auto auto;padding-right: 7%;padding-left: 7%;"><i style="background-image: url(../icons/code.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
+      </div>
+
+      <div class="footer-function" style="cursor:pointer;" onclick="openFooter()">
+        <div><p style="font-variant-caps: all-petite-caps; color:grey">EarthBook resources</p></div>
+        <div style="margin: auto 0px auto auto;padding-right: 7%;padding-left: 7%;"><i style="background-image: url(../icons/code.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
       </div>
 
     </div>
