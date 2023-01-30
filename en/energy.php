@@ -340,9 +340,9 @@ Must be updated for each page-->
 
       <div class="footer-function" style="cursor:pointer;" onclick="openFooter()">
      
-        <div><p style="font-variant-caps: all-petite-caps; color:grey; font-size: 1.1em; padding-left: 7%; width: 100%;letter-spacing: 3px;" >EarthBook resources</p></div>
+        <div><p style="font-variant-caps: all-petite-caps; color:grey; font-size: 1.1em; padding-left: 7%; width: 100%;letter-spacing: 3px;" >ᐯ  EarthBook resources</p></div>
 
-        <div style="margin: auto 0px auto auto;padding-right: 7%;"><i style="background-image: url(../svgs/footer-settings-button.svg); width:22px; display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
+        <div style="margin: auto 0px auto auto;padding-right: 7%;"><i style="background-image: url(../icons/settings.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
       </div>
 
     </div>
