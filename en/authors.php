@@ -78,7 +78,7 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
       <div id="ct-tc-menu" onclick="openContents()"></div>
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">The Authors</div>   
+        <div id="ct-chapter-title">Authorship & The Authors</div>   
         <div id="ct-book-title">Declaration of Interests</div>
        <div id="ct-chap-location">Tractatus Ayyew</div>
         <div id="ct-word-count"><i>Appendix</i></div>
@@ -106,7 +106,14 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 
-        <h2>Banayan Angway</h2>
+<div class="page-paragraph">
+
+<p>The writing of the <i>Tractatus Ayyew: Earthen Ethics</i> is the culmination of a decade long dialogue and friendship between Russell Maier and Banayan Angway (<a href="preface.php">read the full story</a>).  The book is inspired by Banayan research and articulation of the concept of Ayyew for the Cordilleria Administrative Region DepEd Indigenous Knowledge curriculum*.  The words of the book are largely is written by Russell with Banayan's oversight and review.  The format is inspired by the Igorot tradition of storytelling after the Bugnas festival feast.</p> 
+
+</div>
+<br><br>
+
+<h2>Banayan Angway</h2>
 
         <div class="page-paragraph">
 
@@ -126,6 +133,21 @@ Must be updated for each page-->
   
   
     </div><!--closes page text content-->
+
+    <div class="footnote-section">
+
+      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+
+      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+      
+    
+
+    
+      <a href="#3-up" class="footnote">   
+      <div class="footnote-number" id="3-down">3.</div>
+      <div class="footnote-text">See: Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).  </div>
+      </a>
+  </div>
 
           
   </div><!--Closes main content block-->
