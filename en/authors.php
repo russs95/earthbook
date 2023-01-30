@@ -130,13 +130,11 @@ Must be updated for each page-->
       </div>
       <br><br>
 
-  
-  
-    </div><!--closes page text content-->
+
 
     <div class="footnote-section">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
 
       <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
       
