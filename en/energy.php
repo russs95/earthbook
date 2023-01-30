@@ -324,7 +324,7 @@ Must be updated for each page-->
     <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
       
       <div class="footer-function" style="cursor:pointer;" onclick="openSearch()">
-        <div><p style="font-variant-caps: all-petite-caps; color:grey; font-size: 1.1em; padding-left:7%; width: 100%;">+ Search EarthBook</p></div>
+        <div><p style="font-variant-caps: all-petite-caps; color:grey; font-size: 1.1em; padding-left:7%; width: 100%;letter-spacing: 3px;">+ Search EarthBook</p></div>
         <div style="margin: auto 0px auto auto;padding-right: 7%; letter-spacing: 3px;"><i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
       </div>
 
@@ -339,10 +339,11 @@ Must be updated for each page-->
       </div>
 
       <div class="footer-function" style="cursor:pointer;" onclick="openFooter()">
-      <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
-      <div><p style="font-variant-caps: all-petite-caps; color:grey; font-size: 1.1em; padding-left: 7%; width: 100%;letter-spacing: 3px;" >EarthBook resources</p></div>
+     
+        <div><p style="font-variant-caps: all-petite-caps; color:grey; font-size: 1.1em; padding-left: 7%; width: 100%;letter-spacing: 3px;" >EarthBook resources</p></div>
 
-      <div style="margin: auto 0px auto auto;padding-right: 7%;"><i style="background-image: url(../svgs/footer-settings-button.svg); width:22px; display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
+        <div style="margin: auto 0px auto auto;padding-right: 7%;"><i style="background-image: url(../svgs/footer-settings-button.svg); width:22px; display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
+      </div>
 
     </div>
 
