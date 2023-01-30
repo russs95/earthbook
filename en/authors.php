@@ -140,14 +140,12 @@ Must be updated for each page-->
 
       <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
       
-    
-
-    
+  
       <a href="#3-up" class="footnote">   
-      <div class="footnote-number" id="3-down">3.</div>
+      <div class="footnote-number" id="3-down">*</div>
       <div class="footnote-text">See: Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).  </div>
       </a>
-  </div>
+   </div>
 
           
   </div><!--Closes main content block-->
