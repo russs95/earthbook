@@ -149,25 +149,24 @@ Must be updated for each page-->
 
 <div class="page-paragraph">
     <p id="58-up"><i>
-    Twelve thousand years ago, trillion ton ice sheets retreated leaving nothing but a barren landscape on North on America's Pacific coast.  It was there, in rocky glacial rivers and streams, that a spiraling cycle emerged that would assist in the dramatic regeneration of the continent's bimoe.   Proliferating stream by steam down the warming coast, each Spring, tiny Salmon hatch-lings emerged from batches of carefully hidden eggs. There, the tiny fish gathered their strength, consuming insects and waterborne larvae.  Come summer, they set out on a journey downriver to the Pacific. Once arrived, they feasted on nutrient rich marine life, steadily amassing proteins and fats. After several years at sea, having reached their full size and strength, they then began their journey home.  As they retraced their original river route, the waters boiled with their determination– and an entire ecosystem revelled in their return. Bears, eagles and humans gathered for grand fishing feasts.  Even the bugs partook! Consumed and discarded carcasses nourished the insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by continued to the very waters where their lives began.  There, they used the last of their strength to deposit and hide batches of their roe in the gravel.  With their eggs safe, the salmon died; their decomposing bodies a final nutrient-rich gift to the river ecosystem that their roe will soon run.  In this way, over the ten thousand years, as their cycles have relentlessly spun, the dispersal of Salmon nutrients inland played a key role in greening a once desolate and lifeless coast into what is today a thriving biome of tens of thousands of species.<a href="#footnotes">⁵⁸</a> </i>
+    Twelve thousand years ago, as trillion ton ice sheets retreated from North on America's Pacific coast, a rocky and desolate lanscape was revealed.  It was there, in  glacial rivers and streams flowing to the sea, that the Salmon's spiraling cycle began to energize the verdant flourishing of the continent's biome.   Proliferating stream by stream down the warming coast, the Salmon would lay their eggs in batches of carefully hidden eggs.  Each Spring, tiny hatch-lings would push their way out of their up-river gravel bed. There, the tiny fish gathered their strength, consuming insects and waterborne larvae.  Come summer, they then set out on a journey downriver to the ocean. Once arrived, they feasted on nutrient rich marine life. After several years at sea, having reached their full size and strength, they set out on a journey home.  As they retraced their original river route, the waters would boil with their determination– and an entire ecosystem revelled in their return. Bears, eagles and humans gathered for grand fishing feasts.  Even the bugs partook! Consumed and discarded carcasses nourished the insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by continued to the very waters where their lives had begun.  Using the last of their strength, they would deposit and hide batches of their roe in the gravel.  With their eggs safe, the salmon died; their decomposing bodies a final nutrient-rich gift to the river ecosystem that their roe would soon run.  Cycle after cycle, the relentless dispersal of Salmon nutrients out to its ecosystem played energized a once desolate and lifeless coast into what is today a thriving biome of tens of thousands of species.<a href="#footnotes">⁵⁸</a> </i>
      </p></div>
     <br><br>
      <div id="line" style="margin-bottom: 30px;"></div>
 <br><br>
     <div>
     <div class="lead-page-paragraph">
-    OVER THE LAST MILLENIA, kincentric cultures have lived side by side the Salmon and observed thier masterful management of energy and matter.  Seeing the salmon as kin— brothers and sisters sharing a common home— these cultures were able to gain both ecological undersand and ethical inspiration.  Today, as we strive to ensure that our modern enterprises are green, we too have much to learn from the ways of the salmon— in particular, the way in which they managed their energy to enrich both themselves and the ecosystems of which they were a part. As we will see, the Salmon’s inward spiral of energy emulates the vortical pattern by which the Earth has greened the biosphere.  This pattern, underlies the ethics, traditions and language of the various kincentric cultures that have long inhabited North America's Northwest cost.  This pattern also provides the geometry for our second Earthen ethic.  With its help, we can make sense of the depletion wrought by the way modern enterprises manage their financial energy.  Finally, through the guidance of Earth’s example, we can discern the requisite energetic structure for our enterprises that are keen to be green.</div>
+    OVER THE LAST MILLENIA, kincentric cultures have lived side by side the Salmon and observed thier masterful management of energy and matter.  Seeing the salmon as kin— brothers and sisters sharing a common home— these cultures were able to gain both ecological understanding and ethical inspiration.  Today, as we strive to ensure that our modern enterprises are green, we too have much to learn from the ways of the salmon— in particular, the way in which they managed their energy to enrich both themselves and the ecosystems of which they were a part. As we will see, the Salmon’s inward spiral of energy emulates the vortical pattern by which Earth has greened the biosphere.  It is likewise a pattern, underlies the ethics, traditions and language of the various kincentric cultures that have long inhabited North America's Northwest cost.  This outward-spiral also provides the geometry for our second Earthen ethic.  With its help, we can make sense of the depletion wrought by the energectic structure of our modern for-profit and notforprofit enterprises.  Finally, through the guidance of Earth’s example, we can discern the requisite energetic structure for our enterprises that are keen to be green.</div>
       </div>
 
     <div class="page-paragraph">
 
-      <p>However, to truly understand the Earthen pattern of energy management, we must return once again to our planet's primordial origins.</p>
+      <p>To begin, we must return once again to our planet's primordial origins and take a closer look at Earth pattern of energy management.</p>
 
 
-      <p id="59-up">As we saw in Earth’s Stellar story, over the last four billion years of our planet's unfolding, the energy of the Sun's relentless blaze coursed through Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, converted, stored, then dispersed energy ever outwards towards equilibrium.</p>
+      <p id="59-up">As we saw in <a href="stellar.php">Earth’s Stellar story</a>, over the last four billion years of our planet's unfolding, the energy of the Sun's relentless blaze coursed through Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, converted, stored, then dispersed energy ever outwards towards equilibrium.</p>
 
       <p id="59-up">Soon the sun’s shine was being stored in complex, energy-dense molecules such as fats, proteins and carbohydrates that were interchangeable among cellular systems. As one organism lived and died, it was consumed by its fellows and the energy embodied within its nutrients was passed on. As organisms gained the energy of those before them, they reproduced and proliferated. In this way, each cycle of life steadily spun its nutrient energy outwards to other organisms all across the planet’s surface.</p>
-
 
 
       <p>With countless life cycles spinning, collectives of organisms became systems unto themselves.  These systems of systems then spun their energy upwards again. From organism to ecosystem, from ecosystem to biome, energy was spiraled ever outwards towards the enrichment of all.</p>
@@ -196,7 +195,7 @@ Must be updated for each page-->
 
      <p>For the Haida, Dakelh, and the Wetʼsuwetʼen their was no distinction between ecology and economy.  Whether discussing precious blankets or precious berries, an ethic of take only what is needed, and distribute what is taken underlaid their ways of life.  In this way, honor and respect were gained not by wealth itself, but by its flow.  Rather than measure wealth by how much was gathered, it was measured by how much was given back to both people and the land.</p>
 
-     <p>In the deep resonance in the distributive ways of the Haida, Wet’su’weten, Babine the Salmon and the the Earth, we find our second Earth ethic.</p>
+     <p>In the deep resonance in the distributive ways of the Haida, Wet’su’weten, Babine the Salmon and Earth, we find our second Earth ethic.</p>
 
      <p id ="62-up">Just as the Earth tended its cycles towards the spin of energy outwards to the benefit of all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
 
@@ -319,37 +318,8 @@ Must be updated for each page-->
 
       </div>
     </div>
-	  
 
-    <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
-      
-      <div class="footer-function" style="cursor:pointer;" onclick="openSearch()">
-        <div><p style="font-variant-caps: all-petite-caps; color:grey; font-size: 1.1em; padding-left:7%; width: 100%;letter-spacing: 3px;">+ Search EarthBook</p></div>
-        <div style="margin: auto 0px auto auto;padding-right: 7%; letter-spacing: 3px;"><i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
-      </div>
-
-      <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
-        <div><p style="font-variant-caps: all-petite-caps; color:grey; font-size: 1.1em; padding-left: 7%; width: 100%;letter-spacing: 3px;">+ Chapter Reader Comments</p></div>
-        <div style="margin: auto 0px auto auto;padding-right: 7%;"><i style="background-image: url(../icons/comments.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
-      </div>
-
-      <div class="footer-function" style="cursor:pointer;" onclick="openComments()">
-        <div><p style="font-variant-caps: all-petite-caps; color:grey; font-size: 1.1em; padding-left: 7%; width: 100%;letter-spacing: 3px;">+ Chapter Source Code</p></div>
-        <div style="margin: auto 0px auto auto;padding-right: 7%;"><i style="background-image: url(../icons/code.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
-      </div>
-
-      <div class="footer-function" style="cursor:pointer;" onclick="openFooter()">
-     
-        <div><p style="font-variant-caps: all-petite-caps; color:grey; font-size: 1.1em; padding-left: 7%; width: 100%;letter-spacing: 3px;" >ᐯ  EarthBook resources</p></div>
-
-        <div style="margin: auto 0px auto auto;padding-right: 7%;"><i style="background-image: url(../icons/settings.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></div>
-      </div>
-
-    </div>
-
-  </div>
-
-  <?php require_once ("includes/chap-footer.php");?>
+  <?php require_once ("includes/chapTER-footer.php");?>
 
 
 </div>
