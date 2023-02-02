@@ -1,6 +1,6 @@
 /*TRACTATUS AYYEW BOOKAPP VERSION 1.0
 
-CSS Version 1.0
+CSS Version 1.1
 Original Author:  Russell Maier
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,10 +14,29 @@ See full project repository at: https://github.com/russs95/earthbook
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-	1.  Typography
-	2.  TOP Earthbook Navigation Bar
-  3.	LEFT Settings Curtain
-	4. 	RIGHT Share Curtain
+	0. Reference
+  1. Page Layout
+  2. Typography
+	3. Top Navigation Bar
+  4. User Settings Overlay Curtain 
+	5. Share Overlay Curtain
+  6. Buy Overlay Curtain
+  7. Read Overlay Curtain
+  8. Bookplate Overlay Curtain
+  9. Search Overlay Curtain
+  10. Landing Page Content 
+  11. Chapter Footnote Section
+  12. Footer Content
+  13. Text Size Adjust Section
+  14. Action buttons
+  15. TABLE OF CONTENTS of Overlay Curtain
+  16. What is an Earthbook Overlay Curtain
+  17. Ecological Accounting Overlay Curtain
+  18. Sepia, Contrast, Brightness Sliders
+
+
+
+
 	5. 	BOTTOM Bookplate 
   6.  Main page content 
 	6.	Footer
@@ -26,6 +45,15 @@ See full project repository at: https://github.com/russs95/earthbook
 	9. 	Needs Review
 	10.  	New
 
+
+
+  /* -------------------------------------------------------------------------- */
+
+/*	0. Reference
+
+/* -------------------------------------------------------------------------- */
+
+/*
     
 Media Query parameters used throughout:
 
@@ -36,39 +64,11 @@ Media Query parameters used throughout:
 @media (prefers-contrast) {
 @media (prefers-color-scheme: dark) {
 
-/* BASICS */
+/* -------------------------------------------------------------------------- */
 
-/*DARKER VARIABLES*/
+/*	1. Page Layout
+/* -------------------------------------------------------------------------- */
 
-
-/*
-:root {
-  --text-color: rgb(250, 250, 250);
-  --background-color: #1c1d20 ;
-  --link-color:  rgb(250, 250, 250);
-  --nav-bar-accent: rgb(66, 66, 66); 
-  --deeper-accent-color: #17181B ; 
-  --thin-border-color: rgb(66, 66, 66); 
-  --fainter-border-color: rgb(85, 85, 85); 
-  --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.173); 
-  --drop-cap: rgb(200, 200, 200);
-  --header-footer: #202124;
-  --slider: #232323;
- }
-
- /*LIGHT VARIABLES
-
-    :root {
-    --text-color: #222222;
-    --background-color: rgb(250, 250, 250) ; 
-    --link-color:  #222222 ;
-    --nav-bar-accent: rgb(244, 242, 242);
-    --deeper-accent-color: rgb(235, 235, 235) ; 
-    --thin-border-color: rgb(163, 163, 163); 
-    --fainter-border-color:  rgb(208, 207, 207); 
-    --element-shadow: 0 1px 15px rgba(7, 7, 7, 0.05 );  
-   }
-*/
 
 
 :root {
@@ -83,12 +83,6 @@ Media Query parameters used throughout:
   color: var(--text-color);
   background-color: var(--background-color);
  }
-
- /* style.css 
-img[src*=".svg"]:hover {
-  filter: var(--icon-filter_hover);
- }
- */
  
  
  body {
@@ -110,10 +104,9 @@ img[src*=".svg"]:hover {
   overflow-x: hidden; /*ARG WHY OVERFLOW?*/
   max-width: 100%;
   width: 100%;
-
  }
 
- #underlayer {   /*THis enables sepia/contrast/brightness*/
+ #underlayer {   /*This enables sepia/contrast/brightness*/
   background-color: var(--background-color);
   margin: 0px;
   max-width: 100%;
@@ -121,177 +114,13 @@ img[src*=".svg"]:hover {
 }
  
 @media screen and (max-width: 699px) {
-.no-mobile {
-display: none;
-}
-}
-
-
-/*SEARCH*/
-
-#search_input {
-
-background: #f4f4f4;
-border: 2px solid #ddd;
-  border-left-color: rgb(221, 221, 221);
-  border-left-style: solid;
-  border-left-width: 2px;
-border-left-color: rgb(221, 221, 221);
-border-left-style: solid;
-border-left-width: 2px;
-border-left: 3px solid;
-  border-left-color: currentcolor;
-border-left-color: currentcolor;
-color: #666;
-page-break-inside: avoid;
-font-family: monospace;
-width: 100%;
-overflow: auto;
-word-wrap: break-word;
-display: block;
-text-align: left;
-justify-content: center;
-border-radius: 5px 0px 0px 5px;
-margin-right: -5px;
-font-size: 15px;
-line-height: 1.6;
-width: 100%;
-padding: 1em 1.5em;
-  padding-right: 1.5em;
-padding-right: 1.5em;
-border-radius: 5px 0px 0px 5px;
-margin-right: -5px;
-padding-right: 0%;
-border-left-color: orange;
-
-}
-
-
-
-.footer-function {
-display: flex;
-flex-direction: row;
-margin: auto;
-
-font-family: 'Mulish';
-padding: 0px;
-border-top-width: 1px;
-border-color: inherit;
-border-style: dotted;
-cursor: pointer;
-border-bottom: none;
-border-right: none;
-border-left: none;
-display: flex;
-border-bottom-color: var(--fainter-border-color);
-}
-
-
-
-@media screen and (max-width: 700px) {
-.footer-function {
-  width: 90% }
-}
-
-
-    @media screen and (min-width: 700px) and (max-width: 1324px) {
-      .footer-size {
-      width: 70%
-     }
-    }
-
-    @media screen and (min-width: 1325px) {
-      .footer-function {
-        width: 50%;
-        margin: auto;
-     }
-    }
-  
-
-
-
-
-/*BUTTONS*/
-
-
-/*Setting Menu Button on Left*/
-
-#settings-menu {
-    position: absolute;
-    left: 0px;
-    transition: 0.5s;
-    border-radius: 50px;
-    height: 85px;
-    padding-left: 40px;
-    left: -66px;
-    z-index: 50;
-
-    background: var(--background-color);
-    border: solid 1px var(--fainter-border-color);
-}
-
-#settings-menu:hover {
-  left: -40px;
-  transition: 0.5s;
-  background: var(--deeper-accent-color);
-  box-shadow: var(--element-shadow);
-}
-
-
-
-
-#settings-menu img {
-  height: 50px;
-  padding-top: 20px;
-  padding-left: 7px;
-  margin-left: 0px;
-}  
-
-
-
-/*Share Menu Button*/
-
-
-
-#share-menu {
-    position: absolute;
-    right: 0px;
-    transition: 0.3s;
-    transition: 0.3s;
-    border-radius: 70px;
-    height: 85px;
-    padding-right: 70px;
-    right: -60px;
-    background-color: var(--background-color);
-    border: solid 1px var(--fainter-border-color);
+  .no-mobile {
+    display: none;
   }
-
-  #share-menu:hover {
-    right: -35px;
-    transition: 0.3s;
-    background-color: var(--deeper-accent-color);
-    box-shadow: var(--element-shadow);
-  }
-
-
-
-
-
-#share-menu img {
-  height: 50px;
-  padding-top: 20px;
-  padding-right: 24px;
-  margin-right: -42px;
 }
-
-
-
-
-
 
 
  /*Full Page Layout System*/
-
 
  #main-page {
   margin: auto;
@@ -309,15 +138,15 @@ border-bottom-color: var(--fainter-border-color);
 }
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   #main-page {
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 220px;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding-top: 220px;
   }
 }
 @media screen and (min-width: 1325px) {
-  #main-page {
-    margin-left: 15%;
-    margin-right: 15%;
+    #main-page {
+      margin-left: 15%;
+      margin-right: 15%;
       padding-top: 250px;
       overflow-x: hidden
   }
@@ -368,14 +197,11 @@ border-bottom-color: var(--fainter-border-color);
 
 @media screen and (min-width: 1325px) {
   #main {
-
     padding: 15px;
     box-sizing: border-box;
     margin-left: 28%;
     margin-right: 10%;
-
   }
-
   }
 
 
@@ -418,46 +244,10 @@ margin: 12px auto 0px auto !important;
 
 /* -------------------------------------------------------------------------- */
 
-/*	1. Typography
+/*	2. Typography
 
 /* -------------------------------------------------------------------------- */
 
-
-
-.github-source {
-  font-family: 'Mulish';
-  color: grey;
-  text-align: right;
-margin: auto;
-padding-top: 10px;
-}
-
-@media screen and (max-width: 700px) {
-
-  .github-source {
-    font-size: 0.6em !important;
-  }
-}
-
-@media screen and (min-width: 700px) {
-
-  .github-source {
-    font-size: 0.73em !important;
-  }
-}
-
-.github-source a {
-  color: grey !important;
-}
-
-.github-source a:link {
-  color: grey !important;
-}
-
-.github-source a:hover {
-  color: var(--text-color);
-  text-decoration: underline;
-}
 
 
 @font-face {
@@ -758,11 +548,124 @@ h6 {
     }
     }
 
+
+/*where is page paragraph declared?*/
+
+.page-paragraph a {text-decoration: underline !important;}
+
+.page-paragraph a:hover {text-decoration: none !important;}
+
+
+
+
+.github-source {
+  font-family: 'Mulish';
+  color: grey;
+  text-align: right;
+  margin: auto;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+
+  .github-source {
+    font-size: 0.6em !important;
+  }
+}
+
+@media screen and (min-width: 700px) {
+
+  .github-source {
+    font-size: 0.73em !important;
+  }
+}
+
+.github-source a {
+  color: grey !important;
+}
+
+.github-source a:link {
+  color: grey !important;
+}
+
+.github-source a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+
 /* -------------------------------------------------------------------------- */
 
-/*	2. Earthbook Top Navigation Bar
+/*	3. Top Navigation Bar
+
+  Deployed in Header.php
 
 /* -------------------------------------------------------------------------- */
+
+
+/*HEADER BUTTONS*/
+
+
+/*Setting Menu Button on Left*/
+
+#settings-menu {
+  position: absolute;
+  left: 0px;
+  transition: 0.5s;
+  border-radius: 50px;
+  height: 85px;
+  padding-left: 40px;
+  left: -66px;
+  z-index: 50;
+
+  background: var(--background-color);
+  border: solid 1px var(--fainter-border-color);
+}
+
+#settings-menu:hover {
+left: -40px;
+transition: 0.5s;
+background: var(--deeper-accent-color);
+box-shadow: var(--element-shadow);
+}
+
+#settings-menu img {
+height: 50px;
+padding-top: 20px;
+padding-left: 7px;
+margin-left: 0px;
+}  
+
+
+
+/*Share Menu Button*/
+
+#share-menu {
+  position: absolute;
+  right: 0px;
+  transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 70px;
+  height: 85px;
+  padding-right: 70px;
+  right: -60px;
+  background-color: var(--background-color);
+  border: solid 1px var(--fainter-border-color);
+}
+
+#share-menu:hover {
+  right: -35px;
+  transition: 0.3s;
+  background-color: var(--deeper-accent-color);
+  box-shadow: var(--element-shadow);
+}
+
+#share-menu img {
+height: 50px;
+padding-top: 20px;
+padding-right: 24px;
+margin-right: -42px;
+}
 
 
 #earthbook-navbar {
@@ -792,12 +695,6 @@ h6 {
   border-color: var(--thin-border-color);
   box-shadow: var(--element-shadow);
 }
-
-/*  background-color: rgb(244, 242, 242);
-  border-color: rgb(163, 163, 163);
-  color:  #202124 ;
-  box-shadow: 0 4px 15px rgba(85, 84, 84, 0.3);
-}*/
 
 
 @media screen and (max-width: 699px) {
@@ -837,8 +734,6 @@ h6 {
     }
   }
 
-
-
 #sub-title {
   font-family: "CooperLT";
   font-style: italic;
@@ -873,7 +768,6 @@ font-variant-caps: all-small-caps;
 font-weight: 500;
 text-shadow: 0 0 45px rgba(1, 1, 1, 0.1);
 user-select: none;  
-
 color: grey;
 /*background: repeating-linear-gradient(-45deg, white,  rgb(0, 183, 255),grey,  rgb(0, 183, 255), white);
 background-size: 600vw 600vw;
@@ -925,11 +819,11 @@ font-family: "Mulish";
 }
 
 
-  #right-close-button:hover {
-right: -35px;
-transition: 0.3s;
-background-color: var(--background-color);
-box-shadow: var(--element-shadow);
+#right-close-button:hover {
+  right: -35px;
+  transition: 0.3s;
+  background-color: var(--background-color);
+  box-shadow: var(--element-shadow);
 
 }
 
@@ -942,8 +836,6 @@ margin-right: -42px;
 
 .icon-buttons-night {
 filter: contrast(0%) !important;}
-
-
 
 /*Left CLose Button*/
 
@@ -963,24 +855,21 @@ filter: contrast(0%) !important;}
 }
 
 #left-close-button:hover {
-left: -40px;
-transition: 0.5s;
-background-color: var(--background-color);
-box-shadow: var(--element-shadow);
+  left: -40px;
+  transition: 0.5s;
+  background-color: var(--background-color);
+  box-shadow: var(--element-shadow);
 }
 
 
 #left-close-button img {
-height: 50px;
-padding-top: 20px;
-padding-left: 7px;
-margin-left: 0px;
+  height: 50px;
+  padding-top: 20px;
+  padding-left: 7px;
+  margin-left: 0px;
 }  
 
-/*Bottom Left CLLLose Button
-
-
-/*Left CLose Button*/
+/*Bottom Left Close Button*/
 
 #bottom-left-close-button {
   position: absolute;
@@ -1148,7 +1037,9 @@ padding-top: 44px;
 
 /* -------------------------------------------------------------------------- */
 
-/*	3. Left Settings Overlay
+/*	4. User Settings Overlay Curtain 
+
+    Comes in from the left after clicking +- button.
 
 /* -------------------------------------------------------------------------- */
 
@@ -1157,8 +1048,6 @@ padding-top: 44px;
   color: var(--text-color);
   z-index: 26;
 }
-
-
 
 
 /* Table of Contents Menu (background) */
@@ -1212,9 +1101,6 @@ padding-top: 44px;
     }
 }
 
-
-
-
 .settings-label {
   font-family: 'Mulish';
   font-size: 1.2em;
@@ -1229,9 +1115,7 @@ padding-top: 44px;
   background: var(--background-color);
   border-radius: 55px;
   width: fit-content;
-
 }
-
 
 .language-selector {
   font-family: 'Mulish';
@@ -1257,7 +1141,9 @@ padding-top: 44px;
 
 /* -------------------------------------------------------------------------- */
 
-/*	4. Right Share Overlay
+/*	5. Share Overlay Curtain
+
+  Comes in from the right after clicking share button in header.
 
 /* -------------------------------------------------------------------------- */
 
@@ -1480,7 +1366,7 @@ padding-top: 44px;
 
 /* -------------------------------------------------------------------------- */
 
-/*	5. Buy Overlay
+/*	6. Buy Overlay Curtain
 
 /* -------------------------------------------------------------------------- */
 
@@ -1491,9 +1377,6 @@ padding-top: 44px;
   z-index: 26;
 }
 
-
-
-/* Table of Contents Menu (background) */
 .buy-overlay {
 
   height: 0%;
@@ -1505,14 +1388,12 @@ padding-top: 44px;
   overflow-y: hidden;
   transition: 0.5s;
   display: flex;
-
-
 /*
   overflow-x: hidden;  Disable horizontal scroll */
 }
 
 
-/* Position the content inside the overlay */
+/* Position the buy content inside the overlay */
 .buy-overlay-content {
   position: initial;
   text-align: center; /* Centered text/links */
@@ -1676,12 +1557,9 @@ padding-top: 44px;
 }
 
 
-
-
-
 /* -------------------------------------------------------------------------- */
 
-/*	6. Read Overlay Curtain
+/*	7. Read Overlay Curtain
 
 /* -------------------------------------------------------------------------- */
 
@@ -1934,7 +1812,7 @@ padding-top: 44px;
 
 /* -------------------------------------------------------------------------- */
 
-/*	7. Bookplate Overlay
+/*	8. Bookplate Overlay Curtain
 
 /* -------------------------------------------------------------------------- */
 
@@ -2059,7 +1937,9 @@ padding-top: 44px;
 
 /* -------------------------------------------------------------------------- */
 
-/*	8. Right Search Overlay
+/*	9. Search Overlay
+
+  Comes in from Right.
 
 /* -------------------------------------------------------------------------- */
 
@@ -2280,9 +2160,54 @@ padding-top: 44px;
 
 
 
+
+/*SEARCH input box*/
+
+#search_input {
+
+  background: #f4f4f4;
+  border: 2px solid #ddd;
+  border-left-color: rgb(221, 221, 221);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: rgb(221, 221, 221);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left: 3px solid;
+  border-left-color: currentcolor;
+  border-left-color: currentcolor;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  width: 100%;
+  overflow: auto;
+  word-wrap: break-word;
+  display: block;
+  text-align: left;
+  justify-content: center;
+  border-radius: 5px 0px 0px 5px;
+  margin-right: -5px;
+  font-size: 15px;
+  line-height: 1.6;
+  width: 100%;
+  padding: 1em 1.5em;
+    padding-right: 1.5em;
+  padding-right: 1.5em;
+  border-radius: 5px 0px 0px 5px;
+  margin-right: -5px;
+  padding-right: 0%;
+  border-left-color: orange;
+  
+  }
+
+
+
+
 /* -------------------------------------------------------------------------- */
 
-/*	8. DASHBOARD Content Box Breakdown
+/*	10. Landing Page Content 
+
+  Includes Content Box Breakdown
 
 /* -------------------------------------------------------------------------- */
 
@@ -2309,19 +2234,9 @@ padding-top: 44px;
   }
 }
 
-
-
 /*.welcome-to:hover {text-decoration: underline !important;}*/
 
 
-/*Knack subscribe box*/
-
-
-#knack-dist_2 {font-family: 'Mulish';}
-
-
-/*
-.kn-input {padding: 15px;}*/
 
 /*Main section*/
 
@@ -2392,9 +2307,6 @@ padding-top: 44px;
   }
 }
 
-
-
-
 /*These are the main page boxes for the main sections of the book*/
 
 #book-box {
@@ -2440,8 +2352,6 @@ padding-top: 44px;
   background-position-x: 18px;*/
   ;
 }
-
-
 
 .chapter-top {
   border-radius: 20px 20px 0px 0px;
@@ -2521,7 +2431,9 @@ padding-top: 44px;
 
 /* -------------------------------------------------------------------------- */
 
-/*	7. Footnotes
+/*	11. Chapter Footnote Section
+
+ Could this be moved to the chapter page??
 
 /* -------------------------------------------------------------------------- */
 
@@ -2572,7 +2484,7 @@ padding-top: 44px;
 
 /* -------------------------------------------------------------------------- */
 
-/*	7. Footer Content
+/*	12. Footer Content
 
 /* -------------------------------------------------------------------------- */
 
@@ -2648,7 +2560,6 @@ padding-top: 44px;
   font-size: 1em;
   margin: auto;
 }
-
 
 
 .footer-middle {
@@ -2727,14 +2638,12 @@ padding-top: 44px;
 }
 
 
+/* -------------------------------------------------------------------------- */
 
-
+/*	13. Text Size Adjust Section
 
 /* -------------------------------------------------------------------------- */
 
-/*	8. Text Adjust 
-
-/* -------------------------------------------------------------------------- */
 
 #text-adjust {
 margin: 10px auto 12px auto;
@@ -2799,12 +2708,11 @@ cursor: pointer;
     }
 
 
-
-
-
 /* -------------------------------------------------------------------------- */
 
-/*	9. ACTION BUTTONS
+/*	14. ACTION BUTTONS
+
+    The oval solide Buttons on the main page and other locations
 
 /* -------------------------------------------------------------------------- */
 
@@ -2825,10 +2733,6 @@ cursor: pointer;
     display: block;
     margin: auto;
 }
-
-
-
-
 
 .action-btn:hover {
     background: var(--header-footer);
@@ -2936,14 +2840,13 @@ a:active {
 
 /* -------------------------------------------------------------------------- */
 
-/*	11. TABLE OF CONTENTS
+/*	15. TABLE OF CONTENTS (tc) of Overlay Curtain
+
+  Slides down from the top on all pages.
 
 /* --------------------------------------------------------------------------
 
 */
-
-
-
 
  .overlay-tc {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
@@ -3324,7 +3227,7 @@ display: none;
 
 /* -------------------------------------------------------------------------- */
 
-/*	12. EARTHBOOK OVERLAY
+/*	16. What is an Earthbook Overlay Curtain
 
 /* -------------------------------------------------------------------------- */
 
@@ -3609,7 +3512,7 @@ display: none;
 
 /* -------------------------------------------------------------------------- */
 
-/*	12. EARTHBOOK OVERLAY
+/*	17. Ecological Accounting Overlay Curtain
 
 /* -------------------------------------------------------------------------- */
 
@@ -3700,12 +3603,8 @@ padding-bottom: 15px;
   font-size: 1.2em;
   margin: 20px auto 20px auto;
 }
-
-
-
-
-
 }
+
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   
@@ -3775,16 +3674,12 @@ border-color: #00a112 !important;
 
 
 
-  /*Text And FOnts */
-
-  
-
-
-
-
 /* -------------------------------------------------------------------------- */
 
-/*	Sepia, Contrast, Brightness Sliders
+/*	18. Sepia, Contrast, Brightness Sliders
+
+    This shows up on the settings page.
+    Unfortunately, it only works for one page at a time.
 
 /* -------------------------------------------------------------------------- */
 
@@ -3873,9 +3768,19 @@ margin-left: auto;
   }
 
 
-  /*DARK MODE TOGGLE SWITCH*/
+/* -------------------------------------------------------------------------- */
+
+/*	19. Dark Mode Toggle Switch
+
+    This shows up on the settings page.
+    Carries over for all pages once set
+    Arg... can't figure out how to change the sun and move graphics.
+
+/* -------------------------------------------------------------------------- */
 
 
+
+/* This toogle is not working 
 
 label.toggle {
   width:140px;
@@ -4001,14 +3906,14 @@ fieldset {margin-top: 50px;
 
 
 
-/*Dark Toggler Compromise*/
+/*This dark toggle is*/
 
 .compro-toggle {
   font-family: 'Mulish' !important;
   font-size: 1.23em;
 }
 
-/*
+/*  Can't figure out how to get these settings to overide the default
 
 [part="darkLabel"]::before {
   filter: var(--dark-mode-toggle-icon-filter, none);
@@ -4035,11 +3940,22 @@ fieldset {margin-top: 50px;
   
  }
 
-
  label  {
   margin: 20px !important;}
  
 */
+
+
+/* -------------------------------------------------------------------------- */
+
+/*	20. Underdevelopment
+
+    Not yet categorized and finalized CSS
+
+/* -------------------------------------------------------------------------- */
+
+
+
 
 #up-arrow {
   text-align: center;
@@ -4052,6 +3968,71 @@ fieldset {margin-top: 50px;
   margin-right: auto;
 }
 
-.page-paragraph a {text-decoration: underline !important;}
 
-.page-paragraph a:hover {text-decoration: none !important;}
+
+  
+  .footer-function {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+
+    font-family: 'Mulish';
+    padding: 0px;
+    border-top-width: 1px;
+    border-color: inherit;
+    border-style: dotted;
+    cursor: pointer;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    border-bottom-color: var(--fainter-border-color);
+    cursor: pointer;
+  }
+  
+  
+  
+  @media screen and (max-width: 700px) {
+  .footer-function {
+    width: 90% }
+  }
+  
+  
+      @media screen and (min-width: 700px) and (max-width: 1324px) {
+        .footer-size {
+        width: 70%
+       }
+      }
+  
+      @media screen and (min-width: 1325px) {
+        .footer-function {
+          width: 50%;
+          margin: auto;
+       }
+      }
+    
+  .footer-function-item p {
+    font-variant-caps: all-petite-caps; 
+    color:grey; 
+    font-size: 1.1em; 
+    padding-left:7%; 
+    width: 100%;
+    letter-spacing: 3px
+  }
+
+  .footer-function-item-icon {
+    margin: auto 0px auto auto;
+    padding-right: 7%;
+    letter-spacing: 3px;
+  }
+
+  .footer-function-item-icon i {
+    width:22px; 
+    height:22px;
+    display: inline-block;
+    background-size: 22px;
+    margin-bottom: -3px;
+    margin-right: 2px;
+  }
+  
+  
