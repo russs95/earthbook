@@ -4046,29 +4046,10 @@ fieldset {margin-top: 50px;
   .footer-function-reveal {
     margin: auto;
     font-family: 'Mulish';
-    padding: 7%;
+    
 
   }
   
   
-  
-  @media screen and (max-width: 700px) {
-  .footer-function {
-    width: 90% }
-  }
-  
-  
-      @media screen and (min-width: 700px) and (max-width: 1324px) {
-        .footer-size {
-        width: 70%
-       }
-      }
-  
-      @media screen and (min-width: 1325px) {
-        .footer-function {
-          width: 50%;
-          margin: auto;
-       }
-      }
   
   
