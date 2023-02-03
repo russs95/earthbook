@@ -1,7 +1,7 @@
 <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
 
-      <div class="footer-function" onclick="openSearch()">
-        <div class="footer-function-main">
+      <div class="footer-function" onclick="openSearch()" style="border-top-color: black;">
+        <div class="footer-function-main"  >
             <div class="footer-function-item"><p>+ Search EarthBook</p></div>
             <div class="footer-function-item-icon">
                 <i style="background-image: url(../icons/search.svg);"></i>

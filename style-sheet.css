@@ -3987,7 +3987,7 @@ fieldset {margin-top: 50px;
     border-right: none;
     border-left: none;
     display: flex;
-    border-bottom-color: grey !important;
+    border-top-color: grey;
     cursor: pointer;
   }
   
@@ -4050,6 +4050,7 @@ fieldset {margin-top: 50px;
 padding-left: 5%;
 line-height: 1.6em;
 padding: 0px 5% 20px 5%;
+display: none;
   }
 
   .footer-function-main {
