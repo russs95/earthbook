@@ -3987,7 +3987,7 @@ fieldset {margin-top: 50px;
     border-right: none;
     border-left: none;
     display: flex;
-    border-bottom-color: grey;
+    border-bottom-color: grey !important;
     cursor: pointer;
   }
   
@@ -4051,5 +4051,24 @@ fieldset {margin-top: 50px;
   }
   
   
+  
+  @media screen and (max-width: 700px) {
+  .footer-function {
+    width: 90% }
+  }
+  
+  
+      @media screen and (min-width: 700px) and (max-width: 1324px) {
+        .footer-size {
+        width: 70%
+       }
+      }
+  
+      @media screen and (min-width: 1325px) {
+        .footer-function {
+          width: 50%;
+          margin: auto;
+       }
+      }
   
   
