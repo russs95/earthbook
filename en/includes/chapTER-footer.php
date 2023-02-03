@@ -8,7 +8,7 @@
       </div>
 
       <div class="footer-function" onclick="openComments()">
-      <div class="footer-funtion-main">
+      <div class="footer-function-main">
         <div class="footer-function-item"><p>+ Reader Comments</p></div>
         <div class="footer-function-item-icon">
             <i style="background-image: url(../icons/comments.svg);"></i>
@@ -17,7 +17,7 @@
       </div>
 
       <div class="footer-function" onclick="openCode()">
-        <div class="footer-funtion-main">
+        <div class="footer-function-main">
             <div class="footer-function-item"><p>+ Source Code</p></div>
             <div class="footer-function-item-icon">
                 <i style="background-image: url(../icons/code.svg);"></i>
