@@ -19,10 +19,12 @@
         <div class="footer-function-item-icon">
             <i style="background-image: url(../icons/code.svg);"></i>
         </div>
-
+      </div>
+      <div class="footer-function-reveal">
         <div class="github-source">Page source code on Github:<br><a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Go to the Earthbook Github repository">../earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
-        
     </div>
+
+    
       </div>
 
       <div class="footer-function" onclick="openFooter()">

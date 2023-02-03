@@ -3871,6 +3871,8 @@ input:checked + label.toggle svg.moon {
   display: none !important;
 }
 
+*/
+
 .this-one input  {
 -moz-appearance: none;
     -webkit-appearance: none;
