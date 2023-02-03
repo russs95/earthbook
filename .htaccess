@@ -80,7 +80,4 @@ ErrorDocument 404 /404.php
 
 
 
-
-
-
 AddType text/cache-manifest .appcache
