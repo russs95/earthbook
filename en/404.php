@@ -121,7 +121,7 @@ Must be updated for each page-->
     <div id="ct-tc-menu" onclick="openContents()"></div>
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
       <div id="ct-chapter-title">Page not found</div>   
-      <div id="ct-book-title">EarthBook Error 404</div>
+      <div id="ct-book-title">EarthBook Error <!--#echo var="REDIRECT_STATUS" --></div>
       <div id="ct-chap-location">Tractatus Ayyew</div>
       <div id="ct-word-count"><i>An Earthen Ethics</i></div>
     </div>
@@ -135,8 +135,7 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-    The requested page couldn't be matched with any other in the EarthBook.
-    <br>Check the URL for errors or mispellings.
+    The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
     </div>
 </div>
 
@@ -152,13 +151,12 @@ Must be updated for each page-->
   <div class="search-box" style="padding-bottom:15%;">
     <div class="copy-section">
       <input id="search_input" type="text" placeholder="Search...">   
-         <button class="btn" style="padding:22px;" onclick="searchPosts(0)">🔎 Search <i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
+         <button class="btn" style="padding:22px;" onclick="searchPosts(0)">🔎<i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
       </div>  
    
       <div id="search_results"></div>
       <br><br><br><br>
-      <hr>
-      <br><br>
+     
 <div class="ct-quote-source" style="width:100% !important;">
     Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published. Subscribe to Earthen to be notified of new chapter releases.
 
