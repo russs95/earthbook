@@ -3977,7 +3977,6 @@ fieldset {margin-top: 50px;
     display: flex;
     flex-direction: row;
     margin: auto;
-
     font-family: 'Mulish';
     padding: 0px;
     border-top-width: 1px;
@@ -3988,7 +3987,7 @@ fieldset {margin-top: 50px;
     border-right: none;
     border-left: none;
     display: flex;
-    border-bottom-color: var(--fainter-border-color);
+    border-bottom-color: grey;
     cursor: pointer;
   }
   
@@ -4036,5 +4035,46 @@ fieldset {margin-top: 50px;
     margin-bottom: -3px;
     margin-right: 2px;
   }
+
+
+
+  .footer-function-reveal {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    font-family: 'Mulish';
+    padding: 0px;
+    border-top-width: 1px;
+    border-color: inherit;
+    border-style: dotted;
+    cursor: pointer;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    border-bottom-color: grey;
+    cursor: pointer;
+  }
+  
+  
+  
+  @media screen and (max-width: 700px) {
+  .footer-function {
+    width: 90% }
+  }
+  
+  
+      @media screen and (min-width: 700px) and (max-width: 1324px) {
+        .footer-size {
+        width: 70%
+       }
+      }
+  
+      @media screen and (min-width: 1325px) {
+        .footer-function {
+          width: 50%;
+          margin: auto;
+       }
+      }
   
   
