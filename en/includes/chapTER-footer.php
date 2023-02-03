@@ -20,9 +20,11 @@
             <i style="background-image: url(../icons/code.svg);"></i>
         </div>
       </div>
-      <div class="footer-function-reveal">
-        <div class="github-source2" style="font-size:1em; font-family:Mulish;color:grey;">Page source code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
-    </div>
+      <div id="code-reveal">
+        <div class="footer-function">
+            <div class="github-source2" style="font-size:1em; font-family:Mulish;color:grey;">Page source code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
+       </div>
+    <div>
 
     
       </div>
