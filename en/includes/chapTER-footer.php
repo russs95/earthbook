@@ -8,25 +8,29 @@
       </div>
 
       <div class="footer-function" onclick="openComments()">
+      <div class="footer-funtion-main">
         <div class="footer-function-item"><p>+ Reader Comments</p></div>
         <div class="footer-function-item-icon">
             <i style="background-image: url(../icons/comments.svg);"></i>
         </div>
+</div>
       </div>
 
       <div class="footer-function" onclick="openCode()">
-        <div class="footer-function-item"><p>+ Source Code</p></div>
-        <div class="footer-function-item-icon">
-            <i style="background-image: url(../icons/code.svg);"></i>
+        <div class="footer-funtion-main">
+            <div class="footer-function-item"><p>+ Source Code</p></div>
+            <div class="footer-function-item-icon">
+                <i style="background-image: url(../icons/code.svg);"></i>
+            </div>
         </div>
-      
-        
-                <div class="github-source2" style="font-size:1em; font-family:Mulish;color:grey;">Page source code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
-                </div>
+        <div class="footer-function-reveal">
+            <div class="github-source2" style="font-size:1em; font-family:Mulish;color:grey;">Page source code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
+            </div>
+         </div>
                 
         
-            </div>
       </div>
+      
 
       <div class="footer-function" onclick="openFooter()">
         <div class="footer-function-item"><p>+ Earthbook Pages</p></div>
