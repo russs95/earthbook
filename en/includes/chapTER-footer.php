@@ -1,19 +1,22 @@
 <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
-      
+
       <div class="footer-function" onclick="openSearch()">
-        <div class="footer-function-item"><p>+ Search EarthBook</p></div>
-        <div class="footer-function-item-icon">
-            <i style="background-image: url(../icons/search.svg);"></i>
-        </div>
-      </div>
+        <div class="footer-function-main">
+            <div class="footer-function-item"><p>+ Search EarthBook</p></div>
+            <div class="footer-function-item-icon">
+                <i style="background-image: url(../icons/search.svg);"></i>
+            </div>
+        </div>    
+    </div>
 
       <div class="footer-function" onclick="openComments()">
-      <div class="footer-function-main">
-        <div class="footer-function-item"><p>+ Reader Comments</p></div>
-        <div class="footer-function-item-icon">
-            <i style="background-image: url(../icons/comments.svg);"></i>
+        <div class="footer-function-main">
+            <div class="footer-function-item"><p>+ Reader Comments</p></div>
+            <div class="footer-function-item-icon">
+                <i style="background-image: url(../icons/comments.svg);"></i>
+            </div>
         </div>
-</div>
+        <div class="footer-function-reveal"></div>
       </div>
 
       <div class="footer-function" onclick="openCode()">
@@ -33,11 +36,13 @@
       
 
       <div class="footer-function" onclick="openFooter()">
+      <div class="footer-function-main">
         <div class="footer-function-item"><p>+ Earthbook Pages</p></div>
         <div class="footer-function-item-icon">
             <i style="background-image: url(../icons/settings.svg);"></i>
         </div>
       </div>
+            </div>
 
 
       

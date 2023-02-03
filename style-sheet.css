@@ -4046,8 +4046,14 @@ fieldset {margin-top: 50px;
   .footer-function-reveal {
     margin: auto;
     font-family: 'Mulish';
-    
+    width: 100%;
+padding-left: 5%;
+line-height: 1.6em;
+padding: 0px 5% 20px 5%;
+  }
 
+  .footer-function-main {
+    width: 100%;
   }
   
   
