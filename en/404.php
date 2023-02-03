@@ -146,17 +146,19 @@ Must be updated for each page-->
 
   <div>
                 <!--<h1></h1>-->
-    <h1 class="accessibility-plugin-ac">🔎 Search the Earthbook</h1> 
+    <h3 class="accessibility-plugin-ac">You can try searchin the EarthBook to find what you're looking for...</h3> 
   </div>
           
   <div class="search-box" style="padding-bottom:15%;">
     <div class="copy-section">
       <input id="search_input" type="text" placeholder="Search...">   
-         <button class="btn" style="padding:22px;" onclick="searchPosts(0)">Search <i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
+         <button class="btn" style="padding:22px;" onclick="searchPosts(0)">🔎 Search <i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
       </div>  
    
       <div id="search_results"></div>
-
+      <br><br><br><br>
+      <hr>
+      <br><br>
 <div class="ct-quote-source" style="width:100% !important;">
     Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published. Subscribe to Earthen to be notified of new chapter releases.
 
@@ -164,7 +166,7 @@ Must be updated for each page-->
 
     <?php require_once ("../manage.php");?>
 
-    <br><br><br>
+    <br>
 </div>
 
 
