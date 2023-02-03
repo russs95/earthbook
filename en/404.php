@@ -151,7 +151,7 @@ Must be updated for each page-->
   <div class="search-box" style="padding-bottom:15%;">
     <div class="copy-section">
       <input id="search_input" type="text" placeholder="Search...">   
-         <button class="btn" style="padding:22px;" onclick="searchPosts(0)">🔎<i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
+         <button class="btn" style="padding:22px;" onclick="searchPosts(0)"><i style="background-image: url(../icons/search-white.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
       </div>  
    
       <div id="search_results"></div>
