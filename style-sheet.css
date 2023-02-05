@@ -3989,8 +3989,7 @@ fieldset {margin-top: 50px;
     display: flex;
     border-top-color: grey;
     cursor: pointer;
-    transition: 0.4s;
-    height: fit-content;
+   
   }
   
   
@@ -4053,6 +4052,9 @@ padding-left: 5%;
 line-height: 1.6em;
 padding: 0px 5% 20px 5%;
 display: none;
+height: 0px;
+transition: 0.5s;
+height: fit-content;
   }
 
   .footer-function-main {
