@@ -4049,8 +4049,8 @@ fieldset {margin-top: 50px;
     padding-left: 5%;
     line-height: 1.6em;
     padding: 0px 5% 20px 5%;
-    /*display: none;
-    height: fit-content;*/
+    display: none;
+    height: 0%;
     height: 0px;
     transition: 0.5s;
   }
