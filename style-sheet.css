@@ -4052,7 +4052,6 @@ fieldset {margin-top: 50px;
     display: none;
     height: 0px;
     transition: 0.5s;
-    height: fit-content;
   }
 
   #footer-function-reveal-code a {
