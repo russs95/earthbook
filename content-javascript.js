@@ -63,16 +63,16 @@ function openFooter() {
 function openCode() {
   var x = document.getElementById("footer-function-reveal-code");
  // var y = document.getElementById("footer-icon-left");
-  if (x.style.height === "0px") {
-   // x.style.display = "block";
-    x.style.height ="fit-content"
+  if (x.style.height === "0%") {
+    x.style.display = "block";
+    x.style.height ="100%"
    // y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
    // y.style.backgroundSize = "contain";
  
   
   } else {
-  //  x.style.display = "none";
-    x.style.height ="0px"
+    x.style.display = "none";
+    x.style.height ="0%"
    // y.style.background = "url(../svgs/footer-settings-button.svg) no-repeat left";
    // y.style.backgroundSize = "contain";
 }
