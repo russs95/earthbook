@@ -61,7 +61,7 @@ function openFooter() {
 
 
 function openCode() {
-  var x = document.getElementById("footer-function-reveal");
+  var x = document.getElementById("footer-function-reveal-code");
  // var y = document.getElementById("footer-icon-left");
   if (x.style.display === "none") {
     x.style.display = "block";
