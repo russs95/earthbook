@@ -19,8 +19,8 @@
         <div class="footer-function-reveal"></div>
       </div>-->
 
-      <div class="footer-function" onclick="openCode()">
-        <div class="footer-function-main">
+      <div class="footer-function">
+        <div class="footer-function-main" onclick="openCode()>
             <div class="footer-function-item"><p><img src="../icons/down-arrow.svg" style="width:18px;" alt="Access the code" aria-label="Click to go to Github repository">  Source Code</p></div>
             <div class="footer-function-item-icon"> 
                 <i style="background-image: url(../icons/code.svg);"></i>
