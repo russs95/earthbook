@@ -65,12 +65,14 @@ function openCode() {
  // var y = document.getElementById("footer-icon-left");
   if (x.style.display === "none") {
     x.style.display = "block";
+    x.style.height ="fit-content"
    // y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
    // y.style.backgroundSize = "contain";
  
   
   } else {
     x.style.display = "none";
+    x.style.height ="0px"
    // y.style.background = "url(../svgs/footer-settings-button.svg) no-repeat left";
    // y.style.backgroundSize = "contain";
 }
