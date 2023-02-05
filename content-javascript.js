@@ -63,7 +63,7 @@ function openFooter() {
 function openCode() {
   var x = document.getElementById("footer-function-reveal-code");
  // var y = document.getElementById("footer-icon-left");
-  if (x.style.display === "none") {
+  if (x.style.height === "0px") {
     x.style.display = "block";
     x.style.height ="200px"
    // y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";

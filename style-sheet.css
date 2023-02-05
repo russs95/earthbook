@@ -4055,6 +4055,10 @@ fieldset {margin-top: 50px;
     height: fit-content;
   }
 
+  #footer-function-reveal-code a {
+    color: grey;
+  }
+
   .footer-function-main {
     width: 100%;
   }
