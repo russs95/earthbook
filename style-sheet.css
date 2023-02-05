@@ -3989,6 +3989,8 @@ fieldset {margin-top: 50px;
     display: flex;
     border-top-color: grey;
     cursor: pointer;
+    transition: 0.4s;
+    height: fit-content;
   }
   
   
