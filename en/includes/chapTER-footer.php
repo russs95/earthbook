@@ -37,7 +37,7 @@
 
       <div class="footer-function" onclick="openFooter()">
       <div class="footer-function-main">
-        <div class="footer-function-item"><p><img src="../icons/down-arrow.svg" style="width:18px;" alt="Buy icon" aria-label="View more page tools"> Earthbook Pages</p></div>
+        <div class="footer-function-item"><p><img src="../icons/down-arrow.svg" style="width:18px;" alt="Down arrow" aria-label="View more page tools"> Earthbook Pages</p></div>
         <div class="footer-function-item-icon">
             <i style="background-image: url(../icons/settings.svg);"></i>
         </div>

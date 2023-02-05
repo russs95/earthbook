@@ -1946,12 +1946,10 @@ padding-top: 44px;
 
 
 #right-search-overlay {
-  background-color: var(--deeper-accent-color); 
+  background-color: var(--fainter-border-color); 
   color: inherit;
   z-index: 26;
 }
-
-
 
 
 /* Table of Contents Menu (background) */
@@ -4048,13 +4046,13 @@ fieldset {margin-top: 50px;
     margin: auto;
     font-family: 'Mulish';
     width: 100%;
-padding-left: 5%;
-line-height: 1.6em;
-padding: 0px 5% 20px 5%;
-display: none;
-height: 0px;
-transition: 0.5s;
-height: fit-content;
+    padding-left: 5%;
+    line-height: 1.6em;
+    padding: 0px 5% 20px 5%;
+    display: none;
+    height: 0px;
+    transition: 0.5s;
+    height: fit-content;
   }
 
   .footer-function-main {
