@@ -65,7 +65,7 @@ function openCode() {
  // var y = document.getElementById("footer-icon-left");
   if (x.style.display === "none") {
     x.style.display = "block";
-    x.style.height ="fit-content"
+    x.style.height ="200px"
    // y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
    // y.style.backgroundSize = "contain";
  
