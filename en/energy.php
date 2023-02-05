@@ -257,7 +257,7 @@ Must be updated for each page-->
 
       <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
 
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey"><img src="../icons/down-arrow.svg" style="width:18px;" alt="View the chapter's footnotes" aria-label="open the footnotes">Chapter Footnotes</p>
+      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey"><img src="../icons/down-arrow.svg" style="width:25px;padding-right:10px;" alt="View the chapter's footnotes" aria-label="open the footnotes">Chapter Footnotes</p>
       
         <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
