@@ -21,7 +21,7 @@
 
       <div class="footer-function" onclick="openCode()">
         <div class="footer-function-main">
-            <div class="footer-function-item"><p><img src="../icons/down-arrow.svg" style="width:22px; height:22px;" alt="Buy icon" aria-label="Click to go to ebook purchase page">  Source Code</p></div>
+            <div class="footer-function-item"><p><img src="../icons/down-arrow.svg" style="width:18px;" alt="Buy icon" aria-label="Click to go to ebook purchase page">  Source Code</p></div>
             <div class="footer-function-item-icon"> 
                 <i style="background-image: url(../icons/code.svg);"></i>
             </div>
