@@ -4059,7 +4059,7 @@ fieldset {margin-top: 50px;
     width: 100%;
     padding-left: 5%;
     line-height: 1.6em;
-    padding: 0px 5% 20px 5%;
+    padding: 0px 5% 0px 5%;
     opacity: 0;
     height: 0px;
     transition: 0.5s;
