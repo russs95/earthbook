@@ -1,6 +1,6 @@
 <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
 
-      <div class="footer-function" onclick="openSearch()" style="border-top-color: black;">
+      <div class="footer-function" onclick="openSearch()" style="border-top-color: grey; border-style: solid; ">
         <div class="footer-function-main"  >
             <div class="footer-function-item"><p>+ Search EarthBook</p></div>
             <div class="footer-function-item-icon">
@@ -21,7 +21,7 @@
 
       <div class="footer-function" >
         <div class="footer-function-main" onclick="openCode()">
-            <div class="footer-function-item"><p><img src="../icons/down-arrow.svg" style="width:18px;" alt="Access the code" aria-label="Click to go to Github repository">  Source Code</p></div>
+            <div class="footer-function-item"><p><div id="code-down-arrow" style="background-image: url(../icons/down-arrow.svg); width: 18px;height:18px;"></div>  Source Code</p></div>
             <div class="footer-function-item-icon"> 
                 <i style="background-image: url(../icons/code.svg);"></i>
             </div>

@@ -557,11 +557,16 @@ h6 {
 
 /*where is page paragraph declared?*/
 
-.page-paragraph a {text-decoration: underline !important;}
+.page-paragraph a {
+  border-bottom: grey 1px dashed ;
+  text-decoration: none !important;
+  /*text-decoration: underline !important;*/
+}
 
-.page-paragraph a:hover {text-decoration: none !important;}
-
-
+.page-paragraph a:hover {
+  border-bottom: grey 1px dashed ;
+  /*text-decoration: none !important;*/
+}
 
 
 .github-source {
