@@ -548,6 +548,12 @@ h6 {
     }
     }
 
+    .lead-page-paragraph a {
+      border-bottom: grey 1px dashed ;
+      
+  }
+  
+
 
 /*where is page paragraph declared?*/
 
