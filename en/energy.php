@@ -258,7 +258,7 @@ Must be updated for each page-->
 $cmtx_identifier = '1';
 $cmtx_reference  = 'Energy';
 $cmtx_folder     = '../comments/';
-require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . 'frontend/index.php');
+require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '../frontend/index.php');
 ?>
 
 
