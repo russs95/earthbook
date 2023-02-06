@@ -21,8 +21,8 @@
 
       <div class="footer-function" >
         <div class="footer-function-main" onclick="openCode()">
+            <div id="code-down-arrow" style="background-image: url(../icons/down-arrow.svg);width:18px;height:18px;"></div>
             <div class="footer-function-item">
-              <div id="code-down-arrow" style="background-image: url(../icons/down-arrow.svg);width:18px;height:18px;"></div>
               <p>  Source Code</p></div>
             <div class="footer-function-item-icon"> 
                 <i style="background-image: url(../icons/code.svg);"></i>
