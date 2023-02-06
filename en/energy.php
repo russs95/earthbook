@@ -13,6 +13,8 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <!-- PHP starts by laying out canonical URLs for the page and language -->
 
+<?php session_start(); ?>  <!--NEW-->
+
 <!DOCTYPE html>
 
 <meta charset="UTF-8"> 
@@ -250,6 +252,15 @@ Must be updated for each page-->
 
   
     </div><!--closes page text content-->
+
+
+<?php
+$cmtx_identifier = '1';
+$cmtx_reference  = 'Energy';
+$cmtx_folder     = '../comments/';
+require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . 'frontend/index.php');
+?>
+
 
 <!--FOOTNOTES SECTION-->
 
