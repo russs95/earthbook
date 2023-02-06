@@ -13,7 +13,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <!-- PHP starts by laying out canonical URLs for the page and language -->
 
-<?php session_start(); ?>  <!--NEW-->
+ <!--NEW-->
 
 <!DOCTYPE html>
 
