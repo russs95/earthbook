@@ -4143,6 +4143,11 @@ fieldset {margin-top: 50px;
   margin: auto;
 }
 
+.comments-overlay-content p {
+  font-family: 'Mulish', Arial, sans-serif;
+  font-size: smaller;
+}
+
 
 @media screen and (max-width: 700px) {
   .comments-overlay-content {
