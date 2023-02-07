@@ -62,18 +62,18 @@ function openFooter() {
 
 function openCode() {
   var x = document.getElementById("footer-function-reveal-code");
- // var y = document.getElementById("footer-icon-left");
-  if (x.style.height === "0px") {
+ var y = document.getElementById("code-down-arrow");
+  if (x.style.opacity === "0") {
     x.style.opacity = "1";
     x.style.height ="100px";
-   // y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
+    y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
    // y.style.backgroundSize = "contain";
  
   
   } else {
     x.style.opacity = "0";
     x.style.height ="0px";
-   // y.style.background = "url(../svgs/footer-settings-button.svg) no-repeat left";
+    y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
    // y.style.backgroundSize = "contain";
 }
 }
