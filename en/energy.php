@@ -253,14 +253,14 @@ Must be updated for each page-->
   
     </div><!--closes page text content-->
 
-
+<!--
 <?php
 $cmtx_identifier = '1';
 $cmtx_reference  = 'Energy';
 $cmtx_folder     = '/comments/';
 require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 ?>
-
+-->
 
 <!--FOOTNOTES SECTION-->
 
@@ -268,7 +268,7 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 
       <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
 
-      <div id="footnotes" style="display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+      <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
             
         <div id="footnotes-arrow" style="width: 22px; height: 22px;background: url(../icons/down-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
         </div>
@@ -284,7 +284,7 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 
       
       Chapter Footnotes</p>  -->
-      <div id="foonotes-reveal">
+      <div id="foonotes-reveal" style="height:0px; opacity:0;">
       
         <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
