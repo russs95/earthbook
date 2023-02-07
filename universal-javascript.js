@@ -267,6 +267,7 @@ Triggers the full screen chapter comments*/
 function openComments() {
   document.getElementById("bottom-comments-overlay").style.width = "100%";
   document.body.style.overflowY = "hidden";
+  document.getElementById("right-close-button").style.position = "fixed";
   //document.body.style.maxHeight = "101vh";
 
 }
@@ -275,6 +276,7 @@ function openComments() {
 function closeComments() {
   document.getElementById("bottom-comments-overlay").style.width = "0%";
   document.body.style.overflowY = "unset";
+  document.getElementById("right-close-button").style.position = "absolute";
   //document.body.style.maxHeight = "unset";
 
 } 

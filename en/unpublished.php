@@ -135,8 +135,8 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-    We're still working on it!
-    <br>This chapter hasn't yet been released.
+    This chapter hasn't yet been released.
+    <br>We're still working on it!
     </div>
 </div>
 
