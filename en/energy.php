@@ -264,7 +264,7 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section" style="z-index:8;">
+    <div class="footnote-section" style="z-index:8; margin-bottom: 150px;">
 
       <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
 
@@ -284,7 +284,7 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 
       
       Chapter Footnotes</p>  -->
-      <div id="foonotes-reveal" style="height:0px; opacity:0;">
+      <div id="footnotes-reveal" style="height:0px; opacity:0;">
       
         <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
