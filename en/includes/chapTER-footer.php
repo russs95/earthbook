@@ -21,33 +21,40 @@
 
       <div class="footer-function" >
         <div class="footer-function-main" onclick="openCode()">
+            
             <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/down-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 0 auto 0;">
             </div>
+
             <div class="footer-function-item">
-              <p>  Source Code</p></div>
+              <p>  Source Code</p>
+            </div>
+
             <div class="footer-function-item-icon"> 
                 <i style="background-image: url(../icons/code.svg);"></i>
             </div>
+
         </div>
-        <div id="footer-function-reveal-code" style="height:0px;">
+
+        <div id="footer-function-reveal-code" style="height:0px; opacity:;">
             <div class="github-source2" style="font-size:1em; font-family:Mulish;color:grey;z-index:9;">Page source code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
             </div>
          </div>
                 
-        
       </div>
       
-
-      <div class="footer-function" onclick="openFooter()">
-      <div id="footer-down-arrow" style="width: 18px; height: 18px;background: url(../icons/down-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 0 auto 0;">
-      </div>
-      <div class="footer-function-main" style="z-index:10;">
-        <div class="footer-function-item"><p> Earthbook Pages</p></div>
-        <div class="footer-function-item-icon">
+      <div class="footer-function">
+        <div class="footer-function-main" onclick="openFooter()">
+          <div id="footer-down-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 0 auto 0;">
+          </div>
+    
+          <div class="footer-function-main" style="z-index:10;">
+            <div class="footer-function-item"><p> Earthbook Pages</p></div>
+            <div class="footer-function-item-icon">
             <i style="background-image: url(../icons/settings.svg);"></i>
-        </div>
-      </div>
             </div>
+          </div>
+        </div>
+        </div>
 
 
       
