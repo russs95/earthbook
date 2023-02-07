@@ -284,7 +284,7 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 
       
       Chapter Footnotes</p>  -->
-      <div id="footnotes-reveal" style="height:0px; opacity:0;">
+      <div id="footnotes-reveal" style="height:0px; opacity:0; transition:0.4s;padding-bottom:40px;">
       
         <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
