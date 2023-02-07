@@ -78,7 +78,7 @@ All the css needed for this page-->
  <!-- INCLUDES
  Main Scripts-->   
 
- <script src="../content-javascript.js" defer></script>
+ <script src="../content-javascript.js?v=2" defer></script>
  <script src="../universal-javascript.js" defer></script>
  <script src="../clip/dist/clipboard.min.js"></script>
  <script src="../accessibility.js" defer></script>

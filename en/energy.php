@@ -268,9 +268,9 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 
       <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
 
-      <div id="footnotes" style="font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+      <div id="footnotes" style="display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
             
-        <div id="footnotes-down-arrow" style="width: 18px; height: 18px;background: url(../icons/up-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
+        <div id="footnotes-arrow" style="width: 22px; height: 22px;background: url(../icons/down-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
         </div>
         
         <p>Chapter Footnotes</p>
