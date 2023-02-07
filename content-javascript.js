@@ -61,7 +61,7 @@ function openCode() {
 
 function openFootnotes() {
   var x = document.getElementById("footnotes-reveal");
-  var y = document.getElementById("footnotes-down-arrow");
+  var y = document.getElementById("footnotes-arrow");
   if (x.style.opacity === "0") {
     x.style.opacity = "1";
     x.style.height = "100%";
@@ -75,8 +75,6 @@ function openFootnotes() {
     y.style.backgroundSize = "contain";
 }
 }
-
-
 
 
 function openFooter() {
