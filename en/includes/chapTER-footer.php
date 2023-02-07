@@ -1,28 +1,11 @@
 <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
 
-      <div class="footer-function" onclick="openSearch()" style="border-top-color: grey; border-top-style: solid;">
-        <div class="footer-function-main"  >
-            <div class="footer-function-item"><p>+ Search EarthBook</p></div>
-            <div class="footer-function-item-icon">
-                <i style="background-image: url(../icons/search.svg);"></i>
-            </div>
-        </div>    
-    </div>
 
-   <!--   <div class="footer-function" onclick="openComments()">
-        <div class="footer-function-main">
-            <div class="footer-function-item"><p>+ Reader Comments</p></div>
-            <div class="footer-function-item-icon">
-                <i style="background-image: url(../icons/comments.svg);"></i>
-            </div>
-        </div>
-        <div class="footer-function-reveal"></div>
-      </div>-->
 
-      <div class="footer-function" >
+<div class="footer-function" >
         <div class="footer-function-main" onclick="openCode()">
             
-            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/down-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 15px auto 0;">
+            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/up-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 15px auto 0;">
             </div>
 
             <div class="footer-function-item">
@@ -41,6 +24,45 @@
          </div>
                 
       </div>
+
+      <div class="footer-function" >
+        <div class="footer-function-main" onclick="openComments()">
+            
+            <div id="comments-out" style="width: 18px; height: 18px;background: url(../icons/plus.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 15px auto 0;">
+            </div>
+
+            <div class="footer-function-item">
+              <p>Comments</p>
+            </div>
+
+            <div class="footer-function-item-icon"> 
+                <i style="background-image: url(../icons/comments.svg);"></i>
+            </div>
+
+        </div>
+      </div>
+
+<!--
+      <div class="footer-function" onclick="openSearch()" style="border-top-color: grey; border-top-style: solid;">
+        <div class="footer-function-main"  >
+            <div class="footer-function-item"><p>+ Search EarthBook</p></div>
+            <div class="footer-function-item-icon">
+                <i style="background-image: url(../icons/search.svg);"></i>
+            </div>
+        </div>    
+    </div>
+
+     <div class="footer-function" onclick="openComments()">
+        <div class="footer-function-main">
+            <div class="footer-function-item"><p>+ Reader Comments</p></div>
+            <div class="footer-function-item-icon">
+                <i style="background-image: url(../icons/comments.svg);"></i>
+        </div>
+        </div>
+        <div class="footer-function-reveal"></div>
+      </div>-->
+            
+
       
       <div class="footer-function">
         <div class="footer-function-main" style="z-index:10"; onclick="openFooter()">
