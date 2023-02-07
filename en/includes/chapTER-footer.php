@@ -3,9 +3,9 @@
 
 
 <div class="footer-function" >
-        <div class="footer-function-main" onclick="openCode()">
+        <div class="footer-function-main" onclick="openCode()" style="z-index:8;">
             
-            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/up-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 15px auto 0;">
+            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/up-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
             </div>
 
             <div class="footer-function-item">
@@ -19,16 +19,16 @@
         </div>
 
         <div id="footer-function-reveal-code" style="height:0px; opacity:0;">
-            <div class="github-source2" style="font-size:0.8em; font-family:Mulish;color:grey;z-index:9;overflow: clip;">Earthbook's are open source. Contribute, correct or fork this Earthbook's code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
+            <div class="github-source2" style="font-size:0.8em; font-family:Mulish;color:grey;overflow: clip;">Earthbook's are open source. Contribute, correct or fork this Earthbook's code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
             </div>
          </div>
                 
       </div>
 
       <div class="footer-function" >
-        <div class="footer-function-main" onclick="openComments()">
+        <div class="footer-function-main" onclick="openComments()" style="z-index:9;">
             
-            <div id="comments-out" style="width: 18px; height: 18px;background: url(../icons/plus.svg) no-repeat center;background-size: contain;background-size:contain;margin: auto 15px auto 0;">
+            <div id="comments-out" style="width: 18px; height: 18px;background: url(../icons/plus.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
             </div>
 
             <div class="footer-function-item">
@@ -42,33 +42,12 @@
         </div> 
       </div>
 
-<!--
-      <div class="footer-function" onclick="openSearch()" style="border-top-color: grey; border-top-style: solid;">
-        <div class="footer-function-main"  >
-            <div class="footer-function-item"><p>+ Search EarthBook</p></div>
-            <div class="footer-function-item-icon">
-                <i style="background-image: url(../icons/search.svg);"></i>
-            </div>
-        </div>    
-    </div>
-
-     <div class="footer-function" onclick="openComments()">
-        <div class="footer-function-main">
-            <div class="footer-function-item"><p>+ Reader Comments</p></div>
-            <div class="footer-function-item-icon">
-                <i style="background-image: url(../icons/comments.svg);"></i>
-        </div>
-        </div>
-        <div class="footer-function-reveal"></div>
-      </div>-->
-            
 
       
       <div class="footer-function">
         <div class="footer-function-main" style="z-index:10"; onclick="openFooter()">
         
-          <div id="footer-down-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 10px auto 0;">
-          </div>
+          <div id="footer-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center; background-size:contain;margin: auto 10px auto 0;"></div>
 
             <div class="footer-function-item"><p>Earthbook Resources</p></div>
             <div class="footer-function-item-icon">
@@ -95,7 +74,7 @@
   
   <div class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to ebook purchase page"></div>
 
-  <div class="footer-settings-icon"><img src="../icons/settings.svg" alt="Settings icon" style="cursor:pointer" onclick="openSettings()" aria-label="Click to adjust book reading settings"></div>
+  <div class="footer-settings-icon"><img src="../icons/search.svg" alt="Settings icon" style="cursor:pointer" onclick="openSearch()" aria-label="Click to adjust book reading settings"></div>
 
   <div class="footer-settings-icon"><img src="../icons/share.svg" alt="share icon" style="cursor:pointer" onclick="openShare()" aria-label="Click to copy the link of the earthBook to share"></div>
 
