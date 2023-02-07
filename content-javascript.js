@@ -53,7 +53,7 @@ function openFootnotes() {
   
   } else {
     x.style.opacity = "0";
-    x.style.height = "0%";
+    x.style.height = "0px";
     y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";
 }
