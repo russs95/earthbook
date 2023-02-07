@@ -43,11 +43,11 @@
       </div>
       
       <div class="footer-function">
-        <div class="footer-function-main" onclick="openFooter()">
+        <div class="footer-function-main" style="z-index:10; onclick="openFooter()">
+        
           <div id="footer-down-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 0 auto 0;">
           </div>
-    
-          <div class="footer-function-main" style="z-index:10;">
+          
             <div class="footer-function-item"><p>  Earthbook Resources</p></div>
             <div class="footer-function-item-icon">
             <i style="background-image: url(../icons/settings.svg);"></i>
