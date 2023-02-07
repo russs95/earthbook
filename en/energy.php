@@ -268,7 +268,29 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 
       <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
 
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey"><img src="../icons/down-arrow.svg" style="width:25px;padding-right:10px;" alt="View the chapter's footnotes" aria-label="open the footnotes">Chapter Footnotes</p>
+      <div class="footer-function-main" onclick="openFootnotes()" style="z-index:8;">
+            
+            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/up-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
+            </div>
+
+            <div class="footer-function-item">
+              <p>Footnotes</p>
+            </div>
+
+            <!--<div class="footer-function-item-icon"> 
+                <i style="background-image: url(../icons/code.svg);"></i>-->
+            </div>
+
+        </div>
+
+
+      <!--
+      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey;z-index:6;" onclick="openCode()">
+
+
+      
+      Chapter Footnotes</p>  -->
+      <div id="foonotes-reveal">
       
         <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
@@ -297,6 +319,7 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
         <div class="footnote-text">The term ‘technical nutrient’ was first proposed by William McDonough in a theory of circular design that embodies the conceptual geometric problem we highlight here.  See: William McDonough, Michael Braungart (2002), <i>Cradle to Cradle - Remaking the Way We Make Things</i>, North Point Press.   
         </div>
         </a>
+  </div>
 
 
 
