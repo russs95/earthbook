@@ -22,7 +22,7 @@
       <div class="footer-function" >
         <div class="footer-function-main" onclick="openCode()">
             
-            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/down-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 0 auto 0;padding-right: 10px;">
+            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/down-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 15px auto 0;">
             </div>
 
             <div class="footer-function-item">
@@ -35,8 +35,8 @@
 
         </div>
 
-        <div id="footer-function-reveal-code" style="height:0px; opacity:;">
-            <div class="github-source2" style="font-size:0.8em; font-family:Mulish;color:grey;z-index:9;">The medium is the message. Earthbook's are open source. Contribute, correct or fork this Earthbook's code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
+        <div id="footer-function-reveal-code" style="height:0px; opacity:0;">
+            <div class="github-source2" style="font-size:0.8em; font-family:Mulish;color:grey;z-index:9;overflow: clip;">Earthbook's are open source. Contribute, correct or fork this Earthbook's code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
             </div>
          </div>
                 
@@ -45,7 +45,7 @@
       <div class="footer-function">
         <div class="footer-function-main" style="z-index:10"; onclick="openFooter()">
         
-          <div id="footer-down-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 0 auto 0;padding-right: 10px;">
+          <div id="footer-down-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 10px auto 0;">
           </div>
 
             <div class="footer-function-item"><p>Earthbook Resources</p></div>
