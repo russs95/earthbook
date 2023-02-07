@@ -264,24 +264,18 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section">
+    <div class="footnote-section" style="z-index:8;">
 
       <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
 
-      <div class="footer-function-main" onclick="openFootnotes()" style="z-index:8;">
+      <div id="footnotes" style="font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
             
-            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/up-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
-            </div>
-
-            <div class="footer-function-item">
-              <p>Footnotes</p>
-            </div>
-
-            <!--<div class="footer-function-item-icon"> 
-                <i style="background-image: url(../icons/code.svg);"></i>-->
-            </div>
-
+        <div id="footnotes-down-arrow" style="width: 18px; height: 18px;background: url(../icons/up-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
         </div>
+        
+        <p>Footnotes</p>
+      
+      </div>
 
 
       <!--
