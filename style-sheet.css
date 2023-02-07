@@ -4026,7 +4026,7 @@ fieldset {margin-top: 50px;
         flex-direction: row;
         margin: auto;
         width: 100%;
-        padding-left: 25px;
+        padding-left: 15px;
         background-color:  var(--header-footer);
   }
     
