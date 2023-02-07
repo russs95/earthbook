@@ -53,7 +53,7 @@ function openFooter() {
   
   } else {
     x.style.marginBottom = "0px";
-    y.style.background = "url(../icons/down-arrow.svg) no-repeat left";
+    y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";
 
 }
