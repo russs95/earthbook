@@ -4025,6 +4025,9 @@ fieldset {margin-top: 50px;
         display: flex;
         flex-direction: row;
         margin: auto;
+        width: 100%;
+        padding-left: 15px;
+        background-color:  var(--header-footer);
   }
     
   .footer-function-item p {
@@ -4070,9 +4073,7 @@ fieldset {margin-top: 50px;
     color: grey;
   }
 
-  .footer-function-main {
-    width: 100%;
-  }
+
   
   
   

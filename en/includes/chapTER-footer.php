@@ -34,7 +34,7 @@ margin: auto 0 auto 0;"></div>
             </div>
         </div>
         <div id="footer-function-reveal-code">
-            <div class="github-source2" style="font-size:1em; font-family:Mulish;color:grey;z-index:10;">Page source code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
+            <div class="github-source2" style="font-size:1em; font-family:Mulish;color:grey;z-index:10; height:0px;">Page source code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br>https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
             </div>
          </div>
                 
