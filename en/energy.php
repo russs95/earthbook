@@ -127,6 +127,8 @@ Must be updated for each page-->
 	
  <?php require_once ("includes/search.php");?>
 
+ <?php require_once ("includes/comments.php");?>
+
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-9">
@@ -253,20 +255,12 @@ Must be updated for each page-->
   
     </div><!--closes page text content-->
 
-<!--
-<?php
-$cmtx_identifier = '1';
-$cmtx_reference  = 'Energy';
-$cmtx_folder     = '/comments/';
-require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
-?>
--->
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section" style="z-index:8; margin-bottom: 150px;">
+    <div class="footnote-section" style="z-index:8; margin-bottom: 120px;">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
+      <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
 
       <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
             
@@ -277,13 +271,6 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
       
       </div>
 
-
-      <!--
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey;z-index:6;" onclick="openCode()">
-
-
-      
-      Chapter Footnotes</p>  -->
       <div id="footnotes-reveal" style="height:0px; opacity:0; transition:0.4s;padding-bottom:40px;">
       
         <a href="#58-up" class="footnote">   
