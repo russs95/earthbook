@@ -41,7 +41,6 @@ function scrollFunction() {
 }
  
 
-
 function openFootnotes() {
   var x = document.getElementById("footnotes-reveal");
   var y = document.getElementById("footnotes-arrow");

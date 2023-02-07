@@ -16,7 +16,7 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 ?>
 
 
-
+ 
   </div>
 </div>  
 
