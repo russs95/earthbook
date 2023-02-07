@@ -273,7 +273,7 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
         <div id="footnotes-down-arrow" style="width: 18px; height: 18px;background: url(../icons/up-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
         </div>
         
-        <p>Footnotes</p>
+        <p>Chapter Footnotes</p>
       
       </div>
 
