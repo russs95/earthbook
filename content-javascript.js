@@ -60,23 +60,20 @@ function openCode() {
 }
 
 
+
+
 function openFooter() {
   var x = document.getElementById("footer-chapter");
-  var y = document.getElementById("code-down-arrow");
-  //var y = document.getElementById("footer-arrow");
+  var y = document.getElementById("footer-arrow");
   if (x.style.marginBottom === "0px") {
     x.style.marginBottom = "150px";
-    y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
-    y.style.backgroundSize = "contain";
-//    y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
-//   y.style.backgroundSize = "contain";
+   // y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
+  //  y.style.backgroundSize = "contain";
  
   } else {
     x.style.marginBottom = "0px";
-    y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
-    y.style.backgroundSize = "contain";
- //   y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
- //   y.style.backgroundSize = "contain";
+  //  y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
+   // y.style.backgroundSize = "contain";
 
 }
 }
