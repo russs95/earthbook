@@ -28,7 +28,7 @@
       <div class="footer-function" >
         <div class="footer-function-main" onclick="openComments()">
             
-            <div id="comments-out" style="width: 18px; height: 18px;background: url(../icons/plus.svg) no-repeat center;background-size: auto;background-size:contain;margin: auto 15px auto 0;">
+            <div id="comments-out" style="width: 18px; height: 18px;background: url(../icons/plus.svg) no-repeat center;background-size: contain;background-size:contain;margin: auto 15px auto 0;">
             </div>
 
             <div class="footer-function-item">
@@ -39,7 +39,7 @@
                 <i style="background-image: url(../icons/comments.svg);"></i>
             </div>
 
-        </div>
+        </div> 
       </div>
 
 <!--
