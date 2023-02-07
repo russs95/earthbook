@@ -77,7 +77,7 @@ function openFootnotes() {
 }
 
 
-function openFooter() {
+function openFooter2() {
   var x = document.getElementById("footer-chapter");
   var z = document.getElementById("footer-arrow");
   if (x.style.marginBottom === "0px") {
@@ -87,7 +87,6 @@ function openFooter() {
  
   } else {
     x.style.marginBottom = "0px";
-    x.style.backgroundColor = "white";
   z.style.background = "url(../icons/down-arrow.svg) no-repeat center";
   z.style.backgroundSize = "contain";
 

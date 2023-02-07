@@ -45,7 +45,7 @@
 
       
       <div class="footer-function">
-        <div class="footer-function-main" style="z-index:10"; onclick="openFooter()">
+        <div class="footer-function-main" style="z-index:10"; onclick="openFooter2()">
         
           <div id="footer-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center; background-size:contain;margin: auto 10px auto 0;"></div>
 
