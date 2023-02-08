@@ -127,9 +127,6 @@ Must be updated for each page-->
 	
  <?php require_once ("includes/search.php");?>
 
- <!--
- <?php require_once ("includes/comments.php");?>-->
-
 
 <div id="bottom-comments-overlay" class="comments-overlay">
 
