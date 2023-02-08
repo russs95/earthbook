@@ -7,7 +7,7 @@
         <span style="cursor:pointer" onclick="closeComments()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
     </div>
       <div class="comments-overlay-content" >
-      <h6>The Salmon's Spin | Chapter 9</h6>
+     <!-- <h6>The Salmon's Spin | Chapter 9</h6>-->
             
             <?php
 $cmtx_identifier = '1';
