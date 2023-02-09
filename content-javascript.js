@@ -47,7 +47,7 @@ function openFootnotes() {
   var z = document.getElementById("footnotes-concealer");
   if (x.style.height === "120px") {
     x.style.height = "100%";
-    x.style.marginBottom = "100px";
+    x.style.marginBottom = "200px";
     y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";
     z.style.opacity = "0";
