@@ -292,7 +292,7 @@ Pacific salmon and sea-run cutthroat trout colonized the lakes, rivers and strea
       
       </div>
 
-      <div id="footnotes-reveal" style="height:0px; opacity:0; transition:0.4s;padding-bottom:40px;">
+      <div id="footnotes-reveal" style="/*height:0px; opacity:0; transition:0.4s;padding-bottom:40px;*/">
       
         <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
@@ -321,9 +321,8 @@ Pacific salmon and sea-run cutthroat trout colonized the lakes, rivers and strea
         <div class="footnote-text">The term ‘technical nutrient’ was first proposed by William McDonough in a theory of circular design that embodies the conceptual geometric problem we highlight here.  See: William McDonough, Michael Braungart (2002), <i>Cradle to Cradle - Remaking the Way We Make Things</i>, North Point Press.   
         </div>
         </a>
-        <br><br><br><br>
   </div>
-  <div id="footnotes-concealer" style=" background-image: linear-gradient(rgba(255,0,0,0), var(--background-color); height:400px; margin-top:-400px; width:100%;"></div>
+  <div id="footnotes-concealer" style="   background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); height:400px; width:100%;"></div>
 
 
 
