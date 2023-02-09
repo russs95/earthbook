@@ -44,15 +44,13 @@ function scrollFunction() {
 function openFootnotes() {
   var x = document.getElementById("footnotes-reveal");
   var y = document.getElementById("footnotes-arrow");
-  if (x.style.opacity === "0") {
-    x.style.opacity = "1";
+  if (x.style.height === "250px") {
     x.style.height = "100%";
     y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";
   
   } else {
-    x.style.opacity = "0";
-    x.style.height = "0px";
+    x.style.height = "250px";
     y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";
 }
