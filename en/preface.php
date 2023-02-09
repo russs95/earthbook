@@ -206,7 +206,7 @@ Must be updated for each page-->
     <a href="1-up" class="footnote" aria-label="View the original footnoted passage">
         
             <div class="footnote-number">1.</div>
-            <div class="footnote-text">Later, to be more philosophically precise we will use the term ‘kincentric knowing’ and refer to ‘kincentric cultures’.</div>
+            <div class="footnote-text">Later, to be more philosophically precise we will use the term ‘kincentric knowing’ and refer to ‘kincentric cultures’ instead of 'indigenous wisdom traditions' as we are referring to a particular cosmology that, although it is characterstic in most indigenous cultures, is not necessarily so.</div>
         </a>
      
       </div><!--Closes footnote section-->
