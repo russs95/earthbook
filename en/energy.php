@@ -292,7 +292,7 @@ Pacific salmon and sea-run cutthroat trout colonized the lakes, rivers and strea
       
       </div>
 
-      <div id="footnotes-reveal" style="height:120px; transition:0.4s;margin-bottom:0px;*/">
+      <div id="footnotes-reveal" style="height:120px; transition:0.4s;margin-bottom:0px;">
       
         <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
