@@ -292,7 +292,7 @@ Pacific salmon and sea-run cutthroat trout colonized the lakes, rivers and strea
       
       </div>
 
-      <div id="footnotes-reveal" style="/*height:0px; opacity:0; transition:0.4s;padding-bottom:40px;*/">
+      <div id="footnotes-reveal" style="height:250px; transition:0.4s;padding-bottom:40px;*/">
       
         <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
@@ -322,7 +322,14 @@ Pacific salmon and sea-run cutthroat trout colonized the lakes, rivers and strea
         </div>
         </a>
   </div>
-  <div id="footnotes-concealer" style="   background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); height:400px; width:100%;"></div>
+  <div id="footnotes-concealer" style="background-image: linear-gradient(rgba(255,0,0,0), var(--background-color););
+height: 250px;
+width: 100%;
+margin-top: -250px;
+z-index: 10;
+position: absolute;
+right: 0;
+left: 0;"></div>
 
 
 
