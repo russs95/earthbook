@@ -173,15 +173,15 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 
 <div class="page-paragraph">
     <p id="58-up"><i>
-    Thirteen thousand years ago, as trillion ton ice-sheets retreated from North America's Pacific coast, all that was left was an utterly barren and desolate lanscape.  However, in the lingering streams of glacial melt, the revitalization had already begun.   Proliferating river by river down the warming coast, Pacific Salmon swam inland to lay their eggs<!--—  igniting an energizing cycle that to spins this day-->.  Ever since, with each Spring, tiny hatch-lings emerge from the river-bed. Consuming insects and waterborne larvae, the tiny fish gather their strength.  Come summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. After several years, when they have reached their full size and strength, they are ready to head home.  As millions of Salmon retrace their original river route together, the waters boil with their determination.  And an entire ecosystem revels in their return. Bears, eagles and humans gather for grand fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by continue to the waters where they were born.  Using the last of their strength, they deposit and hide batches of eggs in the gravel.  The salmon then die. Their decomposing bodies are a final nutrient-rich gift to the river ecosystem that their roe will soon run and to the larger, encompassing biome that has unfolded into a thriving home for thousands of other species.<a href="#footnotes" title="Nigel hagan, (2006)m 12,000+ Years of Change: Linking traditional and modern ecosystem science in the PacificNorthwest, UBC Fisheries Centre, p4 'In the last 13,000 years, many thousands of stocks of
-Pacific salmon and sea-run cutthroat trout colonized the lakes, rivers and streams.'">⁵⁸</a> </i>
+    Thirteen thousand years ago, with the retreat of trillion ton ice-sheets from North America's Pacific coast, the landscape that remained was utterly barren and desolate.  However, in the lingering streams of glacial melt, a revitalization had already begun.   Proliferating river by river down the warming coast, Pacific Salmon began to swim inland to lay their eggs<!--—  igniting an energizing cycle that to spins this day-->.  Ever since, with each Spring, an energizing cyle has spun.  From the river bed, hatch-lings emerge out of the gravel. Consuming insects and waterborne larvae, the tiny fish gather their strength.  Come summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. Then, after several years, when they have reached their full size and strength, they are ready to head home.  As millions of Salmon retrace their original river route together an entire ecosystem revels in their return. Bears, eagles and humans gather for grand fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by continue to the waters where they were born.  Using the last of their strength, they deposit and hide batches of eggs in the gravel.  The salmon then die. Their decomposing bodies are a final nutrient-rich gift to the river ecosystem that their roe will soon run and to the encompassing biome.  In this way, the salmon have played a key part in the flourishing of then land into a common home for tens of thousands of other species.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and
+streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a> </i>
      </p></div>
     <br><br>
      <div id="line" style="margin-bottom: 30px;"></div>
 <br><br>
     <div>
     <div class="lead-page-paragraph">
-    OVER THE LAST MILLENIA, <a href="kincentric.php" title="We develop the concept of kentricism as a philosophical term for indegenous ecological thinking in chapter 4">kincentric cultures</a> have lived side by side the Salmon and observed thier masterful management of energy.  Seeing the salmon as kin— <i>elders with whom a common home is shared</i>— these cultures were able to gain both ecological understanding and ethical inspiration.  Today, as we strive to ensure that our modern enterprises are green, we too have much to learn from the ways of the salmon— in particular, the way in which their distribution of energy enriched the ecosystems of which they were a part. As we will see, the Salmon’s outward spiral of energy emulates the vortical pattern by which Earth has greened the biosphere.  <!--As we shall see, it is also a pattern that underlies the ethics, traditions and language of the various kincentric cultures that have long lived beside the salmon.-->  The outward-spiral geometry of this pattern,  provides the basis for our second Earthen ethic.  With its help, we can make sense of the depletion wrought by the energectic structure of our modern for-profit and not-for-profit enterprises and see the green way forward.  With the help of Earth’s example and the example of kincentric cultures, we can discern the requisite energetic structure for our enterprises that are keen to be green.</div>
+    OVER THE LAST MILLENIA, <a href="kincentric.php" title="We develop the concept of kentricism as a philosophical term for indegenous ecological thinking in chapter 4">kincentric cultures</a> have lived side by side the Salmon and observed thier masterful management of energy.  Seeing the salmon as kin— <i>elders with whom a common home is shared</i>— these cultures were able to gain both ecological understanding and ethical inspiration.  Today, as we strive to ensure that our modern enterprises are green, we too have much to learn from the ways of the salmon— in particular, the way in which their distribution of energy enriched the ecosystems of which they were a part. As we will see, the Salmon’s outward spiral of energy emulates the vortical pattern by which Earth has greened the biosphere.  <!--As we shall see, it is also a pattern that underlies the ethics, traditions and language of the various kincentric cultures that have long lived beside the salmon.-->  The outward-spiral geometry of this pattern,  provides the basis for our second Earthen ethic.  With its help, we can make sense of the depletion wrought by the energectic structure of our modern for-profit and not-for-profit enterprises and see the green way forward.  THen, with the help of Earth’s example and the example of kincentric cultures, we can discern the requisite energetic structure for our enterprises that are keen to be green.</div>
       </div>
 
     <div class="page-paragraph">
@@ -189,22 +189,26 @@ Pacific salmon and sea-run cutthroat trout colonized the lakes, rivers and strea
       <p>To begin, we must return once again to our planet's primordial origins and take a closer look at Earth pattern of energy management.</p>
 
 
-      <p>As we saw in <a href="stellar.php" title="See our chapter on Earth's four billion year story, and how are plastic comes from it">Earth’s Stellar story</a>, over the last four billion years of our planet's unfolding, the energy of the Sun's relentless blaze coursed through Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, converted, stored, then dispersed energy ever outwards towards equilibrium.</p>
+      <p id="59-up">As we saw in <a href="stellar.php" title="See our chapter on Earth's four billion year story, and how are plastic comes from it">Earth’s Stellar story</a>, over the last four billion years of our planet's unfolding, the energy of the Sun's relentless blaze coursed through Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, converted, stored, then dispersed energy ever outwards towards equilibrium.<a href="#footnotes" title="There is theoretical evidence that this is the consequence of vortical unfolding on a sphererical surface with the proper conditions: Guillaume Gauthier et al, (2019) Giant vortex clusters in a two-dimensional quantum fluid, Science https://www.science.org/doi/10.1126/science.aat5718" onclick="openFootnotes()">⁵⁹</a></p>
 
       <p>Soon the sun’s shine was being stored in complex, energy-dense molecules such as fats, proteins and carbohydrates that were interchangeable among cellular systems. As one organism lived and died, it was consumed by its fellows and the energy embodied within its nutrients was passed on. As organisms gained the energy of those before them, they reproduced and proliferated. In this way, each cycle of life steadily spun its nutrient energy outwards to other organisms all across the planet’s surface.</p>
 
+      “‘The world is a vampire’ as The Smashing Pumpkins sang: a vampire living from the death of the sun. The universe must die to keep living.” Thomas Nail (2021), Theory of the Earth, Standford University Press.
 
-      <p id="60-up">With countless life cycles spinning, collectives of organisms became systems unto themselves.  These systems of systems then spun their energy upwards again. From organism to ecosystem, from ecosystem to biome, energy was spiraled ever outwards towards the enrichment of all.<a href="#footnotes" title="“The earth is more like an eddy in a river through which flows of matter continuously stream. It is replenished and depleted in a vortical cosmic dance. — Thomas Nail, (2021) A Theory of the Earth">⁶⁰</a></p>
+      <p id="60-up">With countless life cycles spinning, collectives of organisms became systems unto themselves.  These systems of systems then spun their energy upwards again. From organism to ecosystem, from ecosystem to biome, energy was spiraled ever outwards towards the enrichment of all.<a href="#footnotes" title="'The thermo-
+dynamic transfer of energy into and out of non-­equilibrium states is what has allowed the earth to emerge, persist, and distinguish itself from other aspects of the cosmos.' Thomas Nail, A Theory of the Earth, (Standford University Press, 2021) Chap.1 p.21" onclick="openFootnotes()">⁶⁰</a></p>
 
       <p>And Earth’s biosphere blossomed!</p>
       
       <p>Looking closely at the life cycle of the salmon, we can see that their pattern is a magnificent reflection of Earth’s.</p>
 
-     <p id="60-up">Just as Earth’s accumulation of solar energy powers its planetary processes, the salmon’s steady accumulation of nutrient energy powers its life process. As it eats, nutrient energy is gathered and converted into the fish's fats and proteins while carbohydrates power its swim. Then, just as Earthen cycles disperse energy out to all, so too did the cycles of the Salmon:  as the salmon are preyed upon and consumed, their accumulated nutrients are spun outwards to the broader system of which they are a part.<a href="#footnotes" title="“recent salmon book chapter">⁶⁰</a></p>
+     <p id="61-up">Just as Earth’s accumulation of solar energy powers its planetary processes, the salmon’s steady accumulation of nutrient energy powers its life process. As it eats, nutrient energy is gathered and converted into the fish's fats and proteins while carbohydrates power its swim. Then, just as Earthen cycles disperse energy out to all, so too did the cycles of the Salmon:  as the salmon are preyed upon and consumed, their accumulated nutrients are spun outwards to the broader system of which they are a part.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
+Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹</a></p>
 
-     <p id="60-up">In this way, over the course of a single cycle, a batch of Salmon distribute more nutrients out to their ecosystem than they keep for themselves.  From a single batch of 2000 to 5200 eggs (weighing only several kilograms) the resulting salmon can accumulate a biomass of several tons.  Yet from this great concentrated mass of complex nutrients, at the end of a batch’s cycle only 20-50 salmon return to spawn.  In the end, only several kilograms of eggs remain for the next cycle to begin-- the rest having been widely dispersed into the inland ecosystem.<a href="#footnotes" title="Next salmon book">⁶⁰</a></p>
+     <p id="62-up">In this way, over the course of a single cycle, a batch of Salmon distribute more nutrients out to their ecosystem than they keep for themselves.  From a single batch of 2000 to 5200 eggs (weighing only several kilograms) the resulting salmon can accumulate a biomass of several tons.  Yet from this great concentrated mass of complex nutrients, at the end of a batch’s cycle only 20-50 salmon return to spawn.  In the end, only several kilograms of eggs remain for the next cycle to begin-- the rest having been widely dispersed into the inland ecosystem.<a href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></p>
 
-     <p>Not only did this pattern contribute to a common home for many creatures to thrive, the spiral continually optimized the conditions for the Salmon’s own subsequent generations!</p>
+     <p id="63-up">Not only did this pattern contribute to a common home for many creatures to thrive, the spiral continually optimized the conditions for the Salmon’s own subsequent generations!<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
+Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
 
      <p>Through this virtuous cycle, the salmon proliferated in rivers up and down the North Pacific coast of America, contributing to the inexorable enrichment of the land.</p>
 
@@ -222,7 +226,7 @@ Pacific salmon and sea-run cutthroat trout colonized the lakes, rivers and strea
 
      <p>In the deep resonance in the distributive ways of the Haida, Wet’su’weten, Babine the Salmon and Earth, we find our second Earth ethic.</p>
 
-     <p id ="62-up">Just as the Earth tended its cycles towards the spin of energy outwards to the benefit of all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
+     <p>Just as the Earth tended its cycles towards the spin of energy outwards to the benefit of all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
 
      <p>As we strive to ensure our modern enterprises are green, the second Earthen ethic shows us that their pattern of energy is key.</p>
 
@@ -294,34 +298,46 @@ Pacific salmon and sea-run cutthroat trout colonized the lakes, rivers and strea
 
       <div id="footnotes-reveal" style="height:120px; transition:0.4s;margin-bottom:0px;">
       
-        <a href="#58-up" class="footnote">   
+       <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
-        <div class="footnote-text">For an an account of the Igorots remarkable ecological synchrony see: William Henry Scott, (1959) <i>Some Calendars of Northern Luzon</i>, American Anthropologist 60(3):563 - 570 </div>
+        <div class="footnote-text">Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., <i>12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest</i> (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and streams in what is now British Columbia.</div>
         </a>
 
         <a href="#59-up" class="footnote">   
         <div class="footnote-number">59.</div>
-        <div class="footnote-text">Entropy research by theoretical physicists posit a pattern of adaptive dissipation in the way matter organizes itself in the presence of sustained energy inputs. Meanwhile, parallel breakthroughs in cosmological epistemology help make sense of Earth’s unfolding kinetic character. </div>
+        <div class="footnote-text">There is theoretical evidence that this is the consequence of vortical unfolding on a sphererical surface with the proper conditions: Guillaume Gauthier et al, (2019) Giant vortex clusters in a two-dimensional quantum fluid, Science https://www.science.org/doi/10.1126/science.aat5718</div>
         </a>
 
         <a href="#60-up" class="footnote">   
         <div class="footnote-number">60.</div>
-        <div class="footnote-text">“The earth is more like an eddy in a river through which flows of matter continuously stream. It is replenished and depleted in a vortical cosmic dance. — Thomas Nail, (2021) <i>A Theory of the Earth</i>
+        <div class="footnote-text">'The thermo-dynamic transfer of energy into and out of non-­equilibrium states is what has allowed the earth to emerge, persist, and distinguish itself from other aspects of the cosmos.' Thomas Nail, <i>A Theory of the Earth</i>, (Standford University Press, 2021) Chap.1 p.21</i>
         </div>
         </a>
 
-        <a href="#55-up" class="footnote">   
+        <a href="#61-up" class="footnote">   
         <div class="footnote-number">61.</div>
-        <div class="footnote-text">Jeremy L. England et al., <i>Dissipative adaptation in driven self-assembly</i>, (Nature Nanotechnology, 2015)  
+        <div class="footnote-text">Thomas P. Quinn, <i>The Behavior and Ecology of Pacific Salmon and Trout</i>, Second Edition (University of Washington Press,
+Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.  
         </div>
         </a>
 
-        <a href="#56-up" class="footnote">   
+        <a href="#62-up" class="footnote">   
         <div class="footnote-number">62.</div>
-        <div class="footnote-text">The term ‘technical nutrient’ was first proposed by William McDonough in a theory of circular design that embodies the conceptual geometric problem we highlight here.  See: William McDonough, Michael Braungart (2002), <i>Cradle to Cradle - Remaking the Way We Make Things</i>, North Point Press
+        <div class="footnote-text">Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007. 
         </div>
         </a>
       </div>
+
+      <a href="#63-up" class="footnote">   
+        <div class="footnote-number">62.</div>
+        <div class="footnote-text">Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007. 
+        </div>
+        </a>
+      </div>
+
+
+
+
     <div id="footnotes-concealer" style="background-image: linear-gradient(rgba(255,0,0,0), var(--background-color));
 height: 150px;
 width: 100%;

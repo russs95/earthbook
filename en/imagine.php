@@ -92,7 +92,7 @@ Must be updated for each page-->
 
 
 <!-- MAIN TEXT CONTENT of the Page
-  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
 -->
 
      
