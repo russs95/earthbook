@@ -296,7 +296,7 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
       
       </div>
 
-      <div id="footnotes-reveal" style="height:120px; transition:0.4s;margin-bottom:0px;">
+      <div id="footnotes-reveal" style="height:120px; overflow-y: clip; transition:0.4s;margin-bottom:0px;">
       
        <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
@@ -327,14 +327,6 @@ Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 
         </div>
         </a>
       </div>
-
-      <a href="#63-up" class="footnote">   
-        <div class="footnote-number">62.</div>
-        <div class="footnote-text">Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007. 
-        </div>
-        </a>
-      </div>
-
 
 
 
