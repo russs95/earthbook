@@ -291,7 +291,8 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
       
       </div>
 
-      <div id="footnotes-reveal" style="height:20%; overflow-y: clip; transition:0.4s;margin-bottom:0px;">
+      <div id="footer-reveal-container" style="height:130px;" >
+        <div id="footnotes-reveal" style="height:120px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
       
        <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
@@ -322,6 +323,7 @@ Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 
         </div>
         </a>
       </div>
+  </div>
 
 
 
