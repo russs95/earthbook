@@ -45,12 +45,15 @@ function openFootnotes() {
   var x = document.getElementById("footnotes-reveal");
   var y = document.getElementById("footnotes-arrow");
   var z = document.getElementById("footnotes-concealer");
+  var a = document.getElementById("footnotes-reveal");
+
   if (x.style.height === "120px") {
-    x.style.height = "auto";
+    x.style.height = "500px";
     x.style.marginBottom = "200px";
     y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";
     z.style.opacity = "0";
+    a.style.height = "fit-content";
   
   } else {
     x.style.height = "120px";
