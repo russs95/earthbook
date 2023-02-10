@@ -120,8 +120,8 @@ Must be updated for each page-->
 <div id="ct-chapter-top">
     <div id="ct-tc-menu" onclick="openContents()"></div>
     <div class="sero" style="cursor:pointer;" onclick="openContents()">
-      <div id="ct-chapter-title">Page not found</div>   
-      <div id="ct-book-title">EarthBook Error <!--#echo var="REDIRECT_STATUS" --></div>
+      <div id="ct-chapter-title">404 Error</div>   
+      <div id="ct-book-title">Page Not Found<!--#echo var="REDIRECT_STATUS" --></div>
       <div id="ct-chap-location">Tractatus Ayyew</div>
       <div id="ct-word-count"><i>An Earthen Ethics</i></div>
     </div>

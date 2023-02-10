@@ -15,11 +15,11 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <!DOCTYPE html>
 
-<meta charset="UTF-8"> 
+ 
 
 <!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <html lang="en" manifest="../offline.appcache">
-<head>
+<head><meta charset="utf-8">
 
 
 <link rel="canonical" href="https://book.earthen.io/en/404.php"> 
@@ -30,7 +30,7 @@ See full project repository at: https://github.com/russs95/earthbook
 <link rel="alternate" href="https://book.earthen.io/id/404.php" hreflang="id" />-->
 
 
-<meta charset="UTF-8"> 
+ 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="article:modified_time" content="2022-12-03T09:14:13+00:00" />
 
@@ -89,7 +89,7 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../acessibilidade.css" />
 <link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
 
-<link rel="preload" href="../style-sheet.css?v2.05" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../style-sheet.css?v2.01" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../light.css?v1.8" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
@@ -102,7 +102,7 @@ All the css needed for this page-->
  <!-- INCLUDES
  Main Scripts-->   
 
- <script src="../content-javascript.js?v=2" defer></script>
+ <script src="../content-javascript.js" defer></script>
  <script src="../universal-javascript.js" defer></script>
  <script src="../clip/dist/clipboard.min.js"></script>
  <script src="../accessibility.js" defer></script>
@@ -123,7 +123,7 @@ All the page components required to build this page-->
  <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
  <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
- <!--8b DELEATABLE??--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
+ <!--8b--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
 
 
 
