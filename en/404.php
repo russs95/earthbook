@@ -135,7 +135,7 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-    The requested page <?php echo ($name); ;?> couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
+    The requested page <?php echo var="REQUEST_URI"; ;?> couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
     </div>
 </div>
 
