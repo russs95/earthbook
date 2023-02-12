@@ -111,8 +111,11 @@ Must be updated for each page-->
      <div class="page-paragraph">
 
      <p>Banayan and Russell are co-founders of the <a href="https://ecobricks.org/about" target="_blank">Global Ecobrick Alliance</a>.  Banyan is a paid employee of the Cordillera Adminstrative Region of the Philippines Department of Education (Kalinga Province).  Russell receives commissions on GEA trainer and is an active principal in the organization.</p>
-        <p>Neither Russell or Banayan received any grants, sponsorships from any organizations, companies, governments or corporations in the writing of the Tractatus Ayyew or at any time for any other work.  A private donation by Trisha Joe of 2500$ USD was received in 2020 to purchase the <a href="/writing.php">Librem laptop</a> and  upon which this work was written.  A second donation of 3000$ by the same supporter was received to publish the <i>Tractatus Ayyew Earthbook edition</i> in 2022.</p>
-        
+
+        <p>A private donation by Trisha Joe of 2500$ USD was received in 2020 to purchase the <a href="/writing.php">Librem laptop</a> and  upon which this work was written.  A second donation of 3000$ USD by the same supporter was received to publish the <i>Tractatus Ayyew Earthbook edition</i> in 2022.</p>
+
+        <p>Other than the above, no grants, sponsorships or funding from any organizations, companies, governments or corporations were received by Russell or Banayan to support the writing of the <i>Tractatus Ayyew</i> or at any time for any other of their work.</p>
+    
 
       </div>
   
