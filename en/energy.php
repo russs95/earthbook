@@ -229,7 +229,7 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
      <p>Most importantly, we must expand our concept of capital and currency.</p>
 
-     <p>Just as we move on from our old view of humans as separate and exceptional to the biosphere, so too must we move on from a similar view of our enterprises.  With an understanding of the inextricable immersion of our economies within Earth’s systems, we can see the capital and currency that energize our enterprises also operate as subset energy systems of the biosphere. Whereas an organism manages energy in the form of proteins, fats and carbohydrates, an enterprise manages assets, capital and currency.  Whereas an organism manages its give and take of nutrients over seasonal cycles, an enterprises manages its revenues and expenses over fiscal cycles. Whether organism or enterprise, ecology or economy, as their cycles spin, their particular give and take of energy creates a pattern all their own—  especially in the inclination of their cycles.</p>
+     <p>Just as we move on from our old view of humans as separate and exceptional to the biosphere, so too must we move on from a similar view of our enterprises.  With an understanding of the inextricable immersion of our economies within Earth’s systems, we can see the capital and currency that energize our enterprises also operate as subset energy systems of the biosphere. Whereas an organism manages energy in the form of proteins, fats and carbohydrates, an enterprise manages assets, capital and currency.  Whereas an organism manages its give and take of nutrients over seasonal cycles, an enterprises manages its revenues and expenses over fiscal cycles. Whether organism or enterprise, ecology or economy, as their cycles spin, their particular give and take of energy creates a pattern all their own—  especially in the inclination of their cycles.<<a href="#footnotes" title=" Suh, Sangwon. (2004). Materials and energy flows in industry and ecosystem networks. The International Journal of Life Cycle Assessment. 9. 335-336. 10.1007/BF02979425. Materials and energy flow analysis (MEFA) has been widely utilized in ecology and economics, occupying unique positions in both disciplines.">⁶4</a></p>
 
      <p>When it comes to our enterprises, their pattern of energy management is determined by the purpose for which the enterprise is established.  The <i>for-what</i> of an enterprise determines how and why it receives revenues and expends expenses— as well as the how and why of its ecological give and take.</p>
 
@@ -288,11 +288,11 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
         <div id="footnotes-arrow" style="width: 22px; height: 22px;background: url(../icons/down-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
         </div>
         
-        <p style="text-decoration: underline;">Chapter Footnotes</p>
+        <p style="border-bottom: 1px;border-bottom-style: none;border-bottom-style: dotted;">Chapter Footnotes</p>
       
       </div>
 
-      <div id="footer-reveal-container" style="height:130px;" >
+      <div id="footer-reveal-container" style="height:130px;transition:0.4s;" >
         <div id="footnotes-reveal" style="height:120px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
       
        <a href="#58-up" class="footnote">   
