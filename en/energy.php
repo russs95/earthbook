@@ -244,6 +244,8 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
     <p>Certain enterprises are established by their owners for the purpose of profit: generating more energy than they give back.  This excess energy, although often sourced ecologically, is defined strictly in financial terms. While these for-profit enterprises may provide products, services and even ecological benefits, their structure dictates that their financial surpluses are directed to their owners (or shareholders as the case may be) at the end of each financial cycle. The result is a process of accumulation that over many financial cycles, steadily depletes the ecological and social systems of which it is part.
 </p>
 
+<img src="https://earthen.io/content/images/2022/06/Salmon-Chart---1200px-2.png" width="100%">
+
     <p>In this way, the energetic inclination of a for-profit enterprise, spins in opposition to the pattern of Earth.  No matter how green-intentioned, no matter how green its short-term impacts may seem, its management of energy is the very opposite of ecological contribution.<a id="67-up" href="#footnotes" title="Hinton and McCluran, in their book present a compelling argument of the extractive nature of for-profit business.  They propose this ethic of generative determination: “...in order to determine whether business is generative (contributing to the health of the whole economy) or extractive (taking away from the health of the whole economy), one must ask the question, “Who profits from the profit?”” Jennifer Hinton, Donnie Maclurcan, (2016) How on Earth, Post Growth Institute." onclick="openFootnotes()">⁶7</a></p>
 
     <p>Of course, not all modern enterprises operate for-profit.</p>
