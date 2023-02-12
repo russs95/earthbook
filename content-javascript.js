@@ -53,7 +53,7 @@ function openFootnotes() {
   if (x.style.height === "120px") {
     w.style.height = "100%";
     x.style.height = "100%";
-    x.style.marginBottom = "200px";
+    x.style.marginBottom = "270px";
     y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";
     z.style.opacity = "0";
@@ -62,8 +62,9 @@ function openFootnotes() {
  
   
   } else {
-    w.style.height = "130px";
+    w.style.height = "10%";
     x.style.height = "120px";
+    x.style.marginBottom = "50px";
     y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";
     z.style.opacity = "1";
