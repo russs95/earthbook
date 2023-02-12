@@ -264,8 +264,10 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
      <p>While in the short-term, an enterprise may sequester much carbon, plant many trees and support many species; without an accounting thereof, one cannot be certain, whether these impacts are in fact a net-contribution.  It could well be that more carbon is emitted, more trees are cut, and more species are depleted to achieve these results!  
 </p>
 
-     <p>However, the path to net-green has never been clearer.  
-</p>
+     <p>However, the path to net-green has never been clearer.</p>
+
+
+     <img src="https://earthen.io/content/images/2022/08/Profit-vs-For-Earth-Final-1500px-1.png" width="100%">
 
      <p>Just as a shoal of salmon directs all their energy towards their out-to-all journey home, our green-intentioned enterprises must direct all their energy towards an out-to-all-purpose.</p>
 
