@@ -51,7 +51,7 @@ function openFootnotes() {
 
 
   if (x.style.height === "120px") {
-    w.style.height = "500px";
+    w.style.height = "100%";
     x.style.height = "100%";
     x.style.marginBottom = "200px";
     y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
