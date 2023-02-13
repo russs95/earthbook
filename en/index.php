@@ -216,14 +216,14 @@ $name = "";?>
 
                 <a href="energy.php">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">2  |  The Salmon's Spiral</div>
+                    <div class="chapter-name">2  |  The Salmon's Spin</div>
                     <div class="word-count"><i>2,294 words</i></div>
                 </div>
                 </a>
 
                 <a href="unpublished.php">
                 <div class="chapter-middle">
-                    <div class="chapter-name">3  |  The Ammonite's Example</div>
+                    <div class="chapter-name">3  |  The Manner of the Mollusk</div>
                     <div class="word-count"><i>not yet published</i></div>
                 </div>
                 </a>
@@ -315,21 +315,21 @@ $name = "";?>
                 
                 <a href="writing.php">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">Writing & Publishing</div>
+                    <div class="chapter-name">Publishing</div>
                     <div class="word-count"><i>80 words</i></div>
                 </div>
             </a>
                 
                 <a href="authors.php">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">About the Authors</div>
+                    <div class="chapter-name">Authors & Authorship</div>
                     <div class="word-count"><i>213 words</i></div>
                 </div>
             </a>
 
             <a href="declaration.php">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">Author Declaration of Interests & Investments</div>
+                    <div class="chapter-name">Declaration of Interests & Income</div>
                     <div class="word-count"><i>367 words</i></div>
                 </div>
             </a>
