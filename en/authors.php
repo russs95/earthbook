@@ -78,8 +78,8 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
       <div id="ct-tc-menu" onclick="openContents()"></div>
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">Authors</div>   
-        <div id="ct-book-title">And Authorship</div>
+        <div id="ct-chapter-title">The Authors</div>   
+        <div id="ct-book-title">& The Authorship</div>
        <div id="ct-chap-location">Tractatus Ayyew</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
@@ -90,8 +90,8 @@ Must be updated for each page-->
 
 <!-- Page Title Section-->
 
-  <div id="ct-chapt-graphic" class="background-000">
-
+<div id="ct-chapt-graphic" class="background-000">
+  <img src="../icons/authoring.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
   </div>
 
   <div id="up-arrow"></div>
@@ -100,15 +100,15 @@ Must be updated for each page-->
   <div id="ct-main">
 
 
-
-
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 
 <div class="page-paragraph">
 
-<p>The writing of the <i>Tractatus Ayyew: Earthen Ethics</i> is the culmination of a decade long dialogue and friendship between Russell Maier and Banayan Angway (read the full story in the<a href="preface.php">preface</a>).  The book is inspired by Banayan's research and articulation of the concept of <i>Ayyew</i> for the Cordilleria Administrative Region DepEd Indigenous Knowledge curriculum<a href="#footnotes" title="See: Irene Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12, (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)">¹</a> and their experience founding the Filipino ecobrick movement.<a href="#footnotes" title="The rise of the Regenerative Ecobrick Movement | Bandung Spirit Conference | 2020 | Russell Maier, Ani Himawati | https://www.ecobricks.org/wp-content/uploads/2021/09/The-Rise-of-the-Regenerative-Ecobrick-Movement.pdf | p11">²</a></p>.  The words of the <i>Tractatus Ayyew</i> are written by Russell with Banayan's oversight and review.  The chapter format of prefaced ecological parables is inspired by the Igorot tradition of storytelling after the Bugnas festival feast.</p> 
+<p>The writing of the <i>Tractatus Ayyew: Earthen Ethics</i> is the culmination of a decade long dialogue and friendship between Russell Maier and Banayan Angway (read the full story in the<a href="preface.php">preface</a>).  The book is inspired by Banayan's research and articulation of the concept of <i>Ayyew</i> for the Cordilleria Administrative Region DepEd Indigenous Knowledge curriculum<a href="#footnotes" title="See: Irene Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12, (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)">¹</a> and their experience founding the Filipino ecobrick movement.<a href="#footnotes" title="The rise of the Regenerative Ecobrick Movement | Bandung Spirit Conference | 2020 | Russell Maier, Ani Himawati | https://www.ecobricks.org/wp-content/uploads/2021/09/The-Rise-of-the-Regenerative-Ecobrick-Movement.pdf | p11">²</a></p>
+  
+  <p>The words of the <i>Tractatus Ayyew</i> are written by Russell with Banayan's oversight and review.  The chapter format of prefaced ecological parables is inspired by the Igorot tradition of storytelling after the Bugnas festival feast.</p> 
 
 </div>
 <br><br>

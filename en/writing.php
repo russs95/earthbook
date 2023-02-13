@@ -112,7 +112,7 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
       <div id="ct-tc-menu" onclick="openContents()"></div>
       <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">The Writing</div>   
+        <div id="ct-chapter-title">Publishing</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
        <div id="ct-chap-location">An Earthen Ethics</div>
         <div id="ct-word-count"><i>Appendix</i></div>
@@ -143,18 +143,18 @@ Must be updated for each page-->
 -->
 <div class="lead-page-paragraph">
 
-THE TRACTATUS AYYEW was written and published using 100% open source hardware and software developed by not-for-profit enterprises. Written using <a href="https://www.libreoffice.org/">Libre Office</a>, using a <a href="https://puri.sm/" target="_blank">>Purism Librem 13 laptop</a> running <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> and a <a href="https://frame.work/" target="_blank">Framework laptop</a> running <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>.  The Earthbook's cloud files for writing and all final published files are hosted on an Ubuntu server running <a href="https://nextcloud.com">NextCloud</a>.  
+THE TRACTATUS AYYEW was written and published using 100% open source hardware and software developed by not-for-profit enterprises. Written using <a href="https://www.libreoffice.org/">Libre Office</a>, using a <a href="https://puri.sm/" target="_blank">Purism Librem 13 laptop</a> running <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> and a <a href="https://frame.work/" target="_blank">Framework laptop</a> running <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>.  The Earthbook's cloud files for writing and all final published files are hosted on an Ubuntu server running <a href="https://nextcloud.com">NextCloud</a>.  
 
 </div>
 
 <div class="page-paragraph">
 
-  <p>The book is for sale on the <a href="https"//gobrik.com/regen">GoBrik store</a> where it’s sale in Brikcoins directly corresponds to the sequestration of plastic out of the biosphere.<p>
+  <p>The book is for sale on the <a href="https//gobrik.com/regen">GoBrik store</a> where it’s sale in Brikcoins directly corresponds to the sequestration of plastic out of the biosphere.<p>
 
    <p>The book is type set in Cooper LT Light and Regular by Oswald Cooper and Bitstream as well as Mulish Light & Regular by Vernon Adams, Cyreal, Jacques Le Bailly.
   </p>
 
-  <p>For a full break down of these ecological impacts see our 2022 Regenerativity Report at https://book.earthen.io/accounting</p>
+  <p>For a full break down of the ecological impact of the publishing of this book see our 2022 Regenerativity Report at https://book.earthen.io/accounting</p>
 
   
     </div><!--closes page text content-->
