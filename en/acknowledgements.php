@@ -160,7 +160,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
         <p>Thank you to Thumas Hutton and Thomas Nail, both of whom wrote a book entitled <i>“A Theory of the Earth”</i>.  Although each book were published quite independently (the first in 1788 and the second in 2021!) both greatly inspired and encouraged our own work an theory.  </p>
 
-        <p>Thank you to Mark Donnovan and Donnie McCluharan, with whom a conversation inspired the insights of Chapter 9. </p>
+        <p>Thank you to Mark Donnovan and Donnie Maclurcan, with whom a conversation inspired the insights of Chapter 9. </p>
         
         <p>Thank you to Balaji Srinivasan, whose “web app” version of his book The Network State inspired our development of the Earthbook concept and code.</p>
 

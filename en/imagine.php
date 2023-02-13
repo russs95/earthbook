@@ -108,7 +108,7 @@ Must be updated for each page-->
 <div>
      <div class="lead-page-paragraph">
 
-     TODAY, AS WE BECOME more and more aware of the ecological degradation and inherent to our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been layed.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that far exceed our modern imagination. Only to the extent that we can recognize these enlightened moments, can we imagine our own.  For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair</p>
+     TODAY, AS WE BECOME more and more aware of the ecological degradation inherent to our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been layed.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that far exceed our modern imagination. Only to the extent that we can recognize these enlightened moments, can we imagine our own.  For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair</p>
 
     </div>
 

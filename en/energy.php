@@ -337,6 +337,18 @@ Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 
         <div class="footnote-text">Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007. 
         </div>
         </a>
+
+        <a href="#62-up" class="footnote">   
+        <div class="footnote-number">62.</div>
+        <div class="footnote-text">Hinton and Maclurcan, in their book present a compelling argument of the extractive nature of for-profit business.  They propose this ethic of generative determination: “...in order to determine whether business is generative (contributing to the health of the whole economy) or extractive (taking away from the health of the whole economy), one must ask the question, “Who profits from the profit?”” Jennifer Hinton, Donnie Maclurcan, (2016) How on Earth, Post Growth Institute. 
+        </div>
+        </a>
+
+
+
+
+
+        
       </div>
   </div>
 
