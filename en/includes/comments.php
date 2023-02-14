@@ -16,6 +16,9 @@ $cmtx_folder     = '/comments/';
 require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 ?>
 
+<div id="bottom-close-button" style="cursor:pointer" onclick="closeBookplate()" aria-label="Close this pop-up page">
+            <img src="../svgs/left-x.svg" alt="Bookplate close button">
+        </div>
 
  
   </div>
