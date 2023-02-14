@@ -265,7 +265,7 @@ function openSearch() {
 Triggers the full screen chapter comments*/
 
 function openComments() {
-  document.getElementById("bottom-comments-overlay").style.height = "100%";
+  document.getElementById("bottom-comments-overlay").style.height = "101vh";
   document.body.style.overflowY = "hidden";
   document.getElementById("right-close-button").style.position = "fixed";
   //document.body.style.maxHeight = "101vh";
