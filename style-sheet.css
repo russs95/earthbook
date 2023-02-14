@@ -2457,8 +2457,14 @@ padding-top: 44px;
 
 .footnotes-title {
   border-bottom: 1px;
-
+  font-family: 'CooperLt', Georgia, serif;
   border-bottom-style: dotted;
+  font-size: 1.4em;
+line-height: 1.6;
+cursor: pointer;
+font-variant-caps: all-petite-caps;
+color: grey;
+border-bottom-color: grey;
 }
 
 .footnotes-title:hover {

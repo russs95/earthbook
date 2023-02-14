@@ -289,7 +289,7 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
         <div id="footnotes-arrow" style="width: 22px; height: 22px;background: url(../icons/down-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
         </div>
         
-        <div class="footnotes-title"><p style="">Chapter Footnotes</p></div>
+        <div class="footnotes-title">Chapter Footnotes</div>
       
       </div>
 
