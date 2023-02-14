@@ -28,8 +28,15 @@ _END;
 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+
+    $page_title = "";
+    $metatags = get_meta_tags("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+    if (isset($metatags['title'])) {
+        $page_title = $metatags['title'];
+    }?>
+
 
 <head>
 
@@ -53,6 +60,13 @@ Must be updated for each page-->
 <meta property="og:title"         content="The Salmon's Spin |  Book two | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="Earthen Principle No.2: Observe how Earth’s cycles tend towards the outwards dissipation of energy."/>
 
+<?php
+    $page_title = "";
+    $metatags = get_meta_tags("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+    if (isset($metatags['title'])) {
+        $page_title = $metatags['title'];
+    }
+?>
 
 <style>
   
@@ -134,7 +148,7 @@ Must be updated for each page-->
     <span style="cursor:pointer" onclick="closeComments()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
 </div>
   <div class="comments-overlay-content" >
-  <h6>The Salmon's Spin | Chapter 9</h6>
+  <h6><?php echo $page_title; ?></h6>
         
         <?php
 $cmtx_identifier = '1';
@@ -143,7 +157,9 @@ $cmtx_folder     = '/comments/';
 require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 ?>
 
-
+<div id="bottom-close-button" style="cursor:pointer" onclick="closeBookplate()" aria-label="Close this pop-up page">
+            <img src="../svgs/left-x.svg" alt="Bookplate close button">
+        </div>
 
 </div>
 </div>  
@@ -173,7 +189,7 @@ require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 
 <div class="page-paragraph">
     <p id="58-up"><i>
-    Thirteen thousand years ago, with the retreat of trillion ton ice-sheets from North America's Pacific coast, all that remained was barren desolation.  However, in the lingering streams of glacial melt, the revitalization had already begun.   Proliferating river by river down the warming coast, the adventurous ancestors of today's Salmon swan inland to deposit their eggs.  Ever since, season after season, their energizing cyle has spun. Each Spring, salmon hatch-lings emerge out of the rocky river bed. The tiny fish consume insects and waterborne lavae and gather their strength.  Come summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. Then, after several years, when they have reached their full size and strength, they head home.  As millions of Salmon retrace their river route an entire ecosystem revels in their return. Bears, eagles and humans gather for grand fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by continue to the waters where they were born.  Using the last of their strength, they deposit their eggs in the gravel.  The salmon then die. Their decomposing bodies a final nutrient-rich gift to the now thriving coastal biome and to the river ecosystem that their roe will soon run.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and
+    Thirteen thousand years ago, with the retreat of trillion ton ice-sheets from North America's Pacific coast, all that remained was barren desolation.  However, in the lingering streams of glacial melt, the revitalization had already begun.   Proliferating river by river down the warming coast, the adventurous ancestors of today's Salmon swan inland to deposit their eggs.  Ever since, season after season, their energizing cyle has spun. Each Spring, salmon hatch-lings emerge out of the rocky river bed. The tiny fish consume insects and waterborne lavae and gather their strength.  Come summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. Then, after several years, when they have reached their full size and strength, they head home.  As millions of Salmon retrace their river route an entire ecosystem revels in their return. Bears, eagles and humans gather for grand fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by continue to the waters where they were born.  Using the last of their strength, they deposit their eggs in the gravel.  The salmon then die; their decomposing bodies provide a blast of valuable nitrogen and phosphorus to what is today a thriving inland biome of tens of thousands of species-- a final nutrient-rich gift to the river ecosystem that their roe will soon run.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and
 streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a> </i>
      </p></div>
     <br><br>
@@ -325,8 +341,7 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
         <a href="#61-up" class="footnote">   
         <div class="footnote-number">61.</div>
-        <div class="footnote-text">Thomas P. Quinn, <i>The Behavior and Ecology of Pacific Salmon and Trout</i>, Second Edition (University of Washington Press,
-Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.  
+        <div class="footnote-text">Thomas P. Quinn, <i>The Behavior and Ecology of Pacific Salmon and Trout</i>, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.  
         </div>
         </a>
 

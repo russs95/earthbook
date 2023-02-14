@@ -4117,12 +4117,12 @@ fieldset {margin-top: 50px;
 
 /* Table of Contents Menu (background) */
 .comments-overlay {
-  height: 100%;
-  width: 0;
+  height: 0%;
+  width: 100%;
   position: fixed; /* Stay in place */
   z-index: 21; /* Sit on top */
   right: 0;
-  top: 0;
+  bottom: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
