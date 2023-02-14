@@ -32,7 +32,7 @@ if (strcmp($name, "index.php") == 0)
 $name = "";
 
     $page_title = "";
-    $metatags = get_meta_tags("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+    $metatags = get_meta_tags("http://book.earthen.io/en/energy.php");
     if (isset($metatags['title'])) {
         $page_title = $metatags['title'];
     }?>

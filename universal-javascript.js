@@ -265,7 +265,7 @@ function openSearch() {
 Triggers the full screen chapter comments*/
 
 function openComments() {
-  document.getElementById("bottom-comments-overlay").style.width = "100%";
+  document.getElementById("bottom-comments-overlay").style.height = "100%";
   document.body.style.overflowY = "hidden";
   document.getElementById("right-close-button").style.position = "fixed";
   //document.body.style.maxHeight = "101vh";
@@ -274,7 +274,7 @@ function openComments() {
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeComments() {
-  document.getElementById("bottom-comments-overlay").style.width = "0%";
+  document.getElementById("bottom-comments-overlay").style.height = "0%";
   document.body.style.overflowY = "unset";
   document.getElementById("right-close-button").style.position = "absolute";
   //document.body.style.maxHeight = "unset";
