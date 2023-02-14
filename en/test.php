@@ -1,10 +1,4 @@
-<?php
-    $page_title = "";
-    $metatags = get_meta_tags("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-    if (isset($metatags['title'])) {
-        $page_title = $metatags['title'];
-    }
-?>
+
 
 <html>
     <head>
@@ -12,6 +6,20 @@
 </head>
 <body>
 <!-- Later in the page, you can print the title wherever you want -->
-<h1><?php echo $page_title; ?></h1>
+
+
+<?php
+   function page_title($url) {
+    $page = file_get_contents($url);
+    if ($page===false) {
+        echo "Failed to retrieve $url";
+    }
+    if (preg_match('~<h1 class="page-title">(.*?)<\/h1>~is', $page, $matches)) {
+        return strip_tags($matches[0]);
+    }
+}
+?>
+
+
 </body>
 </html>
