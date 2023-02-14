@@ -286,15 +286,16 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
       <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
             
-        <div id="footnotes-arrow" style="width: 22px; height: 22px;background: url(../icons/down-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
+        <div id="footnotes-arrow" style="">
         </div>
         
         <div class="footnotes-title">Chapter Footnotes</div>
       
       </div>
 
-      <div id="footer-reveal-container" style="height:130px;transition:0.4s;" >
-        <div id="footnotes-reveal" style="height:120px; overflow-y: clip; transition:0.4s;margin-bottom:0px;/*transition-delay: 0.4s;*/">
+      <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+        <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;/*transition-delay: 0.4s;*/">
       
        <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>

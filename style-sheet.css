@@ -2454,6 +2454,14 @@ padding-top: 44px;
 
 }
 
+.footnotes-arrow {
+  width: 22px; 
+  height: 22px;
+  background: url(../icons/down-arrow.svg) no-repeat center;
+  background-size:contain;
+  margin: auto 15px auto 0;
+}
+
 
 .footnotes-title {
   border-bottom: 1px;
@@ -2465,6 +2473,7 @@ cursor: pointer;
 font-variant-caps: all-petite-caps;
 color: grey;
 border-bottom-color: grey;
+margin: 15px 0px 25px 0px;
 }
 
 .footnotes-title:hover {
