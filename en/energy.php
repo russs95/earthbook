@@ -31,7 +31,11 @@ $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
 
-?>
+    $page_title = "";
+    $metatags = get_meta_tags("http://book.earthen.io/en/energy.php");
+    if (isset($metatags['title'])) {
+        $page_title = $metatags['title'];
+    }?>
 
 
 <head>
@@ -56,13 +60,6 @@ Must be updated for each page-->
 <meta property="og:title"         content="The Salmon's Spin |  Book two | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="Earthen Principle No.2: Observe how Earth’s cycles tend towards the outwards dissipation of energy."/>
 
-<?php
-    $page_title = "";
-    $metatags = get_meta_tags("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-    if (isset($metatags['title'])) {
-        $page_title = $metatags['title'];
-    }
-?>
 
 <style>
   
