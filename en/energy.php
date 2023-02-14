@@ -36,7 +36,10 @@ $name = "";
 <head>
 
 
-<?php require_once ("../header.php");?>
+<?php require_once ("../header.php");
+$page_title = "The Salmon's Spin | Tratatus Ayyew - Earthbook";?>
+
+
 
 <!--END OF GENERIC CONTENT-->
 
@@ -144,10 +147,6 @@ $cmtx_reference  = 'Energy';
 $cmtx_folder     = '/comments/';
 require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 ?>
-
-<div id="bottom-close-button" style="cursor:pointer" onclick="closeBookplate()" aria-label="Close this pop-up page">
-            <img src="../svgs/left-x.svg" alt="Bookplate close button">
-        </div>
 
 </div>
 </div>  
