@@ -2454,6 +2454,18 @@ padding-top: 44px;
 
 }
 
+
+.footnotes-title {
+  border-bottom: 1px;
+
+  border-bottom-style: dotted;
+}
+
+.footnotes-title:hover {
+  border-bottom-style: solid;
+
+}
+
 .footnote {    
   display:flex;
   flex-direction: row;
