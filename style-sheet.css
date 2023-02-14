@@ -2516,6 +2516,18 @@ margin: 15px 0px 25px 0px;
     }
   }
 
+  #footnotes-concealer {
+    background-image: linear-gradient(rgba(255,0,0,0), var(--background-color));
+    height: 150px;
+    width: 100%;
+    margin-top: -150px;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    left: 0;
+    transition:0.4s;
+  }
+
 
 
 /* -------------------------------------------------------------------------- */
