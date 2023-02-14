@@ -19,7 +19,6 @@ function scrollFunction() {
     document.getElementById("ct-chapter-top").style.height = "145px"; 
     document.getElementById("ct-chapt-graphic").style.paddingTop = "50vh"; 
 
-
   } else {
     //BEFORE
     document.getElementById("earthbook-navbar").style.height = "50vh";
@@ -50,10 +49,10 @@ function openFootnotes() {
   
 
 
-  if (x.style.height === "120px") {
+  if (x.style.height === "200px") {
     w.style.height = "100%";
     x.style.height = "100%";
-    x.style.marginBottom = "270px";
+    x.style.marginBottom = "230px";
     y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";
     z.style.opacity = "0";
@@ -63,7 +62,7 @@ function openFootnotes() {
   
   } else {
     w.style.height = "10%";
-    x.style.height = "120px";
+    x.style.height = "200px";
     x.style.marginBottom = "50px";
     y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";

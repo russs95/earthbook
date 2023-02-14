@@ -2454,7 +2454,7 @@ padding-top: 44px;
 
 }
 
-.footnotes-arrow {
+#footnotes-arrow {
   width: 22px; 
   height: 22px;
   background: url(../icons/down-arrow.svg) no-repeat center;
