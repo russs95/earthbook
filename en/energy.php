@@ -37,6 +37,7 @@ $name = "";
 
 
 <?php require_once ("../header.php");
+$title = "Energy";
 $page_title = "The Salmon's Spin | Tratatus Ayyew - Earthbook";?>
 
 
@@ -132,24 +133,9 @@ Must be updated for each page-->
 	
  <?php require_once ("includes/search.php");?>
 
+ <?php require_once ("includes/comments.php");?>
 
-<div id="bottom-comments-overlay" class="comments-overlay">
 
-<div id="right-close-button">
-    <span style="cursor:pointer" onclick="closeComments()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
-</div>
-  <div class="comments-overlay-content" >
-  <h6><?php echo $page_title; ?></h6>
-        
-        <?php
-$cmtx_identifier = '1';
-$cmtx_reference  = 'Energy';
-$cmtx_folder     = '/comments/';
-require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
-?>
-
-</div>
-</div>  
  
 
 <!-- Page Title Section-->
@@ -303,7 +289,7 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
         <div id="footnotes-arrow" style="width: 22px; height: 22px;background: url(../icons/down-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
         </div>
         
-        <p style="border-bottom: 1px;border-bottom-style: none;border-bottom-style: dotted;">Chapter Footnotes</p>
+        <div class="footnotes-title"><p style="">Chapter Footnotes</p></div>
       
       </div>
 
