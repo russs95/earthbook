@@ -552,6 +552,11 @@ h6 {
       border-bottom: grey 1px dashed ;
       
   }
+
+  .lead-page-paragraph a:hover {
+    border-bottom: grey 1px solid ;
+    
+}
   
 
 
@@ -564,7 +569,7 @@ h6 {
 }
 
 .page-paragraph a:hover {
-  border-bottom: grey 1px dashed ;
+  border-bottom: grey 1px solid ;
   /*text-decoration: none !important;*/
 }
 
