@@ -37,7 +37,7 @@ These tags will be consistent for the whole book-->
 <meta property="og:locale" content="<?php echo ($lang); ;?>" />
 
 <meta property="og:url" content="https://tractatus.earthen.io/<?php echo ($lang); ;?>/<?php echo ($name); ;?>">
-
+ 
 
  <!-- Fonts
 The requisite typography for the page-->
@@ -65,7 +65,7 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../acessibilidade.css" />
 <link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
 
-<link rel="preload" href="../style-sheet.css?v2.05" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../style-sheet.css?v2.06" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../light.css?v1.8" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">

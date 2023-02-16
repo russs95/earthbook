@@ -133,12 +133,6 @@ Must be updated for each page-->
 	
  <?php require_once ("includes/search.php");?>
 
- <?php require_once ("includes/comments.php");
- $title = "Energy";
- $page_title = "The Salmon's Spin | Tratatus Ayyew - Earthbook";?>
-
-
- 
 
 <!-- Page Title Section-->
 
@@ -403,6 +397,9 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
   <?php require_once ("includes/chapTER-footer.php");?>
 
+  <?php require_once ("includes/comments.php");
+ $title = "Energy";
+ $page_title = "The Salmon's Spin | Tratatus Ayyew - Earthbook";?>
 
 </div>
 
