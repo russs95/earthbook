@@ -133,10 +133,9 @@ Must be updated for each page-->
 
 <!--FOOTNOTES SECTION-->
 
-<!-- no footnotes here
 
 <div class="footnote-section" style="z-index:8;">
-
+<!--
       <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
 
       <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
@@ -151,16 +150,14 @@ Must be updated for each page-->
 
         <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
              </div>
+
   </div>
 
 
 
     <div id="footnotes-concealer"></div>
-
-    </div>
-    
-    
-    Closes footnote section-->
+-->
+    </div><!-- Closes footnote section-->
 
 </div><!--Closes main content block-->
 
