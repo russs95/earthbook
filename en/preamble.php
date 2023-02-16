@@ -43,7 +43,7 @@ $page_title = "Preamble | Tractatus Ayyew - An Earthbook";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Preamble | Tractatus Ayyew - An Earthbook</title>
+<title><?php echo $page_title; ?></title>
 <meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics, preamble, intro, "> 
 <meta name="description" content="An introduction to the Earthbook edition of the Tractatus Ayyew">
 
@@ -52,8 +52,8 @@ Must be updated for each page-->
 <meta name="twitter:data1" content="3 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:url"           content="https://tractatus.earthen.io/en/preamble.php">
-<meta property="og:title"         content="Preamble | Tratatus Ayyew - Earthbook.">
+<meta property="og:url"           content="https://tractatus.earthen.io/<?php echo $lang; ?>/<?php echo $name; ?>.php">
+<meta property="og:title"         content="<?php echo $page_title; ?>">
 <meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew"/>
 
 <style>
