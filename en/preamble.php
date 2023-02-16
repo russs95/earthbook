@@ -107,7 +107,7 @@ Must be updated for each page-->
 
     <p>Of course, how a story is told (or a theory for that matter) is just as important as the sentences and paragraphs it contains.  In the dap'ay, both the tale and the telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
 
-    <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span style="cursor:pointer; text-decoration: underline;" onclick="openEarthbook()" aria-label="Open" title="Jump to summaries"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics that we'll be developing in the chapters ahead.</p>
+    <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span style="cursor:pointer; border-bottom: grey 1px dashed ;" onclick="openEarthbook()" aria-label="Open" title="Jump to summaries"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics that we'll be developing in the chapters ahead.</p>
 
     <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced and shared. For example, this section of the book can be found at book.earthen.io/<?php echo ($lang); ;?>/preamble</p>
     
@@ -118,6 +118,8 @@ Must be updated for each page-->
     <p>As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's <span style="cursor:pointer; text-decoration: underline;" onclick="openEco()" aria-label="Open">regenerative reporting.</span></p>
 
     <p>The full content of the <i>Tractatus Ayyew</i> is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Go to the Earthbook Github repository">code</a> (developed first for the <i>Tractatus Ayyew</i>) is made available under a GNU 3.0 license.</p>
+
+    <br><br><br><br>
 
 
     </div>
