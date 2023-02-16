@@ -8,8 +8,8 @@
   <h6><?php echo $page_title; ?></h6>
         
         <?php
-$cmtx_identifier = '1';
-$cmtx_reference  = 'Energy';
+$cmtx_identifier = '<?php echo $page_number; ?>';
+$cmtx_reference  = '<?php echo $name; ?>';
 $cmtx_folder     = '/comments/';
 require($_SERVER['DOCUMENT_ROOT'] . $cmtx_folder . '/frontend/index.php');
 ?>
