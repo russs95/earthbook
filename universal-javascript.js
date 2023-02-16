@@ -193,8 +193,8 @@ Opens up the Earthbook overlay from the bottom up*/
   /* Close when someone clicks on the "x" symbol inside the overlay */
   function closeEarthbook() {
     document.getElementById("bottom-earthbook").style.height = "0%";
-    /*document.body.style.overflowY = "unset";*/
-    document.body.style.maxHeight = "unset";
+    document.body.style.overflowY = "unset";
+    /*document.body.style.maxHeight = "unset";*/
   } 
 
 
