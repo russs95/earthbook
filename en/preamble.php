@@ -1,7 +1,9 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
 
-Page Version 1.0.2
-Design by Russell Maier
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -26,11 +28,12 @@ _END;
 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$title = "Preamble Title";
+$page_title = "Preamble | Tractatus Ayyew - An Earthbook";?>
 
 <head>
-
 
 <?php require_once ("../header.php");?>
 
@@ -87,6 +90,10 @@ Must be updated for each page-->
 </div>
 
 <?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
  
 
 <!-- Page Title Section-->
