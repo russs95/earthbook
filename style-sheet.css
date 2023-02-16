@@ -3575,7 +3575,7 @@ display: none;
 
 
 #eco-curtain2 {
-  background-color: var(--slider); 
+  background-color: var(--fainter-border-color);  
   color: var(--text-color);
   z-index: 21;
 }

@@ -196,9 +196,29 @@ Opens up the Earthbook overlay from the bottom up*/
     document.getElementById("bottom-earthbook").style.height = "0%";
     document.body.style.overflowY = "unset";
     /*document.body.style.maxHeight = "unset";*/
-    document.getElementById("medium-message").style.transitionDelay = "0s";
+    document.getElementById("medium-message").style.transitionDelay = "2s";
     document.getElementById("medium-message").style.opacity = "0";
   } 
+
+   /*ECO OVERLAY
+
+Opens up the Earthbook overlay from the bottom up*/
+
+
+  /* Open settings when someone clicks on the span element */
+  function openEco() {
+    document.getElementById("eco-curtain2").style.height = "100%";
+    document.body.style.overflowY = "hidden";
+    /*document.body.style.maxHeight = "101vh";*/
+  }
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeEco() {
+    document.getElementById("eco-curtain2").style.height = "0%";
+    document.body.style.overflowY = "unset";
+   /* document.body.style.maxHeight = "unset";*/
+  } 
+
 
 
 
@@ -220,25 +240,7 @@ function closeSearch() {
  /* document.body.style.maxHeight = "unset";*/
 } 
 
-  /*ECO OVERLAY
-
-Opens up the Earthbook overlay from the bottom up*/
-
-
-  /* Open settings when someone clicks on the span element */
-  function openEco() {
-    document.getElementById("eco-curtain2").style.height = "101vh";
-    document.body.style.overflowY = "hidden";
-    document.body.style.maxHeight = "101vh";
-  }
-
-  /* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeEco() {
-    document.getElementById("eco-curtain2").style.height = "0%";
-    document.body.style.overflowY = "unset";
-    document.body.style.maxHeight = "unset";
-  } 
-
+ 
 
 /*READ OVERLAY
 
