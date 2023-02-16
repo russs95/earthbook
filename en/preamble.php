@@ -122,10 +122,9 @@ Must be updated for each page-->
 
     <p>As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the print and eReader editions of the <i>Tractatus Ayyew</i> are <span class="java-link" onclick="openBuy()" aria-label="Open" title="See book's purchase options and prices">for sale</span> here on the Earthbook site. Sales are independent of middle-men, with 97% of book sales going direct to the authors.</p>
 
-    <p>As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's <span style="cursor:pointer; border-bottom: grey 1px dashed ;" onclick="openEco()" aria-label="Open">regenerative reporting.</span></p>
+    <p>As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's <span class="java-link" onclick="openEco()" aria-label="Open" title="View our impact accounting for the Earthbook's writing and publishing">regenerative reporting.</span></p>
 
     <p>The full content of the <i>Tractatus Ayyew</i> is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Go to the Earthbook Github repository">code</a> (developed first for the <i>Tractatus Ayyew</i>) is made available under a GNU 3.0 license.</p>
-
 
     </div>
           
@@ -137,8 +136,8 @@ Must be updated for each page-->
 
 <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
-<!--
+     <!-- <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
+
       <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
             
         <div id="footnotes-arrow"></div>
