@@ -54,7 +54,7 @@ Must be updated for each page-->
 <meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew"/>
 
 <style>
-  .java-link {style="cursor:pointer; border-bottom: grey 1px dashed ;"
+  .java-link {cursor:pointer; border-bottom: grey 1px dashed ;"
   }
   
   .java-link:hover {cursor:pointer; border-bottom: grey 1px solid ;}
@@ -120,7 +120,7 @@ Must be updated for each page-->
     
     <p>To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory (and each chapter’s integration within it) is represented by the mandala at the top of this page.</p>
 
-    <p>As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the print and eReader editions of the <i>Tractatus Ayyew</i> are <span style="cursor:pointer; text-decoration: underline;" onclick="openBuy()" aria-label="Open">for sale</span> here on the Earthbook site. Sales are independent of middle-men, with 97% of book sales going direct to the authors.</p>
+    <p>As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the print and eReader editions of the <i>Tractatus Ayyew</i> are <span class="java-link" onclick="openBuy()" aria-label="Open" title="See book's purchase options and prices">for sale</span> here on the Earthbook site. Sales are independent of middle-men, with 97% of book sales going direct to the authors.</p>
 
     <p>As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's <span style="cursor:pointer; border-bottom: grey 1px dashed ;" onclick="openEco()" aria-label="Open">regenerative reporting.</span></p>
 
