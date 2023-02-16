@@ -122,10 +122,78 @@ Must be updated for each page-->
 
     </div>
           
+</div><!--closes page text content-->
+
+
+<!--FOOTNOTES SECTION-->
+
+<!-- no footnotes here
+
+<div class="footnote-section" style="z-index:8;">
+
+      <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
+
+      <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+            
+        <div id="footnotes-arrow"></div>
+        
+        <div class="footnotes-title">Chapter Footnotes</div>
+      
+      </div>
+
+      <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+        <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+             </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div>
+    
+    
+    Closes footnote section-->
+
 </div><!--Closes main content block-->
 
-<!--Footer Next Chapter Section: Requires customization-->
+  <!--Footer Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
 
+    <div class="footer-size">
+    
+      <div class="footer-left">
+
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+    
+     
+        <div class="next-section">
+          <div class="next-sec">Next section:</div>
+          <div class="sec-name"><i>Preface</i></div>
+        </div>
+
+      </div>
+    
+
+      <div class="footer-right">
+    
+        <a href="preface.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+
+      </div>
+    </div>
+
+  <?php require_once ("includes/chapTER-footer.php");?>
+
+
+</div>
+
+
+</body>
+</html>
+
+
+<!--
 
 <div id="footer-chapter" style="margin-bottom: 0px;">
   <div class="footer-size">
@@ -145,7 +213,7 @@ Must be updated for each page-->
 
 
 
-<?php require_once ("includes/chap-footer.php");?>
+<?php require_once ("includes/chap-footer.php");?>-->
           
 
         
