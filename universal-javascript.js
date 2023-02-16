@@ -188,6 +188,7 @@ Opens up the Earthbook overlay from the bottom up*/
     document.getElementById("bottom-earthbook").style.height = "100%";
     document.body.style.overflowY = "hidden";
     /*document.body.style.maxHeight = "101vh";*/
+    document.getElementById("medium-message").style.opacity = "1";
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -195,6 +196,8 @@ Opens up the Earthbook overlay from the bottom up*/
     document.getElementById("bottom-earthbook").style.height = "0%";
     document.body.style.overflowY = "unset";
     /*document.body.style.maxHeight = "unset";*/
+    document.getElementById("medium-message").style.transitionDelay = "0s";
+    document.getElementById("medium-message").style.opacity = "1";
   } 
 
 

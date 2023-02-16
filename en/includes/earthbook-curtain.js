@@ -57,7 +57,7 @@ class Earthbook extends HTMLElement {
             </div>
           </div>
          
-          <div class="medium-message">The Medium is the Message.<br>
+          <div id="medium-message">The Medium is the Message.<br>
           <span style="font-size:0.7em;font-style:normal;"><a href="https://github.com/russs95/earthbook/blob/main/README.md" target="_blank">Publish your Earthbook.</a></span>
           </div>
 

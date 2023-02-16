@@ -3286,7 +3286,7 @@ display: none;
 
 
 #bottom-earthbook {
-  background-color: var(--slider); 
+  background-color: var(--fainter-border-color); 
   color: var(--text-color);
   z-index: 21;
 }
@@ -3366,13 +3366,16 @@ display: none;
   display: none;
 }
 
-.medium-message {
+#medium-message {
   position: absolute;
   right: 0;
   left:0;
   bottom: 130px;
   font-family: "CooperLT", serif;
   font-style: italic;
+  opacity: 0;
+  transition: 0.4s;
+  transition-delay: 0.4s;
 }
 
 
