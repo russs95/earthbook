@@ -54,7 +54,10 @@ Must be updated for each page-->
 <meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew"/>
 
 <style>
-  span:hover {cursor:pointer; border-bottom: grey 1px solid ;}
+  .java-link {style="cursor:pointer; border-bottom: grey 1px dashed ;"
+  }
+  
+  .java-link:hover {cursor:pointer; border-bottom: grey 1px solid ;}
 </style>
 
 
@@ -111,7 +114,7 @@ Must be updated for each page-->
 
     <p>Of course, <i>how</i> a story is told (or a theory for that matter) is just as important as the sum of its sentences.  In the dap'ay, both tale and telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
 
-    <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span style="cursor:pointer; border-bottom: grey 1px dashed ;" onclick="openEarthbook()" aria-label="Open" title="Learn more about what an Earthbook is"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics that we'll be developing in the chapters ahead.</p>
+    <p>Alas, while our book can't recreate that particular context, we've nonetheless put great care into its presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <div class="java-link" onclick="openEarthbook()" aria-label="Open" title="Learn more about what an Earthbook is"><i>Earthbook</i></div>—  an Earth and reader friendly format that embodies the principles of Earthen ethics that we'll be developing in the chapters ahead.</p>
 
     <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced and shared. For example, this section of the book can be found at book.earthen.io/<?php echo ($lang); ;?>/preamble</p>
     
@@ -135,9 +138,9 @@ Must be updated for each page-->
 
 
 <div class="footnote-section" style="z-index:8;">
-<!--
-      <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
 
+      <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
+<!--
       <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
             
         <div id="footnotes-arrow"></div>
@@ -145,7 +148,7 @@ Must be updated for each page-->
         <div class="footnotes-title">Chapter Footnotes</div>
       
       </div>
-
+-->
       <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
 
         <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
@@ -156,7 +159,7 @@ Must be updated for each page-->
 
 
     <div id="footnotes-concealer"></div>
--->
+
     </div><!-- Closes footnote section-->
 
 </div><!--Closes main content block-->
