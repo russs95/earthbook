@@ -186,8 +186,8 @@ Opens up the Earthbook overlay from the bottom up*/
   /* Open settings when someone clicks on the span element */
   function openEarthbook() {
     document.getElementById("bottom-earthbook").style.height = "101vh";
-    /*document.body.style.overflowY = "hidden";*/
-    document.body.style.maxHeight = "101vh";
+    document.body.style.overflowY = "hidden";
+    /*document.body.style.maxHeight = "101vh";*/
   }
 
   /* Close when someone clicks on the "x" symbol inside the overlay */
