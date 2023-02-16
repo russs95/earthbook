@@ -53,6 +53,10 @@ Must be updated for each page-->
 <meta property="og:title"         content="Preamble | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew"/>
 
+<style>
+  span:hover {cursor:pointer; border-bottom: grey 1px solid ;}
+  </style>
+
 
 </head>
 
@@ -103,7 +107,7 @@ Must be updated for each page-->
 
 
 <div class="page-paragraph">
-    <p>To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader eager for an overview we provide a short sentence, a long sentence and a paragraph that each summarize the theory of Earthen ethics that we develop in this book.  These can be found in the <a href="summaries.php">first section of the book's appendix.</a></p>
+    <p>To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader eager for an overview, we provide a short sentence, a long sentence and a paragraph that each sum up the theory of Earthen ethics that we develop in this book— see our <a href="summaries.php">Summaries</a> section.</p>
 
     <p>Of course, how a story is told (or a theory for that matter) is just as important as the sentences and paragraphs it contains.  In the dap'ay, both the tale and the telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
 
