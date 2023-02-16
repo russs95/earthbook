@@ -3376,6 +3376,7 @@ display: none;
   opacity: 0;
   transition: 0.4s;
   transition-delay: 0.4s;
+
 }
 
 
@@ -3429,7 +3430,7 @@ display: none;
   font-size: 1.0em;
 }
 
-.medium-message {
+#medium-message {
   position: absolute;
   right: 0;
   left:0;
@@ -3483,7 +3484,7 @@ display: none;
     font-size: 2.1em;
   }
 
-  .medium-message {
+  #medium-message {
     font-size: 1.8em;
 
 }
@@ -3532,8 +3533,8 @@ display: none;
     font-size: 2.2em;
   }
 
-  .medium-message {
-    font-size: 2em;
+  #medium-message {
+    font-size: 1.9em;
 }
 
 }

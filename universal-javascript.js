@@ -197,7 +197,7 @@ Opens up the Earthbook overlay from the bottom up*/
     document.body.style.overflowY = "unset";
     /*document.body.style.maxHeight = "unset";*/
     document.getElementById("medium-message").style.transitionDelay = "0s";
-    document.getElementById("medium-message").style.opacity = "1";
+    document.getElementById("medium-message").style.opacity = "0";
   } 
 
 
