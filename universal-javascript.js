@@ -136,24 +136,6 @@ function openShare() {
 
   } 
 
-/* BUY SHARE OVERLAY 
-  
-Triggers the right share link panel*/
-
-function openBuy() {
-  document.getElementById("buy-curtain").style.height = "101vh";
-  document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "101vh";
-
-}
-
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeBuy() {
-  document.getElementById("buy-curtain").style.height = "0vh";
-  document.body.style.overflowY = "unset";
-  document.body.style.maxHeight = "unset";
-} 
 
 
 /* BOOKPLATE OVERLAY
@@ -219,6 +201,26 @@ Opens up the Earthbook overlay from the bottom up*/
    /* document.body.style.maxHeight = "unset";*/
   } 
 
+  /* BUY OVERLAY 
+  
+Triggers the right share link panel*/
+
+function openBuy() {
+  document.getElementById("buy-curtain").style.height = "100%";
+  document.body.style.overflowY = "hidden";
+  /*document.body.style.maxHeight = "101vh";*/
+
+}
+
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeBuy() {
+  document.getElementById("buy-curtain").style.height = "0%";
+  document.body.style.overflowY = "unset";
+  /*document.body.style.maxHeight = "unset";*/
+} 
+
+
 
 
 
@@ -227,7 +229,7 @@ Opens up the Earthbook overlay from the bottom up*/
 Triggers the right share link panel*/
 
 function openSearch() {
-  document.getElementById("right-search-overlay").style.width = "101vh";
+  document.getElementById("right-search-overlay").style.width = "100%";
   document.body.style.overflowY = "clip";
  /* document.body.style.maxHeight = "101vh";*/
 

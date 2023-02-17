@@ -627,7 +627,8 @@ margin: auto;
   
   .sec-name {
     font-family: 'CooperLt';
-    font-size: 0.95em
+    padding: 5px 10px 0px 0px;
+    font-size: 1.3em;
   }
   
   

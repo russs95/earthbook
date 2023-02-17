@@ -1389,7 +1389,7 @@ padding-top: 44px;
 
 
 #buy-curtain {
-  background-color: var(--header-footer); 
+  background-color: var(--fainter-border-color);
   z-index: 26;
 }
 
