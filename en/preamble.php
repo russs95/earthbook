@@ -113,11 +113,11 @@ Must be updated for each page-->
 
 <div class="lead-page-paragraph">
 
-  IN THE CULTURE of the Igorot people of Northern Luzon in the West Philippine Sea, story telling is central. In their <i>dap'ay</i>— stone plazas at the center of every village— stories are told to introduce people, lessons and ideas. It is an example that we will follow in the pages ahead of the <i>Tractatus Ayyew</i>.</div>
+  IN THE CULTURE of the Igorot people of Northern Luzon in the West Philippine Sea, story telling is central. In their <i>dap'ay</i>— stone plazas at the center of every village— stories are told to introduce people, lessons and ideas. It is an example that we will follow in the chapters ahead.</div>
 
 
 <div class="page-paragraph">
-    <p>To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader eager for an overview, we provide a short sentence, a long sentence and a paragraph that each sum up the theory of Earthen ethics that we develop in this book— found in our <a href="summaries.php" title="Jump to the three short summaries of the theory">summaries section</a>.</p>
+    <p>To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader eager for an overview, in our <a href="summaries.php" title="Jump to the three short summaries of the theory">summaries section</a> we provide a short sentence, a long sentence and a paragraph that each sum up the theory of Earthen ethics which we develop in the <i>Tractatus Ayyew</i>.</p>
 
     <p>Of course, <i>how</i> a story is told (or a theory for that matter) is just as important as the sum of its sentences.  In the dap'ay, both tale and telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
 
