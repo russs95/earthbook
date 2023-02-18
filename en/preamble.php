@@ -172,7 +172,7 @@ Must be updated for each page-->
       <div class="footer-left">
 
        <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
-    
+
      
         <div class="next-section">
           <div class="next-sec">Next section:</div>
@@ -180,8 +180,7 @@ Must be updated for each page-->
         </div>
 
       </div>
-    
-
+  
       <div class="footer-right">
     
         <a href="preface.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
@@ -191,11 +190,7 @@ Must be updated for each page-->
 
   <?php require_once ("includes/chapTER-footer.php");?>
 
-  <?php require_once ("includes/eco-curtain.php");?>
 
-<?php require_once ("includes/comments.php");?>
-
-<?php require_once ("includes/search.php");?>
 
 </body>
 </html>
