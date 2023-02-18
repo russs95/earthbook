@@ -143,11 +143,19 @@ display: none;
     cursor: pointer;
     background: url(svgs/tc-button.svg) center no-repeat;
     background-size: contain;
+    border: none;
+    transition: 2s;
   }
 
   #ct-tc-menu:hover {
     background: url(svgs/tc-button-hover.svg) center no-repeat;
     background-size: contain;
+  }
+
+  #ct-tc-menu:focus {
+    background: url(svgs/tc-button-hover.svg) center no-repeat;
+    background-size: contain;
+    opacity: 0;
   }
 
 
