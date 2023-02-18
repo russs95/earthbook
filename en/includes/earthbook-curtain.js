@@ -61,7 +61,7 @@ class Earthbook extends HTMLElement {
           <span style="font-size:0.7em;font-style:normal;"><a href="https://github.com/russs95/earthbook/blob/main/README.md" target="_blank">Publish your Earthbook.</a></span>
           </div>
 
-          <span >
+       
         <button type="button" id="bottom-close-button" style="cursor:pointer" onclick="closeEarthbook()" aria-label="Close Modal">
         <img src="../svgs/bottom-x.svg" alt="Close page button">
       </button>
