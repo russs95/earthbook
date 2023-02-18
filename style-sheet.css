@@ -870,8 +870,8 @@ margin-right: -42px;
 
 
 #right-close-button2:focus {
-  right: -0px;
-  transition: 0.3s;
+  right: 0px;
+  transition: 0.1s;
   background-color: var(--background-color);
 }
 

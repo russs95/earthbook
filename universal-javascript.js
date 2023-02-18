@@ -275,8 +275,27 @@ Triggers the full screen chapter comments*/
 function openComments() {
   document.getElementById("bottom-comments-overlay").style.height = "101vh";
   document.body.style.overflowY = "hidden";
-  document.getElementById("right-close-button").style.position = "fixed";
+  document.getElementById("right-close-button2").style.position = "fixed";
   //document.body.style.maxHeight = "101vh";
+
+  var modal = document.getElementById('bottom-comments-overlay');
+
+function modalShow () {
+   modal.setAttribute('tabindex', '0');
+   modal.focus();
+
+   
+}
+
+function focusRestrict ( event ) {
+  document.addEventListener('focus', function( event ) {
+    if ( modalOpen && !modal.contains( event.target ) ) {
+      event.stopPropagation();
+      modal.focus();
+    }
+  }, true);
+}
+
 
 }
 
@@ -284,10 +303,21 @@ function openComments() {
 function closeComments() {
   document.getElementById("bottom-comments-overlay").style.height = "0%";
   document.body.style.overflowY = "unset";
-  document.getElementById("right-close-button").style.position = "absolute";
+  document.getElementById("right-close-button2").style.position = "absolute";
   //document.body.style.maxHeight = "unset";
 
 } 
+
+function modalClose ( e ) {
+  if ( !e.keyCode || e.keyCode === 27 ) {
+    document.getElementById("bottom-comments-overlay").style.height = "0%";
+  document.body.style.overflowY = "unset";
+  document.getElementById("right-close-button2").style.position = "absolute";
+  }
+}
+
+document.addEventListener('keydown', modalClose);
+
 
 
 
