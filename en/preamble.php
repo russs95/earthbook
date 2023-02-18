@@ -20,7 +20,7 @@ See full project repository at: https://github.com/russs95/earthbook
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" ">
+<html lang="$lang">
 _END;?>
 
 <!-- this sets PHP variables for the pages that will be used later on-->
