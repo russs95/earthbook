@@ -1,3 +1,11 @@
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2022-12-03T09:14:13+00:00" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tractatus Ayyew - Earthbook">
+<meta name="apple-mobile-web-app-status-bar-style" content="#DDD">
+
+
 <link rel="canonical" href="https://book.earthen.io/<?php echo ($lang); ;?>/<?php echo ($name); ;?>"> 
 <link rel="alternate" href="https://book.earthen.io/en/<?php echo ($name); ;?>" hreflang="en" />
 <link rel="alternate" href="http://book.earthen.io/en/<?php echo ($name); ;?>" hreflang="x-default" />
@@ -5,14 +13,6 @@
 <link rel="alternate" href="https://book.earthen.io/es/<?php echo ($name); ;?>" hreflang="es" />
 <link rel="alternate" href="https://book.earthen.io/id/<?php echo ($name); ;?>" hreflang="id" />-->
 
-
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2022-12-03T09:14:13+00:00" />
-
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Tractatus Ayyew - EarthBook">
-<meta name="apple-mobile-web-app-status-bar-style" content="pink">
 
 
 <!--BOOK META TAGS var(--header-footer);
