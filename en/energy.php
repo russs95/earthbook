@@ -387,7 +387,6 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
       </div>
     
-
       <div class="footer-right">
     
         <a href="unpublished.php"><div class="next-button">Next ➔</div></a>
