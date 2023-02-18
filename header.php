@@ -103,7 +103,7 @@ All the page components required to build this page-->
 
 
 
-<!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G5VT56C7XD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -111,7 +111,7 @@ All the page components required to build this page-->
   gtag('js', new Date());
 
   gtag('config', 'G-G5VT56C7XD');
-</script>
+</script>-->
 
 
 
