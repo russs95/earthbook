@@ -97,6 +97,12 @@
 </div>
 </div>
 
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
   <div id="containerSepia"></div>
   <div id="containerContrast"></div>
   <div id="containerBrightness"></div>

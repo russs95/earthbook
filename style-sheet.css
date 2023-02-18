@@ -993,6 +993,44 @@ padding-top: 14px;
 
 }  
 
+/*Bottom CLose Button TWO*/
+
+#bottom-close-button2 {
+  position: absolute;
+  transition: 0.3s;
+  background: var(--background-color);
+  background-color: var(--background-color);
+  border-radius: 30px;
+  height: 85px;
+  box-shadow: var(--element-shadow);
+  border: solid 1px var(--thin-border-color);
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  z-index: 50;
+  bottom: -35px;
+ text-align: center;
+  width: 150px; 
+  padding-bottom:40px;
+}
+
+#bottom-close-button:hover {
+  bottom:-35px;
+}
+
+#bottom-close-button2:focus {
+  bottom:-100px;
+}
+
+
+
+#bottom-close-button2 img {
+height: 30px;
+padding-top: 14px;
+
+}  
+
 
 
 /*Top CLose Button*/
