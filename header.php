@@ -29,7 +29,7 @@ These tags will be consistent for the whole book-->
 
 <meta name="twitter:card" content="summary">
 <meta property="og:type"          content="book">
-<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg"/>
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1000px">
 <meta property="og:image:height" content="1500px">
