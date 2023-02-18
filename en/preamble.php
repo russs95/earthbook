@@ -15,17 +15,17 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
-
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang" ">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
@@ -46,6 +46,7 @@ Must be updated for each page-->
 <title><?php echo $page_title; ?></title>
 <meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics, preamble, intro, "> 
 <meta name="description" content="An introduction to the Earthbook edition of the Tractatus Ayyew">
+<meta property="article:modified_time" content="2023-02-18T09:14:13+00:00" />
 
 
 <meta name="twitter:label1" content="Est. reading time" />
@@ -73,7 +74,7 @@ Must be updated for each page-->
 
   <div id="underlayer">
 
-    <a name="top"></a>
+    <div id="top"></div>
 
 <!--HEADER NAVBAR-->
 <header-component></header-component>

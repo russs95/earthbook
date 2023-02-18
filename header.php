@@ -1,6 +1,5 @@
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2022-12-03T09:14:13+00:00" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Tractatus Ayyew - Earthbook">
 <meta name="apple-mobile-web-app-status-bar-style" content="#DDD">
@@ -15,12 +14,13 @@
 
 
 
-<!--BOOK META TAGS var(--header-footer);
+<!--BOOK META TAGS
 These tags will be consistent for the whole book-->
 
 <meta property="og:site_name" content="Tractatus Ayyew" />
 <meta property="article:publisher" content="Earthen.io" />
 <meta name="author" content="Russell Maier & Banayan Angway">
+
 <meta property="og:type" content="book" />
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
@@ -92,7 +92,7 @@ All the css needed for this page-->
  <!--Page Components
 All the page components required to build this page-->
 
- <!--1--><script src="includes/header-component.js" type="text/javascript" preload></script>
+ <!--1--><script src="includes/header-component.js" type="text/javascript" async></script>
  <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
  <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
  <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>

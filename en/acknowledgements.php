@@ -151,22 +151,27 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
     <p>And of course, there are numerous friends, family and colleagues who have been of invaluable assistance along our way.</p>
     
-    <p>Thank you to our Igorot and Wet’su’weten brothers and sisters whose examples have inspired us: James, Jed, Sir Ernesto, Jake and the Sabangan guides.  Thank you to Trisha for her support, encouragement, listening and friendship. Thank you to Shiloh Vermaack and Richard Goldsmith for the relentless reviews of every chapter, not once but twice and sometimes thrice.  Thank you to Nicole and Vaughn for the in-depth reading and encouragement.  Thank you to Mel for the reminder that our ancestry, in particular its contrasts, was not just a side note, but a principal theme. Thank you to James and Ruth for their support and insights from the Bulkley Valley. Thank you to Rolf and Chris Maier for their scathing critiques and reviews that had a profound effect on our direction.  Thank you to Ani for her fathomless patience with the piles of pages and infinite coffee cups that accompanied this process.
+    
+    <p>Thank you to Trisha for her support, encouragement, listening and friendship. Thank you to Shiloh Vermaack and Richard Goldsmith for the relentless reviews of every chapter, not once but twice and sometimes thrice.  Thank you to Nicole and Vaughn for the in-depth reading and encouragement.  Thank you to Mel for the reminder that our ancestry, in particular its contrasts, was not just a side note, but a principal theme. Thank you to James and Ruth for their support and insights from the Bulkley Valley. Thank you to Rolf and Chris Maier for their scathing critiques and reviews that had a profound effect on our direction.  Thank you to Ani for her fathomless patience with the piles of pages and infinite coffee cups that accompanied this process.
         </p> 
+
+        <p>Thank you to our Igorot and Wet’su’weten brothers and sisters whose examples have inspired us: James, Jed, Sir Ernesto, Jake and the Sabangan guides.</p>
 
         <p>Chapter banners, Eagle & Salmon No.1 and No.2, Frog and Sun by Wet’suwet’en artist James Madam. </p>
 
-        <p>Photos of Igorot culture by Gladys Maxim.  Chapter 9 photos by Robert Brodey.</p>
+        <p>Photos of Igorot culture on Earthen.io by Gladys Maxim.  Chapter 9 photos by Robert Brodey.</p>
 
         <p>Thank you to Thumas Hutton and Thomas Nail, both of whom wrote a book entitled <i>“A Theory of the Earth”</i>.  Although each book were published quite independently (the first in 1788 and the second in 2021!) both greatly inspired and encouraged our own work an theory.  </p>
 
         <p>Thank you to Mark Donnovan and Donnie Maclurcan, with whom a conversation inspired the insights of Chapter 9. </p>
+
+        <p id="steve">Thank you to Stephen DeMeulenaere for the steamy conversations on the parrallels of currency and capital, fats and carbohydrates that was in valuable in our calrifying our thinking about Earthen energetics in Chapter 9.</p>
         
-        <p>Thank you to Balaji Srinivasan, whose “web app” version of his book The Network State inspired our development of the Earthbook concept and code.</p>
+        <p>Thank you to Balaji Srinivasan, whose “web app” version of his book <a href="https://thenetworkstate.com" target="_blank">The Network State</a> inspired our development of the Earthbook concept and code.</p>
 
         <p>Thank you to Enrique Salmon for his pioneering work developing the concept of “kincentric ecology” as a means of distinguishing Rarámuri metaphysics (and that of other fist nations) from modern views of nature.  His work and term underlie our term ‘kincentric culture’ and have been invaluable to advancing our theory.</p>
 
-        <p>Thank you to the open source developers and their various projects upon which the EarthBook platform is built.  Thank you to <a href="www.fabiodeveloper.com">Fábio Almeida</a> for his Accessibilidade CSS script which enables readers to increase and decrease the text of the EarthBook.  Thank you to Zeno Rocha for his continued development of <a href="https://clipboardjs.com">>ClipboardJS</a>, the elegant Javascript on our Share page.  Thank you to <a href="https://dewaweb.com">DewaWeb Indonesia</a> who are generously hosting this EarthBook project without charge on their Singapore servers.  Thank you to <a href="https://www.websitecarbon.com">WebsiteCarbon </a> who enable the automated Carbon impact auditing of each Earthbook page.
+        <p>Thank you to the open source developers and their various projects upon which the EarthBook platform is built.  Thank you to <a href="www.fabiodeveloper.com">Fábio Almeida</a> for his Accessibilidade CSS script which enables readers to increase and decrease the text of the EarthBook.  Thank you to Zeno Rocha for his continued development of <a href="https://clipboardjs.com">ClipboardJS</a>, the elegant Javascript on our Share page.  Thank you to <a href="https://dewaweb.com">DewaWeb Indonesia</a> who are generously hosting this EarthBook project without charge on their Singapore servers.  Thank you to <a href="https://www.websitecarbon.com">WebsiteCarbon </a> who enable the automated Carbon impact auditing of each Earthbook page.
           Thank you to <a href="https://instructobit.com/tutorial/95/How-to-create-a-search-function-for-your-website-using-Javascript%2C-PHP-and-MySQL">Christopher Thorton</a> for his development and sharing of an elegant PHP search which is used in the EarthBook search functionality.  Thank you to <a href="https://commentics.com">Stephen for his Commentics php code base</a> which powers the EarthBook chapter comments.  Thank you to Thomas Steiner for his <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle">Dark Mode Toggle code</a> which powers the Night/Day mode swithching of the Earthbook.</p>
     
 
