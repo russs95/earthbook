@@ -55,13 +55,17 @@ Must be updated for each page-->
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:url"           content="https://tractatus.earthen.io/<?php echo $lang; ?>/<?php echo $name; ?>">
 <meta property="og:title"         content="<?php echo $page_title; ?>">
-<meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew"/>
+<meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew">
 
 <style>
-  .java-link {cursor:pointer; border-bottom: grey 1px dashed ;"
+  .java-link {
+    cursor:pointer; 
+    border-bottom: grey 1px dashed;
   }
   
-  .java-link:hover {cursor:pointer; border-bottom: grey 1px solid ;}
+  .java-link:hover {
+    cursor:pointer; 
+    border-bottom: grey 1px solid;}
 </style>
 
 
