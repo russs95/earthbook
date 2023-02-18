@@ -182,24 +182,7 @@ Opens up the Earthbook overlay from the bottom up*/
     document.getElementById("medium-message").style.opacity = "0";
   } 
 
-   /*ECO OVERLAY
-
-Opens up the Earthbook overlay from the bottom up*/
-
-
-  /* Open settings when someone clicks on the span element */
-  function openEco() {
-    document.getElementById("eco-curtain2").style.height = "100%";
-    document.body.style.overflowY = "hidden";
-    /*document.body.style.maxHeight = "101vh";*/
-  }
-
-  /* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeEco() {
-    document.getElementById("eco-curtain2").style.height = "0%";
-    document.body.style.overflowY = "unset";
-   /* document.body.style.maxHeight = "unset";*/
-  } 
+  
 
   /* BUY OVERLAY 
   
@@ -303,15 +286,56 @@ function closeComments() {
 
 } 
 
-function modalClose ( e ) {
+
+ /*ECO OVERLAY
+
+Opens up the Earthbook overlay from the bottom up*/
+
+
+  /* Open settings when someone clicks on the span element */
+  function openEco() {
+    document.getElementById("eco-curtain2").style.height = "100%";
+    document.body.style.overflowY = "hidden";
+    /*document.body.style.maxHeight = "101vh";*/
+    
+    var modal = document.getElementById('eco-curtain2');
+
+    function modalShow () {
+      modal.setAttribute('tabindex', '0');
+      modal.focus();
+   }
+   
+   function focusRestrict ( event ) {
+     document.addEventListener('focus', function( event ) {
+       if ( modalOpen && !modal.contains( event.target ) ) {
+         event.stopPropagation();
+         modal.focus();
+       }
+     }, true);
+   }
+   }
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeEco() {
+    document.getElementById("eco-curtain2").style.height = "0%";
+    document.body.style.overflowY = "unset";
+   /* document.body.style.maxHeight = "unset";*/
+  } 
+
+
+/*Key close all curtains*/
+
+function modalCloseComments ( e ) {
   if ( !e.keyCode || e.keyCode === 27 ) {
     document.getElementById("bottom-comments-overlay").style.height = "0%";
+    document.getElementById("eco-curtain2").style.height = "0%";
   document.body.style.overflowY = "unset";
   document.getElementById("right-close-button2").style.position = "absolute";
+  
   }
 }
+document.addEventListener('keydown', modalCloseComments);
 
-document.addEventListener('keydown', modalClose);
 
 
 

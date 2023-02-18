@@ -36,10 +36,10 @@
     <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
 
     <div class="eco-medium">The Medium is the Message.</div>
-      <div style="cursor:pointer" onclick="closeEco()" aria-label="Close">
-          <div id="bottom-close-button">
+      <button type="button" id="bottom-close-button" style="cursor:pointer" onclick="closeEco()" aria-label="Close Modal">
+        
               <img src="../svgs/bottom-x.svg" alt="Close button">
-          </div>
+  
      </div>
   </div>
 </div>
