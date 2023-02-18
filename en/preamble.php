@@ -46,11 +46,11 @@ Must be updated for each page-->
 <title><?php echo $page_title; ?></title>
 <meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics, preamble, intro, "> 
 <meta name="description" content="An introduction to the Earthbook edition of the Tractatus Ayyew">
-<meta property="article:modified_time" content="2023-02-18T09:14:13+00:00" />
+<meta property="article:modified_time" content="2023-02-18T09:14:13+00:00">
 
 
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="3 minutes" /> 
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="3 minutes"> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:url"           content="https://tractatus.earthen.io/<?php echo $lang; ?>/<?php echo $name; ?>">

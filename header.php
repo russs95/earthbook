@@ -6,35 +6,35 @@
 
 
 <link rel="canonical" href="https://book.earthen.io/<?php echo ($lang); ;?>/<?php echo ($name); ;?>"> 
-<link rel="alternate" href="https://book.earthen.io/en/<?php echo ($name); ;?>" hreflang="en" />
-<link rel="alternate" href="http://book.earthen.io/en/<?php echo ($name); ;?>" hreflang="x-default" />
-<!--<link rel="alternate" href="https://book.earthen.io/fr/<?php echo ($name); ;?>" hreflang="fr" />
-<link rel="alternate" href="https://book.earthen.io/es/<?php echo ($name); ;?>" hreflang="es" />
-<link rel="alternate" href="https://book.earthen.io/id/<?php echo ($name); ;?>" hreflang="id" />-->
+<link rel="alternate" href="https://book.earthen.io/en/<?php echo ($name); ;?>" hreflang="en">
+<link rel="alternate" href="http://book.earthen.io/en/<?php echo ($name); ;?>" hreflang="x-default">
+<!--<link rel="alternate" href="https://book.earthen.io/fr/<?php echo ($name); ;?>" hreflang="fr">
+<link rel="alternate" href="https://book.earthen.io/es/<?php echo ($name); ;?>" hreflang="es">
+<link rel="alternate" href="https://book.earthen.io/id/<?php echo ($name); ;?>" hreflang="id">-->
 
 
 
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
 
-<meta property="og:site_name" content="Tractatus Ayyew" />
-<meta property="article:publisher" content="Earthen.io" />
+<meta property="og:site_name" content="Tractatus Ayyew">
+<meta property="article:publisher" content="Earthen.io">
 <meta name="author" content="Russell Maier & Banayan Angway">
 
-<meta property="og:type" content="book" />
+<meta property="og:type" content="book">
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
 <link rel="manifest" href="../favicons/site.webmanifest">
 
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary">
 <meta property="og:type"          content="book">
 <meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg"/>
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1000px" />
-<meta property="og:image:height" content="1500px" />
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1000px">
+<meta property="og:image:height" content="1500px">
 
-<meta property="og:locale" content="<?php echo ($lang); ;?>" />
+<meta property="og:locale" content="<?php echo ($lang); ;?>">
 
 <meta property="og:url" content="https://tractatus.earthen.io/<?php echo ($lang); ;?>/<?php echo ($name); ;?>">
  
@@ -92,14 +92,14 @@ All the css needed for this page-->
  <!--Page Components
 All the page components required to build this page-->
 
- <!--1--><script src="includes/header-component.js" type="text/javascript" async></script>
- <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
- <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
- <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
- <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
- <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
- <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
- <!--8b DELEATABLE??--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
+ <!--1--><script src="includes/header-component.js" async></script>
+ <!--2--><script src="includes/settings-curtain.js" defer></script>
+ <!--3--><script src="includes/content-curtain.js" defer></script>
+ <!--4--><script src="includes/share-curtain.js" defer></script>
+ <!--5--><script src="includes/buy-curtain.js"  defer></script>
+ <!--6--><script src="includes/bookplate-curtain.js" defer></script>
+ <!--7--><script src="includes/earthbook-curtain.js" defer></script>
+ <!--8b DELEATABLE??<script src="includes/footer-chapter.js" defer></script>-->
 
 
 
