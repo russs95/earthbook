@@ -283,8 +283,6 @@ function openComments() {
 function modalShow () {
    modal.setAttribute('tabindex', '0');
    modal.focus();
-
-   
 }
 
 function focusRestrict ( event ) {
@@ -295,8 +293,6 @@ function focusRestrict ( event ) {
     }
   }, true);
 }
-
-
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -304,7 +300,6 @@ function closeComments() {
   document.getElementById("bottom-comments-overlay").style.height = "0%";
   document.body.style.overflowY = "unset";
   document.getElementById("right-close-button2").style.position = "absolute";
-  //document.body.style.maxHeight = "unset";
 
 } 
 

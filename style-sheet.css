@@ -854,7 +854,6 @@ margin-right: -42px;
 
 #right-close-button2 {
   position: absolute;
-  right: 0px;
   transition: 0.3s;
   transition: 0.3s;
   border-radius: 70px;
@@ -870,7 +869,7 @@ margin-right: -42px;
 
 
 #right-close-button2:focus {
-  right: 0px;
+  right: -60px;
   transition: 0.1s;
   background-color: var(--background-color);
 }
