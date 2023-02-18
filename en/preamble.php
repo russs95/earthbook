@@ -92,14 +92,7 @@ Must be updated for each page-->
     <div id="ct-chap-location">Introduction</div>
     <div id="ct-word-count"><i>431 words</i></div>
   </div>
-</div>
-
-<?php require_once ("includes/eco-curtain.php");?>
-
-<?php require_once ("includes/comments.php");?>
-
-<?php require_once ("includes/search.php");?>
- 
+</div> 
 
 <!-- Page Title Section-->
 
@@ -197,6 +190,12 @@ Must be updated for each page-->
     </div>
 
   <?php require_once ("includes/chapTER-footer.php");?>
+
+  <?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
 
 </body>
 </html>
