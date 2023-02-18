@@ -30,16 +30,16 @@
     </div>
 
     <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
+    <div><img src="../banners/forearth-dark-350px.png" alt="Banner declaring our For-Earth intention" style="width:300px;"></div></a>
 
      <div id="wcb" class="carbonbadge wcb-d"></div>
-    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" preload></script>
+    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
 
     <div class="eco-medium">The Medium is the Message.</div>
-    <span style="cursor:pointer" onclick="closeEco()" aria-label="Close">
-        <div id="bottom-close-button">
-            <img src="../svgs/bottom-x.svg" alt="Close button">
-        </div>
-    </span>
+      <div style="cursor:pointer" onclick="closeEco()" aria-label="Close">
+          <div id="bottom-close-button">
+              <img src="../svgs/bottom-x.svg" alt="Close button">
+          </div>
+     </div>
   </div>
 </div>
