@@ -850,8 +850,40 @@ padding-right: 24px;
 margin-right: -42px;
 }
 
-.icon-buttons-night {
-filter: contrast(0%) !important;}
+/*Right Close Button 2*/
+
+#right-close-button2 {
+  position: absolute;
+  right: 0px;
+  transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 70px;
+  height: 85px;
+  padding-right: 70px;
+  right: -60px;
+  top: -10px;
+
+  border: solid 1px var(--thin-border-color);
+  background-color: var(--deeper-accent-color); 
+  box-shadow: var(--element-shadow)
+}
+
+
+#right-close-button2:hover {
+  right: -35px;
+  transition: 0.3s;
+  background-color: var(--background-color);
+  box-shadow: var(--element-shadow);
+
+}
+
+#right-close-button2 img {
+height: 50px;
+padding-top: 20px;
+padding-right: 24px;
+margin-right: -42px;
+}
+
 
 /*Left CLose Button*/
 
@@ -4196,11 +4228,6 @@ fieldset {margin-top: 50px;
   font-family: 'Mulish', Arial, sans-serif;
   font-size: smaller;
 }
-
-/*
-.comments-overlay #right-close-button {
-  position: fixed;
-}*/
 
 
 @media screen and (max-width: 700px) {

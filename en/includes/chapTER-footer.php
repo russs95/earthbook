@@ -101,4 +101,3 @@
   <div id="containerContrast"></div>
   <div id="containerBrightness"></div>
   
-</div>

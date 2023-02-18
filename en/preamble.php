@@ -194,10 +194,6 @@ Must be updated for each page-->
 
   <?php require_once ("includes/chapTER-footer.php");?>
 
-
-</div>
-
-
 </body>
 </html>
 

@@ -1,7 +1,7 @@
 
 <div id="bottom-comments-overlay" class="comments-overlay">
 
-<div id="right-close-button">
+<div id="right-close-button2">
     <span style="cursor:pointer" onclick="closeComments()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
 </div>
   <div class="comments-overlay-content" >
