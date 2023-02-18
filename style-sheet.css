@@ -961,6 +961,7 @@ margin-left: 0px;
   position: absolute;
   transition: 0.3s;
   background: var(--background-color);
+  background-color: var(--background-color);
   border-radius: 30px;
   height: 85px;
   box-shadow: var(--element-shadow);
@@ -973,22 +974,15 @@ margin-left: 0px;
   bottom: -35px;
  text-align: center;
   width: 150px; 
+  padding-bottom:40px;
 }
 
 #bottom-close-button:hover {
-  padding-bottom:10px;
+  bottom:-35px;
 }
 
-/*
-#bottom-close-button:active {
-  opacity:0;
-  transition: 1s;
-  
-}*/
-
-#bottom-close-button {
-background-color: var(--background-color);
-box-shadow: var(--element-shadow);
+#bottom-close-button:focus {
+  bottom:-100px;
 }
 
 
