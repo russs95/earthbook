@@ -76,7 +76,7 @@ function openCode() {
   var y = document.getElementById("code-down-arrow");
   if (x.style.opacity === "0") {
     x.style.opacity = "1";
-    x.style.height = "100px";
+    x.style.height = "130px";
     y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
     y.style.backgroundSize = "contain";
   
