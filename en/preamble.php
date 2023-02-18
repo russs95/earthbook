@@ -85,7 +85,7 @@ Must be updated for each page-->
 
 
 <div id="ct-chapter-top">
-  <div type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></div>
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
     <div id="ct-chapter-title">Preamble</div>   
     <div id="ct-book-title">Tractatus Ayyew</div>
