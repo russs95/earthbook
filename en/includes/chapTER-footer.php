@@ -67,7 +67,7 @@
 
 <div class="footer-size" style="height:70px;">
 
-  <div class="footer-settings-icon" style="cursor:pointer" aria-label="Click to return to the homepage" ><a href="index.php"><img src="../icons/home.svg" alt="home page icon"></a></div>
+  <div><a class="footer-settings-icon" style="cursor:pointer" aria-label="Click to return to the homepage" href="index.php"><img src="../icons/home.svg" alt="home page icon"></a></div>
 
   <div class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew bookplate" alt="Tractatus Ayyew Mandala"></div>
   
