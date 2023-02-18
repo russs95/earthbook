@@ -202,31 +202,3 @@ Must be updated for each page-->
 </html>
 
 
-<!--
-
-<div id="footer-chapter" style="margin-bottom: 0px;">
-  <div class="footer-size">
-    <div class="footer-left" >
-      <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"; ></div> 
-      <div class="next-section">
-          <div class="next-sec">Next section:</div>
-          <div class="sec-name"><i>Preface</i></div>
-      </div>
-    </div>
-    <div class="footer-right">
-      <a href="preface.php" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
-    </div>
-  </div>
-</div>
-
-
-
-
-<?php require_once ("includes/chap-footer.php");?>-->
-          
-
-        
-
-</body>
-</html>
-

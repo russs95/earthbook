@@ -44,7 +44,7 @@
 
       
       <div class="footer-function">
-        <div class="footer-function-main" style="z-index:10"; onclick="openFooter2()">
+        <div class="footer-function-main" style="z-index:10;" onclick="openFooter2()">
         
           <div id="footer-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center; background-size:contain;margin: auto 10px auto 0;"></div>
 
@@ -82,29 +82,21 @@
   <div class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents"></div>
 
  
-  <div class="footer-settings-icon" style="flex-grow:4; align-self:center;"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;" aria-label="Go to the top of the page"></div></a>
+  <div class="footer-settings-icon" style="flex-grow:4; align-self:center;"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;" aria-label="Go to top of page"></a></div>
 
 </div>
 
 <div class="footer-size" style="height:30px;">
 
-    <div class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px; padding-top: 20px;padding-bottom: 0px;" onclick="openEarthbook()" aria-label="Learn what an Earthbook is">What is an Earthbook?</a>
+    <div class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px; padding-top: 20px;padding-bottom: 0px;" onclick="openEarthbook()" aria-label="Learn what an Earthbook is">What is an Earthbook?
     </div>
 
-    <!--<div class="github-source">Page source code on Github:<br><a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Go to the Earthbook Github repository">../earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> ➔</a>
-    </div>-->
-
-
-    <div class="github-source">The Medium is the Message.</a>
+    <div class="github-source">The Medium is the Message.
     </div>
 
 </div>
-
-
-
 </div>
 
-</div>
   <div id="containerSepia"></div>
   <div id="containerContrast"></div>
   <div id="containerBrightness"></div>
