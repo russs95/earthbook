@@ -12,7 +12,7 @@
   --nav-bar-accent: rgb(43, 43, 48); /*navbar, footer, button color*/
   --deeper-accent-color: #17181B ; /*main chart hover, top menu button backgrounds*/
   --thin-border-color: rgb(89, 89, 89); /*border color for almost everything*/
-  --fainter-border-color: #18181a; /* rgb(72, 72, 80);border color for the menu buttons*/
+  --fainter-border-color: #232326; /* rgb(72, 72, 80);border color for the menu buttons*/
   --element-shadow: 0 4px 15px rgba(3, 3, 3, 0.173); /*whenever a shadow is added*/
   --header-footer: #27272c;
   --slider: #18181a;
