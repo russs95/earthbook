@@ -108,9 +108,7 @@ Must be updated for each page-->
 <div id="ct-main">
 
 
-<!-- MAIN TEXT CONTENT of the Page
-  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
--->
+<!-- MAIN TEXT CONTENT of the Page-->
 
 <div class="lead-page-paragraph">
 
