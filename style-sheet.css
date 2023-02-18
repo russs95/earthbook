@@ -869,6 +869,12 @@ margin-right: -42px;
 }
 
 
+#right-close-button2:focus {
+  right: -0px;
+  transition: 0.3s;
+  background-color: var(--background-color);
+}
+
 #right-close-button2:hover {
   right: -35px;
   transition: 0.3s;
