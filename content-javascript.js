@@ -27,7 +27,7 @@ function scrollFunction() {
     document.getElementById("ct-chap-location").style.display = "block";
     document.getElementById("ct-word-count").style.fontSize = "";
     document.getElementById("ct-book-title").style.marginTop = "10px";
-    document.getElementById("ct-chapter-top").style.marginTop = "15px";
+    document.getElementById("ct-chapter-top").style.marginTop = "0px";
     document.getElementById("ct-word-count").style.display = "block";
     //
     document.getElementById("book-header-logo").style.display = "none";
