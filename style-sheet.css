@@ -981,9 +981,11 @@ margin-left: 0px;
   bottom:-28px;
 }
 
+
+/*
 #bottom-close-button:focus {
   bottom:-60px;
-}
+}*/
 
 
 
@@ -1018,11 +1020,12 @@ padding-top: 14px;
 #bottom-close-button2:hover {
   bottom:-15px;
 }
+/*
 
 #bottom-close-button2:focus {
   bottom:-90px;
 }
-
+*/
 #bottom-close-button2 img {
 height: 30px;
 padding-top: 14px;
