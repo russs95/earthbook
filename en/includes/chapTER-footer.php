@@ -82,7 +82,7 @@
 
   <div class="footer-settings-icon"><img src="../icons/eco.svg" alt="Eco Accounting icon" style="cursor:pointer" onclick="openEco()" aria-label="Click to view CO2 site audit" title="Click to view CO2 site audit"></div>
 
-  <div><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents" title="Click to view EarthBook Table of Contents"></button></div>
+ <!-- <div><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents" title="Click to view EarthBook Table of Contents"></button></div>-->
 
  
   <div style="flex-grow:4; text-align: right;"><a href="#top"><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="Go to the top of the page" style="cursor:pointer;" aria-label="Go to top of page"></button></a></div>
