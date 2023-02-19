@@ -4123,13 +4123,13 @@ fieldset {margin-top: 50px;
   
   @media screen and (max-width: 700px) {
   .footer-function {
-    width: 90% }
+    width: 90%; }
   }
   
   
       @media screen and (min-width: 700px) and (max-width: 1324px) {
-        .footer-size {
-        width: 70%
+        .footer-function {
+        width: 70%;
        }
       }
   
