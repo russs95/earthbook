@@ -971,19 +971,19 @@ margin-left: 0px;
   margin-left: auto; 
   margin-right: auto; 
   z-index: 50;
-  bottom: -85px;
+  bottom: -65px;
  text-align: center;
   width: 150px; 
   padding-bottom:40px;
 }
 
 #bottom-close-button:hover {
-  bottom:-65px;
+  bottom:-45px;
 }
-
+/*
 #bottom-close-button:focus {
   bottom:-100px;
-}
+}*/
 
 
 
