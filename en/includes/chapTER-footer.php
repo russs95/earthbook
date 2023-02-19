@@ -68,9 +68,9 @@
   
 <div id="footer-settings">
 
-<div class="footer-size" style="height:70px;">
+<div class="footer-size" style="height:58px;">
 
-  <div><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Return to the homepage" title="Return to the homepage" href="index.php"><img src="../icons/home.svg" alt="home page icon"></button></div>
+  <div><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Return to the homepage" title="Return to the homepage"><a href="index.php"><img src="../icons/home.svg" alt="home page icon"></a></button></div>
 
   <div><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew title page" alt="Tractatus Ayyew Mandala"></button></div>
   
@@ -85,13 +85,13 @@
   <div><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents" title="Click to view EarthBook Table of Contents"></button></div>
 
  
-  <div style="flex-grow:4; text-align: right;"><button type="button" class="footer-settings-icon"  href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="Go to the top of the page" style="cursor:pointer;" aria-label="Go to top of page"></button></div>
+  <div style="flex-grow:4; text-align: right;"><button type="button" class="footer-settings-icon"><a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="Go to the top of the page" style="cursor:pointer;" aria-label="Go to top of page"></a></button></div>
 
 </div>
 
 <div class="footer-size" style="height:30px;">
 
-    <div class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px; padding-top: 20px;padding-bottom: 0px;" onclick="openEarthbook()" aria-label="Learn what an Earthbook is">What is an Earthbook?
+    <div class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px; padding-top: 10px;padding-bottom: 0px;" onclick="openEarthbook()" aria-label="Learn what an Earthbook is">What is an Earthbook?
     </div>
 
     <div class="github-source">The Medium is the Message.
