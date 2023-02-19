@@ -99,24 +99,6 @@ function closeSettings() {
   document.body.style.height = "unset";} 
 
  
-/* TABLE OF CONTENTS OVERLAY
-Triggers the downwards swing of the TC*/
-
-function openContents() {
-  document.getElementById("table-of-contents").style.height = "100%";
-  document.getElementById("table-of-contents").style.overflowY = "hidden";
-  document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "101vh";
-}
-/* Triggers the upwards reset of the TC */
-
-function closeContents() {
-  document.getElementById("table-of-contents").style.height = "0%";
-  document.getElementById("table-of-contents").style.overflowY = "unset";
-  document.body.style.overflowY = "unset";
-  document.body.style.maxHeight = "unset";
-} 
-
 /* RIGHT SHARE OVERLAY 
 
 Triggers the right share link panel*/
@@ -247,6 +229,44 @@ function closeComments() {
 } 
 
 
+/* TABLE OF CONTENTS OVERLAY
+Triggers the downwards swing of the TC*/
+
+function openContents() {
+  document.getElementById("table-of-contents").style.height = "100%";
+  //document.getElementById("table-of-contents").style.overflowY = "hidden";
+  document.body.style.overflowY = "hidden";
+  //document.body.style.maxHeight = "101vh";
+
+  var modal = document.getElementById('table-of-contents');
+
+function modalShow () {
+   modal.setAttribute('tabindex', '0');
+   modal.focus();
+}
+
+function focusRestrict ( event ) {
+  document.addEventListener('focus', function( event ) {
+    if ( modalOpen && !modal.contains( event.target ) ) {
+      event.stopPropagation();
+      modal.focus();
+    }
+  }, true);
+}
+
+}
+/* Triggers the upwards reset of the TC */
+
+function closeContents() {
+  document.getElementById("table-of-contents").style.height = "0%";
+  //document.getElementById("table-of-contents").style.overflowY = "unset";
+  document.body.style.overflowY = "unset";
+  //document.body.style.maxHeight = "unset";
+} 
+
+
+
+
   /* BUY OVERLAY 
   
 Triggers the right share link panel*/
@@ -373,6 +393,8 @@ function modalCloseComments ( e ) {
     document.getElementById("medium-message").style.opacity = "0";
 
     document.getElementById("buy-curtain").style.height = "0%";
+    document.getElementById("table-of-contents").style.height = "0%";
+
 
   
   }
