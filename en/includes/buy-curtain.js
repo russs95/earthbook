@@ -8,7 +8,6 @@ class BuyCurtain extends HTMLElement {
 
     <div id="buy-curtain" class="buy-overlay">
     
-
       <div class="buy-overlay-content">
       
             <div class="three-books">
@@ -59,9 +58,11 @@ class BuyCurtain extends HTMLElement {
               </div>
             </div>
 
-            <div id="bottom-close-button" style="cursor:pointer" onclick="closeBuy()" aria-label="Click to close this pop-up page">
-            <img src="../svgs/left-x.svg" alt="Buy page close button">
-        </div>
+            <div>
+            <button type="button" id="bottom-close-button" style="cursor:pointer" onclick="closeEarthbook()" aria-label="Click to close this pop-up page">
+              <img src="../svgs/bottom-x.svg" alt="Close page button">
+            </button>
+          </div>
       </div>
             
     </div>
