@@ -12,7 +12,7 @@ class Earthbook extends HTMLElement {
       <div class="overlay-content-earthbook">         
             <div>
                 <h1>What is an Earthbook?</h1>
-                <h3>Earthbooks are for readers, writers & Earth.  Click to learn about the guiding principles:</h3>
+                <!--<h3>Earthbooks are for readers, writers & Earth.  Click to learn about the guiding principles:</h3>-->
                 <!--Earthbook's writing & publishing embodies regenerative principles.-->
             </div>
 
@@ -33,7 +33,7 @@ class Earthbook extends HTMLElement {
 
               <div id="virtue-box-mobile">
 
-                <div class="virtue"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="For-Earth Enterprise" alt="For-Earth Enterprise"  onclick="openForE()"><div id="fore" class="virtue-desc" style="display:block;">The intention and structure of this publishing enterprise is not-for-profit, for-Earth benefit.</div>
+                <div class="virtue"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="For-Earth Enterprise" alt="For-Earth Enterprise"  onclick="openForE()"><div id="fore" class="virtue-desc" style="display:block;">Earthbooks are for readers, writers & Earth. Click the icons to learn about the regenerative principles that guide the project.</div>
                 </div>
 
                 <div class="virtue"><img src="../svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Net-Subtractive Carbon Impact" alt="Net-Subtractive Carbon Impact"  onclick="openCo2()"><div id="co2" class="virtue-desc">An Earthbook has the lightest footprint of all reading formats. Loading-optimization and caching put an Earthbook's digital emissions in the top 10% of clean sites.<span style="cursor:pointer; text-decoration:underline;" onclick="openEco()" aria-label="View our live CO2 page audit">View live CO2e audit.</span></div>
