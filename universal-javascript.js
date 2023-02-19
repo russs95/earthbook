@@ -160,27 +160,6 @@ function closeBookplate() {
 
 } 
 
-/*EARTHBOOK OVERLAY
-
-Opens up the Earthbook overlay from the bottom up*/
-
-
-  /* Open settings when someone clicks on the span element */
-  function openEarthbook() {
-    document.getElementById("bottom-earthbook").style.height = "100%";
-    document.body.style.overflowY = "hidden";
-    /*document.body.style.maxHeight = "101vh";*/
-    document.getElementById("medium-message").style.opacity = "1";
-  }
-
-  /* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeEarthbook() {
-    document.getElementById("bottom-earthbook").style.height = "0%";
-    document.body.style.overflowY = "unset";
-    /*document.body.style.maxHeight = "unset";*/
-    document.getElementById("medium-message").style.transitionDelay = "2s";
-    document.getElementById("medium-message").style.opacity = "0";
-  } 
 
   
 
@@ -287,6 +266,46 @@ function closeComments() {
 } 
 
 
+/*EARTHBOOK OVERLAY
+
+Opens up the Earthbook overlay from the bottom up*/
+
+
+  /* Open settings when someone clicks on the span element */
+  function openEarthbook() {
+    document.getElementById("bottom-earthbook").style.height = "100%";
+    document.body.style.overflowY = "hidden";
+    /*document.body.style.maxHeight = "101vh";*/
+    document.getElementById("medium-message").style.opacity = "1";
+
+    var modal = document.getElementById('bottom-earthbook');
+
+function modalShow () {
+   modal.setAttribute('tabindex', '0');
+   modal.focus();
+}
+
+function focusRestrict ( event ) {
+  document.addEventListener('focus', function( event ) {
+    if ( modalOpen && !modal.contains( event.target ) ) {
+      event.stopPropagation();
+      modal.focus();
+    }
+  }, true);
+}
+}
+  
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeEarthbook() {
+    document.getElementById("bottom-earthbook").style.height = "0%";
+    document.body.style.overflowY = "unset";
+    /*document.body.style.maxHeight = "unset";*/
+    document.getElementById("medium-message").style.transitionDelay = "2s";
+    document.getElementById("medium-message").style.opacity = "0";
+  } 
+
+
  /*ECO OVERLAY
 
 Opens up the Earthbook overlay from the bottom up*/
@@ -331,6 +350,11 @@ function modalCloseComments ( e ) {
     document.getElementById("eco-curtain2").style.height = "0%";
   document.body.style.overflowY = "unset";
   document.getElementById("right-close-button2").style.position = "absolute";
+
+  document.getElementById("bottom-earthbook").style.height = "0%";
+    /*document.body.style.maxHeight = "unset";*/
+    document.getElementById("medium-message").style.transitionDelay = "2s";
+    document.getElementById("medium-message").style.opacity = "0";
   
   }
 }
