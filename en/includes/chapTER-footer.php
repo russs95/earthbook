@@ -1,3 +1,10 @@
+
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
 <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
 
 
@@ -71,18 +78,18 @@
 
   <div><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew bookplate" alt="Tractatus Ayyew Mandala"></button></div>
   
-  <div><button type="button" class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to ebook purchase page"></button>
+  <div><button type="button" class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to ebook purchase page"></button></div>
 
-  <div class="footer-settings-icon"><img src="../icons/search.svg" alt="Settings icon" style="cursor:pointer" onclick="openSearch()" aria-label="Click to adjust book reading settings"></div>
+  <div><button type="button" class="footer-settings-icon"><img src="../icons/search.svg" alt="Settings icon" style="cursor:pointer" onclick="openSearch()" aria-label="Click to adjust book reading settings"></button></div>
 
-  <div class="footer-settings-icon"><img src="../icons/share.svg" alt="share icon" style="cursor:pointer" onclick="openShare()" aria-label="Click to copy the link of the earthBook to share"></div>
+  <div><button type="button" class="footer-settings-icon"><img src="../icons/share.svg" alt="share icon" style="cursor:pointer" onclick="openShare()" aria-label="Click to copy the link of the earthBook to share"></button></div>
 
   <div class="footer-settings-icon"><img src="../icons/eco.svg" alt="Eco Accounting icon" style="cursor:pointer" onclick="openEco()" aria-label="Click to view CO2 site audit"></div>
 
-  <div class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents"></div>
+  <div><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents"></button></div>
 
  
-  <div class="footer-settings-icon" style="flex-grow:4; align-self:center;"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;" aria-label="Go to top of page"></a></div>
+  <div><button type="button" class="footer-settings-icon" style="flex-grow:4; align-self:center;" href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;" aria-label="Go to top of page"></button></div>
 
 </div>
 
@@ -97,11 +104,6 @@
 </div>
 </div>
 
-<?php require_once ("includes/eco-curtain.php");?>
-
-<?php require_once ("includes/comments.php");?>
-
-<?php require_once ("includes/search.php");?>
 
   <div id="containerSepia"></div>
   <div id="containerContrast"></div>
