@@ -163,25 +163,6 @@ function closeBookplate() {
 
   
 
-  /* BUY OVERLAY 
-  
-Triggers the right share link panel*/
-
-function openBuy() {
-  document.getElementById("buy-curtain").style.height = "100%";
-  document.body.style.overflowY = "hidden";
-  /*document.body.style.maxHeight = "101vh";*/
-
-}
-
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeBuy() {
-  document.getElementById("buy-curtain").style.height = "0%";
-  document.body.style.overflowY = "unset";
-  /*document.body.style.maxHeight = "unset";*/
-} 
-
 
 
 
@@ -264,6 +245,41 @@ function closeComments() {
   document.getElementById("right-close-button2").style.position = "absolute";
 
 } 
+
+
+  /* BUY OVERLAY 
+  
+Triggers the right share link panel*/
+
+function openBuy() {
+  document.getElementById("buy-curtain").style.height = "100%";
+  document.body.style.overflowY = "hidden";
+  
+var modal = document.getElementById('buy-curtain');
+
+function modalShow () {
+   modal.setAttribute('tabindex', '0');
+   modal.focus();
+}
+
+function focusRestrict ( event ) {
+  document.addEventListener('focus', function( event ) {
+    if ( modalOpen && !modal.contains( event.target ) ) {
+      event.stopPropagation();
+      modal.focus();
+    }
+  }, true);
+}
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeBuy() {
+  document.getElementById("buy-curtain").style.height = "0%";
+  document.body.style.overflowY = "unset";
+} 
+
+
+
 
 
 /*EARTHBOOK OVERLAY
@@ -355,6 +371,9 @@ function modalCloseComments ( e ) {
     /*document.body.style.maxHeight = "unset";*/
     document.getElementById("medium-message").style.transitionDelay = "2s";
     document.getElementById("medium-message").style.opacity = "0";
+
+    document.getElementById("buy-curtain").style.height = "0%";
+
   
   }
 }

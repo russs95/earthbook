@@ -33,7 +33,7 @@ class Earthbook extends HTMLElement {
 
               <div id="virtue-box-mobile">
 
-                <div class="virtue"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="For-Earth Enterprise" alt="For-Earth Enterprise"  onclick="openForE()"><div id="fore" class="virtue-desc" style="display:block;">Earthbooks are for readers, writers & Earth. Click the icons to learn about the regenerative principles that guide the project.</div>
+                <div class="virtue"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="For-Earth Enterprise" alt="For-Earth Enterprise"  onclick="openForE()"><div id="fore" class="virtue-desc" style="display:block;">The medium is the message: Earthbooks are for readers, writers & Earth. Click the icons to learn about the regenerative principles that guide the project.</div>
                 </div>
 
                 <div class="virtue"><img src="../svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Net-Subtractive Carbon Impact" alt="Net-Subtractive Carbon Impact"  onclick="openCo2()"><div id="co2" class="virtue-desc">An Earthbook has the lightest footprint of all reading formats. Loading-optimization and caching put an Earthbook's digital emissions in the top 10% of clean sites.<span style="cursor:pointer; text-decoration:underline;" onclick="openEco()" aria-label="View our live CO2 page audit">View live CO2e audit.</span></div>
@@ -58,7 +58,7 @@ class Earthbook extends HTMLElement {
           </div>
         </div>
          
-          <div id="medium-message">The Medium is the Message.<br>
+          <div id="medium-message"><!--The Medium is the Message.<br>-->
           <span style="font-size:0.7em;font-style:normal;"><a href="https://github.com/russs95/earthbook/blob/main/README.md" title="Jump to the Github project repository" target="_blank">Publish your Earthbook.</a></span>
           </div>
 
