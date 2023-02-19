@@ -52,10 +52,10 @@ The requisite typography for the page-->
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
 
 	
-<!--Preload graphics-->
+<!--Preload graphics
 <link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
 <link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
-<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">-->
 
  <!-- Style Sheets   
 All the css needed for this page-->

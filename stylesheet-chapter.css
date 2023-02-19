@@ -63,7 +63,7 @@ display: none;
     position: fixed;
     height: 55vh;
     margin: 0px auto;
-    margin-top: 0px;
+    margin-top: 15px;
   
   }
 
@@ -233,7 +233,7 @@ display: none;
     }
       
     #ct-chapter-title {
-      padding-top: 45px;
+      padding-top: 41px;
       font-size: 12vmin;
       letter-spacing: 15px;
     }
