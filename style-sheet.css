@@ -971,14 +971,14 @@ margin-left: 0px;
   margin-left: auto; 
   margin-right: auto; 
   z-index: 50;
-  bottom: -30px;
+  bottom: -35px;
  text-align: center;
   width: 150px; 
-  padding-bottom:40px;
+  padding-bottom:50px;
 }
 
 #bottom-close-button:hover {
-  bottom:-15px;
+  bottom:-18px;
 }
 /*
 #bottom-close-button:focus {
@@ -3431,6 +3431,7 @@ display: none;
   left: 0;
   margin: auto;
   display: none;
+  font-weight: 300;
 }
 
 #medium-message {
@@ -3597,7 +3598,7 @@ display: none;
   .virtue-desc {
     bottom: 300px;
     width: 65%;
-    font-size: 2.2em;
+    font-size: 1.6em;
   }
 
   #medium-message {
