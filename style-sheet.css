@@ -971,14 +971,14 @@ margin-left: 0px;
   margin-left: auto; 
   margin-right: auto; 
   z-index: 50;
-  bottom: -65px;
+  bottom: -85px;
  text-align: center;
   width: 150px; 
   padding-bottom:40px;
 }
 
 #bottom-close-button:hover {
-  bottom:-35px;
+  bottom:-65px;
 }
 
 #bottom-close-button:focus {
@@ -1009,21 +1009,19 @@ padding-top: 14px;
   margin-left: auto; 
   margin-right: auto; 
   z-index: 50;
-  bottom: -35px;
+  bottom: -30px;
  text-align: center;
   width: 150px; 
   padding-bottom:40px;
 }
 
 #bottom-close-button:hover {
-  bottom:-35px;
+  bottom:-15px;
 }
 
 #bottom-close-button2:focus {
-  bottom:-100px;
+  bottom:-90px;
 }
-
-
 
 #bottom-close-button2 img {
 height: 30px;
