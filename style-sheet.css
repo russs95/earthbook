@@ -980,10 +980,10 @@ margin-left: 0px;
 #bottom-close-button:hover {
   bottom:-28px;
 }
-/*
+
 #bottom-close-button:focus {
-  bottom:-100px;
-}*/
+  bottom:-60px;
+}
 
 
 
