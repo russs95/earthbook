@@ -36,7 +36,7 @@ class Earthbook extends HTMLElement {
                 <div class="virtue"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="For-Earth Enterprise" alt="For-Earth Enterprise"  onclick="openForE()"><div id="fore" class="virtue-desc" style="display:block;">The medium is the message: Earthbooks are for readers, writers & Earth. Click the icons to learn about the regenerative principles that guide the project.</div>
                 </div>
 
-                <div class="virtue"><img src="../svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Net-Subtractive Carbon Impact" alt="Net-Subtractive Carbon Impact"  onclick="openCo2()"><div id="co2" class="virtue-desc">An Earthbook has the lightest footprint of all reading formats. Loading-optimization and caching put an Earthbook's digital emissions in the top 10% of clean sites.<span style="cursor:pointer; text-decoration:underline;" onclick="openEco()" aria-label="View our live CO2 page audit">View live CO2e audit.</span></div>
+                <div class="virtue"><img src="../svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Net-Subtractive Carbon Impact" alt="Net-Subtractive Carbon Impact"  onclick="openCo2()"><div id="co2" class="virtue-desc">An Earthbook has the lightest footprint of all reading formats. Loading-optimization and caching put an Earthbook's digital emissions in the top 10% of clean sites.  <span style="cursor:pointer; text-decoration:underline;" onclick="openEco()" aria-label="View our live CO2 page audit">View live CO2e audit.</span></div>
                 </div>
 
                 <div class="virtue"><img src="../svgs/icon-creativecommons.svg"  width="100%" height="100%" title="Creative Commons" alt="Creative Commons License"  onclick="openCc()"><div id="cc" class="virtue-desc">The code and content of this book are licensed under a Creative Commons BY-SA-ND 4.0 License. <a href="https://github.com/russs95/earthbook/" target="_blank" aria-label="Access the Earthbook Github repository"> Access the Github repository.</a></div>
@@ -209,7 +209,7 @@ function openCo2() {
     e.style.display = "none";
 
   } else {
-    a.style.display = "block";
+    a.style.display = "none";
 }
 }
 
