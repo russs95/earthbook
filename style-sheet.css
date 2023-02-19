@@ -1011,14 +1011,14 @@ padding-top: 14px;
   margin-left: auto; 
   margin-right: auto; 
   z-index: 50;
-  bottom: -30px;
+  bottom: -33px;
  text-align: center;
   width: 150px; 
   padding-bottom:40px;
 }
 
 #bottom-close-button2:hover {
-  bottom:-15px;
+  bottom:-22px;
 }
 /*
 
@@ -4129,7 +4129,7 @@ fieldset {margin-top: 50px;
   
       @media screen and (min-width: 700px) and (max-width: 1324px) {
         .footer-function {
-        width: 70%;
+        width: 77%;
        }
       }
   

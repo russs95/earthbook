@@ -29,14 +29,12 @@ class Bookplate extends HTMLElement {
 
           <h6 style="color:grey">Composed in Kalinga, Philippines and Bali, Indonesia. First presented at the Bandung Spirit Conference 12.02.2021, Université Le Havre. Earthen.io edition 22.02.2022, Earthbook edition 22.12.22. Copyright Russell Maier & Banayan Angway.</h6>
           
-        
-          <div id="bottom-close-button" style="cursor:pointer" onclick="closeBookplate()" aria-label="Close this pop-up page">
-            <img src="../svgs/left-x.svg" alt="Bookplate close button">
+          <div>
+          <button type="button" id="bottom-close-button" style="cursor:pointer" onclick="closeBookplate()" aria-label="Click to close this pop-up page">
+            <img src="../svgs/bottom-x.svg" alt="Close curtain button">
+          </button>
         </div>
-
-  
-      
-                                                             
+                                                                 
     
     
     `;
