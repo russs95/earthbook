@@ -164,6 +164,12 @@ Must be updated for each page-->
 
 </div><!--Closes main content block-->
 
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
   <!--Footer Next Chapter Section: Requires customization-->
   <div id="footer-chapter" style="margin-bottom: 0px;">
 

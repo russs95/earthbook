@@ -1,9 +1,5 @@
 
-<?php require_once ("includes/eco-curtain.php");?>
 
-<?php require_once ("includes/comments.php");?>
-
-<?php require_once ("includes/search.php");?>
 
 <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
 
@@ -89,7 +85,7 @@
   <div><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents"></button></div>
 
  
-  <div><button type="button" class="footer-settings-icon" style="flex-grow:4; align-self:center;" href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;" aria-label="Go to top of page"></button></div>
+  <div style="flex-grow:4; align-self:center;"><button type="button" class="footer-settings-icon"  href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;" aria-label="Go to top of page"></button></div>
 
 </div>
 
