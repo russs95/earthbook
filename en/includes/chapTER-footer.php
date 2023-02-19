@@ -67,11 +67,11 @@
 
 <div class="footer-size" style="height:70px;">
 
-  <div class="footer-settings-icon" style="cursor:pointer" aria-label="Click to return to the homepage" href="index.php"><img src="../icons/home.svg" alt="home page icon"></div>
+  <div><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Click to return to the homepage" href="index.php"><img src="../icons/home.svg" alt="home page icon"></button></div>
 
-  <div class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew bookplate" alt="Tractatus Ayyew Mandala"></div>
+  <div><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew bookplate" alt="Tractatus Ayyew Mandala"></button></div>
   
-  <div class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to ebook purchase page"></div>
+  <div><button type="button" class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to ebook purchase page"></button>
 
   <div class="footer-settings-icon"><img src="../icons/search.svg" alt="Settings icon" style="cursor:pointer" onclick="openSearch()" aria-label="Click to adjust book reading settings"></div>
 

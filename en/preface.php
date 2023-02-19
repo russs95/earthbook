@@ -196,10 +196,10 @@ Must be updated for each page-->
   
     <a name="1-down"></a>
     <p style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
-    <a href="1-up" class="footnote" aria-label="View the original footnoted passage">
+    <a href="#1-up" class="footnote" aria-label="View the footnot in context">
         
             <div class="footnote-number">1.</div>
-            <div class="footnote-text">Later, to be more philosophically precise we will use the term ‘kincentric knowing’ and refer to ‘kincentric cultures’ instead of 'indigenous wisdom traditions' as we are referring to a particular cosmology that, although it is characterstic in most indigenous cultures, is not necessarily so.</div>
+            <div class="footnote-text">Later, to be more philosophically precise we will use the term ‘kincentric knowing’ and refer to ‘kincentric cultures’ instead of 'indigenous wisdom traditions and cultures. We make this distinction as we are referring to a particular cosmology that, although it is characterstic of most indigenous cultures, is not necessarily so.</div>
         </a>
      
       </div><!--Closes footnote section-->

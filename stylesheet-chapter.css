@@ -675,9 +675,11 @@ margin: auto;
 .footer-settings-icon {
   font-family: 'Mulish';
   color: grey;
-  align-self: center;
+  /*align-self: center;*/
   font-size: 1.0em;
   text-align: right;
+  background: none;
+  border: none;
 }
 
 .footer-settings-icon:hover {
