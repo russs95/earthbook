@@ -81,7 +81,7 @@ All the css needed for this page-->
  <script src="../universal-javascript.js" defer></script>
  <script src="../clip/dist/clipboard.min.js" defer></script>
  <script src="../accessibility.js" defer></script>
- <script type="module" src="https://unpkg.com/dark-mode-toggle" defer></script>
+ <script src="https://unpkg.com/dark-mode-toggle" defer></script>
  
  <!-- Arc CDN Script without delay
 <script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
