@@ -47,12 +47,12 @@ Must be updated for each page-->
 <meta name="description" content="The story behind the beginning, the writing and the title of the Tractatus Ayyew.">
 
 
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="4 minutes" /> 
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="4 minutes"> 
 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:description"   content="The tale of the Tractatus and its Ayyew inspiration."/>
+<meta property="og:description"   content="The tale of the Tractatus and its Ayyew inspiration.">
 
 
 <style>
@@ -253,7 +253,7 @@ Must be updated for each page-->
 <?php require_once ("includes/chapTER-footer.php");?>
 
 
-
+</div>
 </body>
 </html>
 

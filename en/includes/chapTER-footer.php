@@ -70,7 +70,7 @@
 
 <div class="footer-size" style="height:58px;">
 
-<div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Return to the homepage" title="Return to the homepage" ><a href="index.php"><img src="../icons/home.svg" alt="home page icon"></button></a></div>
+<div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Return to the homepage" title="Return to the homepage" onclick="location.href='index.php'" ><img src="../icons/home.svg" alt="home page icon"></button></div>
 
   <div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew title page" alt="Tractatus Ayyew Mandala"></button></div>
   
@@ -85,7 +85,7 @@
  <!-- <div><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents" title="Click to view EarthBook Table of Contents"></button></div>-->
 
  
-  <div style="flex-grow:4; text-align: right;"><a href="#top"><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="Go to the top of the page" style="cursor:pointer;" aria-label="Go to top of page"></button></a></div>
+  <div style="flex-grow:4; text-align: right;"><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="Go to the top of the page" style="cursor:pointer;" aria-label="Go to top of page" onclick="location.href='#top'"></button></div>
 
 </div>
 
