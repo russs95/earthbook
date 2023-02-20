@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,46 +15,43 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "1";
+$page_title = "Preamble | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
-
 <?php require_once ("../header.php");?>
-
-
-<!--END OF GENERIC CONTENT-->
 
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Preface | Tratatus Ayyew - An Earthbook</title>
+<meta property="article:modified_time" content="2023-02-20T09:14:13+00:00">
+
 <meta name="keywords" content="Preface, introduction, stories, dapay, Earth ethics, earthen ethics, bontoc, philipines, igorot, russell, irene, banyan, ecobricks, plastic, indigenous philosophy, philosophy, what should green mean, deped, irene, banayan, russell, maier">
 <meta name="description" content="The story behind the beginning, the writing and the title of the Tractatus Ayyew.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="3 minutes" /> 
+<meta name="twitter:data1" content="4 minutes" /> 
+
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Preface | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="The tale of the Tractatus and its Ayyew inspiration."/>
 
 
@@ -79,7 +80,7 @@ Must be updated for each page-->
 <BODY class="accessibility-plugin-ac">
   <div id="underlayer">
 
-    <a name="top"></a>
+  <div id="top"></div>
 
 <!--HEADER NAVBAR-->
 <header-component></header-component>
@@ -93,9 +94,7 @@ Must be updated for each page-->
       <div id="ct-word-count"><i>1,220 words</i></div>
     </div>
 </div>
- 
-<?php require_once ("includes/eco-curtain.php");?>
- 
+  
 
 
 
@@ -188,35 +187,56 @@ Must be updated for each page-->
 
     <p>It is our hope that with the application of Earthen principles in plastic's resolve, other grey challenges may transition, with confidence and clarity, to the Earthen way of green.</p>
 
-  </div>
+    </div><!--closes page text content-->
 
-   <div class="footnote-section">
+<!--FOOTNOTES SECTION-->
 
-    <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
-  
-    <a name="1-down"></a>
-    <p style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
-    <a href="#1-up" class="footnote" aria-label="View the footnot in context">
+    <div class="footnote-section" style="z-index:8;">
+
+      <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
+
+      <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+            
+        <div id="footnotes-arrow"></div>
         
-            <div class="footnote-number">1.</div>
-            <div class="footnote-text">Later, to be more philosophically precise we will use the term ‘kincentric knowing’ and refer to ‘kincentric cultures’ instead of 'indigenous wisdom traditions and cultures. We make this distinction as we are referring to a particular cosmology that, although it is characterstic of most indigenous cultures, is not necessarily so.</div>
+        <div class="footnotes-title">Chapter Footnotes</div>
+      
+      </div>
+
+      <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+        <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+        
+        
+        <a href="#1-up" class="footnote">   
+        <div class="footnote-number">1.</div>
+  
+        <div class="footnote-text">Later, to be more philosophically precise we will use the term ‘kincentric knowing’ and refer to ‘kincentric cultures’ instead of 'indigenous wisdom traditions and cultures. We make this distinction as we are referring to a particular cosmology that, although it is characterstic of most indigenous cultures, is not necessarily so.
+        </div>
         </a>
      
-      </div><!--Closes footnote section-->
+     
+        
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div><!--Closes footnote section-->
           
-    </div><!--Closes main content block-->
-  
-    <!--Footer Next Chapter Section: Requires customization-->
+  </div><!--Closes main content block-->
 
-<div id="footer-chapter" style="margin-bottom: 0px;">
+  <!--Footer Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
 
-  <div class="footer-size">
+    <div class="footer-size">
     
-    <div class="footer-left">
-      <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+      <div class="footer-left">
     
      
-      <div class="next-section">
+        <div class="next-section">
           <div class="next-sec">Next:</div>
           <div class="sec-name"><i>Epigraph</i></div>
       </div>
@@ -224,21 +244,17 @@ Must be updated for each page-->
     </div>
     
     <div class="footer-right">
-   
-      <a href="epigraph.php"><div class="next-button">Next ➔</div></a>
+    
+    <a href="epigraph.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
-    </div>
   </div>
-
-
-	
 </div>
 
+<?php require_once ("includes/chapTER-footer.php");?>
 
-<?php require_once ("includes/chap-footer.php");?>
-	  
 
 
 </body>
 </html>
+
 
