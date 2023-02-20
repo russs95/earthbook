@@ -181,10 +181,11 @@ Must be updated for each page-->
       <a href="imagine.php"><div class="next-button">Next ➔</div></a>
 
     </div>
-  </div>
-</div>
+    </div>
+    </div>
 
-<?php require_once ("includes/chap-footer.php");?>
+  <?php require_once ("includes/chapTER-footer.php");?>
+
 
 
 </body>
