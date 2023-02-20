@@ -695,7 +695,7 @@ margin: auto;
 @media screen and (max-width: 699px) {
   .footer-settings-icon img{
     height: 30px;
-    padding-right: 10px;
+    padding-right: 0px;
 
   }
 
