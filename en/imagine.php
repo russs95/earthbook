@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,47 +15,41 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "4";
+$page_title = "Imagine | Tractatus Ayyew - An Earthbook";?>
 
 <head>
-
 
 <?php require_once ("../header.php");?>
 
 
-
-<!--END OF GENERIC CONTENT-->
-
 <!--META TAGS
 Must be updated for each page-->
-
-<title>Imagine | Tratatus Ayyew - Earthbook</title>
 <meta name="keywords" content="imagine, a green new world, plastic, green, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, permaculture, bill molison, green ethics, environment, deep ecology, ecological, ethics"> 
 <meta name="description" content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.">
 
 
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="6 minutes" /> 
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="6 minutes"> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Imagine | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part."/>
+
+<meta property="og:description"   content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.">
 
 </head>
 
@@ -66,8 +64,8 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Imagine
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Imagine</div>
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Book One | Chapter One</div>
@@ -81,9 +79,6 @@ Must be updated for each page-->
   <div id="ct-chapt-graphic" class="background-1">
 
   </div>
-
- 
-<?php require_once ("includes/eco-curtain.php");?>
  
 
 <div id="up-arrow"></div>
@@ -173,17 +168,27 @@ Must be updated for each page-->
 
      <p>Let us start with that troublesome material we so love to hate.</p>
   
+    
     </div><!--closes page text content-->
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section">
+    <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+      <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
 
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+      <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+            
+        <div id="footnotes-arrow"></div>
+        
+        <div class="footnotes-title">Chapter Footnotes</div>
       
-    
+      </div>
+
+      <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+        <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+        
 
     
       <a href="#3-up" class="footnote">   
@@ -202,6 +207,12 @@ Must be updated for each page-->
       </a>
 
 
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
 
     </div><!--Closes footnote section-->
           
@@ -213,12 +224,10 @@ Must be updated for each page-->
     <div class="footer-size">
     
       <div class="footer-left">
-
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Next chapter:</div>
+          <div class="next-sec">Next:</div>
             <div class="sec-name"><i>Plastic 1.0</i></div>
         </div>
 
@@ -229,14 +238,11 @@ Must be updated for each page-->
     
         <a href="plastic.php"><div class="next-button">Next ➔</div></a>
 
-      </div>
-    </div>
-  </div>
+    
+<?php require_once ("includes/chapTER-footer.php");?>
 
-  <?php require_once ("includes/chap-footer.php");?>
 
 </div>
-
 </body>
 </html>
 

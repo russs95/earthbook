@@ -125,7 +125,7 @@ Must be updated for each page-->
 </div>
 </div>  
 <div class="page-paragraph">
-   <p>In 2011, the amount of discarded sandals, sodden diapers, used bags and tossed wrappers entering the Chico River had reached a breaking point. Overwhelmed by the ever arriving slew of plastic, the downriver Filipino province of Kalinga took action to sue the upriver town of Bontoc. The mayor and governor took the charges seriously. They set about shutting down the numerous dumpsites along the river's winding course through the region.</p>
+   <p>In 2011, the amount of discarded sandals, sodden diapers, used bags and tossed wrappers entering the Chico River had reached a breaking point. Overwhelmed by the ever arriving slew of plastic, the downriver Filipino province of Kalinga took action to sue the upriver town of Bontoc. The mayor and governor took the charges seriously. They set about shutting down the numerous dumpsites along the river's winding course through the remote region.</p>
      
     <p>But where was all our plastic to go?</p>
 
@@ -145,7 +145,7 @@ Must be updated for each page-->
    
    <p>Not only were we able to make bottle-bricks that were just as effective as those packed with sand, we’d been able to secure a great deal of plastic that would have otherwise scattered into the river.</p>
 
-   <p>At my home, I began to experiment with packing my own used plastic into a bottle. I made a small garden bench with the result. Everyone was delighted. The nearby school, which was struggling to dispose of the plastic of hundreds of students, asked to be shown how it was done. After a day of packing plastic, making bricks and building a composter, everyone was excited by this simple alternative to burning and dumping our plastic.</p>
+   <p>At my home, I began to experiment with packing my own used plastic into a bottle. I made a small garden bench with the result. My neighbours and I were delighted. The nearby school, which was struggling to dispose of the plastic of hundreds of students, asked to be shown how it was done. After a day of packing plastic, making bricks and building a composter, everyone was excited by this simple alternative to burning and dumping our plastic.</p>
   
    <p>As the technique began to spread to other schools, Banayan stepped in. She realized the potential for raising the awareness of the ecological impacts of plastic. We worked together to create a reporting system and a guidebook. Through her coordination, what was soon to be called ‘ecobricking’ spread out to hundreds of schools in the province.</p>
 
