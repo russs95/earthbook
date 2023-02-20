@@ -36,9 +36,8 @@ These tags will be consistent for the whole book-->
 
 <meta property="og:locale" content="<?php echo ($lang); ;?>">
 
-<meta property="og:url" content="https://tractatus.earthen.io/<?php echo ($lang); ;?>/<?php echo ($name); ;?>">
- 
-
+<meta property="og:url"           content="https://book.earthen.io/<?php echo $lang; ?>/<?php echo $name; ?>">
+<meta property="og:title"         content="<?php echo $page_title; ?>">
  <!-- Fonts
 The requisite typography for the page-->
 
