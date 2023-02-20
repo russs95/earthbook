@@ -144,13 +144,8 @@ Must be updated for each page-->
     ― Régis Debray, <i>Le siècle vert. Un changement de civilisation</i><br><br>(<i>The Green Age: A Change of Civilizations</i>)
     </div>
     <br><br>
+</div><!--closes page text content-->
 
-          
-    <div id="footnotes-concealer"></div>
-
-</div><!-- Closes footnote section-->
-
-</div><!--Closes main content block-->
 
 <?php require_once ("includes/eco-curtain.php");?>
 
