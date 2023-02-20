@@ -30,8 +30,8 @@ $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
-$page_number = "1";
-$page_title = "Preamble | Tractatus Ayyew - An Earthbook";?>
+$page_number = "2";
+$page_title = "Preface | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
