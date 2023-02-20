@@ -313,6 +313,7 @@ Opens up the Earthbook overlay from the bottom up*/
     document.body.style.overflowY = "hidden";
     /*document.body.style.maxHeight = "101vh";*/
     document.getElementById("medium-message").style.opacity = "1";
+    document.getElementById("fore").style.opacity = "1";
 
     var modal = document.getElementById('bottom-earthbook');
 
@@ -339,6 +340,7 @@ function focusRestrict ( event ) {
     /*document.body.style.maxHeight = "unset";*/
     document.getElementById("medium-message").style.transitionDelay = "2s";
     document.getElementById("medium-message").style.opacity = "0";
+    document.getElementById("fore").style.opacity = "0";
   } 
 
 

@@ -3435,7 +3435,12 @@ display: none;
   margin: auto;
   display: none;
   font-weight: 300;
+ 
 }
+
+#fore { opacity: 0;
+  transition: 0.3s;
+  transition-delay: 0.4s;}
 
 #medium-message {
   position: absolute;
@@ -3446,7 +3451,7 @@ display: none;
   font-style: italic;
   opacity: 0;
   transition: 0.4s;
-  transition-delay: 0.4s;
+  transition-delay: 0.8s;
 
 }
 
@@ -3496,7 +3501,7 @@ display: none;
 }
 
 .virtue-desc {
-  bottom: 200px;
+  bottom: 125px;
   width: 87%;
   font-size: 1.0em;
 }
@@ -3505,7 +3510,7 @@ display: none;
   position: absolute;
   right: 0;
   left:0;
-  bottom: 100px;
+  bottom: 70px;
   font-size: 1.5em;
 }
 

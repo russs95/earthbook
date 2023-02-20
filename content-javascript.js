@@ -94,7 +94,7 @@ function openFooter2() {
   var x = document.getElementById("footer-chapter");
   var z = document.getElementById("footer-arrow");
   if (x.style.marginBottom === "0px") {
-    x.style.marginBottom = "150px";
+    x.style.marginBottom = "145px";
    z.style.background = "url(../icons/up-arrow.svg) no-repeat center";
   z.style.backgroundSize = "contain";
  
