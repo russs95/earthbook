@@ -86,8 +86,8 @@ Must be updated for each page-->
 <header-component></header-component>
 
 <div id="ct-chapter-top">
-    <div id="ct-tc-menu" onclick="openContents()"></div>
-    <div class="sero" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
       <div id="ct-chapter-title">Preface</div>   
       <div id="ct-book-title">Tractatus Ayyew</div>
       <div id="ct-chap-location">Introduction</div>
