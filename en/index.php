@@ -134,7 +134,7 @@ $name = "";?>
                 <a href="preamble.php">
                 <div class="chapter-top">
                     <div class="chapter-name">Preamble</div>
-                    <div class="word-count"><i>431 words</i></div>
+                    <div class="word-count"><i>453 words</i></div>
                 </div>
                 </a>
 

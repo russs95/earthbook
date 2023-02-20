@@ -90,7 +90,7 @@ Must be updated for each page-->
     <div id="ct-chapter-title">Preamble</div>   
     <div id="ct-book-title">Tractatus Ayyew</div>
     <div id="ct-chap-location">Introduction</div>
-    <div id="ct-word-count"><i>431 words</i></div>
+    <div id="ct-word-count"><i>453 words</i></div>
   </div>
 </div> 
 
@@ -117,7 +117,7 @@ Must be updated for each page-->
 
     <p>Of course, <i>how</i> a story is told (or a theory for that matter) is just as important as the sum of its sentences.  In the dap'ay, both tale and telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
 
-    <p>Alas, while our telling will never acheive such a magnificence of medium, we've nonetheless put great care into our book's presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <a class="java-link" onclick="openEarthbook()" aria-label="Open About Screen" title="Learn more about what an Earthbook is"><i>Earthbook</i></a>—  an Earth and reader friendly format that embodies the principles of Earthen ethics that we'll be developing in the chapters ahead.</p>
+    <p>Alas, while our telling will never achieve such a magnificence of millieu and medium, we've nonetheless put great care into our book's presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <a class="java-link" onclick="openEarthbook()" aria-label="Open About Screen" title="Learn more about what an Earthbook is"><i>Earthbook</i></a>—  an Earth and reader friendly format that embodies the principles of Earthen ethics that we'll be developing in the chapters ahead.</p>
 
     <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced and shared. For example, this section of the book can be found at book.earthen.io/<?php echo ($lang); ;?>/preamble</p>
     

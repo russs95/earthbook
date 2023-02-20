@@ -106,7 +106,7 @@ Triggers the right share link panel*/
 function openShare() {
     document.getElementById("right-share-overlay").style.width = "100%";
     document.body.style.overflowY = "hidden";
-    document.body.style.maxHeight = "101vh";
+    //document.body.style.maxHeight = "101vh";
  
   }
 
@@ -114,7 +114,7 @@ function openShare() {
   function closeShare() {
     document.getElementById("right-share-overlay").style.width = "0%";
     document.body.style.overflowY = "unset";
-    document.body.style.maxHeight = "unset";
+    //document.body.style.maxHeight = "unset";
 
   } 
 
@@ -125,9 +125,9 @@ function openShare() {
 Opens the bookplate overlay from the top up*/
 
 function openBookplate() {
-  document.getElementById("top-bookplate").style.height = "101vh";
+  document.getElementById("top-bookplate").style.height = "100%";
   document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "101vh";
+ // document.body.style.maxHeight = "101vh";
   document.getElementById("sub-earthbook").style.display = "block!important";
   document.getElementById("bookplate-img").style.display = "block";
 }
@@ -135,7 +135,7 @@ function openBookplate() {
 function closeBookplate() {
   document.getElementById("top-bookplate").style.height = "0%";
   document.body.style.overflowY = "unset";
-  document.body.style.maxHeight = "unset";
+  //document.body.style.maxHeight = "unset";
   document.getElementById("sub-earthbook").style.display = "none";
   document.getElementById("bookplate-button").style.display = "none";
   document.getElementById("bookplate-img").style.display = "none";
@@ -151,7 +151,7 @@ function closeBookplate() {
 
 /* RIGHT SEARCH OVERLAY 
 
-Triggers the right share link panel*/
+Triggers the right search panel*/
 
 function openSearch() {
   document.getElementById("right-search-overlay").style.width = "100%";
@@ -269,7 +269,7 @@ function closeContents() {
 
   /* BUY OVERLAY 
   
-Triggers the right share link panel*/
+Triggers the right buy panel*/
 
 function openBuy() {
   document.getElementById("buy-curtain").style.height = "100%";
@@ -396,8 +396,12 @@ function modalCloseComments ( e ) {
 
     document.getElementById("buy-curtain").style.height = "0%";
     document.getElementById("table-of-contents").style.height = "0%";
+    document.getElementById("right-share-overlay").style.width = "0%";
 
-
+    document.getElementById("top-bookplate").style.height = "0%";
+  document.getElementById("sub-earthbook").style.display = "none";
+  document.getElementById("bookplate-button").style.display = "none";
+  document.getElementById("bookplate-img").style.display = "none";
   
   }
 }
