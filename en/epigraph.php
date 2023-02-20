@@ -84,7 +84,7 @@ Must be updated for each page-->
     }
     .ct-quote-source {
       width: 70%;
-      font-size: 1.3em;
+      font-size: 1.1em;
     }
   }
     
@@ -95,8 +95,10 @@ Must be updated for each page-->
     }
     .ct-quote-source {
       width: 50%;
-      font-size: 1.3em;
+      font-size: 1.0em;
     }
+
+    #ct-main {margin-bottom: 375px;}
   }
 
 </style>
