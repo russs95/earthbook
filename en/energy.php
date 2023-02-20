@@ -277,7 +277,6 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
   
     </div><!--closes page text content-->
 
-
 <!--FOOTNOTES SECTION-->
 
     <div class="footnote-section" style="z-index:8;">
@@ -382,8 +381,6 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
     <div class="footer-size">
     
       <div class="footer-left">
-
-       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
     
      
         <div class="next-section">
