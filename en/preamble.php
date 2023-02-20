@@ -37,8 +37,6 @@ $page_title = "Preamble | Tractatus Ayyew - An Earthbook";?>
 
 <?php require_once ("../header.php");?>
 
-<!--END OF GENERIC CONTENT-->
-
 
 <!--META TAGS
 Must be updated for each page-->
@@ -47,14 +45,10 @@ Must be updated for each page-->
 <meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics, preamble, intro, "> 
 <meta name="description" content="An introduction to the Earthbook edition of the Tractatus Ayyew">
 <meta property="article:modified_time" content="2023-02-18T09:14:13+00:00">
-
-
 <meta name="twitter:label1" content="Est. reading time">
 <meta name="twitter:data1" content="3 minutes"> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:url"           content="https://tractatus.earthen.io/<?php echo $lang; ?>/<?php echo $name; ?>">
-<meta property="og:title"         content="<?php echo $page_title; ?>">
 <meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew">
 
 <style>
@@ -110,7 +104,6 @@ Must be updated for each page-->
 <div class="lead-page-paragraph">
 
   IN THE CULTURE of the Igorot people of Northern Luzon in the West Philippine Sea, story telling is central. In their <i>dap'ay</i>— stone plazas at the center of every village— stories are told to introduce people, lessons and ideas. It is an example that we will follow in the chapters ahead.</div>
-
 
 <div class="page-paragraph">
     <p>To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader eager for an overview, in our <a href="summaries.php" title="Jump to the three short summaries of the theory">summaries section</a>, we provide a short sentence, a long sentence and a paragraph that each sum up the theory of Earthen ethics which we develop in the <i>Tractatus Ayyew</i>.</p>
