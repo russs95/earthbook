@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,45 +15,45 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "5";
+$page_title = "Plastic 1.0 | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
 
 <?php require_once ("../header.php");?>
 
-<!--END OF GENERIC CONTENT-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Plastic 1.0 | Tractatus Ayyew - Earthbook</title>
-<meta name="keywords" content="Plastic, 1.0, plastic pollution, petro-capital economy, human nature, nature of plastic, "> 
+<meta property="article:modified_time" content="2023-02-21T09:14:13+00:00">
+
+<meta name="keywords" content="Plastic, 1.0, plastic pollution, petro-capital economy, human nature, nature of plastic, recycling, incineration, dumping"> 
 <meta name="description" content="Like no other material, plastic has been made entirely for the use and benefit of humans.">
 
 
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="6 minutes" /> 
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="6 minutes"> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:title"         content="Plastic 1.0 | Tractatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Like no other material, plastic has been made entirely for the use and benefit of humans."/>
+<meta property="og:description"   content="Like no other material, plastic has been made entirely for the use and benefit of humans.">
 
 
 <style>
@@ -75,8 +79,8 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Plastic 1.0</div>
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Book One | Chapter Two</div>
@@ -135,16 +139,35 @@ Must be updated for each page-->
 
      <p>To do so we must go back to the very beginning of planet Earth. </p>
 
+     <br><br><br>
   
-    </div><!--closes page text content-->
+    
+  </div><!--closes page text content, then loads page curtains:-->
+
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section">
+  <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
 
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
+      
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
       
         <a href="#5-up" class="footnote">   
         <div class="footnote-number">5.</div>
@@ -192,6 +215,12 @@ Must be updated for each page-->
        
 
 
+      </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
 
     </div><!--Closes footnote section-->
           
@@ -203,13 +232,11 @@ Must be updated for each page-->
     <div class="footer-size">
     
       <div class="footer-left">
-
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Next chapter:</div>
-            <div class="sec-name"><i>Plastic's Stellar Story</i></div>
+          <div class="next-sec">Next:</div>
+            <div class="sec-name"><i>An Interstellar Story</i></div>
         </div>
 
       </div>
@@ -217,17 +244,16 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="stellar.php"><div class="next-button">Next ➔</div></a>
+        <a href="stellar.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
-      </div>
-    </div>
-  </div>
-
-  <?php require_once ("includes/chap-footer.php");?>
-  
+</div>
 </div>
 
+    
+<?php require_once ("includes/chapTER-footer.php");?>
 
+
+</div>
 </body>
 </html>
 
