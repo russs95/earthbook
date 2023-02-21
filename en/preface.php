@@ -50,8 +50,7 @@ Must be updated for each page-->
 <meta name="twitter:label1" content="Est. reading time">
 <meta name="twitter:data1" content="4 minutes"> 
 
-	
-<!-- Facebook Open Graph Tags for social sharing-->
+
 <meta property="og:description"   content="The tale of the Tractatus and its Ayyew inspiration.">
 
 
