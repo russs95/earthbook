@@ -83,7 +83,7 @@ Must be updated for each page-->
         <div id="ct-chapter-title">Plastic 1.0</div>
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Book One | Chapter Two</div>
-        <div id="ct-word-count"><i>623 words</i></div>
+        <div id="ct-word-count"><i>578 words</i></div>
       </div>
   </div>
 
@@ -136,7 +136,7 @@ Must be updated for each page-->
 
       <p>To do so we must go back and look at how plastic arrived into our hands in the first place.  </p>
 
-     <p>To do so we must go back to the instellar origines of our planet Earth. </p>
+     <p>To do so we must go back to the interstellar origins of planet Earth. </p>
 
      <br><br><br>
   
