@@ -235,7 +235,7 @@ Must be updated for each page-->
      
         <div class="next-section">
           <div class="next-sec">Next:</div>
-            <div class="sec-name"><i>An Interstellar Story</i></div>
+            <div class="sec-name"><i>3 | An Interstellar Story</i></div>
         </div>
 
       </div>
