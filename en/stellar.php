@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.1
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,51 +15,50 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "5";
+$page_title = "An Interstellar Story | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
 
 <?php require_once ("../header.php");?>
 
-<!--END OF GENERIC CONTENT-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>A Stellar Story | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-21T09:14:13+00:00">
+
 <meta name="keywords" content="cosmology, cosmological character, entropy, thermodynamics, dissipation, carbon, spiral, fossil fuels, petrocapital, economy, polymers, plastic, billiard balls, profit, recycle, recycling, technology, industry, grey, history, humanity, human "> 
 <meta name="description" content="A brief history of plastic's stellar origins, Earth's creation and the rise of modern humanity's ecological relationship.">
 
 
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="6 minutes" /> 
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="10 minutes"> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="A Stellar Story | Tratatus Ayyew - Earthbook">
-<meta property="og:description"   content="A brief history of plastic's stellar origins, Earth's creation and humanity's rise."/>
+<meta property="og:description"   content="A brief history of plastic's interstellar origins, Earth's creation and humanity's rise."/>
 
 
 <style>
 
   #ct-chapter-title {
-      padding-top: 45px;
+  
       font-size: 11vmin;
       letter-spacing: 5px;
     }
@@ -63,6 +66,7 @@ Must be updated for each page-->
 </style>
 
 </head>
+
 
 <!--MAIN HTML Begins-->
 
@@ -75,9 +79,9 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">A Stellar Story</div>
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+        <div id="ct-chapter-title">An Interstellar Story</div>
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Book One | Chapter Three</div>
         <div id="ct-word-count"><i>1,133 words</i></div>
@@ -158,16 +162,37 @@ Must be updated for each page-->
      <p>And so too our despair.</p>
 
   
-    </div><!--closes page text content-->
+     <br><br><br>
+  
+    
+  </div><!--closes page text content, then loads page curtains:-->
+
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section">
+  <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
 
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
       
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+      
+        
         <a href="#13-up" class="footnote">   
         <div class="footnote-number">13.</div>
         <div class="footnote-text">Guido Tonelli, Genesis: The Story of How Everything Began, trans. Erica Segre, Simon Carnell (Farrar, Straus and Giroux, 2021)</div>
@@ -239,7 +264,12 @@ Must be updated for each page-->
 
        
 
+    </div>
+  </div>
 
+
+
+    <div id="footnotes-concealer"></div>
 
     </div><!--Closes footnote section-->
           
@@ -251,13 +281,11 @@ Must be updated for each page-->
     <div class="footer-size">
     
       <div class="footer-left">
-
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Next chapter:</div>
-            <div class="sec-name"><i>Patterns of Process</i></div>
+          <div class="next-sec">Next:</div>
+            <div class="sec-name"><i>4 | Patterns of Process</i></div>
         </div>
 
       </div>
@@ -265,18 +293,16 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="patterns.php"><div class="next-button">Next ➔</div></a>
-
-      </div>
-    </div>
-  </div>
-  
-  <?php require_once ("includes/chap-footer.php");?>
-  
+        <a href="stellar.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
 </div>
+</div>
+
+    
+<?php require_once ("includes/chapTER-footer.php");?>
 
 
+</div>
 </body>
 </html>
 
