@@ -7,8 +7,8 @@ class Header extends HTMLElement {
     this.innerHTML = `
 
     <div id="earthbook-navbar">
-        <div id="settings-menu" style="cursor:pointer" onclick="openSettings()" aria-label="Open Settings">
-            <span ><img src="https://book.earthen.io/svgs/left-menu.svg" alt="Settings icon"></span>
+        <div><button type="button" id="settings-menu" style="cursor:pointer" onclick="openSettings()" aria-label="Open Settings">
+           <img src="https://book.earthen.io/svgs/left-menu.svg" alt="Settings icon"></button>
         </div>
 
         <span style="cursor:pointer" onclick="openContents()" aria-label="Open Contents">

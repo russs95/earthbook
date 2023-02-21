@@ -237,7 +237,10 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="plastic.php"><div class="next-button">Next ➔</div></a>
+        <a href="plastic.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+
+</div>
+</div>
 
     
 <?php require_once ("includes/chapTER-footer.php");?>
