@@ -172,6 +172,15 @@ Must be updated for each page-->
     
     </div><!--closes page text content-->
 
+
+
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
+
 <!--FOOTNOTES SECTION-->
 
     <div class="footnote-section" style="z-index:8;">

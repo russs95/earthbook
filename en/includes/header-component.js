@@ -8,12 +8,12 @@ class Header extends HTMLElement {
 
     <div id="earthbook-navbar">
         <div id="settings-menu" >
-            <button type="button" style="cursor:pointer" onclick="openSettings()" aria-label="Open Settings"><img src="https://book.earthen.io/svgs/left-menu.svg" alt="Settings icon"></button>
+            <button type="button" style="cursor:pointer"; background:none;border:none;" onclick="openSettings()" aria-label="Open Settings"><img src="https://book.earthen.io/svgs/left-menu.svg" alt="Settings icon"></button>
         </div>
 
-        <span style="cursor:pointer" onclick="openContents()" aria-label="Open Contents">
+        <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openContents()" aria-label="Open Contents">
         <div id="book-header-logo"></div>
-        </span>
+        </button>
         
         
         <div id="book-title" style="background-size: 60%;">
