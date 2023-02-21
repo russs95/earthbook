@@ -40,6 +40,9 @@ $page_title = "Imagine | Tractatus Ayyew - An Earthbook";?>
 
 <!--META TAGS
 Must be updated for each page-->
+
+<meta property="article:modified_time" content="2023-02-20T09:14:13+00:00">
+
 <meta name="keywords" content="imagine, a green new world, plastic, green, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, permaculture, bill molison, green ethics, environment, deep ecology, ecological, ethics"> 
 <meta name="description" content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.">
 
@@ -47,7 +50,6 @@ Must be updated for each page-->
 <meta name="twitter:label1" content="Est. reading time">
 <meta name="twitter:data1" content="6 minutes"> 
 	
-<!-- Facebook Open Graph Tags for social sharing-->
 
 <meta property="og:description"   content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.">
 
@@ -64,7 +66,7 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Imagine
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Imagine</div>
         <div id="ct-book-title">Tractatus Ayyew</div>
@@ -90,8 +92,7 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
 -->
 
-     
-
+    
       <div class="page-paragraph"><p><i>
       Imagine a world where the way we live is steadily enriching the ecosystems of which we are part.  It is a world where our households and communities, just by thriving, make the biosphere a more abundant, vibrant and hospitable home for us and all our kin.  Rather than strive to reduce our environmental harm, in this world we have come together to maximize our ecological contribution.  To do so, the way we manage our matter and energy has shifted.  No longer do our enterprises operate merely in circles—  so too do they spiral; each spin overpaying its debts and dispersing its surpluses.   No longer do our enterprises merely reduce the amount of carbon and other elements they let loose— so too do they capture more than they release.  No longer do we merely admire the tapestry of organisms and ecosystems around us— so too do we play a part in its vitality and diversification.  As we all thrive together in this common home, the awareness of our interconnection ever augments, and with it, the sync of our cycles of enterprise and ecosystem, economy and biome, humanity and biosphere— a harmony rising up with us towards the stars.</i></p>
      </div>
