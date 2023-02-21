@@ -85,7 +85,7 @@
  <!-- <div><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents" title="Click to view EarthBook Table of Contents"></button></div>-->
 
  
-  <div style="flex-grow:4; text-align: right;"><button type="button" class="footer-settings-icon"><img src="../icons/eco-green.svg" alt="To the top of the page" title="Go to the top of the page" style="cursor:pointer;" aria-label="Go to top of page" onclick="openEco()"></button></div>
+  <div style="flex-grow:4; text-align: right;"><button type="button" class="footer-settings-icon"><img src="../icons/eco-green.svg" alt="Our Ecological Tracking, Accounting and disclosure" title="Our Ecological Tracking, Accounting and disclosure" style="cursor:pointer;" aria-label="Open Ecological Accounting" onclick="openEco()"></button></div>
 
 </div>
 

@@ -60,7 +60,6 @@ Must be updated for each page-->
   
 
   #ct-chapter-title {
-      padding-top: 45px;
       letter-spacing: 4px;
       
     }
@@ -128,7 +127,7 @@ Must be updated for each page-->
 
       <p>From its petroleum derivation to its human-centered design; from its inevitable dispersal to its polluting consequences; our plastic embodies the root aspects of all modern ecological crises like nothing else.</p>
 
-      <p>In this way, plastic holds an ecological value that our modern society has completely overlooked.  </p>
+      <p>In this way, we shall see in the chapters that follow how plastic holds an ecological value that our modern society has completely overlooked.  </p>
 
       <p>For as plastic passes through our hands each day, through it we can quite literally touch the paradigm and pattern that powers our age of depletion.  Through this touch, we have a unique opportunity to shift plastic’s fate— and so too shift the values and ethics that loom unseen behind it and our modern world. </p>
 
@@ -137,7 +136,7 @@ Must be updated for each page-->
 
       <p>To do so we must go back and look at how plastic arrived into our hands in the first place.  </p>
 
-     <p>To do so we must go back to the very beginning of planet Earth. </p>
+     <p>To do so we must go back to the instellar origines of our planet Earth. </p>
 
      <br><br><br>
   
