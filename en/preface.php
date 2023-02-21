@@ -90,7 +90,7 @@ Must be updated for each page-->
       <div id="ct-chapter-title">Preface</div>   
       <div id="ct-book-title">Tractatus Ayyew</div>
       <div id="ct-chap-location">Introduction</div>
-      <div id="ct-word-count"><i>1,220 words</i></div>
+      <div id="ct-word-count"><i>1,140 words</i></div>
     </div>
 </div>
   
@@ -186,7 +186,13 @@ Must be updated for each page-->
 
     <p>It is our hope that with the application of Earthen principles in plastic's resolve, other grey challenges may transition, with confidence and clarity, to the Earthen way of green.</p>
 
-    </div><!--closes page text content-->
+    </div><!--closes page text content, then loads page curtains:-->
+
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
 
 <!--FOOTNOTES SECTION-->
 

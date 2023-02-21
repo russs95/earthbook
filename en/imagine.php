@@ -170,9 +170,7 @@ Must be updated for each page-->
      <p>Let us start with that troublesome material we so love to hate.</p>
   
     
-    </div><!--closes page text content-->
-
-
+    </div><!--closes page text content, then loads page curtains:-->
 
 <?php require_once ("includes/eco-curtain.php");?>
 

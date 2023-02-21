@@ -141,7 +141,7 @@ $name = "";?>
               <a href="preface.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Preface</div>
-                    <div class="word-count"><i>557 words</i></div>
+                    <div class="word-count"><i>1,140 words</i></div>
                 </div>
                 </a>
 
