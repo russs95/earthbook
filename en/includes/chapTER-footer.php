@@ -80,12 +80,12 @@
 
   <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/share.svg" alt="share icon" style="cursor:pointer" onclick="openShare()" aria-label="Click to copy the link of the earthBook to share" title="Click to copy the link of the earthBook to share"></button></div>
 
-  <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/eco.svg" alt="Eco Accounting icon" style="cursor:pointer" onclick="openEco()" aria-label="Click to view CO2 site audit" title="Click to view CO2 site audit"></button></div>
+  <div style=""><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of page" style="cursor:pointer" onclick="openEco()" aria-label="Go to top of page" onclick="location.href='#top'"></button></div>
 
  <!-- <div><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents" title="Click to view EarthBook Table of Contents"></button></div>-->
 
  
-  <div style="flex-grow:4; text-align: right;"><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="Go to the top of the page" style="cursor:pointer;" aria-label="Go to top of page" onclick="location.href='#top'"></button></div>
+  <div style="flex-grow:4; text-align: right;"><button type="button" class="footer-settings-icon"><img src="../icons/eco-green.svg" alt="To the top of the page" title="Go to the top of the page" style="cursor:pointer;" aria-label="Go to top of page" onclick="openEco()"></button></div>
 
 </div>
 

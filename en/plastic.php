@@ -171,45 +171,45 @@ Must be updated for each page-->
       
         <a href="#5-up" class="footnote">   
         <div class="footnote-number">5.</div>
-        <div class="footnote-text">A report by Global Web Index found that the 'Attenborough Effect', named after the narrator of the 2018 documentary Blue Planet II, led to a 53 percent reduction in single-use plastic usage over 2019.  See: Sustainable Packaging: Consumer View, (Global Web Index: 2020)</div>
+        <div class="footnote-text">A report by Global Web Index found that the 'Attenborough Effect', named after the narrator of the 2018 documentary Blue Planet II, led to a 53 percent reduction in single-use plastic usage over 2019.  See: <i>Sustainable Packaging: Consumer View</i> (Global Web Index: 2020)</div>
         </a>
 
         <a href="#5-up" class="footnote">   
         <div class="footnote-number">6.</div>
-        <div class="footnote-text">In a comprehensive survey of all plastics ever made, it is estimated that 8300 million metric tons of virgin plastics have been produced worldwide; 9% of which have been recycled, 12% were incinerated and 79% have accumulated in landfills or the natural environment since 1950.  R. Geyer, et al., Production, use and fate of all plastics ever made (Science Advances, 2017) Vol. 3, no. 7.</div>
+        <div class="footnote-text">In a comprehensive survey of all plastics ever made, it is estimated that 8300 million metric tons of virgin plastics have been produced worldwide; 9% of which have been recycled, 12% were incinerated and 79% have accumulated in landfills or the natural environment since 1950.  R. Geyer, et al., <i>Production, use and fate of all plastics ever made (Science Advances, 2017) Vol. 3, no. 7.</i></div>
         </a>
 
         <a href="#5-up" class="footnote">   
         <div class="footnote-number">7.</div>
-        <div class="footnote-text">“Worldwide there is a growing concern about the risks and possible adverse effects of (micro)plastics.”  See:   Ansje Lohr, Heidi Savelli, Raoul Beunen, Marco Kalz, Ad Ragas, Frank Van Belleghem, 'Solutions for global marine litter pollution',  (sciencedirect.com: Current opinion in Environmental Sustainability, Vol 28, October 2017) 90-99</div>
+        <div class="footnote-text">“Worldwide there is a growing concern about the risks and possible adverse effects of (micro)plastics.”  See:   Ansje Lohr, Heidi Savelli, Raoul Beunen, Marco Kalz, Ad Ragas, Frank Van Belleghem, <i>Solutions for global marine litter pollution</i>,  (sciencedirect.com: Current opinion in Environmental Sustainability, Vol 28, October 2017) 90-99</div>
         </a>
 
         <a href="#5-up" class="footnote">   
         <div class="footnote-number">8.</div>
-        <div class="footnote-text">“By 2030, CO2 emissions from the production, processing and disposal of plastic could reach 1.34 gigatons per year—equivalent to the emissions released by more than 295 new 500-megawatt coal-fired power plants.” Plastic & Climate: The Hidden Costs of a Plastic Planet (Center for International Environmental Law, 2019).</div>
+        <div class="footnote-text">“By 2030, CO2 emissions from the production, processing and disposal of plastic could reach 1.34 gigatons per year—equivalent to the emissions released by more than 295 new 500-megawatt coal-fired power plants.” Center for International Environmental Law, <i>Plastic & Climate: The Hidden Costs of a Plastic Planet</i> (CIEL, 2019).</div>
         </a>
 
       <a href="#5-up" class="footnote">   
       <div class="footnote-number" id="3-down">9.</div>
-      <div class="footnote-text">In 2016 Russell spent time working in a Canadian recycling facility.  The experience and realizations of industrially recycling’s role in the generation of plastic pollution invigorated the authors dialogue. See:  Russell Maier, Recycling: The Evil Illusion, (Medium.com, 2016).</div>
+      <div class="footnote-text">In 2016 Russell spent time working in a Canadian recycling facility.  The experience and realizations of industrially recycling’s role in the generation of plastic pollution invigorated the authors dialogue. See:  Russell Maier, <i>Recycling: The Evil Illusion</i> (Medium.com, 2016).</div>
       </a>
 
   
       <a href="#10-up" class="footnote">   
       <div class="footnote-number">10.</div>
-      <div class="footnote-text">“It's super painful to be a human being right now at this point in history." Mike Pearl, Climate Despair' Is Making People Give Up on Life (Vice Magazine, 2019).</div>
+      <div class="footnote-text">“It's super painful to be a human being right now at this point in history." Mike Pearl, <i>Climate Despair Is Making People Give Up on Life</i>(Vice Magazine, 2019).</div>
       </a>
 
       
       <a href="#10-up" class="footnote">   
       <div class="footnote-number">11.</div>
-      <div class="footnote-text">Steven W. Running, The 5 Stages of Climate Grief (University of Montana, Missoula: Numerical Terradynamic Simulation Group Publications: 2007).</div>
+      <div class="footnote-text">Steven W. Running, <i>The 5 Stages of Climate Grief</i>(University of Montana, Missoula: Numerical Terradynamic Simulation Group Publications: 2007).</div>
       </a>
 
       
       <a href="#12-up" class="footnote">   
       <div class="footnote-number">12.</div>
-      <div class="footnote-text">“Human beings are a disease, a cancer of this planet.” Agent Smith, The Matrix (1999).  We observe that the common modern view of humans as a super virus, is a form of human-exceptionalism.  We observe that the categorical judgment of (human-made) plastic as bad is an extension of this ontology-- the very same human-centricism that underlies our modern ideologies.    The repudiation of this ontology as both empirically and rationally fallacious is one of the principal efforts of the Tractatus Ayyew in the chapters ahead.</div>
+      <div class="footnote-text">“Human beings are a disease, a cancer of this planet.” Agent Smith in <i>The Matrix</i> ( The Wachowskis, Warner Bros, 1999).  We observe that the common modern view of humans as a super virus, is a form of human-exceptionalism.  We observe that the categorical judgment of (human-made) plastic as bad is an extension of this ontology-- the very same human-centricism that underlies our modern ideologies.    The repudiation of this ontology as both empirically and rationally fallacious is one of the principal efforts of the Tractatus Ayyew in the chapters ahead.</div>
       </a>
 
        
