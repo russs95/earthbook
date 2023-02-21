@@ -59,8 +59,8 @@ Must be updated for each page-->
 
   #ct-chapter-title {
   
-      font-size: 11vmin;
-      letter-spacing: 5px;
+      font-size: 10vmin;
+      letter-spacing: 1px;
     }
 
 </style>
