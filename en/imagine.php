@@ -104,7 +104,7 @@ Must be updated for each page-->
 <div>
      <div class="lead-page-paragraph">
 
-     TODAY, AS WE BECOME more and more aware of the ecological degradation inherent to our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in common determination, never before has it been more important to recognize that the way forward has already been layed.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that far exceed our modern imagination. Only to the extent that we can recognize these enlightened moments, can we imagine our own.  For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair</p>
+     TODAY, AS WE BECOME more and more aware of the ecological degradation inherent to our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite common planet passion, never before has it been more important to recognize that the way forward has already been made clear and its path tread.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that far exceed our modern imagination. Only to the extent that we can recognize these enlightened moments, can we imagine our own.  For insofar as we can imagine, the realization of a green age for all is not nearly as distant as many of us despair
 
     </div>
 
@@ -185,7 +185,7 @@ Must be updated for each page-->
 
     <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
+      <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
 
       <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
             
