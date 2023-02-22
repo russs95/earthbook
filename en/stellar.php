@@ -113,28 +113,28 @@ Must be updated for each page-->
 
     <div class="page-paragraph">
 
-    <p id="14-up">Like all its solar system sibling, Earth began a barren and desolate place.  For our planet's first two billion years, its atmosphere was full of carbon dioxide, making its climate hot, harsh and unstable.<a href="#footnotes">¹⁴</a> For eons, the planet’s surface was distinguished solely by the ebb and flow of tectonic plates, of ocean currents and atmospheric flows.  However, as these primordial cycles spun under the relentless shine of the sun, the Earth we know now began to emerge.  </p>
+    <p id="14-up">Like all its solar system siblings, Earth began a barren and desolate place.  For our planet's first two billion years, its atmosphere was full of carbon dioxide, making its climate hot, harsh and unstable.<a href="#footnotes">¹⁴</a> For eons, the planet’s surface was distinguished solely by the ebb and flow of tectonic plates, of ocean currents and atmospheric flows.  However, as these primordial cycles spun under the relentless shine of the sun, the Earth we know now began to emerge.  </p>
 
-      <p id="15-up">For as the sun shone down, entropy demanded dissipation.<a href="#footnotes">¹⁵</a>  Like the run of rain down a mountainside cascading into the twists and turns of a stream, the sun’s ever arriving blaze cascaded across Earth’s surface.  Just as a mountain’s contoured character leads to rivers and valley's that are all its own, so too the Earth’s planetary character led to flows of energy all its own.  Steadily, processes, cycles and systems began to unfold with a distinctly Earthen character.</p>
+      <p id="15-up">For as the sun shone down, entropy demanded dissipation.<a href="#footnotes">¹⁵</a>  Like the run of rain down a mountainside cascading into the twists and turns of a stream, the sun’s ever arriving blaze cascaded across Earth’s surface.  Just as a mountain’s contoured character leads to rivers and valley's that are all its own, so too the Earth’s planetary character led to flows of energy all its own.</p>
 
 
-      <p id="16-up">Determined and driven by its unique planetary configuration, Earth's cosmological character blossomed. Following the rigid dictates of thermodynamics, Earth’s cycles tended their spin towards ever better dissipations of energy.  Steadily, new Earthen chemical combinations unfolded to better disperse the sun’s blaze.  Steadily, the largest tectonic, ocean and atmospheric cycles fractaled into a thousand smaller ones, and those then into a million more.  Steadily, the tiniest cycles whirled together into larger systems that began to drive themselves onward.<a href="#footnotes">¹⁶</a>  Steadily, these systems unfurled into cells, organisms and eventually, into ecosystems.<a href="#footnotes">¹⁷</a></p>
+      <p id="16-up">Driven and determined by its unique planetary configuration, Earth's cosmological character began to blossom.  Steadily, processes, cycles and systems began to unfold with a distintctly Earthen character. Hand in hand with the dictates of thermodynamics, Earth’s cycles tended their spin towards ever better dissipations of energy.  Steadily, new chemical combinations unfolded to better disperse the sun’s blaze.  Steadily, the largest cycles of earth, water and air fractaled into a thousand smaller ones, and those then into a million more.  Steadily, the tiniest cycles whirled together into larger systems that began to drive themselves onward.<a href="#footnotes">¹⁶</a>  Steadily, these systems unfurled into cells, organisms and eventually, into ecosystems.<a href="#footnotes">¹⁷</a></p>
 
       <p id="18-up">As ever more effective patterns of dissipation emerged, plants rapidly dispersed across the planet's surface. By capturing carbon out of the air, they used it to build their bodies and to gather and hold energy. Plants began to compose leaves, flowers and towering trunks while other organisms discerned how to decompose them.</p>
       
-      <p>As they did so, they interacted and adapted-- and as they adapted, they diversified and intertwined.  A vibrant planetary matrix of mutual support emerged.</p>
+      <p>As they did so, they interacted and adapted— and as they adapted, they diversified and intertwined.  A vibrant planetary matrix of mutual support emerged.</p>
       
       <p>Soon forests, fields and fungi covered the planet.  Animals, algae and dinosaurs, all made from intricate patterns of carbon, emerged.  As these creatures lived and died their carbon matter spiralled from one organism into another while their nutrient energy spiraled out to ecosystems across the planet’s surface.<a href="#footnotes">¹⁸</a></p>
 
-      <p>As time passed, one generation was covered up by the next.  Whether on a forest floor or the bottom of the ocean, slowly and steadily, layers of life were buried under silt and sediment.  Over hundreds of millions of years, Earth compressed and compacted the biomass of these ancient organisms— indefinitely concentrating and securing their carbon deeper and deeper underground.</p>
+      <p>As organisms lived and died, each fallen generation was covered up by the next.  Whether on a forest floor or the bottom of the ocean, slowly and steadily, layers of life were buried under silt and sediment.  Over hundreds of millions of years, Earth compressed and compacted the biomass of these ancient organisms— indefinitely concentrating and securing their carbon deeper and deeper underground.</p>
 
-      <p id ="19-up">Although these organisms all breathed out carbon dioxide, their lives tended to subtract more carbon into the ground than they added back into the air.  With more and more organisms subtracting, soon great quantities of carbon were removed out of the atmosphere.  With more carbon being sequestered all the time, the Earth's climate stabilized<a href="#footnotes">¹⁹</a> and the biosphere flourished.</p>
+      <p id ="19-up">Although these organisms all breathed out carbon dioxide, their full cycle of life tended to subtract more carbon into the ground than they added back into the air.  With more and more organisms subtracting, soon great quantities of carbon were removed out of the atmosphere.  With more carbon being sequestered all the time, the Earth's climate stabilized<a href="#footnotes">¹⁹</a> and the biosphere flourished.</p>
 
-      <p>Cradled by the verdant abundance, a variety of bipedal apes emerged from the forests— and we sapiens shuffled onto the scene.</p>
+      <p>Cradled by the verdant abundance, over the last 30 million years a variety of bipedal apes emerged from the forests— and we sapiens shuffled onto the scene.</p>
 
       <p>As we struggled to survive, we figured out fire.</p>
       
-      <p>First, we started by burning wood to warm our caves. Then to heat our homes. Then to fuel our forges.  It wasn’t long then that we discovered the Earth’s carbon stores. </p>
+      <p>First, we started by burning wood to warm our caves. Then to heat our homes. Then to fuel our forges.  It wasn’t long then til we discovered the Earth’s carbon stores. </p>
 
       <p>We realized that they were far richer in energy.</p>
 
@@ -147,17 +147,17 @@ Must be updated for each page-->
 
      <p>Plastics had arrived.</p>
 
-     <p id="22-up">Soon, we were solving all sorts of problems by making all sorts of amazing things.  No longer did elephants need to be killed to make ivory billiard balls.<a href="#footnotes">²²</a>  No longer were expensive silver plates required to take a photograph.<a href="#footnotes">²³</a>  No longer was the shelf life of fresh food limited to a few days.<a href="#footnotes">²⁴</a>  Plastics enabled a slew of new products and technologies-- new ways to reduce expenses, increase revenues and accrue capital.</p>
+     <p id="22-up">Soon, we were solving all sorts of problems by making all sorts of amazing things.  No longer did elephants need to be killed to make ivory billiard balls.<a href="#footnotes">²²</a>  No longer were expensive silver plates required to take a photograph.<a href="#footnotes">²³</a>  No longer was the shelf life of fresh food limited to a few days.<a href="#footnotes">²⁴</a>  Plastics enabled a slew of new products and technologies— and new ways to reduce expenses, increase revenues and accrue capital.</p>
 
-     <p>Powered by the ever increasing flow of petroleum and profit, industries grew and grew.  As they expanded, so did the carbon extraction, the refinement, and the economies based upon it all. As they all spun faster, there was always that little bit that couldn’t be processed.  This led to industry producing more and more plastic at lesser and lesser cost. </p>
+     <p>Powered by the ever increasing flow of petroleum and profit, industries grew and grew.  As they expanded, so did the extraction of carbon, the refinement, and the economies based upon it all. As it all spun faster and faster, there was always that little bit that couldn’t be processed.  This led to industry producing more and more plastic at lesser and lesser cost. </p>
 
-     <p>As we consumed one plastic product after another, we tried our best to reuse and recycle each one.  However, there was already so much cheap new plastic, there was no need to process the old— it was much easier, and profitable, to burn it, dump it or send it somewhere else.</p>
+     <p>As we consumed one plastic product after another, we tried our best to reuse and recycle each one.  However, there was already so much cheap new plastic, there was little profit in processing the old— better to burn it, dump it or send it somewhere else.</p>
 
-     <p id="25-up">Soon there was so much plastic that it began to spill out of our homes, enterprises and industries.    In growing alarm we watched as our plastic clogged rivers, filled seas and piled into great smoking mountains.<a href="#footnotes">²⁵</a>  The particles of plastic were everywhere— inside fish, plants and animals— and our bodies.</p>
+     <p id="25-up">However, soon there was so much plastic that it began to spill out of our homes, enterprises and industries.    In growing alarm we watched as our plastic clogged rivers, filled seas and piled into great smoking mountains.<a href="#footnotes">²⁵</a>  The particles of plastic were everywhere— inside the bodies of fish and animals— and us.</p>
 
-     <p>Shocked, shamed and determined, industry strove to convince themselves, and everyone else, that there was a solution just around the corner. Enterprises worked valiantly to improve their processes, products and packaging. New technologies were launched that were less harmful, less polluting and less damaging. </p>
+     <p>Shocked, shamed and determined, industry strove to amend their mistakes and improve their ways. Enterprises worked valiantly to improve their processes, products and packaging. New technologies were launched that were less harmful, less polluting and less damaging.  Industry, did their best to convince themselves, and everyone else, that there was a solution just around the corner </p>
 
-     <p>Yet after turning many corners, harmful, polluting and damaging they remained.</p>
+     <p>Yet after turning countless corners, despite being less harmful, harmful, polluting and damaging their products, packaging and processes remained.</p>
 
      <p>Unabated, the grey flows of plastic and pollution continued to grow.</p>
 
