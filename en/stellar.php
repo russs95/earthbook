@@ -30,7 +30,7 @@ $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
-$page_number = "5";
+$page_number = "6";
 $page_title = "An Interstellar Story | Tractatus Ayyew - An Earthbook";?>
 
 <head>
@@ -51,7 +51,6 @@ Must be updated for each page-->
 <meta name="twitter:label1" content="Est. reading time">
 <meta name="twitter:data1" content="10 minutes"> 
 	
-<!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:description"   content="A brief history of plastic's interstellar origins, Earth's creation and humanity's rise."/>
 
 
@@ -73,7 +72,7 @@ Must be updated for each page-->
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 <div id="underlayer">
 
-  <a id="top"></a>
+<div id="top"></div>
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>
@@ -113,7 +112,7 @@ Must be updated for each page-->
 
     <div class="page-paragraph">
 
-    <p id="14-up">Like all its solar system siblings, Earth began a barren and desolate place.  For our planet's first two billion years, its atmosphere was full of carbon dioxide, making its climate hot, harsh and unstable.<a href="#footnotes">¹⁴</a> For eons, the planet’s surface was distinguished solely by the ebb and flow of tectonic plates, of ocean currents and atmospheric flows.  However, as these primordial cycles spun under the relentless shine of the sun, the Earth we know now began to emerge.  </p>
+    <p id="14-up">Like all its solar system siblings, Earth began a barren and desolate place.  For our planet's first two billion years, its atmosphere was full of carbon dioxide, making its climate hot, harsh and unstable.<a href="#footnotes">¹⁴</a> For eons, its surface was distinguished solely by the ebb and flow of tectonic plates, of ocean currents and atmospheric flows.  However, as these primordial cycles spun under the relentless shine of the sun, the Earth we know now began to emerge.  </p>
 
       <p id="15-up">For as the sun shone down, entropy demanded dissipation.<a href="#footnotes">¹⁵</a>  Like the run of rain down a mountainside cascading into the twists and turns of a stream, the sun’s ever arriving blaze cascaded across Earth’s surface.  Just as a mountain’s contoured character leads to rivers and valley's that are all its own, so too the Earth’s planetary character led to flows of energy all its own.</p>
 
@@ -295,7 +294,7 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="stellar.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+        <a href="patterns.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
 </div>
 </div>
