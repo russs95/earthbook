@@ -42,19 +42,19 @@ $page_title = "Patterns of Process | Tractatus Ayyew - An Earthbook";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<meta property="article:modified_time" content="2023-02-21T09:14:13+00:00"><meta name="keywords" content="patterns of process, cosmological character, planetary patterns, pattern, patterns, blocks, judgements, despair, depletion, enrichment, plastic, carbon emissions, petro-capital economy, human nature, nature of plastic, jevon's paradox, jevon"> 
+<meta property="article:modified_time" content="2023-02-21T09:14:13+00:00">
+<meta name="keywords" content="patterns of process, cosmological character, planetary patterns, pattern, patterns, blocks, judgements, despair, depletion, enrichment, plastic, carbon emissions, petro-capital economy, human nature, nature of plastic, jevon's paradox, jevon"> 
 <meta name="description" content="Observing our and Earth's evolution we can discern two patterns at play.  Rather than be mired in self-judgment at our play with carbon, we can be dazzled by Earth’s.">
 
 
 <meta name="twitter:label1" content="Est. reading time">
 <meta name="twitter:data1" content="8 minutes"> 
 	
-<meta property="og:description"   content="Rather than be mired in self-judgment at our play with carbon, we can be dazzled by Earth’s."/>
+<meta property="og:description"   content="Rather than be mired in self-judgment at our play with carbon, we can be dazzled by Earth’s.">
 
 
 <style>
   
-
 
   #ct-chapter-title {
       font-size: 10vmin;
@@ -213,7 +213,7 @@ Must be updated for each page-->
         </a>
 
         <a href="#31-up" class="footnote">   
-        <div class="footnote-number" id="30-down">31.</div>
+        <div class="footnote-number" id="31-down">31.</div>
         <div class="footnote-text">See Banayan’s work laying out a the context and definition of the Igorot Ayyew Ethos:  Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i> (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014). </div>
         </a>
 

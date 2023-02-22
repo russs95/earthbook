@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,46 +15,44 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "8";
+$page_title = "Kindred Relations | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
 
 <?php require_once ("../header.php");?>
 
-<!--END OF GENERIC CONTENT-->
-
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Kindred Relations | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-21T09:14:13+00:00">
 <meta name="keywords" content="kincentric ecology, kincentricism, kin, kindred relations, Enqrique Salmon, ecological contribution, first nations, metaphysics, world view, cosmology, 1492, north america, first nations, recognition, ecological tradition knowledge, etk, kincentric knowing"> 
 <meta name="description" content="Over human history certain cultures came to understand the creatures around them as kin.  Rather than cultivate human-centered societies, theirs crafted common homes for all.">
 
 
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="8 minutes" /> 
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="8 minutes"> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:title"         content="Kindred Relations | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="We have much to learn from those cultures that, rather than deplete ecosystems, presided over their systematic enrichment."/>
+<meta property="og:description"   content="We have much to learn from those cultures that, rather than deplete ecosystems, presided over their systematic enrichment.">
 
 
 <style>
@@ -174,18 +176,35 @@ Must be updated for each page-->
 
      <p>And only then can we understand that this hole in our modern worldview is the result of a deep metaphysical mistake: an ancient error that has for too long destined all our endeavours and enterprises to deplete and degrade.</p>
      <br><br>
-
   
-    </div><!--closes page text content-->
+    
+  </div><!--closes page text content, then loads page curtains:-->
+
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section">
+  <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
 
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
       
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+
         <a href="#32-up" class="footnote">   
         <div class="footnote-number">32.</div>
         <div class="footnote-text">This biological encounter, after hundreds of thousands of years of continental ecological separation, was to have a seismic impact on the biomes and civilizations of the Americas.  Diseases spread like wildfire ahead of European explorers killing 90-95% of human populations.  Only several years later, explorers encountering the decimated villages and cities made gravely inaccurate assumptions about the sparse human habitation they observed.  Their estimations of human population and ecological consequence were thus woefully low.   Population estimates weren’t rectified until centuries later by anthropologists such as Henry Dobyns.  See footnote #33.</div>
@@ -267,6 +286,12 @@ Must be updated for each page-->
         
 
 
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
 
     </div><!--Closes footnote section-->
           
@@ -278,13 +303,11 @@ Must be updated for each page-->
     <div class="footer-size">
     
       <div class="footer-left">
-
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Next chapter:</div>
-            <div class="sec-name"><i>Nature's Fallacy</i></div>
+          <div class="next-sec">Next:</div>
+            <div class="sec-name"><i>6 | Nature's Fallacy</i></div>
         </div>
 
       </div>
@@ -292,25 +315,16 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="nature.php"><div class="next-button">Next ➔</div></a>
+        <a href="nature.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
-      </div>
-    </div>
-  </div>
+</div>
+</div>
 
-
-  <?php require_once ("includes/chap-footer.php");?>
-  <!--<footer-chapter></footer-chapter>
-          
-  <div id="containerSepia"></div>
-  <div id="containerContrast"></div>
-  <div id="containerBrightness"></div>-->
-
+    
+<?php require_once ("includes/chapTER-footer.php");?>
 
 
 </div>
-
-
 </body>
 </html>
 
