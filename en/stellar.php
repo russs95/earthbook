@@ -113,39 +113,41 @@ Must be updated for each page-->
 
     <div class="page-paragraph">
 
-    <p id="14-up">Like all its orbital neighbours, our planet began a barren and desolate place.  For Earth’s first two billion years, its atmosphere was full of carbon dioxide, making its climate hot, harsh and unstable.<a href="#footnotes">¹⁴</a> For eons, the planet’s surface was distinguished solely by raw Earthen cycles: the ebb and flow of tectonic plates, of ocean currents and atmospheric flows.  However, as these primordial cycles spun under the relentless shine of the sun, the Earth we know now began to emerge.  </p>
+    <p id="14-up">Like all its solar system sibling, Earth began a barren and desolate place.  For our planet's first two billion years, its atmosphere was full of carbon dioxide, making its climate hot, harsh and unstable.<a href="#footnotes">¹⁴</a> For eons, the planet’s surface was distinguished solely by the ebb and flow of tectonic plates, of ocean currents and atmospheric flows.  However, as these primordial cycles spun under the relentless shine of the sun, the Earth we know now began to emerge.  </p>
 
-      <p id="15-up">For as the sun shone down, entropy demanded dissipation.<a href="#footnotes">¹⁵</a>  Like the run of rain down a hillside cascading into the twists and turns of a stream, the sun’s ever arriving blaze cascaded across Earth’s surface.  Just as a mountain’s contoured character leads to streams and rivers that are all its own, so too the Earth’s planetary character led to processes, cycles and systems all its own and unique among its solar system siblings.</p>
+      <p id="15-up">For as the sun shone down, entropy demanded dissipation.<a href="#footnotes">¹⁵</a>  Like the run of rain down a mountainside cascading into the twists and turns of a stream, the sun’s ever arriving blaze cascaded across Earth’s surface.  Just as a mountain’s contoured character leads to rivers and valley's that are all its own, so too the Earth’s planetary character led to flows of energy all its own.  Steadily, processes, cycles and systems began to unfold with a distinctly Earthen character.</p>
 
 
-      <p id="16-up">Following the rigid dictates of thermodynamics, Earth’s cycles tended their spin towards ever better dissipations of energy.  Determined and driven by its unique cosmological character, new Earthen chemical combinations unfolded to better disperse the sun’s blaze.  Steadily, large cycles fractured into a thousand smaller ones, and those then into a million more.   Steadily, the tiniest cycles whirled together into systems that began to drive themselves onward.<a href="#footnotes">¹⁶</a>  Steadily, these systems unfurled into cells, organisms and eventually, into ecosystems.<a href="#footnotes">¹⁷</a></p>
+      <p id="16-up">Determined and driven by its unique planetary configuration, Earth's cosmological character blossomed. Following the rigid dictates of thermodynamics, Earth’s cycles tended their spin towards ever better dissipations of energy.  Steadily, new Earthen chemical combinations unfolded to better disperse the sun’s blaze.  Steadily, the largest tectonic, ocean and atmospheric cycles fractaled into a thousand smaller ones, and those then into a million more.  Steadily, the tiniest cycles whirled together into larger systems that began to drive themselves onward.<a href="#footnotes">¹⁶</a>  Steadily, these systems unfurled into cells, organisms and eventually, into ecosystems.<a href="#footnotes">¹⁷</a></p>
 
-      <p id="18-up">As ever more effective patterns of dissipation emerged, plants rapidly dispersed across the planet's surface. By capturing carbon out of the air, they were able to use it to build their bodies and to gather and hold energy. Plants began to compose leaves, flowers and towering trunks while other organisms discerned how to decompose them. Soon forests, fields and fungi covered the planet.  Animals, algae and dinosaurs, all made from intricate patterns of carbon, emerged.  As these creatures lived and died their carbon matter spiralled from one organism into another while their nutrient energy spiraled out to ecosystems across the planet’s surface.<a href="#footnotes">¹⁸</a></p>
+      <p id="18-up">As ever more effective patterns of dissipation emerged, plants rapidly dispersed across the planet's surface. By capturing carbon out of the air, they used it to build their bodies and to gather and hold energy. Plants began to compose leaves, flowers and towering trunks while other organisms discerned how to decompose them.</p>
+      
+      <p>As they did so, they interacted and adapted-- and as they adapted, they diversified and intertwined.  A vibrant planetary matrix of mutual support emerged.</p>
+      
+      <p>Soon forests, fields and fungi covered the planet.  Animals, algae and dinosaurs, all made from intricate patterns of carbon, emerged.  As these creatures lived and died their carbon matter spiralled from one organism into another while their nutrient energy spiraled out to ecosystems across the planet’s surface.<a href="#footnotes">¹⁸</a></p>
 
-      <p>As time passed, one generation was covered up by the next.  Whether on the floor of an ocean or a forest, slowly and steadily, layers of life were buried under silt and sediment.  Over hundreds of millions of years, the Earth compressed and compacted the biomass of these ancient organisms— indefinitely concentrating and securing their carbon deeper and deeper underground.</p>
+      <p>As time passed, one generation was covered up by the next.  Whether on a forest floor or the bottom of the ocean, slowly and steadily, layers of life were buried under silt and sediment.  Over hundreds of millions of years, Earth compressed and compacted the biomass of these ancient organisms— indefinitely concentrating and securing their carbon deeper and deeper underground.</p>
 
-      <p id ="19-up">Although these organisms all breathed out carbon dioxide, their lives tended to subtract more carbon into the ground than they added back into the air.  With more and more organisms subtracting, soon great quantities of carbon were removed out of the atmosphere.  With more carbon being sequestered all the time, the Earth's climate stabilized<a href="#footnotes">¹⁹</a>— and organisms of all kinds flourished! As they did so, they interacted and adapted. And as they adapted, they diversified and intertwined.  A vibrant planetary matrix of mutual support emerged, ushering in one of the most stable periods in the planet’s history.</p>
+      <p id ="19-up">Although these organisms all breathed out carbon dioxide, their lives tended to subtract more carbon into the ground than they added back into the air.  With more and more organisms subtracting, soon great quantities of carbon were removed out of the atmosphere.  With more carbon being sequestered all the time, the Earth's climate stabilized<a href="#footnotes">¹⁹</a> and the biosphere flourished.</p>
 
       <p>Cradled by the verdant abundance, a variety of bipedal apes emerged from the forests— and we sapiens shuffled onto the scene.</p>
 
-      <p>As we struggled to survive, our awareness of our environment steadily increased.</p>
-
-      <p>In short order, we figured out fire.</p>
+      <p>As we struggled to survive, we figured out fire.</p>
       
-      <p>First, we started by burning wood to warm our caves. Then to heat our homes. Then to fire our forges.  It wasn’t long then that we discovered the Earth’s carbon stores. </p>
+      <p>First, we started by burning wood to warm our caves. Then to heat our homes. Then to fuel our forges.  It wasn’t long then that we discovered the Earth’s carbon stores. </p>
 
       <p>We realized that they were far richer in energy.</p>
 
      <p>Some of us (but certainly not all of us) began to unearth this ancient carbon— what we came to call coal, natural gas and petroleum.  As many of us got better and better at extracting and burning it, ancient carbon came to turn our wheels, power our our machines, and fuel our factories. As it came to drive entire economies, we gave it a new name: <i>fossil fuels</i>. </p>
 
-     <p id="20-up">However, despite the neat name, compacted carbon deposits were never themselves fuels!  To make them so required refinement— a process that always resulted in residuals that could not be used.<a href="#footnotes">²⁰</a>  With nowhere to go, these chemicals began to pile up.<a href="#footnotes">²¹</a></p>
+     <p id="20-up">However, despite the nifty name, these fossil deposits were never in fact fantastic fuels.  To make them so required refinement— a process that always resulted in leftovers that could not be used.<a href="#footnotes">²⁰</a>  With nowhere to go, these chemicals began to pile up.<a href="#footnotes">²¹</a></p>
 
 
-     <p>We soon realized that the leftovers could be used to create.  With a little chemistry, polymers could be produced—and with a little more; an endless array of marvelous materials.</p>
+     <p>We soon realized that the residuals of refinement could be used.  With a little chemistry, polymers could be produced—and with a little more; an endless array of marvelous materials.</p>
 
      <p>Plastics had arrived.</p>
 
-     <p id="22-up">Soon, we were solving all sorts of problems by making all sorts of amazing things.  No longer did elephants need to be killed to make ivory billiard balls.<a href="#footnotes">²²</a>  No longer were expensive silver plates required to take a photograph.<a href="#footnotes">²³</a>  No longer was the shelf life of fresh food limited to a few days.<a href="#footnotes">²⁴</a>  Plastics enabled not only an array of new products and technologies, but so too new ways to reduce expenses, increase revenues and accrue capital.</p>
+     <p id="22-up">Soon, we were solving all sorts of problems by making all sorts of amazing things.  No longer did elephants need to be killed to make ivory billiard balls.<a href="#footnotes">²²</a>  No longer were expensive silver plates required to take a photograph.<a href="#footnotes">²³</a>  No longer was the shelf life of fresh food limited to a few days.<a href="#footnotes">²⁴</a>  Plastics enabled a slew of new products and technologies-- new ways to reduce expenses, increase revenues and accrue capital.</p>
 
      <p>Powered by the ever increasing flow of petroleum and profit, industries grew and grew.  As they expanded, so did the carbon extraction, the refinement, and the economies based upon it all. As they all spun faster, there was always that little bit that couldn’t be processed.  This led to industry producing more and more plastic at lesser and lesser cost. </p>
 
@@ -155,11 +157,11 @@ Must be updated for each page-->
 
      <p>Shocked, shamed and determined, industry strove to convince themselves, and everyone else, that there was a solution just around the corner. Enterprises worked valiantly to improve their processes, products and packaging. New technologies were launched that were less harmful, less polluting and less damaging. </p>
 
-     <p>Yet after turning many corners, improving efficiencies and reducing their polluting, harmful, polluting and damaging our processes remained.</p>
+     <p>Yet after turning many corners, harmful, polluting and damaging they remained.</p>
 
      <p>Unabated, the grey flows of plastic and pollution continued to grow.</p>
 
-     <p>And so too our despair.</p>
+     <p>And with it, our despair.</p>
 
   
      <br><br><br>
