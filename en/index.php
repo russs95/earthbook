@@ -66,8 +66,11 @@ Must be updated for each page-->
  <!--SPECIAL INDEX INCLUDES -->
 
  <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
- 
+
  <script src="../index-javascripts.js"></script>
+ <script src="includes/footer-chapter.js" defer></script>-->
+<!--9--><script src="includes/read-curtain.js" type="text/javascript" defer></script>
+
 
 
 <!--Preload graphics   media="(max-width: 700px)"-->
