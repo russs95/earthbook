@@ -797,7 +797,7 @@ margin-right: -42px;
 
 @media screen and (max-width: 699px) {
   #earthbook-navbar {
-    height: 100px;
+    height: 80px;
   }
 }
 
@@ -1433,6 +1433,11 @@ padding-top: 44px;
   }
 
   .btn:hover {color: black;}
+
+  button {
+    border: none;
+    background: none;
+  }
 
  
   @media screen and (max-width: 700px) {
