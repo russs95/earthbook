@@ -121,9 +121,9 @@ Must be updated for each page-->
 
       <p id="18-up">As ever more effective patterns of dissipation emerged, plants rapidly dispersed across the planet's surface. By capturing carbon out of the air, they used it to build their bodies and to gather and hold energy. Plants began to compose leaves, flowers and towering trunks while other organisms discerned how to decompose them.</p>
       
-      <p>As they did so, they interacted and adapted— and as they adapted, they diversified and intertwined.  A vibrant planetary matrix of mutual support emerged.</p>
+      <p>As they did so, they interacted and adapted— and as they adapted, they diversified and intertwined.  A vibrant matrix of mutual support began to weave itself across the planet's surface.</p>
       
-      <p>Soon forests, fields and fungi covered the planet.  Animals, algae and dinosaurs, all made from intricate patterns of carbon, emerged.  As these creatures lived and died their carbon matter spiralled from one organism into another while their nutrient energy spiraled out to ecosystems across the planet’s surface.<a href="#footnotes">¹⁸</a></p>
+      <p>Soon forests, fields and fungi covered the planet.  Animals, algae and dinosaurs, all made from intricate patterns of carbon, emerged.  As these creatures lived and died their carbon matter spiralled from one organism into another while their nutrient energy spiraled outwards through the web of ecosystems that came to comprise Earth's biosphere.<a href="#footnotes">¹⁸</a></p>
 
       <p>As organisms lived and died, each fallen generation was covered up by the next.  Whether on a forest floor or the bottom of the ocean, slowly and steadily, layers of life were buried under silt and sediment.  Over hundreds of millions of years, Earth compressed and compacted the biomass of these ancient organisms— indefinitely concentrating and securing their carbon deeper and deeper underground.</p>
 

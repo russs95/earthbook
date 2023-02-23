@@ -665,7 +665,7 @@ margin-left: 0px;
     transition: 0.5s;
     border-radius: 50px;
     height: 85px;
-    padding-left: 30px;
+    padding-left: 25px;
     left: -66px;
     z-index: 50;
     background: var(--background-color);
@@ -684,7 +684,7 @@ margin-left: 0px;
   padding-top: 20px;
   padding-left: 7px;
   margin-left: 0px;
-  margin-right: -10px;
+  margin-right: -20px;
   }  
   
   }
@@ -734,7 +734,7 @@ margin-right: -42px;
     transition: 0.3s;
     border-radius: 70px;
     height: 85px;
-    padding-right: 60px;
+    padding-right: 55px;
     right: -60px;
     background-color: var(--background-color);
     border: solid 1px var(--fainter-border-color);
@@ -753,7 +753,7 @@ margin-right: -42px;
   padding-top: 20px;
   padding-right: 24px;
   margin-right: -42px;
-  margin-left: -10px;
+  margin-left: -20px;
   }
 
   }
@@ -767,7 +767,7 @@ margin-right: -42px;
 
 
 #earthbook-navbar {
-  height: 200px;
+  height: 400px;
   max-height: 100%;
   position: fixed; /* Stay in place */
   z-index: 21; /* Sit on top */

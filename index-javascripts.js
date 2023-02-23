@@ -22,7 +22,7 @@ function scrollFunction() {
  
    } else {
      //BEFORE
-     document.getElementById("earthbook-navbar").style.height = "200px";
+     document.getElementById("earthbook-navbar").style.height = "400px"; 
      document.getElementById("book-header-logo").style.opacity = "0";
      document.getElementById("book-header-logo").style.display = "none"; 
      document.getElementById("side").style.marginTop = "0px";
