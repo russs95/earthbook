@@ -59,7 +59,7 @@ Must be updated for each page-->
 
 
   #ct-chapter-title {
-      padding-top: 45px;
+  
       font-size: 10vmin;
       letter-spacing: 3px;
       
@@ -69,19 +69,20 @@ Must be updated for each page-->
 
 </head>
 
+
 <!--MAIN HTML Begins-->
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 <div id="underlayer">
 
-  <a id="top"></a>
+<div id="top"></div>
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Kindred Relations</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Book One | Chapter Five</div>
