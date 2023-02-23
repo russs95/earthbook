@@ -105,12 +105,12 @@ Must be updated for each page-->
 -->
 
      <div class="lead-page-paragraph">
-      OVER THE COURSE OF HUMAN HISTORY, certain nations have excelled far more than others at the art of ecological integration.  While some societies steadily depleted the ecosystems of which they were part, these societies steadily enriched them, increasing their synchrony with the cycles of life around them.  As we strive to discern for ourselves what green should really mean, we have much to learn from them.  In particular the recognition of the way in which they themselves learned— their way of knowing the plants and animals around them as kin, elders and teachers.  
+      OVER THE COURSE OF HUMAN HISTORY, certain societies have excelled far more than others at the art of ecological integration.  While today, we are immersed in modern nations that steadily deplete the ecosystems of which they were part, it is crucial to recognize that countless other nations embodied a very different pattern.  Indeed, many great nations have left a legacy of enriched ecosystems, while others that yet ongoing, continue to maintain and augment their synchrony with the cycles of life around them.  As we strive to discern for ourselves what green should really mean, we have much to learn from them.  However, this is only possible with the recognition that the path of ecological contribution to which we so search for today has already been cleared and tread both ecologically and philosophical.  In particular the later recognition of the way in which they themselves learned— their way of knowing the plants and animals around them as kin, elders and teachers.  
      </div>
 
     <div class="page-paragraph">
 
-    <p>While great greening societies have thrived around the planet, there is no more dramatic an example than the nations that first inhabited the Americas.</p>
+    <p>While countless great greening societies have thrived around the planet, there is no more dramatic an example than the nations that first inhabited the Americas.</p>
 
       <p id="32">Five hundred years ago, prior to the cataclysmic arrival of germs, animals and humans from Europe, the Americas were then home to hundreds of thriving, independent and prosperous nations.<a href="#footnotes">³²</a>  Contemporary estimates of the population of the continents at the time range in the tens of millions to over one hundred million<a href="#footnotes">³³</a> with many towns and cities ranging in size from tens of thousands to over a hundred thousand inhabitants.<a href="#footnotes">³⁴</a></p>
 
