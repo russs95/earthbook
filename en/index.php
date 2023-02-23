@@ -139,7 +139,7 @@ Must be updated for each page-->
                 <a href="preamble.php">
                 <div class="chapter-top">
                     <div class="chapter-name">Preamble</div>
-                    <div class="word-count"><i>453 words</i></div>
+                    <div class="word-count"><i>454 words</i></div>
                 </div>
                 </a>
 
