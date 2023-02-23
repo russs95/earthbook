@@ -665,7 +665,7 @@ margin-left: 0px;
     transition: 0.5s;
     border-radius: 50px;
     height: 85px;
-    padding-left: 40px;
+    padding-left: 30px;
     left: -66px;
     z-index: 50;
     background: var(--background-color);
@@ -673,7 +673,7 @@ margin-left: 0px;
   }
   
   #settings-menu:hover {
-  left: -40px;
+  left: -50px;
   transition: 0.5s;
   background: var(--deeper-accent-color);
   box-shadow: var(--element-shadow);
@@ -733,14 +733,14 @@ margin-right: -42px;
     transition: 0.3s;
     border-radius: 70px;
     height: 85px;
-    padding-right: 70px;
+    padding-right: 60px;
     right: -60px;
     background-color: var(--background-color);
     border: solid 1px var(--fainter-border-color);
   }
   
   #share-menu:hover {
-    right: -35px;
+    right: -45px;
     transition: 0.3s;
     background-color: var(--deeper-accent-color);
     box-shadow: var(--element-shadow);
