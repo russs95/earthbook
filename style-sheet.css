@@ -734,7 +734,7 @@ margin-right: -42px;
     transition: 0.3s;
     border-radius: 70px;
     height: 85px;
-    padding-right: 99px;
+    padding-right: 59px;
     right: -60px;
     background-color: var(--background-color);
     border: solid 1px var(--fainter-border-color);
@@ -1181,6 +1181,13 @@ padding-top: 44px;
   /*background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;*/
 }
 
+#book-header-logo {
+  width: 40%;
+margin: auto;
+right: 0;
+left: 0;
+}
+
 
   #book-header-logo:hover {
     filter:brightness(100%);
@@ -1190,7 +1197,7 @@ padding-top: 44px;
     #book-header-logo { 
       opacity: 1;
       top: 9px;
-      height: 75px;
+      height: 60px;
     }
   }
 
