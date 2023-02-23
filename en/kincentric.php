@@ -104,7 +104,6 @@ Must be updated for each page-->
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ³¹⁰ ²⁶
 -->
-
      <div class="lead-page-paragraph">
       OVER THE COURSE OF HUMAN HISTORY, certain societies have excelled far more than others at the art of ecological integration.  While today, we are immersed in modern nations that steadily deplete the ecosystems of which they were part, it is crucial to recognize that countless other nations embodied a very different pattern.  Indeed, many great nations have left a legacy of enriched ecosystems, while others that yet ongoing, continue to maintain and augment their synchrony with the cycles of life around them.  As we strive to discern for ourselves what green should really mean, we have much to learn from them.  However, this is only possible with the recognition that the path of ecological contribution to which we so search for today has already been cleared and tread both ecologically and philosophical.  In particular the later recognition of the way in which they themselves learned— their way of knowing the plants and animals around them as kin, elders and teachers.  
      </div>
