@@ -1,70 +1,72 @@
-<!--Welcome to the EarthBook Source code!  Composed of nothing but CSS, javascript and html the EarthBook format can be forked and used as the frame for your own book.  Just fill in your content.
+<!DOCTYPE html>
 
-Concept and first version by Russell Maier, October 24th, 2022.  First used for the book Tractus Ayyew - An Earthen Ethics (all forked generic versions of the Earthbook are requested to leave this book in as the place holder text)
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
 
-PHP Page Version 1.0.1
-Original Author:  Russell Maier
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
 License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
 See full project repository at: https://github.com/russs95/earthbook
+*/
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
 <html lang="$lang">
-_END;
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
-$name = "";?>
+$name = "";
+$page_number = "0";
+$page_title = "Tractatus Ayyew | An Earthen Ethic - Earthbook Edition";?>
 
 <head>
 
 
-<?php require_once ("../header2.php");?>
+<?php require_once ("../header.php");?>
 
 
-<!--END OF GENERIC CONTENT-->
+<!--META TAGS
+Must be updated for each page-->
 
-<!--META TAGS-->
-
-<title>Tractatus Ayyew | An Earthen Ethic - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-21T09:14:13+00:00">
 
 <meta name="keywords" content="Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
 
 <meta name="description" content="A Theory of Grey & Green based on Earth's example.">
 
 <meta name="author" content="Earthen.io">
-<meta property="og:type" content="book" />
-<meta property="article:modified_time" content="2022-10-24T09:14:13+00:00" />
-<meta property="og:image:type" content="image/png" />
-<meta name="author" content="Tractatus Ayyew | An Earthen Ethic - Earthbook" />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="2 hours" /> 
+<meta property="og:type" content="book">
+<meta property="og:image:type" content="image/png">
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="2 hours"> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:site_name" content="Tractatus Ayyew" />
 <meta property="article:publisher" content="Earthen.io" />
-<meta property="og:type"          content="website">
+<meta property="og:type"          content="book">
 <meta property="og:title"         content="Tractatus Ayyew - An Earthen Ethics">
 <meta property="og:description"   content="By Banayan Angway & Russell Maier  | Earthbook Edition."/>
 
  <!--SPECIAL INDEX INCLUDES -->
 
  <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
+ 
  <script src="../index-javascripts.js"></script>
 
 
