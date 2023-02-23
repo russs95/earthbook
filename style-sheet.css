@@ -767,7 +767,7 @@ margin-right: -42px;
 
 
 #earthbook-navbar {
-  height: 250px;
+  height: 200px;
   max-height: 100%;
   position: fixed; /* Stay in place */
   z-index: 21; /* Sit on top */
@@ -797,7 +797,7 @@ margin-right: -42px;
 
 @media screen and (max-width: 699px) {
   #earthbook-navbar {
-    height: 75px;
+    height: 100px;
   }
 }
 
