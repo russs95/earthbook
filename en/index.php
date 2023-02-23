@@ -36,7 +36,7 @@ $page_title = "Tractatus Ayyew | An Earthen Ethic - Earthbook Edition";?>
 <head>
 
 
-<?php require_once ("../header.php");?>
+<?php require_once ("../header2.php");?>
 
 
 <!--META TAGS
