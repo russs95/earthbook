@@ -309,8 +309,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  function closeSettings() {
    document.getElementById("left-settings-overlay").style.width = "0%";
    document.body.style.overflowY = "unset";
-  // document.body.style.maxHeight = "unset";
-   //document.body.style.height = "unset";
+
  } 
  
  
@@ -487,9 +486,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
    document.getElementById("bookplate-button").style.display = "none";
    document.getElementById("bookplate-img").style.display = "none";
    document.getElementById("left-settings-overlay").style.width = "0%";
-   document.getElementById("right-share-overlay").style.width = "0%";
    document.getElementById("read-curtain").style.height = "0%";
-   document.getElementById("right-search-overlay").style.width = "0%";
  
  
    }
