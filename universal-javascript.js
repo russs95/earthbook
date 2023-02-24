@@ -88,73 +88,10 @@ $(function() {
 
 
 
-/* BOOKPLATE OVERLAY
-
-Opens the bookplate overlay from the top up*/
-
-function openBookplate() {
-  document.getElementById("top-bookplate").style.height = "100%";
-  document.body.style.overflowY = "hidden";
- // document.body.style.maxHeight = "101vh";
-  document.getElementById("sub-earthbook").style.display = "block!important";
-  document.getElementById("bookplate-img").style.display = "block";
-}
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeBookplate() {
-  document.getElementById("top-bookplate").style.height = "0%";
-  document.body.style.overflowY = "unset";
-  //document.body.style.maxHeight = "unset";
-  document.getElementById("sub-earthbook").style.display = "none";
-  document.getElementById("bookplate-button").style.display = "none";
-  document.getElementById("bookplate-img").style.display = "none";
-
-} 
-
-
   
 
 
 
-
-
-/* RIGHT SEARCH OVERLAY 
-
-Triggers the right search panel*/
-
-function openSearch() {
-  document.getElementById("right-search-overlay").style.width = "100%";
-  document.body.style.overflowY = "clip";
- /* document.body.style.maxHeight = "101vh";*/
-
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeSearch() {
-  document.getElementById("right-search-overlay").style.width = "0%";
-  document.body.style.overflowY = "unset";
- /* document.body.style.maxHeight = "unset";*/
-} 
-
- 
-
-/*READ OVERLAY
-
-Opens up the Earthbook overlay from the bottom up*/
-
-
-  /* Open settings when someone clicks on the span element */
-  function openRead() {
-    document.getElementById("read-curtain").style.height = "101vh";
-    document.body.style.overflowY = "hidden";
-    document.body.style.maxHeight = "101vh";
-  }
-
-  /* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeRead() {
-    document.getElementById("read-curtain").style.height = "0%";
-    document.body.style.overflowY = "unset";
-    document.body.style.maxHeight = "unset";
-  } 
 
 
 
@@ -195,6 +132,127 @@ function closeComments() {
   document.getElementById("right-close-button2").style.position = "absolute";
 
 } 
+
+
+
+
+/* BOOKPLATE OVERLAY
+
+Opens the bookplate overlay from the top up*/
+
+function openBookplate() {
+  document.getElementById("top-bookplate").style.height = "100%";
+  document.body.style.overflowY = "hidden";
+ // document.body.style.maxHeight = "101vh";
+  document.getElementById("sub-earthbook").style.display = "block!important";
+  document.getElementById("bookplate-img").style.display = "block";
+
+  var modal = document.getElementById('top-bookplate');
+
+function modalShow () {
+   modal.setAttribute('tabindex', '0');
+   modal.focus();
+}
+
+function focusRestrict ( event ) {
+  document.addEventListener('focus', function( event ) {
+    if ( modalOpen && !modal.contains( event.target ) ) {
+      event.stopPropagation();
+      modal.focus();
+    }
+  }, true);
+}
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay 
+
+NOT YET TRANSFRERED TO ESCAPE SCRIPT*/
+
+function closeBookplate() {
+  document.getElementById("top-bookplate").style.height = "0%";
+  document.body.style.overflowY = "unset";
+  //document.body.style.maxHeight = "unset";
+  document.getElementById("sub-earthbook").style.display = "none";
+  document.getElementById("bookplate-button").style.display = "none";
+  document.getElementById("bookplate-img").style.display = "none";
+
+} 
+
+
+
+/* RIGHT SEARCH OVERLAY 
+
+Triggers the right search panel*/
+
+function openSearch() {
+  document.getElementById("right-search-overlay").style.width = "100%";
+  document.body.style.overflowY = "clip";
+ /* document.body.style.maxHeight = "101vh";*/
+
+ var modal = document.getElementById('right-search-overlay');
+
+function modalShow () {
+   modal.setAttribute('tabindex', '0');
+   modal.focus();
+}
+
+function focusRestrict ( event ) {
+  document.addEventListener('focus', function( event ) {
+    if ( modalOpen && !modal.contains( event.target ) ) {
+      event.stopPropagation();
+      modal.focus();
+    }
+  }, true);
+}
+
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeSearch() {
+  document.getElementById("right-search-overlay").style.width = "0%";
+  document.body.style.overflowY = "unset";
+ /* document.body.style.maxHeight = "unset";*/
+} 
+
+ 
+
+
+
+
+/*READ OVERLAY
+Opens up the Earthbook overlay from the bottom up*/
+
+  /* Open settings when someone clicks on the span element */
+  function openRead() {
+    document.getElementById("read-curtain").style.height = "101vh";
+    document.body.style.overflowY = "hidden";
+    //document.body.style.maxHeight = "101vh";
+
+    var modal = document.getElementById('read-curtain');
+
+    function modalShow () {
+       modal.setAttribute('tabindex', '0');
+       modal.focus();
+    }
+    
+    function focusRestrict ( event ) {
+      document.addEventListener('focus', function( event ) {
+        if ( modalOpen && !modal.contains( event.target ) ) {
+          event.stopPropagation();
+          modal.focus();
+        }
+      }, true);
+    }
+    }
+  
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeRead() {
+    document.getElementById("read-curtain").style.height = "0%";
+    document.body.style.overflowY = "unset";
+    //document.body.style.maxHeight = "unset";
+  } 
+
 
 
 
@@ -424,7 +482,7 @@ Opens up the Earthbook overlay from the bottom up*/
 
 /*Key close all curtains*/
 
-function modalCloseComments ( e ) {
+function modalCloseCurtains ( e ) {
   if ( !e.keyCode || e.keyCode === 27 ) {
     document.getElementById("bottom-comments-overlay").style.height = "0%";
     document.getElementById("eco-curtain2").style.height = "0%";
@@ -446,11 +504,14 @@ function modalCloseComments ( e ) {
   document.getElementById("bookplate-img").style.display = "none";
   document.getElementById("left-settings-overlay").style.width = "0%";
   document.getElementById("right-share-overlay").style.width = "0%";
+  document.getElementById("read-curtain").style.height = "0%";
+  document.getElementById("right-search-overlay").style.width = "0%";
+
 
   
   }
 }
-document.addEventListener('keydown', modalCloseComments);
+document.addEventListener('keydown', modalCloseCurtains);
 
 
 
