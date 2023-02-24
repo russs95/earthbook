@@ -53,7 +53,7 @@ class ContentCurtain extends HTMLElement {
 
                     <a href="stellar.php">
                     <div class="tc-item">
-                        <div class="chapter-name-tc">A Stellar Story</div>
+                        <div class="chapter-name-tc">An Interstellar Story</div>
                         <div class="dotted-line"></div>
                         <div class="word-count-tc"><i>1,021 words</i></div>
                     </div>

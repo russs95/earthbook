@@ -176,8 +176,8 @@ Must be updated for each page-->
 
                 <a href="stellar.php">
                 <div class="chapter-middle">
-                    <div class="chapter-name">A Stellar Story</div>
-                    <div class="word-count"><i>1,021 words</i></div>
+                    <div class="chapter-name">An Interstellar Story</div>
+                    <div class="word-count"><i>1,033 words</i></div>
                 </div>
                 </a>
 

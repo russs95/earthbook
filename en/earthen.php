@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,35 +15,34 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "10";
+$page_title = "The Earthen Ways | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
 
 <?php require_once ("../header.php");?>
 
-<!--END OF GENERIC CONTENT-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>The Five Earthen Ways | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-21T09:14:13+00:00">
 <meta name="keywords" content="Earth, cosmological pattern, comsmological character, green, cycles, dissipation, concentraction, diversification, physics, biology and astronomy, consciounsness, character, contribution, vibrant, stable, resilient, abundant, conscious, Earthen ethics, five principles, Earthen principles, Earthen, cosmology, planetary character, Earth's character"> 
 <meta name="description" content="In our planet's transition from a barren rock to a thriving biosphere we find five principles that compose Earth’s cosmological character and that guide our enterprises to be truly green.">
 
@@ -48,35 +51,33 @@ Must be updated for each page-->
 <meta name="twitter:data1" content="8 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="The Five Earthen Ways | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="In our planet's transition from a barren rock to a thriving biosphere we find five principles that compose Earth’s cosmological character and that guide our enterprises to be truly green."/>
 
 
 <style>
 
   #ct-chapter-title {
-      /*padding-top: 45px;
-      */font-size: 10vmin;
-      letter-spacing: 2px;
+      font-size: 10vmin;
+      letter-spacing: 3px;
     }
 
 </style>
-
 </head>
+
 
 <!--MAIN HTML Begins-->
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 <div id="underlayer">
 
-  <a id="top"></a>
+<div id="top"></div>
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">The Earthen Ways</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Book One | Chapter Seven</div>
@@ -197,6 +198,12 @@ Must be updated for each page-->
 
 
 
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
 
     </div><!--Closes footnote section-->
           
@@ -208,12 +215,10 @@ Must be updated for each page-->
     <div class="footer-size">
     
       <div class="footer-left">
-
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Next Chapter & Book:</div>
+          <div class="next-sec">Next:</div>
             <div class="sec-name"><i>Book 2 | Epigraph</i></div>
         </div>
 
@@ -222,17 +227,16 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="epigraph-2.php"><div class="next-button">Next ➔</div></a>
-
-      </div>
-    </div>
-  </div>
-
-  <?php require_once ("includes/chap-footer.php");?>
+        <a href="epigraph2.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
 </div>
+</div>
+
+    
+<?php require_once ("includes/chapTER-footer.php");?>
 
 
+</div>
 </body>
 </html>
 

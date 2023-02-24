@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,44 +15,41 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "9";
+$page_title = "Nature's Fallacy | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
 
 <?php require_once ("../header.php");?>
 
-<!--END OF GENERIC CONTENT-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Nature's Fallacy | Tractatus Ayyew - Earthbook edition</title>
+<meta property="article:modified_time" content="2023-02-21T09:14:13+00:00">
 <meta name="keywords" content="Nature's fallacy, nature, environment, problem with nature, humancentric, humancentricism, human, centric, kincentric, greek, roman, environ, harm reduction, natural, natural world, anthropocentric "> 
 <meta name="description" content="Beneath modern environmentalism and its 'conservation of nature' lies a fundamental error that destines even the greenest of intentions to grey.">
 
 
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="8 minutes" /> 
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="8 minutes"> 
 	
-<!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Nature's Fallacy | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="Beneath our modern environmentalism lurks a fundamental ontological error that destines even the greenest of intentions to grey."/>
 
 
@@ -58,7 +59,7 @@ Must be updated for each page-->
   #ct-chapter-title {
       /*padding-top: 45px;
       font-size: 10vmin;*/
-      letter-spacing: 3px;
+      letter-spacing: 4px;
       
     }
 
@@ -66,19 +67,20 @@ Must be updated for each page-->
 
 </head>
 
+
 <!--MAIN HTML Begins-->
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 <div id="underlayer">
 
-  <a id="top"></a>
+<div id="top"></div>
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Nature's Fallacy</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Book One | Chapter Six</div>
@@ -143,20 +145,35 @@ Must be updated for each page-->
 
      <p>Only then can we too see the plants and animals around us as kin, elders and masters of ecological integration– teachers from whom we can learn to vitalize our own contributive potential.</p>
 
-     <p>And only then can we see that the greatest teacher of all has been waiting for us all a long.</p>
-     <br><br>
+     <p>And only then can we see that the greatest teacher of all has been waiting for us all a long.</p><br>
+    
+    
+  </div><!--closes page text content, then loads page curtains:-->
 
-  
-    </div><!--closes page text content-->
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section">
+  <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
 
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
       
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
         <a href="#47-up" class="footnote">   
         <div class="footnote-number">47.</div>
         <div class="footnote-text">Russell received a personal account from Robert Muller, three time under-secretary of general of the UN, who in discussions with UN Secretary General U Thant during the 1960’s, selected the word ‘environment’ (which had no political meaning at the time) as a term for the world’s growing ecological concerns. The term was used for the 1972 <i>United Nations Conference on the Human Environment</i>, in Stockholm, giving ‘environmentalism’ its modern political meaning.</div>
@@ -187,6 +204,12 @@ Must be updated for each page-->
         
 
 
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
 
     </div><!--Closes footnote section-->
           
@@ -198,13 +221,11 @@ Must be updated for each page-->
     <div class="footer-size">
     
       <div class="footer-left">
-
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Next chapter:</div>
-            <div class="sec-name"><i>The Earthen Ways</i></div>
+          <div class="next-sec">Next:</div>
+            <div class="sec-name"><i>7 | Earthen Ways</i></div>
         </div>
 
       </div>
@@ -212,17 +233,17 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="earthen.php"><div class="next-button">Next ➔</div></a>
-
-      </div>
-    </div>
-  </div>
-
-  <?php require_once ("includes/chap-footer.php");?>
+        <a href="earthen.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
 </div>
+</div>
+
+    
+<?php require_once ("includes/chapTER-footer.php");?>
 
 
+</div>
 </body>
+</html>
 </html>
 
