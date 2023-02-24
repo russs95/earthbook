@@ -904,7 +904,6 @@ font-family: "Mulish";
   position: absolute;
   right: 0px;
   transition: 0.3s;
-  transition: 0.3s;
   border-radius: 70px;
   height: 85px;
   padding-right: 70px;
@@ -1141,12 +1140,6 @@ padding-top: 14px;
   border: solid 1px var(--thin-border-color);
 }
 
-/*
-#bottom-close-button:active {
-  opacity:0;
-  transition: 1s;
-  
-}*/
 
 #top-close-button {
 background-color: var(--background-color);
@@ -3544,8 +3537,8 @@ display: none;
   font-family: "CooperLT", serif;
   font-style: italic;
   opacity: 0;
-  transition: 0.4s;
-  transition-delay: 0.8s;
+  transition: 0.3s;
+  transition-delay: 0.3s;
 
 }
 

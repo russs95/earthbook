@@ -107,42 +107,42 @@ Must be updated for each page-->
 -->
 
      <div class="lead-page-paragraph" id="13-up">
-        OVER 5 BILLION YEARS AGO, IN A CLOUD OF INTERSTELLAR DUST our solar system swirled together. As cosmic matter collided and coalesced, growing ever denser, our sun ignited.  Within the remaining spiraling debris, further matter and momentum began to merge—  falling into orbit as dense clumps around our young star.  As each gained cohesion and coherence, the planets of our solar system came to be.<a href="#footnotes">¹³</a>  Steadily, each planet arrived at its own unique combination of matter and momentum— of solar distance and spin, of elemental abundance and chemical composition, of axial tilt and surface temperature— a planetary configuration that just as it coalesced, so too it began to unfold.
+        OVER 5 BILLION YEARS AGO, IN A CLOUD OF INTERSTELLAR DUST our solar system swirled together. As cosmic matter collided and coalesced, growing ever denser, our sun ignited.  Within the remaining spiraling debris, further matter and momentum began to merge—  falling into orbit as dense clumps around our young star.  As each gained cohesion and coherence, the planets of our solar system came to be.<a href="#footnotes">¹³</a>  Steadily, each planet arrived at its own unique combination of energy and mass— of solar distance and spin, of elemental abundance and chemical composition, of axial tilt and surface temperature— a planetary configuration that just as it coalesced, so too it began to unfold.
      </div>
 
     <div class="page-paragraph">
 
-    <p id="14-up">Like all its solar system siblings, Earth began a barren and desolate place.  For our planet's first two billion years, its atmosphere was full of carbon dioxide, making its climate hot, harsh and unstable.<a href="#footnotes">¹⁴</a> For eons, its surface was distinguished solely by the ebb and flow of tectonic plates, of ocean currents and atmospheric flows.  However, as these primordial cycles spun under the relentless shine of the sun, the Earth we know now began to emerge.  </p>
+    <p id="14-up">Like all its solar system siblings, Earth was at first a barren and desolate place.  For our planet's first two billion years, its atmosphere was full of carbon dioxide, making its climate hot, harsh and unstable.<a href="#footnotes">¹⁴</a> For eons, its surface was distinguished solely by the ebb and flow of tectonic plates, of ocean currents and atmospheric flows.  However, as these primordial cycles spun under the relentless shine of the sun, the Earth we know now began to emerge.  </p>
 
-      <p id="15-up">For as the sun shone down, entropy demanded dissipation.<a href="#footnotes">¹⁵</a>  Like the run of rain down a mountainside cascading into the twists and turns of a stream, the sun’s ever arriving blaze cascaded across Earth’s surface.  Just as a mountain’s contoured character leads to rivers and valley's that are all its own, so too the Earth’s planetary character led to flows of energy all its own.</p>
+      <p id="15-up">For as the sun shone down, entropy demanded dissipation.<a href="#footnotes">¹⁵</a>  Like the run of rain down a mountainside cascading into the twists and turns of a stream, the sun’s ever arriving blaze cascaded across Earth’s surface.  Just as a mountain’s contoured character leads to rivers and valley's that are all its own, so too Earth’s planetary character led to flows of energy all its own.</p>
 
 
       <p id="16-up">Driven and determined by its unique planetary configuration, Earth's cosmological character began to blossom.  Steadily, processes, cycles and systems began to unfold with a distintctly Earthen character. Hand in hand with the dictates of thermodynamics, Earth’s cycles tended their spin towards ever better dissipations of energy.  Steadily, new chemical combinations unfolded to better disperse the sun’s blaze.  <!--Steadily, the largest cycles of earth, water and air fractaled into a thousand smaller ones, and those then into a million more.-->  Steadily, the tiniest cycles whirled together into larger systems that began to drive themselves onward.<a href="#footnotes">¹⁶</a>  Steadily, these systems unfurled into cells, organisms and eventually, into ecosystems.<a href="#footnotes">¹⁷</a></p>
 
       <p id="18-up">As ever more effective patterns of dissipation emerged, plants rapidly dispersed across the planet's surface. By capturing carbon out of the air, they used it to build their bodies and to gather and hold energy. Plants began to compose leaves, flowers and towering trunks while other organisms discerned how to decompose them.</p>
       
-      <p>As they did so, they interacted and adapted— and as they adapted, they diversified and intertwined.  A vibrant matrix of mutual support began to weave itself across the planet's surface.</p>
+      <p>As they did so, they interacted and adapted— and as they adapted, they diversified and intertwined.  A vibrant matrix of mutual support began to weave itself across Earth's surface.</p>
       
       <p>Soon forests, fields and fungi covered the planet.  Animals, algae and dinosaurs, all made from intricate patterns of carbon, emerged.  As these creatures lived and died their carbon matter spiralled from one organism into another while their nutrient energy spiraled outwards through the web of ecosystems that came to comprise Earth's biosphere.<a href="#footnotes">¹⁸</a></p>
 
-      <p>As organisms lived and died, each fallen generation was covered up by the next.  Whether on a forest floor or the bottom of the ocean, slowly and steadily, layers of life were buried under silt and sediment.  Over hundreds of millions of years, Earth compressed and compacted the biomass of these ancient organisms— indefinitely concentrating and securing their carbon deeper and deeper underground.</p>
+      <p>As organisms lived and died, each fallen generation was covered up by the next.  Whether on a forest floor or the floor of the ocean, slowly and steadily, layers of life were buried under silt and sediment.  Over hundreds of millions of years, Earth compressed and compacted the biomass of these ancient organisms— indefinitely concentrating and securing their carbon deeper and deeper underground.</p>
 
-      <p id ="19-up">Although these organisms all breathed out carbon dioxide, their full cycle of life tended to subtract more carbon into the ground than they added back into the air.  With more and more organisms subtracting, soon great quantities of carbon were removed out of the atmosphere.  With more carbon being sequestered all the time, the Earth's climate stabilized<a href="#footnotes">¹⁹</a> and the biosphere flourished.</p>
+      <p id ="19-up">Although Earth's organisms mostly breathed out carbon dioxide, their full cycle of life tended to subtract more carbon into the ground than they added back into the air.  With more and more organisms subtracting, soon great quantities of carbon were removed out of the atmosphere.  With more carbon being sequestered all the time, Earth's climate stabilized<a href="#footnotes">¹⁹</a> and the biosphere flourished.</p>
 
       <p>Cradled by the verdant abundance, over the last 30 million years a variety of bipedal apes emerged from the forests— and we sapiens shuffled onto the scene.</p>
 
       <p>As we struggled to survive, we figured out fire.</p>
       
-      <p>First, we started by burning wood to warm our caves. Then to heat our homes. Then to fuel our forges.  It wasn’t long then til we discovered the Earth’s carbon stores. </p>
+      <p>First, we started by burning wood to warm our caves. Then to heat our homes. Then to fuel our forges.  It wasn’t long then til we discovered Earth’s carbon stores. </p>
 
       <p>We realized that they were far richer in energy.</p>
 
-     <p>Some of us (but certainly not all of us) began to unearth this ancient carbon— what we came to call coal, natural gas and petroleum.  As many of us got better and better at extracting and burning it, ancient carbon came to turn our wheels, power our our machines, and fuel our factories. As it came to drive entire economies, we gave it a new name: <i>fossil fuels</i>. </p>
+     <p>Some of us (but certainly not all of us) began to unearth this ancient carbon— what we came to call coal, natural gas and petroleum.  As we got better and better at extracting and burning it, ancient carbon came to turn our wheels, power our our machines, and fuel our factories. As it came to drive entire economies, we gave it a new name: <i>fossil fuels</i>. </p>
 
      <p id="20-up">However, despite the nifty name, these fossil deposits were never in fact fantastic fuels.  To make them so required refinement— a process that always resulted in leftovers that could not be used.<a href="#footnotes">²⁰</a>  With nowhere to go, these chemicals began to pile up.<a href="#footnotes">²¹</a></p>
 
 
-     <p>We soon realized that the residuals of refinement could be used.  With a little chemistry, polymers could be produced—and with a little more; an endless array of marvelous materials.</p>
+     <p>We soon realized that the residuals of refinement could be used too.  With a little chemistry, polymers could be produced—and with a little more; an endless array of marvelous materials.</p>
 
      <p>Plastics had arrived.</p>
 
@@ -150,13 +150,13 @@ Must be updated for each page-->
 
      <p>Powered by the ever increasing flow of petroleum and profit, industries grew and grew.  As they expanded, so did the extraction of carbon, the refinement, and the economies based upon it all. As it all spun faster and faster, there was always that little bit that couldn’t be processed.  This led to industry producing more and more plastic at lesser and lesser cost. </p>
 
-     <p>As we consumed one plastic product after another, we tried our best to reuse and recycle each one.  However, there was already so much cheap new plastic, there was little profit in processing the old— better to burn it, dump it or send it somewhere else.</p>
+     <p>As we consumed one plastic product after another, we tried our best to reuse and recycle.  However, there was already so much cheap new plastic, there was little profit in processing the old— better to burn it, dump it or send it somewhere else.</p>
 
-     <p id="25-up">However, soon there was so much plastic that it began to spill out of our homes, enterprises and industries.    In growing alarm we watched as our plastic clogged rivers, filled seas and piled into great smoking mountains.<a href="#footnotes">²⁵</a>  The particles of plastic were everywhere— inside the bodies of fish and animals— and us.</p>
+     <p id="25-up">Soon there was so much plastic that it began to spill out of our homes, enterprises and industries.    In growing alarm we watched as our plastic clogged rivers, filled seas and piled into great smoking mountains.<a href="#footnotes">²⁵</a>  The particles of plastic were everywhere— inside the bodies of fish and animals— and us.</p>
 
-     <p>Shocked, shamed and determined, industry strove to amend their mistakes and improve their ways. Enterprises worked valiantly to improve their processes, products and packaging. New technologies were launched that were less harmful, less polluting and less damaging.  Industry, did their best to convince themselves, and everyone else, that there was a solution just around the corner </p>
+     <p>Shocked, shamed and determined, industry strove to amend their mistakes and improve their ways. Industry, did their best to convince themselves, and everyone else, that there was a solution just around the corner. Enterprises strove valiantly to make their processes, products and packaging less harmful, less polluting and less damaging.</p>
 
-     <p>Yet after turning countless corners, despite being less harmful, harmful, polluting and damaging their products, packaging and processes remained.</p>
+     <p>Yet after turning countless corners, despite being less harmful, harmful, polluting and damaging their processes remained.</p>
 
      <p>Unabated, the grey flows of plastic and pollution continued to grow.</p>
 
