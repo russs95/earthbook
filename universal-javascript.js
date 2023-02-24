@@ -84,20 +84,6 @@ $(function() {
 
 
 
- 
-
-
-
-  
-
-
-
-
-
-
-
-
-
 /* BOTTOM COMMENTS OVERLAY 
 
 Triggers the full screen chapter comments*/
@@ -482,15 +468,13 @@ Opens up the Earthbook overlay from the bottom up*/
 
 /*Key close all curtains*/
 
-function modalCloseCurtains ( e ) {
+function modalCloseComments ( e ) {
   if ( !e.keyCode || e.keyCode === 27 ) {
     document.getElementById("bottom-comments-overlay").style.height = "0%";
     document.getElementById("eco-curtain2").style.height = "0%";
-  document.body.style.overflowY = "unset";
-  document.getElementById("right-close-button2").style.position = "absolute";
+    document.getElementById("right-close-button2").style.position = "absolute";
+    document.getElementById("bottom-earthbook").style.height = "0%";
 
-  document.getElementById("bottom-earthbook").style.height = "0%";
-    /*document.body.style.maxHeight = "unset";*/
     document.getElementById("medium-message").style.transitionDelay = "2s";
     document.getElementById("medium-message").style.opacity = "0";
 
@@ -508,10 +492,9 @@ function modalCloseCurtains ( e ) {
   document.getElementById("right-search-overlay").style.width = "0%";
 
 
-  
   }
 }
-document.addEventListener('keydown', modalCloseCurtains);
+document.addEventListener('keydown', modalCloseComments);
 
 
 
