@@ -84,39 +84,7 @@ $(function() {
 
 
 
-/* LEFT SETTINGS OVERLAY */
-function openSettings() {
-  document.getElementById("left-settings-overlay").style.width = "100%";
-  document.body.style.overflowY = "hidden";
-  document.body.style.maxHeight = "101vh";
-
-}
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeSettings() {
-  document.getElementById("left-settings-overlay").style.width = "0%";
-  document.body.style.overflowY = "unset";
-  document.body.style.maxHeight = "unset";
-  document.body.style.height = "unset";} 
-
  
-/* RIGHT SHARE OVERLAY 
-
-Triggers the right share link panel*/
-
-function openShare() {
-    document.getElementById("right-share-overlay").style.width = "100%";
-    document.body.style.overflowY = "hidden";
-    //document.body.style.maxHeight = "101vh";
- 
-  }
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeShare() {
-    document.getElementById("right-share-overlay").style.width = "0%";
-    document.body.style.overflowY = "unset";
-    //document.body.style.maxHeight = "unset";
-
-  } 
 
 
 
@@ -227,6 +195,80 @@ function closeComments() {
   document.getElementById("right-close-button2").style.position = "absolute";
 
 } 
+
+
+
+/* RIGHT SHARE OVERLAY 
+
+Triggers the right share link panel*/
+
+function openShare() {
+  document.getElementById("right-share-overlay").style.width = "100%";
+  document.body.style.overflowY = "hidden";
+  //document.body.style.maxHeight = "101vh";
+
+  var modal = document.getElementById('right-share-overlay');
+
+function modalShow () {
+   modal.setAttribute('tabindex', '0');
+   modal.focus();
+}
+
+function focusRestrict ( event ) {
+  document.addEventListener('focus', function( event ) {
+    if ( modalOpen && !modal.contains( event.target ) ) {
+      event.stopPropagation();
+      modal.focus();
+    }
+  }, true);
+}
+}
+
+
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeShare() {
+  document.getElementById("right-share-overlay").style.width = "0%";
+  document.body.style.overflowY = "unset";
+  //document.body.style.maxHeight = "unset";
+
+} 
+
+
+
+
+/* LEFT SETTINGS OVERLAY */
+function openSettings() {
+  document.getElementById("left-settings-overlay").style.width = "100%";
+  document.body.style.overflowY = "hidden";
+ // document.body.style.maxHeight = "101vh";
+
+ var modal = document.getElementById('left-settings-overlay');
+
+function modalShow () {
+   modal.setAttribute('tabindex', '0');
+   modal.focus();
+}
+
+function focusRestrict ( event ) {
+  document.addEventListener('focus', function( event ) {
+    if ( modalOpen && !modal.contains( event.target ) ) {
+      event.stopPropagation();
+      modal.focus();
+    }
+  }, true);
+}
+}
+
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeSettings() {
+  document.getElementById("left-settings-overlay").style.width = "0%";
+  document.body.style.overflowY = "unset";
+ // document.body.style.maxHeight = "unset";
+  //document.body.style.height = "unset";
+} 
+
 
 
 /* TABLE OF CONTENTS OVERLAY
@@ -402,6 +444,9 @@ function modalCloseComments ( e ) {
   document.getElementById("sub-earthbook").style.display = "none";
   document.getElementById("bookplate-button").style.display = "none";
   document.getElementById("bookplate-img").style.display = "none";
+  document.getElementById("left-settings-overlay").style.width = "0%";
+  document.getElementById("right-share-overlay").style.width = "0%";
+
   
   }
 }
