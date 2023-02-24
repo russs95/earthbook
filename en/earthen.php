@@ -130,7 +130,7 @@ Must be updated for each page-->
 
       <p id="55-up">While there are hints of these tendencies upon other planets, upon ours, they definitively incline the cycles of matter and energy<a href="#footnotes">⁵⁵</a>, setting Earth apart in their clarity of expression and consequence.</p>
       
-      <p>Yet Earth is not an exception in having a cosmological character all its own.  Given the unique stellar confluence of every planet, each has its own configuration and characterstic unfurling.  From the endless storms of Jupiter, to the endemic volcanoes of Venus, to the very color of Mars, each planet’s character tends towards its own expressions of surface, ocean and atmosphere.</p>
+      <p>Yet Earth is not an exception in having a cosmological character all its own.  Given the unique interstellar confluence of every planet, each has its own configuration and characterstic unfurling.  From the endless storms of Jupiter, to the endemic volcanoes of Venus, to the very color of Mars, each planet’s character tends towards its own expressions of surface, ocean and atmosphere.</p>
 
      <p id="56-up">Nevertheless, each planet’s tendencies are not hard and fast rules.  Not all storms on Jupiter turn to giant red spots, not all Venusian mountains erupt and not all rocks on Mars are red.  Likewise, not all of the Earth’s systems express Earthen tendencies with equal clarity and consequence.<a href="#footnotes">⁵⁶</a></p>
 
