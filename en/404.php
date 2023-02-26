@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,23 +15,23 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "101";
+$page_title = "404 Page not Found | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
@@ -35,13 +39,10 @@ $name = "";?>
 <?php require_once ("../header.php");?>
 
 
-
-<!--END OF GENERIC CONTENT-->
-
 <!--META TAGS
 Must be updated for each page-->
 
-<title>404 Page not found | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-25T09:14:13+00:00">
 <meta name="keywords" content="not yet published, epigraph, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
 <meta name="description" content="This chapter hasn't yet been published.">
 
@@ -49,9 +50,7 @@ Must be updated for each page-->
 <meta name="twitter:label1" content="Est. reading time" />
 <meta name="twitter:data1" content="1 minutes" /> 
 	
-<!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Not yet published | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="This chapter hasn't yet been published."/>
+<meta property="og:description"   content="We couldn't find the page you were looking for."/>
 
 
 
@@ -100,27 +99,31 @@ Must be updated for each page-->
   #ct-main .action-btn {
     margin: -35px auto 0px auto !important;
   }
+  #ct-chapter-title {
+  
+  font-size: 10vmin;
+  letter-spacing: 1px;
+}
 
 </style>
-
 
 </head>
 
 
-<!--Main HTML Begins-->
+<!--MAIN HTML Begins-->
 
-<BODY class="accessibility-plugin-ac">
-  <div id="underlayer">
+<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
+<div id="underlayer">
 
-    <a name="top"></a>
+<div id="top"></div>
 
 <!--HEADER NAVBAR-->
 <header-component></header-component>
 
 <div id="ct-chapter-top">
-    <div id="ct-tc-menu" onclick="openContents()"></div>
-    <div class="sero" style="cursor:pointer;" onclick="openContents()">
-      <div id="ct-chapter-title">404 Error</div>   
+<button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+<div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+    <div id="ct-chapter-title">404 Error</div>   
       <div id="ct-book-title">Page Not Found<!--#echo var="REDIRECT_STATUS" --></div>
       <div id="ct-chap-location">Tractatus Ayyew</div>
       <div id="ct-word-count"><i>An Earthen Ethics</i></div>
@@ -135,7 +138,19 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-    The requested page <?php echo $_SERVER[HTTP_REFERER] ?> couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
+    The requested page  <?php
+echo $_SERVER['PHP_SELF'];
+echo "<br>";
+echo $_SERVER['SERVER_NAME'];
+echo "<br>";
+echo $_SERVER['HTTP_HOST'];
+echo "<br>";
+echo $_SERVER['HTTP_REFERER'];
+echo "<br>";
+echo $_SERVER['HTTP_USER_AGENT'];
+echo "<br>";
+echo $_SERVER['SCRIPT_NAME'];
+?>  couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
     </div>
 </div>
 
