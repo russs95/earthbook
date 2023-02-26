@@ -281,7 +281,19 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-    The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
+    The requested page <?php
+echo $_SERVER['PHP_SELF'];
+echo "<br>";
+echo $_SERVER['SERVER_NAME'];
+echo "<br>";
+echo $_SERVER['HTTP_HOST'];
+echo "<br>";
+echo $_SERVER['HTTP_REFERER'];
+echo "<br>";
+echo $_SERVER['HTTP_USER_AGENT'];
+echo "<br>";
+echo $_SERVER['SCRIPT_NAME'];
+?> couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
     </div>
 </div>
 
