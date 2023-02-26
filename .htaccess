@@ -40,11 +40,13 @@ Redirect /plastic.php /en/plastic.php
 Redirect en/plastic.html /en/plastic.php
 Redirect en/plastic /en/plastic.php
 
+Redirect /interstellar /en/stellar.php
 Redirect /stellar /en/stellar.php
 Redirect /stellar.html /en/stellar.php
 Redirect /stellar.php /en/stellar.php
 Redirect en/stellar.html /en/stellar.php
 Redirect en/stellar /en/stellar.php
+Redirect en/interstellar /en/stellar.php
 
 Redirect /patterns /en/patterns.php
 Redirect /patterns.html /en/patterns.php

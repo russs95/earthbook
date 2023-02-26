@@ -127,19 +127,19 @@ Must be updated for each page-->
 
       <p>As organisms lived and died, each fallen generation was covered up by the next.  Whether on a forest floor or the floor of the ocean, slowly and steadily, layers of life were buried under silt and sediment.  Over hundreds of millions of years, Earth compressed and compacted the biomass of these ancient organisms— indefinitely concentrating and securing their carbon deeper and deeper underground.</p>
 
-      <p id ="19-up">Although Earth's organisms breathed out carbon dioxide, the subtractive side of their cycles tended to sequester more carbon into the ground than they added back into the air.  With more and more organisms living and dying, living and dying, soon great quantities of carbon were removed out of the atmosphere.  With more carbon being sequestered all the time, Earth's climate stabilized<a href="#footnotes">¹⁹</a> and the biosphere flourished.</p>
+      <p id ="19-up">Although Earth's organisms breathed out carbon dioxide, the subtractive spin of their cycles tended to sequester more carbon into the ground than they added back into the air.  With more and more organisms living and dying, living and dying, soon great quantities of carbon were removed out of the atmosphere.  With more carbon being sequestered all the time, Earth's climate stabilized<a href="#footnotes">¹⁹</a> and the biosphere flourished.</p>
 
       <p>Cradled by the verdant abundance, over the last 30 million years, a variety of bipedal apes emerged from the forests— and we sapiens shuffled onto the scene.</p>
 
       <p>As we struggled to survive, we figured out fire.</p>
       
-      <p>First, we started by burning wood to warm our caves. Then to heat our homes. Then to fuel our forges.  It wasn’t long then til we discovered Earth’s carbon stores. </p>
+      <p>First, we started by burning wood to warm our caves. Then to heat our homes. Then to fuel our forges.  It wasn’t long then til we discovered Earth’s long buried carbon stores. </p>
 
       <p>We realized that they were far richer in energy.</p>
 
-     <p>Some of us (but certainly not all of us) began to unearth this ancient carbon— what we came to call coal, natural gas and petroleum.  As we got better and better at extracting and burning it, ancient carbon came to turn our wheels, power our our machines, and fuel our factories. As it came to drive entire economies, we gave it a new name: <i>fossil fuels</i>. </p>
+     <p>Some of us (but certainly not all of us) began to unearth this ancient carbon— what we came to call coal, natural gas and petroleum.  As certain societies became better and better at extracting and burning it (those others kept-on just fine), it came to turn our wheels, power our our machines, and fuel our factories. As carbon came to drive entire economies, we gave it a new name: <i>fossil fuels</i>. </p>
 
-     <p id="20-up">However, despite the nifty name, these fossil deposits were never in fact fantastic fuels.  To make them so required refinement— a process that always resulted in leftovers that could not be used.<a href="#footnotes">²⁰</a>  With nowhere to go, these chemicals began to pile up.<a href="#footnotes">²¹</a></p>
+     <p id="20-up">However, despite the nifty name, these fossil deposits were never intended by anyone other than us to be fuels.  To make them so required refinement— an intensive process that always resulted in leftovers that could not be used.<a href="#footnotes">²⁰</a>  With nowhere to go, these chemicals began to pile up.<a href="#footnotes">²¹</a></p>
 
 
      <p>We soon realized that the residuals of refinement could be used too.  With a little chemistry, polymers could be produced—and with a little more; an endless array of marvelous materials.</p>
