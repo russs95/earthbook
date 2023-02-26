@@ -220,11 +220,12 @@ Must be updated for each page-->
 <!--HEADER NAVBAR-->
 <header-component></header-component>
 
+
 <div id="ct-chapter-top">
-    <div id="ct-tc-menu" onclick="openContents()"></div>
-    <div class="sero" style="cursor:pointer;" onclick="openContents()">
-      <div id="ct-chapter-title">Page not found</div>   
-      <div id="ct-book-title">EarthBook Error <!--#echo var="REDIRECT_STATUS" --></div>
+<button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+<div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+    <div id="ct-chapter-title">404 Error</div>   
+      <div id="ct-book-title">Page Not Found!<!--#echo var="REDIRECT_STATUS" --></div>
       <div id="ct-chap-location">Tractatus Ayyew</div>
       <div id="ct-word-count"><i>An Earthen Ethics</i></div>
     </div>
@@ -281,19 +282,7 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-    The requested page <?php
-echo $_SERVER['PHP_SELF'];
-echo "<br>";
-echo $_SERVER['SERVER_NAME'];
-echo "<br>";
-echo $_SERVER['HTTP_HOST'];
-echo "<br>";
-echo $_SERVER['HTTP_REFERER'];
-echo "<br>";
-echo $_SERVER['HTTP_USER_AGENT'];
-echo "<br>";
-echo $_SERVER['SCRIPT_NAME'];
-?> couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
+    The requested page couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
     </div>
 </div>
 
