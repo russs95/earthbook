@@ -1513,7 +1513,7 @@ left: 0;
 
 
 
-/* Position the close button (top right corner) */
+/* Position the close button (top right corner) 
 .share-overlay .closebtn {
   position: absolute;
   top: 15px;
@@ -1522,7 +1522,7 @@ left: 0;
   font-weight: lighter;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap 
 @media screen and (max-height: 700px) {
   .share-overlay a {
   font-size: 20px;
