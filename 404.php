@@ -231,7 +231,6 @@ Must be updated for each page-->
     </div>
 </div>
 
- 
 
 <!--CONTENTS MENU-->
 <content-curtain></content-curtain>
