@@ -142,9 +142,13 @@ Must be updated for each page-->
   </div>
 
   <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">
-    <div class="document-holder" style="display:flex;">
-      <div class="doc-image" style="width:50px; padding:10px"><img src="../webp/impact-report-100px.webp"></div>
-      <div class="doc-text" style="font-family:'Mulish';font-size:1em;padding:10px;text-align:left;">2022 Tracatus Ayyew Writing & Publishing<br><b>2022 Regen Report</b></div>
+    <div class="document-holder" style="display:flex;background: #80808026;
+border-radius: 12px;">
+      <div class="doc-image" style="width:fit-content; padding:10px">
+      <img src="../webp/impact-report-100px.webp"></div>
+      <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;">
+        <div class="doc-text" style="font-family:'Mulish';font-size:1.3em;padding:10px;text-align:left;">2022 Tracatus Ayyew Writing & Publishing</div>
+        <div class="doc-text" style="font-family:'Mulish';font-size:1em;padding:10px;text-align:left;"><b>2022 Regen Report</b></div>
   </div></a>
 
 
