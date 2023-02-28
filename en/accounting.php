@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,43 +15,35 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "105";
+$page_title = "Ecological Accounting | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
-
 <?php require_once ("../header.php");?>
-
-<!--END OF GENERIC CONTENT-->
 
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Ecological Accounting | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-28T09:10:13+00:00">
 <meta name="keywords" content="regen report, regen, regenerativity, report, ecological, accounting, carbon, co2, biodiversity, plastic, impact, disclosure, ecological accounting, eco accounting"> 
-
 <meta name="description" content="The carbon, plastic and biodiversity ecological accounting of this Earthbook's writing and publishing">
-
-	
-<!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Ecological Accounting | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="The carbon, plastic and biodiversity ecological accounting of the book's writing and publishing."/>
 
 
@@ -89,8 +85,7 @@ Must be updated for each page-->
   }
 
   #ct-chapter-title {
-      /*padding-top: 45px;
-      */font-size: 10vmin;
+  font-size: 10vmin;
       letter-spacing: 2px;
       
     }
@@ -163,7 +158,7 @@ Must be updated for each page-->
     
       <div class="footer-left">
 
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter2()"></div>
     
      
         <div class="next-section">

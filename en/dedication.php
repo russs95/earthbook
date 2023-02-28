@@ -89,8 +89,8 @@ Must be updated for each page-->
   }
 
   #ct-chapter-title {
-      /*padding-top: 45px;
-      */font-size: 10vmin;
+
+      font-size: 10vmin;
       letter-spacing: 2px;
   }
 
@@ -102,8 +102,6 @@ Must be updated for each page-->
 
 </head>
 
-<!--MAIN HTML Begins-->
-
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 <div id="underlayer">
 
@@ -113,8 +111,8 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Dedication</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">An Earthen Ethics</div>
@@ -144,7 +142,7 @@ Must be updated for each page-->
 -->
 
 <div class="page-paragraph" style="text-align:center;">
-<p>who let us play in the forests and fields,</p>>
+<p>who let us play in the forests and fields,</p>
    
    <p>tasting berries and climbing trees,</p>
     
