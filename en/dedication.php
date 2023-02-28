@@ -125,7 +125,7 @@ Must be updated for each page-->
 
   <div id="ct-chapt-graphic" class="background-000">
   <div class="ct-chapter-quote"><i>
-  To our mothers and fathers,<br>
+  To our mothers and fathers,
     
   
 </i>
