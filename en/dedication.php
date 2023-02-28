@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,35 +15,33 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "104";
+$page_title = "Dedication | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
-
 <?php require_once ("../header.php");?>
 
-<!--END OF GENERIC CONTENT-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Dedication | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-28T09:10:13+00:00">
 <meta name="keywords" content="dedication, father, mother, thank, gratitude"> 
 <meta name="description" content="Our Dedication of the Tractatus Ayyew">
 
@@ -127,11 +129,6 @@ Must be updated for each page-->
   <div class="ct-chapter-quote"><i>
   To our mothers and fathers,<br>
     
-  who let us play in the forests and fields,<br>
-   
-  tasting berries and climbing trees,<br>
-   
-   loving the wild and learning its leaves.<br>
   
 </i>
   </div>
@@ -147,6 +144,12 @@ Must be updated for each page-->
 -->
 
 <div class="page-paragraph" style="text-align:center;">
+who let us play in the forests and fields,<br>
+   
+   tasting berries and climbing trees,<br>
+    
+    loving the wild and learning its leaves.<br>
+    <br><br><br><br>
    <div>
 
 
