@@ -85,8 +85,6 @@ Must be updated for each page-->
       </div>
   </div>
 
-  <?php require_once ("includes/eco-curtain.php");?>
-
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-7"></div>

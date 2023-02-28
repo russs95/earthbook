@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,52 +15,41 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<?php session_start(); ?>  <!--NEW-->
-
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
-?>
-
+$page_number = "13";
+$page_title = "The Salmon's Spin |  Book two | Tratatus Ayyew - Earthbook";?>
 
 <head>
 
+<?php require_once ("../header.php");?>
 
-<?php require_once ("../header.php");
-$title = "Energy";
-$page_title = "The Salmon's Spin | Tratatus Ayyew - Earthbook";?>
-
-
-
-<!--END OF GENERIC CONTENT-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>The Salmon's Spin | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-21T09:10:13+00:00">
 <meta name="keywords" content="salmon, spin, energy, inwards, capital, currency, for-profit, not-for-profit, earth enterprise, for Earth, forEarth, Haida, Dakelh, Wetʼsuwetʼen, nutrients, roe, dispersal, concentration, Earthen, Igorots, Ayyew, cycles that spiral, spiral design, linear vs circular, circular, green, Earthen ethics, principle two, Earthen principles, Earthen, cosmology, planetary character, Earth's character, "> 
-<meta name="description" content="Earthen Principle No.2: Observe how Earth’s cycles tend towards the outwards dissipation of energy.">
+<meta name="description" content="Earthen Principle No.2: Earth’s cycles tend towards the outwards dissipation of energy.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
 <meta name="twitter:data1" content="16 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="The Salmon's Spin |  Book two | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="Earthen Principle No.2: Observe how Earth’s cycles tend towards the outwards dissipation of energy."/>
 
 
@@ -107,8 +100,6 @@ Must be updated for each page-->
 
 </style>
 
-</head>
-
 <!--MAIN HTML Begins-->
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
@@ -120,18 +111,14 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">The Salmon's Spin</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Earthen Principle No. 2</div>
-        <div id="ct-word-count"><i>Book Two | 2,307 words</i></div>
+        <div id="ct-word-count"><i>2,307 words |  Book 2</i></div>
       </div>
   </div>
-
-  <?php require_once ("includes/eco-curtain.php");?>
-	
- <?php require_once ("includes/search.php");?>
 
 
 <!-- Page Title Section-->
@@ -272,16 +259,23 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
      <p>Our next Earthen ethic.</p>
 
-     <br><br>
-
+     <br><br><br>
   
-    </div><!--closes page text content-->
+    
+    </div><!--closes page text content, then loads page curtains:-->
+
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
 
 <!--FOOTNOTES SECTION-->
 
     <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
+      <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
 
       <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
             
@@ -293,8 +287,7 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
       <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
 
-        <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
-      
+        <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">      
        <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
         <div class="footnote-text">Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., <i>12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest</i> (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and streams in what is now British Columbia.</div>
@@ -346,9 +339,6 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
         <div class="footnote-text">Suh, Sangwon. (2004). Materials and energy flows in industry and ecosystem networks. The International Journal of Life Cycle Assessment. 9. 335-336. 10.1007/BF02979425. Materials and energy flow analysis (MEFA) has been widely utilized in ecology and economics, occupying unique positions in both disciplines.
         </div>
         </a>
-      
-
-
 
 
         <a href="#67-up" class="footnote">   
@@ -361,10 +351,7 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
 
 
-
-
-        
-      </div>
+        </div>
   </div>
 
 
@@ -384,28 +371,25 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
     
      
         <div class="next-section">
-            <div class="next-sec">Next chapter:</div>
-            <div class="sec-name"><i>3 | The Mollusk's Means</i></div>
+          <div class="next-sec">Next:</div>
+            <div class="sec-name"><i>3 | The Manner of the Mollusc</i></div>
         </div>
 
       </div>
     
+
       <div class="footer-right">
     
-        <a href="unpublished.php"><div class="next-button">Next ➔</div></a>
-
-      </div>
-    </div>
-
-  <?php require_once ("includes/chapTER-footer.php");?>
-
-  <?php require_once ("includes/comments.php");
- $title = "Energy";
- $page_title = "The Salmon's Spin | Tratatus Ayyew - Earthbook";?>
+        <a href="unpublished.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
 </div>
+</div>
+
+    
+<?php require_once ("includes/chapTER-footer.php");?>
 
 
+</div>
 </body>
 </html>
 
