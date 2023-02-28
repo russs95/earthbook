@@ -139,7 +139,7 @@ Must be updated for each page-->
 
      <p>Some of us (but certainly not all of us) began to unearth this ancient carbon— what we came to call coal, natural gas and petroleum.  As certain societies became better and better at extracting and burning it (those others kept-on just fine), it came to turn our wheels, power our our machines, and fuel our factories. As carbon came to drive entire economies, we gave it a new name: <i>fossil fuels</i>. </p>
 
-     <p id="20-up">However, despite the nifty name, these fossil deposits were never intended by anyone other than us to be fuels.  To make them so required refinement— an intensive process that always resulted in leftovers that could not be used.<a href="#footnotes">²⁰</a>  With nowhere to go, these chemicals began to pile up.<a href="#footnotes">²¹</a></p>
+     <p id="20-up">However, despite the nifty name, these fossil deposits were never fantastic fuels.  To make them so required refinement— an intensive process that always resulted in leftovers that could not be used.<a href="#footnotes">²⁰</a>  With nowhere to go, these chemicals began to pile up.<a href="#footnotes">²¹</a></p>
 
 
      <p>We soon realized that the residuals of refinement could be used too.  With a little chemistry, polymers could be produced—and with a little more; an endless array of marvelous materials.</p>

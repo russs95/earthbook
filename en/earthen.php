@@ -149,19 +149,37 @@ Must be updated for each page-->
      <p>What is grey is that which conflicts with any one of the Earthen principles, leading to the opposite— lowering consciousness, reducing biome abundance, vibrancy and stability, and decreasing resiliency. </p>
 
      <p>Let us move forward now to discern in detail the five parameters of ecological enrichment on planet Earth— the requisite five pillars of a new green age and a thriving common home for all.</p>
-     <br><br>
-
+    
+     <br><br><br>
   
-    </div><!--closes page text content-->
+    
+  </div><!--closes page text content, then loads page curtains:-->
+
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section">
+  <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
 
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
       
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+
         <a href="#52-up" class="footnote">   
         <div class="footnote-number">52.</div>
         <div class="footnote-text">Thomas Hutton, <i>A Theory of the Earth</i>, Royal Society of Edinburgh, (Transactions of the Royal Society of Edinburgh, 1788) Vol. 1.</div>
@@ -227,7 +245,7 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="epigraph2.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+        <a href="epigraph-2.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
 </div>
 </div>
