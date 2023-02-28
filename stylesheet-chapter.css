@@ -1,6 +1,15 @@
 
+@media screen and (max-width: 699px) {
+    
+  #ct-main .action-btn {
+    margin: -20px auto 0px auto !important;
+  }
+}
+
 
 /*This CSS clears out the navbar from the mainpage settings*/
+
+
 
 
 #earthbook-navbar {
@@ -156,6 +165,9 @@ display: none;
     background: url(svgs/tc-button.svg) center no-repeat;
     background-size: contain;
   }
+
+
+
 
 
   @media screen and (max-width: 699px) {

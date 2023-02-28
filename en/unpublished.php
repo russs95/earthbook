@@ -141,7 +141,7 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-    Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published. Subscribe to Earthen to be notified of new chapter releases.
+    Book Two and Three of the <i>Tractatus Ayyew</i> are still in development. Subscribe to be notified of new chapter releases.
 
     <br><br>
 
