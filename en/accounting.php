@@ -138,12 +138,15 @@ Must be updated for each page-->
     The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  Download the <i>2022 Tractatus Ayyew Regen Report</i> here:  
 <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">https://files.earthen.io/s/ioobYWRRKGEpPp4</a>
   </p>
-  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
 
-     <div id="wcb" class="carbonbadge wcb-d"></div>
-    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" preload></script>
-  <br><br><br><br>
+  </div>
+
+  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">
+    <div class="document-holder" style="display:flex;">
+      <div class="doc-image" style="width:50px; padding:10px"><img src="../webp/impact-report-100px.webp"></div>
+      <div class="doc-text" style="font-family:'Mulish';font-size:1em;padding:10px;text-align:left;">2022 Tracatus Ayyew Writing & Publishing<br><b>2022 Regen Report</b></div>
+  </div></a>
+
 
   
     </div><!--closes page text content-->
