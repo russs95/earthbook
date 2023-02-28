@@ -87,7 +87,6 @@ Must be updated for each page-->
   #ct-chapter-title {
   font-size: 10vmin;
       letter-spacing: 2px;
-      
     }
 
 </style>
@@ -135,7 +134,7 @@ Must be updated for each page-->
 <div class="page-paragraph">
 
   <p>
-    The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  Download the <i>2022 Tractatus Ayyew Regen Report</i> here:
+    The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  Download our annual Regeneral Reports here:
   </p>
 
   </div>
