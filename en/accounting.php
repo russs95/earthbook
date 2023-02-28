@@ -86,7 +86,7 @@ Must be updated for each page-->
 
   #ct-chapter-title {
   font-size: 10vmin;
-      letter-spacing: 2px;
+  letter-spacing: 2px;
     }
 
 </style>
@@ -150,7 +150,7 @@ border-radius: 12px;flex-direction:row;">
       
       <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;">
         <div class="doc-text" style="font-family:'Mulish';font-size:1.3em;padding:10px;text-align:left;"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">Tracatus Ayyew Writing & Publishing</a></div>
-        <div class="doc-text" style="font-family:'CooperLt';font-size:1em;padding:10px;text-align:left;"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>2022 Regen Report</b></a></div>
+        <div class="doc-text" style="font-family:'CooperLt';font-size:1em;padding:10px;text-align:left;"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>2022 Regen Report | PDF |  554kb</b></a></div>
   </div>
 
 
