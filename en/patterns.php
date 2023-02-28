@@ -103,37 +103,37 @@ Must be updated for each page-->
 
 
      <div class="lead-page-paragraph">
-        OVER THE LAST FOUR BILLION YEARS, the singular combination of our planet's orbit, spin, composition and chemistry has played out.  As this unique configuration of matter and energy has unfolded, a once barren rock has transformed into the thriving biosphere that is our common home today.  Of all that we know of other planets in our solar system and galaxy, it is an extraordinary and epic story.  However, what makes the story even more remarkable is that the tellers of the tale are thoroughly part of it.
+        OVER THE LAST FOUR BILLION YEARS, the singular combination of our planet's orbit, spin, composition and chemistry has played out.  As this unique configuration of matter and energy has unfolded, a once barren rock has transformed into the thriving biosphere that is our common home today.  Of all that we know of other planets in our solar system and galaxy, it is an extraordinary and epic story.  However, even more remarkable, the telling of the tale is now part of the story itself.
      </div>
 
     <div class="page-paragraph">
 
-    <p>Our telling of Earth's tale is only possible through a vast and unique confluence of matter and energy; the spiral of carbon into ever more concentrated and complex configurations, the dispersion of the sun's energy into ever more diverse organisms and ecosystems; and through it all the inexorable unfolding of consciousness in a myriad of forms.  Powered by ancient compacted carbon, our last centuries of civilization and science have been able to illuminate both Earth’s story and our own.</p>
+    <p>The consciousness required for the telling of Earth's tale is only possible through a vast and unique confluence of matter and energy; the spiral of carbon into ever more concentrated and complex configurations, the dispersion of the sun's energy into ever more diverse organisms and ecosystems; and through it all the inexorable unfolding of sentience in a myriad of forms.  Powered by ancient compacted carbon, our last centuries of civilization and science have been able to illuminate both Earth’s story and our own.</p>
 
       <p>From this vast vantage we must revisit our judgments of ourselves and of plastic.</p>
 
 
       <p>Rather than be mired in despair at our modern moment of ecological depletion we can be awed by Earth’s momentous act of ecological enrichment.</p>
 
-      <p id="26-up">The way our planet— as a uniquely configured cosmological system— has managed its matter and energy has led to the steady greening of its surface; the cultivation of ever greater diversity, vibrancy and abundance of life.<a href="#footnotes">²⁶</a>  And finally, through the resulting emergence of consciousness, we have been propelled to the telling and pondering of the tale itself.</p>
+      <p id="26-up">The way our planet— <i>as a uniquely configured cosmological system</i>— has managed its matter and energy has led to the steady greeni ng of its surface; the cultivation of ever greater diversity, vibrancy and abundance of life.<a href="#footnotes">²⁶</a>  And finally, through the resulting emergence of consciousness, we have been propelled to pondering the process itself.</p>
 
       <p>So, where do we go from here?</p>
 
       <p>First, let us hold fast to our vantage and the vast view it affords.</p>
 
-      <p id="27-up">From here we can observe another pivotal planetary phenomenon. Aside from meteor strikes and massive volcanoes, it is a phenomenon unseen on the planet for millions of years.  Due to the doings of modern humanity, never before have Earth’s processes, cycles and systems so abruptly added more carbon into the atmosphere than they removed.<a href="#footnotes">²⁷</a></p>
+      <p id="27-up">From here we can observe another pivotal planetary phenomenon. Aside from meteor strikes and massive volcanoes, it is a phenomenon unseen on the planet for millions of years.  Due to the doings of modern humanity, it has been eons since Earth’s processes, cycles and systems so abruptly added more carbon into the atmosphere than they removed.<a href="#footnotes">²⁷</a></p>
 
-      <p>The ensuing decline of the biosphere's vitality and diversity is a direct challenge to our play with ancient fossilized carbon.</p>
+      <p>The ensuing decline of the biosphere's vitality and diversity, as we now know all too well, can be blamed on our play with ancient fossilized carbon.</p>
 
-      <p>However, much like a child building with blocks for the first time, we have much to learn from our moment. As many parents know, youngsters are all too often swept way by the thrill of assembling a grand construction. Then, when the pieces inevitably tumble down, when the results aren’t as intended, the upset child invariably blames themselves and the blocks.</p>
+      <p>However, much like a child building with blocks for the first time, we have much to learn from our moment. As parents know, youngsters are all too often swept way by the thrill of assembling a grand construction. Then, when the pieces inevitably tumble down, when the results aren’t as intended, the upset child invariably blames themselves and the blocks.</p>
 
-      <p>Of course, neither are to blame!</p>
+      <p>Of course, neither are to blame.</p>
       
       <p>Only through the first fall can one grasp the process of the play.</p>
 
       <p>There is no other way.</p>
 
-     <p id="28-up">Likewise, our disruption of ecological cycles is not a consequence of our nature any more than it is the nature of carbon.<a href="#footnotes">²⁸</a>  Rather, it is the immature way of our play: the fundamental pattern by which our processes have managed their energy and their matter. </p>
+     <p id="28-up">Likewise, our disruption of ecological cycles is not a consequence of our nature any more than it is the nature of carbon or oxygen.<a href="#footnotes">²⁸</a>  Rather, it is the way of our play: the fundamental pattern by which our processes have managed their energy and their matter. </p>
 
      <p id="29-up">As we saw in plastic’s story, our modern processes have increasingly intended patterns of energy and matter that have dispersed carbon, concentrated energy, reduced biodiversity and stifled ecological awareness.  In sharp contrast, Earth's processes have tended towards just the opposite:  the concentration of carbon, the dispersal of energy, the increase of diversity and the cultivation of consciousness. Whereas our modern pattern of process has degraded ecosystems, Earth’s has systematically enriched them— making them ever more diverse, vibrant and abundant.<a href="#footnotes">²⁹</a></p>
 
@@ -147,7 +147,7 @@ Must be updated for each page-->
 
      <p>Our once-in-a-million-years phenomenon of additive carbon usage is in fact a tremendous opportunity.</p>
 
-     <p>For the first time, with our usage of carbon as a foil, the difference between our modern ways and of Earth’s can be observed with unprecedented clarity.  In the stark contrast of patterns, we can begin to discern the cosmological character that has underlaid the Earth’s transformation of a barren planet into a thriving biosphere: the pattern by which Earth has managed its matter and energy through processes, cycles and systems towards the enrichment of all.</p>
+     <p>For the first time, with our usage of carbon as a foil, the difference between our modern ways and of Earth’s can be observed with unprecedented clarity.  In the stark contrast of patterns, we can begin to discern the planetary cosmological character that has propelled the inexorable transformation of a barren rock into a thriving biosphere: the pattern by which Earth has managed its matter and energy through processes, cycles and systems towards the enrichment of all.</p>
 
      <p id="31-up">And in a similar way, through our modern society’s ecological dissonance, so too can our modern gaze can now recognize those societies—  ancient and ongoing— that have long attained resonance with Earth’s pattern and character.<a href="#footnotes">³¹</a></p>
 

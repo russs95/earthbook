@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,35 +15,34 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "12";
+$page_title = "Cycles that Spiral | Book II |Tratatus Ayyew";?>
 
 <head>
 
 
 <?php require_once ("../header.php");?>
 
-<!--END OF GENERIC CONTENT-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Cycles that Spiral | Book Two |  Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-28-21T09:14:13+00:00">
 <meta name="keywords" content="igorots, ayyew, cycles, spirals, energy, matter, entropy, thermodynamics, jeremy england, pigs, fertilizer, rice paddy, terraces, hydrologic, linear, circular, circular design, circular economy, plastic, recycling, degrading, enriching, grey, green, gray,  linear vs circular, circular"> 
 <meta name="description" content="Observe the way Earth tends its processes towards cycles that spiral.">
 
@@ -48,8 +51,8 @@ Must be updated for each page-->
 <meta name="twitter:data1" content="12 minutes" /> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Cycles that Spiral | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="Observe the way Earth tends its processes towards cycles that spiral."/>
+<meta property="og:title"         content="Cycles that Spiral | Book II |Tratatus Ayyew">
+<meta property="og:description"   content="Earth tends its processes towards cycles that spiral."/>
 
 
 <style>
@@ -102,21 +105,25 @@ Must be updated for each page-->
 
 <!--MAIN HTML Begins-->
 
+
+
+<!--MAIN HTML Begins-->
+
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 <div id="underlayer">
 
-  <a id="top"></a>
+<div id="top"></div>
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Cycles that Spiral</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-        <div id="ct-chap-location">Book Two | Earthen Principle No. 1</div>
-        <div id="ct-word-count"><i>1697 words</i></div>
+        <div id="ct-chap-location">Earthen Principle No. 1</div>
+        <div id="ct-word-count"><i>1697 words | Book II</i></div>
       </div>
   </div>
 
@@ -146,7 +153,7 @@ Must be updated for each page-->
 
 <div class="page-paragraph">
     <p id="58-up"><i>
-      The rugged green mountains of Northern Luzon have been the home of the Igorot people for untold generations.  Each season, with the arrival of the migratory kilin bird, the planting of rice begins. Then, once the crop has turned gold and the kilin have flown on to the forest — the harvest. And then… always a little more. For after the rice has been taken home to dry, it is time for a ritual as old as the harvest itself. One by one, rocks are gathered up from the river to shore up the sides of the field. Stone by stone, the paddy is improved to better capture and disperse the flow of rain down the hillside. Season by season, the garden is  enriched— becoming not just a better home for rice, but a better common home for crabs, frogs, snails, mud fish and more. With each season the Igorots’ management of soil and sun steadily augments the vibrancy of the ecosystem. Over the generations the soil's fertility increased and the harvest's grew in yield.  Igorot society thrived. Rivers remained clean and clear. The forests were respected and the kilin would always return. And then the next cycle would spin —  always a little greener than before<a href="#footnotes">⁵⁸</a> </i>
+      The rugged green mountains of Northern Luzon have been the home of the Igorot people for untold generations.  Each season, with the arrival of the migratory kilin bird, the planting of rice begins. Then, once the crop has turned gold and the kilin have flown on to the forest — the harvest. And then… always a little more. For after the rice has been taken home to dry, it is time for a ritual as old as the harvest itself. One by one, rocks are gathered up from the river to shore up the sides of the field. Stone by stone, the paddy is improved to better capture and disperse the flow of rain down the hillside. Season by season, the garden is  enriched— becoming not just a better home for rice, but a better common home for crabs, frogs, snails, mud fish and more. With each season the Igorots’ management of soil and sun steadily augments the vibrancy of the ecosystem. Over the generations the soil's fertility increased and the harvest's grew in yield.  Igorot society thrived. Rivers remained clean and clear. The forests were respected and the kilin would always return. And then the next cycle would spin —  always a little greener than before<a href="#footnotes" title="For an an account of the Igorots remarkable ecological synchrony see: William Henry Scott, (1959) <i>Some Calendars of Northern Luzon</i>, American Anthropologist 60(3):563 - 570">⁵⁸</a> </i>
      </p></div>
     <br><br>
      <div id="line" style="margin-bottom: 30px;"></div>
@@ -175,9 +182,9 @@ Must be updated for each page-->
       
       <p>And, Earth greened.</p>
 
-     <p id="61-up">While, today’s contemporary physicists and philosophers struggle to articulate the connection of life’s emergence within a thermodynamic frame<a href="#footnotes">⁶¹</a>, the Igorots have a single, precise term– and with it, an ecological ethos that governs their cycle-centric culture.</p>
+     <p id="61-up">While, today’s contemporary physicists and philosophers struggle to articulate the connection of life’s emergence within a thermodynamic frame<a href="#footnotes" title="Entropy research by theoretical physicists posit a pattern of adaptive dissipation in the way matter organizes itself in the presence of sustained energy inputs. Meanwhile, parallel breakthroughs in cosmological epistemology help make sense of Earth’s unfolding kinetic character.">⁶¹</a>, the Igorots have a single, precise term– and with it, an ecological ethos that governs their cycle-centric culture.</p>
 
-     <p>All aspects of Igorot life and culture are guided by the virtue of <i>ayyew</i>. Men, women, households and communities are admired and respected to the degree in which they embody the principle. Ayyew means to not just just to be in sync with a cycle, but to tend to its spin.</p>
+     <p>All aspects of Igorot life and culture are guided by the virtue of <i>ayyew</i><a href="#footnotes" title="See Banayan's work developing a contempory defintion of the concept of Ayyew: Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)." >³</a>. Men, women, households and communities are admired and respected to the degree in which they embody the principle. Ayyew means to not just just to be in sync with a cycle, but to tend to its spin.</p>
 
      <p>Children first learn the concept of ayyew at meal time. It is ayyew to finish every grain of rice on one’s plate. Not because it is a waste — rather, because it is a cycle’s crescendo. The last grain represents the culmination of one cycle and the beginning of the next — and an opportunity for a little more. As one cycle ends and another begins, there lies the chance to grow strong so that one can contribute to it: to sow the next seedling, to help with the next harvest, to add a stone to the garden’s wall.</p>
 
@@ -197,7 +204,7 @@ Must be updated for each page-->
 
      <p>So what then of our circular processes— are they sufficient to be green?</p>
 
-     <p id ="62-up">Today, many products are engineered to be circular — their next life is planned. In this way, PET bottles, carpets and casings are often designed so that when their first use comes to an end they can be recycled into something new. The materials of these products are considered indefinitely reusable ‘technical nutrients’<a href="#footnotes">⁶²</a>. In this way, modern processes strive to transition to a ‘circular economy’.</p>
+     <p id ="62-up">Today, many products are engineered to be circular — their next life is planned. In this way, PET bottles, carpets and casings are often designed so that when their first use comes to an end they can be recycled into something new. The materials of these products are considered indefinitely reusable ‘technical nutrients’<a href="#footnotes" title="The term ‘technical nutrient’ was first proposed by William McDonough in a theory of circular design that embodies the conceptual geometric problem we highlight here.  See: William McDonough, Michael Braungart (2002), Cradle to Cradle - Remaking the Way We Make Things, North Point Press. ">⁶²</a>. In this way, modern processes strive to transition to a ‘circular economy’.</p>
 
      <p>Insofar as such processes contain a plan for the next life of the product, their circularity is an important step towards following Earth’s cyclical ways.</p>
 
@@ -215,18 +222,35 @@ Must be updated for each page-->
 
     <p>The requisite spiral geometry clear, we can now delve deeper into the vortical character of enrichment itself. In particular, the <i>outwards spin of energy</i> and the <i>inwards spin of our matter</i>—  our next two Earthen ethics.</p>
      </p>
-     <br><br>
-
+     <br><br><br>
   
-    </div><!--closes page text content-->
+    
+  </div><!--closes page text content, then loads page curtains:-->
+
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section">
+  <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
 
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
+      
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
       
         <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
@@ -259,6 +283,13 @@ Must be updated for each page-->
 
 
 
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
     </div><!--Closes footnote section-->
           
   </div><!--Closes main content block-->
@@ -269,13 +300,11 @@ Must be updated for each page-->
     <div class="footer-size">
     
       <div class="footer-left">
-
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Next chapter:</div>
-            <div class="sec-name"><i>2 | The Salmon's Spiral</i></div>
+          <div class="next-sec">Next:</div>
+            <div class="sec-name"><i>2 | The Salmon's Spin</i></div>
         </div>
 
       </div>
@@ -283,18 +312,18 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="unpublished.php"><div class="next-button">Next ➔</div></a>
+        <a href="energy.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
-      </div>
-    </div>
-  </div>
+</div>
+</div>
 
-  <?php require_once ("includes/chap-footer.php");?>
+    
+<?php require_once ("includes/chapTER-footer.php");?>
 
 
 </div>
-
-
 </body>
 </html>
+
+
 

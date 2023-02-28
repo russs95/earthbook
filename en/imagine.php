@@ -110,7 +110,7 @@ Must be updated for each page-->
 
 
 
-      <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes">³</a>, she and I have to come to see that the longing and the potential for ecological contribution unites us all on planet Earth. </p>
+      <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes" title="In particular the Igorot Ayyew ecological ethos.  See: Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)." >³</a>, she and I have to come to see that the longing and the potential for ecological contribution unites us all on planet Earth."</p>
 
       <p>Across cultures and continents, we long to contribute to that which we are part: to add to the communities in which we belong, to harmonize with our neighbours, to sync with those with whom we sing.  Consequently, as the parts we play in our local ecosystems and global biomes becomes clearer, so too does our yearning to participate positively in them and contribute to their harmony, vitality and abundance.  
       </p>
@@ -127,7 +127,7 @@ Must be updated for each page-->
 
       <p>As it must be. </p>
       
-      <p id="4-up">Gardeners have long observed that the problem is always the solution—  weeds, pests and pollutants are always, with a shift of perspective and approach, the very nutrients, fertilizers and medicines that bring a struggling garden to thrive.<a href="#footnotes">⁴</a></p>
+      <p id="4-up">Gardeners have long observed that the problem is always the solution—  weeds, pests and pollutants are always, with a shift of perspective and approach, the very nutrients, fertilizers and medicines that bring a struggling garden to thrive.<a href="#footnotes" title="The problem is always the solution.  See: Bill Mollison, <i>Principles from Permaculture a Designers' Manual</i>, (Tagari Publishers: 1988).">⁴</a></p>
 
       <p>Like nothing else, plastic embodies the definitive facets of our modern moment.   Derived from ancient fossilized carbon, plastic allows us to touch the primordial story that has enabled our own.  Bought and sold, plastic is a physical manifestation of the petro-capital economy that powers our global age.  Crafted by humans, entirely for humans, plastic is a vivid reflection of our modern, human-centered civilization.</p>
 
@@ -165,7 +165,7 @@ Must be updated for each page-->
 
      <p>The resulting <i>Earthen ethics</i> will help us to make sense of our modern processes, technologies and enterprises by proving a means by which we can discern that which is enriching from that which is degrading; that which is an ecological contribution from that which is a depletion; and that which is <i>green</i> from that which is <i>grey</i>.</p>
 
-      <p>In this way, with Earth’s example as our guide to green, can move forward with unprecedented clarity and confidence to embody the geometry of contribution in all our processes, cycles and systems.<a href="#footnotes">⁵</a></p>
+      <p>In this way, with Earth’s example as our guide to green, can move forward with unprecedented clarity and confidence to embody the geometry of contribution in all our processes, cycles and systems.<a href="#footnotes" title="'We can think of our current civilization-- its technical and sociopolitical infrastructure, its ideology and beliefs-- as an operating system, much like the software that runs our computers.  Now we need to reboot and install a new system software'.  Daniel Pinchbeck, How Soon is Now: From Personal Initiation to Global Transformation, (Publisher: Watkins Publishing, 2017) Chapter 2, p.105">⁵</a></p>
 
      <p>Let us start with that troublesome material we so love to hate.</p>
      <br><br><br>
