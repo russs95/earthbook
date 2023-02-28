@@ -144,11 +144,11 @@ Must be updated for each page-->
 -->
 
 <div class="page-paragraph" style="text-align:center;">
-who let us play in the forests and fields,<br>
+<p>who let us play in the forests and fields,</p>>
    
-   tasting berries and climbing trees,<br>
+   <p>tasting berries and climbing trees,</p>
     
-    loving the wild and learning its leaves.<br>
+    <p>loving the wild and learning its leaves.</p>
     <br><br><br><br>
    <div>
 
