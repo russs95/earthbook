@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.1
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,44 +15,39 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache"> 
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "103";
+$page_title = "Summaries | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
-
 <?php require_once ("../header.php");?>
 
-<!--END OF GENERIC CONTENT-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Summaries | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-28T09:10:13+00:00">
 <meta name="keywords" content="summaries, sentence, paragraph, earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
 <meta name="description" content="A short sentence, a long sentence and a paragraph summary of Earthen ethics.">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
 <meta name="twitter:data1" content="4 minutes" /> 
-	
-<!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Summaries | Tratatus Ayyew - An Earthbook">
 <meta property="og:description"   content="A short sentence, a long sentence and a paragraph summary of Earthen ethics."/>
 
 
@@ -104,14 +103,14 @@ Must be updated for each page-->
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 <div id="underlayer">
 
-  <a name="top"></a>
+  <a id="top"></a>
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Summaries</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Appendix</div>
@@ -178,7 +177,7 @@ Must be updated for each page-->
     
       <div class="footer-left">
 
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter2()"></div>
     
      
         <div class="next-section">
