@@ -89,7 +89,6 @@ Must be updated for each page-->
   }
 
 #ct-chapter-title {
-      padding-top: 45px;
       font-size: 10vmin;
       letter-spacing: 3px; 
     }
