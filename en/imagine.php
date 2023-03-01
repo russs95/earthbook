@@ -41,7 +41,7 @@ $page_title = "Imagine | Tractatus Ayyew - An Earthbook";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<meta property="article:modified_time" content="2023-02-21T09:10:13+00:00">
+<meta property="article:modified_time" content="2023-02-28T09:10:13+00:00">
 
 <meta name="keywords" content="imagine, a green new world, plastic, green, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, permaculture, bill molison, green ethics, environment, deep ecology, ecological, ethics"> 
 <meta name="description" content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.">
