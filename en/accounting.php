@@ -89,11 +89,23 @@ Must be updated for each page-->
   letter-spacing: 0px;
     }
 
+
+    .document-holder {
+      display:flex;
+      background: #80808026;
+      border-radius: 12px;
+      flex-direction:row;
+      border: 1px dashed #80808061;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
     .doc-text-small {
       font-family:'CooperLt';
       text-align:left;
       padding:0px 10px 10px 10px;
       color: var(--drop-cap);
+      line-height: 1.3;
     }
 
     .doc-text-main {
@@ -168,16 +180,19 @@ Must be updated for each page-->
 <div class="lead-page-paragraph">
 
   <p style="margin-top:-50px;">-50
-    The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  Download our annual Regeneral Reports here:<br><br>
-  </p>
+    The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  Download our annual Regeneral Reports here:<br>
+  </p>    <div class="document-holder" style="display:flex;background: #80808026;
+border-radius: 12px;flex-direction:row;border: 1px dashed #80808061;">
+      <div class="doc-image" style="width:fit-content; padding:10px">
+      <img src="../webp/impact-report-100px.webp">
+      </div>
 
   </div>
 
   
 
 
-    <div class="document-holder" style="display:flex;background: #80808026;
-border-radius: 12px;flex-direction:row;border: 1px dashed #80808061;">
+    <div class="document-holder">
       <div class="doc-image" style="width:fit-content; padding:10px">
       <img src="../webp/impact-report-100px.webp">
       </div>
