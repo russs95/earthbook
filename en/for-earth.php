@@ -136,23 +136,45 @@ Must be updated for each page-->
 
 
 
-
+<div class="lead-page-paragraph"> 
+THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intention of their enterprise of writing and publishng the <i>Tracatatus Ayyew</i>.
 
 <div class="page-paragraph">
 
   <p>
-    In the disclosure of the Tractatus Ayyew’s ecological accounting and biodiversity impacts, the authors and publisher express their commitment to net-green, for-Earth enterprise.  
+    In so doing we <a href="accounting.php">track and disclose</a> all of the ecological impacts of our enterprise and commit to acheiving a green net-impact.
   </p>
+
+  </div>
+
+  <div style="text-align:center;">
 
   <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
     <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
 
-     <div id="wcb" class="carbonbadge wcb-d"></div>
-    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" preload></script>
+  </div>
 
-    <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
+  
 
-    <p>The concept of a For-Earth enterprise is based on the five principles of Earthen Ethics.  See in particular <a href="energy.php">Chapter 9</a> which deals with the distinction between both for-profit and not-for-profit enterprise, and for-Earth enterprise.</p>
+    <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; margin-top: 50px; width:100%; text-align:left;"></div>
+
+    <div class="page-paragraph">
+    <p>The concept of a For-Earth enterprise is based on the five principles of Earthen Ethics developed within the <i>Tracatus Ayyew</i>.  Learn more about each concept:</p>
+  </div>
+
+
+    <div class="page-paragraph" style="padding:15px">
+      <p>1. <i>In <a href="spirals">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
+  
+      <p>2. <i>In Chapter 9 we develop the concept of a for-Earth enterprise.</i></p>
+
+      <p>3.<i>In Chapter 10 we develop the subtractive carbon and plastic aspect of net-green enterprise .</i></p>
+      
+      <p>4. <i>In Chapter 11 we develop the concept of biodiversity supportive enterprise.</i></p>
+      
+      <p>5. <i>In Chapter 12 we develop the concept of ethical obligation of green enterprise to track and disclose ecological impacts throught accounting.</i></p>
+</div>
+    
 
 
   
