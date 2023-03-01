@@ -203,8 +203,8 @@ Must be updated for each page-->
       </div>
 
     <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right: 20px;">
-        <div class="doc-text-main"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">Tracatus Ayyew Writing & Publishing</a>--></div>
-        <div class="doc-text-small"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">--><b>2022 Regen Report</b> | PDF | Feb 2023 release pending</b></a></div>
+        <div class="doc-text-main"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">-->Tracatus Ayyew Writing & Publishing</div>
+        <div class="doc-text-small"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">--><b>2022 Regen Report</b> | PDF | Feb 2023 release pending</b></div>
     </div>
 
   </div>
