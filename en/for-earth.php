@@ -127,9 +127,6 @@ Must be updated for each page-->
 <div id="up-arrow"></div>
 <div id="ct-main">
 
-
-
-
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
@@ -155,9 +152,7 @@ THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
 
   
 
-  
-
-    <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; margin-top: 50px; width:100%; text-align:left;"></div>
+    <div id="line" style="border-style: dashed; border-width: 1px; margin-bottom: 30px; margin-top: 50px; width:100%; text-align:left;"></div>
 
     <div class="page-paragraph">
     <p>The concept of a For-Earth enterprise is based on the five principles of Earthen Ethics developed within the <i>Tracatus Ayyew</i>.  Learn more about each concept:</p>
