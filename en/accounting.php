@@ -89,6 +89,41 @@ Must be updated for each page-->
   letter-spacing: 2px;
     }
 
+    .doc-text-small {
+      font-family:'CooperLt';
+      text-align:left;
+      padding:0px 10px 10px 10px;
+      color: var(--drop-cap);
+    }
+
+    .doc-text-main {
+      font-family:'Mulish', sans-serif;
+      font-size:1.3em;
+      padding:10px;
+      text-align:left;
+      color: var(--text-color);
+    }
+
+    @media screen and (min-width: 701px) {
+      .doc-text-small {
+        font-size:1em;
+      }
+      .doc-text-main {
+        font-size:1.3em;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .doc-text-small {
+        font-size:0.7em;
+      }
+      .doc-text-main {
+        font-size:1em;
+      }
+    }
+
+
+
 </style>
 
 </head>
@@ -104,8 +139,8 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Eco Accounting</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
        <div id="ct-chap-location">Regen Reports</div>
@@ -149,9 +184,10 @@ border-radius: 12px;flex-direction:row;">
       </div>
       
       <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;">
-        <div class="doc-text" style="font-family:'Mulish';font-size:1.3em;padding:10px;text-align:left;"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">Tracatus Ayyew Writing & Publishing</a></div>
-        <div class="doc-text" style="font-family:'CooperLt';font-size:1em;padding:10px;text-align:left;"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>2022 Regen Report | PDF |  554kb</b></a></div>
+        <div class="doc-text-main"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">Tracatus Ayyew Writing & Publishing</a></div>
+        <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>2022 Regen Report | PDF |  554kb</b></a></div>
   </div>
+  <br><br><br><br>
 
 
   
