@@ -159,18 +159,18 @@ The author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
   </p>
 
   </div>
-  <br><br>
+  
 
   
 
-    <div id="line" style="border-style: dashed; border-width: 1px; margin-bottom: 30px; margin-top: 50px; width:100%; text-align:left;"></div>
+    <div id="line" style="border-style: dashed; border-width: 1px; margin-bottom: 30px; margin-top: 55px; width:100%; text-align:left;"></div>
 
     <div class="page-paragraph" style="font-size: smaller;">
     <p>The concept of a For-Earth enterprise is based on the five principles of Earthen Ethics developed within the <i>Tracatus Ayyew</i>.  Learn more about each concept:</p>
   </div>
 
 
-    <div class="page-paragraph" style="padding:20px;font-size:smaller;">
+    <div class="page-paragraph" style="padding-left:20px;font-size:smaller;">
       <p><span class="bullet"></span>  In <a href="spirals.php" title="Cycles that Spiral">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
   
       <p><span class="bullet"></span>  In <a href="energy.php" title="The Salmon's Spin">Chapter 9</a> we develop the concept of a for-Earth enterprise.</i></p>
