@@ -1,4 +1,7 @@
 
+button {background: none;
+  border: none;}
+
 @media screen and (max-width: 699px) {
     
   #ct-main .action-btn {

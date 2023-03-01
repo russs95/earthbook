@@ -158,6 +158,14 @@
   background-size: 140px;
 
 }
+
+.bullet {
+  background: url(../svgs/content-arrow-45-night.svg) left center no-repeat;
+background-size: contain;
+
+}
+
+
   /*
   #settings-menu {
     background: var(--deeper-accent-color) !important;

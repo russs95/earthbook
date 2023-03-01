@@ -148,6 +148,11 @@
 
 }
 
+.bullet {
+  background: url(../svgs/content-arrow-45.svg) left center no-repeat;
+background-size: contain;
+}
+
 /*
 body {
   background-color: rgb(250, 250, 250) !important;

@@ -89,15 +89,13 @@ Must be updated for each page-->
       letter-spacing: 2px;
     }
 
+
   .bullet {
-    background: url(../svgs/content-arrow.svg) left center no-repeat;
-  
-background-size: contain;
-width:22px;
-height:22px;
-display: inline-block;
-padding-right: 12px;
-margin-bottom: -3px;
+    width:22px;
+    height:22px;
+    display: inline-block;
+    padding-right: 12px;
+    margin-bottom: -3px;
   }
 
 </style>
@@ -165,7 +163,7 @@ THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
 
     <div id="line" style="border-style: dashed; border-width: 1px; margin-bottom: 30px; margin-top: 50px; width:100%; text-align:left;"></div>
 
-    <div class="page-paragraph">
+    <div class="page-paragraph" style="font-size: smaller;">
     <p>The concept of a For-Earth enterprise is based on the five principles of Earthen Ethics developed within the <i>Tracatus Ayyew</i>.  Learn more about each concept:</p>
   </div>
 
