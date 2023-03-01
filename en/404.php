@@ -36,7 +36,7 @@ $page_title = "404 Page not Found | Tractatus Ayyew - An Earthbook";?>
 <head>
 
 
-<?php require_once ("../header.php");?>
+<?php require_once ("header.php");?>
 
 
 <!--META TAGS
@@ -123,8 +123,8 @@ Must be updated for each page-->
 <div id="ct-chapter-top">
 <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
 <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-    <div id="ct-chapter-title">404 Error</div>   
-      <div id="ct-book-title">Page Not Found<!--#echo var="REDIRECT_STATUS" --></div>
+    <div id="ct-chapter-title">Page Not Found</div>   
+      <div id="ct-book-title"><!--#echo var="REDIRECT_STATUS" --> Error</div>
       <div id="ct-chap-location">Tractatus Ayyew</div>
       <div id="ct-word-count"><i>An Earthen Ethics</i></div>
     </div>
@@ -138,19 +138,7 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-    The requested page  <?php
-echo $_SERVER['PHP_SELF'];
-echo "<br>";
-echo $_SERVER['SERVER_NAME'];
-echo "<br>";
-echo $_SERVER['HTTP_HOST'];
-echo "<br>";
-echo $_SERVER['HTTP_REFERER'];
-echo "<br>";
-echo $_SERVER['HTTP_USER_AGENT'];
-echo "<br>";
-echo $_SERVER['SCRIPT_NAME'];
-?>  couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
+    The requested page <!--#echo var="REQUEST_URI" --> couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
     </div>
 </div>
 
@@ -160,7 +148,7 @@ echo $_SERVER['SCRIPT_NAME'];
 
   <div>
                 <!--<h1></h1>-->
-    <h3 class="accessibility-plugin-ac">You can try searchin the EarthBook to find what you're looking for...</h3> 
+    <h3 class="accessibility-plugin-ac">You can try searching the EarthBook to find what you're looking for...</h3> 
   </div>
           
   <div class="search-box" style="padding-bottom:15%;">
@@ -198,11 +186,11 @@ echo $_SERVER['SCRIPT_NAME'];
     
     <div class="footer-left">
 
-      <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+      <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter2()"></div>
     
      
       <div class="next-section">
-          <div class="next-sec">Back to the start:</div>
+          <div class="next-sec">To the start:</div>
           <div class="sec-name"><i>Introduction</i></div>
       </div>
 
@@ -211,7 +199,7 @@ echo $_SERVER['SCRIPT_NAME'];
 
     <div class="footer-right">
    
-      <a href="preamble.php"><div class="next-button">Preamble ➔</div></a>
+      <a href="https://book.earthen.io/en/preamble.php"><div class="next-button">Preamble ➔</div></a>
 
     </div>
   </div>
