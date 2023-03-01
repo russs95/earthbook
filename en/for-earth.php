@@ -31,7 +31,7 @@ $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
 $page_number = "105";
-$page_title = "For-Earth Declaration | Tractatus Ayyew - An Earthbook";?>
+$page_title = "Ecological Accounting | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
@@ -88,6 +88,17 @@ Must be updated for each page-->
     font-size: 10vmin;
       letter-spacing: 2px;
     }
+
+  .bullet {
+    background: url(../svgs/content-arrow.svg) left center no-repeat;
+  
+background-size: contain;
+width:22px;
+height:22px;
+display: inline-block;
+padding-right: 12px;
+margin-bottom: -3px;
+  }
 
 </style>
 
@@ -160,25 +171,15 @@ THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
 
 
     <div class="page-paragraph" style="padding:15px">
-      <p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
-background-size: contain;width:22px;height:22px;display: inline-block;
-padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="spirals.php" title="Cycles that Spiral">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
+      <p><span class="bullet"></span>  In <a href="spirals.php" title="Cycles that Spiral">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
   
-  <p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
-background-size: contain;width:22px;height:22px;display: inline-block;
-padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="energy.php" title="The Salmon's Spin">Chapter 9</a> we develop the concept of a for-Earth enterprise.</i></p>
+      <p><span class="bullet"></span>  In <a href="energy.php" title="The Salmon's Spin">Chapter 9</a> we develop the concept of a for-Earth enterprise.</i></p>
 
-<p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
-background-size: contain;width:22px;height:22px;display: inline-block;
-padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="unpublished" title="Not yet published">Chapter 10</a> we develop the subtractive carbon and plastic aspect of net-green enterprise .</i></p>
+      <p><span class="bullet"></span>  In <a href="unpublished" title="Not yet published">Chapter 10</a> we develop the subtractive carbon and plastic aspect of net-green enterprise .</i></p>
       
-      <p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
-background-size: contain;width:22px;height:22px;display: inline-block;
-padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="unpublished.php" title="The Salmon's Spin">Chapter 11 we develop the concept of biodiversity supportive enterprise.</i></p>
+      <p><span class="bullet"></span>  In <a href="unpublished.php" title="The Salmon's Spin">Chapter 11</a> we develop the concept of biodiversity supportive enterprise.</i></p>
       
-      <p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
-background-size: contain;width:22px;height:22px;display: inline-block;
-padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="unpublished" title="Not yet ready">Chapter 12 we develop the concept of ethical obligation of green enterprise to track and disclose ecological impacts throught accounting.</i></p>
+      <p><span class="bullet"></span>  In <a href="unpublished" title="Not yet ready">Chapter 12</a> we develop the concept of ethical obligation of green enterprise to track and disclose ecological impacts throught accounting.</i></p>
 </div>
     
 
@@ -196,7 +197,7 @@ padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="unpublished" titl
     
       <div class="footer-left">
 
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter2()"></div>
     
      
         <div class="next-section">
