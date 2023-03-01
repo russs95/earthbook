@@ -30,8 +30,8 @@ $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
-$page_number = "105";
-$page_title = "Ecological Accounting | Tractatus Ayyew - An Earthbook";?>
+$page_number = "106";
+$page_title = "For-Earth | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
@@ -94,7 +94,7 @@ Must be updated for each page-->
     width:22px;
     height:22px;
     display: inline-block;
-    padding-right: 12px;
+    padding-right: 6px;
     margin-bottom: -3px;
   }
 
@@ -113,8 +113,8 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">For-Earth</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
        <div id="ct-chap-location">Earthen Ethics</div>
@@ -144,11 +144,12 @@ Must be updated for each page-->
 
   <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
     <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
+    <br>
 
   </div>
 
 <div class="lead-page-paragraph"> 
-THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intention of their enterprise of writing and publishng the <i>Tracatatus Ayyew</i>.
+The author's and Earthen.io hereby declare the for-Earth, not-for-profit intention of their enterprise of writing and publishng the <i>Tracatatus Ayyew</i>.
 </div>
 
 <div class="page-paragraph">
@@ -158,6 +159,7 @@ THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
   </p>
 
   </div>
+  <br><br>
 
   
 
@@ -168,7 +170,7 @@ THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
   </div>
 
 
-    <div class="page-paragraph" style="padding:15px">
+    <div class="page-paragraph" style="padding:20px;font-size:smaller;">
       <p><span class="bullet"></span>  In <a href="spirals.php" title="Cycles that Spiral">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
   
       <p><span class="bullet"></span>  In <a href="energy.php" title="The Salmon's Spin">Chapter 9</a> we develop the concept of a for-Earth enterprise.</i></p>
