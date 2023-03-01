@@ -86,7 +86,7 @@ Must be updated for each page-->
 
   #ct-chapter-title {
   font-size: 10vmin;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
     }
 
     .doc-text-small {
@@ -141,9 +141,9 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
   <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">Eco Accounting</div>   
+        <div id="ct-chapter-title">Ecological Accounting</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-       <div id="ct-chap-location">Regen Reports</div>
+       <div id="ct-chap-location">Annual Regen Reports</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>
@@ -158,7 +158,6 @@ Must be updated for each page-->
   <div id="up-arrow"></div>
   <div id="ct-main">
 
- 
 
 
 <!-- MAIN TEXT CONTENT of the Page
