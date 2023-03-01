@@ -167,7 +167,7 @@ Must be updated for each page-->
 
 <div class="lead-page-paragraph">
 
-  <p>
+  <p style="margin-top:-50px;">-50
     The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  Download our annual Regeneral Reports here:<br><br>
   </p>
 
@@ -185,12 +185,19 @@ border-radius: 12px;flex-direction:row;border: 1px dashed #80808061;">
       <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right: 20px;">
         <div class="doc-text-main"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">Tracatus Ayyew Writing & Publishing</a></div>
         <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>2021 Regen Report</b> | PDF |  554kb | Issued 12/02/2022</a></div>
+      </div>
   </div>
 
-  <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right: 20px;">
+  <div class="document-holder" style="display:flex;background: #80808026;
+border-radius: 12px;flex-direction:row;border: 1px dashed #80808061;">
+      <div class="doc-image" style="width:fit-content; padding:10px">
+      <img src="../webp/impact-report-100px.webp">
+      </div>
+
+    <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right: 20px;">
         <div class="doc-text-main"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">Tracatus Ayyew Writing & Publishing</a>--></div>
         <div class="doc-text-small"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">--><b>2022 Regen Report</b> | PDF | Feb 2023 release pending</b></a></div>
-  </div>
+      </div>
   <br><br><br><br>
 
 
