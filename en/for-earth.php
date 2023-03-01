@@ -134,7 +134,12 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 
+<div style="text-align:center;">
 
+  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
+    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
+
+  </div>
 
 <div class="lead-page-paragraph"> 
 THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intention of their enterprise of writing and publishng the <i>Tracatatus Ayyew</i>.
@@ -148,12 +153,7 @@ THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
 
   </div>
 
-  <div style="text-align:center;">
-
-  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
-
-  </div>
+  
 
   
 
@@ -166,15 +166,24 @@ THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
 
     <div class="page-paragraph" style="padding:15px">
       <p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
-background-size: contain;width:22px;height:22px;"></span><i>  In <a href="spirals">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
+background-size: contain;width:22px;height:22px;display: inline-block;
+padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="spirals.php" title="Cycles that Spiral">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
   
-      <p>2. <i>In Chapter 9 we develop the concept of a for-Earth enterprise.</i></p>
+  <p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
+background-size: contain;width:22px;height:22px;display: inline-block;
+padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="energy.php" title="The Salmon's Spin">Chapter 9</a> we develop the concept of a for-Earth enterprise.</i></p>
 
-      <p>3.<i>In Chapter 10 we develop the subtractive carbon and plastic aspect of net-green enterprise .</i></p>
+<p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
+background-size: contain;width:22px;height:22px;display: inline-block;
+padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="unpublished" title="Not yet published">Chapter 10</a> we develop the subtractive carbon and plastic aspect of net-green enterprise .</i></p>
       
-      <p>4. <i>In Chapter 11 we develop the concept of biodiversity supportive enterprise.</i></p>
+      <p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
+background-size: contain;width:22px;height:22px;display: inline-block;
+padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="unpublished.php" title="The Salmon's Spin">Chapter 11 we develop the concept of biodiversity supportive enterprise.</i></p>
       
-      <p>5. <i>In Chapter 12 we develop the concept of ethical obligation of green enterprise to track and disclose ecological impacts throught accounting.</i></p>
+      <p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
+background-size: contain;width:22px;height:22px;display: inline-block;
+padding-right: 20px;margin-bottom: -3px;"></span>  In <a href="unpublished" title="Not yet ready">Chapter 12 we develop the concept of ethical obligation of green enterprise to track and disclose ecological impacts throught accounting.</i></p>
 </div>
     
 
