@@ -165,8 +165,8 @@ THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
 
 
     <div class="page-paragraph" style="padding:15px">
-      <p><span style="background: url(svgs/content-arrow.svg) left center no-repeat;
-background-size: contain;width:22px;height:22px;></span><i>  In <a href="spirals">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
+      <p><span style="background: url(../svgs/content-arrow.svg) left center no-repeat;
+background-size: contain;width:22px;height:22px;"></span><i>  In <a href="spirals">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
   
       <p>2. <i>In Chapter 9 we develop the concept of a for-Earth enterprise.</i></p>
 
