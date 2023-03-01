@@ -177,9 +177,9 @@ Must be updated for each page-->
 -->
 
 
-<div class="lead-page-paragraph" style="margin-top:-20px;"> 
+<div class="lead-page-paragraph"> 
 
-    The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  
+    THE ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  
   </div>
 
   <div class="page-paragraph">
@@ -195,7 +195,7 @@ Must be updated for each page-->
       <img src="../webp/impact-report-100px.webp">
       </div>
       
-      <div class="doc-texts">
+      <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right: 20px;">
         <div class="doc-text-main"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">Tracatus Ayyew Writing & Publishing</a></div>
         <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>2021 Regen Report</b> | PDF |  554kb | Issued 12/02/2022</a></div>
       </div>
