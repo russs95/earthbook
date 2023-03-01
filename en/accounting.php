@@ -177,11 +177,15 @@ Must be updated for each page-->
 -->
 
 
-<div class="lead-page-paragraph">
+<div class="lead-page-paragraph" style="margin-top:-20px;"> 
 
-  <p style="margin-top:-50px;">-50
-    The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  Download our annual Regeneral Reports here:<br><br>
-  </p>   
+    The ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  
+  </div>
+
+  <div class="page-paragraph">
+    <p>Download our annual Regeneral Reports here:
+  </p>
+  </div>
   
   
   
@@ -210,7 +214,7 @@ Must be updated for each page-->
   </div>
 
 
-  <br><br><br><br>
+  <br><br>
 
 
   
