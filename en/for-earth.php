@@ -138,6 +138,7 @@ Must be updated for each page-->
 
 <div class="lead-page-paragraph"> 
 THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intention of their enterprise of writing and publishng the <i>Tracatatus Ayyew</i>.
+</div>
 
 <div class="page-paragraph">
 
@@ -164,7 +165,8 @@ THE author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
 
 
     <div class="page-paragraph" style="padding:15px">
-      <p>1. <i>In <a href="spirals">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
+      <p><span style="background: url(svgs/content-arrow.svg) left center no-repeat;
+background-size: contain;width:22px;height:22px;></span><i>  In <a href="spirals">Chapter 8</a> we develop the concept of a net-green enterprise.</i></p>
   
       <p>2. <i>In Chapter 9 we develop the concept of a for-Earth enterprise.</i></p>
 
