@@ -128,7 +128,7 @@ Must be updated for each page-->
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-000">
-  <img src="../svgs/icon-for-earth.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+  <img src="../svgs/icon-for-earth.svg?v=2" style="width:35%; height:35%; margin:auto;  text-align:center">
 
   </div>
 
@@ -140,13 +140,7 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 
-<div style="text-align:center;">
 
-  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
-    <br>
-
-  </div>
 
 <div class="lead-page-paragraph"> 
 The author's and Earthen.io hereby declare the for-Earth, not-for-profit intention of the enterprise of writing and publishng the <i>Tracatatus Ayyew - An Earthen Ethics</i>.
@@ -159,6 +153,15 @@ The author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
   </p>
 
   </div>
+
+  <div style="text-align:center;">
+
+  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
+    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
+    <br>
+
+  </div>
+  
   <br><br>
 
   

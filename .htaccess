@@ -81,3 +81,5 @@ Redirect en/spirals /en/spirals.php
 
 
 AddType text/cache-manifest .appcache
+
+Redirect /writing /publishing.php

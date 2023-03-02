@@ -117,7 +117,7 @@ Must be updated for each page-->
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Acknowledgements</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-       <div id="ct-chap-location">Gratitude</div>
+       <div id="ct-chap-location">Credits & Gratitude</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>

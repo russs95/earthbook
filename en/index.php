@@ -299,36 +299,36 @@ Must be updated for each page-->
 
                 <a href="accounting.php">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">Ecological Accounting</div>
+                    <div class="chapter-name">Ecological Accounting | Regen Reports</div>
                     <div class="word-count"><i>48 words</i></div>
                 </div>
             </a>
 
                 <a href="for-earth.php">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">For-Earth Enterprise</div>
-                    <div class="word-count"><i>20 words</i></div>
+                    <div class="chapter-name">For-Earth Enterprise Declation</div>
+                    <div class="word-count"><i>56 words</i></div>
                 </div>
             </a>
                 
                 <a href="acknowledgements.php">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">Acknowledgements</div>
-                    <div class="word-count"><i>218 words</i></div>
+                    <div class="chapter-name">Acknowledgements, Credits & Gratitude</div>
+                    <div class="word-count"><i>682 words</i></div>
                 </div>
             </a>
                 
-                <a href="writing.php">
+                <a href="publishing.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Publishing</div>
-                    <div class="word-count"><i>80 words</i></div>
+                    <div class="word-count"><i>133 words</i></div>
                 </div>
             </a>
                 
                 <a href="authors.php">
                 <div class="chapter-middle">  
                     <div class="chapter-name">Authors & Authorship</div>
-                    <div class="word-count"><i>213 words</i></div>
+                    <div class="word-count"><i>218 words</i></div>
                 </div>
             </a>
 

@@ -158,7 +158,7 @@ THE TRACTATUS AYYEW was written and published using 100% open source hardware an
    <p>The book is type set in Cooper LT Light and Regular by Oswald Cooper and Bitstream as well as Mulish Light & Regular by Vernon Adams, Cyreal, Jacques Le Bailly.
   </p>
 
-  <p>For a full break down of the ecological impact of the publishing of this book see our 2022 Regenerativity Report at https://book.earthen.io/accounting</p>
+  <p>The enterprise of publishing the Tracatus Ayyew is <a href="for-earth.php">for-Earth</a>.  See our <a href="/accounting.php">Ecological accounting</a> for our annual Regen Reporting./p>
 
   
     </div><!--closes page text content-->

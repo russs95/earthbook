@@ -80,8 +80,8 @@ Must be updated for each page-->
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Bibliography</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-       <div id="ct-chap-location">An Earthen Ethics</div>
-       <div id="ct-word-count"><i>Sources & References</i></div>
+       <div id="ct-chap-location">Sources & References</div>
+       <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>
 
