@@ -86,7 +86,7 @@ Must be updated for each page-->
 
   #ct-chapter-title {
     font-size: 10vmin;
-      letter-spacing: 2px;
+      letter-spacing: 5px;
     }
 
 
@@ -115,8 +115,8 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
   <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">Acknowledgements</div>   
-        <div id="ct-book-title">Tractatus AyyewAn Earthen Ethics</div>
+        <div id="ct-chapter-title">Gratitude</div>   
+        <div id="ct-book-title">Tractatus Ayyew</div>
        <div id="ct-chap-location">An Earthen Ethics</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
@@ -172,16 +172,29 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
         <p id="steve">Thank you to Stephen DeMeulenaere for the steamy conversations on the parrallels of currency and capital, fats and carbohydrates that was in valuable in our clarifying our thinking about Earthen energetics in Chapter 9.</p>
         
-        <p>Thank you to Balaji Srinivasan, whose “web app” version of his book <a href="https://thenetworkstate.com" target="_blank">The Network State</a> inspired our development of the Earthbook concept and code.</p>
+        <p>Thank you to Balaji Srinivasan, though a good deal of our ideas are in direct opposition to his, the “web app” version of his book <a href="https://thenetworkstate.com" target="_blank">The Network State</a> inspired our development of the Earthbook concept and code.</p>
 
         <p>Thank you to Enrique Salmon for his pioneering work developing the concept of “kincentric ecology” as a means of distinguishing Rarámuri metaphysics (and that of other fist nations) from modern views of nature.  His work and term underlie our term ‘kincentric culture’ and have been invaluable to advancing our theory.</p>
 
-        <p>Thank you to the open source developers and their various projects upon which the EarthBook platform is built.  Thank you to <a href="www.fabiodeveloper.com">Fábio Almeida</a> for his Accessibilidade CSS script which enables readers to increase and decrease the text of the EarthBook.  Thank you to Zeno Rocha for his continued development of <a href="https://clipboardjs.com">ClipboardJS</a>, the elegant Javascript on our Share page.  Thank you to <a href="https://dewaweb.com">DewaWeb Indonesia</a> who are generously hosting this EarthBook project without charge on their Singapore servers.  Thank you to <a href="https://www.websitecarbon.com">WebsiteCarbon </a> who enable the automated Carbon impact auditing of each Earthbook page.
-          Thank you to <a href="https://instructobit.com/tutorial/95/How-to-create-a-search-function-for-your-website-using-Javascript%2C-PHP-and-MySQL">Christopher Thorton</a> for his development and sharing of an elegant PHP search which is used in the EarthBook search functionality.  Thank you to <a href="https://commentics.com">Stephen for his Commentics php code base</a> which powers the EarthBook chapter comments.  Thank you to Thomas Steiner for his <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle">Dark Mode Toggle code</a> which powers the Night/Day mode swithching of the Earthbook.</p>
+        <p>Thank you to the open source developers and their various projects upon which the EarthBook platform is built.</p>
+        
+        <p>Thank you to <a href="www.fabiodeveloper.com">Fábio Almeida</a> for his Accessibilidade CSS script which enables readers to increase and decrease the text of the EarthBook.</p>
+        
+        <p>Thank you to Zeno Rocha for his continued development of <a href="https://clipboardjs.com">ClipboardJS</a>, the elegant Javascript on our Share page.</p>
+          
+        <p>Thank you to <a href="https://dewaweb.com">DewaWeb Indonesia</a> who are generously hosting this EarthBook project without charge on their Singapore servers.</p>
+        
+        <p>Thank you to <a href="https://www.websitecarbon.com">WebsiteCarbon </a> who enable the automated Carbon impact auditing of each Earthbook page.</p>
+
+        <p>Thank you to <a href="https://instructobit.com/tutorial/95/How-to-create-a-search-function-for-your-website-using-Javascript%2C-PHP-and-MySQL">Christopher Thorton</a> for his development and sharing of an elegant PHP search which is used in the EarthBook search functionality.</p>
+        
+        <p>Thank you to <a href="https://commentics.com">Stephen for his Commentics php code base</a> which powers the EarthBook chapter comments.</p>
+        
+        <p>Thank you to Thomas Steiner for his <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle">Dark Mode Toggle code</a> which powers the Night/Day mode swithching of the Earthbook.</p>
     
-
-        <p>Russell acknowledges the land of Banjar Sumampan, Gianyar, Indonesia, the ancestral home of the Balinese, as base for the writing and publishing of this book.  Banayan acknowledge the land of the Igorot people and their wisdom tradition which inspired, nurtured and enabled this book, her oversight and contribution.</p>
-
+        <p>Russell acknowledges the land of Banjar Sumampan, Gianyar, Indonesia, the ancestral home of the Balinese, as base for the writing and publishing of this book.</p>
+        
+        <p>Banayan acknowledge the land of the Igorot people and their wisdom tradition which inspired, nurtured and enabled this book, her oversight and contribution.</p>
         <p>
 
 
@@ -198,12 +211,12 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
     
       <div class="footer-left">
 
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter2()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Next chapter:</div>
-            <div class="sec-name"><i>Writing & Publishing</i></div>
+            <div class="next-sec">Next appendix:</div>
+            <div class="sec-name"><i>Publication</i></div>
         </div>
 
       </div>
