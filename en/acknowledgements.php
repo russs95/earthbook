@@ -174,7 +174,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
         <p id="steve">Thank you to Mark Donnovan and Donnie Maclurcan, with whom a conversation inspired the insights of Chapter 9. </p>
 
-        <p>Thank you to Stephen DeMeulenaere for the steamy conversations on the parrallels of currency and capital vs fats and carbohydrates that was invaluable in guiding our ideas of Earthen energetics in <a href="energy.php">Chapter 9</a>.</p>
+        <p>Thank you to Stephen DeMeulenaere for the steamy conversations on the parrallels of capital and carbs, fats and fiat that was invaluable in shaping our ideas of Earthen energetics in <a href="energy.php">Chapter 9</a>.</p>
         
         <p>Thank you to Balaji Srinivasan. Though a good deal of our ideas are in direct opposition, the “web app” version of his book <a href="https://thenetworkstate.com" target="_blank">The Network State</a> nonetheless inspired us to aline our publishing platform and our principles and inspired our development of the Earthbook concept.</p>
 
