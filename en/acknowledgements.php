@@ -31,7 +31,7 @@ $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
 $page_number = "107";
-$page_title = "Acknowledgements | Tractatus Ayyew - An Earthbook";?>
+$page_title = "Credits & Acknowledgements | Tractatus Ayyew | Earthbook";?>
 
 <head>
 
@@ -117,9 +117,9 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
   <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">Acknowledgements</div>   
+        <div id="ct-chapter-title">Gratitude</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-       <div id="ct-chap-location">Credits & Gratitude</div>
+       <div id="ct-chap-location">Credits & Acknowledgements</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>
