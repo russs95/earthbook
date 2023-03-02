@@ -116,8 +116,8 @@ Must be updated for each page-->
   <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">For-Earth</div>   
-        <div id="ct-book-title">Tractatus Ayyew</div>
-       <div id="ct-chap-location">Earthen Ethics</div>
+        <div id="ct-book-title">Enterprise Declaration</div>
+       <div id="ct-chap-location">Tractatus Ayyew | An Earthen Ethics</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>
@@ -149,7 +149,7 @@ Must be updated for each page-->
   </div>
 
 <div class="lead-page-paragraph"> 
-The author's and Earthen.io hereby declare the for-Earth, not-for-profit intention of their enterprise of writing and publishng the <i>Tracatatus Ayyew</i>.
+The author's and Earthen.io hereby declare the for-Earth, not-for-profit intention of the enterprise of writing and publishng the <i>Tracatatus Ayyew - An Earthen Ethics</i>.
 </div>
 
 <div class="page-paragraph">
@@ -159,13 +159,13 @@ The author's and Earthen.io hereby declare the for-Earth, not-for-profit intenti
   </p>
 
   </div>
-  
+  <br><br>
 
   
 
     <div id="line" style="border-style: dashed; border-width: 1px; margin-bottom: 30px; margin-top: 55px; width:100%; text-align:left;"></div>
 
-    <div class="page-paragraph" style="font-size: smaller;">
+    <div class="page-paragraph" style="font-size: smaller; font-family:'Mulish', sans-serif;">
     <p>The concept of a For-Earth enterprise is based on the five principles of Earthen Ethics developed within the <i>Tracatus Ayyew</i>.  Learn more about each concept:</p>
   </div>
 

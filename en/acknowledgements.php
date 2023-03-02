@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,43 +15,35 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "107";
+$page_title = "Acknowledgements | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
-
 <?php require_once ("../header.php");?>
-
-<!--END OF GENERIC CONTENT-->
 
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Acknowledgements | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-28T09:10:13+00:00">
 <meta name="keywords" content="acknowledgements, thank yous, grattitude, credits "> 
-
 <meta name="description" content="Our thanks to the many who made this project possible and published.">
-
-	
-<!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Acknowledgements | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="Our thanks to the many who made this project possible and published."/>
 
 
@@ -89,11 +85,18 @@ Must be updated for each page-->
   }
 
   #ct-chapter-title {
-      /*padding-top: 45px;
-      */font-size: 10vmin;
+    font-size: 10vmin;
       letter-spacing: 2px;
-      
     }
+
+
+  .bullet {
+    width:22px;
+    height:22px;
+    display: inline-block;
+    padding-right: 6px;
+    margin-bottom: -3px;
+  }
 
 </style>
 
@@ -110,26 +113,28 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Acknowledgements</div>   
-        <div id="ct-book-title">Tractatus Ayyew</div>
+        <div id="ct-book-title">Tractatus AyyewAn Earthen Ethics</div>
        <div id="ct-chap-location">An Earthen Ethics</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>
 
+  <?php require_once ("includes/eco-curtain.php");?>
+
+
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-000">
-    <div class="ct-chapter-quote">
-      Credits, Inspiration & Gratitude
-    </div>
+  <img src="../icons/thankyou.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+
   </div>
 
-  <?php require_once ("includes/eco-curtain.php");?>
-  <div id="up-arrow"></div>
-  <div id="ct-main">
+
+<div id="up-arrow"></div>
+<div id="ct-main">
 
  
 
@@ -138,7 +143,7 @@ Must be updated for each page-->
 -->
 <div class="lead-page-paragraph">
 
-WHAT FIRST BEGAN as conversation, became a school project, then a program, then a curriculum. Eventually, an essay emerged. Then another and another. And finally, the book you have before you. Along this decade long journey, our thoughts have been touched and propelled by countless contributions from the folks who have assisted and accompanied us along our journey. 
+WHAT FIRST BEGAN as conversation, became a school project, then a program, then a curriculum. Eventually, an essay emerged. Then another and another. And finally, the Earthbook before you. Along this decade long journey, our thoughts have been touched and propelled by countless contributions from the folks who have assisted and accompanied us along our way. 
 
 </div>
 
@@ -149,7 +154,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
   First and foremost we are grateful to our invisible beginnings: our ancestors, both of our own lineages and those of other kincentric cultures around the world that have touched and inspired us. Their accumulated wisdom serves as the bedrock upon which we have built. 
   </p>
 
-    <p>And of course, there are numerous friends, family and colleagues who have been of invaluable assistance along our way.</p>
+    <p>And of course, the numerous friends, family and colleagues who have been of invaluable assistance in this undertaking.</p>
     
     
     <p>Thank you to Trisha for her support, encouragement, listening and friendship. Thank you to Shiloh Vermaack and Richard Goldsmith for the relentless reviews of every chapter, not once but twice and sometimes thrice.  Thank you to Nicole and Vaughn for the in-depth reading and encouragement.  Thank you to Mel for the reminder that our ancestry, in particular its contrasts, was not just a side note, but a principal theme. Thank you to James and Ruth for their support and insights from the Bulkley Valley. Thank you to Rolf and Chris Maier for their scathing critiques and reviews that had a profound effect on our direction.  Thank you to Ani for her fathomless patience with the piles of pages and infinite coffee cups that accompanied this process.
@@ -165,7 +170,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
         <p>Thank you to Mark Donnovan and Donnie Maclurcan, with whom a conversation inspired the insights of Chapter 9. </p>
 
-        <p id="steve">Thank you to Stephen DeMeulenaere for the steamy conversations on the parrallels of currency and capital, fats and carbohydrates that was in valuable in our calrifying our thinking about Earthen energetics in Chapter 9.</p>
+        <p id="steve">Thank you to Stephen DeMeulenaere for the steamy conversations on the parrallels of currency and capital, fats and carbohydrates that was in valuable in our clarifying our thinking about Earthen energetics in Chapter 9.</p>
         
         <p>Thank you to Balaji Srinivasan, whose “web app” version of his book <a href="https://thenetworkstate.com" target="_blank">The Network State</a> inspired our development of the Earthbook concept and code.</p>
 
