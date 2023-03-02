@@ -30,8 +30,8 @@ $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
-$page_number = "101";
-$page_title = "404 Page not Found | Tractatus Ayyew - An Earthbook";?>
+$page_number = "200";
+$page_title = "Page not Found | 404 Error | Tractatus Ayyew";?>
 
 <head>
 
@@ -45,11 +45,8 @@ Must be updated for each page-->
 <meta property="article:modified_time" content="2023-02-25T09:14:13+00:00">
 <meta name="keywords" content="not yet published, epigraph, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
 <meta name="description" content="This chapter hasn't yet been published.">
-
-
 <meta name="twitter:label1" content="Est. reading time" />
 <meta name="twitter:data1" content="1 minutes" /> 
-	
 <meta property="og:description"   content="We couldn't find the page you were looking for."/>
 
 
@@ -124,7 +121,7 @@ Must be updated for each page-->
 <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
 <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
     <div id="ct-chapter-title">Page Not Found</div>   
-      <div id="ct-book-title"><!--#echo var="REDIRECT_STATUS" --> Error</div>
+      <div id="ct-book-title">404 Error</div>
       <div id="ct-chap-location">Tractatus Ayyew</div>
       <div id="ct-word-count"><i>An Earthen Ethics</i></div>
     </div>
@@ -190,8 +187,8 @@ Must be updated for each page-->
     
      
       <div class="next-section">
-          <div class="next-sec">To the start:</div>
-          <div class="sec-name"><i>Introduction</i></div>
+          <div class="next-sec">Go to:</div>
+          <div class="sec-name"><i>The Dashboard</i></div>
       </div>
 
     </div>
@@ -199,7 +196,7 @@ Must be updated for each page-->
 
     <div class="footer-right">
    
-      <a href="https://book.earthen.io/en/preamble.php"><div class="next-button">Preamble ➔</div></a>
+      <a href="https://book.earthen.io/index.php"><div class="next-button">Home ➔</div></a>
 
     </div>
   </div>
