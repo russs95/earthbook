@@ -86,7 +86,7 @@ Must be updated for each page-->
 
   #ct-chapter-title {
     font-size: 10vmin;
-      letter-spacing: 5px;
+      letter-spacing: 0px;
     }
 
 
@@ -115,9 +115,9 @@ Must be updated for each page-->
   <div id="ct-chapter-top">
   <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">Gratitude</div>   
+        <div id="ct-chapter-title">Acknowledgements</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-       <div id="ct-chap-location">An Earthen Ethics</div>
+       <div id="ct-chap-location">Gratitude</div>
         <div id="ct-word-count"><i>Appendix</i></div>
       </div>
   </div>
@@ -216,7 +216,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
      
         <div class="next-section">
             <div class="next-sec">Next appendix:</div>
-            <div class="sec-name"><i>Publication</i></div>
+            <div class="sec-name"><i>The Publishing</i></div>
         </div>
 
       </div>
@@ -224,7 +224,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
       <div class="footer-right">
     
-        <a href="writing.php"><div class="next-button">Next ➔</div></a>
+        <a href="publishing.php"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
