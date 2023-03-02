@@ -126,6 +126,8 @@ Must be updated for each page-->
 
   <?php require_once ("includes/eco-curtain.php");?>
 
+<?php require_once ("includes/search.php");?>
+
 
 <!-- Page Title Section-->
 

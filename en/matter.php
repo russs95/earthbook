@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,35 +15,33 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "14";
+$page_title = "The Mollusc's Means |  Book two | Tratatus Ayyew - Earthbook";?>
 
 <head>
 
-
 <?php require_once ("../header.php");?>
 
-<!--END OF GENERIC CONTENT-->
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>The Mollusc's Means of Matter |  Book Two | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-21T09:10:13+00:00">
 <meta name="keywords" content="mollusc, means, matter, spiral, principle 3"> 
 <meta name="description" content="Earthen Principle No.3: Earth’s cycles tend towards the inwards concentration of matter.">
 
@@ -112,11 +114,11 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">The Mollusc's Means of Matter</div>   
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+        <div id="ct-chapter-title">The Mollusc's Means</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
-        <div id="ct-chap-location">Earthen Principle No. 3 | Matter</div>
+        <div id="ct-chap-location">Earthen Principle No. 3</div>
         <div id="ct-word-count"><i>Book Two | 2,307 words</i></div>
       </div>
   </div>
@@ -254,16 +256,34 @@ Must be updated for each page-->
      <br><br>
 
   
-    </div><!--closes page text content-->
+     </div><!--closes page text content, then loads page curtains:-->
+
+<?php require_once ("includes/eco-curtain.php");?>
+
+<?php require_once ("includes/comments.php");?>
+
+<?php require_once ("includes/search.php");?>
+
 
 <!--FOOTNOTES SECTION-->
 
-    <div class="footnote-section">
+    <div class="footnote-section" style="z-index:8;">
 
-      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+      <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
 
-      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+      <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+            
+        <div id="footnotes-arrow"></div>
+        
+        <div class="footnotes-title">Chapter Footnotes</div>
       
+      </div>
+
+      <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+        <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">      
+        
+        
         <a href="#58-up" class="footnote">   
         <div class="footnote-number">58.</div>
         <div class="footnote-text">For an an account of the Igorots remarkable ecological synchrony see: William Henry Scott, (1959) <i>Some Calendars of Northern Luzon</i>, American Anthropologist 60(3):563 - 570 </div>
@@ -295,6 +315,13 @@ Must be updated for each page-->
 
 
 
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
     </div><!--Closes footnote section-->
           
   </div><!--Closes main content block-->
@@ -305,13 +332,11 @@ Must be updated for each page-->
     <div class="footer-size">
     
       <div class="footer-left">
-
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Next chapter:</div>
-            <div class="sec-name"><i>3 | The Mollusk's Means</i></div>
+          <div class="next-sec">Next:</div>
+            <div class="sec-name"><i>3 | The Manner of the Mollusc</i></div>
         </div>
 
       </div>
@@ -319,17 +344,15 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="unpublished.php"><div class="next-button">Next ➔</div></a>
+        <a href="unpublished.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
-      </div>
-    </div>
-  </div>
+</div>
+</div>
 
-  <?php require_once ("includes/chap-footer.php");?>
+    
+<?php require_once ("includes/chapTER-footer.php");?>
 
 
 </div>
-
-
 </body>
 </html>
