@@ -30,25 +30,21 @@ $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
-$page_number = "200";
-$page_title = "Page not Found | 404 Error | Tractatus Ayyew";?>
+$page_number = "106";
+$page_title = "Page not found | 404 Error  | Earthbook";?>
 
 <head>
 
-
-<?php require_once ("header.php");?>
+<?php require_once ("../header.php");?>
 
 
 <!--META TAGS
 Must be updated for each page-->
 
-<meta property="article:modified_time" content="2023-02-25T09:14:13+00:00">
-<meta name="keywords" content="not yet published, epigraph, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-<meta name="description" content="This chapter hasn't yet been published.">
-<meta name="twitter:label1" content="Est. reading time" />
-<meta name="twitter:data1" content="1 minutes" /> 
-<meta property="og:description"   content="We couldn't find the page you were looking for."/>
-
+<meta property="article:modified_time" content="2023-02-28T09:10:13+00:00">
+<meta name="keywords" content="page not found, 404 error, error, search again"> 
+<meta name="description" content="Sorry we couldn't find a page at this URL in this Earthbook">
+<meta property="og:description"   content="Sorry we couldn't find a page at this URL in this Earthbook"/>
 
 
 <style>
@@ -57,95 +53,91 @@ Must be updated for each page-->
 @media screen and (max-width: 699px) {
     .ct-chapter-quote {
       width: 87%;
-      font-size: 1em;
+      font-size: 1.4em;
     }
     .ct-quote-source {
       width: 80%;
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
-
-    #ct-chapt-graphic {
-      height: 40vh;
-      margin-top: 8vh;
-    }
-
   }
 
   @media screen and (min-width: 700px) and (max-width: 1324px) {
     .ct-chapter-quote {
       width: 70%;
-      font-size: 1.7em;
+      font-size: 1.8em;
     }
     .ct-quote-source {
       width: 70%;
-      font-size: 1.3em;
+      font-size: 1em;
     }
   }
     
   @media screen and (min-width: 1325px) {
     .ct-chapter-quote {
     width: 50%;
-    font-size: 1.7em;
+    font-size: 2em;
+    text-shadow: 0px 0px 12px var(--slider);
     }
     .ct-quote-source {
       width: 50%;
-      font-size: 1.3em;
+      font-size: 1em;
     }
   }
 
-  #ct-main .action-btn {
-    margin: -35px auto 0px auto !important;
-  }
   #ct-chapter-title {
-  
-  font-size: 10vmin;
-  letter-spacing: 1px;
-}
+    font-size: 10vmin;
+      letter-spacing: 2px;
+    }
+
+
+  .bullet {
+    width:22px;
+    height:22px;
+    display: inline-block;
+    padding-right: 6px;
+    margin-bottom: -3px;
+  }
 
 </style>
 
 </head>
-
 
 <!--MAIN HTML Begins-->
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 <div id="underlayer">
 
-<div id="top"></div>
+  <a id="top"></a>
 
-<!--HEADER NAVBAR-->
-<header-component></header-component>
+  <!--HEADER NAVBAR-->
+  <header-component></header-component>
 
-<div id="ct-chapter-top">
-<button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
-<div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-    <div id="ct-chapter-title">Page Not Found</div>   
-      <div id="ct-book-title">404 Error</div>
-      <div id="ct-chap-location">Tractatus Ayyew</div>
-      <div id="ct-word-count"><i>An Earthen Ethics</i></div>
-    </div>
-</div>
+  <div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+        <div id="ct-chapter-title">Page not found</div>   
+        <div id="ct-book-title">404 Error</div>
+       <div id="ct-chap-location">Tractatus Ayyew | An Earthen Ethics</div>
+        <div id="ct-word-count"><i>Earthbook</i></div>
+      </div>
+  </div>
 
- 
-<?php require_once ("includes/eco-curtain.php");?>
- 
-<!-- Page Title Section-->
+  <?php require_once ("https://book.earthen.io/en/includes/eco-curtain.php");?>
 
 
 <div id="ct-chapt-graphic" class="background-000">
-    <div class="ct-chapter-quote">
-    The requested page <!--#echo var="REQUEST_URI" --> couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
-    </div>
+<div class="ct-chapter-quote"><i>
+The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with any other in the EarthBook.  Check the URL for errors or mispellings.
+</i>
+</div>
 </div>
 
 <div id="up-arrow"></div>
-
 <div id="ct-main">
 
   <div>
                 <!--<h1></h1>-->
-    <h3 class="accessibility-plugin-ac">You can try searching the EarthBook to find what you're looking for...</h3> 
+    <h3 class="accessibility-plugin-ac">You can try searchin the EarthBook to find what you're looking for...</h3> 
   </div>
           
   <div class="search-box" style="padding-bottom:15%;">
@@ -162,8 +154,35 @@ Must be updated for each page-->
 
     <br><br>
 
-    <?php require_once ("../manage.php");?>
+      <!--<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Subscribe/Unsubscribe to a Mailing List</title>
+  </head>
+  <body>-->
+ 
+    <form method="POST" action="/en/404.php">
 
+   <!--<p><label for="email">Your E-Mail Address:</label><br/>-->
+  <div class="this-one"><input type="email" id="email" name="email"  placeholder="Want more? Enter email..."
+         size="40" maxlength="150"  /></p></div>
+
+  
+  <button type="submit" name="submit"  value="submit" class="action-btn" style="width: 65%;
+ 
+  font-size: 0.9em;
+  margin: -25px auto 0px auto;
+  border-radius: 0px 0px 20px 20px;">Register</button>
+  <fieldset>
+  <input type="radio" id="action_sub" name="action"
+         value="sub" checked />
+  <label for="action_sub">subscribe</label><br/>
+  <input type="radio" id="action_unsub" name="action"
+         value="unsub" />
+  <label for="action_unsub">unsubscribe</label>
+  </fieldset>
+  </form> <!--</body>
+ </html>-->
     <br>
 </div>
 
@@ -173,36 +192,37 @@ Must be updated for each page-->
           
 </div><!--Closes main content block-->
 
+          
+  </div><!--Closes main content block-->
+
+  <!--Footer Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+
+    <div class="footer-size">
     
-  
-    <!--Footer Next Chapter Section: Requires customization-->
+      <div class="footer-left">
 
-<div id="footer-chapter" style="margin-bottom: 0px;">
-
-  <div class="footer-size">
-    
-    <div class="footer-left">
-
-      <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter2()"></div>
+        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter2()"></div>
     
      
-      <div class="next-section">
-          <div class="next-sec">Go to:</div>
-          <div class="sec-name"><i>The Dashboard</i></div>
-      </div>
+        <div class="next-section">
+            <div class="next-sec">Go to:</div>
+            <div class="sec-name"><i>Earthbook Dashboard</i></div>
+        </div>
 
-    </div>
+      </div>
     
 
-    <div class="footer-right">
-   
-      <a href="https://book.earthen.io/index.php"><div class="next-button">Home ➔</div></a>
+      <div class="footer-right">
+    
+        <a href="index.php"><div class="next-button">Home ➔</div></a>
 
+      </div>
     </div>
   </div>
-</div>
 
-<?php require_once ("includes/chap-footer.php");?>
+  <?php require_once ("includes/chap-footer.php");?>
+
 
 
 </body>
