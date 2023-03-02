@@ -86,7 +86,7 @@ Must be updated for each page-->
 
   #ct-chapter-title {
     font-size: 10vmin;
-      letter-spacing: 4px;
+      letter-spacing: 6px;
     }
 
     .java-link {
