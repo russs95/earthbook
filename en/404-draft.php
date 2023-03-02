@@ -152,32 +152,9 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
 <div class="ct-quote-source" style="width:100% !important;">
     Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published. Subscribe to Earthen to be notified of new chapter releases.
 
-    <br><br>
+    <br><br></div>
 
- 
-    <form method="POST" action="/en/404.php">
-
-   <!--<p><label for="email">Your E-Mail Address:</label><br/>-->
-  <div class="this-one"><input type="email" id="email" name="email"  placeholder="Want more? Enter email..."
-         size="40" maxlength="150"  /></p></div>
-
-  
-  <button type="submit" name="submit"  value="submit" class="action-btn" style="width: 65%;
- 
-  font-size: 0.9em;
-  margin: -25px auto 0px auto;
-  border-radius: 0px 0px 20px 20px;">Register</button>
-  <fieldset>
-  <input type="radio" id="action_sub" name="action"
-         value="sub" checked />
-  <label for="action_sub">subscribe</label><br/>
-  <input type="radio" id="action_unsub" name="action"
-         value="unsub" />
-  <label for="action_unsub">unsubscribe</label>
-  </fieldset>
-  </form> 
-    <br>
-</div>
+    <?php require_once ("../manage.php");?>
 
           
   </div><!--Closes main content block-->
