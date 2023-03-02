@@ -86,17 +86,10 @@ Must be updated for each page-->
 
   #ct-chapter-title {
     font-size: 10vmin;
-      letter-spacing: 0px;
+      letter-spacing: 4px;
     }
 
 
-  .bullet {
-    width:22px;
-    height:22px;
-    display: inline-block;
-    padding-right: 6px;
-    margin-bottom: -3px;
-  }
 
 </style>
 
@@ -162,7 +155,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
         <p>Thank you to our Igorot and Wet’su’weten brothers and sisters whose examples have inspired us: James, Jed, Sir Ernesto, Jake and the Sabangan guides.</p>
 
-        <p>Chapter banners, Eagle & Salmon No.1 and No.2, Frog and Sun by Wet’suwet’en artist James Madam. </p>
+        <p>Chapter banners, Eagle & Salmon No.1 and No.2, Frog and Sun by Wet’su’weten artist James Madam. </p>
 
         <p>Photos of Igorot culture on Earthen.io by Gladys Maxim.  Chapter 9 photos by Robert Brodey.</p>
 
@@ -170,13 +163,23 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
         <p>Thank you to Mark Donnovan and Donnie Maclurcan, with whom a conversation inspired the insights of Chapter 9. </p>
 
-        <p id="steve">Thank you to Stephen DeMeulenaere for the steamy conversations on the parrallels of currency and capital, fats and carbohydrates that was in valuable in our clarifying our thinking about Earthen energetics in Chapter 9.</p>
+        <p id="steve">Thank you to Stephen DeMeulenaere for the steamy conversations on the parrallels of currency and capital vs fats and carbohydrates that was invaluable in guiding our ideas of Earthen energetics in Chapter 9.</p>
         
-        <p>Thank you to Balaji Srinivasan, though a good deal of our ideas are in direct opposition to his, the “web app” version of his book <a href="https://thenetworkstate.com" target="_blank">The Network State</a> inspired our development of the Earthbook concept and code.</p>
+        <p>Thank you to Balaji Srinivasan. Though a good deal of our ideas are in direct opposition, the “web app” version of his book <a href="https://thenetworkstate.com" target="_blank">The Network State</a> nonetheless inspired us to aline our publishing platform and our principles and inspired our development of the Earthbook concept.</p>
 
-        <p>Thank you to Enrique Salmon for his pioneering work developing the concept of “kincentric ecology” as a means of distinguishing Rarámuri metaphysics (and that of other fist nations) from modern views of nature.  His work and term underlie our term ‘kincentric culture’ and have been invaluable to advancing our theory.</p>
+        <p>Thank you to Enrique Salmon for his pioneering work developing the concept of “kincentric ecology” as a means of distinguishing Rarámuri metaphysics (and that of other fist nations) from the modern concept of 'nature'.  His work and his term underlie our use of the phrase ‘kincentric culture’ and have been invaluable to advancing our theory.</p>
 
-        <p>Thank you to the open source developers and their various projects upon which the EarthBook platform is built.</p>
+        <p>Russell acknowledges the land of Banjar Sumampan, Gianyar, Indonesia, the ancestral home of the Balinese, as base for the writing and publishing of this book.</p>
+        
+        <p>Banayan acknowledge the land of the Igorot people and their wisdom tradition which inspired, nurtured and enabled this book, her oversight and contribution.</p>
+        <div>
+          
+
+        <div id="line" style="border-style: dashed; border-width: 1px; margin-bottom: 40px; margin-top: 55px; width:100%; text-align:left;"></div>
+
+        <div class="lead-page-paragraph">Thank you to the open source developers and their various projects upon which the EarthBook platform is built.</div>
+
+        <div class="page-paragraph">
         
         <p>Thank you to <a href="www.fabiodeveloper.com">Fábio Almeida</a> for his Accessibilidade CSS script which enables readers to increase and decrease the text of the EarthBook.</p>
         
@@ -191,11 +194,10 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
         <p>Thank you to <a href="https://commentics.com">Stephen for his Commentics php code base</a> which powers the EarthBook chapter comments.</p>
         
         <p>Thank you to Thomas Steiner for his <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle">Dark Mode Toggle code</a> which powers the Night/Day mode swithching of the Earthbook.</p>
+        </div>
     
-        <p>Russell acknowledges the land of Banjar Sumampan, Gianyar, Indonesia, the ancestral home of the Balinese, as base for the writing and publishing of this book.</p>
+
         
-        <p>Banayan acknowledge the land of the Igorot people and their wisdom tradition which inspired, nurtured and enabled this book, her oversight and contribution.</p>
-        <p>
 
 
   
