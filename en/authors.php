@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,55 +15,48 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "109";
+$page_title = "Authors & Authoring | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
-
 <?php require_once ("../header.php");?>
-
-<!--END OF GENERIC CONTENT-->
 
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Authors | Tratatus Ayyew - Earthbook</title>
-<meta name="keywords" content="authors, russell, maier, banayan, irene, angway "> 
+<meta property="article:modified_time" content="2023-02-28T09:10:13+00:00">
+<meta name="keywords" content="authors, russell, maier, banayan, irene, angway, writing, authorship, author, writers"> 
+<meta name="description" content="About the authors and the authorship of the Earthbook">
+<meta property="og:description"   content="About the authors and the authorship of the Earthbook"/>
 
-<meta name="description" content="About the authors of the Tractatus Ayyew">
-
-	
-<!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Authors | Tratatus Ayyew - Earthbook.">
-<meta property="og:description"   content="About the authors of the Tractatus Ayyew"/>
 
 <style>
   
 
 
   #ct-chapter-title {
-      /*padding-top: 45px;
-      */font-size: 10vmin;
+    font-size: 10vmin;
       letter-spacing: 2px;
-      
     }
+
+
 
 </style>
 
@@ -76,8 +73,8 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">The Authors</div>   
         <div id="ct-book-title">& The Authorship</div>
        <div id="ct-chap-location">Tractatus Ayyew</div>

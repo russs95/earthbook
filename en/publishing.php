@@ -128,7 +128,7 @@ Must be updated for each page-->
 <!-- Page Title Section-->
 
   <div id="ct-chapt-graphic" class="background-000">
-  <img src="../svgs/publishing.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+  <img src="../icons/publishing.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
 
   </div>
 
