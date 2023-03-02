@@ -1,7 +1,11 @@
-<!--EARTHBOOK CHAPTER PAGE TEMPLATE
+<!DOCTYPE html>
 
-PHP Page Version 1.0.2
-Design by Russell Maier
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
@@ -11,43 +15,35 @@ See full project repository at: https://github.com/russs95/earthbook
 -->
 
 
-<!-- PHP starts by laying out canonical URLs for the page and language -->
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-<!DOCTYPE html>
-
-<meta charset="UTF-8"> 
-
-<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.-->
 <?php require_once ("lang.php");
 
 echo <<<_END
-<html lang="$lang" manifest="../offline.appcache">
-_END;
+<html lang="$lang">
+_END;?>
 
+<!-- this sets PHP variables for the pages that will be used later on-->
+
+<?php 
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
-if (strcmp($name, "welcome.php") == 0)
-$name = "";?>
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "112";
+$page_title = "Glossary | Tractatus Ayyew - An Earthbook";?>
 
 <head>
 
-
 <?php require_once ("../header.php");?>
-
-<!--END OF GENERIC CONTENT-->
 
 
 <!--META TAGS
 Must be updated for each page-->
 
-<title>Glossary | Tratatus Ayyew - Earthbook</title>
+<meta property="article:modified_time" content="2023-02-28T09:10:13+00:00">
 <meta name="keywords" content="ayyew, biome, biosphere, biodiversity, cosmological, character, dapay, earth, Eartch, Earthen, earthen, Earthen ethics, Earth Enterprise, Ecological contribution, ecological consciousness, ecology, green, grey, fossil fuels, igorot, kan'ka'nue, kankanue,petro-capital, petrocapital, economy, plastic sequestration, plastic's stellar sotry, plastic 1.0, plastic 2.0, regenerative, wet'su'weten "> 
-
 <meta name="description" content="A list of the key terms and their definitions as they are used throughout the Tractatus Ayyew">
-
-	
-<!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:title"         content="Glossary | Tratatus Ayyew - Earthbook.">
 <meta property="og:description"   content="A list of the key terms and their definitions as they are used throughout the Tractatus Ayyew"/>
 
 
@@ -112,8 +108,8 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-      <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Glossary</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
        <div id="ct-chap-location">An Earthen Ethics</div>
@@ -230,12 +226,12 @@ Must be updated for each page-->
     
       <div class="footer-left">
 
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter2()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Back to the Start</div>
-            <div class="sec-name"><i>Preamble</i></div>
+            <div class="next-sec">Return to:</div>
+            <div class="sec-name"><i>The Dashboard</i></div>
         </div>
 
       </div>
@@ -243,7 +239,7 @@ Must be updated for each page-->
 
       <div class="footer-right">
     
-        <a href="preamble.php"><div class="next-button">The Start ➔</div></a>
+        <a href="index.php"><div class="next-button">Home ➔</div></a>
 
       </div>
     </div>

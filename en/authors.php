@@ -158,11 +158,11 @@ Must be updated for each page-->
     
       <div class="footer-left">
 
-        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter2()"></div>
     
      
         <div class="next-section">
-            <div class="next-sec">Next chapter:</div>
+            <div class="next-sec">Next appendix:</div>
             <div class="sec-name"><i>Declaration of Author Interests & Investments</i></div>
         </div>
 
