@@ -153,8 +153,9 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
     Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published. Subscribe to Earthen to be notified of new chapter releases.
 
     <br><br></div>
-
+  <div style="text-align: center;">
     <?php require_once ("../manage.php");?>
+</div>
 
           
   </div><!--Closes main content block-->
