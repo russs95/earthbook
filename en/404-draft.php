@@ -122,7 +122,7 @@ Must be updated for each page-->
       </div>
   </div>
 
-  <?php require_once ("https://book.earthen.io/en/includes/eco-curtain.php");?>
+  <?php require_once ("includes/eco-curtain.php");?>
 
 
 <div id="ct-chapt-graphic" class="background-000">
@@ -136,8 +136,8 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
 <div id="ct-main">
 
   <div>
-                <!--<h1></h1>-->
-    <h3 class="accessibility-plugin-ac">You can try searchin the EarthBook to find what you're looking for...</h3> 
+               
+    <h3 class="accessibility-plugin-ac">You can try searching the EarthBook to find what you're looking for...</h3> 
   </div>
           
   <div class="search-box" style="padding-bottom:15%;">
@@ -154,12 +154,6 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
 
     <br><br>
 
-      <!--<!DOCTYPE html>
-  <html>
-  <head>
-  <title>Subscribe/Unsubscribe to a Mailing List</title>
-  </head>
-  <body>-->
  
     <form method="POST" action="/en/404.php">
 
@@ -181,16 +175,9 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
          value="unsub" />
   <label for="action_unsub">unsubscribe</label>
   </fieldset>
-  </form> <!--</body>
- </html>-->
+  </form> 
     <br>
 </div>
-
-
-
-
-          
-</div><!--Closes main content block-->
 
           
   </div><!--Closes main content block-->
