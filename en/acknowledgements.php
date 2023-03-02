@@ -89,6 +89,15 @@ Must be updated for each page-->
       letter-spacing: 4px;
     }
 
+    .java-link {
+    cursor:pointer; 
+    border-bottom: grey 1px dashed;
+  }
+  
+  .java-link:hover {
+    cursor:pointer; 
+    border-bottom: grey 1px solid;}
+
 
 
 </style>
@@ -177,23 +186,23 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
         <div id="line" style="border-style: dashed; border-width: 1px; margin-bottom: 40px; margin-top: 55px; width:100%; text-align:left;"></div>
 
-        <div class="lead-page-paragraph">Thank you to the open source developers and their various projects upon which the EarthBook platform is built.</div>
+        <div class="lead-page-paragraph">Thank you to the open source developers and their various projects upon which the <a class="java-link" onclick="openEarthbook()" aria-label="Open About Screen" title="Learn more about what an Earthbook is"><i>Earthbook</i></a> platform is built.</div>
 
         <div class="page-paragraph">
         
-        <p>Thank you to <a href="www.fabiodeveloper.com">Fábio Almeida</a> for his Accessibilidade CSS script which enables readers to increase and decrease the text of the EarthBook.</p>
+        <p>Thank you to <a href="www.fabiodeveloper.com">Fábio Almeida</a> for his Accessibilidade CSS script which enables readers to <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Open Accessibility Setting"><i>increase and decrease the text</i></a> of the EarthBook.</p>
         
-        <p>Thank you to Zeno Rocha for his continued development of <a href="https://clipboardjs.com">ClipboardJS</a>, the elegant Javascript on our Share page.</p>
+        <p>Thank you to Zeno Rocha for his continued development of <a href="https://clipboardjs.com">ClipboardJS</a>, the elegant Javascript on our <a class="java-link" onclick="openShare()" aria-label="Open Sharing" title="Open Sharing"><i>Share page.</i></a></p>
           
         <p>Thank you to <a href="https://dewaweb.com">DewaWeb Indonesia</a> who are generously hosting this EarthBook project without charge on their Singapore servers.</p>
         
-        <p>Thank you to <a href="https://www.websitecarbon.com">WebsiteCarbon </a> who enable the automated Carbon impact auditing of each Earthbook page.</p>
+        <p>Thank you to <a href="https://www.websitecarbon.com">WebsiteCarbon </a> who enable the automated <a class="java-link" onclick="openEco()" aria-label="Open Settings" title="Open Ecological Tracking"><i>carbon impact auditing</i></a> of each Earthbook page.</p>
 
-        <p>Thank you to <a href="https://instructobit.com/tutorial/95/How-to-create-a-search-function-for-your-website-using-Javascript%2C-PHP-and-MySQL">Christopher Thorton</a> for his development and sharing of an elegant PHP search which is used in the EarthBook search functionality.</p>
+        <p>Thank you to <a href="https://instructobit.com/tutorial/95/How-to-create-a-search-function-for-your-website-using-Javascript%2C-PHP-and-MySQL">Christopher Thorton</a> for his development and sharing of an elegant PHP search which is used in the EarthBook <a class="java-link" onclick="openSearch()" aria-label="Open Search" title="Open Earthbook Search"><i>search functionality</i></a>.</p>
         
         <p>Thank you to <a href="https://commentics.com">Stephen for his Commentics php code base</a> which powers the EarthBook chapter comments.</p>
         
-        <p>Thank you to Thomas Steiner for his <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle">Dark Mode Toggle code</a> which powers the Night/Day mode swithching of the Earthbook.</p>
+        <p>Thank you to Thomas Steiner for his <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle">Dark Mode Toggle code</a> which powers the <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Open Accessibility Setting"><i>Night/Day</i></a> mode swithching of the Earthbook.</p>
         </div>
     
 
