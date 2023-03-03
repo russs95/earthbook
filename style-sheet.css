@@ -3511,7 +3511,6 @@ display: none;
 
 .virtue-desc {
   font-family: 'Mulish';
- 
   text-align: center;
   color: var(--text-color);
   position: absolute;
@@ -3588,9 +3587,9 @@ display: none;
 }
 
 .virtue-desc {
-  bottom: 125px;
+  bottom: 135px;
   width: 87%;
-  font-size: 1.0em;
+  font-size: 1.2em;
 }
 
 #medium-message {

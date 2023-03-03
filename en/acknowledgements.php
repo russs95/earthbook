@@ -154,14 +154,15 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
 <div class="page-paragraph">
 
+  <p>First and foremost we are grateful for our plastic.  Without the trials and tribulations of trying to figure out what to do with it— the physical and philosophical journeys it pollutions and solutions have sparked for us— this book would never have begun.</p> 
+
   <p>
-  First and foremost we are grateful to our invisible beginnings: our ancestors, both of our own lineages and those of other kincentric cultures around the world that have touched and inspired us. Their accumulated wisdom serves as the bedrock upon which we have built. 
+  That said, we are grateful to our invisible beginnings: our ancestors, both of our own lineages and those of other kincentric cultures around the world that have touched and inspired our struggle with the meaning of green. Their accumulated wisdom serves as the bedrock upon which we have built. 
   </p>
 
-    <p>And of course, the numerous friends, family and colleagues who have been of invaluable assistance in this undertaking.</p>
-    
-    
-    <p>Thank you to Trisha for her support, encouragement, listening and friendship. Thank you to Shiloh Vermaack and Richard Goldsmith for the relentless reviews of every chapter, not once but twice and sometimes thrice.  Thank you to Nicole and Vaughn for the in-depth reading and encouragement.  Thank you to Mel for the reminder that our ancestry, in particular its contrasts, was not just a side note, but a principal theme. Thank you to James and Ruth for their support and insights from the Bulkley Valley. Thank you to Rolf and Chris Maier for their scathing critiques and reviews that had a profound effect on our direction.  Thank you to Ani for her fathomless patience with the piles of pages and infinite coffee cups that accompanied this process.
+    <p>Along our journey, countless friends, family and colleagues who have been of invaluable assistance in our undertaking.</p>
+       
+    <p>Thank you to Trisha for her support, encouragement, listening and friendship. Thank you to Shiloh Vermaack and Richard Goldsmith for the relentless reviews of every chapter, not once but twice and sometimes thrice.  Thank you to Nicole and Vaughn for the in-depth reading and encouragement.  Thank you to Mel for the reminder that our ancestry, in particular its contrasts, was not just a side note, but a principal theme. Thank you to James and Ruth for their support and insights from the Bulkley Valley. Thank you to Rolf and Chris for their scathing early reviews.  Their invaluable critiques had a profound effect on our direction.  Thank you to Ani for her fathomless patience with the piles of pages and infinite coffee cups that accompanied this process.
         </p> 
 
         <p>Thank you to our Igorot and Wet’su’weten brothers and sisters whose examples have inspired us: James, Jed, Sir Ernesto, Jake and the Sabangan guides.</p>
@@ -202,7 +203,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
         <p>Thank you to <a href="https://instructobit.com/tutorial/95/How-to-create-a-search-function-for-your-website-using-Javascript%2C-PHP-and-MySQL">Christopher Thorton</a> for his development and sharing of an elegant PHP search which is used in the EarthBook <a class="java-link" onclick="openSearch()" aria-label="Open Search" title="Open Earthbook Search"><i>search functionality</i></a>.</p>
         
-        <p>Thank you to <a href="https://commentics.com">Stephen for his Commentics php code base</a> which powers the EarthBook chapter comments.</p>
+        <p>Thank you to Stephen for his <a href="https://commentics.com">Commentics</a> PHP code base which powers the Earthbook chapter comments.</p>
         
         <p>Thank you to Thomas Steiner for his <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle">Dark Mode Toggle code</a> which powers the <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Open Accessibility Setting"><i>Night/Day</i></a> mode swithching of the Earthbook.</p>
         </div>
