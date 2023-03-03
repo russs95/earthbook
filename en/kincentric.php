@@ -105,7 +105,7 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ³¹⁰ ²⁶
 -->
      <div class="lead-page-paragraph">
-     OVER THE COURSE OF HUMAN HISTORY, certain societies have excelled far more than others at the art of ecological integration.  Immersed as we are today in modern systems and societies that deplete, never has it been more crucial to recall and to recognize that others have done just the opposite.  In fact, great nations of the past have left a legacy of enriched ecosystems and biomes, while others quietly continue long heritages of contribution.  As we strive to discern what green should really mean, recognizing that such societies have already cleared the way forward and tread the path is crucial.  To learn from them, we must look closely at the way they themselves learned.  As we shall, perceiving the plants and animals around them elders and teachers was key to their profound ecological understanding— and is the portal by which we must pass to grasp the endemic shortcomings of our modern attempts at green.  
+     OVER THE COURSE OF HUMAN HISTORY, certain societies have excelled far more than others at the art of ecological enrichment.  In sharp contrast to the way in which many modern societies deplete the ecosystems of which they are a part, never has it been more crucial to recall that others cultures have done just the opposite.  In fact, numerous ancient nations left behind biomes more vibrant and diverse than they found them; while many ongoing nations continue long heritages of ecological contribution.  As we strive to green our ways, recognizing that such societies have already cleared the way and tread the path is crucial.  To learn from them, we must look closely at the way they themselves learned.  As we shall see, their view of plants and animals as kin, elders and teachers was key to ahceiving their great heights of ecological integration. <!-- As we shall also see, it is also the key to understanding our modern failures to do so.  -->
      
      </div>
 
@@ -113,49 +113,54 @@ Must be updated for each page-->
 
     <p>While countless great greening societies have thrived around the planet, there is no more dramatic an example than the nations that first inhabited the Americas.</p>
 
-      <p id="32">Five hundred years ago, prior to the cataclysmic arrival of germs, animals and humans from Europe, the Americas were then home to hundreds of thriving, independent and prosperous nations.<a href="#footnotes">³²</a>  Contemporary estimates of the population of the continents at the time range in the tens of millions to over one hundred million<a href="#footnotes">³³</a> with many towns and cities ranging in size from tens of thousands to over a hundred thousand inhabitants.<a href="#footnotes">³⁴</a></p>
+      <p id="32">Five hundred years ago, prior to the arrival of germs, animals and humans from Europe, the Americas were then home to hundreds of thriving, independent and prosperous nations.<a href="#footnotes">³²</a>  Contemporary estimates of the population of the continents at the time range in the tens of millions to over one hundred million.<a href="#footnotes">³³</a> Many towns and cities of the era are estimated to have ranged in size from tens of thousands to over a hundred thousand inhabitants.<a href="#footnotes">³⁴</a></p>
 
-
-      <p>Like all nations and cities, such concentrations of humanity had a significant impact on the ecosystems and continental biomes of which they were a part.</p>
-
-      <p id="35-up">Having settled the continent over ten thousand years ago, these nations had long acquired sophisticated hunting, fishing and gathering technologies. Also common was the use of fire to effect huge swaths of land.  In all respects, these nations were more than capable of over-hunting, overfishing, over-gathering<a href="#footnotes">³⁵</a> and depleting the carrying capacities of the ecosystems of which they depended.   </p>
+      <p id="35-up">Having settled the continent over ten thousand years ago, these nations had long acquired sophisticated hunting, fishing and gathering technologies. Also common was the use of fire to clear the undergrowth of huge swaths of land.</p>
+      
+      
+      <p>Like all such great concentrations of humanity, these nations, cities and towns had a significant impact on the ecosystems and continental biomes of which they were a part.  Indeed, given their size and technologies, the first nations of the Americas were more than capable of over-hunting, overfishing, over-gathering<a href="#footnotes">³⁵</a> and depleting the carrying capacities of the ecosystems of which they depended.   </p>
 
       <p>However, over-consumption and exploitation did not occur.  Nor the depletion of the continent’s ecosystems.</p>
 
       <p>In fact, just the opposite.</p>
 
-      <p>In 1492, as the first Europeans arrived on the shores of a very old ‘new world’ they were shocked not only by the vastly differing societies and cultures they encountered, but so too by the vastly different fauna and flora.</p>
+      <p>In 1492, the first Europeans to arrive recorded their observations of land and people.  They were shocked not only by the vastly differing societies and cultures they encountered, but so too by the vastly different fauna and flora.</p>
 
       <p>And their abundance.</p>
 
       <p>From South America to North, explorers recorded dazzled accounts of the ecological vitality they observed: Rivers overflowing with fish; grasslands filled with countless grazing beasts; forests full of animals, birds, and trees of colossal size;  coastal shoals overflowing with marine life.</p>
 
-      <p>Alas, the newcomers lacked the conceptual ability to truly see what they were seeing.  Seeped a culture in which food largely came from single crops and domesticated animals, the explorers and colonists, mistook the abundant ecosystems they encountered to be the work of ‘nature’ alone:</p>
+      <p>Alas, the newcomers lacked the conceptual ability to truly see what they were seeing.  Seeped in a culture in which food largely came from single crops and in which most animals were domesticated, the explorers mistook the abundant ecosystems they encountered to be the work of ‘nature’ alone:</p>
       
       <div class="quote"><p id="36">“…the country before us exhibited every thing that bounteous nature could be expected to draw into one point of view.  As we had no reason to imagine that this country had ever been indebted for any of its decorations to the hand of man, I could not possibly believe that any uncultivated country had ever been discovered exhibiting so rich a picture.”</p></div>
 
       <p style="text-align:right;font-size:1em; margin-top:-10px; margin-bottom:20px">— Captain Vancouver’s observations of the Pacific Northwest Coast in 1792<a href="#footnotes">³⁶</a></p>
       
 
-     <p>Today, we know now that this inference was gravely mistaken.  Modern research has confirmed what the descendants of these nations have known all along.  The thriving ecosystems of the time were not the result of a lack of human participation, but rather the consequence of it.   </p>
+     <p>We know now that this inference was gravely mistaken.  Modern research has confirmed what the descendants of these nations have known all along.  The thriving ecosystems of the time were not the result of a lack of human participation, but rather, <i>the consequence of it</i>.   </p>
 
-     <p id="37">Where these nations foraged, forests are demonstrably more abundant and biodiverse than adjacent un-managed ecosystems<a href="#footnotes">³⁷</a>.  Where they fished, the rivers are more abundant than others<a href="#footnotes">³⁸</a>.  Where they sourced their shellfish and clams, the shoals host more species than adjacent un-cultivated, or ‘natural’, ecosystems<a href="#footnotes">³⁹</a>.  The very manner that these societies interacted with an ecosystem was instrumental to its exceptional flourishing.  Even the Amazon rain-forest, long seen as the paragon of Wilderness and Nature, has been revealed to have been the site of pre-Columbian agriculture, gardens, towns and cities.<a href="#footnotes">⁴⁰</a></p>
+     <p id="37">Contemporary researchers have determined that the manner that these societies interacted with an ecosystem was instrumental to its flourishing.  Where these nations foraged, forests are today demonstrably more abundant and biodiverse than adjacent un-managed ecosystems<a href="#footnotes">³⁷</a>.  Where they fished, today the rivers are more abundant than others<a href="#footnotes">³⁸</a>.  Where they sourced their shellfish and clams, today the shoals host more species than adjacent un-cultivated ecosystems<a href="#footnotes">³⁹</a>.</p>
+     
+     <p>Steadily more and more myths of 'bounteous nature' are faily.  Even the Amazon rain-forest, long seen as the paragon of Wilderness and Nature, has been revealed to have been the site of pre-Columbian agriculture, gardens, towns and cities.<a href="#footnotes">⁴⁰</a></p>
 
-     <p id="41">Significantly, the various cultural structures by which these nations came to integrate with their ecosystems were just as diverse as the ecosystems themselves.  While some were patriarchal, others were matriarchal; while some were kingdoms, others were confederacies; while some sought peace, others sought war.<a href="#footnotes">⁴¹</a></p>
+     <p id="41">While these first nations manifest vastly different variations of culture across the continents, nonetheless, they shared certain philosophical fundamentals in common<a href="#footnotes">⁴¹</a>.  In particular, in contrast to the vastly different world view of the arriving Europeans explorers and coloniests<a href="#footnotes">⁴²</a>.</p>
 
-     <p id="42">However, despite the wide diversity in culture and politics, beneath it all lay a relatively consistent foundational view of themselves and the world— especially as compared to that of the arriving Europeans<a href="#footnotes">⁴²</a>. In much the same way that the disparate nations of Europe shared a continental and cultural provenance, so too did the nations of the Americas. Consequently, just as the ideas of ancient Greece and Rome gave nations as disparate as England and Russia, Finland and France, a shared underlying view of ‘man and nature’, so too did the first nations of the Americas have their own underlying view of the world.</p>
+     <!--<p id="41">Significantly, the various cultural structures by which these nations came to integrate with their ecosystems were just as diverse as the ecosystems themselves.  While some were patriarchal, others were matriarchal; while some were kingdoms, others were confederacies; while some sought peace, others sought war.<a href="#footnotes">⁴¹</a></p>
+    <p id="42">However, despite the wide diversity in culture and politics, beneath it all lay a relatively consistent foundational view of themselves and the world— especially as compared to that of the arriving Europeans<a href="#footnotes">⁴²</a>.-->
+
+      <p>In much the same way that the disparate nations of Europe shared a continental and cultural provenance, so too did the nations of the Americas. Consequently, just as the ideas of ancient Greece and Rome gave nations as disparate as England and Russia, Finland and France, a shared underlying view of ‘Man' and of 'Nature’, so too did the first nations of the Americas have their own underlying view that they largely shared.</p>
 
      <p id="43">Across the Americas, nations, clans and tribes shared an underlying metaphysics in which humans, animals and plants were understood as members of a common family.  For these nations all organisms were equally integral parts of the living land— <i>a community of kindred relations sharing ancestry and origins</i>.<a href="#footnotes">⁴³</a></p>
 
-     <p id="44">From this 'kincentric' world view, animals and plants were respected as kin: elder brothers or sisters, grandmothers or grandfathers.<a href="#footnotes">⁴⁴</a>  Then, just as one learns from a distinguished elder, these cultures paid special attention to those particularly distinguished organisms around them. Beings that in elegance, ingenuity and beauty had magnificently mastered their ecological integration.</p>
+     <p id="44">From this 'kincentric' world view, animals and plants were respected as kin:  brothers or sisters, grandmothers or grandfathers.<a href="#footnotes">⁴⁴</a>  Then, just as one learns from a distinguished elder, these cultures paid special attention to those particularly distinguished organisms around them. Beings that in elegance, ingenuity and beauty had magnificently mastered their ecological integration.</p>
 
      <p>From a scientific perspective, we can today appreciate the depth of their world view.</p>
 
      <p>Just as brothers, sisters, aunts and uncles are parts of a family because of their shared ancestry, so too are plants, insects, animals, and humans parts of an ecological family connected by lineages that reach far back into time.  Just as a son, parent and grandparent are subsets of a family system so too are humans, plants and animals all subsets systems of the ecosystems of which they are part.</p> 
         
-     <p>In this way, just as younger and elder family members differ in their accumulation of wisdom and mastery, so too do members of an ecosystem vary in the adaption and integration to it.  From this kincentric view, plants and animals, having had millions of years longer than humans to integrate into a particular ecosystem have invaluable systemic adaptations for humans to learn from.</p>
+     <p>In this way, just as younger and elder family members differ in their accumulation of wisdom, so too do members of an ecosystem vary in their mastery of ecological integration.  From this kincentric view, plants and animals, having had millions of years longer than humans to integrate into a particular ecosystem have invaluable systemic adaptations for humans to learn from.</p>
 
-     <p>Indeed, a salmon and an eagle, an oyster and a pine tree, all embody the culmination of hundreds of millions of years of behavioral and evolutionary trial and error— the result of innumerable interactions, adaptations and optimizations to integrate within a particular environment. In comparison, the first humans to settle in the Americas (only a few tens of thousands of years ago!) were newcomers— ecological younglings who had much to learn from their resident elders.</p>
+     <p>In fact, a salmon and an eagle, an oyster and a pine tree, all embody the culmination of hundreds of millions of years of behavioral and evolutionary trial and error— the result of innumerable interactions, adaptations and optimizations to integrate within a particular environment. In comparison, the first humans to settle in the Americas (only a few tens of thousands of years ago!) were newcomers— ecological younglings who had much to learn from their resident elders.</p>
 
      <p>And so they did.</p>
 
