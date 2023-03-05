@@ -154,7 +154,8 @@ display: none;
     background: url(svgs/tc-button.svg) center no-repeat;
     background-size: contain;
     border: none;
-    transition: 4s;
+    transition: 2s;
+    background-color: var(--header-footer);
   }
 
   #ct-tc-menu:hover {
