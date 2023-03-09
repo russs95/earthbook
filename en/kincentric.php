@@ -105,7 +105,7 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ³¹⁰ ²⁶
 -->
      <div class="lead-page-paragraph">
-     OVER THE COURSE OF HUMAN HISTORY, certain societies have excelled at the art of ecological integration far more than others.  In contrast to the depleting dynamics of our modern ecological interactions, such societies spun in the opposite direction.  In fact, numerous ancient nations left behind biomes more vibrant and diverse than they found them.  Meanwhile, even now, others continue long heritages of ecological enrichment.  Today, as we strive to find our green way forward, it is crucial to recognize that such contributive cultures have already cleared the path and walked its way.  For only through this recongnition can we then learn from them. In particular, the way they themselves learned— their way of seeing the elders and teachers with which they worked together with to co-create a common home. 
+     OVER THE COURSE OF HUMAN HISTORY, certain societies have excelled at the art of ecological integration far more than others.  In contrast to the depleting dynamics of our our modern ways, such societies spun in the other direction.  In fact, numerous ancient nations left behind biomes more vibrant and diverse than they found them while, even now, others continue long heritages of ecological enrichment.  Today, as we strive to find our green way forward, it is crucial to recognize that such contributive cultures have already cleared the path and walked its way.  Only through this recognition can we begin to learn from them. In particular, the way they themselves learned— an ontological understanding of the animals and plants around them as kin, elders and teachers. 
      
      </div>
 
@@ -115,10 +115,10 @@ Must be updated for each page-->
 
       <p id="32">Five hundred years ago, prior to the arrival of germs, animals and humans from Europe, the Americas were then home to hundreds of thriving, independent and prosperous nations.<a href="#footnotes">³²</a>  Contemporary estimates of the population of the continents at the time range in the tens of millions to over one hundred million.<a href="#footnotes">³³</a> Many towns and cities of the era are estimated to have ranged in size from tens of thousands to over a hundred thousand inhabitants.<a href="#footnotes">³⁴</a></p>
 
-      <p id="35-up">Having settled the continent over ten thousand years ago, these nations had long acquired sophisticated hunting, fishing and gathering technologies. Also common was the use of fire to clear the undergrowth of huge swaths of land.</p>
+      <p id="35-up">Having settled the continent over ten thousand years ago, these nations came to develop sophisticated hunting, fishing and gathering technologies. Also common was the use of fire to clear the undergrowth of huge swaths of land.</p>
       
       
-      <p>Like all such great concentrations of humanity, these nations, cities and towns had a significant impact on the ecosystems and continental biomes of which they were a part.  Indeed, given their great population and advenced technologies, these first nations were more than capable of over-hunting, overfishing, over-gathering<a href="#footnotes">³⁵</a> and depleting the carrying capacities of the ecosystems of which they depended.   </p>
+      <p>Like all concentrations of humanity and all technologies, the combination of both had a significant impact on the ecosystems and biomes of which they were a part.  Indeed, given their large populations and advanced technologies, these first nations were more than capable of over-hunting, overfishing, over-gathering<a href="#footnotes">³⁵</a> and depleting the carrying capacities of the ecosystems of which they depended.   </p>
 
       <p>However, over-consumption and exploitation did not occur.  Nor the depletion of the continent’s ecosystems.</p>
 
