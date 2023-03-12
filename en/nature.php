@@ -110,9 +110,9 @@ Must be updated for each page-->
 
     <div class="page-paragraph">
 
-    <p>As we saw in our last chapter, kincentric nations were founded on an altogether different way of knowing.  Rather than learning solely from humans, these societies recognized the plants and animals around them as kin, elders, and teachers.  Today, as we come to recognize the connection between their kincentric knowing and the pattern of ecological enrichment inherent to their cultures, we can glimpse the pattern of depletion within our own— and isolate the ontological error that distorts our modern view of the world. </p>
+    <p>As we saw in our last chapter, kincentric nations were founded on an altogether different way of knowing.  Rather than learning solely from humans, these societies recognized the plants and animals around them as kin, elders, and teachers.  Today, as we come to recognize the connection between their kincentric ontology and their pattern of ecological enrichment, we can glimpse the pattern of depletion within our own— and isolate the ontological error that distorts our modern view of the world. </p>
 
-      <p>From Greek stories of human-gods ruling the world, to Roman legends of humans dominating it, western society has put humans upon a pedestal.  From early astronomers declaring that the sun spun around the earth, to biblical interpretations declaring man’s dominion over it and all its creatures, humanity’s centrality and exceptionalism has become lodged in the depths of western collective consciousness.  Over the centuries, as modern philosophy, religion, ethics and science have evolved they have built layer upon layer on top of this ancient foundation.  </p>
+      <p>From Greek stories of human-gods ruling the world, to Roman legends of humans dominating it, western society has put humans upon a pedestal.  From early astronomers declaring that the sun spun around the earth, to biblical interpretations declaring man’s dominion over earth and all its creatures, humanity’s centrality and exceptionalism has become lodged in the depths of western collective consciousness.  Over the centuries, as modern philosophy, religion, ethics and science have evolved they have built layer upon layer on top of this ancient foundation.  </p>
 
 
       <p>Today, we know better.</p>
@@ -123,9 +123,7 @@ Must be updated for each page-->
 
       <p>From capitalism to communism, fascism to feminism, our modern views of the world remain moored in human exceptionalism.  Even though they claim vast differences and boast scientific savvy, their underlying cosmological foundations overlap in the same archaic axioms.</p>
 
-      <p>Nowhere is this more clear than in the way our modern ideologies speak of ecosystems.   From neoliberalism and socialism, from libertarianism to communism, the very words that they use to describe the organisms and ecosystems that they so long to love (in their terms: 'the natural world'), most reveals their deep moorings in antiquated human-centric assumption.</p>
-
-      <p>In modern terminology, there is no word more imbued with the cumbersome weight of ancient metaphysical misconception than that of ‘Nature’.    This term, used so poetically by environmentalists to compel conservation and protection of ‘the natural’ world, is alas seeped in irredeemable dualistic fallacy:  the ancient error of delineating man and nature, culture and ecology,  the natural and the human.</p>
+      <p>Nowhere is this more clear than in the way our modern ideologies speak of ecosystems.   From neoliberalism and socialism, from libertarianism to communism, the very words that they use to describe the organisms and ecosystems that they so long to love ('the natural world'), most reveals their deep moorings in antiquated human-centric assumption.  Indeed, there is no word more imbued with the cumbersome weight of ancient metaphysical misconception than that of ‘nature’.    This term, used so poetically by environmentalists to compel conservation and protection of ‘the natural’ world, is alas seeped in irredeemable dualistic fallacy:  the ancient error of delineating man and nature, culture and ecology,  the natural and the human.</p>
 
       <p id="47-up">Upon this stark division not only is modern society built, but so too our most fervent environmental attempts and endeavors.  Derived from the Middle-English term <i>environ</i>, meaning to circle or surround, ‘the environment’ has come to mean, that which is around us humans, but not that which is us.<a href="#footnotes">⁴⁷</a></p>
 
