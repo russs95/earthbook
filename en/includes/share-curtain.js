@@ -37,11 +37,11 @@ class ShareCurtain extends HTMLElement {
               </button>
               
             </div>
-
+<!--
             <div class="copy-section">
               
             <div id="page-citation" class="copy-box" style="border-left-color: green;" >
-            Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Kalinga, Philippines & Bali, Indonesia, 2022). <?php echo ($name); ;?>
+            
             </div>
             
           
@@ -54,10 +54,10 @@ class ShareCurtain extends HTMLElement {
               <span style="align-self:center";>Copy</span>
             </button>
             
-          </div>
+          </div>-->
 
       <div>
-        <h4>Or copy the <a href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;" aria-label="Or copy the main Earthbook URL">main URL</a> of the book.</h4>
+        <h4>Or copy the <a href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;" aria-label="Or copy the citation for this chapter">citation for this chapter</a>.</h4>
       </div>
 
       <!--<div>
@@ -92,7 +92,7 @@ document.getElementById("page-url").innerHTML =
 
 function getMainurl() {
   document.getElementById("page-url").innerHTML = 
-"https://book.earthen.io";
+"Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Kalinga, Philippines & Bali, Indonesia, 2022). <?php echo ($name); ;?>";
 }
 
 
@@ -106,13 +106,4 @@ function confirmCopy() {
   }
 }
 
-function confirmCopy2() {
-  var x = document.getElementById("check2");
-  if (x.style.display === "none") {
-    x.style.display = "inline";
-    x.style.color = "green";
-  } else {
-    x.style.display = "inline";
-  }
-}
 
