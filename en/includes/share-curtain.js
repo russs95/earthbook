@@ -18,7 +18,7 @@ class ShareCurtain extends HTMLElement {
       <div class="share-overlay-content">
             
             <div>
-                <h1 class="accessibility-plugin-ac">Share & Cite.</h1> 
+                <h1 class="accessibility-plugin-ac">Share & Cite</h1> 
                 <h3>Earthbooks are designed to enable you to easily share and cite chapters.  Copy and share the link to this chapter...</h3>
             </div>
             
@@ -45,9 +45,9 @@ class ShareCurtain extends HTMLElement {
             </div>
             
           
-            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-citation" onclick="confirmCopy()" aria-label="Click to copy this chapter's citation">
+            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-citation" onclick="confirmCopy2()" aria-label="Click to copy this chapter's citation">
               <div class="copy-check">
-                <div id="check" style="color:green">
+                <div id="check2" style="color:green">
                   <span>✓</span>
                 </div>
               </div>
@@ -98,6 +98,16 @@ function getMainurl() {
 
 function confirmCopy() {
   var x = document.getElementById("check");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+    x.style.color = "green";
+  } else {
+    x.style.display = "inline";
+  }
+}
+
+function confirmCopy2() {
+  var x = document.getElementById("check2");
   if (x.style.display === "none") {
     x.style.display = "inline";
     x.style.color = "green";
