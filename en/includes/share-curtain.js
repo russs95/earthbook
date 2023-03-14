@@ -18,8 +18,8 @@ class ShareCurtain extends HTMLElement {
       <div class="share-overlay-content">
             
             <div>
-                <h1 class="accessibility-plugin-ac">Share. Freely.</h1> 
-                <h3>Earthbooks are designed to enable you to easily share chapters.  Copy and share the link to this chapter...</h3>
+                <h1 class="accessibility-plugin-ac">Share & Cite.</h1> 
+                <h3>Earthbooks are designed to enable you to easily share and cite chapters.  Copy and share the link to this chapter...</h3>
             </div>
             
             <div class="copy-section">
@@ -37,6 +37,22 @@ class ShareCurtain extends HTMLElement {
               </button>
               
             </div>
+
+            <div class="copy-section">
+              
+            <div id="page-citation" class="copy-box" style="border-left-color: green;" >
+            </div>
+          
+            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-citation" onclick="confirmCopy()" aria-label="Click to copy this chapter's citation">Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Kalinga, Philippines & Bali, Indonesia, 2022).
+              <div class="copy-check">
+                <div id="check" style="color:green">
+                  <span>✓</span>
+                </div>
+              </div>
+              <span style="align-self:center";>Copy</span>
+            </button>
+            
+          </div>
 
       <div>
         <h4>Or copy the <a href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;" aria-label="Or copy the main Earthbook URL">main URL</a> of the book.</h4>
