@@ -19,7 +19,7 @@ class ShareCurtain extends HTMLElement {
             
             <div>
                 <h1 class="accessibility-plugin-ac">Share & Cite</h1> 
-                <h3>Earthbooks are designed to enable you to easily share and cite chapters.  Copy and share the link to this chapter...</h3>
+                <h3>Earthbooks are designed to enable you to easily share and cite chapters.  Copy the link to this chapter...</h3>
             </div>
             
             <div class="copy-section">
