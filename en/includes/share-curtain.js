@@ -41,7 +41,7 @@ class ShareCurtain extends HTMLElement {
             <div class="copy-section">
               
             <div id="page-citation" class="copy-box" style="border-left-color: green;" >
-            Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Kalinga, Philippines & Bali, Indonesia, 2022).
+            Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Kalinga, Philippines & Bali, Indonesia, 2022). <?php echo ($name); ;?>
             </div>
             
           
