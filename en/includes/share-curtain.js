@@ -63,7 +63,7 @@ class ShareCurtain extends HTMLElement {
       <!--<div>
         <p>The content of an Earthbook is under a Creative-Commons ND-SA-AT 4.0 license which means you can freely share the links to this page, quote passages, download and share the PDF-- just be sure to attribute to this Earthbook and share in the way.</p>
       </div>-->
-        <div><img src="../icons/cc-by-sa.svg" alt="Creative Commons CC-BY-SA icon" style="height: 35px"></div>
+        <div><img src="../icons/cc-by-sa.svg" alt="Creative Commons CC-BY-SA icon" style="height: 35px" title="The content of an Earthbook is under a Creative-Commons ND-SA-AT 4.0 license which means you can freely share the links to this page, quote passages, download and share the PDF-- just be sure to attribute to this Earthbook and share in the way."></div>
   </div>
 </div>  
     `;
@@ -89,11 +89,6 @@ clipboard.on('error', function (e) {
 
 document.getElementById("page-url").innerHTML = 
 "" + window.location.href;
-
-function getMainurl() {
-  document.getElementById("page-url").innerHTML = 
-"Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Kalinga, Philippines & Bali, Indonesia, 2022). <?php echo ($name); ;?>";
-}
 
 
 function confirmCopy() {
