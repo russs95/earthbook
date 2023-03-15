@@ -31,7 +31,8 @@ $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
 $page_number = "2";
-$page_title = "Preface | Tractatus Ayyew - An Earthbook";?>
+$page_title = "Preface | Tractatus Ayyew - An Earthbook";
+$chap_name = "Preface";?>
 
 <head>
 
@@ -130,13 +131,13 @@ Must be updated for each page-->
 
     <p>For those of us living along the river, the challenge was palpable.</p>
       
-    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Philippine archipelago. Insulated by a rugged chain of verdant mountains, the Igorots have remained largely immune to three hundred years of Spanish colonization further South. However, over the last decades, modern goods have reached even the most remote villages. Whereas the leaves, wood and vines that had long served as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade when discarded.</p>
+    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Philippine archipelago. Insulated by a rugged chain of verdant mountains, the Igorots have remained largely immune to three hundred years of Spanish colonization further South. However, over the last decades, modern goods had reached even the most remote villages. Whereas the leaves, wood and vines that had long served them as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade when discarded.</p>
 
     <p>However, the Igorots had not been sitting idly by.</p>
     
     <p>In the Igorot society, the art of ecological integration is highly esteemed— in much the same way that painting or sculpture is in other cultures. Consequently, the region had become a hot-bed of up-cycling innovations. In town, old tires were being cut up to make remarkably functional chairs and tables. In the mines, used dynamite cable was being woven to make traditional backpacks. In homes, straws and wrappers were being used to weave mats, purses, wallets and household items of all kinds.  </p>
 
-   <p>Banayan and I were so fascinated by this upcycling movement, that we had become part of it ourselves. While Banayan had been integrating upcycled arts and crafts into school curriculums, I was involved in improving designs to make saleable upcycled products. However, in the face of the ever-growing flow of plastics being discarded, our successes were all but insignificant. As the legal stand-off in Bontoc intensified, we realized that securing plastic out of the environment was far more vital than making or teaching handicrafts.</p>
+   <p>Banayan and I were so fascinated by this upcycling movement, that we became part of it ourselves. While Banayan had been integrating upcycled arts and crafts into school curriculums, I was involved in improving designs to make saleable upcycled products. However, in the face of the ever-growing flow of plastics being discarded, our successes were all but insignificant. As the legal stand-off in Bontoc intensified, we realized that securing plastic out of the environment was far more vital than making or teaching handicrafts.</p>
     
     <p>It just so happened that my colleagues and I had been experimenting with a new   technique from South America in which plastic bottles were packed full of sand to make building blocks. Providentially, the river sand pit and the local dump-site were side by side. After making several sand bottle-bricks, we decided to try packing them with plastic instead.</p>
 
@@ -144,9 +145,9 @@ Must be updated for each page-->
    
    <p>Not only were we able to make bottle-bricks that were just as effective as those packed with sand, we’d been able to secure a great deal of plastic that would have otherwise scattered into the river.</p>
 
-   <p>At my home, I began to experiment with packing my own used plastic into a bottle. I made a small garden bench with the result. My neighbours and I were delighted. The nearby school, which was struggling to dispose of the plastic of hundreds of students, asked to be shown how it was done. After a day of packing plastic, making bricks and building a composter, everyone was excited by this simple alternative to burning and dumping our plastic.</p>
+   <p>At my home, I began to experiment with packing my own used plastic into a bottle. I made a small garden bench with the result. My neighbours and I were delighted. The nearby school, which was struggling to dispose of the plastic of hundreds of students, asked to be shown how it was done. After a day of packing plastic, making bricks and building a composter, everyone was excited by this simple alternative to burning and dumping.</p>
   
-   <p>As the technique began to spread to other schools, Banayan stepped in. She realized the potential for raising the awareness of the ecological impacts of plastic. We worked together to create a reporting system and a guidebook. Through her coordination, what was soon to be called ‘ecobricking’ spread out to hundreds of schools in the province.</p>
+   <p>As the technique began to spread to other schools, Banayan stepped in. She realized the potential for raising the awareness of plastic's dangers. We worked together to create a reporting system and a guidebook. Through her coordination, what was soon to be called ‘ecobricking’ spread out to hundreds of schools in the province.</p>
 
    <p>And then to thousands.</p>
 
@@ -166,11 +167,11 @@ Must be updated for each page-->
 
     <p>As a short-hand for ecological solutions, the term 'green' has come to figure prominently in our reflections.</p> 
     
-    <p>Specifically, we’ve come to ask ourselves: <i>What in fact should green really mean?</i></p>
+    <p>Specifically, we’ve come to ask ourselves: <i>What in fact should green really mean?</i> And, more precisely, what are its requisite parameters and principles?</p>
 
     <p>While Banayan and I continue to ecobrick our own used plastic, our suspicion has grown that solving plastic (and being ‘green’) is not just about new techniques and technologies. Just as significant as <i>what</i> we do is <i>how and why</i> we do it.  In this aspect, our conviction have crystalized: the wisdom traditions of ancient indigenous cultures<a href="#footnotes">¹</a> are critical to giving meaning and substance to our contemporary concept of green.</p>
 
-    <p>Our title reflects this merging of modern and indigenous perspectives that Banayan and my ancestries embody.</p>
+    <p>Our title reflects this merging of the modern and indigenous perspectives of our long disparate ancestral backgrounds.</p>
     
     <p>In Latin, the word <i>tractatus</i> refers to the philosophical tradition of a treatise— a ste-by-step exposition of a particular concept.  In Kan'kan'ue, the language of the Igorots, the word <i>ayyew</i> refers to the virtue of cyclic ecological integration that guides their culture.</p>
 
