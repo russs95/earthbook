@@ -33,7 +33,7 @@ $name = "";
 $page_number = "4";
 $page_title = "Imagine | Tractatus Ayyew - An Earthbook";
 $chap_name = "Imagine";
-$chap_number = "Chap. 1, ";?>
+$chap_number = "Bk 1, Chap. 1, ";?>
 
 <head>
 

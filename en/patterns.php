@@ -31,8 +31,9 @@ $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
 $page_number = "7";
-$page_title = "Patterns of Process | Tractatus Ayyew - An Earthbook";?>
-
+$page_title = "Patterns of Process | Tractatus Ayyew - An Earthbook";
+$chap_name = "Patterns of Process";
+$chap_number = "Bk 1, Chap. 4, ";?>
 <head>
 
 
@@ -115,7 +116,7 @@ Must be updated for each page-->
 
       <p>Rather than be mired in despair at our modern moment of ecological depletion we can be awed by Earth’s momentous act of ecological enrichment.</p>
 
-      <p id="26-up">The way our planet— <i>as a uniquely configured cosmological system</i>— has managed its matter and energy has led to the steady greeni ng of its surface; the cultivation of ever greater diversity, vibrancy and abundance of life.<a href="#footnotes">²⁶</a>  And finally, through the resulting emergence of consciousness, we have been propelled to pondering the process itself.</p>
+      <p id="26-up">The way our planet— <i>as a uniquely configured cosmological system</i>— has managed its matter and energy has led to the steady greeni ng of its surface; the cultivation of ever greater diversity, vibrancy and abundance.<a href="#footnotes">²⁶</a>  And finally, through the resulting emergence of consciousness, we have been propelled to pondering the process itself.</p>
 
       <p>So, where do we go from here?</p>
 

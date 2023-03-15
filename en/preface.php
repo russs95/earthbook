@@ -151,7 +151,7 @@ Must be updated for each page-->
 
    <p>And then to thousands.</p>
 
-   <p>Within a year, as the entire Northern Philippines department of education, the Catholic and Protestant Churches, and various municipal and provincial governments came on board.  Even the offices of the Bontoc mayor and the provincial govenor!  Over the next years, ecobricking fast became an alternative for millions of Filipinos to manage their plastic.</p>
+   <p>Within a year, as the entire Northern Philippines department of education, the Catholic and Protestant Churches, and various municipal and provincial governments came on board.  Even the offices of the Bontoc mayor and the provincial governor!  Over the next years, ecobricking fast became an alternative for millions of Filipinos to manage their plastic.</p>
 
    <p>Banayan and I have watched with both joy and trepidation as the ecobrick movement has spread.</p>
 
@@ -169,9 +169,9 @@ Must be updated for each page-->
     
     <p>Specifically, we’ve come to ask ourselves: <i>What in fact should green really mean?</i> And, more precisely, what are its requisite parameters and principles?</p>
 
-    <p>While Banayan and I continue to ecobrick our own used plastic, our suspicion has grown that solving plastic (and being ‘green’) is not just about new techniques and technologies. Just as significant as <i>what</i> we do is <i>how and why</i> we do it.  In this aspect, our conviction have crystalized: the wisdom traditions of ancient indigenous cultures<a href="#footnotes">¹</a> are critical to giving meaning and substance to our contemporary concept of green.</p>
+    <p>While Banayan and I continue to ecobrick our own used plastic, our suspicion has grown that solving plastic (and being ‘green’) is not just about new techniques and technologies. Just as significant as <i>what</i> we do is <i>how and why</i> we do it.  In this aspect, our conviction have crystalized: the wisdom traditions of ancient indigenous cultures are critical to giving meaning and substance to our contemporary concept of green.</p>
 
-    <p>Our title reflects this merging of the modern and indigenous perspectives of our long disparate ancestral backgrounds.</p>
+    <p>Our title reflects this merging of the modern and indigenous world views<a href="#footnotes" title="Going forward, instead of the term 'indigenous' we will use the term ‘kincentric' to specifically reference the indigenous world view which we are exploring: a particular cosmology that, although it is characterstic of most indigenous cultures, is not necessarily so.  This will be expanded upon in chapter 5.">¹</a> that our two ancestral backgrounds emobdy.</p>
     
     <p>In Latin, the word <i>tractatus</i> refers to the philosophical tradition of a treatise— a ste-by-step exposition of a particular concept.  In Kan'kan'ue, the language of the Igorots, the word <i>ayyew</i> refers to the virtue of cyclic ecological integration that guides their culture.</p>
 
@@ -217,7 +217,7 @@ Must be updated for each page-->
         <a href="#1-up" class="footnote">   
         <div class="footnote-number">1.</div>
   
-        <div class="footnote-text">Later, to be more philosophically precise we will use the term ‘kincentric knowing’ and refer to ‘kincentric cultures’ instead of 'indigenous wisdom traditions and cultures. We make this distinction as we are referring to a particular cosmology that, although it is characterstic of most indigenous cultures, is not necessarily so.
+        <div class="footnote-text">Going forward, instead of the term 'indigenous' we will use the term ‘kincentric' to specifically reference the indigenous world view which we are exploring: a particular cosmology that, although it is characterstic of most indigenous cultures, is not necessarily so.  This will be expanded upon in chapter 5.
         </div>
         </a>
      

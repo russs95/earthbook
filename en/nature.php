@@ -31,7 +31,9 @@ $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
 $page_number = "9";
-$page_title = "Nature's Fallacy | Tractatus Ayyew - An Earthbook";?>
+$page_title = "Nature's Fallacy | Tractatus Ayyew - An Earthbook";
+$chap_name = "Nature's Fallacy";
+$chap_number = "Bk 1, Chap. 6, ";?>
 
 <head>
 
@@ -123,7 +125,7 @@ Must be updated for each page-->
 
       <p>From capitalism to communism, fascism to feminism, our modern views of the world remain moored in human exceptionalism.  Even though they claim vast differences and boast scientific savvy, their underlying cosmological foundations overlap in the same archaic axioms.</p>
 
-      <p>Nowhere is this more clear than in the way our modern ideologies speak of ecosystems.   From neoliberalism and socialism, from libertarianism to communism, the very words that they use to describe the organisms and ecosystems that they so long to love ('the natural world'), most reveals their deep moorings in antiquated human-centric assumption.  Indeed, there is no word more imbued with the cumbersome weight of ancient metaphysical misconception than that of ‘nature’.    This term, used so poetically by environmentalists to compel conservation and protection of ‘the natural’ world, is alas seeped in irredeemable dualistic fallacy:  the ancient error of delineating man and nature, culture and ecology,  the natural and the human.</p>
+      <p>Nowhere is this more clear than in the way our modern ideologies speak of ecosystems.   From neoliberalism to socialism, from libertarianism to communism, the very words that they use to describe the organisms and ecosystems that they so long to love ('the natural world'), most reveals their deep moorings in antiquated human-centric assumption.  Indeed, there is no word more imbued with the cumbersome weight of ancient metaphysical misconception than that of ‘nature’.    This term, used so poetically by environmentalists to compel conservation and protection of ‘the natural’ world, is alas seeped in irredeemable dualistic fallacy:  the ancient error of delineating man and nature, culture and ecology,  the natural and the human.</p>
 
       <p id="47-up">Upon this stark division not only is modern society built, but so too our most fervent environmental attempts and endeavors.  Derived from the Middle-English term <i>environ</i>, meaning to circle or surround, ‘the environment’ has come to mean, that which is around us humans, but not that which is us.<a href="#footnotes">⁴⁷</a></p>
 

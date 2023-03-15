@@ -31,7 +31,9 @@ $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
 $page_number = "6";
-$page_title = "An Interstellar Story | Tractatus Ayyew - An Earthbook";?>
+$page_title = "An Interstellar Story | Tractatus Ayyew - An Earthbook";
+$chap_name = "An Interstellar Story";
+$chap_number = "Bk 1, Chap. 3, ";?>
 
 <head>
 
@@ -107,7 +109,7 @@ Must be updated for each page-->
 -->
 
      <div class="lead-page-paragraph" id="13-up">
-        OVER 5 BILLION YEARS AGO, IN A CLOUD OF INTERSTELLAR DUST our solar system swirled together. As cosmic matter collided and coalesced, growing ever denser, our sun ignited.  Within the remaining spiraling debris, further matter and momentum began to merge—  falling into orbit as dense clumps around our young star.  As each gained cohesion and coherence, the planets of our solar system came to be. Steadily, each planet arrived at its own unique combination of energy and mass— of solar distance and spin, of elemental abundance and chemical composition, of axial tilt and surface temperature— a planetary configuration that just as it coalesced, so too it began to unfold.<a href="#footnotes" title="For an excellent account of this process see: Guido Tonelli, Genesis: The Story of How Everything Began, trans. Erica Segre, Simon Carnell (Farrar, Straus and Giroux, 2021)">¹³</a>
+        OVER 5 BILLION YEARS AGO, IN A CLOUD OF STELLAR DUST our solar system swirled together. As cosmic matter collided and coalesced, growing ever denser, our sun ignited.  Within the remaining spiraling debris, further matter and momentum began to merge—  falling into orbit as dense clumps around our young star.  As each gained cohesion and coherence, the planets of our solar system came to be. Steadily, each planet arrived at its own unique combination of energy and mass— of solar distance and spin, of elemental abundance and chemical composition, of axial tilt and surface temperature— a planetary configuration that just as it coalesced, so too it began to unfold.<a href="#footnotes" title="For an excellent account of this process see: Guido Tonelli, Genesis: The Story of How Everything Began, trans. Erica Segre, Simon Carnell (Farrar, Straus and Giroux, 2021)">¹³</a>
      </div>
 
     <div class="page-paragraph">
@@ -139,7 +141,7 @@ Must be updated for each page-->
 
      <p>Some of us (but certainly not all of us) began to unearth this ancient carbon— what we came to call coal, natural gas and petroleum.  As certain societies became better and better at extracting and burning it (those others kept-on just fine), it came to turn our wheels, power our our machines, and fuel our factories. As carbon came to drive entire economies, we gave it a new name: <i>fossil fuels</i>. </p>
 
-     <p id="20-up">However, despite the nifty name, these fossil deposits were never fantastic fuels.  To make them so required refinement— an intensive process that always resulted in leftovers that could not be used.<a href="#footnotes" title="Our research indicates that 4-14% of crude oil that is processed cannot be refined into fuels.  This rate various with the geological source and chemical composition of the crude.  See: UK Oil consumption, (British Plastics Federation, 2008), Ref PD/LFH/19/8/08. Also: Russell Maier, Ani Himawati, The Rise of the Regenerative Ecobrick Movement, (Le Havre University: Bandung Spirit Conference, 2019).">²⁰</a>  With nowhere to go, these chemicals began to pile up.<a href="#footnotes" title="“Oil refineries run 24-7 and are continuously generating by-products that must be disposed of, such as ethylene gas... propylene,  acrylonitrile [and other chemicals which are ideal for making plastic].  Plastics are a small piece of the petroleum industry, representing a minor fraction of the fossil fuels we consume.  But the economic imperatives of the petroleum industry have powered the rise of Plasticville.” Susan Freinkel, Plastic: A Toxic Love Story, (Houghton Mifflin Publishing Company, 2011), p7.">²¹</a></p>
+     <p id="20-up">However, despite the nifty name, these fossil deposits were never at first fuels.  To make them so required refinement— an intensive process that always resulted in leftovers that could not be used.<a href="#footnotes" title="Our research indicates that 4-14% of crude oil that is processed cannot be refined into fuels.  This rate various with the geological source and chemical composition of the crude.  See: UK Oil consumption, (British Plastics Federation, 2008), Ref PD/LFH/19/8/08. Also: Russell Maier, Ani Himawati, The Rise of the Regenerative Ecobrick Movement, (Le Havre University: Bandung Spirit Conference, 2019).">²⁰</a>  With nowhere to go, these chemicals began to pile up.<a href="#footnotes" title="“Oil refineries run 24-7 and are continuously generating by-products that must be disposed of, such as ethylene gas... propylene,  acrylonitrile [and other chemicals which are ideal for making plastic].  Plastics are a small piece of the petroleum industry, representing a minor fraction of the fossil fuels we consume.  But the economic imperatives of the petroleum industry have powered the rise of Plasticville.” Susan Freinkel, Plastic: A Toxic Love Story, (Houghton Mifflin Publishing Company, 2011), p7.">²¹</a></p>
 
 
      <p>We soon realized that the residuals of refinement could be used too.  With a little chemistry, polymers could be produced—and with a little more; an endless array of marvelous materials.</p>
@@ -152,11 +154,11 @@ Must be updated for each page-->
 
      <p>As we consumed one plastic product after another, we tried our best to reuse and recycle.  However, there was already so much cheap new plastic, there was little profit in processing the old— better to burn it, dump it or send it somewhere else.</p>
 
-     <p id="25-up">Soon there was so much plastic that it began to spill out of our homes, enterprises and industries.    With growing alarm and anxiety we watched as our plastic clogged rivers, filled seas and piled into great smoking mountains.<a href="#footnotes" title="Observing plastic pollution and extreme weather are taking a growing emotional toll. Beyond Storms & Droughts: The Psychological Impacts of Climate (American Psychologists Association, 2014).  And:  Mental Health and Our Changing Climate: Impacts, Implications, and Guidance  (American Psychologists Association, 2017).">²⁵</a>  The particles of plastic were everywhere— inside the bodies of fish and animals— and us.<a href="#footnotes" title="'Our study is the first indication that we have polymer particles in our blood.' Heather A. Leslie, et al, Discovery and quantification of plastic particle pollution in human blood, (Environment International, 2022) Volume 163, 107199, ISSN 0160-4120">²⁶</p>
+     <p id="25-up">Soon there was so much plastic that it began to spill out of our homes, enterprises and industries.    With growing alarm and anxiety we watched as our plastic clogged rivers, littered beaches and piled into great smoking mountains.<a href="#footnotes" title="Observing plastic pollution and extreme weather are taking a growing emotional toll. Beyond Storms & Droughts: The Psychological Impacts of Climate (American Psychologists Association, 2014).  And:  Mental Health and Our Changing Climate: Impacts, Implications, and Guidance  (American Psychologists Association, 2017).">²⁵</a>  The particles of plastic were everywhere— inside the bodies of fish and animals— and us.<a href="#footnotes" title="'Our study is the first indication that we have polymer particles in our blood.' Heather A. Leslie, et al, Discovery and quantification of plastic particle pollution in human blood, (Environment International, 2022) Volume 163, 107199, ISSN 0160-4120">²⁶</p>
 
      <p>Shocked, shamed and determined, industry strove to amend their mistakes and improve their ways. Industry, did their best to convince themselves, and everyone else, that there was a solution just around the corner. Enterprises strove valiantly to make their processes, products and packaging less harmful, less polluting and less damaging.</p>
 
-     <p>Yet after turning countless corners, despite being less harmful, harmful, polluting and damaging their processes remained.</p>
+     <p>Yet after turning countless corners, despite being less harmful and polluting, polluting and harmful their processes remained.</p>
 
      <p>Unabated, the grey flows of plastic and pollution continued to grow.</p>
 
