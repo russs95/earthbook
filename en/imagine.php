@@ -31,7 +31,9 @@ $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
 $name = "";
 $page_number = "4";
-$page_title = "Imagine | Tractatus Ayyew - An Earthbook";?>
+$page_title = "Imagine | Tractatus Ayyew - An Earthbook";
+$chap_name = "Imagine";
+$chap_number = "Chap. 1, ";?>
 
 <head>
 
