@@ -106,7 +106,7 @@ Must be updated for each page-->
 <div>
      <div class="lead-page-paragraph">
 
-     TODAY, AS WE BECOME more and more aware of the ecological degradation inherent to our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite common planet passion, never before has it been more important to recognize that the way forward has already been made clear and its path tread.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that far exceed our modern imagination. Only to the extent that we can recognize these enlightened moments, can we imagine our own.  For insofar as we can imagine it, the realization of a green age for all is not nearly as distant as we are often tempted despair.
+     TODAY, AS WE BECOME more and more aware of the ecological degradation inherent to our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in a common planet passion, never before has it been more important to recognize that the way forward has already been cleared and its path tread.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that far exceed our modern imagination. Only to the extent that we can recognize these enlightened moments, can we imagine our own.  For insofar as we can imagine it, the realization of a green age for all is not nearly as distant as we are often tempted despair.
 
     </div>
 
@@ -161,15 +161,15 @@ Must be updated for each page-->
 
      <p>Through the combination of our two ancestral perspectives, Banayan’s Igorot heritage and my European, her indigenous culture and my settler, her agrarian upbringing and my industrial, we will investigate the shortcomings of our modern ethical understanding. In particular, the misconceived human exceptionalism that we observe is at the root of all our modern ecological malaise.</p>
 
-     <p>With this metaphysical error excised, we shall then lay out a new theory of green anchored upon the cosmological character of our planet.</p>
+     <p>With this ontological error excised, we shall then lay out a new theory of green anchored upon the cosmological character of our planet.</p>
 
-     <p>Guided by the insights of great green nations, the ways of magnificently contributive creatures and the insights of Earth science, we shall lay out each of the principles that composes our planet’s five-fold pattern of ecological enrichment.</p>
+     <p>Guided by the insights of great green nations, the ways of magnificently contributive creatures and the latest insights of Earth science, we shall lay out each of the principles that composes our planet’s five-fold pattern of ecological enrichment.</p>
 
-     <p>The resulting <i>Earthen ethics</i> will help us to make sense of our modern processes, technologies and enterprises by proving a means by which we can discern that which is enriching from that which is degrading; that which is an ecological contribution from that which is a depletion; and that which is <i>green</i> from that which is <i>grey</i>.</p>
+     <p>The resulting <i>Earthen ethics</i> will help us to make sense of our modern processes, technologies and enterprises by providing a means by which we can discern that which is enriching from that which is degrading; that which is an ecological contribution from that which is a depletion; and that which is <i>green</i> from that which is <i>grey</i>.</p>
 
       <p>In this way, with Earth’s example as our guide to green, can move forward with unprecedented clarity and confidence to embody the geometry of contribution in all our processes, cycles and systems.<a href="#footnotes" title="'We can think of our current civilization-- its technical and sociopolitical infrastructure, its ideology and beliefs-- as an operating system, much like the software that runs our computers.  Now we need to reboot and install a new system software'.  Daniel Pinchbeck, How Soon is Now: From Personal Initiation to Global Transformation, (Publisher: Watkins Publishing, 2017) Chapter 2, p.105">⁵</a></p>
 
-     <p>Let us start with that troublesome material we so love to hate.</p>
+     <p>To begin, let us turn to that troublesome material we so love to hate.</p>
      <br><br><br>
   
     

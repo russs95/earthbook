@@ -39,8 +39,6 @@ $chap_number = "Book One, ";?>?>
 
 <?php require_once ("../header.php");?>
 
-
-
 <!--META TAGS
 Must be updated for each page-->
 
