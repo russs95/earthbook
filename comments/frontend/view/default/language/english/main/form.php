@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['lang_heading_form']                   = 'Add Citation or Comment';
+$_['lang_heading_form']                   = 'Add Citation';
 
 // Entry
 $_['lang_entry_notify']                   = 'Notify me of new citations or comments<span class="cmtx_checkbox_extra"> via email</span>';
@@ -52,7 +52,7 @@ $_['lang_title_smiley_sleep']             = 'Sleep';
 $_['lang_title_smiley_blush']             = 'Blush';
 $_['lang_title_smiley_confused']          = 'Confused';
 $_['lang_title_smiley_shocked']           = 'Shocked';
-$_['lang_title_comment']                  = 'Enter your comment here';
+$_['lang_title_comment']                  = 'Enter your citation or comment here';
 $_['lang_title_headline']                 = 'Enter your headline here';
 $_['lang_title_rating_1']                 = '1 - Dreadful';
 $_['lang_title_rating_2']                 = '2 - Poor';
@@ -148,16 +148,16 @@ $_['lang_text_moderate_page_n']           = 'This page is never moderated.';
 $_['lang_text_moderate_akismet_y']        = 'This failed the Akismet check.';
 $_['lang_text_moderate_akismet_n']        = 'This passed the Akismet check.';
 $_['lang_text_moderate_all']              = 'Moderating all comments.';
-$_['lang_text_comment_success']           = 'Your comment has been added';
-$_['lang_text_comment_edited']            = 'Your comment has been edited';
-$_['lang_text_comment_approve']           = 'Your comment is awaiting approval';
+$_['lang_text_comment_success']           = 'Your post has been added';
+$_['lang_text_comment_edited']            = 'Your post has been edited';
+$_['lang_text_comment_approve']           = 'Your post is awaiting approval';
 
 // Modal
 $_['lang_modal_upload_heading']           = 'Image Upload';
 $_['lang_modal_privacy_heading']          = 'Privacy Policy';
-$_['lang_modal_privacy_content']          = '<p>This policy contains information about your privacy. By posting, you are declaring that you understand this policy:</p><ul><li>Your name, rating, website address, town, country, state and comment will be publicly displayed if entered.</li><li>Aside from the data entered into these form fields, other stored data about your comment will include:<ul><li>Your IP address (not displayed)</li><li>The time/date of your submission (displayed)</li></ul></li><li>Your email address will not be shared. It is collected for only two reasons:<ul><li>Administrative purposes, should a need to contact you arise.</li><li>To inform you of new comments, should you subscribe to receive notifications.</li></ul></li><li>A cookie may be set on your computer. This is used to remember your inputs. It will expire by itself.</li></ul><p>This policy is subject to change at any time and without notice.</p>';
+$_['lang_modal_privacy_content']          = '<p>This policy contains information about your privacy. By posting, you are declaring that you understand this policy:</p><ul><li>Your name, rating, website address, town, country, state and comment will be publicly displayed if entered.</li><li>Aside from the data entered into these form fields, other stored data about your comment will include:<ul><li>Your IP address (not displayed)</li><li>The time/date of your submission (displayed)</li></ul></li><li>Your email address will not be shared. It is collected for only two reasons:<ul><li>Administrative purposes, should a need to contact you arise.</li><li>To inform you of new citations and comments, should you subscribe to receive notifications.</li></ul></li><li>A cookie may be set on your computer. This is used to remember your inputs. It will expire by itself.</li></ul><p>This policy is subject to change at any time and without notice.</p>';
 $_['lang_modal_terms_heading']            = 'Terms and Conditions';
-$_['lang_modal_terms_content']            = '<p>These terms and conditions contain rules about posting comments. By submitting a comment, you are declaring that you agree with these rules:</p><ul><li>Although the administrator will attempt to moderate comments, it is impossible for every comment to have been moderated at any given time.</li><li>You acknowledge that all comments express the views and opinions of the original author and not those of the administrator.</li><li>You agree not to post any material which is knowingly false, obscene, hateful, threatening, harassing or invasive of a person\'s privacy.</li><li>The administrator has the right to edit, move or remove any comment for any reason and without notice.</li></ul><p>Failure to comply with these rules may result in being banned from submitting further comments.</p><p>These terms and conditions are subject to change at any time and without notice.</p>';
+$_['lang_modal_terms_content']            = '<p>These terms and conditions contain rules about posting citations and comments. By submitting a comment, you are declaring that you agree with these rules:</p><ul><li>Although the administrator will attempt to moderate comments, it is impossible for every comment to have been moderated at any given time.</li><li>You acknowledge that all comments express the views and opinions of the original author and not those of the administrator.</li><li>You agree not to post any material which is knowingly false, obscene, hateful, threatening, harassing or invasive of a person\'s privacy.</li><li>The administrator has the right to edit, move or remove any comment for any reason and without notice.</li></ul><p>Failure to comply with these rules may result in being banned from submitting further comments.</p><p>These terms and conditions are subject to change at any time and without notice.</p>';
 $_['lang_modal_bullet_heading']           = 'Insert Bullet List';
 $_['lang_modal_bullet_content']           = 'Please enter at least one item.';
 $_['lang_modal_bullet_item']              = 'Item:';
@@ -284,7 +284,7 @@ $_['lang_error_field_max_length']         = 'The value entered is too long';
 $_['lang_error_review']                   = 'Please check the errors below';
 
 // Button
-$_['lang_button_submit']                  = 'Add Comment';
+$_['lang_button_submit']                  = 'Add Citation';
 $_['lang_button_preview']                 = 'Preview';
 $_['lang_button_remove']                  = 'Remove';
 $_['lang_button_processing']              = 'Please Wait..';
