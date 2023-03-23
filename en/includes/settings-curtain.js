@@ -25,11 +25,11 @@ class SettingsCurtain extends HTMLElement {
                 ></dark-mode-toggle>
                             </div>
                             
-            <div id="languages">
+           <!-- <div id="languages">
             <a href="../en/index.html" aria-label="Switch to the English version"><div class="language-selector">EN</div></a>
                 <div class="language-selector" title="Désolé, pas encore traduit !" aria-label="French not yet active">FR</div>
                 <div class="language-selector" title="Maaf, belum diterjemahkan!" aria-label="Indonesian not active">IN</div>
-            </div> 
+            </div> -->
 
          
 
