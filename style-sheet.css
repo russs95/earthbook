@@ -1418,12 +1418,14 @@ left: 0;
 
 
 .btn {
-  border: 2px solid #ddd;
+  /*border: 2px solid #ddd;
+    color: white;
+      background: grey;
+*/
+
   font-weight: bolder;
-  background: grey;
   align-self: center;
   cursor: pointer;
-  color: white;
   justify-content: center;
   border-radius: 0px 5px 5px 0px;
   padding: 5px;
@@ -1435,8 +1437,8 @@ left: 0;
   .btn:hover {color: black;}
 
   button {
-    border: none;
-    background: none;
+    border: none !important;
+    background: none !important;
   }
 
  
