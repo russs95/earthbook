@@ -106,5 +106,11 @@
   <div id="containerContrast"></div>
   <div id="containerBrightness"></div>
 
+  <script>
 
+function getMainurl() {
+  document.getElementById("page-url").innerHTML = 
+"Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Kalinga, Philippines & Bali, Indonesia, 2022). <?php echo ($chap_number); echo ($chap_name); ;?>";
+}
+</script>
   
