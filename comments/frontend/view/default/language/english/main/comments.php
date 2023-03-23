@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['lang_heading_comments']        = 'Comments';
+$_['lang_heading_comments']        = 'Citations & Comments';
 
 // Text
 $_['lang_text_says']               = 'says...';
@@ -30,7 +30,7 @@ $_['lang_text_badge_first_poster'] = 'First Poster';
 $_['lang_text_return']             = '<a href="" title="Return to comments"><span class="cmtx_icon cmtx_return_icon"></span> Return to Comments</a>';
 $_['lang_text_no_permalink']       = 'No such comment';
 $_['lang_text_no_results']         = 'No results. <a href="" title="Go back">Go back</a>';
-$_['lang_text_no_comments']        = 'No comments yet. Be the first!';
+$_['lang_text_no_comments']        = 'No citations or comments yet. Be the first!';
 $_['lang_text_reported']           = 'Thanks for the report';
 $_['lang_text_privacy']            = 'Privacy';
 $_['lang_text_terms']              = 'Terms';
