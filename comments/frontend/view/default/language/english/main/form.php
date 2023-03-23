@@ -9,7 +9,7 @@ $_['lang_entry_privacy']                  = 'I have read <span class="cmtx_check
 $_['lang_entry_terms']                    = 'I have read <span class="cmtx_checkbox_extra">and agree to</span> the <a href="#" title="View the terms and conditions" data-cmtx-target-modal="#cmtx_terms_modal">terms and conditions</a>';
 
 // Placeholder
-$_['lang_placeholder_comment']            = 'Have you cited this section?  Please reference your work...';
+$_['lang_placeholder_comment']            = 'Have you cited this section?  Please use this form to post a reference and link to your work.  Comments also welcome...';
 $_['lang_placeholder_headline']           = 'Headline';
 $_['lang_placeholder_name']               = 'Name';
 $_['lang_placeholder_email']              = 'Email';
@@ -182,7 +182,7 @@ $_['lang_modal_close']                    = 'Close';
 $_['lang_error_page_invalid']             = 'The page data is invalid. Please contact the administrator.';
 $_['lang_error_form_disabled']            = 'Adding comments has been disabled';
 $_['lang_error_logged_in']                = 'You must be logged in to post';
-$_['lang_error_comment_empty']            = 'Please enter your comment';
+$_['lang_error_comment_empty']            = 'Please enter your citation or comment';
 $_['lang_error_comment_has_repeats']      = 'The comment has repeating characters';
 $_['lang_error_comment_has_capitals']     = 'The comment has too many capitals';
 $_['lang_error_comment_has_long_word']    = 'The comment contains a long word';
