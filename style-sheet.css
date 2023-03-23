@@ -2214,24 +2214,6 @@ left: 0;
 #check {display: none;}
 
 
-
-.btn {
-  border: 2px solid #ddd;
-  font-weight: bolder;
-  background: grey;
-  align-self: center;
-  cursor: pointer;
-  color: white;
-  justify-content: center;
-  border-radius: 0px 5px 5px 0px;
-  padding: 5px;
-  text-align: center;
-  display: flex;
-
-  }
-
-  .btn:hover {color: black;}
-
  
   @media screen and (max-width: 700px) {
     .copy-box { 
