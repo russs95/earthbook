@@ -1,6 +1,5 @@
 
-button {background: none;
-  border: none;}
+
 
 @media screen and (max-width: 699px) {
     
@@ -155,7 +154,7 @@ display: none;
     background-size: contain;
     border: none;
     transition: 2s;
-    background-color: var(--header-footer);
+    background-color: var(--header-footer) !important;
   }
 
   #ct-tc-menu:hover {
