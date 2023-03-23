@@ -34,7 +34,7 @@
             </div>
 
             <div class="footer-function-item">
-              <p>Comments</p>
+              <p>Citations & Comments</p>
             </div>
 
             <div class="footer-function-item-icon"> 
