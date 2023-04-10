@@ -1,3 +1,4 @@
+
 <?php   
    
 // search query   
@@ -15,9 +16,11 @@ $dbName = "ecobricks_tractatus";
 // connect to database   
 $con = new mysqli( $host, $user, $password, $dbName );  
 
-
 // query the database, limiting results to 10 at a time starting from last loaded result   
-$sql = 'SELECT * FROM post WHERE MATCH( titleIndex, keywordsIndex ) AGAINST( "' . $search . '" ) LIMIT ' . $offset . ', 10;';   
+$sql = 'SELECT title, chap_description, keywords, url, language, chapter, book, words, image_url FROM post WHERE MATCH( title, chap_description, keywords ) AGAINST( "' . $search . '" ) LIMIT ' . $offset . ', 10;';
+
+//$sql = 'SELECT * FROM post WHERE MATCH( title, chap_description, keywords ) AGAINST( "' . $search . '" ) LIMIT ' . $offset . ', 10;';   
+
 $result = $con->query( $sql );   
 
 // declare array variable to store results   
