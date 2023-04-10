@@ -22,7 +22,7 @@ $dbName = "ecobricks_tractatus";
 $con = new mysqli($host, $user, $password, $dbName);
 
 // query the database, limiting results to 10 at a time starting from last loaded result
-$search_pattern = '[[:<:]]' . preg_quote($search) . '[[:>:]]';
+$search_pattern = '\\b' . preg_quote($search_lower) . '\\b';
 
 $sql = "SELECT title, chap_description, keywords, url, language, chapter, book, words, image_url FROM post WHERE LOWER(title) REGEXP ? OR LOWER(chap_description) REGEXP ? OR LOWER(keywords) REGEXP ? LIMIT ?, 10;";
 
