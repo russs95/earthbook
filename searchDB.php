@@ -1,25 +1,24 @@
+<?php
 
-<?php   
-   
-// search query   
-$search = $_GET[ "search" ];   
-   
-// number of previously loaded results   
-$offset = $_GET[ "loaded" ];   
-   
-// declare database credentials   
-$host = "localhost:3306";   
-$user = "ecobricks_earthbook";   
-$password = "ayyew";   
-$dbName = "ecobricks_tractatus";   
-   
-// connect to database   
-$con = new mysqli( $host, $user, $password, $dbName );  
+// search query
+$search = $_GET["search"];
+
+// number of previously loaded results
+$offset = $_GET["loaded"];
+
+// declare database credentials
+$host = "localhost:3306";
+$user = "ecobricks_earthbook";
+$password = "ayyew";
+$dbName = "ecobricks_tractatus";
+
+// connect to database
+$con = new mysqli($host, $user, $password, $dbName);
 
 // query the database, limiting results to 10 at a time starting from last loaded result
-$sql = 'SELECT title, chap_description, keywords, url, language, chapter, book, words, image_url FROM post WHERE MATCH( title, chap_description, keywords ) AGAINST( ? ) LIMIT ?, 10;';
+$sql = "SELECT title, chap_description, keywords, url, language, chapter, book, words, image_url FROM post WHERE title LIKE CONCAT('%', ?, '%') OR keywords LIKE CONCAT('%', ?, '%') OR chap_description LIKE CONCAT('%', ?, '%') LIMIT ?, 10;";
 $stmt = $con->prepare($sql);
-$stmt->bind_param("si", $search, $offset);
+$stmt->bind_param("sssi", $search, $search, $search, $offset);
 $stmt->execute();
 
 $result = $stmt->get_result();
@@ -40,5 +39,4 @@ $con->close();
 // convert to JSON and output
 echo(json_encode($output));
 
-   
 ?>
