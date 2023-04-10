@@ -33,13 +33,12 @@ if ($result->num_rows > 0) {
         $output[] = array("title" => $row["title"], "chap_description" => $row["chap_description"], "keywords" => $row["keywords"], "url" => $row["url"], "language" => $row["language"], "chapter" => $row["chapter"], "book" => $row["book"], "words" => $row["words"], "image_url" => $row["image_url"]);
     }
 } else {
-    $output[] = array("title" => "Sorry, no results found.");
+    $output[] = array("title" => "Sorry, no results found.", "chap_description" => "", "keywords" => "", "url" => "", "language" => "", "chapter" => "", "book" => "", "words" => "", "image_url" => "");
 }
 
 $stmt->close();
 $con->close();
 
 // convert to JSON and output
-echo(json_encode($output));
-
+echo(json_encode($output, JSON_UNESCAPED_UNICODE));
 ?>
