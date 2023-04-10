@@ -17,8 +17,12 @@ $dbName = "ecobricks_tractatus";
 $con = new mysqli($host, $user, $password, $dbName);
 
 // query the database, limiting results to 10 at a time starting from last loaded result
-$sql = "SELECT title, chap_description, keywords, url, language, chapter, book, words, image_url FROM post WHERE MATCH( title, chap_description, keywords ) AGAINST( ? IN BOOLEAN MODE ) OR LOWER(title) LIKE CONCAT('%', ?, '%') OR LOWER(chap_description) LIKE CONCAT('%', ?, '%') OR LOWER(keywords) REGEXP CONCAT('[[:<:]]', ?, '[[:>:]]') LIMIT ?, 10;";$stmt = $con->prepare($sql);
-$stmt->bind_param("ssssi", $search, $search_lower, $search_lower, $search_lower, $offset);
+$search_pattern = '[[:<:]]' . preg_quote($search) . '[[:>:]]';
+
+$sql = "SELECT title, chap_description, keywords, url, language, chapter, book, words, image_url FROM post WHERE LOWER(title) REGEXP ? OR LOWER(chap_description) REGEXP ? OR LOWER(keywords) REGEXP ? LIMIT ?, 10;";
+
+$stmt = $con->prepare($sql);
+$stmt->bind_param("sssi", $search_pattern, $search_pattern, $search_pattern, $offset);
 $stmt->execute();
 
 $result = $stmt->get_result();
