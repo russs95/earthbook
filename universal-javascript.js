@@ -555,6 +555,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
          if ( xmlhttp.readyState === 4 && xmlhttp.status === 200 ) {  
              // fetch response text   
              var response=xmlhttp.responseText;  
+             console.log(response);
              var outputPosts;   
                 
              // parse response if it is valid JSON  
