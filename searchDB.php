@@ -2,6 +2,7 @@
 
 // search query
 $search = $_GET["search"];
+$search_lower = strtolower($search);
 
 // number of previously loaded results
 $offset = $_GET["loaded"];
@@ -16,9 +17,9 @@ $dbName = "ecobricks_tractatus";
 $con = new mysqli($host, $user, $password, $dbName);
 
 // query the database, limiting results to 10 at a time starting from last loaded result
-$sql = "SELECT title, chap_description, keywords, url, language, chapter, book, words, image_url FROM post WHERE MATCH( title, chap_description, keywords ) AGAINST( ? IN BOOLEAN MODE ) OR title LIKE CONCAT('%', ?, '%') OR chap_description LIKE CONCAT('%', ?, '%') OR keywords LIKE CONCAT('%', ?, '%') LIMIT ?, 10;";
+$sql = "SELECT title, chap_description, keywords, url, language, chapter, book, words, image_url FROM post WHERE MATCH( title, chap_description, keywords ) AGAINST( ? IN BOOLEAN MODE ) OR LOWER(title) LIKE CONCAT('%', ?, '%') OR LOWER(chap_description) LIKE CONCAT('%', ?, '%') OR LOWER(keywords) LIKE CONCAT('%', ?, '%') LIMIT ?, 10;";
 $stmt = $con->prepare($sql);
-$stmt->bind_param("ssssi", $search, $search, $search, $search, $offset);
+$stmt->bind_param("ssssi", $search, $search_lower, $search_lower, $search_lower, $offset);
 $stmt->execute();
 
 $result = $stmt->get_result();
@@ -31,6 +32,8 @@ if ($result->num_rows > 0) {
         // add row to output array in the form of an associative array
         $output[] = array("title" => $row["title"], "chap_description" => $row["chap_description"], "keywords" => $row["keywords"], "url" => $row["url"], "language" => $row["language"], "chapter" => $row["chapter"], "book" => $row["book"], "words" => $row["words"], "image_url" => $row["image_url"]);
     }
+} else {
+    $output[] = array("title" => "Sorry, no results found.");
 }
 
 $stmt->close();
