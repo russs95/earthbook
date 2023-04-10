@@ -17,38 +17,61 @@ $dbName = "ecobricks_tractatus";
 $con = new mysqli( $host, $user, $password, $dbName );  
 
 
+// query the database, limiting results to 10 at a time starting from last loaded result   
+$sql = 'SELECT * FROM post WHERE MATCH( title, chap_description, keywords ) AGAINST( "' . $search . '" ) LIMIT ' . $offset . ', 10;';   
+$result = $con->query( $sql );   
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+// declare array variable to store results   
+$output = array();   
+   
 
-// Get the search query and loaded results from the URL
-$search = isset($_GET['search']) ? $_GET['search'] : '';
-$loaded = isset($_GET['loaded']) ? $_GET['loaded'] : 0;
-
-// Set the number of results per page
-$resultsPerPage = 10;
-
-// Prepare the SQL query to search both titleIndex and keywordsIndex columns
-$sql = "SELECT * FROM your_table_name WHERE titleIndex LIKE ? OR keywordsIndex LIKE ? LIMIT ?, ?";
-
-$stmt = $conn->prepare($sql);
-$searchParam = "%" . $search . "%";
-$stmt->bind_param("ssii", $searchParam, $searchParam, $loaded, $resultsPerPage);
-
-$stmt->execute();
-$result = $stmt->get_result();
-
-// Fetch results and output them as JSON
-$output = array();
-while ($row = $result->fetch_assoc()) {
-    $output[] = $row;
-}
-
-echo json_encode($output);
-
-$stmt->close();
-$conn->close();
+if( $result->num_rows > 0 ) {   
+    while( $row = $result->fetch_assoc() ){   
+        // add row to output array in the form of an associative array   
+        $output[] = array( "title" => $row[ "title" ], "chap_description" => $row[ "chap_description" ],  "keywords" => $row[ "keywords" ], "url" => $row[ "url" ],  "language" => $row[ "language" ], "chapter" => $row[ "chapter" ], "book" => $row[ "book" ], "words" => $row[ "words" ], "image_url" => $row[ "image_url" ] );   
+    }   
+}   
+$con->close();   
+   
+// convert to JSON and output   
+echo( json_encode( $output ) );   
+   
 ?>
 
 
+<?php
+
+// search query
+$search = $_GET["search"];
+
+// number of previously loaded results
+$offset = $_GET["loaded"];
+
+// declare database credentials
+$host = "localhost:3306";
+$user = "ecobricks_earthbook";
+$password = "ayyew";
+$dbName = "ecobricks_tractatus";
+
+// connect to database
+$con = new mysqli($host, $user, $password, $dbName);
+
+// query the database, limiting results to 10 at a time starting from last loaded result
+$sql = 'SELECT * FROM post WHERE MATCH(titleIndex) AGAINST("' . $search . '") OR MATCH(keywordsIndex) AGAINST("' . $search . '") LIMIT ' . $offset . ', 10;';
+$result = $con->query($sql);
+
+// declare array variable to store results
+$output = array();
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        // add row to output array in the form of an associative array
+        $output[] = array("title" => $row["title"], "chap_description" => $row["chap_description"], "keywords" => $row["keywords"], "url" => $row["url"], "language" => $row["language"], "chapter" => $row["chapter"], "book" => $row["book"], "words" => $row["words"], "image_url" => $row["image_url"]);
+    }
+}
+$con->close();
+
+// convert to JSON and output
+echo(json_encode($output));
+
+?>
