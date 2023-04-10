@@ -8,7 +8,7 @@
             <div>
                 <!--<h1>🔎</h1>-->
                 <h1 class="accessibility-plugin-ac">Earthbook Search</h1> 
-                <p>Sorry! This Earthbook feature is still in development and will return limited results</p>
+                <p>Search the Tracatus Ayyew.</p>
             </div>
           
             <div class="search-box" style="padding-bottom:15%;">
