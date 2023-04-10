@@ -16,26 +16,29 @@ $dbName = "ecobricks_tractatus";
 // connect to database   
 $con = new mysqli( $host, $user, $password, $dbName );  
 
-// query the database, limiting results to 10 at a time starting from last loaded result   
-$sql = 'SELECT title, chap_description, keywords, url, language, chapter, book, words, image_url FROM post WHERE MATCH( title, chap_description, keywords ) AGAINST( "' . $search . '" ) LIMIT ' . $offset . ', 10;';
+// query the database, limiting results to 10 at a time starting from last loaded result
+$sql = 'SELECT title, chap_description, keywords, url, language, chapter, book, words, image_url FROM post WHERE MATCH( title, chap_description, keywords ) AGAINST( ? ) LIMIT ?, 10;';
+$stmt = $con->prepare($sql);
+$stmt->bind_param("si", $search, $offset);
+$stmt->execute();
 
-//$sql = 'SELECT * FROM post WHERE MATCH( title, chap_description, keywords ) AGAINST( "' . $search . '" ) LIMIT ' . $offset . ', 10;';   
+$result = $stmt->get_result();
 
-$result = $con->query( $sql );   
+// declare array variable to store results
+$output = array();
 
-// declare array variable to store results   
-$output = array();   
-   
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        // add row to output array in the form of an associative array
+        $output[] = array("title" => $row["title"], "chap_description" => $row["chap_description"], "keywords" => $row["keywords"], "url" => $row["url"], "language" => $row["language"], "chapter" => $row["chapter"], "book" => $row["book"], "words" => $row["words"], "image_url" => $row["image_url"]);
+    }
+}
 
-if( $result->num_rows > 0 ) {   
-    while( $row = $result->fetch_assoc() ){   
-        // add row to output array in the form of an associative array   
-        $output[] = array( "title" => $row[ "title" ], "chap_description" => $row[ "chap_description" ],  "keywords" => $row[ "keywords" ], "url" => $row[ "url" ],  "language" => $row[ "language" ], "chapter" => $row[ "chapter" ], "book" => $row[ "book" ], "words" => $row[ "words" ], "image_url" => $row[ "image_url" ] );   
-    }   
-}   
-$con->close();   
-   
-// convert to JSON and output   
-echo( json_encode( $output ) );   
+$stmt->close();
+$con->close();
+
+// convert to JSON and output
+echo(json_encode($output));
+
    
 ?>
