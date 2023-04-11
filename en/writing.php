@@ -111,7 +111,7 @@ Must be updated for each page-->
 
   <div id="ct-chapter-top">
       <div id="ct-tc-menu" onclick="openContents()"></div>
-      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+      <div class="ct-holder" style="cursor:pointer;" style="background-color:var(--header-footer);"  onclick="openContents()">
         <div id="ct-chapter-title">Publishing</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
        <div id="ct-chap-location">An Earthen Ethics</div>

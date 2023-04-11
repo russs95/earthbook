@@ -73,7 +73,7 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+  <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">The Authors</div>   
         <div id="ct-book-title">& The Authorship</div>

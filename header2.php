@@ -13,6 +13,9 @@
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
 
+<title><?php echo $page_title; ?></title>
+
+
 <meta property="og:site_name" content="Tractatus Ayyew" />
 <meta property="article:publisher" content="Earthen.io" />
 <meta name="author" content="Russell Maier & Banayan Angway">

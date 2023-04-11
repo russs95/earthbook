@@ -42,8 +42,14 @@ $chap_number = "Book One";?>
 
 <!--META TAGS
 Must be updated for each page-->
+<title><?php echo $page_title; ?></title>
 
-<meta property="article:modified_time" content="2023-02-21T09:14:13+00:00">
+<meta property="og:locale" content="<?php echo ($lang); ;?>" />
+<meta property="og:url" content="https://tractatus.earthen.io/<?php echo ($lang); ;?>/">
+
+
+
+<meta property="article:modified_time" content="2023-04-11-21T09:14:13+00:00">
 
 <meta name="keywords" content="Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
 
