@@ -2969,7 +2969,7 @@ a:active {
 
   .action-btn {
 
-    padding: 7px 5px 10px 5px;
+    padding: 7px 5px 8px 5px;
     margin: 5px;
     flex-grow: 1;
     font-size: 0.88em;
@@ -2980,10 +2980,10 @@ a:active {
   @media screen and (min-width: 700px) and (max-width: 1324px) {
 
     .action-btn {
-      padding-top: 9px;
-      padding-bottom:9px;
-      font-size: 1.2em;
-      margin: 11px;
+      padding-top: 6px;
+padding-bottom: 6px;
+font-size: 1.1em;
+margin: 8px auto;
 
 
   }
@@ -2993,10 +2993,10 @@ a:active {
 
     .action-btn {
 
-      padding-top: 11px;
-      padding-bottom: 11px;
-      font-size: 1.3em;
-      margin: 15px;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      font-size: 1.1em;
+      margin: 8px;
       display: block;
   }
 }
