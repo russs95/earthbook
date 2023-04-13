@@ -102,7 +102,7 @@ Must be updated for each page-->
 -->
 
      <div class="lead-page-paragraph">
-        For too long we have assumed the earth beneath us to be a static and stable constant. In fact, it is anything but.  The flow of cosmic matter and momentum that first formed our planet has never ceased its spiral.  With no vestige of a beginning and no prospect of an end<a href="#footnotes">⁵²</a>, the ever unfolding confluence of Earth’s unique combination of matter and energy, composes a cosmological pattern of process all its own.  Indeed, in our entire galaxy we know of no other entity that has so thoroughly realized the very ecological enrichment to which we now so aspire to replicate. 
+        For too long we have assumed the earth beneath us to be a static and stable constant. In fact, it is anything but.  The flow of cosmic matter and momentum that first formed our planet has never ceased its spiral.  With no vestige of a beginning and no prospect of an end<a href="#footnotes" title="Thomas Hutton, 'A Theory of the Earth', Royal Society of Edinburgh, (Transactions of the Royal Society of Edinburgh, 1788) Vol. 1." onclick="openFootnotes()">⁵²</a>, the ever unfolding confluence of Earth’s unique combination of matter and energy, composes a cosmological pattern of process all its own.  Indeed, in our entire galaxy we know of no other entity that has so thoroughly realized the very ecological enrichment to which we now so long to manifest ourselves. 
      </div>
 
     <div class="page-paragraph">
@@ -117,9 +117,9 @@ Must be updated for each page-->
     <div class="page-paragraph" style="padding:15px">
       <p>1. <i>Earth’s processes tend towards cycles that spiral.</i></p>
   
-      <p>2. <i>Earth’s cycles tend towards the outwards dissipation of energy.</i></p>
+      <p>2. <i>Earth’s cycles tend towards the outwards spirals of energy.</i></p>
 
-      <p>3.<i>Earth’s cycles tend towards the inwards concentration of matter.</i></p>
+      <p>3.<i>Earth’s cycles tend towards the inwards spirals of matter.</i></p>
       
       <p>4. <i>Earth’s spirals of energy and matter tend toward diverse systems.</i></p>
       
