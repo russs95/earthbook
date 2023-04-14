@@ -131,7 +131,7 @@ Must be updated for each page-->
 
     <p>For those of us living along the river, the challenge was palpable.</p>
       
-    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Philippine archipelago. Insulated by a rugged chain of verdant mountains, the Igorots have remained largely immune to three hundred years of Spanish colonization further South. However, over the last decades, modern goods had reached even the most remote villages. Whereas the leaves, wood and vines that had long served them as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade when discarded.</p>
+    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Philippine archipelago. With their towns and villages nestled within a rugged chain of verdant mountains, the Igorots had remained largely insulated from three hundred years of Spanish colonization further South. However, over the last decades, modern goods had reached even the most remote villages. Whereas the leaves, wood and vines that had long served them as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade when discarded.</p>
 
     <p>However, the Igorots had not been sitting idly by.</p>
     

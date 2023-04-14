@@ -161,6 +161,8 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
   </p>
 
     <p>Along our journey, countless friends, family and colleagues who have been of invaluable assistance in our undertaking.</p>
+
+    <p>Thank you to Pi Villaraza who was instrumental in energizing our early connection and collaboration.  He pointed us towards the use of Igorot and Filipino wisdom traditions to both undergird our work with plastic and to guide the social spread that followed.</p>
        
     <p>Thank you to Trisha for her support, encouragement, listening and friendship. Thank you to Shiloh Vermaack and Richard Goldsmith for the relentless reviews of every chapter, not once but twice and sometimes thrice.  Thank you to Nicole and Vaughn for the in-depth reading and encouragement.  Thank you to Mel for the reminder that our ancestry, in particular its contrasts, was not just a side note, but a principal theme. Thank you to James and Ruth for their support and insights from the Bulkley Valley. Thank you to Rolf and Chris for their scathing early reviews.  Their invaluable critiques had a profound effect on our direction.  Thank you to Ani for her fathomless patience with the piles of pages and infinite coffee cups that accompanied this process.
         </p> 

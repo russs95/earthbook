@@ -102,7 +102,7 @@ Must be updated for each page-->
 -->
 
      <div class="lead-page-paragraph">
-        For too long we have assumed the earth beneath us to be a static and stable constant. In fact, it is anything but.  The flow of cosmic matter and momentum that first formed our planet has never ceased its spiral.  With no vestige of a beginning and no prospect of an end<a href="#footnotes" title="Thomas Hutton, 'A Theory of the Earth', Royal Society of Edinburgh, (Transactions of the Royal Society of Edinburgh, 1788) Vol. 1." onclick="openFootnotes()">⁵²</a>, the ever unfolding confluence of Earth’s unique combination of matter and energy, composes a cosmological pattern of process all its own.  Indeed, in our entire galaxy we know of no other entity that has so thoroughly realized the very ecological enrichment to which we now so long to manifest ourselves. 
+        FOR TOO LONG we have assumed the earth beneath us to be a static and stable constant. In fact, it is anything but.  The flow of cosmic matter and momentum that first formed our planet has never ceased its spin.  With no vestige of a beginning and no prospect of an end<a href="#footnotes" title="Thomas Hutton, 'A Theory of the Earth', Royal Society of Edinburgh, (Transactions of the Royal Society of Edinburgh, 1788) Vol. 1." onclick="openFootnotes()">⁵²</a>, the ever unfolding confluence of Earth’s unique combination of matter and energy, composes a cosmological pattern of process all its own.  Indeed, in our entire galaxy we know of no other entity that has so thoroughly realized the very ecological enrichment to which we now so long to manifest ourselves. 
      </div>
 
     <div class="page-paragraph">
@@ -123,20 +123,20 @@ Must be updated for each page-->
       
       <p>4. <i>Earth’s spirals of energy and matter tend toward diverse systems.</i></p>
       
-      <p>5. <i>Earth’s systems tend towards ever greater consciousness of their interconnection.</i></p>
+      <p>5. <i>Earth’s systems tend towards ever greater awareness of their interconnection.</i></p>
 </div>
 
     <div class="page-paragraph">
 
       <p id="54-up">From organism to ecosystem, from biome to biosphere, we are surrounded with the verdant consequences of these primordial principles unfurling through space and time.  Whether the process is minute or massive, ancient or ongoing, in looking closely, we can glimpse the same Earthen ways reflected and embodied— a microcosm of the macro— within every organism and ecosystem.  Within the life-cycles of everything from a forest to a tree, a bird to a flea, we can observe the tendencies of Earth’s character expressed— a vast symphony of a trillion processes, cycles and systems all tending towards a more resilient, livable, vibrant and abundant biosphere for all.<a href="#footnotes">⁵⁴</a></p>
 
-      <p id="55-up">While there are hints of these tendencies upon other planets, upon ours, they definitively incline the cycles of matter and energy<a href="#footnotes">⁵⁵</a>, setting Earth apart in their clarity of expression and consequence.</p>
+      <p id="55-up">While there are hints of these tendencies upon other planets, upon ours, they definitively incline the cycles of matter and energy<a href="#footnotes">⁵⁵</a>, setting Earth apart in their expression and consequence.</p>
       
       <p>Yet Earth is not an exception in having a cosmological character all its own.  Given the unique interstellar confluence of every planet, each has its own configuration and characterstic unfurling.  From the endless storms of Jupiter, to the endemic volcanoes of Venus, to the very color of Mars, each planet’s character tends towards its own expressions of surface, ocean and atmosphere.</p>
 
      <p id="56-up">Nevertheless, each planet’s tendencies are not hard and fast rules.  Not all Jovian storms turn to giant red spots, not all Venusian mountains erupt and not all Martian rocks are red.  Likewise, not all Earthen systems express Earthen tendencies with equal clarity and consequence.<a href="#footnotes">⁵⁶</a></p>
 
-     <p id="57-up">In this way, over the eons, certain Earthen organisms and ecosystems have come to express Earthen tendencies more than others.<a href="#footnotes">⁵⁷</a></p>
+     <p id="57-up">In this way, over the eons, certain of Earth's organisms and ecosystems have come to express Earthen tendencies more than others.<a href="#footnotes">⁵⁷</a></p>
 
      <p>And so too certain cultures and societies.</p>
 
