@@ -132,13 +132,13 @@ Must be updated for each page-->
 
       <p id="55-up">While there are hints of these tendencies upon other planets, upon ours, they definitively incline the cycles of matter and energy<a href="#footnotes">⁵⁵</a>, setting Earth apart in their expression and consequence.</p>
       
-      <p>Yet Earth is not an exception in having a cosmological character all its own.  Given the unique interstellar confluence of every planet, each has its own configuration and characterstic unfurling.  From the endless storms of Jupiter, to the endemic volcanoes of Venus, to the very color of Mars, each planet’s character tends towards its own expressions of surface, ocean and atmosphere.</p>
+      <p>Yet Earth in this way is not an exception.  Given the unique coalescence of every planet, each has its own cosmological configuration and unfurling.  From the endless storms of Jupiter, to the endemic volcanoes of Venus, to the very color of Mars, each planet’s character tends towards its own expressions of surface, ocean and atmosphere.</p>
 
-     <p id="56-up">Nevertheless, each planet’s tendencies are not hard and fast rules.  Not all Jovian storms turn to giant red spots, not all Venusian mountains erupt and not all Martian rocks are red.  Likewise, not all Earthen systems express Earthen tendencies with equal clarity and consequence.<a href="#footnotes">⁵⁶</a></p>
+     <p id="56-up">That said, each planet’s tendencies are not hard and fast rules.  Not all Jovian storms turn to giant red spots, not all Venusian mountains erupt and not all Martian rocks are red.  Likewise, not all Earthen systems express Earthen tendencies with equal clarity and consequence.<a href="#footnotes">⁵⁶</a></p>
 
      <p id="57-up">In this way, over the eons, certain of Earth's organisms and ecosystems have come to express Earthen tendencies more than others.<a href="#footnotes">⁵⁷</a></p>
 
-     <p>And so too certain cultures and societies.</p>
+     <p>And so too certain human cultures and societies.</p>
 
      <p>In the next five chapters, we shall examine five Earthen phenomena that have attained an exceptional magnificence in their geometric expression of one of the five facets of Earth’s cosmological character.  With the help of various kincentric cultures and the guidance of contemporary physics, biology and astronomy we will examine the ways of the Igorots, the cycles of the salmon, the manner of mollusks, the process of a coral polyp  and the means of a mycorrhizal forest.  Each shall aid us in discerning the essence of a particular Earthen principle, and together reveal the full character of ecological contribution.</p>
 
