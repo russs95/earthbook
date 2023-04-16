@@ -111,7 +111,7 @@ Must be updated for each page-->
 
       <p>In the same way that kincentric societies have been guided by the example of ancient masters of ecological integration, so too can we be guided by the example of Earth. </p>
 
-      <p>Observing the planet’s shift over the eons from barren to bounteous, from grey to green, we can discern an underlying pattern in Earth’s ways.<a href="#footnotes">⁵³</a>  In the resonance of our scientific and kincentric knowing, we can discern five principles that compose Earth’s underlying pattern of process:</p>
+      <p>Observing the planet’s shift over the eons from barren to bounteous, from grey to green, we can discern an underlying pattern in Earth’s ways.<a href="#footnotes" onclick="openFootnotes()" title="As outlined in chapter 6, we take the view of Earth as a self-contained, planetary system in which humans and their systems are subset. In this way, when we allude to <<following Earth's example>> we are mindful of the 'naturalistic fallacy' (i.e. because it is natural to do things a certain way, we ought to do things that way). While this fallacy certainly pertains to is/ought arguments between two independent systems (i.e. 'the human world' and 'the natural world'), the fallacy loses in relevance when one system is acknowledged to be a subset of the other. In such a case, a three part is/ought/if statement is possible on certain characteristics of the whole: a system is a certain way; its parts ought to embody that way if both are to operate as they should. i.e. the wall is solid and strong, and so ought be its bricks if both the bricks and wall are to stand. The plant is growing towards the sun, and so ought its leaves if it is to thrive. Consequently, we categorically avoid the dichotomy of 'natural' systems and human systems. Instead, throughout the Tractatus Ayyew we view human processes as an ecological subset of Earth's biosphere.">⁵³</a>  In the resonance of our scientific and kincentric knowing, we can discern five principles that compose Earth’s underlying pattern of process:</p>
     </div>
 
     <div class="page-paragraph" style="padding:15px">
@@ -128,15 +128,18 @@ Must be updated for each page-->
 
     <div class="page-paragraph">
 
-      <p id="54-up">From organism to ecosystem, from biome to biosphere, we are surrounded with the verdant consequences of these primordial principles unfurling through space and time.  Whether the process is minute or massive, ancient or ongoing, in looking closely, we can glimpse the same Earthen ways reflected and embodied— a microcosm of the macro— within every organism and ecosystem.  Within the life-cycles of everything from a forest to a tree, a bird to a flea, we can observe the tendencies of Earth’s character expressed— a vast symphony of a trillion processes, cycles and systems all tending towards a more resilient, livable, vibrant and abundant biosphere for all.<a href="#footnotes">⁵⁴</a></p>
+      <p id="54-up">From organism to ecosystem, from biome to biosphere, we are surrounded with the verdant consequences of these primordial principles unfurling through space and time.  Whether the process is minute or massive, ancient or ongoing, in looking closely, we can glimpse the same Earthen ways reflected and embodied— a microcosm of the macro— within every organism and ecosystem.  Within the life-cycles of everything from a forest to a tree, a bird to a flea, we can observe the tendencies of Earth’s character expressed— a vast symphony of a trillion processes, cycles and systems all tending towards a more resilient, livable, vibrant and abundant biosphere for all.<a href="#footnotes" onclick="openFootnotes()" title="It is important to note we do not lay any claim to why or how Earth came to its particular cosmological character. We are simply observing the net change of the planet from its barren (grey) state to its biosphere (green) state. Whether Earth’s characteristic ways were laid by coincidence, a divine being, many beings, or a sentient planet is a separate matter.">⁵⁴</a></p>
 
-      <p id="55-up">While there are hints of these tendencies upon other planets, upon ours, they definitively incline the cycles of matter and energy<a href="#footnotes">⁵⁵</a>, setting Earth apart in their expression and consequence.</p>
+      <p id="55-up">While there are hints of these tendencies upon other planets, upon ours, they definitively incline the cycles of matter and energy<a href="#footnotes" onclick="openFootnotes()" title="Here we are not oblivious to the great extinctions, cataclysms and ice ages that have occurred over Earth’s history. Rather, we are surveying the full history of Earth and observing its net tendencies. We observe that even when great regressions of the biosphere are taken into account, these are secondary to an overall process of greening.
+">⁵⁵</a>, setting Earth apart in their expression and consequence.</p>
       
       <p>Yet Earth in this way is not an exception.  Given the unique coalescence of every planet, each has its own cosmological configuration and unfurling.  From the endless storms of Jupiter, to the endemic volcanoes of Venus, to the very color of Mars, each planet’s character tends towards its own expressions of surface, ocean and atmosphere.</p>
 
-     <p id="56-up">That said, each planet’s tendencies are not hard and fast rules.  Not all Jovian storms turn to giant red spots, not all Venusian mountains erupt and not all Martian rocks are red.  Likewise, not all Earthen systems express Earthen tendencies with equal clarity and consequence.<a href="#footnotes">⁵⁶</a></p>
+     <p id="56-up">That said, each planet’s tendencies are not hard and fast rules.  Not all Jovian storms turn to giant red spots, not all Venusian mountains erupt and not all Martian rocks are red.  Likewise, not all Earthen systems express Earthen tendencies with equal clarity and consequence.<a href="#footnotes" title="In fact, some processes may in fact run contrary to the overall cyclical tendency. However, these processes are always a minority— otherwise they themselves would be the tendency.
+" onclick="openFootnotes()">⁵⁶</a></p>
 
-     <p id="57-up">In this way, over the eons, certain of Earth's organisms and ecosystems have come to express Earthen tendencies more than others.<a href="#footnotes">⁵⁷</a></p>
+     <p id="57-up">In this way, over the eons, certain of Earth's organisms and ecosystems have come to express Earthen tendencies more than others.<a href="#footnotes" title="Although it is beyond the scope of the Tractatus, a logical extension of our argument is that Earth’s patterns are in fact the requisite tendencies for the unfurling of life on any planet. In this interpretation, Earth’s ways are not unique to Earth, but rather Earth embodies the ideal cosmological context for these tendencies to express themselves. While this requires far more proof to be established than is available, should it be true, it would not be antithetical to Earthen ethics developed in the Tractatus Ayyew. Rather it would simply place them in a broader context and provide further substantiation for their merit as ethical guidance for sentient beings.
+">⁵⁷</a></p>
 
      <p>And so too certain human cultures and societies.</p>
 
@@ -146,7 +149,7 @@ Must be updated for each page-->
 
      <p>Applying these Earthen ethics, we can confidently discern and define what is <i>green</i> (what is an ecological contribution) and what is <i>grey</i> (what is not).</p>
 
-     <p>What is green is that which embodies the five-fold geometry of Earthen principles and leads to processes, cycles and systems that are ever more vibrant, stable, resilient, abundant and conscious.</p>
+     <p>What is green is that which embodies the five-faceted geometry of Earthen principles and leads to processes, cycles and systems that are ever more vibrant, stable, resilient, abundant and conscious.</p>
 
      <p>What is grey is that which conflicts with any one of the Earthen principles, leading to the opposite— lowering consciousness, reducing biome abundance, vibrancy and stability, and decreasing resiliency. </p>
 
