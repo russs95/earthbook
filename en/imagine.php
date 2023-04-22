@@ -112,7 +112,7 @@ Must be updated for each page-->
 
 
 
-      <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes" title="In particular the Igorot Ayyew ecological ethos.  See: Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)." >³</a>, she and I have to come to see that the longing and the potential for ecological contribution unites us all on planet Earth."</p>
+      <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes" title="In particular the Igorot Ayyew ecological ethos.  See: Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)." >³</a>, she and I have to come to see that the longing and the potential for ecological contribution unites us all on planet Earth.</p>
 
       <p>Across cultures and continents, we long to contribute to that which we are part: to add to the communities in which we belong, to harmonize with our neighbours, to sync with those with whom we sing.  Consequently, as the parts we play in our local ecosystems and global biomes becomes clearer, so too does our yearning to participate positively in them and contribute to their harmony, vitality and abundance.  
       </p>
