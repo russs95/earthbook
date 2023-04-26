@@ -114,10 +114,14 @@ Must be updated for each page-->
   text-align: justify;
 		}
 
-</style>
-<script>
+    tippy("[data-tippy-content]", {
+  placement: "bottom",
+});
 
-  // Function to handle click on a highlight
+</style>
+
+<script>
+// Function to handle click on a highlight
 function handleHighlightClick(event) {
   event.stopPropagation();
   const highlight = event.target.closest(".highlight");
@@ -150,8 +154,8 @@ textNodes.forEach(node => {
       span.style.backgroundColor = "green";
       span.style.color = "var(--background-color)";
       span.style.cursor = "pointer";
-      span.textContent = selection.toString();
       span.setAttribute("title", "Tap to highlight");
+      span.textContent = selection.toString();
 
       // Add event listener to highlight to remove it on click
       span.addEventListener("click", handleHighlightClick);
@@ -160,6 +164,10 @@ textNodes.forEach(node => {
       const range = selection.getRangeAt(0);
       range.deleteContents();
       range.insertNode(span);
+
+      // Show tooltip on the temporary highlight
+      span.setAttribute("data-tooltip", "Tap to highlight");
+      tippy(span);
     }
   });
 });
@@ -172,23 +180,15 @@ function clearTemporaryHighlight() {
   }
 }
 
-// Function to lock the highlight
-function lockHighlight() {
-  const temporaryHighlight = document.querySelector(".highlight.temporary");
-  if (temporaryHighlight) {
-    temporaryHighlight.classList.remove("temporary");
-    temporaryHighlight.setAttribute("title", "Tap to unhighlight");
-  }
-}
-
 // Add event listener to remove temporary highlight on click elsewhere on the page
 document.addEventListener("click", clearTemporaryHighlight);
-
-// Add event listener to lock highlight on double click
-document.addEventListener("dblclick", lockHighlight);
-
-
 </script>
+
+<script src="https://unpkg.com/@popperjs/core@2.10.3/dist/cjs/popper.js"></script>
+  <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.min.js"></script>
+
+
+</head>
 
 <!--MAIN HTML Begins  what's up doc? -->
 
