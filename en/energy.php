@@ -117,9 +117,9 @@ Must be updated for each page-->
   text-align: justify;
 		}
 
-    tippy("[data-tippy-content]", {
-  placement: "bottom",
-});
+
+
+
 
 </style>
 
