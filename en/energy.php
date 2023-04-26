@@ -457,7 +457,7 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
       const selection = window.getSelection();
       if (selection.toString().length > 0) {
         // Clear any existing temporary highlight
-        clearTemporaryHighlight();
+       // clearTemporaryHighlight();
 
         // Create a span element to wrap the selected text
         const span = document.createElement("span");
