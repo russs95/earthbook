@@ -116,55 +116,59 @@ Must be updated for each page-->
 
 </style>
 <script>
-	let activeHighlight = null;
+// Function to handle click on a highlight
+function handleHighlightClick(event) {
+  event.stopPropagation();
+  clearHighlights();
+}
 
-	function clearHighlights() {
-		const highlights = document.querySelectorAll(".highlight");
-		highlights.forEach(highlight => {
-			highlight.parentNode.replaceChild(highlight.firstChild, highlight);
-		});
-		activeHighlight = null;
-	}
+// Function to clear the highlights
+function clearHighlights() {
+  const highlights = document.querySelectorAll(".highlight");
+  highlights.forEach(highlight => {
+    highlight.outerHTML = highlight.innerHTML;
+  });
+}
 
-	function toggleLockedState(highlight) {
-		highlight.classList.toggle("locked-highlight");
-		highlight.classList.remove("highlight");
-		activeHighlight = null;
-	}
+// Add event listeners to all text nodes in the document
+const textNodes = document.querySelectorAll("*:not(script):not(style)");
+textNodes.forEach(node => {
+  node.addEventListener("mouseup", () => {
+    const selection = window.getSelection();
+    if (selection.toString().length > 0) {
+      // Clear any existing temporary highlight
+      clearTemporaryHighlight();
 
-	const textNodes = document.querySelectorAll("*:not(script):not(style)");
-	textNodes.forEach(node => {
-		node.addEventListener("mouseup", () => {
-			const selection = window.getSelection();
-			if (selection.toString().length > 0) {
-				const span = document.createElement("span");
-				span.classList.add("highlight");
-				span.style.backgroundColor = "var(--slider)";
-				span.style.color = "white";
-				span.textContent = selection.toString();
+      // Create a span element to wrap the selected text
+      const span = document.createElement("span");
+      span.classList.add("highlight");
+      span.style.backgroundColor = "var(--slider)";
+      span.style.color = "white";
+      span.style.cursor = "pointer";
+      span.textContent = selection.toString();
 
-				span.addEventListener("click", () => {
-					clearHighlights();
-				});
+      // Add event listener to highlight to remove it on click
+      span.addEventListener("click", handleHighlightClick);
 
-				if (activeHighlight !== null) {
-					activeHighlight.classList.remove("highlight");
-				}
+      // Replace the selected text with the highlighted span element
+      const range = selection.getRangeAt(0);
+      range.deleteContents();
+      range.insertNode(span);
+    }
+  });
+});
 
-				activeHighlight = span;
+// Function to clear the temporary highlight
+function clearTemporaryHighlight() {
+  const temporaryHighlight = document.querySelector(".highlight.temporary");
+  if (temporaryHighlight) {
+    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
+  }
+}
 
-				setTimeout(() => {
-					if (activeHighlight === span) {
-						toggleLockedState(span);
-					}
-				}, 2000);
+// Add event listener to remove temporary highlight on click elsewhere on the page
+document.addEventListener("click", clearTemporaryHighlight);
 
-				const range = selection.getRangeAt(0);
-				range.deleteContents();
-				range.insertNode(span);
-			}
-		});
-	});
 </script>
 
 <!--MAIN HTML Begins  what's up doc? -->
