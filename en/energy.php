@@ -119,7 +119,10 @@ Must be updated for each page-->
 // Function to handle click on a highlight
 function handleHighlightClick(event) {
   event.stopPropagation();
-  clearHighlights();
+  const highlight = event.target.closest(".highlight");
+  if (highlight) {
+    highlight.outerHTML = highlight.innerHTML;
+  }
 }
 
 // Function to clear the highlights
@@ -168,6 +171,11 @@ function clearTemporaryHighlight() {
 
 // Add event listener to remove temporary highlight on click elsewhere on the page
 document.addEventListener("click", clearTemporaryHighlight);
+
+
+
+
+
 
 </script>
 
