@@ -430,6 +430,12 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
 
 <script>
+
+tippy("[data-tippy-content]", {
+  placement: "bottom",
+});
+
+
   // Function to handle click on a highlight
 function handleHighlightClick(event) {
   event.stopPropagation();
