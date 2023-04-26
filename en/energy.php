@@ -270,10 +270,10 @@ streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a> 
 <br><br>
     <div>
     <div class="lead-page-paragraph">
-    OVER THE LAST MILLENIA, the Wet'su'weten people of America's North Pacific coast have lived side by side the Salmon's masterful management of energy.  Observing the Salmon's as esteemed elder of their shared ecosystem, <a href="kincentric.php" title="Chapter 5: Here we develop the term 'kentricism' for worldviews that understand all Earthen creatures share kindred relations."> were able to gain both ecological understanding and ethical inspiration.  Today, as we strive to ensure that our modern enterprises are green, we too must see with the same sight  for we too have much to learn from the ways of the salmon— in particular, the way in which their distribution of energy enriched the ecosystems of which they were a part. As we shall see, the Salmon’s outward spiral of energy emulates the vortical pattern by which Earth itself greened the biosphere.  And as we shall also see, it is also a pattern that underlies the ethics, traditions and language of the Wetsu'weten. the Igorots and other kincentric cultures.</div>
+    OVER THE LAST MILLENIA, the Wet'su'weten people of America's North Pacific coast have lived side by side the Salmon's masterful management of energy.  Observing the Salmon's as esteemed elder of their shared ecosystem, they were able to gain both ecological understanding and ethical inspiration to preside over the steady, mellenia-long enrichment of their shared biome.  Today, as we strive to ensure that our modern enterprises are green, we too must see with the same sight, for we too have much to learn from the ways of the salmon— in particular, their management of energy. As we shall see, the Salmon’s outward spiral of energy emulates the vortical pattern by which Earth itself greened the biosphere.  And as we shall also see, it is also a key pattern that underlies the ethics, traditions and language of the Wetsu'weten, the Igorots and other kincentric cultures.</div>
 
     <div class="page-paragraph"><p>
-    Indeed, the Salmon's spin of energy,  provides the geometry for our second Earthen ethic.  With its help we can see clearly the energetic pattern of our modern enterprises, and understand the inevitable depletion wrought by our modern for-profit and not-for-profit enterprises.  Then using this ethic, we can follow in the footsteps of kicentric cultures to lay out the requisite financial and ecological structure for our enterprises that are keen to be green.</div>
+    In this way, the Salmon's spin of energy, provides the geometry for our second Earthen ethic.  With its help we can discern how the energetic pattern of our modern for-profit and not-for-profit enterprises destines them to deplete the ecosystems of which they are part.  Then, guided by this ethic, we can reorient the financial structure of our keen green enterprises to follow the example of great enriching cultures, creatures and Earth.</div>
 </p>
 
       <p>However, to begin, we must return once again to our planet's primordial origins and take a closer its unique pattern of energy management.</p>
@@ -295,7 +295,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
       
       <p>Returning to the spiral of the salmon's cycles, we can see that its pattern is a magnificent reflection of Earth’s.</p>
 
-     <p id="61-up">Just as Earth’s absorbtion of solar energy powers the planet's processes, the salmon’s steady absorbtion of nutrient energy powers its life process. As it eats, nutrient energy is gathered and converted into the fish's fats and proteins while carbohydrates power its swim. Then, just as Earthen cycles disperse energy out to all, so too do the cycles of the Salmon!  As salmon are preyed upon and consumed, their accumulated nutrients are spun outwards to the broader system of which they are a part.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
+     <p id="61-up">Just as Earth’s absorbtion of solar energy powers the planet's processes, the salmon’s steady absorbtion of nutrient energy powers its life process. And just as Earth spun its energy out to its biosphere, so too did the Salmon to its biome.  Consuming insects and crustaceans, the Salmon gathered nutrient energy, storing it as fats and proteins, and burning it as carbohydrates to power its swim. Then, as salmon are preyed upon and consumed, their accumulated nutrients are spun outwards into the bellies of countless creatures, and steadily spun out to the broader system of which they are a part.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
 Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹</a></p>
 
      <p id="62-up">In this way, over the course of a single cycle, a batch of Salmon distribute more nutrients out to their ecosystem than they keep for themselves.  From a single batch of 2000 to 5200 eggs (weighing only few grams each) the resulting salmon can accumulate a biomass of several tons.  Yet from this concentrated mass of complex nutrients, at the end of a batch’s cycle only 20-50 salmon return to spawn.  And at their end, only several kilograms of eggs remain for the next cycle to begin— the other 99% of the batches' biomass having been dispersed out into the inland ecosystem in the consumed and dying salmon.<a href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></p>
@@ -304,8 +304,8 @@ Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 
 
      <p id="63-up">Not only did this pattern contribute to a common home for many creatures to thrive, the spiral ever improved the conditions for the Salmon’s own subsequent generations.  <a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
 Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
-
-<br><img src="https://earthen.io/content/images/2022/06/Salmon-Chart---1200px-2.png" width="100%" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'"><br>
+<!--
+<br><img src="https://earthen.io/content/images/2022/06/Salmon-Chart---1200px-2.png" width="100%" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'"><br>-->
 
      <p>Through this spiral, the salmon proliferated in rivers up and down the North Pacific coast of America, contributing to the inexorable enrichment of the land.</p>
 
@@ -364,8 +364,8 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
      <p>However, the path towards net-green has never been clearer.</p>
 
-
-     <img src="https://earthen.io/content/images/2022/08/Profit-vs-For-Earth-Final-1500px-1.png" width="100%">
+<!--
+     <img src="https://earthen.io/content/images/2022/08/Profit-vs-For-Earth-Final-1500px-1.png" width="100%">-->
 
      <p>Just as a shoal of salmon directs all their energy towards their out-to-all journey home, our green-intentioned, enterprises must direct their surplus energy towards an out-to-all-purpose.</p>
 
@@ -505,6 +505,9 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 </div>
 </div>
 
+    <!--
+<?php require_once ("includes/chapTER-footer.php");?>
+-->
 
 </div>
 </body>
