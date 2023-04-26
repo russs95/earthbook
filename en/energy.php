@@ -458,6 +458,7 @@ textNodes.forEach(node => {
       span.classList.add("highlight");
       span.style.backgroundColor = "green";
       span.style.color = "var(--background-color)";
+      span.title = "Click here to lock highlight";
       span.style.cursor = "pointer";
       span.textContent = selection.toString();
 
