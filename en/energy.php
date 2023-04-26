@@ -435,26 +435,21 @@ function handleHighlightClick(event) {
   event.stopPropagation();
   const highlight = event.target.closest(".highlight");
   if (highlight) {
-    highlight.classList.toggle("locked");
-    if (highlight.classList.contains("locked")) {
-      highlight._tippy.setContent("Tap to unhighlight");
-    } else {
-      highlight._tippy.setContent("Tap to highlight");
-    }
+    highlight.outerHTML = highlight.innerHTML;
   }
 }
 
 // Function to clear the highlights
 function clearHighlights() {
   const highlights = document.querySelectorAll(".highlight");
-  highlights.forEach((highlight) => {
+  highlights.forEach(highlight => {
     highlight.outerHTML = highlight.innerHTML;
   });
 }
 
 // Add event listeners to all text nodes in the document
 const textNodes = document.querySelectorAll("*:not(script):not(style)");
-textNodes.forEach((node) => {
+textNodes.forEach(node => {
   node.addEventListener("mouseup", () => {
     const selection = window.getSelection();
     if (selection.toString().length > 0) {
@@ -469,19 +464,6 @@ textNodes.forEach((node) => {
       span.style.color = "var(--slider)";
       span.style.cursor = "pointer";
       span.textContent = selection.toString();
-      span.setAttribute("title", "Tap to highlight");
-
-      // Add Tippy tooltip to highlight
-      tippy(span, {
-        content: "Tap to highlight",
-        arrow: false,
-        placement: "bottom",
-        theme: "light",
-        animation: "scale",
-        onShow(instance) {
-          instance.setContent("Tap to highlight");
-        },
-      });
 
       // Add event listener to highlight to remove it on click
       span.addEventListener("click", handleHighlightClick);
@@ -491,12 +473,27 @@ textNodes.forEach((node) => {
       range.deleteContents();
       range.insertNode(span);
 
-      // Set the cursor to the end of the highlighted text
-      const newRange = document.createRange();
-      newRange.setStartAfter(span);
-      newRange.collapse(true);
-      selection.removeAllRanges();
-      selection.addRange(newRange);
+      // Add tooltip to highlight
+      tippy(span, {
+        content: "Tap to lock highlight",
+        trigger: "mouseenter click",
+        placement: "bottom",
+        onShow(instance) {
+          clearTemporaryHighlight();
+          instance.setContent("Tap to lock highlight");
+        },
+        onHide(instance) {
+          instance.setContent("Tap to lock highlight");
+        },
+        onClick(instance) {
+          instance.setProps({
+            content: "Highlight locked!",
+            trigger: "mouseenter",
+          });
+          instance.hide();
+          span.classList.remove("temporary");
+        },
+      });
     }
   });
 });
@@ -511,6 +508,7 @@ function clearTemporaryHighlight() {
 
 // Add event listener to remove temporary highlight on click elsewhere on the page
 document.addEventListener("click", clearTemporaryHighlight);
+
 
 </script>
 </body>
