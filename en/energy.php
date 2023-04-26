@@ -54,9 +54,6 @@ Must be updated for each page-->
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:description"   content="Earthen Principle No.2: Observe how Earth’s cycles tend towards the outwards dissipation of energy."/>
 
-<script src="https://unpkg.com/@popperjs/core@2.10.3/dist/cjs/popper.js"></script>
-  <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.min.js"></script>
-
 
 
 <style>
@@ -126,73 +123,93 @@ Must be updated for each page-->
 
 </style>
 
+<script src="https://unpkg.com/@popperjs/core@2.10.3/dist/esm/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
+
 
 <script>
   // Function to handle click on a highlight
-  function handleHighlightClick(event) {
-    event.stopPropagation();
-    const highlight = event.target.closest(".highlight");
-    if (highlight) {
-      highlight.outerHTML = highlight.innerHTML;
+function handleHighlightClick(event) {
+  event.stopPropagation();
+  const highlight = event.target.closest(".highlight");
+  if (highlight) {
+    highlight.classList.toggle("locked");
+    if (highlight.classList.contains("locked")) {
+      highlight._tippy.setContent("Tap to unhighlight");
+    } else {
+      highlight._tippy.setContent("Tap to highlight");
     }
   }
+}
 
-  // Function to clear the highlights
-  function clearHighlights() {
-    const highlights = document.querySelectorAll(".highlight");
-    highlights.forEach(highlight => {
-      highlight.outerHTML = highlight.innerHTML;
-    });
-  }
-
-  // Add event listeners to all text nodes in the document
-  const textNodes = document.querySelectorAll("*:not(script):not(style)");
-  textNodes.forEach(node => {
-    node.addEventListener("mouseup", () => {
-      const selection = window.getSelection();
-      if (selection.toString().length > 0) {
-        // Clear any existing temporary highlight
-        clearTemporaryHighlight();
-
-        // Create a span element to wrap the selected text
-        const span = document.createElement("span");
-        span.classList.add("highlight");
-        span.style.backgroundColor = "green";
-        span.style.color = "var(--background-color)";
-        span.style.cursor = "pointer";
-        span.textContent = selection.toString();
-
-        // Add event listener to highlight to remove it on click
-        span.addEventListener("click", handleHighlightClick);
-
-        // Add tooltip to highlight
-        tippy(span, {
-          content: "Tap to lock highlight",
-          trigger: "manual",
-          delay: [500, 0],
-        });
-
-        // Replace the selected text with the highlighted span element
-        const range = selection.getRangeAt(0);
-        range.deleteContents();
-        range.insertNode(span);
-
-        // Show the tooltip
-        span._tippy.show();
-      }
-    });
+// Function to clear the highlights
+function clearHighlights() {
+  const highlights = document.querySelectorAll(".highlight");
+  highlights.forEach((highlight) => {
+    highlight.outerHTML = highlight.innerHTML;
   });
+}
 
-  // Function to clear the temporary highlight
-  function clearTemporaryHighlight() {
-    const temporaryHighlight = document.querySelector(".highlight.temporary");
-    if (temporaryHighlight) {
-      temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
+// Add event listeners to all text nodes in the document
+const textNodes = document.querySelectorAll("*:not(script):not(style)");
+textNodes.forEach((node) => {
+  node.addEventListener("mouseup", () => {
+    const selection = window.getSelection();
+    if (selection.toString().length > 0) {
+      // Clear any existing temporary highlight
+      clearTemporaryHighlight();
+
+      // Create a span element to wrap the selected text
+      const span = document.createElement("span");
+      span.classList.add("highlight");
+      span.classList.add("temporary");
+      span.style.backgroundColor = "yellow";
+      span.style.color = "var(--slider)";
+      span.style.cursor = "pointer";
+      span.textContent = selection.toString();
+      span.setAttribute("title", "Tap to highlight");
+
+      // Add Tippy tooltip to highlight
+      tippy(span, {
+        content: "Tap to highlight",
+        arrow: false,
+        placement: "bottom",
+        theme: "light",
+        animation: "scale",
+        onShow(instance) {
+          instance.setContent("Tap to highlight");
+        },
+      });
+
+      // Add event listener to highlight to remove it on click
+      span.addEventListener("click", handleHighlightClick);
+
+      // Replace the selected text with the highlighted span element
+      const range = selection.getRangeAt(0);
+      range.deleteContents();
+      range.insertNode(span);
+
+      // Set the cursor to the end of the highlighted text
+      const newRange = document.createRange();
+      newRange.setStartAfter(span);
+      newRange.collapse(true);
+      selection.removeAllRanges();
+      selection.addRange(newRange);
     }
-  }
+  });
+});
 
-  // Add event listener to remove temporary highlight on click elsewhere on the page
-  document.addEventListener("click", clearTemporaryHighlight);
+// Function to clear the temporary highlight
+function clearTemporaryHighlight() {
+  const temporaryHighlight = document.querySelector(".highlight.temporary");
+  if (temporaryHighlight) {
+    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
+  }
+}
+
+// Add event listener to remove temporary highlight on click elsewhere on the page
+document.addEventListener("click", clearTemporaryHighlight);
+
 </script>
 
 
