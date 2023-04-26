@@ -96,10 +96,56 @@ Must be updated for each page-->
       */font-size: 10vmin;
       letter-spacing: 2px;
       
+      
     }
+
+    .highlight {
+			background-color: yellow;
+			cursor: pointer;
+		}
+
+		.locked-highlight {
+			background-color: orange;
+		}
 
 </style>
 
+<script>
+		// Function to toggle the "locked" state of a highlighted text
+		function toggleLockedState(highlight) {
+			highlight.classList.toggle("locked-highlight");
+		}
+
+		// Add event listeners to all text nodes in the document
+		const textNodes = document.querySelectorAll("*:not(script):not(style)");
+		textNodes.forEach(node => {
+			node.addEventListener("mouseup", () => {
+				const selection = window.getSelection();
+				if (selection.toString().length > 0) {
+					// Create a span element to wrap the selected text
+					const span = document.createElement("span");
+					span.classList.add("highlight");
+					span.textContent = selection.toString();
+
+					// Add event listener to toggle the "locked" state of the highlight
+					span.addEventListener("click", () => {
+						toggleLockedState(span);
+					});
+
+					// Replace the selected text with the new span element
+					const range = selection.getRangeAt(0);
+					range.deleteContents();
+					range.insertNode(span);
+
+					// Collapse the selection to the end of the new span element
+					range.setStartAfter(span);
+					range.collapse(true);
+					selection.removeAllRanges();
+					selection.addRange(range);
+				}
+			});
+		});
+	</script>
 <!--MAIN HTML Begins-->
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
@@ -145,7 +191,7 @@ Must be updated for each page-->
 
 <div class="page-paragraph">
     <p id="58-up"><i>
-    Thirteen thousand years ago, with the retreat of trillion ton ice-sheets from North America's Pacific coast, all that remained was barren desolation.  However, in the lingering glacial streams, the revitalization had already begun.   Proliferating river by river down the warming coast, the adventurous ancestors of today's Salmon swan inland to deposit their eggs.  Ever since, with each season, their energizing cyle has spun. Come Spring, salmon hatch-lings emerge out of the rocky river bed. The tiny fish consume insects and waterborne lavae and gather their strength.  Come summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. Come fall, when after several years they have reached their full size and strength, they head home.  As millions of Salmon retrace their river route an entire ecosystem revels in their return. Bears, eagles and humans gather for grand autumn fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by continue to the waters where they were born.  Using the last of their strength, they deposit their eggs in the gravel.  The salmon then die; their decomposition a final nutrient gift to the now rich and diverse river ecosystem that their roe will soon run.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and
+    Thirteen thousand years ago, as trillion ton ice-sheets retreated from North America's Pacific coast, barren desolation reigned.  However, in the lingering glacial streams, the revitalization had already begun.   Proliferating river by river down the warming coast, the adventurous ancestors of today's Salmon swan inland to deposit their eggs.  Ever since, with each season, their energizing cyle has spun. Come Spring, salmon hatch-lings emerge out of the rocky river bed. The tiny fish consume insects and waterborne lavae and gather their strength.  Come summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. Come fall, when after several years they have reached their full size and strength, they head home.  As millions of Salmon retrace their river route an entire ecosystem revels in their return. Bears, eagles and humans gather for grand autumn fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by continue to the waters where they were born.  Using the last of their strength, they deposit their eggs in the gravel.  The salmon then die; their decomposition a final nutrient gift to the now rich and diverse river ecosystem that their roe will soon run.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and
 streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a> </i>
      </p></div>
     <br><br>
