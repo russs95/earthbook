@@ -142,8 +142,8 @@ textNodes.forEach(node => {
       // Create a span element to wrap the selected text
       const span = document.createElement("span");
       span.classList.add("highlight");
-      span.style.backgroundColor = "var(--slider)";
-      span.style.color = "white";
+      span.style.backgroundColor = "green";
+      span.style.color = "var(--background-color)";
       span.style.cursor = "pointer";
       span.textContent = selection.toString();
 
