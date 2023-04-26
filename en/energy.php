@@ -427,10 +427,13 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
 
 <script>
-  // Function to handle click on a highlight
+// Function to handle click on a highlight
 function handleHighlightClick(event) {
   event.stopPropagation();
-  clearHighlights();
+  const highlight = event.target.closest(".highlight");
+  if (highlight) {
+    highlight.outerHTML = highlight.innerHTML;
+  }
 }
 
 // Function to clear the highlights
@@ -453,8 +456,8 @@ textNodes.forEach(node => {
       // Create a span element to wrap the selected text
       const span = document.createElement("span");
       span.classList.add("highlight");
-      span.style.backgroundColor = "var(--slider)";
-      span.style.color = "white";
+      span.style.backgroundColor = "green";
+      span.style.color = "var(--background-color)";
       span.style.cursor = "pointer";
       span.textContent = selection.toString();
 
