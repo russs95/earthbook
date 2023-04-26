@@ -146,7 +146,9 @@ Must be updated for each page-->
 			});
 		});
 	</script>
-<!--MAIN HTML Begins-->
+<!--MAIN HTML Begins  what's up doc? -->
+
+
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 <div id="underlayer">
@@ -162,7 +164,7 @@ Must be updated for each page-->
         <div id="ct-chapter-title">The Salmon's Spin</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Earthen Principle No. 2</div>
-        <div id="ct-word-count"><i>2,307 words |  Book 2</i></div>
+        <div id="ct-word-count"><i>2,307 words |  Book II</i></div>
       </div>
   </div>
 
