@@ -31,7 +31,7 @@ _END;?>
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
-$name = "";
+$name = "earthen";
 $page_number = "10";
 $chap_number = "Bk 1, Chap. 7, ";
 $chap_name = "The Earthen Ways";
