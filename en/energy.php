@@ -501,19 +501,19 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
     });
   });
 
-
-  
   // Function to clear the temporary highlight
   function clearTemporaryHighlight() {
     const temporaryHighlight = document.querySelector(".highlight.temporary");
     if (temporaryHighlight) {
-      temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
+      const content = temporaryHighlight.innerHTML;
+      temporaryHighlight.outerHTML = content;
     }
   }
 
   // Add event listener to remove temporary highlight on click elsewhere on the page
   document.addEventListener("click", clearTemporaryHighlight);
 </script>
+
 
 </body>
 </html>
