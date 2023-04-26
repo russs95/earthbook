@@ -29,9 +29,11 @@ _END;?>
 $parts = explode ("/", $_SERVER['SCRIPT_NAME']);
 $name = $parts [count($parts)-1];
 if (strcmp($name, "index.php") == 0)
-$name = "";
+$name = "energy";
 $page_number = "13";
-$page_title = "The Salmon's Spin |  Book two | Tratatus Ayyew - Earthbook";?>
+$chap_number = "Bk 2, Chap. 2, ";
+$chap_name = "The Salmon's Spin";
+$page_title = "The Salmon's Spin |  Tractatus Ayyew | Earthbook Edition";?>
 
 <head>
 
@@ -41,7 +43,7 @@ $page_title = "The Salmon's Spin |  Book two | Tratatus Ayyew - Earthbook";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<meta property="article:modified_time" content="2023-02-21T09:10:13+00:00">
+<meta property="article:modified_time" content="2023-04-21T09:10:13+00:00">
 <meta name="keywords" content="salmon, spin, energy, inwards, capital, currency, for-profit, not-for-profit, earth enterprise, for Earth, forEarth, Haida, Dakelh, Wetʼsuwetʼen, nutrients, roe, dispersal, concentration, Earthen, Igorots, Ayyew, cycles that spiral, spiral design, linear vs circular, circular, green, Earthen ethics, principle two, Earthen principles, Earthen, cosmology, planetary character, Earth's character, "> 
 <meta name="description" content="Earthen Principle No.2: Earth’s cycles tend towards the outwards dissipation of energy.">
 
@@ -51,6 +53,10 @@ Must be updated for each page-->
 	
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:description"   content="Earthen Principle No.2: Observe how Earth’s cycles tend towards the outwards dissipation of energy."/>
+
+<script src="https://unpkg.com/@popperjs/core@2.10.3/dist/cjs/popper.js"></script>
+  <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.min.js"></script>
+
 
 
 <style>
@@ -120,72 +126,74 @@ Must be updated for each page-->
 
 </style>
 
+
 <script>
-// Function to handle click on a highlight
-function handleHighlightClick(event) {
-  event.stopPropagation();
-  const highlight = event.target.closest(".highlight");
-  if (highlight) {
-    highlight.outerHTML = highlight.innerHTML;
-  }
-}
-
-// Function to clear the highlights
-function clearHighlights() {
-  const highlights = document.querySelectorAll(".highlight");
-  highlights.forEach(highlight => {
-    highlight.outerHTML = highlight.innerHTML;
-  });
-}
-
-// Add event listeners to all text nodes in the document
-const textNodes = document.querySelectorAll("*:not(script):not(style)");
-textNodes.forEach(node => {
-  node.addEventListener("mouseup", () => {
-    const selection = window.getSelection();
-    if (selection.toString().length > 0) {
-      // Clear any existing temporary highlight
-      clearTemporaryHighlight();
-
-      // Create a span element to wrap the selected text
-      const span = document.createElement("span");
-      span.classList.add("highlight");
-      span.classList.add("temporary");
-      span.style.backgroundColor = "green";
-      span.style.color = "var(--background-color)";
-      span.style.cursor = "pointer";
-      span.setAttribute("title", "Tap to highlight");
-      span.textContent = selection.toString();
-
-      // Add event listener to highlight to remove it on click
-      span.addEventListener("click", handleHighlightClick);
-
-      // Replace the selected text with the highlighted span element
-      const range = selection.getRangeAt(0);
-      range.deleteContents();
-      range.insertNode(span);
-
-      // Show tooltip on the temporary highlight
-      span.setAttribute("data-tooltip", "Tap to highlight");
-      tippy(span);
+  // Function to handle click on a highlight
+  function handleHighlightClick(event) {
+    event.stopPropagation();
+    const highlight = event.target.closest(".highlight");
+    if (highlight) {
+      highlight.outerHTML = highlight.innerHTML;
     }
-  });
-});
-
-// Function to clear the temporary highlight
-function clearTemporaryHighlight() {
-  const temporaryHighlight = document.querySelector(".highlight.temporary");
-  if (temporaryHighlight) {
-    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
   }
-}
 
-// Add event listener to remove temporary highlight on click elsewhere on the page
-document.addEventListener("click", clearTemporaryHighlight);
+  // Function to clear the highlights
+  function clearHighlights() {
+    const highlights = document.querySelectorAll(".highlight");
+    highlights.forEach(highlight => {
+      highlight.outerHTML = highlight.innerHTML;
+    });
+  }
+
+  // Add event listeners to all text nodes in the document
+  const textNodes = document.querySelectorAll("*:not(script):not(style)");
+  textNodes.forEach(node => {
+    node.addEventListener("mouseup", () => {
+      const selection = window.getSelection();
+      if (selection.toString().length > 0) {
+        // Clear any existing temporary highlight
+        clearTemporaryHighlight();
+
+        // Create a span element to wrap the selected text
+        const span = document.createElement("span");
+        span.classList.add("highlight");
+        span.style.backgroundColor = "green";
+        span.style.color = "var(--background-color)";
+        span.style.cursor = "pointer";
+        span.textContent = selection.toString();
+
+        // Add event listener to highlight to remove it on click
+        span.addEventListener("click", handleHighlightClick);
+
+        // Add tooltip to highlight
+        tippy(span, {
+          content: "Tap to lock highlight",
+          trigger: "manual",
+          delay: [500, 0],
+        });
+
+        // Replace the selected text with the highlighted span element
+        const range = selection.getRangeAt(0);
+        range.deleteContents();
+        range.insertNode(span);
+
+        // Show the tooltip
+        span._tippy.show();
+      }
+    });
+  });
+
+  // Function to clear the temporary highlight
+  function clearTemporaryHighlight() {
+    const temporaryHighlight = document.querySelector(".highlight.temporary");
+    if (temporaryHighlight) {
+      temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
+    }
+  }
+
+  // Add event listener to remove temporary highlight on click elsewhere on the page
+  document.addEventListener("click", clearTemporaryHighlight);
 </script>
-
-<script src="https://unpkg.com/@popperjs/core@2.10.3/dist/cjs/popper.js"></script>
-  <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.min.js"></script>
 
 
 </head>
@@ -208,7 +216,7 @@ document.addEventListener("click", clearTemporaryHighlight);
         <div id="ct-chapter-title">The Salmon's Spin</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Earthen Principle No. 2</div>
-        <div id="ct-word-count"><i>2,307 words |  Book II</i></div>
+        <div id="ct-word-count"><i>2,307 words |  Book 2</i></div>
       </div>
   </div>
 
