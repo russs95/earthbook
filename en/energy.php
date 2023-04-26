@@ -501,6 +501,8 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
     });
   });
 
+
+  
   // Function to clear the temporary highlight
   function clearTemporaryHighlight() {
     const temporaryHighlight = document.querySelector(".highlight.temporary");
