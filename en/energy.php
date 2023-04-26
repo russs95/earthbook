@@ -100,52 +100,73 @@ Must be updated for each page-->
     }
 
     .highlight {
-			background-color: yellow;
+			background-color: #fff;
 			cursor: pointer;
+      color: var(--slider);
 		}
 
 		.locked-highlight {
-			background-color: orange;
+			background-color: green;
+      color: var(--background-color);
+      font-family: 'CooperLt', Georgia, serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  text-align: justify;
 		}
 
 </style>
-
 <script>
-		// Function to toggle the "locked" state of a highlighted text
-		function toggleLockedState(highlight) {
-			highlight.classList.toggle("locked-highlight");
-		}
+	let activeHighlight = null;
 
-		// Add event listeners to all text nodes in the document
-		const textNodes = document.querySelectorAll("*:not(script):not(style)");
-		textNodes.forEach(node => {
-			node.addEventListener("mouseup", () => {
-				const selection = window.getSelection();
-				if (selection.toString().length > 0) {
-					// Create a span element to wrap the selected text
-					const span = document.createElement("span");
-					span.classList.add("highlight");
-					span.textContent = selection.toString();
-
-					// Add event listener to toggle the "locked" state of the highlight
-					span.addEventListener("click", () => {
-						toggleLockedState(span);
-					});
-
-					// Replace the selected text with the new span element
-					const range = selection.getRangeAt(0);
-					range.deleteContents();
-					range.insertNode(span);
-
-					// Collapse the selection to the end of the new span element
-					range.setStartAfter(span);
-					range.collapse(true);
-					selection.removeAllRanges();
-					selection.addRange(range);
-				}
-			});
+	function clearHighlights() {
+		const highlights = document.querySelectorAll(".highlight");
+		highlights.forEach(highlight => {
+			highlight.parentNode.replaceChild(highlight.firstChild, highlight);
 		});
-	</script>
+		activeHighlight = null;
+	}
+
+	function toggleLockedState(highlight) {
+		highlight.classList.toggle("locked-highlight");
+		highlight.classList.remove("highlight");
+		activeHighlight = null;
+	}
+
+	const textNodes = document.querySelectorAll("*:not(script):not(style)");
+	textNodes.forEach(node => {
+		node.addEventListener("mouseup", () => {
+			const selection = window.getSelection();
+			if (selection.toString().length > 0) {
+				const span = document.createElement("span");
+				span.classList.add("highlight");
+				span.style.backgroundColor = "var(--slider)";
+				span.style.color = "white";
+				span.textContent = selection.toString();
+
+				span.addEventListener("click", () => {
+					clearHighlights();
+				});
+
+				if (activeHighlight !== null) {
+					activeHighlight.classList.remove("highlight");
+				}
+
+				activeHighlight = span;
+
+				setTimeout(() => {
+					if (activeHighlight === span) {
+						toggleLockedState(span);
+					}
+				}, 2000);
+
+				const range = selection.getRangeAt(0);
+				range.deleteContents();
+				range.insertNode(span);
+			}
+		});
+	});
+</script>
+
 <!--MAIN HTML Begins  what's up doc? -->
 
 
