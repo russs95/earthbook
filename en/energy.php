@@ -116,7 +116,8 @@ Must be updated for each page-->
 
 </style>
 <script>
-// Function to handle click on a highlight
+
+  // Function to handle click on a highlight
 function handleHighlightClick(event) {
   event.stopPropagation();
   const highlight = event.target.closest(".highlight");
@@ -145,10 +146,12 @@ textNodes.forEach(node => {
       // Create a span element to wrap the selected text
       const span = document.createElement("span");
       span.classList.add("highlight");
+      span.classList.add("temporary");
       span.style.backgroundColor = "green";
       span.style.color = "var(--background-color)";
       span.style.cursor = "pointer";
       span.textContent = selection.toString();
+      span.setAttribute("title", "Tap to highlight");
 
       // Add event listener to highlight to remove it on click
       span.addEventListener("click", handleHighlightClick);
@@ -169,12 +172,20 @@ function clearTemporaryHighlight() {
   }
 }
 
+// Function to lock the highlight
+function lockHighlight() {
+  const temporaryHighlight = document.querySelector(".highlight.temporary");
+  if (temporaryHighlight) {
+    temporaryHighlight.classList.remove("temporary");
+    temporaryHighlight.setAttribute("title", "Tap to unhighlight");
+  }
+}
+
 // Add event listener to remove temporary highlight on click elsewhere on the page
 document.addEventListener("click", clearTemporaryHighlight);
 
-
-
-
+// Add event listener to lock highlight on double click
+document.addEventListener("dblclick", lockHighlight);
 
 
 </script>
