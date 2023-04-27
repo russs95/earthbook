@@ -588,6 +588,8 @@ document.addEventListener("click", clearTemporaryHighlight);
 
 
  <script>
+
+
 window.onscroll = function() {
   if (window.pageYOffset > 300) {
     guidedTour();
@@ -596,15 +598,11 @@ window.onscroll = function() {
 
 function guidedTour() {
 
-const mediaQuery = window.matchMedia('(min-width: 7px)')
-
- //AFTER
- if ((mediaQuery.matches)  || (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500)) {
 
     document.getElementById("myModal").style.display = "block";
     document.getElementById("underlayer").classList.add("blur");
-  }
-};
+
+}
 
 var closeButton = document.querySelector(".close");
 closeButton.onclick = function() {
