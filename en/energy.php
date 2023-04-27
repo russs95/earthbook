@@ -272,9 +272,10 @@ Must be updated for each page-->
 
 <div class="page-paragraph">
     <p id="58-up"><i>
-    Thirteen thousand years ago, as trillion-ton ice-sheets retreated from North America's Pacific coast, barren desolation reigned.  However, in the lingering glacial streams, the continent's revitalization had already begun.   Proliferating river by river down the warming coast, the adventurous ancestors of today's Salmon swan inland to deposit their eggs.  Ever since, with each season, their energizing cycle has spun. Come Spring, salmon hatchlings emerge from the rocky river bed. The tiny fish gather their strength consuming insects and waterborne larvae.  Come Summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. Come fall, when after several years they have reached their full size and strength, they head home.  As millions of Salmon retrace their river route, an entire ecosystem revels in their return. Bears, eagles and humans gather for grand autumn fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by, continue to the waters where they were born.  Using the last of their strength, they deposit their eggs in the gravel.  The salmon then die; their decomposition a final nutrient gift to the now rich and diverse river ecosystem that their roe will soon run.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a>
+    <a onclick="openFootnotes()">MODAL</a>Thirteen thousand years ago, as trillion-ton ice-sheets retreated from North America's Pacific coast, barren desolation reigned.  However, in the lingering glacial streams, the continent's revitalization had already begun.   Proliferating river by river down the warming coast, the adventurous ancestors of today's Salmon swan inland to deposit their eggs.  Ever since, with each season, their energizing cycle has spun. Come Spring, salmon hatchlings emerge from the rocky river bed. The tiny fish gather their strength consuming insects and waterborne larvae.  Come Summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. Come fall, when after several years they have reached their full size and strength, they head home.  As millions of Salmon retrace their river route, an entire ecosystem revels in their return. Bears, eagles and humans gather for grand autumn fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by, continue to the waters where they were born.  Using the last of their strength, they deposit their eggs in the gravel.  The salmon then die; their decomposition a final nutrient gift to the now rich and diverse river ecosystem that their roe will soon run.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a>
     </i></p>
     </div>
+
     <br><br>
      <div id="line" style="margin-bottom: 30px;"></div>
     <br><br>
@@ -307,17 +308,16 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
       
       <p>Returning to the spiral of the salmon's cycles, we can see that its pattern is a magnificent reflection of Earth’s.</p>
 
-     <p id="61-up">Just as Earth’s absorption of solar energy powers the planet's processes, the salmon’s steady absorbtion of nutrient energy powers its life process. And just as Earth spun its energy out to its biosphere, so too did the Salmon to its biome.  Consuming insects and crustaceans, the Salmon gathered nutrient energy, storing it as fats and proteins, and burning it as carbohydrates to power its swim. Then, as the firsh are preyed upon and consumed, their accumulated nutrients are spun outwards into the bellies of countless creatures, and steadily spun out to the broader system of which they are a part.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
-Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹</a></p>
+     <p id="61-up">Just as Earth’s absorption of solar energy powers the planet's processes, the salmon’s steady absorbtion of nutrient energy powers its life process. And just as Earth spun its energy out to its biosphere, so too did the Salmon to its biome.  Consuming insects and crustaceans, the Salmon gathered nutrient energy, storing it as fats and proteins, and burning it as carbohydrates to power its swim. Then, as the firsh are preyed upon and consumed, their accumulated nutrients are spun outwards into the bellies of countless creatures, and steadily spun out to the broader system of which they are a part.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹</a></p>
 
      <p id="62-up">In this way, over the course of a single cycle, a batch of salmon distribute more nutrients to their ecosystem than they keep for themselves. From a single batch of 2000 to 5200 eggs (weighing only a few grams each), the resulting salmon can accumulate a biomass of several tons. Yet from this concentrated mass of complex nutrients, at the end of a batch's cycle, only 20-50 salmon return to spawn. And at the end of their lifecycle, only several kilograms of eggs remain for the next cycle to begin— the other 99% of the batch's biomass having been dispersed out into the inland ecosystem in the consumed and dying salmon.<a href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></p>
 
      
 
      <p id="63-up">Not only did this pattern contribute to a common home for many creatures to thrive, the spiral ever improved the conditions for the Salmon’s own subsequent generations.  <a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
-Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
+    Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
 
-<br><img src="https://earthen.io/content/images/2022/06/Salmon-Chart---1200px-2.png" width="100%" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'"><br>
+    <br><img src="https://earthen.io/content/images/2022/06/Salmon-Chart---1200px-2.png" width="100%" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'"><br>
 
      <p>Through this spiral, the salmon proliferated in rivers up and down the North Pacific coast of America, contributing to the inexorable enrichment of the land.</p>
 
@@ -370,10 +370,10 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
 
      <p>In other words, without both not-for-profit and an intention of contributing socially and ecologically— and an accounting and disclosure of both— an enterprise cannot be green.  
-</p>
+    </p>
 
      <p>While in the short-term, an enterprise may sequester much carbon, plant many trees and support many species; without an accounting thereof, one cannot be certain, whether these impacts are in fact a net-contribution.  It could well be that more carbon is emitted, more trees are cut, and more species are depleted to achieve these results!  
-</p>
+    </p>
 
      <p>However, the path towards net-green has never been clearer.</p>
 
@@ -382,7 +382,7 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
      <p>Just as a shoal of salmon directs all their energy towards their out-to-all journey home, our green-intentioned, enterprises must direct their surplus energy towards an out-to-all-purpose.</p>
 
-     <p>Learning from kincentric cultures, such a purpose must embrace both the social and the ecological, recognizing that both, from an Earthen view, are one and the same. This dual not-for-profit and <i>for-Earth</i> intention, must be declared and accounted for— ensuring that the enterprises revenues (in particular its surpluses) go towards this for-Earth purpose and that the other four Earthen ethics are met.   </p>
+     <p>Learning from kincentric cultures, such a purpose must embrace both the social and the ecological, recognizing that both, from an Earthen view, are one and the same. This dual not-for-profit and <i>for-Earth</i> intention, must be declared and accounted for— ensuring that the enterprises revenues (in particular its surpluses) go towards this for-Earth purpose and that the other four Earthen ethics are met.</p>
 
      <p>That said, the outwards spiral of energy is only half of Earth's spiral pattern of enrichment.</p>
 
@@ -523,113 +523,6 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
 
 </div>
-
-
-<script>
-// Function to handle click on a highlight
-function handleHighlightClick(event) {
-  event.stopPropagation();
-  const highlight = event.target.closest(".highlight");
-  if (highlight) {
-    highlight.outerHTML = highlight.innerHTML;
-  }
-}
-
-// Function to clear the highlights
-function clearHighlights() {
-  const highlights = document.querySelectorAll(".highlight");
-  highlights.forEach(highlight => {
-    highlight.outerHTML = highlight.innerHTML;
-  });
-}
-
-// Add event listeners to all text nodes in the document
-const textNodes = document.querySelectorAll("*:not(script):not(style)");
-textNodes.forEach(node => {
-  node.addEventListener("mouseup", () => {
-    const selection = window.getSelection();
-    if (selection.toString().length > 0) {
-      // Clear any existing temporary highlight
-      clearTemporaryHighlight();
-
-      // Create a span element to wrap the selected text
-      const span = document.createElement("span");
-      span.classList.add("highlight");
-      span.style.backgroundColor = "green";
-      span.style.color = "var(--background-color)";
-      span.title = "Click here to lock highlight";
-      span.style.cursor = "pointer";
-      span.textContent = selection.toString();
-
-      // Add event listener to highlight to remove it on click
-      span.addEventListener("click", handleHighlightClick);
-
-      // Replace the selected text with the highlighted span element
-      const range = selection.getRangeAt(0);
-      range.deleteContents();
-      range.insertNode(span);
-    }
-  });
-});
-
-// Function to clear the temporary highlight
-function clearTemporaryHighlight() {
-  const temporaryHighlight = document.querySelector(".highlight.temporary");
-  if (temporaryHighlight) {
-    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
-  }
-}
-
-// Add event listener to remove temporary highlight on click elsewhere on the page
-document.addEventListener("click", clearTemporaryHighlight);
-
-</script>
-
-
- <script>
-        function guidedTour() {
-  setTimeout(function() {
-    var modal = document.getElementById("myModal");
-    modal.style.display = "block";
-    document.getElementById("page-content").classList.add("blur");
-
-    var closeButton = document.querySelector(".close");
-    closeButton.onclick = function() {
-      modal.style.display = "none";
-      document.getElementById("page-content").classList.remove("blur");
-    }
-
-    var information = document.querySelectorAll(".information");
-    var currentInfo = 0;
-
-    function showInfo(n) {
-      information[currentInfo].style.display = "none";
-      information[n].style.display = "block";
-      currentInfo = n;
-    }
-
-    document.querySelector("#next").onclick = function() {
-      if (currentInfo === information.length - 1) {
-        showInfo(0);
-      } else {
-        showInfo(currentInfo + 1);
-      }
-    };
-
-    document.querySelector("#back").onclick = function() {
-      if (currentInfo === 0) {
-        showInfo(information.length - 1);
-      } else {
-        showInfo(currentInfo - 1);
-      }
-    };
-  }, 5000);
-}
-
-guidedTour(); // calling the function to start the tour after 5 seconds
-</script>
-
-
 
 
 </body>
