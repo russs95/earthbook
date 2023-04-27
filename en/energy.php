@@ -182,11 +182,16 @@ Must be updated for each page-->
 
 </style>
 <script>
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction3()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    alert("working!");
+function scrollFunction3() {
+  const pageHeight = document.documentElement.scrollHeight;
+  const windowHeight = window.innerHeight;
+  const scrollPosition = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
+  const scrollPercentage = (scrollPosition + windowHeight) / pageHeight * 100;
+
+  if (scrollPercentage > 95) {
+    alert('Working!');
   }
 }
 </script>
