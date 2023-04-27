@@ -420,9 +420,9 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 </div>
 </div>
 
-    <!--
+    
 <?php require_once ("includes/chapTER-footer.php");?>
--->
+
 
 </div>
 
