@@ -134,7 +134,33 @@ Must be updated for each page-->
 
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
+
+
+<div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="information-one">
+            <h2>Welcome to an Earthbook</h2>
+            <p>You've never quite read anything like this before.  Earthbook are a new reading format designed from the ground up to be human and Earth friendly.  Check out some of the features...</p>
+            <button class="next">Next</button>
+          </div>
+          <div id="information-two" style="display:none;">
+            <h2>Sample text number two</h2>
+            <p>Content of sample text number two</p>
+            <button class="back">Back</button>
+            <button class="next">Next</button>
+          </div>
+          <div id="information-three" style="display:none;">
+            <h2>Sample text number three</h2>
+            <p>Content of sample text number three</p>
+            <button class="back">Back</button>
+          </div>
+        </div>
+      </div>
+
+
 <div id="underlayer">
+
 
   <a id="top"></a>
 
@@ -226,7 +252,7 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
      <p>Today, <!--as we focus our efforts on reducing the ecological harm of our modern enterprises,-->as we strive to define the meaning of green for our modern endeavours and enterprises, it is critical to recall that humans also played a part in the flourishing of the America's continental coast over the last twelve thousand years.</p>
 
-     <p>Over the mellenia, nations such the Wetʼsuwetʼen have lived side by side the salmon.  Seeing the salmon as ecological elders, they were able to learn from them.  Over the generation they wove the salmon's pattern of energy management into the stories, morals and languages of their culture-- which in turn had significant impact on the ecosystem of which their society was part.</p>
+     <p>Over the mellenia, nations such the Wetʼsuwetʼen have lived side by side the salmon.  From their kincentric view of the world, they saw the salmon as ecological elders.  Over countless generations they learned from them.  Steadily the Wetsuweten wove the salmon's pattern of energy management into the stories, morals and languages of their culture-- which in turn had significant impact on the ecosystem of which their society was part.</p>
 
 
      <p>In Wetsuweten culture, the very first Salmon caught each season is shared with every member of the community or family unit.  In this tradition, a morsel of the fish is meticulously distributed among each member, and every bone is taken back to the water.  This dynamic was then followed in the seasonal harvest of tens of thousands of salmon: only as much as each family requires is taken, with the taken being shared among all and the discarded bones being returned to the river.  So ingrained is this spirit of  energetic management, that in their language grammatically it is impossible to speak of 'my salmon' only of 'our salmon'.</p>
@@ -488,95 +514,48 @@ document.addEventListener("click", clearTemporaryHighlight);
 
 </script>
 
-<!--
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="https://unpkg.com/tippy.js@6"></script>
-
 <script>
-  tippy("[data-tippy-content]", {
-    placement: "bottom",
-  });
-
-  // Function to handle click on a highlight
-  function handleHighlightClick(event) {
-    event.stopPropagation();
-    const highlight = event.target.closest(".highlight");
-    if (highlight) {
-      highlight.outerHTML = highlight.innerHTML;
-    }
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 100) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("underlayer").classList.add("blur");
   }
+};
 
-  // Function to clear the highlights
-  function clearHighlights() {
-    const highlights = document.querySelectorAll(".highlight");
-    highlights.forEach((highlight) => {
-      highlight.outerHTML = highlight.innerHTML;
-    });
-  }
+var closeButton = document.querySelector(".close");
+closeButton.onclick = function() {
+  document.getElementById("myModal").style.display = "none";
+  document.getElementById("underlayer").classList.remove("blur");
+};
 
-  // Add event listeners to all text nodes in the document
-  const textNodes = document.querySelectorAll("*:not(script):not(style)");
-  textNodes.forEach((node) => {
-    node.addEventListener("mouseup", () => {
-      const selection = window.getSelection();
-      if (selection.toString().length > 0) {
-        // Clear any existing temporary highlight
-        clearTemporaryHighlight();
+var information = document.querySelectorAll(".modal-content > div");
+var currentInfo = 0;
 
-        // Create a span element to wrap the selected text
-        const span = document.createElement("span");
-        span.classList.add("highlight");
-        span.classList.add("temporary");
-        span.style.backgroundColor = "yellow";
-        span.style.color = "var(--slider)";
-        span.style.cursor = "pointer";
-        span.textContent = selection.toString();
+function showInfo(n) {
+  information[currentInfo].style.display = "none";
+  information[n].style.display = "block";
+  currentInfo = n;
+}
 
-        // Add event listener to highlight to remove it on click
-        span.addEventListener("click", handleHighlightClick);
+document.querySelector("#information-one .next").onclick = function() {
+  showInfo(1);
+};
 
-        // Replace the selected text with the highlighted span element
-        const range = selection.getRangeAt(0);
-        range.deleteContents();
-        range.insertNode(span);
+document.querySelector("#information-two .next").onclick = function() {
+  showInfo(2);
+};
 
-        // Add tooltip to highlight
-        tippy(span, {
-          content: "Tap to lock highlight",
-          trigger: "mouseenter click",
-          placement: "bottom",
-          onShow(instance) {
-            clearTemporaryHighlight();
-            instance.setContent("Tap to lock highlight");
-          },
-          onHide(instance) {
-            instance.setContent("Tap to lock highlight");
-          },
-          onClick(instance) {
-            instance.setProps({
-              content: "Highlight locked!",
-              trigger: "mouseenter",
-            });
-            instance.hide();
-            span.classList.remove("temporary");
-          },
-        });
-      }
-    });
-  });
+document.querySelector("#information-two .back").onclick = function() {
+  showInfo(0);
+};
 
-  // Function to clear the temporary highlight
-  function clearTemporaryHighlight() {
-    const temporaryHighlight = document.querySelector(".highlight.temporary");
-    if (temporaryHighlight) {
-      const content = temporaryHighlight.innerHTML;
-      temporaryHighlight.outerHTML = content;
-    }
-  }
+document.querySelector("#information-three .back").onclick = function() {
+  showInfo(1);
+};
 
-  // Add event listener to remove temporary highlight on click elsewhere on the page
-  document.addEventListener("click", clearTemporaryHighlight);
-</script>-->
+
+
+      </script>
 
 
 </body>
