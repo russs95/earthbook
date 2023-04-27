@@ -623,6 +623,8 @@ guidedTour(); // calling the function to start the tour after 5 seconds
 </script>
 
 
+
+
 </body>
 </html>
 
