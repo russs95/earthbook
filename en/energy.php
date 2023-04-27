@@ -218,8 +218,8 @@ Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 
 
      <p id="63-up">Not only did this pattern contribute to a common home for many creatures to thrive, the spiral ever improved the conditions for the Salmon’s own subsequent generations.  <a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
 Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
-<!--
-<br><img src="https://earthen.io/content/images/2022/06/Salmon-Chart---1200px-2.png" width="100%" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'"><br>-->
+
+<br><img src="https://earthen.io/content/images/2022/06/Salmon-Chart---1200px-2.png" width="100%" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'"><br>
 
      <p>Through this spiral, the salmon proliferated in rivers up and down the North Pacific coast of America, contributing to the inexorable enrichment of the land.</p>
 
@@ -279,8 +279,8 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
      <p>However, the path towards net-green has never been clearer.</p>
 
-<!--
-     <img src="https://earthen.io/content/images/2022/08/Profit-vs-For-Earth-Final-1500px-1.png" width="100%">-->
+
+     <img src="https://earthen.io/content/images/2022/08/Profit-vs-For-Earth-Final-1500px-1.png" width="100%">
 
      <p>Just as a shoal of salmon directs all their energy towards their out-to-all journey home, our green-intentioned, enterprises must direct their surplus energy towards an out-to-all-purpose.</p>
 
