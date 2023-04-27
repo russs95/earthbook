@@ -589,7 +589,7 @@ document.addEventListener("click", clearTemporaryHighlight);
 
  <script>
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {welcomeIntro()};
 
 
   //Scroll on arrival 
