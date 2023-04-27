@@ -595,10 +595,10 @@ window.onscroll = function() {welcomeIntro()};
   //Scroll on arrival 
 function welcomeIntro() {
 
-const mediaQuery = window.matchMedia('(max-width: 700px)')
+const mediaQuery = window.matchMedia('(min-width: 7px)')
 
  //AFTER
- if ((mediaQuery.matches)  || (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000)) {
+ if ((mediaQuery.matches)  || (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500)) {
 
     document.getElementById("myModal").style.display = "block";
     document.getElementById("underlayer").classList.add("blur");
