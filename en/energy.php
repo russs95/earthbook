@@ -574,11 +574,9 @@ function clearTemporaryHighlight() {
 // Add event listener to remove temporary highlight on click elsewhere on the page
 document.addEventListener("click", clearTemporaryHighlight);
 
-</script>
 
-<script>
 window.onscroll = function() {
-  if (document.documentElement.scrollTop > 100) {
+  if (document.documentElement.scrollTop > 500) {
     document.getElementById("myModal").style.display = "block";
     document.getElementById("underlayer").classList.add("blur");
   }
