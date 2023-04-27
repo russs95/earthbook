@@ -192,6 +192,39 @@ Must be updated for each page-->
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 
 
+
+  <a id="top"></a>
+
+  <!--HEADER NAVBAR-->
+  <header-component></header-component>
+
+  <div id="ct-chapter-top">
+    <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
+    <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+        <div id="ct-chapter-title">The Salmon's Spin</div>   
+        <div id="ct-book-title">Tractatus Ayyew</div>
+        <div id="ct-chap-location">Earthen Principle No. 2</div>
+        <div id="ct-word-count"><i>2,307 words |  Book 2</i></div>
+    </div>
+  </div>
+
+
+<!-- Page Title Section-->
+
+  <div id="ct-chapt-graphic" class="background-9">
+    <div class="ct-chapter-quote">
+      <span style="background-color:var(--nav-bar-accent);
+ padding:0.1em 0.2em;">“Earth’s cycles tend towards the outwards dissipation of energy.”</span>
+    </div>
+    <div class="ct-quote-source">
+     ― Earthen Ethic No.2
+    </div>
+  </div>
+
+  <div id="up-arrow"></div>
+
+
+
 <div id="myModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -225,38 +258,6 @@ Must be updated for each page-->
 
 
 <div id="underlayer">
-
-
-  <a id="top"></a>
-
-  <!--HEADER NAVBAR-->
-  <header-component></header-component>
-
-  <div id="ct-chapter-top">
-    <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
-    <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">The Salmon's Spin</div>   
-        <div id="ct-book-title">Tractatus Ayyew</div>
-        <div id="ct-chap-location">Earthen Principle No. 2</div>
-        <div id="ct-word-count"><i>2,307 words |  Book 2</i></div>
-    </div>
-  </div>
-
-
-<!-- Page Title Section-->
-
-  <div id="ct-chapt-graphic" class="background-9">
-    <div class="ct-chapter-quote">
-      <span style="background-color:var(--nav-bar-accent);
- padding:0.1em 0.2em;">“Earth’s cycles tend towards the outwards dissipation of energy.”</span>
-    </div>
-    <div class="ct-quote-source">
-     ― Earthen Ethic No.2
-    </div>
-  </div>
-
-  <div id="up-arrow"></div>
-
 
   <div id="ct-main">
 
@@ -582,47 +583,44 @@ document.addEventListener("click", clearTemporaryHighlight);
 
 
  <script>
-   function guidedTour() {
-  
-    setTimeout(function() {
-    var modal = document.getElementById("myModal");
-    modal.style.display = "block";
-    document.getElementById("underlayer").classList.add("blur");
+ window.onscroll = function() {
+  if (document.documentElement.scrollTop > 100) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("page-content").classList.add("blur");
+  }
+};
 
-    var closeButton = document.querySelector(".close");
-    closeButton.onclick = function() {
-      modal.style.display = "none";
-      document.getElementById("underlayer").classList.remove("blur");
-    }
+var closeButton = document.querySelector(".close");
+closeButton.onclick = function() {
+  document.getElementById("myModal").style.display = "none";
+  document.getElementById("page-content").classList.remove("blur");
+};
 
-    var information = document.querySelectorAll(".information");
-    var currentInfo = 0;
+var information = document.querySelectorAll(".modal-content > div");
+var currentInfo = 0;
 
-    function showInfo(n) {
-      information[currentInfo].style.display = "none";
-      information[n].style.display = "block";
-      currentInfo = n;
-    }
-
-    document.querySelector("#next").onclick = function() {
-      if (currentInfo === information.length - 1) {
-        showInfo(0);
-      } else {
-        showInfo(currentInfo + 1);
-      }
-    };
-
-    document.querySelector("#back").onclick = function() {
-      if (currentInfo === 0) {
-        showInfo(information.length - 1);
-      } else {
-        showInfo(currentInfo - 1);
-      }
-    };
-  }, 5000);
+function showInfo(n) {
+  information[currentInfo].style.display = "none";
+  information[n].style.display = "block";
+  currentInfo = n;
 }
 
-guidedTour(); // calling the function to start the tour after 5 seconds
+document.querySelector("#information-one .next").onclick = function() {
+  showInfo(1);
+};
+
+document.querySelector("#information-two .next").onclick = function() {
+  showInfo(2);
+};
+
+document.querySelector("#information-two .back").onclick = function() {
+  showInfo(0);
+};
+
+document.querySelector("#information-three .back").onclick = function() {
+  showInfo(1);
+};
+
 </script>
 
 
