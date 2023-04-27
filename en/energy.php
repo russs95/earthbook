@@ -518,23 +518,80 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
 <script>
 // Function to handle click on a highlight
-
-
-window.onscroll = function() {
-  if (document.documentElement.scrollTop > 500) {
-    document.getElementById("myModal").style.display = "block";
-    document.getElementById("underlayer").classList.add("blur");
+function handleHighlightClick(event) {
+  event.stopPropagation();
+  const highlight = event.target.closest(".highlight");
+  if (highlight) {
+    highlight.outerHTML = highlight.innerHTML;
   }
-};
+}
 
+// Function to clear the highlights
+function clearHighlights() {
+  const highlights = document.querySelectorAll(".highlight");
+  highlights.forEach(highlight => {
+    highlight.outerHTML = highlight.innerHTML;
+  });
+}
+
+// Add event listeners to all text nodes in the document
+const textNodes = document.querySelectorAll("*:not(script):not(style)");
+textNodes.forEach(node => {
+  node.addEventListener("mouseup", () => {
+    const selection = window.getSelection();
+    if (selection.toString().length > 0) {
+      // Clear any existing temporary highlight
+      clearTemporaryHighlight();
+
+      // Create a span element to wrap the selected text
+      const span = document.createElement("span");
+      span.classList.add("highlight");
+      span.style.backgroundColor = "green";
+      span.style.color = "var(--background-color)";
+      span.title = "Click here to lock highlight";
+      span.style.cursor = "pointer";
+      span.textContent = selection.toString();
+
+      // Add event listener to highlight to remove it on click
+      span.addEventListener("click", handleHighlightClick);
+
+      // Replace the selected text with the highlighted span element
+      const range = selection.getRangeAt(0);
+      range.deleteContents();
+      range.insertNode(span);
+    }
+  });
+});
+
+// Function to clear the temporary highlight
+function clearTemporaryHighlight() {
+  const temporaryHighlight = document.querySelector(".highlight.temporary");
+  if (temporaryHighlight) {
+    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
+  }
+}
+
+// Add event listener to remove temporary highlight on click elsewhere on the page
+document.addEventListener("click", clearTemporaryHighlight);
+
+</script>
+
+<script>
+var modal = document.getElementById("myModal");
 var closeButton = document.querySelector(".close");
-closeButton.onclick = function() {
-  document.getElementById("myModal").style.display = "none";
-  document.getElementById("underlayer").classList.remove("blur");
-};
-
-var information = document.querySelectorAll(".modal-content > div");
+var pageContent = document.getElementById("page-content");
+var information = document.querySelectorAll(".information");
 var currentInfo = 0;
+
+setTimeout(function() {
+  modal.style.display = "block";
+  pageContent.classList.add("blur");
+}, 5000);
+
+closeButton.onclick = function() {
+  modal.style.display = "none";
+  pageContent.classList.remove("blur");
+}
 
 function showInfo(n) {
   information[currentInfo].style.display = "none";
@@ -542,20 +599,20 @@ function showInfo(n) {
   currentInfo = n;
 }
 
-document.querySelector("#information-one .next").onclick = function() {
-  showInfo(1);
+document.querySelector("#next").onclick = function() {
+  if (currentInfo === information.length - 1) {
+    showInfo(0);
+  } else {
+    showInfo(currentInfo + 1);
+  }
 };
 
-document.querySelector("#information-two .next").onclick = function() {
-  showInfo(2);
-};
-
-document.querySelector("#information-two .back").onclick = function() {
-  showInfo(0);
-};
-
-document.querySelector("#information-three .back").onclick = function() {
-  showInfo(1);
+document.querySelector("#back").onclick = function() {
+  if (currentInfo === 0) {
+    showInfo(information.length - 1);
+  } else {
+    showInfo(currentInfo - 1);
+  }
 };
 
 
