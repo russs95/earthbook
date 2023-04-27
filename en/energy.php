@@ -588,6 +588,14 @@ document.addEventListener("click", clearTemporaryHighlight);
 
 
  <script>
+window.onscroll = function() {scrollFunction2()};
+
+function scrollFunction2() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    alert("working!");
+  }
+}
+
 
 
 window.onscroll = function() {
