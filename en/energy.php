@@ -499,20 +499,20 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
     <div id="information-one">
       <h2>Welcome to an Earthbook</h2>
-      <p style="text-align:center;font-size:smaller;">You've never quite read anything like this before.  Earthbook are a new reading format designed from the ground up to be human and Earth friendly.  Check out some of the features...</p>
+      <div class="modal-description" style="font-family:'Mulish';font-size:1em;text-align:center;color:var(--text-color);padding:15px;">You've never quite read anything like this before.  Earthbook are a new reading format designed from the ground up to be human and Earth friendly.  Check out some of the features...</div>
       <button class="next">Next ></button>
     </div>
 
     <div id="information-two" style="display:none;">
       <h2>Optimize Your Reading Experience</h2>
-      <div class="modal-description" style="font-family:'Mulish';font-size:1.1em;text-align:center;color:var(--text-color);">Click on the top left +- menu to adjust the font size, color tint and night/day themes.</div>
+      <div class="modal-description" style="font-family:'Mulish';font-size:1em;text-align:center;color:var(--text-color);padding:15px;">Click on the top left +- menu to adjust the font size, color tint and night/day themes.</div>
       <button class="back">Back</button>
       <button class="next">Next</button>
     </div>
 
     <div id="information-three" style="display:none;">
       <h2>Cite, Share & Highlight</h2>
-      <p>Hit the share button on the top right.  Use it to get a formatted citation for your own work.  Select text; click to lock a hightlight.  </p>
+      <div class="modal-description" style="font-family:'Mulish';font-size:1em;text-align:center;color:var(--text-color);padding:15px;">Hit the share button on the top right.  Use it to get a formatted citation for your own work.  Select text; click to lock a hightlight.  </div>
       <button class="back">Back</button>
     </div>
 
@@ -525,65 +525,6 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 </div>
 
 
-<script>
-// Function to handle click on a highlight
-function handleHighlightClick(event) {
-  event.stopPropagation();
-  const highlight = event.target.closest(".highlight");
-  if (highlight) {
-    highlight.outerHTML = highlight.innerHTML;
-  }
-}
-
-// Function to clear the highlights
-function clearHighlights() {
-  const highlights = document.querySelectorAll(".highlight");
-  highlights.forEach(highlight => {
-    highlight.outerHTML = highlight.innerHTML;
-  });
-}
-
-// Add event listeners to all text nodes in the document
-const textNodes = document.querySelectorAll("*:not(script):not(style)");
-textNodes.forEach(node => {
-  node.addEventListener("mouseup", () => {
-    const selection = window.getSelection();
-    if (selection.toString().length > 0) {
-      // Clear any existing temporary highlight
-      clearTemporaryHighlight();
-
-      // Create a span element to wrap the selected text
-      const span = document.createElement("span");
-      span.classList.add("highlight");
-      span.style.backgroundColor = "green";
-      span.style.color = "var(--background-color)";
-      span.title = "Click here to lock highlight";
-      span.style.cursor = "pointer";
-      span.textContent = selection.toString();
-
-      // Add event listener to highlight to remove it on click
-      span.addEventListener("click", handleHighlightClick);
-
-      // Replace the selected text with the highlighted span element
-      const range = selection.getRangeAt(0);
-      range.deleteContents();
-      range.insertNode(span);
-    }
-  });
-});
-
-// Function to clear the temporary highlight
-function clearTemporaryHighlight() {
-  const temporaryHighlight = document.querySelector(".highlight.temporary");
-  if (temporaryHighlight) {
-    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
-  }
-}
-
-// Add event listener to remove temporary highlight on click elsewhere on the page
-document.addEventListener("click", clearTemporaryHighlight);
-
-</script>
 
 
 
@@ -595,55 +536,8 @@ function scrollFunction2() {
     alert("working!");
   }
 }
-
-
-
-window.onscroll = function() {
-  if (window.pageYOffset > 300) {
-    guidedTour();
-  }
-};
-
-function guidedTour() {
-
-
-    document.getElementById("myModal").style.display = "block";
-    document.getElementById("underlayer").classList.add("blur");
-
-}
-
-var closeButton = document.querySelector(".close");
-closeButton.onclick = function() {
-  document.getElementById("myModal").style.display = "none";
-  document.getElementById("underlayer").classList.remove("blur");
-};
-
-var information = document.querySelectorAll(".modal-content > div");
-var currentInfo = 0;
-
-function showInfo(n) {
-  information[currentInfo].style.display = "none";
-  information[n].style.display = "block";
-  currentInfo = n;
-}
-
-document.querySelector("#information-one .next").onclick = function() {
-  showInfo(1);
-};
-
-document.querySelector("#information-two .next").onclick = function() {
-  showInfo(2);
-};
-
-document.querySelector("#information-two .back").onclick = function() {
-  showInfo(0);
-};
-
-document.querySelector("#information-three .back").onclick = function() {
-  showInfo(1);
-};
-
 </script>
+
 
 
 
