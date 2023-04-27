@@ -181,7 +181,15 @@ Must be updated for each page-->
       }
 
 </style>
+<script>
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    alert("working!");
+  }
+}
+</script>
 
 </head>
 
@@ -525,19 +533,114 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 </div>
 
 
+<script>
+// Function to handle click on a highlight
+function handleHighlightClick(event) {
+  event.stopPropagation();
+  const highlight = event.target.closest(".highlight");
+  if (highlight) {
+    highlight.outerHTML = highlight.innerHTML;
+  }
+}
+
+// Function to clear the highlights
+function clearHighlights() {
+  const highlights = document.querySelectorAll(".highlight");
+  highlights.forEach(highlight => {
+    highlight.outerHTML = highlight.innerHTML;
+  });
+}
+
+// Add event listeners to all text nodes in the document
+const textNodes = document.querySelectorAll("*:not(script):not(style)");
+textNodes.forEach(node => {
+  node.addEventListener("mouseup", () => {
+    const selection = window.getSelection();
+    if (selection.toString().length > 0) {
+      // Clear any existing temporary highlight
+      clearTemporaryHighlight();
+
+      // Create a span element to wrap the selected text
+      const span = document.createElement("span");
+      span.classList.add("highlight");
+      span.style.backgroundColor = "green";
+      span.style.color = "var(--background-color)";
+      span.title = "Click here to lock highlight";
+      span.style.cursor = "pointer";
+      span.textContent = selection.toString();
+
+      // Add event listener to highlight to remove it on click
+      span.addEventListener("click", handleHighlightClick);
+
+      // Replace the selected text with the highlighted span element
+      const range = selection.getRangeAt(0);
+      range.deleteContents();
+      range.insertNode(span);
+    }
+  });
+});
+
+// Function to clear the temporary highlight
+function clearTemporaryHighlight() {
+  const temporaryHighlight = document.querySelector(".highlight.temporary");
+  if (temporaryHighlight) {
+    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
+  }
+}
+
+// Add event listener to remove temporary highlight on click elsewhere on the page
+document.addEventListener("click", clearTemporaryHighlight);
+
+</script>
 
 
 
  <script>
-window.onscroll = function() {scrollFunction2()};
+window.onscroll = function() {guidedTour()};
 
-function scrollFunction2() {
+function guidedTour() {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    alert("working!");
-  }
-}
-</script>
+   
 
+
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("underlayer").classList.add("blur");
+
+}}
+
+
+var closeButton = document.querySelector(".close");
+closeButton.onclick = function() {
+  document.getElementById("myModal").style.display = "none";
+  document.getElementById("underlayer").classList.remove("blur");
+};
+
+var information = document.querySelectorAll(".modal-content > div");
+var currentInfo = 0;
+
+function showInfo(n) {
+  information[currentInfo].style.display = "none";
+  information[n].style.display = "block";
+  currentInfo = n;
+}
+
+document.querySelector("#information-one .next").onclick = function() {
+  showInfo(1);
+};
+
+document.querySelector("#information-two .next").onclick = function() {
+  showInfo(2);
+};
+
+document.querySelector("#information-two .back").onclick = function() {
+  showInfo(0);
+};
+
+document.querySelector("#information-three .back").onclick = function() {
+  showInfo(1);
+};
+
+</script>
 
 
 
