@@ -576,48 +576,51 @@ document.addEventListener("click", clearTemporaryHighlight);
 
 </script>
 
-<script>
-var modal = document.getElementById("myModal");
-var closeButton = document.querySelector(".close");
-var pageContent = document.getElementById("page-content");
-var information = document.querySelectorAll(".information");
-var currentInfo = 0;
-
-setTimeout(function() {
-  modal.style.display = "block";
-  pageContent.classList.add("blur");
-}, 5000);
-
-closeButton.onclick = function() {
-  modal.style.display = "none";
-  pageContent.classList.remove("blur");
-}
-
-function showInfo(n) {
-  information[currentInfo].style.display = "none";
-  information[n].style.display = "block";
-  currentInfo = n;
-}
-
-document.querySelector("#next").onclick = function() {
-  if (currentInfo === information.length - 1) {
-    showInfo(0);
-  } else {
-    showInfo(currentInfo + 1);
-  }
-};
-
-document.querySelector("#back").onclick = function() {
-  if (currentInfo === 0) {
-    showInfo(information.length - 1);
-  } else {
-    showInfo(currentInfo - 1);
-  }
-};
-
-
 
       </script>
+
+      <script>
+        function guidedTour() {
+  setTimeout(function() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+    document.getElementById("page-content").classList.add("blur");
+
+    var closeButton = document.querySelector(".close");
+    closeButton.onclick = function() {
+      modal.style.display = "none";
+      document.getElementById("page-content").classList.remove("blur");
+    }
+
+    var information = document.querySelectorAll(".information");
+    var currentInfo = 0;
+
+    function showInfo(n) {
+      information[currentInfo].style.display = "none";
+      information[n].style.display = "block";
+      currentInfo = n;
+    }
+
+    document.querySelector("#next").onclick = function() {
+      if (currentInfo === information.length - 1) {
+        showInfo(0);
+      } else {
+        showInfo(currentInfo + 1);
+      }
+    };
+
+    document.querySelector("#back").onclick = function() {
+      if (currentInfo === 0) {
+        showInfo(information.length - 1);
+      } else {
+        showInfo(currentInfo - 1);
+      }
+    };
+  }, 5000);
+}
+
+guidedTour(); // calling the function to start the tour after 5 seconds
+</script>
 
 
 </body>
