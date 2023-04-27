@@ -194,6 +194,7 @@ Must be updated for each page-->
 
 
   <a id="top"></a>
+<div id="underlayer">
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>
@@ -225,39 +226,8 @@ Must be updated for each page-->
 
 
 
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-
-    <div id="information-one">
-      <h2>Welcome to an Earthbook</h2>
-      <p style="text-align:center;font-size:smaller;">You've never quite read anything like this before.  Earthbook are a new reading format designed from the ground up to be human and Earth friendly.  Check out some of the features...</p>
-      <button class="next">Next ></button>
-    </div>
-
-    <div id="information-two" style="display:none;">
-      <h2>Optimize Your Reading Experience</h2>
-      <div class="modal-description" style="font-family:'Mulish';font-size:1.2em;text-align:center;color:var(--text-color);">Click on the top left +- menu to adjust the font size, color tint and night/day themes.</h5>
-      <button class="back">Back</button>
-      <button class="next">Next</button>
-    </div>
-
-    <div id="information-three" style="display:none;">
-      <h2>Cite, Share & Highlight</h2>
-      <p>Hit the share button on the top right.  Use it to get a formatted citation for your own work.  Select text; click to lock a hightlight.  </p>
-      <button class="back">Back</button>
-    </div>
-
-    <div id="information-four" style="display:none;">
-      <h2>Cite, Share & Highlight</h2>
-      <p>Hit the share button on the top right.  Use it to get a formatted citation for your own work.  Select text; click to lock a hightlight.  </p>
-      <button class="back">Back</button>
-    </div>
-  </div>
-</div>
 
 
-<div id="underlayer">
 
   <div id="ct-main">
 
@@ -518,6 +488,38 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 <?php require_once ("includes/chapTER-footer.php");?>
 
 
+</div>
+
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div id="information-one">
+      <h2>Welcome to an Earthbook</h2>
+      <p style="text-align:center;font-size:smaller;">You've never quite read anything like this before.  Earthbook are a new reading format designed from the ground up to be human and Earth friendly.  Check out some of the features...</p>
+      <button class="next">Next ></button>
+    </div>
+
+    <div id="information-two" style="display:none;">
+      <h2>Optimize Your Reading Experience</h2>
+      <div class="modal-description" style="font-family:'Mulish';font-size:1.2em;text-align:center;color:var(--text-color);">Click on the top left +- menu to adjust the font size, color tint and night/day themes.</h5>
+      <button class="back">Back</button>
+      <button class="next">Next</button>
+    </div>
+
+    <div id="information-three" style="display:none;">
+      <h2>Cite, Share & Highlight</h2>
+      <p>Hit the share button on the top right.  Use it to get a formatted citation for your own work.  Select text; click to lock a hightlight.  </p>
+      <button class="back">Back</button>
+    </div>
+
+    <div id="information-four" style="display:none;">
+      <h2>Cite, Share & Highlight</h2>
+      <p>Hit the share button on the top right.  Use it to get a formatted citation for your own work.  Select text; click to lock a hightlight.  </p>
+      <button class="back">Back</button>
+    </div>
+  </div>
 </div>
 
 
