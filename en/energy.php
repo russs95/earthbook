@@ -382,7 +382,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
      <p>Just as a shoal of salmon directs all their energy towards their out-to-all journey home, our green-intentioned, enterprises must direct their surplus energy towards an out-to-all-purpose.</p>
 
-     <p>Learning from kincentric cultures, such a purpose must embrace both the social and the ecological, recognizing that both, from an Earthen view, are one and the same. This dual not-for-profit and <i>for-Earth</i> intention, must be declared and accounted for— ensuring that the enterprises revenues (in particular its surpluses) go towards this for-Earth purpose and that the other four Earthen ethics are met.</p>
+     <p>Learning from kincentric cultures, such a purpose must embrace both the social and the ecological, recognizing that both, from an Earthen view, are one and the same. This dual not-for-profit and <i>for-Earth</i> intention, must be declared and accounted for— ensuring that the enterprises revenues (in particular its surpluses) go towards this for-Earth purpose and that the other four Earthen ethics are met.   </p>
 
      <p>That said, the outwards spiral of energy is only half of Earth's spiral pattern of enrichment.</p>
 
@@ -523,6 +523,114 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
 
 </div>
+
+
+<script>
+// Function to handle click on a highlight
+function handleHighlightClick(event) {
+  event.stopPropagation();
+  const highlight = event.target.closest(".highlight");
+  if (highlight) {
+    highlight.outerHTML = highlight.innerHTML;
+  }
+}
+
+// Function to clear the highlights
+function clearHighlights() {
+  const highlights = document.querySelectorAll(".highlight");
+  highlights.forEach(highlight => {
+    highlight.outerHTML = highlight.innerHTML;
+  });
+}
+
+// Add event listeners to all text nodes in the document
+const textNodes = document.querySelectorAll("*:not(script):not(style)");
+textNodes.forEach(node => {
+  node.addEventListener("mouseup", () => {
+    const selection = window.getSelection();
+    if (selection.toString().length > 0) {
+      // Clear any existing temporary highlight
+      clearTemporaryHighlight();
+
+      // Create a span element to wrap the selected text
+      const span = document.createElement("span");
+      span.classList.add("highlight");
+      span.style.backgroundColor = "green";
+      span.style.color = "var(--background-color)";
+      span.title = "Click here to lock highlight";
+      span.style.cursor = "pointer";
+      span.textContent = selection.toString();
+
+      // Add event listener to highlight to remove it on click
+      span.addEventListener("click", handleHighlightClick);
+
+      // Replace the selected text with the highlighted span element
+      const range = selection.getRangeAt(0);
+      range.deleteContents();
+      range.insertNode(span);
+    }
+  });
+});
+
+// Function to clear the temporary highlight
+function clearTemporaryHighlight() {
+  const temporaryHighlight = document.querySelector(".highlight.temporary");
+  if (temporaryHighlight) {
+    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
+  }
+}
+
+// Add event listener to remove temporary highlight on click elsewhere on the page
+document.addEventListener("click", clearTemporaryHighlight);
+
+</script>
+
+
+ <script>
+   function guidedTour() {
+  
+    setTimeout(function() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+    document.getElementById("page-content").classList.add("blur");
+
+    var closeButton = document.querySelector(".close");
+    closeButton.onclick = function() {
+      modal.style.display = "none";
+      document.getElementById("page-content").classList.remove("blur");
+    }
+
+    var information = document.querySelectorAll(".information");
+    var currentInfo = 0;
+
+    function showInfo(n) {
+      information[currentInfo].style.display = "none";
+      information[n].style.display = "block";
+      currentInfo = n;
+    }
+
+    document.querySelector("#next").onclick = function() {
+      if (currentInfo === information.length - 1) {
+        showInfo(0);
+      } else {
+        showInfo(currentInfo + 1);
+      }
+    };
+
+    document.querySelector("#back").onclick = function() {
+      if (currentInfo === 0) {
+        showInfo(information.length - 1);
+      } else {
+        showInfo(currentInfo - 1);
+      }
+    };
+  }, 5000);
+}
+
+guidedTour(); // calling the function to start the tour after 5 seconds
+</script>
+
+
 
 
 </body>
