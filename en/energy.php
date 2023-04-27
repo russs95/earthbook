@@ -180,12 +180,7 @@ Must be updated for each page-->
         cursor: pointer;
       }
 
-
-
 </style>
-
-
-
 
 
 </head>
@@ -238,13 +233,13 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-  <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
-  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+    <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
+    <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">The Salmon's Spin</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Earthen Principle No. 2</div>
         <div id="ct-word-count"><i>2,307 words |  Book 2</i></div>
-      </div>
+    </div>
   </div>
 
 
@@ -592,12 +587,12 @@ document.addEventListener("click", clearTemporaryHighlight);
     setTimeout(function() {
     var modal = document.getElementById("myModal");
     modal.style.display = "block";
-    document.getElementById("page-content").classList.add("blur");
+    document.getElementById("underlayer").classList.add("blur");
 
     var closeButton = document.querySelector(".close");
     closeButton.onclick = function() {
       modal.style.display = "none";
-      document.getElementById("page-content").classList.remove("blur");
+      document.getElementById("underlayer").classList.remove("blur");
     }
 
     var information = document.querySelectorAll(".information");
