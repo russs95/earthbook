@@ -271,11 +271,12 @@ streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a> 
 <br><br>
     <div>
     <div class="lead-page-paragraph">
-    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Their view of the Salmon as an esteemed elder helped the Wet'suwet'en to gain the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, their culture and vibrant, biodiverse territory serve as an inspiration to modern enterprises that are keen to be green. Seeing with the same sight, we too have much to learn from the ways of the salmon! As we shall see, the Salmon’s outward spiral of energy emulates the vortical pattern by which Earth itself greened the biosphere. This pattern, which also happens to underlie the ethics, traditions, and language of the Wet'suwet'en, the Igorots, and other kincentric cultures, provides the geometry for our second Earthen ethic..
+    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Their view of the Salmon as an esteemed elder helped the Wet'suwet'en to gain the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, their culture and vibrant, biodiverse territory serve as an inspiration to modern enterprises that are keen to be green. Seeing with the same sight, we too have much to learn from the ways of the salmon! As we shall see, the Salmon’s outward spiral of energy emulates the vortical pattern by which Earth itself greened the biosphere. This pattern, which also happens to underlie the ethics, traditions, and language of the Wet'suwet'en, the Igorots, and other kincentric cultures, provides the geometry for our second Earthen ethic.
+    </div>
+
 
     <div class="page-paragraph"><p>
-    Much like the first Earthen ethic helped us make sense of the inevitable ecological depletion of linear and circular processes, the second Earthen ethic helps us understand the inevitable grayness of our modern for-profit and not-for-profit enterprises-- and, the requisite energetic structure that our keen green enterprises must embody if they wish to folllow the example of the Salmon, the Wet'suwet'en, and Earth.</div>
-   </div>
+    Much like our first Earthen ethic helped us make sense of the inevitable ecological depletion of linear and circular processes, the second Earthen ethic helps us understand the inevitable grayness of our modern for-profit and not-for-profit enterprises-- and, the requisite energetic structure that our keen green enterprises must embody if they wish to folllow the example of the Salmon, the Wet'suwet'en, and Earth.
 </p>
 
       <p>To begin, we must return once again to our planet's primordial origins and take a closer its unique pattern of energy management.</p>
