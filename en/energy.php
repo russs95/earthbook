@@ -198,26 +198,35 @@ Must be updated for each page-->
 
 
 <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <div id="information-one">
-            <h2>Welcome to an Earthbook</h2>
-            <p style="text-align:center;font-size:smaller;">You've never quite read anything like this before.  Earthbook are a new reading format designed from the ground up to be human and Earth friendly.  Check out some of the features...</p>
-            <button class="next">Next ></button>
-          </div>
-          <div id="information-two" style="display:none;">
-            <h2>Optimize Reading Experience</h2>
-            <div class="modal-description" style="font-family:'Mulish';font-size:1.2em;text-align:center;color:var(--text-color);">Click on the top left +- menu to adjust the font size, color tint and night/day themes.</h5>
-            <button class="back">Back</button>
-            <button class="next">Next</button>
-          </div>
-          <div id="information-three" style="display:none;">
-            <h2>Sample text number three</h2>
-            <p>Content of sample text number three</p>
-            <button class="back">Back</button>
-          </div>
-        </div>
-      </div>
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div id="information-one">
+      <h2>Welcome to an Earthbook</h2>
+      <p style="text-align:center;font-size:smaller;">You've never quite read anything like this before.  Earthbook are a new reading format designed from the ground up to be human and Earth friendly.  Check out some of the features...</p>
+      <button class="next">Next ></button>
+    </div>
+
+    <div id="information-two" style="display:none;">
+      <h2>Optimize Your Reading Experience</h2>
+      <div class="modal-description" style="font-family:'Mulish';font-size:1.2em;text-align:center;color:var(--text-color);">Click on the top left +- menu to adjust the font size, color tint and night/day themes.</h5>
+      <button class="back">Back</button>
+      <button class="next">Next</button>
+    </div>
+
+    <div id="information-three" style="display:none;">
+      <h2>Cite, Share & Highlight</h2>
+      <p>Hit the share button on the top right.  Use it to get a formatted citation for your own work.  Select text; click to lock a hightlight.  </p>
+      <button class="back">Back</button>
+    </div>
+
+    <div id="information-four" style="display:none;">
+      <h2>Cite, Share & Highlight</h2>
+      <p>Hit the share button on the top right.  Use it to get a formatted citation for your own work.  Select text; click to lock a hightlight.  </p>
+      <button class="back">Back</button>
+    </div>
+  </div>
+</div>
 
 
 <div id="underlayer">
@@ -263,21 +272,21 @@ Must be updated for each page-->
 
 <div class="page-paragraph">
     <p id="58-up"><i>
-    Thirteen thousand years ago, as trillion-ton ice-sheets retreated from North America's Pacific coast, barren desolation reigned.  However, in the lingering glacial streams, the continent's revitalization had already begun.   Proliferating river by river down the warming coast, the adventurous ancestors of today's Salmon swan inland to deposit their eggs.  Ever since, with each season, their energizing cycle has spun. Come Spring, salmon hatchlings emerge from the rocky river bed. The tiny fish gather their strength consuming insects and waterborne larvae.  Come Summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. Come fall, when after several years they have reached their full size and strength, they head home.  As millions of Salmon retrace their river route, an entire ecosystem revels in their return. Bears, eagles and humans gather for grand autumn fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by, continue to the waters where they were born.  Using the last of their strength, they deposit their eggs in the gravel.  The salmon then die; their decomposition a final nutrient gift to the now rich and diverse river ecosystem that their roe will soon run.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and
-streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a> </i>
-     </p></div>
+    Thirteen thousand years ago, as trillion-ton ice-sheets retreated from North America's Pacific coast, barren desolation reigned.  However, in the lingering glacial streams, the continent's revitalization had already begun.   Proliferating river by river down the warming coast, the adventurous ancestors of today's Salmon swan inland to deposit their eggs.  Ever since, with each season, their energizing cycle has spun. Come Spring, salmon hatchlings emerge from the rocky river bed. The tiny fish gather their strength consuming insects and waterborne larvae.  Come Summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. Come fall, when after several years they have reached their full size and strength, they head home.  As millions of Salmon retrace their river route, an entire ecosystem revels in their return. Bears, eagles and humans gather for grand autumn fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by, continue to the waters where they were born.  Using the last of their strength, they deposit their eggs in the gravel.  The salmon then die; their decomposition a final nutrient gift to the now rich and diverse river ecosystem that their roe will soon run.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a>
+    </i></p>
+    </div>
     <br><br>
      <div id="line" style="margin-bottom: 30px;"></div>
-<br><br>
-    <div>
+    <br><br>
+    
     <div class="lead-page-paragraph">
     OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Their view of the Salmon as an esteemed elder helped the Wet'suwet'en to gain the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, their culture and vibrant, biodiverse territory serve as an inspiration to modern enterprises that are keen to be green. Adopting their perspective, we too have much to learn from the ways of the salmon. As we shall see, the Salmon’s outward spiral of energy emulates the vortical pattern by which Earth itself greened the biosphere. This pattern, which also happens to underlie the ethics, traditions, and language of the Wet'suwet'en, the Igorots, and other kincentric cultures, provides the geometry for our second Earthen ethic.
     </div>
 
 
-    <div class="page-paragraph"><p>
-    Much like our first Earthen ethic helped us make sense of the inevitable ecological depletion of linear and circular processes, the second Earthen ethic helps us understand the inevitable grayness of our modern for-profit and not-for-profit enterprises-- and, the requisite energetic structure that our keen green enterprises must embody if they wish to follow the example of the Salmon, the Wet'suwet'en, and Earth.
-</p>
+    <div class="page-paragraph">
+      
+      <p>Much like our first Earthen ethic helped us make sense of the inevitable ecological depletion of linear and circular processes, the second Earthen ethic helps us understand the inevitable grayness of our modern for-profit and not-for-profit enterprises-- and, the requisite energetic structure that our keen green enterprises must embody if they wish to follow the example of the Salmon, the Wet'suwet'en, and Earth.</p>
 
       <p>To begin, we must return once again to our planet's primordial origins and take a closer look at its unique pattern of energy management.</p>
 
