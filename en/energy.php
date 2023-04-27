@@ -271,15 +271,15 @@ streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a> 
 <br><br>
     <div>
     <div class="lead-page-paragraph">
-    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Their view of the Salmon as an esteemed elder helped the Wet'suwet'en to gain the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, their culture and vibrant, biodiverse territory serve as an inspiration to modern enterprises that are keen to be green. Seeing with the same sight, we too have much to learn from the ways of the salmon! As we shall see, the Salmon’s outward spiral of energy emulates the vortical pattern by which Earth itself greened the biosphere. This pattern, which also happens to underlie the ethics, traditions, and language of the Wet'suwet'en, the Igorots, and other kincentric cultures, provides the geometry for our second Earthen ethic.
+    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Their view of the Salmon as an esteemed elder helped the Wet'suwet'en to gain the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, their culture and vibrant, biodiverse territory serve as an inspiration to modern enterprises that are keen to be green. Adopting their perspective, we too have much to learn from the ways of the salmon. As we shall see, the Salmon’s outward spiral of energy emulates the vortical pattern by which Earth itself greened the biosphere. This pattern, which also happens to underlie the ethics, traditions, and language of the Wet'suwet'en, the Igorots, and other kincentric cultures, provides the geometry for our second Earthen ethic.
     </div>
 
 
     <div class="page-paragraph"><p>
-    Much like our first Earthen ethic helped us make sense of the inevitable ecological depletion of linear and circular processes, the second Earthen ethic helps us understand the inevitable grayness of our modern for-profit and not-for-profit enterprises-- and, the requisite energetic structure that our keen green enterprises must embody if they wish to folllow the example of the Salmon, the Wet'suwet'en, and Earth.
+    Much like our first Earthen ethic helped us make sense of the inevitable ecological depletion of linear and circular processes, the second Earthen ethic helps us understand the inevitable grayness of our modern for-profit and not-for-profit enterprises-- and, the requisite energetic structure that our keen green enterprises must embody if they wish to follow the example of the Salmon, the Wet'suwet'en, and Earth.
 </p>
 
-      <p>To begin, we must return once again to our planet's primordial origins and take a closer its unique pattern of energy management.</p>
+      <p>To begin, we must return once again to our planet's primordial origins and take a closer look at its unique pattern of energy management.</p>
 
 
       <p id="59-up">As we saw in Earth's <a href="stellar.php" title="Chapter 3: A Stellar Story">stellar story</a>, over the last four billion years the energy of the Sun's relentless blaze coursed through Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, stored, then dispersed energy ever outwards towards equilibrium.<a href="#footnotes" title="Vortical unfolding on a sphererical surface with the proper conditions can tend towards greater and greater order: Guillaume Gauthier et al, (2019) Giant vortex clusters in a two-dimensional quantum fluid, Science https://www.science.org/doi/10.1126/science.aat5718" onclick="openFootnotes()">⁵⁹</a></p>
@@ -298,10 +298,10 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
       
       <p>Returning to the spiral of the salmon's cycles, we can see that its pattern is a magnificent reflection of Earth’s.</p>
 
-     <p id="61-up">Just as Earth’s absorbtion of solar energy powers the planet's processes, the salmon’s steady absorbtion of nutrient energy powers its life process. And just as Earth spun its energy out to its biosphere, so too did the Salmon to its biome.  Consuming insects and crustaceans, the Salmon gathered nutrient energy, storing it as fats and proteins, and burning it as carbohydrates to power its swim. Then, as salmon are preyed upon and consumed, their accumulated nutrients are spun outwards into the bellies of countless creatures, and steadily spun out to the broader system of which they are a part.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
+     <p id="61-up">Just as Earth’s absorption of solar energy powers the planet's processes, the salmon’s steady absorbtion of nutrient energy powers its life process. And just as Earth spun its energy out to its biosphere, so too did the Salmon to its biome.  Consuming insects and crustaceans, the Salmon gathered nutrient energy, storing it as fats and proteins, and burning it as carbohydrates to power its swim. Then, as the firsh are preyed upon and consumed, their accumulated nutrients are spun outwards into the bellies of countless creatures, and steadily spun out to the broader system of which they are a part.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
 Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹</a></p>
 
-     <p id="62-up">In this way, over the course of a single cycle, a batch of Salmon distribute more nutrients out to their ecosystem than they keep for themselves.  From a single batch of 2000 to 5200 eggs (weighing only few grams each) the resulting salmon can accumulate a biomass of several tons.  Yet from this concentrated mass of complex nutrients, at the end of a batch’s cycle only 20-50 salmon return to spawn.  And at their end, only several kilograms of eggs remain for the next cycle to begin— the other 99% of the batches' biomass having been dispersed out into the inland ecosystem in the consumed and dying salmon.<a href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></p>
+     <p id="62-up">In this way, over the course of a single cycle, a batch of Salmon distribute more nutrients out to their ecosystem than they keep for themselves.  From a single batch of 2000 to 5200 eggs (weighing only few grams each) the resulting salmon can accumulate a biomass of several tons.  Yet from this concentrated mass of complex nutrients, at the end of a batch’s cycle only 20-50 salmon return to spawn.  And at their end, only several kilograms of eggs remain for the next cycle to begin— the other 99% of the batch's' biomass having been dispersed out into the inland ecosystem in the consumed and dying salmon.<a href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></p>
 
      
 
@@ -312,16 +312,16 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
      <p>Through this spiral, the salmon proliferated in rivers up and down the North Pacific coast of America, contributing to the inexorable enrichment of the land.</p>
 
-     <p>Today, <!--as we focus our efforts on reducing the ecological harm of our modern enterprises,-->as we strive to define the meaning of green for our modern endeavours and enterprises, it is critical to recall that humans also played a part in the flourishing of the America's continental coast over the last twelve thousand years.</p>
+     <p>Today, <!--as we focus our efforts on reducing the ecological harm of our modern enterprises,-->as we strive to define the meaning of green for our modern endeavours and enterprises, it is critical to recall that humans also played a part in the flourishing of the pacific coast of north America over the last twelve thousand years.</p>
 
-     <p>Over the mellenia, nations such the Wetʼsuwetʼen have lived side by side the salmon.  From their kincentric view of the world, they saw the salmon as ecological elders.  Over countless generations they learned from them.  Steadily the Wetsuweten wove the salmon's pattern of energy management into the stories, morals and languages of their culture-- which in turn had significant impact on the ecosystem of which their society was part.</p>
+     <p>Over the millenia, nations such as the Wetʼsuwetʼen have lived side by side the salmon.  From their kincentric view of the world, they saw the salmon as ecological elders.  Over countless generations they learned from them.  Steadily the  Wetʼsuwetʼen wove the salmon's pattern of energy management into the stories, morals and languages of their culture-- which in turn had significant impact on the ecosystem of which their society was part.</p>
 
 
-     <p>In Wetsuweten culture, the very first Salmon caught each season is shared with every member of the community or family unit.  In this tradition, a morsel of the fish is meticulously distributed among each member, and every bone is taken back to the water.  This dynamic was then followed in the seasonal harvest of tens of thousands of salmon: only as much as each family requires is taken, with the taken being shared among all and the discarded bones being returned to the river.  So ingrained is this spirit of  energetic management, that in their language grammatically it is impossible to speak of 'my salmon' only of 'our salmon'.</p>
+     <p>In  Wetʼsuwetʼen culture, the very first Salmon caught each season is shared with every member of the community or family unit.  In this tradition, a morsel of the fish is meticulously distributed among each member, and every bone is taken back to the water.  This dynamic was then followed in the seasonal harvest of tens of thousands of salmon: only as much as each family requires is taken, with the taken being shared among all and the discarded bones being returned to the river.  So ingrained is this spirit of  energetic management, that in their language grammatically it is impossible to speak of 'my salmon' only of 'our salmon'.</p>
       
-     <p>This ethic, came to its social culmination in the <i>potlach</i> tradition that the Wet'suwet'en and every other first nation on the Pacific coast shared.  In this ceremony the community would come together to distribute food, goods and luxuries that had been accumulated by some more than others.<a id="64-up" href="#footnotes" title="'For the Gitksan and Wet'suwet'en, as for other traditional peoples, the various beliefs about the relationship of humans to the land and to the resources which sustain the people are rich and multifaceted, integrated into all aspects of society. They do not have a reductionist perspective which allows separation of the biological from the moral or mythical. Adherence to a wide variety of practices which we might separate into biological and spiritual realms is seen as necessary for the maintenance of the relationship of the people and the land with its plants and animals which sustain human life.  Conservation is interactive with ideology. As Anderson points out, it is in the realm of ideology and myth, which entrain the emotions, that the motivation to defer present gratification for the future common good is obtained. Myths or teaching stories imbue lessons on conservation, which makes possible long term sustainable adaptation, with sufficient emotional loading to make them memorable and to inspire people to put the lessons contained in them into practice.'  Leslie M. Johnson Gottesfeld (1994), Conservation, Territory, and Traditional Beliefs: An Analysis of Gitksan and Wet'suwet'en Subsistence, Northwest British Columbia, Canada. Human Ecology, p20." onclick="openFootnotes()">⁶4</a></p>  
+     <p>This ethic, came to its social culmination in the <i>potlach</i> tradition that the Wet'suwet'en and every other first nation on the Pacific coast shared.  In this ceremony the community would come together to distribute food, goods and luxuries that had been accumulated by some more than others.<a id="64-up" href="#footnotes" title="'For the Gitksan and  Wetʼsuwetʼen, as for other traditional peoples, the various beliefs about the relationship of humans to the land and to the resources which sustain the people are rich and multifaceted, integrated into all aspects of society. They do not have a reductionist perspective which allows separation of the biological from the moral or mythical. Adherence to a wide variety of practices which we might separate into biological and spiritual realms is seen as necessary for the maintenance of the relationship of the people and the land with its plants and animals which sustain human life.  Conservation is interactive with ideology. As Anderson points out, it is in the realm of ideology and myth, which entrain the emotions, that the motivation to defer present gratification for the future common good is obtained. Myths or teaching stories imbue lessons on conservation, which makes possible long term sustainable adaptation, with sufficient emotional loading to make them memorable and to inspire people to put the lessons contained in them into practice.'  Leslie M. Johnson Gottesfeld (1994), Conservation, Territory, and Traditional Beliefs: An Analysis of Gitksan and Wet'suwet'en Subsistence, Northwest British Columbia, Canada. Human Ecology, p20." onclick="openFootnotes()">⁶4</a></p>  
      
-     In Banayan's Igorot culture (and many other kincentric societies), such a ceremony has its parralel.  In the yearly celebration of the first rice harvest a slaughtered pig would cut up into a piece for every family of the village, which was then carried home by a representative of each on the tip of their spear.<a id="65-up" href="#footnotes" title="The Wetsuweten were not alone in this way.  Virtually all first nations of the Pacific Northwest held a concept of wealth that was defined not by what one accumulated, but of what one gave away embodied in the the 'potlach' ceremony.  In this widespread tradition, the a community would gather to distribute gifts of all kinds.   The express purpose of these ceremonies was energetic dispersal out-to-all.   All who attended, understood well the ceremony and intention.  Within the context of the potlach, honor and respect was gained not by the wealth itself, but by its flow, not by how much was gathered, but by how much was gifted awaollowing the example of kincentric cultures, the salmon and the Earth we must arrange the financial structure of our aspiring green enterprises accordingly.'" onclick="openFootnotes()">⁶⁵</a></p>  In this way, ceremonies set a pattern for the distribution of surplus energy that was followed in the daily life of the community.</p>
+     In Banayan's Igorot culture (and many other kincentric societies), such a ceremony has its parralel.  In the yearly celebration of the first rice harvest a slaughtered pig would cut up into a piece for every family of the village, which was then carried home by a representative of each on the tip of their spear.<a id="65-up" href="#footnotes" title="The  Wetʼsuwetʼen were not alone in this way.  Virtually all first nations of the Pacific Northwest held a concept of wealth that was defined not by what one accumulated, but of what one gave away embodied in the the 'potlach' ceremony.  In this widespread tradition, the a community would gather to distribute gifts of all kinds.   The express purpose of these ceremonies was energetic dispersal out-to-all.   All who attended, understood well the ceremony and intention.  Within the context of the potlach, honor and respect was gained not by the wealth itself, but by its flow, not by how much was gathered, but by how much was gifted awaollowing the example of kincentric cultures, the salmon and the Earth we must arrange the financial structure of our aspiring green enterprises accordingly.'" onclick="openFootnotes()">⁶⁵</a></p>  In this way, ceremonies set a pattern for the distribution of surplus energy that was followed in the daily life of the community.</p>
 
 
      <p>In the deep resonance of Kincentric cultures and Earth's pattern, we find our second Earthen ethic.</p>
@@ -448,13 +448,13 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
         <a href="#64-up" class="footnote">   
         <div class="footnote-number">64.</div>
-        <div class="footnote-text">'For the Gitksan and Wet'suwet'en, as for other traditional peoples, the various beliefs about the relationship of humans to the land and to the resources which sustain the people are rich and multifaceted, integrated into all aspects of society. They do not have a reductionist perspective which allows separation of the biological from the moral or mythical. Adherence to a wide variety of practices which we might separate into biological and spiritual realms is seen as necessary for the maintenance of the relationship of the people and the land with its plants and animals which sustain human life.  Conservation is interactive with ideology. As Anderson points out, it is in the realm of ideology and myth, which entrain the emotions, that the motivation to defer present gratification for the future common good is obtained. Myths or teaching stories imbue lessons on conservation, which makes possible long term sustainable adaptation, with sufficient emotional loading to make them memorable and to inspire people to put the lessons contained in them into practice.'  Leslie M. Johnson Gottesfeld (1994), Conservation, Territory, and Traditional Beliefs: An Analysis of Gitksan and Wet'suwet'en Subsistence, Northwest British Columbia, Canada. Human Ecology, p20.
+        <div class="footnote-text">'For the Gitksan and  Wetʼsuwetʼen, as for other traditional peoples, the various beliefs about the relationship of humans to the land and to the resources which sustain the people are rich and multifaceted, integrated into all aspects of society. They do not have a reductionist perspective which allows separation of the biological from the moral or mythical. Adherence to a wide variety of practices which we might separate into biological and spiritual realms is seen as necessary for the maintenance of the relationship of the people and the land with its plants and animals which sustain human life.  Conservation is interactive with ideology. As Anderson points out, it is in the realm of ideology and myth, which entrain the emotions, that the motivation to defer present gratification for the future common good is obtained. Myths or teaching stories imbue lessons on conservation, which makes possible long term sustainable adaptation, with sufficient emotional loading to make them memorable and to inspire people to put the lessons contained in them into practice.'  Leslie M. Johnson Gottesfeld (1994), Conservation, Territory, and Traditional Beliefs: An Analysis of Gitksan and  Wetʼsuwetʼen Subsistence, Northwest British Columbia, Canada. Human Ecology, p20.
         </div>
         </a>
 
         <a href="#65-up" class="footnote">   
         <div class="footnote-number">65.</div>
-        <div class="footnote-text">The Wetsuweten were not alone in this way.  Virtually all first nations of the Pacific Northwest held a concept of wealth that was defined not by what one accumulated, but of what one gave away embodied in the the 'potlach' ceremony.  In this widespread tradition, the a community would gather to distribute gifts of all kinds.   The express purpose of these ceremonies was energetic dispersal out-to-all.   All who attended, understood well the ceremony and intention.  Within the context of the potlach, honor and respect was gained not by the wealth itself, but by its flow, not by how much was gathered, but by how much was gifted awaollowing the example of kincentric cultures, the salmon and the Earth we must arrange the financial structure of our aspiring green enterprises accordingly.' 
+        <div class="footnote-text">The  Wetʼsuwetʼen were not alone in this way.  Virtually all first nations of the Pacific Northwest held a concept of wealth that was defined not by what one accumulated, but of what one gave away embodied in the the 'potlach' ceremony.  In this widespread tradition, the a community would gather to distribute gifts of all kinds.   The express purpose of these ceremonies was energetic dispersal out-to-all.   All who attended, understood well the ceremony and intention.  Within the context of the potlach, honor and respect was gained not by the wealth itself, but by its flow, not by how much was gathered, but by how much was gifted awaollowing the example of kincentric cultures, the salmon and the Earth we must arrange the financial structure of our aspiring green enterprises accordingly.' 
         </div>
         </a>
 
@@ -518,61 +518,6 @@ Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes h
 
 <script>
 // Function to handle click on a highlight
-function handleHighlightClick(event) {
-  event.stopPropagation();
-  const highlight = event.target.closest(".highlight");
-  if (highlight) {
-    highlight.outerHTML = highlight.innerHTML;
-  }
-}
-
-// Function to clear the highlights
-function clearHighlights() {
-  const highlights = document.querySelectorAll(".highlight");
-  highlights.forEach(highlight => {
-    highlight.outerHTML = highlight.innerHTML;
-  });
-}
-
-// Add event listeners to all text nodes in the document
-const textNodes = document.querySelectorAll("*:not(script):not(style)");
-textNodes.forEach(node => {
-  node.addEventListener("mouseup", () => {
-    const selection = window.getSelection();
-    if (selection.toString().length > 0) {
-      // Clear any existing temporary highlight
-      clearTemporaryHighlight();
-
-      // Create a span element to wrap the selected text
-      const span = document.createElement("span");
-      span.classList.add("highlight");
-      span.style.backgroundColor = "green";
-      span.style.color = "var(--background-color)";
-      span.title = "Click here to lock highlight";
-      span.style.cursor = "pointer";
-      span.textContent = selection.toString();
-
-      // Add event listener to highlight to remove it on click
-      span.addEventListener("click", handleHighlightClick);
-
-      // Replace the selected text with the highlighted span element
-      const range = selection.getRangeAt(0);
-      range.deleteContents();
-      range.insertNode(span);
-    }
-  });
-});
-
-// Function to clear the temporary highlight
-function clearTemporaryHighlight() {
-  const temporaryHighlight = document.querySelector(".highlight.temporary");
-  if (temporaryHighlight) {
-    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
-  }
-}
-
-// Add event listener to remove temporary highlight on click elsewhere on the page
-document.addEventListener("click", clearTemporaryHighlight);
 
 
 window.onscroll = function() {
