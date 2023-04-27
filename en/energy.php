@@ -129,16 +129,16 @@ Must be updated for each page-->
         background-color: rgba(0, 0, 0, 0.4);
       }
       .modal-content {
-        background-color: #ddd;
+        background-color: var(--strong-border);
         margin: 15% auto;
         padding: 20px;
-        border: 1px solid #888;
+        border: 0.5px solid var(--thin-border-color);
         width: 80%;
         border-radius: 10px;
         text-align: center;
       }
       .close {
-        color: #fff;
+        color: var(--thin-border-color);
         float: right;
         font-size: 28px;
         font-weight: bold;
@@ -154,7 +154,7 @@ Must be updated for each page-->
         pointer-events: none;
       }
       .next {
-        background-color: #4CAF50;
+        background-color: green;
         border: none;
         color: #fff;
         padding: 10px;
@@ -167,7 +167,7 @@ Must be updated for each page-->
         cursor: pointer;
       }
       .back {
-        background-color: #f44336;
+        background-color: green;
         border: none;
         color: #fff;
         padding: 10px;
@@ -202,8 +202,8 @@ Must be updated for each page-->
           <span class="close">&times;</span>
           <div id="information-one">
             <h2>Welcome to an Earthbook</h2>
-            <p>You've never quite read anything like this before.  Earthbook are a new reading format designed from the ground up to be human and Earth friendly.  Check out some of the features...</p>
-            <button class="next">Next</button>
+            <p style="text-align:center;font-size:smaller;">You've never quite read anything like this before.  Earthbook are a new reading format designed from the ground up to be human and Earth friendly.  Check out some of the features...</p>
+            <button class="next">Next ></button>
           </div>
           <div id="information-two" style="display:none;">
             <h2>Sample text number two</h2>
