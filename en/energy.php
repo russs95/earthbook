@@ -296,7 +296,9 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
       
      <p>This ethic, came to its social culmination in the <i>potlach</i> tradition that the Wet'suwet'en and every other first nation on the Pacific coast shared.  In this ceremony the community would come together to distribute food, goods and luxuries that had been accumulated by some more than others.<a id="64-up" href="#footnotes" title="'For the Gitksan and  Wetʼsuwetʼen, as for other traditional peoples, the various beliefs about the relationship of humans to the land and to the resources which sustain the people are rich and multifaceted, integrated into all aspects of society. They do not have a reductionist perspective which allows separation of the biological from the moral or mythical. Adherence to a wide variety of practices which we might separate into biological and spiritual realms is seen as necessary for the maintenance of the relationship of the people and the land with its plants and animals which sustain human life.  Conservation is interactive with ideology. As Anderson points out, it is in the realm of ideology and myth, which entrain the emotions, that the motivation to defer present gratification for the future common good is obtained. Myths or teaching stories imbue lessons on conservation, which makes possible long term sustainable adaptation, with sufficient emotional loading to make them memorable and to inspire people to put the lessons contained in them into practice.'  Leslie M. Johnson Gottesfeld (1994), Conservation, Territory, and Traditional Beliefs: An Analysis of Gitksan and Wet'suwet'en Subsistence, Northwest British Columbia, Canada. Human Ecology, p20." onclick="openFootnotes()">⁶4</a></p>  
      
-     In Banayan's Igorot culture (and many other kincentric societies), such a ceremony has its parralel.  In the yearly celebration of the first rice harvest a slaughtered pig would cut up into a piece for every family of the village, which was then carried home by a representative of each on the tip of their spear.<a id="65-up" href="#footnotes" title="The  Wetʼsuwetʼen were not alone in this way.  Virtually all first nations of the Pacific Northwest held a concept of wealth that was defined not by what one accumulated, but of what one gave away embodied in the the 'potlach' ceremony.  In this widespread tradition, the a community would gather to distribute gifts of all kinds.   The express purpose of these ceremonies was energetic dispersal out-to-all.   All who attended, understood well the ceremony and intention.  Within the context of the potlach, honor and respect was gained not by the wealth itself, but by its flow, not by how much was gathered, but by how much was gifted awaollowing the example of kincentric cultures, the salmon and the Earth we must arrange the financial structure of our aspiring green enterprises accordingly.'" onclick="openFootnotes()">⁶⁵</a></p>  In this way, ceremonies set a pattern for the distribution of surplus energy that was followed in the daily life of the community.</p>
+     <p>In Banayan's Igorot culture (and many other kincentric societies), such a ceremony has its parralel.  In the yearly celebration of the first rice harvest a slaughtered pig would cut up into a piece for every family of the village, which was then carried home by a representative of each on the tip of their spear.<a id="65-up" href="#footnotes" title="The  Wetʼsuwetʼen were not alone in this way.  Virtually all first nations of the Pacific Northwest held a concept of wealth that was defined not by what one accumulated, but of what one gave away embodied in the the 'potlach' ceremony.  In this widespread tradition, the a community would gather to distribute gifts of all kinds.   The express purpose of these ceremonies was energetic dispersal out-to-all.   All who attended, understood well the ceremony and intention.  Within the context of the potlach, honor and respect was gained not by the wealth itself, but by its flow, not by how much was gathered, but by how much was gifted awaollowing the example of kincentric cultures, the salmon and the Earth we must arrange the financial structure of our aspiring green enterprises accordingly.'" onclick="openFootnotes()">⁶⁵</a></p>  
+     
+     <p>In this way, ceremonies set a pattern for the distribution of surplus energy that was followed in the daily life of the community.</p>
 
 
      <p>In the deep resonance of Kincentric cultures and Earth's pattern, we find our second Earthen ethic.</p>
@@ -503,7 +505,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
     <div id="information-two" style="display:none;">
       <h2>Optimize Your Reading Experience</h2>
-      <div class="modal-description" style="font-family:'Mulish';font-size:1.2em;text-align:center;color:var(--text-color);">Click on the top left +- menu to adjust the font size, color tint and night/day themes.</h5>
+      <div class="modal-description" style="font-family:'Mulish';font-size:1.1em;text-align:center;color:var(--text-color);">Click on the top left +- menu to adjust the font size, color tint and night/day themes.</div>
       <button class="back">Back</button>
       <button class="next">Next</button>
     </div>
@@ -584,18 +586,19 @@ document.addEventListener("click", clearTemporaryHighlight);
 </script>
 
 
+
  <script>
  window.onscroll = function() {
-  if (document.documentElement.scrollTop > 100) {
+  if (document.documentElement.scrollTop > 2000) {
     document.getElementById("myModal").style.display = "block";
-    document.getElementById("page-content").classList.add("blur");
+    document.getElementById("underlayer").classList.add("blur");
   }
 };
 
 var closeButton = document.querySelector(".close");
 closeButton.onclick = function() {
   document.getElementById("myModal").style.display = "none";
-  document.getElementById("page-content").classList.remove("blur");
+  document.getElementById("underlayer").classList.remove("blur");
 };
 
 var information = document.querySelectorAll(".modal-content > div");
