@@ -206,8 +206,8 @@ Must be updated for each page-->
             <button class="next">Next ></button>
           </div>
           <div id="information-two" style="display:none;">
-            <h2>Sample text number two</h2>
-            <p>Content of sample text number two</p>
+            <h2>Optimize Reading Experience</h2>
+            <div class="modal-description" style="font-family:'Mulish';font-size:1.2em;text-align:center;color:var(--text-color);">Click on the top left +- menu to adjust the font size, color tint and night/day themes.</h5>
             <button class="back">Back</button>
             <button class="next">Next</button>
           </div>
