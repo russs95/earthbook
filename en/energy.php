@@ -588,12 +588,13 @@ document.addEventListener("click", clearTemporaryHighlight);
 
 
  <script>
+window.onscroll = function() {
+  if (window.pageYOffset > 300) {
+    guidedTour();
+  }
+};
 
-window.onscroll = function() {welcomeIntro()};
-
-
-  //Scroll on arrival 
-function welcomeIntro() {
+function guidedTour() {
 
 const mediaQuery = window.matchMedia('(min-width: 7px)')
 
