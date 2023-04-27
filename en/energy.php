@@ -577,9 +577,7 @@ document.addEventListener("click", clearTemporaryHighlight);
 </script>
 
 
-      </script>
-
-      <script>
+ <script>
         function guidedTour() {
   setTimeout(function() {
     var modal = document.getElementById("myModal");
