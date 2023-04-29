@@ -117,6 +117,8 @@ Must be updated for each page-->
   text-align: justify;
 		}
 
+
+    
     .modal {
         display: none;
         position: fixed;
