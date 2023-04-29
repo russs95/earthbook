@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Phases of Venus</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="js/knockout-3.1.0.js"></script>
+    <script type="text/javascript" src="js/GMath.js"></script>
+    <script type="text/javascript" src="js/raphael-min.js"></script>
+    <script type="text/javascript" src="js/venus-control-view-models.js"></script>
+    <script type="text/javascript" src="js/venus-phases.js"></script>
+</head>
+<body>
+    <div id="title-box" class="boxTitle">
+        <div id="title">Phases of Venus</div>
+        <div id="more-title-buttons-container">
+
+        </div>
+    </div>
+    <div id="main-container">
+        <div id="Modal1" class="modal" name="modal" data-bind="click: function () { $root.close();} ">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" data-bind="click: function () { $root.close(); } ">×</span>
+                    <h2>Knowledge Check 1: Venusian Phases</h2>
+                </div>
+                <div class="modal-body">
+                    <p>This simulation demonstrates the cycle of the phases of Venus. <span class="action">Click <strong>Start Animation</strong></span>. Note that and both venus and Earth now revolve around the Sun with their correct orbital speeds (described by what we call Kepler's 3rd Law today). <span class="question">Which planet moves faster (and can you explain why)?</span> <span class="action">Click <strong>Stop Animation</strong></span> and note that you can drag venus and Earth around to any orbital location.</p>
+                    <p>The orbits of both Earth and venus are shown as they would have been envisioned back in the time of Copernicus &ndash; in circular orbits in the same plane centered upon the Sun. Earth's orbit has a radius of 1 AU and distances in the solar system were measured in terms of this unit, even though it wasn't understood how big that distance was in terms of other units (like miles). The Earth-Venus distance is given in the simulation in terms of AU. <span class="question">What is the radius of Venus' circular orbit?</span></p>
+                    <p>Note that the simulation also conveys the appearrance of Venus as seen from Earth (with a little enhancement). <span class="activity">Drag Venus around in its orbit and note the range of phases that are possible?</span>
+                        <span class="question">Can one observe a new phase? A crescent phase? A first quarter (half of the surface we see illuminated)?  A gibbous phase (most of the surface we see illuminated)?  A full phase (all of the surface we see illuminated)?</span> <span class="action">Verbalize a short summary of the possible phases?</span></p>
+                    <p><span class="question">If one could observe a planet in full phase, what would that tell you about the orbit of the planet?</span></p>
+                </div>
+
+            </div>
+
+        </div>
+        <!--  CheckBox 2 --- The Eight Lunar Phases -->
+        <div id="Modal2" class="modal" name="modal" data-bind="click: function () { $root.close(); } ">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" data-bind="click: function () { $root.close(); } ">×</span>
+                    <h2>Knowledge Check 2: Elongation</h2>
+                </div>
+                <div class="modal-body">
+                    <p><img src="images/elongation.jpg" border="2" align="right"/>Planetary positions can be described in terms of an angle called <em>elongation</em>. This is the angular separation between the sun and the planet as seen from Earth. So point toward a planet with one arm and toward the sun with the other arm &mdash; the angle between your arms is elongation. In the simple model of Copernicus &mdash; planets in circular orbits in the same plane &mdash; it allows a planet's position to be specified with a single coordinate. </p>
+                    <p><span class="action">Click the <strong>Show Elongation</strong> button and then drag venus around noting the elongation values.</span> Then answer each of the folowing questions related to elongation:</p>
+                    <ul>
+                        <li class="question">What is the minimum value of elongation for venus?</li>
+                        <li class="question">What is the maximum value of elongation for venus? (this value also allows you to calculate the size of venus' orbit.)</li>
+                        <li class="question">What does this tell you about observing venus? Can it be seen high in the sky during the middle of the night?</li>
+                        <li class="question">How would the values for the minimum and maximum be affected if Venus’ orbit were slightly larger?</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="Modal3" class="modal" name="modal" data-bind="click: function () { $root.close(); } ">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close" data-bind="click: function () { $root.close(); } ">×</span>
+                    <h2>Knowledge Check 3: Distance and Angular Diameter</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Drag venus around while inspecting the Earth-venus distance. Then answer the following questions related to distance.</p>
+                    <ul>
+                        <li class="question">What is the maximum separation of the two planets?</li>
+                        <li class="question">What is the minimum separation of the two planets?</li>
+                        <li class="question">How does this maximum value compare to Earth's distance from the sun?</li>
+                        <li class="question">What is the ratio &mdash; the maximum separation divided by the minimum separation? </li>
+                    </ul>
+                    <p>Astronomers are also very interested in angular diameter &mdash; a measure of how big an object appears in the sky to an observer. Astronomers measured the angular diameter of planets in telescopes to determine the distance to planets (long before the invention of radar which made the technique unnecessary). <span class="action">Drag venus around noting the values of its angular diameter.</span> Then answer each of the folowing questions related to angular diameter:</p>
+                    <ul>
+                        <li class="question">What is the maximum angular diameter of the two planets?</li>
+                        <li class="question">What is the minimum angular diameter of the two planets?</li>
+                        <li class="question">What is the ratio &mdash; the maximum angular diameter divided by the minimum angular diameter? </li>
+                        <li class="question">How are distance and angular diameter correlated?  When distance is large is angular diameter large or small? (scrutinize your conclusion &mdash; does this make sense?) Do you think that angular diameter is proportional to distance or inversely proportional to distance?</li>
+                    </ul>
+                    <p>In the early 1600s there was considerable debate regarding the layout of the solar system. Measuring the angular diameter of a planet allowed one to infer a planet's distance.</p>
+                </div>
+                </br>
+                </br>
+            </div>
+
+        </div>
+        <div id="simulation-container">
+            <div class="mobileShow">
+                Use in landscape mode for optimal performance.
+            </div>
+        </div>
+        <div id="venus-phases">
+
+        </div>
+        <div id="control-container">
+           <div class="texts">
+               Elongation: </br>
+               Earth-Venus distance:</br>
+               Angular Diameter:
+           </div>
+            <div class="value">
+                <span  id="Elongation" data-bind="text: Elongation"></span></br>
+                <span  id="EarthDistance" data-bind="text: EarthDistance"></span></br>
+                <span  id="VenusAngularDiameter" data-bind="text: AngularDiameter"></span>
+            </div>
+                <button class="button" data-bind="text: Animating() ? 'Stop Animation' : 'Start Animation', click:ToggleAnimation"></button>
+            <div class="ElongationCheckbox"><input type="checkbox" data-bind="checked : ShowElongation">Show Elongation</div>
+            <div class="tickmarks" >
+                <!--<button id="myBtn">Open Modal</button>-->
+                <img  class="ticks" id="tick1" data-bind=" attr: { src: 'css/images/check-white.png'},click: function () { $root.popup(1); } " />
+                <img  class="ticks" id="tick2" data-bind=" attr: { src: 'css/images/check-white.png'},click: function () { $root.popup(2); } " />
+                <img  class="ticks" id="tick3" data-bind=" attr: { src: 'css/images/check-white.png'},click: function () { $root.popup(3); } " />
+            </div>
+            <div class="caption" id="caption">
+                Note: venus and Earth are draggable.
+             </div>
+        </div>
+    </div>
+    <script defer>
+        var controlVM = new ControlVM();
+        ko.applyBindings(controlVM, document.getElementById('main-container'));
+        var phaseSimulator = new PhaseViewSimulator(document.getElementById('simulation-container'),
+        document.getElementById('venus-phases'),controlVM);
+    </script>
+</body>
+
+</html>
