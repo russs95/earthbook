@@ -114,9 +114,10 @@ Must be updated for each page-->
   
         .tour-content {
           /*background-color: #ffffff2e;
-          margin: 15% auto;
+          
           padding: 35px 35px 35px 35px;
           border: 0.5px solid var(--subdued-text);*/
+          margin: 15% auto;
           width: 80%;
           border-radius: 10px;
           text-align: center;
@@ -176,10 +177,17 @@ Must be updated for each page-->
         }
   
         .modal-description {
-          font-family:'Mulish', sans-serif;font-size:1em;text-align:center;color:var(--h1);padding:15px;
+          font-family:'Mulish', sans-serif;
+          font-size:1.2em;
+          text-align:center;
+          color:var(--h1);
+          padding:15px;
         }
           
-        .modal-header {font-family: 'Arvo', serif;font-size:2.2em;color:var(--h1);
+        .modal-header {
+          font-family: 'Arvo', serif;
+          font-size:2.4em;
+          color:var(--h1);
         }
 
 </style>
