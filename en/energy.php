@@ -167,20 +167,7 @@ Must be updated for each page-->
       }
 
 </style>
-<script>
-window.onscroll = function() {scrollFunction3()};
 
-function scrollFunction3() {
-  const pageHeight = document.documentElement.scrollHeight;
-  const windowHeight = window.innerHeight;
-  const scrollPosition = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
-  const scrollPercentage = (scrollPosition + windowHeight) / pageHeight * 100;
-
-  if (scrollPercentage > 95) {
-    alert('Working!');
-  }
-}
-</script>
 
 </head>
 
@@ -195,52 +182,6 @@ function scrollFunction3() {
   <a id="top"></a>
 
 
-<div id="guided-tour" class="modal">
-  <div class="tour-content">
-    <span class="close">&times;</span>
-
-    <div id="information-one" class="information">
-      <div class="emoji-heading" style="font-size:3em; padding:10px;">🌞</div>   
-      <div class="modal-header">Welcome to the EarthCycles Calendar!</div>
-      <div class="modal-description">You've never quite used a calendar like this before!  To get know your calendar click through for a guided tour of the philosophy, functions and features.</div>
-      <button class="next">Next ➔</button>
-    </div>
-
-    <div id="information-two" style="display:none;" class="information">
-      <div class="emoji-heading" style="font-size:3em;padding:10px;">🌏</div>
-      <div class="modal-header">One year. One orbit</div>
-      <div class="modal-description">The EarthCycles calendar lets you see earch year as spin of Earth around the Sun.  The circle is divided into 365 days, and those days into weeks and months.  Hover and click on any of the days, weeks, months to get more information on each.</div>
-      <button class="back">𐌂 Back</button>
-      <button class="next">Next ➔</button>
-    </div>
-
-    <div id="information-three" style="display:none;" class="information">
-      <div class="emoji-heading" style="font-size:4em;padding:10px;">🪐</div>
-
-      <div class="modal-header">Our Neighbourhood</div>
-      <div class="modal-description">As you watch Earth spin around the Sun, you can also see its neighbours spin too.  Seeing the positions of the planet not only gives us an understanding of the night scale, but connects us to deep time cycles too.  For example Neptune's orbit is 165 Earth years (60,190 Earth days). Click the planet's to learn more.</div>
-      <button class="back">𐌂 Back</button>
-      <button class="next">Next ➔</button>
-    </div>
-
-    <div id="information-four" style="display:none;" class="information">
-      <div class="emoji-heading" style="font-size:3em;padding:10px;">🌛</div>
-      <div class="modal-header">Get Lunar</div>
-      <div class="modal-description">Look carefully at the center of the calendar while you hover or click around the days.  You can see in real-time how the phase of the moon changes and what it will be on any given day of the year.</div>
-      <button class="back">𐌂 Back</button>
-      <button class="next">Next ➔</button>
-    </div>
-
-    <div id="information-five" style="display:none;" class="information" class="information">
-      <div class="emoji-heading" style="font-size:3em;padding:10px;">📆</div>
-
-      <div class="modal-header">Connect Your Calendar</div>
-      <div class="modal-description">Coming soon, you'll be able to connect your WebDev or Google Calendar to view and keep track of your days.</div>
-      <button class="back">𐌂 Back</button>
-      <button class="next">✓ Finish</button>
-    </div>
-  </div>
-</div>
 
 <div id="underlayer" style="transition:1s;">
 
