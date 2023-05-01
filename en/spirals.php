@@ -113,10 +113,10 @@ Must be updated for each page-->
         }
   
         .tour-content {
-          background-color: #ffffff2e;
+          /*background-color: #ffffff2e;
           margin: 15% auto;
           padding: 35px 35px 35px 35px;
-          /*border: 0.5px solid var(--subdued-text);*/
+          border: 0.5px solid var(--subdued-text);*/
           width: 80%;
           border-radius: 10px;
           text-align: center;
@@ -242,7 +242,7 @@ function guidedTour() {
   // Set the onclick function for the fifth "Next" button to hide the modal and remove the "blur" class from the page content
   document.querySelector("#information-five .next").onclick = function() {
     modal.style.display = "none";
-    document.getElementById("page-content").classList.remove("blur");
+    document.getElementById("underlayer").classList.remove("blur");
     showInfo(0);
   };
 
@@ -279,42 +279,42 @@ showInfo(3);
     <span class="close">&times;</span>
 
     <div id="information-one" class="information">
-      <div class="emoji-heading" style="font-size:3em; padding:10px;">🌞</div>   
-      <div class="modal-header">Welcome to the EarthCycles Calendar!</div>
-      <div class="modal-description">You've never quite used a calendar like this before!  To get know your calendar click through for a guided tour of the philosophy, functions and features.</div>
+      <div class="emoji-heading" style="font-size:3em; padding:10px;">📖</div>   
+      <div class="modal-header">Welcome to this Earthbook!</div>
+      <div class="modal-description">You've never quite read a book like this before!  Get to know how an Earthbook works with our little guided tour...</div>
       <button class="next">Next ➔</button>
     </div>
 
     <div id="information-two" style="display:none;" class="information">
-      <div class="emoji-heading" style="font-size:3em;padding:10px;">🌏</div>
-      <div class="modal-header">One year. One orbit</div>
-      <div class="modal-description">The EarthCycles calendar lets you see earch year as spin of Earth around the Sun.  The circle is divided into 365 days, and those days into weeks and months.  Hover and click on any of the days, weeks, months to get more information on each.</div>
+      <div class="emoji-heading" style="font-size:3em;padding:10px;">😀</div>
+      <div class="modal-header">Human Friendly & Free.</div>
+      <div class="modal-description">Earthbooks are designed from the ground up to be easy on the eyes, accessible, and multi-lingual. Using the settings button in the top left corner to adjust the Earthbook's settings.</div>
       <button class="back">𐌂 Back</button>
       <button class="next">Next ➔</button>
     </div>
 
     <div id="information-three" style="display:none;" class="information">
-      <div class="emoji-heading" style="font-size:4em;padding:10px;">🪐</div>
+      <div class="emoji-heading" style="font-size:4em;padding:10px;">🌏</div>
 
-      <div class="modal-header">Our Neighbourhood</div>
-      <div class="modal-description">As you watch Earth spin around the Sun, you can also see its neighbours spin too.  Seeing the positions of the planet not only gives us an understanding of the night scale, but connects us to deep time cycles too.  For example Neptune's orbit is 165 Earth years (60,190 Earth days). Click the planet's to learn more.</div>
+      <div class="modal-header">Earth Friendly & Green</div>
+      <div class="modal-description">Throughout the writing and publishing of an Earthbook, the carbon, plastic and biodiversity impacts are tracked live and annually. Look for the green balance icon to see for yourself!</div>
       <button class="back">𐌂 Back</button>
       <button class="next">Next ➔</button>
     </div>
 
     <div id="information-four" style="display:none;" class="information">
-      <div class="emoji-heading" style="font-size:3em;padding:10px;">🌛</div>
-      <div class="modal-header">Get Lunar</div>
-      <div class="modal-description">Look carefully at the center of the calendar while you hover or click around the days.  You can see in real-time how the phase of the moon changes and what it will be on any given day of the year.</div>
+      <div class="emoji-heading" style="font-size:3em;padding:10px;">🔓</div>
+      <div class="modal-header">Open Source</div>
+      <div class="modal-description">The EarthBook source code is open to review, improvement and forking on Github. This means that publishing an Earthbook is open to anyone anywhere.</div>
       <button class="back">𐌂 Back</button>
       <button class="next">Next ➔</button>
     </div>
 
     <div id="information-five" style="display:none;" class="information" class="information">
-      <div class="emoji-heading" style="font-size:3em;padding:10px;">📆</div>
+      <div class="emoji-heading" style="font-size:3em;padding:10px;">💳</div>
 
-      <div class="modal-header">Connect Your Calendar</div>
-      <div class="modal-description">Coming soon, you'll be able to connect your WebDev or Google Calendar to view and keep track of your days.</div>
+      <div class="modal-header">Buyable!</div>
+      <div class="modal-description">Like this Earthbook?  Buy the eBook versions.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
       <button class="back">𐌂 Back</button>
       <button class="next">✓ Finish</button>
     </div>
