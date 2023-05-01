@@ -600,13 +600,13 @@ function guidedTour() {
   modal.style.display = "block";
 
   // Add the "blur" class to the page content to visually distinguish it from the modal
-  document.getElementById("page-content").classList.add("blur");
+  document.getElementById("underlayer").classList.add("blur");
 
   // Get the close button and set its onclick function to hide the modal and remove the "blur" class from the page content
   var closeButton = document.querySelector(".close");
   closeButton.onclick = function() {
     modal.style.display = "none";
-    document.getElementById("page-content").classList.remove("blur");
+    document.getElementById("underlayer").classList.remove("blur");
   }
 
     // Get all the "information" elements (which contain the tour content) and set the currentInfo variable to 0 (the first element)

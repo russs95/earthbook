@@ -1,6 +1,25 @@
 
 
 
+.highlight {
+ 
+  font-family: 'CooperLt', Georgia, serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.locked-highlight {
+  background-color: green;
+  color: var(--background-color);
+  font-family: 'CooperLt', Georgia, serif;
+text-rendering: optimizeLegibility;
+font-weight: 300;
+text-align: justify;
+}
+
+
+
 @media screen and (max-width: 699px) {
     
   #ct-main .action-btn {
