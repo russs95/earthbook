@@ -34,7 +34,7 @@
             </div>
 
             <div class="footer-function-item">
-              <p>Citations & Comments</p>
+              <p>Cite / Comment</p>
             </div>
 
             <div class="footer-function-item-icon"> 
@@ -112,5 +112,66 @@ function getMainurl() {
   document.getElementById("page-url").innerHTML = 
 "Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Kalinga, Philippines & Bali, Indonesia, 2022). <?php echo ($chap_number); echo ($chap_name); ;?>";
 }
+
+
+
+
+// Function to handle click on a highlight
+function handleHighlightClick(event) {
+  event.stopPropagation();
+  const highlight = event.target.closest(".highlight");
+  if (highlight) {
+    highlight.outerHTML = highlight.innerHTML;
+  }
+}
+
+// Function to clear the highlights
+function clearHighlights() {
+  const highlights = document.querySelectorAll(".highlight");
+  highlights.forEach(highlight => {
+    highlight.outerHTML = highlight.innerHTML;
+  });
+}
+
+// Add event listeners to all text nodes in the document
+const textNodes = document.querySelectorAll("*:not(script):not(style)");
+textNodes.forEach(node => {
+  node.addEventListener("mouseup", () => {
+    const selection = window.getSelection();
+    if (selection.toString().length > 0) {
+      // Clear any existing temporary highlight
+      clearTemporaryHighlight();
+
+      // Create a span element to wrap the selected text
+      const span = document.createElement("span");
+      span.classList.add("highlight");
+      span.style.backgroundColor = "green";
+      span.style.color = "var(--background-color)";
+      span.title = "Click here to lock highlight";
+      span.style.cursor = "pointer";
+      span.textContent = selection.toString();
+
+      // Add event listener to highlight to remove it on click
+      span.addEventListener("click", handleHighlightClick);
+
+      // Replace the selected text with the highlighted span element
+      const range = selection.getRangeAt(0);
+      range.deleteContents();
+      range.insertNode(span);
+    }
+  });
+});
+
+// Function to clear the temporary highlight
+function clearTemporaryHighlight() {
+  const temporaryHighlight = document.querySelector(".highlight.temporary");
+  if (temporaryHighlight) {
+    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
+  }
+}
+
+// Add event listener to remove temporary highlight on click elsewhere on the page
+document.addEventListener("click", clearTemporaryHighlight);
+
 </script>
   

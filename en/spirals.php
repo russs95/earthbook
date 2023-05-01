@@ -99,6 +99,89 @@ Must be updated for each page-->
       
     }
 
+  
+  .modal {
+          display: none;
+          position: fixed;
+          z-index: 111;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+  
+        .tour-content {
+          background-color: #ffffff2e;
+          margin: 15% auto;
+          padding: 35px 35px 35px 35px;
+          /*border: 0.5px solid var(--subdued-text);*/
+          width: 80%;
+          border-radius: 10px;
+          text-align: center;
+        }
+     .close {
+          color: var(--subdued-text);
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          margin: -30px -20px auto auto;
+          position: relative;
+        }
+        .close:hover,
+        .close:focus {
+          color:var(--h1);
+          text-decoration: none;
+          cursor: pointer;
+        }
+        .blur {
+          filter: blur(5px);
+          pointer-events: none;
+        }
+        .next {
+          background-color: green;
+          border: none;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 5px 2px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .next:hover {
+          background-color: #0f6a02;
+        }
+        
+        .back {
+          background-color: rgb(80, 80, 80);
+          border: none;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 5px 2px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .back:hover {
+          background-color: rgb(50, 50, 50);
+        }
+  
+        .modal-description {
+          font-family:'Mulish', sans-serif;font-size:1em;text-align:center;color:var(--h1);padding:15px;
+        }
+          
+        .modal-header {font-family: 'Arvo', serif;font-size:2.2em;color:var(--h1);
+        }
+
 </style>
 
 </head>
@@ -110,7 +193,56 @@ Must be updated for each page-->
 <!--MAIN HTML Begins-->
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
-<div id="underlayer">
+
+
+<div id="guided-tour" class="modal">
+  <div class="tour-content">
+    <span class="close">&times;</span>
+
+    <div id="information-one" class="information">
+      <div class="emoji-heading" style="font-size:3em; padding:10px;">🌞</div>   
+      <div class="modal-header">Welcome to the EarthCycles Calendar!</div>
+      <div class="modal-description">You've never quite used a calendar like this before!  To get know your calendar click through for a guided tour of the philosophy, functions and features.</div>
+      <button class="next">Next ➔</button>
+    </div>
+
+    <div id="information-two" style="display:none;" class="information">
+      <div class="emoji-heading" style="font-size:3em;padding:10px;">🌏</div>
+      <div class="modal-header">One year. One orbit</div>
+      <div class="modal-description">The EarthCycles calendar lets you see earch year as spin of Earth around the Sun.  The circle is divided into 365 days, and those days into weeks and months.  Hover and click on any of the days, weeks, months to get more information on each.</div>
+      <button class="back">𐌂 Back</button>
+      <button class="next">Next ➔</button>
+    </div>
+
+    <div id="information-three" style="display:none;" class="information">
+      <div class="emoji-heading" style="font-size:4em;padding:10px;">🪐</div>
+
+      <div class="modal-header">Our Neighbourhood</div>
+      <div class="modal-description">As you watch Earth spin around the Sun, you can also see its neighbours spin too.  Seeing the positions of the planet not only gives us an understanding of the night scale, but connects us to deep time cycles too.  For example Neptune's orbit is 165 Earth years (60,190 Earth days). Click the planet's to learn more.</div>
+      <button class="back">𐌂 Back</button>
+      <button class="next">Next ➔</button>
+    </div>
+
+    <div id="information-four" style="display:none;" class="information">
+      <div class="emoji-heading" style="font-size:3em;padding:10px;">🌛</div>
+      <div class="modal-header">Get Lunar</div>
+      <div class="modal-description">Look carefully at the center of the calendar while you hover or click around the days.  You can see in real-time how the phase of the moon changes and what it will be on any given day of the year.</div>
+      <button class="back">𐌂 Back</button>
+      <button class="next">Next ➔</button>
+    </div>
+
+    <div id="information-five" style="display:none;" class="information" class="information">
+      <div class="emoji-heading" style="font-size:3em;padding:10px;">📆</div>
+
+      <div class="modal-header">Connect Your Calendar</div>
+      <div class="modal-description">Coming soon, you'll be able to connect your WebDev or Google Calendar to view and keep track of your days.</div>
+      <button class="back">𐌂 Back</button>
+      <button class="next">✓ Finish</button>
+    </div>
+  </div>
+</div>
+
+<div id="underlayer" style="transition:1s;">
 
 <div id="top"></div>
 
@@ -210,7 +342,7 @@ Must be updated for each page-->
 
      <p>However, circularity is in and of itself is insufficient.</p>
 
-     <p>After all, over the eons our neighboring planets spun in perfect circles about the sun— yet they did not green.  No matter how much solar energy arrived, Venusian cycles did fracture and cascade. No matter how sustained Mercury's spin, its matter did not spiral into ever more concentrated and complex configurations. No matter how perfect their planetary circles, the ecological enrichment that we so long to replicate failed to take hold.</p>
+     <p>After all, over the eons our neighboring planets spun in perfect circles about the sun— yet they did not green.  No matter how much solar energy arrived, Venusian cycles did fracture and cascade. No matter how sustained Mercury's spin, its matter did not spiral into ever more concentrated and complex configurations. No matter how perfect their planetary circles, systemic enrichment failed to take hold.</p>
 
      <p>As we have seen in the ways of Earth and Igorots, ecological enrichment requires a tended shift— <i>always something more</i>. Another stone added to the terrace wall. Another atom of carbon added to a protein molecule. While it may be an infinitesimal addition in itself, over an indefinite series of cycles the result is, quite literally, a world of difference.  Indeed, it is the difference between depletion and enrichment, grey and green.</p>
 

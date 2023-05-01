@@ -209,7 +209,56 @@ function scrollFunction3() {
 
 
   <a id="top"></a>
-<div id="underlayer">
+
+
+<div id="guided-tour" class="modal">
+  <div class="tour-content">
+    <span class="close">&times;</span>
+
+    <div id="information-one" class="information">
+      <div class="emoji-heading" style="font-size:3em; padding:10px;">🌞</div>   
+      <div class="modal-header">Welcome to the EarthCycles Calendar!</div>
+      <div class="modal-description">You've never quite used a calendar like this before!  To get know your calendar click through for a guided tour of the philosophy, functions and features.</div>
+      <button class="next">Next ➔</button>
+    </div>
+
+    <div id="information-two" style="display:none;" class="information">
+      <div class="emoji-heading" style="font-size:3em;padding:10px;">🌏</div>
+      <div class="modal-header">One year. One orbit</div>
+      <div class="modal-description">The EarthCycles calendar lets you see earch year as spin of Earth around the Sun.  The circle is divided into 365 days, and those days into weeks and months.  Hover and click on any of the days, weeks, months to get more information on each.</div>
+      <button class="back">𐌂 Back</button>
+      <button class="next">Next ➔</button>
+    </div>
+
+    <div id="information-three" style="display:none;" class="information">
+      <div class="emoji-heading" style="font-size:4em;padding:10px;">🪐</div>
+
+      <div class="modal-header">Our Neighbourhood</div>
+      <div class="modal-description">As you watch Earth spin around the Sun, you can also see its neighbours spin too.  Seeing the positions of the planet not only gives us an understanding of the night scale, but connects us to deep time cycles too.  For example Neptune's orbit is 165 Earth years (60,190 Earth days). Click the planet's to learn more.</div>
+      <button class="back">𐌂 Back</button>
+      <button class="next">Next ➔</button>
+    </div>
+
+    <div id="information-four" style="display:none;" class="information">
+      <div class="emoji-heading" style="font-size:3em;padding:10px;">🌛</div>
+      <div class="modal-header">Get Lunar</div>
+      <div class="modal-description">Look carefully at the center of the calendar while you hover or click around the days.  You can see in real-time how the phase of the moon changes and what it will be on any given day of the year.</div>
+      <button class="back">𐌂 Back</button>
+      <button class="next">Next ➔</button>
+    </div>
+
+    <div id="information-five" style="display:none;" class="information" class="information">
+      <div class="emoji-heading" style="font-size:3em;padding:10px;">📆</div>
+
+      <div class="modal-header">Connect Your Calendar</div>
+      <div class="modal-description">Coming soon, you'll be able to connect your WebDev or Google Calendar to view and keep track of your days.</div>
+      <button class="back">𐌂 Back</button>
+      <button class="next">✓ Finish</button>
+    </div>
+  </div>
+</div>
+
+<div id="underlayer" style="transition:1s;">
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>
@@ -506,148 +555,6 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
 
 </div>
-
-
-<div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-
-    <div id="information-one">
-      <h2>Welcome to an Earthbook</h2>
-      <div class="modal-description" style="font-family:'Mulish';font-size:1em;text-align:center;color:var(--text-color);padding:15px;">You've never quite read anything like this before.  Earthbook are a new reading format designed from the ground up to be human and Earth friendly.  Check out some of the features...</div>
-      <button class="next">Next ></button>
-    </div>
-
-    <div id="information-two" style="display:none;">
-      <h2>Optimize Your Reading Experience</h2>
-      <div class="modal-description" style="font-family:'Mulish';font-size:1em;text-align:center;color:var(--text-color);padding:15px;">Click on the top left +- menu to adjust the font size, color tint and night/day themes.</div>
-      <button class="back">Back</button>
-      <button class="next">Next</button>
-    </div>
-
-    <div id="information-three" style="display:none;">
-      <h2>Cite, Share & Highlight</h2>
-      <div class="modal-description" style="font-family:'Mulish';font-size:1em;text-align:center;color:var(--text-color);padding:15px;">Hit the share button on the top right.  Use it to get a formatted citation for your own work.  Select text; click to lock a hightlight.  </div>
-      <button class="back">Back</button>
-    </div>
-
-    <div id="information-four" style="display:none;">
-      <h2>Cite, Share & Highlight</h2>
-      <p>Hit the share button on the top right.  Use it to get a formatted citation for your own work.  Select text; click to lock a hightlight.  </p>
-      <button class="back">Back</button>
-    </div>
-  </div>
-</div>
-
-
-<script>
-// Function to handle click on a highlight
-function handleHighlightClick(event) {
-  event.stopPropagation();
-  const highlight = event.target.closest(".highlight");
-  if (highlight) {
-    highlight.outerHTML = highlight.innerHTML;
-  }
-}
-
-// Function to clear the highlights
-function clearHighlights() {
-  const highlights = document.querySelectorAll(".highlight");
-  highlights.forEach(highlight => {
-    highlight.outerHTML = highlight.innerHTML;
-  });
-}
-
-// Add event listeners to all text nodes in the document
-const textNodes = document.querySelectorAll("*:not(script):not(style)");
-textNodes.forEach(node => {
-  node.addEventListener("mouseup", () => {
-    const selection = window.getSelection();
-    if (selection.toString().length > 0) {
-      // Clear any existing temporary highlight
-      clearTemporaryHighlight();
-
-      // Create a span element to wrap the selected text
-      const span = document.createElement("span");
-      span.classList.add("highlight");
-      span.style.backgroundColor = "green";
-      span.style.color = "var(--background-color)";
-      span.title = "Click here to lock highlight";
-      span.style.cursor = "pointer";
-      span.textContent = selection.toString();
-
-      // Add event listener to highlight to remove it on click
-      span.addEventListener("click", handleHighlightClick);
-
-      // Replace the selected text with the highlighted span element
-      const range = selection.getRangeAt(0);
-      range.deleteContents();
-      range.insertNode(span);
-    }
-  });
-});
-
-// Function to clear the temporary highlight
-function clearTemporaryHighlight() {
-  const temporaryHighlight = document.querySelector(".highlight.temporary");
-  if (temporaryHighlight) {
-    temporaryHighlight.outerHTML = temporaryHighlight.innerHTML;
-  }
-}
-
-// Add event listener to remove temporary highlight on click elsewhere on the page
-document.addEventListener("click", clearTemporaryHighlight);
-
-</script>
-
-
-
- <script>
-window.onscroll = function() {guidedTour()};
-
-function guidedTour() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-   
-
-
-    document.getElementById("myModal").style.display = "block";
-    document.getElementById("underlayer").classList.add("blur");
-
-}}
-
-
-var closeButton = document.querySelector(".close");
-closeButton.onclick = function() {
-  document.getElementById("myModal").style.display = "none";
-  document.getElementById("underlayer").classList.remove("blur");
-};
-
-var information = document.querySelectorAll(".modal-content > div");
-var currentInfo = 0;
-
-function showInfo(n) {
-  information[currentInfo].style.display = "none";
-  information[n].style.display = "block";
-  currentInfo = n;
-}
-
-document.querySelector("#information-one .next").onclick = function() {
-  showInfo(1);
-};
-
-document.querySelector("#information-two .next").onclick = function() {
-  showInfo(2);
-};
-
-document.querySelector("#information-two .back").onclick = function() {
-  showInfo(0);
-};
-
-document.querySelector("#information-three .back").onclick = function() {
-  showInfo(1);
-};
-
-</script>
 
 
 
