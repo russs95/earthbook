@@ -8,7 +8,7 @@
 
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2022-12-03T09:14:13+00:00" />
+<meta property="article:modified_time" content="2023-5-03T09:14:13+00:00" >
 
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
@@ -16,8 +16,8 @@ These tags will be consistent for the whole book-->
 <title><?php echo $page_title; ?></title>
 
 
-<meta property="og:site_name" content="Tractatus Ayyew" />
-<meta property="article:publisher" content="Earthen.io" />
+<meta property="og:site_name" content="Tractatus Ayyew" >
+<meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
 <meta property="og:type" content="book" />
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
@@ -25,14 +25,14 @@ These tags will be consistent for the whole book-->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
 <link rel="manifest" href="../favicons/site.webmanifest">
 
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary" >
 <meta property="og:type"          content="book">
 <meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg"/>
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="1000px" />
-<meta property="og:image:height" content="1500px" />
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
 
-<meta property="og:locale" content="<?php echo ($lang); ;?>" />
+<meta property="og:locale" content="<?php echo ($lang); ;?>" >
 
 <meta property="og:url" content="https://tractatus.earthen.io/<?php echo ($lang); ;?>/<?php echo ($name); ;?>">
 
@@ -88,14 +88,14 @@ All the css needed for this page-->
  <!--Page Components
 All the page components required to build this page-->
 
- <!--1--><script src="includes/header-component.js" type="text/javascript" preload></script>
-  <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
- <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
- <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
- <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
- <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
- <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
- <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
-<!--9--><script src="includes/read-curtain.js" type="text/javascript" defer></script>
-<!--10--><script src="includes/tour-curtain.js" type="text/javascript" defer></script>
+ <!--1--><script src="includes/header-component.js"  async></script>
+  <!--2--><script src="includes/settings-curtain.js"  defer></script>
+ <!--3--><script src="includes/content-curtain.js"  defer></script>
+ <!--4--><script src="includes/share-curtain.js"  defer></script>
+ <!--5--><script src="includes/buy-curtain.js"  defer></script>
+ <!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+ <!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+ <!--8a--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
  
