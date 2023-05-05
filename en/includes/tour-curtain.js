@@ -46,10 +46,10 @@ class TourCurtain extends HTMLElement {
   <div id="information-five" style="display:none;" class="information" class="information">
   <div class="virtue"><img src="../svgs/icon-revenue.svg"  width="30%" height="30%" style="margin:auto" title="Read Freely" alt="Read Freely"></div>  
 
-    <div class="modal-header">Buyable!</div>
+    <div class="modal-header">Buyable</div>
     <div class="modal-description">Like this Earthbook?  Buy the eBook versions.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
     <button class="back">𐌂 Back</button>
-    <button class="back" onclick="openEarthbook()>+ EarthBook Principles</button>
+    <button class="back" onclick="openEarthbook()">+ EarthBook Principles</button>
     <button class="next">✓ Finish</button>
   </div>
 </div>
