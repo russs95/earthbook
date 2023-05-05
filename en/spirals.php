@@ -196,85 +196,7 @@ Must be updated for each page-->
 
 <!--Guided tour-->
 
-<script>
 
-function guidedTour() {
-  // Get the modal and set its display to "block" to show it
-  var modal = document.getElementById("guided-tour");
-  modal.style.display = "block";
-
-  // Add the "blur" class to the page content to visually distinguish it from the modal
-  document.getElementById("underlayer").classList.add("blur");
-
-  // Get the close button and set its onclick function to hide the modal and remove the "blur" class from the page content
-  var closeButton = document.querySelector(".close");
-  closeButton.onclick = function() {
-    modal.style.display = "none";
-    document.getElementById("underlayer").classList.remove("blur");
-  }
-
-    // Get all the "information" elements (which contain the tour content) and set the currentInfo variable to 0 (the first element)
-  var information = document.querySelectorAll(".information");
-  var currentInfo = 0;
-
-  // Define a function to show the nth "information" element and hide the current one
-  function showInfo(infoIndex) {
-    // Check that the requested index is within the bounds of the array before attempting to show the information panel
-    if (infoIndex >= 0 && infoIndex < information.length) {
-      information[currentInfo].style.display = "none";
-      information[infoIndex].style.display = "block";
-      currentInfo = infoIndex;
-    }
-  }
-
-  // Set the onclick function for the first "Next" button to show the second "information" element
-  document.querySelector(".next:first-of-type").onclick = function() {
-    showInfo(1);
-  };
-
-  // Set the onclick function for the second "Next" button to show the third "information" element
-  document.querySelector("#information-two .next").onclick = function() {
-    showInfo(2);
-  };
-
-  // Set the onclick function for the third "Next" button to show the fourth "information" element
-  document.querySelector("#information-three .next").onclick = function() {
-    showInfo(3);
-  };
-
-  // Set the onclick function for the fourth "Next" button to show the fifth "information" element
-  document.querySelector("#information-four .next").onclick = function() {
-    showInfo(4);
-  };
-
-  // Set the onclick function for the fifth "Next" button to hide the modal and remove the "blur" class from the page content
-  document.querySelector("#information-five .next").onclick = function() {
-    modal.style.display = "none";
-    document.getElementById("underlayer").classList.remove("blur");
-    showInfo(0);
-  };
-
-// Set the onclick function for the "Back" button in the third "information" element to show the second "information" element
-document.querySelector("#information-two .back").onclick = function() {
-showInfo(0);
-};
-// Set the onclick function for the "Back" button in the third "information" element to show the second "information" element
-document.querySelector("#information-three .back").onclick = function() {
-showInfo(1);
-};
-
-// Set the onclick function for the "Back" button in the fourth "information" element to show the third "information" element
-document.querySelector("#information-four .back").onclick = function() {
-showInfo(2);
-};
-
-// Set the onclick function for the "Back" button in the fifth "information" element to show the fourth "information" element
-document.querySelector("#information-five .back").onclick = function() {
-showInfo(3);
-};
-
-}
-</script>
 
 
 <!--MAIN HTML Begins-->
@@ -282,52 +204,6 @@ showInfo(3);
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 
 
-<div id="guided-tour" class="modal">
-  <div class="tour-content">
-    <span class="close">&times;</span>
-
-    <div id="information-one" class="information">
-      <div class="emoji-heading" style="font-size:3em; padding:10px;">📖</div>   
-      <div class="modal-header">Welcome to this Earthbook!</div>
-      <div class="modal-description">You've never quite read a book like this before!  Get to know how an Earthbook works with our little guided tour...</div>
-      <button class="next">Next ➔</button>
-    </div>
-
-    <div id="information-two" style="display:none;" class="information">
-      <div class="emoji-heading" style="font-size:3em;padding:10px;">😀</div>
-      <div class="modal-header">Human Friendly & Free.</div>
-      <div class="modal-description">Earthbooks are designed from the ground up to be easy on the eyes, accessible, and multi-lingual. Using the settings button in the top left corner to adjust the Earthbook's settings.</div>
-      <button class="back">𐌂 Back</button>
-      <button class="next">Next ➔</button>
-    </div>
-
-    <div id="information-three" style="display:none;" class="information">
-      <div class="emoji-heading" style="font-size:4em;padding:10px;">🌏</div>
-
-      <div class="modal-header">Earth Friendly & Green</div>
-      <div class="modal-description">Throughout the writing and publishing of an Earthbook, the carbon, plastic and biodiversity impacts are tracked live and annually. Look for the green balance icon to see for yourself!</div>
-      <button class="back">𐌂 Back</button>
-      <button class="next">Next ➔</button>
-    </div>
-
-    <div id="information-four" style="display:none;" class="information">
-      <div class="emoji-heading" style="font-size:3em;padding:10px;">🔓</div>
-      <div class="modal-header">Open Source</div>
-      <div class="modal-description">The EarthBook source code is open to review, improvement and forking on Github. This means that publishing an Earthbook is open to anyone anywhere.</div>
-      <button class="back">𐌂 Back</button>
-      <button class="next">Next ➔</button>
-    </div>
-
-    <div id="information-five" style="display:none;" class="information" class="information">
-      <div class="emoji-heading" style="font-size:3em;padding:10px;">💳</div>
-
-      <div class="modal-header">Buyable!</div>
-      <div class="modal-description">Like this Earthbook?  Buy the eBook versions.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
-      <button class="back">𐌂 Back</button>
-      <button class="next">✓ Finish</button>
-    </div>
-  </div>
-</div>
 
 <div id="underlayer" style="transition:1s;">
 

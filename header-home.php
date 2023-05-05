@@ -97,4 +97,5 @@ All the page components required to build this page-->
  <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
  <!--8a--><script src="includes/footer-component.js" type="text/javascript" defer></script>
 <!--9--><script src="includes/read-curtain.js" type="text/javascript" defer></script>
+<!--10--><script src="includes/tour-curtain.js" type="text/javascript" defer></script>
  

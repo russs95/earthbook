@@ -17,7 +17,9 @@
 <!--BUY-CURTAIN-->
 <buy-curtain></buy-curtain>
 
-<!--ECO-CURTAIN-->
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
 
 
 <div id="eco-curtain2" class="eco-overlay">

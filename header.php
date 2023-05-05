@@ -100,6 +100,8 @@ All the page components required to build this page-->
  <!--5--><script src="includes/buy-curtain.js"  defer></script>
  <!--6--><script src="includes/bookplate-curtain.js" defer></script>
  <!--7--><script src="includes/earthbook-curtain.js" defer></script>
+  <!--8--><script src="includes/tour-curtain.js" defer></script>
+
  <!--8b DELEATABLE??<script src="includes/footer-chapter.js" defer></script>-->
 
 

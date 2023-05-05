@@ -37,7 +37,7 @@ $chap_number = "Book One";?>
 <head>
 
 
-<?php require_once ("../header2.php");?>
+<?php require_once ("../header-home.php");?>
 
 
 <!--META TAGS
@@ -105,7 +105,10 @@ Must be updated for each page-->
 <header-component></header-component>
 
 <!--READ CURTAIN-->
+<tour-curtain></tour-curtain>
+
 <read-curtain></read-curtain>
+
 
 <!-- PAGE CONTENT-->
 
