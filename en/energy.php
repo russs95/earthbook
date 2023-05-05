@@ -242,7 +242,8 @@ Must be updated for each page-->
 
       <p>To begin, we must return once again to our planet's primordial origins and take a closer look at its unique pattern of energetic flow.</p>
 
-     <p> <a onclick="guidedTour()">Learn more about this Earthbook</a></p>
+      <a class="java-link" onclick="guidedTour()" aria-label="Open About Screen" title="Learn more about what an Earthbook is"><i>Earthbook Tour</i></a>
+
 
       <p id="59-up">As we saw in Earth's <a href="stellar.php" title="Chapter 3: A Stellar Story">stellar story</a>, over the last four billion years, the energy of the Sun's relentless blaze coursed through Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, stored, then dispersed energy ever outwards towards equilibrium.<a href="#footnotes" title="Vortical unfolding on a sphererical surface with the proper conditions can tend towards greater and greater order: Guillaume Gauthier et al, (2019) Giant vortex clusters in a two-dimensional quantum fluid, Science https://www.science.org/doi/10.1126/science.aat5718" onclick="openFootnotes()">⁵⁹</a></p>
 

@@ -16,10 +16,18 @@
     font-size: 1.1em;
     line-height: 1.3;
   }
+  .highlight  {
+    font-size: 1.1em;
+    line-height: 1.3;
+  }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   .locked-highlight  {
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+  .highlight  {
     font-size: 1.4em;
     line-height: 1.5;
   }
@@ -28,6 +36,10 @@
 @media screen and (min-width: 1325px) {
 
   .locked-highlight  {
+    font-size: 1.4em;
+    line-height: 1.6;
+  }
+  .highlight  {
     font-size: 1.4em;
     line-height: 1.6;
   }
