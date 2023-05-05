@@ -7,9 +7,32 @@
   text-rendering: optimizeLegibility;
   font-weight: 300;
   text-align: justify;
-  font-size: 1.4em;
-line-height: 1.5;
+
 }
+
+
+@media screen and (max-width: 699px) {
+  .highlight {
+    font-size: 1.1em;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .highlight {
+    font-size: 1.4em;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+
+  .highlight {
+    font-size: 1.4em;
+    line-height: 1.6;
+  }
+}
+
 
 .locked-highlight {
   background-color: green;
