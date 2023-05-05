@@ -115,13 +115,13 @@ Must be updated for each page-->
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 
 
-
-  <a id="top"></a>
-
 <!--TOUR-CURTAIN-->
 <tour-curtain></tour-curtain>
 
-<div id="underlayer" style="transition:1s;">
+
+  <div id="underlayer">
+
+    <div id="top"></div>
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>

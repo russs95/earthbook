@@ -75,9 +75,13 @@ Must be updated for each page-->
 <!--MAIN HTML Begins-->
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
-<div id="underlayer">
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
 
-<div id="top"></div>
+
+  <div id="underlayer">
+
+    <div id="top"></div>
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>

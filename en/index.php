@@ -217,7 +217,7 @@ Must be updated for each page-->
 	<div id="row">
         <div id="side">
 
-            <img src="https://book.earthen.io/photos/cover-500px.webp" width="300px" height="415px" alt="Tractatus Ayyew - EarthBook Cover">
+            <img src="https://book.earthen.io/photos/cover-500px.webp" width="300" height="415" alt="Tractatus Ayyew - EarthBook Cover">
 
             <div class="welcome-to">Welcome to the <span style="cursor:pointer; text-decoration: none !important;  border-bottom: grey 1px dashed ;" onclick="openEarthbook()">Earthbook</span> edition of the <i>Tractatus Ayyew: An Earthen Ethics</i>.</div>
 

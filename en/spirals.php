@@ -100,102 +100,10 @@ Must be updated for each page-->
     }
 
   
-  .modal {
-          display: none;
-          position: fixed;
-          z-index: 111;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          overflow: auto;
-          background-color: rgba(0, 0, 0, 0.1);
-        }
-  
-        .tour-content {
-          /*background-color: #ffffff2e;
-          
-          padding: 35px 35px 35px 35px;
-          border: 0.5px solid var(--subdued-text);*/
-          margin: 15% auto;
-          width: 80%;
-          border-radius: 10px;
-          text-align: center;
-        }
-     .close {
-          color: var(--subdued-text);
-          float: right;
-          font-size: 28px;
-          font-weight: bold;
-          margin: -30px -20px auto auto;
-          position: relative;
-        }
-        .close:hover,
-        .close:focus {
-          color:var(--h1);
-          text-decoration: none;
-          cursor: pointer;
-        }
-        .blur {
-          filter: blur(5px);
-          pointer-events: none;
-        }
-        .next {
-          background-color: green;
-          border: none;
-          color: #fff;
-          padding: 10px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 5px 2px;
-          border-radius: 5px;
-          cursor: pointer;
-        }
-
-        .next:hover {
-          background-color: #0f6a02;
-        }
-        
-        .back {
-          background-color: rgb(80, 80, 80);
-          border: none;
-          color: #fff;
-          padding: 10px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 5px 2px;
-          border-radius: 5px;
-          cursor: pointer;
-        }
-
-        .back:hover {
-          background-color: rgb(50, 50, 50);
-        }
-  
-        .modal-description {
-          font-family:'Mulish', sans-serif;
-          font-size:1.2em;
-          text-align:center;
-          color:var(--h1);
-          padding:15px;
-        }
-          
-        .modal-header {
-          font-family: 'Arvo', serif;
-          font-size:2.4em;
-          color:var(--h1);
-        }
 
 </style>
 
 </head>
-
-<!--Guided tour-->
-
 
 
 
@@ -203,11 +111,13 @@ Must be updated for each page-->
 
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
 
 
-<div id="underlayer" style="transition:1s;">
+  <div id="underlayer">
 
-<div id="top"></div>
+    <div id="top"></div>
 
   <!--HEADER NAVBAR-->
   <header-component></header-component>

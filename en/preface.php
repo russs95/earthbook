@@ -78,9 +78,13 @@ Must be updated for each page-->
 <!--Main HTML Begins-->
 
 <BODY class="accessibility-plugin-ac">
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
+
   <div id="underlayer">
 
-  <div id="top"></div>
+    <div id="top"></div>
 
 <!--HEADER NAVBAR-->
 <header-component></header-component>
