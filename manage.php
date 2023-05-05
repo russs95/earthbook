@@ -6,9 +6,9 @@ if (!$_POST) {
      $display_block = <<<END_OF_BLOCK
      <form method="POST" action="$_SERVER[PHP_SELF]">
 
-     <!--<p><label for="email">Your E-Mail Address:</label><br/>-->
+     <!--<p><label for="email">Your E-Mail Address:</label><br>-->
     <div class="this-one"><input type="email" id="email" name="email"  placeholder="Want more? Enter email..."
-           size="40" maxlength="150"  /></p></div>
+           size="40" maxlength="150" ></div>
 
     
     <button type="submit" name="submit"  value="submit" class="action-btn" style="width: 65%;
@@ -18,10 +18,10 @@ if (!$_POST) {
     border-radius: 0px 0px 20px 20px;">Register</button>
     <fieldset>
     <input type="radio" id="action_sub" name="action"
-           value="sub" checked />
-    <label for="action_sub">subscribe</label><br/>
+           value="sub" checked >
+    <label for="action_sub">subscribe</label><br>
     <input type="radio" id="action_unsub" name="action"
-           value="unsub" />
+           value="unsub" >
     <label for="action_unsub">unsubscribe</label>
     </fieldset>
     </form>
