@@ -10,7 +10,7 @@
 
 }
 
-
+/*
 @media screen and (max-width: 699px) {
   .locked-highlight  {
     font-size: 1.1em;
@@ -44,7 +44,7 @@
     line-height: 1.6;
   }
 }
-
+*/
 
 .locked-highlight {
   background-color: green;
