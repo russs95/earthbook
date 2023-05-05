@@ -11,7 +11,7 @@ class ContentCurtain extends HTMLElement {
     <div id="top-close-button">
         <a href="index.php"><img src="../icons/home.svg" alt="Home Button" style="padding-right:10px;padding-left:10px;"></a> 
         <img src="../svgs/bottom-x.svg" alt="Close Button" style="padding-left:10px;cursor:pointer" onclick="closeContents()">
-        <img src="../icons/question.svg" alt="Guided Tour" style="padding-left:10px;padding-right:15px;cursor:pointer" onclick="closeContents();, guidedTour();">
+        <img src="../icons/question.svg" alt="Guided Tour" style="padding-left:10px;padding-right:15px;cursor:pointer" onclick="closeContents(), guidedTour()">
     </div>
         
         <div class="overlay-content-tc">
