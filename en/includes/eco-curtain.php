@@ -17,8 +17,7 @@
 <!--BUY-CURTAIN-->
 <buy-curtain></buy-curtain>
 
-<!--TOUR-CURTAIN-->
-<tour-curtain></tour-curtain>
+
 
 
 

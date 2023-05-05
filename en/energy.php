@@ -103,69 +103,6 @@ Must be updated for each page-->
     }
 
     
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 111;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.4);
-      }
-      .modal-content {
-        background-color: var(--strong-border);
-        margin: 15% auto;
-        padding: 20px;
-        border: 0.5px solid var(--thin-border-color);
-        width: 80%;
-        border-radius: 10px;
-        text-align: center;
-      }
-      .close {
-        color: var(--thin-border-color);
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
-      .close:hover,
-      .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-      }
-      .blur {
-        filter: blur(5px);
-        pointer-events: none;
-      }
-      .next {
-        background-color: green;
-        border: none;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 5px 2px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .back {
-        background-color: green;
-        border: none;
-        color: #fff;
-        padding: 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 5px 2px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
 </style>
 
 
@@ -181,7 +118,8 @@ Must be updated for each page-->
 
   <a id="top"></a>
 
-
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
 
 <div id="underlayer" style="transition:1s;">
 
