@@ -96,7 +96,12 @@ Must be updated for each page-->
 
 
 <BODY class="accessibility-plugin-ac">
-    <div id="underlayer">
+
+
+<tour-curtain></tour-curtain>
+
+
+<div id="underlayer">
 
     <a name="top"></a>
 
@@ -105,7 +110,6 @@ Must be updated for each page-->
 <header-component></header-component>
 
 <!--READ CURTAIN-->
-<tour-curtain></tour-curtain>
 
 <read-curtain></read-curtain>
 
