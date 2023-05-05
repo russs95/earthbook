@@ -73,6 +73,10 @@ Must be updated for each page-->
 
 <BODY class="accessibility-plugin-ac">
 
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
+
   <div id="underlayer">
 
     <div id="top"></div>

@@ -97,11 +97,9 @@ Must be updated for each page-->
 
 <BODY class="accessibility-plugin-ac">
 
-
 <tour-curtain></tour-curtain>
 
-
-<div id="underlayer">
+    <div id="underlayer">
 
     <a name="top"></a>
 
