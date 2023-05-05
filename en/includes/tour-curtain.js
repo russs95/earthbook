@@ -58,6 +58,6 @@ class TourCurtain extends HTMLElement {
 }
 }
 
-customElements.define('tour-curtain', ReadCurtain);
+customElements.define('tour-curtain', TourCurtain);
 
 
