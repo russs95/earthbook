@@ -12,7 +12,7 @@ class TourCurtain extends HTMLElement {
   <span class="close">&times;</span>
 
   <div id="information-one" class="information">
-    <div class="emoji-heading" style="font-size:3em; padding:10px;">📖</div>   
+  <div class="virtue"><img src="../svgs/icon-readfreely.svg"  width="100%" height="100%" title="Read Freely" alt="Read Freely"></div>  
     <div class="modal-header">Welcome to this Earthbook!</div>
     <div class="modal-description">You've never quite read a book like this before!  Get to know how an Earthbook works with our little guided tour...</div>
     <button class="next">Next ➔</button>
