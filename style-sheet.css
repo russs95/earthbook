@@ -4484,7 +4484,7 @@ width: fit-content;
 
 .tour-image {
   padding: 8px;
-  height: 70px; 
+  height: 120px; 
 }
 
 
@@ -4497,8 +4497,7 @@ width: fit-content;
   
   .tour-image {
     padding: 13px;
- /*   width: 100px;
-    height: 110px;*/
+    height: 210px;
 
   } 
 
@@ -4510,8 +4509,7 @@ width: fit-content;
 
   .tour-image {
     padding: 15px;
- /*   width: 170px;
-    height: 150px;*/
+    height: 350px;
   } 
 
 
