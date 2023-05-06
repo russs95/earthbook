@@ -4472,10 +4472,14 @@ GUIDED TOUR---*
   flex-flow: column;
   flex: 50%;
   opacity: 0.7;
-  filter: invert(100%);
 margin: auto;
 width: fit-content;
 
+}
+
+.tour-image img {
+  height: fit-content;
+  width: fit-content;
 }
 
 
