@@ -36,7 +36,7 @@ class TourCurtain extends HTMLElement {
   </div>
   
   <div id="information-four" style="display:none;" class="information">
-  <div class="virtue"><img src="../svgs/icon-opensource.svg"   title="Read Freely" alt="Read Freely"></div>  
+  <div class="tour-image"><img src="../svgs/icon-opensource.svg" title="Read Freely" alt="Read Freely"></div>  
     <div class="modal-header">Open Source</div>
     <div class="modal-description">The EarthBook source code is open to review, improvement and forking on Github. This means that publishing an Earthbook is open to anyone anywhere.</div>
     <button class="back">𐌂 Back</button>
@@ -44,7 +44,7 @@ class TourCurtain extends HTMLElement {
   </div>
 
   <div id="information-five" style="display:none;" class="information" class="information">
-  <div class="virtue"><img src="../svgs/icon-revenue.svg"  title="Buy the eBook" alt="But the eBook"></div>  
+  <div class="tour-image"><img src="../svgs/icon-revenue.svg"  title="Buy the eBook" alt="But the eBook"></div>  
 
     <div class="modal-header">Buyable</div>
     <div class="modal-description">Like this Earthbook?  You can buy the eBook version for your digital library and ereader.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
