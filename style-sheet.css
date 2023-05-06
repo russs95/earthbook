@@ -3490,6 +3490,7 @@ display: none;
 }
 
 
+
 .virtue-desc {
   font-family: 'Mulish';
   text-align: center;
@@ -3521,6 +3522,7 @@ display: none;
   transition-delay: 0.3s;
 
 }
+
 
 
 
@@ -4460,3 +4462,54 @@ GUIDED TOUR---*
 }
 
 #underlayer {transition: 0.5s;}
+
+
+
+.tour-image {
+  margin: auto; 
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  flex: 50%;
+  opacity: 0.7;
+
+}
+
+
+@media screen and (max-width: 700px) {
+  
+
+.tour-image {
+  padding: 8px;
+  height: 70px; 
+}
+
+
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  
+  
+  
+  .tour-image {
+    padding: 13px;
+ /*   width: 100px;
+    height: 110px;*/
+
+  } 
+
+}
+
+
+@media screen and (min-width: 1325px) {
+
+
+  .tour-image {
+    padding: 15px;
+ /*   width: 170px;
+    height: 150px;*/
+  } 
+
+
+}
