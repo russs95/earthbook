@@ -49,7 +49,7 @@ class TourCurtain extends HTMLElement {
     <div class="modal-header">Buyable</div>
     <div class="modal-description">Like this Earthbook?  Buy the eBook versions.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
     <button class="back">𐌂 Back</button>
-    <button class="back" onclick="openEarthbook()">+ EarthBook Principles</button>
+    <!--<button class="back" onclick="closeTour(),openEarthbook()">+ EarthBook Principles</button>-->
     <button class="next">✓ Finish</button>
   </div>
 </div>
