@@ -600,6 +600,14 @@ GUIDED TOUR
 
 ----------------------------*/
 
+function closeTour() {
+  // Get the modal and set its display to "block" to show it
+  var modal = document.getElementById("guided-tour");
+  modal.style.display = "none";
+  document.getElementById("underlayer").classList.remove("blur");
+}
+
+
 
 function guidedTour() {
   // Get the modal and set its display to "block" to show it
