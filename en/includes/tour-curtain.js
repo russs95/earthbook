@@ -21,8 +21,8 @@ class TourCurtain extends HTMLElement {
   <div id="information-two" style="display:none;" class="information">
   <div class="tour-image"><img src="../svgs/icon-accessibility.svg"  style="margin:auto" title="Human Friendly" alt="Read Freely"></div>  
     <div class="modal-header">Human Friendly</div>
-    <div class="modal-description">Earthbooks are designed from the ground up to be easy on the eyes, accessible, and multi-lingual. Using the +- button in the top left corner to adjust the Earthbook's settings.</div>
-    <button class="back">𐌂 Back</button>
+    <div class="modal-description">Earthbooks are designed from the ground up to be easy on the eyes, accessible, and multi-lingual. Using the <b>±</b> button in the top left corner to adjust the Earthbook's settings.</div>
+    <button class="back">↩ Back</button>
     <button class="next">Next ➔</button>
   </div>
   
@@ -31,15 +31,15 @@ class TourCurtain extends HTMLElement {
 
     <div class="modal-header">Earth Friendly</div>
     <div class="modal-description">Throughout the writing and publishing of an Earthbook, the carbon, plastic and biodiversity impacts are tracked live and annually. Look for the green icon in the Earthbook Resources panel (at the bottom of every chapter) to see for yourself that live carbon impact of each page.</div>
-    <button class="back">𐌂 Back</button>
+    <button class="back">↩ Back</button>
     <button class="next">Next ➔</button>
   </div>
   
   <div id="information-four" style="display:none;" class="information">
   <div class="tour-image"><img src="../svgs/icon-opensource.svg" title="Read Freely" alt="Read Freely"></div>  
     <div class="modal-header">Open Source</div>
-    <div class="modal-description">The EarthBook source code is open to review, improve and copy on Github. This means that publishing an Earthbook is open to anyone anywhere.  Look for the source code link of each chapter in the Resources panel at the bottom of each page.  </div>
-    <button class="back">𐌂 Back</button>
+    <div class="modal-description">The EarthBook source code is open to review, improve and copy on <a href="https://github.com/russs95/earthbook/" target="_blank">Github</a>. This means that publishing an Earthbook is open to anyone anywhere.  Look for the source code link of each chapter in the Resources panel at the bottom of each page.  </div>
+    <button class="back">↩ Back</button>
     <button class="next">Next ➔</button>
   </div>
 
@@ -47,10 +47,11 @@ class TourCurtain extends HTMLElement {
   <div class="tour-image"><img src="../svgs/icon-revenue.svg"  title="Buy the eBook" alt="But the eBook"></div>  
 
     <div class="modal-header">Buyable</div>
-    <div class="modal-description">Like this Earthbook?  You can buy the eBook version for your digital library and ereader.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
-    <button class="back">𐌂 Back</button>
-    <button class="back" onclick="closeTour(),openEarthbook()">+ EarthBook Principles</button>
+    <div class="modal-description">Like this Earthbook?  You <i onclick="closeTour(),openBuy()"> can buy</i> the eBook version for your digital library and eReader.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
+    <button class="back">↩ Back</button>
     <button class="next">✓ Finish</button>
+    <button class="back" onclick="closeTour(),openEarthbook()">+ Learn more</button>
+
   </div>
 </div>
 </div>
