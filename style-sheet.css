@@ -4533,3 +4533,12 @@ margin: auto;
   }
 
 }
+
+.java-link {
+  cursor:pointer; 
+  border-bottom: grey 1px dashed;
+}
+
+.java-link:hover {
+  cursor:pointer; 
+  border-bottom: grey 1px solid;}
