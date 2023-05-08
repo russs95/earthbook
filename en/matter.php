@@ -327,7 +327,7 @@ Must be updated for each page-->
       }
     }
   };
-  xmlhttp.open("GET", "chapter-index", true);
+  xmlhttp.open("GET", "chapter-index.json", true);
   xmlhttp.send();
 
   // Display an alert to confirm that the search input was picked up
@@ -335,9 +335,12 @@ Must be updated for each page-->
 }
 
 function clearResults() {
+  var searchInput = document.getElementById('search-input');
   var resultsContainer = document.getElementById('search-results');
-  resultsContainer.innerHTML = "";
+  searchInput.value = '';
+  resultsContainer.innerHTML = '';
 }
+
 
 
 
