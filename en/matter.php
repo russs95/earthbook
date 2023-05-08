@@ -327,7 +327,7 @@ for (var i = 0; i < posts.length; i++) {
       }
     }
   };
-  xmlhttp.open("GET", "test-index.json", true);
+  xmlhttp.open("GET", "chapter-index.json", true);
   xmlhttp.send();
 
   // Display an alert to confirm that the search input was picked up
