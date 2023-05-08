@@ -297,14 +297,14 @@ Must be updated for each page-->
       // Parse the JSON data
       var posts = JSON.parse(this.responseText);
 
-      // Filter the posts that match the search query
-      var outputPosts = [];
-      for (var i = 0; i < posts.length; i++) {
-        var post = posts[i];
-        if ((post.keywords && post.keywords.toLowerCase().includes(query)) || (post.chap_description && post.chap_description.toLowerCase().includes(query))) {
-          outputPosts.push(post);
-        }
-      }
+   // Filter the posts that match the search query
+var outputPosts = [];
+for (var i = 0; i < posts.length; i++) {
+  var post = posts[i];
+  if (post.title && post.title.toLowerCase().includes(query)) {
+    outputPosts.push(post);
+  }
+}
       console.log(outputPosts.length);
 
       console.log(outputPosts);
