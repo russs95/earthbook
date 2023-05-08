@@ -1,1 +1,84 @@
-[  {"title": "JavaScript Basics", "url": "https://example.com/javascript-basics"},  {"title": "JavaScript Variables", "url": "https://example.com/javascript-variables"},  {"title": "JavaScript Functions", "url": "https://example.com/javascript-functions"},  {"title": "JavaScript Arrays", "url": "https://example.com/javascript-arrays"},  {"title": "JavaScript Objects", "url": "https://example.com/javascript-objects"},  {"title": "JavaScript DOM", "url": "https://example.com/javascript-dom"}]
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"ecobricks_tractatus"},
+{"type":"table","name":"post","database":"ecobricks_tractatus","data":
+[
+{"postID":"1","title":"Preamble",
+"keywords":"Preamble,introduction,stories,dapay,Earth ethics,earthen ethics,earth,ethics,tractatus ayyew, igorot,indigenous philosophy, Earth, green ethics, environmental ethics,deep ecology,ecological,ethics,preamble, intro, ",
+"chap_description":"An introduction to the Earthbook edition of the Tractatus Ayyew and the Earthbook concept.","url":"..\/en\/preamble.php",
+"language":"English",
+"book":"Introduction",
+"chapter":"Preamble",
+"words":"431",
+"image_url":"..\/svgs\/00-preamble-white.svg"},
+
+{"postID":"2","title":"Epigraph",
+"keywords":"epigraph, introduction, stories, nature, history, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth,green, green ethics, environmental ethics, deep ecology, ecological, ethics, Régis Debray, Le siècle vert, Un changement de civilisation, The Green Age, A Change of Civilizations","chap_description":"\"Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear...\"","url":"..\/en\/epigraph.php","language":"English","book":"Book One","chapter":"Epigraph","words":"67","image_url":"..\/svgs\/00-preamble-white.svg"},
+
+{"postID":"3","title":"Preface",
+"keywords":"Preface introduction stories dapay Earth ethics earthen ethics bontoc philipines, igorot, russell, irene, banyan, ecobricks, plastic, indigenous philosophy, philosophy, what should green mean, deped, irene, banayan, russell, maier","chap_description":"The story behind the beginning, the writing and the title of the Tractatus Ayyew.","url":"..\/en\/preface.php","language":"English","book":"Introduction","chapter":"Preface","words":"1220","image_url":"..\/svgs\/00-preamble-white.svg"},
+
+{"postID":"4","title":"Imagine",
+"keywords":"imagine, a green new world, plastic, green, Earth ethics, earthen ethics, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, permaculture, bill molison, green ethics, environment, deep ecology, ecological, ethics, earth","chap_description":"Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.","url":"\/en\/imagine.php","language":"English","book":"Book One","chapter":"Chapter 1","words":"1095","image_url":"..\/svgs\/01-imagine-white.svg"},
+
+{"postID":"5","title":"Plastic 1.0",
+"keywords":"earth,plastic,guilt,batman","chap_description":"Like no other material, plastic has been made entirely for the use and benefit of humans.","url":"..\/en\/plastic.php","language":"English","book":"Book One","chapter":"Chapter 3","words":"623","image_url":"..\/svgs\/02-plastic1-white.svg"},
+
+{"postID":"6","title":"Plastic's Stellar Story",
+"keywords":"cosmology, cosmological character, entropy, thermodynamics, dissipation, carbon, spiral, fossil fuels, petrocapital, economy, polymers, plastic, billiard balls, profit, recycle, recycling, technology, industry, grey, history, humanity, human,batman,earth","chap_description":"A brief history of plastic's stellar origins, Earth's creation and the rise of modern humanity's ecological relationship.","url":"..\/en\/stellar.php","language":"English","book":"Book One","chapter":"Chapter 3","words":"1133","image_url":"..\/svgs\/03-stellar-white.svg"},
+
+{"postID":"7","title":"Patterns of Process",
+"keywords":"patterns of process, cosmological character, planetary patterns, pattern, patterns, blocks, judgements, despair, depletion, enrichment, plastic, carbon emissions, petro-capital economy, human nature, nature of plastic, jevon's paradox, jevon","chap_description":"Observing our and Earth's evolution we can discern two patterns at play.  Rather than be mired in self-judgment at our play with carbon, we can be dazzled by Earth’s.","url":"..\/en\/patterns.php","language":"English","book":"Book One","chapter":"Chapter 4","words":"837","image_url":"https:\/\/book.earthen.io\/svgs\/04-patterns-white.svg"},
+
+{"postID":"8","title":"Kindred Relations",
+"keywords":"kincentric ecology, kincentricism, kin, kindred relations, Enqrique Salmon, ecological contribution, first nations, metaphysics, world view, cosmology, 1492, north america, first nations, recognition, ecological tradition knowledge, etk, kincentric knowing","chap_description":"Over human history certain cultures came to understand the creatures around them as kin.  Rather than cultivate human-centered societies, theirs crafted common homes for all.","url":"..\/en\/kincentric.php","language":"English","book":"Book One","chapter":"Chapter One","words":"1508","image_url":"..\/svgs\/05-kincentric-white.svg"},
+
+{"postID":"9","title":"Nature's Fallacy",
+"keywords":"Nature's fallacy, nature, environment, problem with nature, humancentric, humancentricism, human, centric, kincentric, greek, roman, environ, harm reduction, natural, natural world, anthropocentric","chap_description":"Beneath modern environmentalism lies a fundamental error that destines even the greenest of intentions to grey.","url":"..\/en\/nature.php","language":"ENglish","book":"Book One","chapter":"Chapter 6","words":"973","image_url":"https:\/\/book.earthen.io\/svgs\/06-nature-white.svg"},
+
+{"postID":"10","title":"The Earthen Ways",
+"keywords":"Earth, cosmological pattern, comsmological character, green, cycles, dissipation, concentraction, diversification, physics, biology and astronomy, consciounsness, character, contribution, vibrant, stable, resilient, abundant, conscious, Earthen ethics, five principles, Earthen principles, Earthen, cosmology, planetary character, Earth's character","chap_description":"In our planet's transition from a barren rock to a thriving biosphere we find five principles that compose Earth’s cosmological character and that guide our enterprises to be truly green","url":"..\/en\/earthen.php","language":"English","book":"Book One","chapter":"Chapter 7","words":"774","image_url":"..\/svgs\/07-earthen-white.svg"},
+
+{"postID":"11","title":"Epigraph II",
+"keywords":"epigraph, introduction, ethics, morals, right, wrong, Ruthanna Emrys","chap_description":"“If we don’t do things the right way, it poisons the outcome.”","url":"..\/en\/epigraph-2.php","language":"English","book":"Book Two","chapter":"Epigraph","words":"67","image_url":"..\/svgs\/08-cycles-white.svg"},
+
+{"postID":"12","title":"Cycles that Spiral",
+"keywords":"igorots, ayyew, cycles, spirals, energy, matter, entropy, thermodynamics, jeremy england, pigs, fertilizer, rice paddy, terraces, hydrologic, linear, circular, circular design, circular economy, plastic, recycling, degrading, enriching, grey, green, gray,  linear vs circular, circular","chap_description":null,"url":"..\/en\/spirals.php","language":"English","book":"Book Two","chapter":"Chapter 8","words":"1697","image_url":"https:\/\/book.earthen.io\/svgs\/08-cycles-white.svg"},
+
+{"postID":"13","title":"The Salmon's Spin",
+"keywords":"salmon, spin, energy, inwards, capital, currency, for-profit, not-for-profit, earth enterprise, for Earth, forEarth, Haida, Dakelh, Wet?suwet?en, nutrients, roe, dispersal, concentration, Earthen, Igorots, Ayyew, cycles that spiral, spiral design, linear vs circular, circular, green, Earthen ethics, principle two, Earthen principles, Earthen, cosmology, planetary character, Earth's character, ","chap_description":"Earthen Principle No.2: Observe how Earth’s cycles tend towards the outwards dissipation of energy.","url":"..\/en\/energy.php","language":"English","book":"Book Two","chapter":"Chapter 9","words":"2337","image_url":"..\/svgs\/09-energy-white.svg"},
+
+{"postID":"14","title":"The Mollusc's Means of Matter","keywords":"mollusc, means, matter, spiral, principle 3","chap_description":"Earthen Principle No.3: Earth’s cycles tend towards the inwards concentration of matter.","url":"..\/en\/matter.php","language":"English","book":"Book Two","chapter":"Chapter 10","words":"2,150","image_url":"..\/svgs\/10-matter-white.svg"},
+
+{"postID":"15","title":"Summaries",
+"keywords":"summaries, sentence, paragraph, earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics","chap_description":"A short sentence, a long sentence and a paragraph summary of Earthen ethics.","url":"..\/en\/summaries.php","language":"English","book":"Appendix","chapter":"Summaries","words":"540","image_url":"..\/svgs\/00-preamble-white.svg"},
+
+{"postID":"16","title":"Dedication",
+"keywords":"thank you, grattitude, mother, father","chap_description":"To our mothers and fathers,\r\nwho let us play in the forests and fields,\r\ntasting berries and climbing trees,\r\nloving the wild and learning its leaves.","url":"..\/en\/dedication.php","language":"English","book":"Introduction","chapter":"Dedication","words":"100","image_url":"https:\/\/book.earthen.io\/svgs\/00-preamble-white.svg"},
+
+{"postID":"17","title":"Ecological Accounting",
+"keywords":"regen report, regen, regenerativity, report, ecological, accounting, carbon, co2, biodiversity, plastic, impact, disclosure, ecological accounting, eco accounting","chap_description":"The carbon, plastic and biodiversity ecological accounting of this Earthbook's writing and publishing","url":"..\/en\/accounting.php","language":"English","book":"Appendix","chapter":"Accounting","words":"133","image_url":"..\/icons\/eco.svg"},
+
+{"postID":"18","title":"For-Earth Enterprise",
+"keywords":"100","chap_description":"Our not-for profit, for-Earth statement of intention for our enterprise of writing and publishing this EarthBook","url":"..\/en\/for-earth.php","language":"English","book":"Appendix","chapter":"Declaration","words":"100","image_url":"..\/svgs\/icon-for-earth.svg"},
+
+{"postID":"19","title":"Acknowledgements",
+"keywords":"thanks, credits, gratitude","chap_description":"Our thanks to the many who made this project possible and published.","url":"..\/en\/acknowledgements.php","language":"English","book":"Appendix","chapter":"Acknowledgements","words":"600","image_url":"..\/svgs\/00-preamble-white.svg"},
+
+{"postID":"20","title":"Writing & Publishing",
+"keywords":"writing, publishing, software, accounting, fonts, typefaces, store, purchase, brikcoins","chap_description":"The open hardware and software used in the writing and publishing of the Earthbook","url":"..\/en\/writing.php","language":"English","book":"Appendix","chapter":"Details","words":"400","image_url":"..\/svgs\/icon-opensource.svg"},
+
+{"postID":"21","title":"The Authors",
+"keywords":"authors, russ, russell, maier, banayan, irene, angway","chap_description":"\/en\/authors.php","url":"..\/en\/authors.php","language":"English","book":"Appendix","chapter":"Authors","words":"300","image_url":"..\/svgs\/00-preamble-white.svg"},
+
+{"postID":"22","title":"Bibliography",
+"keywords":"Régis Debray, Le siècle vert. Un changement de civilisation (Editions Gallimard, 2020)\r\n\r\nBill Mollison, Principles from Permaculture a Designers' Manual, (Tagari Publishers: 1988).\r\n\r\nDaniel Pinchbeck, Sting, Russell Brand How Soon is Now: From Personal Initiation to Global Transformation, (Publisher: Watkins Publishing, 2017)\r\n\r\nSustainable Packaging: Consumer View, (Global Web Index: 2020)\r\n\r\nR. Geyer, et al., Production, use and fate of all plastics ever made (Science Advances, 2017) Vol. 3,","chap_description":"Biblioraphy of sources used during the writing of the Tractatus Ayyew","url":"..\/en\/bibliography.php","language":"English","book":"Appendix","chapter":"Sources","words":"500","image_url":"https:\/\/book.earthen.io\/svgs\/00-preamble-white.svg"},
+
+{"postID":"23","title":"Glossary",
+"keywords":"Ayyew: The Igorot virtue of ever increasing one’s sync with ecological cycles. \r\nBiome: An ecosystem of ecosystems. A principal ecosystem of a biosphere. \r\nBiosphere: The all encompassing ecology of a planet (usually that of Earth). \r\nBiodiversity: The variety and plurality of species in a biological system. \r\nCosmological Character: The unique history, configuration and composition of each planet that gives it its characteristic pattern of processe.\r\nDapay: The central stone plaza of every Igor","chap_description":"A list of the key terms and their definitions as they are used throughout the Tractatus Ayyew, ","url":"..\/en\/glossary.php","language":"English","book":"Appendix","chapter":"Terms","words":"440","image_url":"https:\/\/book.earthen.io\/svgs\/00-preamble-white.svg"},
+
+{"postID":"24","title":"Authors' Declaration of Interests & Investments",
+"keywords":"declaration, financing, supporters, patrons, helpers, grants, sponsors, statement, interests, investments, connections, biases, authors, russ, russell, maier, banayan, irene, angway","chap_description":"A statement of the interests and investments of the authors.","url":"..\/en\/declaration.php","language":"English","book":"Appendix","chapter":"Statement","words":"323","image_url":"https:\/\/book.earthen.io\/svgs\/00-preamble-white.svg"}
+]
+}
+]
