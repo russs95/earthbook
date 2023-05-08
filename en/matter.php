@@ -305,9 +305,9 @@ Must be updated for each page-->
           outputPosts.push(post);
         }
       }
-      console.log(query);
+      console.log(outputPosts.length);
 
-      console.log(post);
+      console.log(outputPosts);
 
 
       // Get the container where the results will be displayed
