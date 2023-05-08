@@ -301,7 +301,7 @@ Must be updated for each page-->
       var outputPosts = [];
       for (var i = 0; i < posts.length; i++) {
         var post = posts[i];
-        if (post.keywords && post.keywords.toLowerCase().includes(query)) {
+        if ((post.keywords && post.keywords.toLowerCase().includes(query)) || (post.var && post.var.toLowerCase().includes(query))) {
           outputPosts.push(post);
         }
       }
@@ -321,6 +321,7 @@ Must be updated for each page-->
   xmlhttp.open("GET", "book-index-en.json", true);
   xmlhttp.send();
 }
+
 
 
 </script>
