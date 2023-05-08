@@ -301,7 +301,7 @@ Must be updated for each page-->
       var outputPosts = [];
       for (var i = 0; i < posts.length; i++) {
         var post = posts[i];
-        if ((post.keywords && post.keywords.toLowerCase().includes(query)) || (post.var && post.var.toLowerCase().includes(query))) {
+        if ((post.keywords && post.keywords.toLowerCase().includes(query)) || (post.chap_description && post.chap_description.toLowerCase().includes(query))) {
           outputPosts.push(post);
         }
       }
@@ -312,14 +312,22 @@ Must be updated for each page-->
       // Clear the previous search results
       resultsContainer.innerHTML = "";
 
-      // Iterate over the results and append them to the container
-      for (var i = 0; i < outputPosts.length; i++) {
-        resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding: 23px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;\"><img src=\"" + outputPosts[i].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:larger;\"><a href='" + outputPosts[i].url + "'>" + outputPosts[i].title + "</b><br><span style=\"font-size:small, color:grey;\">" + outputPosts[i].chapter + "  |  " + outputPosts[i].book + "  |  " + outputPosts[i].words + " words  |  " + outputPosts[i].language + "<br><span style=\"font-size:medium;font-family:'CooperLt',serif;\">" + outputPosts[i].chap_description + "</span><br><span style=\"font-size:smaller;color:grey;\">" + outputPosts[i].url + "</span></a></div>";
+      // If no results are found, display a message
+      if (outputPosts.length == 0) {
+        resultsContainer.innerHTML = "<p>Sorry, no results were found for \"" + query + "\".</p>";
+      } else {
+        // Iterate over the results and append them to the container
+        for (var i = 0; i < outputPosts.length; i++) {
+          resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding: 23px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;\"><img src=\"" + outputPosts[i].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:larger;\"><a href='" + outputPosts[i].url + "'>" + outputPosts[i].title + "</b><br><span style=\"font-size:small, color:grey;\">" + outputPosts[i].chapter + "  |  " + outputPosts[i].book + "  |  " + outputPosts[i].words + " words  |  " + outputPosts[i].language + "<br><span style=\"font-size:medium;font-family:'CooperLt',serif;\">" + outputPosts[i].chap_description + "</span><br><span style=\"font-size:smaller;color:grey;\">" + outputPosts[i].url + "</span></a></div>";
+        }
       }
     }
   };
   xmlhttp.open("GET", "book-index-en.json", true);
   xmlhttp.send();
+
+  // Display an alert to confirm that the search input was picked up
+  alert("Searching for \"" + query + "\"");
 }
 
 
