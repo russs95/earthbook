@@ -269,7 +269,7 @@ Must be updated for each page-->
   <div class="search-overlay-content" >
         
         <div>
-            <h1 class="accessibility-plugin-ac">Earthbook Search</h1> 
+            <h1 class="accessibility-plugin-ac">Earthbook Java Search</h1> 
             <p>Search the Tracatus Ayyew.</p>
         </div>
       
@@ -290,9 +290,16 @@ Must be updated for each page-->
   // Get the search query from the input field
   var query = document.getElementById("search_input").value.toLowerCase();
 
+  
+
   // Load the JSON file
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
+    if (post.keywords && post.keywords.includes(searchTerm)) {
+  // add post to the output array
+  outputPosts.push(post);
+}
+
     if (this.readyState == 4 && this.status == 200) {
       // Parse the JSON data
       var posts = JSON.parse(this.responseText);
