@@ -305,6 +305,10 @@ Must be updated for each page-->
           outputPosts.push(post);
         }
       }
+      console.log(query);
+
+      console.log(post);
+
 
       // Get the container where the results will be displayed
       var resultsContainer = document.getElementById("search_results");
@@ -327,7 +331,7 @@ Must be updated for each page-->
   xmlhttp.send();
 
   // Display an alert to confirm that the search input was picked up
-  alert("Searching for \"" + query + "\"");
+  //alert("Searching for \"" + query + "\"");
 }
 
 
