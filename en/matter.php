@@ -290,25 +290,21 @@ Must be updated for each page-->
   // Get the search query from the input field
   var query = document.getElementById("search_input").value.toLowerCase();
 
-  
-
   // Load the JSON file
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function() {
-    if (post.keywords && post.keywords.includes(searchTerm)) {
-  // add post to the output array
-  outputPosts.push(post);
-}
-
     if (this.readyState == 4 && this.status == 200) {
       // Parse the JSON data
       var posts = JSON.parse(this.responseText);
 
       // Filter the posts that match the search query
-      var outputPosts = posts.filter(function(post) {
-        var keywords = post.keywords.toLowerCase();
-        return keywords.includes(query);
-      });
+      var outputPosts = [];
+      for (var i = 0; i < posts.length; i++) {
+        var post = posts[i];
+        if (post.keywords && post.keywords.toLowerCase().includes(query)) {
+          outputPosts.push(post);
+        }
+      }
 
       // Get the container where the results will be displayed
       var resultsContainer = document.getElementById("search_results");
@@ -325,6 +321,7 @@ Must be updated for each page-->
   xmlhttp.open("GET", "book-index-en.json", true);
   xmlhttp.send();
 }
+
 
 </script>
 
