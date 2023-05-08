@@ -143,17 +143,17 @@ Must be updated for each page-->
 
 
       <h2>1. A short sentence</h2>
-      <p>The Earthen ethics concept of 'green' can be summed up in a simple two part proposition:
+      <p>The Earthen ethics concept of 'green' can be summed up in a simple sentence:
       </p>
 
-      <div class="quote"><p>A process is green to the extent that it is an ecological contribution and it is an ecological contribution to the extent that it follows Earth's example.</p></div>
+      <div class="quote"><p>A process is green when it follows Earth's example of ecological contribution.</p></div>
       <br>
       <a name="long"></a>
       <h2>2. A longer sentence</h2>
       
-      <p>By adding 'must' we have the core Earthen ethic: </p>
+      <p>By adding 'must' we have the core Earthen ethic.  Note that green is interchangeable here with 'ecological contribution'. </p>
 
-      <div class="quote"><p>To be an ecological contribution a process must embody Earth’s pattern of concentrating matter and dispersing energy to cyclically enrich the vibrancy, diversity and consciousness of the system of which it is a part.
+      <div class="quote"><p>To be green a process must embody Earth’s pattern of concentrating matter and dispersing energy to cyclically enrich the diversity and awareness of the system of which it is a part.
       </p></div>
 
       <br>
@@ -164,6 +164,8 @@ Must be updated for each page-->
 
       <div class="quote"><p>As we become more and more aware of the ecological degradation caused by our modern age, we long to amend our ways. Of all our ecological crises, plastic pollution is particularly representative of our challenge. As a fossil-fuel by-product, plastic embodies a direct connection to both the biosphere's multi-billion year pattern of enrichment and our modern pattern of depletion. By retracing plastic’s and Earth's primordial story, we can observe the sharp contrast in these two patterns. In particular, the ways in which Earth’s spiraled its matter inwards and energy outwards to unfurl ever greater vitality, diversity and consciousness. Learning from cultures that have long embodied this very pattern to master their own ecological integration, we can amend our metaphysics to recognize ecological contribution as our basis for green.  Accordingly, we can ensure that our processes, cycles and systems embody Earth’s pattern of energy and matter management, declare their for-Earth intention, vitalize biodiversity and raise awareness of their ecological impact.  Starting with our plastic, we can follow Earth's example in this way to ensure that our enterprises systematically enrich the ecosystems of which they are a part. 
       </p></div>
+
+      <!--As we become more and more aware of the ecological degradation caused by our modern age, we long to amend our ways. Of all our ecological crises, plastic pollution is particularly representative of our challenge. As a fossil-fuel by-product, plastic embodies a direct connection to both the biosphere's multi-billion year pattern of enrichment and our modern pattern of depletion. By retracing plastic’s and Earth's primordial story, we can observe the sharp contrast in these two patterns. In particular, the ways in which Earth spiraled its matter inwards and energy outwards to unfurl ever greater vitality, diversity and consciousness. Recognizing that other cultures have long embodied this Earthen pattern to enrich the ecological cycles of which they were a part, we can amend our metaphysics and establish ecological contribution as our basis for green. Accordingly, we can ensure that our keen green enterprises embody Earth’s ways: that they operate in enriching cycles that concentrate their matter and disperse their energy, while vitalizing diversity and raising collective awareness. Following these five Earthen principles, we can start with our plastic to ensure that our enterprises are truly green.-->
   
     </div><!--closes page text content-->
           

@@ -146,9 +146,7 @@ Must be updated for each page-->
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
-    <script async src="https://cse.google.com/cse.js?cx=951aeb2e56c834f88">
-</script>
-<div class="gcse-search"></div>
+  
 
 <div class="page-paragraph">
     <p id="58-up"><i>
@@ -263,7 +261,65 @@ Must be updated for each page-->
 
 <?php require_once ("includes/comments.php");?>
 
-<?php require_once ("includes/search.php");?>
+<div id="right-search-overlay" class="search-overlay">
+
+<div id="right-close-button">
+    <span style="cursor:pointer" onclick="closeSearch()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
+</div>
+  <div class="search-overlay-content" >
+        
+        <div>
+            <h1 class="accessibility-plugin-ac">Earthbook Search</h1> 
+            <p>Search the Tracatus Ayyew.</p>
+        </div>
+      
+        <div class="search-box" style="padding-bottom:15%;">
+  <div class="copy-section">
+    <input id="search_input" type="text" placeholder="Enter search term..." aria-label="Enter search term">   
+    <button class="btn" style="padding:22px 0px 22px 0px;" onclick="EarthbookSearch()" aria-label="Search Button"><i style="background-image: url(../icons/search-white.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
+  </div>  
+  <div id="search_results"></div>
+</div>
+
+      </div>
+</div>
+</div>  
+
+<script>
+ function EarthbookSearch() {
+  // Get the search query from the input field
+  var query = document.getElementById("search_input").value.toLowerCase();
+
+  // Load the JSON file
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      // Parse the JSON data
+      var posts = JSON.parse(this.responseText);
+
+      // Filter the posts that match the search query
+      var outputPosts = posts.filter(function(post) {
+        var keywords = post.keywords.toLowerCase();
+        return keywords.includes(query);
+      });
+
+      // Get the container where the results will be displayed
+      var resultsContainer = document.getElementById("search_results");
+
+      // Clear the previous search results
+      resultsContainer.innerHTML = "";
+
+      // Iterate over the results and append them to the container
+      for (var i = 0; i < outputPosts.length; i++) {
+        resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding: 23px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;\"><img src=\"" + outputPosts[i].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:larger;\"><a href='" + outputPosts[i].url + "'>" + outputPosts[i].title + "</b><br><span style=\"font-size:small, color:grey;\">" + outputPosts[i].chapter + "  |  " + outputPosts[i].book + "  |  " + outputPosts[i].words + " words  |  " + outputPosts[i].language + "<br><span style=\"font-size:medium;font-family:'CooperLt',serif;\">" + outputPosts[i].chap_description + "</span><br><span style=\"font-size:smaller;color:grey;\">" + outputPosts[i].url + "</span></a></div>";
+      }
+    }
+  };
+  xmlhttp.open("GET", "book-index-en.json", true);
+  xmlhttp.send();
+}
+
+</script>
 
 
 <!--FOOTNOTES SECTION-->
