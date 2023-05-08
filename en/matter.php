@@ -264,7 +264,7 @@ Must be updated for each page-->
 <div id="right-search-overlay" class="search-overlay">
 
 <div id="right-close-button">
-    <span style="cursor:pointer" onclick="closeSearch()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
+    <span style="cursor:pointer" onclick="closeSearch(), clearResults()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
 </div>
   <div class="search-overlay-content" >
         
@@ -297,14 +297,14 @@ Must be updated for each page-->
       // Parse the JSON data
       var posts = JSON.parse(this.responseText);
 
-   // Filter the posts that match the search query
-var outputPosts = [];
-for (var i = 0; i < posts.length; i++) {
-  var post = posts[i];
-  if (post.title && post.title.toLowerCase().includes(query)) {
-    outputPosts.push(post);
-  }
-}
+      // Filter the posts that match the search query
+      var outputPosts = [];
+      for (var i = 0; i < posts.length; i++) {
+        var post = posts[i];
+        if ((post.keywords && post.keywords.toLowerCase().includes(query)) || (post.chap_description && post.chap_description.toLowerCase().includes(query))) {
+          outputPosts.push(post);
+        }
+      }
       console.log(outputPosts.length);
 
       console.log(outputPosts);
@@ -327,11 +327,16 @@ for (var i = 0; i < posts.length; i++) {
       }
     }
   };
-  xmlhttp.open("GET", "chapter-index.json", true);
+  xmlhttp.open("GET", "chapter-index", true);
   xmlhttp.send();
 
   // Display an alert to confirm that the search input was picked up
   //alert("Searching for \"" + query + "\"");
+}
+
+function clearResults() {
+  var resultsContainer = document.getElementById('search-results');
+  resultsContainer.innerHTML = "";
 }
 
 
