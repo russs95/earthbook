@@ -14,7 +14,7 @@ if (!$_POST) {
     <button type="submit" name="submit"  value="submit" class="action-btn" style="width: 65%;
    
     font-size: 0.9em;
-    margin: -25px auto 0px auto;
+    margin: -5px auto 0px auto;
     border-radius: 0px 0px 20px 20px;">Register</button>
     <fieldset>
     <input type="radio" id="action_sub" name="action"

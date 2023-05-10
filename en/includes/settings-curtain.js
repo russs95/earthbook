@@ -31,13 +31,14 @@ class SettingsCurtain extends HTMLElement {
                 <div class="language-selector" title="Maaf, belum diterjemahkan!" aria-label="Indonesian not active">IN</div>
             </div> -->
 
-         
+         <!--
 
             <div id="text-adjust">
                 <button id="increase-plugin-ac" aria-label="Increase Text Size">+A</button>
                 <button id="normal-plugin-ac" aria-label="Return Text Size to Default">A</button>
                 <button id="decrease-plugin-ac" aria-label="Decrease Text Size">A-</button>
             </div>
+            -->
 
             
 
