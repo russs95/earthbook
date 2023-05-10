@@ -66,7 +66,7 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../acessibilidade.css" />
 <link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
 
-<link rel="preload" href="../style-sheet.css?v2.3" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../style-sheet.css?v2.4" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../light.css?v1.9" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
