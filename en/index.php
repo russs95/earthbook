@@ -137,6 +137,7 @@ All the page components required to build this page-->
  <!--8a--><script src="includes/footer-component.js" defer></script>
 <!--9--><script src="includes/read-curtain.js" defer></script>
 <!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
  
 
 <!--META TAGS

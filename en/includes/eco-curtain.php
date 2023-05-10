@@ -1,3 +1,5 @@
+<!--BUY-CURTAIN-->
+<search-curtain></search-curtain>
 
 <!--CONTENTS MENU-->
 <content-curtain></content-curtain>

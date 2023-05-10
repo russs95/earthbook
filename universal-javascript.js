@@ -535,63 +535,61 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  /* -------------------------------------------------------------------------- */
  
  
- 
- function searchPosts( loadedResults ){  
-       
-     var query = document.getElementById( "search_input" ).value;  
-       
-     var resultsContainer = document.getElementById( "search_results" );  
-       
-     // clear results container if no previous results have been loaded  
-     if( loadedResults === null ){  
-      resultsContainer.innerHTML = "";  
-     }  
-       
-     // create XMLHttpRequest object  
-     var xmlhttp = new XMLHttpRequest();  
-       
-     // create function that is called when request is completed  
-     xmlhttp.onreadystatechange = function() {  
-         if ( xmlhttp.readyState === 4 && xmlhttp.status === 200 ) {  
-             // fetch response text   
-             var response=xmlhttp.responseText;  
-             console.log(response);
-             var outputPosts;   
-                
-             // parse response if it is valid JSON  
-             try{  
-                 outputPosts = JSON.parse( response );  
-             }  
-             catch( e ){  
-                 return;  
-             }  
-               
-                // iterate over results  f
-                for( var i = 0; i < outputPosts.length; i++ ){  
-                 // append result to result container, link to url of post  
-                 resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding: 23px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;\"><img src=\"" + outputPosts[ i ].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:larger;\"><a href='" + outputPosts[ i ].url + "'>" + outputPosts[ i ].title + "</b><br><span style=\"font-size:small, color:grey;\">" + outputPosts[ i ].chapter + "  |  " + outputPosts[ i ].book + "  |  " + outputPosts[ i ].words + " words  |  " + outputPosts[ i ].language + "<br><span style=\"font-size:medium;font-family:'CooperLt',serif;\">" + outputPosts[ i ].chap_description + "</span><br><span style=\"font-size:smaller;color:grey;\">" + outputPosts[ i ].url + "</span></a></div>";  
-             }  
- 
- 
-             
-             // add button to load more results starting from the last loaded result (remove any existing button first if one exists)  
-             try{  
-                 document.getElementById( "load_button" ).remove();  
-             }  
-             catch( e ){  
-                 return;  
-             }  
-             finally{  
-                 resultsContainer.innerHTML += "<br><button id='load_button' onclick='searchPosts( " + ( loadedResults + outputPosts.length ) + " )'>➕ Load more</button>";  
-             }  
-         }  
-     };  
-       
-     // send request to fetch searchDB.php  
-     xmlhttp.open( "GET", "../searchDB.php?search=" + query + "&loaded=" + loadedResults, true );  
-     xmlhttp.send();  
- }
- 
+ function EarthbookSearch() {
+  // Get the search query from the input field
+  var query = document.getElementById("search_input").value.toLowerCase();
+
+  // Load the JSON file
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      // Parse the JSON data
+      var posts = JSON.parse(this.responseText);
+
+      // Filter the posts that match the search query
+      var outputPosts = [];
+      for (var i = 0; i < posts.length; i++) {
+        var post = posts[i];
+        if ((post.keywords && post.keywords.toLowerCase().includes(query)) || (post.chap_description && post.chap_description.toLowerCase().includes(query))) {
+          outputPosts.push(post);
+        }
+      }
+      console.log(outputPosts.length);
+
+      console.log(outputPosts);
+
+
+      // Get the container where the results will be displayed
+      var resultsContainer = document.getElementById("search_results");
+
+      // Clear the previous search results
+      resultsContainer.innerHTML = "";
+
+      // If no results are found, display a message
+      if (outputPosts.length == 0) {
+        resultsContainer.innerHTML = "<p>Sorry, no results were found for \"" + query + "\".</p>";
+      } else {
+        // Iterate over the results and append them to the container
+        for (var i = 0; i < outputPosts.length; i++) {
+          resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding: 23px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;display:block;\"><img src=\"" + outputPosts[i].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:larger;margin-bottom:10px;\"><a href='" + outputPosts[i].url + "'>" + outputPosts[i].title + "</b><br><span style=\"font-size:small, color:grey;\">" + outputPosts[i].chapter + "  |  " + outputPosts[i].book + "  |  " + outputPosts[i].words + " words  |  " + outputPosts[i].language + "<br><span style=\"font-size:medium;font-family:'CooperLt',serif;margin-top:10px;display:block;\">" + outputPosts[i].chap_description + "</span><br><span style=\"font-size:smaller;color:grey;\">" + outputPosts[i].url + "</span></a></div>";
+        }
+      }
+    }
+  };
+  xmlhttp.open("GET", "chapter-index.json", true);
+  xmlhttp.send();
+
+}
+
+function clearResults() {
+  var searchInput = document.getElementById('search-input');
+  var resultsContainer = document.getElementById('search-results');
+  var overlayContent = document.querySelector('.search-overlay-content');
+  searchInput.value = '';
+  resultsContainer.innerHTML = '';
+  overlayContent.style.height = 'unset';
+}
+
 
 /*----------------------------
 
