@@ -575,7 +575,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
       } else {
         // Iterate over the results and append them to the container
         for (var i = 0; i < outputPosts.length; i++) {
-          resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding: 20px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;display:block;\"><img src=\"" + outputPosts[i].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:x-large;margin-bottom:12px;display:block;\"><a href='" + outputPosts[i].url + "'>" + outputPosts[i].title + "</b><span style=\"font-size:smaller;color:var(--drop-cap)!important;margin-top:10px;display:block;\">" + outputPosts[i].chapter + "  |  " + outputPosts[i].book + "  |  " + outputPosts[i].words + " words  |  " + outputPosts[i].language + "</span><span style=\"font-size:medium;font-family:'CooperLt',serif;margin-top:10px;display:block;\">" + outputPosts[i].chap_description + "</span><span style=\"font-size:smaller;color:grey;margin-top:10px;display:block;\">" + outputPosts[i].url + "</span></a></div>";
+          resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding: 20px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;display:block;\"><img src=\"" + outputPosts[i].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:x-large;margin-bottom:12px;display:block;\"><a href='" + outputPosts[i].url + "'>" + outputPosts[i].title + "</b><span style=\"font-size:small;color:var(--drop-cap)!important;margin-top:6px;display:block;\">" + outputPosts[i].chapter + "  |  " + outputPosts[i].book + "  |  " + outputPosts[i].words + " words  |  " + outputPosts[i].language + "</span><span style=\"font-size:medium;font-family:'CooperLt',serif;margin-top:10px;display:block;\">" + outputPosts[i].chap_description + "</span><span style=\"font-size:smaller;color:grey;margin-top:10px;display:block;\">" + outputPosts[i].url + "</span></a></div>";
         }
       }
     }
@@ -584,6 +584,13 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
   xmlhttp.send();
 
 }
+
+// Add an event listener to the search input field that listens for the "keypress" event
+document.getElementById("search_input").addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    EarthbookSearch();
+  }
+});
 
 function clearResults() {
   var searchInput = document.getElementById('search_input');
