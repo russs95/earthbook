@@ -589,6 +589,7 @@ document.getElementById("search_input").addEventListener("keypress", function(ev
 });
 
 
+
 function clearResults() {
   var searchInput = document.getElementById('search_input');
   var resultsContainer = document.getElementById('search_results');

@@ -2146,7 +2146,7 @@ left: 0;
   display: flex;
   justify-content: center;
   flex-flow: column;
-  height:100%;
+  height:fit-content;
   margin: auto;
 }
 
