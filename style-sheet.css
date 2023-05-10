@@ -2148,6 +2148,7 @@ left: 0;
   flex-flow: column;
   height:fit-content;
   margin: auto;
+  transition: margin-top 0.5s ease-in-out;
 }
 
 
@@ -2156,6 +2157,7 @@ left: 0;
     width: 85%;
     font-size: 0.9em;
     /*margin-top: 6%;*/
+    margin-top: 50%;
 }
 }
 
@@ -2164,6 +2166,7 @@ left: 0;
     width: 65%;
     font-size: 0.9em;
     /*margin-top: 2%;*/
+    margin-top:30%;
 }
 }
 
@@ -2171,6 +2174,7 @@ left: 0;
     .search-overlay-content {
       width: 69%;
       margin: auto;
+      margin-top:20%;
     }
 }
 

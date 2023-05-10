@@ -581,12 +581,14 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
   xmlhttp.send();
 }
 
-// Add an event listener to the search input field that listens for the "keypress" event
-document.getElementById("search_input").addEventListener("keypress", function(event) {
-  if (event.key === "Enter") {
-    EarthbookSearch();
-  }
-});
+window.onload = function() {
+  document.getElementById("search_input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      EarthbookSearch();
+    }
+  });
+};
+
 
 
 
