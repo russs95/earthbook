@@ -11,11 +11,11 @@ class SearchCurtain extends HTMLElement {
     <div id="right-close-button">
         <span style="cursor:pointer" onclick="closeSearch(), clearResults()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
     </div>
-      <div class="search-overlay-content" style="height:fit-content;">
+      <div class="search-overlay-content" style="transition:0.5s;">
             
             <div>
-                <h1 class="accessibility-plugin-ac">Search</h1> 
-                <p>Search all the chapters and appendixes of this Earthbook.</p>
+                <h1 class="accessibility-plugin-ac">Earthbook Search</h1> 
+                <p>Search all chapters and appendixes...</p>
             </div>
           
             <div class="search-box" style="padding-bottom:15%;">

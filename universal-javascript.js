@@ -571,7 +571,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
       } else {
         // Iterate over the results and append them to the container
         for (var i = 0; i < outputPosts.length; i++) {
-          resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding: 23px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;display:block;\"><img src=\"" + outputPosts[i].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:larger;margin-bottom:10px;\"><a href='" + outputPosts[i].url + "'>" + outputPosts[i].title + "</b><br><span style=\"font-size:small, color:grey;\">" + outputPosts[i].chapter + "  |  " + outputPosts[i].book + "  |  " + outputPosts[i].words + " words  |  " + outputPosts[i].language + "<br><span style=\"font-size:medium;font-family:'CooperLt',serif;margin-top:10px;display:block;\">" + outputPosts[i].chap_description + "</span><br><span style=\"font-size:smaller;color:grey;\">" + outputPosts[i].url + "</span></a></div>";
+          resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + i + "' style=\"display:flex; text-align:left; padding: 23px;\"><div class=\"chapter_pic\" style=\"width=100px; filter:invert(); margin-right:10px;display:block;\"><img src=\"" + outputPosts[i].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:larger;margin-bottom:10px;\"><a href='" + outputPosts[i].url + "'>" + outputPosts[i].title + "</b><br><span style=\"font-size:small, color:grey;\">" + outputPosts[i].chapter + "  |  " + outputPosts[i].book + "  |  " + outputPosts[i].words + " words  |  " + outputPosts[i].language + "<br><span style=\"font-size:medium;font-family:'CooperLt',serif;margin-top:10px;display:block;\">" + outputPosts[i].chap_description + "</span><br><span style=\"font-size:smaller;color:grey;\">" + outputPosts[i].url + "</span></a></div>";
         }
       }
     }
@@ -583,7 +583,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 
 function clearResults() {
   var searchInput = document.getElementById('search-input');
-  var resultsContainer = document.getElementById('search-results');
+  var resultsContainer = document.getElementById('search_results');
   var overlayContent = document.querySelector('.search-overlay-content');
   searchInput.value = '';
   resultsContainer.innerHTML = '';
