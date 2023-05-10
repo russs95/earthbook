@@ -586,12 +586,12 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 }
 
 function clearResults() {
-  var searchInput = document.getElementById('search-input');
+  var searchInput = document.getElementById('search_input');
   var resultsContainer = document.getElementById('search_results');
   var overlayContent = document.querySelector('.search-overlay-content');
   searchInput.value = '';
   resultsContainer.innerHTML = '';
-  overlayContent.style.height = 'unset';
+  overlayContent.style.height = '';
 }
 
 
