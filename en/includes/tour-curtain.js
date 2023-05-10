@@ -34,10 +34,20 @@ class TourCurtain extends HTMLElement {
     <button class="back">↩ Back</button>
     <button class="next">Next ➔</button>
   </div>
-  
+
+  <!--
   <div id="information-four" style="display:none;" class="information">
   <div class="tour-image"><img src="../svgs/icon-opensource.svg" title="Read Freely" alt="Read Freely"></div>  
     <div class="modal-header">Open Source</div>
+    <div class="modal-description">The EarthBook source code is open to review, improve and copy on <a class="java-link" href="https://github.com/russs95/earthbook/" target="_blank">Github</a>. This means that publishing an Earthbook is open to anyone anywhere.  Look for the source code link of each chapter in the Resources panel at the bottom of each page.  </div>
+    <button class="back">↩ Back</button>
+    <button class="next">Next ➔</button>
+  </div>
+  -->
+  
+  <div id="information-four" style="display:none;" class="information">
+  <div class="tour-image"><img src="../icons/settings.svg" title="Read Freely" alt="Read Freely"></div>  
+    <div class="modal-header">Tools & Resources</div>
     <div class="modal-description">The EarthBook source code is open to review, improve and copy on <a class="java-link" href="https://github.com/russs95/earthbook/" target="_blank">Github</a>. This means that publishing an Earthbook is open to anyone anywhere.  Look for the source code link of each chapter in the Resources panel at the bottom of each page.  </div>
     <button class="back">↩ Back</button>
     <button class="next">Next ➔</button>
@@ -50,7 +60,7 @@ class TourCurtain extends HTMLElement {
     <div class="modal-description">Like this Earthbook?  You <a class="java-link" onclick="closeTour(),openBuy()"> can buy</a> the eBook version for your digital library and eReader.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
     <button class="back">↩ Back</button>
     <button class="next">✓ Finish</button>
-    <button class="back" onclick="closeTour(),openEarthbook()">+ Learn more</button>
+    <button class="back" onclick="closeTour(),openEarthbook()">+ Learn even more</button>
 
   </div>
 </div>

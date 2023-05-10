@@ -51,7 +51,7 @@
         
           <div id="footer-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center; background-size:contain;margin: auto 10px auto 0;"></div>
 
-            <div class="footer-function-item"><p>Earthbook Resources</p></div>
+            <div class="footer-function-item"><p>Tools & Resources</p></div>
             <div class="footer-function-item-icon">
             <i style="background-image: url(../icons/settings.svg);"></i>
             </div>
