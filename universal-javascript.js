@@ -538,8 +538,8 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  function EarthbookSearch() {
   // Get the search query from the input field
   var query = document.getElementById("search_input").value.toLowerCase();
-  //var overlayContent = document.querySelector('.search-overlay-content');
-  //overlayContent.style.height = 'fit-content';
+  var overlayContent = document.querySelector('.search-overlay-content');
+  overlayContent.style.marginTop = '10%';
 
   // Load the JSON file
   var xmlhttp = new XMLHttpRequest();
