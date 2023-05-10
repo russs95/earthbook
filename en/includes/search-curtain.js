@@ -11,7 +11,7 @@ class SearchCurtain extends HTMLElement {
     <div id="right-close-button">
         <span style="cursor:pointer" onclick="closeSearch(), clearResults()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
     </div>
-      <div class="search-overlay-content" style="transition:0.5s;">
+      <div class="search-overlay-content" style=" transition: height 0.5s ease-in-out;">
             
             <div>
                 <h1 class="accessibility-plugin-ac">Earthbook Search</h1> 
