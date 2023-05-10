@@ -170,6 +170,10 @@ background-size: contain;
 .tour-image img {
   filter: invert(100%);
 }
+
+.chapter_pic img {
+  filter: invert(100%);
+}
   /*
   #settings-menu {
     background: var(--deeper-accent-color) !important;
