@@ -131,7 +131,7 @@ Must be updated for each page-->
 --><?php require_once ("includes/eco-curtain.php");?>
 
 <div id="ct-chapt-graphic" class="background-000">
-  <img src="../icons/openbook.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+  <img src="../icons/glossary.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
   </div>
 
   <div id="up-arrow"></div>
