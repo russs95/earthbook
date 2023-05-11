@@ -554,7 +554,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
       }
     }
   };
-  xmlhttp.open("GET", "chapter-index.json", true);
+  xmlhttp.open("GET", "chapter-index2.json", true);
   xmlhttp.send();
 }
 
