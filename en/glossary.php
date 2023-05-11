@@ -130,7 +130,6 @@ Must be updated for each page-->
     container.appendChild(item);
   }
 
-  buildGlossary();
 }
 </script>
 
@@ -138,7 +137,7 @@ Must be updated for each page-->
 
 <!--MAIN HTML Begins-->
 
-<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
+<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;" onload="buildGlossary()">
 <!--TOUR-CURTAIN-->
 <tour-curtain></tour-curtain>
 
@@ -197,7 +196,7 @@ Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on
 
 <div id="glossary-container"></div>
 
----------------
+---------------d
 
 <p id="ayyew"><i>Ayyew</i>: The Igorot virtue of ever increasing one’s sync with ecological cycles.</p>
 
