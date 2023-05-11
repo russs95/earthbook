@@ -95,6 +95,45 @@ Must be updated for each page-->
 
 </style>
 
+<script>
+  function buildGlossary() {
+  // Load the JSON data
+  const jsonData = require('./glossary.json');
+  // Get the container element
+  const container = document.querySelector('#glossary-container');
+  // Loop through the entries
+  for (let i = 0; i < jsonData.length; i++) {
+    const entry = jsonData[i];
+    // Create the glossary item element
+    const item = document.createElement('div');
+    item.classList.add('glossary-item');
+    // Create the title element
+    const title = document.createElement('i');
+    title.classList.add('glossary-title');
+    title.textContent = entry.title;
+    // Create the description element
+    const description = document.createElement('p');
+    description.id = entry.title;
+    description.appendChild(title);
+    description.textContent += ': ' + entry.chap_description;
+    // Create the keywords element
+    const keywords = document.createElement('h6');
+    keywords.textContent = 'Related terms: ' + entry.keywords;
+    // Create the chapter element
+    const chapter = document.createElement('h6');
+    chapter.textContent = 'Introduced in chapter: ' + entry.relevant_chap;
+    // Append the elements to the item
+    item.appendChild(description);
+    item.appendChild(keywords);
+    item.appendChild(chapter);
+    // Append the item to the container
+    container.appendChild(item);
+  }
+
+  buildGlossary();
+}
+</script>
+
 </head>
 
 <!--MAIN HTML Begins-->
@@ -155,6 +194,10 @@ Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on
 
 
 <div class="page-paragraph">
+
+<div id="glossary-container"></div>
+
+---------------
 
 <p id="ayyew"><i>Ayyew</i>: The Igorot virtue of ever increasing one’s sync with ecological cycles.</p>
 
