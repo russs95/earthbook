@@ -53,29 +53,6 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  
  
  
- /*Conditionally either load the light or the dark stylesheet. The matching file
-  will be downloaded with `highest`, the non-matching file with `lowest`
-  priority. If the browser doesn't support `prefers-color-scheme`, the media
-  query is unknown and the files are downloaded with `lowest` priority (but
-  above I already force `highest` priority for my default light experience).
- -->*/
- 
- /*
- $(function() {
-   $('#footer-icon-left ').click(function() {
-     $(this).css('background-image', 'url(svgs/footer-settings-button-up.png)');
-   });
- });*/
- 
- 
- 
- /* COPY FUNTION ON SHARE CURTAIN */
- 
- 
- 
- 
- 
- 
  /* -------------------------------------------------------------------------- */
  
  /*	1. Curtain Overlays
