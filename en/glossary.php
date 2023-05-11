@@ -149,84 +149,65 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 <div class="lead-page-paragraph">
-Key terms & their definitions as used throught the <i>Tractatus Ayyew</i>.
+Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on Earthen.io publications.
     </div>
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+
 
 <div class="page-paragraph">
 
-<p><i>Ayyew</i>:  The Igorot virtue of ever increasing one’s sync with ecological cycles.
-</p>
+<p id="ayyew"><i>Ayyew</i>: The Igorot virtue of ever increasing one’s sync with ecological cycles.</p>
 
-<p><i>Biome</i>:  An ecosystem of ecosystems.  A principal ecosystem of a biosphere.  
-</p>
+<p id="biome"><i>Biome</i>: An ecosystem of ecosystems. A principal ecosystem of a biosphere.</p>
 
-<p><i>Biosphere</i>:  The all encompassing ecology of a planet (usually that of Earth).
-</p>
+<p id="biosphere"><i>Biosphere</i>: The all-encompassing ecology of a planet (usually that of Earth).</p>
 
-<p><i>Biodiversity</i>:  The variety and plurality of species in a biological system.
-</p>
+<p id="biodiversity"><i>Biodiversity</i>: The variety and plurality of species in a biological system.</p>
 
-<p><i>Cosmological Character</i>:  The unique history, configuration and composition of each planet that gives it its characteristic pattern of processe.</p>
+<p id="cosmologicalcharacter"><i>Cosmological Character</i>: The unique history, configuration, and composition of each planet that gives it its characteristic pattern of processes.</p>
 
-<p><i>Dapay</i>:  The central stone plaza of every Igorot village that is used for ceremonies, feasts and story telling.</p>
+<p id="dapay"><i>Dapay</i>: The central stone plaza of every Igorot village that is used for ceremonies, feasts, and storytelling.</p>
 
+<p id="earth"><i>earth</i>: Soil, ground [lowercase ‘e’]. Used with an article (i.e. “the”)</p>
 
-<p><i>earth</i>:   Soil, ground [lower case ‘e’].  Used with an article (i.e. “the”)
-</p>
+<p id="earthplanet"><i>Earth</i>: The third planet orbiting the sun [uppercase ‘E’]. Used without an article.</p>
 
-<p><i>Earth</i>:  The third planet orbiting the sun [upper case ‘E’].  Used without an article.
-</p>
+<p id="earthen"><i>Earthen</i>: Of the character of the Earth. [Capital ‘E’]</p>
 
-<p><i>Earthen</i>:  Of the character of the Earth. [Capital ‘E’] 
-</p>
+<p id="earthensoil"><i>earthen</i>: Of the earth (i.e. soil, ground) [lowercase ‘e’]</p>
 
-<p><i>earthen</i>:  Of the earth (i.e. soil, ground) [lowercase ‘e’] 
-</p>
+<p id="earthenethics"><i>Earthen Ethics</i>: An ethical framework for discerning the ecological color of an act, process, or enterprise based on the example of Earth.</p>
 
-<p><i>Earthen Ethics</i>:  A ethical framework for discerning the ecological color of an act, process or enterprise based on the example of Earth.</p>
+<p id="earthenterprise"><i>Earth Enterprise</i>: An enterprise that strives first and foremost to enrich the biosphere by following Earth’s example.</p>
 
-<p><i>Earth Enterprise</i>:  An enterprise that strives first and foremost to enrich the biosphere by following Earth’s example.</p>
+<p id="ecologicalcontribution"><i>Ecological Contribution</i>: A process that fully embodies the principles of Earthen ethics. A green ecological impact.</p>
 
-<p><i>Ecological Contribution</i>:  A process that fully embodies the principles of Earthen ethics.  A green ecological impact.</p>
+<p id="ecologicalconsciousness"><i>Ecological Consciousness</i>: An awareness of one’s interconnection to the cycles of life near and far, old and new, local and global.</p>
 
-<p><i>Ecological Consciousness</i>:  An awareness of one’s interconnection to the cycles of life near and far, old and new, local and global. </p>
+<p id="ecology"><i>Ecology</i>: A biological system; a part of a biome.</p>
 
-<p><i>Ecology</i>:  A biological system; a part of a biome.
-</p>
+<p id="green"><i>Green</i>: An ecological contribution: a process that follows Earth’s example by embodying all the Earthen principles.</p>
 
-<p><i>Green</i>:  An ecological contribution: a process that follows Earth’s example by embodying all the Earthen principles.</p> 
+<p id="grey"><i>Grey</i>: A depleting ecological impact: a process that fails to embody all the Earthen principles.</p>
 
-<p><i>Grey</i>:  A depleting ecological impact:  a process that fails to embody all the Earthen principles.</p>
+<p id="fossilfuels"><i>Fossil Fuels</i>: A modern term to describe the Earth’s ancient compacted carbon stores.</p>
 
-<p><i>Fossil Fuels</i>: A modern term to described the Earth’s ancient compacted carbon stores.
-</p>
+<p id="igorot"><i>Igorot</i>: The people of the highlands of northern Luzon, in the West Philippines Sea.</p>
 
-<p><i>Igorot</i>:  The people of the highlands of northern Luzon, in the West Philippines Sea.
-</p>
+<p id="humancentric"><i>Humancentric</i>: A view of the world in which humans are central and separate from the natural environment around them. Also, 'anthropocentric'.</p>
 
-<p><i>Humancentric</i>:  A view of the world in which humans are central and seperate from the natural environment around them.  Also, 'anthropocentric'.</p>
-
-<p><i>Cyclocentric</i>:  From the Greek Κύκλος for 'Cycle', we introduce the term 'cyclocentric' to describe kincentric cultures and their propensity to self organize around the sync and celebration of Earthen cycles.  We use this term in distinction to the terms 'ecocentric' or 'biocentric' which fail to capture the the importance of human/ecological synchony which characterized these particular cultures.  This term and concept are inspired by Igorot Ayyew culture.  See an  account of the Igorots remarkable ecological synchrony: William Henry Scott, (1959) Some Calendars of Northern Luzon, American Anthropologist 60(3):563 - 570</p>
+<p id="cyclocentric"><i>Cyclocentric</i>:  From the Greek Κύκλος for 'Cycle', we introduce the term 'cyclocentric' to describe kincentric cultures and their propensity to self organize around the sync and celebration of Earthen cycles.  We use this term in distinction to the terms 'ecocentric' or 'biocentric' which fail to capture the the importance of human/ecological synchony which characterized these particular cultures.  This term and concept are inspired by Igorot Ayyew culture.  See an  account of the Igorots remarkable ecological synchrony: William Henry Scott, (1959) Some Calendars of Northern Luzon, American Anthropologist</p>
+<p id="kincentric"><i>Kincentric</i>:  In opposition to humancentric; a view of the world in which plants, humans, animals and all Earthen organisms share ancestry and origins, cycles and ecosystems.</p>
+<p id="humancentric"><i>Humancentric</i>:  A view of the world in which humans are central and separate from the natural environment around them.  Also, 'anthropocentric'.</p>
+<p id="petrocapital"><i>Petro-Capital Economy</i>:  An economy whose flow and generation of capital is powered by petroleum energy.</p>
+<p id="sequest"><i>Plastic Sequestration:</i>  Plastic sequestration is the process of concentrating and compacting plastic to create short term building blocks that secure and store plastic over the long-term, in a not-for-profit process that raises consciousness, supports biodiversity and is net-subtractive.</p>
+<p id="stellar"><i>Plastic’s Stellar Story</i>:  The four billion year view of plastic as carbon sequestered by the Earth, and de-compacted by humans.</p>
+<p id="p1"><i>Plastic 1.0:</i>  The paradigm of plastic as human made and managed.</p>
+<p id="p2"><i>Plastic 2.0: </i> The paradigm of plastic as a part of the Earth’s billion year process of cultivating the biosphere and as representation of our petro-capital economy.</p>
+<p id="regen"><i>Regenerative</i>:  A greening process whose subtractive impact is over twice that of its additive impact.</p>
+<p id="wet"><i>Wet'su'weten</i>:  Wetʼsuwetʼen are a First Nations people who live on the Bulkley River... </p>
 
 
-<p><i>Kincentric</i>:  In opposition to humancentric; a view of the world in which plants, humans, animals and all Earthen organisms share ancestry and origins, cycles and ecosystems.</p>
-
-
-<p><i>Humancentric</i>:  The language of the Igorots.</p>
-
-<p><i>Petro-Capital Economy</i>:  An economy whose flow and generation of capital is powered by petroleum energy.</p>
-
-<p><i>Plastic Sequestration:</i>  Plastic sequestration is the process of concentrating and compacting plastic to create short term building blocks that secure and store plastic over the long-term, in a not-for-profit process that raises consciousness, supports biodiversity and is net-subtractive.</p>
-
-<p><i>Plastic’s Stellar Story</i>:  The four billion year view of plastic as carbon sequestered by the Earth, and de-compacted by humans.</p>
-
-<p><i>Plastic 1.0:</i>  The paradigm of plastic as human made and managed.</p>
-
-<p><i>Plastic 2.0: </i> The paradigm of plastic as a part of the Earth’s billion year process of cultivating the biosphere and as representation of our petro-capital economy.</p>
-
-<p><i>Regenerative</i>:  A greening process whose subtractive impact is over twice that of its additive impact.</p>
-
-<p><i>Wet'su'weten</i>:  Wetʼsuwetʼen are a First Nations people who live on the Bulkley River and around Burns Lake, Broman Lake, and Francois Lake in the northwestern Central Interior of British Columbia. The name they call themselves, Wetʼsuwetʼen, means "People of the Wa Dzun Kwuh River"</p>
 
 
 
