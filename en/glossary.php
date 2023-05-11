@@ -121,16 +121,25 @@ Must be updated for each page-->
       </div>
   </div>
 
-<!-- Page Title Section-->
-
-  <div id="ct-chapt-graphic" class="background-000">
+<!-- Page Title Section <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
       Key terms & their definitions.
     </div>
     <div class="ct-quote-source">
     </div>
   </div>
+-->
 
+<div id="ct-chapt-graphic" class="background-000">
+  <img src="../icons/openbook.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+  </div>
+
+  <div id="up-arrow"></div>
+
+
+  <div id="ct-main">
+
+ 
   <?php require_once ("includes/eco-curtain.php");?>
 
   <div id="up-arrow"></div>
@@ -143,7 +152,10 @@ Must be updated for each page-->
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
-
+<div class="lead-page-paragraph">
+Key terms & their definitions as used throught the <i>Tractatus Ayyew</i>.
+    </div>
+    
 <div class="page-paragraph">
 
 <p><i>Ayyew</i>:  The Igorot virtue of ever increasing one’s sync with ecological cycles.

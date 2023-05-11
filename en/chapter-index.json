@@ -9,16 +9,41 @@
 "image_url":"..\/svgs\/00-preamble-white.svg"},
 
 {"postID":"2","title":"Epigraph",
-"keywords":"epigraph, introduction, stories, nature, history, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth,green, green ethics, environmental ethics, deep ecology, ecological, ethics, Régis Debray, Le siècle vert, Un changement de civilisation, The Green Age, A Change of Civilizations","chap_description":"\"Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear...\"","url":"..\/en\/epigraph.php","language":"English","book":"Book One","chapter":"Epigraph","words":"67","image_url":"..\/svgs\/00-preamble-white.svg"},
+"keywords":"epigraph, introduction, stories, nature, history, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth,green, green ethics, environmental ethics, deep ecology, ecological, ethics, Régis Debray, Le siècle vert, Un changement de civilisation, The Green Age, A Change of Civilizations",
+"chap_description":"\"Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear...\"",
+"url":"..\/en\/epigraph.php",
+"language":"English",
+"book":"Book One",
+"chapter":"Epigraph",
+"words":"67",
+"image_url":"..\/svgs\/00-preamble-white.svg"},
 
 {"postID":"3","title":"Preface",
-"keywords":"Preface introduction stories dapay Earth ethics earthen ethics bontoc philipines, igorot, russell, irene, banyan, ecobricks, plastic, indigenous philosophy, philosophy, what should green mean, deped, irene, banayan, russell, maier","chap_description":"The story behind the beginning, the writing and the title of the Tractatus Ayyew.","url":"..\/en\/preface.php","language":"English","book":"Introduction","chapter":"Preface","words":"1220","image_url":"..\/svgs\/00-preamble-white.svg"},
+"keywords":"Preface introduction stories dapay Earth ethics earthen ethics bontoc philipines, igorot, russell, irene, banyan, ecobricks, plastic, indigenous philosophy, philosophy, what should green mean, deped, irene, banayan, russell, maier",
+"chap_description":"The story behind the beginning, the writing & the title of the Tractatus Ayyew.",
+"url":"..\/en\/preface.php","language":"English",
+"book":"Introduction",
+"chapter":"Preface",
+"words":"1220",
+"image_url":"..\/svgs\/00-preamble-white.svg"},
 
 {"postID":"4","title":"Imagine",
-"keywords":"imagine, a green new world, plastic, green, Earth ethics, earthen ethics, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, permaculture, bill molison, green ethics, environment, deep ecology, ecological, ethics, earth","chap_description":"Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.","url":"\/en\/imagine.php","language":"English","book":"Book One","chapter":"Chapter 1","words":"1095","image_url":"..\/svgs\/01-imagine-white.svg"},
+"keywords":"imagine, a green new world, plastic, green, Earth ethics, earthen ethics, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, permaculture, bill molison, green ethics, environment, green washing, deep ecology, ecological, ethics, earth",
+"chap_description":"Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.",
+"url":"\/en\/imagine.php",
+"language":"English",
+"book":"Book One",
+"chapter":"Chapter 1",
+"words":"1095",
+"image_url":"..\/svgs\/01-imagine-white.svg"},
 
 {"postID":"5","title":"Plastic 1.0",
-"keywords":"earth,plastic,guilt,batman","chap_description":"Like no other material, plastic has been made entirely for the use and benefit of humans.","url":"..\/en\/plastic.php","language":"English","book":"Book One","chapter":"Chapter 3","words":"623","image_url":"..\/svgs\/02-plastic1-white.svg"},
+"keywords":"earth,plastic,guilt,batman",
+"chap_description":"Like no other material, plastic has been made entirely for the use and benefit of humans.","url":"..\/en\/plastic.php",
+"language":"English","book":"Book One",
+"chapter":"Chapter 3",
+"words":"623",
+"image_url":"..\/svgs\/02-plastic1-white.svg"},
 
 {"postID":"6","title":"Plastic's Stellar Story",
 "keywords":"cosmology, cosmological character, entropy, thermodynamics, dissipation, carbon, spiral, fossil fuels, petrocapital, economy, polymers, plastic, billiard balls, profit, recycle, recycling, technology, industry, grey, history, humanity, human,batman,earth","chap_description":"A brief history of plastic's stellar origins, Earth's creation and the rise of modern humanity's ecological relationship.","url":"..\/en\/stellar.php","language":"English","book":"Book One","chapter":"Chapter 3","words":"1133","image_url":"..\/svgs\/03-stellar-white.svg"},
@@ -59,22 +84,22 @@
 {"postID":"18","title":"For-Earth Enterprise",
 "keywords":"100","chap_description":"Our not-for profit, for-Earth statement of intention for our enterprise of writing and publishing this EarthBook","url":"..\/en\/for-earth.php","language":"English","book":"Appendix","chapter":"Declaration","words":"100","image_url":"..\/svgs\/icon-for-earth.svg"},
 
-{"postID":"19","title":"Acknowledgements",
-"keywords":"thanks, credits, gratitude","chap_description":"Our thanks to the many who made this project possible and published.","url":"..\/en\/acknowledgements.php","language":"English","book":"Appendix","chapter":"Acknowledgements","words":"600","image_url":"..\/svgs\/00-preamble-white.svg"},
+{"postID":"19","title":"Acknowledgements & Gratitude",
+"keywords":"thanks, credits, gratitude","chap_description":"Our thanks to the many who made this project possible and published.","url":"..\/en\/acknowledgements.php","language":"English","book":"Appendix","chapter":"Acknowledgements","words":"600","image_url":"..\/icons\/thankyou.svg"},
 
 {"postID":"20","title":"Writing & Publishing",
-"keywords":"writing, publishing, software, accounting, fonts, typefaces, store, purchase, brikcoins","chap_description":"The open hardware and software used in the writing and publishing of the Earthbook","url":"..\/en\/writing.php","language":"English","book":"Appendix","chapter":"Details","words":"400","image_url":"..\/svgs\/icon-opensource.svg"},
+"keywords":"writing, publishing, software, accounting, fonts, typefaces, store, purchase, brikcoins","chap_description":"The open hardware and software used in the writing and publishing of the Earthbook","url":"..\/en\/writing.php","language":"English","book":"Appendix","chapter":"Details","words":"400","image_url":"..\/icons\/publishing.svg"},
 
 {"postID":"21","title":"The Authors",
-"keywords":"authors, russ, russell, maier, banayan, irene, angway","chap_description":"\/en\/authors.php","url":"..\/en\/authors.php","language":"English","book":"Appendix","chapter":"Authors","words":"300","image_url":"..\/svgs\/00-preamble-white.svg"},
+"keywords":"authors, russ, russell, maier, banayan, irene, angway","chap_description":"\/en\/authors.php","url":"..\/en\/authors.php","language":"English","book":"Appendix","chapter":"Authors","words":"300","image_url":"..\/icons\/authoring.svg"},
 
 {"postID":"22","title":"Bibliography",
-"keywords":"Régis Debray, Le siècle vert. Un changement de civilisation (Editions Gallimard, 2020)\r\n\r\nBill Mollison, Principles from Permaculture a Designers' Manual, (Tagari Publishers: 1988).\r\n\r\nDaniel Pinchbeck, Sting, Russell Brand How Soon is Now: From Personal Initiation to Global Transformation, (Publisher: Watkins Publishing, 2017)\r\n\r\nSustainable Packaging: Consumer View, (Global Web Index: 2020)\r\n\r\nR. Geyer, et al., Production, use and fate of all plastics ever made (Science Advances, 2017) Vol. 3,","chap_description":"Biblioraphy of sources used during the writing of the Tractatus Ayyew","url":"..\/en\/bibliography.php","language":"English","book":"Appendix","chapter":"Sources","words":"500","image_url":"https:\/\/book.earthen.io\/svgs\/00-preamble-white.svg"},
+"keywords":"Régis Debray, Le siècle vert. Un changement de civilisation (Editions Gallimard, 2020)\r\n\r\nBill Mollison, Principles from Permaculture a Designers' Manual, (Tagari Publishers: 1988).\r\n\r\nDaniel Pinchbeck, Sting, Russell Brand How Soon is Now: From Personal Initiation to Global Transformation, (Publisher: Watkins Publishing, 2017)\r\n\r\nSustainable Packaging: Consumer View, (Global Web Index: 2020)\r\n\r\nR. Geyer, et al., Production, use and fate of all plastics ever made (Science Advances, 2017) Vol. 3,","chap_description":"Biblioraphy of sources used during the writing of the Tractatus Ayyew","url":"..\/en\/bibliography.php","language":"English","book":"Appendix","chapter":"Sources","words":"500","image_url":"..\/icons\/openbook.svg"},
 
 {"postID":"23","title":"Glossary",
-"keywords":"Ayyew: The Igorot virtue of ever increasing one’s sync with ecological cycles. \r\nBiome: An ecosystem of ecosystems. A principal ecosystem of a biosphere. \r\nBiosphere: The all encompassing ecology of a planet (usually that of Earth). \r\nBiodiversity: The variety and plurality of species in a biological system. \r\nCosmological Character: The unique history, configuration and composition of each planet that gives it its characteristic pattern of processe.\r\nDapay: The central stone plaza of every Igor","chap_description":"A list of the key terms and their definitions as they are used throughout the Tractatus Ayyew, ","url":"..\/en\/glossary.php","language":"English","book":"Appendix","chapter":"Terms","words":"440","image_url":"https:\/\/book.earthen.io\/svgs\/00-preamble-white.svg"},
+"keywords":"Ayyew: The Igorot virtue of ever increasing one’s sync with ecological cycles. \r\nBiome: An ecosystem of ecosystems. A principal ecosystem of a biosphere. \r\nBiosphere: The all encompassing ecology of a planet (usually that of Earth). \r\nBiodiversity: The variety and plurality of species in a biological system. \r\nCosmological Character: The unique history, configuration and composition of each planet that gives it its characteristic pattern of processe.\r\nDapay: The central stone plaza of every Igor","chap_description":"A list of the key terms and their definitions as they are used throughout the Tractatus Ayyew, ","url":"..\/en\/glossary.php","language":"English","book":"Appendix","chapter":"Terms","words":"440","image_url":"..\/icons\/authoring.svg"},
 
 {"postID":"24","title":"Authors' Declaration of Interests & Investments",
-"keywords":"declaration, financing, supporters, patrons, helpers, grants, sponsors, statement, interests, investments, connections, biases, authors, russ, russell, maier, banayan, irene, angway","chap_description":"A statement of the interests and investments of the authors.","url":"..\/en\/declaration.php","language":"English","book":"Appendix","chapter":"Statement","words":"323","image_url":"https:\/\/book.earthen.io\/svgs\/00-preamble-white.svg"}
+"keywords":"declaration, financing, supporters, patrons, helpers, grants, sponsors, statement, interests, investments, connections, biases, authors, russ, russell, maier, banayan, irene, angway","chap_description":"A statement of the interests and investments of the authors.","url":"..\/en\/declaration.php","language":"English","book":"Appendix","chapter":"Statement","words":"323","image_url":"..\/icons\/openbook.svg"}
 
 ]

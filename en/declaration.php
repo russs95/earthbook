@@ -95,8 +95,8 @@ Must be updated for each page-->
 
 <!-- Page Title Section-->
 
-  <div id="ct-chapt-graphic" class="background-000">
-
+<div id="ct-chapt-graphic" class="background-000">
+  <img src="../icons/openbook.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
   </div>
 
   <div id="up-arrow"></div>

@@ -173,11 +173,11 @@ Must be updated for each page-->
 
      <p id="45-up">Often, a tribe, resonating with the character of a particular creature would adopt it as their representative and guide. Almost all North American first nations contained clans that took an animal as their totem.<a href="#footnotes" title="“A North American 500 years ago could travel from the shores of the Great Lakes to the Lousiana bayous and still find settlements – speaking languages entirely unrelated to their own- with members of their own Bear, Elk or Beaver Clans who were obliged to host and feed them.” David Graeber, David Wengrow, 'The Dawn of Everything: A New History of Humanity', (Signal Publishing, 2021) Chapter 4. Free People, the Origin of Cultures, p. 123" onclick="openFootnotes()">⁴⁵</a> Through stories and myths, they were inspired by the animal's ecological example to lay out their clan’s principal values and ethics.</p>
 
-     <p id="46-up">So grounded in values and virtues, such societies were able to weave ecological mastery into the fabric of their language, grammar and values.<a href="#footnotes" onclick="openFootnotes()" title="Ecological cosmology is deeply embedded in the Banayan’s Kan’kan’nue language and so too other kincentric cultures.  See: Matthew C. Bronson, 'Lessons in the Old Language', (Global Oneness Project, 2018)." >⁴⁶</a> In so doing they were able to <!--by-pass the tedious, million-year process of evolutionary trial and error and dramatically -->fast forward their ecological awareness, integration and collective well-being.  In this way, their cultures came to sync with the cycles of the creatures they admired most— the migration of geese, the return of salmon, the coming and going of whales and elk— and precisely because these life-cycles continued to thrive, so could they continue to learn from them.  </p>
+     <p id="46-up">So grounded in such values and virtues, these societies were able to weave ecological mastery into the fabric of their language, grammar and values.<a href="#footnotes" onclick="openFootnotes()" title="Ecological cosmology is deeply embedded in the Banayan’s Kan’kan’nue language and so too other kincentric cultures.  See: Matthew C. Bronson, 'Lessons in the Old Language', (Global Oneness Project, 2018)." >⁴⁶</a> In so doing they were able to <!--by-pass the tedious, million-year process of evolutionary trial and error and dramatically -->fast forward their ecological awareness, integration and collective well-being.  In this way, their cultures came to sync with the cycles of the creatures they admired most— the migration of geese, the return of salmon, the coming and going of whales and elk— and precisely because these life-cycles continued to thrive, so could they continue to learn from them.  </p>
 
      <p>In a virtuous spiral of ever deeper awareness, such cultures steadily enhanced the harmony of the ecosystems of which they were part. With the momentum of millennia of compounding insights, their way of knowing steadily led to an ecological understanding of unparalleled lucidity.  Steadily, these societies were able to effectively co-create with plants and animals a common home for all to thrive.</p>
 
-     <p>Today, in realizing the great green feats of these cyclocentric nations, in turn we can learn from them and follow their example.<a href="#footnotes" title="From the Greek Κύκλος for 'Cycle', we introduce the term 'cyclocentric' to describe kincentric cultures and their propensity to self organize around the sync and celebration of Earthen cycles.  We use this term in distinction to the terms 'ecocentric' or 'biocentric' which fail to capture the the importance of human/ecological synchony which characterized this particular cultures.  This term and concept are inspired by an account of the Igorots remarkable ecological synchrony: William Henry Scott, (1959) Some Calendars of Northern Luzon, American Anthropologist 60(3):563 - 570">*</a></p>
+     <p>Today, in realizing the great green feats of these cyclocentric nations, in turn we can learn from them and follow their example.<a href="#footnotes" title="From the Greek Κύκλος for 'Cycle', we introduce the term 'cyclocentric' to describe kincentric cultures and their propensity to self organize around the sync and celebration of Earthen cycles.  We use this term in distinction to the terms 'ecocentric' or 'biocentric' which fail to capture the the importance of human/ecological synchony which characterized these particular cultures.  This term and concept are inspired by Igorot Ayyew culture.  See an  account of the Igorots remarkable ecological synchrony: William Henry Scott, (1959) Some Calendars of Northern Luzon, American Anthropologist 60(3):563 - 570">⁴⁷</a></p>
 
      <p>To do so, the ontological recognition our kinship with all Earth's creatures is key. </p>
 
@@ -288,7 +288,7 @@ Must be updated for each page-->
 
         <a href="#44-up" class="footnote">   
         <div class="footnote-number" id="3-down">44.</div>
-        <div class="footnote-text">We are applying Enrique Salmon’s term ‘kincentric’ to describes cultures that relate to the plants and animals with which they share an ecosystem as kin: “Indigenous cultural models of nature include humans as one aspect of the complexity of life.” Enrique Salmón, <i>Kincentric Ecology: Indigenous Perceptions of the Human-Nature Relationship</i>, Ecological Applications, (Ecological Society of America, Oct., 2000)  Vol. 10, No. 5, pp. 1327-1332.</div>
+        <div class="footnote-text">We are applying Enrique Salmon’s (of the Raramuri nation of the Sierra Madres) term ‘kincentric’ to describes cultures that relate to the plants and animals with which they share an ecosystem as kin: “Indigenous cultural models of nature include humans as one aspect of the complexity of life.” Enrique Salmón, <i>Kincentric Ecology: Indigenous Perceptions of the Human-Nature Relationship</i>, Ecological Applications, (Ecological Society of America, Oct., 2000)  Vol. 10, No. 5, pp. 1327-1332.</div>
         </a>
 
 
@@ -299,6 +299,11 @@ Must be updated for each page-->
 
         <a href="#46-up" class="footnote">   
         <div class="footnote-number" id="3-down">46.</div>
+        <div class="footnote-text">Ecological cosmology is deeply embedded in the Banayan’s Kan’kan’nue language and so too other kincentric cultures.  See: Matthew C. Bronson, <i>Lessons in the Old Language</i>, (Global Oneness Project, 2018)</div>
+        </a>
+
+        <a href="#47-up" class="footnote">   
+        <div class="footnote-number" id="3-down">47.</div>
         <div class="footnote-text">Ecological cosmology is deeply embedded in the Banayan’s Kan’kan’nue language and so too other kincentric cultures.  See: Matthew C. Bronson, <i>Lessons in the Old Language</i>, (Global Oneness Project, 2018)</div>
         </a>
 
