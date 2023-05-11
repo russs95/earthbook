@@ -98,7 +98,7 @@ Must be updated for each page-->
 <script>
   function buildGlossary() {
   // Load the JSON data
-  const jsonData = require('./glossary.json');
+  const jsonData = require('glossary.json');
   // Get the container element
   const container = document.querySelector('#glossary-container');
   // Loop through the entries
