@@ -100,6 +100,7 @@ Must be updated for each page-->
   // Load the JSON data
   const jsonData = require('glossary.json');
   // Get the container element
+  consold.log(jsonData);
   const container = document.querySelector('#glossary-container');
   // Loop through the entries
   for (let i = 0; i < jsonData.length; i++) {
