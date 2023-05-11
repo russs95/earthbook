@@ -128,7 +128,7 @@ Must be updated for each page-->
     <div class="ct-quote-source">
     </div>
   </div>
--->
+--><?php require_once ("includes/eco-curtain.php");?>
 
 <div id="ct-chapt-graphic" class="background-000">
   <img src="../icons/openbook.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
@@ -140,11 +140,7 @@ Must be updated for each page-->
   <div id="ct-main">
 
  
-  <?php require_once ("includes/eco-curtain.php");?>
 
-  <div id="up-arrow"></div>
-  
-  <div id="ct-main">
 
  
 
@@ -155,7 +151,7 @@ Must be updated for each page-->
 <div class="lead-page-paragraph">
 Key terms & their definitions as used throught the <i>Tractatus Ayyew</i>.
     </div>
-    
+
 <div class="page-paragraph">
 
 <p><i>Ayyew</i>:  The Igorot virtue of ever increasing one’s sync with ecological cycles.
@@ -208,7 +204,15 @@ Key terms & their definitions as used throught the <i>Tractatus Ayyew</i>.
 <p><i>Igorot</i>:  The people of the highlands of northern Luzon, in the West Philippines Sea.
 </p>
 
-<p><i>Kan’ka’nue</i>:  The language of the Igorots.</p>
+<p><i>Humancentric</i>:  A view of the world in which humans are central and seperate from the natural environment around them.  Also, 'anthropocentric'.</p>
+
+<p><i>Cyclocentric</i>:  From the Greek Κύκλος for 'Cycle', we introduce the term 'cyclocentric' to describe kincentric cultures and their propensity to self organize around the sync and celebration of Earthen cycles.  We use this term in distinction to the terms 'ecocentric' or 'biocentric' which fail to capture the the importance of human/ecological synchony which characterized these particular cultures.  This term and concept are inspired by Igorot Ayyew culture.  See an  account of the Igorots remarkable ecological synchrony: William Henry Scott, (1959) Some Calendars of Northern Luzon, American Anthropologist 60(3):563 - 570</p>
+
+
+<p><i>Kincentric</i>:  In opposition to humancentric; a view of the world in which plants, humans, animals and all Earthen organisms share ancestry and origins, cycles and ecosystems.</p>
+
+
+<p><i>Humancentric</i>:  The language of the Igorots.</p>
 
 <p><i>Petro-Capital Economy</i>:  An economy whose flow and generation of capital is powered by petroleum energy.</p>
 
