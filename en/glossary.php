@@ -90,7 +90,7 @@ Must be updated for each page-->
       
     }
 
-    i {font-weight: bold;
+    i {
       font-family: "CooperLtMedium";}
 
 </style>
@@ -149,9 +149,9 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 <div class="lead-page-paragraph">
-Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on Earthen.io publications.
+Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on Earthen.io publications.<br><br><br>
     </div>
-    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 60px; width:100%; text-align:left;"></div>
 
 
 <div class="page-paragraph">
