@@ -91,18 +91,18 @@ Must be updated for each page-->
     }
 
 
-    .gloss_item {
+    .glossary_item {
       padding-top: 1px;
       }
 
-      .gloss-title {
+      .glossary-title {
         font-family: "CooperLtMedium";
         font-weight: bold;
         decoration: italic;
         font-size: xx-large;
       }
 
-      .gloss_info {font-size: medium;}
+      .glossary_info {font-size: medium;}
       
 h6 {margin-top: -15px;
 margin-bottom: 20px;}
@@ -270,7 +270,6 @@ Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on
 
 
 <script>
-
 async function buildGlossary() {
   // Load the JSON data
   const response = await fetch('glossary.json');
@@ -279,6 +278,8 @@ async function buildGlossary() {
   jsonData.sort((a, b) => a.title.localeCompare(b.title));
   // Get the container element
   const container = document.querySelector('#glossary-container');
+  // Clear the previous contents of the container
+  container.innerHTML = '';
   // Loop through the entries
   for (let i = 0; i < jsonData.length; i++) {
     const entry = jsonData[i];
@@ -286,23 +287,23 @@ async function buildGlossary() {
     const item = document.createElement('div');
     item.classList.add('glossary-item');
     item.id = entry.title;
-    // Create the description element
-    const description = document.createElement('p');
+    // Create the title element
     const title = document.createElement('i');
     title.classList.add('glossary-title');
     title.textContent = entry.title;
+    // Create the description element
+    const description = document.createElement('p');
     description.appendChild(title);
-    description.innerHTML += `<br> ${entry.chap_description}`;
+    description.innerHTML += ': ' + entry.chap_description;
+    // Create the keywords element
+    const keywords = document.createElement('h6');
+    keywords.textContent = 'Related terms: ' + entry.keywords;
+    // Create the chapter element
+    const chapter = document.createElement('h6');
+    chapter.textContent = 'Introduced in chapter: ' + entry.relevant_chap;
     // Create the glossary info element
     const glossInfo = document.createElement('div');
     glossInfo.classList.add('glossary-info');
-    // Create the keywords element
-    const keywords = document.createElement('h6');
-    keywords.innerHTML = `Related terms: ${entry.keywords}`;
-    // Create the chapter element
-    const chapter = document.createElement('h6');
-    chapter.innerHTML = `Introduced in chapter: ${entry.relevant_chap}`;
-    // Append the elements to the glossary info
     glossInfo.appendChild(keywords);
     glossInfo.appendChild(chapter);
     // Append the elements to the item
@@ -312,6 +313,7 @@ async function buildGlossary() {
     container.appendChild(item);
   }
 }
+
 
 
 
