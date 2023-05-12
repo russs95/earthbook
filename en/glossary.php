@@ -95,13 +95,14 @@ Must be updated for each page-->
       padding-top: 1px;
       }
 
-      .gloss_item {
+      .gloss_title {
         font-family: "CooperLtMedium";
         font-weight: bold;
         decoration: italic;
+        font-size: xx-large;
       }
 
-      .gloss_info {}
+      .gloss_info {font-size: medium;}
       
 h6 {margin-top: -15px;
 margin-bottom: 20px;}
