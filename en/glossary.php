@@ -96,7 +96,7 @@ Must be updated for each page-->
       }
 
       .glossary-title {
-        font-family: "CooperLtMedium";
+       /* font-family: "CooperLtMedium";*/
         font-weight: bold;
         decoration: italic;
         font-size: xx-large;
@@ -294,7 +294,7 @@ async function buildGlossary() {
     // Create the description element
     const description = document.createElement('p');
     description.appendChild(title);
-    description.innerHTML += ': ' + entry.chap_description;
+    description.innerHTML += '<br>' + entry.chap_description;
     // Create the keywords element
     const keywords = document.createElement('h6');
     keywords.textContent = 'Related terms: ' + entry.keywords;
