@@ -102,7 +102,8 @@ Must be updated for each page-->
         font-size: xx-large;
       }
 
-      .glossary_info {font-size: medium;}
+      .glossary_info {
+        color: var(--drop-cap);}
       
 h6 {margin-top: -15px;
 margin-bottom: 20px;}
