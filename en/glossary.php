@@ -90,14 +90,21 @@ Must be updated for each page-->
       
     }
 
-    i {
-      font-family: "CooperLtMedium";}
 
+    .gloss_item {
+      padding-top: 1px;
+      }
 
-      .gloss_item {}
+      .gloss_item {
+        font-family: "CooperLtMedium";
+        font-weight: bold;
+        decoration: italic;
+      }
 
       .gloss_info {}
-
+      
+h6 {margin-top: -15px;
+margin-bottom: 20px;}
       
 
 </style>
@@ -284,7 +291,7 @@ async function buildGlossary() {
     title.classList.add('glossary-title');
     title.textContent = entry.title;
     description.appendChild(title);
-    description.innerHTML += `: ${entry.chap_description}`;
+    description.innerHTML += `<br> ${entry.chap_description}`;
     // Create the glossary info element
     const glossInfo = document.createElement('div');
     glossInfo.classList.add('glossary-info');
