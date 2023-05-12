@@ -96,11 +96,13 @@ Must be updated for each page-->
 </style>
 
 <script>
-  function buildGlossary() {
+  async function buildGlossary() {
   // Load the JSON data
-  const jsonData = require('glossary.json');
+  const response = await fetch('glossary.json');
+  const jsonData = await response.json();
+  // Sort the data alphabetically by title
+  jsonData.sort((a, b) => a.title.localeCompare(b.title));
   // Get the container element
-  consold.log(jsonData);
   const container = document.querySelector('#glossary-container');
   // Loop through the entries
   for (let i = 0; i < jsonData.length; i++) {
@@ -130,8 +132,8 @@ Must be updated for each page-->
     // Append the item to the container
     container.appendChild(item);
   }
-
 }
+
 </script>
 
 </head>
