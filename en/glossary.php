@@ -262,10 +262,12 @@ Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on
 
 
 <script>
-function buildGlossary() {
+
+async function buildGlossary() {
   // Load the JSON data
-  const jsonData = require('./glossary.json');
-  // Sort the entries alphabetically by title
+  const response = await fetch('glossary.json');
+  const jsonData = await response.json();
+  // Sort the data alphabetically by title
   jsonData.sort((a, b) => a.title.localeCompare(b.title));
   // Get the container element
   const container = document.querySelector('#glossary-container');
@@ -276,33 +278,35 @@ function buildGlossary() {
     const item = document.createElement('div');
     item.classList.add('glossary-item');
     item.id = entry.title;
-    // Create the title element
-    const title = document.createElement('i');
-    title.classList.add('glossary_title');
-    title.textContent = entry.title;
     // Create the description element
     const description = document.createElement('p');
+    const title = document.createElement('i');
+    title.classList.add('glossary-title');
+    title.textContent = entry.title;
     description.appendChild(title);
     description.innerHTML += `: ${entry.chap_description}`;
-    // Create the info container element
-    const infoContainer = document.createElement('div');
-    infoContainer.classList.add('gloss_info');
+    // Create the glossary info element
+    const glossInfo = document.createElement('div');
+    glossInfo.classList.add('glossary-info');
     // Create the keywords element
     const keywords = document.createElement('h6');
     keywords.innerHTML = `Related terms: ${entry.keywords}`;
     // Create the chapter element
     const chapter = document.createElement('h6');
     chapter.innerHTML = `Introduced in chapter: ${entry.relevant_chap}`;
-    // Append the elements to the info container
-    infoContainer.appendChild(keywords);
-    infoContainer.appendChild(chapter);
+    // Append the elements to the glossary info
+    glossInfo.appendChild(keywords);
+    glossInfo.appendChild(chapter);
     // Append the elements to the item
     item.appendChild(description);
-    item.appendChild(infoContainer);
+    item.appendChild(glossInfo);
     // Append the item to the container
     container.appendChild(item);
   }
 }
+
+
+
 
 
 window.addEventListener('load', function() {
