@@ -255,7 +255,7 @@ function clearResults() {
   searchInput.value = '';
   resultsContainer.innerHTML = '';
   overlayContent.style.height = '';
-  overlayContent.style.marginTop = 'unset';
+  overlayContent.style.marginTop = '';
 
 }
 
