@@ -1,5 +1,19 @@
 [
-{
+
+  {
+    "postID": "26",
+    "title": "Biome",
+    "keywords": "biome, biomes",
+    "chap_description": "An ecosystem of ecosystems. A principal ecosystem of a biosphere.",
+    "url": "..\/en\/glossary.php#biome",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "2",
+    "image_url": "..\/icons\/glossary.svg"
+  },
+  
+  {
   "postID": "25",
   "title": "Ayyew",
   "keywords": "ayyew, ayyews, ayyewed, ayew",
@@ -12,18 +26,7 @@
   "image_url": "..\/icons\/glossary.svg"
 },
 
-{
-  "postID": "26",
-  "title": "Biome",
-  "keywords": "biome, biomes",
-  "chap_description": "An ecosystem of ecosystems. A principal ecosystem of a biosphere.",
-  "url": "..\/en\/glossary.php#biome",
-  "language": "Appendix",
-  "book": "Definition",
-  "chapter": "Term in Glossary",
-  "words": "2",
-  "image_url": "..\/icons\/glossary.svg"
-},
+
 
 {
   "postID": "27",
