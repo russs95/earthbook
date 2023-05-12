@@ -103,10 +103,12 @@ Must be updated for each page-->
       }
 
       .glossary_info {
-        color: var(--drop-cap);}
+        font-size: medium;}
       
-h6 {margin-top: -15px;
-margin-bottom: 20px;}
+h6 {
+  margin-top: -15px;
+margin-bottom: 20px;
+color: var(--drop-cap);}
       
 
 </style>
