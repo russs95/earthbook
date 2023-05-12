@@ -105,6 +105,7 @@ Must be updated for each page-->
   // Get the container element
   const container = document.querySelector('#glossary-container');
   // Loop through the entries
+  console.log(jsonData);
   for (let i = 0; i < jsonData.length; i++) {
     const entry = jsonData[i];
     // Create the glossary item element
@@ -123,12 +124,12 @@ Must be updated for each page-->
     const keywords = document.createElement('h6');
     keywords.textContent = 'Related terms: ' + entry.keywords;
     // Create the chapter element
-    const chapter = document.createElement('h6');
-    chapter.textContent = 'Introduced in chapter: ' + entry.relevant_chap;
+   // const chapter = document.createElement('h6');
+  //  chapter.textContent = 'Introduced in chapter: ' + entry.relevant_chap;
     // Append the elements to the item
     item.appendChild(description);
     item.appendChild(keywords);
-    item.appendChild(chapter);
+   // item.appendChild(chapter);
     // Append the item to the container
     container.appendChild(item);
   }
