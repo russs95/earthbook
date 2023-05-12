@@ -95,7 +95,7 @@ Must be updated for each page-->
       padding-top: 1px;
       }
 
-      .gloss_title {
+      .gloss-title {
         font-family: "CooperLtMedium";
         font-weight: bold;
         decoration: italic;
@@ -172,9 +172,9 @@ Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on
 
 <div class="page-paragraph">
 
-<div id="glossary-container"></div>
+<div id="glossary-container"><i>Loading glossary...</div>
 
----------------f
+<!--
 
 <p id="ayyew"><i>Ayyew</i>: The Igorot virtue of ever increasing one’s sync with ecological cycles.</p>
 
@@ -233,7 +233,7 @@ Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on
 
      </p>
      <br><br>
-
+-->
   
     </div><!--closes page text content-->
 
