@@ -180,6 +180,8 @@ function EarthbookSearch(jsonFiles) {
   var query = document.getElementById("search_input").value.toLowerCase();
   var overlayContent = document.querySelector('.search-overlay-content');
   overlayContent.style.height = 'fit-content';
+  overlayContent.style.marginTop = '8%';
+
 
   // Load the JSON files
   var posts = [];
@@ -222,7 +224,8 @@ function EarthbookSearch(jsonFiles) {
           } else {
             // Iterate over the results and append them to the container
             for (var k = 0; k < outputPosts.length; k++) {
-              resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + k + "' style=\"display:flex; text-align:left; padding: 20px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;display:block;\"><img src=\"" + outputPosts[k].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:x-large;margin-bottom:12px;display:block;\"><a href='" + outputPosts[k].url + "'>" + outputPosts[k].title + "</b><span style=\"font-size:smaller;color:var(--drop-cap)!important;margin-top:10px;display:block;\">" + outputPosts[k].chapter + "  |  " + outputPosts[k].book + "  |  " + outputPosts[k].words + " words  |  " + outputPosts[k].language + "</span><span style=\"font-size:medium;font-family:'CooperLt',serif;margin-top:10px;display:block;\">" + outputPosts[k].chap_description + "</span><span style=\"font-size:smaller;color:grey;margin-top:10px;display:block;\">" + outputPosts[k].url + "</span></a></div>";
+              resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + k + "' style=\"display:flex; text-align:left; padding: 20px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;display:block;\"><img src=\"" + outputPosts[k].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:x-large;margin-bottom:12px;display:block;\"><a href='" + outputPosts[k].url + "'>" + outputPosts[k].title + "</b><span style=\"font-size:smaller;color:var(--drop-cap)!important;margin-top:10px;display:block;\">" + outputPosts[k].chapter + "  |  " + outputPosts[k].book + "  |  " + outputPosts[k].words + " words  |  " + outputPosts[k].language + "</span><span style=\"font-size:medium;font-family:'CooperLt',serif;
+              :10px;display:block;\">" + outputPosts[k].chap_description + "</span><span style=\"font-size:smaller;color:grey;margin-top:10px;display:block;\">" + outputPosts[k].url + "</span></a></div>";
             }
           }
         }
@@ -252,6 +255,8 @@ function clearResults() {
   searchInput.value = '';
   resultsContainer.innerHTML = '';
   overlayContent.style.height = '';
+  overlayContent.style.marginTop = 'unset';
+
 }
 
 
