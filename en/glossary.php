@@ -95,47 +95,6 @@ Must be updated for each page-->
 
 </style>
 
-<script>
-  async function buildGlossary() {
-  // Load the JSON data
-  const response = await fetch('glossary.json');
-  const jsonData = await response.json();
-  // Sort the data alphabetically by title
-  jsonData.sort((a, b) => a.title.localeCompare(b.title));
-  // Get the container element
-  const container = document.querySelector('#glossary-container');
-  // Loop through the entries
-  console.log(jsonData);
-  for (let i = 0; i < jsonData.length; i++) {
-    const entry = jsonData[i];
-    // Create the glossary item element
-    const item = document.createElement('div');
-    item.classList.add('glossary-item');
-    // Create the title element
-    const title = document.createElement('i');
-    title.classList.add('glossary-title');
-    title.textContent = entry.title;
-    // Create the description element
-    const description = document.createElement('p');
-    description.id = entry.title;
-    description.appendChild(title);
-    description.textContent += ': ' + entry.chap_description;
-    // Create the keywords element
-    const keywords = document.createElement('h6');
-    keywords.textContent = 'Related terms: ' + entry.keywords;
-    // Create the chapter element
-   // const chapter = document.createElement('h6');
-  //  chapter.textContent = 'Introduced in chapter: ' + entry.relevant_chap;
-    // Append the elements to the item
-    item.appendChild(description);
-    item.appendChild(keywords);
-   // item.appendChild(chapter);
-    // Append the item to the container
-    container.appendChild(item);
-  }
-}
-
-</script>
 
 </head>
 
@@ -200,7 +159,7 @@ Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on
 
 <div id="glossary-container"></div>
 
----------------d
+---------------e
 
 <p id="ayyew"><i>Ayyew</i>: The Igorot virtue of ever increasing one’s sync with ecological cycles.</p>
 
@@ -294,6 +253,54 @@ Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on
 
   <?php require_once ("includes/chap-footer.php");?>
 
+
+<script>
+  async function buildGlossary() {
+  // Load the JSON data
+  const response = await fetch('glossary.json');
+  const jsonData = await response.json();
+  // Sort the data alphabetically by title
+  jsonData.sort((a, b) => a.title.localeCompare(b.title));
+  // Get the container element
+  const container = document.querySelector('#glossary-container');
+  // Loop through the entries
+  console.log(jsonData);
+  for (let i = 0; i < jsonData.length; i++) {
+    const entry = jsonData[i];
+    // Create the glossary item element
+    const item = document.createElement('div');
+    item.classList.add('glossary-item');
+    // Create the title element
+    const title = document.createElement('i');
+    title.classList.add('glossary-title');
+    title.textContent = entry.title;
+    // Create the description element
+    const description = document.createElement('p');
+    description.id = entry.title;
+    description.appendChild(title);
+    description.textContent += ': ' + entry.chap_description;
+    // Create the keywords element
+    const keywords = document.createElement('h6');
+    keywords.textContent = 'Related terms: ' + entry.keywords;
+    // Create the chapter element
+   // const chapter = document.createElement('h6');
+  //  chapter.textContent = 'Introduced in chapter: ' + entry.relevant_chap;
+    // Append the elements to the item
+    item.appendChild(description);
+    item.appendChild(keywords);
+   // item.appendChild(chapter);
+    // Append the item to the container
+    container.appendChild(item);
+  }
+}
+
+window.addEventListener('load', function() {
+      buildGlossary();
+    });
+
+</script>
 </body>
+
+
 </html>
 
