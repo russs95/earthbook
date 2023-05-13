@@ -127,14 +127,14 @@ All the css needed for this page-->
  <!--Page Components
 All the page components required to build this page-->
 
- <!--1--><script src="includes/header-component.js"  async></script>
-  <!--2--><script src="includes/settings-curtain.js"  defer></script>
- <!--3--><script src="includes/content-curtain.js"  defer></script>
- <!--4--><script src="includes/share-curtain.js"  defer></script>
- <!--5--><script src="includes/buy-curtain.js"  defer></script>
- <!--6--><script src="includes/bookplate-curtain.js"  defer></script>
- <!--7--><script src="includes/earthbook-curtain.js"  defer></script>
- <!--8a--><script src="includes/footer-component.js" defer></script>
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
 <!--9--><script src="includes/read-curtain.js" defer></script>
 <!--10--><script src="includes/tour-curtain.js"  defer></script>
 <!--11--><script src="includes/search-curtain.js"  defer></script>
@@ -225,7 +225,7 @@ Must be updated for each page-->
             <div class="button-row">
                 <div id="read-btn" class="action-btn"  style="cursor:pointer;" onclick="openRead()"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</div>
                 <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</div>
-                <div id="pdf-btn" class="action-btn" style="cursor:pointer;" onclick="openBookplate()"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> About</div>
+                <div id="tour-btn" class="action-btn" style="cursor:pointer;" onclick="guidedTour()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> About</div>
                  
             </div>
 
