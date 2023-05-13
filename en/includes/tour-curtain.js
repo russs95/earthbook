@@ -35,7 +35,7 @@ class TourCurtain extends HTMLElement {
     <button class="next">Next ➔</button>
   </div>
 
-  <!--
+  
   <div id="information-four" style="display:none;" class="information">
   <div class="tour-image"><img src="../svgs/icon-opensource.svg" title="Read Freely" alt="Read Freely"></div>  
     <div class="modal-header">Open Source</div>
@@ -43,17 +43,17 @@ class TourCurtain extends HTMLElement {
     <button class="back">↩ Back</button>
     <button class="next">Next ➔</button>
   </div>
-  -->
   
-  <div id="information-four" style="display:none;" class="information">
-  <div class="tour-image"><img src="../icons/settings.svg" title="Read Freely" alt="Read Freely"></div>  
-    <div class="modal-header">Tools & Resources</div>
-    <div class="modal-description">The EarthBook source code is open to review, improve and copy on <a class="java-link" href="https://github.com/russs95/earthbook/" target="_blank">Github</a>. This means that publishing an Earthbook is open to anyone anywhere.  Look for the source code link of each chapter in the Resources panel at the bottom of each page.  </div>
+  
+  <div id="information-five" style="display:none;" class="information">
+  <div class="tour-image"><img src="../icons/shareable.svg" title="Read Freely" alt="Read Freely"></div>  
+    <div class="modal-header">Reading Tools</div>
+    <div class="modal-description">Earthbooks have a powerful set of tools under the hood.  Click the out-arrow icon on the top-right of any page to share either the whole book or the chapter.  Select, then click any text to highlight it.  Use the search tool to search the book's glossary and content index.  Hover or click any footnote to view or expand.  Use the comment tool to leave your thoughts or share your citation.</div>
     <button class="back">↩ Back</button>
     <button class="next">Next ➔</button>
   </div>
 
-  <div id="information-five" style="display:none;" class="information" class="information">
+  <div id="information-six" style="display:none;" class="information" class="information">
   <div class="tour-image"><img src="../svgs/icon-revenue.svg"  title="Buy the eBook" alt="But the eBook"></div>  
 
     <div class="modal-header">Buyable</div>

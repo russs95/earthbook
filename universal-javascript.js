@@ -625,8 +625,13 @@ function guidedTour() {
     showInfo(4);
   };
 
+    // Set the onclick function for the fith "Next" button to show the six "information" element
+    document.querySelector("#information-five .next").onclick = function() {
+      showInfo(5);
+    };
+
   // Set the onclick function for the fifth "Next" button to hide the modal and remove the "blur" class from the page content
-  document.querySelector("#information-five .next").onclick = function() {
+  document.querySelector("#information-six .next").onclick = function() {
     modal.style.display = "none";
     document.getElementById("underlayer").classList.remove("blur");
     showInfo(0);
@@ -650,5 +655,10 @@ showInfo(2);
 document.querySelector("#information-five .back").onclick = function() {
 showInfo(3);
 };
+
+// Set the onclick function for the "Back" button in the fifth "information" element to show the fourth "information" element
+document.querySelector("#information-five .back").onclick = function() {
+  showInfo(4);
+  };
 
 }
