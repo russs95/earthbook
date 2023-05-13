@@ -12,9 +12,9 @@ class TourCurtain extends HTMLElement {
   <span class="close">&times;</span>
 
   <div id="information-one" class="information">
-  <div class="tour-image"><img src="../svgs/icon-readfreely.svg" title="Read Freely" alt="Welcome to an Earthbook"></div>  
+  <div class="tour-image"><img src="../svgs/earthbook.svg" title="Read Freely" alt="Welcome to an Earthbook"></div>  
     <div class="modal-header">A Quick Tour</div>
-    <div class="modal-description">Welcome to our Earthbook.  You've never quite read a book like this before!  Get to know how an Earthbook works with a little guided tour...</div>
+    <div class="modal-description">Welcome to our Earthbook!  You've never quite read a book like this before!  Get to know how an Earthbook works with a little guided tour...</div>
     <button class="next">Next ➔</button>
   </div>
 
