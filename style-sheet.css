@@ -4401,6 +4401,27 @@ GUIDED TOUR---*
   border-radius: 10px;
   text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+  .tour-content {
+    margin: 10% auto 15% auto;
+    width: 90%;
+    text-align: center;
+  }
+
+}
+
+  @media screen and (max-width: 700px) {
+    .tour-content {
+      margin: 5% auto 15% auto;
+      width: 80%;
+      text-align: center;
+    }
+
+  }
+
+
+
 .close {
   color: var(--subdued-text);
   float: right;
