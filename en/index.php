@@ -468,9 +468,9 @@ Must be updated for each page-->
             </div>
             <br><br>
             <div class="button-row">
-                <div id="read-btn" class="action-btn"  style="cursor:pointer;" onclick="openRead()"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Search</div>
-                <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> About</div>
-                <div id="tour-btn" class="action-btn" style="cursor:pointer;" onclick="guidedTour()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Comments</div>
+                <div id="search-btn" class="action-btn"  style="cursor:pointer;" onclick="openSearch()"><i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Search</div>
+                <div id="bookplate-btn" class="action-btn" style="cursor:pointer;" onclick="openBookplate()"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Book Plate</div>
+                <div id="principles-btn" class="action-btn" style="cursor:pointer;" onclick="openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Principles</div>
                  
             </div>
 
