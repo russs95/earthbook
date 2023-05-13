@@ -4395,10 +4395,6 @@ GUIDED TOUR---*
 }
   
 .tour-content {
-  margin: 10% auto 15% auto;
-  /*border: 0.5px solid var(--subdued-text);*/
-  width: 80%;
-  border-radius: 10px;
   text-align: center;
 }
 
@@ -4406,7 +4402,6 @@ GUIDED TOUR---*
   .tour-content {
     margin: 10% auto 15% auto;
     width: 90%;
-    text-align: center;
   }
 
 }
@@ -4415,7 +4410,6 @@ GUIDED TOUR---*
     .tour-content {
       margin: 5% auto 15% auto;
       width: 80%;
-      text-align: center;
     }
 
   }
