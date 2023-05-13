@@ -61,7 +61,7 @@ class ShareCurtain extends HTMLElement {
       </div>
       <div><img src="../icons/cc-by-sa.svg" alt="Creative Commons CC-BY-SA icon" style="height: 25px" title="The content of an Earthbook is under a Creative-Commons ND-SA-AT 4.0 license which means you can freely share the links to this page, quote passages, download and share the PDF-- just be sure to attribute, share-alike and record your citation."></div>
 
-        <h6>Be sure to use the <span style="cursor:pointer;text-decoration:underline;" onclick="openComments()">citation tool</span> (found at the bottom of each chapter) to record your adaptions and references.</h6>
+        <!--<h6>Be sure to use the <span style="cursor:pointer;text-decoration:underline;" onclick="openComments()">citation tool</span> (found at the bottom of each chapter) to record your adaptions and references.</h6>-->
         
   </div>
 </div>  
@@ -87,7 +87,7 @@ clipboard.on('error', function (e) {
 
 
 document.getElementById("page-url").innerHTML = 
-"" + window.location.href;
+"testing" + window.location.href;
 
 
 function confirmCopy() {
