@@ -471,7 +471,9 @@ Must be updated for each page-->
                 <div id="search-btn" class="action-btn"  style="cursor:pointer;" onclick="openSearch()"><i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Search</div>
                 <div id="bookplate-btn" class="action-btn" style="cursor:pointer;" onclick="openBookplate()"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Book Plate</div>
                 <div id="principles-btn" class="action-btn" style="cursor:pointer;" onclick="openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Principles</div>
-                 
+                <div id="eco-btn" class="action-btn" style="cursor:pointer;" onclick="openEco()"><i style="background-image: url(../icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Green Disclosure</div>
+
+
             </div>
 
             <?php require_once ("../manage.php");?>
