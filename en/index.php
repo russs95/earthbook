@@ -33,29 +33,6 @@ $chap_number = "Book One";?>
 
 <HEAD>
 
-<script>
-   window.onload = function() {
-  //set master page variables
-  let lang = "en";
-  let parts = window.location.pathname.split("/");
-  let name = parts[parts.length - 1];
-  if (name === "index.php") {
-      name = "";
-  }
-  let page_number = "0";
-  let page_title = "Tractatus Ayyew | An Earthen Ethic - Earthbook Edition";
-  let chap_name = "";
-  let chap_number = "Book One";
-
-  // set meta tag links
-  document.querySelector("link[rel='canonical']").setAttribute("href", "https://book.earthen.io/" + lang + "/" + name);
-  document.querySelector("link[rel='alternate'][hreflang='en']").setAttribute("href", "https://book.earthen.io/en/" + name);
-  document.querySelector("link[rel='alternate'][hreflang='x-default']").setAttribute("href", "http://book.earthen.io/en/" + name);
-  document.querySelector("link[rel='alternate'][hreflang='fr']").setAttribute("href", "https://book.earthen.io/fr/" + name);
-  document.querySelector("link[rel='alternate'][hreflang='es']").setAttribute("href", "https://book.earthen.io/es/" + name);
-  document.querySelector("link[rel='alternate'][hreflang='id']").setAttribute("href", "https://book.earthen.io/id/" + name);
-}
-    </script>
 
 <link rel="canonical" href="">
 <link rel="alternate" href="" hreflang="en" >
@@ -604,6 +581,31 @@ function clearResults() {
 }
 
 </script>
+
+
+<script>
+   window.onload = function() {
+  //set master page variables
+  let lang = "en";
+  let parts = window.location.pathname.split("/");
+  let name = parts[parts.length - 1];
+  if (name === "index.php") {
+      name = "";
+  }
+  let page_number = "0";
+  let page_title = "Tractatus Ayyew | An Earthen Ethic - Earthbook Edition";
+  let chap_name = "";
+  let chap_number = "Book One";
+
+  // set meta tag links
+  document.querySelector("link[rel='canonical']").setAttribute("href", "https://book.earthen.io/" + lang + "/" + name);
+  document.querySelector("link[rel='alternate'][hreflang='en']").setAttribute("href", "https://book.earthen.io/en/" + name);
+  document.querySelector("link[rel='alternate'][hreflang='x-default']").setAttribute("href", "http://book.earthen.io/en/" + name);
+  document.querySelector("link[rel='alternate'][hreflang='fr']").setAttribute("href", "https://book.earthen.io/fr/" + name);
+  document.querySelector("link[rel='alternate'][hreflang='es']").setAttribute("href", "https://book.earthen.io/es/" + name);
+  document.querySelector("link[rel='alternate'][hreflang='id']").setAttribute("href", "https://book.earthen.io/id/" + name);
+}
+    </script>
 
 </html>
 
