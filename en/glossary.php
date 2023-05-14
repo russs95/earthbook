@@ -175,7 +175,8 @@ Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on
 
 <div class="page-paragraph">
 
-<div id="glossary-container"><i>Loading glossary...</div>
+<div id="glossary-container" style="text-align: left;
+text-justify: none;"><i>Loading glossary...</div>
 
 <!--
 

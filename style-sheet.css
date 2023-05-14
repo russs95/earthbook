@@ -4425,8 +4425,9 @@ GUIDED TOUR---*
   float: right;
   font-size: 28px;
   font-weight: bold;
-  margin: -30px -20px auto auto;
-  position: relative;
+  margin: -15px 40px auto auto;
+  position: absolute;
+  right: 0;
 }
 .close:hover,
 .close:focus {
