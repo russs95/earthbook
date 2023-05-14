@@ -486,7 +486,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  {
  var containerSepia = document.body;
  var val = e.value;
- containerSepia.setAttribute("style", "filter: sepia("+val+"%); height: 100vh; overflow-y: hidden;");
+ containerSepia.setAttribute("style", "filter: sepia("+val+"%);");
  }
  
  function Contrast(e)
