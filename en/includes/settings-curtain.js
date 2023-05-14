@@ -36,10 +36,11 @@ class SettingsCurtain extends HTMLElement {
    
 
             <div id="text-adjust">
-    <button id="increase-font-size" aria-label="Increase Text Size">+A</button>
-    <button id="normal-font-size" aria-label="Return Text Size to Default">A</button>
-    <button id="decrease-font-size" aria-label="Decrease Text Size">A-</button>
-  </div>
+            <button id="increase-font-size" aria-label="Increase Text Size" onclick="adjustFontSize('accessibility-plugin-ac', 'increase')">+A</button>
+            <button id="normal-font-size" aria-label="Return Text Size to Default" onclick="adjustFontSize('accessibility-plugin-ac', 'normal')">A</button>
+            <button id="decrease-font-size" aria-label="Decrease Text Size" onclick="adjustFontSize('accessibility-plugin-ac', 'decrease')">A-</button>
+          </div>
+          
             
 
 

@@ -259,28 +259,25 @@ function clearResults() {
 </script>
 
 <script>
-    function adjustFontSize(factor) {
-      const elements = document.getElementsByTagName("body")[0].getElementsByTagName("*");
-      for (let i = 0; i < elements.length; i++) {
-        let fontSize = window.getComputedStyle(elements[i], null).getPropertyValue('font-size');
-        fontSize = parseFloat(fontSize);
-        elements[i].style.fontSize = (fontSize + factor) + 'px';
-      }
+function adjustFontSize(className, change) {
+  const body = document.querySelector('body');
+  const elements = body.querySelectorAll(`.${className}`);
+
+  elements.forEach(element => {
+    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+    fontSize = parseFloat(fontSize);
+
+    if (change === 'increase') {
+      fontSize += 2;
+    } else if (change === 'decrease') {
+      fontSize -= 2;
+    } else if (change === 'normal') {
+      fontSize = 16;
     }
 
-    const normalFontSizeButton = document.getElementById("normal-font-size");
-    normalFontSizeButton.addEventListener("click", () => {
-      adjustFontSize(0);
-    });
+    element.style.fontSize = `${fontSize}px`;
+  });
+}
 
-    const increaseFontSizeButton = document.getElementById("increase-font-size");
-    increaseFontSizeButton.addEventListener("click", () => {
-      adjustFontSize(1);
-    });
-
-    const decreaseFontSizeButton = document.getElementById("decrease-font-size");
-    decreaseFontSizeButton.addEventListener("click", () => {
-      adjustFontSize(-1);
-    });
   </script>
   
