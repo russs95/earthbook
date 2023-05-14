@@ -3007,7 +3007,7 @@ margin: 8px auto;
 
 
 .button-row {
-  margin-bottom: 6px;
+  margin: -10px auto -8px auto; 
 }
 
 @media screen and (max-width: 700px) {
