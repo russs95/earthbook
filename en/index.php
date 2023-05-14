@@ -602,24 +602,34 @@ function clearResults() {
 
 <script>
 function adjustFontSize(className, change) {
-  const body = document.querySelector('body');
-  const elements = body.querySelectorAll(`.${className}`);
+  const elements = document.querySelectorAll(`.${className}`);
 
   elements.forEach(element => {
-    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
-    fontSize = parseFloat(fontSize);
-
-    if (change === 'increase') {
-      fontSize += 2;
-    } else if (change === 'decrease') {
-      fontSize -= 2;
-    } else if (change === 'normal') {
-      fontSize = 16;
-    }
-
-    element.style.fontSize = `${fontSize}px`;
+    updateFontSize(element, change);
   });
 }
+
+function updateFontSize(element, change) {
+  let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+  fontSize = parseFloat(fontSize);
+
+  if (change === 'increase') {
+    fontSize += 1;
+  } else if (change === 'decrease') {
+    fontSize -= 1;
+  } else if (change === 'normal') {
+    fontSize = "unset";
+  }
+
+  element.style.fontSize = `${fontSize}px`;
+
+  // Recursively update font size for child elements
+  const children = element.children;
+  for (let i = 0; i < children.length; i++) {
+    updateFontSize(children[i], change);
+  }
+}
+
 
   </script>
 
