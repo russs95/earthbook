@@ -21,15 +21,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <!-- this sets PHP variables for the pages that will be used later on-->
 
-<?php 
-$parts = explode ("/", $_SERVER['SCRIPT_NAME']);
-$name = $parts [count($parts)-1];
-if (strcmp($name, "index.php") == 0)
-$name = "";
-$page_number = "0";
-$page_title = "Tractatus Ayyew | An Earthen Ethic - Earthbook Edition";
-$chap_name = "";
-$chap_number = "Book One";?>
+
 
 <HEAD>
 
@@ -49,7 +41,7 @@ $chap_number = "Book One";?>
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
 
-<title><?php echo $page_title; ?></title>
+<title></title>
 
 
 <meta property="og:site_name" content="Tractatus Ayyew" >
@@ -606,6 +598,30 @@ function clearResults() {
   document.querySelector("link[rel='alternate'][hreflang='id']").setAttribute("href", "https://book.earthen.io/id/" + name);
 }
     </script>
+
+
+<script>
+function adjustFontSize(className, change) {
+  const body = document.querySelector('body');
+  const elements = body.querySelectorAll(`.${className}`);
+
+  elements.forEach(element => {
+    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+    fontSize = parseFloat(fontSize);
+
+    if (change === 'increase') {
+      fontSize += 2;
+    } else if (change === 'decrease') {
+      fontSize -= 2;
+    } else if (change === 'normal') {
+      fontSize = 16;
+    }
+
+    element.style.fontSize = `${fontSize}px`;
+  });
+}
+
+  </script>
 
 </html>
 
