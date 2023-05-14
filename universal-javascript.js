@@ -543,7 +543,25 @@ document.addEventListener("DOMContentLoaded", function() {
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 });
 
+function adjustFontSize(className, change) {
+  const body = document.querySelector('body');
+  const elements = body.querySelectorAll(`.${className}`);
 
+  elements.forEach(element => {
+    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+    fontSize = parseFloat(fontSize);
+
+    if (change === 'increase') {
+      fontSize += 2;
+    } else if (change === 'decrease') {
+      fontSize -= 2;
+    } else if (change === 'normal') {
+      fontSize = 16;
+    }
+
+    element.style.fontSize = `${fontSize}px`;
+  });
+}
  
  /* -------------------------------------------------------------------------- */
  
