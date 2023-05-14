@@ -551,14 +551,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const contrast = localStorage.getItem('contrast') || 100;
   const sepia = localStorage.getItem('sepia') || 0;
   const userSetFontSize = localStorage.getItem('userSetFontSize') || 16;
-  const navbarHeight = localStorage.getItem('navbarHeight') || '100px';
 
   document.getElementById("brightness-range-scale").value = brightness;
   document.getElementById("contrast-range-scale").value = contrast;
   document.getElementById("sepia-range-scale").value = sepia;
 
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
-  document.getElementById("earthbook-navbar").style.height = navbarHeight;
 
   adjustFontSize('user-set-font-size', null);
 });
