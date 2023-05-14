@@ -505,13 +505,23 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  containerBrightness.setAttribute("style", "filter: brightness("+val+"%); height: 100vh; overflow-y: hidden;");
  
  }*/
-
  function setReadability() {
   const brightness = document.getElementById("brightness-range-scale").value;
   const contrast = document.getElementById("contrast-range-scale").value;
   const sepia = document.getElementById("sepia-range-scale").value;
 
   document.body.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
+  
+  // Update slider event listeners to use setPointerCapture
+  const sliders = document.querySelectorAll('input[type="range"]');
+  sliders.forEach((slider) => {
+    slider.addEventListener('pointerdown', () => {
+      slider.setPointerCapture(slider.pointerId);
+    });
+    slider.addEventListener('pointerup', () => {
+      slider.releasePointerCapture(slider.pointerId);
+    });
+  });
 }
 
  
