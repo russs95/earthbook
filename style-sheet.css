@@ -1216,6 +1216,8 @@ left: 0;
   color: var(--text-color);
   z-index: 26;
   opacity:0.9;
+  filter: blur(3px);
+
 }
 
 
