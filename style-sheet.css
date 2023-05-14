@@ -1215,6 +1215,7 @@ left: 0;
   background-color: var(--deeper-accent-color); 
   color: var(--text-color);
   z-index: 26;
+  opacity:0.9;
 }
 
 
