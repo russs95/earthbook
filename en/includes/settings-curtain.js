@@ -60,7 +60,7 @@ class SettingsCurtain extends HTMLElement {
           <input aria-label="Brightness" type="range" id="brightness-range-scale" min="0" max="100" value="100" onchange="setReadability()">
         
           
-            
+          <button onclick="reset2Default()">Reset to Default</button>
         </div>                                                              
 </div>
 
