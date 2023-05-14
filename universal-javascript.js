@@ -510,8 +510,8 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
   const contrast = document.getElementById("contrast-range-scale").value;
   const sepia = document.getElementById("sepia-range-scale").value;
 
-  document.body.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
-  
+  document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
+
   // Update slider event listeners to use setPointerCapture
   const sliders = document.querySelectorAll('input[type="range"]');
   sliders.forEach((slider) => {
@@ -523,6 +523,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
     });
   });
 }
+
 
  
  
