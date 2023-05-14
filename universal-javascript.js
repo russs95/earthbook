@@ -505,12 +505,18 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  containerBrightness.setAttribute("style", "filter: brightness("+val+"%); height: 100vh; overflow-y: hidden;");
  
  }*/
- function setReadability() {
+
+function setReadability() {
   const brightness = document.getElementById("brightness-range-scale").value;
   const contrast = document.getElementById("contrast-range-scale").value;
   const sepia = document.getElementById("sepia-range-scale").value;
 
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
+
+  localStorage.setItem('brightness', brightness);
+  localStorage.setItem('contrast', contrast);
+  localStorage.setItem('sepia', sepia);
+
 
   // Update slider event listeners to use setPointerCapture
   /*const sliders = document.querySelectorAll('input[type="range"]');
@@ -522,7 +528,21 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
       slider.releasePointerCapture(slider.pointerId);
     });
   });*/
+
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const brightness = localStorage.getItem('brightness') || 100;
+  const contrast = localStorage.getItem('contrast') || 100;
+  const sepia = localStorage.getItem('sepia') || 0;
+
+  document.getElementById("brightness-range-scale").value = brightness;
+  document.getElementById("contrast-range-scale").value = contrast;
+  document.getElementById("sepia-range-scale").value = sepia;
+
+  document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
+});
+
 
 
  
