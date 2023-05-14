@@ -1715,7 +1715,7 @@ left: 0;
 .book-listing {
   flex-direction: column;
   display: flex;
-  align-self: top;
+  /*align-self: top;*/
 }
 
 
