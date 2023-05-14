@@ -41,7 +41,7 @@ class SettingsCurtain extends HTMLElement {
             
 
             
-            <div class="settings-label">
+            <div class="settings-label" style="z-index:100;">
             <div class="accessibility-plugin-ac">Contrast</div>
           </div>
           <input aria-label="Contrast" type="range" id="contrast-range-scale" min="0" max="100" value="100" onchange="setReadability()">
