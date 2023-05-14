@@ -545,29 +545,35 @@ document.addEventListener("DOMContentLoaded", function() {
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 });
 
+
+
+
+
 function adjustFontSize(className, change) {
   const body = document.querySelector('body');
   const elements = body.querySelectorAll(`.${className}`);
-
-  let fontSize = parseFloat(localStorage.getItem('fontSize')) || 16;
-
-  if (change === 'increase') {
-    fontSize += 2;
-  } else if (change === 'decrease') {
-    fontSize -= 2;
-  } else if (change === 'normal') {
-    fontSize = 16;
-  }
-
-  localStorage.setItem('fontSize', fontSize);
+  const navbar = document.getElementById('earthbook-navbar');
 
   elements.forEach(element => {
+    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+    fontSize = parseFloat(fontSize);
+
+    if (change === 'increase') {
+      fontSize += 1;
+    } else if (change === 'decrease') {
+      fontSize -= 1;
+    } else if (change === 'normal') {
+      fontSize = 16;
+    }
+
     element.style.fontSize = `${fontSize}px`;
   });
+
+  let navbarHeight = window.getComputedStyle(navbar).getPropertyValue('height');
+  navbarHeight = parseFloat(navbarHeight) + 3;
+  navbar.style.height = `${navbarHeight}px`;
 }
-window.onload = function() {
-  adjustFontSize('user-set-font-size', 'normal');
-};
+
 
  
  /* -------------------------------------------------------------------------- */
