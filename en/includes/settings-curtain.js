@@ -40,8 +40,9 @@ class SettingsCurtain extends HTMLElement {
             </div>
             
 
-            
-            <div class="settings-label" style="z-index:100;">
+        <div class="set-readability" style="z-index:100;">
+
+            <div class="settings-label" >
             <div class="accessibility-plugin-ac">Contrast</div>
           </div>
           <input aria-label="Contrast" type="range" id="contrast-range-scale" min="0" max="100" value="100" onchange="setReadability()">
@@ -55,6 +56,8 @@ class SettingsCurtain extends HTMLElement {
             <div class="accessibility-plugin-ac">Brightness</div>
           </div>
           <input aria-label="Brightness" type="range" id="brightness-range-scale" min="0" max="100" value="100" onchange="setReadability()">
+        
+        </div>
           
             
         </div>                                                              
