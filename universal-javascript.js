@@ -592,7 +592,10 @@ function setNavbarHeight(height) {
 }
 
 
-
+function reset2Default() {
+  localStorage.clear();
+  window.location.reload();
+}
 
 
 /*
