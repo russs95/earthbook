@@ -263,6 +263,9 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
    document.getElementById("left-settings-overlay").style.width = "100%";
    document.body.style.overflowY = "hidden";
    // document.body.style.maxHeight = "101vh";
+  // document.getElementById("underlayer").filter.width = "blur(3px)";
+
+
  
   var modal = document.getElementById('left-settings-overlay');
  
