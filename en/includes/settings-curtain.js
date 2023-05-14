@@ -34,9 +34,9 @@ class SettingsCurtain extends HTMLElement {
         
 
             <div id="text-adjust">
-                <button id="increase-plugin-ac" aria-label="Increase Text Size">+A</button>
-                <button id="normal-plugin-ac" aria-label="Return Text Size to Default">A</button>
-                <button id="decrease-plugin-ac" aria-label="Decrease Text Size">A-</button>
+                <button id="increase-font-size" aria-label="Increase Text Size">+A</button>
+                <button id="normal-font-size" aria-label="Return Text Size to Default">A</button>
+                <button id="decrease-font-size" aria-label="Decrease Text Size">A-</button>
             </div>
             
 
