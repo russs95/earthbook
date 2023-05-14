@@ -605,26 +605,30 @@ function guidedTour() {
     }
   }
 
-  // Set the onclick function for the first "Next" button to show the second "information" element
-  document.querySelector(".next:first-of-type").onclick = function() {
-    showInfo(1);
-  };
+  // Set the onclick function for the "Back" button in the third "information" element to show the second "information" element
+document.querySelector("#information-two .back").onclick = function() {
+  showInfo(0);
+};
 
-  // Set the onclick function for the second "Next" button to show the third "information" element
-  document.querySelector("#information-two .next").onclick = function() {
-    showInfo(2);
-  };
+// Set the onclick function for the "Back" button in the fourth "information" element to show the third "information" element
+document.querySelector("#information-three .back").onclick = function() {
+  showInfo(1);
+};
 
-  // Set the onclick function for the third "Next" button to show the fourth "information" element
-  document.querySelector("#information-three .next").onclick = function() {
-    showInfo(3);
-  };
+// Set the onclick function for the "Back" button in the fifth "information" element to show the fourth "information" element
+document.querySelector("#information-four .back").onclick = function() {
+  showInfo(2);
+};
 
-  // Set the onclick function for the fourth "Next" button to show the fifth "information" element
-  document.querySelector("#information-four .next").onclick = function() {
-    showInfo(4);
-  };
+// Set the onclick function for the "Back" button in the fifth "information" element to show the fourth "information" element
+document.querySelector("#information-five .back").onclick = function() {
+  showInfo(3);
+};
 
+// Set the onclick function for the "Back" button in the sixth "information" element to show the fifth "information" element
+document.querySelector("#information-six .back").onclick = function() {
+  showInfo(4);
+};
     // Set the onclick function for the fith "Next" button to show the six "information" element
     document.querySelector("#information-five .next").onclick = function() {
       showInfo(5);
