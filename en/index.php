@@ -17,13 +17,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-
-
-<?php require_once ("lang.php");
-
-echo <<<_END
-<html lang="$lang">
-_END;?>
+<html lang="en">
 
 <!-- this sets PHP variables for the pages that will be used later on-->
 
@@ -41,23 +35,32 @@ $chap_number = "Book One";?>
 
 <script>
     //set master page variables
-
     let lang = "en";
-    let parts = "";
-    let name = "";
-    let page_number = "";
-    let page_title = "Tractatus Ayyew | An Earthen Ethic - Earthbook Edition";
+    let parts = window.location.pathname.split("/");
+    let name = parts[parts.length - 1];
+    if (name === "index.php") {
+        name = "";
+    }
+    let page_number = "0";
+    let page_title = "TTractatus Ayyew | An Earthen Ethic - Earthbook Edition";
     let chap_name = "";
     let chap_number = "Book One";
 
-</script>
+    // set meta tag links
+    document.querySelector("link[rel='canonical']").setAttribute("href", "https://book.earthen.io/" + lang + "/" + name);
+    document.querySelector("link[rel='alternate'][hreflang='en']").setAttribute("href", "https://book.earthen.io/en/" + name);
+    document.querySelector("link[rel='alternate'][hreflang='x-default']").setAttribute("href", "http://book.earthen.io/en/" + name);
+    document.querySelector("link[rel='alternate'][hreflang='fr']").setAttribute("href", "https://book.earthen.io/fr/" + name);
+    document.querySelector("link[rel='alternate'][hreflang='es']").setAttribute("href", "https://book.earthen.io/es/" + name);
+    document.querySelector("title").innerText = page_title;
+    </script>
 
-<link rel="canonical" href="https://book.earthen.io/<?php echo ($lang); ;?>/<?php echo ($name); ;?>"> 
-<link rel="alternate" href="https://book.earthen.io/en/<?php echo ($name); ;?>" hreflang="en" >
-<link rel="alternate" href="http://book.earthen.io/en/<?php echo ($name); ;?>" hreflang="x-default" >
-<!--<link rel="alternate" href="https://book.earthen.io/fr/<?php echo ($name); ;?>" hreflang="fr" >
-<link rel="alternate" href="https://book.earthen.io/es/<?php echo ($name); ;?>" hreflang="es" >
-<link rel="alternate" href="https://book.earthen.io/id/<?php echo ($name); ;?>" hreflang="id" >-->
+<link rel="canonical" href="">
+<link rel="alternate" href="" hreflang="en" >
+<link rel="alternate" href="" hreflang="x-default" >
+<link rel="alternate" href="" hreflang="fr" >
+<link rel="alternate" href="" hreflang="es" >
+<link rel="alternate" href="" hreflang="id" >
 
 
 <meta charset="UTF-8"> 
@@ -228,7 +231,7 @@ Must be updated for each page-->
 
 <!-- PAGE CONTENT-->
 
-<div id="main-page">
+<div id="main-page" class="accessibility-plugin-ac">
 <!-- The flexible grid (content) -->
 	<div id="row">
         <div id="side">
