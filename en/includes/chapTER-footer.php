@@ -258,35 +258,6 @@ function clearResults() {
 
 </script>
 
-<script>
-function adjustFontSize(className, change) {
-  const elements = document.querySelectorAll(`.${className}`);
-
-  elements.forEach(element => {
-    updateFontSize(element, change);
-  });
-}
-
-function updateFontSize(element, change) {
-  let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
-  fontSize = parseFloat(fontSize);
-
-  if (change === 'increase') {
-    fontSize += 1;
-  } else if (change === 'decrease') {
-    fontSize -= 1;
-  } else if (change === 'normal') {
-    fontSize = "";
-  }
-
-  element.style.fontSize = `${fontSize}px`;
-
-  // Recursively update font size for child elements
-  const children = element.children;
-  for (let i = 0; i < children.length; i++) {
-    updateFontSize(children[i], change);
-  }
-}
 
 
   </script>
