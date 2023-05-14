@@ -549,21 +549,26 @@ function adjustFontSize(className, change) {
   const body = document.querySelector('body');
   const elements = body.querySelectorAll(`.${className}`);
 
+  let fontSize = parseFloat(localStorage.getItem('fontSize')) || 16;
+
+  if (change === 'increase') {
+    fontSize += 2;
+  } else if (change === 'decrease') {
+    fontSize -= 2;
+  } else if (change === 'normal') {
+    fontSize = 16;
+  }
+
+  localStorage.setItem('fontSize', fontSize);
+
   elements.forEach(element => {
-    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
-    fontSize = parseFloat(fontSize);
-
-    if (change === 'increase') {
-      fontSize += 2;
-    } else if (change === 'decrease') {
-      fontSize -= 2;
-    } else if (change === 'normal') {
-      fontSize = 16;
-    }
-
     element.style.fontSize = `${fontSize}px`;
   });
 }
+window.onload = function() {
+  adjustFontSize('user-set-font-size', 'normal');
+};
+
  
  /* -------------------------------------------------------------------------- */
  
