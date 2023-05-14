@@ -513,7 +513,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 
   // Update slider event listeners to use setPointerCapture
-  const sliders = document.querySelectorAll('input[type="range"]');
+  /*const sliders = document.querySelectorAll('input[type="range"]');
   sliders.forEach((slider) => {
     slider.addEventListener('pointerdown', () => {
       slider.setPointerCapture(slider.pointerId);
@@ -521,7 +521,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
     slider.addEventListener('pointerup', () => {
       slider.releasePointerCapture(slider.pointerId);
     });
-  });
+  });*/
 }
 
 
