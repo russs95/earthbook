@@ -480,7 +480,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  
  /* -------------------------------------------------------------------------- */
  
- /*max-height:100vh; overflow:hidden;*/
+ /*max-height:100vh; overflow:hidden;
  
   function Sepia(e)
  {
@@ -502,7 +502,16 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  var val = e.value;
  containerBrightness.setAttribute("style", "filter: brightness("+val+"%); height: 100vh; overflow-y: hidden;");
  
- }
+ }*/
+
+ function setReadability() {
+  const brightness = document.getElementById("brightness-range-scale").value;
+  const contrast = document.getElementById("contrast-range-scale").value;
+  const sepia = document.getElementById("sepia-range-scale").value;
+
+  document.body.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
+}
+
  
  
  
