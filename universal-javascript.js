@@ -545,30 +545,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
- 
-function adjustFontSize(factor) {
-  const elements = document.getElementsByTagName("body")[0].getElementsByTagName("*");
-  for (let i = 0; i < elements.length; i++) {
-    let fontSize = window.getComputedStyle(elements[i], null).getPropertyValue('font-size');
-    fontSize = parseFloat(fontSize);
-    elements[i].style.fontSize = (fontSize + factor) + 'px';
-  }
-}
-
-const normalFontSizeButton = document.getElementById("normal-font-size");
-normalFontSizeButton.addEventListener("click", () => {
-  adjustFontSize(0);
-});
-
-const increaseFontSizeButton = document.getElementById("increase-font-size");
-increaseFontSizeButton.addEventListener("click", () => {
-  adjustFontSize(1);
-});
-
-const decreaseFontSizeButton = document.getElementById("decrease-font-size");
-decreaseFontSizeButton.addEventListener("click", () => {
-  adjustFontSize(-1);
-});
 
  
  /* -------------------------------------------------------------------------- */

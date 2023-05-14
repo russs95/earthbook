@@ -2848,7 +2848,7 @@ border-radius: 55px;
 
 }
 
-#increase-plugin-ac  {
+#increase-font-size  {
 padding: 10px;
 border: grey;
 background: white;
@@ -2866,7 +2866,7 @@ margin: 7px;
 cursor: pointer;
     }
 
-#normal-plugin-ac {
+#normal-font-size {
   padding: 10px;
   border: grey;
   background: white;
@@ -2884,7 +2884,7 @@ cursor: pointer;
   cursor: pointer;
     }
 
-#decrease-plugin-ac {
+#decrease-font-size {
   padding: 10px;
   border: grey;
   background: white;
