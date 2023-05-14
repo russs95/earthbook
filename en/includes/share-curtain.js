@@ -19,7 +19,7 @@ class ShareCurtain extends HTMLElement {
             
             <div>
                 <h1 class="accessibility-plugin-ac">Share & Cite</h1> 
-                <h3>Earthbooks are designed to enable you to easily share and cite chapters.  Copy the link to this chapter...</h3>
+                <h3>Earthbooks enable you to easily share and cite chapters and the book.</h3>
             </div>
             
             <div class="copy-section">
@@ -57,7 +57,7 @@ class ShareCurtain extends HTMLElement {
           </div>-->
 
       <div>
-        <h4>Or copy the <a href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;" aria-label="Or copy the citation for this chapter">citation for this chapter</a>.</h4>
+        <h4>Or copy just <a href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;" aria-label="Or copy the citation for this chapter">the URL for this chapter.</a>.</h4>
       </div>
       <div><img src="../icons/cc-by-sa.svg" alt="Creative Commons CC-BY-SA icon" style="height: 25px" title="The content of an Earthbook is under a Creative-Commons ND-SA-AT 4.0 license which means you can freely share the links to this page, quote passages, download and share the PDF-- just be sure to attribute, share-alike and record your citation."></div>
 
@@ -88,7 +88,7 @@ clipboard.on('error', function (e) {
 
 document.getElementById("page-url").innerHTML = 
 
-"Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Bali, Indonesia, 2022), <?php echo ($chap_number); echo ($chap_name);?>" + window.location.href;
+"Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), <?php echo ($chap_number); echo ($chap_name);?>" + window.location.href;
 
 //"testing" + window.location.href;
 
