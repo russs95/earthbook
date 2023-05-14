@@ -4080,6 +4080,10 @@ input:checked + label.toggle svg.moon {
 */
 
 .this-one input  {
+  text-align: center;
+}
+
+.this-one input  {
 -moz-appearance: none;
     -webkit-appearance: none;
     align-items: center;
