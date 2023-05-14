@@ -202,7 +202,7 @@ Must be updated for each page-->
 
 <!-- PAGE CONTENT-->
 
-<div id="main-page">
+<div id="main-page" class="accessibility-plugin-ac">
 <!-- The flexible grid (content) -->
 	<div id="row">
         <div id="side">
@@ -600,21 +600,6 @@ function clearResults() {
     
 
 
-function adjustFontSize(change) {
-  const underlayer = document.getElementById('main-page');
-  let fontSize = window.getComputedStyle(underlayer).getPropertyValue('font-size');
-  fontSize = parseFloat(fontSize);
-
-  if (change === 'increase') {
-    fontSize += 2;
-  } else if (change === 'decrease') {
-    fontSize -= 2;
-  } else if (change === 'normal') {
-    fontSize = 16;
-  }
-
-  underlayer.style.fontSize = `${fontSize}px`;
-}
 
 </script>
 

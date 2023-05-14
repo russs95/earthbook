@@ -59,12 +59,12 @@ Must be updated for each page-->
 
 <!--MAIN HTML Begins-->
 
-<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
+<BODY style="max-width:100%; overflow-x:hidden;">
 <!--TOUR-CURTAIN-->
 <tour-curtain></tour-curtain>
 
 
-  <div id="underlayer" >
+  <div id="underlayer" class="accessibility-plugin-ac" >
 
     <div id="top"></div>
 

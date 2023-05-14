@@ -543,9 +543,9 @@ document.addEventListener("DOMContentLoaded", function() {
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 });
 
-function adjustFontSize(change) {
-  const underlayer = document.getElementById('underlayer');
-  let fontSize = window.getComputedStyle(underlayer).getPropertyValue('font-size');
+// Function to adjust font size of specified element
+function adjustFontSize(element, change) {
+  let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
   fontSize = parseFloat(fontSize);
 
   if (change === 'increase') {
@@ -556,8 +556,41 @@ function adjustFontSize(change) {
     fontSize = 16;
   }
 
-  underlayer.style.fontSize = `${fontSize}px`;
+  element.style.fontSize = `${fontSize}px`;
 }
+
+// Function to apply user's font size setting
+function applyFontSizeSetting() {
+  const fontSize = localStorage.getItem('fontSize');
+  const elements = document.querySelectorAll('.user-set-font-size');
+
+  elements.forEach(element => {
+    element.style.fontSize = `${fontSize}px`;
+  });
+}
+
+// Function to save user's font size setting
+function saveFontSizeSetting(fontSize) {
+  localStorage.setItem('fontSize', fontSize);
+}
+
+// Event listener for font size buttons
+const buttons = document.querySelectorAll('#text-adjust button');
+
+buttons.forEach(button => {
+  button.addEventListener('click', event => {
+    const change = event.target.dataset.change;
+    const elements = document.querySelectorAll('.user-set-font-size');
+
+    elements.forEach(element => {
+      adjustFontSize(element, change);
+      saveFontSizeSetting(parseInt(window.getComputedStyle(element).getPropertyValue('font-size')));
+    });
+  });
+});
+
+// Apply user's font size setting on page load
+applyFontSizeSetting();
 
  
  /* -------------------------------------------------------------------------- */
