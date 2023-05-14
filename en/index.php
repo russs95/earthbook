@@ -600,28 +600,6 @@ function clearResults() {
     </script>
 
 
-<script>
-function adjustFontSize(className, change) {
-  const body = document.querySelector('body');
-  const elements = body.querySelectorAll(`.${className}`);
-
-  elements.forEach(element => {
-    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
-    fontSize = parseFloat(fontSize);
-
-    if (change === 'increase') {
-      fontSize += 1;
-    } else if (change === 'decrease') {
-      fontSize -= 1;
-    } else if (change === 'normal') {
-      fontSize = "unset";
-    }
-
-    element.style.fontSize = `${fontSize}px`;
-  });
-}
-
-  </script>
 
 </html>
 

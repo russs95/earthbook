@@ -543,8 +543,34 @@ document.addEventListener("DOMContentLoaded", function() {
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 });
 
+function adjustFontSize(className, change) {
+  const body = document.querySelector('body');
+  const elements = body.querySelectorAll(`.${className}`);
 
+  elements.forEach(element => {
+    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+    fontSize = parseFloat(fontSize);
 
+    if (change === 'increase') {
+      fontSize += 1;
+    } else if (change === 'decrease') {
+      fontSize -= 1;
+    } else if (change === 'normal') {
+      fontSize = "unset";
+    }
+
+    element.style.fontSize = `${fontSize}px`;
+    localStorage.setItem('UserSetFontSize', `${fontSize}px`);
+  });
+}
+
+// Set the font size on page load
+window.onload = () => {
+  const userSetFontSize = localStorage.getItem('UserSetFontSize');
+  if (userSetFontSize) {
+    adjustFontSize('user-set-font-size', 'set', userSetFontSize);
+  }
+}
 
  
  /* -------------------------------------------------------------------------- */
