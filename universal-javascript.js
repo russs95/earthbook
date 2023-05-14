@@ -533,6 +533,7 @@ function setReadability() {
 
 }
 
+/*
 document.addEventListener("DOMContentLoaded", function() {
   const brightness = localStorage.getItem('brightness') || 100;
   const contrast = localStorage.getItem('contrast') || 100;
@@ -543,11 +544,58 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("sepia-range-scale").value = sepia;
 
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
+});*/
+
+document.addEventListener("DOMContentLoaded", function() {
+  const brightness = localStorage.getItem('brightness') || 100;
+  const contrast = localStorage.getItem('contrast') || 100;
+  const sepia = localStorage.getItem('sepia') || 0;
+  const userSetFontSize = localStorage.getItem('userSetFontSize') || 16;
+  const navbarHeight = localStorage.getItem('navbarHeight') || '100px';
+
+  document.getElementById("brightness-range-scale").value = brightness;
+  document.getElementById("contrast-range-scale").value = contrast;
+  document.getElementById("sepia-range-scale").value = sepia;
+
+  document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
+  document.getElementById("earthbook-navbar").style.height = navbarHeight;
+
+  adjustFontSize('user-set-font-size', null);
 });
 
 
 
+function adjustFontSize(className, change) {
+  const body = document.querySelector('body');
+  const elements = body.querySelectorAll(`.${className}`);
+  const userSetFontSize = localStorage.getItem('userSetFontSize');
 
+  elements.forEach(element => {
+    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+    fontSize = parseFloat(fontSize);
+
+    if (userSetFontSize && !change) {
+      fontSize = userSetFontSize;
+    } else {
+      if (change === 'increase') {
+        fontSize += 2;
+      } else if (change === 'decrease') {
+        fontSize -= 2;
+      } else if (change === 'normal') {
+        fontSize = 16;
+      }
+
+      localStorage.setItem('userSetFontSize', fontSize);
+    }
+
+    element.style.fontSize = `${fontSize}px`;
+  });
+}
+
+
+
+
+/*
 
 function adjustFontSize(className, change) {
   const body = document.querySelector('body');
@@ -571,10 +619,10 @@ function adjustFontSize(className, change) {
 
   let navbarHeight = window.getComputedStyle(navbar).getPropertyValue('height');
   navbarHeight = parseFloat(navbarHeight) + 3;
-  navbar.style.height = `${navbarHeight}px`;
+  navbar.style.minHeight = `${navbarHeight}px`;
 }
 
-
+*/
  
  /* -------------------------------------------------------------------------- */
  
@@ -641,7 +689,7 @@ function closeTour() {
   // Get the modal and set its display to "block" to show it
   var modal = document.getElementById("guided-tour");
   modal.style.display = "none";
-  document.getElementById("underlayer").classList.remove("blur");
+  //document.getElementById("underlayer").classList.remove("blur");
 }
 
 
