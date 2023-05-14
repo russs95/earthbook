@@ -263,7 +263,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
    document.getElementById("left-settings-overlay").style.width = "100%";
    document.body.style.overflowY = "hidden";
    // document.body.style.maxHeight = "101vh";
-   document.getElementById("underlayer").filter.width = "blur(3px)";
+   //document.getElementById("underlayer").filter.width = "blur(3px)";
 
  
   var modal = document.getElementById('left-settings-overlay');
@@ -558,14 +558,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 
-  adjustFontSize('user-set-font-size', null);
+  adjustFontSize('accessibility-plugin-ac', null);
 });
 
 
-
 function adjustFontSize(className, change) {
-  const body = document.querySelector('body');
-  const elements = body.querySelectorAll(`.${className}`);
+  const elements = document.querySelectorAll(`.${className}`);
   const userSetFontSize = localStorage.getItem('userSetFontSize');
 
   elements.forEach(element => {
@@ -589,6 +587,8 @@ function adjustFontSize(className, change) {
     element.style.fontSize = `${fontSize}px`;
   });
 }
+
+
 
 
 
