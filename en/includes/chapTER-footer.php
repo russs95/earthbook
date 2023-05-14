@@ -259,35 +259,47 @@ function clearResults() {
 </script>
 
 <script>
-  // Function to adjust the font size
+
 function adjustFontSize(className, change) {
-  const body = document.querySelector('body');
-  const elements = body.querySelectorAll(`.${className}`);
+  const elements = document.querySelectorAll(`.${className}`);
+
+  let userSetFontSize = localStorage.getItem('userSetFontSize');
+  if (!userSetFontSize) {
+    userSetFontSize = 16;
+  }
 
   elements.forEach(element => {
-    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
-    fontSize = parseFloat(fontSize);
-
-    if (change === 'increase') {
-      fontSize += 1;
-    } else if (change === 'decrease') {
-      fontSize -= 1;
-    } else if (change === 'normal') {
-      fontSize = "unset";
-    }
-
-    element.style.fontSize = `${fontSize}px`;
-    localStorage.setItem('UserSetFontSize', `${fontSize}px`);
+    updateFontSize(element, change, userSetFontSize);
   });
-}
 
-// Set the font size on page load
-window.onload = () => {
-  const userSetFontSize = localStorage.getItem('UserSetFontSize');
-  if (userSetFontSize) {
-    adjustFontSize('user-set-font-size', 'set', userSetFontSize);
+  if (change === 'normal') {
+    localStorage.removeItem('userSetFontSize');
+  } else {
+    localStorage.setItem('userSetFontSize', userSetFontSize);
   }
 }
+
+function updateFontSize(element, change, userSetFontSize) {
+  let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+  fontSize = parseFloat(fontSize);
+
+  if (change === 'increase') {
+    fontSize += 1;
+  } else if (change === 'decrease') {
+    fontSize -= 1;
+  } else if (change === 'normal') {
+    fontSize = userSetFontSize;
+  }
+
+  element.style.fontSize = `${fontSize}px`;
+
+  // Recursively update font size for child elements
+  const children = element.children;
+  for (let i = 0; i < children.length; i++) {
+    updateFontSize(children[i], change, userSetFontSize);
+  }
+}
+
 
 
 
