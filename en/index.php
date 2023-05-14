@@ -17,6 +17,19 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
+<script>
+    //set master page variables
+
+    let lang = "<?php echo $lang; ?>";
+    let parse = "<?php echo $parse; ?>";
+    let name = "<?php echo $name; ?>";
+    let page_number = "<?php echo $page_number; ?>";
+    let page_title = "<?php echo $page_title; ?>";
+    let chap_name = "<?php echo $chap_name; ?>";
+    let chap_number = "<?php echo $chap_number; ?>";
+
+</script>
+
 <?php require_once ("lang.php");
 
 echo <<<_END
@@ -117,7 +130,7 @@ All the css needed for this page-->
  <script src="../universal-javascript.js" defer></script>
  <script src="../clip/dist/clipboard.min.js"></script>
  <!--<script src="../accessibility.js" defer></script>-->
- <script type="module" src="https://unpkg.com/dark-mode-toggle" async></script>
+ <script type="module" src="./dark-mode-toggle.mjs.js" async></script>
  
  <!-- Arc CDN Script without delay
 <script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
