@@ -263,8 +263,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
    document.getElementById("left-settings-overlay").style.width = "100%";
    document.body.style.overflowY = "hidden";
    // document.body.style.maxHeight = "101vh";
-  // document.getElementById("underlayer").filter.width = "blur(3px)";
-
+   document.getElementById("underlayer").filter.width = "blur(3px)";
 
  
   var modal = document.getElementById('left-settings-overlay');
@@ -546,55 +545,25 @@ document.addEventListener("DOMContentLoaded", function() {
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 });
 
-// Function to adjust font size of specified element
-function adjustFontSize(element, change) {
-  let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
-  fontSize = parseFloat(fontSize);
-
-  if (change === 'increase') {
-    fontSize += 2;
-  } else if (change === 'decrease') {
-    fontSize -= 2;
-  } else if (change === 'normal') {
-    fontSize = 16;
-  }
-
-  element.style.fontSize = `${fontSize}px`;
-}
-
-// Function to apply user's font size setting
-function applyFontSizeSetting() {
-  const fontSize = localStorage.getItem('fontSize');
-  const elements = document.querySelectorAll('.user-set-font-size');
+function adjustFontSize(className, change) {
+  const body = document.querySelector('body');
+  const elements = body.querySelectorAll(`.${className}`);
 
   elements.forEach(element => {
+    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+    fontSize = parseFloat(fontSize);
+
+    if (change === 'increase') {
+      fontSize += 2;
+    } else if (change === 'decrease') {
+      fontSize -= 2;
+    } else if (change === 'normal') {
+      fontSize = 16;
+    }
+
     element.style.fontSize = `${fontSize}px`;
   });
 }
-
-// Function to save user's font size setting
-function saveFontSizeSetting(fontSize) {
-  localStorage.setItem('fontSize', fontSize);
-}
-
-// Event listener for font size buttons
-const buttons = document.querySelectorAll('#text-adjust button');
-
-buttons.forEach(button => {
-  button.addEventListener('click', event => {
-    const change = event.target.dataset.change;
-    const elements = document.querySelectorAll('.user-set-font-size');
-
-    elements.forEach(element => {
-      adjustFontSize(element, change);
-      saveFontSizeSetting(parseInt(window.getComputedStyle(element).getPropertyValue('font-size')));
-    });
-  });
-});
-
-// Apply user's font size setting on page load
-applyFontSizeSetting();
-
  
  /* -------------------------------------------------------------------------- */
  
