@@ -276,7 +276,7 @@ function updateFontSize(element, change) {
   } else if (change === 'decrease') {
     fontSize -= 1;
   } else if (change === 'normal') {
-    fontSize = "unset";
+    fontSize = "";
   }
 
   element.style.fontSize = `${fontSize}px`;

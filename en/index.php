@@ -202,7 +202,7 @@ Must be updated for each page-->
 
 <!-- PAGE CONTENT-->
 
-<div id="main-page" class="accessibility-plugin-ac">
+<div id="main-page">
 <!-- The flexible grid (content) -->
 	<div id="row">
         <div id="side">
