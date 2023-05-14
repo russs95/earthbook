@@ -44,15 +44,7 @@ class SettingsCurtain extends HTMLElement {
             <div class="settings-label" >
             <div class="accessibility-plugin-ac">Contrast</div>
           </div>
-          <input aria-label="Contrast" type="range" id="contrast-range-scale" min="0" max="100" value="100" step=20 list=tickmarks>
-          <datalist id=tickmarks>
-          <option>0</option>
-          <option>20</option>
-          <option>40</option>
-          <option>60</option>
-          <option>80</option>
-          <option>100</option>
-          </datalist onchange="setReadability()">
+          <input aria-label="Contrast" type="range" id="contrast-range-scale" min="0" max="100" value="100" onchange="setReadability()">
           
           <div class="settings-label">
             <div class="accessibility-plugin-ac">Sepia</div>
