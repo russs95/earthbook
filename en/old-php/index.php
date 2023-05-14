@@ -17,7 +17,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
 
-
+<html lang="en">
 
 <?php require_once ("lang.php");
 
