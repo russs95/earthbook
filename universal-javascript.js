@@ -561,30 +561,22 @@ document.addEventListener("DOMContentLoaded", function() {
   adjustFontSize('accessibility-plugin-ac', null);
 });
 
-
 function adjustFontSize(className, change) {
   const elements = document.querySelectorAll(`.${className}`);
-  const userSetFontSize = localStorage.getItem('userSetFontSize');
+  let userSetFontSize = parseFloat(localStorage.getItem('userSetFontSize')) || null;
+
+  if (change === 'increase') {
+    userSetFontSize += 2;
+  } else if (change === 'decrease') {
+    userSetFontSize -= 2;
+  } else if (change === 'normal') {
+    userSetFontSize = 16;
+  }
+
+  localStorage.setItem('userSetFontSize', userSetFontSize);
 
   elements.forEach(element => {
-    let fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
-    fontSize = parseFloat(fontSize);
-
-    if (userSetFontSize && !change) {
-      fontSize = userSetFontSize;
-    } else {
-      if (change === 'increase') {
-        fontSize += 2;
-      } else if (change === 'decrease') {
-        fontSize -= 2;
-      } else if (change === 'normal') {
-        fontSize = 16;
-      }
-
-      localStorage.setItem('userSetFontSize', fontSize);
-    }
-
-    element.style.fontSize = `${fontSize}px`;
+    element.style.fontSize = `${userSetFontSize}px`;
   });
 }
 
