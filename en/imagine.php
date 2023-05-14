@@ -64,7 +64,7 @@ Must be updated for each page-->
 <tour-curtain></tour-curtain>
 
 
-  <div id="underlayer">
+  <div id="underlayer" class="accessibility-plugin-ac" >
 
     <div id="top"></div>
 
