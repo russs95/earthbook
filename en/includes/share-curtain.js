@@ -87,7 +87,10 @@ clipboard.on('error', function (e) {
 
 
 document.getElementById("page-url").innerHTML = 
-"testing" + window.location.href;
+
+"Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Bali, Indonesia, 2022), <?php echo ($chap_number); echo ($chap_name);?>" + window.location.href;
+
+//"testing" + window.location.href;
 
 
 function confirmCopy() {
