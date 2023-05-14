@@ -551,6 +551,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const contrast = localStorage.getItem('contrast') || 100;
   const sepia = localStorage.getItem('sepia') || 0;
   const userSetFontSize = localStorage.getItem('userSetFontSize') || 16;
+  const navbarHeight = localStorage.getItem('navbarHeight') || 60;
 
   document.getElementById("brightness-range-scale").value = brightness;
   document.getElementById("contrast-range-scale").value = contrast;
@@ -559,6 +560,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 
   adjustFontSize('accessibility-plugin-ac', null);
+  setNavbarHeight(navbarHeight);
 });
 
 function adjustFontSize(className, change) {
@@ -578,8 +580,16 @@ function adjustFontSize(className, change) {
   elements.forEach(element => {
     element.style.fontSize = `${userSetFontSize}px`;
   });
+
+  const navbarHeight = parseFloat(localStorage.getItem('navbarHeight')) || 60;
+  setNavbarHeight(navbarHeight + (change === 'increase' ? 3 : change === 'decrease' ? -3 : 0));
 }
 
+function setNavbarHeight(height) {
+  const navbar = document.querySelector('#earthbook-navbar');
+  navbar.style.minHeight = `${height}px`;
+  localStorage.setItem('navbarHeight', height);
+}
 
 
 
