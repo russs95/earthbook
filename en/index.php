@@ -491,18 +491,11 @@ Must be updated for each page-->
 
 
             </div>
-
+<br>
             <?php require_once ("../manage.php");?>
 
-            <br><br>
+            
 
-            <dark-mode-toggle
-        id="dark-mode-toggle-5"
-        class="slider"
-        legend="Dark Slider"
-        remember="Remember this"
-        appearance="toggle"
-      ></dark-mode-toggle>
 
         </div>
 

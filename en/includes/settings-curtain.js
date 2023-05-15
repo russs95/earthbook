@@ -14,8 +14,8 @@ class SettingsCurtain extends HTMLElement {
     
     <div class="overlay-content-settings">
             
-                <div class="compro-toggle">
-                <dark-mode-toggle
+            <div class="compro-toggle">
+            <!--   <dark-mode-toggle
                 id="dark-mode-toggle-1"
                 legend=""
                 appearance="switch"
@@ -24,14 +24,14 @@ class SettingsCurtain extends HTMLElement {
                 remember="Remember this"
                 ></dark-mode-toggle>
 
-                <br><br>
+                <br><br>-->
 
 
             <dark-mode-toggle
             id="dark-mode-toggle-5"
             class="slider"
-            legend="Dark Slider"
-            remember="Remember this"
+            legend="Choose Day or Night mode:"
+            remember="Remember for all pages:"
             appearance="toggle"
           ></dark-mode-toggle>
                             </div>
