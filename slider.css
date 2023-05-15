@@ -1,7 +1,7 @@
 dark-mode-toggle.slider::part(toggleLabel) {
   display: inline-block;
   position: relative;
-  height: calc(var(--dark-mode-toggle-icon-size, 1rem) * 3);
+  height: calc(var(--dark-mode-toggle-icon-size, 1rem) * 2);
   width: calc(var(--dark-mode-toggle-icon-size, 1rem) * 4.5);
   background-color: #b7bbbd;
   border-radius: var(--dark-mode-toggle-icon-size, 1rem);

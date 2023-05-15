@@ -14,27 +14,7 @@ class SettingsCurtain extends HTMLElement {
     
     <div class="overlay-content-settings">
             
-            <div class="compro-toggle">
-            <!--   <dark-mode-toggle
-                id="dark-mode-toggle-1"
-                legend=""
-                appearance="switch"
-                dark="Dark"
-                light="Light&nbsp;&nbsp;&nbsp;"
-                remember="Remember this"
-                ></dark-mode-toggle>
-
-                <br><br>-->
-
-<p>Choose Day or Night mode:</p>
-            <dark-mode-toggle
-            id="dark-mode-toggle-5"
-            class="slider"
-            legend=""
-            remember="Remember for all pages:"
-            appearance="toggle"
-          ></dark-mode-toggle>
-                            </div>
+            
 
 
                             
@@ -71,6 +51,22 @@ class SettingsCurtain extends HTMLElement {
             <div class="accessibility-plugin-ac">Brightness</div>
           </div>
           <input aria-label="Brightness" type="range" id="brightness-range-scale" min="0" max="100" value="100" onchange="setReadability()">
+
+          <div class="compro-toggle">
+
+          <div class="settings-label">
+            <div class="accessibility-plugin-ac">Choose Night or Day mode:</div>
+          </div>
+  
+              <dark-mode-toggle
+              id="dark-mode-toggle-5"
+              class="slider"
+              legend=""
+              remember="Remember for all pages:"
+              appearance="toggle">
+              </dark-mode-toggle>
+
+            </div>
         
           
           <button onclick="reset2Default()" style="width: 200px;
