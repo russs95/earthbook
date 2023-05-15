@@ -68,7 +68,6 @@ All the css needed for this page-->
 
 <link rel="preload" href="../style-sheet.css?v2.5" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../light.css?v1.9" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
 <link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
 <link rel="preload" as="image" href="../svgs/up-arrow-light.svg">
