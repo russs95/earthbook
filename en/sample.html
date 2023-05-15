@@ -8,36 +8,19 @@
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
-                    var translations = parsePoFile(this.responseText);
+                    var translations = JSON.parse(this.responseText);
                     translatePage(translations);
                 }
             };
-            xhttp.open("GET", lang + ".po", true);
+            xhttp.open("GET", "translations/" + lang + ".json", true);
             xhttp.send();
         }
-    
-        function parsePoFile(poContent) {
-            var translations = {};
-            var lines = poContent.split('\n');
-            var currentMsgid = null;
-            for (var i = 0; i < lines.length; i++) {
-                var line = lines[i].trim();
-                if (line.startsWith('msgid')) {
-                    currentMsgid = line.substring(7, line.length - 1);
-                } else if (line.startsWith('msgstr')) {
-                    var msgstr = line.substring(8, line.length - 1);
-                    translations[currentMsgid] = msgstr;
-                }
-            }
-            return translations;
-        }
-    
+
         function translatePage(translations) {
             var translateMeElement = document.getElementById("translate-me");
             translateMeElement.innerHTML = translations["{translate_me}"];
         }
     </script>
-    
 </head>
 <body>
     <h1>Welcome!</h1>
