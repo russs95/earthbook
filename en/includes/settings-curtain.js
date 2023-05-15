@@ -26,11 +26,11 @@ class SettingsCurtain extends HTMLElement {
 
                 <br><br>-->
 
-
+<p>Choose Day or Night mode:</p>
             <dark-mode-toggle
             id="dark-mode-toggle-5"
             class="slider"
-            legend="Choose Day or Night mode:"
+            legend=""
             remember="Remember for all pages:"
             appearance="toggle"
           ></dark-mode-toggle>
