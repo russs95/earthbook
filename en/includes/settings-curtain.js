@@ -23,7 +23,20 @@ class SettingsCurtain extends HTMLElement {
                 light="Light&nbsp;&nbsp;&nbsp;"
                 remember="Remember this"
                 ></dark-mode-toggle>
+
+                <br><br>
+
+
+            <dark-mode-toggle
+            id="dark-mode-toggle-5"
+            class="slider"
+            legend="Dark Slider"
+            remember="Remember this"
+            appearance="toggle"
+          ></dark-mode-toggle>
                             </div>
+
+
                             
            <!-- <div id="languages">
             <a href="../en/index.html" aria-label="Switch to the English version"><div class="language-selector">EN</div></a>
