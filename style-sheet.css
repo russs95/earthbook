@@ -1212,10 +1212,9 @@ left: 0;
 /* -------------------------------------------------------------------------- */
 
 #left-settings-overlay {
-  background-color: var(--deeper-accent-color); 
+  background-color: var(--settings-background); 
   color: var(--text-color);
   z-index: 26;
-  opacity:0.9;
 
 }
 
@@ -4391,7 +4390,7 @@ GUIDED TOUR---*
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 20; /* Sit on top */
+  z-index: 30; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
