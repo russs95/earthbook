@@ -60,7 +60,9 @@ class TourCurtain extends HTMLElement {
     <div class="modal-description">Like this Earthbook?  You <a class="java-link" onclick="closeTour(),openBuy()"> can buy</a> the eBook version for your digital library and eReader.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
     <button class="back">↩ Back</button>
     <button class="next">✓ Finish</button>
-    <button class="back" onclick="closeTour(),openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Principles  ➔</button>
+    <button class="back" onclick="closeTour(),openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Learn More  ➔</button>
+    <button class="back" onclick="closeTour(),openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Buy</button>
+
 
   </div>
 </div>
