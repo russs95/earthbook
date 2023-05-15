@@ -19,12 +19,6 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <html lang="en">
 
-<?php require_once ("lang.php");
-
-echo <<<_END
-<html lang="$lang">
-_END;?>
-
 <!-- this sets PHP variables for the pages that will be used later on-->
 
 <?php 
@@ -35,7 +29,8 @@ $name = "";
 $page_number = "0";
 $page_title = "Tractatus Ayyew | An Earthen Ethic - Earthbook Edition";
 $chap_name = "";
-$chap_number = "Book One";?>
+$chap_number = "Book One";
+$lang = "en";?>
 
 <HEAD>
 
@@ -62,7 +57,7 @@ $chap_number = "Book One";?>
 
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2023-5-03T09:14:13+00:00" >
+<meta property="article:modified_time" content="2023-5-15T09:14:13+00:00" >
 
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
@@ -127,9 +122,9 @@ All the css needed for this page-->
 <link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
 <link rel="preload" as="image" href="../svgs/up-arrow-light.svg">
 
-<link rel="stylesheet" href="../light.css?v1.8" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css?v1.8" media="(prefers-color-scheme: dark)">
- <link rel="stylesheet" href="../slider.css?v1.0">
+<link rel="stylesheet" href="../light.css?v1.9" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css?v1.9" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css?v1.1">
  
  <!-- INCLUDES
  Main Scripts-->   
@@ -163,12 +158,12 @@ All the page components required to build this page-->
 <!--META TAGS
 Must be updated for each page-->
 
-<meta property="og:locale" content="<?php echo ($lang); ;?>" >
-<meta property="og:url" content="https://tractatus.earthen.io/<?php echo ($lang); ;?>">
+<meta property="og:locale" content="en_UK" >
+<meta property="og:url" content="https://book.earthen.io/en/">
 
 
 
-<meta property="article:modified_time" content="2023-04-11-21T09:14:13+00:00">
+<meta property="article:modified_time" content="2023-05-11-21T09:14:13+00:00">
 
 <meta name="keywords" content="Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
 
