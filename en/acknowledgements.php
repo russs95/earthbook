@@ -103,7 +103,7 @@ Must be updated for each page-->
  
       width:100%;
       height:fit-content;
-      background-color: green;
+      background-color: #458645;
       display:block;
       border-radius: 10px;
       margin-bottom: 20px;
@@ -181,7 +181,7 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div id="chap-notice">
-  <div id="close-notice" onclick="closeNotice()"><span class="close">&times;</span></div>
+  <div id="close-notice" onclick="closeNotice()">&times;</div>
   <div class="chap-notice-text">
     It looks like its your first time opening this Earthbook!  Before you get going, be sure to <b>±</b> optimize for your eyes.  We also we suggest that you take the 1 minute tour to familarize yourself with the powerful reader tools available under the hood.
   </div>
