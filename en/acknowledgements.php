@@ -187,7 +187,7 @@ Must be updated for each page-->
   <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
   <div class="chap-notice-text">
     <b>It looks like its your first time opening this book!</b>
-    Before you get going, be sure to <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Adjust for your eyes"><b>±</b> optimize for your eyes</a>.  We also we suggest that you take the <a class="java-link" onclick="guidedTour()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">1 minute tour</a> to familarize yourself with the powerful reader tools available under the hood.
+    Before you get going, be sure to <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> for your eyes and take the <a class="java-link" onclick="guidedTour()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">1 minute guided tour</a> of an Earthbook's tools and features.
   </div>
 </div>
 
