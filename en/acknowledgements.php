@@ -100,40 +100,30 @@ Must be updated for each page-->
 
 
     #chap-notice {
-      position:fixed;
-      top:0;
-      left:0;
+ 
       width:100%;
-      height:100%;
-      background-color:rgba(0,0,0,0.8);
-      z-index:1000;
+      height:fit-content;
+      background-color: black;
       display:block;
+      border-radius: 10px;
+
     }
 
     .chap-notice-text {
       position:fixed;
-      top:50%;
-      left:50%;
-      transform:translate(-50%, -50%);
-      width:80%;
-      height:80%;
-      background-color:var(--background-000);
-      z-index:1001;
-      display:block;
-      padding: 2em;
+      font-family: 'Mulish', sans-serif;
       font-size:1.2em;
-      line-height:1.5em;
-      overflow-y:scroll;
+      padding: 15px;
+      color: var(--h1);
+      
     }
 
-    .close-notice {
+    #close-notice {
       position:fixed;
       top:0;
       right:0;
       width:2em;
       height:2em;
-      background-color:var(--background-000);
-      z-index:1002;
       display:block;
       padding: 0.5em;
       font-size:1.2em;
@@ -141,10 +131,17 @@ Must be updated for each page-->
       overflow-y:scroll;
       text-align:center;
       cursor:pointer;
+      color: var(--h1);
     }
 
 
 </style>
+
+<script>
+    function closeNotice() {
+      document.getElementById("chap-notice").style.display = "none";
+    }   
+  </script>
 
 </head>
 
@@ -188,17 +185,14 @@ Must be updated for each page-->
 <div id="up-arrow"></div>
 <div id="ct-main">
 
+<div id="chap-notice">
   <div id="close-notice" onclick="closeNotice()">X</div>
-  <div id="chap-notice-text">
+  <div class="chap-notice-text">
     It looks like its your first time opening this Earthbook!  Before you get going, be sure to <b>±</b> optimize for your eyes.  We also we suggest that you take the 1 minute tour to familarize yourself with the powerful reader tools available under the hood.
   </div>
-  </div>
+</div>
 
-  <script>
-    function closeNotice() {
-      document.getElementById("chap-notice").style.display = "none";
-    }   
-  </script>
+
 
 
 <!-- MAIN TEXT CONTENT of the Page
@@ -225,7 +219,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
     <p>Un grand merci to Fabrice Garrigues for his dedication and efforts in the French translation of the Tractatus Ayyew and for rich evenings of family, wine and philosophy that accompanied it. Thanks to George Beurnier for his dinners that supplemented our efforts, and for his friendship and encouragement in the quest towards plastic’s resolve—  and billiard excellency.</p>
 
-    <p>Un grand merci a les deux Freres Jacques from the Abbey of Scourmont who have been a source of inspiration and encouragement.  Thank you to Brother Bernard for his support and encouragement in the early days of our work.  Thank you to Brother Rene for his friendship and for his insights into the meaning of plastic and the role of the monk in the modern world.</p>
+    <p>Un grand merci a les deux Frère Jacques de l'Abbey de Scourmont.  First, thank you to Frère Jacques senior for his gift of th Laudato si' encyclical (of which the concept of a "common home" helped to inspire and guide our work) and to his heartwarming persistence acquiring an early version of our French translation without our knowing!  Thank you to Frère Jacques junior for his early review and sourcing Catholic feedback and critic so that we could ensure our work resonates with the Laudato si' movement.</p>
        
     <p>Thank you to Trisha for her support, encouragement, listening and friendship. Thank you to Shiloh Vermaack and Richard Goldsmith for the relentless reviews of every chapter, not once but twice and sometimes thrice.  Thank you to Nicole and Vaughn for the in-depth reading and encouragement.  Thank you to Mel for the reminder that our ancestry, in particular its contrasts, was not just a side note, but a principal theme. Thank you to James and Ruth for their support and insights from the Bulkley Valley. Thank you to Rolf and Chris for their scathing early reviews.  Their invaluable critiques had a profound effect on our direction.  Thank you to Ani for her fathomless patience with the piles of pages and infinite coffee cups that accompanied this process.
         </p> 
