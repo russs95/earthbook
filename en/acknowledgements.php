@@ -101,12 +101,14 @@ Must be updated for each page-->
 
     #chap-notice {
  
-      width:110%;
+      width:100%;
       height:fit-content;
-      background-color: grey;
+      background-color: green;
       display:block;
       border-radius: 10px;
       margin-bottom: 20px;
+      Margin-left: -10px;
+      margin-right: -10px
 
     }
 
@@ -114,7 +116,7 @@ Must be updated for each page-->
       font-family: 'Mulish', sans-serif;
       font-size:1.2em;
       padding: 25px;
-      color: var(--fainter-border-color:);
+      color: var(--fainter-border-color);
       
     }
 
@@ -127,7 +129,7 @@ Must be updated for each page-->
       font-size:1.2em;
       line-height:1.5em;
       cursor:pointer;
-      color: var(--h1);
+      color:  var(--fainter-border-color);
     }
 
 
