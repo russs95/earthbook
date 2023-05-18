@@ -101,19 +101,20 @@ Must be updated for each page-->
 
     #chap-notice {
  
-      width:100%;
+      width:110%;
       height:fit-content;
-      background-color: black;
+      background-color: grey;
       display:block;
       border-radius: 10px;
+      margin-bottom: 20px;
 
     }
 
     .chap-notice-text {
       font-family: 'Mulish', sans-serif;
       font-size:1.2em;
-      padding: 20px;
-      color: var(--h1);
+      padding: 25px;
+      color: var(--fainter-border-color:);
       
     }
 
@@ -125,7 +126,6 @@ Must be updated for each page-->
       padding: 0.5em;
       font-size:1.2em;
       line-height:1.5em;
-  
       cursor:pointer;
       color: var(--h1);
     }
@@ -182,7 +182,7 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div id="chap-notice">
-  <div id="close-notice" onclick="closeNotice()">X</div>
+  <div id="close-notice" onclick="closeNotice()"><span class="close">&times;</span></div>
   <div class="chap-notice-text">
     It looks like its your first time opening this Earthbook!  Before you get going, be sure to <b>±</b> optimize for your eyes.  We also we suggest that you take the 1 minute tour to familarize yourself with the powerful reader tools available under the hood.
   </div>
