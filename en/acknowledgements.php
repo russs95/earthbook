@@ -110,26 +110,22 @@ Must be updated for each page-->
     }
 
     .chap-notice-text {
-      position:fixed;
       font-family: 'Mulish', sans-serif;
       font-size:1.2em;
-      padding: 15px;
+      padding: 20px;
       color: var(--h1);
       
     }
 
     #close-notice {
-      position:fixed;
-      top:0;
-      right:0;
-      width:2em;
-      height:2em;
+      
+      width:20px;
+      height:20px;
       display:block;
       padding: 0.5em;
       font-size:1.2em;
       line-height:1.5em;
-      overflow-y:scroll;
-      text-align:center;
+  
       cursor:pointer;
       color: var(--h1);
     }
