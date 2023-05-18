@@ -91,13 +91,13 @@ Must be updated for each page-->
 
     .java-link {
     cursor:pointer; 
-    border-bottom: grey 1px dashed;
+    border-bottom: var(--true) 1px dashed;
     color: var(--true);
   }
   
   .java-link:hover {
     cursor:pointer; 
-    border-bottom: grey 1px solid;}
+    border-bottom: 1px solid;}
 
 
     #chap-notice {
@@ -115,6 +115,7 @@ Must be updated for each page-->
       font-size:1.1em;
       padding: 25px;
       color: var(--true);
+      line-spacing: 1.3em;
       
     }
 
