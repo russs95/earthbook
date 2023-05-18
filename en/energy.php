@@ -43,7 +43,7 @@ $page_title = "The Salmon's Spin |  Tractatus Ayyew | Earthbook Edition";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<meta property="article:modified_time" content="2023-04-21T09:10:13+00:00">
+<meta property="article:modified_time" content="2023-05-21T09:10:13+00:00">
 <meta name="keywords" content="salmon, spin, energy, inwards, capital, currency, for-profit, not-for-profit, earth enterprise, for Earth, forEarth, Haida, Dakelh, Wetʼsuwetʼen, nutrients, roe, dispersal, concentration, Earthen, Igorots, Ayyew, cycles that spiral, spiral design, linear vs circular, circular, green, Earthen ethics, principle two, Earthen principles, Earthen, cosmology, planetary character, Earth's character, "> 
 <meta name="description" content="Earthen Principle No.2: Earth’s cycles tend towards the outwards dissipation of energy.">
 
@@ -108,18 +108,16 @@ Must be updated for each page-->
 
 </head>
 
-<!--MAIN HTML Begins  what's up doc? -->
 
 
+<!--MAIN HTML Begins-->
 
-<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
-
-
+<BODY style="max-width:100%; overflow-x:hidden;">
 <!--TOUR-CURTAIN-->
 <tour-curtain></tour-curtain>
 
 
-  <div id="underlayer">
+  <div id="underlayer" class="accessibility-plugin-ac" >
 
     <div id="top"></div>
 
@@ -174,15 +172,15 @@ Must be updated for each page-->
     <br><br>
     
     <div class="lead-page-paragraph">
-    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon's example the Wet'suwet'en gained the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, we too have much to learn from the Salmon. As we shall see, the Salmon’s outward spiral of energy emulates the vortical spiral by which Earth itself greened: the Earthen geometric pattern of enrichment.  Through the lens of this second Earthen ethic, it becomes clear that an inevitable pattern of depletion underlies our modern for-profit and not-for-profit enterprises.  More importantly though, we can grasp the pattern that has long underlayed ecologically contributive cultures such as those of the Wet'suwet'en and the Igorots.  Then, guided by the their and Earth's example, we can lay out the requisite for-Earth structure by which our enterprises can be sure to be green.</div>
+    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon's example the Wet'suwet'en gained the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, we too have much to learn from the Salmon-- and from them. As we shall see, the way in which the Wet'su'weten embodied the Salmon’s outward spiral of energy into their society provides an ethic that we can follow with our keen green enterprises.  Indeed, this vortical spiral underlies the process by which Earth itself greened, and provides the basis for our second Earthen ethic.  Through its lense, we can see clearly why our modern for-profit and not-for-profit enterprises unfold an inevitable pattern of ecological depletion.  More importantly howver, with the help of the Salmon, Wet'suweten and Earth, we can lay out the requisite for-Earth structure by which our enterprises can be sure to be green.</div>
       
     <div class="page-paragraph">
 
-      <p>To begin, we must return once again to our planet's primordial origins and take a closer look at its unique pattern of energetic flow.</p>
+      <p>To begin, let us return once again to our planet's primordial origins and take a closer look at its unique pattern of energetic flow.</p>
 
-      <p id="59-up">As we saw in Earth's <a href="stellar.php" title="Chapter 3: A Stellar Story">stellar story</a>, over the last four billion years, the energy of the Sun's relentless blaze coursed through Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Configurations of matter organically emerged that gathered, stored, then dispersed energy ever outwards towards equilibrium.<a href="#footnotes" title="Vortical unfolding on a sphererical surface with the proper conditions can tend towards greater and greater order: Guillaume Gauthier et al, (2019) Giant vortex clusters in a two-dimensional quantum fluid, Science https://www.science.org/doi/10.1126/science.aat5718" onclick="openFootnotes()">⁵⁹</a></p>
+      <p id="59-up">As we saw in Earth's <a href="stellar.php" title="Chapter 3: A Stellar Story">stellar story</a>, over the last four billion years, the energy of the Sun's relentless blaze coursed through Earth's cycles of geology, ocean and atmosphere. Driven by the rigid dictates of thermodynamics and guided by Earth's unique cosmological character, cycles unfurled that ever better dissipated the Sun's energy. Steadily, configurations of matter organically emerged that gathered, stored, then dispersed energy ever outwards towards equilibrium.<a href="#footnotes" title="Vortical unfolding on a sphererical surface with the proper conditions can tend towards greater and greater order: Guillaume Gauthier et al, (2019) Giant vortex clusters in a two-dimensional quantum fluid, Science https://www.science.org/doi/10.1126/science.aat5718" onclick="openFootnotes()">⁵⁹</a></p>
 
-      <p>Before long, the sun’s shine was being stored in complex, energy-dense molecules <!--such as fats, proteins and carbohydrates--> that were interchangeable among cellular systems. As one organism lived and died, these nutrient were consumed by and put to use by its fellows. As organisms gained the energy of those before them, they reproduced and proliferated. In this way, each cycle of life steadily spun its nutrient energy outwards to other organisms all across the planet’s surface.  From organism to ecosystem, from ecosystem to biome, energy was spiraled ever outwards towards the enrichment of all.</p>
+      <p>Before long, the sun’s shine was being stored in complex, energy-dense molecules <!--such as fats, proteins and carbohydrates--> that were interchangeable among cellular systems. As organisms lived and died, their nutrients were consumed and used by others. Gaining the energy of those before them, organisms reproduced and proliferated; each cycle steadily spinning nutrient energy outwards across the planet’s surface.  From organism to ecosystem, from ecosystem to biome, energy spiraled ever outwards towards the enrichment of all.</p>
 
       <!--<div class="quote"><p>“‘The world is a vampire’ as The Smashing Pumpkins sang: a vampire living from the death of the sun. The universe must die to keep living.”</p></div>
       <p style="text-align:right;font-size:0.9em; margin-top:-10px; margin-bottom:20px"> —Thomas Nail, <i>Theory of the Earth</i>, Standford University Press.</p><br><br>
@@ -195,17 +193,25 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
       
       <p>Returning to the spiral of the salmon's cycles, we can see that its pattern is a magnificent reflection of Earth’s.</p>
 
-     <p id="61-up">For just as Earth’s absorption of solar energy powers the planet's processes, the salmon’s steady absorbtion of nutrient energy powers its life processes. As Earth steadily spun its energy out to the planet's biosphere, so too did the Salmon steadily spin more and more marine nutrients out into its inland biome.</p>
-          
-     <p>As we saw at the begining of the chapter, from egg to adult, Salmon absorb energy as they consume insects and crustaceans, storing their nutrients as biomass.  From a single batch of eggs (2000 to 5200 eggs (weighing only a few grams each), several hundred fish reach adulthood.  With each adult weighing between 10-15kg, the net biomass of the batch can exceed several tons.  Then, as the fish are preyed upon and consumed, their accumulated nutrients nourish countless other creatures who gain and in turn distribute these marine nutrients.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹  </a>At the end of the cycle, only 20-50 salmon return on average to fertilized and lay eggs— the other 99% of the batch's biomass having been dispersed out into the inland ecosystem.<a id="62-up" href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></p>
-
+     <p id="61-up">Just as Earth’s absorption of solar energy powers the planet's processes, the salmon’s steady absorbtion of nutrient energy powers its life processes.</p>
      
-     <p id="63-up">This relentless pattern of disperal, not only contributed to a vibrant common home for bears, bugs, humans and countless other creatures to thrive, the spiral ever improved the conditions for the Salmon’s own subsequent generations.  Indeed, over time the Salmon's cycle evolved to minimize any held over nutrients (in the form of eggs or surviving fish) and to maximize the amount of surplus energy dispersed (in the form of biomass and nutrients).<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
-    Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
+     <p>Just as Earth steadily spun its energy out to the planet's biosphere, so too did the Salmon steadily spin more and more marine nutrients out into its inland biome.</p>
+
+     <p id="63-up">And just as Earth’s cycles steadily greened the biosphere, so too did the Salmon's relentless  pattern of disperal, not only contributed to a vibrant common home for bears, bugs, humans and countless other creatures to thrive.  Indeed, the spiral ever improved the conditions for the Salmon’s own subsequent generations.  Indeed, over time the Salmon's cycle evolved to minimize any held over nutrients (in the form of eggs or surviving fish) and to maximize the amount of surplus energy dispersed (in the form of biomass and nutrients).<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
+    Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p></p>
+
+
 
     <br><img src="https://earthen.io/content/images/2022/06/Salmon-Chart---1200px-2.png" width="100%" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'"><br>
+          
+     <h6>As we saw at the begining of the chapter, from egg to adult, Salmon absorb energy as they consume insects and crustaceans, storing their nutrients as biomass.  From a single batch of eggs (2000 to 5200 eggs (weighing only a few grams each), several hundred fish reach adulthood.  With each adult weighing between 10-15kg, the net biomass of the batch can exceed several tons.  Then, as the fish are preyed upon and consumed, their accumulated nutrients nourish countless other creatures who gain and in turn distribute these marine nutrients.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹  </a>At the end of the cycle, only 20-50 salmon return on average to fertilized and lay eggs— the other 99% of the batch's biomass having been dispersed out into the inland ecosystem.<a id="62-up" href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></h6>
 
-     <p>As a direct consequence of this outward energetic spiral, the salmon proliferated in rivers up and down the North Pacific coast of America, contributing to the inexorable enrichment of the land.  While bears, bugs and humans and countless other creatures also embodied this pattern of energy management, the Salmon's example is so striking, that it provides a path that we can stive to follow— our second Earthen ethic.</p>
+     
+   
+<!--
+     <p>As a direct consequence of this outward energetic spiral, the salmon proliferated in rivers up and down the North Pacific coast of America, contributing to the inexorable enrichment of the land.  While bears, bugs and humans and countless other creatures also embodied this pattern of energy management, the Salmon's example is so striking, that it provides a path that we can stive to follow— our second Earthen ethic.</p>-->
+
+     <p>The Salmon's pattern of energy management is so striking, that it provides a path that we can stive to follow— our second Earthen ethic.</p>
 
      <p>Just as the Salmon and Earth tended their cycles towards the spin of energy outwards to the benefit of all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
 

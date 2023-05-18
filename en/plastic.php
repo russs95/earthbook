@@ -140,9 +140,11 @@ Must be updated for each page-->
   
       <p>But to grasp this momentous opportunity, we must first transcend our judgments and condemnations of plastic— and of ourselves.</p>
 
-      <p>To do so we must go back and look at how plastic arrived into our hands in the first place.  </p>
+      <p>To do so we must go back and look at how plastic arrived into our hands in the first place.</p>
 
-     <p>To do so we must go back to the interstellar origins of planet Earth and see anew the story of our plastic. </p>
+      <p>To do so we must go back to the interstellar origins of planet Earth and retell plastic’s story in a whole new way.</p>
+
+      <p>As we shall see, only with a view of the stars do we gain the perspective of our plastic and our planet to recall the green way forward that awaits us.</p>
 
      <br><br><br>
   
