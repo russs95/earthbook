@@ -106,6 +106,30 @@ function openFooter2() {
 }
 }
 
+
+  function closeNotice() {
+    var noticeDiv = document.getElementById("chap-notice");
+    var height = noticeDiv.offsetHeight;
+    var intervalId = setInterval(function() {
+      height -= 10; // Adjust the decrement value to control the speed of the animation
+      noticeDiv.style.height = height + "px";
+      if (height <= 0) {
+        clearInterval(intervalId);
+        noticeDiv.style.display = "none";
+        localStorage.setItem("hideNotice", "true"); // Store the choice in localStorage
+      }
+    }, 10); // Adjust the interval value to control the smoothness of the animation
+  }
+
+  window.addEventListener("DOMContentLoaded", function() {
+    var hideNotice = localStorage.getItem("hideNotice");
+    if (hideNotice === "true") {
+      document.getElementById("chap-notice").style.display = "none";
+    }
+  });
+
+
+/*
 function closeWelcomeNotice() {
   document.getElementById("chap-notice").style.display = "none";
   localStorage.setItem("hideNotice", "true"); // Store the choice in localStorage
@@ -117,7 +141,7 @@ window.addEventListener("DOMContentLoaded", function() {
     document.getElementById("chap-notice").style.display = "none";
   }
 });
-
+*/
 
 
 
