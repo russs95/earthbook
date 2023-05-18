@@ -107,16 +107,13 @@ Must be updated for each page-->
       display:block;
       border-radius: 10px;
       margin-bottom: 20px;
-      Margin-left: -10px;
-      margin-right: -10px
-
     }
 
     .chap-notice-text {
       font-family: 'Mulish', sans-serif;
-      font-size:1.2em;
+      font-size:1.1em;
       padding: 25px;
-      color: var(--fainter-border-color);
+      color: var(--true);
       
     }
 

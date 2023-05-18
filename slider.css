@@ -25,7 +25,7 @@ dark-mode-toggle.slider::part(toggleLabel)::before {
   content: "";
   background-position: center;
   background-size: var(--dark-mode-toggle-icon-icon-size, 1rem);
-  background-image: var(--dark-mode-toggle-icon-light-icon, url("sun.svg"));
+  background-image: var(--dark-mode-toggle-icon-light-icon, url("../icons/sun.svg"));
   box-sizing: border-box;
 }
 
@@ -39,7 +39,7 @@ dark-mode-toggle.slider[mode="dark"]::part(toggleLabel)::before {
   background-color: #ccc;
   color: #000;
   background-size: var(--dark-mode-toggle-icon-size, 1rem);
-  background-image: var(--dark-mode-toggle-dark-icon, url("moon.svg"));
+  background-image: var(--dark-mode-toggle-dark-icon, url("../icons/moon.svg"));
   filter: var(--dark-mode-toggle-icon-filter, invert(100%));
   box-shadow: 0 0.5px hsl(0deg 0% 100% / 16%);
 }

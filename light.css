@@ -18,6 +18,8 @@
     --slider: rgb(228, 228, 228);
     --strong-border: rgb(185, 188, 209);
     --modal-background: rgba(255, 255, 255, 0.215);
+    --opposite: black;
+    --true: white;
 
     --settings-background: rgba(222, 222, 222, 0.871) ;
 
