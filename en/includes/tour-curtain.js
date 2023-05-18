@@ -48,7 +48,7 @@ class TourCurtain extends HTMLElement {
   <div id="information-five" style="display:none;" class="information">
   <div class="tour-image"><img src="../svgs/shareable.svg" title="Reading Tools" alt="Read Freely"></div>  
     <div class="modal-header">Reading Tools</div>
-    <div class="modal-description">Earthbooks have a powerful set of tools under the hood!  Click the to-right menu button to share or cite any chapter.  Select, then click any text to highlight it.  Hover or click any footnote to view or expand.  Open the footer to acess the search, comment and code tools.</div>
+    <div class="modal-description">Earthbooks have a powerful set of tools under the hood!  Click the top-right menu button to share or cite any chapter.  Select, then click any text to highlight it.  Hover or click on any footnote to view or expand.  Open the footer to acess the search, comment and code tools.</div>
     <button class="back">↩ Back</button>
     <button class="next">Next ➔</button>
   </div>

@@ -99,6 +99,50 @@ Must be updated for each page-->
     border-bottom: grey 1px solid;}
 
 
+    #chap-notice {
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-color:rgba(0,0,0,0.8);
+      z-index:1000;
+      display:block;
+    }
+
+    .chap-notice-text {
+      position:fixed;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      width:80%;
+      height:80%;
+      background-color:var(--background-000);
+      z-index:1001;
+      display:block;
+      padding: 2em;
+      font-size:1.2em;
+      line-height:1.5em;
+      overflow-y:scroll;
+    }
+
+    .close-notice {
+      position:fixed;
+      top:0;
+      right:0;
+      width:2em;
+      height:2em;
+      background-color:var(--background-000);
+      z-index:1002;
+      display:block;
+      padding: 0.5em;
+      font-size:1.2em;
+      line-height:1.5em;
+      overflow-y:scroll;
+      text-align:center;
+      cursor:pointer;
+    }
+
 
 </style>
 
@@ -144,7 +188,18 @@ Must be updated for each page-->
 <div id="up-arrow"></div>
 <div id="ct-main">
 
- 
+  <div id="close-notice" onclick="closeNotice()">X</div>
+  <div id="chap-notice-text">
+    It looks like its your first time opening this Earthbook!  Before you get going, be sure to <b>±</b> optimize for your eyes.  We also we suggest that you take the 1 minute tour to familarize yourself with the powerful reader tools available under the hood.
+  </div>
+  </div>
+
+  <script>
+    function closeNotice() {
+      document.getElementById("chap-notice").style.display = "none";
+    }   
+  </script>
+
 
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
@@ -167,6 +222,10 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
     <p>Along our journey, countless friends, family and colleagues who have been of invaluable assistance in our undertaking.</p>
 
     <p>Thank you to Pi Villaraza who was instrumental in energizing our early connection and collaboration.  He pointed us towards the use of Igorot and Filipino wisdom traditions to both undergird our work with plastic and to guide the social spread that followed.</p>
+
+    <p>Un grand merci to Fabrice Garrigues for his dedication and efforts in the French translation of the Tractatus Ayyew and for rich evenings of family, wine and philosophy that accompanied it. Thanks to George Beurnier for his dinners that supplemented our efforts, and for his friendship and encouragement in the quest towards plastic’s resolve—  and billiard excellency.</p>
+
+    <p>Un grand merci a les deux Freres Jacques from the Abbey of Scourmont who have been a source of inspiration and encouragement.  Thank you to Brother Bernard for his support and encouragement in the early days of our work.  Thank you to Brother Rene for his friendship and for his insights into the meaning of plastic and the role of the monk in the modern world.</p>
        
     <p>Thank you to Trisha for her support, encouragement, listening and friendship. Thank you to Shiloh Vermaack and Richard Goldsmith for the relentless reviews of every chapter, not once but twice and sometimes thrice.  Thank you to Nicole and Vaughn for the in-depth reading and encouragement.  Thank you to Mel for the reminder that our ancestry, in particular its contrasts, was not just a side note, but a principal theme. Thank you to James and Ruth for their support and insights from the Bulkley Valley. Thank you to Rolf and Chris for their scathing early reviews.  Their invaluable critiques had a profound effect on our direction.  Thank you to Ani for her fathomless patience with the piles of pages and infinite coffee cups that accompanied this process.
         </p> 
@@ -207,7 +266,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
         
         <p>Thank you to <a href="https://www.websitecarbon.com">WebsiteCarbon </a> who enable the automated <a class="java-link" onclick="openEco()" aria-label="Open Settings" title="Open Ecological Tracking"><i>carbon impact auditing</i></a> of each Earthbook page.</p>
 
-        <p>Thank you to <a href="https://instructobit.com/tutorial/95/How-to-create-a-search-function-for-your-website-using-Javascript%2C-PHP-and-MySQL">Christopher Thorton</a> for his development and sharing of an elegant PHP search which is used in the EarthBook <a class="java-link" onclick="openSearch()" aria-label="Open Search" title="Open Earthbook Search"><i>search functionality</i></a>.</p>
+       
         
         <p>Thank you to Stephen for his <a href="https://commentics.com">Commentics</a> PHP code base which powers the Earthbook chapter comments.</p>
         
