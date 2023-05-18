@@ -115,7 +115,7 @@ Must be updated for each page-->
       font-size:1.1em;
       padding: 25px;
       color: var(--true);
-      line-spacing: 1.3em;
+      line-height: 1.3em;
       
     }
 
