@@ -55,16 +55,7 @@ Must be updated for each page-->
 <meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew">
 
 
-<style>/*can be removed as now in style sheet*/
-  .java-link {
-    cursor:pointer; 
-    border-bottom: grey 1px dashed;
-  }
-  
-  .java-link:hover {
-    cursor:pointer; 
-    border-bottom: grey 1px solid;}
-</style>
+
 
 
 </head>

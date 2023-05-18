@@ -121,10 +121,11 @@ Must be updated for each page-->
       
       width:20px;
       height:20px;
+      margin-left: auto;
+      margin-bottom: -20px;
       display:block;
       padding: 0.5em;
-      font-size:1.2em;
-      line-height:1.5em;
+      font-size:1.5em;
       cursor:pointer;
       color:  var(--fainter-border-color);
     }
@@ -178,7 +179,7 @@ Must be updated for each page-->
 <div id="chap-notice">
   <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
   <div class="chap-notice-text">
-    It looks like its your first time opening this Earthbook!  Before you get going, be sure to <b>±</b> optimize for your eyes.  We also we suggest that you take the 1 minute tour to familarize yourself with the powerful reader tools available under the hood.
+    It looks like its your first time opening this book!  Before you get going, be sure to <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Adjust for your eyes"><b>±</b> optimize for your eyes</a>.  We also we suggest that you take the 1 minute tour to familarize yourself with the powerful reader tools available under the hood.
   </div>
 </div>
 
