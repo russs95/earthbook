@@ -132,11 +132,6 @@ Must be updated for each page-->
 
 </style>
 
-<script>
-    function closeNotice() {
-      document.getElementById("chap-notice").style.display = "none";
-    }   
-  </script>
 
 </head>
 
@@ -181,7 +176,7 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div id="chap-notice">
-  <div id="close-notice" onclick="closeNotice()">&times;</div>
+  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
   <div class="chap-notice-text">
     It looks like its your first time opening this Earthbook!  Before you get going, be sure to <b>±</b> optimize for your eyes.  We also we suggest that you take the 1 minute tour to familarize yourself with the powerful reader tools available under the hood.
   </div>

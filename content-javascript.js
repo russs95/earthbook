@@ -106,6 +106,18 @@ function openFooter2() {
 }
 }
 
+function closeWelcomeNotice() {
+  document.getElementById("chap-notice").style.display = "none";
+  localStorage.setItem("hideNotice", "true"); // Store the choice in localStorage
+}
+
+window.addEventListener("DOMContentLoaded", function() {
+  var hideNotice = localStorage.getItem("hideNotice");
+  if (hideNotice === "true") {
+    document.getElementById("chap-notice").style.display = "none";
+  }
+});
+
 
 
 
