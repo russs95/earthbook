@@ -89,53 +89,6 @@ Must be updated for each page-->
       letter-spacing: 6px;
     }
 
-    .java-link {
-    cursor:pointer; 
-    border-bottom: var(--true) 1px dashed;
-    color: var(--true);
-  }
-  
-  .java-link:hover {
-    cursor:pointer; 
-    border-bottom: 1px solid;}
-
-
-    #chap-notice {
- 
-      width:100%;
-      height:fit-content;
-      background-color: #458645;
-      display:block;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-
-    .chap-notice-text {
-      font-family: 'Mulish', sans-serif;
-      font-size:1.1em;
-      padding: 25px;
-      color: var(--true);
-      line-height: 1.3em;
-      
-    }
-
-    .chapt-notice-text a {
-      color: var(--true);
-    }
-
-
-    #close-notice {
-      
-      width:20px;
-      height:20px;
-      margin-left: auto;
-      margin-bottom: -24px;
-      display:block;
-      padding: 0.5em;
-      font-size:1.5em;
-      cursor:pointer;
-      color:  var(--fainter-border-color);
-    }
 
 
 </style>

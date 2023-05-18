@@ -98,6 +98,13 @@ Must be updated for each page-->
 <div id="ct-main">
 
 
+<div id="chap-notice">
+  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+  <div class="chap-notice-text">
+    It looks like its your first time opening this book!  Before you get going, be sure to <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> for your eyes and take the <a class="java-link" onclick="guidedTour()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">1 minute guided tour</a> of an Earthbook's reading tools and features.
+  </div>
+</div>
+
 <!-- MAIN TEXT CONTENT of the Page-->
 
 <div class="lead-page-paragraph">
