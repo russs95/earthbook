@@ -53,24 +53,24 @@ class SettingsCurtain extends HTMLElement {
           <input aria-label="Brightness" type="range" id="brightness-range-scale" min="0" max="100" value="100" onchange="setReadability()">
 
           <div class="compro-toggle">
-
-          <div class="settings-label">
-            <div class="accessibility-plugin-ac">Choose Night or Day mode:</div>
-          </div>
-  
-              <dark-mode-toggle
-              id="dark-mode-toggle-5"
-              class="slider"
-              legend=""
-              remember="Remember for all pages:"
-              appearance="toggle">
-              </dark-mode-toggle>
-
-            </div>
         
           
-          <button onclick="reset2Default()" style="width: 200px;
-          margin: 30px auto 0px auto; padding:6px;">⟲ Reset to Defaults</button>
+          <button id="reset-settings" onclick="reset2Default()" style="width: 200px;
+          margin: 20px auto 0px 50px; padding:6px;">⟲ Reset to Defaults</button>
+
+          <div class="settings-label">
+          <div class="accessibility-plugin-ac">Choose Night or Day mode:</div>
+        </div>
+
+            <dark-mode-toggle
+            id="dark-mode-toggle-5"
+            class="slider"
+            legend=""
+            remember="Remember for all pages:"
+            appearance="toggle">
+            </dark-mode-toggle>
+
+          </div>
         </div>                                                              
 </div>
 
