@@ -70,7 +70,7 @@ class SettingsCurtain extends HTMLElement {
         
           
           <button onclick="reset2Default()" style="width: 200px;
-          margin: 30px auto 0px auto;">Reset to Defaults</button>
+          margin: 30px auto 0px auto; padding:6px;">⟲ Reset to Defaults</button>
         </div>                                                              
 </div>
 
