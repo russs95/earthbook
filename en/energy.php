@@ -215,7 +215,7 @@ margin-top: 10px;
 background-color: var(--slider);
 border-radius: 8px;
 ">
-    <img src="../pngs//home/russs/Projects/earthbook/pngs/slamon-chart-wide-1200px.png" width="100%" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">
+    <img src="../pngs/slamon-chart-wide-1200px.png" width="100%" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">
           
      <div class="chart-caption" style="padding: 15px 5px 15px 5px; text-align: left;
 font-size: smaller;
@@ -256,11 +256,11 @@ color: var(--subdued-text);">As we saw at the begining of the chapter, from egg 
 
 <p>In Banayan's Igorot culture (and many other kincentric societies), such a ceremony has its parralel.  In the yearly celebration of the first rice harvest a slaughtered pig would cut up into a piece for every family of the village, which was then carried home by a representative of each on the tip of their spear.  As we saw in the last chapter, this pattern of energetic dispersal is a key component of their Ayyew virtue.<a id="65-up" href="#footnotes" title="The  Wetʼsuwetʼen were not alone in this way.  Virtually all first nations of the Pacific Northwest held a concept of wealth that was defined not by what one accumulated, but of what one gave away embodied in the the 'potlach' ceremony.  In this widespread tradition, the a community would gather to distribute gifts of all kinds.   The express purpose of these ceremonies was energetic dispersal out-to-all.   All who attended, understood well the ceremony and intention.  Within the context of the potlach, honor and respect was gained not by the wealth itself, but by its flow, not by how much was gathered, but by how much was gifted awaollowing the example of kincentric cultures, the salmon and the Earth we must arrange the financial structure of our aspiring green enterprises accordingly.'" onclick="openFootnotes()">⁶⁵</a></p>  -->
 
-<p>Crucially, in Wet'suwet'en culture, no distinction was made between the dispersal of ecological and social energy.  In this way, the Wet'su'weten were able to replicate the pattern of the Salmon in their ecological and social integrations.</p>
+<p>Crucially, in Wet'suwet'en culture, no distinction was made between the dispersal of ecological and social energy.  Wheter blankets or berries, smoked salmon or silver coins, the Wet'su'weten embodied the pattern of outwards distribution in their management of social and ecological energy.</p>
 
      <!--<p>Most importantly, we must expand our concept of capital and currency.</p>-->
 
-     <p>Learning from the example of the Wet'suwet'en, we can begin to see beyond the humancentric focus of our modern enterprises.</p>
+     <p>Learning from the example of the Wet'suwet'en, we can begin to see beyond our humancentric understanding of economy, enterprises and financial energy.</p>
      
      <p>Moving on from our old view of humans as separate and exceptional to the biosphere, so too can we move on from a similar view of our enterprises as seperate and exceptional to ecological flows of energy.  In particular, the view that the financial energy that sustains and powers our companies and corporations is seperate and somehow exceptional to Earthen planetary dynamics.  As we transition to an understanding of the inextricable immersion of our economies within Earth’s systems, we can begin to see that the financial energy with which our enterprises operate is in fact a subset energy system of the planet's biosphere.</p>
      
