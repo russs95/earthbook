@@ -52,11 +52,14 @@ class SettingsCurtain extends HTMLElement {
           </div>
           <input aria-label="Brightness" type="range" id="brightness-range-scale" min="0" max="100" value="100" onchange="setReadability()">
 
-          <div class="compro-toggle">
+          
         
           
           <button id="reset-settings" onclick="reset2Default()" style="width: 200px;
           margin: 20px auto 0px 50px; padding:6px;">⟲ Reset to Defaults</button>
+
+
+          <div class="compro-toggle">
 
           <div class="settings-label">
           <div class="accessibility-plugin-ac">Choose Night or Day mode:</div>
