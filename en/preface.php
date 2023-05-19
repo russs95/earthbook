@@ -118,6 +118,13 @@ Must be updated for each page-->
 <div id="ct-main">
 
 
+<div id="chap-notice">
+  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+  <div class="chap-notice-text">
+    Looks like its your first time opening this book!  Before you get going, be sure to take the <a class="java-link" onclick="guidedTour()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">quick tour</a> of an Earthbook's powerful reader tools and to <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
+  </div>
+</div>
+
 
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
@@ -134,15 +141,15 @@ Must be updated for each page-->
 
     <p>For those of us living along the river, the challenge was palpable.</p>
       
-    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Philippine archipelago. With their towns and villages nestled within a rugged chain of verdant mountains, the Igorots had remained largely insulated from three hundred years of Spanish colonization further South. However, over the last decades, modern goods had reached even the most remote villages. Whereas the leaves, wood and vines that had long served them as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade when discarded.</p>
+    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Philippine archipelago. With their towns and villages nestled within a rugged chain of verdant mountains, the Igorots had remained largely insulated from three hundred years of Spanish colonization further South. However, over the last decades, modern goods had reached even the most remote villages. Whereas the leaves, wood and vines that had long served them as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade.</p>
 
     <p>However, the Igorots had not been sitting idly by.</p>
     
-    <p>In the Igorot society, the art of ecological integration is highly esteemed— in much the same way that painting or sculpture is in other cultures. Consequently, the region had become a hot-bed of up-cycling innovations. In town, old tires were being cut up to make remarkably functional chairs and tables. In the mines, used dynamite cable was being woven to make traditional backpacks. In homes, straws and wrappers were being used to weave mats, purses, wallets and household items of all kinds.  </p>
+    <p>In the Igorot society, the art of ecological integration is highly esteemed— in much the same way that painting or sculpture is in other cultures. Consequently, the region had become a hot-bed of up-cycling innovations. In town, old tires were being cut up to make remarkably functional chairs and tables. In the mines, used dynamite cable was being woven into traditional backpacks. In homes, straws and wrappers were being woven mats, purses, wallets and household items of all kinds.</p>
 
-   <p>Banayan and I were so fascinated by this upcycling movement, that we became part of it ourselves. While Banayan had been integrating upcycled arts and crafts into school curriculums, I was involved in improving designs to make saleable upcycled products. However, in the face of the ever-growing flow of plastics being discarded, our successes were all but insignificant. As the legal stand-off in Bontoc intensified, we realized that securing plastic out of the environment was far more vital than making or teaching handicrafts.</p>
+   <p>Banayan and I were so fascinated by this upcycling movement, that we became part of it ourselves. While Banayan had been integrating upcycled arts and crafts into school curriculums, I was involved in improving upcycled designs to make saleable products. However, in the face of the ever-growing flow of plastics being discarded, our successes were all but insignificant. As the legal stand-off in Bontoc intensified, we realized that securing plastic out of the environment was far more vital than making or teaching handicrafts.</p>
     
-    <p>It just so happened that my colleagues and I had been experimenting with a new   technique from South America in which plastic bottles were packed full of sand to make building blocks. Providentially, the river sand pit and the local dump-site were side by side. After making several sand bottle-bricks, we decided to try packing them with plastic instead.</p>
+    <p>It just so happened that my colleagues and I had been experimenting with a new   technique from South America in which plastic bottles were packed full of sand to make building blocks. Providentially, the river sand pit and the local dump-site were side by side. After making several sand b"ottle-bricks", we decided to try packing them with plastic instead.</p>
 
    <p>The experiment was a success!</p>
    
@@ -176,9 +183,9 @@ Must be updated for each page-->
 
     <p>Our title reflects this merging of the modern and indigenous world views<a href="#footnotes" title="Going forward, instead of the term 'indigenous' we will use the term ‘kincentric' to specifically reference the indigenous world view which we are exploring: a particular cosmology that, although it is characterstic of most indigenous cultures, is not necessarily so.  This will be expanded upon in chapter 5.">¹</a> that our two ancestral backgrounds emobdy.</p>
     
-    <p>In Latin, the word <i>tractatus</i> refers to the philosophical tradition of a treatise— a ste-by-step exposition of a particular concept.  In Kan'kan'ue, the language of the Igorots, the word <i>ayyew</i> refers to the virtue of cyclic ecological integration that guides their culture.</p>
+    <p>In Latin, the word <i>tractatus</i> refers to the philosophical tradition of a treatise— a step-by-step exposition of a particular concept.  In Kan'kan'ue, the language of the Igorots, the word <i>ayyew</i> refers to the virtue of cyclic ecological integration that guides their culture.</p>
 
-    <p>It is this <i>ayyew ethos</i> which inspires and guides the theory of green and grey presented in the three books of the <i>Tractatus Ayyew</i> ahead.</p>
+    <p>It is this <i>ayyew ethos</i> which inspires the theory of green and grey presented in the three books of the <i>Tractatus Ayyew</i> ahead.</p>
 
     <p>In Book One we clear the ground and establish the five-facet foundation of our Earth anchored ethics.</p>
 
@@ -186,9 +193,9 @@ Must be updated for each page-->
 
     <p>In Book Three we conclude with a five-fold Earthen solution for plastic.</p>
 
-    <p>In this way, through eighteen chapters that each present a functional facet of green enterprise, the <i>Tractatus Ayyew</i> aims to be a tool kit rather than a manifesto.</p>
+    <p>In this way, through the <i>Tractatus Ayyew's</i> systematic presentation of the functional facets of green enterprise, we aim to provide a tool kit rather than a manifesto.</p>
 
-    <p>It is our hope that with the application of Earthen principles in plastic's resolve, other grey challenges may transition, with confidence and clarity, to the Earthen way of green.</p>
+    <p>It is our hope that with Earthen principles clear and plastic's resolve exemplified, other grey challenges may transition with unprecedented confidence and clarity, to an Earthen shade of green.</p>
 
     </div><!--closes page text content, then loads page curtains:-->
 
