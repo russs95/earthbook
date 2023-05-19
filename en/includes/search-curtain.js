@@ -14,7 +14,7 @@ class SearchCurtain extends HTMLElement {
       <div class="search-overlay-content" style="">
             
             <div>
-                <h1 class="accessibility-plugin-ac">Earthbook Search</h1> 
+                <h1>Earthbook Search</h1> 
                 <p style="text-align:center">Search all chapters, appendixes and the glossary of this Earthbook.</p>
             </div>
           

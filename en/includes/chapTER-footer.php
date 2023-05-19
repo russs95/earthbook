@@ -239,6 +239,16 @@ function EarthbookSearch(jsonFiles) {
 window.onload = function() {
   document.getElementById("search_input").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
+      var jsonFiles = ["glossary.json", "chapters-index.json'"]; // Replace with your JSON file paths
+      EarthbookSearch(jsonFiles);
+    }
+  });
+};
+
+
+window.onload = function() {
+  document.getElementById("search_input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
       EarthbookSearch();
     }
   });
