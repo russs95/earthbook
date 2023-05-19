@@ -489,17 +489,16 @@ margin: auto;
 
     @media screen and (min-width: 1325px) {
       #ct-main {
-        width: 50%;
+        width: 55%;
         margin: auto;
           padding: 50px 10px 100px 10px;
           margin-bottom: 200px;
-          overflow-x: hidden;
            
       }
   
   
       .footer-size {
-        width: 50%;
+        width: 55%;
         margin: auto;
   
      }

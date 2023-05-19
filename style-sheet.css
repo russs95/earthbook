@@ -4595,7 +4595,7 @@ margin: auto;
       margin-bottom: 20px;
     }
 
-    .chap-notice-text {
+    #chap-notice-text {
       font-family: 'Mulish', sans-serif;
       font-size:1.1em;
       padding: 25px;

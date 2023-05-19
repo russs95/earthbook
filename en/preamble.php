@@ -99,8 +99,8 @@ Must be updated for each page-->
 
 <div id="chap-notice">
   <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-  <div class="chap-notice-text">
-    Looks like its your first time opening this book!  Before you get going, be sure to take the <a class="java-link" onclick="guidedTour()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">quick tour</a> of an Earthbook's powerful reader tools and to <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
+  <div id="chap-notice-text">
+    Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
   </div>
 </div>
 

@@ -108,6 +108,7 @@ function openFooter2() {
 
 
   function closeWelcomeNotice() {
+    document.getElementById("chap-notice-text").style.display = "none";
     var noticeDiv = document.getElementById("chap-notice");
     var height = noticeDiv.offsetHeight;
     var intervalId = setInterval(function() {
