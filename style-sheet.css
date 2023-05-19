@@ -689,6 +689,10 @@ margin-left: 0px;
   
   }
 
+  [part="permanentLabel"] {
+    font-size: small;
+  }
+
 
 
 /*Share Menu Button*/
