@@ -112,6 +112,7 @@ text-align: center;
 margin-top: 10px;
 background-color: var(--slider);
 border-radius: 8px;
+margin-left: -20px;
   }
 
   .chart-image-desktop img {
