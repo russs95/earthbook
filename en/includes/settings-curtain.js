@@ -56,7 +56,7 @@ class SettingsCurtain extends HTMLElement {
         
           
           <button id="reset-settings" onclick="reset2Default()" style="width: 200px;
-          margin: 20px auto 0px 50px; padding:6px;">⟲ Reset to Defaults</button>
+          margin: 30px auto 50px auto; cursor:pointer; padding:6px;">⟲ Reset to Defaults</button>
 
 
           <div class="compro-toggle">
@@ -69,7 +69,7 @@ class SettingsCurtain extends HTMLElement {
             id="dark-mode-toggle-5"
             class="slider"
             legend=""
-            remember="Remember for all pages:"
+            remember="<span style="font-size:smaller;">Remember for all pages:</span>"
             appearance="toggle">
             </dark-mode-toggle>
 
