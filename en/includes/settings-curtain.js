@@ -63,13 +63,13 @@ class SettingsCurtain extends HTMLElement {
 
           <div class="settings-label">
           <div class="accessibility-plugin-ac">Choose Night or Day mode:</div>
-        </div>
+          </div>
 
             <dark-mode-toggle
             id="dark-mode-toggle-5"
             class="slider"
             legend=""
-            remember="<span style="font-size:smaller;">Remember for all pages:</span>"
+            remember="Remember for all pages:"
             appearance="toggle">
             </dark-mode-toggle>
 
