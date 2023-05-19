@@ -117,6 +117,11 @@ border-radius: 8px;
   .chart-image-desktop img {
     width: 100%;
   }
+
+  .chart-image-mobile {
+
+display: none;
+}
 }
 
 
@@ -133,6 +138,11 @@ border-radius: 5px;
 
   .chart-image-mobile img {
     width: 100%;
+  }
+
+  .chart-image-desktop {
+
+    display: none;
   }
   }
 
