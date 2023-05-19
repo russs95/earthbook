@@ -289,6 +289,8 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
    document.getElementById("left-settings-overlay").style.width = "0%";
    document.body.style.overflowY = "unset";
    document.body.style.maxHeight = "unset";
+   document.getElementById("reset-settings").innerHTML = "⟲ Reset to Defaults";
+
 
 
  } 
@@ -607,7 +609,10 @@ function reset2Default() {
 
   adjustFontSize('accessibility-plugin-ac', 'normal');
   document.getElementById('earthbook-navbar').style.minHeight = `${navbarHeight}px`;
+
+  document.getElementById("reset-settings").innerHTML = "&#10003; Settings Reset";
 }
+
 
 
 
