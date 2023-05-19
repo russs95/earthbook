@@ -102,6 +102,41 @@ Must be updated for each page-->
       
     }
 
+    @media screen and (min-width: 700px) {
+
+
+  .chart-image-desktop {
+    width: 100%;
+padding: 18px;
+text-align: center;
+margin-top: 10px;
+background-color: var(--slider);
+border-radius: 8px;
+  }
+
+  .chart-image-desktop img {
+    width: 100%;
+  }
+}
+
+
+  @media screen and (max-width: 699px) {
+
+  .chart-image-mobile {
+    width: 100%;
+padding: 6px;
+text-align: center;
+margin-top: 10px;
+background-color: var(--slider);
+border-radius: 5px;
+  }
+
+  .chart-image-mobile img {
+    width: 100%;
+  }
+  }
+
+
     
 </style>
 
@@ -208,12 +243,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
   </div>
 
 
-<div class="chart-image-desktop" style="width: 100%;
-padding: 18px;
-text-align: center;
-margin-top: 10px;
-background-color: var(--slider);
-border-radius: 8px;
+<div class="chart-image-desktop" style="
 ">
     <img src="../pngs/slamon-chart-wide-1200px.png" width="100%" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">
           
@@ -223,6 +253,21 @@ font-family:'Mulish', sans-serif;
 color: var(--subdued-text);">As we saw at the begining of the chapter, from egg to adult, Salmon absorb energy as they consume insects and crustaceans, storing their nutrients as biomass.  From a single batch of eggs (2000 to 5200 eggs (weighing only a few grams each), several hundred fish reach adulthood.  With each adult weighing between 10-15kg, the net biomass of the batch can exceed several tons.  Then, as the fish are preyed upon and consumed, their accumulated nutrients nourish countless other creatures who gain and in turn distribute these marine nutrients.At the end of the cycle, only 20-50 salmon return on average to fertilized and lay eggs— the other 99% of the batch's biomass having been dispersed out into the inland ecosystem.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹  </a> <a id="62-up" href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></div>
 </div>
 
+
+<div class="chart-image-mobile" style="width: 100%;
+padding: 18px;
+text-align: center;
+margin-top: 10px;
+background-color: var(--slider);
+border-radius: 8px;
+">
+    <img src="../pngs/slamon-chart-mobile-800px.png" width="650" height="829" alt="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">
+          
+     <div class="chart-caption" style="padding: 15px 5px 15px 5px; text-align: left;
+font-size: smaller;
+font-family:'Mulish', sans-serif;
+color: var(--subdued-text);">As we saw at the begining of the chapter, from egg to adult, Salmon absorb energy as they consume insects and crustaceans, storing their nutrients as biomass.  From a single batch of eggs (2000 to 5200 eggs (weighing only a few grams each), several hundred fish reach adulthood.  With each adult weighing between 10-15kg, the net biomass of the batch can exceed several tons.  Then, as the fish are preyed upon and consumed, their accumulated nutrients nourish countless other creatures who gain and in turn distribute these marine nutrients.At the end of the cycle, only 20-50 salmon return on average to fertilized and lay eggs— the other 99% of the batch's biomass having been dispersed out into the inland ecosystem.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹  </a> <a id="62-up" href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></div>
+</div>
      
    
 <!--
