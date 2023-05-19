@@ -234,7 +234,7 @@ function EarthbookSearch(jsonFiles) {
     xmlhttp.send();
   }
 }
-
+/*
 
 window.onload = function() {
   document.getElementById("search_input").addEventListener("keypress", function(event) {
@@ -244,12 +244,12 @@ window.onload = function() {
     }
   });
 };
-
+*/
 
 window.onload = function() {
   document.getElementById("search_input").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
-      EarthbookSearch();
+      EarthbookSearch(['glossary.json', 'chapters-index.json']);
     }
   });
 };
