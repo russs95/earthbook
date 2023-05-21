@@ -135,7 +135,7 @@ display: none;
     margin-top: 10px;
     background-color: var(--slider);
     border-radius: 8px;
-    margin-left:-20px;
+    
   }
 
 
@@ -280,7 +280,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
     <img src="../pngs/slamon-chart-mobile-800px.png" width="650" height="829" alt="A batch Pacific Salmon roe consists of 2000-5200 eggs.   Over the course of 3-7 years, the salmon hatch, migrate to the ocean, feed, grow to full size, stop eating and return home to lay their eggs.  As members of each batch are caught or die along their journey, the marine nutrients accumulated in their bodies are dispersed to the river ecosystem.  This return is in excess of what was originally absorbed during their time in the river.'">
           
      <div class="chart-caption">A batch Pacific Salmon roe consists of 2000-5200 eggs and weights several kilograms.   Over the course of 3-7 years, the salmon hatch, migrate to the ocean, feed, grow to full size, and return home to lay their eggs.  In so doing they acheive a net biomass of several tons.  As members of each batch are caught or die along their journey, the marine nutrients accumulated in their bodies are dispersed to the river ecosystem.  This return is in excess of what was originally absorbed during their time in the river.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹  </a> <a id="62-up" href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></div>
-     
+
 </div>
      
    
