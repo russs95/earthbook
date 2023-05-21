@@ -135,6 +135,7 @@ display: none;
     margin-top: 10px;
     background-color: var(--slider);
     border-radius: 5px;
+    margin-left:-20px;
   }
 
   .chart-image-mobile img {
