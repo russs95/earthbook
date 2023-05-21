@@ -66,7 +66,7 @@ class SettingsCurtain extends HTMLElement {
           </div>
 
             <dark-mode-toggle
-            id="dark-mode-toggle-5" style="padding:10px;font-size:smaller;"
+            id="dark-mode-toggle-5" style="padding:10px;font-size:small;"
             class="slider"
             legend=""
             remember="Remember for all pages"

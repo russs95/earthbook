@@ -61,8 +61,8 @@ The requisite typography for the page-->
  <!-- Style Sheets   
 All the css needed for this page-->
  
-<link rel="stylesheet" href="../style-sheet.css?v1.81">
-<link rel="stylesheet" href="../stylesheet-chapter.css?v=1">
+<link rel="stylesheet" href="../style-sheet.css?v1.82">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.1">
 <link rel="stylesheet" href="../light.css?v1.7">
 
 
@@ -78,7 +78,7 @@ All the css needed for this page-->
  <!-- INCLUDES
  Main Scripts-->   
 
- <script src="../content-javascript.js?v=2.1" defer></script>
+ <script src="../content-javascript.js?v=2.2" defer></script>
  <script src="../universal-javascript.js" defer></script>
  <script src="../clip/dist/clipboard.min.js" defer></script>
  <!--<script src="../accessibility.js" defer></script>-->
