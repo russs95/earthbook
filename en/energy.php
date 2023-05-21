@@ -355,7 +355,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
 
      <div class="chart-image-desktop">
-    <img src="../pngs/forProfit-vs-forEarth.png" width="100%" alt="For-profit: An inwards spiral of financial energy 
+    <img src="../pngs/forProfit-vs-forEarth-1200px.png" width="100%" alt="For-profit: An inwards spiral of financial energy 
 over a fiscal cycle.  No ecological accounting.  VS  For-Earth: An outwards spiral of ecological and 
 financial energy over a fiscal cycle.">
           
@@ -363,7 +363,7 @@ financial energy over a fiscal cycle.">
 </div>
 
 <div class="chart-image-mobile">
-    <img src="../pngs/forProfit-vs-forEarth.png" width="100%" alt="For-profit: An inwards spiral of financial energy 
+    <img src="../pngs/forProfit-vs-forEarth-800px.png" width="100%" alt="For-profit: An inwards spiral of financial energy 
 over a fiscal cycle.  No ecological accounting.  VS  For-Earth: An outwards spiral of ecological and 
 financial energy over a fiscal cycle.">
           
