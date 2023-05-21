@@ -139,7 +139,6 @@ display: none;
   }
 
 
-
   .chart-image-mobile img {
     width: 100%;
     height: auto;
