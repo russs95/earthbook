@@ -267,16 +267,20 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
 
 <div class="chart-image-desktop">
+
     <img src="../pngs/slamon-chart-wide-1200px.png" width="100%" alt="A batch Pacific Salmon roe consists of 2000-5200 eggs.   Over the course of 3-7 years, the salmon hatch, migrate to the ocean, feed, grow to full size, stop eating and return home to lay their eggs.  As members of each batch are caught or die along their journey, the marine nutrients accumulated in their bodies are dispersed to the river ecosystem.  This return is in excess of what was originally absorbed during their time in the river.">
           
      <div class="chart-caption" >'...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'  — Thomas P. Quinn, <i>The Behavior and Ecology of Pacific Salmon and Trout</i>, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: <a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹  </a> <a id="62-up" href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></div>
+
 </div>
 
 
 <div class="chart-image-mobile">
+
     <img src="../pngs/slamon-chart-mobile-800px.png" width="650" height="829" alt="A batch Pacific Salmon roe consists of 2000-5200 eggs.   Over the course of 3-7 years, the salmon hatch, migrate to the ocean, feed, grow to full size, stop eating and return home to lay their eggs.  As members of each batch are caught or die along their journey, the marine nutrients accumulated in their bodies are dispersed to the river ecosystem.  This return is in excess of what was originally absorbed during their time in the river.'">
           
      <div class="chart-caption">A batch Pacific Salmon roe consists of 2000-5200 eggs and weights several kilograms.   Over the course of 3-7 years, the salmon hatch, migrate to the ocean, feed, grow to full size, and return home to lay their eggs.  In so doing they acheive a net biomass of several tons.  As members of each batch are caught or die along their journey, the marine nutrients accumulated in their bodies are dispersed to the river ecosystem.  This return is in excess of what was originally absorbed during their time in the river.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.'">⁶¹  </a> <a id="62-up" href="#footnotes" title="Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007.">⁶²</a></div>
+     
 </div>
      
    
@@ -354,21 +358,19 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
      <p>However, the path towards net-green has never been clearer.</p>
 
 
-     <div class="chart-image-desktop">
-    <img src="../pngs/forProfit-vs-forEarth-1200px.png" width="100%" alt="For-profit: An inwards spiral of financial energy 
-over a fiscal cycle.  No ecological accounting.  VS  For-Earth: An outwards spiral of ecological and 
-financial energy over a fiscal cycle.">
-          
-     <div class="chart-caption" >'Over the course of a fiscal cycle, as a for-Earth enterprise's budget is spent, revenues flow inwards and expenses outwards, while the difference is directed out-to the benefit of the ecology/economy of which the enterprise is part.  The enterprises give and take of carbon, biodiversity, and other primary materials (i.e. water, plastic, lithium, etc.) is likewise managed.</div>
-</div>
+      <div class="chart-image-desktop">
+          <img src="../pngs/forProfit-vs-forEarth-1200px.png" width="100%" alt="For-profit: An inwards spiral of financial energy over a fiscal cycle.  No ecological accounting.  VS  For-Earth: An outwards spiral of ecological and financial energy over a fiscal cycle.">
+              
+          <div class="chart-caption" >Over the course of a fiscal cycle, as a for-Earth enterprise's budget is spent, revenues flow inwards and expenses outwards, while the difference is directed out-to the benefit of the ecology/economy of which the enterprise is part.  The enterprises give and take of carbon, biodiversity, and other primary materials (i.e. water, plastic, lithium, etc.) is likewise managed.</div>
 
-<div class="chart-image-mobile">
-    <img src="../pngs/forProfit-vs-forEarth-800px.png" width="100%" alt="For-profit: An inwards spiral of financial energy 
-over a fiscal cycle.  No ecological accounting.  VS  For-Earth: An outwards spiral of ecological and 
-financial energy over a fiscal cycle.">
-          
-     <div class="chart-caption" >'Over the course of a fiscal cycle, as a for-Earth enterprise's budget is spent, revenues flow inwards and expenses outwards, while the difference is directed out-to the benefit of the ecology/economy of which the enterprise is part.  The enterprises give and take of carbon, biodiversity, and other primary materials (i.e. water, plastic, lithium, etc.) is likewise managed.</div>
-</div>
+      </div>
+
+      <div class="chart-image-mobile">
+          <img src="../pngs/forProfit-vs-forEarth-800px.png" width="100%" alt="For-profit: An inwards spiral of financial energy over a fiscal cycle.  No ecological accounting.  VS  For-Earth: An outwards spiral of ecological and financial energy over a fiscal cycle.">
+                
+          <div class="chart-caption" >Over the course of a fiscal cycle, as a for-Earth enterprise's budget is spent, revenues flow inwards and expenses outwards, while the difference is directed out-to the benefit of the ecology/economy of which the enterprise is part.  The enterprises give and take of carbon, biodiversity, and other primary materials (i.e. water, plastic, lithium, etc.) is likewise managed.</div>
+
+      </div>
 
      <p>Just as a shoal of salmon directs all their energy towards their out-to-all journey home, our green-intentioned, enterprises must direct their surplus energy towards an out-to-all-purpose.</p>
 
