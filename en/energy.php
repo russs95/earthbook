@@ -347,10 +347,10 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
      <p>In other words, without both an intention of contributing socially and ecologically— and an accounting and disclosure of both— an enterprise cannot be green.  
     </p>
 
-     <p>While in the short-term, an enterprise may sequester much carbon, plant many trees and support many species; without a systemic accounting thereof, one cannot be certain, whether these impacts are in fact a net-contribution:  it could well be that more carbon is emitted, more trees are cut, and more species are depleted to achieve these results!  
+     <p>While in the short-term, an enterprise may sequester much carbon, plant many trees and support many species— without a systemic accounting thereof, one cannot be certain, whether these impacts are in fact a net-contribution:  it could well be that more carbon is emitted, more trees are cut, and more species are depleted to achieve these results!  
     </p>
 
-     <p>However, the path towards net-green has never been clearer.</p>
+     <p>However, our elders have made clear the green path ahead.</p>
 
 
       <div class="chart-image-desktop">
@@ -367,9 +367,9 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
       </div>
 
-     <p>Just as a salmon's return-home and its energetic pattern ar embeded deep in its DNA, so too much our keen green enterprise a similar energetic structure in their purpose.   In particular a pattern of directing all their surplus energy towards an out-to-all-purpose.</p>
+     <p>Just as a salmon's energetic pattern is embeded deep in its DNA, so too much our keen green enterprise a similar energetic structure in their purpose.   In particular a pattern of directing all their surplus energy towards an out-to-all-purpose.</p>
 
-     <p>Learning from kincentric cultures, such a purpose must embrace both the social and the ecological, recognizing that both, from an Earthen view, are one and the same. This dual not-for-profit and <i>for-Earth</i> intention, must be declared and accounted for— ensuring that the enterprises revenues (in particular its surpluses) go towards this for-Earth purpose and that the other four Earthen ethics are met.   </p>
+     <p>And just as an understanding of economic and ecological energy as one and the same is ingrained in the culture of the Wetsu'wet'en, so too must our enterprises and their purpose recongnize the same.  Such a not-for-profit, <i>for-Earth</i> intention, must be declared and accounted for— ensuring that the enterprises revenues (in particular its surpluses) go towards this for-Earth purpose and that the other four Earthen ethics are met.   </p>
 
      <p>That said, the outwards spiral of energy is only half of Earth's spiral pattern of enrichment.</p>
 
