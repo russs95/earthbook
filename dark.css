@@ -177,7 +177,14 @@ background-size: contain;
 .chapter_pic img {
   filter: invert(100%);
 }
-  /*
+ 
+
+.chapter-emblem img {
+  filter: invert(100%);
+}
+
+
+/*
   #settings-menu {
     background: var(--deeper-accent-color) !important;
     box-shadow: var(--element-shadow) !important;

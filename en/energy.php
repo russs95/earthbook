@@ -232,7 +232,7 @@ display: none;
      <div id="line" style="margin-bottom: 30px;"></div>
     <br><br>
 
-    <div class="chapt-emblem" style="text-align:center;" ><img src="../svgs/salmon-james-madam.svg" width="200" height="121"></div>
+    <div class="chapt-emblem" style="text-align:center;margin:30px,0px,10px,0px;" ><img src="../svgs/salmon-james-madam.svg" width="200" height="121"></div>
     
     <div class="lead-page-paragraph">
     OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon's example the Wet'suwet'en gained the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, we too have much to learn from the Salmon-- and from them. As we shall see, the way in which the Wet'su'weten embodied the Salmon’s outward spiral of energy into their society provides an ethic that we can follow with our keen green enterprises.  Indeed, this vortical spiral underlies the process by which Earth itself greened, and provides the basis for our second Earthen ethic.  Through its lense, we can see clearly why our modern for-profit and not-for-profit enterprises unfold an inevitable pattern of ecological depletion.  More importantly however, with the guidance of the Salmon, Wet'suweten and Earth, we can lay out the requisite for-Earth structure by which our enterprises can be sure to be green.</div>
