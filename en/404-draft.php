@@ -137,7 +137,7 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
 
   <div>
                
-    <h3 class="accessibility-plugin-ac">You can try searching the EarthBook to find what you're looking for...</h3> 
+    <h3>You can try searching the EarthBook to find what you're looking for...</h3> 
   </div>
           
   <div class="search-box" style="padding-bottom:15%;">
@@ -145,10 +145,10 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
                 <input id="search_input" type="text" placeholder="Enter search term..." aria-label="Enter keywords...">   
                 <button class="btn" style="padding:22px 0px 22px 0px;" onclick="EarthbookSearch(['glossary.json', 'chapters-index.json'])" aria-label="Search Button"><i style="background-image: url(../icons/search-white.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
               </div>  
-              <div id="search_results"><h6>Glossary definitions are shown first</h6></div>
+              <div id="search_results"></div>
             </div>
 
-      <br><br><br><br>
+      <br><br><br><br><div id="chap-notice" style="display:none;"></div>
      
 <div class="ct-quote-source" style="width:100% !important;">
     Book Two and Three of the <i>Tractatus Ayyew</i> is not yet published. Subscribe to Earthen to be notified of new chapter releases.

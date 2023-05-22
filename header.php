@@ -70,7 +70,7 @@ All the css needed for this page-->
 <link rel="preload" as="image" href="../svgs/up-arrow-light.svg">
 
 <link rel="stylesheet" href="../light.css?v1.91" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css?v1.92" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../dark.css?v1.93" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css?v1.1">
 
 
