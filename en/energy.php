@@ -232,7 +232,7 @@ display: none;
      <div id="line" style="margin-bottom: 30px;"></div>
     <br><br>
 
-    <div class="chapt-emblem" style="text-align:center;margin:30px,0px,10px,0px;" ><img src="../svgs/salmon-james-madam.svg" width="200" height="121"></div>
+    <div class="chapt-emblem" style="text-align:center;margin:30px 0px 10px 0px;" ><img src="../svgs/salmon-james-madam.svg" width="200" height="121"></div>
     
     <div class="lead-page-paragraph">
     OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon's example the Wet'suwet'en gained the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, we too have much to learn from the Salmon-- and from them. As we shall see, the way in which the Wet'su'weten embodied the Salmon’s outward spiral of energy into their society provides an ethic that we can follow with our keen green enterprises.  Indeed, this vortical spiral underlies the process by which Earth itself greened, and provides the basis for our second Earthen ethic.  Through its lense, we can see clearly why our modern for-profit and not-for-profit enterprises unfold an inevitable pattern of ecological depletion.  More importantly however, with the guidance of the Salmon, Wet'suweten and Earth, we can lay out the requisite for-Earth structure by which our enterprises can be sure to be green.</div>
@@ -330,24 +330,24 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
     <p>While most enterprises operate with the purpose of meeting human wants and needs— such as for the provision of products and for the delivery of services— often modern enterprises are structured for a deeper reason.</p>
 
-    <p>Many modern enterprises are established by their owners <i>for the purpose of profit</i>: generating more energy than they give back for themselves.  This excess energy, although often sourced ecologically, is defined strictly in financial terms. While these for-profit enterprises may provide products, services and even ecological benefits, their structure dictates that their financial surpluses are directed to their owners (or shareholders as the case may be) at the end of each financial cycle. The result is a process of accumulation that over many financial cycles, steadily depletes the ecological and social systems that encompass it.<a id="67-up" href="#footnotes" title="Hinton and Maclurcan, present a compelling argument of the extractive nature of for-profit business.  They propose this ethic of determination: “...in order to determine whether business is generative (contributing to the health of the whole economy) or extractive (taking away from the health of the whole economy), one must ask the question, 'Who profits from the profit?' Jennifer Hinton, Donnie Maclurcan, <i>How on Earth?</i>, (Post Growth Institute, 2006)" onclick="openFootnotes()">⁶⁷</a></p>
+    <p>Many modern enterprises are established <i>for the purpose of profit</i>: generating more energy than they give back for themselves.  This excess energy, although often sourced ecologically, is defined strictly in financial terms. While these <i>for-profit</i> enterprises may provide products, services and even ecological benefits, their structure dictates that their financial surpluses are directed to their owners (or shareholders as the case may be) at the end of each financial cycle. The result is a process of accumulation that over many financial cycles, steadily depletes the ecological and social systems that encompass it.<a id="67-up" href="#footnotes" title="Hinton and Maclurcan, present a compelling argument of the extractive nature of for-profit business.  They propose this ethic of determination: “...in order to determine whether business is generative (contributing to the health of the whole economy) or extractive (taking away from the health of the whole economy), one must ask the question, 'Who profits from the profit?' Jennifer Hinton, Donnie Maclurcan, <i>How on Earth?</i>, (Post Growth Institute, 2006)" onclick="openFootnotes()">⁶⁷</a></p>
 
 
     <p>In this way, the energetic inclination of a for-profit enterprise, spins in opposition to the pattern of Earth.  No matter how green-intentioned, no matter how green its short-term impacts may seem, its management of energy is the very opposite of ecological contribution.</p>
 
-    <p>Of course, not all modern enterprises operate <i>for-profit</i>.</p>
+    <p>Of course, not all modern enterprises operate for-profit.</p>
 
     <p>Today, more and more enterprises are aware of the depleting dynamic of profit in-and-of-itself.  In order to contribute to their social and ecological environment, many enterprises choose a <i>‘not-for-profit’</i> energetic structure.  These enterprises strive to return all their revenues back to the pursuit of their social or ecological purpose. </p>
 
      <p>However, insofar as a not-for-profit enterprise remains fully immersed within the paradigm of profit— where energy is accounted for strictly as revenues and expenses for humans— their energetic structure is insufficient to be green.</p>
 
-     <p>While an enterprise may ensure that all its revenues go out to its social or environmental purpose, insofar as its energy is accounted for solely in financial terms, it will fail to account for its ecological give and take.  In particular: its give and take of carbon, its support or depletion of biodiversity and its raising or lowering of awareness (our next three Earthen ethics).   In this way, a not-for-profit enterprise may return all of its financial energy back to its purpose, yet still be complicit in a dynamic of systematic ecological depletion.</p>
+     <p>While an enterprise may ensure that all its revenues go out to its social or environmental purpose, insofar as its energy is accounted for solely in financial terms, it will fail to account for its ecological give and take.  In particular: its give and take of carbon, its support or depletion of biodiversity and its raising or lowering of awareness (our next three Earthen ethics).   In this way, while a not-for-profit enterprise may return all of its financial energy back to its social purpose or even environmental purpose, without rising out of the profit-paradigm, it will remain complicit in a dynamic of systematic ecological depletion.</p>
 
 
-     <p>In other words, without both not-for-profit and an intention of contributing socially and ecologically— and an accounting and disclosure of both— an enterprise cannot be green.  
+     <p>In other words, without both an intention of contributing socially and ecologically— and an accounting and disclosure of both— an enterprise cannot be green.  
     </p>
 
-     <p>While in the short-term, an enterprise may sequester much carbon, plant many trees and support many species; without an accounting thereof, one cannot be certain, whether these impacts are in fact a net-contribution.  It could well be that more carbon is emitted, more trees are cut, and more species are depleted to achieve these results!  
+     <p>While in the short-term, an enterprise may sequester much carbon, plant many trees and support many species; without a systemic accounting thereof, one cannot be certain, whether these impacts are in fact a net-contribution:  it could well be that more carbon is emitted, more trees are cut, and more species are depleted to achieve these results!  
     </p>
 
      <p>However, the path towards net-green has never been clearer.</p>
@@ -367,13 +367,13 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
       </div>
 
-     <p>Just as a shoal of salmon directs all their energy towards their out-to-all journey home, our green-intentioned, enterprises must direct their surplus energy towards an out-to-all-purpose.</p>
+     <p>Just as a salmon's return-home and its energetic pattern ar embeded deep in its DNA, so too much our keen green enterprise a similar energetic structure in their purpose.   In particular a pattern of directing all their surplus energy towards an out-to-all-purpose.</p>
 
      <p>Learning from kincentric cultures, such a purpose must embrace both the social and the ecological, recognizing that both, from an Earthen view, are one and the same. This dual not-for-profit and <i>for-Earth</i> intention, must be declared and accounted for— ensuring that the enterprises revenues (in particular its surpluses) go towards this for-Earth purpose and that the other four Earthen ethics are met.   </p>
 
      <p>That said, the outwards spiral of energy is only half of Earth's spiral pattern of enrichment.</p>
 
-     <p>There is yet the matter... of our matter.</p>
+     <p>There is yet the matter of... our matter.</p>
 
      <p>Our next Earthen ethic.</p>
 
