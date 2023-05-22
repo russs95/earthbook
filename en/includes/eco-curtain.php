@@ -1,4 +1,4 @@
-<!--BUY-CURTAIN-->
+<!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
 
 <!--CONTENTS MENU-->
