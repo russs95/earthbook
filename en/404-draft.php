@@ -147,7 +147,7 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
               </div>  
               <div id="search_results"><h6>Glossary definitions are shown first</h6></div>
             </div>
-            
+
       <br><br><br><br>
      
 <div class="ct-quote-source" style="width:100% !important;">
@@ -192,5 +192,90 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
 
 
 </body>
+
+<script>
+
+
+function EarthbookSearch(jsonFiles) {
+  // Get the search query from the input field
+  var query = document.getElementById("search_input").value.toLowerCase();
+  var overlayContent = document.querySelector('.search-overlay-content');
+  overlayContent.style.height = 'fit-content';
+  overlayContent.style.marginTop = '8%';
+
+
+  // Load the JSON files
+  var posts = [];
+  var numFilesLoaded = 0;
+  for (var i = 0; i < jsonFiles.length; i++) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        // Parse the JSON data
+        var data = JSON.parse(this.responseText);
+        posts = posts.concat(data);
+
+        // Increment the number of files that have been loaded
+        numFilesLoaded++;
+
+        // If all files have been loaded, filter the posts
+        if (numFilesLoaded == jsonFiles.length) {
+          // Filter the posts that match the search query
+          var outputPosts = [];
+          for (var j = 0; j < posts.length; j++) {
+            var post = posts[j];
+            if ((post.keywords && post.keywords.toLowerCase().includes(query)) || (post.chap_description && post.chap_description.toLowerCase().includes(query))) {
+              outputPosts.push(post);
+            }
+          }
+          console.log(outputPosts.length);
+
+          console.log(outputPosts);
+
+
+          // Get the container where the results will be displayed
+          var resultsContainer = document.getElementById("search_results");
+
+          // Clear the previous search results
+          resultsContainer.innerHTML = "";
+
+          // If no results are found, display a message
+          if (outputPosts.length == 0) {
+            resultsContainer.innerHTML = "<p>Sorry, no results were found for \"" + query + "\".</p>";
+          } else {
+            // Iterate over the results and append them to the container
+            for (var k = 0; k < outputPosts.length; k++) {
+              resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + k + "' style=\"display:flex; text-align:left; padding: 20px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;display:block;\"><img src=\"" + outputPosts[k].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:x-large;margin-bottom:12px;display:block;\"><a href='" + outputPosts[k].url + "'>" + outputPosts[k].title + "</b><span style=\"font-size:smaller;color:var(--drop-cap)!important;margin-top:10px;display:block;\">" + outputPosts[k].chapter + "  |  " + outputPosts[k].book + "  |  " + outputPosts[k].words + " words  |  " + outputPosts[k].language + "</span><span style=\"font-size:medium;font-family:'CooperLt',serif;margin-top:10px;display:block;\">" + outputPosts[k].chap_description + "</span><span style=\"font-size:smaller;color:grey;margin-top:10px;display:block;\">" + outputPosts[k].url + "</span></a></div>";
+            }
+          }
+        }
+      }
+    };
+    xmlhttp.open("GET", jsonFiles[i], true);
+    xmlhttp.send();
+  }
+}
+
+
+window.onload = function() {
+  document.getElementById("search_input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      EarthbookSearch(['glossary.json', 'chapters-index.json']);
+    }
+  });
+};
+
+
+function clearResults() {
+  var searchInput = document.getElementById('search_input');
+  var resultsContainer = document.getElementById('search_results');
+  var overlayContent = document.querySelector('.search-overlay-content');
+  searchInput.value = '';
+  resultsContainer.innerHTML = '';
+  overlayContent.style.height = '';
+  overlayContent.style.marginTop = '';
+
+}
+</script>
 </html>
 
