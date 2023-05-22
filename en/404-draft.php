@@ -180,7 +180,7 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
 <div id="up-arrow"></div>
 <div id="ct-main">
 
-  <div>
+<div class="search-overlay-content">
                
     <h3>You can try searching the EarthBook to find what you're looking for...</h3> 
   </div>
