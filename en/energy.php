@@ -219,7 +219,7 @@ display: none;
 
 
 <!-- MAIN TEXT CONTENT of the Page
-  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴  — 
 -->
 
 <div class="page-paragraph">
@@ -231,9 +231,11 @@ display: none;
     <br><br>
      <div id="line" style="margin-bottom: 30px;"></div>
     <br><br>
+
+    <div class="chapt-emblem" style="text-align:center, width:175px;height:auto" ><img src="../svgs/salmon-james-madam.svg"></div>
     
     <div class="lead-page-paragraph">
-    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon's example the Wet'suwet'en gained the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, we too have much to learn from the Salmon-- and from them. As we shall see, the way in which the Wet'su'weten embodied the Salmon’s outward spiral of energy into their society provides an ethic that we can follow with our keen green enterprises.  Indeed, this vortical spiral underlies the process by which Earth itself greened, and provides the basis for our second Earthen ethic.  Through its lense, we can see clearly why our modern for-profit and not-for-profit enterprises unfold an inevitable pattern of ecological depletion.  More importantly howver, with the help of the Salmon, Wet'suweten and Earth, we can lay out the requisite for-Earth structure by which our enterprises can be sure to be green.</div>
+    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon's example the Wet'suwet'en gained the ecological understanding and ethical inspiration to preside over the steady, millennia-long enrichment of their land. Today, we too have much to learn from the Salmon-- and from them. As we shall see, the way in which the Wet'su'weten embodied the Salmon’s outward spiral of energy into their society provides an ethic that we can follow with our keen green enterprises.  Indeed, this vortical spiral underlies the process by which Earth itself greened, and provides the basis for our second Earthen ethic.  Through its lense, we can see clearly why our modern for-profit and not-for-profit enterprises unfold an inevitable pattern of ecological depletion.  More importantly however, with the guidance of the Salmon, Wet'suweten and Earth, we can lay out the requisite for-Earth structure by which our enterprises can be sure to be green.</div>
       
     <div class="page-paragraph">
 
@@ -252,17 +254,13 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
       
       <p>And Earth’s biosphere blossomed!</p>
       
-      <p>Returning to the spiral of the salmon's cycles, we can see that its pattern is a magnificent reflection of Earth’s.</p>
+      <p>Returning to the salmon, we can see that its process, cycle and spiral are a magnificent reflection of Earth’s pattern.</p>
 
      <p id="61-up">Just as Earth’s absorption of solar energy powers the planet's processes, the salmon’s steady absorbtion of marine nutrient energy powers its life processes.</p>
      
-     <p>Just as Earth's cycles steadily spun its accumulated energy out across the planet's surface, so too did the Salmon cycles steadily spin more and more marine nutrients out to its inland biome.</p>
+     <p>Just as Earth's cycles steadily spun the sun's energy out across the planet's surface, so too did the Salmon cycles steadily spin nutrient energy out to its biome.</p>
 
-     <p id="63-up">And just as Earth’s cycles steadily greened the biosphere, so too did the Salmon's relentless  pattern of disperal, contributed to a vibrant common home for bears, bugs, humans and countless other creatures to thrive.</p>  
-     
-     <p>But perhaps must instructive of all, the Salmon's spiral ever improved the conditions for the their own subsequent generations.  As a direct consequence of this outward energetic spiral, the salmon proliferated in rivers up and down the North Pacific coast of America, contributing to the inexorable enrichment of the inland ecosystem.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
-    Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
-  </div>
+   
 
 
 <div class="chart-image-desktop">
@@ -291,22 +289,24 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
     The Salmon's pattern of energy management is so striking, that it provides a path that we can stive to follow— our second Earthen ethic.-->
 
     <div class="page-paragraph">
+    <p id="63-up">And just as Earth’s spiral steadily greened the biosphere, so too did the Salmon's relentless  pattern of energetic disperal, contribute to the inexorbable enrichment of the inland biome to the benefit of countless other creatures.  And, themselves!  As the bears, bugs, eagles and humans withwhom they shared interdependence thrived, the conditions for their own subsequent generations were set.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
+    Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
+  </div>
 
-
-     <p>In the resonance of the Salmon and Earth's pattern of energy management, we find our second Earthen ethic.</p>
+     <p>In the resonance of the Salmon and Earth's energetic pattern, we find our second Earthen ethic.</p>
 
      <p>Just as the Salmon and Earth tended their cycles towards the spin of energy outwards to the benefit of all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
 
-     <p>To see how this way forward applies to our modern keen green enterprises, it is crucial to recognize that other cultures and societies have long walked this path and cleared the way for us to follow.  In particular, cultures that rather than see human enterprise and economy as exceptional and seperate from the biosphere, instead viewed social energy as an integrated part of a system of ecological energy flowing between kindred relations.</p>
+     <p>As we saw in Book One of the Tracatatus Ayyew, great green nations have long embbodied this pattern of  contribution.  In particular, kincentric cultures-- societies that recognized the organisms around them as kin, and synked with their cycles.  These cyclocentric socieities, rather than see human enterprise and economy as exceptional and seperate from the biosphere, instead viewed social energy as an integrated part of the cycles of life around them.</p>
 
-<p>The Wetʼsuwetʼen, having lived side by side the salmon for millennia, are one such culture.  From their kincentric view of the world, they were able to appreciate the salmon as ecological elders.</p>
+<p>The Wetʼsuwetʼen, are one such nation.  From their kincentric view of the world, the salmon are an ecological elder.</p>
 
-<p>And, as teachers.</p>
+<p>And, a teacher.</p>
 
 <p>Over countless generations they learned from the spirallying cycle of the Salmon.  Over the centuries, the  Wetʼsuwetʼen wove the salmon's pattern of energy management into the stories, morals and languages of their culture.<!-- which in turn had significant impact on the ecosystem of which their society was part.--></p>
 
 
-<p>In  Wetʼsuwetʼen culture, the very first Salmon caught each season is shared with every member of the community or family unit.  In this tradition, a morsel of the fish is meticulously distributed among each member, and every bone is taken back to the water.  This pattern was then followed in the seasonal harvest of tens of thousands of salmon: only as much as each family requires is taken, with the taken being shared among all and the discarded bones being returned to the river.<!-- So ingrained is this spirit of energetic management, that in their language grammatically it is impossible to speak of 'my salmon' only of 'our salmon'.--></p>
+<p>In  Wetʼsuwetʼen culture, the very first Salmon caught each season is shared with every member of the community or family unit.  In this tradition, a morsel of the fish is meticulously distributed among each member, and every bone is taken back to the water.  This pattern was then followed in the seasonal harvest of tens of thousands of salmon. Only as much Salmon need by each family is taken, while the remaining majority are left to the bears, eagles and others.  Those salmon that are fished, are shared among the community as needed and the discarded bones are carefully returned to the river.<!-- So ingrained is this spirit of energetic management, that in their language grammatically it is impossible to speak of 'my salmon' only of 'our salmon'.--></p>
  
 <p>For the Wet'suwet'en, this ethic culminates in the <i>potlach</i> (a tradition they shared with virtually every other first nation on the Pacific coast).  In this seasonal ceremony the community would come together to distribute food, goods and luxuries that had been accumulated by some more than others.  The more that a family or an individual could distribute to others, the more respect was gained.<a id="64-up" href="#footnotes" title="'For the Gitksan and  Wetʼsuwetʼen, as for other traditional peoples, the various beliefs about the relationship of humans to the land and to the resources which sustain the people are rich and multifaceted, integrated into all aspects of society. They do not have a reductionist perspective which allows separation of the biological from the moral or mythical. Adherence to a wide variety of practices which we might separate into biological and spiritual realms is seen as necessary for the maintenance of the relationship of the people and the land with its plants and animals which sustain human life.  Conservation is interactive with ideology. As Anderson points out, it is in the realm of ideology and myth, which entrain the emotions, that the motivation to defer present gratification for the future common good is obtained. Myths or teaching stories imbue lessons on conservation, which makes possible long term sustainable adaptation, with sufficient emotional loading to make them memorable and to inspire people to put the lessons contained in them into practice.'  Leslie M. Johnson Gottesfeld (1994), Conservation, Territory, and Traditional Beliefs: An Analysis of Gitksan and Wet'suwet'en Subsistence, Northwest British Columbia, Canada. Human Ecology, p20." onclick="openFootnotes()">⁶4</a></p>  
 
