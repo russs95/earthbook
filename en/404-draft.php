@@ -141,12 +141,13 @@ The requested page (<!--#echo var="REQUEST_URI" -->) couldn't be matched with an
   </div>
           
   <div class="search-box" style="padding-bottom:15%;">
-    <div class="copy-section">
-      <input id="search_input" type="text" placeholder="Search...">   
-         <button class="btn" style="padding:22px;" onclick="searchPosts(0)"><i style="background-image: url(../icons/search-white.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
-      </div>  
-   
-      <div id="search_results"></div>
+              <div class="copy-section">
+                <input id="search_input" type="text" placeholder="Enter search term..." aria-label="Enter keywords...">   
+                <button class="btn" style="padding:22px 0px 22px 0px;" onclick="EarthbookSearch(['glossary.json', 'chapters-index.json'])" aria-label="Search Button"><i style="background-image: url(../icons/search-white.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
+              </div>  
+              <div id="search_results"><h6>Glossary definitions are shown first</h6></div>
+            </div>
+            
       <br><br><br><br>
      
 <div class="ct-quote-source" style="width:100% !important;">
