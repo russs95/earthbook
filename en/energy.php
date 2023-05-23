@@ -348,7 +348,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
     <p>Today, more and more enterprises are aware of the depleting dynamic of profit in-and-of-itself.  In order to contribute to their social and ecological environment, many enterprises choose a <i>‘not-for-profit’</i> energetic structure.  These enterprises strive to return all their revenues back to the pursuit of their social or ecological purpose. </p>
 
-     <p>However, insofar as a not-for-profit enterprise remains fully immersed within the paradigm of profit— <i>where energy is accounted for strictly as revenues and expenses for humans</i>— their energetic structure is insufficient to be green.</p>
+     <p>However, insofar as a not-for-profit enterprise remains fully immersed within the paradigm of profit— <i>where energy is accounted for strictly as financial give and take</i>— their energetic structure is insufficient to be green.</p>
 
      <p>While an enterprise may ensure that all its revenues goes out to its social or environmental purpose, insofar as its energy is accounted for solely in financial terms, it will fail to account for its ecological give and take.  In particular: its give and take of carbon, its support or depletion of biodiversity and its raising or lowering of awareness (our next three Earthen ethics).   In this way, while a not-for-profit enterprise may return all of its financial energy back to its social purpose— or even environmental purpose— without stepping out of the profit-paradigm, it will remain complicit in a dynamic of systematic ecological depletion.</p>
 
@@ -356,7 +356,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
      <p>In other words, without both an intention of contributing socially and ecologically— and an accounting and disclosure of both— an enterprise cannot be green.  
     </p>
 
-     <p>After, While in the short-term, an enterprise may sequester much carbon, plant many trees and support many species— it could very well be that more carbon is emitted, more trees are cut, and more species are depleted to achieve these short-term 'green' results! Without a systemic accounting thereof, one cannot be certain, whether 'green' impacts are in fact a net-contribution. 
+     <p>Afterall, while in the short-term, an enterprise may sequester much carbon, plant many trees and support many species— it could very well be that more carbon is emitted, more trees are cut, and more species are depleted to achieve these short-term 'green' results! Without a systemic accounting thereof, one cannot be certain, whether 'green' impacts are in fact a net-contribution. 
     </p>
 
      <p>However, with Earth's example as our guide, the green path ahead is clear.</p>
@@ -380,7 +380,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
      <p>And just as economic and ecological energy are understood as two sides of the same stone by the Wetsu'wet'en, the same understanding must guide our keen green enterprises.  In particular their purpose.  To be green, an enterprise must be guided by a not-for-profit, <i>for-Earth</i> purpose.  This intention must be publically declared and accounted for— ensuring that the enterprises's surpluses go towards fulfiling its purpose and meeting the other four Earthen ethics.</p>
 
-     <p>That said, the outwards spiral of energy is only one helix-half of Earth's spiral pattern of enrichment.</p>
+     <p>That said, the outwards spiral of energy is only one half of Earth's spiral pattern of enrichment.</p>
 
      <p>There is yet the matter of our matter.</p>
 
