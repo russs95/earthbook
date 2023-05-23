@@ -254,19 +254,18 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
       
       <p>And Earth’s biosphere blossomed!</p>
       
-      <p>Returning to the salmon, we can see that its process, cycle and spiral are a magnificent reflection of Earth’s pattern.</p>
+      <p>Returning to the salmon, we can see that the character of its spiralling cycles are a magnificent reflection of Earth’s pattern.</p>
 
-     <p id="61-up">Just as Earth’s absorption of solar energy powers the planet's processes, the salmon’s steady absorbtion of marine nutrient energy powers its life processes.</p>
+     <p id="61-up">Just as Earth’s absorbtion of solar energy powered an endless procession of cycles on its surface, so too did the salmon absorbtion of marine nutrients power an endless cycles of generations.</p>
      
-     <p>Just as Earth's processes lead to an endless procession of life cycles, so too did the salmon process continue generation after generation.</p>
-     
+    
      <p>Just as Earth's cycles steadily spun the sun's energy out across the planet's surface, so too did the Salmon cycles steadily spin nutrient energy out to its biome.</p>
 
-     <p id="63-up">And finally, just as Earth’s energetic spiral steadily greened the biosphere to the benefit of its biomes, so too did the Salmon's relentless  pattern of nutrient disperal, steadily contribute to the inexorbable enrichment of its ecosystem to the benefit of countless other creatures.</p>
+     <p id="63-up">And just as Earth’s energetic spiral steadily greened the biosphere, so too did the Salmon's relentless  pattern of nutrient disperal, steadily contribute to the inexorbable enrichment of its biome-- to the benefit of countless other creatures.</p>
      
      <p>And, themselves!</p>
      
-     <p>As the bears, bugs, eagles and humans withwhom the Salmon shared interdependence thrived, the living conditions for their own subsequent generations steadily improved.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
+     <p>As the bears, bugs, eagles and humans with whom the Salmon shared interdependence thrived, the living conditions for their own subsequent generations steadily improved, salmon populations increased, and the spiral continued to spin with ever more abundance and vitality.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
     Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
 
    
@@ -303,20 +302,20 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
      <p>In the resonance of the Salmon and Earth's energetic pattern, we find our second Earthen ethic.</p>
 
-     <p>Just as the Salmon and Earth tended their cycles towards the spin of energy outwards to the benefit of all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
+     <p>Just as the Salmon and Earth tended their cycles towards the spin of energy outwards to all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
 
-     <p>As we saw in <i>Tracatatus Ayyew: Book One</i>, certain great green nations have long embbodied this very pattern of  green.  In particular, we observed: cyclocentric cultures.  Such societies were distinguished by their their synk and celebration of the living cycles of the creatures around them-- beings whom they perceived as kin.  Rather than see their endeavours and economies as exceptional and seperate to the tapestry of Earth's cycles, instead they viewed themselves and all their enterprises as an integral parts of it.</p>
+     <p>As we saw in <i>Tracatatus Ayyew: Book One</i>, certain civilizations have long embodied the pattern of ecological contribution.  In particular: cyclocentric cultures.  Such societies are distinguished by their their synk and celebration of the cycles of the creatures around them— beings whom they perceive as kindred relations.  Rather than view human endeavours and economies as exceptional and seperate, instead they view themselves and all their enterprises as an integral parts of Earth's cycles</p>
 
 <p>The Wetʼsuwetʼen, are one such nation.</p>
 
-<p>From their cyclocentric view of the world, the salmon are an ecological elder.</p>
+<p>From their view of the world, the salmon are an ecological elder.</p>
 
 <p>And, a teacher.</p>
 
-<p>Over countless generations they learned from the spirallying cycle of the Salmon.  Over the centuries, the  Wetʼsuwetʼen wove the salmon's pattern of energy management into the stories, morals and languages of their culture.<!-- which in turn had significant impact on the ecosystem of which their society was part.--></p>
+<p>Over countless generations they learned from the spirallying cycle of the Salmon.  Over the centuries, the  Wetʼsuwetʼen wove the salmon's pattern of energy management into their stories, tradition and morals.<!-- which in turn had significant impact on the ecosystem of which their society was part.--></p>
 
 
-<p>In  Wetʼsuwetʼen culture, the very first Salmon caught each season is shared with every member of the community or family unit.  In this tradition, a morsel of the fish is meticulously distributed among each member, and every bone is taken back to the water.  This pattern is then followed in the seasonal harvest of tens of thousands of salmon. Only as much Salmon needed by each family is taken, while the remaining majority are left to the bears, eagles and others.  Surplus fish are shared among the community as needed. After consumption the discarded bones are carefully returned to the river. So ingrained is this spirit of energetic management, that in their language grammatically it is impossible to speak of 'my salmon' only of 'our salmon'.</p>
+<p>In  Wetʼsuwetʼen culture, the very first Salmon caught each season is shared with every member of the community or family unit.  In this tradition, a morsel of the fish is meticulously distributed among each member, and every bone is taken back to the water.  This pattern is then followed in the seasonal harvest of tens of thousands of salmon. Only as much Salmon needed by each family is taken, while the remaining majority are left to the bears, eagles and others.  Surplus fish are shared among the community as needed. After consumption the discarded bones are carefully returned to the river. So ingrained is this spirit of energetic disperal, that in their language grammatically it is impossible to speak of 'my salmon' only of 'our salmon'.</p>
  
 <p>For the Wet'suwet'en, this ethic culminates in the <i>potlach</i> (a tradition they shared with virtually every other first nation on the Pacific coast).  In this seasonal ceremony the community would come together to distribute food, goods and luxuries that had been accumulated by some more than others.  The more that a family or an individual could distribute to others, the more respect was gained.<a id="64-up" href="#footnotes" title="'For the Gitksan and  Wetʼsuwetʼen, as for other traditional peoples, the various beliefs about the relationship of humans to the land and to the resources which sustain the people are rich and multifaceted, integrated into all aspects of society. They do not have a reductionist perspective which allows separation of the biological from the moral or mythical. Adherence to a wide variety of practices which we might separate into biological and spiritual realms is seen as necessary for the maintenance of the relationship of the people and the land with its plants and animals which sustain human life.  Conservation is interactive with ideology. As Anderson points out, it is in the realm of ideology and myth, which entrain the emotions, that the motivation to defer present gratification for the future common good is obtained. Myths or teaching stories imbue lessons on conservation, which makes possible long term sustainable adaptation, with sufficient emotional loading to make them memorable and to inspire people to put the lessons contained in them into practice.'  Leslie M. Johnson Gottesfeld (1994), Conservation, Territory, and Traditional Beliefs: An Analysis of Gitksan and Wet'suwet'en Subsistence, Northwest British Columbia, Canada. Human Ecology, p20." onclick="openFootnotes()">⁶4</a></p>  
 
@@ -324,11 +323,11 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
 <p>In Banayan's Igorot culture (and many other kincentric societies), such a ceremony has its parralel.  In the yearly celebration of the first rice harvest a slaughtered pig would cut up into a piece for every family of the village, which was then carried home by a representative of each on the tip of their spear.  As we saw in the last chapter, this pattern of energetic dispersal is a key component of their Ayyew virtue.<a id="65-up" href="#footnotes" title="The  Wetʼsuwetʼen were not alone in this way.  Virtually all first nations of the Pacific Northwest held a concept of wealth that was defined not by what one accumulated, but of what one gave away embodied in the the 'potlach' ceremony.  In this widespread tradition, the a community would gather to distribute gifts of all kinds.   The express purpose of these ceremonies was energetic dispersal out-to-all.   All who attended, understood well the ceremony and intention.  Within the context of the potlach, honor and respect was gained not by the wealth itself, but by its flow, not by how much was gathered, but by how much was gifted awaollowing the example of kincentric cultures, the salmon and the Earth we must arrange the financial structure of our aspiring green enterprises accordingly.'" onclick="openFootnotes()">⁶⁵</a></p>  -->
 
-<p>The way in which Wet'suwet'en culture embodied the Salmon's pattern into both their social and ecological management of energy, is an example which today's keen green enterprises may follow to align with our second Earthen ethic.  Inspired by the Wet'suwet'en's absence of distinction between ecology and economic energy, we can address the human-centricism embedded in our view of finance and enterprise.   In particular, the view that the financial energy that sustains and powers our companies and corporations is seperate and exceptional to Earthen planetary dynamics.</p>
+<p>The way in which Wet'suwet'en culture embodied the Salmon's pattern into both their social and ecological management of energy, is an example which today's keen green enterprises may follow to align with our second Earthen ethic.  Inspired by the Wet'suwet'en's absence of distinction between ecology and economic energy, we can address the human-centricism embedded in our view of finance and enterprise.   In particular, the view that the financial energy that sustains and powers our companies and corporations is somehow seperate and exceptional to Earthen planetary dynamics.</p>
 
-<p>As we transition to an understanding of the inextricable immersion of our economies within Earth’s systems, we can begin to see that the financial energy with which our enterprises operate is in fact a subset energy system of the planet's biosphere.</p>
+<p>As we transition to an understanding of the inextricable immersion of our economies within Earth’s systems, we can begin to see that financial energy is in fact a subset energy system of the planet's biosphere.</p>
      
-<p>In this way, both financial and ecological systems, as subsets energy systems of Earth, are subject to the same planetary principles.</p>
+<p>In this way, both financial and ecological systems, as subsets systems of Earth, are subject to the same planetary principles.</p>
      
     <!-- <p>Whereas an organism manages its give and take of nutrients over seasonal cycles, an enterprises manages its revenues and expenses over fiscal cycles.  Whereas energy flow through an organism in the form of carbohydrates and are stored as fats and protein, within an enterprise energy flows as currency and is stored as capital and assets.  </p>
      
