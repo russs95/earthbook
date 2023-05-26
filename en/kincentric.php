@@ -87,7 +87,7 @@ Must be updated for each page-->
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents" style="background-color:var(--header-footer);transition:0 !important;"></button>
+  <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents" style="background-color:none!important;"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Kindred Relations</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
