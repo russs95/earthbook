@@ -175,7 +175,7 @@ display: none;
     background-size: contain;
     border: none;
     transition: 2s;
-    background-color: var(--header-footer) !important;
+    /*background-color: var(--header-footer) !important;*/
   }
 
   #ct-tc-menu:hover {

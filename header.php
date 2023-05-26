@@ -62,7 +62,7 @@ The requisite typography for the page-->
 All the css needed for this page-->
  
 <link rel="stylesheet" href="../style-sheet.css?v1.82">
-<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.1">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.2">
 <link rel="stylesheet" href="../light.css?v1.7">
 
 
