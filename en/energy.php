@@ -235,7 +235,7 @@ display: none;
     <div class="chapt-emblem" style="text-align:center;margin:40px 0px 30px 0px;" ><img src="../svgs/salmon-james-madam.svg" width="200" height="121"></div>
     
     <div class="lead-page-paragraph">
-    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon the Wet'suwet'en gained the ecological understanding to preside over the steady enrichment of their land. Today, we too have much to learn from the Salmon— and from the ways of the Wet'su'weten. As we shall see, the ways in which they patterned their lives upon the Salmon’s outward spiral of energy provides a green path forward for us and our enterprises today.  Indeed, the spiralling cycles of both the Salmon and Wetsu'we'ten cycles mirrors the energetic pattern by which Earth itself greened—  a geometric principle which forms the basis of our second Earthen energy.  In comparing this Earthen pattern to the operations of our modern for-profit and not-for-profit enterprises, we see clearly the geometric reason for which they inevitbaly deplete the ecosystems of which they are part.  More importantly, the Earthen ethic of energy shows us the way to structure our keen-green, for Earth enterprises to  sure to they are in fact, ecological and social contributors.</div>
+    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon the Wet'suwet'en gained the ecological understanding to preside over the steady enrichment of their land. Today, we too have much to learn from the Salmon— and from the ways of the Wet'su'weten. As we shall see, the ways in which they patterned their lives upon the Salmon’s outward spiral of energy provides a green path forward for us and our enterprises today.  Indeed, the spiralling cycles of both the Salmon and Wetsu'we'ten cycles mirrors the energetic pattern by which Earth itself greened—  a resonance which provides us with the basis for our second Earthen ethic.  With its help, we can begin to see the differing pattern of our modern for-profit and not-for-profit enterprises and the geometry behind their inevitable dynamics of ecological depletion.  More importantly however, the Earthen ethic of energy shows us the way to structure our keen-green, for Earth enterprises to  sure to they are in fact, ecological and social contributors.</div>
       
     <div class="page-paragraph">
 
@@ -256,12 +256,12 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
       
       <p>Returning to the salmon, we can see that the character of its spiralling cycles are a magnificent reflection of Earth’s pattern.</p>
 
-     <p id="61-up">Just as Earth’s absorbtion of solar energy powered and endless procession of cycles on its surface, so too did the salmon's absorbtion of marine nutrients power an endless cycle of generations.</p>
+     <p id="61-up">Just as Earth’s absorbtion of solar energy powered a procession of cycles without end or begining on its surface, so too did the salmon's absorbtion of marine nutrients power its cycle of innumerable generations.</p>
      
     
      <p>Just as Earth's cycles steadily spun the sun's energy out across the planet's surface, so too did the Salmon cycles steadily spin nutrient energy out to its ecosystem.</p>
 
-     <p id="63-up">And just as Earth’s energetic spiral steadily greened the biosphere, so too did the Salmon's relentless pattern of nutrient disperal contribute to the inexorbable enrichment of its biome—  a common home for which countless other creatures could flourish.</p>
+     <p id="63-up">And just as Earth’s spiraling cycles steadily greened the biosphere, so too did the Salmon's relentless pattern of nutrient disperal contribute to the inexorbable enrichment of its biome—  a common home for which countless other creatures could flourish.</p>
      
      <p>And, themselves!</p>
      
@@ -300,17 +300,21 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
    
   
 
-     <p>In the resonance of the Salmon and Earth's energetic pattern, we find our second Earthen ethic.</p>
+     <p>Here it is important emphasize that the Salmon's pattern is not different than its fellow organisms.  If we examined closely the bears, eagles, bugs, humans and algae that are the Salmon's neighbours, we would observe that each played its own parts in the regeneration of North America's barren coast by manifesting the same energtic tendencies in its life cycles.  Nor is it surprising that the Salmon emulate Earth's energetic pattern.  Indeed, it is the  energetic tendency of the Salmon (and that of all their fellow organisms) comprise the ecosystems and biomes that make up the biosphere.</p>
+
+     <p>It is here that we find our second Earthen ethic.</p>
 
      <p>Just as the Salmon and Earth tended their cycles towards the spin of energy outwards to all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this second Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
 
-     <p>As we saw in <i>Tracatatus Ayyew: Book One</i>, certain <a href="kincentric.php">great green nations</a> have long embodied the pattern of ecological contribution in their ways.  In particular: <i>cyclocentric cultures</i>.  As we saw, these societies are distinguished by their synchronoy with the cycles of plants and animals around them— beings whom they perceived as kin.  These cultures, rather than view human endeavour and economy as exceptional and seperate from their kindred relations, instead understand themselves and all their enterprises to be congruent contributions to shared system.</p>
+     <p>As we saw in <i>Tracatatus Ayyew: Book One</i>, certain <a href="kincentric.php">great green nations</a> have long embodied the pattern of ecological contribution in their ways.  In particular: <i>cyclocentric cultures</i>.  As we saw, these societies are distinguished by their synchronoy with the cycles of plants and animals around them— beings whom they perceived as kin.  These cultures, rather than view human endeavour as exceptional and seperate from their kindred relations, instead understood themselves and all their enterprises to be congruent contributions to shared system.</p>
 
 <p>The Wetʼsuwetʼen, are one such nation.</p>
 
-<p>From their view of the world, the salmon are an ecological elder.</p>
+<p>From their view of the world, the salmon were not just another form of people.</p>
 
-<p>And, a teacher.</p>
+<p>They were elders.</p>
+
+<p>And, teachers.</p>
 
 <p>Over countless centuries the Wetʼsuwetʼen learned from the spirallying cycle of the Salmon.  Over countless generations, they wove the salmon's pattern of energy management into their stories, traditions and values.<!-- which in turn had significant impact on the ecosystem of which their society was part.--></p>
 
@@ -319,37 +323,40 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
  
 <p>For the Wet'suwet'en, this ethic culminates in the <i>potlach</i> (a tradition shared with virtually every other first nation on the North West coast and interior).  In this seasonal ceremony, the community comes together to distribute items of value, function and beauty that had been accumulated by some more than others.  Everything from food, to blankets, to jewlery are brought to be gifted at the ceremony.  In the potlach the more that a family or an individual can distribute to others, the more respect and honor is gained.<a id="64-up" href="#footnotes" title="'For the Gitksan and  Wetʼsuwetʼen, as for other traditional peoples, the various beliefs about the relationship of humans to the land and to the resources which sustain the people are rich and multifaceted, integrated into all aspects of society. They do not have a reductionist perspective which allows separation of the biological from the moral or mythical. Adherence to a wide variety of practices which we might separate into biological and spiritual realms is seen as necessary for the maintenance of the relationship of the people and the land with its plants and animals which sustain human life.  Conservation is interactive with ideology. As Anderson points out, it is in the realm of ideology and myth, which entrain the emotions, that the motivation to defer present gratification for the future common good is obtained. Myths or teaching stories imbue lessons on conservation, which makes possible long term sustainable adaptation, with sufficient emotional loading to make them memorable and to inspire people to put the lessons contained in them into practice.'  Leslie M. Johnson Gottesfeld (1994), Conservation, Territory, and Traditional Beliefs: An Analysis of Gitksan and Wet'suwet'en Subsistence, Northwest British Columbia, Canada. Human Ecology, p20." onclick="openFootnotes()">⁶4</a></p>  
 
+
+
 <!--
 
 <p>In Banayan's Igorot culture (and many other kincentric societies), such a ceremony has its parralel.  In the yearly celebration of the first rice harvest a slaughtered pig would cut up into a piece for every family of the village, which was then carried home by a representative of each on the tip of their spear.  As we saw in the last chapter, this pattern of energetic dispersal is a key component of their Ayyew virtue.<a id="65-up" href="#footnotes" title="The  Wetʼsuwetʼen were not alone in this way.  Virtually all first nations of the Pacific Northwest held a concept of wealth that was defined not by what one accumulated, but of what one gave away embodied in the the 'potlach' ceremony.  In this widespread tradition, the a community would gather to distribute gifts of all kinds.   The express purpose of these ceremonies was energetic dispersal out-to-all.   All who attended, understood well the ceremony and intention.  Within the context of the potlach, honor and respect was gained not by the wealth itself, but by its flow, not by how much was gathered, but by how much was gifted awaollowing the example of kincentric cultures, the salmon and the Earth we must arrange the financial structure of our aspiring green enterprises accordingly.'" onclick="openFootnotes()">⁶⁵</a></p>  
 
 <p>The way in which Wet'suwet'en culture embodied the Salmon's pattern into both their social and ecological management of energy, is an example which today's keen green enterprises may follow to align with our second Earthen ethic.  Inspired by the Wet'suwet'en's absence of distinction between ecology and economic energy, we can address the human-centricism embedded in our view of finance and enterprise.   In particular, the view that the financial energy that sustains and powers our companies and corporations is somehow seperate and exceptional to Earthen planetary dynamics.</p>-->
 
-<p>As we strive to go green, the Wet'su'weten provide the path forward by which our modern enterprises may align with the second Earthen ethic.  Inspired by their view of social and ecological energy as one and the same, we can address the human-centricism embedded in our view of finance and enterprise.   In particular, the view that the financial energy that sustains and powers our modern economy is somehow seperate and exceptional to Earthen planetary dynamics.</p>
+<p>Today, as our modern enterprises strive to go green, the Wet'su'weten are an inspiration.  Over the mellenia, by following these ways, their ancestors have passed a steadily richer and more abundant biome down to their children.  In their land the salmon have always returned, the bears, eagles and forest have thrived in diversity, abundance and vitality.</p>
 
+<p>Inspired by their understanding of social and ecological energy as one and the same, we can address the conflicting assumption embedded in our modern understanding of enterprise and economy.  In particular, the view that financial energy is somehow seperate and exceptional to Earthen planetary dynamics.  This modern economic axiom is a logical consequence of the deep rooted humancentrism that underlies our modern culture-- an ontological foundation that, as we argued in chapter 5,  has been long shown to be empirically faulty and scientifically fallacious.</p>
 
-<p>As we transition to an understanding of the inextricable immersion of our economies within Earth’s systems, we can begin to see that financial energy is in fact a subset energy system of the planet's biosphere.</p>
-     
-<p>In this way, both financial and ecological systems, as subsets systems of the biosphere, are subject to the same planetary principles.</p>
+<p>And long overdue for discard.</p>
+
+<p>With an updated understanding of the inextricable immersion of our economies within Earth’s systems, we can begin to see that financial energy is in fact a subset energy system of the planet's biosphere, and, most significantly, is subject to the same planetary principles.</p>
      
     <!-- <p>Whereas an organism manages its give and take of nutrients over seasonal cycles, an enterprises manages its revenues and expenses over fiscal cycles.  Whereas energy flow through an organism in the form of carbohydrates and are stored as fats and protein, within an enterprise energy flows as currency and is stored as capital and assets.  </p>
      
      <p>Through these parralels, we can observe comparable patterns.</p>-->
      
-     <p>Whether an organism or enterprise, an ecosystem or an economy, as each system spins, their pattern of energetic give and take tends their cycles either inward our outward.  The spiral that emerges either inclines inwards towards the concentration of energy into themselves or outwards towards the dispersal of energy to the system that encompasses them.<a id="66-up" href="#footnotes" title="Suh, Sangwon. (2004). Materials and energy flows in industry and ecosystem networks. The International Journal of Life Cycle Assessment. 9. 335-336. 10.1007/BF02979425. Materials and energy flow analysis (MEFA) has been widely utilized in ecology and economics, occupying unique positions in both disciplines." onclick="openFootnotes()">⁶⁶</a></p>
+     <p>Whether an organism or enterprise, an ecosystem or an economy, as each system spins, their pattern of energetic give and take tends their cycles either inward our outward.  The spiral that emerges either inclines inwards towards the concentration of energy into themselves or outwards towards the dispersal of energy to their encompassing system.<a id="66-up" href="#footnotes" title="Suh, Sangwon. (2004). Materials and energy flows in industry and ecosystem networks. The International Journal of Life Cycle Assessment. 9. 335-336. 10.1007/BF02979425. Materials and energy flow analysis (MEFA) has been widely utilized in ecology and economics, occupying unique positions in both disciplines." onclick="openFootnotes()">⁶⁶</a></p>
 
-     <p>When it comes to our modern enterprises, their pattern of energy management is determined by the purpose <i>for</i> which the enterprise is established.  The for-<i>what</i> of an enterprise determines how and why it receives revenues and expends expenses— as well as the how and why of its ecological give and take.</p>
+     <p>When it comes to our modern enterprises, their pattern of energy management is determined by the purpose <i>for which</i> the enterprise is established.  The <i>for</i> of an enterprise determines how and why it receives revenues and expends expenses— as well as the how and why of its ecological give and take.</p>
 
-    <p>While most enterprises operate with the purpose of meeting human wants and needs— such as for the provision of products and for the delivery of services— often modern enterprises are structured for a deeper reason. Namely, <i>for the purpose of profit</i>: generating more energy for themselves than they give back.  This excess energy, although often sourced ecologically, is defined strictly from a paradigm of financial profit and loss, revenues and expenses. While these <i>for-profit</i> enterprises may provide products, services and even environmental services, their structure dictates that their financial surpluses are directed back to themsleves (namely their owners or shareholders) at the end of each financial cycle. The result is a process of accumulation that over many financial cycles, steadily depletes the ecological and social systems of which they are a part.<a id="67-up" href="#footnotes" title="Hinton and Maclurcan, present a compelling argument of the extractive nature of for-profit business.  They propose this ethic of determination: “...in order to determine whether business is generative (contributing to the health of the whole economy) or extractive (taking away from the health of the whole economy), one must ask the question, 'Who profits from the profit?' Jennifer Hinton, Donnie Maclurcan, <i>How on Earth?</i>, (Post Growth Institute, 2006)" onclick="openFootnotes()">⁶⁷</a></p>
+    <p>While most enterprises operate with the purpose of meeting human wants and needs— such as for the provision of products and for the delivery of services— modern enterprises tend to be structured for a deeper reason. Namely, <i>for the purpose of profit</i>: generating more energy for themselves than they give back.  This excess energy, although often sourced ecologically, is defined strictly from a paradigm of financial profit and loss, revenues and expenses (what we'll call <i>the profit paradigm</p>). While these <i>for-profit</i> enterprises may provide products, services and even environmental services, their structure dictates that their financial surpluses are directed back to themsleves (namely their owners or shareholders) at the end of each financial cycle. The result is a process of accumulation that over many financial cycles, steadily depletes the ecological and social systems of which they are a part.<a id="67-up" href="#footnotes" title="Hinton and Maclurcan, present a compelling argument of the extractive nature of for-profit business.  They propose this ethic of determination: “...in order to determine whether business is generative (contributing to the health of the whole economy) or extractive (taking away from the health of the whole economy), one must ask the question, 'Who profits from the profit?' Jennifer Hinton, Donnie Maclurcan, <i>How on Earth?</i>, (Post Growth Institute, 2006)" onclick="openFootnotes()">⁶⁷</a></p>
 
 
-    <p>Such a spins is in opposition to Earth's pattern.  No matter how green-intentioned and no matter how "green" its short-term impacts may seem, the net-effect of a for-profit enterprise is inevitably that of systematic ecological depletion.</p>
+    <p>Such a spin is in opposition to Earth's pattern.  No matter how green-intentioned and no matter how "green" its short-term impacts may seem, the net-effect of a for-profit enterprise is inevitably that of systematic ecological depletion.</p>
 
     <p>Of course, not all modern enterprises operate for-profit.</p>
 
-    <p>Today, more and more enterprises are aware of the depleting dynamic of profit in-and-of-itself.  In order to contribute socially and environmentally, many enterprises choose a <i>‘not-for-profit’</i> energetic structure.  These enterprises strive to return their financial surpluses back to the pursuit of their social or ecological purpose. </p>
+    <p>Today, more and more enterprises are aware of the depleting dynamic of profit in-and-of-itself.  In order to contribute socially and environmentally, many enterprises choose a <i>‘not-for-profit’</i> energetic structure.  These enterprises strive to return their financial surpluses back to the pursuit of their social or environmental purpose. </p>
 
-     <p>However, insofar as a not-for-profit enterprise remains fully immersed within the paradigm of profit— <i>where energy is accounted for strictly as financial give and take</i>— their energetic structure is insufficient to be green.</p>
+     <p>However, insofar as a not-for-profit enterprise remains fully immersed within the profit paradigm— <i>where energy is accounted for strictly as financial give and take</i>— their energetic structure is insufficient to be green.</p>
 
      <p>While an enterprise may ensure that all its revenues goes out to its social or environmental purpose, insofar as its energy is accounted for solely in financial terms, it will fail to account for its ecological give and take.  In particular: its give and take of carbon, its support or depletion of biodiversity and its raising or lowering of awareness (our next three Earthen ethics).   In this way, while a not-for-profit enterprise may return all of its financial energy back to its social purpose (or even environmental purpose) without stepping out of the profit-paradigm, it fails to embody our second Earthen ethic.</p>
 
@@ -383,7 +390,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
      <p>That said, the outwards spiral of energy is only one half of Earth's spiral pattern of enrichment.</p>
 
-     <p>There is yet the matter of our matter.</p>
+     <p>There is yet the matter of... our matter.</p>
 
      <p>Our next Earthen ethic.</p>
 

@@ -78,7 +78,7 @@ Must be updated for each page-->
 
 
 <div id="ct-chapter-top">
-  <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);"  aria-label="Open Table of Contents"></button>
+  <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
     <div id="ct-chapter-title">Preamble</div>   
     <div id="ct-book-title">Tractatus Ayyew</div>
@@ -100,7 +100,7 @@ Must be updated for each page-->
 <div id="chap-notice">
   <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
   <div id="chap-notice-text">
-    Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
+  💡  Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
   </div>
 </div>
 
