@@ -182,7 +182,7 @@ display: none;
   <header-component></header-component>
 
   <div id="ct-chapter-top">
-    <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
+    <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
     <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">The Salmon's Spin</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
@@ -213,7 +213,7 @@ display: none;
   <div id="chap-notice">
   <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
   <div id="chap-notice-text">
-    Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
+  💡  Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
   </div>
 </div>
 
@@ -232,7 +232,7 @@ display: none;
      <div id="line" style="margin-bottom: 30px;"></div>
     <br><br>
 
-    <div class="chapt-emblem" style="text-align:center;margin:40px 0px 30px 0px;" ><img src="../svgs/salmon-james-madam.svg" width="200" height="121"></div>
+    <div class="chapt-emblem" style="text-align:center;margin:40px 0px 40px 0px;" ><img src="../svgs/salmon-james-madam.svg" width="200" height="121"></div>
     
     <div class="lead-page-paragraph">
     OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon the Wet'suwet'en gained the ecological understanding to preside over the steady enrichment of their land. Today, we too have much to learn from the Salmon— and from the ways of the Wet'su'weten. As we shall see, the ways in which they patterned their lives upon the Salmon’s outward spiral of energy provides a green path forward for us and our enterprises today.  Indeed, the spiralling cycles of both the Salmon and Wetsu'we'ten cycles mirrors the energetic pattern by which Earth itself greened—  a resonance which provides us with the basis for our second Earthen ethic.  With its help, we can begin to see the differing pattern of our modern for-profit and not-for-profit enterprises and the geometry behind their inevitable dynamics of ecological depletion.  More importantly however, the Earthen ethic of energy shows us the way to structure our keen-green, for Earth enterprises to  sure to they are in fact, ecological and social contributors.</div>
@@ -437,7 +437,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
         <a href="#60-up" class="footnote">   
         <div class="footnote-number">60.</div>
-        <div class="footnote-text">'The thermo-dynamic transfer of energy into and out of non-­equilibrium states is what has allowed the earth to emerge, persist, and distinguish itself from other aspects of the cosmos.' Thomas Nail, <i>A Theory of the Earth</i>, (Standford University Press, 2021) Chap.1 p.21</i>
+        <div class="footnote-text">'The thermo-dynamic transfer of energy into and out of non-­equilibrium states is what has allowed the earth to emerge, persist, and distinguish itself from other aspects of the cosmos.' Thomas Nail, <i>A Theory of the Earth</i>, (Standford University Press, 2021) Chap.1 p.21)
         </div>
         </a>
 
