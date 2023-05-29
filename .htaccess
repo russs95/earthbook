@@ -8,8 +8,7 @@ DirectoryIndex index.html
 
 
 
-Redirect / /en/
-
+Redirect /index.html /en/
 
 Redirect /preamble /en/preamble.php
 Redirect /preamble.html /en/preamble.php
