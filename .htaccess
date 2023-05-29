@@ -6,6 +6,9 @@ Header set Cache-Control "max-age=31536000, public"
 
 DirectoryIndex index.html
 
+DirectoryIndex en/index.html
+
+
 
 
 Redirect /index.html /en/
