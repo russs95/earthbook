@@ -68,6 +68,13 @@ Must be updated for each page-->
       width: 80%;
       font-size: 0.8em;
     }
+    #ct-chapter-title {
+      /*padding-top: 45px;
+      */font-size: 9vmin;
+      letter-spacing: 0px;
+      
+      
+    }
   }
 
   @media screen and (min-width: 700px) and (max-width: 1324px) {
@@ -78,6 +85,13 @@ Must be updated for each page-->
     .ct-quote-source {
       width: 70%;
       font-size: 1em;
+    }
+    #ct-chapter-title {
+      /*padding-top: 45px;
+      */font-size: 10vmin;
+      letter-spacing: 2px;
+      
+      
     }
   }
     
@@ -92,15 +106,16 @@ Must be updated for each page-->
       font-size: 1em;
       text-shadow: 0px 0px 10px var(--slider);
     }
-  }
-
-  #ct-chapter-title {
+    #ct-chapter-title {
       /*padding-top: 45px;
       */font-size: 10vmin;
       letter-spacing: 2px;
       
       
     }
+  }
+
+
 
  @media screen and (min-width: 700px) {
 
@@ -187,7 +202,7 @@ display: none;
         <div id="ct-chapter-title">The Salmon's Spin</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Earthen Principle No. 2</div>
-     <!--   <div id="ct-word-count"><i>2,307 words</i></div>-->
+        <div id="ct-word-count"><i>2,307 words</i></div>
     </div>
   </div>
 
@@ -211,10 +226,10 @@ display: none;
 
 
   <div id="chap-notice">
-  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-  <div id="chap-notice-text">
+    <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+    <div id="chap-notice-text">
   💡  Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
-  </div>
+   </div>
 </div>
 
 
@@ -268,7 +283,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
      <p>As the bears, bugs, eagles and humans with whom it shared interdependence thrived, the living conditions for future Salmon generations steadily improved.  Salmon populations increased and their spiralling cycle continued to spin with ever more abundance and vitality.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
     Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
 
-   
+</div>
 
 
 <div class="chart-image-desktop">
