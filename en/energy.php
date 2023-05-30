@@ -321,9 +321,9 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
      <p>Just as the Salmon and Earth tended their cycles towards the spin of energy outwards to all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this second Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
 
-     <p>As we saw in <i>Tracatatus Ayyew: Book One</i>, certain <a href="kincentric.php">great green nations</a> have long embodied the pattern of ecological contribution in their ways.  In particular: <i>cyclocentric cultures</i>.  As we saw, these societies are distinguished by their synchronoy with the cycles of plants and animals around them— beings whom they perceived as kin.  These cultures, rather than view human endeavour as exceptional and seperate from their kindred relations, instead understood themselves and all their enterprises to be congruent contributions to shared system.</p>
+     <p>As we emphasized in <i>Tracatatus Ayyew: Book One</i>, certain great green nations have long embodied the pattern of ecological contribution in their ways.  In particular: <a href="kincentric.php">cyclocentric cultures</a>.  As we saw, these societies are distinguished by their synchronoy with the cycles of plants and animals around them— beings whom they perceived as kin.  These cultures, rather than view human endeavour as exceptional and seperate from their kindred relations, instead understood themselves and all their enterprises to be congruent contributions to shared system.</p>
 
-<p>The Wetʼsuwetʼen, are one such people.</p>
+<p>The Wetʼsuwetʼen are one such people.</p>
 
 <p>From their view of the world, the salmon were seen as ecological elders.</p>
 
