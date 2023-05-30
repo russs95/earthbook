@@ -35,6 +35,15 @@ $page_title = "Preamble | Tractatus Ayyew - An Earthbook";
 $chap_name = "Preamble";?>
 
 
+<Style>
+    #ct-chapter-title {
+      /*padding-top: 45px;
+      */font-size: 10vmin;
+      letter-spacing: 2px;
+    }
+    
+  </style>
+
 <head>
 
 <?php require_once ("../header.php");?>

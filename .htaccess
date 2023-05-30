@@ -8,7 +8,7 @@ DirectoryIndex index.html
 
 DirectoryIndex en/index.html
 
-
+Redirect /index.php /en/
 
 
 Redirect /index.html /en/
