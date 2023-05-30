@@ -183,7 +183,7 @@ display: none;
 
   <div id="ct-chapter-top">
     <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
-    <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+    <div class="ct-holder" style="cursor:pointer;overflow-y:none;" onclick="openContents()">
         <div id="ct-chapter-title">The Salmon's Spin</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Earthen Principle No. 2</div>
