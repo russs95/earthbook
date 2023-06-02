@@ -65,7 +65,17 @@ Must be updated for each page-->
 
 
 
-
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+  </script>
 
 </head>
 
@@ -175,7 +185,6 @@ Must be updated for each page-->
 
 <?php require_once ("includes/comments.php");?>
 
-<?php require_once ("includes/search.php");?>
 
   <!--Footer Next Chapter Section: Requires customization-->
   <div id="footer-chapter" style="margin-bottom: 0px;">
