@@ -239,7 +239,7 @@ display: none;
 
 <div class="page-paragraph">
     <p id="58-up"><i>
-    Thirteen thousand years ago, as trillion-ton ice-sheets retreated from North America's Pacific coast, barren desolation reigned.  However, in the lingering glacial streams, the continent's revitalization had already begun.   Proliferating river by river down the warming coast, the adventurous ancestors of today's Salmon swan inland to deposit their eggs.  Ever since, with each season, their energizing cycle has spun. Come Spring, salmon hatchlings emerge from the rocky river bed. The tiny fish gather their strength consuming insects and waterborne larvae.  Come Summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. Then,  after several years when they have reached their full size and strength, they head home.  Come Fall, millions of Salmon retrace their river route and an entire ecosystem revels in their return. Bears, eagles and humans gather for grand fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by, continue to the waters where they were born.  Using the last of their strength, they deposit their eggs in the gravel.  The salmon then die; their decomposition a final nutrient gift to the now rich and diverse river ecosystem that their roe will soon run.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a>
+    Thirteen thousand years ago, as trillion-ton ice-sheets retreated from North America's Pacific coast, barren desolation reigned.  However, in the lingering glacial streams, the continent's revitalization had already begun.   Proliferating river by river down the warming coast, the adventurous ancestors of today's Salmon swan inland to deposit their eggs.  Ever since, with each season, their energizing cycle has spun. Come Spring, salmon hatchlings emerge from the rocky river bed. The tiny fish gather their strength consuming insects and waterborne larvae.  Come Summer, they set out on a journey to the ocean. Once arrived, they feast on nutrient rich marine life. After several years when they have reached their full size and strength, they head home.  Come Fall, millions of Salmon retrace their river route and an entire ecosystem revels in their return. Bears, eagles and humans gather for grand fishing feasts.  Even the bugs partake! The remnants of consumed carcasses nourish the very insects upon which the salmon first fed.  Meanwhile, those salmon that slipped by, continue to the waters where they were born.  Using the last of their strength, they deposit their eggs in the gravel.  The salmon then die; their decomposition a final nutrient gift to the now rich and diverse river ecosystem that their roe will soon run.<a id="58-up" href="#footnotes" title="Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., 12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and streams in what is now British Columbia.'" onclick="openFootnotes()">⁵⁸</a>
     </i></p>
     </div>
 
@@ -250,7 +250,7 @@ display: none;
     <div class="chapt-emblem" style="text-align:center;margin:40px 0px 40px 0px;" ><img src="../svgs/salmon-james-madam.svg" width="200" height="121"></div>
     
     <div class="lead-page-paragraph">
-    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon the Wet'suwet'en gained the ecological understanding to preside over the steady enrichment of their land. Today, we too have much to learn from the Salmon— and from the Wet'su'weten. As we shall see, the way in which they patterned their lives upon the Salmon’s outward spiral of energy provides a green path forward for us and our enterprises.  Indeed, the geometric pattern that both the ways of the Wetsu'we'ten and the Salmon share, mirrors the energetic pattern by which Earth itself greened.  This resonance, provides us with the basis for our second Earthen ethic.  Through its lense, we can see the dynamic of systematic depletion that underlies our modern for-profit and not-for-profit enterprises.  However, more importantly, the second Earthen ethic provides the foundation by which we can structure our keen-green, for Earth enterprises to be certain that they are in fact, ecological and social contributions.</div>
+    OVER THE LAST MILLENIUM, the Wet'suwet'en people of North America's Pacific coast have lived alongside the Salmon's masterful management of energy. Observing and learning from the Salmon the Wet'suwet'en gained the ecological understanding to preside over the steady enrichment of their land. Today, we too have much to learn from the Salmon— and from the Wet'su'weten. As we shall see, the way in which they patterned their lives upon the Salmon’s outward spiral of energy provides a green path forward for us and our enterprises.  Indeed, the geometric pattern that both the Wetsu'we'ten and the Salmon share, mirrors the energetic pattern by which Earth itself greened.  This resonance, provides us with the basis for our second Earthen ethic.  With the help of its lense, we shall see that a dynamic of systematic depletion underlies our modern for-profit and not-for-profit enterprises.  However, more importantly, the second Earthen ethic provides the foundation by which we can structure our keen-green, for Earth enterprises to be certain that they are in fact, ecological and social contributions.</div>
       
     <div class="page-paragraph">
 
@@ -271,7 +271,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
       
       <p>Returning to the salmon, we can see that the character of its spiralling cycles are a magnificent reflection of Earth’s pattern.</p>
 
-     <p id="61-up">Just as Earth’s absorbtion of solar energy powered an endless procession of cycles across its surface, so too did the salmon's absorbtion of marine nutrients power its cycle of innumerable generations.</p>
+     <p id="61-up">Just as Earth’s absorbtion of solar energy powered an endless procession of cycles across its surface, so too did the salmon's absorbtion of marine nutrients power an endless cycle of generations.</p>
      
     
      <p>Just as Earth's cycles steadily spun the sun's energy out across the planet's surface, so too did the Salmon cycles steadily spin nutrient energy out to its ecosystem.</p>
@@ -280,7 +280,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
      
      <p>And so too the Salmon!</p>
      
-     <p>As the bears, bugs, eagles and humans with whom it shared interdependence thrived, the living conditions for future Salmon generations steadily improved.  Salmon populations increased and their spiralling cycle continued to spin with ever more abundance and vitality.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
+     <p>As the bears, bugs, eagles and humans with whom it shared interdependence thrived, the living conditions for future Salmon generations steadily improved.  As the cycles of all these creatures intertwined and reverberated (with many of them also tending towards enrichment) the once barren Pacific coast steadily flourished.  Salmon populations increased and their spiralling cycle continued to spin with ever more abundance and vitality.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
     Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
 
 </div>
@@ -317,19 +317,19 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 <!-- HMMMMM
      <p>Here it is important emphasize that the Salmon's pattern is not different than its fellow organisms.  If we examined closely the bears, eagles, bugs, humans and algae that are the Salmon's neighbours, we would observe that each played its own parts in the regeneration of North America's barren coast by manifesting the same energtic tendencies in its life cycles.  Nor is it surprising that the Salmon emulate Earth's energetic pattern.  Indeed, it is the  energetic tendency of the Salmon (and that of all their fellow organisms) comprise the ecosystems and biomes that make up the biosphere.</p>-->
 
-     <p>It is here that we find our second Earthen ethic.</p>
+     <p>Within this great green unfolding, we find our second Earthen ethic.</p>
 
-     <p>Just as the Salmon and Earth tended their cycles towards the spin of energy outwards to all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this second Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</p>
+     <p><i>Just as the Salmon and Earth tended their cycles towards the spin of energy outwards to all, so too must we intend and achieve with our own. Only when the intention and the result of our cyclical processes is the net-outwards distribution of energy, is this second Earthen ethic met.  Only then can our enterprises be considered an ecological contribution— and green.</i></p>
 
-     <p>As we emphasized in <i>Tracatatus Ayyew: Book One</i>, certain great green nations have long embodied the pattern of ecological contribution in their ways.  In particular: <a href="kincentric.php">cyclocentric cultures</a>.  As we saw, these societies are distinguished by their synchronoy with the cycles of plants and animals around them— beings whom they perceived as kin.  These cultures, rather than view human endeavour as exceptional and seperate from their kindred relations, instead understood themselves and all their enterprises to be congruent contributions to shared system.</p>
+     <p>As we emphasized in <i>Tracatatus Ayyew: Book One</i>, certain great green nations have long embodied the pattern of ecological contribution in their ways.  In particular: <a href="kincentric.php">cyclocentric cultures</a>.  As we saw, these societies are distinguished by their synchronoy with the cycles of plants and animals around them— beings whom they perceived as kin.  These cultures, rather than view human endeavour as exceptional and seperate from their kindred relations, instead understood all their enterprises to be congruent contributions to shared system.</p>
 
-<p>The Wetʼsuwetʼen are one such people.</p>
+<p>The Wetʼsuwetʼen are one such society.</p>
 
-<p>From their view of the world, the salmon were seen as ecological elders.</p>
+<p>From their view of the world, the salmon were not just kindred relations.  They were ecological elders.</p>
 
 <p>And, teachers.</p>
 
-<p>Over countless centuries the Wetʼsuwetʼen learned from the spirallying cycle of the Salmon.  Over countless generations, they wove the salmon's pattern of energy management into their stories, traditions and values.<!-- which in turn had significant impact on the ecosystem of which their society was part.--></p>
+<p>Over countless centuries the Wetʼsuwetʼen learned from the spiralling cycle of the Salmon.  Over countless generations, they wove the salmon's pattern of energy management into their stories, traditions and values.<!-- which in turn had significant impact on the ecosystem of which their society was part.--></p>
 
 
 <p>In  Wetʼsuwetʼen culture, the very first Salmon caught each Autumn is shared within the community or family unit.  In this tradition, a morsel of the fish is meticulously distributed among each member, while each and every bone is taken back and returned to the river.  This pattern is then followed in the seasonal harvest of tens of thousands of salmon. Only as much Salmon required by each family is taken, while the vast remaining majority are allowed to pass through to eaten by other creatures and to lay their eggs.  Surplus catch are shared among the community as needed, while all the bones are brought back to the water. So ingrained is this spirit of disperal, that in the Wetsuweten language the very word for 'salmon' is a gramatical exception: it is impossible to speak of 'my salmon' only of 'our salmon'.</p>
@@ -349,7 +349,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
 <p>Today, as our modern enterprises strive to go green, the Wet'su'weten show the way forward.</p>
 
-<p>Inspired by their kincentric understanding of social and ecological energy as one and the same, we can address the humancentric assumption embedded in our modern understanding of enterprise and economy.  In particular, the view that financial energy is somehow seperate and exceptional to Earthen planetary dynamics.  This modern economic axiom is a logical consequence of the deep rooted humancentrism that underlies our modern culture-- an ontological foundation that, as we argued in chapter 5,  has been long shown to be empirically faulty and scientifically fallacious.</p>
+<p>Inspired by their understanding of social and ecological energy as one and the same, we can address the humancentric assumption embedded in our modern understanding of enterprise and economy.  In particular, the view that financial energy is somehow seperate and exceptional to Earthen planetary dynamics.  This modern economic axiom is a logical consequence of the deep rooted humancentrism that underlies our modern culture— an ontological foundation that, as we argued in chapter 5,  has been long shown to be empirically faulty and scientifically fallacious.</p>
 
 <p>And long overdue for an upgrade.</p>
 
@@ -363,7 +363,9 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
      <p>When it comes to our modern enterprises, their pattern of energy management is determined by the purpose <i>for which</i> the enterprise is established.  The <i>for</i> of an enterprise determines how and why it receives revenues and expends expenses— as well as the how and why of its ecological give and take.</p>
 
-    <p>While most enterprises operate with the purpose of meeting human wants and needs— such as for the provision of products and for the delivery of services— modern enterprises tend to be structured for a deeper reason. Namely, <i>for the purpose of profit</i>: generating more energy for themselves than they give back.  This surplus, <!--although sourced ecologically--> is defined strictly from a paradigm of financial energy: profit and loss, revenues and expenses (what we'll call 'the profit paradigm'</i>). While these <i>for-profit</i> enterprises may provide products, services and even environmental contributions, their structure dictates that their financial surpluses are directed back to themsleves at the end of each financial cycle (namely to their owners or shareholders). The result is an inwards spiral of accumulation that over many financial cycles, steadily depletes its encompassing ecological and social systems .<a id="67-up" href="#footnotes" title="Hinton and Maclurcan, present a compelling argument of the extractive nature of for-profit business.  They propose this ethic of determination: “...in order to determine whether business is generative (contributing to the health of the whole economy) or extractive (taking away from the health of the whole economy), one must ask the question, 'Who profits from the profit?' Jennifer Hinton, Donnie Maclurcan, <i>How on Earth?</i>, (Post Growth Institute, 2006)" onclick="openFootnotes()">⁶⁷</a></p>
+    <p>While most enterprises operate with the purpose of meeting human wants and needs— such as for the provision of products and for the delivery of services— modern enterprises tend to be structured for a deeper reason. Namely, <i>for the purpose of profit</i>: generating more energy for themselves than they give back.  This surplus, <!--although sourced ecologically--> is defined strictly from a paradigm of financial energy: profit and loss, revenues and expenses (what we'll call 'the profit paradigm'</i>).</p>
+      
+    <p>While these <i>for-profit</i> enterprises may provide products, services and even environmental contributions, their structure dictates that their financial surpluses are directed back to themsleves at the end of each financial cycle (namely to their owners or shareholders). The result is an inwards spiral of accumulation that over many financial cycles, steadily depletes its encompassing ecological and social systems .<a id="67-up" href="#footnotes" title="Hinton and Maclurcan, present a compelling argument of the extractive nature of for-profit business.  They propose this ethic of determination: “...in order to determine whether business is generative (contributing to the health of the whole economy) or extractive (taking away from the health of the whole economy), one must ask the question, 'Who profits from the profit?' Jennifer Hinton, Donnie Maclurcan, <i>How on Earth?</i>, (Post Growth Institute, 2006)" onclick="openFootnotes()">⁶⁷</a></p>
 
 
     <p>Such a spin is in opposition to Earth's pattern.  No matter how green-intentioned and no matter how "green" its short-term impacts may seem, the net-effect of a for-profit enterprise is inevitably that of systematic ecological depletion.</p>
@@ -380,10 +382,10 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
      <p>In other words, without both an intention of contributing socially and ecologically— <i>and an accounting and disclosure of both</i>— an enterprise will remain complicit in a dynamic of systematic ecological depletion.  
     </p>
 
-     <p>Afterall, while in the short-term, an enterprise may sequester much carbon, plant many trees and support many species— it could very well be that more carbon is emitted, more trees cut, and more diversity depleted to achieve these short-term 'green' results! Without a systemic accounting thereof, one cannot be certain whether its net-impact is in fact a net-contribution. 
+     <p>Afterall, while an enterprise may sequester much carbon, plant many trees and support many species— it could very well be that more carbon is emitted, more trees cut, and more diversity depleted to achieve these short-term results! Without a systemic accounting thereof, one cannot be certain whether its net-impact is in fact a green net-contribution. 
     </p>
 
-     <p>However, with Earth's example as our guide, the green path ahead is clear.</p>
+     <p>However, with Earth's example as our guide, the path ahead is clear.</p>
 
 
       <div class="chart-image-desktop">
@@ -404,7 +406,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
      <p>That said, the outwards spiral of energy is only one half of Earth's spiral pattern of enrichment.</p>
 
-     <p>There is yet the matter of... our matter.</p>
+     <p>There is yet the matter of our matter.</p>
 
      <p>Our next Earthen ethic.</p>
 

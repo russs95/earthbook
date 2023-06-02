@@ -116,14 +116,13 @@ function getMainurl() {
 }
 
 
-
-
 // Function to handle click on a highlight
 function handleHighlightClick(event) {
   event.stopPropagation();
   const highlight = event.target.closest(".highlight");
   if (highlight) {
     highlight.outerHTML = highlight.innerHTML;
+    saveHighlights();
   }
 }
 
@@ -133,6 +132,33 @@ function clearHighlights() {
   highlights.forEach(highlight => {
     highlight.outerHTML = highlight.innerHTML;
   });
+  saveHighlights();
+}
+
+// Function to save highlights to localStorage
+function saveHighlights() {
+  const highlights = document.querySelectorAll(".highlight");
+  const serializedHighlights = Array.from(highlights).map(highlight => highlight.textContent);
+  localStorage.setItem("highlights", JSON.stringify(serializedHighlights));
+}
+
+// Function to retrieve highlights from localStorage
+function retrieveHighlights() {
+  const serializedHighlights = localStorage.getItem("highlights");
+  if (serializedHighlights) {
+    const highlights = JSON.parse(serializedHighlights);
+    highlights.forEach(text => {
+      const span = document.createElement("span");
+      span.classList.add("highlight");
+      span.style.backgroundColor = "green";
+      span.style.color = "var(--background-color)";
+      span.title = "Lock/unlock highlight";
+      span.style.cursor = "pointer";
+      span.textContent = text;
+      span.addEventListener("click", handleHighlightClick);
+      document.body.appendChild(span);
+    });
+  }
 }
 
 // Add event listeners to all text nodes in the document
@@ -160,6 +186,9 @@ textNodes.forEach(node => {
       const range = selection.getRangeAt(0);
       range.deleteContents();
       range.insertNode(span);
+
+      // Save the highlights
+      saveHighlights();
     }
   });
 });
@@ -174,6 +203,9 @@ function clearTemporaryHighlight() {
 
 // Add event listener to remove temporary highlight on click elsewhere on the page
 document.addEventListener("click", clearTemporaryHighlight);
+
+// Retrieve and display the saved highlights when the page loads
+window.addEventListener("load", retrieveHighlights);
 
 
 
