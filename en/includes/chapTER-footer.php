@@ -140,6 +140,7 @@ function saveHighlights() {
   const highlights = document.querySelectorAll(".highlight");
   const serializedHighlights = Array.from(highlights).map(highlight => highlight.textContent);
   localStorage.setItem("highlights", JSON.stringify(serializedHighlights));
+  console.log("Highlights saved:", serializedHighlights);
 }
 
 // Function to retrieve highlights from localStorage
@@ -147,6 +148,7 @@ function retrieveHighlights() {
   const serializedHighlights = localStorage.getItem("highlights");
   if (serializedHighlights) {
     const highlights = JSON.parse(serializedHighlights);
+    console.log("Highlights retrieved:", highlights);
     highlights.forEach(text => {
       const span = document.createElement("span");
       span.classList.add("highlight");
@@ -271,6 +273,7 @@ function EarthbookSearch(jsonFiles) {
 
 
 window.onload = function() {
+  retrieveHighlights();
   document.getElementById("search_input").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
       EarthbookSearch(['glossary.json', 'chapters-index.json']);
