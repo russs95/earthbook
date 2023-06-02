@@ -148,7 +148,9 @@ function retrieveHighlights() {
   const serializedHighlights = localStorage.getItem("highlights");
   if (serializedHighlights) {
     const highlights = JSON.parse(serializedHighlights);
-    console.log("Highlights retrieved:", highlights);
+    //console.log("Highlights retrieved:", highlights);
+    
+    // Recreate the highlight elements
     highlights.forEach(text => {
       const span = document.createElement("span");
       span.classList.add("highlight");
@@ -162,6 +164,7 @@ function retrieveHighlights() {
     });
   }
 }
+
 
 // Add event listeners to all text nodes in the document
 const textNodes = document.querySelectorAll("*:not(script):not(style)");
