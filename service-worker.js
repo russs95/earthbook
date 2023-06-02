@@ -45,7 +45,27 @@ self.addEventListener('install', function(event) {
         '/icons/buy.svg',
         '/svgs/tractatus-mandala-full-white.svg',
         '/svgs/my-book-header-logo-night.svg',
-        '/svgs/my-book-header-logo-day.svg'
+        '/svgs/my-book-header-logo-day.svg',
+
+        '/en/preamble.php',
+
+        '/lang.php',
+
+'/header.php',
+'/summaries.php',
+'/includes/eco-curtain.php',
+'/includes/comments.php',
+'/includes/chapTER-footer.php',
+'/includes/tour-curtain.js',
+'/svgs/tractatus-mandala-full-grey.svg',
+'/icons/reader.svg',
+'/icons/pdf.svg',
+'/icons/buy.svg',
+'/svgs/tractatus-mandala-full-white.svg',
+'/svgs/my-book-header-logo-night.svg',
+'/svgs/my-book-header-logo-day.svg'
+
+
       ]);
     })
   );
