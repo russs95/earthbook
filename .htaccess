@@ -84,14 +84,17 @@ Redirect en/spirals /en/spirals.php
 
 Redirect /energy /en/energy.php
 Redirect /energy.html /en/energy.php
-Redirect /salmon /en/salmon
-Redirect /salmon.php /en/salmon.php
-Redirect en/salmon.html /en/salmon.php
-Redirect en/salmon /en/salmon.php
+Redirect /salmon /en/energy.php
+Redirect /salmon.php /en/energy.php
+Redirect en/salmon.html /en/energy.php
+Redirect en/salmon /en/energy.php
 
-Redirect /matter /en/matter.php
-Redirect /matter.html /en/matter.php
-Redirect /matter.php /en/matter.php
+Redirect /matter /en/unpublished.php
+Redirect /matter.html /en/unpublished.php
+Redirect /matter.php /en/unpublished.php
+Redirect /mollusc /en/unpublished.php
+
+
 
 
 

@@ -93,10 +93,10 @@ Must be updated for each page-->
       font-size: 1.3em;
     }
   }
-
+/*
   #ct-main .action-btn {
     margin: -35px auto 0px auto !important;
-  }
+  }*/
 
 </style>
 
@@ -185,7 +185,7 @@ Must be updated for each page-->
   </div>
 </div>
 
-<?php require_once ("includes/chap-footer.php");?>
+<?php require_once ("includes/chapTER-footer.php");?>
 
 
 </body>
