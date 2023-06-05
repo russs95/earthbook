@@ -160,7 +160,7 @@ function retrieveHighlights() {
       const regex = new RegExp(`\\b${text}\\b`, 'gi');
       const matches = document.body.textContent.match(regex);
       
-      // Add highlights to the matching occurrences
+      // Add highlights to the matching occurrences and print in the div
       if (matches) {
         matches.forEach(match => {
           const span = document.createElement("span");
@@ -172,17 +172,15 @@ function retrieveHighlights() {
           span.textContent = match;
           span.addEventListener("click", handleHighlightClick);
           
-          // Wrap the highlighted text in <p> tags
-          const paragraph = document.createElement("p");
-          paragraph.appendChild(span);
-          
           // Add the highlighted text to the "my-highlights" div
-          myHighlightsDiv.appendChild(paragraph);
+          myHighlightsDiv.appendChild(span);
+          myHighlightsDiv.appendChild(document.createElement("br"));
         });
       }
     });
   }
 }
+
 
 
 
@@ -296,14 +294,7 @@ function EarthbookSearch(jsonFiles) {
 }
 
 
-window.onload = function() {
-  retrieveHighlights();
-  document.getElementById("search_input").addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-      EarthbookSearch(['glossary.json', 'chapters-index.json']);
-    }
-  });
-};
+
 
 
 function clearResults() {

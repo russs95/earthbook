@@ -118,5 +118,17 @@ All the page components required to build this page-->
   gtag('config', 'G-G5VT56C7XD');
 </script>-->
 
+<script>
+window.onload = function() {
+  retrieveHighlights();
+  document.getElementById("search_input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      EarthbookSearch(['glossary.json', 'chapters-index.json']);
+    }
+  });
+};
+</script>
+    
+
 
 
