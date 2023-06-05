@@ -237,10 +237,6 @@ display: none;
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴  — 
 -->
 
-<div id="my-highlights" class="page-paragraph">
-    
-Hello?
-  </div>
 
 
 

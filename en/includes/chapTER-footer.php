@@ -150,9 +150,6 @@ function retrieveHighlights() {
     const highlights = JSON.parse(serializedHighlights);
     console.log("Highlights retrieved:", highlights);
     
-    // Clear the existing highlights
-    const myHighlightsDiv = document.getElementById("my-highlights");
-    myHighlightsDiv.innerHTML = '';
 
     // Loop through each stored highlight
     highlights.forEach(text => {
@@ -172,9 +169,6 @@ function retrieveHighlights() {
           span.textContent = match;
           span.addEventListener("click", handleHighlightClick);
           
-          // Add the highlighted text to the "my-highlights" div
-          myHighlightsDiv.appendChild(span);
-          myHighlightsDiv.appendChild(document.createElement("br"));
         });
       }
     });
