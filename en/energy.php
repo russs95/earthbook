@@ -507,7 +507,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
         </div>
   </div>
 
-  <div id="my-highilights">
+  <div id="my-highlights">
     <div class="page-paragraph">
 
     </div>
