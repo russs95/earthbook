@@ -150,20 +150,40 @@ function retrieveHighlights() {
     const highlights = JSON.parse(serializedHighlights);
     console.log("Highlights retrieved:", highlights);
     
-    // Recreate the highlight elements
+    // Clear the existing highlights
+    const myHighlightsDiv = document.getElementById("my-highlights");
+    myHighlightsDiv.innerHTML = '';
+
+    // Loop through each stored highlight
     highlights.forEach(text => {
-      const span = document.createElement("span");
-      span.classList.add("highlight");
-      span.style.backgroundColor = "green";
-      span.style.color = "var(--background-color)";
-      span.title = "Lock/unlock highlight";
-      span.style.cursor = "pointer";
-      span.textContent = text;
-      span.addEventListener("click", handleHighlightClick);
-      document.body.appendChild(span);
+      // Find matching occurrences of the stored highlighted text in the page's text
+      const regex = new RegExp(`\\b${text}\\b`, 'gi');
+      const matches = document.body.textContent.match(regex);
+      
+      // Add highlights to the matching occurrences
+      if (matches) {
+        matches.forEach(match => {
+          const span = document.createElement("span");
+          span.classList.add("highlight");
+          span.style.backgroundColor = "green";
+          span.style.color = "var(--background-color)";
+          span.title = "Lock/unlock highlight";
+          span.style.cursor = "pointer";
+          span.textContent = match;
+          span.addEventListener("click", handleHighlightClick);
+          
+          // Wrap the highlighted text in <p> tags
+          const paragraph = document.createElement("p");
+          paragraph.appendChild(span);
+          
+          // Add the highlighted text to the "my-highlights" div
+          myHighlightsDiv.appendChild(paragraph);
+        });
+      }
     });
   }
 }
+
 
 
 
