@@ -159,33 +159,35 @@ Must be updated for each page-->
     
   
     <!--Footer Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
 
-<div id="footer-chapter" style="margin-bottom: 0px;">
+<div class="footer-size">
 
-  <div class="footer-size">
-    
-    <div class="footer-left">
+  <div class="footer-left">
 
-      <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
-    
-     
-      <div class="next-section">
-          <div class="next-sec">Back to the start:</div>
-          <div class="sec-name"><i>Introduction</i></div>
-      </div>
-
+ 
+    <div class="next-section">
+      <div class="next-sec">Back to Start:</div>
+        <div class="sec-name"><i>Preamble</i></div>
     </div>
-    
 
-    <div class="footer-right">
-   
-      <a href="preamble.php"><div class="next-button">Preamble ➔</div></a>
-
-    </div>
   </div>
+
+
+  <div class="footer-right">
+
+    <a href="preamble.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+
+</div>
 </div>
 
+
 <?php require_once ("includes/chapTER-footer.php");?>
+
+
+</div>
+
+
 
 
 </body>
