@@ -185,6 +185,7 @@ function retrieveHighlights() {
 
 
 
+
 // Add event listeners to all text nodes in the document
 const textNodes = document.querySelectorAll("*:not(script):not(style)");
 textNodes.forEach(node => {
