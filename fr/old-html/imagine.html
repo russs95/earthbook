@@ -1,0 +1,375 @@
+<!--EARTHBOOK CHAPTER PAGE - TEMPLATE
+Design by Russell Maier
+
+CSS Version 0.7.3
+Original Author:  Russell Maier
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
+*/
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2022-10-31T09:14:13+00:00" />
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta property="og:site_name" content="Tractatus Ayyew" />
+<meta property="article:publisher" content="Earthen.io" />
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta property="og:type" content="book" />
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<link rel="manifest" href="../favicons/site.webmanifest">
+
+<meta name="twitter:card" content="summary" />
+<meta property="og:type"          content="book">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg"/>
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1000px" />
+<meta property="og:image:height" content="1500px" />
+
+<meta property="og:locale" content="en_GB" />
+
+ <!-- INCLUDES
+ Main Scripts-->   
+
+ <script src="../content-javascript.js" defer></script>
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../clip/dist/clipboard.min.js"></script>
+ <script src="../accessibility.js" defer></script>
+ <script type="module" src="https://unpkg.com/dark-mode-toggle" async></script>
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+
+ <!-- Style Sheets   
+All the css needed for this page-->
+ 
+ 
+ <!--<link  rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
+<link rel="stylesheet" href="../acessibilidade.css" />
+<link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">-->
+<link rel="preload" href="../light.css?v1.4" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../style-sheet.css?v1.4" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../acessibilidade.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="../stylesheet-chapter.css" as="style" onload="this.rel='stylesheet'">
+
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ 
+
+ <!--Page Components
+All the page components required to build this page-->
+
+ <!--1--><script src="includes/header-component.js" type="text/javascript" preload></script>
+ <!--2--><script src="includes/settings-curtain.js" type="text/javascript" defer></script>
+ <!--3--><script src="includes/content-curtain.js" type="text/javascript" defer></script>
+ <!--4--><script src="includes/share-curtain.js" type="text/javascript" defer></script>
+ <!--5--><script src="includes/buy-curtain.js" type="text/javascript" defer></script>
+ <!--6--><script src="includes/bookplate-curtain.js" type="text/javascript" defer></script>
+ <!--7--><script src="includes/earthbook-curtain.js" type="text/javascript" defer></script>
+ <!--8b--><script src="includes/footer-chapter.js" type="text/javascript" defer></script>
+  <!--9<script src="includes/eco-curtain.js" type="text/javascript" defer></script>-->
+
+
+ <!-- Fonts
+The requisite typography for the page-->
+
+<link rel="preconnect" href="../fonts/">
+<link rel="preconnect" href="../fonts/" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Mulish loads first for first page view-->
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
+
+	
+<!--Preload graphics-->
+<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
+
+
+
+<!--END OF GENERIC CONTENT-->
+
+<!--PAGE LINKS
+
+**** Must be updated for each unique page ****-->
+
+<link rel="canonical" href="https://book.earthen.io/en/imagine.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/imagine.html" hreflang="en" />
+<link rel="alternate" href="http://book.org/en/imagine.html" hreflang="x-default" />
+<!--<link rel="alternate" href="https://book.earthen.io/fr/imagine.html" hreflang="fr" />
+<link rel="alternate" href="https://book.earthen.io/es/imgaine.html" hreflang="es" />
+<link rel="alternate" href="https://book.earthen.io/id/imagine.html" hreflang="id" />-->
+
+<!--META TAGS
+Must be updated for each page-->
+
+<title>Imagine | Tratatus Ayyew - Earthbook</title>
+<meta name="keywords" content="Imagine, a green new world, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="description" content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.">
+
+
+<meta name="twitter:label1" content="Est. reading time" />
+<meta name="twitter:data1" content="6 minutes" /> 
+	
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:url"           content="https://tractatus.earthen.io/en/imagine.html">
+<meta property="og:title"         content="Imagine | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part."/>
+
+
+
+</head>
+
+<!--MAIN HTML Begins-->
+
+<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
+<div id="underlayer">
+
+  <a id="top"></a>
+
+  <!--HEADER NAVBAR-->
+  <header-component></header-component>
+
+  <div id="ct-chapter-top">
+      <div id="ct-tc-menu" onclick="openContents()"></div>
+      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+        <div id="ct-chapter-title">Imagine</div>
+        <div id="ct-book-title">Tractatus Ayyew</div>
+        <div id="ct-chap-location">Book One | Chapter One</div>
+        <div id="ct-word-count"><i>1,095 words</i></div>
+      </div>
+  </div>
+
+
+<!-- Page Title Section-->
+
+  <div id="ct-chapt-graphic" class="background-1">
+    <div class="ct-chapter-quote">
+      “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.”
+    </div>
+    <div class="ct-quote-source">
+     ― Régis Debray, <i>The Green Age: A Change of Civilizations</i><a href="#footnotes">²</a>
+    </div>
+  </div>
+
+  <div id="progress-bar">
+    <div class="progress" width="12%"></div>
+  </div>
+
+
+
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+
+<!--ECO-CURTAIN
+<eco-curtain></eco-curtain>-->
+ 
+
+<div id="eco-curtain2" class="eco-overlay">
+  <div class="overlay-content-eco">         
+        
+    <div class="eco-header">The Earthbook format is hand-coded from the ground up to be Green.</div>
+
+    <div class="eco-text">
+    In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">Regenerativity Report.</a>
+    </div>
+
+    <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
+    <div><img src="../banners/forearth-dark-350px.png" width="300px" alt="Banner declaring our For-Earth intention"></div></a>
+
+     <div id="wcb" class="carbonbadge wcb-d"></div>
+    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" async></script>
+
+    <div class="eco-medium">The Medium is the Message.</div>
+    <span style="cursor:pointer" onclick="closeEco()" aria-label="Close">
+        <div id="bottom-close-button">
+            <img src="../svgs/bottom-x.svg" alt="Close button">
+        </div>
+    </span>
+  </div>
+</div>
+
+
+  <div id="ct-main">
+
+
+<!-- MAIN TEXT CONTENT of the Page
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
+-->
+
+     
+
+      <div class="page-paragraph"><p><i>
+      Imagine a world where the way we live is steadily enriching the ecosystems of which we are part.  It is a world where our households and communities, just by thriving, make the biosphere a more abundant, vibrant and hospitable home for us and all our kindred creatures.  Rather than strive to reduce our environmental harm, in this world we strive to maximize our ecological contributions.  To do so, the way we manage our matter and energy has shifted accordingly.  No longer do our enterprises operate merely in circles—  so too do they spiral; with each spin overpaying its ecological debt and dispersing its surpluses.   No longer do our enterprises merely reduce the amount of carbon and other elements they let loose— so too do they capture and secure more than they release.  And, no longer do we merely admire the tapestry of life around us— so too do we play an active role in its vitalization as we share space other organisms.  As we all thrive together in this common home, the awareness of our ecological interconnection ever augments, and with it, the sync of our cycles of enterprise and ecosystem, economy and biome, humanity and biosphere— a harmony rising up with us towards the stars.</i></p>
+     </div>
+     <br><br>
+
+     <div id="line"></div>
+     <br><br><br>
+
+<div>
+     <div class="lead-page-paragraph">
+
+      TODAY, as we become more and more aware of the degradation and depletion inherent in our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in resolution, never before has it been more important to recognize that the foundations of the new green age to which we aspire have already been laid.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve great heights of social and ecological harmony, abundance and vitality. Only to the extent that we can recognize these enlightened moments, we can imagine our own.  And insofar as we can imagine, the realization of a green world world for all is not nearly as distant as many of us despair.
+      </p>
+
+    </div>
+
+
+      <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes">³</a>, she and I have to come to see that the potential for authentic green participation unites us all as humans— and even deeper, our longing to do so. </p>
+
+      <p>Across cultures and continents, we long to contribute to that which we are part:  to sync with those with whom we sing; to harmonize with those with whom we relate; to enrich the communities in which we partake.  Consequently, as the parts we play in our local ecosystems and global biomes becomes clearer, so too does our yearning to participate positively in them and contribute to a common harmony, vitality and abundance.  
+      </p>
+
+      <p>Indeed, Banayan and I have come to see that the transition to households, communities and enterprises that are in-and-of-themselves ecological contributions is the next stage of an epic planetary story whose direction is, quite literally, in our hands.</p>
+
+      <p>So how do we arrive at this thriving common home for all that that we all long to see?</p>
+
+      <p>One word:</p>
+
+      <p>Plastic.</p>
+
+      <p>Therein this problematic modern material lies our way forward.</p>
+
+      <p>As it must be. </p>
+      
+      <p id="4-up">Gardeners have long observed that the problem is always the solution—  weeds, pests and pollutants are always, with a shift of perspective and approach, the very nutrients, fertilizers and medicines that bring a struggling garden to thrive.<a href="#footnotes">⁴</a></p>
+
+      <p>Like nothing else, plastic embodies the definitive facets of our modern moment.   Derived from ancient fossilized carbon, plastic allows us to touch the primordial story that has enabled our own.  Bought and sold, plastic is a physical manifestation of the petro-capital economy that powers our global age.  Crafted by humans, entirely for humans, plastic is a shimmering reflection of our modern, human centered civilization.</p>
+
+     <p>In this way, our plastic is in fact a mirror. </p>
+
+     <p>And an opportunity.</p>
+     
+     <p>By confronting plastic's full billion year story, we can face our own within the same frame.</p>
+
+     <p>Then, in seeing our reflection with unprecedented lucidity, we can know our plastic— and ourselves— anew.</p>
+
+     <p>Above all, we can renew our ecological understanding of positive human participation: <i>what green should really mean.</i></p>
+
+     <p>Banayan and I, in struggling to manage our own plastic positively, have come to see that the current concept of green is lacking and incomplete.  Seen through the lens of the  ecological ayyew ethos of her people, we observe that the modern ethic of green is merely about reducing harm— while the concept of contribution has remained all but un-imagined.  It is a view of human ecological potential that sharply contradicts the lived experience of Banayan and her people.</p>
+
+     <p>As we shall see in the chapters ahead, ecological contribution has in fact been the overwhelming tendency on Earth— a unique planetary pattern of matter and energy that, from the very beginning, has permeated all of Earth's processes, cycles and systems.</p>
+
+     <p>And our own.</p>
+
+     <p>To the extent that this Earthen pattern has been reflected within the values and virtues of certain cultures, the societies that have ensued have systematically enriched the ecosystems of which they are a part.</p>
+
+     <p>Conversely, to the extent that a culture’s pattern has differed, systematic depletion and degradation have been the inexorable result.</p>
+
+     <p>The discernment of this Earthen pattern, shall be our chief task in the Tractatus Ayyew.</p>
+
+     <p>Through the combination of our two ancestral perspectives, Banayan’s Igorot heritage and my European, her indigenous culture and my settler, her agrarian upbringing and my industrial, we will investigate the shortcomings of our modern ethical understanding. In particular, the long buried metaphysical misconceptions at the very root of all modern ecological malaise.</p>
+
+     <p>With ancient error excised, we shall then lay out a new theory of green based upon the cosmological character of our planet.</p>
+
+     <p>Guided by the insights of great green nations, the ways of magnificently contributive creatures and the latest insights of scientists, we shall lay out each of the principles that composes the Earth’s five-fold pattern of ecological enrichment.</p>
+
+     <p>The resulting Earthen ethics will help us to make sense of our modern processes, technologies and enterprises— a means by which we can discern that which is enriching (<i>what is green</i>) from that what is depleting (<i>what is grey</i>); and that which is a contribution— from that which is not.</p>
+
+      <p>In this way, with Earth’s example as our guide to green, can move forward with unprecedented clarity and confidence to embody the geometry of contribution in all our processes, cycles and systems.  </p>
+
+     <p>Let us start with that troublesome material we so love to hate.</p>
+  
+    </div><!--closes page text content-->
+
+<!--FOOTNOTES SECTION-->
+
+    <div class="footnote-section">
+
+      <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:70%; text-align:left;"></div>
+
+      <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Chapter Footnotes</p>
+      
+    
+
+    
+      <a href="#3-up" class="footnote">   
+      <div class="footnote-number" id="3-down">3.</div>
+      <div class="footnote-text">In particular the Igorot Ayyew ecological ethos.  See: Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12 (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).  </div>
+      </a>
+
+      <a href="#4-up" class="footnote">   
+      <div class="footnote-number">4.</div>
+      <div class="footnote-text">The first principle of permaculture.  Bill Mollison, Principles from Permaculture a Designers' Manual, (Tagari Publishers: 1988).</div>
+      </a>
+
+
+
+    </div><!--Closes footnote section-->
+          
+  </div><!--Closes main content block-->
+
+  <!--Footer Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+
+    <div class="footer-size">
+    
+      <div class="footer-left">
+
+        <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>
+    
+     
+        <div class="next-section">
+            <div class="next-sec">Next chapter:</div>
+            <div class="sec-name"><i>Plastic 1.0</i></div>
+        </div>
+
+      </div>
+    
+
+      <div class="footer-right">
+    
+        <a href="plastic1.html"><div class="next-button">Next ➔</div></a>
+
+      </div>
+    </div>
+  </div>
+
+  <footer-chapter></footer-chapter>
+          
+  <div id="containerSepia"></div>
+  <div id="containerContrast"></div>
+  <div id="containerBrightness"></div>
+
+</div>
+<!--
+<script type="text/javascript">app_id="63549d9864728f002225d0dc";distribution_key="dist_2";</script><script type="text/javascript" src="https://loader.knack.com/63549d9864728f002225d0dc/dist_2/knack.js" defer></script>-->
+
+</body>
+</html>
+

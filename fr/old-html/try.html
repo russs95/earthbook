@@ -1,0 +1,115 @@
+<html>
+
+<head>
+
+    <script>
+        var $temp = $("<input>");
+var $url = $(location).attr('href');
+
+$('.clipboard').on('click', function() {
+  $("body").append($temp);
+  $temp.val($url).select();
+  document.execCommand("copy");
+  $temp.remove();
+  $("p").text("URL copied!");
+})
+</script>
+
+
+<script>
+    //Inititalize ClipboardJS
+new ClipboardJS('.btnClipboardJS');
+
+// SET data-clipboard-text TO CURRENT URL ON PAGE LOAD
+window.onload = function currentURL() {
+  const URL = window.location.href;
+  document.getElementById('copy-button').innerHTML = '<a onClick="copiedToClipboard()" class="btn btn-outline-secondary btn-lg btnClipboardJS" data-clipboard-text="' + URL + '" id="alertCard"><i class="fa fa-link" aria-hidden="true"></i> Copy URL</a>'
+}
+
+// If you only want the functionality, but not the visual effect, ignore the following function. 
+
+// AESTHETIC: CHANGE INNER HTML
+function copiedToClipboard() { document.getElementById('alertCard').innerHTML = '<i class="fa fa-check" aria-hidden="true"></i> URL Copied!';
+  setTimeout(function(){document.getElementById('alertCard').innerHTML = '<i class="fa fa-link" aria-hidden="true"></i> Copy URL Again';}, 3000);
+}
+</script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+body {
+  padding: 20px;
+  margin: 0;
+  color: #04048c;
+  font-family: 'Karla', sans-serif;
+  
+  .background {
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    height: calc(100vh - 20px * 2);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .clipboard {
+    border: 0;
+    padding: 15px;
+    border-radius: 3px;
+    background-image: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
+    cursor: pointer;
+    color: #04048c;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    position: relative;
+    top: 0;
+    transition: all .2s ease;
+    &:hover {
+      top: 2px;
+    }
+  }
+  
+  p {
+    font-weight: 700;
+  }
+}
+</style>
+
+</head>
+<body>
+    <div class="background">
+        <center>
+          <button class="clipboard">Click me to copy current Url</button>
+          <p>Have you already clicked?</p>
+        </center>
+        </div>
+
+
+    <section>
+        <div class="container">
+            <h1>Copy Current URL with <a href="https://clipboardjs.com/" target="blank">Clipboard.js</a></h1>
+            <p>Copy the current URL of whatever page you place this on.</p> 
+          <div>
+            <!-- This #copy-button div is all the HTML you need. -->
+            <div id="copy-button"></div>
+          </div>
+      </section>
+        
+        <footer>
+          <div>
+            <p>Built by <a href="https://sebjagoe.com" target="blank">Seb</a>.</p>
+          </div>
+        </footer>
+
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
