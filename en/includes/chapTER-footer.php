@@ -116,23 +116,15 @@ function getMainurl() {
 }
 
 
+// Function to handle click on a highlight
 function handleHighlightClick(event) {
   event.stopPropagation();
   const highlight = event.target.closest(".highlight");
-
-  // Check if the highlight spans across multiple paragraphs
-  const paragraphs = Array.from(document.getElementsByTagName("p"));
-  const highlightStart = highlight.firstChild;
-  const highlightEnd = highlight.lastChild;
-  const startIndex = paragraphs.findIndex(p => p.contains(highlightStart));
-  const endIndex = paragraphs.findIndex(p => p.contains(highlightEnd));
-  
-  if (highlight && startIndex === endIndex) {
+  if (highlight) {
     highlight.outerHTML = highlight.innerHTML;
     saveHighlights();
   }
 }
-
 
 // Function to clear the highlights
 function clearHighlights() {
@@ -187,13 +179,25 @@ function retrieveHighlights() {
 
 
 
-
 // Add event listeners to all text nodes in the document
 const textNodes = document.querySelectorAll("*:not(script):not(style)");
 textNodes.forEach(node => {
   node.addEventListener("mouseup", () => {
     const selection = window.getSelection();
     if (selection.toString().length > 0) {
+      const range = selection.getRangeAt(0);
+      
+      // Check if the selection spans multiple paragraphs
+      const startNode = range.startContainer;
+      const endNode = range.endContainer;
+      const startParagraph = getParagraphElement(startNode);
+      const endParagraph = getParagraphElement(endNode);
+      
+      if (startParagraph !== endParagraph) {
+        // Selection spans multiple paragraphs, do nothing
+        return;
+      }
+
       // Clear any existing temporary highlight
       clearTemporaryHighlight();
 
@@ -210,7 +214,6 @@ textNodes.forEach(node => {
       span.addEventListener("click", handleHighlightClick);
 
       // Replace the selected text with the highlighted span element
-      const range = selection.getRangeAt(0);
       range.deleteContents();
       range.insertNode(span);
 
@@ -219,6 +222,13 @@ textNodes.forEach(node => {
     }
   });
 });
+
+// Helper function to get the paragraph element containing a given node
+function getParagraphElement(node) {
+  while (node && node.nodeName !== "P") {
+    node = node.parentNode;
+  }
+
 
 // Function to clear the temporary highlight
 function clearTemporaryHighlight() {
