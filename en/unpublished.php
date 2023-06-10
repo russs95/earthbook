@@ -144,6 +144,8 @@ Must be updated for each page-->
     Book Two and Three of the <i>Tractatus Ayyew</i> are still in development. Subscribe to be notified of new chapter releases.
 
     <br><br>
+    <br><br>
+    <br><br>
 
     <?php require_once ("../manage.php");?>
 
