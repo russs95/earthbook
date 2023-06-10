@@ -116,15 +116,23 @@ function getMainurl() {
 }
 
 
-// Function to handle click on a highlight
 function handleHighlightClick(event) {
   event.stopPropagation();
   const highlight = event.target.closest(".highlight");
-  if (highlight) {
+
+  // Check if the highlight spans across multiple paragraphs
+  const paragraphs = Array.from(document.getElementsByTagName("p"));
+  const highlightStart = highlight.firstChild;
+  const highlightEnd = highlight.lastChild;
+  const startIndex = paragraphs.findIndex(p => p.contains(highlightStart));
+  const endIndex = paragraphs.findIndex(p => p.contains(highlightEnd));
+  
+  if (highlight && startIndex === endIndex) {
     highlight.outerHTML = highlight.innerHTML;
     saveHighlights();
   }
 }
+
 
 // Function to clear the highlights
 function clearHighlights() {
