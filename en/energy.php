@@ -283,7 +283,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
      
      <p>And so too the salmon!</p>
      
-     <p>As the bears, bugs, eagles and humans with whom it shared interdependence thrived, the living conditions for future salmon generations steadily improved.  As the cycles of all these creatures intertwined, synked and reverberated (cycles that more often than naught tended also towards outwards enrichment) the once barren Pacific coast steadily flourished.  salmon populations increased and their spiralling cycle continued to spin with ever more abundance and vitality.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
+     <p>As the bears, bugs, eagles and humans with whom it shared interdependence thrived, the living conditions for future salmon generations steadily improved.  As the cycles of all these creatures intertwined, synked and reverberated (cycles that more often than naught tended also towards outwards enrichment) the once barren Pacific coast steadily flourished.  Salmon populations increased and their spiralling cycle continued to spin with ever more abundance and vitality.<a href="#footnotes" title="Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press,
     Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'">⁶³</a></p>
 
 </div>

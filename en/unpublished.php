@@ -105,16 +105,22 @@ Must be updated for each page-->
 
 <!--MAIN HTML Begins-->
 
-<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
-<div id="underlayer">
+<BODY class="accessibility-plugin-ac">
 
-<div id="top"></div>
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
 
-  <!--HEADER NAVBAR-->
-  <header-component></header-component>
 
-  <div id="ct-chapter-top">
-  <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);"  aria-label="Open Table of Contents"></button>
+  <div id="underlayer" class="accessibility-plugin-ac">
+
+    <div id="top"></div>
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+
+<div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Pending</div>   
       <div id="ct-book-title">Chapter not yet published</div>
