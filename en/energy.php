@@ -325,9 +325,11 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
      <p>As we emphasized in <i>Tractatus Ayyew: Book One</i>, certain great green nations, ancient and ongoing, have long embodied this pattern of ecological contribution.  In particular: <a href="kincentric.php">cyclocentric cultures</a>.  As we saw, such societies are distinguished by their priority of syncing with the cycles of plants and animals around them— beings whom they perceived as kindred relations.  These cultures, rather than view human endeavour as exceptional and separate from their fellow creatures, instead understood all their enterprises to be congruent contributions to a shared system.</p>
 
-<p>The Wet'suwet'en are one such society.</p>
+<p>As we saw in our last chapter, the Igorots with their Ayyew ethos of cyclic synking, are one such society.</p>
 
-<p id="72-up">From their view of the world, the salmon were not just kindred creatures.  They were ecological elders.<a href="#footnotes" href="#footnotes" onclick="openFootnotes()" title="For the Wet’suwet’en the example of the salmon was impossible to overlook.  Among the multitude of creatures around them, the extremes of life and death were never so dramatic as with the salmon.  In their autumn run, the vitality and numbers of the salmon would make the waters boil only for them to die and decay en masse after laying their eggs.">⁷²</p>
+<p>And, so too the Wet'suwet'en.</p>
+
+<p id="72-up">From the Wet'suwet'en view of the world, the salmon were not just kindred creatures.  They were ecological elders.<a href="#footnotes" href="#footnotes" onclick="openFootnotes()" title="For the Wet’suwet’en the example of the salmon was impossible to overlook.  Among the multitude of creatures around them, the extremes of life and death were never so dramatic as with the salmon.  In their autumn run, the vitality and numbers of the salmon would make the waters boil only for them to die and decay en masse after laying their eggs.">⁷²</p>
 
 <p>And, teachers.</p>
 

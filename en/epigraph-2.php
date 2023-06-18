@@ -141,7 +141,7 @@ Must be updated for each page-->
 
 
 <div id="ct-chapt-graphic" class="background-000">
-    <div class="ct-chapter-quote">
+    <!--<div class="ct-chapter-quote">
     “If we don’t do things the right way, it poisons the outcome.”
     </div>
     
@@ -152,7 +152,21 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-    ― Ruthanna Emrys<br><i>A Half-Built Garden</i>
+    ― Ruthanna Emrys<br><i>A Half-Built Garden</i>-->
+
+    <div class="ct-chapter-quote">
+    “You see that hill over there?  Blackfellow law like that hill.  It never changes. Whitefellow law go this way, that way, all the time changing. Blackfellow law different.  It never changes. Like a stone, like that hill.  The law is in the ground.”
+    </div>
+    
+  </div>
+
+<div id="up-arrow"></div> 
+
+<div id="ct-main">
+
+<div class="ct-quote-source" style="width:100% !important;">
+    ― Doug Cambell, Yarralin spokesperson<br><i>Dingo Makes Us Human, Cambridge University Press, New York, 2000, p. 56</i>
+
 
     <br><br><br><br>Book two of the <i>Tractatus Ayyew</i> is not yet published.  Subscribe to Earthen</a> to be notified of new chapter releases.
 
@@ -162,7 +176,7 @@ Must be updated for each page-->
 
 <br><br><br>
     
-<p>What follows is a bonus chapter from Book Two...</p>
+<p>Note:  Book Two is still in development.  Not all chapters are deployed in the Earthbook edition.  Those that are being udpated and revised.</p>
     </div>
 
     <br><br>
