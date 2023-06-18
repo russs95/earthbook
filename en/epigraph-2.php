@@ -168,14 +168,10 @@ Must be updated for each page-->
     ― Doug Cambell, Yarralin spokesperson<br><i>Dingo Makes Us Human, Cambridge University Press, New York, 2000, p. 56</i>
 
 
-    <br><br><br><br>Book two of the <i>Tractatus Ayyew</i> is not yet published.  Subscribe to Earthen</a> to be notified of new chapter releases.
+<br><br><hr>
+<br><br>
+<div class="page-paragraph">
 
-    <br><br>
-
-<?php require_once ("../manage.php");?>
-
-<br><br><br>
-    
 <p>Note:  Book Two is still in development.  Not all chapters are deployed in the Earthbook edition.  Those that are being udpated and revised.</p>
     </div>
 
