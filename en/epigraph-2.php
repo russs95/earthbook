@@ -176,7 +176,7 @@ Must be updated for each page-->
 <br><br>
 <div class="ct-quote-source" style="width:100% !important;">
 
-<p>Note:  Book Two is still in development.  Not all chapters are deployed in the Earthbook edition.  Those that are being udpated and revised.</p>
+Note:  Book Two is still in development.  Not all chapters are deployed.  Content is continuously being revised and updated.
     </div>
 
     <br><br>
