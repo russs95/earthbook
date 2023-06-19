@@ -167,7 +167,7 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-    ― Doug Cambell, Yarralin spokesperson<br><span style="font-size:smaller;"><i>'Dingo Makes Us Human'</i>Cambridge University Press, New York, 2000, p. 56</span></div>
+    ― Doug Cambell, Yarralin spokesperson<br><span style="font-size:smaller;"><i>'Dingo Makes Us Human'</i>  Cambridge University Press, New York, 2000, p. 56</span></div>
 
 
 <br><br><hr>
@@ -178,6 +178,10 @@ Must be updated for each page-->
     </div>
 
     <br><br>
+    <br><br>
+
+    <br><br>
+
 </div><!--closes page text content-->
 
 
