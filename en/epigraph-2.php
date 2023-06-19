@@ -170,14 +170,19 @@ Must be updated for each page-->
     ― Doug Cambell, Yarralin spokesperson<br><span style="font-size:smaller;"><i>'Dingo Makes Us Human'</i>  Cambridge University Press, New York, 2000, p. 56</span></div>
 
 
-<br><br><hr>
 <br><br>
-<div class="page-paragraph">
+<div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+
+<br><br>
+<div class="ct-quote-source" style="width:100% !important;">
 
 <p>Note:  Book Two is still in development.  Not all chapters are deployed in the Earthbook edition.  Those that are being udpated and revised.</p>
     </div>
 
     <br><br>
+    <br><br>
+
+    <br><br><br><br>
     <br><br>
 
     <br><br>
