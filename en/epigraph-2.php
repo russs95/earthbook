@@ -120,8 +120,10 @@ Must be updated for each page-->
 <!--HEADER NAVBAR-->
 <header-component></header-component>
 
+
 <div id="ct-chapter-top">
-  <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
+  <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
       <div id="ct-chapter-title">Epigraph</div>   
       <div id="ct-book-title">Tractatus Ayyew</div>
@@ -165,7 +167,7 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-    ― Doug Cambell, Yarralin spokesperson<br><i>Dingo Makes Us Human, Cambridge University Press, New York, 2000, p. 56</i>
+    ― Doug Cambell, Yarralin spokesperson<br><span style="font-size:smaller;"><i>'Dingo Makes Us Human'</i>Cambridge University Press, New York, 2000, p. 56</span></div>
 
 
 <br><br><hr>
