@@ -128,7 +128,7 @@ Must be updated for each page-->
       <div id="ct-chapter-title">Epigraph</div>   
       <div id="ct-book-title">Tractatus Ayyew</div>
       <div id="ct-chap-location">Book Two</div>
-      <div id="ct-word-count"><i>67 words</i></div>
+      <!--<div id="ct-word-count"><i>67 words</i></div>-->
     </div>
 </div>
 
@@ -170,10 +170,12 @@ Must be updated for each page-->
     ― Doug Cambell, Yarralin spokesperson<br><span style="font-size:smaller;"><i>'Dingo Makes Us Human'</i>  Cambridge University Press, New York, 2000, p. 56</span></div>
 
 
-<br><br>
+    <br><br>
+    <br><br>
+    <br><br>
 <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
 
-<br><br>
+<br>
 <div class="ct-quote-source" style="width:100% !important;">
 
 Note:  Book Two is still in development.  Not all chapters are deployed.  Content is continuously being revised and updated.
