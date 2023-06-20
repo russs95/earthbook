@@ -76,6 +76,13 @@ Redirect /earthen.php /en/earthen.php
 Redirect en/earthen.html /en/earthen.php
 Redirect en/earthen /en/earthen.php
 
+Redirect /epigraph-2 /en/epigraph-2.php
+Redirect /epigraph-2.html /en/epigraph-2.php
+Redirect /epigraph2 /en/epigraph-2.php
+Redirect /epigraph2.php /en/epigraph-2.php
+Redirect en/epigraph-2.html /en/epigraph-2.php
+Redirect en/epigraph-2 /en/epigraph-2.php
+
 Redirect /spirals /en/spirals.php
 Redirect /spirals.html /en/spirals.php
 Redirect /spirals.php /en/spirals.php
@@ -93,6 +100,8 @@ Redirect /matter /en/unpublished.php
 Redirect /matter.html /en/unpublished.php
 Redirect /matter.php /en/unpublished.php
 Redirect /mollusc /en/unpublished.php
+
+
 
 
 
