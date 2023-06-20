@@ -42,14 +42,14 @@ $page_title = "Epigraph | Book 2";?>
 <!--META TAGS
 Must be updated for each page-->
 
-<meta property="article:modified_time" content="2023-02-20T09:14:13+00:00">
+<meta property="article:modified_time" content="2023-06-20T09:14:13+00:00">
 <meta name="keywords" content="epigraph, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-<meta name="description" content="“If we don’t do things the right way, it poisons the outcome.”">
+<meta name="description" content="“Blackfellow law different.  It never changes. Like a stone, like that hill.  The law is in the ground.”">
 
 
 <meta name="twitter:label1" content="Est. reading time" />
 <meta name="twitter:data1" content="3 minutes" /> 
-<meta property="og:description"   content="“If we don’t do things the right way, it poisons the outcome.”"/>
+<meta property="og:description"   content="“Blackfellow law different.  It never changes. Like a stone, like that hill.  The law is in the ground.”"/>
 
 
 
