@@ -128,7 +128,7 @@ Must be updated for each page-->
       <div id="ct-chapter-title">Epigraph</div>   
       <div id="ct-book-title">Tractatus Ayyew</div>
       <div id="ct-chap-location">Book Two</div>
-      <!--<div id="ct-word-count"><i>67 words</i></div>-->
+      <div id="ct-word-count"><i></i></div>
     </div>
 </div>
 
