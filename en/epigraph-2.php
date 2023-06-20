@@ -167,7 +167,7 @@ Must be updated for each page-->
 <div id="ct-main">
 
 <div class="ct-quote-source" style="width:100% !important;">
-    ― Doug Cambell, Yarralin spokesperson<br><span style="font-size:smaller;">From: <i>'Dingo Makes Us Human'</i>  Deborah Rose Bird (Cambridge University Press, New York, 2000) p. 56</span></div>
+    ― Doug Cambell, Yarralin spokesperson<br><span style="font-size:smaller;">From: <i>'Dingo Makes Us Human'</i>,  by Deborah Rose Bird<br>(Cambridge University Press, New York, 2000) p. 56</span></div>
 
 
     <br><br>
