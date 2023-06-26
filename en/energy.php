@@ -277,7 +277,7 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
      <p>Just as Earth’s absorption of solar energy powered an endless procession of cycles across its surface, so too did the salmon's absorption of marine nutrients power the endless cycle of its generations.</p>
      
     
-     <p id="68-up">Just as Earth's cycles steadily spun the sun's energy out across the planet's surface, so too did the salmon cycles steadily spin nutrient energy out to its ecosystem.<a href="#footnotes" title="Quinn T. P., Helfield JM, Austin CS, Hovel RA, Bunn AG. A multidecade experiment shows that fertilization by salmon carcasses enhanced tree growth in the riparian zone. Ecology. 2018 Nov;99(11):2433-2441. doi: 10.1002/ecy.2453. Epub 2018 Oct 23. PMID: 30351500." onclick="openFootnotes()">⁶⁸</a></p>
+     <p id="68-up">Just as the Earth's cycles steadily spun the sun's energy out across the planet's surface, so too did the salmon cycles steadily spin nutrient energy out to its ecosystem.</p><a href="#footnotes" title="Quinn T. P., Helfield JM, Austin CS, Hovel RA, Bunn AG. A multidecade experiment shows that fertilization by salmon carcasses enhanced tree growth in the riparian zone. Ecology. 2018 Nov;99(11):2433-2441. doi: 10.1002/ecy.2453. Epub 2018 Oct 23. PMID: 30351500." onclick="openFootnotes()">⁶⁸</a>
 
      <p id="69-up">And just as Earth’s outwards energetic spiral steadily greened its biosphere, so too did the salmon's outwards dispersion of nutrients relentlessly contribute to the enrichment of its biome—  a common home for which countless other creatures could flourish.<a href="#footnotes" title="Quinn T. P., The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon." onclick="openFootnotes()">⁶⁹</p>
      
@@ -458,57 +458,57 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
         
         
-       <a href="#58-up" class="footnote">   
-        <div class="footnote-number">58.</div>
+       <a href="#68-up" class="footnote">   
+        <div class="footnote-number">68.</div>
         <div class="footnote-text">Haggan, N., Turner, N.J., Carpenter, J., Jones, J.T., Menzies, C. and Mackie, Q., <i>12,000+ years of change: Linking traditional and modern ecosystem science in the Pacific Northwest</i> (2004, UBC Fisheries Centre, Vancouver BC) p4: 'As the ice retreated, some 10,000 stocks of salmon colonized 3,600 rivers and streams in what is now British Columbia.</div>
         </a>
 
-        <a href="#59-up" class="footnote">   
-        <div class="footnote-number">59.</div>
+        <a href="#69-up" class="footnote">   
+        <div class="footnote-number">69.</div>
         <div class="footnote-text">In addition to work of Jeremy England on the second law of thermodynamics relevance to life's development discussed in our last chapter (Jeremy L. England et al., Dissipative adaptation in driven self-assembly, Nature Nanotechnology, 2015) there is indication that this is the consequence of energy vortexes unfolding upon a spherical surface: Guillaume Gauthier et al, Giant vortex clusters in a two-dimensional quantum fluid, (2019, Science) https://www.science.org/doi/10.1126/science.aat5718</div>
         </a>
 
       
 
-        <a href="#61-up" class="footnote">   
-        <div class="footnote-number">61.</div>
+        <a href="#70-up" class="footnote">   
+        <div class="footnote-number">70.</div>
         <div class="footnote-text">Thomas P. Quinn, <i>The Behavior and Ecology of Pacific Salmon and Trout</i>, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: The Ecology of Spawning Salmon and Their Carcasses. p 167: '...observations and experiments showed that salmon carcasses enhance algal growth and insect density in streams. Wipfli et al. (1998) reported that reaches of a stream in southeast Alaska accessible to pink salmon had fifteen times more biofilm (microbes covering rocks) and twenty-five times higher densities of macroinvertebrates than reaches of the creek not accessible to salmon.  
         </div>
         </a>
 
-        <a href="#62-up" class="footnote">   
-        <div class="footnote-number">62.</div>
+        <a href="#71-up" class="footnote">   
+        <div class="footnote-number">71.</div>
         <div class="footnote-text">Davidson, John & May, Travis & Good, Christopher & Waldrop, Thomas & Kenney, Patrick & Terjesen, Bendik & Summerfelt, Steven. (2016). Production of market-size North American strain Atlantic salmon Salmo salar in a land-based recirculation aquaculture system using freshwater. Aquacultural Engineering. 74. 10.1016/j.aquaeng.2016.04.007. 
         </div>
         </a>
 
-        <a href="#63-up" class="footnote">   
-        <div class="footnote-number">63.</div>
+        <a href="#72-up" class="footnote">   
+        <div class="footnote-number">72.</div>
         <div class="footnote-text">Thomas P. Quinn, The Behavior and Ecology of Pacific Salmon and Trout, Second Edition (University of Washington Press, Seattle, 2018) Chapter 7: Carcasses. p 182: '...Research using stable isotopes has shown that the marine-derived nutrients in the salmon carcasses contribute strongly to aquatic and terrestrial ecosystems, affecting bears and other wildlife; juvenile salmon, trout, and other fishes...'
         </div>
         </a>
 
-        <a href="#64-up" class="footnote">   
-        <div class="footnote-number">64.</div>
+        <a href="#73-up" class="footnote">   
+        <div class="footnote-number">73.</div>
         <div class="footnote-text">'For the Gitksan and  Wetʼsuwetʼen, as for other traditional peoples, the various beliefs about the relationship of humans to the land and to the resources which sustain the people are rich and multifaceted, integrated into all aspects of society. They do not have a reductionist perspective which allows separation of the biological from the moral or mythical. Adherence to a wide variety of practices which we might separate into biological and spiritual realms is seen as necessary for the maintenance of the relationship of the people and the land with its plants and animals which sustain human life.  Conservation is interactive with ideology. As Anderson points out, it is in the realm of ideology and myth, which entrain the emotions, that the motivation to defer present gratification for the future common good is obtained. Myths or teaching stories imbue lessons on conservation, which makes possible long term sustainable adaptation, with sufficient emotional loading to make them memorable and to inspire people to put the lessons contained in them into practice.'  Leslie M. Johnson Gottesfeld (1994), Conservation, Territory, and Traditional Beliefs: An Analysis of Gitksan and  Wetʼsuwetʼen Subsistence, Northwest British Columbia, Canada. Human Ecology, p20.
         </div>
         </a>
 
-        <a href="#65-up" class="footnote">   
-        <div class="footnote-number">65.</div>
+        <a href="#74-up" class="footnote">   
+        <div class="footnote-number">74.</div>
         <div class="footnote-text">The  Wetʼsuwetʼen were not alone in this way.  Virtually all first nations of the Pacific Northwest held a concept of wealth that was defined not by what one accumulated, but of what one gave away embodied in the the 'potlatch' ceremony.  In this widespread tradition, the a community would gather to distribute gifts of all kinds.   The express purpose of these ceremonies was energetic dispersal out-to-all.   All who attended, understood well the ceremony and intention.  Within the context of the potlatch, honor and respect was gained not by the wealth itself, but by its flow, not by how much was gathered, but by how much was gifted awaollowing the example of kincentric cultures, the salmon and the Earth we must arrange the financial structure of our aspiring green enterprises accordingly.' 
         </div>
         </a>
 
-        <a href="#66-up" class="footnote">   
-        <div class="footnote-number">66.</div>
+        <a href="#75-up" class="footnote">   
+        <div class="footnote-number">75.</div>
         <div class="footnote-text">Suh, Sangwon. (2004). Materials and energy flows in industry and ecosystem networks. The International Journal of Life Cycle Assessment. 9. 335-336. 10.1007/BF02979425. Materials and energy flow analysis (MEFA) has been widely utilized in ecology and economics, occupying unique positions in both disciplines.
         </div>
         </a>
 
 
-        <a href="#67-up" class="footnote">   
-        <div class="footnote-number">67.</div>
+        <a href="#76-up" class="footnote">   
+        <div class="footnote-number">76.</div>
         <div class="footnote-text">Hinton and Maclurcan, present a compelling argument of the extractive nature of for-profit business.  They propose this ethic of determination: “...in order to determine whether business is generative (contributing to the health of the whole economy) or extractive (taking away from the health of the whole economy), one must ask the question, 'Who profits from the profit?'” Jennifer Hinton, Donnie Maclurcan, <i>How on Earth?</i>, (Post Growth Institute, 2006) 
         </div>
         </a>
