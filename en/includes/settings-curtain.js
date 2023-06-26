@@ -19,9 +19,13 @@ class SettingsCurtain extends HTMLElement {
 
                             
         <div id="languages">
-            <a href="../en/index.html" aria-label="Switch to the English version"><div class="language-selector">EN</div></a>
+            <a href="../en/index.html" aria-label="Switch to the English version">
+                <div class="language-selector">EN</div></a>
+
                 <div class="language-selector" title="Désolé, pas encore traduit !" aria-label="French not yet active">FR</div>
-                <div class="language-selector" title="Maaf, belum diterjemahkan!" aria-label="Indonesian not active">IN</div>
+
+                <a href="#" class="language-selector" title="Maaf, belum diterjemahkan!" aria-label="Indonesian not active" onclick="showTranslationAlert()">IN</a>
+
             </div>
 
         
@@ -82,3 +86,9 @@ class SettingsCurtain extends HTMLElement {
 }
 
 customElements.define('settings-curtain', SettingsCurtain);
+
+
+  // Function to show the alert message
+  function showTranslationAlert() {
+    alert("Maaf, belum diterjemahkan! But we're working on it.");
+  }
