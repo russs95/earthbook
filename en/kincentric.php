@@ -169,7 +169,7 @@ Must be updated for each page-->
 
      <p>From a scientific perspective, we can today appreciate the depth of their world view.</p>
 
-     <p>Indeed, just as brothers, sisters, aunts and uncles are all parts of a family because of their shared ancestry, so too are plants, insects, animals, and humans parts of an ecological family connected by lineages that reach far back into time.  Just as a son, parent and grandparent are subsets of a family system so too are humans, plants and animals all subsets systems of the ecosystems of which they are part.  It then follows that, as younger and elder family members differ in their accumulation of wisdom, so too do members of an ecosystem vary in their mastery of ecological integration.</p>
+     <p>Indeed, just as brothers, sisters, aunts and uncles are all parts of a family because of their shared ancestry, so too are plants, insects, animals, and humans parts of an ecological family connected by lineages that reach far back into time.  Just as a son, parent and grandparent are subsets of a family system so too are humans, plants and animals all subset-systems of the ecosystems of which they are part.  It then follows that, as younger and elder family members differ in their accumulation of wisdom, so too do members of an ecosystem vary in their mastery of ecological integration.</p>
      
      <p>From this perspective, plants and animals— having had millions of years to integrate into a particular ecosystem— embody invaluable lessons and example for humans to follow.</p>
 
@@ -177,7 +177,7 @@ Must be updated for each page-->
 
      <p>And so they did.</p>
 
-     <p>As early first nations observed the way in which the lives of plants and animals synced with the cycles of an ecosystem, tendencies were noted, characters observed and virtues discerned.  From the cooperation of crows to the diligence of a deer; from the strength of a bear to the endurance of an elk, stories about particular creature and the virtue that it most illuminated, were passed down over the generations.</p>
+     <p>As early first nations observed the way in which the lives of plants and animals synced with the cycles of an ecosystem, tendencies were noted, characters observed and virtues discerned.  From the cooperation of crows to the diligence of a deer; from the strength of a bear to the endurance of an elk, stories about a particular creature and the virtue that it most illuminated were passed down over the generations.</p>
 
      <p id="45-up">Often, a tribe, resonating with the character of a particular creature would adopt it as their representative and guide. Almost all North American first nations contained clans that took an animal as their <i>totem</i>— a means of formaly declaring family with a particular animal.<a href="#footnotes" title="“A North American 500 years ago could travel from the shores of the Great Lakes to the Lousiana bayous and still find settlements – speaking languages entirely unrelated to their own- with members of their own Bear, Elk or Beaver Clans who were obliged to host and feed them.” David Graeber, David Wengrow, 'The Dawn of Everything: A New History of Humanity', (Signal Publishing, 2021) Chapter 4. Free People, the Origin of Cultures, p. 123" onclick="openFootnotes()">⁴⁵</a> Through stories and myths, they were inspired by the animal's ecological example to lay out their clan’s principal values and ethics.</p>
 
@@ -185,7 +185,7 @@ Must be updated for each page-->
 
      <p>In a virtuous spiral of ever deeper awareness, such cultures steadily enhanced the harmony of the ecosystems of which they were part. With the momentum of millennia of compounding insights, their way of knowing steadily led to an ecological understanding of unparalleled lucidity.  Steadily, these societies were able to effectively co-create with plants and animals a common home for all to thrive.</p>
 
-     <p>Today, in realizing the great green feats of these <i>cyclocentric nations</i><a href="#footnotes" title="From the Greek Κύκλος for 'Cycle', we introduce the term 'cyclocentric' to describe kincentric cultures and their propensity to self organize around the sync and celebration of Earthen cycles.  We use this term in distinction to the terms 'ecocentric' or 'biocentric' which fail to capture the the importance of human/ecological synchony which characterized these particular cultures.  This term and concept are inspired by Igorot Ayyew culture.  See an account of the Igorots remarkable ecological synchrony: William Henry Scott, (1959) Some Calendars of Northern Luzon, American Anthropologist 60(3):563 - 570">⁴⁷</a>, in turn we can learn from them and follow their example.</p>
+     <p>Today, in realizing the great green feats of these <i>cyclocentric nations</i><a href="#footnotes" title="From the Greek Κύκλος for 'Cycle', we introduce the term 'cyclocentric' to describe kincentric cultures and their propensity to self organize around the sync and celebration of Earthen cycles.  We use this term in distinction to the terms 'ecocentric' or 'biocentric' which fail to capture the the importance of human/ecological synchony which characterized these particular cultures.  This term and concept are inspired by Igorot Ayyew culture.  See an account of the way in which the Igorot culture and calendar are centered around the ecological cycles of their biome, the earth, moon: William Henry Scott, (1959) Some Calendars of Northern Luzon, American Anthropologist 60(3):563 - 570">⁴⁷</a>, in turn we can learn from them and follow their example.</p>
 
      <p>To do so, the ontological recognition our kinship with all Earth's creatures is key. </p>
 
@@ -312,7 +312,7 @@ Must be updated for each page-->
 
         <a href="#47-up" class="footnote">   
         <div class="footnote-number" id="3-down">47.</div>
-        <div class="footnote-text">Ecological cosmology is deeply embedded in the Banayan’s Kan’kan’nue language and so too other kincentric cultures.  See: Matthew C. Bronson, <i>Lessons in the Old Language</i>, (Global Oneness Project, 2018)</div>
+        <div class="footnote-text">From the Greek Κύκλος for 'Cycle', we introduce the term 'cyclocentric' to describe kincentric cultures and their propensity to self organize around the sync and celebration of Earthen cycles.  We use this term in distinction to the terms 'ecocentric' or 'biocentric' which fail to capture the the importance of human/ecological synchony which characterized these particular cultures.  This term and concept are inspired by Igorot Ayyew culture.  See an account of the way in which the Igorot culture and calendar are centered around the ecological cycles of their biome, the earth, moon: William Henry Scott, (1959) Some Calendars of Northern Luzon, American Anthropologist 60(3):563 - 570</div>
         </a>
 
         

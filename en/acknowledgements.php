@@ -158,7 +158,7 @@ WHAT FIRST BEGAN as conversation, became a school project, then a program, then 
 
 <div class="page-paragraph">
 
-  <p>First and foremost we are grateful for our plastic.  Without the trials and tribulations of trying to figure out what to do with it— the physical and philosophical journeys it pollutions and solutions have sparked for us— this book would never have begun.</p> 
+  <p>First and foremost we are grateful for our plastic.  Without the trials and tribulations of trying to figure out what to do with it— the physical and philosophical journeys its pollutions and solutions have sparked for us— this book would never have begun.</p> 
 
   <p>
   That said, we are grateful to our invisible beginnings: our ancestors, both of our own lineages and those of other kincentric cultures around the world that have touched and inspired our struggle with the meaning of green. Their accumulated wisdom serves as the bedrock upon which we have built. 

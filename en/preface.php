@@ -105,8 +105,8 @@ Must be updated for each page-->
 
 <div id="ct-chapt-graphic" class="background-000">
   <div class="ct-chapter-quote">
-    “Ayka ta man gagayam ta"<br>
-    (Come, let’s tell some stories)
+    “Ayka ta man gagayam ta..."<br>
+    ( Come, let’s tell some stories... )
   </div>
   <div class="ct-quote-source">
    ― Igorot expression
@@ -141,11 +141,11 @@ Must be updated for each page-->
 
     <p>For those of us living along the river, the challenge was palpable.</p>
       
-    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Philippine archipelago. With their towns and villages nestled within a rugged chain of verdant mountains, the Igorots had remained largely insulated from three hundred years of Spanish colonization further South. However, over the last decades, modern goods had reached even the most remote villages. Whereas the leaves, wood and vines that had long served them as functional materials were entirely biodegradable, now strange modern materials stubbornly refused to degrade.</p>
+    <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Philippine archipelago. With their towns and villages nestled within a rugged chain of verdant mountains, the Igorots had remained largely insulated from three hundred years of Spanish colonization further South. However, over the last decades, modern goods had reached even the most remote villages. Whereas the leaves, wood and vines that had long served them as functional materials were entirely biodegradable, now, strange modern materials stubbornly refused to degrade.</p>
 
     <p>However, the Igorots had not been sitting idly by.</p>
     
-    <p>In the Igorot society, the art of ecological integration is highly esteemed— in much the same way that painting or sculpture is in other cultures. Consequently, the region had become a hot-bed of up-cycling innovations. In town, old tires were being cut up to make remarkably functional chairs and tables. In the mines, used dynamite cable was being woven into traditional backpacks. In homes, straws and wrappers were being woven mats, purses, wallets and household items of all kinds.</p>
+    <p>In the Igorot society, the art of ecological integration is highly esteemed— in much the same way that painting or sculpture is in other cultures. Consequently, the region had become a hot-bed of up-cycling innovations. In town, old tires were being cut up to make remarkably functional chairs and tables. In the mines, used dynamite cable was being woven into traditional backpacks. In homes, straws and wrappers were being woven into mats, purses, wallets and household items of all kinds.</p>
 
    <p>Banayan and I were so fascinated by this upcycling movement, that we became part of it ourselves. While Banayan had been integrating upcycled arts and crafts into school curriculums, I was involved in improving upcycled designs to make saleable products. However, in the face of the ever-growing flow of plastics being discarded, our successes were all but insignificant. As the legal stand-off in Bontoc intensified, we realized that securing plastic out of the environment was far more vital than making or teaching handicrafts.</p>
     
@@ -179,7 +179,7 @@ Must be updated for each page-->
     
     <p>Specifically, we’ve come to ask ourselves: <i>What in fact should green really mean?</i> And, more precisely, what are its requisite parameters and principles?</p>
 
-    <p>While Banayan and I continue to ecobrick our own used plastic, our suspicion has grown that solving plastic (and being ‘green’) is not just about new techniques and technologies. Just as significant as <i>what</i> we do is <i>how and why</i> we do it.  In this aspect, our conviction have crystalized: the wisdom traditions of ancient indigenous cultures are critical to giving meaning and substance to our contemporary concept of green.</p>
+    <p>While Banayan and I continue to ecobrick our own used plastic, our suspicion has grown that solving plastic (and being ‘green’) is not just about new techniques and technologies. Just as significant as <i>what</i> we do is <i>how and why</i> we do it.  In this aspect, our convictions have crystallized: the wisdom traditions of ancient indigenous cultures are critical to giving meaning and substance to our contemporary concept of green.</p>
 
     <p>Our title reflects this merging of the modern and indigenous world views<a href="#footnotes" title="Going forward, instead of the term 'indigenous' we will use the term ‘kincentric' to specifically reference the indigenous world view which we are exploring: a particular cosmology that, although it is characterstic of most indigenous cultures, is not necessarily so.  This will be expanded upon in chapter 5.">¹</a> that our two ancestral backgrounds emobdy.</p>
     
@@ -227,7 +227,7 @@ Must be updated for each page-->
         <a href="#1-up" class="footnote">   
         <div class="footnote-number">1.</div>
   
-        <div class="footnote-text">Going forward, instead of the term 'indigenous' we will use the term ‘kincentric' to specifically reference the indigenous world view which we are exploring: a particular cosmology that, although it is characterstic of most indigenous cultures, is not necessarily so.  This will be expanded upon in chapter 5.
+        <div class="footnote-text">GGoing forward, instead of the term 'indigenous' we will use the terms ‘kincentric' and “cyclocentric” to specifically reference the indigenous world view which we are exploring: a particular cosmology that, although it is characteristic of most indigenous cultures, is not necessarily so.  This will be expanded upon in Chapter 5: Kindred Relations.
         </div>
         </a>
      

@@ -136,7 +136,8 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "3",
-  "image_url": "..\/icons\/glossary.svg"
+  "image_url": "..\/icons\/glossary.svg",
+  "relevant_chap": "Chapter 6: Nature's Fallacy"
 },
 {
   "postID": "44",
@@ -148,11 +149,13 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "4",
-  "image_url": "..\/icons\/glossary.svg"
+  "image_url": "..\/icons\/glossary.svg",
+  "relevant_chap": "Chapter 6: Nature's Fallacy"
 },
 
 {"postID":"45","title":"Kincentric",
-"keywords":"kincentric, humancentric, anthropocentric, plants, animals, Earth, ecosystems","chap_description":"In opposition to humancentric; a view of the world in which plants, humans, animals and all Earthen organisms share ancestry and origins, cycles and ecosystems.","url":"../en/glossary.php#kincentric","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
+"keywords":"kincentric, humancentric, anthropocentric, plants, animals, Earth, ecosystems","chap_description":"In opposition to humancentric; a view of the world in which plants, humans, animals and all Earthen organisms share ancestry and origins, cycles and ecosystems.","url":"../en/glossary.php#kincentric","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg",
+"relevant_chap": "Chapter 6: Nature's Fallacy"},
 
 {"postID":"46","title":"Petro-Capital Economy",
 "keywords":"petro-capital economy, petroleum energy, fossil fuels, flow of capital","chap_description":"An economy whose flow and generation of capital is powered by petroleum energy.","url":"../en/glossary.php#petrocapital","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
