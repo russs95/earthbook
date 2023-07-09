@@ -216,7 +216,7 @@ text-justify: none;"><i>Loading glossary...</i></div>
 <script>
 async function buildGlossary() {
   // Load the JSON data
-  const response = await fetch('glossary.json');
+  const response = await fetch('glossary.json?v=1.0');
   const jsonData = await response.json();
   // Sort the data alphabetically by title
   jsonData.sort((a, b) => a.title.localeCompare(b.title));
