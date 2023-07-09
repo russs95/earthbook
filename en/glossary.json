@@ -4,7 +4,7 @@
     "postID": "26",
     "title": "Biome",
     "keywords": "biome, biomes",
-    "chap_description": "An ecosystem of ecosystems. A principal ecosystem of a biosphere.",
+    "chap_description": "An ecosystem of ecosystems: the principal ecosystem of a biosphere.",
     "url": "..\/en\/glossary.php#biome",
     "language": "Appendix",
     "book": "Definition",
@@ -23,6 +23,7 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "1",
+  "relevant_chap": "Chapter 8: Nature's Fallacy",
   "image_url": "..\/icons\/glossary.svg"
 },
 
