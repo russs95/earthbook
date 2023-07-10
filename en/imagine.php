@@ -108,7 +108,7 @@ Must be updated for each page-->
 
     
       <div class="page-paragraph"><p><i>
-      Imagine a world where the way we live is steadily enriching the ecosystems of which we are part.  It is a world where our households and communities, just by thriving, make the biosphere a more abundant, vibrant and hospitable home for us and for all our fellow creatures.  Rather than strive to reduce our environmental harm, in this world we have come together to maximize our ecological contribution.  To do so, the way we manage our matter and energy has shifted.  No longer do our enterprises operate merely in circles—  so too do they spiral; each spin overpaying its debts and dispersing its surpluses.   No longer do our enterprises merely reduce the amount of carbon and other elements they emit— so too do they capture and concentrate more than they let loose.  No longer do we merely strive to conserve and protect the planet's ever diversifying tapestry of organisms and ecosystems— so too do we play a part in its weaving.  As we all thrive together, the awareness of our interconnection ever augments, and with it, the sync of our cycles of enterprise and ecosystem, economy and biome, humanity and biosphere— a harmony rising up with us towards the stars.</i></p>
+      Imagine a world where the way we live is steadily enriching the ecosystems of which we are part.  It is a world where our households and communities, just by thriving, make the biosphere a more abundant, vibrant and hospitable home for us and for all our fellow creatures.  Rather than strive to reduce our environmental harm, in this world we have come together to maximize our ecological contribution.  To do so, the way we manage our matter and energy has shifted.  No longer do our enterprises operate merely in circles—  so too do they spiral; each spin overpaying its debts and dispersing its surpluses.   No longer do our enterprises merely reduce the amount of carbon and other elements they emit— so too do they capture and concentrate more than they let loose.  No longer do we merely strive to conserve and protect the planet's ever diversifying tapestry of organisms and ecosystems— so too do we play a part in its weaving.  Thriving all together, the awareness of our interconnection ever augments, and with it, the sync of our cycles of enterprise and ecosystem, economy and biome, humanity and biosphere— a harmony rising up with us towards the stars.</i></p>
      </div>
      <br><br>
 
@@ -118,7 +118,7 @@ Must be updated for each page-->
 <div>
      <div class="lead-page-paragraph">
 
-     TODAY, AS WE BECOME more and more aware of the ecological degradation inherent to our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in a common planet passion, never before has it been more important to recognize that the way forward has already been cleared and its path waled.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that our modern world view has been unable to grasp or even conceive. Only to the extent that we can recognize these enlightened moments, can we ever imagine our own.  And insofar as we can imagine it, the realization of a green age for all is not nearly as distant as many of us are tempted despair.
+     TODAY, AS WE BECOME more and more aware of the ecological degradation inherent to our modern world, we yearn to amend our mistakes and to improve our ways.  However, as our homes and enterprises unite in a common planet passion, never before has it been more important to recognize that the way forward has already been cleared and its path walked.  Dismissed and all but forgotten by our modern civilization, nations ancient and ongoing have long mastered their ecological integration to achieve heights of harmony that our modern world view has been unable to grasp or even conceive. Only to the extent that we can recognize these enlightened moments, can we ever imagine our own.  And insofar as we can imagine it, the realization of a green age for all is not nearly as distant as many of us are tempted despair.
 
     </div>
 
@@ -126,7 +126,7 @@ Must be updated for each page-->
 
       <p id="3-up">Inspired by the verdant legacy of Banayan’s people, the Igorots of Northern Luzon<a href="#footnotes" title="In particular the Igorot Ayyew ecological ethos.  See: Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)." onclick="openFootnotes()" >³</a>, she and I have to come to see that the longing and the potential for ecological contribution unites us all on planet Earth.</p>
 
-      <p>Across cultures and continents, we long to contribute to that which we are part: to add to the communities in which we belong, to harmonize with our neighbours, to sync with those with whom we sing.  Consequently, as the parts we play in our local ecosystems and global biomes becomes clearer, so too does our yearning to participate positively in them and contribute to their harmony, vitality and abundance.  
+      <p>Across cultures and continents, we long to contribute to that which we are part: to add to the communities in which we belong, to harmonize with our neighbours, to sync with those with whom we share space.  Consequently, as the parts we play in our local ecosystems and global biomes becomes clearer, so too does our yearning to participate positively in them and contribute to their harmony, vitality and abundance.  
       </p>
 
       <p>Indeed, Banayan and I have come to see that the transition to households, communities and enterprises that are in-and-of-themselves ecological contributions is the next stage of an epic planetary story whose direction is, quite literally, in our hands.</p>
@@ -157,7 +157,7 @@ Must be updated for each page-->
 
      <p>Banayan and I, in struggling to manage our own plastic positively, have come to see that the contemporary concept of green is lacking and incomplete.</p>
      
-     <p>Seen through the lens of the  ecological ayyew ethos of her people, we observe that the modern ethic of green is merely about reducing <i>harm</i>— while the concept of <i>contribution</i> has remained all but un-imagined.</p>
+     <p>Seen through the lens of the ecological ethos of her people, we observe that the modern ethic of green is merely about reducing <i>harm</i>— while the concept of <i>contribution</i> has remained all but un-imagined.</p>
      
      <p>It is a view of human ecological potential that sharply contradicts the lived experience of Banayan and her ancestors.</p>
 
