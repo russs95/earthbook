@@ -3,7 +3,7 @@ self.addEventListener('install', event => {
     caches.open('earthbook-cache').then(cache => {
       return cache.addAll([
         '/',
-        '/index.php',
+        '/index.html',
         '/service-worker.js',
         '/favicons/apple-touch-icon.png',
         '/favicons/favicon-32x32.png',
@@ -48,6 +48,9 @@ self.addEventListener('install', event => {
         '/svgs/my-book-header-logo-day.svg',
 
         '/en/preamble.php',
+        '/en/preface.php',
+        '/en/epigraph.php',
+        '/en/imagine.php',
 
         '/lang.php',
 
