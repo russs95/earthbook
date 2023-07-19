@@ -1052,7 +1052,7 @@ margin-left: 0px;
 
 /*Bottom CLose Button*/
 
-#bottom-close-button {
+.bottom-close-button {
   position: absolute;
   transition: 0.3s;
   background: var(--background-color);
@@ -1066,14 +1066,14 @@ margin-left: 0px;
   margin-left: auto; 
   margin-right: auto; 
   z-index: 50;
-  bottom: -35px;
+  bottom: -31px;
  text-align: center;
   width: 150px; 
   padding-bottom:50px;
 }
 
-#bottom-close-button:hover {
-  bottom:-28px;
+.bottom-close-button:hover {
+  bottom:-22px;
 }
 
 
@@ -1084,7 +1084,7 @@ margin-left: 0px;
 
 
 
-#bottom-close-button img {
+.bottom-close-button img {
 height: 30px;
 padding-top: 14px;
 

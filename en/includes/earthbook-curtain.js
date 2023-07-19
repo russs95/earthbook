@@ -63,7 +63,7 @@ class Earthbook extends HTMLElement {
           </div>
 
           <div>
-            <button type="button" id="bottom-close-button" style="cursor:pointer" onclick="closeEarthbook()" aria-label="Click to close this pop-up page">
+            <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeEarthbook()" aria-label="Click to close this pop-up page">
               <img src="../svgs/bottom-x.svg" alt="Close page button">
             </button>
           </div>
