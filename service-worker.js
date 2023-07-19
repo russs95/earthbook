@@ -51,6 +51,7 @@ self.addEventListener('install', event => {
         '/en/preface.php',
         '/en/epigraph.php',
         '/en/imagine.php',
+        '/en/salmon.php'
 
        
 
@@ -76,6 +77,14 @@ self.addEventListener('fetch', event => {
           cache.put(event.request, clonedResponse);
         });
         return response;
+      }).catch(() => {
+        // If fetching from network fails, try fetching from cache using the request URL
+        return caches.match(event.request).then(cachedResponse => {
+          if (cachedResponse) {
+            return cachedResponse;
+          }
+          throw new Error('Offline: Page not found in cache.');
+        });
       });
     })
   );
