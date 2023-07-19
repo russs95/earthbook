@@ -97,7 +97,7 @@ customElements.define('settings-curtain', SettingsCurtain);
     // Function to show the alert message with a clickable URL
 function showFRTranslationAlert() {
   const url = "https://book.earthen.io/books/Tractatus-Ayyew%20_d%E2%80%99une-%C3%A9thique%20terrestre_|_Livre%20Premier_|_Angway-&-Maier.pdf";
-  const message = `Désolé! Les versions EarthBook et EBook du Tractatus Ayyew ne sont pas encore prêtes. Cependant, vous pouvez télécharger la version PDF en clickant OK...</a>`;
+  const message = `Désolé! Les versions EarthBook et EBook du Tractatus Ayyew ne sont pas encore prêtes. Cependant, vous pouvez télécharger la version PDF en clickant OK...`;
   if (window.confirm(message)) {
     // If the user clicks "OK," you can perform further actions if needed.
     // For example, you can redirect them to the download link using:
