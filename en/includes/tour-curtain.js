@@ -57,7 +57,7 @@ class TourCurtain extends HTMLElement {
   <div class="tour-image"><img src="../svgs/icon-revenue.svg"  title="Buy the eBook" alt="But the eBook"></div>  
 
     <div class="modal-header">Buyable</div>
-    <div class="modal-description">Like this Earthbook?  You <a class="java-link" onclick="closeTour(),openBuy()"> can buy</a> the eBook version for your digital library and eReader.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
+    <div class="modal-description">Like this Earthbook?  You <span class="java-link" onclick="closeTour(),openBuy()"> can buy</span> the eBook version for your digital library and eReader.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
     <button class="back">↩ Back</button>
     <button class="back" onclick="closeTour(),openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Earthbook Principles</button>
     <button class="back" onclick="closeTour(),openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Buy</button>
