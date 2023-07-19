@@ -51,7 +51,8 @@ self.addEventListener('install', event => {
         '/en/preface.php',
         '/en/epigraph.php',
         '/en/imagine.php',
-        '/en/salmon.php'
+        '/en/energy.php',
+        'https://book.earthen.io/en/kincentric.php'
 
        
 

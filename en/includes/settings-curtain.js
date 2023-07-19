@@ -96,7 +96,7 @@ customElements.define('settings-curtain', SettingsCurtain);
 
     // Function to show the alert message
     function showFRTranslationAlert() {
-      alert("Désolé, pas encore traduit! But we're working on it.");
+      alert("Désolé! Les versions EarthBook et EBook du Tractatus Ayyew ne sont pas encore prêtes. Cependant, vous pouvez télécharger la version PDF ici: https://book.earthen.io/books/Tractatus-Ayyew%20_d%E2%80%99une-%C3%A9thique%20terrestre_|_Livre%20Premier_|_Angway-&-Maier.pdf");
     }
 
   
