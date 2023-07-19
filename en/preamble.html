@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+
+Chapter Template Version 1.1
+Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
+*/
+-->
+
+
+<!-- this grabs the language identifier for the page so that it can used in the meta and canonical url variables.  It also grabs the page name.  manifest="../offline.appcache-->
+
+
+
+<Style>
+    #ct-chapter-title {
+      /*padding-top: 45px;
+      */font-size: 10vmin;
+      letter-spacing: 2px;
+    }
+    
+  </style>
+
+<head>
+
+<!--HEADER-->
+
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable =yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tractatus Ayyew - Earthbook">
+<meta name="apple-mobile-web-app-status-bar-style" content="#DDD">
+
+
+<link rel="canonical" href="https://book.earthen.io/<?php echo ($lang); ;?>/<?php echo ($name); ;?>"> 
+<link rel="alternate" href="https://book.earthen.io/en/<?php echo ($name); ;?>" hreflang="en">
+<link rel="alternate" href="http://book.earthen.io/en/<?php echo ($name); ;?>" hreflang="x-default">
+<!--<link rel="alternate" href="https://book.earthen.io/fr/<?php echo ($name); ;?>" hreflang="fr">
+<link rel="alternate" href="https://book.earthen.io/es/<?php echo ($name); ;?>" hreflang="es">
+<link rel="alternate" href="https://book.earthen.io/id/<?php echo ($name); ;?>" hreflang="id">-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+<title><?php echo $page_title; ?></title>
+
+
+<meta property="og:site_name" content="Tractatus Ayyew">
+<meta property="article:publisher" content="Earthen.io">
+<meta name="author" content="Russell Maier & Banayan Angway">
+
+<meta property="og:type" content="book">
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<link rel="manifest" href="../favicons/site.webmanifest">
+
+<meta name="twitter:card" content="summary">
+<meta property="og:type"          content="book">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1000px">
+<meta property="og:image:height" content="1500px">
+
+<meta property="og:locale" content="<?php echo ($lang); ;?>">
+
+<meta property="og:url"           content="https://book.earthen.io/<?php echo $lang; ?>/<?php echo $name; ?>">
+<meta property="og:title"         content="<?php echo $page_title; ?>">
+ <!-- Fonts
+The requisite typography for the page-->
+
+<link rel="preconnect" href="../fonts/">
+<link rel="preconnect" href="../fonts/" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Mulish loads first for first page view-->
+
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
+
+	
+<!--Preload graphics
+<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">-->
+
+ <!-- Style Sheets   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css?v1.83">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.2">
+<link rel="stylesheet" href="../light.css?v1.7">
+
+
+<link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
+<link rel="preload" as="image" href="../svgs/up-arrow-light.svg">
+
+<link rel="stylesheet" href="../light.css?v1.91" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css?v1.93" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css?v1.1">
+
+
+
+ <!-- INCLUDES
+ Main Scripts-->   
+
+ <script src="../content-javascript.js?v=2.2" defer></script>
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../clip/dist/clipboard.min.js" defer></script>
+ <!--<script src="../accessibility.js" defer></script>-->
+ <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+
+
+ <!--Page Components
+All the page components required to build this page-->
+
+ <!--1--><script src="includes/header-component.js" async></script>
+ <!--2--><script src="includes/settings-curtain.js" defer></script>
+ <!--3--><script src="includes/content-curtain.js" defer></script>
+ <!--4--><script src="includes/share-curtain.js" defer></script>
+ <!--5--><script src="includes/buy-curtain.js"  defer></script>
+ <!--6--><script src="includes/bookplate-curtain.js" defer></script>
+ <!--7--><script src="includes/earthbook-curtain.js" defer></script>
+  <!--8--><script src="includes/tour-curtain.js" defer></script>
+  <!--9--><script src="includes/search-curtain.js" defer></script>
+
+ <!--8b DELEATABLE??<script src="includes/footer-chapter.js" defer></script>-->
+
+—
+ 
+
+
+<!-- Google tag (gtag.js) 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G5VT56C7XD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G5VT56C7XD');
+</script>
+
+<script>
+window.onload = function() {
+  retrieveHighlights();
+  document.getElementById("search_input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      EarthbookSearch(['glossary.json', 'chapters-index.json']);
+    }
+  });
+};
+</script>
+    -->
+
+
+
+<!--HEADER CLOSE-->
+
+
+<!--META TAGS
+Must be updated for each page-->
+
+<meta property="article:modified_time" content="2023-02-20T09:14:11+00:00">
+
+<meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics, preamble, intro, "> 
+<meta name="description" content="An introduction to the Earthbook edition of the Tractatus Ayyew">
+
+<meta name="twitter:label1" content="Est. reading time">
+<meta name="twitter:data1" content="3 minutes"> 
+	
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew">
+
+
+
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+  </script>
+
+</head>
+
+
+<!--MAIN HTML Begins-->
+
+<BODY class="accessibility-plugin-ac">
+
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
+
+  <div id="underlayer" class="accessibility-plugin-ac">
+
+    <div id="top"></div>
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+
+<div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+    <div id="ct-chapter-title">Preamble</div>   
+    <div id="ct-book-title">Tractatus Ayyew</div>
+    <div id="ct-chap-location">Introduction</div>
+    <div id="ct-word-count"><i>453 words</i></div>
+  </div>
+</div> 
+
+<!-- Page Title Section-->
+
+<div id="ct-chapt-graphic" class="background-0">
+
+</div>
+
+<div id="up-arrow"></div>
+
+<div id="ct-main">
+
+<div id="chap-notice">
+  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+  <div id="chap-notice-text">
+  💡  Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
+  </div>
+</div>
+
+<!-- MAIN TEXT CONTENT of the Page-->
+
+<div class="lead-page-paragraph">
+
+  IN THE CULTURE of the Igorot people of Northern Luzon in the West Philippine Sea, story telling is central. In their <i>dap'ay</i>— stone plazas at the center of every village— stories are told to introduce people, lessons and ideas. It is an example that we will follow in the chapters ahead.</div>
+
+<div class="page-paragraph">
+    <p>To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader eager for an overview, in our <a href="summaries.php" title="Jump to the three short summaries of the theory">summaries section</a>, we provide a short sentence, a long sentence and a paragraph that each sum up the theory of Earthen ethics which we develop in the <i>Tractatus Ayyew</i>.</p>
+
+    <p>Of course, <i>how</i> a story is told (or a theory for that matter) is just as important as the sum of its sentences.  In the dap'ay, both tale and telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
+
+    <p>Alas, while our telling will never achieve such a magnificent medium, we've nonetheless put great care into our book's presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <a class="java-link" onclick="openEarthbook()" aria-label="Open About Screen" title="Learn more about what an Earthbook is"><i>Earthbook</i></a>—  an Earth and reader friendly format that embodies the principles of Earthen ethics that we'll be developing in the chapters ahead.</p>
+
+    <p>Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced and shared. For example, this section of the book can be found at book.earthen.io/<?php echo ($lang); ;?>/preamble</p>
+    
+    <p>To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory (and each chapter’s integration within it) is represented by the mandala at the top of this page.</p>
+
+    <p>As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the print and eReader editions of the <i>Tractatus Ayyew</i> are <a class="java-link" onclick="openBuy()" aria-label="Open Buy Screen" title="See book's purchase options and prices">for sale</a> here on the Earthbook site. Sales are independent of middle-men, with 97% of book sales going direct to the authors.</p>
+
+    <p>As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's <a class="java-link" onclick="openEco()" aria-label="Open" title="View our impact accounting for the Earthbook's writing and publishing">regenerative reporting.</a></p>
+
+    <p>The full content of the <i>Tractatus Ayyew</i> is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Go to the Earthbook Github repository">code</a> (developed first for the <i>Tractatus Ayyew</i>) is made available under a GNU 3.0 license.</p>
+
+    </div>
+          
+</div><!--closes page text content-->
+
+
+<!--FOOTNOTES SECTION-->
+
+
+<div class="footnote-section" style="z-index:8;">
+
+     <!-- <div id="line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:105%; text-align:left;"></div>
+
+      <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+            
+        <div id="footnotes-arrow"></div>
+        
+        <div class="footnotes-title">Chapter Footnotes</div>
+      
+      </div>
+-->
+      <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+        <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+             </div>
+
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div><!-- Closes footnote section-->
+
+</div><!--Closes main content block-->
+
+
+
+<!--ECO CURTAIN-->
+<div id="eco-curtain2" class="eco-overlay">
+    <div class="overlay-content-eco">         
+         <!-- <div>
+          <img src="../icons/eco-green.svg"  width="170px" height="170px" title="Ecological Accounting Kept" alt="Ecological Accounting Kept">
+        </div>  -->
+          
+            <div class="eco-header">The Earthbook format is hand-coded from the ground up to be Green.</div>
+  
+            <div class="eco-text">
+          In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">Regenerativity Report.</a>
+        </div>
+  
+           
+  <!--
+  <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">
+    <div><img src="../banners/disclose-light-350px.png" width="300px"></div></a>-->
+  
+    <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">
+      <div><img src="../banners/forearth-dark-350px.png" width="300px"></div></a>
+  
+       <div id="wcb" class="carbonbadge wcb-d"></div>
+  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" preload></script>
+           
+        <br><br>
+        <div class="eco-medium">The Medium is the Message.</div>
+        <span style="cursor:pointer" onclick="closeEco()">
+            <div id="bottom-close-button">
+                <img src="../svgs/bottom-x.svg">
+            </div>
+        </span>
+    </div>
+  </div>
+
+  <!--END ECO CURTAIN-->
+  
+
+
+  <!--Footer Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+
+    <div class="footer-size">
+    
+      <div class="footer-left">
+
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+
+     
+        <div class="next-section">
+          <div class="next-sec">Next section:</div>
+          <div class="sec-name"><i>Preface</i></div>
+        </div>
+
+      </div>
+  
+      <div class="footer-right">
+    
+        <a href="preface.php" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+
+      </div>
+    </div>
+
+<!-- CHAPTER FOOTER-->
+
+
+
+
+
+<div id="footer-functions-box" style="width:100%; padding-top: 5px;">
+
+
+
+<div class="footer-function" >
+        <div class="footer-function-main" onclick="openCode()" style="z-index:8;">
+            
+            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/up-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
+            </div>
+
+            <div class="footer-function-item">
+              <p>Source Code</p>
+            </div>
+
+            <div class="footer-function-item-icon"> 
+                <i style="background-image: url(../icons/code.svg);"></i>
+            </div>
+
+        </div>
+
+        <div id="footer-function-reveal-code" style="height:0px; opacity:0;">
+            <div class="github-source2" style="font-size:0.8em; font-family:Mulish;color:grey;overflow: clip;">Earthbook's are open source. Contribute, correct or fork this Earthbook's code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br> ➔ github.com/russs95/ earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?></a>
+            </div>
+         </div>
+      </div>
+
+      <div class="footer-function" >
+        <div class="footer-function-main" onclick="openComments()" style="z-index:9;">
+            
+            <div id="comments-out" style="width: 18px; height: 18px;background: url(../icons/plus.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
+            </div>
+
+            <div class="footer-function-item">
+              <p>Cite / Comment</p>
+            </div>
+
+            <div class="footer-function-item-icon"> 
+                <i style="background-image: url(../icons/comments.svg);"></i>
+            </div>
+
+        </div> 
+      </div>
+
+
+      
+      <div class="footer-function">
+        <div class="footer-function-main" style="z-index:10;" onclick="openFooter2()">
+        
+          <div id="footer-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center; background-size:contain;margin: auto 10px auto 0;"></div>
+
+            <div class="footer-function-item"><p>Tools & Resources</p></div>
+            <div class="footer-function-item-icon">
+            <i style="background-image: url(../icons/settings.svg);"></i>
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+      
+
+    </div>
+
+
+  
+<div id="footer-settings">
+
+<div class="footer-size" style="height:58px;">
+
+<div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Return to the homepage" title="Return to the homepage" onclick="location.href='index.html'" ><img src="../icons/home.svg" alt="home page icon"></button></div>
+
+<!--
+  <div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew title page" alt="Tractatus Ayyew Mandala"></button></div>-->
+  
+  <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to the purchase page" title="Click to go to the purchase page"></button></div>
+
+  <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/search.svg?v=2" alt="Settings icon" style="cursor:pointer" onclick="openSearch()" aria-label="Click to adjust book reading settings" title="Click to adjust book reading settings"></button></div>
+
+  <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/share.svg" alt="share icon" style="cursor:pointer" onclick="openShare()" aria-label="Click to copy the link of the earthBook to share" title="Click to copy the link of the earthBook to share"></button></div>
+
+  <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/tour.svg" alt="Guided Tour" style="cursor:pointer" onclick="guidedTour()" aria-label="Click for a quick Earthbook features tour" title="Click for a quick Earthbook features tour"></button></div>
+
+  <div style=""><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of page" style="cursor:pointer" onclick="location.href='#top'" aria-label="Go to top of page"></button></div>
+
+ <!-- <div><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents" title="Click to view EarthBook Table of Contents"></button></div>-->
+
+ 
+  <div style="flex-grow:4; text-align: right;"><button type="button" class="footer-settings-icon"><img src="../icons/eco-green.svg" alt="Our Ecological Tracking, Accounting and disclosure" title="Our Ecological Tracking, Accounting and disclosure" style="cursor:pointer;" aria-label="Open Ecological Accounting" onclick="openEco()"></button></div>
+
+</div>
+
+<div class="footer-size" style="height:30px;">
+
+    <div><button type="button" class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px; padding-top: 10px;padding-bottom: 0px;" onclick="openEarthbook()" aria-label="Learn what an Earthbook is">What is an Earthbook?</button>
+    </div>
+
+    <div class="github-source" style="margin-right: 0px;">The Medium is the Message.
+    </div>
+
+</div>
+</div>
+
+<!--
+  <div id="containerSepia"></div>
+  <div id="containerContrast"></div>
+  <div id="containerBrightness"></div>
+            -->
+
+  <script>
+
+function getMainurl() {
+  document.getElementById("page-url").innerHTML = window.location.href;
+}
+
+
+
+function EarthbookSearch(jsonFiles) {
+  // Get the search query from the input field
+  var query = document.getElementById("search_input").value.toLowerCase();
+  var overlayContent = document.querySelector('.search-overlay-content');
+  overlayContent.style.height = 'fit-content';
+  overlayContent.style.marginTop = '8%';
+
+
+  // Load the JSON files
+  var posts = [];
+  var numFilesLoaded = 0;
+  for (var i = 0; i < jsonFiles.length; i++) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        // Parse the JSON data
+        var data = JSON.parse(this.responseText);
+        posts = posts.concat(data);
+
+        // Increment the number of files that have been loaded
+        numFilesLoaded++;
+
+        // If all files have been loaded, filter the posts
+        if (numFilesLoaded == jsonFiles.length) {
+          // Filter the posts that match the search query
+          var outputPosts = [];
+          for (var j = 0; j < posts.length; j++) {
+            var post = posts[j];
+            if ((post.keywords && post.keywords.toLowerCase().includes(query)) || (post.chap_description && post.chap_description.toLowerCase().includes(query))) {
+              outputPosts.push(post);
+            }
+          }
+          console.log(outputPosts.length);
+
+          console.log(outputPosts);
+
+
+          // Get the container where the results will be displayed
+          var resultsContainer = document.getElementById("search_results");
+
+          // Clear the previous search results
+          resultsContainer.innerHTML = "";
+
+          // If no results are found, display a message
+          if (outputPosts.length == 0) {
+            resultsContainer.innerHTML = "<p>Sorry, no results were found for \"" + query + "\".</p>";
+          } else {
+            // Iterate over the results and append them to the container
+            for (var k = 0; k < outputPosts.length; k++) {
+              resultsContainer.innerHTML += "<div class=\"tc-item\"><div id='result_" + k + "' style=\"display:flex; text-align:left; padding: 20px;\"><div class=\"chapter_pic\" style=\"width=100px; margin-right:10px;display:block;\"><img src=\"" + outputPosts[k].image_url + "\" width=\"100px\" height=\"100px\"></div><div class=\"chapter-name-search\"><b style=\"font-size:x-large;margin-bottom:12px;display:block;\"><a href='" + outputPosts[k].url + "'>" + outputPosts[k].title + "</b><span style=\"font-size:smaller;color:var(--drop-cap)!important;margin-top:10px;display:block;\">" + outputPosts[k].chapter + "  |  " + outputPosts[k].book + "  |  " + outputPosts[k].words + " words  |  " + outputPosts[k].language + "</span><span style=\"font-size:medium;font-family:'CooperLt',serif;margin-top:10px;display:block;\">" + outputPosts[k].chap_description + "</span><span style=\"font-size:smaller;color:grey;margin-top:10px;display:block;\">" + outputPosts[k].url + "</span></a></div>";
+            }
+          }
+        }
+      }
+    };
+    xmlhttp.open("GET", jsonFiles[i], true);
+    xmlhttp.send();
+  }
+}
+
+
+
+
+
+function clearResults() {
+  var searchInput = document.getElementById('search_input');
+  var resultsContainer = document.getElementById('search_results');
+  var overlayContent = document.querySelector('.search-overlay-content');
+  searchInput.value = '';
+  resultsContainer.innerHTML = '';
+  overlayContent.style.height = '';
+  overlayContent.style.marginTop = '';
+
+}
+
+
+</script>
+
+
+  
+
+
+<!--CHAP FOOTER CLOSE-->
+
+
+</body>
+</html>
+
+
