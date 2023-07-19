@@ -270,6 +270,18 @@ margin: 12px auto 0px auto !important;
   font-display: swap;
  }
 
+ @font-face {
+  font-family: "Mulish";
+  src: url("fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+ /*
+ @font-face {
+  font-family: "MulishMedium";
+  src: url("fonts/Mulish-Medium.ttf");
+  font-display: swap;
+ }*/
 
 p {
   font-family: 'CooperLt', Georgia, serif;

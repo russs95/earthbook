@@ -19,7 +19,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 
 
-<Style>
+<style>
     #ct-chapter-title {
       /*padding-top: 45px;
       */font-size: 10vmin;
@@ -50,7 +50,31 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
-<title><?php echo $page_title; ?></title>
+
+<script>
+    //set master page variables - are these being used?!
+
+    let lang = "en";
+    let parts = "";
+    let name = "preamble";
+    let page_number = "1";
+    let page_title = "Preamble | Tractatus Ayyew - An Earthbook";
+    let chap_name = "Preamble";
+    let chap_number = "Introduction";
+
+</script>
+
+$parts = explode ("/", $_SERVER['SCRIPT_NAME']);
+$name = $parts [count($parts)-1];
+if (strcmp($name, "index.php") == 0)
+$name = "";
+$page_number = "1";
+$page_title = "Preamble | Tractatus Ayyew - An Earthbook";
+$chap_name = "Introduc";?>
+
+
+
+<title>Preamble | Tractatus Ayyew - An Earthbook</title>
 
 
 <meta property="og:site_name" content="Tractatus Ayyew">
@@ -70,10 +94,10 @@ These tags will be consistent for the whole book-->
 <meta property="og:image:width" content="1000px">
 <meta property="og:image:height" content="1500px">
 
-<meta property="og:locale" content="<?php echo ($lang); ;?>">
+<meta property="og:locale" content="en">
 
-<meta property="og:url"           content="https://book.earthen.io/<?php echo $lang; ?>/<?php echo $name; ?>">
-<meta property="og:title"         content="<?php echo $page_title; ?>">
+<meta property="og:url"           content="https://book.earthen.io/en/preamble">
+<meta property="og:title"         content="Preamble | Tractatus Ayyew - An Earthbook">
  <!-- Fonts
 The requisite typography for the page-->
 
@@ -82,16 +106,11 @@ The requisite typography for the page-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Mulish loads first for first page view-->
+<!-- Mulish loads first for first page view
 
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
-
+-->
 	
-<!--Preload graphics
-<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
-<link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
-<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">-->
-
  <!-- Style Sheets   
 All the css needed for this page-->
  
@@ -118,9 +137,6 @@ All the css needed for this page-->
  <!--<script src="../accessibility.js" defer></script>-->
  <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
  
- <!-- Arc CDN Script without delay
-<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
-
 
 
  <!--Page Components
@@ -172,7 +188,7 @@ window.onload = function() {
 <!--META TAGS
 Must be updated for each page-->
 
-<meta property="article:modified_time" content="2023-02-20T09:14:11+00:00">
+<meta property="article:modified_time" content="2023-07-20T09:14:11+00:00">
 
 <meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics, preamble, intro, "> 
 <meta name="description" content="An introduction to the Earthbook edition of the Tractatus Ayyew">
@@ -181,7 +197,7 @@ Must be updated for each page-->
 <meta name="twitter:data1" content="3 minutes"> 
 	
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:description"   content="Welcome to the Earthbook edition of the Tractatus Ayyew">
+<meta property="og:description"   content="An introduction to the Earthbook edition of the Tractatus Ayyew">
 
 
 
@@ -341,6 +357,7 @@ Must be updated for each page-->
   
 
 
+
   <!--Footer Next Chapter Section: Requires customization-->
   <div id="footer-chapter" style="margin-bottom: 0px;">
 
@@ -392,11 +409,11 @@ Must be updated for each page-->
         </div>
 
         <div id="footer-function-reveal-code" style="height:0px; opacity:0;">
-            <div class="github-source2" style="font-size:0.8em; font-family:Mulish;color:grey;overflow: clip;">Earthbook's are open source. Contribute, correct or fork this Earthbook's code on Github: <a href="https://github.com/russs95/earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br> ➔ github.com/russs95/ earthbook/blob/main/<?php echo ($lang); ;?>/<?php echo ($name); ;?></a>
+            <div class="github-source2" style="font-size:0.8em; font-family:Mulish;color:grey;overflow: clip;">Earthbook's are open source. Contribute, correct or fork this Earthbook's code on Github: <a href="https://github.com/russs95/earthbook/blob/main/en/preamble.html> " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br> ➔ github.com/russs95/ earthbook/blob/main/en/preamble.html</a>
             </div>
          </div>
       </div>
-
+<!--
       <div class="footer-function" >
         <div class="footer-function-main" onclick="openComments()" style="z-index:9;">
             
@@ -412,6 +429,7 @@ Must be updated for each page-->
             </div>
 
         </div> 
+        -->
       </div>
 
 
@@ -445,15 +463,15 @@ Must be updated for each page-->
 <!--
   <div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew title page" alt="Tractatus Ayyew Mandala"></button></div>-->
   
-  <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to the purchase page" title="Click to go to the purchase page"></button></div>
+  <div><button type="button" class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to the purchase page" title="Click to go to the purchase page"></button></div>
 
-  <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/search.svg?v=2" alt="Settings icon" style="cursor:pointer" onclick="openSearch()" aria-label="Click to adjust book reading settings" title="Click to adjust book reading settings"></button></div>
+  <div><button type="button" class="footer-settings-icon"><img src="../icons/search.svg?v=2" alt="Settings icon" style="cursor:pointer" onclick="openSearch()" aria-label="Click to adjust book reading settings" title="Click to adjust book reading settings"></button></div>
 
-  <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/share.svg" alt="share icon" style="cursor:pointer" onclick="openShare()" aria-label="Click to copy the link of the earthBook to share" title="Click to copy the link of the earthBook to share"></button></div>
+  <div><button type="button" class="footer-settings-icon"><img src="../icons/share.svg" alt="share icon" style="cursor:pointer" onclick="openShare()" aria-label="Click to copy the link of the earthBook to share" title="Click to copy the link of the earthBook to share"></button></div>
 
-  <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/tour.svg" alt="Guided Tour" style="cursor:pointer" onclick="guidedTour()" aria-label="Click for a quick Earthbook features tour" title="Click for a quick Earthbook features tour"></button></div>
+  <div><button type="button" class="footer-settings-icon"><img src="../icons/tour.svg" alt="Guided Tour" style="cursor:pointer" onclick="guidedTour()" aria-label="Click for a quick Earthbook features tour" title="Click for a quick Earthbook features tour"></button></div>
 
-  <div style=""><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of page" style="cursor:pointer" onclick="location.href='#top'" aria-label="Go to top of page"></button></div>
+  <div><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of page" style="cursor:pointer" onclick="location.href='#top'" aria-label="Go to top of page"></button></div>
 
  <!-- <div><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents" title="Click to view EarthBook Table of Contents"></button></div>-->
 
@@ -473,11 +491,6 @@ Must be updated for each page-->
 </div>
 </div>
 
-<!--
-  <div id="containerSepia"></div>
-  <div id="containerContrast"></div>
-  <div id="containerBrightness"></div>
-            -->
 
   <script>
 
