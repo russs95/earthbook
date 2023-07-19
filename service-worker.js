@@ -65,7 +65,7 @@ self.addEventListener('install', event => {
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request).then(response => {
-      // If the requested URL is in the cache, return the cached response
+      // If the requested URL is in the cache, return the cached response this
       if (response) {
         return response;
       }
@@ -90,6 +90,3 @@ self.addEventListener('fetch', event => {
     })
   );
 });
-
-
-
