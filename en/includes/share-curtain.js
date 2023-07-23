@@ -87,9 +87,21 @@ function confirmCopy() {
 }
 
 
+
+
 function getMainurl() {
+  document.getElementById("copy-type").innerHTML = '<h4>Or copy the <span href="javascript:void(0)" onclick="getCitation()" style="text-decoration:underline;cursor:pointer;">full citation this chapter</span>.</h4>';
   document.getElementById("page-url").innerHTML = window.location.href;
+
+
 }
+
+function getCitation() {
+  document.getElementById("page-url").innerHTML =
+  "Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), Chap. '" + chapNo + "', '" + chapName + "' " + window.location.href;
+  document.getElementById("copy-type").innerHTML = '<h4>Or copy just <span href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;cursor:pointer;">the URL for this chapter</span>.</h4>';
+}
+
 
 
 
