@@ -299,16 +299,16 @@ p {
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
     p {
-      font-size: 1.5em;
-      line-height: 1.5;
+      font-size: 1.3em;
+      line-height: 1.4;
     }
   }
 
 @media screen and (min-width: 1325px) {
 
     P {
-      font-size: 1.5em;
-      line-height: 1.6;
+      font-size: 1.4em;
+      line-height: 1.5;
     }
   }
 
