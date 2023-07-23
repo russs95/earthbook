@@ -45,7 +45,7 @@ class BuyCurtain extends HTMLElement {
 
               <div class="buy-book">
               <div class="book-listing">
-              <img src="../photos/cover-grattitude-600px.webp" loading="lazy" alt="Achat rétroactif pour soutenir et remercier les auteurs" title="Achat rétroactif pour soutenir et remercier les auteurs">
+              <img src="../covers/thanks-cover-FR-500px.webp" loading="lazy" alt="Achat rétroactif pour soutenir et remercier les auteurs" title="Achat rétroactif pour soutenir et remercier les auteurs">
                 
                 <div class="book-buy-info">
                   <div class="buy-book-info-title">Achat rétroactif</div>
