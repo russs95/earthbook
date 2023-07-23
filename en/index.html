@@ -78,10 +78,6 @@ These tags will be consistent for the whole book-->
 <meta property="og:locale" content="en_EN" >
 <meta property="og:url" content="https://book.earthen.io/en">
 
-
-
-
-
 <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -231,30 +227,8 @@ All the page components required to build this page-->
 <!--BUY-CURTAIN-->
 <buy-curtain></buy-curtain>
 
-
-<div id="eco-curtain2" class="eco-overlay">
-    <div class="overlay-content-eco">         
-          
-      <div class="eco-header">The Earthbook format is hand-coded from the ground up to be green.</div>
-  
-      <div class="eco-text">
-      In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">Regenerativity Report.</a>
-      </div>
-  
-      <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-      <div><img src="../banners/forearth-dark-350px.png" alt="Banner declaring our For-Earth intention" style="width:300px;"></div></a>
-  
-       <div id="wcb" class="carbonbadge wcb-d"></div>
-  
-      <div class="eco-medium">The medium is the message.</div>
-  
-      
-              <button type="button" class="bottom-close-button" style="cursor:pointer;z-index:100;" onclick="closeBuy()" aria-label="Click to close this pop-up page">
-                <img src="../svgs/bottom-x.svg" alt="Close page button">
-              </button>
-            </div>
-    
-  </div>
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
 
 		<div id="main">
 
@@ -447,7 +421,7 @@ All the page components required to build this page-->
                 
                 <a href="acknowledgements.php">
                 <div class="chapter-middle">  
-                    <div class="chapter-name">Acknowledgements, Credits & Gratitude</div>
+                    <div class="chapter-name">Acknowledgements</div>
                     <div class="word-count"><i>682 words</i></div>
                 </div>
             </a>
@@ -494,23 +468,11 @@ All the page components required to build this page-->
                 <div id="bookplate-btn" class="action-btn" style="cursor:pointer;" onclick="openBookplate()"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Book Plate</div>
                 <div id="principles-btn" class="action-btn" style="cursor:pointer;" onclick="openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Principles</div>
                 <div id="eco-btn" class="action-btn" style="cursor:pointer;" onclick="openEco()"><i style="background-image: url(../icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Green Disclosure</div>
-
-
+                <br>
             </div>
-<br>
-
-            
-
-
         </div>
-
-            
-
+    </div>            
 </div>
-            
-        </div>
-
-    
 </div>
 
 
@@ -518,16 +480,13 @@ All the page components required to build this page-->
 <footer-component></footer-component>
 
 <script>
-
-
     function EarthbookSearch(jsonFiles) {
       // Get the search query from the input field
       var query = document.getElementById("search_input").value.toLowerCase();
       var overlayContent = document.querySelector('.search-overlay-content');
       overlayContent.style.height = 'fit-content';
       overlayContent.style.marginTop = '8%';
-    
-    
+
       // Load the JSON files
       var posts = [];
       var numFilesLoaded = 0;
