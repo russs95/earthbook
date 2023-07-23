@@ -46,12 +46,12 @@ class BuyCurtain extends HTMLElement {
              
               <div class="buy-book">
                 <div class="book-listing">
-                  <img src="../photos/cover-grattitude-400px.webp" loading="lazy" alt="The Kindle format, and for other select eReaders" title="The Kindle format, and for Amazon eReaders" >
+                  <img src="../photos/cover-grattitude-600px.webp" loading="lazy" alt="Retroactive purcase to support and thank the authors" title="Retroactive purcase to support and thank the authors" >
                     
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Retroactive Buy</div>
                   <div class="buy-book-info-text">Already read the free version? Make a retroactive purchase to support the authors.</div>
-                      <a href="https://buy.stripe.com/aEU7vt3qu9Dveqc5kn" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the .mobi Kindle version of the book for 10$"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
+                      <a href="https://buy.stripe.com/aEU7vt3qu9Dveqc5kn" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Make a retroactive gratitude purchase"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>±$ Pay</a>
                   </div>
                   
                 </div>
