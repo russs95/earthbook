@@ -10,7 +10,7 @@ class EcoCurtain extends HTMLElement {
     <div id="eco-curtain2" class="eco-overlay">
     <div class="overlay-content-eco">         
           
-      <div class="eco-header">The Earthbook format is hand-coded from the ground up to be green.</div>
+      <div class="eco-header">The Earthbook's format is hand-coded from the ground up to be green.</div>
   
       <div class="eco-text">
       In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">Regenerativity Report.</a>
@@ -21,7 +21,7 @@ class EcoCurtain extends HTMLElement {
   
        <div id="wcb" class="carbonbadge wcb-d"></div>
   
-      <div class="eco-medium">The Medium is the Message.</div>
+      <div class="eco-medium">The medium is the message.</div>
   
       
               <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeBuy()" aria-label="Click to close this pop-up page">
