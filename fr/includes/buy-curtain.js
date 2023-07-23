@@ -34,7 +34,7 @@ class BuyCurtain extends HTMLElement {
                   <div class="book-buy-info">
                     <div class="buy-book-info-title">Print Edition</div>
 
-                    <div class="buy-book-info-text">The English print edition of Book One of the Tractatus Ayyew is on its way.  Preorder yours.</div>
+                    <div class="buy-book-info-text">The English print edition of Book One of the Tractatus Ayyew is on its way.</div>
 
                     <a href="https://buy.stripe.com/9AQ2b90eicPH3LyfZ0" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the print version of the book for 10$ USD"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Pre-order: 10$</a>
 
@@ -45,11 +45,11 @@ class BuyCurtain extends HTMLElement {
 
               <div class="buy-book">
               <div class="book-listing">
-                <img src="../photos/cover-gratitude-600px.webp" loading="lazy" alt="Achat rétroactif pour soutenir et remercier les auteurs" title="Achat rétroactif pour soutenir et remercier les auteurs">
+              <img src="../photos/cover-grattitude-600px.webp" loading="lazy" alt="Achat rétroactif pour soutenir et remercier les auteurs" title="Achat rétroactif pour soutenir et remercier les auteurs">
                 
                 <div class="book-buy-info">
                   <div class="buy-book-info-title">Achat rétroactif</div>
-                  <div class="buy-book-info-text">Vous avez déjà lu la version gratuite ? Effectuez un achat rétroactif pour soutenir les auteurs.</div>
+                  <div class="buy-book-info-text">Avez vous déjà lu la version gratuite? Effectuez un achat rétroactif pour soutenir les auteurs.</div>
                   <a href="https://buy.stripe.com/aEU7vt3qu9Dveqc5kn" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Effectuer un achat de gratitude rétroactif"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>± Paiement</a>
                 </div>
                               
