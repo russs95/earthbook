@@ -23,6 +23,7 @@ See full project repository at: https://github.com/russs95/earthbook
 
 <HEAD>
 
+    <!--
 <script>
     //set master page variables - are these being used?!
 
@@ -34,32 +35,22 @@ See full project repository at: https://github.com/russs95/earthbook
     let chap_name = "";
     let chap_number = "Book One";
 
-</script>
+</script>-->
 
-<script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope:', registration.scope);
-        }, function(error) {
-          console.log('ServiceWorker registration failed:', error);
-        });
-      });
-    }
-  </script>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-7-23T09:14:13+00:00" >
   
 
 <link rel="canonical" href="https://book.earthen.io/en/"> 
-<link rel="alternate" href="https://book.earthen.io/en/>" hreflang="en" >
+<link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" >
 <link rel="alternate" href="http://book.earthen.io/en/" hreflang="x-default" >
-<!--<link rel="alternate" href="https://book.earthen.io/fr/" hreflang="fr" >
+<link rel="alternate" href="https://book.earthen.io/fr/" hreflang="fr" >
+<!--
 <link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
 <link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
 
 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2023-5-15T09:14:13+00:00" >
 
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
@@ -87,6 +78,19 @@ These tags will be consistent for the whole book-->
 
 <meta property="og:url" content="https://tractatus.earthen.io/en">
 
+
+
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+  </script>
 
  <!-- Fonts
 The requisite typography for the page-->
