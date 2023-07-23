@@ -2412,7 +2412,7 @@ left: 0;
 /*Main section*/
 
 .lead-text {   /*for the first paragraph of the dashboard*/
-    font-family: 'Mulish';
+    font-family: 'Mulish, arial, sans-serif';
     font-size: 1.5em;
     font-weight: 300;
 }
@@ -2934,7 +2934,7 @@ cursor: pointer;
     border-radius: 25px;
     border-width: 1px;
     color: var(--text-color);
-    font-family: "Mulish";
+    font-family: "Mulish, arial, sans-serif";
     text-align: center;
     text-decoration: none;
     transition: 0.3s;
