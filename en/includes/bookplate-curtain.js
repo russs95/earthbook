@@ -12,7 +12,7 @@ class Bookplate extends HTMLElement {
 
         <div id="bookplate-img" alt="The Tractatus Ayyew Mandala"></div>
 
-        <div id="bookplate-content"> 
+        <div id="bookplate-content" style="margin-bottom:35px;"> 
           <h1 class="bookplate-title">Tractatus Ayyew</h1>
 
           <h2 class="bookplate-subtitle"><i>An Earthen Ethics</i></h2>

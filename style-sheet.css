@@ -874,7 +874,7 @@ margin-right: -42px;
 }
 
 #sub-earthbook {
-margin: 20px 0px 50px 0px;
+margin: 20px 0px 20px 0px;
 letter-spacing: 4px;
 font-variant-caps: all-small-caps;
 font-weight: 500;
@@ -2385,17 +2385,17 @@ left: 0;
 
 .welcome-to {
   font-size: 1.3em;
-  line-height: 1.2;
+  line-height: 1.44;
   font-family: 'CooperLt', Georgia, serif;
   text-rendering: optimizeLegibility;
   font-weight: 300;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 699px) {
   .welcome-to {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
 
