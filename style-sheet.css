@@ -1060,12 +1060,12 @@ margin-left: 0px;
   border-radius: 30px;
   height: 85px;
   box-shadow: var(--element-shadow);
-  border: solid 1px var(--thin-border-color);
+  border: solid 1px red /*var(--thin-border-color)*/;
   left: 0; 
   right: 0; 
   margin-left: auto; 
   margin-right: auto; 
-  z-index: 50;
+  z-index: 100;
   bottom: -31px;
  text-align: center;
   width: 150px; 
@@ -1073,7 +1073,7 @@ margin-left: 0px;
 }
 
 .bottom-close-button:hover {
-  bottom:-22px;
+  bottom:-12px;
 }
 
 
