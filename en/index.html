@@ -5,23 +5,44 @@
 <meta charset="UTF-8"> 
 
 
-<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
-Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+<!--
+o               .        ___---___                    .                   
+       .              .--\        --.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,--'     / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___,--'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~--___ ; ___--~       
+                 .          ---         .              -JT
 
-Chapter Template Version 1.1
-Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+
+EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+ 
+
+Landing page - version 1.2
+Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
+First EarthBook, the Tractatus Ayyew, published 22.12.22.
 
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
 License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
 See full project repository at: https://github.com/russs95/earthbook
+For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
 */
 -->
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2023-7-23T09:14:13+00:00" >
-  
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
 
 <link rel="canonical" href="https://book.earthen.io/en/"> 
 <link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" >
@@ -36,27 +57,28 @@ See full project repository at: https://github.com/russs95/earthbook
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
 
-
-
-<meta property="og:site_name" content="Tractatus Ayyew" >
+<meta name="keywords" content="Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
+	
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
-<meta property="og:type" content="book" >
-<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
-<link rel="manifest" href="../favicons/site.webmanifest">
-
-<meta name="twitter:card" content="summary" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-7-23T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="An Earthen Ethic - Tracatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
+<meta property="og:title"         content="Tractatus Ayyew - An Earthen Ethics">
+<meta property="og:description"   content="By Banayan Angway & Russell Maier  | Earthbook Edition.">
 <meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1500px" >
-
 <meta property="og:locale" content="en_EN" >
+<meta property="og:url" content="https://book.earthen.io/en">
 
-<meta property="og:url" content="https://tractatus.earthen.io/en">
+
 
 
 
@@ -70,51 +92,41 @@ These tags will be consistent for the whole book-->
         });
       });
     }
-  </script>
+</script>
 
- <!-- Fonts
-The requisite typography for the page-->
+ <!--FONTS
+starts loading the fonts-->
 
 <link rel="preconnect" href="../fonts/">
 <link rel="preconnect" href="../fonts/" crossorigin> 
-<!-- Mulish loads first for first page view
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
--->
+
 	
-<!--Preload graphics-->
-<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
+<!-- PRELOADS-->
+<link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
+<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
+<link rel="preload" as="image" href="../icons/reader.svg">
+<link rel="preload" as="image" href="../icons/pdf.svg">
+<link rel="preload" as="image" href="../icons/buy.svg">
+<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
+<link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
+<link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
+
+<!--<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
 <link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
 <link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
-<!--<link rel="preload" as="font" href="../fonts/CooperLightBT.ttf">
+<link rel="preload" as="font" href="../fonts/CooperLightBT.ttf">
 <link rel="preload" as="font" href="../fonts/CooperLtBTLightItalic.ttf">
 <link rel="preload" as="font" href="../fonts/CooperMediumBT.ttf">
-<link rel="preload" as="font" href="../fonts/Mulish-Light.ttf">-->
-
-
-
-
-
+<link rel="preload" as="font" href="../fonts/Mulish-Light.ttf"
+<link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
+<link rel="preload" as="image" href="../svgs/up-arrow-light.svg">> 
+-->
 
  <!-- Style Sheets   
 All the css needed for this page-->
  
- 
- <!--<link  rel="stylesheet" type="text/css" href="../style-sheet.css?v1.3">
-<link rel="stylesheet" href="../acessibilidade.css" >
-<link rel="stylesheet" type="text/css" href="../stylesheet-chapter.css">
-
-<link rel="preload" href="../style-sheet.css?v1.8" as="style" onload="this.rel='stylesheet'">
-<link rel="preload" href="../light.css?v1.7" as="style" onload="this.rel='stylesheet'">-->
-
 <link rel="stylesheet" href="../style-sheet.css?v1.8">
 <link rel="stylesheet" href="../light.css?v1.7">
-
-
-<link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
-<link rel="preload" as="image" href="../svgs/up-arrow-light.svg">
-
 <link rel="stylesheet" href="../light.css?v1.9" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css?v1.9" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css?v1.1">
@@ -124,15 +136,16 @@ All the css needed for this page-->
 
  <script src="../universal-javascript.js" defer></script>
  <script src="../clip/dist/clipboard.min.js"></script>
- <!--<script src="../accessibility.js" defer></script>-->
  <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+
+  <!--SPECIAL INDEX INCLUDES -->
+  <script src="../index-javascripts.js"></script>
  
- <!-- Arc CDN Script without delay
-<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+ 
+ <!-- Arc CDN Script without delay-->
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>
 
-
-
- <!--Page Components
+ <!--PAGE INCLUDES
 All the page components required to build this page-->
 
 <!--1--><script src="includes/header-component.js"  async></script>
@@ -146,61 +159,11 @@ All the page components required to build this page-->
 <!--9--><script src="includes/read-curtain.js" defer></script>
 <!--10--><script src="includes/tour-curtain.js"  defer></script>
 <!--11--><script src="includes/search-curtain.js"  defer></script>
- 
-
-<!--META TAGS
-Must be updated for each page-->
-
-<meta property="og:locale" content="en_UK" >
-<meta property="og:url" content="https://book.earthen.io/en/">
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<script src="includes/footer-chapter.js" defer></script>
 
 
-
-<meta property="article:modified_time" content="2023-05-11-21T09:14:13+00:00">
-
-<meta name="keywords" content="Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-
-<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
-
-<meta name="author" content="Earthen.io">
-<meta property="og:type" content="book">
-<meta property="og:image:type" content="image/png">
-<meta name="author" content="Russell Maier & Banayan Angway">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:label1" content="Est. reading time">
-<meta name="twitter:data1" content="2 hours"> 
-	
-<!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:site_name" content="Tractatus Ayyew">
-<meta property="article:publisher" content="Earthen.io" >
-<meta property="og:type"          content="book">
-<meta property="og:title"         content="Tractatus Ayyew - An Earthen Ethics">
-<meta property="og:description"   content="By Banayan Angway & Russell Maier  | Earthbook Edition.">
-
- <!--SPECIAL INDEX INCLUDES -->
-
- <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
-
- <script src="../index-javascripts.js"></script>
- <script src="includes/footer-chapter.js" defer></script>
-<!--9<script src="includes/read-curtain.js" type="text/javascript" defer></script>-->
-
-
-
-<!--Preload graphics   media="(max-width: 700px)"-->
-
-<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
-<link rel="preload" as="image" href="../icons/reader.svg">
-<link rel="preload" as="image" href="../icons/pdf.svg">
-<link rel="preload" as="image" href="../icons/buy.svg">
-<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
-<link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
-<link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
-
-
-
-
-</head>
+</HEAD>
 
 
 
@@ -265,39 +228,15 @@ Must be updated for each page-->
 <!--BUY-CURTAIN-->
 <buy-curtain></buy-curtain>
 
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
 
 
-
-
-<div id="eco-curtain2" class="eco-overlay">
-  <div class="overlay-content-eco">         
-        
-    <div class="eco-header">The Earthbook format is hand-coded from the ground up to be green.</div>
-
-    <div class="eco-text">
-    In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">Regenerativity Report.</a>
-    </div>
-
-    <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-    <div><img src="../banners/forearth-dark-350px.png" alt="Banner declaring our For-Earth intention" style="width:300px;"></div></a>
-
-     <div id="wcb" class="carbonbadge wcb-d"></div>
-    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
-
-    <div class="eco-medium">The Medium is the Message.</div>
-
-      <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeEco()" aria-label="Close Modal">
-              <img src="../svgs/bottom-x.svg" alt="Close button 2">
-      </button>
-  </div>
-</div>
-
-<!--eco curtain php end-->
 
 		<div id="main">
 
             <div class="lead-text">
-            As we become more and more aware of the ecological crises triggered by our modern age, we long to 'go green'.  However, what exactly should green mean and what should it require?  Inspired by magnificent creatures, great cultures and our planet's pattern the <i>Tractatus Ayyew</i> lays out an ethics anchored in Earth's example.
+            As we become more and more aware of the ecological crises triggered by our modern age, we long to go 'green'.  However, what exactly should green mean and what should it require?  Inspired by magnificent creatures, great cultures and our planet's pattern the <i>Tractatus Ayyew</i> lays out an ethics anchored in Earth's example.
             </div>
 
             <div id="line" style="margin-top: 15px"  class="no-mobile"></div>

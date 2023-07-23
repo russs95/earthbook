@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translation Demo</title>
+</head>
+
+<body>
+  <h1>Translation Demo</h1>
+
+  <!-- Language selection dropdown -->
+  <label for="languageSelect">Select Language:</label>
+  <select id="languageSelect" onchange="changeLanguage()">
+    <option value="en">English</option>
+    <option value="fr">French</option>
+    <!-- Add more language options as needed -->
+  </select>
+
+  <div class="welcome-to" id="welcomeToTranslation">
+    <!-- Content will be dynamically updated based on the selected language -->
+  </div>
+
+  <script>
+    // Function to change the language and modify the content
+    function changeLanguage() {
+      const languageSelect = document.getElementById("languageSelect");
+      const selectedLanguage = languageSelect.value;
+      const welcomeDiv = document.getElementById("welcomeToTranslation");
+
+      if (selectedLanguage === "fr") {
+        // French content
+        welcomeDiv.innerHTML = 'Bienvenue sur l\'édition <span style="cursor:pointer; text-decoration: none !important; border-bottom: grey 1px dashed;" onclick="guidedTour()">Earthbook</span> de la <i>Tractatus Ayyew: Une éthique terrestre</i>.';
+      } else {
+        // English content
+        welcomeDiv.innerHTML = 'Welcome to the <span style="cursor:pointer; text-decoration: none !important; border-bottom: grey 1px dashed;" onclick="guidedTour()">Earthbook</span> edition of the <i>Tractatus Ayyew: An Earthen Ethics</i>.';
+      }
+    }
+
+    // Call the function initially to set the default content (English)
+    changeLanguage();
+  </script>
+</body>
+
+</html>
