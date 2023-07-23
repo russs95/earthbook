@@ -560,7 +560,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 
-  adjustFontSize('accessibility-plugin-ac', null);
+  //adjustFontSize('accessibility-plugin-ac', null);
   setNavbarHeight(navbarHeight);
 });
 
@@ -606,7 +606,7 @@ function reset2Default() {
   document.getElementById("sepia-range-scale").value = sepia;
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 
-  adjustFontSize('accessibility-plugin-ac', 'normal');
+  //adjustFontSize('accessibility-plugin-ac', 'normal');
   document.getElementById('earthbook-navbar').style.minHeight = `${navbarHeight}px`;
 
   document.getElementById("reset-settings").innerHTML = "&#10003; Settings Reset";
