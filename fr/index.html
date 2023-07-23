@@ -76,6 +76,8 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 
 
 <script>
+     "Banayan Angway, Russell Maier, 'Le Tractatus Ayyew: D'une éthique terrestre.' (Earthen.io, Philippines, Indonesia, 2022), édition française, chapitre " + chapNo + ": " + chapName + ", " + window.location.href;
+     
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
