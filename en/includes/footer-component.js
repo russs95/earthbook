@@ -26,15 +26,13 @@ class FooterComponent extends HTMLElement {
         <div class="footer-right">
         
             <div class="footer-icon-right">
-            <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="Up Arrow" width="35px" title="Back to the top of the page" aria-label="Click to go back to the top of the page"></div></a>
+            <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="Up arrow" width="35px" title="Back to the top of the page" aria-label="Click to go back to the top of the page"></div></a>
             <div class="footer-word">top</div>
         </div>
 </div>
 
 </div>
-    <div id="containerSepia"></div>
-    <div id="containerContrast"></div>
-    <div id="containerBrightness"></div>
+  
     
 </div>
 
@@ -44,8 +42,8 @@ class FooterComponent extends HTMLElement {
 
 customElements.define('footer-component', FooterComponent);
 
-
+/*
 function getMainurl() {
   document.getElementById("page-url").innerHTML = 
 "Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Kalinga, Philippines & Bali, Indonesia, 2022). <?php echo ($chap_number); echo ($chap_name); ;?>";
-}
+}*/
