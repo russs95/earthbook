@@ -2384,8 +2384,6 @@ left: 0;
 
 
 .welcome-to {
-  font-size: 1.3em;
-  line-height: 1.44;
   font-family: 'CooperLt', Georgia, serif;
   text-rendering: optimizeLegibility;
   font-weight: 300;
@@ -2395,13 +2393,17 @@ left: 0;
 
 @media screen and (max-width: 699px) {
   .welcome-to {
-    font-size: 1.3em;
+    font-size: 1.25em;
+    line-height: 1.4;
+
   }
 }
 
 @media screen and (min-width: 700px) {
   .welcome-to {
-    font-size: 1.4em;
+    font-size: 1.3em;
+    line-height: 1.35;
+
   }
 }
 

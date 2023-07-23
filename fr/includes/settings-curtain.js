@@ -53,7 +53,7 @@ class SettingsCurtain extends HTMLElement {
           
             
             <button id="reset-settings" onclick="reset2Default()" style="width: 200px;
-            margin: 30px auto 50px auto; cursor:pointer; padding:6px;">⟲ Rétablir les valeurs par défaut</button>
+            margin: 30px auto 50px auto; cursor:pointer; padding:6px;">⟲ Rétablir les paramètres par défaut.</button>
   
   
             <div class="compro-toggle">
@@ -92,11 +92,31 @@ function showFRTranslationAlert() {
   const url = "https://book.earthen.io/books/Tractatus-Ayyew%20_d%E2%80%99une-%C3%A9thique%20terrestre_|_Livre%20Premier_|_Angway-&-Maier.pdf";
   const message = `Désolé! Les versions EarthBook et EBook du Tractatus Ayyew ne sont pas encore prêtes. Cependant, vous pouvez télécharger la version PDF en clickant OK...`;
   if (window.confirm(message)) {
-    // If the user clicks "OK," you can perform further actions if needed.
-    // For example, you can redirect them to the download link using:
     window.location.href = url;
   }
 }
+
+
+
+
+function reset2Default() {
+    localStorage.clear();
+    const brightness = 100;
+    const contrast = 100;
+    const sepia = 0;
+    const userSetFontSize = 16;
+    const navbarHeight = 60;
+  
+    document.getElementById("brightness-range-scale").value = brightness;
+    document.getElementById("contrast-range-scale").value = contrast;
+    document.getElementById("sepia-range-scale").value = sepia;
+    document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
+  
+    //adjustFontSize('accessibility-plugin-ac', 'normal');
+    document.getElementById('earthbook-navbar').style.minHeight = `${navbarHeight}px`;
+  
+    document.getElementById("reset-settings").innerHTML = "&#10003; Paramètres réinitialisés";
+  }
 
 
   
