@@ -101,6 +101,10 @@ Redirect /matter.html /en/unpublished.php
 Redirect /matter.php /en/unpublished.php
 Redirect /mollusc /en/unpublished.php
 
+Redirect /book/french.pdf https://files.earthen.io/s/ZnQ49QC2FimmKb4
+Redirect /book/english.pdf https://files.earthen.io/s/ZjS9TgWk5Tr7b4q
+
+
 
 
 

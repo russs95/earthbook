@@ -14,7 +14,7 @@ class ReadCurtain extends HTMLElement {
              
                   <div class="read-book-pic">
   
-                    <img src="../covers/read-cover.webp" loading="lazy" alt="Lisez le Tractatus Ayyew dans une variété de formats." title="Lisez le Tractatus Ayyew dans une variété de formats.">
+                    <img src="../covers/read-cover-FR-500px.webp" loading="lazy" alt="Lisez le Tractatus Ayyew dans une variété de formats." title="Lisez le Tractatus Ayyew dans une variété de formats.">
                   
                     </div>
   
@@ -26,14 +26,14 @@ class ReadCurtain extends HTMLElement {
                     <div class="read-book-info">
                       <div class="read-book-info-title">Lisez. Librement.</div>
                       <div class="read-book-info-text">
-                        La version Earthbook du Tractatus Ayyew est disponible gratuitement. Lisez ici et maintenant sur le web. Alternativement, vous pouvez télécharger la version PDF ou acheter les versions eBook aux formats EPUB ou MOBI.
+                        La version Earthbook du Tractatus Ayyew est disponible gratuitement. Lisez ici et maintenant sur le web. Alternativement, vous pouvez télécharger la version PDF ou acheter le version eBook en format EPUB.
                       </div>
   
                       <div class="button-row-read2">
                         <a href="preamble.php">
                         <div id="read-btn" class="action-btn">
   
-                          <i style="background-image: url(../icons/web.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Earthbook (Lire ici sur le web)
+                          <i style="background-image: url(../icons/web.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Earthbook (ici sur le web)
                           
                         </div>
                         </a>
@@ -45,7 +45,7 @@ class ReadCurtain extends HTMLElement {
                         <i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>eBook</a>
                         </div>
                           
-                        <a href="https://book.earthen.io/books/Tractatus-Ayyew%20_d%E2%80%99une-%C3%A9thique%20terrestre_|_Livre%20Premier_|_Angway-&-Maier.pdf" target="_blank">
+                        <a href="../books/french.pdf" target="_blank">
                         <div id="pdf-btn" class="action-btn"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</div>
                         </a>
   

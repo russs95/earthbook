@@ -26,7 +26,7 @@ class ReadCurtain extends HTMLElement {
                   <div class="read-book-info">
                     <div class="read-book-info-title">Read. Freely.</div>
                     <div class="read-book-info-text">
-                      The Earthbook version of the Tractatus Ayyew is freely available.  Read here and now on the web. Alternatively, you can download the PDF version or purchase the eBook versions in EPUB or MOBI formats.
+                      The Earthbook version of the Tractatus Ayyew is freely available.  Read here and now on the web. Alternatively, you can download the PDF version or purchase the eBook version in EPUB format.
                     </div>
 
                     <div class="button-row-read2">
@@ -45,7 +45,7 @@ class ReadCurtain extends HTMLElement {
                       <i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>eBook</a>
                       </div>
                         
-                      <a href="https://files.earthen.io/s/ZjS9TgWk5Tr7b4q" target="_blank">
+                      <a href="../books/english.pdf" target="_blank">
                       <div id="pdf-btn" class="action-btn"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</div>
                       </a>
 
