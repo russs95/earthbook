@@ -41,7 +41,7 @@
     <div class="eco-medium">The Medium is the Message.</div>
 
     
-            <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeBuy()" aria-label="Click to close this pop-up page">
+            <button type="button" class="bottom-close-button" style="cursor:pointer; z-index:100;" onclick="closeBuy()" aria-label="Click to close this pop-up page">
               <img src="../svgs/bottom-x.svg" alt="Close page button">
             </button>
           </div>
