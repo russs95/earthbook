@@ -248,6 +248,41 @@ margin: 12px auto 0px auto !important;
 
 /* -------------------------------------------------------------------------- */
 
+
+/*
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+ 
+ @font-face {
+  font-family: "MulishMedium";
+  src: url("fonts/Mulish-Medium.ttf");
+  font-display: swap;
+ }*/
+
 p {
   font-family: 'CooperLt', Georgia, serif;
   text-rendering: optimizeLegibility;
