@@ -12,41 +12,42 @@ class ShareCurtain extends HTMLElement {
     <div id="right-share-overlay" class="share-overlay">
 
     <div id="right-close-button">
-        <span style="cursor:pointer" onclick="closeShare()"><img src="../svgs/right-x.svg" alt="Close page button"></span>
+        <span style="cursor:pointer" onclick="closeShare()"><img src="../svgs/right-x.svg" alt="Bouton de fermeture de la page"></span>
     </div>
-    
-      <div class="share-overlay-content">
-            
-            <div>
-                <h1>Share & Cite</h1> 
-                <h3>An Earthbook enables you to easily share and cite both the book and its individual chapters.</h3>
+
+    <div class="share-overlay-content">
+
+        <div>
+            <h1>Partager et Citer</h1>
+            <h3>Un Earthbook vous permet de partager facilement à la fois le livre et ses chapitres individuels.</h3>
+        </div>
+
+        <div class="copy-section">
+
+            <div id="page-url" class="copy-box" style="border-left-color: green;" >
             </div>
-            
-            <div class="copy-section">
-              
-              <div id="page-url" class="copy-box" style="border-left-color: green;" >
-              </div>
-            
-              <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url" onclick="confirmCopy()" aria-label="Click to copy this chapter's URL to your clipboard">
+
+            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-url" onclick="confirmCopy()" aria-label="Cliquez pour copier l'URL de ce chapitre dans votre presse-papiers">
                 <div class="copy-check">
-                  <div id="check" style="color:green">
-                    <span>✓</span>
-                  </div>
+                    <div id="check" style="color:green">
+                        <span>✓</span>
+                    </div>
                 </div>
-                <span style="align-self:center";>Copy</span>
-              </button>
-              
-            </div>
+                <span style="align-self:center";>Copier</span>
+            </button>
 
-      <div>
-        <h4>Or copy just <span href="javascript:void(0)" style="cursor:pointer;" onclick="getMainurl()" style="text-decoration:underline;">the URL for this chapter.</span>.</h4>
-      </div>
-      <div><img src="../icons/cc-by-sa.svg" alt="Creative Commons CC-BY-SA icon" style="height: 25px" title="The content of an Earthbook is under a Creative-Commons ND-SA-AT 4.0 license which means you can freely share the links to this page, quote passages, download and share the PDF-- just be sure to attribute, share-alike and record your citation."></div>
+        </div>
 
-        <!--<h6>Be sure to use the <span style="cursor:pointer;text-decoration:underline;" onclick="openComments()">citation tool</span> (found at the bottom of each chapter) to record your adaptions and references.</h6>-->
-        
-  </div>
-</div>  
+        <div>
+            <h4>Ou copiez simplement <span href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;cursor:pointer;">l'URL de ce chapitre</span>.</h4>
+        </div>
+        <div><img src="../icons/cc-by-sa.svg" alt="Icône Creative Commons CC-BY-SA" style="height: 25px" title="Le contenu d'un Earthbook est sous licence Creative Commons ND-SA-AT 4.0, ce qui signifie que vous pouvez librement partager les liens vers cette page, citer des passages, télécharger et partager le PDF - assurez-vous simplement d'attribuer, de partager dans les mêmes conditions et d'enregistrer votre citation."></div>
+
+        <!--<h6>Assurez-vous d'utiliser l'outil de <span style="cursor:pointer;text-decoration:underline;" onclick="openComments()">citation</span> (trouvé en bas de chaque chapitre) pour enregistrer vos adaptations et références.</h6>-->
+
+    </div>
+</div>
+
     `;
 }
 }
