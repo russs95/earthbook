@@ -39,7 +39,7 @@ class ShareCurtain extends HTMLElement {
             </div>
 
       <div>
-        <h4>Or copy just <span href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;">the URL for this chapter.</span>.</h4>
+        <h4>Or copy just <span href="javascript:void(0)" style="cursor:pointer;" onclick="getMainurl()" style="text-decoration:underline;">the URL for this chapter.</span>.</h4>
       </div>
       <div><img src="../icons/cc-by-sa.svg" alt="Creative Commons CC-BY-SA icon" style="height: 25px" title="The content of an Earthbook is under a Creative-Commons ND-SA-AT 4.0 license which means you can freely share the links to this page, quote passages, download and share the PDF-- just be sure to attribute, share-alike and record your citation."></div>
 
