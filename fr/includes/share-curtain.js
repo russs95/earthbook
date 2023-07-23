@@ -88,8 +88,9 @@ function confirmCopy() {
 
 
 function getMainurl() {
-  document.getElementById("page-url").innerHTML = window.location.href;
-  document.getElementById("copy-type").innerHTML = '<h4>Or copy the <span href="javascript:void(0)" onclick="getCitation()" style="text-decoration:underline;cursor:pointer;">full citation this chapter</span>.</h4>';
+    document.getElementById("copy-type").innerHTML = '<h4>Or copy the <span href="javascript:void(0)" onclick="getCitation()" style="text-decoration:underline;cursor:pointer;">full citation this chapter</span>.</h4>';
+    document.getElementById("page-url").innerHTML = window.location.href;
+ 
 
 }
 
