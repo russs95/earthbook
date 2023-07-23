@@ -116,11 +116,11 @@ class ContentCurtain extends HTMLElement {
 
             </div>
 
-            <div>
+         <!--   <div>
             <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeBuy()" aria-label="Click to close this pop-up page">
               <img src="../svgs/bottom-x.svg" alt="Close page button">
             </button>
-          </div>
+          </div>-->
     </div>
 
 
