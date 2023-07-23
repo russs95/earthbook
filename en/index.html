@@ -79,6 +79,12 @@ These tags will be consistent for the whole book-->
 <meta property="og:url" content="https://book.earthen.io/en">
 
 <script>
+
+      // Declare the global variables
+    var chapNo = "Introduction";
+    var chapName = "";
+
+
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
@@ -260,6 +266,8 @@ All the page components required to build this page-->
 
 <!--SHARE-MENU-->
 <share-curtain></share-curtain>
+
+
 
 <!--BUY-CURTAIN-->
 <buy-curtain></buy-curtain>

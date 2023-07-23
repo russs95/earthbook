@@ -37,24 +37,6 @@ class ShareCurtain extends HTMLElement {
               </button>
               
             </div>
-<!--
-            <div class="copy-section">
-              
-            <div id="page-citation" class="copy-box" style="border-left-color: green;" >
-            
-            </div>
-            
-          
-            <button class="btn" data-clipboard-action="copy" data-clipboard-target="#page-citation" onclick="confirmCopy2()" aria-label="Click to copy this chapter's citation">
-              <div class="copy-check">
-                <div id="check2" style="color:green">
-                  <span>✓</span>
-                </div>
-              </div>
-              <span style="align-self:center";>Copy</span>
-            </button>
-            
-          </div>-->
 
       <div>
         <h4>Or copy just <span href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;">the URL for this chapter.</span>.</h4>
@@ -86,11 +68,12 @@ clipboard.on('error', function (e) {
 });
 
 
-document.getElementById("page-url").innerHTML = 
+  
 
-"Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), <?php echo ($chap_number); echo ($chap_name);?>" + window.location.href;
+    // Inject the variables into the inner HTML
+    document.getElementById("page-url").innerHTML =
+        "Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), Chap. '" + chapNo + "', '" + chapName + "' " + window.location.href;
 
-//"testing" + window.location.href;
 
 
 function confirmCopy() {
@@ -103,6 +86,10 @@ function confirmCopy() {
   }
 }
 
+
+function getMainurl() {
+  document.getElementById("page-url").innerHTML = window.location.href;
+}
 
 
 
