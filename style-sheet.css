@@ -2489,14 +2489,14 @@ left: 0;
   display: inline;
   text-align: left;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.2em;
   transition: 0.3s;
   border-color:  var(--thin-border-color);
 }
 
 @media screen and (max-width: 700px) {
   #book-box {
-  font-size: 0.95em;
+  font-size: 1.05em;
   }
 }
 
