@@ -14,10 +14,6 @@ class SettingsCurtain extends HTMLElement {
     
     <div class="overlay-content-settings">
             
-            
-
-
-                            
         <div id="languages">
             <a href="../en/index.html" aria-label="Switch to the English version">
                 <div class="language-selector">EN</div></a>

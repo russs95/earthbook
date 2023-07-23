@@ -115,7 +115,7 @@ function getMainurl() {
   document.getElementById("page-url").innerHTML = window.location.href;
 }
 
-
+/*
 
 function EarthbookSearch(jsonFiles) {
   // Get the search query from the input field
@@ -190,7 +190,7 @@ function clearResults() {
   overlayContent.style.height = '';
   overlayContent.style.marginTop = '';
 
-}
+}*/
 
 
 </script>
