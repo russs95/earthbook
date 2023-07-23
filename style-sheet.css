@@ -472,19 +472,19 @@ h6 {
 
 @media screen and (max-width: 699px) {
   h6 {
-    font-size: 0.85em;
+    font-size: 0.95em;
   }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   h6 {
-    font-size: 1.0em;
+    font-size: 1.05em;
   }
 }
 
 @media screen and (min-width: 1325px) {
   h6 {
-    font-size: 1.1em;
+    font-size: 1.15em;
   }
 }
 
