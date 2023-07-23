@@ -57,7 +57,7 @@ class ReadCurtain extends HTMLElement {
               
 
 
-            <div id="bottom-close-button" style="cursor:pointer" onclick="closeRead()" aria-label="Click to close this pop-up page">
+            <div class="bottom-close-button" style="cursor:pointer" onclick="closeRead()" aria-label="Click to close this pop-up page">
             <img src="../svgs/left-x.svg" alt="Buy page close button">
         </div>
       </div>

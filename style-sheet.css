@@ -1057,10 +1057,10 @@ margin-left: 0px;
   transition: 0.3s;
   background: var(--background-color);
   background-color: var(--background-color);
-  border-radius: 30px;
+  border-radius: 30px 30px 5px 5px;
   height: 85px;
   box-shadow: var(--element-shadow);
-  border: solid 1px red /*var(--thin-border-color)*/;
+  border: solid 1px var(--thin-border-color);
   left: 0; 
   right: 0; 
   margin-left: auto; 
@@ -1090,7 +1090,7 @@ padding-top: 14px;
 
 }  
 
-/*Bottom CLose Button TWO*/
+/*Bottom CLose Button TWO
 
 #bottom-close-button2 {
   position: absolute;
@@ -1120,12 +1120,12 @@ padding-top: 14px;
 #bottom-close-button2:focus {
   bottom:-90px;
 }
-*/
+
 #bottom-close-button2 img {
 height: 30px;
 padding-top: 14px;
 
-}  
+}  */
 
 
 

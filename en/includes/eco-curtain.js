@@ -33,9 +33,11 @@ class EcoCurtain extends HTMLElement {
         <br><br>
         <div class="eco-medium">The Medium is the Message.</div>
         <span style="cursor:pointer" onclick="closeEco()">
-            <div id="bottom-close-button">
-                <img src="../svgs/bottom-x.svg">
-            </div>
+        <div>
+        <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeBuy()" aria-label="Click to close this pop-up page">
+          <img src="../svgs/bottom-x.svg" alt="Close page button">
+        </button>
+      </div>
         </span>
     </div>
   </div>
