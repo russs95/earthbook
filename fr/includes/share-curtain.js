@@ -67,7 +67,7 @@ class ShareCurtain extends HTMLElement {
   
   // Inject the variables into the inner HTML
   document.getElementById("page-url").innerHTML =
-    "Banayan Angway, Russell Maier, 'Le Tractatus Ayyew: D'une éthique terrestre.' (Earthen.io, Philippines, Indonesia, 2022), édition française, chapitre " + chapNo + ": " + chapName + " " + window.location.href;
+    "Banayan Angway, Russell Maier, 'Le Tractatus Ayyew: D'une éthique terrestre.' (Earthen.io, Philippines, Indonesia, 2022), édition française, chapitre " + chapNo + ": " + chapName + ", " + window.location.href;
   
   function confirmCopy() {
     var x = document.getElementById("check");
@@ -86,7 +86,7 @@ class ShareCurtain extends HTMLElement {
   
   function getCitation() {
     document.getElementById("page-url").innerHTML =
-      "Banayan Angway, Russell Maier, 'Le Tractatus Ayyew: D'une éthique terrestre.' (Earthen.io, Philippines, Indonesia, 2022), édition française, chapitre " + chapNo + ": " + chapName + " " + window.location.href;
+    "Banayan Angway, Russell Maier, 'Le Tractatus Ayyew: D'une éthique terrestre.' (Earthen.io, Philippines, Indonesia, 2022), édition française, chapitre " + chapNo + ": " + chapName + ", " + window.location.href;
     document.getElementById("copy-type").innerHTML = '<h4>Ou copiez simplement <span href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;cursor:pointer;">le URL de ce chapitre</span>.</h4>';
   }
   
