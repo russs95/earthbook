@@ -212,6 +212,8 @@ text-justify: none;"><i>Loading glossary...</i></div>
 
   <?php require_once ("includes/chap-footer.php");?>
 
+
+  
   <script>
 async function buildGlossary() {
   // Load the JSON data
@@ -242,6 +244,11 @@ async function buildGlossary() {
     const keywords = document.createElement('h6');
     keywords.textContent = 'Related terms: ' + entry.keywords;
     
+    // Create the glossary info element
+    const glossInfo = document.createElement('div');
+    glossInfo.classList.add('glossary-info');
+    glossInfo.appendChild(keywords);
+    
     // Create the chapter element with URL if relevant_chap exists
     if (entry.relevant_chap) {
       const chapter = document.createElement('h6');
@@ -255,10 +262,6 @@ async function buildGlossary() {
       glossInfo.appendChild(chapter);
     }
     
-    // Create the glossary info element
-    const glossInfo = document.createElement('div');
-    glossInfo.classList.add('glossary-info');
-    glossInfo.appendChild(keywords);
     // Append the elements to the item
     item.appendChild(description);
     item.appendChild(glossInfo);
@@ -267,14 +270,13 @@ async function buildGlossary() {
   }
 }
 
-
-
-
 window.addEventListener('load', function() {
-      buildGlossary();
-    });
-
+  buildGlossary();
+});
 </script>
+
+
+
 </body>
 
 
