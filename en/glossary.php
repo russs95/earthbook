@@ -242,8 +242,6 @@ async function buildGlossary() {
     description.innerHTML += '<br>' + entry.chap_description;
     // Create the keywords element
     const keywords = document.createElement('h6');
-    const keywords = document.createElement('b');
-
     keywords.textContent = 'Related terms: ' + entry.keywords;
     
     // Create the glossary info element
