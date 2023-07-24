@@ -217,7 +217,7 @@ text-justify: none;"><i>Loading glossary...</i></div>
   <script>
 async function buildGlossary() {
   // Load the JSON data
-  const response = await fetch('glossary.json?v=1.0');
+  const response = await fetch('glossary.json?v=1.1');
   const jsonData = await response.json();
   // Sort the data alphabetically by title
   jsonData.sort((a, b) => a.title.localeCompare(b.title));
@@ -241,7 +241,7 @@ async function buildGlossary() {
     description.appendChild(title);
     description.innerHTML += '<br>' + entry.chap_description;
     // Create the keywords element
-    const keywords = document.createElement('h6');
+    const keywords = document.createElement('b');
     keywords.textContent = 'Related terms: ' + entry.keywords;
     
     // Create the glossary info element
@@ -251,7 +251,7 @@ async function buildGlossary() {
     
     // Create the chapter element with URL if relevant_chap exists
     if (entry.relevant_chap) {
-      const chapter = document.createElement('h6');
+      const chapter = document.createElement('b');
       const chapterText = document.createTextNode('Introduced in chapter: ');
       const chapterLink = document.createElement('a');
       chapterLink.textContent = entry.relevant_chap;
