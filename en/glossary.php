@@ -241,7 +241,9 @@ async function buildGlossary() {
     description.appendChild(title);
     description.innerHTML += '<br>' + entry.chap_description;
     // Create the keywords element
+    const keywords = document.createElement('h6');
     const keywords = document.createElement('b');
+
     keywords.textContent = 'Related terms: ' + entry.keywords;
     
     // Create the glossary info element
@@ -251,7 +253,7 @@ async function buildGlossary() {
     
     // Create the chapter element with URL if relevant_chap exists
     if (entry.relevant_chap) {
-      const chapter = document.createElement('b');
+      const chapter = document.createElement('h6');
       const chapterText = document.createTextNode('Introduced in chapter: ');
       const chapterLink = document.createElement('a');
       chapterLink.textContent = entry.relevant_chap;
