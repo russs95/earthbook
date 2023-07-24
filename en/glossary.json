@@ -14,19 +14,19 @@
   },
   
   {
-  "postID": "25",
-  "title": "Ayyew",
-  "keywords": "ayyew, ayyews, ayyewed, ayew",
-  "chap_description": "The Igorot virtue of ever increasing one’s sync with ecological cycles.",
-  "url": "..\/en\/glossary.php#ayyew",
-  "language": "Appendix",
-  "book": "Definition",
-  "chapter": "Term in Glossary",
-  "words": "1",
-  "relevant_chap": "Chapter 8: Nature's Fallacy",
-  "image_url": "..\/icons\/glossary.svg"
-},
-
+    "postID": "25",
+    "title": "Ayyew",
+    "keywords": "ayyew, ayyews, ayyewed, ayew",
+    "chap_description": "The Igorot virtue of ever increasing one’s sync with ecological cycles.",
+    "url": "../en/glossary.php#ayyew",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "1",
+    "relevant_chap": "<a href=\"/nature.html\">Chapter 8: Nature's Fallacy</a>",
+    "image_url": "../icons/glossary.svg"
+  },
+  
 
 
 {
@@ -78,31 +78,139 @@
   "image_url": "..\/icons\/glossary.svg"
 },
 
-{"postID":"31","title":"Earth","keywords":"earth,","chap_description":"Soil, ground [lowercase ‘e’]. Used with an article (i.e. “the”)","url":"..\/en\/glossary.php#earth","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"..\/icons\/glossary.svg"},
-
-{"postID":"32","title":"Earth","keywords":"Earth,","chap_description":"The third planet orbiting the sun [uppercase ‘E’]. Used without an article.","url":"..\/en\/glossary.php#Earth","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"2","image_url":"..\/icons\/glossary.svg"},
-
-{"postID":"33","title":"Earthen","keywords":"Earthen,","chap_description":"Of the character of the Earth. [Capital ‘E’]","url":"..\/en\/glossary.php#earthen","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"..\/icons\/glossary.svg"},
-
-{"postID":"34","title":"earthen","keywords":"earthen,","chap_description":"Of the earth (i.e. soil, ground) [lowercase ‘e’]","url":"..\/en\/glossary.php#earthenethics","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"..\/icons\/glossary.svg"},
-
-{"postID":"35","title":"Earthen Ethics","keywords":"Earthen Ethics,","chap_description":"An ethical framework for discerning the ecological color of an act, process, or enterprise based on the example of Earth.","url":"..\/en\/glossary.php#earthenethics","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"..\/icons\/glossary.svg"},
-
-{"postID":"36","title":"Earth Enterprise","keywords":"Earth Enterprise,","chap_description":"An enterprise that strives first and foremost to enrich the biosphere by following Earth’s example.","url":"..\/en\/glossary.php#earthenterprise","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"..\/icons\/glossary.svg"},
-
-{"postID":"37","title":"Ecological Contribution","keywords":"Ecological Contribution, ecological contributions,","chap_description":"A process that fully embodies the principles of Earthen ethics. A green ecological impact.","url":"..\/en\/glossary.php#ecologicalcontribution","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"..\/icons\/glossary.svg"},
-
-{"postID":"38","title":"Ecological Consciousness","keywords":"Ecological Consciousness,","chap_description":"An awareness of one’s interconnection to the cycles of life near and far, old and new, local and global.","url":"..\/en\/glossary.php#ecologicalconsciousness","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"..\/icons\/glossary.svg"},
-
-{"postID":"39","title":"Ecology",
-"keywords":"ecology, ecologies, ecological","chap_description":"A biological system; a part of a biome.","url":"../en/glossary.php#ecology","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
-
-{"postID":"40","title":"Green",
-"keywords":"green, greens","chap_description":"An ecological contribution: a process that follows Earth’s example by embodying all the Earthen principles.","url":"../en/glossary.php#green","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
-
-{"postID":"41","title":"Grey",
-"keywords":"grey, greys","chap_description":"A depleting ecological impact: a process that fails to embody all the Earthen principles.","url":"../en/glossary.php#grey","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
-
+{
+    "postID": "31",
+    "title": "Earth",
+    "keywords": "earth,",
+    "chap_description": "Soil, ground [lowercase ‘e’]. Used with an article (i.e. “the”)",
+    "url": "..\/en\/glossary.php#earth",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "",
+    "image_url": "..\/icons\/glossary.svg"
+  },
+  {
+    "postID": "32",
+    "title": "Earth",
+    "keywords": "Earth,",
+    "chap_description": "The third planet orbiting the sun [uppercase ‘E’]. Used without an article.",
+    "url": "..\/en\/glossary.php#Earth",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "2",
+    "image_url": "..\/icons\/glossary.svg"
+  },
+  {
+    "postID": "33",
+    "title": "Earthen",
+    "keywords": "Earthen,",
+    "chap_description": "Of the character of the Earth. [Capital ‘E’]",
+    "url": "..\/en\/glossary.php#earthen",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "",
+    "image_url": "..\/icons\/glossary.svg"
+  },
+  {
+    "postID": "34",
+    "title": "earthen",
+    "keywords": "earthen,",
+    "chap_description": "Of the earth (i.e. soil, ground) [lowercase ‘e’]",
+    "url": "..\/en\/glossary.php#earthenethics",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "",
+    "image_url": "..\/icons\/glossary.svg"
+  },
+  {
+    "postID": "35",
+    "title": "Earthen Ethics",
+    "keywords": "Earthen Ethics,",
+    "chap_description": "An ethical framework for discerning the ecological color of an act, process, or enterprise based on the example of Earth.",
+    "url": "..\/en\/glossary.php#earthenethics",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "",
+    "image_url": "..\/icons\/glossary.svg"
+  },
+  {
+    "postID": "36",
+    "title": "Earth Enterprise",
+    "keywords": "Earth Enterprise,",
+    "chap_description": "An enterprise that strives first and foremost to enrich the biosphere by following Earth’s example.",
+    "url": "..\/en\/glossary.php#earthenterprise",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "",
+    "image_url": "..\/icons\/glossary.svg"
+  },
+  {
+    "postID": "37",
+    "title": "Ecological Contribution",
+    "keywords": "Ecological Contribution, ecological contributions,",
+    "chap_description": "A process that fully embodies the principles of Earthen ethics. A green ecological impact.",
+    "url": "..\/en\/glossary.php#ecologicalcontribution",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "",
+    "image_url": "..\/icons\/glossary.svg"
+  },
+  {
+    "postID": "38",
+    "title": "Ecological Consciousness",
+    "keywords": "Ecological Consciousness,",
+    "chap_description": "An awareness of one’s interconnection to the cycles of life near and far, old and new, local and global.",
+    "url": "..\/en\/glossary.php#ecologicalconsciousness",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "",
+    "image_url": "..\/icons\/glossary.svg"
+  },
+  {
+    "postID": "39",
+    "title": "Ecology",
+    "keywords": "ecology, ecologies, ecological",
+    "chap_description": "A biological system; a part of a biome.",
+    "url": "../en/glossary.php#ecology",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "",
+    "image_url": "../icons/glossary.svg"
+  },
+  {
+    "postID": "40",
+    "title": "Green",
+    "keywords": "green, greens",
+    "chap_description": "An ecological contribution: a process that follows Earth’s example by embodying all the Earthen principles.",
+    "url": "../en/glossary.php#green",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "",
+    "image_url": "../icons/glossary.svg"
+  },
+  {
+    "postID": "41",
+    "title": "Grey",
+    "keywords": "grey, greys",
+    "chap_description": "A depleting ecological impact: a process that fails to embody all the Earthen principles.",
+    "url": "../en/glossary.php#grey",
+    "language": "Appendix",
+    "book": "Definition",
+    "chapter": "Term in Glossary",
+    "words": "",
+    "image_url": "../icons/glossary.svg"
+  },
+  
 {
   "postID": "41",
   "title": "Fossil Fuels",
@@ -154,27 +262,91 @@
   "relevant_chap": "Chapter 6: Nature's Fallacy"
 },
 
-{"postID":"45","title":"Kincentric",
-"keywords":"kincentric, humancentric, anthropocentric, plants, animals, Earth, ecosystems","chap_description":"In opposition to humancentric; a view of the world in which plants, humans, animals and all Earthen organisms share ancestry and origins, cycles and ecosystems.","url":"../en/glossary.php#kincentric","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg",
-"relevant_chap": "Chapter 6: Nature's Fallacy"},
-
-{"postID":"46","title":"Petro-Capital Economy",
-"keywords":"petro-capital economy, petroleum energy, fossil fuels, flow of capital","chap_description":"An economy whose flow and generation of capital is powered by petroleum energy.","url":"../en/glossary.php#petrocapital","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
-
-{"postID":"47","title":"Plastic Sequestration",
-"keywords":"plastic sequestration, concentrating, compacting, building blocks, long-term storage, not-for-profit, consciousness, biodiversity, net-subtractive","chap_description":"The process of concentrating and compacting plastic to create short term building blocks that secure and store plastic over the long-term, in a not-for-profit process that raises consciousness, supports biodiversity and is net-subtractive.","url":"../en/glossary.php#sequest","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
-
-{"postID":"48","title":"Plastic’s Stellar Story",
-"keywords":"plastic, carbon sequestration, Earth, de-compacted","chap_description":"The four billion year view of plastic as carbon sequestered by the Earth, and de-compacted by humans.","url":"../en/glossary.php#stellar","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
-
-{"postID":"49","title":"Plastic 1.0",
-"keywords":"plastic 1.0, plastic as human-made, managed","chap_description":"The paradigm of plastic as human made and managed.","url":"../en/glossary.php#p1","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
-
-{"postID":"50","title":"Plastic 2.0",
-"keywords":"plastic 2.0, Earth's process, cultivating biosphere, petro-capital economy","chap_description":"The paradigm of plastic as a part of the Earth’s billion year process of cultivating the biosphere and as representation of our petro-capital economy.","url":"../en/glossary.php#p2","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
-
-{"postID":"51","title":"Regenerative",
-"keywords":"regenerative, greening process, subtractive impact, additive impact","chap_description":"A greening process whose subtractive impact is over twice that of its additive impact.","url":"../en/glossary.php#regen","language":"Appendix","book":"Definition","chapter":"Term in Glossary","words":"","image_url":"../icons/glossary.svg"},
+{
+  "postID": "45",
+  "title": "Kincentric",
+  "keywords": "kincentric, humancentric, anthropocentric, plants, animals, Earth, ecosystems",
+  "chap_description": "In opposition to humancentric; a view of the world in which plants, humans, animals and all Earthen organisms share ancestry and origins, cycles and ecosystems.",
+  "url": "../en/glossary.php#kincentric",
+  "language": "Appendix",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "",
+  "image_url": "../icons/glossary.svg",
+  "relevant_chap": "Chapter 6: Nature's Fallacy"
+},
+{
+  "postID": "46",
+  "title": "Petro-Capital Economy",
+  "keywords": "petro-capital economy, petroleum energy, fossil fuels, flow of capital",
+  "chap_description": "An economy whose flow and generation of capital is powered by petroleum energy.",
+  "url": "../en/glossary.php#petrocapital",
+  "language": "Appendix",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "",
+  "image_url": "../icons/glossary.svg"
+},
+{
+  "postID": "47",
+  "title": "Plastic Sequestration",
+  "keywords": "plastic sequestration, concentrating, compacting, building blocks, long-term storage, not-for-profit, consciousness, biodiversity, net-subtractive",
+  "chap_description": "The process of concentrating and compacting plastic to create short term building blocks that secure and store plastic over the long-term, in a not-for-profit process that raises consciousness, supports biodiversity and is net-subtractive.",
+  "url": "../en/glossary.php#sequest",
+  "language": "Appendix",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "",
+  "image_url": "../icons/glossary.svg"
+},
+{
+  "postID": "48",
+  "title": "Plastic’s Stellar Story",
+  "keywords": "plastic, carbon sequestration, Earth, de-compacted",
+  "chap_description": "The four billion year view of plastic as carbon sequestered by the Earth, and de-compacted by humans.",
+  "url": "../en/glossary.php#stellar",
+  "language": "Appendix",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "",
+  "image_url": "../icons/glossary.svg"
+},
+{
+  "postID": "49",
+  "title": "Plastic 1.0",
+  "keywords": "plastic 1.0, plastic as human-made, managed",
+  "chap_description": "The paradigm of plastic as human made and managed.",
+  "url": "../en/glossary.php#p1",
+  "language": "Appendix",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "",
+  "image_url": "../icons/glossary.svg"
+},
+{
+  "postID": "50",
+  "title": "Plastic 2.0",
+  "keywords": "plastic 2.0, Earth's process, cultivating biosphere, petro-capital economy",
+  "chap_description": "The paradigm of plastic as a part of the Earth’s billion year process of cultivating the biosphere and as representation of our petro-capital economy.",
+  "url": "../en/glossary.php#p2",
+  "language": "Appendix",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "",
+  "image_url": "../icons/glossary.svg"
+},
+{
+  "postID": "51",
+  "title": "Regenerative",
+  "keywords": "regenerative, greening process, subtractive impact, additive impact",
+  "chap_description": "A greening process whose subtractive impact is over twice that of its additive impact.",
+  "url": "../en/glossary.php#regen",
+  "language": "Appendix",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "",
+  "image_url": "../icons/glossary.svg"
+},
 
 {
   "postID": "52",

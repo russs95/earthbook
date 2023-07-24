@@ -23,7 +23,7 @@ class SearchCurtain extends HTMLElement {
                 <input id="search_input" type="text" placeholder="Enter search term..." aria-label="Enter keywords...">   
                 <button class="btn" style="padding:22px 0px 22px 0px;" onclick="EarthbookSearch(['glossary.json', 'chapters-index.json'])" aria-label="Search Button"><i style="background-image: url(../icons/search-white.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i></button> 
               </div>  
-              <div id="search_results"><h6>Glossary definitions are shown first</h6></div>
+              <div id="search_results"><h6 style="color:grey;">Glossary definitions are shown first</h6></div>
             </div>
     
           </div>
