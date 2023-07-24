@@ -238,20 +238,26 @@ async function buildGlossary() {
     const description = document.createElement('p');
     description.appendChild(title);
     description.innerHTML += '<br>' + entry.chap_description;
-    // Create the keywords element
-    const keywords = document.createElement('h6');
-    keywords.textContent = 'Related terms: ' + entry.keywords;
-    // Create the chapter element with URL
-    const chapter = document.createElement('h6');
-    const chapterLink = document.createElement('a');
-    chapterLink.textContent = 'Introduced in chapter: ' + entry.relevant_chap;
-    chapterLink.href = entry.relevant_chap_url;
-    chapter.appendChild(chapterLink);
     // Create the glossary info element
     const glossInfo = document.createElement('div');
     glossInfo.classList.add('glossary-info');
-    glossInfo.appendChild(keywords);
-    glossInfo.appendChild(chapter);
+    // Create the keywords element if present
+    if (entry.keywords && entry.keywords.trim() !== '') {
+      const keywords = document.createElement('h6');
+      keywords.textContent = 'Related terms: ' + entry.keywords;
+      glossInfo.appendChild(keywords);
+    }
+    // Create the chapter element with URL if both relevant_chap and relevant_chap_url are present
+    if (entry.relevant_chap && entry.relevant_chap_url && entry.relevant_chap_url.trim() !== '') {
+      const chapter = document.createElement('h6');
+      const chapterText = document.createTextNode('Introduced in chapter: ');
+      const chapterLink = document.createElement('a');
+      chapterLink.textContent = entry.relevant_chap;
+      chapterLink.href = entry.relevant_chap_url;
+      chapter.appendChild(chapterText);
+      chapter.appendChild(chapterLink);
+      glossInfo.appendChild(chapter);
+    }
     // Append the elements to the item
     item.appendChild(description);
     item.appendChild(glossInfo);
@@ -259,6 +265,7 @@ async function buildGlossary() {
     container.appendChild(item);
   }
 }
+
 
 
 window.addEventListener('load', function() {

@@ -9,7 +9,9 @@
     "language": "Appendix",
     "book": "Definition",
     "chapter": "Term in Glossary",
-    "words": "2",
+    "words": "",
+    "relevant_chap": "Chap. 1: Imagine",
+  "relevant_chap_url":"imagine.html",
     "image_url": "..\/icons\/glossary.svg"
   },
   
@@ -23,7 +25,7 @@
     "book": "Definition",
     "chapter": "Term in Glossary",
     "words": "1",
-    "relevant_chap": "Chapter 8: Nature's Fallacy",
+    "relevant_chap": "Chapter 6: Nature's Fallacy",
   "relevant_chap_url":"nature.html",
     "image_url": "../icons/glossary.svg"
   },
@@ -40,6 +42,8 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "3",
+  "relevant_chap": "Chap. 1: Imagine",
+  "relevant_chap_url":"imagine.html",
   "image_url": "..\/icons\/glossary.svg"
 },
 {
@@ -52,6 +56,8 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "4",
+  "relevant_chap": "Chap. 12: The Means of the Mycorrhyzal",
+  "relevant_chap_url":"unpublished.html",
   "image_url": "..\/icons\/glossary.svg"
 },
 {
@@ -64,24 +70,28 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "5",
+  "relevant_chap": "Chap. 7: Earthen Ways",
+  "relevant_chap_url":"earthen.html",
   "image_url": "..\/icons\/glossary.svg"
 },
 {
   "postID": "30",
-  "title": "Dapay",
-  "keywords": "dapay",
+  "title": "Dap'ay",
+  "keywords": "dapay, dap'ay, stone henge, stonehenge",
   "chap_description": "The central stone plaza of every Igorot village that is used for ceremonies, feasts, and storytelling.",
   "url": "..\/en\/glossary.php#dapay",
   "language": "Appendix",
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "6",
+  "relevant_chap": "Intro: Preamble",
+  "relevant_chap_url":"preamble.html",
   "image_url": "..\/icons\/glossary.svg"
 },
 
 {
     "postID": "31",
-    "title": "Earth",
+    "title": "earth",
     "keywords": "earth,",
     "chap_description": "Soil, ground [lowercase ‘e’]. Used with an article (i.e. “the”)",
     "url": "..\/en\/glossary.php#earth",
@@ -101,6 +111,8 @@
     "book": "Definition",
     "chapter": "Term in Glossary",
     "words": "2",
+    "relevant_chap": "Chap. 1: Imagine",
+    "relevant_chap_url":"imagine.html",
     "image_url": "..\/icons\/glossary.svg"
   },
   {
@@ -113,8 +125,11 @@
     "book": "Definition",
     "chapter": "Term in Glossary",
     "words": "",
+    "relevant_chap": "Chap. 7: Earthen Ways",
+    "relevant_chap_url":"earthen.html",
     "image_url": "..\/icons\/glossary.svg"
   },
+
   {
     "postID": "34",
     "title": "earthen",
@@ -137,6 +152,8 @@
     "book": "Definition",
     "chapter": "Term in Glossary",
     "words": "",
+    "relevant_chap": "Chap. 7: Earthen Ways",
+    "relevant_chap_url":"earthen.html",
     "image_url": "..\/icons\/glossary.svg"
   },
   {
@@ -149,6 +166,8 @@
     "book": "Definition",
     "chapter": "Term in Glossary",
     "words": "",
+    "relevant_chap": "Chap. 9: The Cycle of the Salmon",
+    "relevant_chap_url":"energy.html",
     "image_url": "..\/icons\/glossary.svg"
   },
   {
@@ -161,6 +180,8 @@
     "book": "Definition",
     "chapter": "Term in Glossary",
     "words": "",
+    "relevant_chap": "Chap. 1: Imagine",
+    "relevant_chap_url":"imagine.html",
     "image_url": "..\/icons\/glossary.svg"
   },
   {
@@ -173,6 +194,8 @@
     "book": "Definition",
     "chapter": "Term in Glossary",
     "words": "",
+    "relevant_chap": "Chap. 12: Awareness",
+    "relevant_chap_url":"unpublished.html",
     "image_url": "..\/icons\/glossary.svg"
   },
   {
@@ -197,6 +220,8 @@
     "book": "Definition",
     "chapter": "Term in Glossary",
     "words": "",
+    "relevant_chap": "Intro: Preface",
+    "relevant_chap_url":"preface.html",
     "image_url": "../icons/glossary.svg"
   },
   {
@@ -209,6 +234,8 @@
     "book": "Definition",
     "chapter": "Term in Glossary",
     "words": "",
+    "relevant_chap": "Chap. 1: Imagine",
+    "relevant_chap_url":"imagine.html",
     "image_url": "../icons/glossary.svg"
   },
   
@@ -222,6 +249,8 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "1",
+  "relevant_chap": "Chap. 3: An Interstellar Story",
+  "relevant_chap_url":"stellar.html",
   "image_url": "..\/icons\/glossary.svg"
 },
 {
@@ -234,6 +263,8 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "2",
+  "relevant_chap": "Chapt 8: Cycles that Spiral",
+  "relevant_chap_url":"spirals.html",
   "image_url": "..\/icons\/glossary.svg"
 },
 {
@@ -246,8 +277,9 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "3",
-  "image_url": "..\/icons\/glossary.svg",
-  "relevant_chap": "Chapter 6: Nature's Fallacy"
+  "relevant_chap": "Chap.6: Nature's Fallacy",
+  "relevant_chap_url":"nature.html",
+  "image_url": "..\/icons\/glossary.svg"
 },
 {
   "postID": "44",
@@ -259,8 +291,9 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "4",
-  "image_url": "..\/icons\/glossary.svg",
-  "relevant_chap": "Chapter 6: Nature's Fallacy"
+  "relevant_chap": "Chap. 5: Kindred Relations",
+  "relevant_chap_url":"kincentric.html",
+  "image_url": "..\/icons\/glossary.svg"
 },
 
 {
@@ -273,8 +306,9 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "",
-  "image_url": "../icons/glossary.svg",
-  "relevant_chap": "Chapter 6: Nature's Fallacy"
+  "relevant_chap": "Chap. 5: Kindred Relations",
+  "relevant_chap_url":"kincentric.html",
+  "image_url": "../icons/glossary.svg"
 },
 {
   "postID": "46",
@@ -286,6 +320,8 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "",
+  "relevant_chap": "Chap. 3: An Interstellar Story",
+  "relevant_chap_url":"stellar.html",
   "image_url": "../icons/glossary.svg"
 },
 {
@@ -298,6 +334,8 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "",
+  "relevant_chap": "Chap. 14: Plastic Sequestration",
+  "relevant_chap_url":"unpublished.html",
   "image_url": "../icons/glossary.svg"
 },
 {
@@ -310,8 +348,11 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "",
+  "relevant_chap": "Chap. 3: An Interstellar Story",
+  "relevant_chap_url":"stellar.html",
   "image_url": "../icons/glossary.svg"
 },
+
 {
   "postID": "49",
   "title": "Plastic 1.0",
@@ -322,8 +363,11 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "",
+  "relevant_chap": "Chap. 2: Plastic 1.0",
+  "relevant_chap_url":"plastic.html",
   "image_url": "../icons/glossary.svg"
 },
+
 {
   "postID": "50",
   "title": "Plastic 2.0",
@@ -334,6 +378,8 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "",
+  "relevant_chap": "Chap. 13: Plastic 2.0",
+  "relevant_chap_url":"plastic2.html",
   "image_url": "../icons/glossary.svg"
 },
 {
@@ -359,6 +405,23 @@
   "book": "Definition",
   "chapter": "Term in Glossary",
   "words": "13",
+  "relevant_chap": "Chap. 9: The Cycle of the Salmon",
+  "relevant_chap_url":"energy.html",
+  "image_url": "..\/icons\/glossary.svg"
+},
+
+{
+  "postID": "53",
+  "title": "for-Earth",
+  "keywords": "Earth Enterprise, for-Earth, not-for-profit, for-profit, nfp, mcclurahan",
+  "chap_description": "The intention of an enterprise to strive first and foremost to enrich the biosphere by following Earth’s example.",
+  "url": "..\/en\/glossary.php#earthenterprise",
+  "language": "Appendix",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "",
+  "relevant_chap": "Chap. 9: The Cycle of the Salmon",
+  "relevant_chap_url":"energy.html",
   "image_url": "..\/icons\/glossary.svg"
 }
 ]
