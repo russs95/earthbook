@@ -23,7 +23,8 @@
     "book": "Definition",
     "chapter": "Term in Glossary",
     "words": "1",
-    "relevant_chap": "<a href=\"/nature.html\">Chapter 8: Nature's Fallacy</a>",
+    "relevant_chap": "Chapter 8: Nature's Fallacy",
+  "relevant_chap_url":"nature.html",
     "image_url": "../icons/glossary.svg"
   },
   
