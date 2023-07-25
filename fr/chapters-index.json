@@ -1,0 +1,317 @@
+
+[
+{
+  "postID": "1",
+  "title": "Préambule",
+  "keywords": "Préambule, introduction, histoires, dapay, éthique de la Terre, éthique terrestre, terre, éthique, tractatus ayyew, igorot, philosophie autochtone, Terre, éthique verte, éthique environnementale, écologie profonde, éthique écologique, introduction, intro",
+  "chap_description": "Une introduction à l'édition Earthbook du Tractatus Ayyew et au concept d'Earthbook.",
+  "url": "../fr/preamble.php",
+  "language": "Français",
+  "book": "Introduction",
+  "chapter": "Préambule",
+  "words": "431",
+  "image_url": "../svgs/00-preamble-white.svg"
+},
+
+{
+  "postID": "2",
+  "title": "Épigraphe",
+  "keywords": "épigraphe, introduction, histoires, nature, histoire, éthique de la Terre, éthique terrestre, terre, éthique, tractatus ayyew, igorot, philosophie autochtone, philosophie, Terre, verte, éthique verte, éthique environnementale, écologie profonde, éthique écologique, Régis Debray, Le siècle vert, Un changement de civilisation, L'Âge Vert, Un Changement de Civilisations",
+  "chap_description": "\"Un autre monde est en train de naître devant nos yeux : un tout nouveau souffle dans notre façon de penser, d'espérer et de craindre...\"",
+  "url": "../fr/epigraph.php",
+  "language": "Français",
+  "book": "Livre Un",
+  "chapter": "Épigraphe",
+  "words": "67",
+  "image_url": "../svgs/00-preamble-white.svg"
+},
+
+{
+  "postID": "3",
+  "title": "Préface",
+  "keywords": "Préface introduction histoires dapay éthique de la Terre éthique terrestre Bontoc Philippines, igorot, russell, irene, banyan, ecobricks, plastique, philosophie autochtone, philosophie, Qu'est-ce que le vert devrait signifier, DepEd, irene, banyan, russell, maier",
+  "chap_description": "L'histoire derrière le commencement, l'écriture et le titre du Tractatus Ayyew.",
+  "url": "../fr/preface.php",
+  "language": "Français",
+  "book": "Introduction",
+  "chapter": "Préface",
+  "words": "1220",
+  "image_url": "../svgs/00-preamble-white.svg"
+},
+
+{
+  "postID": "4",
+  "title": "Imagine",
+  "keywords": "imaginer, un nouveau monde vert, plastique, éthique de la Terre, éthique terrestre, éthique, tractatus ayyew, igorot, philosophie autochtone, philosophie, permaculture, bill mollison, éthique verte, environnement, lavage vert, écologie profonde, éthique écologique, terre",
+  "chap_description": "Imaginez un monde où notre façon de vivre enrichit progressivement les écosystèmes dont nous faisons partie.",
+  "url": "../fr/imagine.php",
+  "language": "Français",
+  "book": "Livre Un",
+  "chapter": "Chapitre 1",
+  "words": "1095",
+  "image_url": "../svgs/01-imagine-white.svg"
+},
+
+{
+  "postID": "5",
+  "title": "Plastique 1.0",
+  "keywords": "terre, plastique, culpabilité, pollution, recyclage, incinération, décharge",
+  "chap_description": "Comme aucun autre matériau, le plastique a été créé entièrement pour l'utilisation et le bénéfice des humains.",
+  "url": "../fr/plastic.php",
+  "language": "Français",
+  "book": "Livre Un",
+  "chapter": "Chapitre 3",
+  "words": "623",
+  "image_url": "../svgs/02-plastic1-white.svg"
+},
+
+{
+  "postID": "6",
+  "title": "L'histoire stellaire du plastique",
+  "keywords": "cosmologie, caractère cosmologique, entropie, thermodynamique, dissipation, carbone, spirale, combustibles fossiles, économie pétrocapitaliste, polymères, plastique, billes de billard, profit, recyclage, technologie, industrie, gris, histoire, humanité, Batman, Terre",
+  "chap_description": "Une brève histoire des origines stellaires du plastique, de la création de la Terre et de l'avènement de la relation écologique de l'humanité moderne.",
+  "url": "../fr/stellar.php",
+  "language": "Français",
+  "book": "Livre Un",
+  "chapter": "Chapitre 3",
+  "words": "1133",
+  "image_url": "../svgs/03-stellar-white.svg"
+},
+
+{
+  "postID": "7",
+  "title": "Modèles de processus",
+  "keywords": "modèles de processus, caractère cosmologique, modèles planétaires, blocs, jugements, désespoir, épuisement, enrichissement, plastique, émissions de carbone, économie pétro-capitaliste, nature humaine, nature du plastique, paradoxe de Jevons, Jevon",
+  "chap_description": "En observant notre évolution et celle de la Terre, nous pouvons discerner deux modèles à l'œuvre. Plutôt que de nous enliser dans un autojugement concernant notre relation au carbone, nous pouvons être éblouis par celle de la Terre.",
+  "url": "../fr/patterns.php",
+  "language": "Français",
+  "book": "Livre Un",
+  "chapter": "Chapitre 4",
+  "words": "837",
+  "image_url": "https://book.earthen.io/svgs/04-patterns-white.svg"
+},
+
+{
+    "postID": "8",
+    "title": "Relations Parentèles",
+    "keywords": "écologie kincentrique, kincentricisme, parenté, relations apparentées, Enqrique Salmon, contribution écologique, premières nations, métaphysique, vision du monde, cosmologie, 1492, amérique du nord, premières nations, reconnaissance, connaissance de la tradition écologique, etk, savoir kincentrique",
+    "chap_description": "Au cours de l'histoire humaine, certaines cultures en sont venues à comprendre les créatures qui les entouraient comme des parents. Plutôt que de cultiver des sociétés centrées sur l'humain, les leurs ont créé des maisons communes pour tous.",
+    "url": "../fr/kincentric.php",
+    "Langue": "français",
+    "book": "Livre un",
+    "chapter": "Chapitre un",
+    "mots": "1508",
+    "image_url": "../svgs/05-kincentric-white.svg"
+  },
+
+
+{
+  "postID": "9",
+  "title": "Le sophisme de la nature",
+  "keywords": "La fallacie de la nature, nature, environnement, problème avec la nature, anthropocentrisme, humancentrisme, humain, centré sur l'humain, centré sur le parent, grec, romain, environ, réduction des dommages, monde naturel, anthropocentrique",
+  "chap_description": "Sous l'environnementalisme moderne se cache une erreur fondamentale qui condamne même les intentions les plus vertes au gris.",
+  "url": "../fr/nature.php",
+  "language": "Français",
+  "book": "Livre Un",
+  "chapter": "Chapitre 6",
+  "words": "973",
+  "image_url": "https://book.earthen.io/svgs/06-nature-white.svg"
+},
+
+{
+  "postID": "10",
+  "title": "L’exemple Terrestre",
+  "keywords": "Terre, modèle cosmologique, caractère cosmologique, vert, cycles, dissipation, concentration, diversification, physique, biologie et astronomie, conscience, caractère, contribution, vibrant, stable, résilient, abondant, conscient, éthique terrestre, cinq principes, principes terrestres, Terrestre, cosmologie, caractère planétaire, caractère de la Terre",
+  "chap_description": "Dans la transition de notre planète d'un rocher stérile à une biosphère prospère, nous trouvons cinq principes qui composent le caractère cosmologique de la Terre et qui guident nos entreprises pour être vraiment vertes.",
+  "url": "../fr/earthen.php",
+  "language": "Français",
+  "book": "Livre Un",
+  "chapter": "Chapitre 7",
+  "words": "774",
+  "image_url": "../svgs/07-earthen-white.svg"
+},
+
+{
+  "postID": "11",
+  "title": "Épigraphe II",
+  "keywords": "épigraphe, introduction, éthique, morales, bon, mauvais, Ruthanna Emrys",
+  "chap_description": "« Si nous ne faisons pas les choses correctement, cela empoisonne le résultat. »",
+  "url": "../fr/epigraph-2.php",
+  "language": "Français",
+  "book": "Livre Deux",
+  "chapter": "Épigraphe",
+  "words": "67",
+  "image_url": "../svgs/08-cycles-white.svg"
+},
+
+{
+  "postID": "12",
+  "title": "Cycles qui spiralent",
+  "keywords": "igorots, ayyew, cycles, spirales, énergie, matière, entropie, thermodynamique, jeremy england, porcs, engrais, rizières, terrasses, hydrologie, linéaire, circulaire, conception circulaire, économie circulaire, plastique, recyclage, dégradation, enrichissement, gris, vert, linéaire vs circulaire, circulaire",
+  "chap_description": "Observez comment les Igorots et la Terre dirigent leurs processus vers des cycles en spirale.",
+  "url": "../fr/spirals.php",
+  "language": "Français",
+  "book": "Livre Deux",
+  "chapter": "Chapitre 8",
+  "words": "1697",
+  "image_url": "https://book.earthen.io/svgs/08-cycles-white.svg"
+},
+
+{
+  "postID": "13",
+  "title": "Les Cycles du saumon",
+  "keywords": "saumon, danse, énergie, intérieur, capital, devise, à but lucratif, à but non lucratif, entreprise terrestre, pour la Terre, pour Terre, Haida, Dakelh, Wet? suwet? en, nutriments, œufs de poisson, dispersion, concentration, Terrestre, Igorots, Ayyew, cycles qui spiralent, conception en spirale, linéaire vs circulaire, circulaire, vert, éthique terrestre, principe deux, principes terrestres, Terrestre, cosmologie, caractère planétaire, caractère de la Terre, ",
+  "chap_description": "Principe Terrestre n°2 : Observez comment les cycles de la Terre tendent vers la dissipation externe de l'énergie.",
+  "url": "../fr/energy.php",
+  "language": "Français",
+  "book": "Livre Deux",
+  "chapter": "Chapitre 9",
+  "words": "2337",
+  "image_url": "../svgs/09-energy-white.svg"
+},
+
+{
+  "postID": "14",
+  "title": "Les moyens de la matière chez le mollusque",
+  "keywords": "mollusque, ammonite, moyens, matière, spirale, principe 3",
+  "chap_description": "Principe Terrestre n°3 : Les cycles de la Terre tendent vers la concentration interne de la matière.",
+  "url": "../fr/matter.php",
+  "language": "Français",
+  "book": "Livre Deux",
+  "chapter": "Chapitre 10",
+  "words": "2150",
+  "image_url": "../svgs/10-matter-white.svg"
+},
+
+{
+  "postID": "15",
+  "title": "Résumés",
+  "keywords": "résumés, phrase, paragraphe, éthique de la Terre, éthique terrestre, terre, éthique, tractatus ayyew, igorot, philosophie autochtone, philosophie, Terre, éthique verte, éthique environnementale, écologie profonde, éthique écologique",
+  "chap_description": "Un court résumé en une phrase, en une longue phrase et en un paragraphe de l'éthique terrestre.",
+  "url": "../fr/summaries.php",
+  "language": "Français",
+  "book": "Annexe",
+  "chapter": "Résumés",
+  "words": "540",
+  "image_url": "../svgs/00-preamble-white.svg"
+},
+
+{
+  "postID": "16",
+  "title": "Dédicace",
+  "keywords": "merci, gratitude, mère, père",
+  "chap_description": "À nos mères et pères,\r\nqui nous ont laissés jouer dans les forêts et les champs,\r\ngoûter les baies et grimper aux arbres,\r\naimer le sauvage et apprendre ses feuilles.",
+  "url": "../fr/dedication.php",
+  "language": "Français",
+  "book": "Introduction",
+  "chapter": "Dédicace",
+  "words": "100",
+  "image_url": "https://book.earthen.io/svgs/00-preamble-white.svg"
+},
+
+{
+  "postID": "17",
+  "title": "Comptabilité écologique",
+  "keywords": "rapport regen, régénération, regenerativité, rapport, écologique, comptabilité, carbone, CO2, biodiversité, plastique, impact, divulgation, comptabilité écologique, éco-comptabilité",
+  "chap_description": "La comptabilité écologique du carbone, du plastique et de la biodiversité de la rédaction et de la publication de ce Earthbook.",
+  "url": "../fr/accounting.php",
+  "language": "Français",
+  "book": "Annexe",
+  "chapter": "Comptabilité",
+  "words": "133",
+  "image_url": "../icons/eco.svg"
+},
+
+{
+  "postID": "18",
+  "title": "Entreprise Pour-La-Terre",
+  "keywords": "100",
+  "chap_description": "Notre déclaration à but non lucratif, Pour-La-Terre, de notre intention pour notre entreprise d'écrire et de publier ce EarthBook.",
+  "url": "../fr/for-earth.php",
+  "language": "Français",
+  "book": "Annexe",
+  "chapter": "Déclaration",
+  "words": "100",
+  "image_url": "../svgs/icon-for-earth.svg"
+},
+
+{
+  "postID": "19",
+  "title": "Remerciements et gratitude",
+  "keywords": "merci, crédits, gratitude",
+  "chap_description": "Nos remerciements à tous ceux qui ont rendu ce projet possible et publié.",
+  "url": "../fr/acknowledgements.php",
+  "language": "Français",
+  "book": "Annexe",
+  "chapter": "Remerciements",
+  "words": "600",
+  "image_url": "../icons/thankyou.svg"
+},
+
+{
+  "postID": "20",
+  "title": "Rédaction et publication",
+  "keywords": "rédaction, publication, logiciel, comptabilité, polices, caractères, magasin, achat, brikcoins",
+  "chap_description": "Le matériel et le logiciel libres utilisés pour l'écriture et la publication de l'Earthbook.",
+  "url": "../fr/writing.php",
+  "language": "Français",
+  "book": "Annexe",
+  "chapter": "Détails",
+  "words": "400",
+  "image_url": "../icons/publishing.svg"
+},
+
+{
+  "postID": "21",
+  "title": "Les auteurs",
+  "keywords": "auteurs, russ, russell, maier, banayan, irene, angway",
+  "chap_description": "/fr/authors.php",
+  "url": "../fr/authors.php",
+  "language": "Français",
+  "book": "Annexe",
+  "chapter": "Auteurs",
+  "words": "300",
+  "image_url": "../icons/glossary.svg"
+},
+
+{
+  "postID": "22",
+  "title": "Bibliographie",
+  "keywords": "Bibliography",
+  "chap_description": "Bibliographie des sources utilisées pendant la rédaction du Tractatus Ayyew.",
+  "url": "../fr/bibliography.php",
+  "language": "Français",
+  "book": "Annexe",
+  "chapter": "Sources",
+  "words": "500",
+  "image_url": "../icons/openbook.svg"
+},
+
+{
+  "postID": "23",
+  "title": "Glossaire",
+  "keywords": "glossary, vocabulary, ",
+  "chap_description": "Glossaire des termes et concepts clés utilisés dans le Tractatus Ayyew.",
+  "url": "../fr/glossary.php",
+  "language": "Français",
+  "book": "Annexe",
+  "chapter": "Glossaire",
+  "words": "2400",
+  "image_url": "../svgs/00-preamble-white.svg"
+},
+
+{
+    "postID": "24",
+    "title": "Déclaration d'intérêts et d'investissements des auteurs",
+    "keywords": "déclaration, financement, supporters, mécènes, aides, subventions, sponsors, déclaration, intérêts, investissements, relations, préjugés, auteurs, russ, russell, maier, banayan, irene, angway",
+    "chap_description": "Une déclaration des intérêts et des investissements des auteurs.",
+    "url": "../fr/declaration.php",
+    "Langue": "français",
+    "livre": "Annexe",
+    "chapter": "Déclaration",
+    "mots": "323",
+    "image_url": "../icons/openbook.svg"
+  }
+
+]
+

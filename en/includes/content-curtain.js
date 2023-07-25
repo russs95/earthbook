@@ -21,78 +21,80 @@ class ContentCurtain extends HTMLElement {
                         <div class="contents-books123">
                             <div class="tc-a-book" style="border-right:1px gray solid";>One</div>
                             <div class="tc-a-book" style="border-right:1px gray solid; color:grey;">Two</div>
-                            <div class="tc-a-book" style="color:grey;">Three</div>
+                            <div class="tc-a-book" style="border-right:1px gray solid; color:grey;">Three</div>
+                            <div class="tc-a-book" style="color:grey;">Appx</div>
                         </div>
                     </div>
+                    <div id="appx-book-1">
+                        <a href="preamble.php">
+                        <div class="tc-item">
+                            <div class="chapter-name-tc">Preamble</div>
+                            <div class="word-count-tc"><i>431 words</i></div>
+                        </div></a>
 
-                    <a href="preamble.php">
-                    <div class="tc-item">
-                        <div class="chapter-name-tc">Preamble</div>
-                        <div class="word-count-tc"><i>431 words</i></div>
-                    </div></a>
+                        <a href="preface.php">
+                        <div class="tc-item">
+                            <div class="chapter-name-tc">Preface</div>
+                            <div class="word-count-tc"><i>1,220 words</i></div>
+                        </div></a>
 
-                    <a href="preface.php">
-                    <div class="tc-item">
-                        <div class="chapter-name-tc">Preface</div>
-                        <div class="word-count-tc"><i>1,220 words</i></div>
-                    </div></a>
+                        <a href="imagine.php">
+                        <div class="tc-item">
+                            <div class="chapter-name-tc">Imagine</div>
+                            <div class="dotted-line"></div>
+                            <div class="word-count-tc"><i>1,095 words</i></div>
+                        </div>
+                        </a>
 
-                    <a href="imagine.php">
-                    <div class="tc-item">
-                        <div class="chapter-name-tc">Imagine</div>
+                        <a href="plastic.php">
+                        <div class="tc-item">
+                            <div class="chapter-name-tc">Plastic 1.0</div>
+                            <div class="dotted-line"></div>
+                            <div class="word-count-tc"><i>623 words</i></div>
+                        </div>
+                        </a>
+
+                        <a href="stellar.php">
+                        <div class="tc-item">
+                            <div class="chapter-name-tc">An Interstellar Story</div>
+                            <div class="dotted-line"></div>
+                            <div class="word-count-tc"><i>1,021 words</i></div>
+                        </div>
+                        </a>
+
+                        <a href="patterns.php">
+                        <div class="tc-item">
+                        <div class="chapter-name-tc">Patterns of Process</div>
                         <div class="dotted-line"></div>
-                        <div class="word-count-tc"><i>1,095 words</i></div>
-                    </div>
-                    </a>
+                        <div class="word-count-tc"><i>837 words</i></div>
+                        </div>
+                        </a>
 
-                    <a href="plastic.php">
-                    <div class="tc-item">
-                        <div class="chapter-name-tc">Plastic 1.0</div>
+                        <a href="kincentric.php">
+                        <div class="tc-item">
+                        <div class="chapter-name-tc">Kindred Relations</div>
                         <div class="dotted-line"></div>
-                        <div class="word-count-tc"><i>623 words</i></div>
-                    </div>
-                    </a>
+                        <div class="word-count-tc"><i>1,508 words</i></div>
+                        </div>
+                        </a>
 
-                    <a href="stellar.php">
-                    <div class="tc-item">
-                        <div class="chapter-name-tc">An Interstellar Story</div>
+                        <a href="nature.php">
+                        <div class="tc-item">
+                        <div class="chapter-name-tc">Nature's Fallacy</div>
                         <div class="dotted-line"></div>
-                        <div class="word-count-tc"><i>1,021 words</i></div>
-                    </div>
-                    </a>
+                        <div class="word-count-tc"><i>973 words</i></div>
+                        </div>
+                        </a>
 
-                    <a href="patterns.php">
-                    <div class="tc-item">
-                    <div class="chapter-name-tc">Patterns of Process</div>
-                    <div class="dotted-line"></div>
-                    <div class="word-count-tc"><i>837 words</i></div>
+                        <a href="earthen.php">
+                        <div class="tc-item">
+                            <div class="chapter-name-tc">The Earthen Ways</div>
+                            <div class="dotted-line"></div>
+                            <div class="word-count-tc"><i>784 words</i></div>
+                            
+                        </div>
+                        </a>
                     </div>
-                    </a>
-
-                    <a href="kincentric.php">
-                    <div class="tc-item">
-                    <div class="chapter-name-tc">Kindred Relations</div>
-                    <div class="dotted-line"></div>
-                    <div class="word-count-tc"><i>1,508 words</i></div>
-                    </div>
-                    </a>
-
-                    <a href="nature.php">
-                    <div class="tc-item">
-                    <div class="chapter-name-tc">Nature's Fallacy</div>
-                    <div class="dotted-line"></div>
-                    <div class="word-count-tc"><i>973 words</i></div>
-                    </div>
-                    </a>
-
-                    <a href="earthen.php">
-                    <div class="tc-item">
-                        <div class="chapter-name-tc">The Earthen Ways</div>
-                        <div class="dotted-line"></div>
-                        <div class="word-count-tc"><i>784 words</i></div>
-                        
-                    </div>
-                    </a>
 
 
                     <div class="tc-button-row">
