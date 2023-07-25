@@ -12,7 +12,7 @@
     "words": "",
     "relevant_chap": "Chap. 1 : Imagine",
     "relevant_chap_url": "imagine.html",
-    "image_url": "..\/icons\/glossaire.svg"
+    "image_url": "..\/icons\/glossary.svg"
   },
   
   {
@@ -27,14 +27,14 @@
     "words": "",
     "relevant_chap": "Chapitre 6 : L'illusion de la nature",
     "relevant_chap_url": "nature.html",
-    "image_url": "../icons/glossaire.svg"
+    "image_url": "../icons/glossary.svg"
   },
   
 
 
 {
   "postID": "27",
-  "title": "biosphère",
+  "title": "Biosphère",
   "keywords": "biosphère, biospheres",
   "chap_description": "L'écologie globale d'une planète (généralement celle de la Terre).",
   "url": "..\/fr\/glossaire.php#biosphere",
@@ -44,11 +44,11 @@
   "words": "",
   "relevant_chap": "Chap. 1 : Imagine",
   "relevant_chap_url": "imagine.html",
-  "image_url": "..\/icons\/glossaire.svg"
+  "image_url": "..\/icons\/glossary.svg"
 },
 {
   "postID": "28",
-  "title": "biodiversité",
+  "title": "Biodiversité",
   "keywords": "biodiversity, biosphère, biodiversité",
   "chap_description": "La variété et la pluralité des espèces dans un système biologique.",
   "url": "..\/fr\/glossaire.php#biodiversity",
@@ -58,7 +58,7 @@
   "words": "",
   "relevant_chap": "Chap. 12 : Les moyens du mycorhize",
   "relevant_chap_url": "nonpublie.html",
-  "image_url": "..\/icons\/glossaire.svg"
+  "image_url": "..\/icons\/glossary.svg"
 },
 {
   "postID": "29",
@@ -72,7 +72,7 @@
   "words": "",
   "relevant_chap": "Chap. 7 : Voies terrestres",
   "relevant_chap_url": "terrestres.html",
-  "image_url": "..\/icons\/glossaire.svg"
+  "image_url": "..\/icons\/glossary.svg"
 },
 {
   "postID": "30",
@@ -86,12 +86,12 @@
   "words": "",
   "relevant_chap": "Intro : Préambule",
   "relevant_chap_url": "preambule.html",
-  "image_url": "..\/icons\/glossaire.svg"
+  "image_url": "..\/icons\/glossary.svg"
 },
 
 {
     "postID": "31",
-    "title": "terre",
+    "title": "Terre",
     "keywords": "earth,terre,",
     "chap_description": "Sol, terre [en minuscules 'e']. Utilisé avec un article (c.-à-d. \"le\")",
     "url": "..\/fr\/glossaire.php#earth",
@@ -99,7 +99,7 @@
     "book": "Définition",
     "chapter": "Terme dans le glossaire",
     "words": "",
-    "image_url": "..\/icons\/glossaire.svg"
+    "image_url": "..\/icons\/glossary.svg"
   },
   {
     "postID": "32",
@@ -113,13 +113,13 @@
     "words": "",
     "relevant_chap": "Chap. 1 : Imagine",
     "relevant_chap_url": "imagine.html",
-    "image_url": "..\/icons\/glossaire.svg"
+    "image_url": "..\/icons\/glossary.svg"
   },
 
   
   {
     "postID": "33",
-    "title": "terrestre",
+    "title": "Terrestre",
     "keywords": "terrestre,",
     "chap_description": "Du caractère de la Terre. [En majuscules 'E']",
     "url": "..\/fr\/glossaire.php#earthen",
@@ -129,13 +129,13 @@
     "words": "",
     "relevant_chap": "Chap. 7 : Voies terrestres",
     "relevant_chap_url": "terrestres.html",
-    "image_url": "..\/icons\/glossaire.svg"
+    "image_url": "..\/icons\/glossary.svg"
   },
 
 
   {
     "postID": "35",
-    "title": "éthique terrestre",
+    "title": "Éthique terrestre",
     "keywords": "Earthen Ethics,d'une éthique terrestre",
     "chap_description": "Un cadre éthique pour discerner la couleur écologique d'un acte, d'un processus ou d'une entreprise en se basant sur l'exemple de la Terre.",
     "url": "..\/fr\/glossaire.php#earthenethics",
@@ -145,11 +145,11 @@
     "words": "",
     "relevant_chap": "Chap. 7 : Voies terrestres",
     "relevant_chap_url": "terrestres.html",
-    "image_url": "..\/icons\/glossaire.svg"
+    "image_url": "..\/icons\/glossary.svg"
   },
   {
     "postID": "36",
-    "title": "enterprise terrestre",
+    "title": "Enterprise terrestre",
     "keywords": "Earth Enterprise,enterprise terrestre",
     "chap_description": "Une entreprise qui s'efforce avant tout d'enrichir la biosphère en suivant l'exemple de la Terre.",
     "url": "..\/fr\/glossaire.php#earthenterprise",
@@ -159,7 +159,7 @@
     "words": "",
     "relevant_chap": "Chap. 9 : Le cycle du saumon",
     "relevant_chap_url": "energie.html",
-    "image_url": "..\/icons\/glossaire.svg"
+    "image_url": "..\/icons\/glossary.svg"
   },
   {
     "postID": "37",
@@ -173,7 +173,7 @@
     "words": "",
     "relevant_chap": "Chap. 1 : Imagine",
     "relevant_chap_url": "imagine.html",
-    "image_url": "..\/icons\/glossaire.svg"
+    "image_url": "..\/icons\/glossary.svg"
   },
   {
     "postID": "38",
@@ -187,11 +187,11 @@
     "words": "",
     "relevant_chap": "Chap. 12 : Conscience",
     "relevant_chap_url": "nonpublie.html",
-    "image_url": "..\/icons\/glossaire.svg"
+    "image_url": "..\/icons\/glossary.svg"
   },
   {
     "postID": "39",
-    "title": "écologie",
+    "title": "Écologie",
     "keywords": "ecology, ecologies, ecological",
     "chap_description": "Un système biologique ; une partie d'un biome.",
     "url": "../fr/glossaire.php#écologi",
@@ -199,11 +199,11 @@
     "book": "Définition",
     "chapter": "Terme dans le glossaire",
     "words": "",
-    "image_url": "../icons/glossaire.svg"
+    "image_url": "../icons/glossary.svg"
   },
   {
     "postID": "40",
-    "title": "verte/vert",
+    "title": "Verte/vert",
     "keywords": "green, greens, verte, vert",
     "chap_description": "Une contribution écologique : un processus qui suit l'exemple de la Terre en incarnant tous les principes terrestres.",
     "url": "../fr/glossaire.php#green",
@@ -213,7 +213,7 @@
     "words": "",
     "relevant_chap": "Intro : Préface",
     "relevant_chap_url": "preface.html",
-    "image_url": "../icons/glossaire.svg"
+    "image_url": "../icons/glossary.svg"
   },
   {
     "postID": "41",
@@ -227,7 +227,7 @@
     "words": "",
     "relevant_chap": "Chap. 1 : Imagine",
     "relevant_chap_url": "imagine.html",
-    "image_url": "../icons/glossaire.svg"
+    "image_url": "../icons/glossary.svg"
   },
   
 {
@@ -242,7 +242,7 @@
   "words": "",
   "relevant_chap": "Chap. 3 : Une histoire interstellaire",
   "relevant_chap_url": "interstellaire.html",
-  "image_url": "..\/icons\/glossaire.svg"
+  "image_url": "..\/icons\/glossary.svg"
 },
 {
   "postID": "42",
@@ -256,7 +256,7 @@
   "words": "",
   "relevant_chap": "Chapitre 8 : Cycles qui spirales",
   "relevant_chap_url": "spirales.html",
-  "image_url": "..\/icons\/glossaire.svg"
+  "image_url": "..\/icons\/glossary.svg"
 },
 {
   "postID": "43",
@@ -270,11 +270,11 @@
   "words": "",
   "relevant_chap": "Chap. 6 : Fausseté de la nature",
   "relevant_chap_url": "nature.html",
-  "image_url": "..\/icons\/glossaire.svg"
+  "image_url": "..\/icons\/glossary.svg"
 },
 {
   "postID": "44",
-  "title": "Cyclocentric",
+  "title": "Cyclocentrique",
   "keywords": "cyclocentric, cycle, kincentric, ecocentric, biocentric, synchony, William Henry Scott, Igorot Ayyew culture",
   "chap_description": "Du grec Κύκλος pour 'Cycle', nous introduisons le terme 'cyclocentrique' pour décrire les cultures kincentriques et leur propension à s'organiser autour de la synchronisation et de la célébration des cycles terrestres.",
   "url": "..\/fr\/glossaire.php#cyclocentric",
@@ -284,12 +284,12 @@
   "words": "",
   "relevant_chap": "Chapitre 5 : Relations apparentées",
   "relevant_chap_url": "kincentrique.html",
-  "image_url": "..\/icons\/glossaire.svg"
+  "image_url": "..\/icons\/glossary.svg"
 },
 
 {
   "postID": "45",
-  "title": "Relations Parentèles",
+  "title": "Relations parentèles",
   "keywords": "kincentric, humancentric, anthropocentric, plants, animals, Earth, ecosystems",
   "chap_description": "En opposition à l'humancentrisme ; une vision du monde dans laquelle les plantes, les humains, les animaux et tous les organismes terrestres partagent une ascendance et des origines, des cycles et des écosystèmes.",
   "url": "../fr/glossaire.php#kincentric",
@@ -299,7 +299,7 @@
   "words": "",
   "relevant_chap": "Chapitre 5 : Relations apparentées",
   "relevant_chap_url": "kincentrique.html",
-  "image_url": "../icons/glossaire.svg"
+  "image_url": "../icons/glossary.svg"
 },
 {
   "postID": "46",
@@ -313,7 +313,7 @@
   "words": "",
   "relevant_chap": "Chap. 3 : Une histoire interstellaire",
   "relevant_chap_url": "interstellaire.html",
-  "image_url": "../icons/glossaire.svg"
+  "image_url": "../icons/glossary.svg"
 },
 {
   "postID": "47",
@@ -327,7 +327,7 @@
   "words": "",
   "relevant_chap": "Chapitre 14 : Séquestration du plastique",
   "relevant_chap_url": "nonpublie.html",
-  "image_url": "../icons/glossaire.svg"
+  "image_url": "../icons/glossary.svg"
 },
 {
   "postID": "48",
@@ -341,7 +341,7 @@
   "words": "",
   "relevant_chap": "Chap. 3 : Une histoire interstellaire",
   "relevant_chap_url": "interstellaire.html",
-  "image_url": "../icons/glossaire.svg"
+  "image_url": "../icons/glossary.svg"
 },
 
 {
@@ -356,7 +356,7 @@
   "words": "",
   "relevant_chap": "Chap. 2 : Plastic 1.0",
   "relevant_chap_url": "plastique.html",
-  "image_url": "../icons/glossaire.svg"
+  "image_url": "../icons/glossary.svg"
 },
 
 {
@@ -371,11 +371,11 @@
   "words": "",
   "relevant_chap": "Chap. 13 : Plastic 2.0",
   "relevant_chap_url": "plastique2.html",
-  "image_url": "../icons/glossaire.svg"
+  "image_url": "../icons/glossary.svg"
 },
 {
   "postID": "51",
-  "title": "régénérateur, régénératrice",
+  "title": "Régénérateur, régénératrice",
   "keywords": "regenerative, greening process, subtractive impact, additive impact",
   "chap_description": "Un processus de verdissement dont l'impact soustractif est plus de deux fois supérieur à son impact additif.",
   "url": "../fr/glossaire.php#regen",
@@ -383,7 +383,7 @@
   "book": "Définition",
   "chapter": "Terme dans le glossaire",
   "words": "",
-  "image_url": "../icons/glossaire.svg"
+  "image_url": "../icons/glossary.svg"
 },
 
 
@@ -399,7 +399,7 @@
   "words": "",
   "relevant_chap": "Chapitre 9 : Le cycle du saumon",
   "relevant_chap_url": "energie.html",
-  "image_url": "../icons/glossaire.svg"
+  "image_url": "../icons/glossary.svg"
 },
 
 {
@@ -414,12 +414,12 @@
   "words": "13",
   "relevant_chap": "Chap. 9 : Le Cycle du Saumon",
   "relevant_chap_url":"energie.html",
-  "image_url": "..\/icons\/glossaire.svg"
+  "image_url": "..\/icons\/glossary.svg"
 },
 
 {
   "postID": "54",
-  "title": "for-Earth",
+  "title": "Pour-Terre / for-Earth",
   "keywords": "Enterprise Terre, for-Earth, à but non lucratif, à but lucratif, nfp, mcclurahan",
   "chap_description": "L'intention d'une entreprise est de s'efforcer avant tout d'enrichir la biosphère en suivant l'exemple de la Terre.",
   "url": "..\/fr\/glossary.php#earthenterprise",
@@ -429,6 +429,6 @@
   "words": "",
   "relevant_chap": "Chap. 9 : Le Cycle du Saumon",
   "relevant_chap_url":"energie.html",
-  "image_url": "..\/icons\/glossaire.svg"
+  "image_url": "..\/icons\/glossary.svg"
 }
 ]
