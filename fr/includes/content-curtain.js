@@ -40,14 +40,14 @@ class ContentCurtain extends HTMLElement {
                          <a href="preface.php">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Préface</div>
-                             <div class="word-count-tc"><i>1 220 mots</i></div>
+                             <div class="word-count-tc"><i>1,220 mots</i></div>
                          </div></a>
 
                          <a href="imaginez.php">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Imaginer</div>
                              <div class="ligne pointillée"></div>
-                             <div class="word-count-tc"><i>1 095 mots</i></div>
+                             <div class="word-count-tc"><i>1,095 mots</i></div>
                          </div>
                          </a>
 
@@ -63,7 +63,7 @@ class ContentCurtain extends HTMLElement {
                          <div class="tc-item">
                              <div class="chapter-name-tc">Une histoire interstellaire</div>
                              <div class="ligne pointillée"></div>
-                             <div class="word-count-tc"><i>1 021 mots</i></div>
+                             <div class="word-count-tc"><i>1,021 mots</i></div>
                          </div>
                          </a>
 
@@ -79,7 +79,7 @@ class ContentCurtain extends HTMLElement {
                          <div class="tc-item">
                          <div class="chapter-name-tc">Relations apparentées</div>
                          <div class="ligne pointillée"></div>
-                         <div class="word-count-tc"><i>1 508 mots</i></div>
+                         <div class="word-count-tc"><i>1,508 mots</i></div>
                          </div>
                          </a>
 
@@ -107,14 +107,14 @@ class ContentCurtain extends HTMLElement {
                          <a href="spirales.php">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Cycles en spirale</div>
-                             <div class="word-count-tc"><i>1 682 mots</i></div>
+                             <div class="word-count-tc"><i>1,682 mots</i></div>
                          </div></a>
 
                         
                          <a href="énergie.php">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Le tour du saumon</div>
-                             <div class="word-count-tc"><i>2 294 mots</i></div>
+                             <div class="word-count-tc"><i>2,294 mots</i></div>
                          </div></a>
 
                          <a href="unpublished.php">
@@ -257,17 +257,18 @@ class ContentCurtain extends HTMLElement {
                      </div>
 
 
+                  
                      <div class="tc-button-row">
-                         <a href="index.html" style="height : 24px; flex-grow : 1"><div id="tour-btn" class="action-btn" ><i style="background-image : url(../icons/home.svg); width:22px; height:22px;display : inline-block;background-size : 22px;margin-bottom : -3px;margin-right : 3px;"></ i></div></a>
+                     <a href="index.html" style="height: 24px; flex-grow: 1"><div id="tour-btn" class="action-btn" ><i style="background-image: url(../icons/home.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i></div></a>
 
-                         <div id="buy-btn" class="action-btn" onclick="closeContents(), guidéTour()" style="height : 24px;flex-grow : 1"><i style="background-image : url(../icons/tour.svg); width:22px; height:22px;display : inline-block;background-size : 22px;margin-bottom : -3px;margin-right : 5px;cursor:pointer;"></i> Visite guidée</div>
+                     <div id="buy-btn" class="action-btn" onclick="closeContents(), guidedTour()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> Tour</div>
 
-                         <div id="buy-btn" class="action-btn" onclick="openBuy()" style="height : 24px;flex-grow : 1"><i style="background-image : url(../icons/buy.svg); width:22px; height:22px;display : inline-block;background-size : 22px;margin-bottom : -3px;margin-right : 5px;cursor:pointer; "></i></div>
+                     <div id="buy-btn" class="action-btn" onclick="openBuy()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i></div>
 
-                         <div id="buy-btn" class="action-btn" onclick="openBookplate()" style="height : 22px;flex-grow : 1"><i style="background-image : url(../icons/about.svg); width:22px; height:22px;display : inline-block;background-size : 22px;margin-bottom : -3px;margin-right : 5px ;cursor:pointer ; "></i></div>
+                     <div id="buy-btn" class="action-btn" onclick="openBookplate()" style="height: 22px;flex-grow: 1"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i></div>
 
-                         <div id="buy-btn" class="action-btn" onclick="openEco()" style="height : 24px;flex-grow : 1"><i style="background-image : url(../icons/eco-green.svg); width:22px; height:22px;display : inline-block;background-size : 22px;margin-bottom : -3px;margin-right : 0px ;cursor:pointer; "></i></div>
-                    
+                     <div id="buy-btn" class="action-btn" onclick="openEco()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 0px; cursor:pointer;"></i></div>
+                      
                        
                          </div>
 
