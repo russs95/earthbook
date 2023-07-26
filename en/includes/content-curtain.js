@@ -120,7 +120,7 @@ class ContentCurtain extends HTMLElement {
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Manner of the Mollusk</div>
                             <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>Unpublished</i></div>
+                            <div class="word-count-tc"><i>unpublished</i></div>
                         </div>
                         </a>
 
@@ -128,7 +128,7 @@ class ContentCurtain extends HTMLElement {
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Polyp's Pattern</div>
                             <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>Unpublished</i></div>
+                            <div class="word-count-tc"><i>unpublished</i></div>
                         </div>
                         </a>
 
@@ -136,7 +136,7 @@ class ContentCurtain extends HTMLElement {
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Means of the Myccorhyzal</div>
                             <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>Unpublished</i></div>
+                            <div class="word-count-tc"><i>nnpublished</i></div>
                         </div>
                         </a>
 
@@ -159,7 +159,7 @@ class ContentCurtain extends HTMLElement {
                         <div class="tc-item">
                             <div class="chapter-name-tc">Petro-Capital Transition</div>
                             <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>Unpublished</i></div>
+                            <div class="word-count-tc"><i>unpublished</i></div>
                         </div>
                         </a>
 
@@ -167,7 +167,7 @@ class ContentCurtain extends HTMLElement {
                         <div class="tc-item">
                             <div class="chapter-name-tc">Ad Pax Ayyew</div>
                             <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>Unpublished</i></div>
+                            <div class="word-count-tc"><i>unpublished</i></div>
                         </div>
                         </a>
 
@@ -175,7 +175,7 @@ class ContentCurtain extends HTMLElement {
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Myccorhyzal's Means</div>
                             <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>Unpublished</i></div>
+                            <div class="word-count-tc"><i>unpublished</i></div>
                         </div>
                         </a>
 
@@ -186,13 +186,13 @@ class ContentCurtain extends HTMLElement {
                         <a href="summaries.php">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Summaries</div>
-                            <div class="word-count-tc"><i>501</i></div>
+                            <div class="word-count-tc"><i>501 words</i></div>
                         </div></a>
 
                         <a href="dedication.php">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Dedication</div>
-                            <div class="word-count-tc"><i>26</i></div>
+                            <div class="word-count-tc"><i>26 words</i></div>
                         </div></a>
 
 
@@ -200,13 +200,13 @@ class ContentCurtain extends HTMLElement {
                         <div class="tc-item">
                             <div class="chapter-name-tc">For-Earth Declaration</div>
                             <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>54</i></div>
+                            <div class="word-count-tc"><i>54 words</i></div>
                         </div>
                         </a>
 
                         <a href="acknowledgements.php">
                         <div class="tc-item">
-                            <div class="chapter-name-tc">Acknowledgements</div>
+                            <div class="chapter-name-tc">Grattitude</div>
                             <div class="dotted-line"></div>
                             <div class="word-count-tc"><i>541 words</i></div>
                         </div>
@@ -333,6 +333,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     // Set the selected button to red
-    document.getElementById(`button-${content}`).style.color = "red";
+    document.getElementById(`button-${content}`).style.color = "var(--text-color)";
   }
   
