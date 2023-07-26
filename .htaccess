@@ -101,6 +101,18 @@ Redirect /matter.html /en/unpublished.php
 Redirect /matter.php /en/unpublished.php
 Redirect /mollusc /en/unpublished.php
 
+Redirect /diversity /en/unpublished.php
+Redirect /diversification /en/unpublished.php
+Redirect /diversification.html /en/unpublished.php
+Redirect /diversification.php /en/unpublished.php
+Redirect /polyp /en/unpublished.php
+
+Redirect /aware /en/unpublished.php
+Redirect /awaring /en/unpublished.php
+Redirect /awaring.html /en/unpublished.php
+Redirect /awaring.php /en/unpublished.php
+Redirect /myco /en/unpublished.php
+
 Redirect /books/french.pdf https://files.earthen.io/s/ZnQ49QC2FimmKb4
 Redirect /books/english.pdf https://files.earthen.io/s/ZjS9TgWk5Tr7b4q
 

@@ -411,6 +411,21 @@
 },
 
 {
+  "postID": "54",
+  "title": "Cylical Design",
+  "keywords": "cycles, spiral, circular, regenerative,",
+  "chap_description": "The Earthen principle of crafting indefinite cycles that ever enriching, both socially and ecologically.",
+  "url": "..\/fr\/glossary.php#cyclical",
+  "language": "English",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "13",
+  "relevant_chap": "Chap. 9: The Cycle of the Salmon",
+  "relevant_chap_url":"energy.html",
+  "image_url": "..\/icons\/glossary.svg"
+},
+
+{
   "postID": "53",
   "title": "for-Earth",
   "keywords": "Earth Enterprise, for-Earth, not-for-profit, for-profit, nfp, mcclurahan",
