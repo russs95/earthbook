@@ -3004,7 +3004,7 @@ a:active {
       padding-top: 6px;
 padding-bottom: 6px;
 font-size: 1.1em;
-margin: 8px auto;
+margin: 8px 5px;
 
 
   }
@@ -3301,6 +3301,11 @@ border-bottom-color: var(--fainter-border-color);
     padding: 15px 25px 15px 35px;
     margin:  auto 0px auto 0px;
     }
+
+  #appx-book-one .chapter-name-tc {
+    padding: 10px 25px 10px 35px;
+
+  }
   }
 
 
