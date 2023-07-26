@@ -103,8 +103,22 @@ class ContentCurtain extends HTMLElement {
 
 
 
-                     <div id="appx-book-two" style="affichage : aucun ;">
-                         <a href="spirales.php">
+                     <div id="appx-book-two" style="display:none;">
+                         
+                     
+                     <a href="epigraph-2.php">
+                     <div class="tc-item">
+                         <div class="chapter-name-tc">Epigraph II</div>
+                         <div class="word-count-tc"><i>45 mots</i></div>
+                     </div></a>
+                     
+                     <a href="spirales.php">
+                     <div class="tc-item">
+                         <div class="chapter-name-tc">Cycles en spirale</div>
+                         <div class="word-count-tc"><i>1,682 mots</i></div>
+                     </div></a>
+                     
+                     <a href="spirales.php">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Cycles en spirale</div>
                              <div class="word-count-tc"><i>1,682 mots</i></div>
@@ -143,8 +157,14 @@ class ContentCurtain extends HTMLElement {
 
                      </div>
 
-                     <div id="appx-book-three" style="affichage : aucun ;">
-                         <a href="unpublished.php">
+                     <div id="appx-book-three" style="display:none;">
+                     <a href="epigraph-3.php">
+                     <div class="tc-item">
+                         <div class="chapter-name-tc">Epigraph III</div>
+                         <div class="word-count-tc"><i>56</i></div>
+                     </div></a>
+                     
+                     <a href="unpublished.php">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Plastique 2.0</div>
                              <div class="word-count-tc"><i>non publié</i></div>
@@ -182,7 +202,7 @@ class ContentCurtain extends HTMLElement {
 
                      </div>
 
-                     <div id="appx-book-appx" style="affichage : aucun ;">
+                     <div id="appx-book-appx" style="display:none ;">
                         
                          <a href="summaries.php">
                          <div class="tc-item">

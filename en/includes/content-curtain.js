@@ -104,6 +104,14 @@ class ContentCurtain extends HTMLElement {
 
 
                     <div id="appx-book-two" style="display: none;">
+
+                    <a href="epigraph-2.php">
+                     <div class="tc-item">
+                         <div class="chapter-name-tc">Epigraph II</div>
+                         <div class="word-count-tc"><i>51 words</i></div>
+                     </div></a>
+
+
                         <a href="spirals.php">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Cycles that Spiral</div>
@@ -143,6 +151,13 @@ class ContentCurtain extends HTMLElement {
                     </div>
 
                     <div id="appx-book-three" style="display: none;">
+
+                    <a href="epigraph-3.php">
+                     <div class="tc-item">
+                         <div class="chapter-name-tc">Epigraph III</div>
+                         <div class="word-count-tc"><i>58 words</i></div>
+                     </div></a>
+
                         <a href="unpublished.php">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Plastic 2.0</div>
