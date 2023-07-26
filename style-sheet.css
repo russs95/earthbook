@@ -3304,6 +3304,7 @@ border-bottom-color: var(--fainter-border-color);
 
   #appx-book-one .chapter-name-tc {
     padding: 0px 25px 0px 35px;
+    font-size: 1.2em;
 
   }
   }
