@@ -110,7 +110,7 @@ class ContentCurtain extends HTMLElement {
                             <div class="word-count-tc"><i>1,682 words</i></div>
                         </div></a>
 
-                        <a href="preface.php">
+                        <a href="energy.php">
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Salmon's Spin</div>
                             <div class="word-count-tc"><i>2,294 words</i></div>
