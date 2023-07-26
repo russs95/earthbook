@@ -21,10 +21,10 @@ class ContentCurtain extends HTMLElement {
                     <div class="contents-title-box">
   <div class="contents-title">Books & Contents</div>
   <div class="contents-books123">
-    <div class="tc-a-book" id="button-one" style="border-right:1px gray solid;">One</div>
-    <div class="tc-a-book" id="button-two" style="border-right:1px gray solid; color:grey;">Two</div>
-    <div class="tc-a-book" id="button-three" style="border-right:1px gray solid; color:grey;">Three</div>
-    <div class="tc-a-book" id="button-appx" style="color:grey;">Appx</div>
+    <div class="tc-a-book content-button" id="button-one" style="border-right:1px gray solid;">One</div>
+    <div class="tc-a-book content-button" id="button-two" style="border-right:1px gray solid; color:grey;">Two</div>
+    <div class="tc-a-book content-button" id="button-three" style="border-right:1px gray solid; color:grey;">Three</div>
+    <div class="tc-a-book content-button" id="button-appx" style="color:grey;">Appx</div>
   </div>
 </div>
 
@@ -261,7 +261,7 @@ class ContentCurtain extends HTMLElement {
 
                         <div id="buy-btn" class="action-btn" onclick="closeContents(), guidedTour()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> Tour</div>
 
-                        <div id="buy-btn" class="action-btn" onclick="openBuy()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> Buy</div>
+                        <div id="buy-btn" class="action-btn" onclick="openBuy()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i></div>
 
                         <div id="buy-btn" class="action-btn" onclick="openBookplate()" style="height: 22px;flex-grow: 1"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i></div>
 
@@ -291,36 +291,48 @@ class ContentCurtain extends HTMLElement {
 
 customElements.define('content-curtain', ContentCurtain);
 
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
-  // Show the initial content on page load
-  showContent("one");
-
-  // Add click event listeners to the buttons
-  document.getElementById("button-one").addEventListener("click", function() {
+    // Show the initial content on page load
     showContent("one");
+  
+    // Add click event listeners to the buttons
+    document.getElementById("button-one").addEventListener("click", function() {
+      showContent("one");
+    });
+  
+    document.getElementById("button-two").addEventListener("click", function() {
+      showContent("two");
+    });
+  
+    document.getElementById("button-three").addEventListener("click", function() {
+      showContent("three");
+    });
+  
+    document.getElementById("button-appx").addEventListener("click", function() {
+      showContent("appx");
+    });
   });
-
-  document.getElementById("button-two").addEventListener("click", function() {
-    showContent("two");
-  });
-
-  document.getElementById("button-three").addEventListener("click", function() {
-    showContent("three");
-  });
-
-  document.getElementById("button-appx").addEventListener("click", function() {
-    showContent("appx");
-  });
-});
-
-function showContent(content) {
-  // Hide all content divs
-  document.getElementById("appx-book-one").style.display = "none";
-  document.getElementById("appx-book-two").style.display = "none";
-  document.getElementById("appx-book-three").style.display = "none";
-  document.getElementById("appx-book-appx").style.display = "none";
-
-  // Show the selected content div
-  document.getElementById(`appx-book-${content}`).style.display = "block";
-}
-
+  
+  function showContent(content) {
+    // Hide all content divs
+    document.getElementById("appx-book-one").style.display = "none";
+    document.getElementById("appx-book-two").style.display = "none";
+    document.getElementById("appx-book-three").style.display = "none";
+    document.getElementById("appx-book-appx").style.display = "none";
+  
+    // Show the selected content div
+    document.getElementById(`appx-book-${content}`).style.display = "block";
+  
+    // Change the color of the corresponding word to red
+    const buttons = document.getElementsByClassName("content-button");
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].style.color = "grey"; // Set all buttons to gray by default
+    }
+  
+    // Set the selected button to red
+    document.getElementById(`button-${content}`).style.color = "red";
+  }
+  
