@@ -1,18 +1,216 @@
 <!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<title>Preamble | Tractatus Ayyew - An Earthbook</title>
+<meta charset="UTF-8"> 
 
-<!--EARTHBOOK - An open source, Earth & Human Friendly Book format
+
+<!--
+o               .        ___- -___                    .                   
+       .              .--\        --.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,--'     / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___,--'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~--___ ; ___--~       
+                 .          -_-         .              -JT
+
+
+EARTHBOOK - An open source, Earth & Human Friendly Book format
 Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+ 
 
-Chapter Template Version 1.1
-Created by Russell Maier for the Tractatus Ayyew: Earthen Ethics.
+Landing page - version 1.2
+Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
+First EarthBook, the Tractatus Ayyew, published 22.12.22.
 
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 All files, unless otherwise stated, are released under the GNU General Public
 License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
 See full project repository at: https://github.com/russs95/earthbook
+For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
 */
 -->
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/en/preamble.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/preamble.html" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/preamble.html" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/preamble.html" hreflang="fr" >
+<!--
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics, preamble, intro, "> 
+<meta name="description" content="An introduction to the Earthbook edition of the Tractatus Ayyew">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-7-23T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="An Earthen Ethic - Tracatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="Tractatus Ayyew - An Earthen Ethics">
+<meta property="og:description"   content="By Banayan Angway & Russell Maier  | Earthbook Edition.">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
+<meta property="og:locale" content="en_EN" >
+<meta property="og:url" content="https://book.earthen.io/en">
+
+<script>
+      // Declare the global variables
+    var chapNo = "Introduction";
+    var chapName = "";
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+</script>
+
+ <!--FONTS
+starts loading the fonts-->
+
+<link rel="preconnect" href="../fonts/">
+<link rel="preconnect" href="../fonts/" crossorigin> 
+
+	
+<!-- PRELOADS-->
+<link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
+<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
+<link rel="preload" as="image" href="../icons/reader.svg">
+<link rel="preload" as="image" href="../icons/pdf.svg">
+<link rel="preload" as="image" href="../icons/buy.svg">
+<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
+<link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
+<link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
+
+<!--<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
+<link rel="preload" as="font" href="../fonts/CooperLightBT.ttf">
+<link rel="preload" as="font" href="../fonts/CooperLtBTLightItalic.ttf">
+<link rel="preload" as="font" href="../fonts/CooperMediumBT.ttf">
+<link rel="preload" as="font" href="../fonts/Mulish-Light.ttf"
+<link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
+<link rel="preload" as="image" href="../svgs/up-arrow-light.svg">> 
+-->
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+ 
+ <!-- INCLUDES
+ Main Scripts-->   
+
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../clip/dist/clipboard.min.js"></script>
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<script src="includes/footer-chapter.js" defer></script>
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+ /*
+ @font-face {
+  font-family: "MulishMedium";
+  src: url("fonts/Mulish-Medium.ttf");
+  font-display: swap;
+ }*/
+
+</style>
+</HEAD>
+
+
+
+<BODY class="accessibility-plugin-ac">
+
+<!--
+<!DOCTYPE html>
+
+OLD HEADER
 
 <HTML lang="en">
 
@@ -31,14 +229,14 @@ See full project repository at: https://github.com/russs95/earthbook
 <link rel="canonical" href="https://book.earthen.io/en/preamble.html"> 
 <link rel="alternate" href="https://book.earthen.io/en/preamble.html" hreflang="en">
 <link rel="alternate" href="http://book.earthen.io/en/preamble.html" hreflang="x-default">
-<!--<link rel="alternate" href="https://book.earthen.io/fr/<?php echo ($name); ;?>" hreflang="fr">
+<link rel="alternate" href="https://book.earthen.io/fr/<?php echo ($name); ;?>" hreflang="fr">
 <link rel="alternate" href="https://book.earthen.io/es/<?php echo ($name); ;?>" hreflang="es">
-<link rel="alternate" href="https://book.earthen.io/id/<?php echo ($name); ;?>" hreflang="id">-->
+<link rel="alternate" href="https://book.earthen.io/id/<?php echo ($name); ;?>" hreflang="id">
 
 
 
-<!--BOOK META TAGS
-These tags will be consistent for the whole book-->
+//-BOOK META TAGS
+//These tags will be consistent for the whole book
 
 
 <title>Preamble | Tractatus Ayyew - An Earthbook</title>
@@ -52,7 +250,7 @@ These tags will be consistent for the whole book-->
 <meta name="twitter:label1" content="Est. reading time">
 <meta name="twitter:data1" content="3 minutes"> 
 	
-<!-- Facebook Open Graph Tags for social sharing-->
+//Facebook Open Graph Tags for social sharing
 <meta property="og:description"   content="An introduction to the Earthbook edition of the Tractatus Ayyew">
 
 
@@ -78,22 +276,22 @@ These tags will be consistent for the whole book-->
 
 <meta property="og:url"           content="https://book.earthen.io/en/preamble">
 <meta property="og:title"         content="Preamble | Tractatus Ayyew - An Earthbook">
- <!-- Fonts
-The requisite typography for the page-->
+//Fonts
+The requisite typography for the page
 
 <link rel="preconnect" href="../fonts/">
 <link rel="preconnect" href="../fonts/" crossorigin> 
 
 
-<!-- Mulish loads first for first page view
+//Mulish loads first for first page view
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
--->
+//<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'"> 
+
 	
- <!-- Style Sheets   
-All the css needed for this page-->
+//Style Sheets   
+//All the css needed for this page
 
 <style>
 
@@ -140,7 +338,7 @@ All the css needed for this page-->
 <link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
 <link rel="preload" as="image" href="../svgs/up-arrow-light.svg">
 
-<!--<link rel="stylesheet" href="../light.css?v1.93" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">-->
+//<link rel="stylesheet" href="../light.css?v1.93" media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)">
 <link rel="stylesheet" href="../light.css?v1.93" media="(prefers-color-scheme: light)">
 
  <link rel="stylesheet" href="../dark.css?v1.93" media="(prefers-color-scheme: dark)">
@@ -148,31 +346,32 @@ All the css needed for this page-->
 
 
 
- <!-- INCLUDES
- Main Scripts-->   
+ //INCLUDES
+ //Main Scripts 
 
  <script src="../content-javascript.js?v=2.2" defer></script>
  <script src="../universal-javascript.js" defer></script>
  <script src="../clip/dist/clipboard.min.js" defer></script>
- <!--<script src="../accessibility.js" defer></script>-->
+<script src="../accessibility.js" defer></script>
+
  <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
  
 
 
- <!--Page Components
-All the page components required to build this page-->
+//Page Components
+All the page components required to build this page
 
- <!--1--><script src="includes/header-component.js" async></script>
- <!--2--><script src="includes/settings-curtain.js" defer></script>
- <!--3--><script src="includes/content-curtain.js" defer></script>
- <!--4--><script src="includes/share-curtain.js" defer></script>
- <!--5--><script src="includes/buy-curtain.js"  defer></script>
- <!--6--><script src="includes/bookplate-curtain.js" defer></script>
- <!--7--><script src="includes/earthbook-curtain.js" defer></script>
-  <!--8--><script src="includes/tour-curtain.js" defer></script>
-  <!--9--><script src="includes/search-curtain.js" defer></script>
+ --1--<script src="includes/header-component.js" async></script>
+ --2--<script src="includes/settings-curtain.js" defer></script>
+ --3--<script src="includes/content-curtain.js" defer></script>
+ !--4--<script src="includes/share-curtain.js" defer></script>
+ !--5--<script src="includes/buy-curtain.js"  defer></script>
+ !--6--<script src="includes/bookplate-curtain.js" defer></script>
+ !--7--<script src="includes/earthbook-curtain.js" defer></script>
+  !--8--<script src="includes/tour-curtain.js" defer></script>
+  !--9--<script src="includes/search-curtain.js" defer></script>
 
- <!--8b DELEATABLE??<script src="includes/footer-chapter.js" defer></script>
+ //b DELEATABLE??<script src="includes/footer-chapter.js" defer></script>
 
 <script>
 window.onload = function() {
@@ -184,12 +383,8 @@ window.onload = function() {
   });
 };
 </script>
--->
-
- 
 
 
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G5VT56C7XD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -220,7 +415,7 @@ window.onload = function() {
 
 
 </HEAD>
- <BODY>
+ <BODY>-->
 
 
 
