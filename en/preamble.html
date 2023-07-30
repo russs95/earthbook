@@ -100,16 +100,17 @@ starts loading the fonts-->
 <link rel="preconnect" href="../fonts/">
 <link rel="preconnect" href="../fonts/" crossorigin> 
 
-	
 <!-- PRELOADS-->
-<link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
-<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
-<link rel="preload" as="image" href="../icons/reader.svg">
-<link rel="preload" as="image" href="../icons/pdf.svg">
+<link rel="preload" as="image" href="../svgs/book.earthen.io/svgs/00-preamble-dark.svg">
+<link rel="preload" as="image" href="../svgs/00-preamble-white.svg">
+<link rel="preload" as="image" href="../svgs/up-arrow-light.svg"> 
+<link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
 <link rel="preload" as="image" href="../icons/buy.svg">
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
+
+
 
 <!--<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
 <link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
@@ -521,7 +522,7 @@ window.onload = function() {
 
 
 <!--ECO CURTAIN-->
-
+<eco-curtain></eco-curtain>
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
 
@@ -544,28 +545,6 @@ window.onload = function() {
 <buy-curtain></buy-curtain>
 
 
-<div id="eco-curtain2" class="eco-overlay">
-  <div class="overlay-content-eco">         
-        
-    <div class="eco-header">The Earthbook format is hand-coded from the ground up to be green.</div>
-
-    <div class="eco-text">
-    In an Earthbook's writing & publishing, its carbon, plastic and biodiversity impacts are tracked, accounted and disclosed.  See this Earthbook's full <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">Regenerativity Report.</a>
-    </div>
-
-    <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-    <div><img src="../banners/forearth-dark-350px.png" alt="Banner declaring our For-Earth intention" style="width:300px;"></div></a>
-
-     <div id="wcb" class="carbonbadge wcb-d"></div>
-    <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2.1" defer></script>
-
-    <div class="eco-medium">The Medium is the Message.</div>
-
-      <button type="button" id="bottom-close-button2" style="cursor:pointer" onclick="closeEco()" aria-label="Close Modal">
-              <img src="../svgs/bottom-x.svg" alt="Close button 2">
-      </button>
-  </div>
-</div>
 
   <!--END ECO CURTAIN-->
   
