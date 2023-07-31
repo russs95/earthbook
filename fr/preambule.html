@@ -187,6 +187,11 @@ All the page components required to build this page-->
   src: url("fonts/Mulish-Medium.ttf");
   font-display: swap;
  }*/
+ 
+ .highlight {
+  background-color: green;
+  color: black;
+}
 
 </style>
 </HEAD>
@@ -453,26 +458,14 @@ All the page components required to build this page-->
   </div>
   </div>
    <script>
-  // Function to count characters in the entire HTML document
-  function countCharacters() {
-    const allTextElements = document.querySelectorAll('*');
-    let charCount = 0;
-
-    allTextElements.forEach(element => {
-      element.childNodes.forEach(child => {
-        if (child.nodeType === Node.TEXT_NODE) {
-          charCount += child.textContent.length;
-        }
-      });
-    });
-
-    return charCount;
+   // Function to count characters in the entire HTML document
+   function countCharacters() {
+    //...
   }
 
   // Function to display character count in an alert once the page has loaded
   function showAlertWithCharacterCount() {
-    const totalCharacters = countCharacters();
-    alert(`Total Characters in the HTML document: ${totalCharacters}`);
+    //...
   }
 
   // Function to store selected text and its positions in the local storage
@@ -485,34 +478,48 @@ All the page components required to build this page-->
       localStorage.setItem('startOffset', range.startOffset);
       localStorage.setItem('endOffset', range.endOffset);
       localStorage.setItem('storedText-1', selection.toString());
+      
+      // Clear the selection
+      selection.removeAllRanges();
+      
+      // Create a new range to wrap in a highlight span
+      const newRange = document.createRange();
+      newRange.setStart(range.startContainer, range.startOffset);
+      newRange.setEnd(range.endContainer, range.endOffset);
+      
+      // Create a new span, add the highlight class, and replace the selected text with this span
+      const newSpan = document.createElement('span');
+      newSpan.className = 'highlight';
+      newSpan.textContent = selection.toString();
+      newRange.deleteContents();
+      newRange.insertNode(newSpan);
     }
   }
 
-  // Function to recreate selection from stored data
-  function recreateSelection() {
-    const startContainer = document.getElementById(localStorage.getItem('startContainer'));
-    const endContainer = document.getElementById(localStorage.getItem('endContainer'));
-    const startOffset = parseInt(localStorage.getItem('startOffset'));
-    const endOffset = parseInt(localStorage.getItem('endOffset'));
+  // Function to recreate selection from stored data and apply the highlight
+  function recreateSelectionAndHighlight() {
+    //...
     const storedText = localStorage.getItem('storedText-1');
 
     if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
+      // Create a new range
       const range = document.createRange();
       range.setStart(startContainer.firstChild, startOffset);
       range.setEnd(endContainer.firstChild, endOffset);
 
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-
-      alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
+      // Create a new span, add the highlight class, and replace the selected text with this span
+      const newSpan = document.createElement('span');
+      newSpan.className = 'highlight';
+      newSpan.textContent = storedText;
+      range.deleteContents();
+      range.insertNode(newSpan);
     }
   }
 
-  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
+  // Attach the showAlertWithCharacterCount and recreateSelectionAndHighlight functions to the window load event
   window.addEventListener('load', function () {
     showAlertWithCharacterCount();
-    recreateSelection();
+    recreateSelectionAndHighlight();
 
     // Attach the storeSelectedText function to the "mouseup" event
     document.addEventListener("mouseup", storeSelectedText);
