@@ -467,38 +467,40 @@ All the page components required to build this page-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/rangy/1.3.0/rangy-serializer.js"></script>
   
   <script>
-    
-    rangy.init();
-
-let highlighter = rangy.createHighlighter();
-
-let cssClassApplierModule = rangy.modules.CssClassApplier;
-
-// Create a CSS class applier and as part of a highlighter
-if (rangy.supported && cssClassApplierModule && cssClassApplierModule.supported) {
-    let cssApplier = rangy.createCssClassApplier("highlight", {
-        normalize: true
-    });
-
-    highlighter.addClassApplier(cssApplier);
-}
-
-document.addEventListener("mouseup", function() {
-    highlighter.highlightSelection("highlight");
-    let serializedHighlights = highlighter.serialize();
-    localStorage.setItem("highlights", serializedHighlights);
-});
-
-window.onload = function() {
-    let savedHighlights = localStorage.getItem("highlights");
-    if (savedHighlights) {
-        highlighter.deserialize(savedHighlights);
-    }
-};
-
-  </script>
+      // Initialize Rangy library
+      rangy.init();
   
+      // Create a highlighter
+      let highlighter = rangy.createHighlighter();
+  
+      // Check if the Rangy modules are supported
+      let cssClassApplierModule = rangy.modules.CssClassApplier;
+  
+      // If supported, create a CSS class applier and add it to the highlighter
+      if (rangy.supported && cssClassApplierModule && cssClassApplierModule.supported) {
+          let cssApplier = rangy.createCssClassApplier("highlight", {
+              normalize: true
+          });
+          highlighter.addClassApplier(cssApplier);
+      }
+  
+      // Add event listener to mouseup event to create highlights
+      document.addEventListener("mouseup", function() {
+          highlighter.highlightSelection("highlight");
+          let serializedHighlights = highlighter.serialize();
+          localStorage.setItem("highlights", serializedHighlights);
+      });
+  
+      // On page load, deserialize any saved highlights
+      window.onload = function() {
+          let savedHighlights = localStorage.getItem("highlights");
+          if (savedHighlights) {
+              highlighter.deserialize(savedHighlights);
+          }
+      };
+  </script>
   </BODY>
+  
   </HTML>
   
   <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
