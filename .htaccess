@@ -117,6 +117,12 @@ Redirect /books/french.pdf https://files.earthen.io/s/ZnQ49QC2FimmKb4
 Redirect /books/english.pdf https://files.earthen.io/s/ZjS9TgWk5Tr7b4q
 
 
+Redirect /preambule /fr/preambule.html
+Redirect /fr/preambule /fr/preambule.html
+Redirect /fr/preface /fr/preambule.html
+Redirect /fr/preface.html /fr/preambule.html
+Redirect /fr/preface.php /fr/preambule.html
+
 
 
 
