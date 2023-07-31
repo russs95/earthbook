@@ -478,14 +478,19 @@ All the page components required to build this page-->
       alert(`Selected Characters: ${selectedText.length}`);
     }
   
-    // Attach the showAlertWithCharacterCount function to the window.onload event
-    window.onload = function () {
+    // Attach the showAlertWithCharacterCount function to the window load event
+    window.addEventListener('load', function () {
       showAlertWithCharacterCount();
   
       // Attach the countSelectedCharacters function to the "mouseup" event
       document.addEventListener("mouseup", countSelectedCharacters);
-    };
+    });
   </script>
+  <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
+  
+  </BODY>
+  </HTML>
+  
   <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
   
   </BODY>
