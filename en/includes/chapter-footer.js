@@ -9,7 +9,7 @@ class ChapterFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 
-  HELLO
+  
     <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
 
     <div class="footer-function" >
