@@ -40,6 +40,71 @@ function scrollFunction() {
 }
  
 
+function openFootnotes() {
+  var w = document.getElementById("footer-reveal-container");
+  var x = document.getElementById("footnotes-reveal");
+  var y = document.getElementById("footnotes-arrow");
+  var z = document.getElementById("footnotes-concealer");
+
+  
+
+
+  if (x.style.height === "200px") {
+    w.style.height = "100%";
+    x.style.height = "100%";
+    x.style.marginBottom = "230px";
+    y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
+    y.style.backgroundSize = "contain";
+    z.style.opacity = "0";
+    
+
+ 
+  
+  } else {
+    w.style.height = "10%";
+    x.style.height = "200px";
+    x.style.marginBottom = "50px";
+    y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
+    y.style.backgroundSize = "contain";
+    z.style.opacity = "1";
+}
+}
+
+
+function openCode() {
+  var x = document.getElementById("footer-function-reveal-code");
+  var y = document.getElementById("code-down-arrow");
+  if (x.style.opacity === "0") {
+    x.style.opacity = "1";
+    x.style.height = "130px";
+    y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
+    y.style.backgroundSize = "contain";
+  
+  } else {
+    x.style.opacity = "0";
+    x.style.height = "0px";
+    y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
+    y.style.backgroundSize = "contain";
+}
+}
+
+
+
+function openFooter2() {
+  var x = document.getElementById("footer-chapter");
+  var z = document.getElementById("footer-arrow");
+  if (x.style.marginBottom === "0px") {
+    x.style.marginBottom = "145px";
+   z.style.background = "url(../icons/up-arrow.svg) no-repeat center";
+  z.style.backgroundSize = "contain";
+ 
+  } else {
+    x.style.marginBottom = "0px";
+  z.style.background = "url(../icons/down-arrow.svg) no-repeat center";
+  z.style.backgroundSize = "contain";
+
+}
+}
 
 
   function closeWelcomeNotice() {
