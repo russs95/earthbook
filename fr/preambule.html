@@ -92,6 +92,15 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
         });
       });
     }
+
+
+       // Attach the showAlertWithCharacterCount function to the window load event
+       window.addEventListener('load', function () {
+      showAlertWithCharacterCount();
+  
+      // Attach the countSelectedCharacters function to the "mouseup" event
+      document.addEventListener("mouseup", countSelectedCharacters);
+    });
 </script>
 
  <!--FONTS
@@ -478,13 +487,7 @@ All the page components required to build this page-->
       alert(`Selected Characters: ${selectedText.length}`);
     }
   
-    // Attach the showAlertWithCharacterCount function to the window load event
-    window.addEventListener('load', function () {
-      showAlertWithCharacterCount();
-  
-      // Attach the countSelectedCharacters function to the "mouseup" event
-      document.addEventListener("mouseup", countSelectedCharacters);
-    });
+ 
   </script>
   <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
   
