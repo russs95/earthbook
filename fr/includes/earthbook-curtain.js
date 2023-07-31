@@ -5,70 +5,72 @@ class Earthbook extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <div id="bottom-earthbook" class="overlay-earthbook">
+
+    
+  <div id="bottom-earthbook" class="overlay-earthbook">
     
 
 
-    <div class="overlay-content-earthbook">
-          <div>
-              <h1>Qu'est-ce qu'un Earthbook ?</h1>
-              <!--<h3>Les Earthbooks sont destinés aux lecteurs, aux écrivains et à la Terre. Cliquez pour en savoir plus sur les principes directeurs :</h3>-->
-              <!--L'écriture et la publication d'Earthbook incarnent des principes de régénération.-->
-          </div>
-
-    
-          <div class="virtue-box-box">
-            <div id="virtue-box-mobile">
-
-              <div class="virtue"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Le code EarthBook est entièrement open-source" alt=" Le code EarthBook est entièrement open-source" style="cursor:pointer" onclick="openOS()"><div id="OS" class="virtue-desc">Le code source EarthBook est ouvert à la révision, à l'amélioration et au forking <a href="https://github.com/russs95/earthbook" aria-label="Cliquez pour accéder à notre référentiel Github" target="_blank">sur Github</a>. Cela signifie que la publication d'un Earthbook est ouverte à tous, où qu'ils se trouvent.</div>
-              </div>
-
-              <div class="virtue"><img src="../svgs/icon-biodiversity.svg" width="100%" height="100%" title="Soutien, comptabilité et suivi de la biodiversité" alt="Soutien , Accounting & Tracking Biodiveristy" style="cursor:pointer" onclick="openBio()"><div id="bio" class="virtue-desc">Au cours de la rédaction et de la publication de ce livre, les espèces soutenues par le l'espace physique de l'entreprise était suivi et comptabilisé. <a href="https://russs.net/forest" target="_blank" aria-label="Accéder à la liste des espèces prises en charge par l'auteur">Voir la liste complète des espèces par l'éditeur.</a></ div>
-              </div>
-
-              <div class="virtue"><img src="../svgs/icon-ecoaccounting.svg" width="100%" height="100%" title="Divulgation comptable écologique" alt="Divulgation comptable écologique" style="cursor:pointer" onclick="openAcc()"><div id="acc" class="virtue-desc">Tout au long de l'entreprise d'écriture et de publication d'un Earthbook, les impacts sur le carbone, le plastique et la biodiversité sont suivis , comptabilisés et publiés annuellement. Voir les <a href="accounting.php" aria-label="Click to open the PDF Regen Report for the Earthbook">rapports de comptabilité écologique pour ce Earthbook.</a></div>
-              </div>
-
-            </div>
-
-            <div id="virtue-box-mobile">
-
-              <div class="virtue"><img src="../svgs/icon-for-earth.svg" width="100%" height="100%" title="Pour-Earth Enterprise" alt="Pour -Earth Enterprise" onclick="openForE()"><div id="fore" class="virtue-desc" style="display:block;">Le support est le message : les Earthbooks sont destinés aux lecteurs, aux écrivains et à la Terre. Cliquez sur les icônes pour en savoir plus sur les principes de régénération qui guident le projet.</div>
-              </div>
-
-              <div class="virtue"><img src="../svgs/icon-carbonseq.svg" width="100%" height="100%" title="Net-Subtractive Carbon Impact" alt="Net- Impact carbone soustractif" onclick="openCo2()"><div id="co2" class="virtue-desc">Un Earthbook a l'empreinte la plus légère de tous les formats de lecture. L'optimisation du chargement et la mise en cache placent les émissions numériques d'Earthbook dans le top 10 % des sites propres. <span style="cursor:pointer; text-decoration:underline;" onclick="openEco()" aria-label="Voir notre audit de page CO2 en direct">Voir l'audit CO2e en direct.</span></div>
-              </div>
-
-              <div class="virtue"><img src="../svgs/icon-creativecommons.svg" width="100%" height="100%" title="Creative Commons" alt="Licence Creative Commons" onclick ="openCc()"><div id="cc" class="virtue-desc">Le code et le contenu de ce livre sont sous licence Creative Commons BY-SA-ND 4.0. <a href="https://github.com/russs95/earthbook/" target="_blank" aria-label="Accéder au dépôt Earthbook Github"> Accéder au dépôt Github.</a></div>
-              </div>
-
-          </div>
-
-          <div id="virtue-box-mobile" style="margin-bottom:170px;">
-
-            <div class="virtue"><img src="../svgs/icon-readfreely.svg" width="100%" height="100%" title="Lire librement" alt="Lire librement" onclick= "openFree()"><div id="free" class="virtue-desc">Ce livre est disponible en lecture <a href="preamble.html">librement en ligne</a> et en tant que <a href= "https://files.earthen.io/s/ZjS9TgWk5Tr7b4q" target="_blank" aria-label="Cliquez pour télécharger la version PDF gratuite du Earthbook">PDF téléchargeable gratuitement</a>.</div>
-            </div>
-
-            <div class="virtue"><img src="../svgs/icon-revenue.svg" width="100%" height="100%" title="Soutenir la publication indépendante" alt="Soutenir la publication indépendante" onclick="openRev()"><div id="rev" class="virtue-desc">Earthbooks est 100 % indépendant des intermédiaires d'entreprise. 97 % du produit de <span style="cursor:pointer; text-decoration:underline;" onclick="openBuy()" aria-label="Cliquez pour accéder à la page d'achat">Ventes d'ebooks</span> aller aux auteurs.</div>
-            </div>
-
-            <div class="virtue"><img src="../svgs/icon-accessibility.svg" width="100%" height="100%"title="Fabriqué aussi convivial que possible" alt="Accessibilité maximisée" style="cursor:pointer" onclick="openMax()"><div id="max" class="virtue-desc">Earthbooks sont conçus de A à Z pour être agréable à regarder, accessible et multilingue. <span style="cursor:pointer; text-decoration:underline;" onclick="openSettings()" aria-lable="Cliquez pour ajuster les paramètres de l'Earthbook">Essayez d'ajuster les paramètres de l'Earthbook.</span></div>
-
-            </div>
-          </div>
+  <div class="overlay-content-earthbook">         
+        <div>
+            <h1>What is an Earthbook?</h1>
+            <!--<h3>Earthbooks are for readers, writers & Earth.  Click to learn about the guiding principles:</h3>-->
+            <!--Earthbook's writing & publishing embodies regenerative principles.-->
         </div>
-        
-          <div id="medium-message"><!--Le médium est le message.<br>-->
-          <span style="font-size:0.7em;font-style:normal;"><a href="https://github.com/russs95/earthbook/blob/main/README.md" title="Aller à le dépôt du projet Github" target="_blank">Publier votre Earthbook.</a></span>
+
+   
+        <div class="virtue-box-box">
+          <div id="virtue-box-mobile">
+
+            <div class="virtue"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="EarthBook code is fully open-source" alt="EarthBook code is fully open-source" style="cursor:pointer" onclick="openOS()"><div id="OS" class="virtue-desc">The EarthBook source code is open to review, improvement and forking <a href="https://github.com/russs95/earthbook" aria-label="Click to go to our Github repository" target="_blank">on Github</a>.  This means that publishing an Earthbook is open to anyone anywhere.</div>
+            </div>
+
+            <div class="virtue"><img src="../svgs/icon-biodiversity.svg"  width="100%" height="100%" title="Supporting, Accounting & Tracking Biodiveristy" alt="Supporting, Accounting & Tracking Biodiveristy" style="cursor:pointer" onclick="openBio()"><div id="bio" class="virtue-desc">During the writing and publishing of this book, the species supported by the enterprise's physical space was tracked and accounted.  <a href="https://russs.net/forest" target="_blank" aria-label="Go to the author's home life list of supported species">See the publisher's full life list.</a></div>
+            </div>
+
+            <div class="virtue"><img src="../svgs/icon-ecoaccounting.svg"  width="100%" height="100%" title="Ecological Accounting Disclosure" alt="Ecological Accounting Disclosure" style="cursor:pointer" onclick="openAcc()"><div id="acc" class="virtue-desc">Throughout the enterprise of writing and publishing of an Earthbook, the carbon, plastic and biodiversity impacts are tracked, accounted and annually disclosed.  See the <a href="accounting.php" aria-label="Click to open the PDF Regen Report for the Earthbook"> ecological accounting reports for this Earthbook.</a></div>
+            </div>
+
           </div>
 
-          <div>
-            <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeEarthbook()" aria-label="Cliquez pour fermer cette page contextuelle">
-              <img src="../svgs/bottom-x.svg" alt="Bouton Fermer la page">
-            </bouton>
+          <div id="virtue-box-mobile">
+
+            <div class="virtue"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="For-Earth Enterprise" alt="For-Earth Enterprise"  onclick="openForE()"><div id="fore" class="virtue-desc" style="display:block;">The medium is the message: Earthbooks are for readers, writers & Earth. Click the icons to learn about the regenerative principles that guide the project.</div>
+            </div>
+
+            <div class="virtue"><img src="../svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Net-Subtractive Carbon Impact" alt="Net-Subtractive Carbon Impact"  onclick="openCo2()"><div id="co2" class="virtue-desc">An Earthbook has the lightest footprint of all reading formats. Loading-optimization and caching put an Earthbook's digital emissions in the top 10% of clean sites.  <span style="cursor:pointer; text-decoration:underline;" onclick="openEco()" aria-label="View our live CO2 page audit">View live CO2e audit.</span></div>
+            </div>
+
+            <div class="virtue"><img src="../svgs/icon-creativecommons.svg"  width="100%" height="100%" title="Creative Commons" alt="Creative Commons License"  onclick="openCc()"><div id="cc" class="virtue-desc">The code and content of this book are licensed under a Creative Commons BY-SA-ND 4.0 License. <a href="https://github.com/russs95/earthbook/" target="_blank" aria-label="Access the Earthbook Github repository"> Access the Github repository.</a></div>
+            </div>
+
+        </div>
+
+        <div id="virtue-box-mobile" style="margin-bottom:170px;">
+
+          <div class="virtue"><img src="../svgs/icon-readfreely.svg"  width="100%" height="100%" title="Read Freely" alt="Read Freely"  onclick="openFree()"><div id="free" class="virtue-desc">This book is available to read <a href="preamble.html">freely online</a> and as a <a href="https://files.earthen.io/s/ZjS9TgWk5Tr7b4q" target="_blank" aria-label="Click to download the free PDF version of the Earthbook">free downloadable PDF</a>.</div>
           </div>
-           
+
+          <div class="virtue"><img src="../svgs/icon-revenue.svg"  width="100%" height="100%" title="Support Independent Publishing" alt="Support Independent Publishing" onclick="openRev()"><div id="rev" class="virtue-desc">Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of <span style="cursor:pointer; text-decoration:underline;" onclick="openBuy()" aria-label="Click to go to the buy page">Ebook sales</span> go to the authors.</div>
+          </div>
+
+          <div class="virtue"><img src="../svgs/icon-accessibility.svg"  width="100%" height="100%" title="Made as human-friendly as possible" alt="Accessibility Maximized"  style="cursor:pointer" onclick="openMax()"><div id="max" class="virtue-desc">Earthbooks are designed from the ground up to be easy on the eyes, accessible, and multi-lingual.  <span style="cursor:pointer; text-decoration:underline;" onclick="openSettings()" aria-lable="Click to adjust the Earthbook's settings">Try adjusting the Earthbook's settings.</span></div>
+
+        </div>
+      </div>
     </div>
+     
+      <div id="medium-message"><!--The Medium is the Message.<br>-->
+      <span style="font-size:0.7em;font-style:normal;"><a href="https://github.com/russs95/earthbook/blob/main/README.md" title="Jump to the Github project repository" target="_blank">Publish your Earthbook.</a></span>
+      </div>
+
+      <div>
+        <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeEarthbook()" aria-label="Click to close this pop-up page">
+          <img src="../svgs/bottom-x.svg" alt="Close page button">
+        </button>
+      </div>
+        
+</div>
 </div>
 
     `;
