@@ -461,47 +461,85 @@ All the page components required to build this page-->
   </div>
    
   <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rangy/1.3.0/rangy-core.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rangy/1.3.0/rangy-classapplier.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rangy/1.3.0/rangy-highlighter.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/rangy/1.3.0/rangy-serializer.js"></script>
+ 
   
   <script>
-      // Initialize Rangy library
-      rangy.init();
+    // Function to count characters in the entire HTML document
+    function countCharacters() {
+      const allTextElements = document.querySelectorAll('*');
+      let charCount = 0;
   
-      // Create a highlighter
-      let highlighter = rangy.createHighlighter();
-  
-      // Check if the Rangy modules are supported
-      let cssClassApplierModule = rangy.modules.CssClassApplier;
-  
-      // If supported, create a CSS class applier and add it to the highlighter
-      if (rangy.supported && cssClassApplierModule && cssClassApplierModule.supported) {
-          let cssApplier = rangy.createCssClassApplier("highlight", {
-              normalize: true
-          });
-          highlighter.addClassApplier(cssApplier);
-      }
-  
-      // Add event listener to mouseup event to create highlights
-      document.addEventListener("mouseup", function() {
-          highlighter.highlightSelection("highlight");
-          let serializedHighlights = highlighter.serialize();
-          localStorage.setItem("highlights", serializedHighlights);
+      allTextElements.forEach(element => {
+        element.childNodes.forEach(child => {
+          if (child.nodeType === Node.TEXT_NODE) {
+            charCount += child.textContent.length;
+          }
+        });
       });
   
-      // On page load, deserialize any saved highlights
-      window.onload = function() {
-          let savedHighlights = localStorage.getItem("highlights");
-          if (savedHighlights) {
-              highlighter.deserialize(savedHighlights);
-          }
-      };
-  </script>
-  </BODY>
+      return charCount;
+    }
   
-  </HTML>
+    // Function to display character count in an alert once the page has loaded
+    function showAlertWithCharacterCount() {
+      const totalCharacters = countCharacters();
+      alert(`Total Characters in the HTML document: ${totalCharacters}`);
+    }
+  
+    // Function to store selected text and its positions in the local storage
+    function storeSelectedText() {
+      const selection = window.getSelection();
+      if (selection.rangeCount > 0) {
+        const range = selection.getRangeAt(0);
+        localStorage.setItem('startContainer', range.startContainer.parentNode.id);
+        localStorage.setItem('endContainer', range.endContainer.parentNode.id);
+        localStorage.setItem('startOffset', range.startOffset);
+        localStorage.setItem('endOffset', range.endOffset);
+        localStorage.setItem('storedText-1', selection.toString());
+        highlightText(range);
+      }
+    }
+  
+    // Function to highlight selected text
+    function highlightText(range) {
+      const newNode = document.createElement('span');
+      newNode.classList.add('highlight');
+      range.surroundContents(newNode);
+    }
+  
+    // Function to recreate selection from stored data
+    function recreateSelection() {
+      const startContainer = document.getElementById(localStorage.getItem('startContainer'));
+      const endContainer = document.getElementById(localStorage.getItem('endContainer'));
+      const startOffset = parseInt(localStorage.getItem('startOffset'));
+      const endOffset = parseInt(localStorage.getItem('endOffset'));
+      const storedText = localStorage.getItem('storedText-1');
+  
+      if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
+        const range = document.createRange();
+        range.setStart(startContainer.firstChild, startOffset);
+        range.setEnd(endContainer.firstChild, endOffset);
+  
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+  
+        alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
+        highlightText(range);
+      }
+    }
+  
+    // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
+    window.addEventListener('load', function () {
+      showAlertWithCharacterCount();
+      recreateSelection();
+  
+      // Attach the storeSelectedText function to the "mouseup" event
+      document.addEventListener("mouseup", storeSelectedText);
+    });
+  </script>
+  
+  
   
   <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
   
