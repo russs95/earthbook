@@ -1,4 +1,4 @@
-class ChapFoot extends HTMLElement {
+class chapfoot extends HTMLElement {
     constructor() {
       super();
     }
@@ -109,6 +109,6 @@ class ChapFoot extends HTMLElement {
   }
   }
   
-  customElements.define('chapfoot', ChapFoot);
+  customElements.define('chapfoot', chapfoot);
   
   
