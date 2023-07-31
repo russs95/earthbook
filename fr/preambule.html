@@ -449,48 +449,47 @@ All the page components required to build this page-->
   
   </div>
   </div>
-  
- <script>
+  <script>
     // Function to count characters in the entire HTML document
     function countCharacters() {
       const allTextElements = document.querySelectorAll('*');
       let charCount = 0;
-
+  
       allTextElements.forEach(element => {
-        if (element.nodeType === Node.TEXT_NODE) {
-          charCount += element.textContent.length;
-        }
+        element.childNodes.forEach(child => {
+          if (child.nodeType === Node.TEXT_NODE) {
+            charCount += child.textContent.length;
+          }
+        });
       });
-
+  
       return charCount;
     }
-
+  
     // Function to display character count in an alert once the page has loaded
     function showAlertWithCharacterCount() {
       const totalCharacters = countCharacters();
       alert(`Total Characters in the HTML document: ${totalCharacters}`);
     }
-
+  
     // Function to count characters in the selected text range
     function countSelectedCharacters() {
       const selectedText = window.getSelection().toString();
-      const startOffset = window.getSelection().baseOffset;
-      const endOffset = window.getSelection().extentOffset;
-      const selectedCharacters = endOffset - startOffset;
-      alert(`Selected Characters: ${selectedCharacters}`);
+      alert(`Selected Characters: ${selectedText.length}`);
     }
-
+  
     // Attach the showAlertWithCharacterCount function to the window.onload event
     window.onload = function () {
       showAlertWithCharacterCount();
-
+  
       // Attach the countSelectedCharacters function to the "mouseup" event
       document.addEventListener("mouseup", countSelectedCharacters);
     };
   </script>
-<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-
-</BODY>
-</HTML>
+  <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
+  
+  </BODY>
+  </HTML>
+  
 
 
