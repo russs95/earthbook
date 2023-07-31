@@ -8,7 +8,7 @@ class Bookplate extends HTMLElement {
 
     <div id="top-bookplate" class="overlay-bookplate">
 
-    <div class="overlay-content-ex-libris">
+    <div class="overlay-content-bookplate">
 
         <div id="bookplate-img" alt="Le Tractatus Ayyew Mandala"></div>
 

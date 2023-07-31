@@ -1,15 +1,12 @@
-
-
-
-class ChapterFooter extends HTMLElement {
-  constructor() {
-    super();
-  }
-
-  connectedCallback() {
-    this.innerHTML = `
-
+class ChapFoot extends HTMLElement {
+    constructor() {
+      super();
+    }
   
+    connectedCallback() {
+      this.innerHTML = `
+  
+      
     <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
 
     <div class="footer-function" >
@@ -105,15 +102,13 @@ class ChapterFooter extends HTMLElement {
     
     </div>
     </div>
-    
-    
-
-
-
-    `;
-}
-}
-
-customElements.define('chapter-footer', ChapterFooter);
-
-
+                                                                   
+      
+      
+      `;
+  }
+  }
+  
+  customElements.define('chapfoot', ChapFoot);
+  
+  
