@@ -94,7 +94,14 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
     }
 
 
-     
+       // Attach the recreateSelection function to the window load event
+  window.addEventListener('load', function () {
+    recreateSelection();
+
+    // Attach the storeSelectedText function to the "click" event
+    document.addEventListener("click", storeSelectedText);
+  });
+  
 </script>
 
  <!--FONTS
@@ -505,13 +512,7 @@ All the page components required to build this page-->
     }
   }
 
-  // Attach the recreateSelection function to the window load event
-  window.addEventListener('load', function () {
-    recreateSelection();
 
-    // Attach the storeSelectedText function to the "click" event
-    document.addEventListener("click", storeSelectedText);
-  });
 </script>
 
   
