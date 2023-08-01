@@ -466,26 +466,20 @@ function storeSelectedText() {
     const selection = window.getSelection();
     if (selection.rangeCount > 0) {
         const range = selection.getRangeAt(0);
-        const startContainerId = range.startContainer.id;
-        const endContainerId = range.endContainer.id;
+        const uniqueID = 'highlight-' + Date.now();
 
-        // Get the element by its ID and access its text content
-        const storedText = document.getElementById(startContainerId).textContent;
-
-        localStorage.setItem('startContainer', startContainerId);
-        localStorage.setItem('endContainer', endContainerId);
+        localStorage.setItem('container', uniqueID);
         localStorage.setItem('startOffset', range.startOffset);
         localStorage.setItem('endOffset', range.endOffset);
-        localStorage.setItem('storedText-1', storedText);
+        localStorage.setItem('storedText-1', range.toString());
 
-        // Add the alert to display the variables sent to local storage
-        alert(`startContainer: ${startContainerId}\n` +
-              `endContainer: ${endContainerId}\n` +
+        alert(`container: ${uniqueID}\n` +
               `startOffset: ${range.startOffset}\n` +
               `endOffset: ${range.endOffset}\n` +
-              `storedText-1: ${storedText}`);
+              `storedText-1: ${range.toString()}`);
     }
 }
+
 
 
 
