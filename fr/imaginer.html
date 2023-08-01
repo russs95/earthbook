@@ -331,17 +331,18 @@ All the page components required to build this page-->
     
         <a href="#3-up" class="footnote">   
             <div class="footnote-number" id="3-down">3.</div>
-            <div class="footnote-text">In particular the Igorot Ayyew ecological ethos.  See: Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).  </div>
+            <div class="footnote-text">En particulier la philosophie écologique d'Igorot Ayyew. Voir: Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i> (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).</div>
             </a>
       
             <a href="#4-up" class="footnote">   
             <div class="footnote-number">4.</div>
-            <div class="footnote-text">The first principle of permaculture.  Bill Mollison, <i>Principles from Permaculture a Designers' Manual</i>, (Tagari Publishers: 1988).</div>
+            <div class="footnote-text">Le premier principe de la permaculture. Bill Mollison, <i>Principles from Permaculture a Designers' Manual</i> (Tagari Publishers: 1988).
+            </div>
             </a>
       
           <a href="#5-up" class="footnote">   
             <div class="footnote-number">5.</div>
-            <div class="footnote-text">"We can think of our current civilization-- its technical and sociopolitical infrastructure, its ideology and beliefs-- as an operating system, much like the software that runs our computers.  Now we need to reboot and install a new system software".  Daniel Pinchbeck, <i>How Soon is Now: From Personal Initiation to Global Transformation</i>, (Publisher: Watkins Publishing, 2017) Chapter 2, p.105</div>
+            <div class="footnote-text">"Nous pouvons considérer notre civilisation actuelle - son infrastructure technique et socio-politique, son idéologie et ses croyances - comme un système d'exploitation, un peu comme le logiciel qui fait fonctionner nos ordinateurs. Maintenant, nous devons redémarrer et installer un nouveau logiciel système". Daniel Pinchbeck, <i>How Soon is Now: From Personal Initiation to Global Transformation</i> (Publisher: Watkins Publishing, 2017) Chapter 2, p.105</div>
             </a>
       
       </div>
@@ -465,23 +466,20 @@ document.addEventListener("DOMContentLoaded", function() {
     const selection = window.getSelection();
     if (selection.rangeCount > 0) {
         const range = selection.getRangeAt(0);
-        const startContainerId = range.startContainer.parentNode.id || '';
-        const endContainerId = range.endContainer.parentNode.id || '';
-        localStorage.setItem('startContainer', startContainerId);
-        localStorage.setItem('endContainer', endContainerId);
+        localStorage.setItem('startContainer', range.startContainer.parentNode.id);
+        localStorage.setItem('endContainer', range.endContainer.parentNode.id);
         localStorage.setItem('startOffset', range.startOffset);
         localStorage.setItem('endOffset', range.endOffset);
         localStorage.setItem('storedText-1', selection.toString());
 
         // Add the alert to display the variables sent to local storage
-        alert(`startContainer: ${startContainerId}\n` +
-              `endContainer: ${endContainerId}\n` +
+        alert(`startContainer: ${range.startContainer.parentNode.id}\n` +
+              `endContainer: ${range.endContainer.parentNode.id}\n` +
               `startOffset: ${range.startOffset}\n` +
               `endOffset: ${range.endOffset}\n` +
               `storedText-1: ${selection.toString()}`);
     }
 }
-
 
 
     document.addEventListener('click', function(e) {
