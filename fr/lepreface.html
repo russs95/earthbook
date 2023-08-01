@@ -260,7 +260,7 @@ All the page components required to build this page-->
       
       <p>Dans la société Igorot, au même rang que la peinture ou la sculpture dans d'autres cultures, l'art de l'intégration écologique y est hautement estimé. C’est ainsi que la région est devenue un foyer d'innovations du recyclage. En ville, de vieux pneus étaient découpés pour en faire des chaises et des tables remarquablement fonctionnelles. Dans les mines, les gaines de câbles de dynamite étaient tissées pour fabriquer des sacs à dos traditionnels. Dans les chaumières, pailles et emballages étaient tissés pour servir de nattes, sacoches et contenants de toutes sortes.</p>
   
-     <p>Banayan et moi étions tellement fascinés et enthousiasmés par ce mouvement de recyclage valorisant (le <<upcycling>> dans la vernaculaire moderne) que nous en fîmes activement partie. Alors que Banayan intégrait ces techniques de tissage et transformation dans les programmes scolaires, j'étais impliqué dans l'amélioration des concepts pour fabriquer des produits recyclés monnayables. Cependant, face au flux toujours croissant de déchets plastiques, nos prouesses n'ont eu que peu de conséquences. Alors que l'impasse juridique à Bontoc s'intensifiait, nous avons réalisé qu'il était bien plus vital de protéger des plastiques notre environnement plutôt que de promouvoir ou d'enseigner un nouvel artisanat.</p>
+     <p>Banayan et moi étions tellement fascinés et enthousiasmés par ce mouvement de recyclage valorisant (le « upcycling » dans la vernaculaire moderne) que nous en fîmes activement partie. Alors que Banayan intégrait ces techniques de tissage et transformation dans les programmes scolaires, j'étais impliqué dans l'amélioration des concepts pour fabriquer des produits recyclés monnayables. Cependant, face au flux toujours croissant de déchets plastiques, nos prouesses n'ont eu que peu de conséquences. Alors que l'impasse juridique à Bontoc s'intensifiait, nous avons réalisé qu'il était bien plus vital de protéger des plastiques notre environnement plutôt que de promouvoir ou d'enseigner un nouvel artisanat.</p>
       
       <p>Il se trouve que mes collègues et moi avions expérimenté une nouvelle technique d'Amérique du Sud dans laquelle des bouteilles plastiques étaient remplies de sable pour fabriquer des briques de construction. Comme par destinée, la sablière de la rivière et la décharge locale étaient côte à côte. Après avoir fabriqué plusieurs briques de bouteille de sable, nous décidions plutôt de les remplir de plastique à la place.</p>
   
@@ -461,6 +461,19 @@ All the page components required to build this page-->
 });
 
 
+    document.addEventListener('click', function(e) {
+        let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
+
+        preHighlightedElems.forEach(function(elem) {
+            if (elem.classList.contains(preHighlightClass)) {
+                let text = elem.textContent;
+                elem.replaceWith(text);
+            }
+        });
+    });
+
+
+
 
 
 
@@ -484,7 +497,7 @@ All the page components required to build this page-->
   // Function to display character count in an alert once the page has loaded
   function showAlertWithCharacterCount() {
     const totalCharacters = countCharacters();
-    alert(`Total Characters in the HTML document: ${totalCharacters}`);
+    //alert(`Total Characters in the HTML document: ${totalCharacters}`);
   }
 
   // Function to store selected text and its positions in the local storage
