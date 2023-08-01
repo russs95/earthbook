@@ -63,7 +63,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2023-7-23T09:14:13+00:00" >
+<meta property="article:modified_time" content="2023-8-01T09:14:13+00:00" >
   
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:site_name" content="Tracatus Ayyew">
@@ -81,7 +81,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <script>
       // Declare the global variables
     var chapNo = "Introduction";
-    var chapName = "Preambule";
+    var chapName = "Préambule";
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -94,14 +94,6 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
     }
 
 
-       // Attach the recreateSelection function to the window load event
-  window.addEventListener('load', function () {
-    recreateSelection();
-
-    // Attach the storeSelectedText function to the "click" event
-    document.addEventListener("click", storeSelectedText);
-  });
-  
 </script>
 
  <!--FONTS
@@ -471,8 +463,29 @@ All the page components required to build this page-->
  
   
 
+  <script>
+  // Function to count characters in the entire HTML document
+  function countCharacters() {
+    const allTextElements = document.querySelectorAll('*');
+    let charCount = 0;
 
-<script>
+    allTextElements.forEach(element => {
+      element.childNodes.forEach(child => {
+        if (child.nodeType === Node.TEXT_NODE) {
+          charCount += child.textContent.length;
+        }
+      });
+    });
+
+    return charCount;
+  }
+
+  // Function to display character count in an alert once the page has loaded
+  function showAlertWithCharacterCount() {
+    const totalCharacters = countCharacters();
+    alert(`Total Characters in the HTML document: ${totalCharacters}`);
+  }
+
   // Function to store selected text and its positions in the local storage
   function storeSelectedText() {
     const selection = window.getSelection();
@@ -483,16 +496,7 @@ All the page components required to build this page-->
       localStorage.setItem('startOffset', range.startOffset);
       localStorage.setItem('endOffset', range.endOffset);
       localStorage.setItem('storedText-1', selection.toString());
-      highlightText(range);
-      alert(`First char: ${range.startOffset}, Last char: ${range.endOffset}, Stored text: ${selection.toString()}`);
     }
-  }
-
-  // Function to highlight selected text
-  function highlightText(range) {
-    const newNode = document.createElement('span');
-    newNode.classList.add('highlight');
-    range.surroundContents(newNode);
   }
 
   // Function to recreate selection from stored data
@@ -508,12 +512,24 @@ All the page components required to build this page-->
       range.setStart(startContainer.firstChild, startOffset);
       range.setEnd(endContainer.firstChild, endOffset);
 
-      highlightText(range);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+
+      alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
     }
   }
 
+  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
+  window.addEventListener('load', function () {
+    showAlertWithCharacterCount();
+    recreateSelection();
 
+    // Attach the storeSelectedText function to the "mouseup" event
+    document.addEventListener("mouseup", storeSelectedText);
+  });
 </script>
+
 
   
   
