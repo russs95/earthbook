@@ -369,10 +369,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener('click', function(e) {
     if (e.target.classList.contains(preHighlightClass)) {
         if (e.target.classList.contains(highlightClass)) {
-            e.target.classList.remove(highlightClass); // Remove .highlight class, but keep the span
-            e.target.title = "Click this text to save."; // Reset title
+            e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class, but keep the .highlight class
         } else {
             e.target.classList.add(highlightClass);
+            e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
             e.target.title = "This quotation is saved in your Book Notes";
         }
     }
