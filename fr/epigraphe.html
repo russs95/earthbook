@@ -259,7 +259,7 @@ All the page components required to build this page-->
    <div id="ct-main">
    
    <div class="ct-quote-source" style="width:100% !important;">
-       ― Régis Debray, <i>Le siècle vert. Un changement de civilisation</i><br><br>
+       ― Régis Debray<br> <i>Le siècle vert. Un changement de civilisation</i><br><br>
        </div>
        <br><br><br><br><br><br>
    </div><!--closes page text content-->
@@ -303,11 +303,11 @@ All the page components required to build this page-->
        <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
         <div class="next-section">
           <div class="next-sec">Section suivante :</div>
-          <div class="sec-name"><i>Epigraph I</i></div>
+          <div class="sec-name"><i>Imaginer</i></div>
         </div>
       </div>
       <div class="footer-right">
-        <a href="epigraph-1.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
+        <a href="imaginer.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
       </div>
     </div>
   
@@ -327,81 +327,6 @@ All the page components required to build this page-->
   <script>
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    let highlightClass = 'highlight';
-    let preHighlightClass = 'pre-highlight';
-    let selectedRange;
-
-    function getSelectedRange() {
-        if (window.getSelection) {
-            let sel = window.getSelection();
-            if (sel.rangeCount) {
-                return sel.getRangeAt(0);
-            }
-        } else if (document.selection && document.selection.createRange) {
-            return document.selection.createRange();
-        }
-        return null;
-    }
-
-    function clearSelection() {
-        if (window.getSelection) {
-            window.getSelection().removeAllRanges();
-        } else if (document.selection) {
-            document.selection.empty();
-        }
-    }
-
-    document.addEventListener('mouseup', function() {
-        selectedRange = getSelectedRange();
-        if (selectedRange && selectedRange.toString().trim().length > 0) {
-            let span = document.createElement('span');
-            span.style.cursor = 'pointer';
-            span.classList.add(preHighlightClass);
-            span.title = "Click this text to save.";
-            selectedRange.surroundContents(span);
-            clearSelection();
-
-            setTimeout(unHighlight, 1000);  // call unHighlight function after 1 second
-        }
-    });
-
-    document.addEventListener('click', function(e) {
-    if (e.target.classList.contains(preHighlightClass)) {
-        if (e.target.classList.contains(highlightClass)) {
-            e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class, but keep the .highlight class
-        } else {
-            e.target.classList.add(highlightClass);
-            e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
-            e.target.title = "This quotation is saved in your Book Notes";
-        }
-    }
-});
-
-
-    function unHighlight() {
-    function onClickHandler(e) {
-        if (!e.target.classList.contains(preHighlightClass) && !e.target.classList.contains(highlightClass)) {
-            let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
-
-            preHighlightedElems.forEach(function(elem) {
-                if (elem.classList.contains(preHighlightClass)) {
-                    let text = elem.textContent;
-                    elem.replaceWith(text);
-                }
-            });
-
-            // Remove the listener after it's executed, so it won't affect elements with the .highlight class
-            document.removeEventListener('click', onClickHandler);
-        }
-    }
-
-    document.addEventListener('click', onClickHandler);
-}
-
-
-
-});
 </script>
 
 
