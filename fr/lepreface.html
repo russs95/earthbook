@@ -458,17 +458,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function unHighlight() {
-        document.addEventListener('click', function(e) {
-            let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
+    function onClickHandler(e) {
+        let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
 
-            preHighlightedElems.forEach(function(elem) {
-                if (elem.classList.contains(preHighlightClass)) {
-                    let text = elem.textContent;
-                    elem.replaceWith(text);
-                }
-            });
+        preHighlightedElems.forEach(function(elem) {
+            if (elem.classList.contains(preHighlightClass)) {
+                let text = elem.textContent;
+                elem.replaceWith(text);
+            }
         });
+
+        document.removeEventListener('click', onClickHandler); // Remove the listener after it's executed
     }
+
+    document.addEventListener('click', onClickHandler);
+}
+
 });
 
 
