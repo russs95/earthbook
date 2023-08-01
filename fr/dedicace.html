@@ -260,13 +260,13 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
   <div class="page-paragraph" style="text-align:center;">
 
 
-    <p>Qui nous laissaient jouer dans les forêts,<p>
-        <p>Courir dans les champs,</p>
-        <p>Accepter l'étreinte verdoyante,</p>
-       <p>Et cultiver notre étreinte en retour.</p>
+    <p style="text-align:center;">Qui nous laissaient jouer dans les forêts,<p>
+        <p style="text-align:center;">Courir dans les champs,</p>
+        <p style="text-align:center;">Accepter l'étreinte verdoyante,</p>
+       <p style="text-align:center;">Et cultiver notre étreinte en retour.</p>
     </div>
 
-  
+    <br><br><br><br><br><br>
 
   </div><!--closes page text content-->
         
@@ -359,11 +359,17 @@ function storeSelectedText() {
 
         // Alert to confirm storage
         alert(`storedText-1: ${selectedText}`);
+
+        setTimeout(removeHighlight, 1000);.
     }
 }
 
-
-
+function removeHighlight(e) {
+    if (e.target.classList.contains('highlight')) {
+        let text = e.target.textContent;
+        e.target.replaceWith(text);
+    }
+}
 
 
 
