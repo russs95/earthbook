@@ -247,19 +247,24 @@ All the page components required to build this page-->
 
       <p>Banayan et moi percevons que la transition des habitations, des communautés et des entreprises vers des contributions écologiques, sera la prochaine étape d'une épopée planétaire dont la direction est, littéralement, entre nos mains.</p>
 
-      <p>So how do we arrive at this thriving common home that we all long to see?</p>
+      <p>Alors, comment arrivons-nous à cette maison commune prospère que nous tous aspirons à voir?</p>
 
-      <p>One word:</p>
+      <p>En deux mots:</p>
 
-      <p><i>Plastic.</i></p>
+      <p>Le plastique.</p>
 
-      <p>Therein this problematic modern material lies our way forward.</p>
+      <p>C'est dans ce matériau moderne problématique que réside la voie à suivre.
+    </p>
 
-      <p>As it must be. </p>
-      
-      <p id="4-up">Gardeners have long observed that the problem is always the solution—  weeds, pests and pollutants are always, with a shift of perspective and approach, the very nutrients, fertilizers and medicines that bring a struggling garden to thrive.<a href="#footnotes" title="The problem is always the solution.  See: Bill Mollison, <i>Principles from Permaculture a Designers' Manual</i>, (Tagari Publishers: 1988)." onclick="openFootnotes()">⁴</a></p>
+    <p>Comme il se doit.
+    </p>
 
-      <p>Like nothing else, plastic embodies the definitive facets of our modern moment.   Derived from ancient fossilized carbon, plastic allows us to touch the primordial story that has enabled our own.  Bought and sold, plastic is a physical manifestation of the petro-capital economy that powers our global age.  Crafted by humans, entirely for humans, plastic is a vivid reflection of our modern, human-centered civilization.</p>
+    <p id="4-up">En effet, depuis longtemps, les jardiniers savent que le problème est toujours la solution - les mauvaises herbes, les nuisibles et les polluants sont toujours, avec un changement de perspective et d'approche, des éléments nutritifs, médicinaux et engrais qui permettent à un jardin en difficulté de devenir fécond.<a href="#footnotes" title="The problem is always the solution.  See: Bill Mollison, Principles from Permaculture a Designers' Manual, (Tagari Publishers: 1988)." onclick="openFootnotes()">⁴</a></p>
+
+
+
+
+      <p>Comme aucune autre matière, le plastique incarne définitivement les facettes de notre époque. Dérivé du carbone ancien, le plastique nous permet de toucher l'histoire fossile qui a permis la nôtre. Acheté et vendu, le plastique est une manifestation physique de l'économie pétro-capitaliste qui alimente notre époque mondialisée. Fabriqué par des humains, entièrement pour des humains, le plastique est un reflet lucide de notre civilisation moderne centrée sur l'humain.</p>
 
      <p>In this way, our plastic is in fact a mirror. </p>
 
@@ -409,7 +414,7 @@ All the page components required to build this page-->
 
   <script>
 
-
+/*
 document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
@@ -554,11 +559,12 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("mouseup", storeSelectedText);
   });
 
-    /*
-document.addEventListener("DOMContentLoaded", function() {
+  */
+
+  document.addEventListener("DOMContentLoaded", function() {
   let highlightClass = 'highlight';
   let preHighlightClass = 'pre-highlight';
-  let selectedRange;
+  let bookNoteCounter = parseInt(localStorage.getItem('bookNoteCounter') || 0);
 
   function getSelectedRange() {
     if (window.getSelection) {
@@ -580,13 +586,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  function storeSelectedText(range) {
-    localStorage.setItem('startContainer', range.startContainer.parentNode.id);
-    localStorage.setItem('endContainer', range.endContainer.parentNode.id);
-    localStorage.setItem('startOffset', range.startOffset);
-    localStorage.setItem('endOffset', range.endOffset);
-    localStorage.setItem('storedText-1', range.toString());
-  }
+  document.addEventListener('mouseup', function() {
+    let selectedRange = getSelectedRange();
+    if (selectedRange && selectedRange.toString().trim().length > 0) {
+      const firstChar = selectedRange.startOffset;
+      const lastChar = selectedRange.endOffset + selectedRange.startOffset;
+      let span = document.createElement('span');
+      span.dataset.firstChar = firstChar;
+      span.dataset.lastChar = lastChar;
+      span.style.cursor = 'pointer';
+      span.classList.add(preHighlightClass);
+      span.title = "Click this text to save.";
+      selectedRange.surroundContents(span);
+      clearSelection();
+
+      setTimeout(unHighlight, 1000);
+    }
+  });
 
   function unHighlight() {
     function onClickHandler(e) {
@@ -607,29 +623,19 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener('click', onClickHandler);
   }
 
-  document.addEventListener('mouseup', function() {
-    selectedRange = getSelectedRange();
-    if (selectedRange && selectedRange.toString().trim().length > 0) {
-      let span = document.createElement('span');
-      span.style.cursor = 'pointer';
-      span.classList.add(preHighlightClass);
-      span.title = "Click this text to save.";
-      selectedRange.surroundContents(span);
-      clearSelection();
-      storeSelectedText(selectedRange);
-
-      setTimeout(unHighlight, 1000);
-    }
-  });
-
   document.addEventListener('click', function(e) {
     if (e.target.classList.contains(preHighlightClass)) {
-      if (e.target.classList.contains(highlightClass)) {
-        e.target.classList.remove(preHighlightClass);
-      } else {
+      if (!e.target.classList.contains(highlightClass)) {
         e.target.classList.add(highlightClass);
         e.target.classList.remove(preHighlightClass);
         e.target.title = "This quotation is saved in your Book Notes";
+
+        const text = e.target.textContent;
+        const firstChar = e.target.dataset.firstChar;
+        const lastChar = e.target.dataset.lastChar;
+        bookNoteCounter++;
+        localStorage.setItem(`bookNote-${bookNoteCounter}`, JSON.stringify({ text, firstChar, lastChar }));
+        localStorage.setItem('bookNoteCounter', bookNoteCounter);
       }
     }
   });
@@ -649,36 +655,35 @@ document.addEventListener("DOMContentLoaded", function() {
     return charCount;
   }
 
-  function showAlertWithCharacterCount() {
-    const totalCharacters = countCharacters();
-    //alert(`Total Characters in the HTML document: ${totalCharacters}`);
-  }
-
   function recreateSelection() {
-    const startContainer = document.getElementById(localStorage.getItem('startContainer'));
-    const endContainer = document.getElementById(localStorage.getItem('endContainer'));
-    const startOffset = parseInt(localStorage.getItem('startOffset'));
-    const endOffset = parseInt(localStorage.getItem('endOffset'));
-    const storedText = localStorage.getItem('storedText-1');
+    let allBookNotes = '';
+    for (let i = 1; i <= bookNoteCounter; i++) {
+      const bookNote = JSON.parse(localStorage.getItem(`bookNote-${i}`));
+      if (bookNote) {
+        allBookNotes += `Book Note ${i}: ${bookNote.text} (First char: ${bookNote.firstChar}, Last char: ${bookNote.lastChar})\n`;
 
-    if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
-      const range = document.createRange();
-      range.setStart(startContainer.firstChild, startOffset);
-      range.setEnd(endContainer.firstChild, endOffset);
-
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-
-      alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
+        // Re-apply the highlight class to the saved selections
+        const range = document.createRange();
+        range.setStart(document.body, parseInt(bookNote.firstChar));
+        range.setEnd(document.body, parseInt(bookNote.lastChar));
+        const span = document.createElement('span');
+        span.classList.add(highlightClass);
+        range.surroundContents(span);
+      }
     }
+    if (allBookNotes) alert(allBookNotes);
   }
 
-  window.addEventListener('load', function () {
-    showAlertWithCharacterCount();
+  window.addEventListener('load', function() {
+    // Assuming showAlertWithCharacterCount is defined elsewhere
+    // If not, you can remove this line
+    // showAlertWithCharacterCount();
     recreateSelection();
   });
-});*/
+});
+
+
+ 
 
 </script>
 
