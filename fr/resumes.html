@@ -260,15 +260,16 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
 
 
     <h2>1. Une courte phrase</h2>
-    <p>The Earthen ethics concept of 'green' can be summed up in a simple sentence:
+    <p>Le concept d'éthique terrestre du « vert » peut se résumer en une phrase simple :
+
     </p>
 
-    <div class="quote"><p>A process is green when it follows Earth's example of ecological contribution.</p></div>
+    <div class="quote"><p>Un processus est vert lorsqu'il suit l'exemple de contribution écologique de la Terre.</p></div>
     <br>
     <a name="long"></a>
-    <h2>2. A longer sentence</h2>
+    <h2>2. Une phrase plus longue</h2>
     
-    <p>By adding 'must' we have the core Earthen ethic.  Note that green is interchangeable here with 'ecological contribution'. </p>
+    <p>En ajoutant « doit », nous obtenons l'éthique fondamentale de la Terre. Notez que le vert est ici interchangeable avec « contribution écologique ».</p>
 
     <div class="quote"><p>To be green a process must embody Earth’s pattern of concentrating matter and dispersing energy to cyclically enrich the diversity and awareness of the system of which it is a part.
     </p></div>
@@ -394,129 +395,6 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
   
 
   <script>
-document.addEventListener("DOMContentLoaded", function() {
-    let highlightClass = 'highlight';
-    let preHighlightClass = 'pre-highlight';
-    let selectedRange;
-
-    function getSelectedRange() {
-        if (window.getSelection) {
-            let sel = window.getSelection();
-            if (sel.rangeCount) {
-                return sel.getRangeAt(0);
-            }
-        } else if (document.selection && document.selection.createRange) {
-            return document.selection.createRange();
-        }
-        return null;
-    }
-
-    function clearSelection() {
-        if (window.getSelection) {
-            window.getSelection().removeAllRanges();
-        } else if (document.selection) {
-            document.selection.empty();
-        }
-    }
-
-    document.addEventListener('mouseup', function() {
-    selectedRange = getSelectedRange();
-    if (selectedRange && selectedRange.toString().trim().length > 0) {
-        let span = document.createElement('span');
-        span.style.cursor = 'pointer';
-        span.classList.add(preHighlightClass);
-        span.title = "Click this text to save.";
-        // Add unique IDs to the span
-        let uniqueID = 'highlight-' + Date.now();
-        span.id = uniqueID;
-        selectedRange.surroundContents(span);
-        clearSelection();
-    }
-});
-
-
-function removeHighlight(e) {
-    if (e.target.classList.contains(highlightClass) || e.target.classList.contains(preHighlightClass)) {
-        let text = e.target.textContent;
-        e.target.replaceWith(text);
-    }
-}
-
-
-
-
-
-    document.addEventListener('click', function(e) {
-        if (e.target.classList.contains(preHighlightClass)) {
-            if (e.target.classList.contains(highlightClass)) {
-                e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class, but keep the .highlight class
-            } else {
-                e.target.classList.add(highlightClass);
-                e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
-                e.target.title = "This quotation is saved in your Book Notes";
-                storeSelectedText(); // Call the storeSelectedText function to save the highlighted text
-            }
-        } else if (e.target.classList.contains(highlightClass)) {
-            removeHighlight(e);
-        }
-    });
-});
-
-// Function to store the current selection
-function storeSelectedText() {
-  const selection = window.getSelection();
-  if (selection.rangeCount > 0) {
-    const range = selection.getRangeAt(0);
-    const uniqueID = range.startContainer.parentNode.id;
-
-    // Get existing stored selections or initialize an empty array
-    const selections = JSON.parse(localStorage.getItem('selections') || "[]");
-    
-    // Push the new selection to the array
-    selections.push({
-      container: uniqueID,
-      startOffset: range.startOffset,
-      endOffset: range.endOffset,
-      storedText: document.getElementById(uniqueID).textContent
-    });
-
-    // Store the updated selections array
-    localStorage.setItem('selections', JSON.stringify(selections));
-  }
-}
-
-// Function to recreate selections from stored data
-function recreateSelections() {
-  const selections = JSON.parse(localStorage.getItem('selections') || "[]");
-
-  selections.forEach((selection, index) => {
-    const container = document.getElementById(selection.container);
-    const storedText = selection.storedText;
-
-    if (container && storedText) {
-      if (container.textContent === storedText) {
-        container.classList.add('highlight'); // Apply the highlight class
-      } else {
-        console.error(`Selection ${index} does not match the current text. Stored text: ${storedText}`);
-        // Handle the error as appropriate for your application
-      }
-    } else {
-      console.error(`Container not found for selection ${index}`);
-      // Handle the error as appropriate for your application
-    }
-  });
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  // Your existing code here...
-
-  // Recreate selections from previous session
-  recreateSelections();
-});
-
-
-
-/*
   // Function to count characters in the entire HTML document
   function countCharacters() {
     const allTextElements = document.querySelectorAll('*');
@@ -582,7 +460,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("mouseup", storeSelectedText);
   });
 
-*/
 
  
 
