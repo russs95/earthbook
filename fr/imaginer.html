@@ -294,15 +294,15 @@ All the page components required to build this page-->
 
      <p>Grâce à la combinaison de nos deux perspectives ancestrales : l'héritage Igorot de Banayan et ma culture Européenne; sa culture indigène et mon passé familial de pionnier; son éducation agraire et mon bagage industriel, nous enquêterons sur les lacunes de notre compréhension éthique moderne. En particulier, l'exceptionnalité humaine erronée que nous observons est à l'origine de tout notre malaise écologique moderne.</p>
 
-     <p>With this ontological error excised, we shall then lay out a new theory of green anchored upon the cosmological character of our planet.</p>
+     <p>Cette erreur métaphysique excisée, nous exposerons alors une nouvelle théorie du vert ancrée sur le caractère cosmologique de notre planète.</p>
 
-     <p>Guided by the insights of great green nations, the ways of magnificently contributive creatures and the latest insights of Earth science, we shall do our best to articulate each of the principles that composes our planet’s five-fold pattern of ecological enrichment.</p>
+     <p>Guidés par les idées de grandes nations vertes, l’exemple de créatures magnifiquement contributives et de la science de la Terre, nous exposerons chacun des principes qui composent les cinq volets d'enrichissement écologique de notre planète.</p>
 
-     <p>The resulting <i>Earthen ethics</i> will help us to make sense of our modern processes, technologies and enterprises by providing a means by which we can discern that which is enriching from that which is degrading; that which is an ecological contribution from that which is a depletion; and that which is <i>green</i> from that which is <i>grey</i>.</p>
+     <p>L'éthique terrestre qui en résultera nous aidera à donner un sens à nos processus, entreprises modernes et technologies en s'avérant un moyen par lequel nous pouvons discerner ce qui est enrichissant de ce qui est dégradant ; ce qui est un apport écologique de ce qui est un appauvrissement; et ce qui est vert de ce qui est gris.</p>
 
-      <p id="5-up">In this way, with Earth’s example as our guide to green, can move forward with unprecedented clarity and confidence to embody the geometry of contribution in all our processes, cycles and systems.<a href="#footnotes" title="'We can think of our current civilization-- its technical and sociopolitical infrastructure, its ideology and beliefs-- as an operating system, much like the software that runs our computers.  Now we need to reboot and install a new system software'.  Daniel Pinchbeck, How Soon is Now: From Personal Initiation to Global Transformation, (Publisher: Watkins Publishing, 2017) Chapter 2, p.105" onclick="openFootnotes()">⁵</a></p>
+      <p id="5-up">De cette façon, avec le modèle de la Terre comme guide du vert, nous pouvons avancer et instaurer une clarté et une confiance sans précédent pour incarner la géométrie de la contribution dans tous nos processus, cycles et systèmes.<a href="#footnotes" title="'We can think of our current civilization-- its technical and sociopolitical infrastructure, its ideology and beliefs-- as an operating system, much like the software that runs our computers.  Now we need to reboot and install a new system software'.  Daniel Pinchbeck, How Soon is Now: From Personal Initiation to Global Transformation, (Publisher: Watkins Publishing, 2017) Chapter 2, p.105" onclick="openFootnotes()">⁵</a></p>
 
-     <p>To begin, let us turn to that troublesome material we so love to hate.</p>
+     <p>Commençons donc par ce matériau gênant que nous adorons tant détester.</p>
      <br><br><br>
   
     
@@ -448,14 +448,16 @@ document.addEventListener("DOMContentLoaded", function() {
             selectedRange.surroundContents(span);
             clearSelection();
 
-            setTimeout(unHighlight, 1000);  // call unHighlight function after 1 second
+            //setTimeout(unHighlight, 1000);  // call unHighlight function after 1 second
         }
     });
 
     function removeHighlight(e) {
         if (e.target.classList.contains(highlightClass)) {
             e.target.classList.remove(highlightClass);
-            e.target.title = "Click this text to save.";
+            e.target.classList.remove(prehighlightClass);
+
+            e.target.title = "Removed!";
         }
     }
 
