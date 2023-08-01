@@ -185,7 +185,7 @@ All the page components required to build this page-->
 }
 
 .pre-highlight {
-    background-color: lightgray;
+    background-color: rgba(0, 128, 0, 0.224);
     cursor:pointer;
 }
 
@@ -354,7 +354,7 @@ All the page components required to build this page-->
   
 
   <script>
-document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
@@ -402,6 +402,14 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 e.target.classList.add(highlightClass);
             }
+        } else {
+            let preHighlights = document.querySelectorAll('.' + preHighlightClass);
+            preHighlights.forEach(function(el) {
+                if (!el.classList.contains(highlightClass)) {
+                    let text = el.textContent;
+                    el.replaceWith(text);
+                }
+            });
         }
     });
 });
