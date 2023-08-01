@@ -360,16 +360,24 @@ function storeSelectedText() {
         // Alert to confirm storage
         alert(`storedText-1: ${selectedText}`);
 
-        setTimeout(removeHighlight, 1000);
+   // Inside storeSelectedText function
+setTimeout(() => removeHighlight(spanElement), 1000);
+
     }
 }
 
-function removeHighlight(e) {
-    if (e.target.classList.contains('highlight')) {
-        let text = e.target.textContent;
-        e.target.replaceWith(text);
-    }
+function removeHighlight(element) {
+    // Get the text content of the span
+    let text = element.textContent;
+
+    // Create a text node with the content
+    let textNode = document.createTextNode(text);
+
+    // Replace the span element with the text node
+    element.replaceWith(textNode);
 }
+
+
 
 
 
