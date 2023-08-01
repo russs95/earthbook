@@ -354,7 +354,7 @@ All the page components required to build this page-->
   
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
@@ -379,18 +379,29 @@ All the page components required to build this page-->
         }
     }
 
-    document.addEventListener('mouseup', function() {
+    function removePreHighlights() {
+        document.querySelectorAll('.' + preHighlightClass).forEach(function(el) {
+            let text = el.textContent;
+            el.replaceWith(text);
+        });
+    }
+
+    document.addEventListener('mouseup', function(e) {
         selectedRange = getSelectedRange();
         if (selectedRange && selectedRange.toString().trim().length > 0) {
-            if (selectedRange.startContainer.parentNode === selectedRange.endContainer.parentNode) {
-                let span = document.createElement('span');
-                span.style.cursor = 'pointer';
-                span.classList.add(preHighlightClass);
-                selectedRange.surroundContents(span);
+            // check if selection contains <p> or </p>
+            let selectedHtml = selectedRange.cloneContents().querySelectorAll('p');
+            if (selectedHtml.length > 0) {
+                alert("Sorry! For the moment multi-paragraph highlighting is not yet possible.");
                 clearSelection();
-            } else {
-                alert("Sorry, for the moment only text highlighting within paragraphs is possible.");
+                return;
             }
+
+            let span = document.createElement('span');
+            span.style.cursor = 'pointer';
+            span.classList.add(preHighlightClass);
+            selectedRange.surroundContents(span);
+            clearSelection();
         }
     });
 
@@ -403,16 +414,11 @@ All the page components required to build this page-->
                 e.target.classList.add(highlightClass);
             }
         } else {
-            let preHighlights = document.querySelectorAll('.' + preHighlightClass);
-            preHighlights.forEach(function(el) {
-                if (!el.classList.contains(highlightClass)) {
-                    let text = el.textContent;
-                    el.replaceWith(text);
-                }
-            });
+            removePreHighlights();
         }
     });
 });
+
 
 
 
