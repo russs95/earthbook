@@ -624,7 +624,7 @@ h6 {
 
 
 .highlight {
-  background-color: grey;
+  background-color: green;
   color: var(--true);
   cursor:pointer;
 }
