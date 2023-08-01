@@ -292,23 +292,17 @@ All the page components required to build this page-->
       
       <p>Plus précisément, nous en sommes venus à nous demander: « En fait, que devrait signifier le mot vert? »</p>
   
-      <p>While Banayan and I continue to ecobrick our own used plastic, our suspicion has grown that solving plastic (and being ‘green’) is not just about new techniques and technologies. Just as significant as <i>what</i> we do is <i>how and why</i> we do it.  In this aspect, our convictions have crystallized: the wisdom traditions of ancient indigenous cultures are critical to giving meaning and substance to our contemporary concept of green.</p>
-  
-      <p>Our title reflects this merging of the modern and indigenous world views<a href="#footnotes" title="Going forward, instead of the term 'indigenous' we will use the term ‘kincentric' to specifically reference the indigenous world view which we are exploring: a particular cosmology that, although it is characterstic of most indigenous cultures, is not necessarily so.  This will be expanded upon in chapter 5.">¹</a> that our two ancestral backgrounds emobdy.</p>
-      
-      <p>In Latin, the word <i>tractatus</i> refers to the philosophical tradition of a treatise— a step-by-step exposition of a particular concept.  In Kan'kan'ue, the language of the Igorots, the word <i>ayyew</i> refers to the virtue of cyclic ecological integration that guides their culture.</p>
-  
-      <p>It is this <i>ayyew ethos</i> which inspires the theory of green and grey presented in the three books of the <i>Tractatus Ayyew</i> ahead.</p>
-  
-      <p>In Book One we clear the ground and establish the five-facet foundation of our Earth anchored ethics.</p>
-  
-      <p>In Book Two we dedicate a chapter to each of the five Earthen ethics. </p>
-  
-      <p>In Book Three we conclude with a five-fold Earthen solution for plastic.</p>
-  
-      <p>In this way, through the <i>Tractatus Ayyew's</i> systematic presentation of the functional facets of green enterprise, we aim to provide a tool kit rather than a manifesto.</p>
-  
-      <p>It is our hope that with Earthen principles clear and plastic's resolve exemplified, other grey challenges may transition with unprecedented confidence and clarity, to an Earthen shade of green.</p>
+      <p>Tandis que nous continuons à écobriquer notre propre plastique usagé, nous soupçonnons de plus en plus que résoudre le problème du plastique (et être « vert ») ne se résume pas seulement aux nouvelles techniques et technologies. Tout aussi important, que ce que nous faisons, est la question de pourquoi et comment nous le faisons. C’est de là que nos convictions se sont cristallisées: les traditions de sagesse des anciennes cultures indigènes sont essentielles pour guider nos concepts contemporains de “vert”.</p>
+
+        <p>Pour Banayan et moi même, le titre de l'ouvrage reflète une rencontre de nos racines modernes et ancestrales.</p>
+        <p>En Latin, le mot Tractatus fait référence à la tradition philosophique d'un traité - une exposition rationnelle d'un concept particulier. En Kan'kan'ue, la langue des Igorots, le mot Ayyew fait référence à la vertu d'intégration dans les cycles des écosystèmes qui guide leur culture.</p>
+        <p>C'est l'éthos Igorot qui inspirera et guidera la théorie du vert et du gris présentée dans les trois livres du Tractatus Ayyew plus avant.</p>
+        <p>Dans le premier livre, nous préparons le terrain et établissons les fondations de notre éthique basée sur les cinq facettes du caractère cosmologique de la planète Terre.</p>
+        <p>Dans le deuxième livre, nous consacrons un chapitre à chacune des cinq éthiques terrestres.</p>
+        <p>Dans le troisième livre, nous concluons par une solution à cinq volets pour le plastique.</p> 
+        <p>Ainsi, au travers des dix-huit chapitres présentant chacun une facette fonctionnelle de l'entreprise verte, le Tractatus Ayyew se veut une boîte à outils plutôt qu'un manifeste.</p>
+        <p>Nous espérons que, grâce à l'éthos des Igorots, l'éthique Terrestre, et l'exemple de la résolution du plastique, que d'autres défis apparemment gris insolubles pourront, avec confiance et clarté, passer à une profonde teinte de vert.</p>
+        
   
       </div><!--closes page text content, then loads page curtains:-->
 
@@ -445,13 +439,15 @@ document.addEventListener("DOMContentLoaded", function() {
             span.title = "Click this text to save.";
             selectedRange.surroundContents(span);
             clearSelection();
+
+            setTimeout(unHighlight, 1000);  // call unHighlight function after 1 second
         }
     });
 
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains(preHighlightClass)) {
             if (e.target.classList.contains(highlightClass)) {
-                let text = e.target.textContent;
+                let text = elem.textContent;
                 e.target.replaceWith(text);
             } else {
                 e.target.classList.add(highlightClass);
@@ -461,19 +457,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function unHighlight() {
-        document.addEventListener('click', function(e) {
-            let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
+        let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
 
-            preHighlightedElems.forEach(function(elem) {
-                if (elem.classList.contains(preHighlightClass)) {
-                    let text = elem.textContent;
-                    elem.replaceWith(text);
-                }
-            });
+        preHighlightedElems.forEach(function(elem) {
+            if (elem.classList.contains(preHighlightClass)) {
+                let text = elem.textContent;
+                elem.replaceWith(text);
+            }
         });
     }
-    
-    unHighlight(); // call the function here
 });
 
 
