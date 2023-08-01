@@ -236,10 +236,10 @@ All the page components required to build this page-->
    <div id="ct-chapter-top">
      <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
      <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-         <div id="ct-chapter-title">Epigraph</div>   
+         <div id="ct-chapter-title">Épigraphe</div>   
          <div id="ct-book-title">Tractatus Ayyew</div>
-         <div id="ct-chap-location">Book One</div>
-         <div id="ct-word-count"><i>67 words</i></div>
+         <div id="ct-chap-location">Livre Un</div>
+         <div id="ct-word-count"><i>67 mots</i></div>
        </div>
    </div>
    
@@ -390,14 +390,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
 
-            document.removeEventListener('click', onClickHandler); // Remove the listener after it's executed
+            // Remove the listener after it's executed, so it won't affect elements with the .highlight class
+            document.removeEventListener('click', onClickHandler);
         }
     }
 
     document.addEventListener('click', onClickHandler);
 }
 
-});
 </script>
 
 
