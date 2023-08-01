@@ -410,7 +410,7 @@ All the page components required to build this page-->
   
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
@@ -447,14 +447,6 @@ All the page components required to build this page-->
                 selectedRange.surroundContents(span);
                 preHighlightElement = span;
                 clearSelection();
-                
-                setTimeout(function() {
-                    if (preHighlightElement) {
-                        let text = preHighlightElement.textContent;
-                        preHighlightElement.replaceWith(text);
-                        preHighlightElement = null;
-                    }
-                }, 1000);
             }, 10);
         }
     });
@@ -468,6 +460,16 @@ All the page components required to build this page-->
     });
 });
 
+
+    document.addEventListener('click', function(e) {
+        if (e.target === preHighlightElement) {
+            clearTimeout(clearHighlightTimeout);
+            e.target.classList.add(highlightClass);
+            e.target.title = "This quotation is saved in your Book Notes";
+            preHighlightElement = null;
+        }
+    });
+});
 
 
 
