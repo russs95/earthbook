@@ -622,6 +622,20 @@ h6 {
 }
 
 
+
+.highlight {
+  background-color: green;
+  color: var(--true);
+  cursor:pointer;
+}
+
+.pre-highlight {
+    background-color: grey;
+    cursor:pointer;
+}
+
+
+
 /* -------------------------------------------------------------------------- */
 
 /*	3. Top Navigation Bar
