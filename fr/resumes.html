@@ -102,7 +102,7 @@ starts loading the fonts-->
 
 <!-- PRELOADS-->
 <link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-light.svg">
+<link rel="preload" as="image" href="../svgs/00-day.svg">
 
 
  <!-- STYLE SHEETS   
@@ -442,27 +442,6 @@ function removeHighlight(e) {
     }
 }
 
-function storeSelectedText() {
-    const selection = window.getSelection();
-    if (selection.rangeCount > 0) {
-        const range = selection.getRangeAt(0);
-        // Get the ID of the span element from the selected range
-        const uniqueID = range.startContainer.parentNode.id;
-
-        localStorage.setItem('container', uniqueID);
-        localStorage.setItem('startOffset', range.startOffset);
-        localStorage.setItem('endOffset', range.endOffset);
-        // Retrieve the text content of the element with the unique ID
-        const storedText = document.getElementById(uniqueID).textContent;
-        localStorage.setItem('storedText-1', storedText);
-
-        alert(`container: ${uniqueID}\n` +
-              `startOffset: ${range.startOffset}\n` +
-              `endOffset: ${range.endOffset}\n` +
-              `storedText-1: ${storedText}`);
-    }
-}
-
 
 
 
@@ -483,6 +462,57 @@ function storeSelectedText() {
     });
 });
 
+// Function to store the current selection
+function storeSelectedText() {
+  const selection = window.getSelection();
+  if (selection.rangeCount > 0) {
+    const range = selection.getRangeAt(0);
+    const uniqueID = range.startContainer.parentNode.id;
+
+    // Get existing stored selections or initialize an empty array
+    const selections = JSON.parse(localStorage.getItem('selections') || "[]");
+    
+    // Push the new selection to the array
+    selections.push({
+      container: uniqueID,
+      startOffset: range.startOffset,
+      endOffset: range.endOffset,
+      storedText: document.getElementById(uniqueID).textContent
+    });
+
+    // Store the updated selections array
+    localStorage.setItem('selections', JSON.stringify(selections));
+  }
+}
+
+// Function to recreate selections from stored data
+function recreateSelections() {
+  const selections = JSON.parse(localStorage.getItem('selections') || "[]");
+
+  selections.forEach((selection, index) => {
+    const container = document.getElementById(selection.container);
+    const storedText = selection.storedText;
+
+    if (container && storedText) {
+      if (container.textContent === storedText) {
+        container.classList.add('highlight'); // Apply the highlight class
+      } else {
+        console.error(`Selection ${index} does not match the current text. Stored text: ${storedText}`);
+        // Handle the error as appropriate for your application
+      }
+    } else {
+      console.error(`Container not found for selection ${index}`);
+      // Handle the error as appropriate for your application
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Your existing code here...
+
+  // Recreate selections from previous session
+  recreateSelections();
+});
 
 
 
