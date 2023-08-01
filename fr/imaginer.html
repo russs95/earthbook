@@ -413,7 +413,6 @@ All the page components required to build this page-->
   
 
   <script>
-
 document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
@@ -460,6 +459,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    function storeSelectedText() {
+    const selection = window.getSelection();
+    if (selection.rangeCount > 0) {
+        const range = selection.getRangeAt(0);
+        localStorage.setItem('startContainer', range.startContainer.parentNode.id);
+        localStorage.setItem('endContainer', range.endContainer.parentNode.id);
+        localStorage.setItem('startOffset', range.startOffset);
+        localStorage.setItem('endOffset', range.endOffset);
+        localStorage.setItem('storedText-1', selection.toString());
+
+        // Add the alert to display the variables sent to local storage
+        alert(`startContainer: ${range.startContainer.parentNode.id}\n` +
+              `endContainer: ${range.endContainer.parentNode.id}\n` +
+              `startOffset: ${range.startOffset}\n` +
+              `endOffset: ${range.endOffset}\n` +
+              `storedText-1: ${selection.toString()}`);
+    }
+}
+
+
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains(preHighlightClass)) {
             if (e.target.classList.contains(highlightClass)) {
@@ -468,12 +487,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 e.target.classList.add(highlightClass);
                 e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
                 e.target.title = "This quotation is saved in your Book Notes";
+                storeSelectedText(); // Call the storeSelectedText function to save the highlighted text
             }
         } else if (e.target.classList.contains(highlightClass)) {
             removeHighlight(e);
         }
     });
 });
+
 
 
 
