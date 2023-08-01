@@ -388,11 +388,11 @@ All the page components required to build this page-->
        <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
         <div class="next-section">
           <div class="next-sec">Section suivante :</div>
-          <div class="sec-name"><i>Préface</i></div>
+          <div class="sec-name"><i>Epigraph I</i></div>
         </div>
       </div>
       <div class="footer-right">
-        <a href="lepreface.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
+        <a href="epigraph-1.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
       </div>
     </div>
   
@@ -410,7 +410,6 @@ All the page components required to build this page-->
   
 
   <script>
-    
     document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
@@ -447,12 +446,18 @@ All the page components required to build this page-->
                 span.title = "Click this text to save.";
                 selectedRange.surroundContents(span);
                 clearSelection();
-                
+
                 clearHighlightTimeout = setTimeout(function() {
                     let text = span.textContent;
                     span.replaceWith(text);
                 }, 1000);
             }, 10);
+        }
+    });
+
+    document.addEventListener('mousedown', function(e) {
+        if (!e.target.classList.contains(preHighlightClass)) {
+            clearTimeout(clearHighlightTimeout);
         }
     });
 
@@ -470,6 +475,7 @@ All the page components required to build this page-->
         }
     });
 });
+
 
 
 
