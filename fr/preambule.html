@@ -349,7 +349,7 @@ All the page components required to build this page-->
 
  <chap-foot></chap-foot>
 
-
+  </div>
 </div>
 <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
    
@@ -357,7 +357,7 @@ All the page components required to build this page-->
   
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+   document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
@@ -382,16 +382,16 @@ All the page components required to build this page-->
         }
     }
 
-    function removePreHighlights() {
-        document.querySelectorAll('.' + preHighlightClass).forEach(function(el) {
-            let text = el.textContent;
-            el.replaceWith(text);
-        });
-    }
-
-    document.addEventListener('mouseup', function(e) {
+    document.addEventListener('mouseup', function() {
         selectedRange = getSelectedRange();
         if (selectedRange && selectedRange.toString().trim().length > 0) {
+            if (selectedRange.commonAncestorContainer.parentNode.nodeName !== 'P' &&
+                (selectedRange.commonAncestorContainer.parentNode.innerHTML.includes('<p>') ||
+                selectedRange.commonAncestorContainer.parentNode.innerHTML.includes('</p>'))) {
+                alert("Sorry! For the moment multi-paragraph highlighting is not yet possible.");
+                return;
+            }
+
             let span = document.createElement('span');
             span.style.cursor = 'pointer';
             span.classList.add(preHighlightClass);
@@ -408,11 +408,10 @@ All the page components required to build this page-->
             } else {
                 e.target.classList.add(highlightClass);
             }
-        } else {
-            removePreHighlights();
         }
     });
 });
+
 
 
 
