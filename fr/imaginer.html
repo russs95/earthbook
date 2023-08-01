@@ -455,34 +455,38 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-    function removeHighlight(e) {
-        if (e.target.classList.contains(highlightClass)) {
-            e.target.classList.remove(highlightClass);
-            e.target.classList.remove(preHighlightClass);
-
-            e.target.title = "Removed!";
-        }
+function removeHighlight(e) {
+    if (e.target.classList.contains(highlightClass) || e.target.classList.contains(preHighlightClass)) {
+        let text = e.target.textContent;
+        e.target.replaceWith(text);
     }
+}
 
-    function storeSelectedText() {
+function storeSelectedText() {
     const selection = window.getSelection();
     if (selection.rangeCount > 0) {
         const range = selection.getRangeAt(0);
-        localStorage.setItem('startContainer', range.startContainer.id);
-localStorage.setItem('endContainer', range.endContainer.id);
+        const startContainerId = range.startContainer.id;
+        const endContainerId = range.endContainer.id;
 
+        // Get the element by its ID and access its text content
+        const storedText = document.getElementById(startContainerId).textContent;
+
+        localStorage.setItem('startContainer', startContainerId);
+        localStorage.setItem('endContainer', endContainerId);
         localStorage.setItem('startOffset', range.startOffset);
         localStorage.setItem('endOffset', range.endOffset);
-        localStorage.setItem('storedText-1', selection.toString());
+        localStorage.setItem('storedText-1', storedText);
 
         // Add the alert to display the variables sent to local storage
-        alert(`startContainer: ${range.startContainer.parentNode.id}\n` +
-              `endContainer: ${range.endContainer.parentNode.id}\n` +
+        alert(`startContainer: ${startContainerId}\n` +
+              `endContainer: ${endContainerId}\n` +
               `startOffset: ${range.startOffset}\n` +
               `endOffset: ${range.endOffset}\n` +
-              `storedText-1: ${selection.toString()}`);
+              `storedText-1: ${storedText}`);
     }
 }
+
 
 
     document.addEventListener('click', function(e) {
