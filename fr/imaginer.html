@@ -266,25 +266,25 @@ All the page components required to build this page-->
 
       <p>Comme aucune autre matière, le plastique incarne définitivement les facettes de notre époque. Dérivé du carbone ancien, le plastique nous permet de toucher l'histoire fossile qui a permis la nôtre. Acheté et vendu, le plastique est une manifestation physique de l'économie pétro-capitaliste qui alimente notre époque mondialisée. Fabriqué par des humains, entièrement pour des humains, le plastique est un reflet lucide de notre civilisation moderne centrée sur l'humain.</p>
 
-     <p>In this way, our plastic is in fact a mirror. </p>
+     <p>De cette façon, notre plastique est en fait un miroir.</p>
 
-     <p>And an opportunity.</p>
+     <p>Et une opportunité.</p>
      
-     <p>By confronting plastic's full billion year story, we can face our own within the same frame.</p>
+     <p>En affrontant l'histoire du plastique vieille d’un milliard d’années, nous pourrons affronter nôtre propre histoire dans le même cadre.</p>
 
-     <p>Then, in seeing our reflection with unprecedented clarity, we can know our plastic— and ourselves— anew.</p>
+     <p>Ensuite, en voyant notre réflexion avec une clarté sans précédent, nous pourrons comprendre notre plastique - et nous-mêmes - avec une perspective nouvelle.</p>
 
-     <p>Above all, we can renew our understanding of positive human ecological participation: <i>what green should really mean.</i></p>
+     <p>Surtout, nous pourrons renouveler notre compréhension de l'interaction écologique humaine positive: <i>ce que le vert devrait vraiment signifier.</i></p>
 
-     <p>Banayan and I, in struggling to manage our own plastic positively, have come to see that the contemporary concept of green is lacking and incomplete.</p>
+     <p>En luttant pour gérer positivement notre propre plastique, Banayan et moi en venons à réaliser que le concept contemporain du vert fait défaut et est incomplet.</p>
      
-     <p>Seen through the lens of the ecological ethos of her people, we observe that the modern ethic of green is merely about reducing <i>harm</i>— while the concept of <i>contribution</i> has remained all but un-imagined.</p>
+     <p>Vu à travers le prisme de l'éthos écologique Igorot, nous observons que l'éthique moderne du vert consiste simplement à réduire les dommages, tandis que le concept de contribution est pratiquement resté inimaginé et inimaginable.</p>
      
-     <p>It is a view of human ecological potential that sharply contradicts the lived experience of Banayan and her ancestors.</p>
+     <p>Cette vision du potentiel écologique humain contredit fortement l'expérience vécue de Banayan et de ses ancêtres.</p>
 
-     <p>As we shall see in the chapters ahead, ecological contribution has in fact been the overwhelming tendency on Earth— a unique planetary pattern of matter and energy that, from the very beginning, has permeated all of Earth's processes, cycles and systems.</p>
+     <p>Comme nous le verrons dans les chapitres à venir, pour la Terre, la contribution écologique a de toujours été la tendance dominante - un modèle planétaire unique de matière et d'énergie qui, depuis le tout début, a imprégné tous les processus, cycles et systèmes de la Terre.</p>
 
-     <p>And our own.</p>
+     <p>Et le nôtre.</p>
 
      <p>To the extent that this Earthen pattern has been reflected within the values and virtues of a culture, the societies that have ensued have systematically enriched the ecosystems of which they are a part.</p>
 
@@ -414,7 +414,7 @@ All the page components required to build this page-->
 
   <script>
 
-/*
+
 document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
@@ -493,7 +493,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+/*
   // Function to count characters in the entire HTML document
   function countCharacters() {
     const allTextElements = document.querySelectorAll('*');
@@ -559,129 +559,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener("mouseup", storeSelectedText);
   });
 
-  */
-
-  document.addEventListener("DOMContentLoaded", function() {
-  let highlightClass = 'highlight';
-  let preHighlightClass = 'pre-highlight';
-  let bookNoteCounter = parseInt(localStorage.getItem('bookNoteCounter') || 0);
-
-  function getSelectedRange() {
-    if (window.getSelection) {
-      let sel = window.getSelection();
-      if (sel.rangeCount) {
-        return sel.getRangeAt(0);
-      }
-    } else if (document.selection && document.selection.createRange) {
-      return document.selection.createRange();
-    }
-    return null;
-  }
-
-  function clearSelection() {
-    if (window.getSelection) {
-      window.getSelection().removeAllRanges();
-    } else if (document.selection) {
-      document.selection.empty();
-    }
-  }
-
-  document.addEventListener('mouseup', function() {
-    let selectedRange = getSelectedRange();
-    if (selectedRange && selectedRange.toString().trim().length > 0) {
-      const firstChar = selectedRange.startOffset;
-      const lastChar = selectedRange.endOffset + selectedRange.startOffset;
-      let span = document.createElement('span');
-      span.dataset.firstChar = firstChar;
-      span.dataset.lastChar = lastChar;
-      span.style.cursor = 'pointer';
-      span.classList.add(preHighlightClass);
-      span.title = "Click this text to save.";
-      selectedRange.surroundContents(span);
-      clearSelection();
-
-      setTimeout(unHighlight, 1000);
-    }
-  });
-
-  function unHighlight() {
-    function onClickHandler(e) {
-      if (!e.target.classList.contains(preHighlightClass) && !e.target.classList.contains(highlightClass)) {
-        let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
-
-        preHighlightedElems.forEach(function(elem) {
-          if (elem.classList.contains(preHighlightClass)) {
-            let text = elem.textContent;
-            elem.replaceWith(text);
-          }
-        });
-
-        document.removeEventListener('click', onClickHandler);
-      }
-    }
-
-    document.addEventListener('click', onClickHandler);
-  }
-
-  document.addEventListener('click', function(e) {
-    if (e.target.classList.contains(preHighlightClass)) {
-      if (!e.target.classList.contains(highlightClass)) {
-        e.target.classList.add(highlightClass);
-        e.target.classList.remove(preHighlightClass);
-        e.target.title = "This quotation is saved in your Book Notes";
-
-        const text = e.target.textContent;
-        const firstChar = e.target.dataset.firstChar;
-        const lastChar = e.target.dataset.lastChar;
-        bookNoteCounter++;
-        localStorage.setItem(`bookNote-${bookNoteCounter}`, JSON.stringify({ text, firstChar, lastChar }));
-        localStorage.setItem('bookNoteCounter', bookNoteCounter);
-      }
-    }
-  });
-
-  function countCharacters() {
-    const allTextElements = document.querySelectorAll('*');
-    let charCount = 0;
-
-    allTextElements.forEach(element => {
-      element.childNodes.forEach(child => {
-        if (child.nodeType === Node.TEXT_NODE) {
-          charCount += child.textContent.length;
-        }
-      });
-    });
-
-    return charCount;
-  }
-
-  function recreateSelection() {
-    let allBookNotes = '';
-    for (let i = 1; i <= bookNoteCounter; i++) {
-      const bookNote = JSON.parse(localStorage.getItem(`bookNote-${i}`));
-      if (bookNote) {
-        allBookNotes += `Book Note ${i}: ${bookNote.text} (First char: ${bookNote.firstChar}, Last char: ${bookNote.lastChar})\n`;
-
-        // Re-apply the highlight class to the saved selections
-        const range = document.createRange();
-        range.setStart(document.body, parseInt(bookNote.firstChar));
-        range.setEnd(document.body, parseInt(bookNote.lastChar));
-        const span = document.createElement('span');
-        span.classList.add(highlightClass);
-        range.surroundContents(span);
-      }
-    }
-    if (allBookNotes) alert(allBookNotes);
-  }
-
-  window.addEventListener('load', function() {
-    // Assuming showAlertWithCharacterCount is defined elsewhere
-    // If not, you can remove this line
-    // showAlertWithCharacterCount();
-    recreateSelection();
-  });
-});
-
+*/
 
  
 
