@@ -385,13 +385,7 @@ All the page components required to build this page-->
 
     document.addEventListener('mouseup', function() {
         selectedRange = getSelectedRange();
-        if (selectedRange && selectedRange.toString().trim().length > 0) {
-            if (selectedRange.commonAncestorContainer.parentNode.nodeName !== 'DIV' &&
-                (selectedRange.commonAncestorContainer.parentNode.innerHTML.includes('<div>') ||
-                selectedRange.commonAncestorContainer.parentNode.innerHTML.includes('</div>'))) {
-                alert("Sorry! For the moment multi-paragraph highlighting is not yet possible.");
-                return;
-            }
+       
 
             let span = document.createElement('span');
             span.style.cursor = 'pointer';
@@ -399,7 +393,7 @@ All the page components required to build this page-->
             selectedRange.surroundContents(span);
             clearSelection();
         }
-    });
+    );
 
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains(preHighlightClass)) {
