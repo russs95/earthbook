@@ -204,7 +204,7 @@ All the page components required to build this page-->
 <div id="ct-chapter-top">
     <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents" ></button>
     <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-        <div id="ct-chapter-title">Preface</div>   
+        <div id="ct-chapter-title">Préface</div>   
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Introduction</div>
         <div id="ct-word-count"><i>1,140 words</i></div>
@@ -234,7 +234,7 @@ All the page components required to build this page-->
   <div id="chap-notice">
     <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
     <div id="chap-notice-text">
-    💡  Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
+        💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
     </div>
   </div>
   
@@ -244,7 +244,7 @@ All the page components required to build this page-->
   -->
   <br><br><br>
   <div><div class="lead-page-paragraph">
-    ALAS, not all books have beautiful beginnings.  
+    TOUTES LES HISTOIRES n'ont hélas pas que de beaux débuts. 
   </div>
   </div>  
   <div class="page-paragraph">
@@ -410,7 +410,8 @@ All the page components required to build this page-->
   
 
   <script>
- document.addEventListener("DOMContentLoaded", function() {
+    
+    document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
@@ -439,17 +440,19 @@ All the page components required to build this page-->
     document.addEventListener('mouseup', function() {
         selectedRange = getSelectedRange();
         if (selectedRange && selectedRange.toString().trim().length > 0) {
-            let span = document.createElement('span');
-            span.style.cursor = 'pointer';
-            span.classList.add(preHighlightClass);
-            span.title = "Click this text to save.";
-            selectedRange.surroundContents(span);
-            clearSelection();
-            
-            clearHighlightTimeout = setTimeout(function() {
-                let text = span.textContent;
-                span.replaceWith(text);
-            }, 1000);
+            setTimeout(function() {
+                let span = document.createElement('span');
+                span.style.cursor = 'pointer';
+                span.classList.add(preHighlightClass);
+                span.title = "Click this text to save.";
+                selectedRange.surroundContents(span);
+                clearSelection();
+                
+                clearHighlightTimeout = setTimeout(function() {
+                    let text = span.textContent;
+                    span.replaceWith(text);
+                }, 1000);
+            }, 10);
         }
     });
 
