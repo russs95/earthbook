@@ -286,13 +286,13 @@ All the page components required to build this page-->
 
      <p>Et le nôtre.</p>
 
-     <p>To the extent that this Earthen pattern has been reflected within the values and virtues of a culture, the societies that have ensued have systematically enriched the ecosystems of which they are a part.</p>
+     <p>Nous verrons aussi que dans la mesure où ce modèle terrestre s'est reflété dans les valeurs et les vertus d'une culture, les sociétés qui en ont résulté ont systématiquement enrichi les écosystèmes dont elles font partie.</p>
 
-     <p>Conversely, to the extent that a culture’s pattern has differed from Earth’s, systematic depletion and degradation have been the inexorable result.</p>
+     <p>Inversement, dans la mesure où le modèle d'une culture a différé de celui de la Terre, l'épuisement et les dégradations systématiques en ont été le résultat inexorable.</p>
 
-     <p>The discernment of this Earthen pattern, shall be our chief task in the <i>Tractatus Ayyew.</i></p>
+     <p>La distinction du modèle terrestre avec le modèle de profit anthropocentré sera notre tâche principale dans le <i>Tractatus Ayyew.</i></p>
 
-     <p>Through the combination of our two ancestral perspectives, Banayan’s Igorot heritage and my European, her indigenous culture and my settler, her agrarian upbringing and my industrial, we will investigate the shortcomings of our modern ethical understanding. In particular, the misconceived human exceptionalism that we observe is at the root of all our modern ecological malaise.</p>
+     <p>Grâce à la combinaison de nos deux perspectives ancestrales : l'héritage Igorot de Banayan et ma culture Européenne; sa culture indigène et mon passé familial de pionnier; son éducation agraire et mon bagage industriel, nous enquêterons sur les lacunes de notre compréhension éthique moderne. En particulier, l'exceptionnalité humaine erronée que nous observons est à l'origine de tout notre malaise écologique moderne.</p>
 
      <p>With this ontological error excised, we shall then lay out a new theory of green anchored upon the cosmological character of our planet.</p>
 
@@ -414,7 +414,6 @@ All the page components required to build this page-->
 
   <script>
 
-
 document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
@@ -454,41 +453,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    document.addEventListener('click', function(e) {
-    if (e.target.classList.contains(preHighlightClass)) {
+    function removeHighlight(e) {
         if (e.target.classList.contains(highlightClass)) {
-            e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class, but keep the .highlight class
-        } else {
-            e.target.classList.add(highlightClass);
-            e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
-            e.target.title = "This quotation is saved in your Book Notes";
-        }
-    }
-});
-
-
-    function unHighlight() {
-    function onClickHandler(e) {
-        if (!e.target.classList.contains(preHighlightClass) && !e.target.classList.contains(highlightClass)) {
-            let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
-
-            preHighlightedElems.forEach(function(elem) {
-                if (elem.classList.contains(preHighlightClass)) {
-                    let text = elem.textContent;
-                    elem.replaceWith(text);
-                }
-            });
-
-            // Remove the listener after it's executed, so it won't affect elements with the .highlight class
-            document.removeEventListener('click', onClickHandler);
+            e.target.classList.remove(highlightClass);
+            e.target.title = "Click this text to save.";
         }
     }
 
-    document.addEventListener('click', onClickHandler);
-}
-
-
-
+    document.addEventListener('click', function(e) {
+        if (e.target.classList.contains(preHighlightClass)) {
+            if (e.target.classList.contains(highlightClass)) {
+                e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class, but keep the .highlight class
+            } else {
+                e.target.classList.add(highlightClass);
+                e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
+                e.target.title = "This quotation is saved in your Book Notes";
+            }
+        } else if (e.target.classList.contains(highlightClass)) {
+            removeHighlight(e);
+        }
+    });
 });
 
 
