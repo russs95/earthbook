@@ -257,13 +257,13 @@ All the page components required to build this page-->
 For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
 -->
 
-  <div class="page-paragraph">
+  <div class="page-paragraph" style="text-align:center;">
 
 
-    <h3>Qui nous laissaient jouer dans les forêts, <br>
-        Courir dans les champs, <br>
-        Accepter l'étreinte verdoyante, <br>
-        Et cultiver notre étreinte en retour.</h3>
+    <p>Qui nous laissaient jouer dans les forêts,<p>
+        <p>Courir dans les champs,</p>
+        <p>Accepter l'étreinte verdoyante,</p>
+       <p>Et cultiver notre étreinte en retour.</p>
     </div>
 
   
@@ -339,34 +339,29 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
 function storeSelectedText() {
     const highlightClass = 'highlight'; // Define the highlightClass variable
     const selection = window.getSelection();
-    if (selection.rangeCount > 0) {
+    const selectedText = selection.toString().trim(); // Get only the selected text
+
+    if (selectedText.length > 0) {
         const range = selection.getRangeAt(0);
-        const startContainer = range.startContainer;
-        const endContainer = range.endContainer;
-
-        // Assuming the parent node is the span element you want to modify
-        const spanElement = startContainer.parentNode;
-
-        // Add the highlight class directly
+        const spanElement = document.createElement('span');
+        
+        // Add the highlight class and title to the span element
         spanElement.classList.add(highlightClass);
-
-        // Update the title attribute
         spanElement.title = "Your highlight has been stored as a booknote.";
+        spanElement.textContent = selectedText;
 
-        localStorage.setItem('startContainerId', startContainer.parentNode.id);
-        localStorage.setItem('endContainerId', endContainer.parentNode.id);
-        localStorage.setItem('startOffset', range.startOffset);
-        localStorage.setItem('endOffset', range.endOffset);
-        localStorage.setItem('storedText-1', selection.toString());
+        // Replace the selected range with the newly created span element
+        range.deleteContents();
+        range.insertNode(spanElement);
 
-        // Add the alert to display the variables sent to local storage
-        alert(`startContainer: ${startContainer}\n` +
-              `endContainer: ${endContainer}\n` +
-              `startOffset: ${range.startOffset}\n` +
-              `endOffset: ${range.endOffset}\n` +
-              `storedText-1: ${selection}`);
+        // Store the selected text in local storage
+        localStorage.setItem('storedText-1', selectedText);
+
+        // Alert to confirm storage
+        alert(`storedText-1: ${selectedText}`);
     }
 }
+
 
 
 
