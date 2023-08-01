@@ -252,42 +252,43 @@ All the page components required to build this page-->
 
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
+
+<div class="lead-page-paragraph"> 
+
+  </div>
 -->
 
 
-<div class="lead-page-paragraph"> 
-<p id="1">
-  Tout au long de l'entreprise d'écriture et de publication du <i>Tractatus Ayyew</i>, tous les impacts sur le carbone, le plastique et la biodiversité ont été suivis. La déclaration annuelle de la comptabilité écologique de l'entreprise peut être consultée dans les rapports en bas. Une déclaration complète de la biodiversité de l'espace physique de l'entreprise à Gianyar, Bali, Indonésie est disponible sur <a href="https://russs.net/forest" target="_blank">russs.net/forest</a></p>
-  </div>
-
   <div class="page-paragraph">
+    <p id="1">
+      Tout au long de l'entreprise d'écriture et de publication du <i>Tractatus Ayyew</i>, tous les impacts sur le carbone, le plastique et la biodiversité ont été suivis. La déclaration annuelle de la comptabilité écologique de l'entreprise peut être consultée dans les rapports en bas. Une déclaration complète de la biodiversité de l'espace physique de l'entreprise à Gianyar, Bali, Indonésie est disponible sur <a href="https://russs.net/forest" target="_blank">russs.net/forest</a></p>
+
     <p id="2">Téléchargez nos rapports généraux annuels ici :
   </p>
   </div>
   
   
-  
   <div class="document-holder">
 
-      <div class="doc-image" style="width:fit-content; padding:10px">
-      <img src="../webp/impact-report-100px.webp">
-      </div>
-      
-      <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right: 20px;">
-        <div class="doc-text-main"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">Tracatus Ayyew Writing & Publishing</a></div>
-        <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>2021 Regen Report</b> | PDF |  554kb | Issued 12/02/2022</a></div>
-      </div>
-  </div>
-
-  <div class="document-holder">
-      <div class="doc-image" style="width:fit-content; padding:10px">
-      <img src="../webp/impact-report-100px.webp">
-      </div>
-
-    <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right: 20px;">
-        <div class="doc-text-main"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">-->Tracatus Ayyew Writing & Publishing</div>
-        <div class="doc-text-small"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">--><b>2022 Regen Report</b> | PDF | Feb 2023 release pending</b></div>
+    <div class="doc-image" style="width:fit-content; padding:10px">
+    <img src="../webp/impact-report-100px.webp">
     </div>
+   
+    <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right : 20px ;">
+      <div class="doc-text-main"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="Le rapport Regen pour notre livre" alt= "Bannière déclarant notre intention For-Earth">Tracatus Ayyew Writing & Publishing</a></div>
+      <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>Rapport Regen 2021</b> | PDF | 554ko | Publié le 12/02/2022</a></div>
+    </div>
+</div>
+
+<div class="document-holder">
+    <div class="doc-image" style="width:fit-content; padding:10px">
+    <img src="../webp/impact-report-100px.webp">
+    </div>
+
+  <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right : 20px ;">
+      <div class="doc-text-main"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="Le rapport Regen pour nos livre" alt="Bannière déclarant notre intention pour la Terre">-->Tracatus Ayyew Writing & Publishing</div>
+      <div class="doc-text-small"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">--><b>Rapport de régénération 2022 </b> | PDF | Publication de février 2023 en attente</b></div>
+  </div>
 
   </div>
 
@@ -429,7 +430,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <script>
   // Function to count characters in the entire HTML document
-  function countCharacters() {
+ /* function countCharacters() {
     const allTextElements = document.querySelectorAll('*');
     let charCount = 0;
 
@@ -448,7 +449,7 @@ document.addEventListener("DOMContentLoaded", function() {
   function showAlertWithCharacterCount() {
     const totalCharacters = countCharacters();
     alert(`Total Characters in the HTML document: ${totalCharacters}`);
-  }
+  }*/
 
   // Function to store selected text and its positions in the local storage
   function storeSelectedText() {
@@ -461,6 +462,8 @@ document.addEventListener("DOMContentLoaded", function() {
       localStorage.setItem('endOffset', range.endOffset);
       localStorage.setItem('storedText-1', selection.toString());
     }
+    // Alert to confirm storage
+    alert(`storedText-1: ${selectedText}`);
   }
 
   // Function to recreate selection from stored data
