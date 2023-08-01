@@ -242,7 +242,9 @@ All the page components required to build this page-->
 
 <div id="ct-chapt-graphic" class="background-000">
 <div class="ct-chapter-quote">
-    Une courte phrase, une longue phrase et un paragraphe résumé de l'éthique terrestre.
+    À nos mères et nos pères, 
+
+
 </div>
 </div>
 
@@ -259,29 +261,13 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
   <div class="page-paragraph">
 
 
-    <h2>1. Une courte phrase</h2>
-    <p>Le concept d'éthique terrestre du « vert » peut se résumer en une phrase simple :
+    <h2>Qui nous laissaient jouer dans les forêts, <br>
+        Courir dans les champs, <br>
+        Accepter l'étreinte verdoyante, <br>
+        Et cultiver notre étreinte en retour.</h2>
+    </div>
 
-    </p>
-
-    <div class="quote"><p>Un processus est vert lorsqu'il suit l'exemple de contribution écologique de la Terre.</p></div>
-    <br>
-    <a name="long"></a>
-    <h2>2. Une phrase plus longue</h2>
-    
-    <p>En ajoutant « doit », nous obtenons l'éthique fondamentale de la Terre. Notez que le vert est ici interchangeable avec « contribution écologique ».</p>
-
-    <div class="quote"><p>Pour être vert, un processus doit incarner le modèle terrestre de concentration de la matière et de dispersion de l'énergie pour enrichir cycliquement la diversité et la conscience du système dont il fait partie.
-    </p></div>
-
-    <br>
-    <a name="paragraph"></a>
-    <h2>3. Un Paragraphe</h2>
-    
-    <p>Maintenant, plaçons l'éthique terrestre et notre nouvelle définition du vert dans notre contexte contemporain :</p>
-
-    <div class="quote"><p>Alors que nous devenons de plus en plus conscients de la dégradation écologique causée par notre époque moderne, nous aspirons à modifier nos habitudes. De toutes nos crises écologiques, la pollution plastique est particulièrement représentative de notre défi. En tant que sous-produit de combustible fossile, le plastique incarne un lien direct à la fois avec le modèle d'enrichissement de plusieurs milliards d'années de la biosphère et avec notre modèle moderne d'épuisement. En retraçant l'histoire primordiale du plastique et de la Terre, nous pouvons observer le contraste saisissant entre ces deux modèles. En particulier, la manière dont la Terre a fait tourner sa matière vers l'intérieur et son énergie vers l'extérieur pour déployer une vitalité, une diversité et une conscience toujours plus grande. En apprenant des cultures qui ont longtemps incarné ce modèle pour maîtriser leur propre intégration écologique, nous pouvons amender notre métaphysique pour reconnaître la contribution écologique comme notre base pour le vert. En conséquence, nous pouvons garantir que nos processus, cycles et systèmes incarnent le modèle de gestion de l'énergie et de la matière de la Terre, déclarant leur intention pour la Terre, dynamisant la biodiversité et sensibilisant à leur impact écologique. A partir de notre plastique, nous pouvons ainsi suivre l'exemple de la Terre pour faire en sorte que nos entreprises enrichissent systématiquement les écosystèmes dont elles font partie. 
-    </p></div>
+  
 
   </div><!--closes page text content-->
         
@@ -349,53 +335,40 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
 
   <script>
 
-  // Function to count characters in the entire HTML document
-  function countCharacters() {
-    const allTextElements = document.querySelectorAll('*');
-    let charCount = 0;
-
-    allTextElements.forEach(element => {
-      element.childNodes.forEach(child => {
-        if (child.nodeType === Node.TEXT_NODE) {
-          charCount += child.textContent.length;
-        }
-      });
-    });
-
-    return charCount;
-  }
-
-  // Function to display character count in an alert once the page has loaded
-  function showAlertWithCharacterCount() {
-    const totalCharacters = countCharacters();
-    alert(`Total Characters in the HTML document: ${totalCharacters}`);
-  }
-
-  // Function to store selected text and its positions in the local storage
-  // Function to store selected text and its positions in the browser cache (localStorage)
+  
 // Function to store selected text and its positions in the browser cache (localStorage)
 function storeSelectedText() {
-  const selection = window.getSelection();
-  if (selection.rangeCount > 0) {
-    const range = selection.getRangeAt(0);
-    localStorage.setItem('startContainerId', range.startContainer.parentNode.id);
-    localStorage.setItem('endContainerId', range.endContainer.parentNode.id);
-    localStorage.setItem('startOffset', range.startOffset);
-    localStorage.setItem('endOffset', range.endOffset);
-    localStorage.setItem('storedText-1', selection.toString());
+    const selection = window.getSelection();
+    if (selection.rangeCount > 0) {
+        const range = selection.getRangeAt(0);
+        const startContainer = range.startContainer;
+        const endContainer = range.endContainer;
 
-    // Update to capture startContainer and endContainer
-    const startContainer = range.startContainer;
-    const endContainer = range.endContainer;
+        // Assuming the parent node is the span element you want to modify
+        const spanElement = startContainer.parentNode;
 
-    // Add the alert to display the variables sent to local storage
-    alert(`startContainer: ${startContainer}\n` +
-          `endContainer: ${endContainer}\n` +
-          `startOffset: ${range.startOffset}\n` +
-          `endOffset: ${range.endOffset}\n` +
-          `storedText-1: ${selection}`);
-  }
+        // Add the highlight class directly
+        spanElement.classList.add(highlightClass);
+
+        // Update the title attribute
+        spanElement.title = "Your highlight has been stored as a booknote.";
+
+        localStorage.setItem('startContainerId', startContainer.parentNode.id);
+        localStorage.setItem('endContainerId', endContainer.parentNode.id);
+        localStorage.setItem('startOffset', range.startOffset);
+        localStorage.setItem('endOffset', range.endOffset);
+        localStorage.setItem('storedText-1', selection.toString());
+
+        // Add the alert to display the variables sent to local storage
+        alert(`startContainer: ${startContainer}\n` +
+              `endContainer: ${endContainer}\n` +
+              `startOffset: ${range.startOffset}\n` +
+              `endOffset: ${range.endOffset}\n` +
+              `storedText-1: ${selection}`);
+    }
 }
+
+
 
 
 // Function to recreate selection from stored data
@@ -420,7 +393,7 @@ function recreateSelection() {
       selection.addRange(range);
 
       // Apply a highlight CSS class to the selected range
-      const highlightClass = 'highlighted-text';
+      const highlightClass = 'highlight';
       const span = document.createElement('span');
       span.classList.add(highlightClass);
       range.surroundContents(span);
