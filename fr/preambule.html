@@ -181,11 +181,12 @@ All the page components required to build this page-->
  
  .highlight {
   background-color: green;
-  color: black;
+  color: var(--true);
+  cursor:pointer;
 }
 
 .pre-highlight {
-    background-color: rgba(0, 128, 0, 0.224);
+    background-color: grey;
     cursor:pointer;
 }
 
@@ -357,7 +358,7 @@ All the page components required to build this page-->
   
 
   <script>
-   document.addEventListener("DOMContentLoaded", function() {
+ document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
@@ -385,9 +386,9 @@ All the page components required to build this page-->
     document.addEventListener('mouseup', function() {
         selectedRange = getSelectedRange();
         if (selectedRange && selectedRange.toString().trim().length > 0) {
-            if (selectedRange.commonAncestorContainer.parentNode.nodeName !== 'P' &&
-                (selectedRange.commonAncestorContainer.parentNode.innerHTML.includes('<p>') ||
-                selectedRange.commonAncestorContainer.parentNode.innerHTML.includes('</p>'))) {
+            if (selectedRange.commonAncestorContainer.parentNode.nodeName !== 'DIV' &&
+                (selectedRange.commonAncestorContainer.parentNode.innerHTML.includes('<div>') ||
+                selectedRange.commonAncestorContainer.parentNode.innerHTML.includes('</div>'))) {
                 alert("Sorry! For the moment multi-paragraph highlighting is not yet possible.");
                 return;
             }
@@ -411,6 +412,7 @@ All the page components required to build this page-->
         }
     });
 });
+
 
 
 
