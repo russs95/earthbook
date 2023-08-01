@@ -348,13 +348,16 @@ All the page components required to build this page-->
 -->
 
  <chap-foot></chap-foot>
+
+
+</div>
+<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
    
-  <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
  
   
 
   <script>
- document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
@@ -389,14 +392,6 @@ All the page components required to build this page-->
     document.addEventListener('mouseup', function(e) {
         selectedRange = getSelectedRange();
         if (selectedRange && selectedRange.toString().trim().length > 0) {
-            // check if selection contains <p> or </p>
-            let selectedHtml = selectedRange.cloneContents().querySelectorAll('p');
-            if (selectedHtml.length > 0) {
-                alert("Sorry! For the moment multi-paragraph highlighting is not yet possible.");
-                clearSelection();
-                return;
-            }
-
             let span = document.createElement('span');
             span.style.cursor = 'pointer';
             span.classList.add(preHighlightClass);
@@ -418,6 +413,7 @@ All the page components required to build this page-->
         }
     });
 });
+
 
 
 
@@ -491,8 +487,6 @@ All the page components required to build this page-->
 
   
   
-  
-  <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
   
   </BODY>
   </HTML>
