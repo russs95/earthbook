@@ -274,15 +274,15 @@ All the page components required to build this page-->
   
      <p>Et puis à des milliers.</p>
   
-     <p>Within a year, as the entire Northern Philippines department of education, the Catholic and Protestant Churches, and various municipal and provincial governments came on board.  Even the offices of the Bontoc mayor and the provincial governor!  Over the next years, ecobricking fast became an alternative for millions of Filipinos to manage their plastic.</p>
+     <p>En un an, alors que l'ensemble du département de l'éducation du nord des Philippines, les églises catholiques et protestantes, ainsi que les bureaux du maire de Bontoc et du gouverneur de la province se sont joints au mouvement, l'écobrique est rapidement devenue, pour des centaines de milliers de Philippins, une solution alternative de gestion de leur plastique.</p>
   
-     <p>Banayan and I have watched with both joy and trepidation as the ecobrick movement has spread.</p>
+     <p>Banayan et moi observions la propagation du mouvement des écobriques avec joie et enthousiasme mais aussi une certaine inquiétude s’emparait de nous.</p>
   
-     <p>While at first it seemed a great victory that so much plastic was contained and secured from contaminating the river, the matter was far from settled. We were to learn that the persistence of plastic is a multifaceted social and physical phenomenon:  much as we may wish, it does not disappear after we dispose of it— nor when we put it in a bottle.</p>
+     <p>Alors qu'au début, cela semblait une grande victoire que tant de plastique soit contenu et protégeait d’une contamination certaine la rivière, la question était loin d'être réglée. Nous avons appris que la persistance du plastique est un phénomène social et physique à multiples facettes: bien que nous puissions le souhaiter, il ne disparaît pas après que nous l'ayons jeté, ni lorsque nous le mettons dans une bouteille.</p>
   
-     <p>As the ecobrick movement spread, we observed that sometimes, in providing a solution for plastic, the continued consumption of plastic was legitimized.  We also observed troubling applications of the technique.</p>
+     <p>Au fur et à mesure que le mouvement se répandait, nous avons observé que parfois, en dépit d’apporter une solution au plastique, la consommation de plastique en devenait légitimée. Nous observions aussi des applications techniques troublantes.</p>
   
-     <p>In some schools we saw a jump in the purchase of soft-drinks in order to procure bottles for ecobricking. In other locations junk food consumption increased so that there would be wrappers to pack.  Elsewhere, we observed the use of carbon-intensive cement as a mortar in ecobrick construction.</p>
+     <p>Dans certaines écoles, nous constations un bond dans l'achat de boissons gazeuses afin de se procurer des bouteilles pour les écobriques. Dans d'autres endroits, nous notions une augmentation de la consommation de la malbouffe, de sorte qu'il y aurait des emballages à mettre en bouteille. Alors que dans certaines applications d'écobriques nous observions l'utilisation inappropriée du ciment (qui réagit mal avec le PET de la bouteille) comme mortier.</p>
   
       <p>Banayan and I, reflecting on these phenomena, were troubled. Were ecobricks truly being of ecological service?</p>
         
@@ -410,7 +410,7 @@ All the page components required to build this page-->
   
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function() {
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
@@ -441,7 +441,7 @@ All the page components required to build this page-->
             let span = document.createElement('span');
             span.style.cursor = 'pointer';
             span.classList.add(preHighlightClass);
-            span.title = "Click this text to save.";  // added title attribute
+            span.title = "Click this text to save.";
             selectedRange.surroundContents(span);
             clearSelection();
         }
@@ -454,23 +454,27 @@ All the page components required to build this page-->
                 e.target.replaceWith(text);
             } else {
                 e.target.classList.add(highlightClass);
-                e.target.title = "This quotation is saved in your Book Notes";  // update title attribute
+                e.target.title = "This quotation is saved in your Book Notes";
             }
         }
     });
+
+    function unHighlight() {
+        document.addEventListener('click', function(e) {
+            let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
+
+            preHighlightedElems.forEach(function(elem) {
+                if (elem.classList.contains(preHighlightClass)) {
+                    let text = elem.textContent;
+                    elem.replaceWith(text);
+                }
+            });
+        });
+    }
+    
+    unHighlight(); // call the function here
 });
 
-
-    document.addEventListener('click', function(e) {
-        let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
-
-        preHighlightedElems.forEach(function(elem) {
-            if (elem.classList.contains(preHighlightClass)) {
-                let text = elem.textContent;
-                elem.replaceWith(text);
-            }
-        });
-    });
 
 
 
