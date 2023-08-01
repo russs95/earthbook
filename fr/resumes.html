@@ -57,8 +57,8 @@ Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.
 <!--BOOK META TAGS
 Ces balises seront cohérentes pour l'ensemble du livre-->
 
-<meta name="keywords" content="Résumés, un nouveau monde vert, plastique, vert, éthique de la terre, éthique de la terre, terre, éthique, tractatus ayyew, igorot, philosophie indigène, philosophie, permaculture, bill molison, éthique verte, environnement, écologie profonde, écologique, éthique">
-<meta name="description" content="Imaginez un monde où la façon même dont nous vivons enrichit régulièrement les écosystèmes dont nous faisons partie.">
+<meta name="keywords" content="résumés, phrase, paragraphe, éthique de la terre, éthique de la terre, terre, éthique, tractatus ayyew, igorot, philosophie indigène, philosophie, Terre, éthique verte, éthique environnementale, écologie profonde, écologique, éthique">
+<meta name="description" content="Une courte phrase, une longue phrase et un paragraphe résumé de l'éthique terrestre.">
 
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
@@ -70,7 +70,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
 <meta property="og:title"         content="Résumés - Tracatus Ayyew">
-<meta property="og:description"   content="Imaginez un monde où la façon même dont nous vivons enrichit régulièrement les écosystèmes dont nous faisons partie.">
+<meta property="og:description"   content="Une courte phrase, une longue phrase et un paragraphe résumé de l'éthique terrestre.">
 <meta property="og:image"         content="../covers/TA-cover-french-1200px.png">
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
@@ -101,8 +101,8 @@ starts loading the fonts-->
 <link rel="preconnect" href="../fonts/" crossorigin> 
 
 <!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/01-imagine-dark.svg">
-<link rel="preload" as="image" href="../svgs/01-imagine-white.svg">
+<link rel="preload" as="image" href="../svgs/00-dark.svg">
+<link rel="preload" as="image" href="../svgs/00-light.svg">
 
 
  <!-- STYLE SHEETS   
@@ -170,6 +170,44 @@ All the page components required to build this page-->
  }
 
 
+@media screen and (max-width: 699px) {
+    .ct-chapter-quote {
+      width: 80%;
+      font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 80%;
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .ct-chapter-quote {
+      width: 50%;
+      font-size: 1.8em;
+    }
+    .ct-quote-source {
+      width: 70%;
+      font-size: 1em;
+    }
+  }
+    
+  @media screen and (min-width: 1325px) {
+    .ct-chapter-quote {
+    width: 40%;
+    font-size: 2em;
+    text-shadow: 0px 0px 12px var(--slider);
+    }
+    .ct-quote-source {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
+
+#ct-chapter-title {
+      font-size: 10vmin;
+      letter-spacing: 3px; 
+    }
 </STYLE>
 
 </HEAD>
@@ -194,119 +232,61 @@ All the page components required to build this page-->
         <div id="ct-chapter-title">Résumés</div>
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Annexe</div>
-        <!--<div id="ct-word-count"><i>1,095 mots</i></div>-->
+        <div id="ct-word-count"><i>540 mots</i></div>
       </div>
   </div>
 
 
-<!-- Page Title Section-->
 
-  <div id="ct-chapt-graphic" class="background-1">
+  <!-- Page Title Section-->
 
-  </div>
- 
+<div id="ct-chapt-graphic" class="background-000">
+<div class="ct-chapter-quote">
+    Une courte phrase, une longue phrase et un paragraphe résumé de l'éthique terrestre.
+</div>
+</div>
 
 <div id="up-arrow"></div>
 
-  <div id="ct-main">
-
-
-    <div id="chap-notice">
-        <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-        <div id="chap-notice-text">
-            💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
-        </div>
-      </div>
+<div id="ct-main">
 
 
 <!-- MAIN TEXT CONTENT of the Page
-  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
+For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
 -->
 
-    
-      <div class="page-paragraph"><p><i>
-        Imaginez un monde où notre façon de vivre enrichit pérennement les écosystèmes dont nous faisons partie. C'est un monde où nos habitations et nos communautés, simplement en s'épanouissant, font de la biosphère un lieux plus abondant, dynamique et hospitalier pour nous et tous nos proches du monde vivant. Plutôt que de lutter à réduire nos dommages environnementaux, dans ce monde, nous nous sommes réunis pour maximiser notre contribution écologique. Pour y parvenir, notre gestion de la matière et de l'énergie a évolué. Dans ce monde, nos entreprises ne fonctionnent plus simplement en économie circulaire mais comme une spirale, où chaque révolution dépasse la dette environnementale et redistribue les surplus. Nos entreprises ne se contentent plus de réduire la quantité de carbone et d'autres éléments qu'elles libèrent, elles captent également plus qu'elles n'en rejettent. Nous ne nous contentons plus d'admirer la mosaïque d'organismes et d'écosystèmes qui nous entourent, nous participons également à sa vitalité et à sa diversification. Alors que nous prospérons tous ensemble dans cette maison commune, la conscience de notre interconnexion augmente sans cesse, et avec elle, la synchronisation de nos cycles d'entreprise et d'écosystème, d'économie et de biome, d'humanité et de biosphère - une harmonie qui s'élève avec nous vers les étoiles.</i></p>
-     </div>
-     <br><br>
 
-     <div id="line"></div>
-     <br><br><br>
-
-<div>
-     <div class="lead-page-paragraph">
-
-        AUJOURD'HUI, alors que nous devenons de plus en plus conscients de la dégradation écologique inhérente à notre monde moderne, nous aspirons à réparer nos erreurs et à revoir nos habitudes. Alors qu’unis dans une détermination commune d’harmonie écologique, il n'a jamais été aussi important de reconnaître que la voie à suivre a déjà été découverte et son chemin parcouru. Rejetées et presque oubliées par notre civilisation moderne, des nations anciennes et encore aujourd’hui, ont depuis longtemps maîtrisé leur intégration écologique pour atteindre des sommets d'harmonie qui dépassent de loin notre imagination moderne. Ce n'est que lorsque nous pouvons reconnaître ces moments éclairés que nous pouvons imaginer les nôtres. Pour autant que nous puissions l'imaginer, la réalisation d'un âge vert pour tous n'est pas aussi lointain malgré le pessimisme et les frustrations de certains.
-
-    </div>
-     
+  <div class="page-paragraph">
 
 
-      <p id="3-up">Inspirés par l'héritage verdoyant du peuple de Banayan, les Igorots du nord de Luzon,<a href="#footnotes" title="En particulier la philosophie écologique d'Igorot Ayyew. Voir: Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12 (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)." onclick="openFootnotes()" >³</a>elle et moi arrivons à voir que le désir et le potentiel de contribution écologique nous unit tous sur la planète Terre.</p>
-
-      <p>À travers les cultures et les continents, nous désirons contribuer à ce dont nous faisons partie: pour ajouter aux communautés auxquelles nous appartenons, pour nous harmoniser avec nos voisins, pour nous unir à ceux avec qui nous chantons. Par conséquent, à mesure que nos rôles dans les écosystèmes locaux et les biomes régionaux se dévoilent, notre désir d'y participer positivement et de contribuer à leur harmonie, leur vitalité et leur abondance devient une évidence.</p>
-
-      <p>Banayan et moi percevons que la transition des habitations, des communautés et des entreprises vers des contributions écologiques, sera la prochaine étape d'une épopée planétaire dont la direction est, littéralement, entre nos mains.</p>
-
-      <p>Alors, comment arrivons-nous à cette maison commune prospère que nous tous aspirons à voir?</p>
-
-      <p>En deux mots:</p>
-
-      <p>Le plastique.</p>
-
-      <p>C'est dans ce matériau moderne problématique que réside la voie à suivre.
+    <h2>1. Une courte phrase</h2>
+    <p>The Earthen ethics concept of 'green' can be summed up in a simple sentence:
     </p>
 
-    <p>Comme il se doit.
-    </p>
-
-    <p id="4-up">En effet, depuis longtemps, les jardiniers savent que le problème est toujours la solution - les mauvaises herbes, les nuisibles et les polluants sont toujours, avec un changement de perspective et d'approche, des éléments nutritifs, médicinaux et engrais qui permettent à un jardin en difficulté de devenir fécond.<a href="#footnotes" title="The problem is always the solution.  See: Bill Mollison, Principles from Permaculture a Designers' Manual, (Tagari Publishers: 1988)." onclick="openFootnotes()">⁴</a></p>
-
-
-
-
-      <p>Comme aucune autre matière, le plastique incarne définitivement les facettes de notre époque. Dérivé du carbone ancien, le plastique nous permet de toucher l'histoire fossile qui a permis la nôtre. Acheté et vendu, le plastique est une manifestation physique de l'économie pétro-capitaliste qui alimente notre époque mondialisée. Fabriqué par des humains, entièrement pour des humains, le plastique est un reflet lucide de notre civilisation moderne centrée sur l'humain.</p>
-
-     <p>De cette façon, notre plastique est en fait un miroir.</p>
-
-     <p>Et une opportunité.</p>
-     
-     <p>En affrontant l'histoire du plastique vieille d’un milliard d’années, nous pourrons affronter nôtre propre histoire dans le même cadre.</p>
-
-     <p>Ensuite, en voyant notre réflexion avec une clarté sans précédent, nous pourrons comprendre notre plastique - et nous-mêmes - avec une perspective nouvelle.</p>
-
-     <p>Surtout, nous pourrons renouveler notre compréhension de l'interaction écologique humaine positive: <i>ce que le vert devrait vraiment signifier.</i></p>
-
-     <p>En luttant pour gérer positivement notre propre plastique, Banayan et moi en venons à réaliser que le concept contemporain du vert fait défaut et est incomplet.</p>
-     
-     <p>Vu à travers le prisme de l'éthos écologique Igorot, nous observons que l'éthique moderne du vert consiste simplement à réduire les dommages, tandis que le concept de contribution est pratiquement resté inimaginé et inimaginable.</p>
-     
-     <p>Cette vision du potentiel écologique humain contredit fortement l'expérience vécue de Banayan et de ses ancêtres.</p>
-
-     <p>Comme nous le verrons dans les chapitres à venir, pour la Terre, la contribution écologique a de toujours été la tendance dominante - un modèle planétaire unique de matière et d'énergie qui, depuis le tout début, a imprégné tous les processus, cycles et systèmes de la Terre.</p>
-
-     <p>Et le nôtre.</p>
-
-     <p>Nous verrons aussi que dans la mesure où ce modèle terrestre s'est reflété dans les valeurs et les vertus d'une culture, les sociétés qui en ont résulté ont systématiquement enrichi les écosystèmes dont elles font partie.</p>
-
-     <p>Inversement, dans la mesure où le modèle d'une culture a différé de celui de la Terre, l'épuisement et les dégradations systématiques en ont été le résultat inexorable.</p>
-
-     <p>La distinction du modèle terrestre avec le modèle de profit anthropocentré sera notre tâche principale dans le <i>Tractatus Ayyew.</i></p>
-
-     <p>Grâce à la combinaison de nos deux perspectives ancestrales : l'héritage Igorot de Banayan et ma culture Européenne; sa culture indigène et mon passé familial de pionnier; son éducation agraire et mon bagage industriel, nous enquêterons sur les lacunes de notre compréhension éthique moderne. En particulier, l'exceptionnalité humaine erronée que nous observons est à l'origine de tout notre malaise écologique moderne.</p>
-
-     <p>Cette erreur métaphysique excisée, nous exposerons alors une nouvelle théorie du vert ancrée sur le caractère cosmologique de notre planète.</p>
-
-     <p>Guidés par les idées de grandes nations vertes, l’exemple de créatures magnifiquement contributives et de la science de la Terre, nous exposerons chacun des principes qui composent les cinq volets d'enrichissement écologique de notre planète.</p>
-
-     <p>L'éthique terrestre qui en résultera nous aidera à donner un sens à nos processus, entreprises modernes et technologies en s'avérant un moyen par lequel nous pouvons discerner ce qui est enrichissant de ce qui est dégradant ; ce qui est un apport écologique de ce qui est un appauvrissement; et ce qui est vert de ce qui est gris.</p>
-
-      <p id="5-up">De cette façon, avec le modèle de la Terre comme guide du vert, nous pouvons avancer et instaurer une clarté et une confiance sans précédent pour incarner la géométrie de la contribution dans tous nos processus, cycles et systèmes.<a href="#footnotes" title="'We can think of our current civilization-- its technical and sociopolitical infrastructure, its ideology and beliefs-- as an operating system, much like the software that runs our computers.  Now we need to reboot and install a new system software'.  Daniel Pinchbeck, How Soon is Now: From Personal Initiation to Global Transformation, (Publisher: Watkins Publishing, 2017) Chapter 2, p.105" onclick="openFootnotes()">⁵</a></p>
-
-     <p>Commençons donc par ce matériau gênant que nous adorons tant détester.</p>
-     <br><br><br>
-  
+    <div class="quote"><p>A process is green when it follows Earth's example of ecological contribution.</p></div>
+    <br>
+    <a name="long"></a>
+    <h2>2. A longer sentence</h2>
     
-    </div><!--closes page text content, then loads page curtains:-->
+    <p>By adding 'must' we have the core Earthen ethic.  Note that green is interchangeable here with 'ecological contribution'. </p>
+
+    <div class="quote"><p>To be green a process must embody Earth’s pattern of concentrating matter and dispersing energy to cyclically enrich the diversity and awareness of the system of which it is a part.
+    </p></div>
+
+    <br>
+    <a name="paragraph"></a>
+    <h2>3. A paragraph</h2>
+    
+    <p>Now, let’s place it within within our contemporary context:</p>
+
+    <div class="quote"><p>As we become more and more aware of the ecological degradation caused by our modern age, we long to amend our ways. Of all our ecological crises, plastic pollution is particularly representative of our challenge. As a fossil-fuel by-product, plastic embodies both Earth’s multi-billion year pattern of ecological enrichment and our modern pattern of ecological depletion. By retracing plastic’s primordial and modern stories, we can observe the sharp contrast in the each’s patterns of process. In particular, the ways in which Earth’s spiraled its matter inwards and energy outwards to unfurl ever greater vitality, diversity and consciousness whereas our modern civilization has spiraled matter outwards, energy inwards to unfurl just the opposite.  Learning from cultures and creatures that have long embodied Earth’s pattern to master their own ecological integration, we can amend our metaphysics to recognize ecological contribution as a basis for an ethic of green. Accordingly, we can ensure that our processes, cycles and systems embody Earth’s pattern of energy and matter management, declare their for-Earth intention, vitalize biodiversity and raise awareness of their ecological impact. Starting with our plastic, we can follow Earth's example in this way to ensure that our enterprises systematically enrich the ecosystems of which they are a part. 
+    </p></div>
+
+    <!--As we become more and more aware of the ecological degradation caused by our modern age, we long to amend our ways. Of all our ecological crises, plastic pollution is particularly representative of our challenge. As a fossil-fuel by-product, plastic embodies a direct connection to both the biosphere's multi-billion year pattern of enrichment and our modern pattern of depletion. By retracing plastic’s and Earth's primordial story, we can observe the sharp contrast in these two patterns. In particular, the ways in which Earth spiraled its matter inwards and energy outwards to unfurl ever greater vitality, diversity and consciousness. Recognizing that other cultures have long embodied this Earthen pattern to enrich the ecological cycles of which they were a part, we can amend our metaphysics and establish ecological contribution as our basis for green. Accordingly, we can ensure that our keen green enterprises embody Earth’s ways: that they operate in enriching cycles that concentrate their matter and disperse their energy, while vitalizing diversity and raising collective awareness. Following these five Earthen principles, we can start with our plastic to ensure that our enterprises are truly green.-->
+
+  </div><!--closes page text content-->
+        
+</div><!--Closes main content block-->
 
 
 <!--FOOTNOTES SECTION-->
