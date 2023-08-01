@@ -252,11 +252,11 @@ All the page components required to build this page-->
        
       <p>Mais où allait donc tout notre plastique?</p>
   
-      <p>For those of us living along the river, the challenge was palpable.</p>
+      <p>Pour ceux d'entre nous vivant le long de la rivière, le défi était palpable.</p>
         
-      <p>For centuries, the tribes of the region, collectively known as the Igorots, had thrived in fierce independence from the rest of the Philippine archipelago. With their towns and villages nestled within a rugged chain of verdant mountains, the Igorots had remained largely insulated from three hundred years of Spanish colonization further South. However, over the last decades, modern goods had reached even the most remote villages. Whereas the leaves, wood and vines that had long served them as functional materials were entirely biodegradable, now, strange modern materials stubbornly refused to degrade.</p>
+      <p>Pendant des siècles, les tribus de la région, connues collectivement sous le nom d'Igorots, ont prospéré dans une indépendance féroce du reste de l'archipel Philippin. Isolés par une chaîne accidentée de montagnes verdoyantes, les Igorots sont restés largement immunisés face aux trois cents ans de colonisation espagnole plus au sud. Cependant, au cours des dernières décennies, les biens modernes ont atteint même les villages les plus reculés. Alors que les feuilles, le bois et les lianes, qui avaient longtemps servi de matériaux fonctionnels, étaient entièrement biodégradables, ces nouveaux matériaux modernes refusaient obstinément de se dégrader.</p>
   
-      <p>However, the Igorots had not been sitting idly by.</p>
+      <p>En dépit de ce malheureux constat, les Igorots ne resteraient pas les bras croisés.</p>
       
       <p>In the Igorot society, the art of ecological integration is highly esteemed— in much the same way that painting or sculpture is in other cultures. Consequently, the region had become a hot-bed of up-cycling innovations. In town, old tires were being cut up to make remarkably functional chairs and tables. In the mines, used dynamite cable was being woven into traditional backpacks. In homes, straws and wrappers were being woven into mats, purses, wallets and household items of all kinds.</p>
   
@@ -414,7 +414,7 @@ All the page components required to build this page-->
     let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
-    let clearHighlightTimeout;
+    let preHighlightElement;
 
     function getSelectedRange() {
         if (window.getSelection) {
@@ -445,33 +445,25 @@ All the page components required to build this page-->
                 span.classList.add(preHighlightClass);
                 span.title = "Click this text to save.";
                 selectedRange.surroundContents(span);
+                preHighlightElement = span;
                 clearSelection();
-
-                clearHighlightTimeout = setTimeout(function() {
-                    let text = span.textContent;
-                    span.replaceWith(text);
+                
+                setTimeout(function() {
+                    if (preHighlightElement) {
+                        let text = preHighlightElement.textContent;
+                        preHighlightElement.replaceWith(text);
+                        preHighlightElement = null;
+                    }
                 }, 1000);
             }, 10);
         }
     });
 
-    document.addEventListener('mousedown', function(e) {
-        if (!e.target.classList.contains(preHighlightClass)) {
-            clearTimeout(clearHighlightTimeout);
-        }
-    });
-
     document.addEventListener('click', function(e) {
-        if (e.target.classList.contains(preHighlightClass)) {
-            clearTimeout(clearHighlightTimeout);
-
-            if (e.target.classList.contains(highlightClass)) {
-                let text = e.target.textContent;
-                e.target.replaceWith(text);
-            } else {
-                e.target.classList.add(highlightClass);
-                e.target.title = "This quotation is saved in your Book Notes";
-            }
+        if (e.target === preHighlightElement) {
+            e.target.classList.add(highlightClass);
+            e.target.title = "This quotation is saved in your Book Notes";
+            preHighlightElement = null;
         }
     });
 });
