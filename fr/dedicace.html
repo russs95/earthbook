@@ -257,22 +257,13 @@ All the page components required to build this page-->
 For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
 -->
 
-<div class="page-paragraph" style="text-align:center;">
-    <p>who let us play in the forests and fields,</p>
-       
-       <p>tasting berries and climbing trees,</p>
-        
-        <p>loving the wild and learning its leaves.</p>
-        <br><br><br><br>
-       <div>
-    
   <div class="page-paragraph">
 
 
-    <h2>Qui nous laissaient jouer dans les forêts, <br>
+    <h3>Qui nous laissaient jouer dans les forêts, <br>
         Courir dans les champs, <br>
         Accepter l'étreinte verdoyante, <br>
-        Et cultiver notre étreinte en retour.</h2>
+        Et cultiver notre étreinte en retour.</h3>
     </div>
 
   
@@ -346,6 +337,7 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
   
 // Function to store selected text and its positions in the browser cache (localStorage)
 function storeSelectedText() {
+    const highlightClass = 'highlight'; // Define the highlightClass variable
     const selection = window.getSelection();
     if (selection.rangeCount > 0) {
         const range = selection.getRangeAt(0);
@@ -375,6 +367,7 @@ function storeSelectedText() {
               `storedText-1: ${selection}`);
     }
 }
+
 
 
 
