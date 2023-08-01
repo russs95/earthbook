@@ -122,7 +122,7 @@ All the css needed for this page-->
  Main Scripts-->   
  <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
  <script src="../universal-javascript.js" defer></script>
- <script src="../content-javascript.js?v=2.2" defer></script>
+ <!--<script src="../content-javascript.js?v=2.2" defer></script>-->
  <script src="../clip/dist/clipboard.min.js" defer></script>
  <!--Carbon Badge script
  <script src="../b.min.js" defer></script>
@@ -149,9 +149,6 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
-
-
-
 <style>
 
 
@@ -181,23 +178,15 @@ All the page components required to build this page-->
   src: url("../fonts/Mulish-Light.ttf");
   font-display: swap;
  }
-
- /*
- @font-face {
-  font-family: "MulishMedium";
-  src: url("fonts/Mulish-Medium.ttf");
-  font-display: swap;
- }*/
  
  .highlight {
   background-color: green;
   color: black;
 }
 
-</style>
+</STYLE>
+
 </HEAD>
-
-
 
 <BODY class="accessibility-plugin-ac">
 
@@ -205,7 +194,7 @@ All the page components required to build this page-->
     <tour-curtain></tour-curtain>
     
     
-      <div id="underlayer">
+      <div id="underlayer" class="accessibility-plugin-ac">
     
         <div id="top"></div>
     
@@ -464,6 +453,37 @@ All the page components required to build this page-->
   
 
   <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    let highlightClass = 'highlight';
+    let selectedText = '';
+
+    function getSelectedText() {
+        if (window.getSelection) {
+            return window.getSelection().toString();
+        } else if (document.selection && document.selection.type != "Control") {
+            return document.selection.createRange().text;
+        }
+    }
+
+    document.addEventListener('mouseup', function() {
+        selectedText = getSelectedText();
+    });
+
+    document.addEventListener('click', function(e) {
+        if (selectedText.length > 0) {
+            let clickedElement = e.target;
+            let clickedElementText = clickedElement.textContent;
+            
+            if (clickedElementText === selectedText) {
+                clickedElement.classList.toggle(highlightClass);
+                selectedText = ''; // clear selected text
+            }
+        }
+    });
+});
+
+
   // Function to count characters in the entire HTML document
   function countCharacters() {
     const allTextElements = document.querySelectorAll('*');

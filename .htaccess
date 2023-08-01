@@ -119,9 +119,15 @@ Redirect /books/english.pdf https://files.earthen.io/s/ZjS9TgWk5Tr7b4q
 
 Redirect /preambule /fr/preambule.html
 Redirect /fr/preambule /fr/preambule.html
-Redirect /fr/preface /fr/preambule.html
-Redirect /fr/preface.html /fr/preambule.html
-Redirect /fr/preface.php /fr/preambule.html
+Redirect /fr/preamble /fr/preambule.html
+Redirect /fr/preamble.html /fr/preambule.html
+Redirect /fr/preamble.php /fr/preambule.html
+
+Redirect /lepreface /fr/lepreface.html
+Redirect /fr/preface /fr/lepreface.html
+Redirect /fr/preface /fr/lepreface.html
+Redirect /fr/preface.html /fr/lepreface.html
+Redirect /fr/preface.php /fr/lepreface.html
 
 
 
