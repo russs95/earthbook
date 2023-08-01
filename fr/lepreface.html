@@ -457,13 +457,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function unHighlight() {
-        let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
+        document.addEventListener('click', function(e) {
+            let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
 
-        preHighlightedElems.forEach(function(elem) {
-            if (elem.classList.contains(preHighlightClass)) {
-                let text = elem.textContent;
-                elem.replaceWith(text);
-            }
+            preHighlightedElems.forEach(function(elem) {
+                if (elem.classList.contains(preHighlightClass)) {
+                    let text = elem.textContent;
+                    elem.replaceWith(text);
+                }
+            });
         });
     }
 });
