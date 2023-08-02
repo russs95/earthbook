@@ -282,7 +282,7 @@ All the page components required to build this page-->
     
     <div class="page-paragraph">
     
-      <p>Avant tout, nous sommes reconnaissants pour notre plastique. Sans les épreuves et les tribulations à essayer de comprendre quoi en faire - les voyages physiques et philosophiques que les pollutions et les solutions ont déclenchés en nous - ce livre n'aurait jamais commencé.</p> 
+      <p id="p1">Avant tout, nous sommes reconnaissants pour notre plastique. Sans les épreuves et les tribulations à essayer de comprendre quoi en faire - les voyages physiques et philosophiques que les pollutions et les solutions ont déclenchés en nous - ce livre n'aurait jamais commencé.</p> 
     
       <p id="p2">
         Cela dit, nous sommes reconnaissants envers nos débuts invisibles : nos ancêtres, à la fois de nos propres lignées et de ceux d'autres cultures cyclocentriques à travers le monde qui ont touché et inspiré notre lutte avec le sens du vert. Leur sagesse accumulée sert de fondement sur lequel nous avons bâti. 
@@ -299,11 +299,12 @@ All the page components required to build this page-->
         <p id="p7">Merci à Trisha pour son soutien, ses encouragements, son écoute et son amitié. Merci à Shiloh Vermaak et Richard Goldsmith pour les critiques incessantes de chaque chapitre, pas une mais deux fois et parfois trois fois. Merci à Nicole et Vaughn pour la lecture approfondie et les encouragements. Merci à Mel pour le rappel que notre ascendance, en particulier ses contrastes, n'était pas seulement une note secondaire, mais un thème principal. Merci à James et Ruth pour leur soutien et leurs idées de la vallée de Bulkley. Merci à Rolf et Chris pour leurs premières critiques cinglantes. Leurs critiques inestimables ont eu un effet profond sur notre direction. Merci à Ani pour sa patience insondable avec les piles de pages et les tasses à café infinies qui ont accompagné ce processus.
             </p> 
     
-            <p id="p8">Thank you to our Igorot and Wet’su’weten brothers and sisters whose examples have inspired us: James, Jed, Sir Ernesto, Jake and the Sabangan guides.</p>
+            <p id="p8">Merci à nos frères et sœurs Igorot et Wet’su’weten dont les exemples nous ont inspirés : James, Jed, Sir Ernesto, Jake et les guides Sabangan.</p>
     
-            <p id="p9">Chapter banners, Eagle & Salmon No.1 and No.2, Frog and Sun by Wet’su’weten artist James Madam. </p>
+            <p id="p9">Bannières de chapitre, Eagle & Salmon No.1 et No.2, Frog and Sun par l'artiste Wet'su'weten James Madam.</p>
     
-            <p id="p10">Photos of Igorot culture on Earthen.io by Gladys Maxim.  Chapter 9 photos by Robert Brodey.</p>
+            <p id="p10">Photos de la culture Igorot sur Earthen.io par Gladys Maxim. Photos du chapitre 9 par Robert Brodey.
+            </p>
     
             <p id="p11">Thank you to Thumas Hutton and Thomas Nail, both of whom wrote a book entitled <i>“A Theory of the Earth”</i>.  Although each book were published quite independently (the first in 1788 and the second in 2021!) both greatly inspired and encouraged our own work an theory.  </p>
     
@@ -389,12 +390,12 @@ All the page components required to build this page-->
       <div class="footer-left">
        <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
         <div class="next-section">
-          <div class="next-sec">Section suivante :</div>
-          <div class="sec-name"><i>Gratitude</i></div>
+          <div class="next-sec">Annexe suivante :</div>
+          <div class="sec-name"><i>La Publication</i></div>
         </div>
       </div>
       <div class="footer-right">
-        <a href="pour-terre.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
+        <a href="publication.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
       </div>
     </div>
   
@@ -498,10 +499,13 @@ document.addEventListener('click', function(e) {
         localStorage.setItem('storedText1', storedText1);
 
         // Alert to confirm storage
-        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer}`);
+        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer} startOffset:${startContainer}, endOffset:${endContainer}`);
       }
 
       e.target.title = "This quotation is saved in your Book Notes";
+
+      // Clear the text selection
+      window.getSelection().removeAllRanges();
     }
   } else if (e.target.classList.contains(highlightClass)) {
     setTimeout(() => removeHighlight(e), 1000);
