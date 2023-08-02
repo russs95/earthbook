@@ -304,6 +304,12 @@ All the page components required to build this page-->
   </div>
 -->
 
+<div id="chap-notice">
+  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+  <div id="chap-notice-text">
+      💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
+  </div>
+</div>
 
   <div class="page-paragraph">
     <p id="1">
@@ -408,11 +414,13 @@ All the page components required to build this page-->
   
 
   <script>
-
-document.addEventListener("DOMContentLoaded", function() {
-    let highlightClass = 'highlight';
+  let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
+
+    
+document.addEventListener("DOMContentLoaded", function() {
+  
 
     function getSelectedRange() {
         if (window.getSelection) {
@@ -473,28 +481,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
- 
-  // Function to count characters in the entire HTML document
- /* function countCharacters() {
-    const allTextElements = document.querySelectorAll('*');
-    let charCount = 0;
-
-    allTextElements.forEach(element => {
-      element.childNodes.forEach(child => {
-        if (child.nodeType === Node.TEXT_NODE) {
-          charCount += child.textContent.length;
-        }
-      });
-    });
-
-    return charCount;
-  }
-
-  // Function to display character count in an alert once the page has loaded
-  function showAlertWithCharacterCount() {
-    const totalCharacters = countCharacters();
-    alert(`Total Characters in the HTML document: ${totalCharacters}`);
-  }*/
 
   document.addEventListener('click', function(e) {
   if (e.target.classList.contains(preHighlightClass)) {
@@ -547,7 +533,7 @@ function storeSelectedText(targetElement) {
 
   // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
   window.addEventListener('load', function () {
-    showAlertWithCharacterCount();
+   // showAlertWithCharacterCount();
     recreateSelection();
 
     // Attach the storeSelectedText function to the "mouseup" event
