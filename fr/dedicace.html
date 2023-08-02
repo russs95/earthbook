@@ -334,40 +334,44 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
 
   <script>
 
-  // Function to store selected text and its positions in the browser cache (localStorage)
+  
+// Function to store selected text and its positions in the browser cache (localStorage)
 function storeSelectedText() {
-  const highlightClass = 'highlight'; // Define the highlightClass variable
-  const selection = window.getSelection();
-  const selectedText = selection.toString().trim(); // Get only the selected text
+    const highlightClass = 'highlight'; // Define the highlightClass variable
+    const selection = window.getSelection();
+    const selectedText = selection.toString().trim(); // Get only the selected text
 
-  if (selectedText.length > 0) {
-    const range = selection.getRangeAt(0);
-    const spanElement = document.createElement('span');
+    if (selectedText.length > 0) {
+        const range = selection.getRangeAt(0);
+        const spanElement = document.createElement('span');
+        
+        // Add the highlight class and title to the span element
+        spanElement.classList.add(highlightClass);
+        spanElement.title = "Your highlight has been stored as a booknote.";
+        spanElement.textContent = selectedText;
 
-    // Add the highlight class and title to the span element
-    spanElement.classList.add(highlightClass);
-    spanElement.title = "Your highlight has been stored as a booknote.";
-    spanElement.textContent = selectedText;
+        // Replace the selected range with the newly created span element
+        range.deleteContents();
+        range.insertNode(spanElement);
 
-    // Replace the selected range with the newly created span element
-    range.deleteContents();
-    range.insertNode(spanElement);
+        // Store the selected text in local storage
+        localStorage.setItem('storedText-1', selectedText);
 
-    // Store the selected text in local storage
-    localStorage.setItem('storedText-1', selectedText);
+        // Alert to confirm storage
+        alert(`storedText-1: ${selectedText}`);
 
-    // Alert to confirm storage
-    alert(`storedText-1: ${selectedText}`);
-
-    setTimeout(() => removeHighlight(spanElement), 1000);
-  }
+        setTimeout(removeHighlight(spanElement), 1000);
+    }
 }
 
 function removeHighlight(spanElement) {
-  if (spanElement.classList.contains('highlight')) {
-    spanElement.classList.remove('highlight');
-  }
+    if (spanElement.target.classList.contains('highlight')) {
+        let text = spanElement.target.textContent;
+        e.target.replaceWith(text);
+    }
 }
+
+
 
 // Function to recreate selection from stored data
 function recreateSelection() {
@@ -389,6 +393,14 @@ function recreateSelection() {
       const selection = window.getSelection();
       selection.removeAllRanges();
       selection.addRange(range);
+
+      // Apply a highlight CSS class to the selected range
+      const highlightClass = 'highlight';
+      const span = document.createElement('span');
+      span.classList.add(highlightClass);
+      range.surroundContents(span);
+
+      alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
     } else {
       console.log('One or both container elements not found.');
     }
@@ -397,13 +409,14 @@ function recreateSelection() {
   }
 }
 
-// Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-window.addEventListener('load', function () {
-  recreateSelection();
 
-  // Attach the storeSelectedText function to the "mouseup" event
-  document.addEventListener("mouseup", storeSelectedText);
-});
+  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
+  window.addEventListener('load', function () {
+    recreateSelection();
+
+    // Attach the storeSelectedText function to the "mouseup" event
+    document.addEventListener("mouseup", storeSelectedText);
+  });
 
 
  
