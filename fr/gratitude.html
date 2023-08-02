@@ -465,7 +465,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener('click', handleClick, { once: true });
 }
 
-document.addEventListener('click', function (e) {
+document.addEventListener('click', function(e) {
   if (e.target.classList.contains(preHighlightClass)) {
     if (e.target.classList.contains(highlightClass)) {
       e.target.classList.remove(preHighlightClass);
@@ -473,54 +473,51 @@ document.addEventListener('click', function (e) {
       e.target.classList.add(highlightClass);
       e.target.classList.remove(preHighlightClass);
 
-      // Get the text node within the target
-      const textNode = e.target.childNodes[0];
+      // Select the text in the highlighted element
+      const textNode = e.target.firstChild;
       const range = document.createRange();
       range.selectNodeContents(textNode);
+
+      // Storing selected text and its positions in the local storage
       const selection = window.getSelection();
       selection.removeAllRanges();
       selection.addRange(range);
 
-      const startContainer = textNode.parentNode.id;
-      const endContainer = textNode.parentNode.id;
-      const startOffset = range.startOffset;
-      const endOffset = range.endOffset;
-      const storedText1 = selection.toString();
+      const selectedRange = selection.getRangeAt(0);
+      const startOffset = selectedRange.startOffset;
+      const endOffset = selectedRange.endOffset;
 
-      localStorage.setItem('startContainer', startContainer);
-      localStorage.setItem('endContainer', endContainer);
       localStorage.setItem('startOffset', startOffset);
       localStorage.setItem('endOffset', endOffset);
-      localStorage.setItem('storedText1', storedText1);
+      localStorage.setItem('storedText1', selection.toString());
 
-      alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer}, startOffset:${startOffset}, endOffset:${endOffset}`);
+      // Alert to confirm storage
+      alert(`storedText1: ${selection.toString()}, startOffset:${startOffset}, endOffset:${endOffset}`);
 
       e.target.title = "This quotation is saved in your Book Notes";
-
-      // Clear the text selection
       window.getSelection().removeAllRanges();
     }
   } else if (e.target.classList.contains(highlightClass)) {
     setTimeout(() => removeHighlight(e), 1000);
   }
 });
-});
 
 function recreateSelection() {
-  const startContainerID = localStorage.getItem('startContainer');
-  const endContainerID = localStorage.getItem('endContainer');
   const startOffset = parseInt(localStorage.getItem('startOffset'));
   const endOffset = parseInt(localStorage.getItem('endOffset'));
   const storedText = localStorage.getItem('storedText1');
 
-  const startContainer = document.getElementById(startContainerID);
-  const endContainer = document.getElementById(endContainerID);
+  // Assuming that the selection target is known, e.g., a particular paragraph or other container
+  const container = document.querySelector('.targetContainer'); // Adjust this selector
+  if (container && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
+    const textNode = container.firstChild;
 
-  if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
-    const textNode = startContainer.childNodes[0];
     const range = document.createRange();
     range.setStart(textNode, startOffset);
     range.setEnd(textNode, endOffset);
+
+    const preHighlightText = textNode.textContent.substring(0, startOffset);
+    const postHighlightText = textNode.textContent.substring(endOffset);
 
     // Create a new span element with the 'highlight' class
     const span = document.createElement('span');
@@ -528,17 +525,18 @@ function recreateSelection() {
     span.textContent = storedText;
 
     // Replace the range with the new span element
-    range.deleteContents();
-    range.insertNode(span);
-
-    // Collapse the selection to ensure nothing is selected afterward
-    const selection = window.getSelection();
-    selection.removeAllRanges();
-    selection.collapseToEnd();
+    container.innerHTML = '';
+    container.appendChild(document.createTextNode(preHighlightText));
+    container.appendChild(span);
+    container.appendChild(document.createTextNode(postHighlightText));
 
     alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
   }
 }
+``
+
+});
+
 
 
 
