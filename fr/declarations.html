@@ -247,53 +247,13 @@ All the page components required to build this page-->
 
 <div class="page-paragraphe" >
 
-    <p id="p0">La rédaction du <i>Tractatus Ayyew : Earthen Ethics</i> est l'aboutissement d'une décennie de dialogue et d'amitié entre Russell Maier et Banayan Angway (lire l'histoire complète dans le <a href ="preface.php">préface</a>). Le livre s'inspire des recherches de Banayan et de l'articulation du concept d'<i>Ayyew</i> pour le programme d'études sur les connaissances autochtones de la région administrative de la Cordillère <a href="#footnotes" title="Voir : Irene Banayan Angway, Région administrative de la Cordillère Indigenous Peoples Education Curriculum K-12, (Bontoc, Mountain Prov., CAR ; Philippines Department of Education, 2014)">¹</a> et leur expérience dans la fondation du mouvement écobrique philippin.<a href="#footnotes" title= "La montée du mouvement régénératif des écobricks | Bandung Spirit Conference | 2020 | Russell Maier, Ani Himawati | https://www.ecobricks.org/wp-content/uploads/2021/09/The-Rise-of-the-Regenerative -Ecobrick-Mouvement.pdf | p11">²</a></p>
-      
-       <p id="p2">Les paroles du <i>Tractatus Ayyew</i> sont écrites par Russell sous la supervision et la révision de Banayan. Le format des chapitres de paraboles écologiques préfacées s'inspire de la tradition Igorot du conte après la fête de Bugnas.</p>
-    
-    </div>
-    <br><br>
-    
-    <h2>Banayan Angway</h2>
-    
-             <div class="page-paragraphe">
-    
-             <p id="p3">Banayan était le surintendant de Kalinga Mt. Province DEPED de 2015 à 2021. Elle a supervisé le développement de la composante culture indigène du programme d'études de Kalinga et Mt. Province où elle a intégré et développé le concept Ayyew dans les manuels et les leçons. En tant que coordinatrice de l'éducation des peuples autochtones pour la province de Mountain de 2011 à 2015, Banayan a facilité la planification, la mise en œuvre et l'évaluation d'activités connexes qui ont fait connaître son programme dans tout le pays.</p>
-    
-             </div>
-             <br><br>
-    
-             <h2>Russell Maier</h2>
-    
-             <div class="page-paragraphe">
-             <p id="p4">Russell est un inventeur et un philosophe régénérateur, actuellement basé à Gianyar, en Indonésie. Russell est l'un des directeurs de la Global Ecobrick Alliance et écrit régulièrement sur Earthen.io. Il parcourt l'Asie du Sud-Est pour observer l'impact des systèmes humains sur la diversité biologique, afin de maximiser la contribution écologique humaine.</p>
-          
-           </div>
-           <br><br>
-    
-    
-    
-           <div class="footnote-section">
+    <p id="p0">Banayan et Russell sont cofondateurs de la Global Ecobrick Alliance. Banyan est une employée rémunérée de la région administrative de la Cordillère du ministère de l'Éducation des Philippines (province de Kalinga). Russell reçoit des commissions comme formateur GEA et est un directeur actif de l'organisation.</p>
 
-            <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
-      
-            <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Section Footnotes</p>
-            
-        
-            <a href="#1-up" class="footnote">   
-            <div class="footnote-number" id="3-down">1.</div>
-            <div class="footnote-text">Voir: Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).</div>
-            </a>
-      
-            <a href="#2-up" class="footnote">   
-            <div class="footnote-number" id="3-down">2.</div>
-            <div class="footnote-text">Ani Himawati, Russell Maier, <i>The rise of the Regenerative Ecobrick Movement</i> (Bandung Spirit Conference | 2020 https://www.ecobricks.org/wp-content/uploads/2021/09/The-Rise-of-the-Regenerative-Ecobrick-Movement.pdf) | p11</div>
-            </a>
-      
-         </div>
-      
-                
-        </div><!--Closes main content block-->
+    <p id="p2">Un don privé de Trisha Joe de 2500 $ USD a été reçu en 2020 pour acheter l'ordinateur portable Librem et sur lequel ce travail a été écrit. Un deuxième don de 3000$ USD du même soutien a été reçu pour publier l'édition Tractatus Ayyew Earthbook en 2022.</p>  
+
+    <p id="p3">En dehors de ce qui précède, aucune subvention, parrainage ou financement d'organisations, d'entreprises, de gouvernements ou de sociétés n'a été reçue par Russell ou Banayan pour soutenir la rédaction du Tractatus Ayyew ou à tout moment pour tout autre de leur travail.</p>
+    
+  </div><!--Closes main content block-->
 
 
 </div><!--Closes main content block-->
@@ -354,7 +314,7 @@ All the page components required to build this page-->
  
   
 
-  <script>
+<script>
 
   let highlightClass = 'highlight';
     let preHighlightClass = 'pre-highlight';
@@ -384,46 +344,38 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    document.addEventListener('mouseup', function() {
-        selectedRange = getSelectedRange();
-        if (selectedRange && selectedRange.toString().trim().length > 0) {
-            let span = document.createElement('span');
-            span.style.cursor = 'pointer';
-            span.classList.add(preHighlightClass);
-            span.title = "Click this text to highlight and save.";
-            selectedRange.surroundContents(span);
-            clearSelection();
-        }
-    });
+    function handleSelection() {
+  selectedRange = getSelectedRange();
+  if (selectedRange && selectedRange.toString().trim().length > 0) {
+    let span = document.createElement('span');
+    span.style.cursor = 'pointer';
+    span.classList.add(preHighlightClass);
+    span.title = "Click this text to highlight and save.";
+    selectedRange.surroundContents(span);
+    clearSelection();
+  }
+}
+
+document.addEventListener('mouseup', handleSelection);
+document.addEventListener('touchend', handleSelection);
+
    
     function removeHighlight(e) {
   // Define a one-time click handler
   function handleClick(event) {
     if (event.target.classList.contains(highlightClass)) {
       const text = event.target.textContent; // Assuming you want to replace the element with its text content
-      const parentElementId = event.target.parentNode.id;
-      const textLength = text.length;
-
-      event.target.replaceWith(document.createTextNode(text)); // Remove the highlight
-
-      // Remove the corresponding book note from the array
-      let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-      bookNotes = bookNotes.filter(note => {
-        return !(note.startContainer === parentElementId && note.storedNoteText.length === textLength);
-      });
-
-      localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+      event.target.replaceWith(document.createTextNode(text));
       // Since we're using the `once` option, there's no need to manually remove the listener
     }
   }
 
   // Add the one-time click handler with the `once` option
   document.addEventListener('click', handleClick, { once: true });
+  document.addEventListener('touchend', handleClick);
 }
 
-
-//Find the highlight
-document.addEventListener('click', function(e) {
+function handleHighlightEvent(e) {
   if (e.target.classList.contains(preHighlightClass)) {
     if (e.target.classList.contains(highlightClass)) {
       e.target.classList.remove(preHighlightClass);
@@ -438,35 +390,34 @@ document.addEventListener('click', function(e) {
       selection.addRange(range);
 
       if (selection.rangeCount > 0) {
-  const selectedRange = selection.getRangeAt(0);
-  const startContainer = selectedRange.startContainer.parentNode.id;
+        const selectedRange = selection.getRangeAt(0);
+        const startContainer = selectedRange.startContainer.parentNode.id;
 
-  // Calculate startOffset considering only text nodes inside the selected paragraph
-  let startOffset = 0;
-  let node = selectedRange.startContainer.parentNode.firstChild;
-  while (node && node !== selectedRange.startContainer) {
-    if (node.nodeType === Node.TEXT_NODE) {
-      startOffset += node.length;
-    }
-    node = node.nextSibling;
-  }
-  startOffset += selectedRange.startOffset;
+        // Calculate startOffset considering only text nodes inside the selected paragraph
+        let startOffset = 0;
+        let node = selectedRange.startContainer.parentNode.firstChild;
+        while (node && node !== selectedRange.startContainer) {
+          if (node.nodeType === Node.TEXT_NODE) {
+            startOffset += node.length;
+          }
+          node = node.nextSibling;
+        }
+        startOffset += selectedRange.startOffset;
 
-  const storedNoteText = selection.toString();
-  const noteChapter = "Appendix";
+        const storedNoteText = selection.toString();
+        const noteChapter = "Appendix";
 
-  // Retrieve existing bookNotes from local storage
-  let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+        // Retrieve existing bookNotes from local storage
+        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
-  // Add the new highlight to the array
-  bookNotes.push({ startContainer, startOffset, storedNoteText, noteChapter });
+        // Add the new highlight to the array
+        bookNotes.push({ startContainer, startOffset, storedNoteText, noteChapter });
 
-  // Save the updated array back to local storage
-  localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+        // Save the updated array back to local storage
+        localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
 
-  alert(`storedNoteText: ${storedNoteText}, startContainer: ${startContainer}, startOffset: ${startOffset}, noteChapter: ${noteChapter}`);
-}
-
+        alert(`storedNoteText: ${storedNoteText}, startContainer: ${startContainer}, startOffset: ${startOffset}, noteChapter: ${noteChapter}`);
+      }
 
       e.target.title = "This quotation is saved in your Book Notes";
       window.getSelection().removeAllRanges();
@@ -474,7 +425,11 @@ document.addEventListener('click', function(e) {
   } else if (e.target.classList.contains(highlightClass)) {
     setTimeout(() => removeHighlight(e), 1000);
   }
-});
+}
+
+// Add both click and touchend listeners
+document.addEventListener('click', handleHighlightEvent);
+document.addEventListener('touchend', handleHighlightEvent);
 
 
 
@@ -530,16 +485,6 @@ function recreateSelection() {
   });
 }
 
-
-
-
-
-
-
-
-
-
-
   // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
   window.addEventListener('load', function () {
    // showAlertWithCharacterCount();
@@ -547,10 +492,6 @@ function recreateSelection() {
   });
 </script>
 
-
-
-  
-  
   
   </BODY>
   </HTML>
