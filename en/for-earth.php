@@ -42,7 +42,7 @@ $page_title = "For-Earth | Tractatus Ayyew - An Earthbook";?>
 Must be updated for each page-->
 
 <meta property="article:modified_time" content="2023-02-28T09:10:13+00:00">
-<meta name="keywords" content="for-earth, intention, statement, acknowledgements, thank yous, grattitude, credits "> 
+<meta name="keywords" content="for-earth, intention, statement, acknowledgements, thank yous, grattitude, credits, earth enterprise, not-for-profit, nfp "> 
 <meta name="description" content="Our not-for profit, for-Earth statement of intention for our enterprise of writing and publishing this EarthBook">
 <meta property="og:description"   content="Our not-for profit, for-Earth statement of intention for our enterprise of writing and publishing this EarthBook"/>
 
