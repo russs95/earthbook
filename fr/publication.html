@@ -293,9 +293,9 @@ All the page components required to build this page-->
        <p id="p2">Le livre est composé en Cooper LT Light et Regular par Oswald Cooper et Bitstream ainsi qu'en Mulish Light & Regular par Vernon Adams, Cyreal, Jacques Le Bailly.
       </p>
    
-      <p id="p3">L'entreprise qui publie le Tracatus Ayyew est <a href="for-earth.php">for-Earth</a>. Cela signifie que nous divulguons notre <a href="accounting.php" target="_blank">comptabilité écologique</a> dans les rapports régénératifs annuels.</p>
+      <p id="p3">L'entreprise qui publie le Tracatus Ayyew est <a href="pour-terre.html">for-Earth</a>. Cela signifie que nous divulguons notre <a href="compte.html" target="_blank">comptabilité écologique</a> dans les rapports régénératifs annuels.</p>
    
-     
+      <br><br><br><br>
         </div><!--ferme le contenu du texte de la page-->
 
 
@@ -425,27 +425,29 @@ document.addEventListener('click', function(e) {
     } else {
       e.target.classList.add(highlightClass);
       e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
-      
+
       // Select the text in the highlighted element
       const range = document.createRange();
       range.selectNodeContents(e.target);
       const selection = window.getSelection();
       selection.removeAllRanges();
       selection.addRange(range);
-      
+
       // Storing selected text and its positions in the local storage
       if (selection.rangeCount > 0) {
         const selectedRange = selection.getRangeAt(0);
         const startContainer = selectedRange.startContainer.parentNode.id;
-        const startOffset = selectedRange.startOffset;
+        const charCount = selectedRange.startContainer.textContent.length;
+        const firstChar = selectedRange.startOffset;
         const storedText1 = selection.toString();
-        
+
         localStorage.setItem('startContainer', startContainer);
-        localStorage.setItem('startOffset', startOffset);
+        localStorage.setItem('charCount', charCount);
+        localStorage.setItem('firstChar', firstChar);
         localStorage.setItem('storedText1', storedText1);
 
         // Alert to confirm storage
-        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, startOffset:${startOffset}`);
+        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, charCount:${charCount}, firstChar:${firstChar}`);
       }
 
       e.target.title = "This quotation is saved in your Book Notes";
@@ -457,6 +459,7 @@ document.addEventListener('click', function(e) {
     setTimeout(() => removeHighlight(e), 1000);
   }
 });
+
 });
 
 
