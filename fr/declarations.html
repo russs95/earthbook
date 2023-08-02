@@ -294,11 +294,11 @@ All the page components required to build this page-->
        <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
         <div class="next-section">
           <div class="next-sec">Annexe suivante :</div>
-          <div class="sec-name"><i>Déclaration d'intérêts</i></div>
+          <div class="sec-name"><i>Bibliographie</i></div>
         </div>
       </div>
       <div class="footer-right">
-        <a href="auteurs.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
+        <a href="biblio.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
       </div>
     </div>
 
@@ -360,20 +360,35 @@ document.addEventListener('mouseup', handleSelection);
 document.addEventListener('touchend', handleSelection);
 
    
-    function removeHighlight(e) {
+
+
+
+function removeHighlight(e) {
   // Define a one-time click handler
   function handleClick(event) {
     if (event.target.classList.contains(highlightClass)) {
       const text = event.target.textContent; // Assuming you want to replace the element with its text content
-      event.target.replaceWith(document.createTextNode(text));
+      const parentElementId = event.target.parentNode.id;
+      const textLength = text.length;
+
+      event.target.replaceWith(document.createTextNode(text)); // Remove the highlight
+
+      // Remove the corresponding book note from the array
+      let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+      bookNotes = bookNotes.filter(note => {
+        return !(note.startContainer === parentElementId && note.storedNoteText.length === textLength);
+      });
+
+      localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
       // Since we're using the `once` option, there's no need to manually remove the listener
     }
   }
-
   // Add the one-time click handler with the `once` option
   document.addEventListener('click', handleClick, { once: true });
   document.addEventListener('touchend', handleClick);
 }
+
+
 
 function handleHighlightEvent(e) {
   if (e.target.classList.contains(preHighlightClass)) {
