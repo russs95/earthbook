@@ -418,7 +418,6 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener('click', handleClick, { once: true });
 }
 
-
 document.addEventListener('click', function(e) {
   if (e.target.classList.contains(preHighlightClass)) {
     if (e.target.classList.contains(highlightClass)) {
@@ -438,20 +437,15 @@ document.addEventListener('click', function(e) {
       if (selection.rangeCount > 0) {
         const selectedRange = selection.getRangeAt(0);
         const startContainer = selectedRange.startContainer.parentNode.id;
-        const endContainer = selectedRange.endContainer.parentNode.id;
         const startOffset = selectedRange.startOffset;
-        const endOffset = selectedRange.endOffset;
         const storedText1 = selection.toString();
         
         localStorage.setItem('startContainer', startContainer);
-        localStorage.setItem('endContainer', endContainer);
         localStorage.setItem('startOffset', startOffset);
-        localStorage.setItem('endOffset', endOffset);
         localStorage.setItem('storedText1', storedText1);
 
         // Alert to confirm storage
-        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer}, startOffset:${startOffset}, endOffset:${endOffset}`);
-
+        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, startOffset:${startOffset}`);
       }
 
       e.target.title = "This quotation is saved in your Book Notes";
@@ -463,6 +457,8 @@ document.addEventListener('click', function(e) {
     setTimeout(() => removeHighlight(e), 1000);
   }
 });
+});
+
 
 
 
