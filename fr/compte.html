@@ -452,7 +452,7 @@ document.addEventListener("DOMContentLoaded", function() {
             selectedRange.surroundContents(span);
             clearSelection();
 
-            setTimeout(unHighlight, 1000);  // call unHighlight function after 1 second
+           // setTimeout(unHighlight, 1000);  // call unHighlight function after 1 second
         }
     });
    
@@ -471,7 +471,6 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener('click', handleClick);
 }
 
-  
 
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains(preHighlightClass)) {
@@ -490,20 +489,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-  document.addEventListener('click', function(e) {
-  if (e.target.classList.contains(preHighlightClass)) {
-    if (e.target.classList.contains(highlightClass)) {
-      e.target.classList.remove(preHighlightClass);
-    } else {
-      e.target.classList.add(highlightClass);
-      e.target.classList.remove(preHighlightClass);
-      storeSelectedText(e.target);
-      e.target.title = "This quotation is saved in your Book Notes";
-    }
-  } else if (e.target.classList.contains(highlightClass)) {
-    removeHighlight(e);
-  }
-});
 
 // Function to store selected text and its positions in the local storage
 function storeSelectedText(targetElement) {
