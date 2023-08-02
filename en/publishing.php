@@ -156,7 +156,7 @@ Must be updated for each page-->
   
   <div class="page-paragraph">
   
-    <p id="p1">The book is for sale on the <a href="https//gobrik.com/regen" target="_blank">GoBrik store</a> where it’s sale in Brikcoins directly corresponds to the sequestration of plastic out of the biosphere.<p>
+    <p id="p1">The book is for sale on the <a href="https://gobrik.com/go.php#regen" target="_blank">GoBrik store</a> where it’s sale in Brikcoins directly corresponds to the sequestration of plastic out of the biosphere.<p>
   
      <p id="p2">The book is type set in Cooper LT Light and Regular by Oswald Cooper and Bitstream as well as Mulish Light & Regular by Vernon Adams, Cyreal, Jacques Le Bailly.
     </p>

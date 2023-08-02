@@ -178,53 +178,13 @@ All the page components required to build this page-->
 }
 
 
- @media screen and (max-width: 699px) {
-    .ct-chapter-quote {
-      width: 87%;
-      font-size: 1.4em;
-    }
-    .ct-quote-source {
-      width: 80%;
-      font-size: 0.8em;
-    }
-  }
 
-  @media screen and (min-width: 700px) and (max-width: 1324px) {
-    .ct-chapter-quote {
-      width: 70%;
-      font-size: 1.8em;
-    }
-    .ct-quote-source {
-      width: 70%;
-      font-size: 1em;
-    }
-  }
-    
-  @media screen and (min-width: 1325px) {
-    .ct-chapter-quote {
-    width: 50%;
-    font-size: 2em;
-    text-shadow: 0px 0px 12px var(--slider);
-    }
-    .ct-quote-source {
-      width: 50%;
-      font-size: 1em;
-    }
-  }
-
-  #ct-chapter-title {
+#ct-chapter-title {
     font-size: 10vmin;
       letter-spacing: 2px;
     }
 
 
-  .bullet {
-    width:22px;
-    height:22px;
-    display: inline-block;
-    padding-right: 6px;
-    margin-bottom: -3px;
-  }
 
 </STYLE>
 
@@ -259,11 +219,15 @@ All the page components required to build this page-->
 <!-- Page Title Section-->
 
 <div id="ct-chapt-graphic" class="background-000">
-    <img src="../icons/publishing.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+    <img src="../icons/authoring.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
     </div>
   
-  <div id="up-arrow"></div>
-  <div id="ct-main">
+    <div id="up-arrow"></div>
+  
+  
+    <div id="ct-main">
+  
+  
   
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
@@ -288,7 +252,7 @@ All the page components required to build this page-->
    
     <div class="page-paragraphe">
    
-      <p id="p1">Le livre est en vente sur la <a href="https//gobrik.com/regen" target="_blank">boutique GoBrik</a> où sa vente en Brikcoins correspond directement au séquestration du plastique hors de la biosphère.<p>
+      <p id="p1">Le livre est en vente sur la <a href="https://gobrik.com/go.php#regen" target="_blank">boutique GoBrik</a> où sa vente en Brikcoins correspond directement au séquestration du plastique hors de la biosphère.<p>
    
        <p id="p2">Le livre est composé en Cooper LT Light et Regular par Oswald Cooper et Bitstream ainsi qu'en Mulish Light & Regular par Vernon Adams, Cyreal, Jacques Le Bailly.
       </p>
@@ -437,27 +401,25 @@ document.addEventListener('click', function(e) {
       if (selection.rangeCount > 0) {
         const selectedRange = selection.getRangeAt(0);
         const startContainer = selectedRange.startContainer.parentNode.id;
-        const charCount = selectedRange.startContainer.parentNode.textContent.length;
 
-        // Calculate firstChar considering only text nodes inside the selected paragraph
-        let firstChar = 0;
+        // Calculate startOffset considering only text nodes inside the selected paragraph
+        let startOffset = 0;
         let node = selectedRange.startContainer.parentNode.firstChild;
         while (node && node !== selectedRange.startContainer) {
           if (node.nodeType === Node.TEXT_NODE) {
-            firstChar += node.length;
+            startOffset += node.length;
           }
           node = node.nextSibling;
         }
-        firstChar += selectedRange.startOffset;
+        startOffset += selectedRange.startOffset;
 
         const storedText1 = selection.toString();
 
         localStorage.setItem('startContainer', startContainer);
-        localStorage.setItem('charCount', charCount);
-        localStorage.setItem('firstChar', firstChar);
+        localStorage.setItem('startOffset', startOffset);
         localStorage.setItem('storedText1', storedText1);
 
-        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, charCount:${charCount}, firstChar:${firstChar}`);
+        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, startOffset:${startOffset}`);
       }
 
       e.target.title = "This quotation is saved in your Book Notes";
@@ -467,6 +429,7 @@ document.addEventListener('click', function(e) {
     setTimeout(() => removeHighlight(e), 1000);
   }
 });
+
 
 
 });
