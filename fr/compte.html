@@ -457,11 +457,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
    
     function removeHighlight(e) {
-      document.addEventListener('click', function(e) {
-        if (e.target.classList.contains(highlightClass)) {
-          e.target.replaceWith(text);
-        }
-})};
+  // Define a one-time click handler
+  function handleClick(event) {
+    if (event.target.classList.contains(highlightClass)) {
+      const text = event.target.textContent; // Assuming you want to replace the element with its text content
+      event.target.replaceWith(document.createTextNode(text));
+      // Remove the click listener after the action is complete
+      document.removeEventListener('click', handleClick);
+    }
+  }
+
+  // Add the one-time click handler
+  document.addEventListener('click', handleClick);
+}
+
   
 
     document.addEventListener('click', function(e) {
@@ -534,9 +543,6 @@ function storeSelectedText(targetElement) {
   window.addEventListener('load', function () {
    // showAlertWithCharacterCount();
     recreateSelection();
-
-    // Attach the storeSelectedText function to the "mouseup" event
-    document.addEventListener("mouseup", storeSelectedText);
   });
 </script>
 
