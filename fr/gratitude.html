@@ -459,14 +459,14 @@ document.addEventListener("DOMContentLoaded", function() {
     if (event.target.classList.contains(highlightClass)) {
       const text = event.target.textContent; // Assuming you want to replace the element with its text content
       event.target.replaceWith(document.createTextNode(text));
-      // Remove the click listener after the action is complete
-      document.removeEventListener('click', handleClick);
+      // Since we're using the `once` option, there's no need to manually remove the listener
     }
   }
 
-  // Add the one-time click handler
-  document.addEventListener('click', handleClick);
+  // Add the one-time click handler with the `once` option
+  document.addEventListener('click', handleClick, { once: true });
 }
+
 
 document.addEventListener('click', function(e) {
   if (e.target.classList.contains(preHighlightClass)) {
