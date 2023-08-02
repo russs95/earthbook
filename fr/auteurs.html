@@ -407,11 +407,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Add the one-time click handler with the `once` option
   document.addEventListener('click', handleClick, { once: true });
+  document.addEventListener('touchend', handleClick);
 }
 
-
-//Find the highlight
-document.addEventListener('click', function(e) {
+function handleHighlightEvent(e) {
   if (e.target.classList.contains(preHighlightClass)) {
     if (e.target.classList.contains(highlightClass)) {
       e.target.classList.remove(preHighlightClass);
@@ -426,35 +425,34 @@ document.addEventListener('click', function(e) {
       selection.addRange(range);
 
       if (selection.rangeCount > 0) {
-  const selectedRange = selection.getRangeAt(0);
-  const startContainer = selectedRange.startContainer.parentNode.id;
+        const selectedRange = selection.getRangeAt(0);
+        const startContainer = selectedRange.startContainer.parentNode.id;
 
-  // Calculate startOffset considering only text nodes inside the selected paragraph
-  let startOffset = 0;
-  let node = selectedRange.startContainer.parentNode.firstChild;
-  while (node && node !== selectedRange.startContainer) {
-    if (node.nodeType === Node.TEXT_NODE) {
-      startOffset += node.length;
-    }
-    node = node.nextSibling;
-  }
-  startOffset += selectedRange.startOffset;
+        // Calculate startOffset considering only text nodes inside the selected paragraph
+        let startOffset = 0;
+        let node = selectedRange.startContainer.parentNode.firstChild;
+        while (node && node !== selectedRange.startContainer) {
+          if (node.nodeType === Node.TEXT_NODE) {
+            startOffset += node.length;
+          }
+          node = node.nextSibling;
+        }
+        startOffset += selectedRange.startOffset;
 
-  const storedNoteText = selection.toString();
-  const noteChapter = "Appendix";
+        const storedNoteText = selection.toString();
+        const noteChapter = "Appendix";
 
-  // Retrieve existing bookNotes from local storage
-  let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+        // Retrieve existing bookNotes from local storage
+        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
-  // Add the new highlight to the array
-  bookNotes.push({ startContainer, startOffset, storedNoteText, noteChapter });
+        // Add the new highlight to the array
+        bookNotes.push({ startContainer, startOffset, storedNoteText, noteChapter });
 
-  // Save the updated array back to local storage
-  localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+        // Save the updated array back to local storage
+        localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
 
-  alert(`storedNoteText: ${storedNoteText}, startContainer: ${startContainer}, startOffset: ${startOffset}, noteChapter: ${noteChapter}`);
-}
-
+        alert(`storedNoteText: ${storedNoteText}, startContainer: ${startContainer}, startOffset: ${startOffset}, noteChapter: ${noteChapter}`);
+      }
 
       e.target.title = "This quotation is saved in your Book Notes";
       window.getSelection().removeAllRanges();
@@ -462,7 +460,11 @@ document.addEventListener('click', function(e) {
   } else if (e.target.classList.contains(highlightClass)) {
     setTimeout(() => removeHighlight(e), 1000);
   }
-});
+}
+
+// Add both click and touchend listeners
+document.addEventListener('click', handleHighlightEvent);
+document.addEventListener('touchend', handleHighlightEvent);
 
 
 
