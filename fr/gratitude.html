@@ -57,8 +57,8 @@ Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.
 <!--BOOK META TAGS
 Ces balises seront cohérentes pour l'ensemble du livre-->
 
-<meta name="keywords" content="pour la terre, intention, déclaration, remerciements, remerciements, gratitude, crédits, enterprise terrestre, pour-terre">
-<meta name="description" content="Notre déclaration d'intention à but non lucratif pour la Terre pour notre entreprise d'écriture et de publication de ce EarthBook">
+<meta name="keywords" content="remerciements, remerciements, gratitude, crédits, partenaires, amis, famille">
+<meta name="description" content="Nos remerciements aux nombreuses personnes qui ont rendu ce projet possible et publié">
 
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
@@ -70,7 +70,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
 <meta property="og:title"         content="Gratitude - Tracatus Ayyew">
-<meta property="og:description"   content="Notre déclaration d'intention à but non lucratif pour la Terre pour notre entreprise d'écriture et de publication de ce EarthBook">
+<meta property="og:description"   content="Nos remerciements aux nombreuses personnes qui ont rendu ce projet possible et publié">
 <meta property="og:image"         content="../covers/TA-cover-french-1200px.png">
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
@@ -207,17 +207,10 @@ All the page components required to build this page-->
 
   #ct-chapter-title {
     font-size: 10vmin;
-      letter-spacing: 2px;
+      letter-spacing: 6px;
     }
 
 
-  .bullet {
-    width:22px;
-    height:22px;
-    display: inline-block;
-    padding-right: 6px;
-    margin-bottom: -3px;
-  }
 </STYLE>
 
 </HEAD>
@@ -462,6 +455,7 @@ document.addEventListener('click', function(e) {
   } else if (e.target.classList.contains(highlightClass)) {
     setTimeout(() => removeHighlight(e), 1000);
   }
+});
 });
 
 
