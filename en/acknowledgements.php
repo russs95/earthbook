@@ -42,7 +42,7 @@ $page_title = "Credits & Acknowledgements | Tractatus Ayyew | Earthbook";?>
 Must be updated for each page-->
 
 <meta property="article:modified_time" content="2023-02-28T09:10:13+00:00">
-<meta name="keywords" content="acknowledgements, thank yous, grattitude, credits "> 
+<meta name="keywords" content="acknowledgements, thank you, gratitude, credits, partners, friends, "> 
 <meta name="description" content="Our thanks to the many who made this project possible and published.">
 <meta property="og:description"   content="Our thanks to the many who made this project possible and published."/>
 
