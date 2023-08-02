@@ -471,51 +471,54 @@ document.addEventListener('click', function(e) {
 
 
 function recreateSelection() {
-  const storedText1 = localStorage.getItem('storedText1');
-  const startContainer = localStorage.getItem('startContainer');
-  const startOffset = parseInt(localStorage.getItem('startOffset'), 10);
+  const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
-  if (storedText1 && startContainer && startOffset !== null) {
-    // Find the element by the saved ID
-    const container = document.getElementById(startContainer);
+  bookNotes.forEach(note => {
+    const { storedNoteText, startContainer, startOffset } = note;
 
-    if (container) {
-      // Traverse through text nodes to find the correct position
-      let node = container.firstChild;
-      let currentOffset = 0;
+    if (storedNoteText && startContainer && startOffset !== null) {
+      // Find the element by the saved ID
+      const container = document.getElementById(startContainer);
 
-      while (node) {
-        if (node.nodeType === Node.TEXT_NODE) {
-          if (currentOffset + node.length >= startOffset) {
-            break;
+      if (container) {
+        // Traverse through text nodes to find the correct position
+        let node = container.firstChild;
+        let currentOffset = 0;
+
+        while (node) {
+          if (node.nodeType === Node.TEXT_NODE) {
+            if (currentOffset + node.length >= startOffset) {
+              break;
+            }
+            currentOffset += node.length;
           }
-          currentOffset += node.length;
+          node = node.nextSibling;
         }
-        node = node.nextSibling;
-      }
 
-      if (node) {
-        const range = document.createRange();
-        range.setStart(node, startOffset - currentOffset);
-        range.setEnd(node, startOffset - currentOffset + storedText1.length);
+        if (node) {
+          const range = document.createRange();
+          range.setStart(node, startOffset - currentOffset);
+          range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
 
-        const span = document.createElement('span');
-        span.className = 'highlight';
-        span.textContent = storedText1;
+          const span = document.createElement('span');
+          span.className = 'highlight';
+          span.textContent = storedNoteText;
 
-        range.deleteContents();
-        range.insertNode(span);
+          range.deleteContents();
+          range.insertNode(span);
 
-        const selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-        selection.collapseToEnd();
-      } else {
-        alert('Stored text not found');
+          const selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+          selection.collapseToEnd();
+        } else {
+          alert('Stored text not found');
+        }
       }
     }
-  }
+  });
 }
+
 
 
 
