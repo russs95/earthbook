@@ -321,8 +321,8 @@ All the page components required to build this page-->
     </div>
    
     <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right : 20px ;">
-      <div class="doc-text-main"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="Le rapport Regen pour notre livre" alt= "Bannière déclarant notre intention For-Earth">Tracatus Ayyew Writing & Publishing</a></div>
-      <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>Rapport Regen 2021</b> | PDF | 554ko | Publié le 12/02/2022</a></div>
+      <div class="doc-text-main"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="Le rapport Regen pour notre livre" alt= "Bannière déclarant notre intention For-Earth">Écriture et édition du Tractatus Ayyew</a></div>
+      <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>Rapport Regen 2021</b> | PDF | 554kb | Publié le 12/02/2022</a></div>
     </div>
 </div>
 
@@ -332,14 +332,14 @@ All the page components required to build this page-->
     </div>
 
   <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right : 20px ;">
-      <div class="doc-text-main"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="Le rapport Regen pour nos livre" alt="Bannière déclarant notre intention pour la Terre">-->Tracatus Ayyew Writing & Publishing</div>
+      <div class="doc-text-main"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="Le rapport Regen pour nos livre" alt="Bannière déclarant notre intention pour la Terre">-->Écriture et édition du Tractatus Ayyew</div>
       <div class="doc-text-small"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">--><b>Rapport de régénération 2022 </b> | PDF | Publication de février 2023 en attente</b></div>
   </div>
 
   </div>
 
 
-  <br><br>
+  <br><br><br><br><br><br>
 
 
   
@@ -500,20 +500,33 @@ document.addEventListener("DOMContentLoaded", function() {
     alert(`Total Characters in the HTML document: ${totalCharacters}`);
   }*/
 
-  // Function to store selected text and its positions in the local storage
-  function storeSelectedText() {
-    const selection = window.getSelection();
-    if (selection.rangeCount > 0) {
-      const range = selection.getRangeAt(0);
-      localStorage.setItem('startContainer', range.startContainer.parentNode.id);
-      localStorage.setItem('endContainer', range.endContainer.parentNode.id);
-      localStorage.setItem('startOffset', range.startOffset);
-      localStorage.setItem('endOffset', range.endOffset);
-      localStorage.setItem('storedText-1', selection.toString());
+  document.addEventListener('click', function(e) {
+  if (e.target.classList.contains(preHighlightClass)) {
+    if (e.target.classList.contains(highlightClass)) {
+      e.target.classList.remove(preHighlightClass);
+    } else {
+      e.target.classList.add(highlightClass);
+      e.target.classList.remove(preHighlightClass);
+      storeSelectedText(e.target);
+      e.target.title = "This quotation is saved in your Book Notes";
     }
-    // Alert to confirm storage
-    alert(`storedText-1: ${selectedText}`);
+  } else if (e.target.classList.contains(highlightClass)) {
+    removeHighlight(e);
   }
+});
+
+// Function to store selected text and its positions in the local storage
+function storeSelectedText(targetElement) {
+  const textContent = targetElement.textContent;
+  const elementId = targetElement.id; // Assuming the element has an 'id' attribute
+
+  localStorage.setItem('storedElementId', elementId);
+  localStorage.setItem('storedText-1', textContent);
+
+  // Alert to confirm storage
+  alert(`storedText-1: ${textContent}`);
+}
+
 
   // Function to recreate selection from stored data
   function recreateSelection() {
