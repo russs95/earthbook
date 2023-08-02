@@ -245,13 +245,13 @@ All the page components required to build this page-->
 <!-- Page Title Section-->
 
 <div id="ct-chapt-graphic" class="background-000">
-  <img src="../icons/eco.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
-  </div>
-
+    <img src="../icons/thankyou.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+  
+    </div>
+  
+  
   <div id="up-arrow"></div>
   <div id="ct-main">
-
-
 
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
@@ -471,10 +471,10 @@ const selection = window.getSelection();
       localStorage.setItem('endContainer', range.endContainer.parentNode.id);
       localStorage.setItem('startOffset', range.startOffset);
       localStorage.setItem('endOffset', range.endOffset);
-      localStorage.setItem('storedText-1', selection.toString());
+      localStorage.setItem('storedText1', selection.toString());
 
   // Alert to confirm storage
-  alert(`storedText-1: ${storedText-1}, startContainer:${startContainer}`);
+  alert(`storedText-1: ${storedText1}, startContainer:${startContainer}`);
 }
  }
 
