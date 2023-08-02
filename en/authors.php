@@ -105,11 +105,11 @@ Must be updated for each page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 
-<div class="page-paragraph">
+<div class="page-paragraph" >
 
-<p>The writing of the <i>Tractatus Ayyew: Earthen Ethics</i> is the culmination of a decade long dialogue and friendship between Russell Maier and Banayan Angway (read the full story in the <a href="preface.php">preface</a>).  The book is inspired by Banayan's research and articulation of the concept of <i>Ayyew</i> for the Cordilleria Administrative Region DepEd Indigenous Knowledge curriculum<a href="#footnotes" title="See: Irene Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12, (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)">¹</a> and their experience founding the Filipino ecobrick movement.<a href="#footnotes" title="The rise of the Regenerative Ecobrick Movement | Bandung Spirit Conference | 2020 | Russell Maier, Ani Himawati | https://www.ecobricks.org/wp-content/uploads/2021/09/The-Rise-of-the-Regenerative-Ecobrick-Movement.pdf | p11">²</a></p>
+<p id="p0">The writing of the <i>Tractatus Ayyew: Earthen Ethics</i> is the culmination of a decade long dialogue and friendship between Russell Maier and Banayan Angway (read the full story in the <a href="preface.php">preface</a>).  The book is inspired by Banayan's research and articulation of the concept of <i>Ayyew</i> for the Cordilleria Administrative Region DepEd Indigenous Knowledge curriculum<a href="#footnotes" title="See: Irene Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12, (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)">¹</a> and their experience founding the Filipino ecobrick movement.<a href="#footnotes" title="The rise of the Regenerative Ecobrick Movement | Bandung Spirit Conference | 2020 | Russell Maier, Ani Himawati | https://www.ecobricks.org/wp-content/uploads/2021/09/The-Rise-of-the-Regenerative-Ecobrick-Movement.pdf | p11">²</a></p>
   
-  <p>The words of the <i>Tractatus Ayyew</i> are written by Russell with Banayan's oversight and review.  The chapter format of prefaced ecological parables is inspired by the Igorot tradition of storytelling after the Bugnas festival feast.</p> 
+  <p id="p2">The words of the <i>Tractatus Ayyew</i> are written by Russell with Banayan's oversight and review.  The chapter format of prefaced ecological parables is inspired by the Igorot tradition of storytelling after the Bugnas festival feast.</p> 
 
 </div>
 <br><br>
@@ -118,7 +118,7 @@ Must be updated for each page-->
 
         <div class="page-paragraph">
 
-        <p>Banayan was the superintendent of Kalinga Mt. Province DEPED from 2015-2021.  She oversaw the development of the Indigenous Culture component of the Kalinga and Mt. Province curriculum's where she integrated and developed the Ayyew concept into textbooks and lessons.    As the indigenous peoples education coordinator for Mountain Province from 2011-2015 Banayan facilitated planning, implementation and evaluation of related activities that made her program known nationwide.</p> 
+        <p id="p3">Banayan was the superintendent of Kalinga Mt. Province DEPED from 2015-2021.  She oversaw the development of the Indigenous Culture component of the Kalinga and Mt. Province curriculum's where she integrated and developed the Ayyew concept into textbooks and lessons.    As the indigenous peoples education coordinator for Mountain Province from 2011-2015 Banayan facilitated planning, implementation and evaluation of related activities that made her program known nationwide.</p> 
 
         </div>
         <br><br>
@@ -126,7 +126,7 @@ Must be updated for each page-->
         <h2>Russell Maier</h2>
 
         <div class="page-paragraph">
-        <p>Russell is an inventor and regenerative philosopher, currently based in Gianyar, Indonesia.  Russell is one of the principals of the Global Ecobrick Alliance and writes regularly on Earthen.io.  He travels around South East Asia observing the impact of human systems on biological diversity, in order to maximize human ecological contribution.</p>
+        <p id="p4">Russell is an inventor and regenerative philosopher, currently based in Gianyar, Indonesia.  Russell is one of the principals of the Global Ecobrick Alliance and writes regularly on Earthen.io.  He travels around South East Asia observing the impact of human systems on biological diversity, in order to maximize human ecological contribution.</p>
       
       </div>
       <br><br>
@@ -147,7 +147,7 @@ Must be updated for each page-->
 
       <a href="#2-up" class="footnote">   
       <div class="footnote-number" id="3-down">2.</div>
-      <div class="footnote-text">ANi Himawati, Russell Maier, <i>The rise of the Regenerative Ecobrick Movement</i> (Bandung Spirit Conference | 2020 https://www.ecobricks.org/wp-content/uploads/2021/09/The-Rise-of-the-Regenerative-Ecobrick-Movement.pdf) | p11</div>
+      <div class="footnote-text">Ani Himawati, Russell Maier, <i>The rise of the Regenerative Ecobrick Movement</i> (Bandung Spirit Conference | 2020 https://www.ecobricks.org/wp-content/uploads/2021/09/The-Rise-of-the-Regenerative-Ecobrick-Movement.pdf) | p11</div>
       </a>
 
    </div>

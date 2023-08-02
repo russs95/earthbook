@@ -244,23 +244,55 @@ All the page components required to build this page-->
   </div>
 </div>
 
-<div class="lead-page-paragraph" id="p0">
-  
-    THE TRACTATUS AYYEW a été rédigé et publié à l'aide de matériel et de logiciels 100 % open source développés par des entreprises à but non lucratif. Écrit en utilisant <a href="https://www.libreoffice.org/" target="_blank">Libre Office</a>, en utilisant un <a href="https://puri.sm/" target=" _blank">Ordinateur portable Purism Librem 13</a> exécutant <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> et un <a href="https://frame. work/" target="_blank">Ordinateur portable Framework</a> exécutant <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>. Les fichiers cloud d'Earthbook pour l'écriture et tous les fichiers publiés finaux sont hébergés sur un serveur Ubuntu exécutant <a href="https://nextcloud.com" target="_blank">NextCloud</a>.
-   
+<div class="page-paragraphe" >
+
+    <p id="p0">La rédaction du <i>Tractatus Ayyew : Earthen Ethics</i> est l'aboutissement d'une décennie de dialogue et d'amitié entre Russell Maier et Banayan Angway (lire l'histoire complète dans le <a href ="preface.php">préface</a>). Le livre s'inspire des recherches de Banayan et de l'articulation du concept d'<i>Ayyew</i> pour le programme d'études sur les connaissances autochtones de la région administrative de la Cordillère <a href="#footnotes" title="Voir : Irene Banayan Angway, Région administrative de la Cordillère Indigenous Peoples Education Curriculum K-12, (Bontoc, Mountain Prov., CAR ; Philippines Department of Education, 2014)">¹</a> et leur expérience dans la fondation du mouvement écobrique philippin.<a href="#footnotes" title= "La montée du mouvement régénératif des écobricks | Bandung Spirit Conference | 2020 | Russell Maier, Ani Himawati | https://www.ecobricks.org/wp-content/uploads/2021/09/The-Rise-of-the-Regenerative -Ecobrick-Mouvement.pdf | p11">²</a></p>
+      
+       <p id="p2">Les paroles du <i>Tractatus Ayyew</i> sont écrites par Russell sous la supervision et la révision de Banayan. Le format des chapitres de paraboles écologiques préfacées s'inspire de la tradition Igorot du conte après la fête de Bugnas.</p>
+    
     </div>
-   
-    <div class="page-paragraphe">
-   
-      <p id="p1">Le livre est en vente sur la <a href="https://gobrik.com/go.php#regen" target="_blank">boutique GoBrik</a> où sa vente en Brikcoins correspond directement au séquestration du plastique hors de la biosphère.<p>
-   
-       <p id="p2">Le livre est composé en Cooper LT Light et Regular par Oswald Cooper et Bitstream ainsi qu'en Mulish Light & Regular par Vernon Adams, Cyreal, Jacques Le Bailly.
-      </p>
-   
-      <p id="p3">L'entreprise qui publie le Tracatus Ayyew est <a href="pour-terre.html">for-Earth</a>. Cela signifie que nous divulguons notre <a href="compte.html" target="_blank">comptabilité écologique</a> dans les rapports régénératifs annuels.</p>
-   
-      <br><br><br><br>
-        </div><!--ferme le contenu du texte de la page-->
+    <br><br>
+    
+    <h2>Banayan Angway</h2>
+    
+             <div class="page-paragraphe">
+    
+             <p id="p3">Banayan était le surintendant de Kalinga Mt. Province DEPED de 2015 à 2021. Elle a supervisé le développement de la composante culture indigène du programme d'études de Kalinga et Mt. Province où elle a intégré et développé le concept Ayyew dans les manuels et les leçons. En tant que coordinatrice de l'éducation des peuples autochtones pour la province de Mountain de 2011 à 2015, Banayan a facilité la planification, la mise en œuvre et l'évaluation d'activités connexes qui ont fait connaître son programme dans tout le pays.</p>
+    
+             </div>
+             <br><br>
+    
+             <h2>Russell Maier</h2>
+    
+             <div class="page-paragraphe">
+             <p id="p4">Russell est un inventeur et un philosophe régénérateur, actuellement basé à Gianyar, en Indonésie. Russell est l'un des directeurs de la Global Ecobrick Alliance et écrit régulièrement sur Earthen.io. Il parcourt l'Asie du Sud-Est pour observer l'impact des systèmes humains sur la diversité biologique, afin de maximiser la contribution écologique humaine.</p>
+          
+           </div>
+           <br><br>
+    
+    
+    
+         <div class="footnote-section">
+    
+           <div id="line" style="border-style : solid ; border-width : 1px ; margin-bottom : 30px ; width:100 %; text-align:left ;"></div>
+    
+           <p id="footnotes" style="font-variant-caps : all-petite-caps ; color:grey">Notes de bas de page</p>
+          
+      
+           <a href="#1-up" class="footnote">
+           <div class="footnote-number" id="3-down">1.</div>
+           <div class="footnote-text">Voir : Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR ; Philippines Department of Education, 2014).< /div>
+           </a>
+    
+           <a href="#2-up" class="footnote">
+           <div class="footnote-number" id="3-down">2.</div>
+           <div class="footnote-text">Ani Himawati, Russell Maier, <i>The rise of the Regenerative Ecobrick Movement</i> (Bandung Spirit Conference | 2020 https://www.ecobricks.org/wp-content/ uploads/2021/09/The-Rise-of-the-Regenerative-Ecobrick-Movement.pdf) | p11</div>
+           </a>
+    
+        </div>
+    
+              
+       </div><!--Ferme le bloc de contenu principal-->
 
 
         
@@ -435,48 +467,53 @@ document.addEventListener('click', function(e) {
 });
 
 
-
-
 function recreateSelection() {
-  const storedText = localStorage.getItem('storedText1');
+  const storedText1 = localStorage.getItem('storedText1');
+  const startContainer = localStorage.getItem('startContainer');
+  const startOffset = parseInt(localStorage.getItem('startOffset'), 10);
 
-  // Assuming you have a specific container where the text is located
-  const container = document.querySelector('.targetContainer'); // Adjust this selector to match your container
+  if (storedText1 && startContainer && startOffset !== null) {
+    // Find the element by the saved ID
+    const container = document.getElementById(startContainer);
 
-  if (storedText && container) {
-    const textNode = container.firstChild;
-    const fullText = textNode.textContent;
+    if (container) {
+      // Traverse through text nodes to find the correct position
+      let node = container.firstChild;
+      let currentOffset = 0;
 
-    // Find the start and end index of the stored text within the full text content
-    const startIndex = fullText.indexOf(storedText);
-    const endIndex = startIndex + storedText.length;
+      while (node) {
+        if (node.nodeType === Node.TEXT_NODE) {
+          if (currentOffset + node.length >= startOffset) {
+            break;
+          }
+          currentOffset += node.length;
+        }
+        node = node.nextSibling;
+      }
 
-    if (startIndex !== -1) {
-      const range = document.createRange();
-      range.setStart(textNode, startIndex);
-      range.setEnd(textNode, endIndex);
+      if (node) {
+        const range = document.createRange();
+        range.setStart(node, startOffset - currentOffset);
+        range.setEnd(node, startOffset - currentOffset + storedText1.length);
 
-      // Create a new span element with the 'highlight' class
-      const span = document.createElement('span');
-      span.className = 'highlight';
-      span.textContent = storedText;
+        const span = document.createElement('span');
+        span.className = 'highlight';
+        span.textContent = storedText1;
 
-      // Replace the range with the new span element
-      range.deleteContents();
-      range.insertNode(span);
+        range.deleteContents();
+        range.insertNode(span);
 
-      // Collapse the selection to ensure nothing is selected afterward
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      selection.collapseToEnd();
-
-      alert(`First char: ${startIndex}, Last char: ${endIndex}, Stored text: ${storedText}`);
-    } else {
-      alert('Stored text not found');
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        selection.collapseToEnd();
+      } else {
+        alert('Stored text not found');
+      }
     }
   }
 }
+
 
 
 
