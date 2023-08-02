@@ -273,7 +273,7 @@ All the page components required to build this page-->
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
-<div class="lead-page-paragraph" id="p1">
+<div class="lead-page-paragraph" id="p0">
 
     CE QUI A D'ABORD COMMENCÉ comme une conversation, est devenu un projet scolaire, puis un programme, puis un curriculum. Finalement, un essai en a émergé. Puis un autre et un autre. Et enfin, le Earthbook devant vous. Tout au long de ce long voyage d'une décennie, nos pensées ont été touchées et propulsées par les innombrables contributions des personnes qui nous ont aidés et accompagnés tout au long de notre chemin. 
     
@@ -306,19 +306,19 @@ All the page components required to build this page-->
             <p id="p10">Photos de la culture Igorot sur Earthen.io par Gladys Maxim. Photos du chapitre 9 par Robert Brodey.
             </p>
     
-            <p id="p11">Thank you to Thumas Hutton and Thomas Nail, both of whom wrote a book entitled <i>“A Theory of the Earth”</i>.  Although each book were published quite independently (the first in 1788 and the second in 2021!) both greatly inspired and encouraged our own work an theory.  </p>
+            <p id="p11">Merci à Thomas Hutton et Thomas Nail, qui ont tous deux écrit un livre intitulé « Une théorie de la Terre ». Bien que chaque livre ait été publié de manière assez indépendante (le premier en 1788 et le second en 2021 !), les deux ont grandement inspiré et encouragé notre propre travail théorique.</p>
     
-            <p id="p12">Thank you to Mark Donnovan and Donnie Maclurcan, with whom a conversation inspired the insights of Chapter 9. </p>
+            <p id="p12">Merci à Mark Donnovan et Donnie Maclurcan, avec qui une conversation a inspiré les idées du chapitre 9.</p>
     
-            <p id="p13">Thank you to Stephen DeMeulenaere for the steamy conversations on the parrallels of capital and carbs, fats and fiat that was invaluable in shaping our ideas of Earthen energetics in <a href="energy.php">Chapter 9</a>.</p>
+            <p id="p13">Merci à Stephen DeMeulenaere pour les conversations torrides sur les parallèles du capital et des glucides, les devises et les carbohydrates qui ont été inestimables pour façonner nos idées sur l'énergétique terrestre au chapitre 9.</a>.</p>
             
-            <p id="p14">Thank you to Balaji Srinivasan. Though a good deal of our ideas are in direct opposition, the “web app” version of his book <a href="https://thenetworkstate.com" target="_blank">The Network State</a> nonetheless inspired us to aline our publishing platform and our principles and inspired our development of the Earthbook concept.</p>
+            <p id="p14">Merci à Balaji Srinivasan. Si bon nombre de nos idées s'opposent directement, la version « web app » de son livre The Network State nous a néanmoins inspiré pour aligner notre plateforme d'édition et nos principes et a inspiré notre développement du concept Earthbook.</p>
     
-            <p id="p15">Thank you to Enrique Salmon for his pioneering work developing the concept of “kincentric ecology” as a means of distinguishing Rarámuri metaphysics (and that of other fist nations) from the modern concept of 'nature'.  His work and his term underlie our use of the phrase ‘kincentric culture’ and have been invaluable to advancing our theory.</p>
+            <p id="p15">Merci à Enrique Salmon pour son travail de pionnier dans le développement du concept d'« écologie kincentrique » comme moyen de distinguer la métaphysique raramuri (et celle des autres premières nations) du concept moderne de « nature ». Son travail et son terme sous-tendent notre utilisation de l'expression «culture kincentrique» et ont été inestimables pour faire avancer notre théorie.</p>
     
-            <p id="p16">Russell acknowledges the land of Banjar Sumampan, Gianyar, Indonesia, the ancestral home of the Balinese, as base for the writing and publishing of this book.</p>
+            <p id="p16">Russell est reconnaissant à la terre de Banjar Sumampan, Gianyar, Indonésie, la maison ancestrale des Balinais, comme base pour l'écriture et la publication de ce livre.</p>
             
-            <p id="p17">Banayan acknowledge the land of the Igorot people and their wisdom tradition which inspired, nurtured and enabled this book, her oversight and contribution.</p>
+            <p id="p17">Banayan est reconnaissante à la terre du peuple Igorot et sa tradition de sagesse qui a inspiré, nourri et permis ce livre, sa supervision et sa contribution.</p>
             <div>
               
     
@@ -499,7 +499,8 @@ document.addEventListener('click', function(e) {
         localStorage.setItem('storedText1', storedText1);
 
         // Alert to confirm storage
-        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer} startOffset:${startContainer}, endOffset:${endContainer}`);
+        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer}, startOffset:${startOffset}, endOffset:${endOffset}`);
+
       }
 
       e.target.title = "This quotation is saved in your Book Notes";
@@ -513,32 +514,42 @@ document.addEventListener('click', function(e) {
 });
 });
 
+// Function to recreate selection from stored data
+function recreateSelection() {
+  const startContainer = document.getElementById(localStorage.getItem('startContainer'));
+  const endContainer = document.getElementById(localStorage.getItem('endContainer'));
+  const startOffset = parseInt(localStorage.getItem('startOffset'));
+  const endOffset = parseInt(localStorage.getItem('endOffset'));
+  const storedText = localStorage.getItem('storedText1');
 
-  // Function to recreate selection from stored data
-  function recreateSelection() {
-    const startContainer = document.getElementById(localStorage.getItem('startContainer'));
-    const endContainer = document.getElementById(localStorage.getItem('endContainer'));
-    const startOffset = parseInt(localStorage.getItem('startOffset'));
-    const endOffset = parseInt(localStorage.getItem('endOffset'));
-    const storedText = localStorage.getItem('storedText1');
+  if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
+    const range = document.createRange();
+    range.setStart(startContainer.firstChild, startOffset);
+    range.setEnd(endContainer.firstChild, endOffset);
 
-    if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
-      const range = document.createRange();
-      range.setStart(startContainer.firstChild, startOffset);
-      range.setEnd(endContainer.firstChild, endOffset);
+    // Create a new span element with the 'highlight' class
+    const span = document.createElement('span');
+    span.className = 'highlight';
+    span.textContent = storedText;
 
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
+    // Replace the original text content with the new span element
+    range.deleteContents();
+    range.insertNode(span);
 
-      alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
-    }
+    // Optionally, you can also recreate the selection
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+
+    alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
   }
+}
+
 
   // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
   window.addEventListener('load', function () {
    // showAlertWithCharacterCount();
-    //recreateSelection();
+    recreateSelection();
   });
 </script>
 
