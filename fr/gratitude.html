@@ -233,8 +233,8 @@ All the page components required to build this page-->
   <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
         <div id="ct-chapter-title">Gratitude</div>
-        <div id="ct-book-title">Annexe</div>
-        <div id="ct-chap-location">Tractatus Ayyew</div>
+        <div id="ct-book-title">Tractatus Ayyew</div>
+        <div id="ct-chap-location">Annexe</div>
         <div id="ct-word-count"><i></i></div>
       </div>
   </div>
@@ -465,41 +465,35 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener('click', handleClick, { once: true });
 }
 
-
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function (e) {
   if (e.target.classList.contains(preHighlightClass)) {
     if (e.target.classList.contains(highlightClass)) {
-      e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class, but keep the .highlight class
+      e.target.classList.remove(preHighlightClass);
     } else {
       e.target.classList.add(highlightClass);
-      e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
-      
-      // Select the text in the highlighted element
+      e.target.classList.remove(preHighlightClass);
+
+      // Get the text node within the target
+      const textNode = e.target.childNodes[0];
       const range = document.createRange();
-      range.selectNodeContents(e.target);
+      range.selectNodeContents(textNode);
       const selection = window.getSelection();
       selection.removeAllRanges();
       selection.addRange(range);
-      
-      // Storing selected text and its positions in the local storage
-      if (selection.rangeCount > 0) {
-        const selectedRange = selection.getRangeAt(0);
-        const startContainer = selectedRange.startContainer.parentNode.id;
-        const endContainer = selectedRange.endContainer.parentNode.id;
-        const startOffset = selectedRange.startOffset;
-        const endOffset = selectedRange.endOffset;
-        const storedText1 = selection.toString();
-        
-        localStorage.setItem('startContainer', startContainer);
-        localStorage.setItem('endContainer', endContainer);
-        localStorage.setItem('startOffset', startOffset);
-        localStorage.setItem('endOffset', endOffset);
-        localStorage.setItem('storedText1', storedText1);
 
-        // Alert to confirm storage
-        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer}, startOffset:${startOffset}, endOffset:${endOffset}`);
+      const startContainer = textNode.parentNode.id;
+      const endContainer = textNode.parentNode.id;
+      const startOffset = range.startOffset;
+      const endOffset = range.endOffset;
+      const storedText1 = selection.toString();
 
-      }
+      localStorage.setItem('startContainer', startContainer);
+      localStorage.setItem('endContainer', endContainer);
+      localStorage.setItem('startOffset', startOffset);
+      localStorage.setItem('endOffset', endOffset);
+      localStorage.setItem('storedText1', storedText1);
+
+      alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer}, startOffset:${startOffset}, endOffset:${endOffset}`);
 
       e.target.title = "This quotation is saved in your Book Notes";
 
@@ -510,38 +504,44 @@ document.addEventListener('click', function(e) {
     setTimeout(() => removeHighlight(e), 1000);
   }
 });
-});
 
-// Function to recreate selection from stored data
 function recreateSelection() {
-  const startContainer = document.getElementById(localStorage.getItem('startContainer'));
-  const endContainer = document.getElementById(localStorage.getItem('endContainer'));
+  const startContainerID = localStorage.getItem('startContainer');
+  const endContainerID = localStorage.getItem('endContainer');
   const startOffset = parseInt(localStorage.getItem('startOffset'));
   const endOffset = parseInt(localStorage.getItem('endOffset'));
   const storedText = localStorage.getItem('storedText1');
 
+  const startContainer = document.getElementById(startContainerID);
+  const endContainer = document.getElementById(endContainerID);
+
   if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
+    const textNode = startContainer.childNodes[0];
     const range = document.createRange();
-    range.setStart(startContainer.firstChild, startOffset);
-    range.setEnd(endContainer.firstChild, endOffset);
+    range.setStart(textNode, startOffset);
+    range.setEnd(textNode, endOffset);
 
     // Create a new span element with the 'highlight' class
     const span = document.createElement('span');
     span.className = 'highlight';
     span.textContent = storedText;
 
-    // Replace the original text content with the new span element
+    // Replace the range with the new span element
     range.deleteContents();
     range.insertNode(span);
 
-    // Optionally, you can also recreate the selection
+    // Collapse the selection to ensure nothing is selected afterward
     const selection = window.getSelection();
     selection.removeAllRanges();
-    selection.addRange(range);
+    selection.collapseToEnd();
 
     alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
   }
 }
+
+});
+
+
 
 
   // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
