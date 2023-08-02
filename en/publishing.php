@@ -148,23 +148,23 @@ Must be updated for each page-->
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
-<div class="lead-page-paragraph">
-
-THE TRACTATUS AYYEW was written and published using 100% open source hardware and software developed by not-for-profit enterprises. Written using <a href="https://www.libreoffice.org/">Libre Office</a>, using a <a href="https://puri.sm/" target="_blank">Purism Librem 13 laptop</a> running <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> and a <a href="https://frame.work/" target="_blank">Framework laptop</a> running <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>.  The Earthbook's cloud files for writing and all final published files are hosted on an Ubuntu server running <a href="https://nextcloud.com">NextCloud</a>.  
-
-</div>
-
-<div class="page-paragraph">
-
-  <p>The book is for sale on the <a href="https//gobrik.com/regen">GoBrik store</a> where it’s sale in Brikcoins directly corresponds to the sequestration of plastic out of the biosphere.<p>
-
-   <p>The book is type set in Cooper LT Light and Regular by Oswald Cooper and Bitstream as well as Mulish Light & Regular by Vernon Adams, Cyreal, Jacques Le Bailly.
-  </p>
-
-  <p>The enterprise of publishing the Tracatus Ayyew is <a href="for-earth.php">for-Earth</a>.  This means we disclose our <a href="accounting.php">Ecological accounting</a> in annual Regenerative Reports.</p>
-
+<div class="lead-page-paragraph" id="p0">
   
-    </div><!--closes page text content-->
+  THE TRACTATUS AYYEW was written and published using 100% open source hardware and software developed by not-for-profit enterprises. Written using <a href="https://www.libreoffice.org/" target="_blank">Libre Office</a>, using a <a href="https://puri.sm/" target="_blank">Purism Librem 13 laptop</a> running <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> and a <a href="https://frame.work/" target="_blank">Framework laptop</a> running <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>.  The Earthbook's cloud files for writing and all final published files are hosted on an Ubuntu server running <a href="https://nextcloud.com" target="_blank">NextCloud</a>.  
+  
+  </div>
+  
+  <div class="page-paragraph">
+  
+    <p id="p1">The book is for sale on the <a href="https//gobrik.com/regen" target="_blank">GoBrik store</a> where it’s sale in Brikcoins directly corresponds to the sequestration of plastic out of the biosphere.<p>
+  
+     <p id="p2">The book is type set in Cooper LT Light and Regular by Oswald Cooper and Bitstream as well as Mulish Light & Regular by Vernon Adams, Cyreal, Jacques Le Bailly.
+    </p>
+  
+    <p id="p3">The enterprise of publishing the Tracatus Ayyew is <a href="for-earth.php">for-Earth</a>.  This means we disclose our <a href="accounting.php" target="_blank">Ecological accounting</a> in annual Regenerative Reports.</p>
+  
+    
+      </div><!--closes page text content-->
 
           
   </div><!--Closes main content block-->

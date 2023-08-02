@@ -280,23 +280,23 @@ All the page components required to build this page-->
   </div>
 </div>
 
-  <div class="lead-page-paragraph" id="p0">
+<div class="lead-page-paragraph" id="p0">
   
-  THE TRACTATUS AYYEW was written and published using 100% open source hardware and software developed by not-for-profit enterprises. Written using <a href="https://www.libreoffice.org/" target="_blank">Libre Office</a>, using a <a href="https://puri.sm/" target="_blank">Purism Librem 13 laptop</a> running <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> and a <a href="https://frame.work/" target="_blank">Framework laptop</a> running <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>.  The Earthbook's cloud files for writing and all final published files are hosted on an Ubuntu server running <a href="https://nextcloud.com" target="_blank">NextCloud</a>.  
-  
-  </div>
-  
-  <div class="page-paragraph">
-  
-    <p id="p1">The book is for sale on the <a href="https//gobrik.com/regen" target="_blank">GoBrik store</a> where it’s sale in Brikcoins directly corresponds to the sequestration of plastic out of the biosphere.<p>
-  
-     <p id="p2">The book is type set in Cooper LT Light and Regular by Oswald Cooper and Bitstream as well as Mulish Light & Regular by Vernon Adams, Cyreal, Jacques Le Bailly.
-    </p>
-  
-    <p id="p3">The enterprise of publishing the Tracatus Ayyew is <a href="for-earth.php">for-Earth</a>.  This means we disclose our <a href="accounting.php" target="_blank">Ecological accounting</a> in annual Regenerative Reports.</p>
-  
-    
-      </div><!--closes page text content-->
+    THE TRACTATUS AYYEW a été rédigé et publié à l'aide de matériel et de logiciels 100 % open source développés par des entreprises à but non lucratif. Écrit en utilisant <a href="https://www.libreoffice.org/" target="_blank">Libre Office</a>, en utilisant un <a href="https://puri.sm/" target=" _blank">Ordinateur portable Purism Librem 13</a> exécutant <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> et un <a href="https://frame. work/" target="_blank">Ordinateur portable Framework</a> exécutant <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>. Les fichiers cloud d'Earthbook pour l'écriture et tous les fichiers publiés finaux sont hébergés sur un serveur Ubuntu exécutant <a href="https://nextcloud.com" target="_blank">NextCloud</a>.
+   
+    </div>
+   
+    <div class="page-paragraphe">
+   
+      <p id="p1">Le livre est en vente sur la <a href="https//gobrik.com/regen" target="_blank">boutique GoBrik</a> où sa vente en Brikcoins correspond directement au séquestration du plastique hors de la biosphère.<p>
+   
+       <p id="p2">Le livre est composé en Cooper LT Light et Regular par Oswald Cooper et Bitstream ainsi qu'en Mulish Light & Regular par Vernon Adams, Cyreal, Jacques Le Bailly.
+      </p>
+   
+      <p id="p3">L'entreprise qui publie le Tracatus Ayyew est <a href="for-earth.php">for-Earth</a>. Cela signifie que nous divulguons notre <a href="accounting.php" target="_blank">comptabilité écologique</a> dans les rapports régénératifs annuels.</p>
+   
+     
+        </div><!--ferme le contenu du texte de la page-->
 
 
         
@@ -419,7 +419,6 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 
-
 document.addEventListener('click', function(e) {
   if (e.target.classList.contains(preHighlightClass)) {
     if (e.target.classList.contains(highlightClass)) {
@@ -437,33 +436,23 @@ document.addEventListener('click', function(e) {
       
       // Storing selected text and its positions in the local storage
       if (selection.rangeCount > 0) {
-  const selectedRange = selection.getRangeAt(0);
-  let startContainer = selectedRange.startContainer;
-  let endContainer = selectedRange.endContainer;
-  
-  // If the startContainer or endContainer are text nodes, refer to their parent elements
-  if (startContainer.nodeType === Node.TEXT_NODE) {
-    startContainer = startContainer.parentNode;
-  }
-  if (endContainer.nodeType === Node.TEXT_NODE) {
-    endContainer = endContainer.parentNode;
-  }
+        const selectedRange = selection.getRangeAt(0);
+        const startContainer = selectedRange.startContainer.parentNode.id;
+        const endContainer = selectedRange.endContainer.parentNode.id;
+        const startOffset = selectedRange.startOffset;
+        const endOffset = selectedRange.endOffset;
+        const storedText1 = selection.toString();
+        
+        localStorage.setItem('startContainer', startContainer);
+        localStorage.setItem('endContainer', endContainer);
+        localStorage.setItem('startOffset', startOffset);
+        localStorage.setItem('endOffset', endOffset);
+        localStorage.setItem('storedText1', storedText1);
 
-  const startContainerID = startContainer.id;
-  const endContainerID = endContainer.id;
-  const startOffset = selectedRange.startOffset;
-  const endOffset = selectedRange.endOffset;
-  const storedText1 = selection.toString();
-  
-  localStorage.setItem('startContainer', startContainerID);
-  localStorage.setItem('endContainer', endContainerID);
-  localStorage.setItem('startOffset', startOffset);
-  localStorage.setItem('endOffset', endOffset);
-  localStorage.setItem('storedText1', storedText1);
+        // Alert to confirm storage
+        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer}, startOffset:${startOffset}, endOffset:${endOffset}`);
 
-  alert(`storedText1: ${storedText1}, startContainer:${startContainerID}, endContainer:${endContainerID}, startOffset:${startOffset}, endOffset:${endOffset}`);
-}
-
+      }
 
       e.target.title = "This quotation is saved in your Book Notes";
 
@@ -474,7 +463,9 @@ document.addEventListener('click', function(e) {
     setTimeout(() => removeHighlight(e), 1000);
   }
 });
-});
+
+
+
 function recreateSelection() {
   const storedText = localStorage.getItem('storedText1');
 
