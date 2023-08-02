@@ -272,31 +272,27 @@ All the page components required to build this page-->
     
     
     
-         <div class="footnote-section">
-    
-           <div id="line" style="border-style : solid ; border-width : 1px ; margin-bottom : 30px ; width:100 %; text-align:left ;"></div>
-    
-           <p id="footnotes" style="font-variant-caps : all-petite-caps ; color:grey">Notes de bas de page</p>
-          
+           <div class="footnote-section">
+
+            <div id="line" style="border-style: solid; border-width: 1px; margin-bottom: 30px; width:100%; text-align:left;"></div>
       
-           <a href="#1-up" class="footnote">
-           <div class="footnote-number" id="3-down">1.</div>
-           <div class="footnote-text">Voir : Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR ; Philippines Department of Education, 2014).< /div>
-           </a>
-    
-           <a href="#2-up" class="footnote">
-           <div class="footnote-number" id="3-down">2.</div>
-           <div class="footnote-text">Ani Himawati, Russell Maier, <i>The rise of the Regenerative Ecobrick Movement</i> (Bandung Spirit Conference | 2020 https://www.ecobricks.org/wp-content/ uploads/2021/09/The-Rise-of-the-Regenerative-Ecobrick-Movement.pdf) | p11</div>
-           </a>
-    
-        </div>
-    
-              
-       </div><!--Ferme le bloc de contenu principal-->
-
-
+            <p id="footnotes" style="font-variant-caps: all-petite-caps; color:grey">Section Footnotes</p>
+            
         
-</div><!--Closes main content block-->
+            <a href="#1-up" class="footnote">   
+            <div class="footnote-number" id="3-down">1.</div>
+            <div class="footnote-text">Voir: Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).</div>
+            </a>
+      
+            <a href="#2-up" class="footnote">   
+            <div class="footnote-number" id="3-down">2.</div>
+            <div class="footnote-text">Ani Himawati, Russell Maier, <i>The rise of the Regenerative Ecobrick Movement</i> (Bandung Spirit Conference | 2020 https://www.ecobricks.org/wp-content/uploads/2021/09/The-Rise-of-the-Regenerative-Ecobrick-Movement.pdf) | p11</div>
+            </a>
+      
+         </div>
+      
+                
+        </div><!--Closes main content block-->
 
 
 </div><!--Closes main content block-->
@@ -394,7 +390,7 @@ document.addEventListener("DOMContentLoaded", function() {
             let span = document.createElement('span');
             span.style.cursor = 'pointer';
             span.classList.add(preHighlightClass);
-            span.title = "Click this text to save.";
+            span.title = "Click this text to highlight and save.";
             selectedRange.surroundContents(span);
             clearSelection();
         }
@@ -431,28 +427,35 @@ document.addEventListener('click', function(e) {
       selection.addRange(range);
 
       if (selection.rangeCount > 0) {
-        const selectedRange = selection.getRangeAt(0);
-        const startContainer = selectedRange.startContainer.parentNode.id;
+  const selectedRange = selection.getRangeAt(0);
+  const startContainer = selectedRange.startContainer.parentNode.id;
 
-        // Calculate startOffset considering only text nodes inside the selected paragraph
-        let startOffset = 0;
-        let node = selectedRange.startContainer.parentNode.firstChild;
-        while (node && node !== selectedRange.startContainer) {
-          if (node.nodeType === Node.TEXT_NODE) {
-            startOffset += node.length;
-          }
-          node = node.nextSibling;
-        }
-        startOffset += selectedRange.startOffset;
+  // Calculate startOffset considering only text nodes inside the selected paragraph
+  let startOffset = 0;
+  let node = selectedRange.startContainer.parentNode.firstChild;
+  while (node && node !== selectedRange.startContainer) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      startOffset += node.length;
+    }
+    node = node.nextSibling;
+  }
+  startOffset += selectedRange.startOffset;
 
-        const storedText1 = selection.toString();
+  const storedNoteText = selection.toString();
+  const noteChapter = "Appendix";
 
-        localStorage.setItem('startContainer', startContainer);
-        localStorage.setItem('startOffset', startOffset);
-        localStorage.setItem('storedText1', storedText1);
+  // Retrieve existing bookNotes from local storage
+  let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
-        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, startOffset:${startOffset}`);
-      }
+  // Add the new highlight to the array
+  bookNotes.push({ startContainer, startOffset, storedNoteText, noteChapter });
+
+  // Save the updated array back to local storage
+  localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+
+  alert(`storedNoteText: ${storedNoteText}, startContainer: ${startContainer}, startOffset: ${startOffset}, noteChapter: ${noteChapter}`);
+}
+
 
       e.target.title = "This quotation is saved in your Book Notes";
       window.getSelection().removeAllRanges();
