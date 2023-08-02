@@ -467,7 +467,6 @@ document.addEventListener("DOMContentLoaded", function() {
   document.addEventListener('click', handleClick);
 }
 
-
 document.addEventListener('click', function(e) {
   if (e.target.classList.contains(preHighlightClass)) {
     if (e.target.classList.contains(highlightClass)) {
@@ -483,34 +482,32 @@ document.addEventListener('click', function(e) {
       selection.removeAllRanges();
       selection.addRange(range);
       
-      storeSelectedText();
+      // Storing selected text and its positions in the local storage
+      if (selection.rangeCount > 0) {
+        const selectedRange = selection.getRangeAt(0);
+        const startContainer = selectedRange.startContainer.parentNode.id;
+        const endContainer = selectedRange.endContainer.parentNode.id;
+        const startOffset = selectedRange.startOffset;
+        const endOffset = selectedRange.endOffset;
+        const storedText1 = selection.toString();
+        
+        localStorage.setItem('startContainer', startContainer);
+        localStorage.setItem('endContainer', endContainer);
+        localStorage.setItem('startOffset', startOffset);
+        localStorage.setItem('endOffset', endOffset);
+        localStorage.setItem('storedText1', storedText1);
+
+        // Alert to confirm storage
+        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer}`);
+      }
+
       e.target.title = "This quotation is saved in your Book Notes";
     }
   } else if (e.target.classList.contains(highlightClass)) {
     setTimeout(() => removeHighlight(e), 1000);
   }
 });
-});
 
-
-
-
-
- // Function to store selected text and its positions in the local storage
- function storeSelectedText() {
-const selection = window.getSelection();
-    if (selection.rangeCount > 0) {
-      const range = selection.getRangeAt(0);
-      localStorage.setItem('startContainer', range.startContainer.parentNode.id);
-      localStorage.setItem('endContainer', range.endContainer.parentNode.id);
-      localStorage.setItem('startOffset', range.startOffset);
-      localStorage.setItem('endOffset', range.endOffset);
-      localStorage.setItem('storedText1', selection.toString());
-
-  // Alert to confirm storage
-  alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer}`);
-}
- }
 
   // Function to recreate selection from stored data
   function recreateSelection() {
@@ -518,7 +515,7 @@ const selection = window.getSelection();
     const endContainer = document.getElementById(localStorage.getItem('endContainer'));
     const startOffset = parseInt(localStorage.getItem('startOffset'));
     const endOffset = parseInt(localStorage.getItem('endOffset'));
-    const storedText = localStorage.getItem('storedText-1');
+    const storedText = localStorage.getItem('storedText1');
 
     if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
       const range = document.createRange();
