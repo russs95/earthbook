@@ -316,7 +316,7 @@ All the page components required to build this page-->
       TOUT AU LONG de l'entreprise d'écriture et de publication du <i>Tractatus Ayyew</i>, tous les impacts sur le carbone, le plastique et la biodiversité ont été suivis. La déclaration annuelle de la comptabilité écologique de l'entreprise peut être consultée dans les rapports en bas. Une déclaration complète de la biodiversité de l'espace physique de l'entreprise à Gianyar, Bali, Indonésie est disponible sur <a href="https://russs.net/forest" target="_blank">russs.net/forest</a></p>
 
     <p id="2">Téléchargez nos rapports généraux annuels ici :
-  </p><br><br>
+  </p><br>
   </div>
   
   
@@ -328,19 +328,19 @@ All the page components required to build this page-->
    
     <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right : 20px ;">
       <div class="doc-text-main"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="Le rapport Regen pour notre livre" alt= "Bannière déclarant notre intention For-Earth">Écriture et édition du Tractatus Ayyew</a></div>
-      <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>Rapport Régén 2021 (Anglais)</b> | PDF | 554kb | Publié le 12/02/2022</a></div>
+      <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>Rapport Régén 2021-22 (Anglais)</b> | PDF | 554kb | Publié le 12/02/2022</a></div>
     </div>
 </div>
-
+<!--
 <div class="document-holder">
     <div class="doc-image" style="width:fit-content; padding:10px">
     <img src="../webp/impact-report-100px.webp">
     </div>
 
   <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right : 20px ;">
-      <div class="doc-text-main"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="Le rapport Regen pour nos livre" alt="Bannière déclarant notre intention pour la Terre">-->Écriture et édition du Tractatus Ayyew</div>
-      <div class="doc-text-small"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">--><b>Rapport de Régén 2022 (Anglais)</b> | PDF |  Publication de février 2023 en attente</b></div>
-  </div>
+      <div class="doc-text-main"Écriture et édition du Tractatus Ayyew</div>
+      <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>Rapport de Régén 2022 (Anglais)</b> | PDF |  Publication de février 2023 en attente</b></div>
+  </div>-->
 
   </div>
 
@@ -418,7 +418,7 @@ All the page components required to build this page-->
     let preHighlightClass = 'pre-highlight';
     let selectedRange;
 
-    
+
 document.addEventListener("DOMContentLoaded", function() {
   
 
@@ -455,15 +455,14 @@ document.addEventListener("DOMContentLoaded", function() {
             setTimeout(unHighlight, 1000);  // call unHighlight function after 1 second
         }
     });
-
+   
     function removeHighlight(e) {
+      document.addEventListener('click', function(e) {
         if (e.target.classList.contains(highlightClass)) {
-            e.target.classList.remove(highlightClass);
-            e.target.title = "removed";
-            let text = e.target.textContent;
           e.target.replaceWith(text);
         }
-    }
+})};
+  
 
     document.addEventListener('click', function(e) {
         if (e.target.classList.contains(preHighlightClass)) {
