@@ -414,77 +414,85 @@ color: var(--drop-cap);}
  
 <div id="glossary-container"></div>
 
+
 <script>
-  async function buildGlossary() {
-    // Load the JSON data
-    const response = await fetch('glossary.json?v=1.1');
-    const jsonData = await response.json();
-    // Sort the data alphabetically by title
-    jsonData.sort((a, b) => a.title.localeCompare(b.title));
-    // Get the container element
-    const container = document.querySelector('#glossary-container');
-    // Clear the previous contents of the container
-    container.innerHTML = '';
-    // Initialize ID counter
-    let idCounter = 1;
-    // Loop through the entries
-    for (let i = 0; i < jsonData.length; i++) {
-      const entry = jsonData[i];
-      // Create the glossary item element
-      const item = document.createElement('div');
-      item.classList.add('glossary-item');
-      item.id = entry.title;
-      // Create the title element
-      const title = document.createElement('i');
-      title.classList.add('glossary-title');
-      title.textContent = entry.title;
-      // Wrap the title in a <p> tag
-      const titleParagraph = document.createElement('p');
-      titleParagraph.appendChild(title);
-      // Create the description element
-      const description = document.createElement('p');
-      description.textContent = entry.chap_description;
-      // Wrap the description in a <p> tag and add the ID
-      const descriptionParagraph = document.createElement('p');
-      descriptionParagraph.textContent = entry.chap_description;
-      descriptionParagraph.id = `4-9-${idCounter.toString().padStart(2, '0')}`;
-      // Increment ID counter
-      idCounter++;
-      // Create the keywords element
-      const keywords = document.createElement('h6');
-      keywords.textContent = 'Related terms: ' + entry.keywords;
-
-      // Create the glossary info element
-      const glossInfo = document.createElement('div');
-      glossInfo.classList.add('glossary-info');
-      glossInfo.appendChild(keywords);
-
-      // Create the chapter element with URL if relevant_chap exists
-      if (entry.relevant_chap) {
-        const chapter = document.createElement('h6');
-        const chapterText = document.createTextNode('Introduced in chapter: ');
-        const chapterLink = document.createElement('a');
-        chapterLink.textContent = entry.relevant_chap;
-        chapterLink.href = entry.relevant_chap_url;
-        chapter.appendChild(chapterText);
-        chapter.appendChild(chapterLink);
-        // Append the chapter element to glossInfo
-        glossInfo.appendChild(chapter);
+    async function buildGlossary() {
+      // Load the JSON data
+      const response = await fetch('glossary.json?v=1.1');
+      const jsonData = await response.json();
+      // Sort the data alphabetically by title
+      jsonData.sort((a, b) => a.title.localeCompare(b.title));
+      // Get the container element
+      const container = document.querySelector('#glossary-container');
+      // Clear the previous contents of the container
+      container.innerHTML = '';
+      // Initialize ID counter
+      let idCounter = 1;
+      // Loop through the entries
+      for (let i = 0; i < jsonData.length; i++) {
+        const entry = jsonData[i];
+        // Create the glossary item element
+        const item = document.createElement('div');
+        item.classList.add('glossary-item');
+        item.id = entry.title;
+        // Create the title element
+        const title = document.createElement('i');
+        title.classList.add('glossary-title');
+        title.textContent = entry.title;
+        // Wrap the title in a <p> tag
+        const titleParagraph = document.createElement('p');
+        titleParagraph.appendChild(title);
+        // Create the description element
+        const description = document.createElement('p');
+        description.textContent = entry.chap_description;
+        // Wrap the description in a <p> tag and add the ID
+        const descriptionParagraph = document.createElement('p');
+        descriptionParagraph.textContent = entry.chap_description;
+        descriptionParagraph.id = `4-9-${idCounter.toString().padStart(2, '0')}`;
+        // Increment ID counter
+        idCounter++;
+        // Create the keywords element
+        const keywords = document.createElement('h6');
+        keywords.textContent = 'Related terms: ' + entry.keywords;
+  
+        // Create the glossary info element
+        const glossInfo = document.createElement('div');
+        glossInfo.classList.add('glossary-info');
+        glossInfo.appendChild(keywords);
+  
+        // Create the chapter element with URL if relevant_chap exists
+        if (entry.relevant_chap) {
+          const chapter = document.createElement('h6');
+          const chapterText = document.createTextNode('Introduced in chapter: ');
+          const chapterLink = document.createElement('a');
+          chapterLink.textContent = entry.relevant_chap;
+          chapterLink.href = entry.relevant_chap_url;
+          chapter.appendChild(chapterText);
+          chapter.appendChild(chapterLink);
+          // Append the chapter element to glossInfo
+          glossInfo.appendChild(chapter);
+        }
+  
+        // Append the elements to the item
+        item.appendChild(titleParagraph);
+        item.appendChild(descriptionParagraph);
+        item.appendChild(glossInfo);
+        // Append the item to the container
+        container.appendChild(item);
+        
+        // Add <br><br> between each JSON entry
+        if (i < jsonData.length - 1) {
+          const br = document.createElement('br');
+          container.appendChild(br);
+          container.appendChild(br.cloneNode());
+        }
       }
-
-      // Append the elements to the item
-      item.appendChild(titleParagraph);
-      item.appendChild(descriptionParagraph);
-      item.appendChild(glossInfo);
-      // Append the item to the container
-      container.appendChild(item);
     }
-  }
-
-  window.addEventListener('load', function () {
-    buildGlossary();
-  });
-</script>
+  
+    window.addEventListener('load', function () {
+      buildGlossary();
+    });
+  </script>
 
 
 
