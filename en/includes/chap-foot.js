@@ -82,3 +82,43 @@ class chapfoot extends HTMLElement {
   customElements.define('chap-foot', chapfoot);
   
   
+function bookNotesCreator() {
+  // Retrieve existing bookNotes from local storage
+  const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+  
+  // Get the book-notes-list div
+  const bookNotesListDiv = document.getElementById('book-notes-list');
+  
+  // Clear existing children
+  bookNotesListDiv.innerHTML = '';
+  
+  // Iterate through each book note and create the HTML structure
+  bookNotes.forEach((bookNote, index) => {
+  const bookNoteDiv = document.createElement('div');
+  bookNoteDiv.id = `booknote-${index + 1}`;
+  
+  const tcItemDiv = document.createElement('div');
+  tcItemDiv.className = 'tc-item';
+  
+  const chapterNameDiv = document.createElement('div');
+  chapterNameDiv.className = 'chapter-name-bn';
+  chapterNameDiv.textContent = bookNote.storedNoteText;
+  
+  const wordCountDiv = document.createElement('div');
+  wordCountDiv.className = 'word-count-tc';
+  
+  const chapterLink = document.createElement('a');
+  chapterLink.href = bookNote.chaptURL;
+  chapterLink.innerHTML = `<i>Chapter ${bookNote.chapNo}: ${bookNote.chapName}</i> | ${bookNote.book} <br>${bookNote.charCount} characters | Saved ${bookNote.BNdateTime}`;
+  
+  wordCountDiv.appendChild(chapterLink);
+  
+  tcItemDiv.appendChild(chapterNameDiv);
+  tcItemDiv.appendChild(wordCountDiv);
+  
+  bookNoteDiv.appendChild(tcItemDiv);
+  
+  bookNotesListDiv.appendChild(bookNoteDiv);
+  });
+  }
+  
