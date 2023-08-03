@@ -412,7 +412,6 @@ color: var(--drop-cap);}
 <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
    
  
-  
 <script>
     async function buildGlossary() {
       // Load the JSON data
@@ -477,8 +476,11 @@ color: var(--drop-cap);}
       }
     }
     
-
+    window.addEventListener('load', function() {
+      buildGlossary();
+    });
 </script>
+
 
 
 
