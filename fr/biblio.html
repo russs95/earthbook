@@ -232,8 +232,6 @@ All the page components required to build this page-->
     </div>
     </div>
 
-    <div id="test" onclick="openBooknotes();">PLEASE TEST</div> 
-
     <div class="page-paragraph">
 
         <p id="FR-4-8-01">Sources classées par ordre d'apparition dans le livre.</p>
@@ -356,6 +354,30 @@ All the page components required to build this page-->
 <!--MENU ECO-->
 <eco-curtain></eco-curtain>
 
+
+
+
+<!--SECTION PIED DE PAGE Chapitre suivant: Nécessite une personnalisation-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+    <div class="footer-size">
+      <div class="footer-left">
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+        <div class="next-section">
+          <div class="next-sec">Annexe suivante :</div>
+          <div class="sec-name"><i>Glossaire</i></div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <a href="glossaire.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
+      </div>
+    </div>
+
+<!--PIED DE PAGE DU CHAPITRE
+-->
+
+ <chap-foot></chap-foot>
+
+
 <div id="booknotes-curtain" class="overlay-tc">
 
     <div class="top-close-button">
@@ -421,28 +443,6 @@ All the page components required to build this page-->
             </div>
 
     </div>
-
-
-
-<!--SECTION PIED DE PAGE Chapitre suivant: Nécessite une personnalisation-->
-  <div id="footer-chapter" style="margin-bottom: 0px;">
-    <div class="footer-size">
-      <div class="footer-left">
-       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
-        <div class="next-section">
-          <div class="next-sec">Annexe suivante :</div>
-          <div class="sec-name"><i>Glossaire</i></div>
-        </div>
-      </div>
-      <div class="footer-right">
-        <a href="glossaire.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
-      </div>
-    </div>
-
-<!--PIED DE PAGE DU CHAPITRE
--->
-
- <chap-foot></chap-foot>
 
   </div>
 </div>
@@ -645,6 +645,12 @@ function removeHighlight(e) {
 }
 
 });
+
+  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
+  window.addEventListener('load', function () {
+    recreateSelection();
+  });
+
 </script>
 
   
