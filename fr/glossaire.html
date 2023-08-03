@@ -266,7 +266,7 @@ color: var(--drop-cap);}
         <div id="ct-chapter-title">Glossaire</div>
         <div id="ct-book-title">Tractatus Ayyew</div>
         <div id="ct-chap-location">Annexe</div>
-        <div id="ct-word-count"><i></i></div>
+        <div id="ct-word-count"><i>Termes clés</i></div>
       </div>
   </div>
 
@@ -300,7 +300,7 @@ color: var(--drop-cap);}
 </div>
 
 <div class="lead-page-paragraph" id="FR-4-9-00">
-    Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on Earthen.io publications.<br><br><br>
+    Termes clés et leurs définitions tels qu'utilisés dans les publications Tractatus Ayyew et Earthen.io.<br><br><br>
         </div>
         <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 60px; width:100%; text-align:left;"></div>
     
@@ -412,73 +412,78 @@ color: var(--drop-cap);}
 <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
    
  
+<div id="glossary-container"></div>
+
 <script>
-    async function buildGlossary() {
-      // Load the JSON data
-      const response = await fetch('glossary.json?v=1.1');
-      const jsonData = await response.json();
-      // Sort the data alphabetically by title
-      jsonData.sort((a, b) => a.title.localeCompare(b.title));
-      // Get the container element
-      const container = document.querySelector('#glossary-container');
-      // Clear the previous contents of the container
-      container.innerHTML = '';
-      // Variable to keep track of the entry count for the ID
-      let entryCount = 1;
-      // Loop through the entries
-      for (let i = 0; i < jsonData.length; i++) {
-        const entry = jsonData[i];
-        // Create the glossary item element
-        const item = document.createElement('div');
-        item.classList.add('glossary-item');
-        item.id = entry.title;
-        // Create the title element
-        const title = document.createElement('i');
-        title.classList.add('glossary-title');
-        title.textContent = entry.title;
-        // Create the description element
-        const description = document.createElement('p');
-        // Increment the entry count and format it as 2 digits (e.g., 01, 02, etc.)
-        const entryID = entryCount.toString().padStart(2, '0');
-        description.id = `4-9-${entryID}`;
-        description.textContent = entry.chap_description;
-        // Increment the entry count for the next entry
-        entryCount++;
-        // Create the keywords element
-        const keywords = document.createElement('h6');
-        keywords.textContent = 'Related terms: ' + entry.keywords;
-        
-        // Create the glossary info element
-        const glossInfo = document.createElement('div');
-        glossInfo.classList.add('glossary-info');
-        glossInfo.appendChild(keywords);
-        
-        // Create the chapter element with URL if relevant_chap exists
-        if (entry.relevant_chap) {
-          const chapter = document.createElement('h6');
-          const chapterText = document.createTextNode('Introduced in chapter: ');
-          const chapterLink = document.createElement('a');
-          chapterLink.textContent = entry.relevant_chap;
-          chapterLink.href = entry.relevant_chap_url;
-          chapter.appendChild(chapterText);
-          chapter.appendChild(chapterLink);
-          // Append the chapter element to glossInfo
-          glossInfo.appendChild(chapter);
-        }
-        
-        // Append the elements to the item
-        item.appendChild(title);
-        item.appendChild(document.createElement('br'));
-        item.appendChild(description);
-        item.appendChild(glossInfo);
-        // Append the item to the container
-        container.appendChild(item);
+  async function buildGlossary() {
+    // Load the JSON data
+    const response = await fetch('glossary.json?v=1.1');
+    const jsonData = await response.json();
+    // Sort the data alphabetically by title
+    jsonData.sort((a, b) => a.title.localeCompare(b.title));
+    // Get the container element
+    const container = document.querySelector('#glossary-container');
+    // Clear the previous contents of the container
+    container.innerHTML = '';
+    // Initialize ID counter
+    let idCounter = 1;
+    // Loop through the entries
+    for (let i = 0; i < jsonData.length; i++) {
+      const entry = jsonData[i];
+      // Create the glossary item element
+      const item = document.createElement('div');
+      item.classList.add('glossary-item');
+      item.id = entry.title;
+      // Create the title element
+      const title = document.createElement('i');
+      title.classList.add('glossary-title');
+      title.textContent = entry.title;
+      // Wrap the title in a <p> tag
+      const titleParagraph = document.createElement('p');
+      titleParagraph.appendChild(title);
+      // Create the description element
+      const description = document.createElement('p');
+      description.textContent = entry.chap_description;
+      // Wrap the description in a <p> tag and add the ID
+      const descriptionParagraph = document.createElement('p');
+      descriptionParagraph.textContent = entry.chap_description;
+      descriptionParagraph.id = `4-9-${idCounter.toString().padStart(2, '0')}`;
+      // Increment ID counter
+      idCounter++;
+      // Create the keywords element
+      const keywords = document.createElement('h6');
+      keywords.textContent = 'Related terms: ' + entry.keywords;
+
+      // Create the glossary info element
+      const glossInfo = document.createElement('div');
+      glossInfo.classList.add('glossary-info');
+      glossInfo.appendChild(keywords);
+
+      // Create the chapter element with URL if relevant_chap exists
+      if (entry.relevant_chap) {
+        const chapter = document.createElement('h6');
+        const chapterText = document.createTextNode('Introduced in chapter: ');
+        const chapterLink = document.createElement('a');
+        chapterLink.textContent = entry.relevant_chap;
+        chapterLink.href = entry.relevant_chap_url;
+        chapter.appendChild(chapterText);
+        chapter.appendChild(chapterLink);
+        // Append the chapter element to glossInfo
+        glossInfo.appendChild(chapter);
       }
+
+      // Append the elements to the item
+      item.appendChild(titleParagraph);
+      item.appendChild(descriptionParagraph);
+      item.appendChild(glossInfo);
+      // Append the item to the container
+      container.appendChild(item);
     }
-    
-    window.addEventListener('load', function() {
-      buildGlossary();
-    });
+  }
+
+  window.addEventListener('load', function () {
+    buildGlossary();
+  });
 </script>
 
 
