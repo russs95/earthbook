@@ -249,10 +249,8 @@ color: var(--drop-cap);}
 
 </HEAD>
 
-<BODY class="accessibility-plugin-ac">
+<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;" onload="buildGlossary()">
 
-    <!--TOUR-CURTAIN-->
-    <tour-curtain></tour-curtain>
     
     
      
@@ -277,14 +275,12 @@ color: var(--drop-cap);}
 
 <!-- Page Title Section-->
 
+
 <div id="ct-chapt-graphic" class="background-000">
-    <img src="../icons/authoring.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+    <img src="../icons/glossary.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
     </div>
   
     <div id="up-arrow"></div>
-  
-  
-    <div id="ct-main">
   
   
   
@@ -376,6 +372,8 @@ color: var(--drop-cap);}
  
   
 <script>
+    let idCounter = 1;
+
     async function buildGlossary() {
       // Load the JSON data
       const response = await fetch('glossary.json?v=1.1');
@@ -394,13 +392,18 @@ color: var(--drop-cap);}
         item.classList.add('glossary-item');
         item.id = entry.title;
         // Create the title element
+        const titleWrapper = document.createElement('p');
         const title = document.createElement('i');
         title.classList.add('glossary-title');
         title.textContent = entry.title;
+        titleWrapper.appendChild(title);
         // Create the description element
         const description = document.createElement('p');
-        description.appendChild(title);
-        description.innerHTML += '<br>' + entry.chap_description;
+        description.textContent = entry.chap_description;
+        // Create the ID for the description element
+        const descriptionId = '4-9-' + idCounter.toString().padStart(2, '0');
+        idCounter++;
+        description.setAttribute('id', descriptionId);
         // Create the keywords element
         const keywords = document.createElement('h6');
         keywords.textContent = 'Related terms: ' + entry.keywords;
@@ -424,6 +427,7 @@ color: var(--drop-cap);}
         }
         
         // Append the elements to the item
+        item.appendChild(titleWrapper);
         item.appendChild(description);
         item.appendChild(glossInfo);
         // Append the item to the container
@@ -434,7 +438,8 @@ color: var(--drop-cap);}
     window.addEventListener('load', function() {
       buildGlossary();
     });
-    </script>
+</script>
+
 
 
 
