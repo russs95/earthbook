@@ -236,8 +236,8 @@ All the page components required to build this page-->
 
     <div class="page-paragraph">
 
-        <p id="FR-4-8-01">Sources listed in order of appearance in the book.</p>
-        <br>
+        <p id="FR-4-8-01">Sources classées par ordre d'apparition dans le livre.</p>
+        
 
         <div id="line" style="margin-top: 15px"></div>
 
@@ -495,7 +495,6 @@ function handleSelection() {
 document.addEventListener('mouseup', handleSelection);
 document.addEventListener('touchend', handleSelection);
 
-
 function handleHighlightEvent(e) {
   if (e.target.classList.contains(preHighlightClass)) {
     if (e.target.classList.contains(highlightClass)) {
@@ -526,18 +525,35 @@ function handleHighlightEvent(e) {
         startOffset += selectedRange.startOffset;
 
         const storedNoteText = selection.toString();
-        const noteChapter = "Appendix";
+        const charCount = storedNoteText.length; // Counting characters
+        const BNdateTime = new Date().toISOString(); // Current date and time
+        const noteChapter = chapName; // Using the global variable
 
         // Retrieve existing bookNotes from local storage
         let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
+        // New highlight object
+        const bookNote = {
+          book,
+          chapNo,
+          chapName,
+          chaptURL,
+          startContainer,
+          startOffset,
+          storedNoteText,
+          noteChapter,
+          charCount,
+          BNdateTime
+        };
+
         // Add the new highlight to the array
-        bookNotes.push({ startContainer, startOffset, storedNoteText, noteChapter });
+        bookNotes.push(bookNote);
 
         // Save the updated array back to local storage
         localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
 
-        alert(`storedNoteText: ${storedNoteText}, startContainer: ${startContainer}, startOffset: ${startOffset}, noteChapter: ${noteChapter}`);
+        // Log to console instead of alert
+        console.log('BookNote saved:', bookNote);
       }
 
       e.target.title = "This quotation is saved in your Book Notes";
