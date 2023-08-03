@@ -323,9 +323,11 @@ wordCountDiv.className = 'word-count-tc';
 
 const chapterLink = document.createElement('a');
 chapterLink.href = bookNote.chaptURL;
-chapterLink.innerHTML = `<i> ${bookNote.chapName}</i><br><span style="font-size:small;">Chapter ${bookNote.chapNo}
-| ${bookNote.book} 
-<br>${bookNote.charCount} characters<br>Saved ${bookNote.BNdateTime}</span>`;
+chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
+<span style="font-size:small;">Chapter ${bookNote.chapNo}
+| ${bookNote.book}<br>
+${bookNote.charCount} characters<br>
+Saved ${bookNote.BNdateTime}</span>`;
 
 wordCountDiv.appendChild(chapterLink);
 
