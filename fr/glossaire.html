@@ -57,9 +57,8 @@ Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.
 <!--BOOK META TAGS
 Ces balises seront cohérentes pour l'ensemble du livre-->
 
-<meta name="keywords" content="auteurs, russell, maier, banayan, irene, angway, écriture, paternité, auteur, écrivains">
-<meta name="description" content="Déclaration d'intérêts et d'investissements des auteurs
-">
+<meta name="keywords" content="ayyew, biome, biosphère, biodiversité, cosmologique, personnage, dapay, terre, Earthen, Earthen, Earthen éthique, Earth Enterprise, contribution écologique, conscience écologique, écologie, vert, gris, combustibles fossiles, igorot, kan'ka'nue , kankanue,pétro-capital, pétrocapital, économie, séquestration du plastique, société stellaire du plastique, plastique 1.0, plastique 2.0, régénératif, wet'su'weten">
+<meta name="description" content="Une liste des termes clés et de leurs définitions tels qu'ils sont utilisés dans le Tractatus Ayyew">
 
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
@@ -71,7 +70,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
 <meta property="og:title"         content="Glossaire - Tracatus Ayyew">
-<meta property="og:description"   content="Déclaration d'intérêts et d'investissements des auteurs">
+<meta property="og:description"   content="Une liste des termes clés et de leurs définitions tels qu'ils sont utilisés dans le Tractatus Ayyew">
 <meta property="og:image"         content="../covers/TA-cover-french-1200px.png">
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
@@ -95,6 +94,10 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
         });
       });
     }
+
+    window.addEventListener('load', function() {
+     buildGlossary();
+    });
 </script>
 
  <!--FONTS
@@ -249,11 +252,7 @@ color: var(--drop-cap);}
 
 </HEAD>
 
-<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;" onload="buildGlossary()">
-
-    
-    
-     
+<BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
   <div id="underlayer" class="accessibility-plugin-ac" >
 
     <div id="top"></div>
@@ -319,7 +318,7 @@ color: var(--drop-cap);}
 </div><!--Closes main content block-->
 
 
-<--BOOK-NOTE CURTAIN-->
+<!--BOOK-NOTE CURTAIN-->
 
 
 
@@ -415,8 +414,6 @@ color: var(--drop-cap);}
  
   
 <script>
-    let idCounter = 1;
-
     async function buildGlossary() {
       // Load the JSON data
       const response = await fetch('glossary.json?v=1.1');
@@ -427,6 +424,8 @@ color: var(--drop-cap);}
       const container = document.querySelector('#glossary-container');
       // Clear the previous contents of the container
       container.innerHTML = '';
+      // Variable to keep track of the entry count for the ID
+      let entryCount = 1;
       // Loop through the entries
       for (let i = 0; i < jsonData.length; i++) {
         const entry = jsonData[i];
@@ -435,18 +434,17 @@ color: var(--drop-cap);}
         item.classList.add('glossary-item');
         item.id = entry.title;
         // Create the title element
-        const titleWrapper = document.createElement('p');
         const title = document.createElement('i');
         title.classList.add('glossary-title');
         title.textContent = entry.title;
-        titleWrapper.appendChild(title);
         // Create the description element
         const description = document.createElement('p');
+        // Increment the entry count and format it as 2 digits (e.g., 01, 02, etc.)
+        const entryID = entryCount.toString().padStart(2, '0');
+        description.id = `4-9-${entryID}`;
         description.textContent = entry.chap_description;
-        // Create the ID for the description element
-        const descriptionId = '4-9-' + idCounter.toString().padStart(2, '0');
-        idCounter++;
-        description.setAttribute('id', descriptionId);
+        // Increment the entry count for the next entry
+        entryCount++;
         // Create the keywords element
         const keywords = document.createElement('h6');
         keywords.textContent = 'Related terms: ' + entry.keywords;
@@ -470,7 +468,8 @@ color: var(--drop-cap);}
         }
         
         // Append the elements to the item
-        item.appendChild(titleWrapper);
+        item.appendChild(title);
+        item.appendChild(document.createElement('br'));
         item.appendChild(description);
         item.appendChild(glossInfo);
         // Append the item to the container
@@ -478,10 +477,9 @@ color: var(--drop-cap);}
       }
     }
     
-    window.addEventListener('load', function() {
-      buildGlossary();
-    });
+
 </script>
+
 
 
 
