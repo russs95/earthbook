@@ -106,101 +106,98 @@ Must be updated for each page-->
 
 <div class="page-paragraph">
 
-    <p>Sources listed in order of appearance in the book.</p>
+    <p id="4-8-01">Sources listed in order of appearance in the book.</p>
     <br>
 
     <div id="line" style="margin-top: 15px"></div>
 
     <br><br><br>
     
-    <p>Régis Debray, <i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, 2020) 
+    <p id="4-8-02">Régis Debray, <i>Le siècle vert. Un changement de civilisation</i> (Editions Gallimard, 2020)</p>
 
-        <p>Bill Mollison, <i>Principles from Permaculture a Designers' Manual</i>, (Tagari Publishers: 1988).</p>
+    <p id="4-8-03">Bill Mollison, <i>Principles from Permaculture a Designers' Manual</i>, (Tagari Publishers: 1988).</p>
         
-       <p>Daniel Pinchbeck, Sting, Russell Brand <i>How Soon is Now: From Personal Initiation to Global Transformation</i>, (Publisher: Watkins Publishing, 2017)</p>
+    <p id="4-8-04">Daniel Pinchbeck, Sting, Russell Brand <i>How Soon is Now: From Personal Initiation to Global Transformation</i>, (Publisher: Watkins Publishing, 2017)</p>
 	
-	<p><i>Sustainable Packaging: Consumer View</i>, (Global Web Index: 2020)</p>
+    <p id="4-8-05"><i>Sustainable Packaging: Consumer View</i>, (Global Web Index: 2020)</p>
         
-       <p> R. Geyer, et al., <i>Production, use and fate of all plastics ever made </i>(Science Advances, 2017) Vol. 3, no. 7.</p>
+    <p id="4-8-06">R. Geyer, et al., <i>Production, use and fate of all plastics ever made </i>(Science Advances, 2017) Vol. 3, no. 7.</p>
         
-        <p>Ansje Lohr, Heidi Savelli, Raoul Beunen, Marco Kalz, Ad Ragas, Frank Van Belleghem, <i>Solutions for global marine litter pollution</i>,  (sciencedirect.com: Current opinion in Environmental Sustainability, Vol 28, October 2017) 90-99</p>
+    <p id="4-8-07">Ansje Lohr, Heidi Savelli, Raoul Beunen, Marco Kalz, Ad Ragas, Frank Van Belleghem, <i>Solutions for global marine litter pollution</i>,  (sciencedirect.com: Current opinion in Environmental Sustainability, Vol 28, October 2017) 90-99</p>
         
-        <p><i>Plastic & Climate: The Hidden Costs of a Plastic Planet</i> (Center for International Environmental Law, 2019).</p>
+    <p id="4-8-08"><i>Plastic & Climate: The Hidden Costs of a Plastic Planet</i> (Center for International Environmental Law, 2019).</p>
         
-         <p>Russell Maier, <i>Recycling: The Evil Illusion</i>, (Medium.com, 2016).</p>
+    <p id="4-8-09">Russell Maier, <i>Recycling: The Evil Illusion</i>, (Medium.com, 2016).</p>
         
-	<p>Mike Pearl, <i>Climate Despair Is Making People Give Up on Life</i> (Vice Magazine, 2019).</p>
+    <p id="4-8-10">Mike Pearl, <i>Climate Despair Is Making People Give Up on Life</i> (Vice Magazine, 2019).</p>
         
-	<p>D. Gilford et al, <i>The Emotional Toll of Climate Change on Science Professionals</i>, (2019) </p>
+    <p id="4-8-11">D. Gilford et al, <i>The Emotional Toll of Climate Change on Science Professionals</i>, (2019) </p>
         
-        <p>Steven W. Running, <i>The 5 Stages of Climate Grief</i> (University of Montana, Missoula: Numerical Terradynamic Simulation Group Publications: 2017).</p>
+    <p id="4-8-12">Steven W. Running, <i>The 5 Stages of Climate Grief</i> (University of Montana, Missoula: Numerical Terradynamic Simulation Group Publications: 2017).</p>
         
-        <p>Guido Tonelli, <i>Genesis: The Story of How Everything Began</i>, trans. Erica Segre, Simon Carnell (Farrar, Straus and Giroux, 2021).</p>
+    <p id="4-8-13">Guido Tonelli, <i>Genesis: The Story of How Everything Began</i>, trans. Erica Segre, Simon Carnell (Farrar, Straus and Giroux, 2021).</p>
         
-        <p>Rye, R., Kuo, P.HO., and Holland,H.D., <i>Atmospheric carbon dioxide concentrations before 2.2 billion years ago</i> (Nature,  1995), 379, 6013-75.</p> 
+    <p id="4-8-14">Rye, R., Kuo, P.HO., and Holland,H.D., <i>Atmospheric carbon dioxide concentrations before 2.2 billion years ago</i> (Nature,  1995), 379, 6013-75.</p> 
         
-        <p>Thomas Nail, <i>Theory of the Earth</i> (Standford University Press, 2021).</p>
+    <p id="4-8-15">Thomas Nail, <i>Theory of the Earth</i> (Standford University Press, 2021).</p>
         
-        <p>Jeremy L. England et al. (2015), <i>In the beginning: The full story of life on Earth can finally be told</i>. (NewScientist, 2019). </p> 
+    <p id="4-8-16">Jeremy L. England et al. (2015), <i>In the beginning: The full story of life on Earth can finally be told</i>. (NewScientist, 2019). </p> 
         
-        <p>Bekker, A., Holland,Wang, P. et al., <i>Dating the rise of atmospheric oxygen</i>, (Nature, 2004) 427, 117-20.</p>
+    <p id="4-8-17">Bekker, A., Holland,Wang, P. et al., <i>Dating the rise of atmospheric oxygen</i>, (Nature, 2004) 427, 117-20.</p>
         
-        <p>David M. Raup and J. John Sepkoski, Jr., <i>Mass Extinctions in the Marine Fossil Record</i>, (American Association for the Advancement of Science, 1982) Vol 215, Issue 4539.</p>
+    <p id="4-8-18">David M. Raup and J. John Sepkoski, Jr., <i>Mass Extinctions in the Marine Fossil Record</i>, (American Association for the Advancement of Science, 1982) Vol 215, Issue 4539.</p>
         
-	<p> <i>UK Oil consumption</i>, (British Plastics Federation, 2008), Ref PD/LFH/19/8/08. </p>
+    <p id="4-8-19"><i>UK Oil consumption</i>, (British Plastics Federation, 2008), Ref PD/LFH/19/8/08. </p>
         
-        <p>Russell Maier, Ani Himawati, <i>The Rise of the Regenerative Ecobrick Movement</i>, (Le Havre University: Bandung Spirit Conference, 2019).</p>
+    <p id="4-8-20">Russell Maier, Ani Himawati, <i>The Rise of the Regenerative Ecobrick Movement</i>, (Le Havre University: Bandung Spirit Conference, 2019).</p>
         
-        <p>Susan Freinkel, <i>Plastic: A Toxic Love Story</i>, (Houghton Mifflin Publishing Company, 2011), p7.  </p>
+    <p id="4-8-21">Susan Freinkel, <i>Plastic: A Toxic Love Story</i>, (Houghton Mifflin Publishing Company, 2011), p7.  </p>
         
-        <p>Carmen Nobel, <i>How Cellophane Changed the Way We Shop for Food</i>, (Harvard Business School, 2017).</p>
+    <p id="4-8-22">Carmen Nobel, <i>How Cellophane Changed the Way We Shop for Food</i>, (Harvard Business School, 2017).</p>
          
-        <p><i>Beyond Storms & Droughts: The Psychological Impacts of Climate</i> (American Psychologists Association, 2014). </p> 
+    <p id="4-8-23"><i>Beyond Storms & Droughts: The Psychological Impacts of Climate</i> (American Psychologists Association, 2014). </p> 
         
-         <p><i>Mental Health and Our Changing Climate: Impacts, Implications, and Guidance  </i>(American Psychologists Association, 2017).</p>
+    <p id="4-8-24"><i>Mental Health and Our Changing Climate: Impacts, Implications, and Guidance  </i>(American Psychologists Association, 2017).</p>
         
-        <p>David Beerling, (2007) <i>The Emerald Planet, Oxford University Press</i></p>
+    <p id="4-8-25">David Beerling, (2007) <i>The Emerald Planet, Oxford University Press</i></p>
         
-	<p>Rutger Bergman, <i>Humankind: A Hopeful History</i>, (Little, Brown and Company, 2019).</p>
+    <p id="4-8-26">Rutger Bergman, <i>Humankind: A Hopeful History</i>, (Little, Brown and Company, 2019).</p>
         
-        <p>Dobyns, Henry F., An Appraisal of Techniques with a New Hemispheric Estimate, (Current Anthropology, 1966) Issue 7, no. 4 : p395–416. </p>
+    <p id="4-8-27">Dobyns, Henry F., An Appraisal of Techniques with a New Hemispheric Estimate, (Current Anthropology, 1966) Issue 7, no. 4 : p395–416. </p>
         
-        <p>Charles C. Man, <i>1491</i>, (Vintage Publishing, 2006).</p>
+    <p id="4-8-28">Charles C. Man, <i>1491</i>, (Vintage Publishing, 2006).</p>
         
-        <p>C. Ballard, <i>The Salmon Weir on Green River in Western Washington</i>, (Davidson Journal of Anthropology, 1957) Vol. 3 No. 1, Summer, pp. 37-54.</p>
+    <p id="4-8-29">C. Ballard, <i>The Salmon Weir on Green River in Western Washington</i>, (Davidson Journal of Anthropology, 1957) Vol. 3 No. 1, Summer, pp. 37-54.</p>
         
-        <p>George Vancouver, <i>A Voyage of Discovery to the North Pacific Ocean, and Round the World</i>, vol. 2 (London: G. G. and J. Robinson, Paternoster-Row; and J. Edwards, Pall-Mall, 1798), 220–28, 288–89. Chapter 4, 2nd of May 1792</p>
-        
-        <p>Gabriel Popkin, <i>Forest Gardens Show how native land stewardship can outdo nature,</i> (National Geographic: 2021)</p>
-        
-        <p>Campbell, S. K., and V. L. Butler, <i>Archaeological Evidence for Resilience of Pacific Northwest Salmon Populations and the Socioecological System over the last ~7,500 years</i>, (Ecology & Science, 2021) Vol. 15, No. 1, Art. 17</p>
-        
-        <p>A. Groesbeck AS, Rowell K, Lepofsky D, Salomon AK, <i>Ancient Clam Gardens Increased Shellfish Production: Adaptive Strategies from the Past Can Inform Food Security Today</i>, (PLoS ONE, 2014) 9(3): e91235.</p>
-        
-	<p> David Graeber, David Wengrow, <i>The Dawn of Everything: A New History of Humanity</i>, (Signal Publishing, 2021).</p>
-        
-	<p>Jack D. Forbes, <i>Indigenous Americans: Spirituality and Ecos</i>, (Dædalus, 2021).</p>
-        
-        <p>Enrique Salmón, <i>Kincentric Ecology: Indigenous Perceptions of the Human-Nature Relationship</i>, Ecological Applications, (Ecological Society of America, Oct., 2000)  Vol. 10, No. 5, pp. 1327-1332.</p>
-        
-	<p>Berkes, F., <i>Sacred Ecolog</i>. Third edition.  (New York: Routledge 2012) Chapter 5, p.105.</p>
+    <p id="4-8-30">George Vancouver, <i>A Voyage of Discovery to the North Pacific Ocean, and Round the World</i>, vol. 2 (London: G. G. and J. Robinson, Paternoster-Row; and J. Edwards, Pall-Mall, 1798), 220–28, 288–89. Chapter 4, 2nd of May 1792</p>
 
-        <p>Carolyn Merchant, <i>The Death of Nature: Women, Ecology and the Scientific Revolution</i>, (Harper & Row, 1980).</p>
-        
-        <p>Theodore Hieber, <i>Retranslating Genesis 1–2: Reconnecting Biblical Thought and Contemporary Experience</i> (Sage Journals, 2019) Vol 70, Issue 3.</p>
-       
-	
-	<p>Timothy Morton, Ecology without Nature: Rethinking Environmental Aesthetics, (Harvard University Press, (2007).</p> 	
-        
-       <p>Seline Meijer, People and nature blur in the world's indigenous languages, (IUCN: Planet at the Crossroads, 2017).</p>
-        
-        <p>Thomas Hutton, <i>A Theory of the Earth</i>, Royal Society of Edinburgh, (Transactions of the Royal Society of Edinburgh, 1788) Vol. 1.</p>
+        <p id="4-8-31">Gabriel Popkin, <i>Forest Gardens Show how native land stewardship can outdo nature,</i> (National Geographic: 2021)</p>
 
-     </p>
-     <br><br>
-
-  
-    </div><!--closes page text content-->
+        <p id="4-8-32">Campbell, S. K., and V. L. Butler, <i>Archaeological Evidence for Resilience of Pacific Northwest Salmon Populations and the Socioecological System over the last ~7,500 years</i>, (Ecology & Science, 2021) Vol. 15, No. 1, Art. 17</p>
+        
+        <p id="4-8-33">A. Groesbeck AS, Rowell K, Lepofsky D, Salomon AK, <i>Ancient Clam Gardens Increased Shellfish Production: Adaptive Strategies from the Past Can Inform Food Security Today</i>, (PLoS ONE, 2014) 9(3): e91235.</p>
+        
+        <p id="4-8-34">David Graeber, David Wengrow, <i>The Dawn of Everything: A New History of Humanity</i>, (Signal Publishing, 2021).</p>
+        
+        <p id="4-8-35">Jack D. Forbes, <i>Indigenous Americans: Spirituality and Ecos</i>, (Dædalus, 2021).</p>
+        
+        <p id="4-8-36">Enrique Salmón, <i>Kincentric Ecology: Indigenous Perceptions of the Human-Nature Relationship</i>, Ecological Applications, (Ecological Society of America, Oct., 2000) Vol. 10, No. 5, pp. 1327-1332.</p>
+        
+        <p id="4-8-37">Berkes, F., <i>Sacred Ecology</i>. Third edition.  (New York: Routledge 2012) Chapter 5, p.105.</p>
+        
+        <p id="4-8-38">Carolyn Merchant, <i>The Death of Nature: Women, Ecology and the Scientific Revolution</i>, (Harper & Row, 1980).</p>
+        
+        <p id="4-8-39">Theodore Hieber, <i>Retranslating Genesis 1–2: Reconnecting Biblical Thought and Contemporary Experience</i> (Sage Journals, 2019) Vol 70, Issue 3.</p>
+        
+        <p id="4-8-40">Timothy Morton, <i>Ecology without Nature: Rethinking Environmental Aesthetics</i>, (Harvard University Press, 2007).</p> 	
+        
+        <p id="4-8-41">Seline Meijer, <i>People and nature blur in the world's indigenous languages</i>, (IUCN: Planet at the Crossroads, 2017).</p>
+        
+        <p id="4-8-42">Thomas Hutton, <i>A Theory of the Earth</i>, Royal Society of Edinburgh, (Transactions of the Royal Society of Edinburgh, 1788) Vol. 1.</p>
+        
+        <br><br>
+        
+</div> 
 
           
   </div><!--Closes main content block-->
