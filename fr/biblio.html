@@ -586,47 +586,42 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function bookNotesCreator() {
-  // Get the book-notes-list element
-  const bookNotesList = document.getElementById('book-notes-list');
-
-  // Clear any existing content
-  bookNotesList.innerHTML = '';
-
-  // Retrieve bookNotes from local storage
+  // Retrieve existing bookNotes from local storage
   const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
-  // Iterate through the bookNotes array
+  // Get the book-notes-list div
+  const bookNotesListDiv = document.getElementById('book-notes-list');
+
+  // Clear existing children
+  bookNotesListDiv.innerHTML = '';
+
+  // Iterate through each book note and create the HTML structure
   bookNotes.forEach((bookNote, index) => {
-    // Create a new div for each book note
     const bookNoteDiv = document.createElement('div');
-    bookNoteDiv.id = 'booknote-' + (index + 1);
+    bookNoteDiv.id = `booknote-${index + 1}`;
 
-    // Create anchor tag with href to the chapter URL
-    const anchor = document.createElement('a');
-    anchor.href = bookNote.chaptURL;
+    const tcItemDiv = document.createElement('div');
+    tcItemDiv.className = 'tc-item';
 
-    // Create the item div
-    const itemDiv = document.createElement('div');
-    itemDiv.className = 'tc-item';
-
-    // Create and set the chapter name div
     const chapterNameDiv = document.createElement('div');
     chapterNameDiv.className = 'chapter-name-tc';
     chapterNameDiv.textContent = bookNote.storedNoteText;
-    itemDiv.appendChild(chapterNameDiv);
 
-    // Create and set the word count div
     const wordCountDiv = document.createElement('div');
     wordCountDiv.className = 'word-count-tc';
-    wordCountDiv.innerHTML = `<i>Chapter ${bookNote.chapNo}: ${bookNote.chapName}</i> | ${bookNote.book} | ${bookNote.charCount} characters | Saved ${bookNote.BNdateTime}`;
-    itemDiv.appendChild(wordCountDiv);
 
-    // Append all elements to the anchor and bookNoteDiv
-    anchor.appendChild(itemDiv);
-    bookNoteDiv.appendChild(anchor);
+    const chapterLink = document.createElement('a');
+    chapterLink.href = bookNote.chaptURL;
+    chapterLink.innerHTML = `<i>Chapter ${bookNote.chapNo}: ${bookNote.chapName}</i> | ${bookNote.book} <br>${bookNote.charCount} characters | Saved ${bookNote.BNdateTime}`;
 
-    // Append the book note div to the book-notes-list element
-    bookNotesList.appendChild(bookNoteDiv);
+    wordCountDiv.appendChild(chapterLink);
+
+    tcItemDiv.appendChild(chapterNameDiv);
+    tcItemDiv.appendChild(wordCountDiv);
+
+    bookNoteDiv.appendChild(tcItemDiv);
+
+    bookNotesListDiv.appendChild(bookNoteDiv);
   });
 }
 
@@ -680,8 +675,10 @@ function recreateSelection() {
   });
 }
 
-     // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-     window.addEventListener('load', function () {
+
+  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
+  window.addEventListener('load', function () {
+   // showAlertWithCharacterCount();
     recreateSelection();
   });
 
