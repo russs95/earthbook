@@ -247,14 +247,18 @@ All the page components required to build this page-->
   </div>
 </div>
 
-<div class="page-paragraphe" >
-
-    <p id="p0">Banayan et Russell sont cofondateurs de la Global Ecobrick Alliance. Banyan est une employée rémunérée de la région administrative de la Cordillère du ministère de l'Éducation des Philippines (province de Kalinga). Russell reçoit des commissions comme formateur GEA et est un directeur actif de l'organisation.</p>
-
-    <p id="p2">Un don privé de Trisha Joe de 2500 $ USD a été reçu en 2020 pour acheter l'ordinateur portable Librem et sur lequel ce travail a été écrit. Un deuxième don de 3000$ USD du même soutien a été reçu pour publier l'édition Tractatus Ayyew Earthbook en 2022.</p>  
-
-    <p id="p3">En dehors de ce qui précède, aucune subvention, parrainage ou financement d'organisations, d'entreprises, de gouvernements ou de sociétés n'a été reçue par Russell ou Banayan pour soutenir la rédaction du Tractatus Ayyew ou à tout moment pour tout autre de leur travail.</p>
-    <br><br><br><br>
+<div class="lead-page-paragraph" id="FR-4-9-01">
+    Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on Earthen.io publications.<br><br><br>
+        </div>
+        <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 60px; width:100%; text-align:left;"></div>
+    
+    
+    <div class="page-paragraph">
+    
+    <div id="glossary-container" style="text-align: left;
+    text-justify: none;"><i>Loading glossary...</i></div>
+    
+      
     
   </div><!--Closes main content block-->
 
@@ -314,6 +318,74 @@ All the page components required to build this page-->
 <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
    
  
+  
+<script>
+    async function buildGlossary() {
+      // Load the JSON data
+      const response = await fetch('glossary.json?v=1.1');
+      const jsonData = await response.json();
+      // Sort the data alphabetically by title
+      jsonData.sort((a, b) => a.title.localeCompare(b.title));
+      // Get the container element
+      const container = document.querySelector('#glossary-container');
+      // Clear the previous contents of the container
+      container.innerHTML = '';
+      // Loop through the entries
+      for (let i = 0; i < jsonData.length; i++) {
+        const entry = jsonData[i];
+        // Create the glossary item element
+        const item = document.createElement('div');
+        item.classList.add('glossary-item');
+        item.id = entry.title;
+        // Create the title element
+        const title = document.createElement('i');
+        title.classList.add('glossary-title');
+        title.textContent = entry.title;
+        // Create the description element
+        const description = document.createElement('p');
+        description.appendChild(title);
+        description.innerHTML += '<br>' + entry.chap_description;
+        // Create the keywords element
+        const keywords = document.createElement('h6');
+        keywords.textContent = 'Related terms: ' + entry.keywords;
+        
+        // Create the glossary info element
+        const glossInfo = document.createElement('div');
+        glossInfo.classList.add('glossary-info');
+        glossInfo.appendChild(keywords);
+        
+        // Create the chapter element with URL if relevant_chap exists
+        if (entry.relevant_chap) {
+          const chapter = document.createElement('h6');
+          const chapterText = document.createTextNode('Introduced in chapter: ');
+          const chapterLink = document.createElement('a');
+          chapterLink.textContent = entry.relevant_chap;
+          chapterLink.href = entry.relevant_chap_url;
+          chapter.appendChild(chapterText);
+          chapter.appendChild(chapterLink);
+          // Append the chapter element to glossInfo
+          glossInfo.appendChild(chapter);
+        }
+        
+        // Append the elements to the item
+        item.appendChild(description);
+        item.appendChild(glossInfo);
+        // Append the item to the container
+        container.appendChild(item);
+      }
+    }
+    
+    window.addEventListener('load', function() {
+      buildGlossary();
+    });
+    </script>
+
+
+
+
+
+
+
   
 
 <script>
