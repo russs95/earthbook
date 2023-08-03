@@ -226,7 +226,7 @@ All the page components required to build this page-->
 
 
     .glossary_item {
-      padding-top: 40px;
+      padding-top: 30px;
       }
 
       .glossary-title {
@@ -307,6 +307,10 @@ color: var(--drop-cap);}
     
     <div id="glossary-container" style="text-align: left;
     text-justify: none;"><i>Loading glossary...</i></div>
+
+
+    </div>
+    <br><br><br><br>
     
       
     
@@ -412,7 +416,6 @@ color: var(--drop-cap);}
  
 <div id="glossary-container"></div>
 
-
 <script>
     async function buildGlossary() {
       // Load the JSON data
@@ -424,8 +427,8 @@ color: var(--drop-cap);}
       const container = document.querySelector('#glossary-container');
       // Clear the previous contents of the container
       container.innerHTML = '';
-      // Initialize ID counter
-      let idCounter = 1;
+      // Variable to keep track of the entry count for the ID
+      let entryCount = 1;
       // Loop through the entries
       for (let i = 0; i < jsonData.length; i++) {
         const entry = jsonData[i];
@@ -437,27 +440,23 @@ color: var(--drop-cap);}
         const title = document.createElement('i');
         title.classList.add('glossary-title');
         title.textContent = entry.title;
-        // Wrap the title in a <p> tag
-        const titleParagraph = document.createElement('p');
-        titleParagraph.appendChild(title);
         // Create the description element
         const description = document.createElement('p');
+        // Increment the entry count and format it as 2 digits (e.g., 01, 02, etc.)
+        const entryID = entryCount.toString().padStart(2, '0');
+        description.id = `4-9-${entryID}`;
         description.textContent = entry.chap_description;
-        // Wrap the description in a <p> tag and add the ID
-        const descriptionParagraph = document.createElement('p');
-        descriptionParagraph.textContent = entry.chap_description;
-        descriptionParagraph.id = `4-9-${idCounter.toString().padStart(2, '0')}`;
-        // Increment ID counter
-        idCounter++;
+        // Increment the entry count for the next entry
+        entryCount++;
         // Create the keywords element
         const keywords = document.createElement('h6');
         keywords.textContent = 'Related terms: ' + entry.keywords;
-  
+        
         // Create the glossary info element
         const glossInfo = document.createElement('div');
         glossInfo.classList.add('glossary-info');
         glossInfo.appendChild(keywords);
-  
+        
         // Create the chapter element with URL if relevant_chap exists
         if (entry.relevant_chap) {
           const chapter = document.createElement('h6');
@@ -470,27 +469,22 @@ color: var(--drop-cap);}
           // Append the chapter element to glossInfo
           glossInfo.appendChild(chapter);
         }
-  
+        
         // Append the elements to the item
-        item.appendChild(titleParagraph);
-        item.appendChild(descriptionParagraph);
+        item.appendChild(title);
+        item.appendChild(document.createElement('br'));
+        item.appendChild(description);
         item.appendChild(glossInfo);
         // Append the item to the container
         container.appendChild(item);
-        
-        // Add <br><br> between each JSON entry
-        if (i < jsonData.length - 1) {
-          const br = document.createElement('br');
-          container.appendChild(br);
-          container.appendChild(br.cloneNode());
-        }
       }
     }
-  
-    window.addEventListener('load', function () {
+    
+    window.addEventListener('load', function() {
       buildGlossary();
     });
-  </script>
+</script>
+
 
 
 
