@@ -50,7 +50,7 @@ class chapfoot extends HTMLElement {
         
         <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/share.svg" alt="icône de partage" style="cursor:pointer" onclick="openShare()" aria-label="Cliquez pour copier le lien de l'Earthbook à partager" title="Cliquez pour copier le lien de l'Earthbook à partager"></button></div>
 
-        <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="icône de partage" style="cursor:pointer" onclick="openBooknotes()" aria-label="Cliquez pour copier le lien de l'Earthbook à partager" title="Cliquez pour copier le lien de l'Earthbook à partager"></button></div>
+        <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/content.svg" alt="icône de partage" style="cursor:pointer" onclick="openBooknotes(), bookNotesCreator()" aria-label="Cliquez pour copier le lien de l'Earthbook à partager" title="Cliquez pour copier le lien de l'Earthbook à partager"></button></div>
         
         <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/tour.svg" alt="Visite guidée" style="cursor:pointer" onclick="guidedTour()" aria-label="Cliquez pour une visite rapide des fonctionnalités d'Earthbook" title="Cliquez pour une visite rapide des fonctionnalités d'Earthbook"></button></div>
         

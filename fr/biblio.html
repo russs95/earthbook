@@ -95,6 +95,11 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
         });
       });
     }
+
+     // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
+  window.addEventListener('load', function () {
+    recreateSelection();
+  });
 </script>
 
  <!--FONTS
@@ -393,14 +398,13 @@ All the page components required to build this page-->
             <div class="contents-title">Your Saved</div>
             <div class="contents-books123"><div class="tc-a-book content-button">BOOK NOTES</div></div>
         </div>
-        <div class="book-notes-list">
-
+        <div id="book-notes-list">
+<!--
             <div id="booknote-1">
                 <a href="chaptURL">
                 <div class="tc-item">
                     <div class="chapter-name-tc">"storeNoteText"</div>
-                    <div class="word-count-tc"><i>Chapter "chapNo": "chapName"</i> | "book" | "charCount" characters | Saved "BNdateTime"</div><br>
-                    123 characters  / saved: July 2nd, 2023 - 8:50PM
+                    <div class="word-count-tc"><i>Chapter "chapNo": "chapName"</i> | "book" | "charCount" characters | Saved "BNdateTime"</div>
                 </div>
                 </a>
             </div>
@@ -409,8 +413,7 @@ All the page components required to build this page-->
                 <a href="chaptURL">
                 <div class="tc-item">
                     <div class="chapter-name-tc">"storeNoteText"</div>
-                    <div class="word-count-tc"><i>Chapter "chapNo": "chapName"</i> | "book" | "charCount" characters | Saved "BNdateTime"</div><br>
-                    123 characters  / saved: July 2nd, 2023 - 8:50PM
+                    <div class="word-count-tc"><i>Chapter "chapNo": "chapName"</i> | "book" | "charCount" characters | Saved "BNdateTime"</div>
                 </div>
                 </a>
             </div>
@@ -420,16 +423,15 @@ All the page components required to build this page-->
                 <a href="chaptURL">
                 <div class="tc-item">
                     <div class="chapter-name-tc">"storeNoteText"</div>
-                    <div class="word-count-tc"><i>Chapter "chapNo": "chapName"</i> | "book" | "charCount" characters | Saved "BNdateTime"</div><br>
-                    123 characters  / saved: July 2nd, 2023 - 8:50PM
+                    <div class="word-count-tc"><i>Chapter "chapNo": "chapName"</i> | "book" | "charCount" characters | Saved "BNdateTime"</div>
                 </div>
                 </a>
             </div>
 
-            etc...
+        
 
-            </div>
         </div>
+    
 
         <div class="tc-button-row">
             <a href="index.html" style="height: 24px; flex-grow: 1"><div id="tour-btn" class="action-btn" ><i style="background-image: url(../icons/home.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i></div></a>
@@ -646,10 +648,51 @@ function removeHighlight(e) {
 
 });
 
-  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-  window.addEventListener('load', function () {
-    recreateSelection();
+function bookNotesCreator() {
+  // Get the book-notes-list element
+  const bookNotesList = document.getElementById('book-notes-list');
+
+  // Clear any existing content
+  bookNotesList.innerHTML = '';
+
+  // Retrieve bookNotes from local storage
+  const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+  // Iterate through the bookNotes array
+  bookNotes.forEach((bookNote, index) => {
+    // Create a new div for each book note
+    const bookNoteDiv = document.createElement('div');
+    bookNoteDiv.id = 'booknote-' + (index + 1);
+
+    // Create anchor tag with href to the chapter URL
+    const anchor = document.createElement('a');
+    anchor.href = bookNote.chaptURL;
+
+    // Create the item div
+    const itemDiv = document.createElement('div');
+    itemDiv.className = 'tc-item';
+
+    // Create and set the chapter name div
+    const chapterNameDiv = document.createElement('div');
+    chapterNameDiv.className = 'chapter-name-tc';
+    chapterNameDiv.textContent = bookNote.storedNoteText;
+    itemDiv.appendChild(chapterNameDiv);
+
+    // Create and set the word count div
+    const wordCountDiv = document.createElement('div');
+    wordCountDiv.className = 'word-count-tc';
+    wordCountDiv.innerHTML = `<i>Chapter ${bookNote.chapNo}: ${bookNote.chapName}</i> | ${bookNote.book} | ${bookNote.charCount} characters | Saved ${bookNote.BNdateTime}`;
+    itemDiv.appendChild(wordCountDiv);
+
+    // Append all elements to the anchor and bookNoteDiv
+    anchor.appendChild(itemDiv);
+    bookNoteDiv.appendChild(anchor);
+
+    // Append the book note div to the book-notes-list element
+    bookNotesList.appendChild(bookNoteDiv);
   });
+}
+
 
 </script>
 
