@@ -68,6 +68,13 @@
     background-color: var(--slider); 
     color: var(--drop-cap);
   }
+
+  #booknotes-curtain {
+    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat;
+    background-size: 30%;
+    background-color: var(--slider); 
+    color: var(--drop-cap);
+  }
     
 
   .virtue img {
