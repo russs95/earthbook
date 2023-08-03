@@ -6,7 +6,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 
-    <div id="earthbook-navbar">
+    <div id="earthbook-navbar" style="background-color: var(--header-footer);">
     <div id="settings-menu">
         <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openSettings()" aria-label="Ouvrir les paramètres"><img src="https://book.earthen.io/svgs/left-menu.svg" alt="Icône des paramètres"></button>
     </div>

@@ -66,6 +66,7 @@ class chapfoot extends HTMLElement {
     </div>
 
     </div>
+  </div>
 
 <div id="booknotes-curtain" class="overlay-tc">
 
