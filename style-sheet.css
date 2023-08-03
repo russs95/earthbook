@@ -3107,6 +3107,36 @@ padding-top: 44px;
 }  
 
 
+.chapter-name-bn {
+  flex: fit-content;
+  display: flex;
+  z-index: 10;
+  text-align: left;
+  cursor: text;
+}
+
+@media screen and (max-width: 700px) {
+  .chapter-name-bn {
+    padding: 11px 5px 11px 15px;
+    margin:  auto 0px auto 0px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .chapter-name-bn {
+    padding: 12px 25px 12px 35px;
+    margin:  auto 0px auto 0px;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .chapter-name-bn {
+    padding: 15px 25px 15px 35px;
+    margin:  auto 0px auto 0px;
+
+  }
+  }
+
 
 /* -------------------------------------------------------------------------- */
 
