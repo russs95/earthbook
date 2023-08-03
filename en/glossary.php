@@ -151,12 +151,12 @@ color: var(--drop-cap);}
 
 <div id="ct-chapt-graphic" class="background-000">
   <img src="../icons/glossary.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
-  </div>
+</div>
 
-  <div id="up-arrow"></div>
+<div id="up-arrow"></div>
 
 
-  <div id="ct-main">
+<div id="ct-main">
 
  
 
