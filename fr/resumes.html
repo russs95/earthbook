@@ -27,7 +27,7 @@ EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
 Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
  
 
-Page de destination - version 1.2
+Page de destination - version 1.3
 Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
 Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
 
@@ -79,9 +79,12 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:url" content="https://book.earthen.io/fr/resumes.html">
 
 <script>
-      // Declare the global variables
-    var chapNo = "Annexe";
+     // Declare the global variables
+     var book = "Annex";
+    var chapNo = "1";
     var chapName = "Résumés";
+    var chaptURL = "resumes.html"   // Declare the global variables
+  
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -208,6 +211,7 @@ All the page components required to build this page-->
       font-size: 10vmin;
       letter-spacing: 3px; 
     }
+    
 </STYLE>
 
 </HEAD>
@@ -217,8 +221,6 @@ All the page components required to build this page-->
     <!--TOUR-CURTAIN-->
     <tour-curtain></tour-curtain>
     
-    
-     
   <div id="underlayer" class="accessibility-plugin-ac" >
 
     <div id="top"></div>
@@ -235,8 +237,6 @@ All the page components required to build this page-->
         <div id="ct-word-count"><i>540 mots</i></div>
       </div>
   </div>
-
-
 
   <!-- Page Title Section-->
 
@@ -260,33 +260,30 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
 
 
     <h2>1. Une courte phrase</h2>
-    <p>Le concept d'éthique terrestre du « vert » peut se résumer en une phrase simple :
-
-    </p>
+    <p id="4-1-01">Le concept d'éthique terrestre du « vert » peut se résumer en une phrase simple :</p>
 
     <div class="quote"><p>Un processus est vert lorsqu'il suit l'exemple de contribution écologique de la Terre.</p></div>
     <br>
     <a name="long"></a>
     <h2>2. Une phrase plus longue</h2>
     
-    <p>En ajoutant « doit », nous obtenons l'éthique fondamentale de la Terre. Notez que le vert est ici interchangeable avec « contribution écologique ».</p>
+    <p id="4-1-02">En ajoutant « doit », nous obtenons l'éthique fondamentale de la Terre. Notez que le vert est ici interchangeable avec «contribution écologique».</p>
 
-    <div class="quote"><p>Pour être vert, un processus doit incarner le modèle terrestre de concentration de la matière et de dispersion de l'énergie pour enrichir cycliquement la diversité et la conscience du système dont il fait partie.
+    <div class="quote"><p id="4-1-02">Pour être vert, un processus doit incarner le modèle terrestre de concentration de la matière et de dispersion de l'énergie pour enrichir cycliquement la diversité et la conscience du système dont il fait partie.
     </p></div>
 
     <br>
     <a name="paragraph"></a>
     <h2>3. Un Paragraphe</h2>
     
-    <p>Maintenant, plaçons l'éthique terrestre et notre nouvelle définition du vert dans notre contexte contemporain :</p>
+    <p id="4-1-03">Maintenant, plaçons l'éthique terrestre et notre nouvelle définition du vert dans notre contexte contemporain :</p>
 
-    <div class="quote"><p>Alors que nous devenons de plus en plus conscients de la dégradation écologique causée par notre époque moderne, nous aspirons à modifier nos habitudes. De toutes nos crises écologiques, la pollution plastique est particulièrement représentative de notre défi. En tant que sous-produit de combustible fossile, le plastique incarne un lien direct à la fois avec le modèle d'enrichissement de plusieurs milliards d'années de la biosphère et avec notre modèle moderne d'épuisement. En retraçant l'histoire primordiale du plastique et de la Terre, nous pouvons observer le contraste saisissant entre ces deux modèles. En particulier, la manière dont la Terre a fait tourner sa matière vers l'intérieur et son énergie vers l'extérieur pour déployer une vitalité, une diversité et une conscience toujours plus grande. En apprenant des cultures qui ont longtemps incarné ce modèle pour maîtriser leur propre intégration écologique, nous pouvons amender notre métaphysique pour reconnaître la contribution écologique comme notre base pour le vert. En conséquence, nous pouvons garantir que nos processus, cycles et systèmes incarnent le modèle de gestion de l'énergie et de la matière de la Terre, déclarant leur intention pour la Terre, dynamisant la biodiversité et sensibilisant à leur impact écologique. A partir de notre plastique, nous pouvons ainsi suivre l'exemple de la Terre pour faire en sorte que nos entreprises enrichissent systématiquement les écosystèmes dont elles font partie. 
+    <div class="quote"><p id="4-1-04">Alors que nous devenons de plus en plus conscients de la dégradation écologique causée par notre époque moderne, nous aspirons à modifier nos habitudes. De toutes nos crises écologiques, la pollution plastique est particulièrement représentative de notre défi. En tant que sous-produit de combustible fossile, le plastique incarne un lien direct à la fois avec le modèle d'enrichissement de plusieurs milliards d'années de la biosphère et avec notre modèle moderne d'épuisement. En retraçant l'histoire primordiale du plastique et de la Terre, nous pouvons observer le contraste saisissant entre ces deux modèles. En particulier, la manière dont la Terre a fait tourner sa matière vers l'intérieur et son énergie vers l'extérieur pour déployer une vitalité, une diversité et une conscience toujours plus grande. En apprenant des cultures qui ont longtemps incarné ce modèle pour maîtriser leur propre intégration écologique, nous pouvons amender notre métaphysique pour reconnaître la contribution écologique comme notre base pour le vert. En conséquence, nous pouvons garantir que nos processus, cycles et systèmes incarnent le modèle de gestion de l'énergie et de la matière de la Terre, déclarant leur intention pour la Terre, dynamisant la biodiversité et sensibilisant à leur impact écologique. A partir de notre plastique, nous pouvons ainsi suivre l'exemple de la Terre pour faire en sorte que nos entreprises enrichissent systématiquement les écosystèmes dont elles font partie. 
     </p></div>
 
   </div><!--closes page text content-->
         
 </div><!--Closes main content block-->
-
 
 </div><!--Closes main content block-->
 
@@ -315,10 +312,6 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
 <!--MENU ECO-->
 <eco-curtain></eco-curtain>
 
-
-
-
-
 <!--SECTION PIED DE PAGE Chapitre suivant: Nécessite une personnalisation-->
   <div id="footer-chapter" style="margin-bottom: 0px;">
     <div class="footer-size">
@@ -344,108 +337,6 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
 </div>
 <!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
    
- 
-  
-
-  <script>
-
-  // Function to count characters in the entire HTML document
-  function countCharacters() {
-    const allTextElements = document.querySelectorAll('*');
-    let charCount = 0;
-
-    allTextElements.forEach(element => {
-      element.childNodes.forEach(child => {
-        if (child.nodeType === Node.TEXT_NODE) {
-          charCount += child.textContent.length;
-        }
-      });
-    });
-
-    return charCount;
-  }
-
-  // Function to display character count in an alert once the page has loaded
-  function showAlertWithCharacterCount() {
-    const totalCharacters = countCharacters();
-    alert(`Total Characters in the HTML document: ${totalCharacters}`);
-  }
-
-  // Function to store selected text and its positions in the local storage
-  // Function to store selected text and its positions in the browser cache (localStorage)
-// Function to store selected text and its positions in the browser cache (localStorage)
-function storeSelectedText() {
-  const selection = window.getSelection();
-  if (selection.rangeCount > 0) {
-    const range = selection.getRangeAt(0);
-    localStorage.setItem('startContainerId', range.startContainer.parentNode.id);
-    localStorage.setItem('endContainerId', range.endContainer.parentNode.id);
-    localStorage.setItem('startOffset', range.startOffset);
-    localStorage.setItem('endOffset', range.endOffset);
-    localStorage.setItem('storedText-1', selection.toString());
-
-    // Update to capture startContainer and endContainer
-    const startContainer = range.startContainer;
-    const endContainer = range.endContainer;
-
-    // Add the alert to display the variables sent to local storage
-    alert(`startContainer: ${startContainer}\n` +
-          `endContainer: ${endContainer}\n` +
-          `startOffset: ${range.startOffset}\n` +
-          `endOffset: ${range.endOffset}\n` +
-          `storedText-1: ${selection}`);
-  }
-}
-
-// Function to recreate selection from stored data
-function recreateSelection() {
-  const startContainerId = localStorage.getItem('startContainerId');
-  const endContainerId = localStorage.getItem('endContainerId');
-  const startOffset = parseInt(localStorage.getItem('startOffset'));
-  const endOffset = parseInt(localStorage.getItem('endOffset'));
-  const storedText = localStorage.getItem('storedText-1');
-
-  if (startContainerId && endContainerId && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
-    const startContainer = document.getElementById(startContainerId);
-    const endContainer = document.getElementById(endContainerId);
-
-    if (startContainer && endContainer) {
-      const range = document.createRange();
-      range.setStart(startContainer.firstChild, startOffset);
-      range.setEnd(endContainer.firstChild, endOffset);
-
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-
-      alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
-    } else {
-      console.log('One or both container elements not found.');
-    }
-  } else {
-    console.log('Stored data not complete or not found.');
-  }
-}
-
-
-  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-  window.addEventListener('load', function () {
-    showAlertWithCharacterCount();
-    recreateSelection();
-
-    // Attach the storeSelectedText function to the "mouseup" event
-    document.addEventListener("mouseup", storeSelectedText);
-  });
-
-
- 
-
-</script>
-
-
-  
-  
-  
   </BODY>
   </HTML>
   
