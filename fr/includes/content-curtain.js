@@ -21,29 +21,29 @@ class ContentCurtain extends HTMLElement {
                      <div class="contents-title-box">
    <div class="contents-title">Livres et contenu</div>
    <div class="contents-books123">
-     <div class="tc-a-book content-button" id="button-one" style="border-right:1px gray solid ;">Un</div>
-     <div class="tc-a-book content-button" id="button-two" style="border-right:1px gray solid; color:grey;">Deux</div>
-     <div class="tc-a-book content-button" id="button-three" style="border-right:1px gray solid ; color:grey;">Trois</div>
-     <div class="tc-a-book content-button" id="button-appx" style="color:grey;">Appx</div>
+     <div class="tc-a-book content-button" id="button-one" style="border-right:1px gray solid;">Un</div>
+     <div class="tc-a-book content-button" id="button-two" style="border-right:1px gray solid;">Deux</div>
+     <div class="tc-a-book content-button" id="button-three" style="border-right:1px gray solid;">Trois</div>
+     <div class="tc-a-book content-button" id="button-appx">Appx</div>
    </div>
 </div>
 
 
                      <div id="appx-book-one">
 
-                         <a href="preambule.php">
+                         <a href="preambule.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Préambule</div>
                              <div class="word-count-tc"><i>431 mots</i></div>
                          </div></a>
 
-                         <a href="preface.php">
+                         <a href="lepreface.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Préface</div>
                              <div class="word-count-tc"><i>1,220 mots</i></div>
                          </div></a>
 
-                         <a href="imaginez.php">
+                         <a href="imaginer.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Imaginer</div>
                              <div class="ligne pointillée"></div>
@@ -51,7 +51,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="plastique.php">
+                         <a href="inedite.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Plastique 1.0</div>
                              <div class="ligne pointillée"></div>
@@ -204,20 +204,20 @@ class ContentCurtain extends HTMLElement {
 
                      <div id="appx-book-appx" style="display:none ;">
                         
-                         <a href="summaries.php">
+                         <a href="resumes.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Résumés</div>
                              <div class="word-count-tc"><i>501 mots</i></div>
                          </div></a>
 
-                         <a href="dédicace.php">
+                         <a href="dedicace.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Dédicace</div>
                              <div class="word-count-tc"><i>26 mots</i></div>
                          </div></a>
 
 
-                         <a href="for-earth.php">
+                         <a href="pour-terre.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Déclaration pour la Terre</div>
                              <div class="ligne pointillée"></div>
@@ -225,7 +225,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="reconnaissances.php">
+                         <a href="gratitude.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Gratitude</div>
                              <div class="ligne pointillée"></div>
@@ -233,7 +233,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="publishing.php">
+                         <a href="publication.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Publication</div>
                              <div class="ligne pointillée"></div>
@@ -241,7 +241,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="auteurs.php">
+                         <a href="auteurs.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Auteurs</div>
                              <div class="ligne pointillée"></div>
@@ -249,7 +249,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="declaration.php">
+                         <a href="declarations.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Déclarations</div>
                              <div class="ligne pointillée"></div>
@@ -257,7 +257,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="bibliographie.php">
+                         <a href="biblio.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Bibliographie</div>
                              <div class="ligne pointillée"></div>
@@ -265,7 +265,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="glossaire.php">
+                         <a href="glossaire.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Glossaire</div>
                              <div class="ligne pointillée"></div>

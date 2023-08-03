@@ -1182,6 +1182,7 @@ padding-top: 44px;
 }  
 
 
+
 /*Gives the mandala on the top earthbook nav bar?*/
 
 
@@ -3061,6 +3062,49 @@ margin: 8px 5px;
         }
       }
 
+
+
+/*  BOOK NOTES */
+
+
+
+/*Top CLose Button*/
+
+.top-close-button {
+  position: absolute;
+  transition: 0.3s;
+  background: var(--background-color);
+  border-radius: 30px;
+  height: 85px;
+  box-shadow: var(--element-shadow);
+  border: solid 1px var(--fainter-border-color);
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  z-index: 50;
+  top: -40px;
+ text-align: center;
+  width: 200px; 
+}
+
+.top-close-button:hover {
+  padding-top:15px;
+  border: solid 1px var(--thin-border-color);
+}
+
+
+.top-close-button {
+background-color: var(--background-color);
+box-shadow: var(--element-shadow);
+}
+
+
+.top-close-button img {
+height: 35px;
+padding-top: 44px;
+
+}  
 
 
 

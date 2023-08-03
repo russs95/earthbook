@@ -335,6 +335,41 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  
  
  
+ /* BOOKNOTES OVERLAY
+ Triggers the downwards swing of the TC*/
+ 
+ function openBooknotes() {
+  document.getElementById("book-notes-curtain").style.height = "100%";
+  //document.getElementById("table-of-contents").style.overflowY = "hidden";
+  document.body.style.overflowY = "hidden";
+  //document.body.style.maxHeight = "101vh";
+  var modal = document.getElementById('book-notes-curtain');
+
+function modalShow () {
+   modal.setAttribute('tabindex', '0');
+   modal.focus();
+}
+
+function focusRestrict ( event ) {
+  document.addEventListener('focus', function( event ) {
+    if ( modalOpen && !modal.contains( event.target ) ) {
+      event.stopPropagation();
+      modal.focus();
+    }
+  }, true);
+}
+
+}
+/* Triggers the upwards reset of the TC */
+
+function closeBooknotes() {
+  document.getElementById("book-notes-curtain").style.height = "0%";
+  //document.getElementById("table-of-contents").style.overflowY = "unset";
+  document.body.style.overflowY = "unset";
+  //document.body.style.maxHeight = "unset";
+} 
+
+ 
    /* BUY OVERLAY 
    
  Triggers the right buy panel*/
@@ -461,6 +496,8 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  
      document.getElementById("buy-curtain").style.height = "0%";
      document.getElementById("table-of-contents").style.height = "0%";
+     document.getElementById("book-notes-curtain").style.height = "0%";
+
      document.getElementById("right-share-overlay").style.width = "0%";
  
      document.getElementById("top-bookplate").style.height = "0%";
@@ -485,29 +522,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  
  /* -------------------------------------------------------------------------- */
  
- /*max-height:100vh; overflow:hidden;
  
-  function Sepia(e)
- {
- var containerSepia = document.body;
- var val = e.value;
- containerSepia.setAttribute("style", "filter: sepia("+val+"%);");
- }
- 
- function Contrast(e)
- {
- var containerContrast = document.body;
- var val = e.value;
- containerContrast.setAttribute("style", "filter: contrast("+val+"%); height: 100vh; overflow-y: hidden;");
- }
- 
- function Brightness(e)
- {
- var containerBrightness = document.body;
- var val = e.value;
- containerBrightness.setAttribute("style", "filter: brightness("+val+"%); height: 100vh; overflow-y: hidden;");
- 
- }*/
 
 function setReadability() {
   const brightness = document.getElementById("brightness-range-scale").value;
@@ -520,32 +535,8 @@ function setReadability() {
   localStorage.setItem('contrast', contrast);
   localStorage.setItem('sepia', sepia);
 
-
-  // Update slider event listeners to use setPointerCapture
-  /*const sliders = document.querySelectorAll('input[type="range"]');
-  sliders.forEach((slider) => {
-    slider.addEventListener('pointerdown', () => {
-      slider.setPointerCapture(slider.pointerId);
-    });
-    slider.addEventListener('pointerup', () => {
-      slider.releasePointerCapture(slider.pointerId);
-    });
-  });*/
-
 }
 
-/*
-document.addEventListener("DOMContentLoaded", function() {
-  const brightness = localStorage.getItem('brightness') || 100;
-  const contrast = localStorage.getItem('contrast') || 100;
-  const sepia = localStorage.getItem('sepia') || 0;
-
-  document.getElementById("brightness-range-scale").value = brightness;
-  document.getElementById("contrast-range-scale").value = contrast;
-  document.getElementById("sepia-range-scale").value = sepia;
-
-  document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
-});*/
 
 document.addEventListener("DOMContentLoaded", function() {
   const brightness = localStorage.getItem('brightness') || 100;
