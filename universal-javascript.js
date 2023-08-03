@@ -339,11 +339,11 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
  Triggers the downwards swing of the TC*/
  
  function openBooknotes() {
-  document.getElementById("book-notes-curtain").style.height = "100%";
+  document.getElementById("booknotes-curtain").style.height = "100%";
   //document.getElementById("table-of-contents").style.overflowY = "hidden";
   document.body.style.overflowY = "hidden";
   //document.body.style.maxHeight = "101vh";
-  var modal = document.getElementById('book-notes-curtain');
+  var modal = document.getElementById('booknotes-curtain');
 
 function modalShow () {
    modal.setAttribute('tabindex', '0');
@@ -363,7 +363,7 @@ function focusRestrict ( event ) {
 /* Triggers the upwards reset of the TC */
 
 function closeBooknotes() {
-  document.getElementById("book-notes-curtain").style.height = "0%";
+  document.getElementById("booknotes-curtain").style.height = "0%";
   //document.getElementById("table-of-contents").style.overflowY = "unset";
   document.body.style.overflowY = "unset";
   //document.body.style.maxHeight = "unset";
