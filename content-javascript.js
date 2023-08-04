@@ -176,89 +176,88 @@ function clearSelection() {
     }
 
 
-function handleSelection() {
-selectedRange = getSelectedRange();
-
-// Check if the selection is within the div with id 'ct-main'
-if (selectedRange && selectedRange.commonAncestorContainer.closest('#ct-main') && selectedRange.toString().trim().length > 0) {
-let span = document.createElement('span');
-span.style.cursor = 'pointer';
-span.classList.add(preHighlightClass);
-span.title = "Click this text to highlight and save.";
-selectedRange.surroundContents(span);
-clearSelection();
-}
-}
-
-document.addEventListener('mouseup', handleSelection);
-document.addEventListener('touchend', handleSelection);
-
-function handleHighlightEvent(e) {
-if (e.target.classList.contains(preHighlightClass)) {
-if (e.target.classList.contains(highlightClass)) {
-  e.target.classList.remove(preHighlightClass);
-} else {
-  e.target.classList.add(highlightClass);
-  e.target.classList.remove(preHighlightClass);
-
-  const range = document.createRange();
-  range.selectNodeContents(e.target);
-  const selection = window.getSelection();
-  selection.removeAllRanges();
-  selection.addRange(range);
-
-  if (selection.rangeCount > 0) {
-    const selectedRange = selection.getRangeAt(0);
-    const startContainer = selectedRange.startContainer.parentNode.id;
-
-    // Calculate startOffset considering only text nodes inside the selected paragraph
-    let startOffset = 0;
-    let node = selectedRange.startContainer.parentNode.firstChild;
-    while (node && node !== selectedRange.startContainer) {
-      if (node.nodeType === Node.TEXT_NODE) {
-        startOffset += node.length;
+    function handleSelection() {
+      selectedRange = getSelectedRange();
+      if (selectedRange && selectedRange.toString().trim().length > 0) {
+          let span = document.createElement('span');
+          span.style.cursor = 'pointer';
+          span.classList.add(preHighlightClass);
+          span.title = "Click this text to highlight and save.";
+          selectedRange.surroundContents(span);
+          clearSelection();
       }
-      node = node.nextSibling;
-    }
-    startOffset += selectedRange.startOffset;
-
-    const storedNoteText = selection.toString();
-    const charCount = storedNoteText.length; // Counting characters
-    const BNdateTime = new Date().toISOString(); // Current date and time
-
-    // Retrieve existing bookNotes from local storage
-    let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-    // New highlight object
-    const bookNote = {
-      book,
-      chapNo,
-      chapName,
-      chaptURL,
-      startContainer,
-      startOffset,
-      storedNoteText,
-      charCount,
-      BNdateTime
-    };
-
-    // Add the new highlight to the array
-    bookNotes.push(bookNote);
-
-    // Save the updated array back to local storage
-    localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-
-    // Log to console instead of alert
-    console.log('BookNote saved:', bookNote);
-  }
-
-  e.target.title = "This quotation is saved in your Book Notes";
-  window.getSelection().removeAllRanges();
-}
-} else if (e.target.classList.contains(highlightClass)) {
-setTimeout(() => removeHighlight(e), 1000);
-}
-}
+      }
+      document.addEventListener('mouseup', handleSelection);
+      document.addEventListener('touchend', handleSelection);
+  
+      function handleHighlightEvent(e) {
+      if (e.target.classList.contains(preHighlightClass)) {
+          if (e.target.classList.contains(highlightClass)) {
+          e.target.classList.remove(preHighlightClass);
+          } else {
+          e.target.classList.add(highlightClass);
+          e.target.classList.remove(preHighlightClass);
+  
+          const range = document.createRange();
+          range.selectNodeContents(e.target);
+          const selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+  
+          if (selection.rangeCount > 0) {
+              const selectedRange = selection.getRangeAt(0);
+              const startContainer = selectedRange.startContainer.parentNode.id;
+  
+              // Calculate startOffset considering only text nodes inside the selected paragraph
+              let startOffset = 0;
+              let node = selectedRange.startContainer.parentNode.firstChild;
+              while (node && node !== selectedRange.startContainer) {
+              if (node.nodeType === Node.TEXT_NODE) {
+                  startOffset += node.length;
+              }
+              node = node.nextSibling;
+              }
+              startOffset += selectedRange.startOffset;
+  
+              const storedNoteText = selection.toString();
+              const charCount = storedNoteText.length; // Counting characters
+              const BNdateTime = new Date().toISOString(); // Current date and time
+              const noteChapter = chapName; // Using the global variable
+  
+              // Retrieve existing bookNotes from local storage
+              let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+  
+              // New highlight object
+              const bookNote = {
+              book,
+              chapNo,
+              chapName,
+              chaptURL,
+              startContainer,
+              startOffset,
+              storedNoteText,
+              noteChapter,
+              charCount,
+              BNdateTime
+              };
+  
+              // Add the new highlight to the array
+              bookNotes.push(bookNote);
+  
+              // Save the updated array back to local storage
+              localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+  
+              // Log to console instead of alert
+              console.log('BookNote saved:', bookNote);
+          }
+  
+          e.target.title = "This quotation is saved in your Book Notes";
+          window.getSelection().removeAllRanges();
+          }
+      } else if (e.target.classList.contains(highlightClass)) {
+          setTimeout(() => removeHighlight(e), 1000);
+      }
+      }
 
 
 

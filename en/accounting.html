@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <HEAD>
-<title>Dedication | Tractatus Ayyew - Earthbook</title>
+<title>Eco Accounting | Tractatus Ayyew - Earthbook</title>
 <meta charset="UTF-8"> 
 
 
@@ -26,7 +26,6 @@ o               .        ___- -___                    .
 EARTHBOOK - An open source, Earth & Human Friendly Book format
 Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
  
-
 Landing page - version 1.2
 Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
 First EarthBook, the Tractatus Ayyew, published 22.12.22.
@@ -45,10 +44,10 @@ For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.e
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
 <!--<link rel="manifest" href="../favicons/site.webmanifest">-->
 
-<link rel="canonical" href="https://book.earthen.io/en/dedication.html"> 
-<link rel="alternate" href="https://book.earthen.io/en/dedication.html" hreflang="en" >
-<link rel="alternate" href="http://book.earthen.io/en/dedication.html" hreflang="x-default" >
-<link rel="alternate" href="https://book.earthen.io/fr/resumes.html" hreflang="fr" >
+<link rel="canonical" href="https://book.earthen.io/en/accounting.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/accounting.html" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/accounting.html" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/compte.html" hreflang="fr" >
 <!--
 <link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
 <link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
@@ -58,8 +57,8 @@ For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.e
 <!--BOOK META TAGS
 Ces balises seront cohérentes pour l'ensemble du livre-->
 
-<meta name="keywords" content="dedication, father, mother, thank, gratitude"> 
-<meta name="description" content="To our mothers and fathers...">
+<meta name="keywords" content="regen report, regen, regenerativity, report, ecological, accounting, carbon, co2, biodiversity, plastic, impact, disclosure, ecological accounting, eco accounting"> 
+<meta name="description" content="The carbon, plastic and biodiversity ecological accounting of this Earthbook's writing and publishing.">
 
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
@@ -70,21 +69,21 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:site_name" content="Tracatus Ayyew">
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
-<meta property="og:title"         content="Dedication - Tracatus Ayyew">
+<meta property="og:title"         content="Eco-Accounting - Tracatus Ayyew">
 <meta property="og:description"   content="To our mothers and fathers...">
 <meta property="og:image"         content="../covers/TA-cover-french-1200px.png">
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1492px" >
 <meta property="og:locale" content="en_EN" >
-<meta property="og:url" content="https://book.earthen.io/en/dedication.html">
+<meta property="og:url" content="https://book.earthen.io/en/accounting.html">
 
 <script>
      // Declare the global variables
      var book = "Appendix";
-    var chapNo = "2";
-    var chapName = "Dedication";
-    var chaptURL = "dedication.html"   // Declare the global variables
+    var chapNo = "3";
+    var chapName = "Accounting";
+    var chaptURL = "accounting.html"   // Declare the global variables
   
 
     if ('serviceWorker' in navigator) {
@@ -212,13 +211,54 @@ All the page components required to build this page-->
   }
 
   #ct-chapter-title {
+  font-size: 10vmin;
+  letter-spacing: 0px;
+    }
 
-      font-size: 10vmin;
-      letter-spacing: 2px;
-  }
 
+    .document-holder {
+      display:flex;
+      background: #80808026;
+      border-radius: 12px;
+      flex-direction:row;
+      border: 1px dashed #80808061;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
 
-.page-paragraph p {text-align: center !important;}
+    .doc-text-small {
+      font-family:'CooperLt';
+      text-align:left;
+      padding:0px 10px 10px 10px;
+      color: var(--drop-cap);
+      line-height: 1.3;
+    }
+
+    .doc-text-main {
+      font-family:'Mulish', sans-serif;
+      font-size:1.3em;
+      padding:10px;
+      text-align:left;
+      color: var(--text-color);
+    }
+
+    @media screen and (min-width: 701px) {
+      .doc-text-small {
+        font-size:1em;
+      }
+      .doc-text-main {
+        font-size:1.3em;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .doc-text-small {
+        font-size:0.7em;
+      }
+      .doc-text-main {
+        font-size:1em;
+      }
+    }
       
     
 </STYLE>
@@ -240,41 +280,66 @@ All the page components required to build this page-->
     <div id="ct-chapter-top">
     <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
     <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-            <div id="ct-chapter-title">Dedication</div>   
-            <div id="ct-book-title">Tractatus Ayyew</div>
-            <div id="ct-chap-location">An Earthen Ethics</div>
-            <div id="ct-word-count"><i>Appendix</i></div>
-        </div>
+      <div id="ct-chapter-title">Ecological Accounting</div>   
+      <div id="ct-book-title">Tractatus Ayyew</div>
+     <div id="ct-chap-location">Annual Regen Reports</div>
+      <div id="ct-word-count"><i>Appendix</i></div>
     </div>
+</div>
 
-    <div id="ct-chapt-graphic" class="background-000">
-        <div class="ct-chapter-quote"><i>
-            To our mothers and fathers...    
-        
-        </i>
-        </div>
-    </div>
+<!-- Page Title Section-->
+
+<div id="ct-chapt-graphic" class="background-000">
+<img src="../icons/eco.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+</div>
 
     <div id="up-arrow"></div>
 
     <div id="ct-main">
 
 
-    <!-- MAIN TEXT CONTENT of the Page
-    For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
-    -->
+      <div class="lead-page-paragraph"> 
 
-        <div class="page-paragraph" style="text-align:center;">
-        <p>who let us play in the forests and fields,</p>
-        
-        <p>tasting berries and climbing trees,</p>
-            
-            <p>loving the wild and learning its leaves.</p>
-            <br><br><br><br>
-        <div>
-
-
-    </div><!--Closes main content block-->
+        THE ecological impact of the printing, publishing and reading of the <i>Tractatus Ayyew</i> is tracked, accounted and disclosed.  
+      </div>
+    
+      <div class="page-paragraph">
+        <p>Download our annual Regeneral Reports here:
+      </p>
+      </div>
+      
+      
+      
+      <div class="document-holder">
+    
+          <div class="doc-image" style="width:fit-content; padding:10px">
+          <img src="../webp/impact-report-100px.webp">
+          </div>
+          
+          <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right: 20px;">
+            <div class="doc-text-main"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">Tracatus Ayyew Writing & Publishing</a></div>
+            <div class="doc-text-small"><a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank"><b>2021 Regen Report</b> | PDF |  554kb | Issued 12/02/2022</a></div>
+          </div>
+      </div>
+    
+      <div class="document-holder">
+          <div class="doc-image" style="width:fit-content; padding:10px">
+          <img src="../webp/impact-report-100px.webp">
+          </div>
+    
+        <div class="doc-texts" style="display:flex;flex-direction:column;justify-content:center;padding-right: 20px;">
+            <div class="doc-text-main"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" alt="Banner declaring our For-Earth intention">-->Tracatus Ayyew Writing & Publishing</div>
+            <div class="doc-text-small"><!--<a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank">--><b>2022 Regen Report</b> | PDF | Feb 2023 release pending</b></div>
+        </div>
+    
+      </div>
+    
+    
+      <br><br>
+    
+    
+      
+        </div><!--closes page text content-->
 
 
     <!--BOOKNOTES-CURTAIN-->
@@ -312,11 +377,11 @@ All the page components required to build this page-->
         <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
             <div class="next-section">
             <div class="next-sec">Next appendix :</div>
-            <div class="sec-name"><i>Accounting</i></div>
+            <div class="sec-name"><i>For-Earth Enterprise</i></div>
             </div>
         </div>
         <div class="footer-right">
-            <a href="accounting.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+            <a href="for-earth.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
         </div>
         </div>
 
