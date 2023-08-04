@@ -133,7 +133,6 @@ Must be updated for each page-->
 
   <div id="ct-chapt-graphic" class="background-000">
   <img src="../svgs/icon-for-earth.svg?v=2" style="width:35%; height:35%; margin:auto;  text-align:center">
-
   </div>
 
 

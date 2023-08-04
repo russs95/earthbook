@@ -142,7 +142,7 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
-<!--14--><script src="includes/booknotes-curtain.js" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
 
 
 <style>
@@ -254,19 +254,26 @@ All the page components required to build this page-->
 <!-- Page Title Section-->
 
 <div id="ct-chapt-graphic" class="background-000">
-    <img src="../svgs/icon-for-earth.svg?v=2" style="width:35; height:35; margin:auto;  text-align:center" alt="The for-Earth intention of our project">
+    <img src="../svgs/icon-for-earth.svg?v=2" style="width:45%;height:45%; margin:auto;  text-align:center" alt="The for-Earth intention of our project">
   
     </div>
   
   
   <div id="up-arrow"></div>
   <div id="ct-main">
-  
-  <!-- MAIN TEXT CONTENT of the Page
-    For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
-  -->
 
-  <div class="lead-page-paragraph"> 
+
+    <div id="chap-notice">
+        <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+        <div id="chap-notice-text">
+        💡  Looks like its your first time opening this book!  Before you get going, consider taking the quick <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="Learn more about what an Earthbook is">Earthbook features tour</span> and be sure to <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Adjust for your eyes">optimize ±</span> the page for your eyes.
+        </div>
+      </div>
+      
+  
+  <!-- MAIN TEXT CONTENT of the Page  -->
+
+  <div class="lead-page-paragraph" id="EN-4-4-000"> 
     The author's and Earthen.io hereby declare the for-Earth, not-for-profit intention of the enterprise of writing and publishng the <i>Tracatatus Ayyew - An Earthen Ethics</i>.
     </div>
     
@@ -277,7 +284,8 @@ All the page components required to build this page-->
       </p>
     
       </div>
-    
+    <br>
+
       <div style="text-align:center;">
     
       <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book" >
@@ -289,7 +297,7 @@ All the page components required to build this page-->
       <br>
     
       
-           <div id="line" style="border-style: dashed; border-width: 1px; margin-bottom: 30px; margin-top: 55px; width:100%; text-align:left;"></div>
+           <div id="line" style="border-style: dashed; border-width: 1px; margin-bottom: 30px; margin-top: 55px; width:100%; text-align:left;"></div><br>
     
         <div class="page-paragraph" style="font-size: smaller; font-family:'Mulish', sans-serif;">
             <p id="EN-4-4-01">The concept of a For-Earth enterprise is based on the five principles of Earthen Ethics developed within the <i>Tracatus Ayyew</i>.  Learn more about each concept:</p>
@@ -307,7 +315,7 @@ All the page components required to build this page-->
             <p id="EN-4-4-06"><span class="bullet"></span>  In <a href="unpublished" title="Not yet ready">Chapter 12</a> we develop the concept of ethical obligation of green enterprise to track and disclose ecological impacts through accounting.</p>
         </div>
 
-        <br><br> <br><br> <br><br>
+        <br><br> <br><br> <br><br><br><br>
         
       
         </div><!--closes page text content-->
