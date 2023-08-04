@@ -1,146 +1,146 @@
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
+  function scrollFunction() {
 
-  if ( document.body.scrollTop > 40 || document.documentElement.scrollTop > 40 ) {
-    
-    //AFTERmargin-top: -67px;
-    document.getElementById("earthbook-navbar").style.height = "60px";
-    document.getElementById("ct-chapter-title").style.fontSize = "1.0em";
-    document.getElementById("ct-book-title").style.fontSize = "0.66em";
-    document.getElementById("ct-book-title").style.marginTop = "0px";
-    document.getElementById("ct-chapter-top").style.marginTop = "-86px";    
-    document.getElementById("ct-chap-location").style.display = "none";
-    document.getElementById("ct-word-count").style.display = "none";
-    document.getElementById("book-header-logo").style.display = "none";
-    document.getElementById("ct-chapter-title").style.fontWeight = "bolder";
-    document.getElementById("settings-menu").style.opacity = "1";
-    document.getElementById("share-menu").style.opacity = "1";
-    document.getElementById("ct-chapter-top").style.height = "145px"; 
-    document.getElementById("ct-chapt-graphic").style.paddingTop = "50vh"; 
+  if ( window.scrollY > 40 || document.documentElement.scrollTop > 40 ) {
 
-  } else {
-    //BEFORE
-    document.getElementById("earthbook-navbar").style.height = "50vh";
-    document.getElementById("ct-chapter-title").style.fontSize = "";
-    document.getElementById("ct-book-title").style.fontSize = "";
-    document.getElementById("ct-chap-location").style.display = "block";
-    document.getElementById("ct-word-count").style.fontSize = "";
-    document.getElementById("ct-book-title").style.marginTop = "10px";
-    document.getElementById("ct-chapter-top").style.marginTop = "0px";
-    document.getElementById("ct-word-count").style.display = "block";
-    //
-    document.getElementById("book-header-logo").style.display = "none";
-    document.getElementById("settings-menu").style.opacity = "0.1";
-    document.getElementById("share-menu").style.opacity = "0.1";
-    document.getElementById("ct-chapter-top").style.height = "50vh"; 
-    document.getElementById("ct-chapt-graphic").style.paddingTop = "50vh"; 
+//AFTERmargin-top: -67px;
+document.getElementById("earthbook-navbar").style.height = "60px";
+document.getElementById("ct-chapter-title").style.fontSize = "1.0em";
+document.getElementById("ct-book-title").style.fontSize = "0.66em";
+document.getElementById("ct-book-title").style.marginTop = "0px";
+document.getElementById("ct-chapter-top").style.marginTop = "-86px";
+document.getElementById("ct-chap-location").style.display = "none";
+document.getElementById("ct-word-count").style.display = "none";
+document.getElementById("book-header-logo").style.display = "none";
+document.getElementById("ct-chapter-title").style.fontWeight = "bolder";
+document.getElementById("settings-menu").style.opacity = "1";
+document.getElementById("share-menu").style.opacity = "1";
+document.getElementById("ct-chapter-top").style.height = "145px";
+document.getElementById("ct-chapt-graphic").style.paddingTop = "50vh";
 
-  }
+} else {
+//BEFORE
+document.getElementById("earthbook-navbar").style.height = "50vh";
+document.getElementById("ct-chapter-title").style.fontSize = "";
+document.getElementById("ct-book-title").style.fontSize = "";
+document.getElementById("ct-chap-location").style.display = "block";
+document.getElementById("ct-word-count").style.fontSize = "";
+document.getElementById("ct-book-title").style.marginTop = "10px";
+document.getElementById("ct-chapter-top").style.marginTop = "0px";
+document.getElementById("ct-word-count").style.display = "block";
+//
+document.getElementById("book-header-logo").style.display = "none";
+document.getElementById("settings-menu").style.opacity = "0.1";
+document.getElementById("share-menu").style.opacity = "0.1";
+document.getElementById("ct-chapter-top").style.height = "50vh";
+document.getElementById("ct-chapt-graphic").style.paddingTop = "50vh";
+
 }
- 
+}
 
-function openFootnotes() {
-  var w = document.getElementById("footer-reveal-container");
-  var x = document.getElementById("footnotes-reveal");
-  var y = document.getElementById("footnotes-arrow");
-  var z = document.getElementById("footnotes-concealer");
 
-  
+  function openFootnotes() {
+let w = document.getElementById("footer-reveal-container");
+let x = document.getElementById("footnotes-reveal");
+let y = document.getElementById("footnotes-arrow");
+let z = document.getElementById("footnotes-concealer");
+
+
 
 
   if (x.style.height === "200px") {
-    w.style.height = "100%";
-    x.style.height = "100%";
-    x.style.marginBottom = "230px";
-    y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
-    y.style.backgroundSize = "contain";
-    z.style.opacity = "0";
-    
+w.style.height = "100%";
+x.style.height = "100%";
+x.style.marginBottom = "230px";
+y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
+y.style.backgroundSize = "contain";
+z.style.opacity = "0";
 
- 
-  
-  } else {
-    w.style.height = "10%";
-    x.style.height = "200px";
-    x.style.marginBottom = "50px";
-    y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
-    y.style.backgroundSize = "contain";
-    z.style.opacity = "1";
+
+
+
+} else {
+w.style.height = "10%";
+x.style.height = "200px";
+x.style.marginBottom = "50px";
+y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
+y.style.backgroundSize = "contain";
+z.style.opacity = "1";
 }
 }
 
 
-function openCode() {
-  var x = document.getElementById("footer-function-reveal-code");
-  var y = document.getElementById("code-down-arrow");
+  function openCode() {
+let x = document.getElementById("footer-function-reveal-code");
+let y = document.getElementById("code-down-arrow");
   if (x.style.opacity === "0") {
-    x.style.opacity = "1";
-    x.style.height = "130px";
-    y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
-    y.style.backgroundSize = "contain";
-  
-  } else {
-    x.style.opacity = "0";
-    x.style.height = "0px";
-    y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
-    y.style.backgroundSize = "contain";
+x.style.opacity = "1";
+x.style.height = "130px";
+y.style.background = "url(../icons/down-arrow.svg) no-repeat center";
+y.style.backgroundSize = "contain";
+
+} else {
+x.style.opacity = "0";
+x.style.height = "0px";
+y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
+y.style.backgroundSize = "contain";
 }
 }
 
 
 
-function openFooter2() {
-  var x = document.getElementById("footer-chapter");
-  var z = document.getElementById("footer-arrow");
+  function openFooter2() {
+let x = document.getElementById("footer-chapter");
+let z = document.getElementById("footer-arrow");
   if (x.style.marginBottom === "0px") {
-    x.style.marginBottom = "145px";
-   z.style.background = "url(../icons/up-arrow.svg) no-repeat center";
-  z.style.backgroundSize = "contain";
- 
-  } else {
-    x.style.marginBottom = "0px";
-  z.style.background = "url(../icons/down-arrow.svg) no-repeat center";
-  z.style.backgroundSize = "contain";
+x.style.marginBottom = "145px";
+z.style.background = "url(../icons/up-arrow.svg) no-repeat center";
+z.style.backgroundSize = "contain";
+
+} else {
+x.style.marginBottom = "0px";
+z.style.background = "url(../icons/down-arrow.svg) no-repeat center";
+z.style.backgroundSize = "contain";
 
 }
 }
 
 
   function closeWelcomeNotice() {
-    document.getElementById("chap-notice-text").style.display = "none";
-    var noticeDiv = document.getElementById("chap-notice");
-    var height = noticeDiv.offsetHeight;
-    var intervalId = setInterval(function() {
-      height -= 10; // Adjust the decrement value to control the speed of the animation
-      noticeDiv.style.height = height + "px";
-      if (height <= 0) {
-        clearInterval(intervalId);
-        noticeDiv.style.display = "none";
-        localStorage.setItem("hideNotice", "true"); // Store the choice in localStorage
-      }
-    }, 10); // Adjust the interval value to control the smoothness of the animation
-  }
+document.getElementById("chap-notice-text").style.display = "none";
+let noticeDiv = document.getElementById("chap-notice");
+let height = noticeDiv.offsetHeight;
+  let intervalId = setInterval(function() {
+height -= 10; // Adjust the decrement value to control the speed of the animation
+noticeDiv.style.height = height + "px";
+  if (height <= 0) {
+clearInterval(intervalId);
+noticeDiv.style.display = "none";
+localStorage.setItem("hideNotice", "true"); // Store the choice in localStorage
+}
+}, 10); // Adjust the interval value to control the smoothness of the animation
+}
 
   window.addEventListener("DOMContentLoaded", function() {
-    var hideNotice = localStorage.getItem("hideNotice");
-    if (hideNotice === "true") {
-      document.getElementById("chap-notice").style.display = "none";
-    }
-  });
+let hideNotice = localStorage.getItem("hideNotice");
+  if (hideNotice === "true") {
+document.getElementById("chap-notice").style.display = "none";
+}
+});
 
 
 /*
-function closeWelcomeNotice() {
-  document.getElementById("chap-notice").style.display = "none";
-  localStorage.setItem("hideNotice", "true"); // Store the choice in localStorage
+  function closeWelcomeNotice() {
+document.getElementById("chap-notice").style.display = "none";
+localStorage.setItem("hideNotice", "true"); // Store the choice in localStorage
 }
 
-window.addEventListener("DOMContentLoaded", function() {
-  var hideNotice = localStorage.getItem("hideNotice");
+  window.addEventListener("DOMContentLoaded", function() {
+let hideNotice = localStorage.getItem("hideNotice");
   if (hideNotice === "true") {
-    document.getElementById("chap-notice").style.display = "none";
-  }
+document.getElementById("chap-notice").style.display = "none";
+}
 });
 */
 
@@ -150,87 +150,87 @@ const highlightClass = 'highlight';
 const preHighlightClass = 'pre-highlight';
 let selectedRange;
 
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
 
   function getSelectedRange() {
-    if (window.getSelection) {
-      const sel = window.getSelection();
-      if (sel.rangeCount) {
-        return sel.getRangeAt(0);
-      }
-    } else if (document.selection && document.selection.createRange) {
-      return document.selection.createRange();
-    }
-    return null;
-  }
+  if (window.getSelection) {
+const sel = window.getSelection();
+  if (sel.rangeCount) {
+return sel.getRangeAt(0);
+}
+} else if (document.selection && document.selection.createRange) {
+return document.selection.createRange();
+}
+return null;
+}
 
   function clearSelection() {
-    if (window.getSelection) {
-      window.getSelection().removeAllRanges();
-    } else if (document.selection) {
-      document.selection.empty();
-    }
-  }
+  if (window.getSelection) {
+window.getSelection().removeAllRanges();
+} else if (document.selection) {
+document.selection.empty();
+}
+}
 
   function handleSelection() {
-    selectedRange = getSelectedRange();
-    if (selectedRange && selectedRange.toString().trim().length > 0) {
-      const span = document.createElement('span');
-      span.style.cursor = 'pointer';
-      span.classList.add(preHighlightClass);
-      span.title = "Click this text to highlight and save.";
-      selectedRange.surroundContents(span);
-      clearSelection();
-    }
-  }
+selectedRange = getSelectedRange();
+  if (selectedRange && selectedRange.toString().trim().length > 0) {
+const span = document.createElement('span');
+span.style.cursor = 'pointer';
+span.classList.add(preHighlightClass);
+span.title = "Click this text to highlight and save.";
+selectedRange.surroundContents(span);
+clearSelection();
+}
+}
 
-  document.addEventListener('mouseup', handleSelection);
-  document.addEventListener('touchend', handleSelection);
+document.addEventListener('mouseup', handleSelection);
+document.addEventListener('touchend', handleSelection);
 
   function handleHighlightEvent(e) {
-    if (e.target.classList.contains(preHighlightClass) || e.target.classList.contains(highlightClass)) {
-      e.target.classList.remove(preHighlightClass);
-      e.target.classList.toggle(highlightClass);
+  if (e.target.classList.contains(preHighlightClass) || e.target.classList.contains(highlightClass)) {
+e.target.classList.remove(preHighlightClass);
+e.target.classList.toggle(highlightClass);
 
-      if (e.target.classList.contains(highlightClass)) {
-        // Rest of the highlight logic
-        // ...
+  if (e.target.classList.contains(highlightClass)) {
+// Rest of the highlight logic
+// ...
 
-        e.target.title = "This quotation is saved in your Book Notes";
-        window.getSelection().removeAllRanges();
-      } else {
-        setTimeout(() => removeHighlight(e), 1000);
-      }
-    }
-  }
-
-
+e.target.title = "This quotation is saved in your Book Notes";
+window.getSelection().removeAllRanges();
+} else {
+setTimeout(() => removeHighlight(e), 1000);
+}
+}
+}
 
 
-  // Add both click and touchend listeners
-  document.addEventListener('click', handleHighlightEvent);
-  document.addEventListener('touchend', handleHighlightEvent);
+
+
+// Add both click and touchend listeners
+document.addEventListener('click', handleHighlightEvent);
+document.addEventListener('touchend', handleHighlightEvent);
 
   function removeHighlight(e) {
 
 // Define a one-time click handler
-function handleClick(event) {
-    if (event.target.classList.contains(highlightClass)) {
-    const text = event.target.textContent; // Assuming you want to replace the element with its text content
-    const parentElementId = event.target.parentNode.id;
-    const textLength = text.length;
+  function handleClick(event) {
+  if (event.target.classList.contains(highlightClass)) {
+const text = event.target.textContent; // Assuming you want to replace the element with its text content
+const parentElementId = event.target.parentNode.id;
+const textLength = text.length;
 
-    event.target.replaceWith(document.createTextNode(text)); // Remove the highlight
+event.target.replaceWith(document.createTextNode(text)); // Remove the highlight
 
-    // Remove the corresponding book note from the array
-    let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-    bookNotes = bookNotes.filter(note => {
-        return !(note.startContainer === parentElementId && note.storedNoteText.length === textLength);
-    });
+// Remove the corresponding book note from the array
+let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+  bookNotes = bookNotes.filter(note => {
+return !(note.startContainer === parentElementId && note.storedNoteText.length === textLength);
+});
 
-    localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-    // Since we're using the `once` option, there's no need to manually remove the listener
-    }
+localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+// Since we're using the `once` option, there's no need to manually remove the listener
+}
 }
 // Add the one-time click handler with the `once` option
 document.addEventListener('click', handleClick, { once: true });
@@ -239,7 +239,7 @@ document.addEventListener('touchend', handleClick);
 
 });
 
-function bookNotesCreator() {
+  function bookNotesCreator() {
 // Retrieve existing bookNotes from local storage
 const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
@@ -250,7 +250,7 @@ const bookNotesListDiv = document.getElementById('book-notes-list');
 bookNotesListDiv.innerHTML = '';
 
 // Iterate through each book note and create the HTML structure
-bookNotes.forEach((bookNote, index) => {
+  bookNotes.forEach((bookNote, index) => {
 const bookNoteDiv = document.createElement('div');
 bookNoteDiv.id = `booknote-${index + 1}`;
 
@@ -266,11 +266,11 @@ wordCountDiv.className = 'word-count-tc';
 
 const chapterLink = document.createElement('a');
 chapterLink.href = bookNote.chaptURL;
-chapterLink.innerHTML = `HELLO<i>${bookNote.chapName}</i><br>
+chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
 <span style="font-size:small;">Chapter ${bookNote.chapNo}
 | ${bookNote.book}<br>
 ${bookNote.charCount} characters<br>
-Saved ${bookNote.BNdateTime}</span>`;
+${bookNote.BNdateTime}</span>`;
 
 wordCountDiv.appendChild(chapterLink);
 
@@ -284,57 +284,57 @@ bookNotesListDiv.appendChild(bookNoteDiv);
 }
 
 
-function recreateSelection() {
+  function recreateSelection() {
 const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
-bookNotes.forEach(note => {
+  bookNotes.forEach(note => {
 const { storedNoteText, startContainer, startOffset } = note;
 
-if (storedNoteText && startContainer && startOffset !== null) {
-  // Find the element by the saved ID
-  const container = document.getElementById(startContainer);
+  if (storedNoteText && startContainer && startOffset !== null) {
+// Find the element by the saved ID
+const container = document.getElementById(startContainer);
 
   if (container) {
-    // Traverse through text nodes to find the correct position
-    let node = container.firstChild;
-    let currentOffset = 0;
+// Traverse through text nodes to find the correct position
+let node = container.firstChild;
+let currentOffset = 0;
 
-    while (node) {
-      if (node.nodeType === Node.TEXT_NODE) {
-        if (currentOffset + node.length >= startOffset) {
-          break;
-        }
-        currentOffset += node.length;
-      }
-      node = node.nextSibling;
-    }
+  while (node) {
+  if (node.nodeType === Node.TEXT_NODE) {
+  if (currentOffset + node.length >= startOffset) {
+break;
+}
+currentOffset += node.length;
+}
+node = node.nextSibling;
+}
 
-    if (node) {
-      const range = document.createRange();
-      range.setStart(node, startOffset - currentOffset);
-      range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
+  if (node) {
+const range = document.createRange();
+range.setStart(node, startOffset - currentOffset);
+range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
 
-      const span = document.createElement('span');
-      span.className = 'highlight';
-      span.textContent = storedNoteText;
+const span = document.createElement('span');
+span.className = 'highlight';
+span.textContent = storedNoteText;
 
-      range.deleteContents();
-      range.insertNode(span);
+range.deleteContents();
+range.insertNode(span);
 
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      selection.collapseToEnd();
-    } else {
-      alert('Stored text not found');
-    }
-  }
+const selection = window.getSelection();
+selection.removeAllRanges();
+selection.addRange(range);
+selection.collapseToEnd();
+} else {
+alert('Stored text not found');
+}
+}
 }
 });
 }
 
 // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-window.addEventListener('load', function () {
+  window.addEventListener('load', function () {
 // showAlertWithCharacterCount();
 recreateSelection();
 });
