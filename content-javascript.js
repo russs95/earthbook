@@ -146,73 +146,129 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 
-const highlightClass = 'highlight';
-const preHighlightClass = 'pre-highlight';
+
+let highlightClass = 'highlight';
+let preHighlightClass = 'pre-highlight';
 let selectedRange;
 
-document.addEventListener("DOMContentLoaded", function () {
 
-  function getSelectedRange() {
-    if (window.getSelection) {
-      const sel = window.getSelection();
-      if (sel.rangeCount) {
-        return sel.getRangeAt(0);
+document.addEventListener("DOMContentLoaded", function() {
+
+
+function getSelectedRange() {
+        if (window.getSelection) {
+            let sel = window.getSelection();
+            if (sel.rangeCount) {
+                return sel.getRangeAt(0);
+            }
+        } else if (document.selection && document.selection.createRange) {
+            return document.selection.createRange();
+        }
+        return null;
+    }
+
+function clearSelection() {
+        if (window.getSelection) {
+            window.getSelection().removeAllRanges();
+        } else if (document.selection) {
+            document.selection.empty();
+        }
+    }
+
+
+    function handleSelection() {
+      selectedRange = getSelectedRange();
+      if (selectedRange && selectedRange.toString().trim().length > 0) {
+          let span = document.createElement('span');
+          span.style.cursor = 'pointer';
+          span.classList.add(preHighlightClass);
+          span.title = "Click this text to highlight and save.";
+          selectedRange.surroundContents(span);
+          clearSelection();
       }
-    } else if (document.selection && document.selection.createRange) {
-      return document.selection.createRange();
-    }
-    return null;
-  }
-
-  function clearSelection() {
-    if (window.getSelection) {
-      window.getSelection().removeAllRanges();
-    } else if (document.selection) {
-      document.selection.empty();
-    }
-  }
-
-  function handleSelection() {
-    selectedRange = getSelectedRange();
-    if (selectedRange && selectedRange.toString().trim().length > 0) {
-      const span = document.createElement('span');
-      span.style.cursor = 'pointer';
-      span.classList.add(preHighlightClass);
-      span.title = "Click this text to highlight and save.";
-      selectedRange.surroundContents(span);
-      clearSelection();
-    }
-  }
-
-  document.addEventListener('mouseup', handleSelection);
-  document.addEventListener('touchend', handleSelection);
-
-  function handleHighlightEvent(e) {
-    if (e.target.classList.contains(preHighlightClass) || e.target.classList.contains(highlightClass)) {
-      e.target.classList.remove(preHighlightClass);
-      e.target.classList.toggle(highlightClass);
-
-      if (e.target.classList.contains(highlightClass)) {
-        // Rest of the highlight logic
-        // ...
-
-        e.target.title = "This quotation is saved in your Book Notes";
-        window.getSelection().removeAllRanges();
-      } else {
-        setTimeout(() => removeHighlight(e), 1000);
       }
-    }
-  }
+      document.addEventListener('mouseup', handleSelection);
+      document.addEventListener('touchend', handleSelection);
+  
+      function handleHighlightEvent(e) {
+      if (e.target.classList.contains(preHighlightClass)) {
+          if (e.target.classList.contains(highlightClass)) {
+          e.target.classList.remove(preHighlightClass);
+          } else {
+          e.target.classList.add(highlightClass);
+          e.target.classList.remove(preHighlightClass);
+  
+          const range = document.createRange();
+          range.selectNodeContents(e.target);
+          const selection = window.getSelection();
+          selection.removeAllRanges();
+          selection.addRange(range);
+  
+          if (selection.rangeCount > 0) {
+              const selectedRange = selection.getRangeAt(0);
+              const startContainer = selectedRange.startContainer.parentNode.id;
+  
+              // Calculate startOffset considering only text nodes inside the selected paragraph
+              let startOffset = 0;
+              let node = selectedRange.startContainer.parentNode.firstChild;
+              while (node && node !== selectedRange.startContainer) {
+              if (node.nodeType === Node.TEXT_NODE) {
+                  startOffset += node.length;
+              }
+              node = node.nextSibling;
+              }
+              startOffset += selectedRange.startOffset;
+  
+              const storedNoteText = selection.toString();
+              const charCount = storedNoteText.length; // Counting characters
+              const BNdateTime = new Date().toISOString(); // Current date and time
+              const noteChapter = chapName; // Using the global variable
+  
+              // Retrieve existing bookNotes from local storage
+              let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+  
+              // New highlight object
+              const bookNote = {
+              book,
+              chapNo,
+              chapName,
+              chaptURL,
+              startContainer,
+              startOffset,
+              storedNoteText,
+              noteChapter,
+              charCount,
+              BNdateTime
+              };
+  
+              // Add the new highlight to the array
+              bookNotes.push(bookNote);
+  
+              // Save the updated array back to local storage
+              localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+  
+              // Log to console instead of alert
+              console.log('BookNote saved:', bookNote);
+          }
+  
+          e.target.title = "This quotation is saved in your Book Notes";
+          window.getSelection().removeAllRanges();
+          }
+      } else if (e.target.classList.contains(highlightClass)) {
+          setTimeout(() => removeHighlight(e), 1000);
+      }
+      }
+
+
+
+// Add both click and touchend listeners
+document.addEventListener('click', handleHighlightEvent);
+document.addEventListener('touchend', handleHighlightEvent);
 
 
 
 
-  // Add both click and touchend listeners
-  document.addEventListener('click', handleHighlightEvent);
-  document.addEventListener('touchend', handleHighlightEvent);
-
-  function removeHighlight(e) {
-
+function removeHighlight(e) {
 // Define a one-time click handler
 function handleClick(event) {
     if (event.target.classList.contains(highlightClass)) {
@@ -270,7 +326,7 @@ chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
 <span style="font-size:small;">Chapter ${bookNote.chapNo}
 | ${bookNote.book}<br>
 ${bookNote.charCount} characters<br>
-${bookNote.BNdateTime}</span>`;
+Saved ${bookNote.BNdateTime}</span>`;
 
 wordCountDiv.appendChild(chapterLink);
 
