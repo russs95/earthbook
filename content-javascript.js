@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener('touchend', handleHighlightEvent);
 
   function removeHighlight(e) {
-    
+
 // Define a one-time click handler
 function handleClick(event) {
     if (event.target.classList.contains(highlightClass)) {
@@ -266,7 +266,7 @@ wordCountDiv.className = 'word-count-tc';
 
 const chapterLink = document.createElement('a');
 chapterLink.href = bookNote.chaptURL;
-chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
+chapterLink.innerHTML = `HELLO<i>${bookNote.chapName}</i><br>
 <span style="font-size:small;">Chapter ${bookNote.chapNo}
 | ${bookNote.book}<br>
 ${bookNote.charCount} characters<br>
