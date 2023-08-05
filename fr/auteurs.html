@@ -75,13 +75,15 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1492px" >
-<meta property="og:locale" content="en_EN" >
+<meta property="og:locale" content="fr_FR" >
 <meta property="og:url" content="https://book.earthen.io/fr/auteurs.html">
 
 <script>
-      // Declare the global variables
-    var chapNo = "Annexe";
-    var chapName = "Les Auteurs";
+    // Declare the global variables
+    var book = "Annexe";
+    var chapNo = "7";
+    var chapName = "les Auteurs";
+    var chaptURL = "auteurs.html" 
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -139,7 +141,10 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+
 <style>
+
 
 
 
@@ -297,6 +302,9 @@ All the page components required to build this page-->
 
 </div><!--Closes main content block-->
 
+
+<!--BLOOKPLATE-CURTAIN-->
+<bookplate-curtain></search-curtain>
 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
