@@ -334,7 +334,7 @@ wordCountDiv.className = 'word-count-tc';
 const chapterLink = document.createElement('a');
 chapterLink.href = bookNote.chaptURL;
 chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
-<span style="font-size:small;">${bookNote.book}, Chapt. ${bookNote.chapNo}<br>
+<span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
 ${bookNote.charCount} characters<br>
 ${bookNote.BNdateTime}</span>`;
 
@@ -441,11 +441,12 @@ function resetBookNotes() {
   instructionBnDiv.textContent = 'Highlight then click text in the Earthbook to save it to your Booknotes';
 }
 
-
 function updateBNResetButton() {
   // Check if there are any entries in the bookNotes array
   const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
   const hasBookNotes = bookNotes.length > 0;
+ alert('Hi');
+  console.log('Has book notes:', hasBookNotes);
 
   if (!hasBookNotes) {
     // Clear the content of the instruction-bn div
@@ -457,3 +458,5 @@ function updateBNResetButton() {
     resetSettingsBnDiv.textContent = '⟲ Clear All BookNotes';
   }
 }
+
+
