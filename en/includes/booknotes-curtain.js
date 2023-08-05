@@ -29,7 +29,7 @@ class bookNotes extends HTMLElement {
     </div>
 
     <button id="reset-settings" onclick="resetBookNotes()" style="width: 200px;
-    margin: 30px auto 50px auto; cursor:pointer; padding:6px;">⟲ Reset BookNotes + Settings.</button>
+    margin: 30px auto 50px auto; cursor:pointer; padding:6px;">⟲ Clear All BookNotes</button>
 
 
     <div class="tc-button-row">

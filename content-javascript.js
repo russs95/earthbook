@@ -323,8 +323,7 @@ wordCountDiv.className = 'word-count-tc';
 const chapterLink = document.createElement('a');
 chapterLink.href = bookNote.chaptURL;
 chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
-<span style="font-size:small;">Chapter ${bookNote.chapNo}
-| ${bookNote.book}<br>
+<span style="font-size:small;">Chapter ${bookNote.chapNo}${bookNote.book}<br>
 ${bookNote.charCount} characters<br>
 ${bookNote.BNdateTime}</span>`;
 
@@ -404,7 +403,6 @@ window.addEventListener('load', function () {
 recreateSelection();
 });
 
-
 function resetBookNotes() {
   // Clear the booknotes array from local storage
   localStorage.removeItem('bookNotes');
@@ -413,8 +411,12 @@ function resetBookNotes() {
   const bookNotesListDiv = document.getElementById('book-notes-list');
   bookNotesListDiv.innerHTML = '';
 
-  // Remove the .highlight class from all divs on the page
-  const allDivs = document.querySelectorAll('div');
-  allDivs.forEach(div => div.classList.remove('highlight'));
+  // Remove the span formatting from all spans with class "highlight"
+  const allHighlightSpans = document.querySelectorAll('span.highlight');
+  allHighlightSpans.forEach(span => {
+    const textNode = document.createTextNode(span.textContent);
+    span.parentNode.replaceChild(textNode, span);
+  });
 }
+
 
