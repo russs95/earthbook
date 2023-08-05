@@ -349,6 +349,7 @@ bookNotesListDiv.appendChild(bookNoteDiv);
 });
 }
 
+
 function recreateSelection() {
   const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
@@ -436,18 +437,23 @@ function resetBookNotes() {
   resetSettingsBnDiv.textContent = 'No BookNotes saved';
 
   // Update the text inside the instruction-bn div
-  const instructionBnDiv = document.getElementById('instruction-bn');
+  const instructionBnDiv = document.getElementById('instructions-bn');
   instructionBnDiv.textContent = 'Highlight then click text in the Earthbook to save it to your Booknotes';
 }
 
 
-
 function updateBNResetButton() {
-  // Clear the content of the instruction-bn div
-  const instructionBnDiv = document.getElementById('instructions-bn');
-  instructionBnDiv.textContent = '';
+  // Check if there are any entries in the bookNotes array
+  const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+  const hasBookNotes = bookNotes.length > 0;
 
-  // Add the text "⟲ Clear All BookNotes" to the reset-settings-bn div
-  const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
-  resetSettingsBnDiv.textContent = '⟲ Clear All BookNotes';
+  if (!hasBookNotes) {
+    // Clear the content of the instruction-bn div
+    const instructionBnDiv = document.getElementById('instructions-bn');
+    instructionBnDiv.textContent = '';
+
+    // Add the text "⟲ Clear All BookNotes" to the reset-settings-bn div
+    const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
+    resetSettingsBnDiv.textContent = '⟲ Clear All BookNotes';
+  }
 }
