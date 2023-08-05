@@ -75,13 +75,16 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1492px" >
-<meta property="og:locale" content="en_EN" >
+<meta property="og:locale" content="fr_FR" >
 <meta property="og:url" content="https://book.earthen.io/fr/publication.html">
 
 <script>
-      // Declare the global variables
-    var chapNo = "Annexe";
-    var chapName = "La Publication";
+          // Declare the global variables
+          var book = "Annex";
+    var chapNo = "6";
+    var chapName = "La publication";
+    var chaptURL = "publication.html"   // Declare the global variables
+  
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -139,6 +142,8 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+
 <style>
 
 
@@ -280,7 +285,7 @@ All the page components required to build this page-->
   </div>
 </div>
 
-<div class="lead-page-paragraph" id="p0">
+<div class="lead-page-paragraph" id="FR-4-6-00">
   
     LE TRACTATUS AYYEW a été rédigé et publié à l'aide de matériel et de logiciels 100 % open source développés par des entreprises à but non lucratif. Écrit en utilisant <a href="https://www.libreoffice.org/" target="_blank">Libre Office</a>, en utilisant un <a href="https://puri.sm/" target=" _blank">Ordinateur portable Purism Librem 13</a> exécutant <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> et un <a href="https://frame. work/" target="_blank">Ordinateur portable Framework</a> exécutant <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>. Les fichiers cloud d'Earthbook pour l'écriture et tous les fichiers publiés finaux sont hébergés sur un serveur Ubuntu exécutant <a href="https://nextcloud.com" target="_blank">NextCloud</a>.
    
@@ -288,12 +293,12 @@ All the page components required to build this page-->
    
     <div class="page-paragraphe">
    
-      <p id="p1">Le livre est en vente sur la <a href="https://gobrik.com/go.php#regen" target="_blank">boutique GoBrik</a> où sa vente en Brikcoins correspond directement au séquestration du plastique hors de la biosphère.<p>
+      <p id="FR-4-6-01">Le livre est en vente sur la <a href="https://gobrik.com/go.php#regen" target="_blank">boutique GoBrik</a> où sa vente en Brikcoins correspond directement au séquestration du plastique hors de la biosphère.<p>
    
-       <p id="p2">Le livre est composé en Cooper LT Light et Regular par Oswald Cooper et Bitstream ainsi qu'en Mulish Light & Regular par Vernon Adams, Cyreal, Jacques Le Bailly.
+       <p id="FR-4-6-02">Le livre est composé en Cooper LT Light et Regular par Oswald Cooper et Bitstream ainsi qu'en Mulish Light & Regular par Vernon Adams, Cyreal, Jacques Le Bailly.
       </p>
    
-      <p id="p3">L'entreprise qui publie le Tracatus Ayyew est <a href="pour-terre.html">for-Earth</a>. Cela signifie que nous divulguons notre <a href="compte.html" target="_blank">comptabilité écologique</a> dans les rapports régénératifs annuels.</p>
+      <p id="FR-4-6-03">L'entreprise qui publie le Tracatus Ayyew est <a href="pour-terre.html">for-Earth</a>. Cela signifie que nous divulguons notre <a href="compte.html" target="_blank">comptabilité écologique</a> dans les rapports régénératifs annuels.</p>
    
       <br><br><br><br>
         </div><!--ferme le contenu du texte de la page-->
@@ -305,6 +310,9 @@ All the page components required to build this page-->
 
 </div><!--Closes main content block-->
 
+
+<!--SEARCH-CURTAIN-->
+<bookplate-curtain></bookplate-curtain>
 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
