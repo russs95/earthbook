@@ -29,8 +29,8 @@ class bookNotes extends HTMLElement {
     </div>
 
         <div><button id="reset-settings-bn" onclick="resetBookNotes()" style="width: 200px;
-        margin: 30px auto 50px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
-        <div id="instructions-bn" style="font-family:Mulish;color:grey;font-size:x-small;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
+        margin: 30px auto 20px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
+        <div id="instructions-bn" style="font-family:Mulish;color:grey;font-size:small;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
     </div>
 
     <div class="tc-button-row">
