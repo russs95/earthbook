@@ -339,58 +339,82 @@ bookNotesListDiv.appendChild(bookNoteDiv);
 });
 }
 
-
 function recreateSelection() {
-const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+  const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
-bookNotes.forEach(note => {
-const { storedNoteText, startContainer, startOffset } = note;
+  bookNotes.forEach(note => {
+    const { storedNoteText, startContainer, startOffset } = note;
 
-if (storedNoteText && startContainer && startOffset !== null) {
-  // Find the element by the saved ID
-  const container = document.getElementById(startContainer);
+    if (storedNoteText && startContainer && startOffset !== null) {
+      try {
+        // Find the element by the saved ID
+        const container = document.getElementById(startContainer);
 
-  if (container) {
-    // Traverse through text nodes to find the correct position
-    let node = container.firstChild;
-    let currentOffset = 0;
+        if (container) {
+          // Traverse through text nodes to find the correct position
+          let node = container.firstChild;
+          let currentOffset = 0;
 
-    while (node) {
-      if (node.nodeType === Node.TEXT_NODE) {
-        if (currentOffset + node.length >= startOffset) {
-          break;
+          while (node) {
+            if (node.nodeType === Node.TEXT_NODE) {
+              if (currentOffset + node.length >= startOffset) {
+                break;
+              }
+              currentOffset += node.length;
+            }
+            node = node.nextSibling;
+          }
+
+          if (node) {
+            const range = document.createRange();
+            range.setStart(node, startOffset - currentOffset);
+            range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
+
+            const span = document.createElement('span');
+            span.className = 'highlight';
+            span.textContent = storedNoteText;
+
+            range.deleteContents();
+            range.insertNode(span);
+
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            selection.collapseToEnd();
+          } else {
+            console.error('Error: Stored text not found for the following book note:', note);
+          }
+        } else {
+          console.error('Error: Container element not found for the following book note:', note);
         }
-        currentOffset += node.length;
+      } catch (err) {
+        console.error('An error occurred while recreating selection for the following book note:', note);
+        console.error(err);
       }
-      node = node.nextSibling;
-    }
-
-    if (node) {
-      const range = document.createRange();
-      range.setStart(node, startOffset - currentOffset);
-      range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
-
-      const span = document.createElement('span');
-      span.className = 'highlight';
-      span.textContent = storedNoteText;
-
-      range.deleteContents();
-      range.insertNode(span);
-
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      selection.collapseToEnd();
     } else {
-      alert('Stored text not found');
+      console.warn('Warning: Incomplete book note data. Ignoring the following book note:', note);
     }
-  }
+  });
 }
-});
-}
+
 
 // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
 window.addEventListener('load', function () {
 // showAlertWithCharacterCount();
 recreateSelection();
 });
+
+
+function resetBookNotes() {
+  // Clear the booknotes array from local storage
+  localStorage.removeItem('bookNotes');
+
+  // Clear the content of the book-notes-list div
+  const bookNotesListDiv = document.getElementById('book-notes-list');
+  bookNotesListDiv.innerHTML = '';
+
+  // Remove the .highlight class from all divs on the page
+  const allDivs = document.querySelectorAll('div');
+  allDivs.forEach(div => div.classList.remove('highlight'));
+}
+
