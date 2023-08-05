@@ -28,10 +28,10 @@ class bookNotes extends HTMLElement {
 
     </div>
 
-    <button id="reset-settings-bn" onclick="resetBookNotes()" style="width: 200px;
-    margin: 30px auto 50px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
-    <div id="instruction-bn" style="color:grey;font-size:xx-small;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
-
+        <div><button id="reset-settings-bn" onclick="resetBookNotes()" style="width: 200px;
+        margin: 30px auto 50px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
+        <div id="instructions-bn" style="font-family:Mulish;color:grey;font-size:x-small;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
+    </div>
 
     <div class="tc-button-row">
         <a href="index.html" style="height: 24px; flex-grow: 1"><div id="tour-btn" class="action-btn" ><i style="background-image: url(../icons/home.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i></div></a>
