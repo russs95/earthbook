@@ -102,23 +102,3 @@ function showFRTranslationAlert() {
 }
 
 
-
-
-function reset2Default() {
-  localStorage.clear();
-  const brightness = 100;
-  const contrast = 100;
-  const sepia = 0;
-  const userSetFontSize = 16;
-  const navbarHeight = 60;
-
-  document.getElementById("brightness-range-scale").value = brightness;
-  document.getElementById("contrast-range-scale").value = contrast;
-  document.getElementById("sepia-range-scale").value = sepia;
-  document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
-
-  //adjustFontSize('accessibility-plugin-ac', 'normal');
-  document.getElementById('earthbook-navbar').style.minHeight = `${navbarHeight}px`;
-
-  document.getElementById("reset-settings").innerHTML = "&#10003; Settings Reset";
-}

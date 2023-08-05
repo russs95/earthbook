@@ -19,9 +19,9 @@ class SettingsCurtain extends HTMLElement {
                   <div class="language-selector">EN</div></a>
   
                 
-                  <a href="#" class="language-selector" title="Désolé, pas encore traduit !" aria-label="Désolé, pas encore traduit !" onclick="showFRTranslationAlert()">FR</a>
+                  <a href="index.html" class="language-selector" title="Désolé, pas encore traduit !" aria-label="Désolé, pas encore traduit !" onclick="showFRTranslationAlert()">FR</a>
   
-                  <a href="#" class="language-selector" title="Désolé, pas encore traduit !" aria-label="Indonésien non actif" onclick="showIDTranslationAlert()">IN</a>
+                  <a href="#" class="language-selector" title="Maf! Belum di terjamakan!" aria-label="Maf! Belum di terjamakan!" onclick="showIDTranslationAlert()">IN</a>
   
               </div>
   
@@ -87,36 +87,9 @@ customElements.define('settings-curtain', SettingsCurtain);
     alert("Maaf, belum diterjemahkan! But we're working on it.");
   }
 
-    // Function to show the alert message with a clickable URL
-function showFRTranslationAlert() {
-  const url = "https://book.earthen.io/books/Tractatus-Ayyew%20_d%E2%80%99une-%C3%A9thique%20terrestre_|_Livre%20Premier_|_Angway-&-Maier.pdf";
-  const message = `Désolé! Les versions EarthBook et EBook du Tractatus Ayyew ne sont pas encore prêtes. Cependant, vous pouvez télécharger la version PDF en clickant OK...`;
-  if (window.confirm(message)) {
-    window.location.href = url;
-  }
-}
+ 
 
 
-
-
-function reset2Default() {
-    localStorage.clear();
-    const brightness = 100;
-    const contrast = 100;
-    const sepia = 0;
-    const userSetFontSize = 16;
-    const navbarHeight = 60;
-  
-    document.getElementById("brightness-range-scale").value = brightness;
-    document.getElementById("contrast-range-scale").value = contrast;
-    document.getElementById("sepia-range-scale").value = sepia;
-    document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
-  
-    //adjustFontSize('accessibility-plugin-ac', 'normal');
-    document.getElementById('earthbook-navbar').style.minHeight = `${navbarHeight}px`;
-  
-    document.getElementById("reset-settings").innerHTML = "&#10003; Paramètres réinitialisés";
-  }
 
 
   
