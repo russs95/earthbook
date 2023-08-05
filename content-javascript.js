@@ -445,10 +445,9 @@ function updateBNResetButton() {
   // Check if there are any entries in the bookNotes array
   const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
   const hasBookNotes = bookNotes.length > 0;
- alert('Hi');
   console.log('Has book notes:', hasBookNotes);
 
-  if (!hasBookNotes) {
+  if (hasBookNotes) {
     // Clear the content of the instruction-bn div
     const instructionBnDiv = document.getElementById('instructions-bn');
     instructionBnDiv.textContent = '';
@@ -458,5 +457,4 @@ function updateBNResetButton() {
     resetSettingsBnDiv.textContent = '⟲ Clear All BookNotes';
   }
 }
-
 
