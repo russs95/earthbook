@@ -334,7 +334,7 @@ wordCountDiv.className = 'word-count-tc';
 const chapterLink = document.createElement('a');
 chapterLink.href = bookNote.chaptURL;
 chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
-<span style="font-size:small;">Chapter ${bookNote.chapNo}${bookNote.book}<br>
+<span style="font-size:small;">${bookNote.book}, Chapt. ${bookNote.chapNo}<br>
 ${bookNote.charCount} characters<br>
 ${bookNote.BNdateTime}</span>`;
 

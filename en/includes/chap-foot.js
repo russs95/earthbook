@@ -92,7 +92,7 @@ class chapfoot extends HTMLElement {
 
   <div style=""><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of page" style="cursor:pointer" onclick="location.href='#top'" aria-label="Go to top of page"></button></div>
 
-  <div><button type="button" class="footer-settings-icon"><img src="../icons/booknotes.svg" alt="Booknotes icon" style="cursor:pointer" onclick="openBooknotes(), bookNotesCreator(), updateBNResetButton()" aria-label="Click to view EarthBook Table of Contents" title="Click to view Booknotes"></button></div>
+  <div><button type="button" class="footer-settings-icon"><img src="../icons/booknotes.svg" alt="Booknotes icon" style="cursor:pointer" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Click to view your Book notes" title="Click to view your Booknotes"></button></div>
 
  
   <div style="flex-grow:4; text-align: right;"><button type="button" class="footer-settings-icon"><img src="../icons/eco-green.svg" alt="Our Ecological Tracking, Accounting and disclosure" title="Our Ecological Tracking, Accounting and disclosure" style="cursor:pointer;" aria-label="Open Ecological Accounting" onclick="openEco()"></button></div>
