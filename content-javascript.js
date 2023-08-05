@@ -251,7 +251,7 @@ function clearSelection() {
 
              
             }
-            updateBNResetButton();
+            //updateBNResetButton();
             e.target.title = "This quotation is saved in your Book Notes";
             window.getSelection().removeAllRanges();
           } else {
