@@ -435,7 +435,7 @@ function resetBookNotes() {
 
 function updateBNResetButton() {
   // Clear the content of the instruction-bn div
-  const instructionBnDiv = document.getElementById('instruction-bn');
+  const instructionBnDiv = document.getElementById('instructions-bn');
   instructionBnDiv.textContent = '';
 
   // Add the text "⟲ Clear All BookNotes" to the reset-settings-bn div
