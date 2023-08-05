@@ -338,6 +338,7 @@ bookNotesListDiv.appendChild(bookNoteDiv);
 });
 }
 
+
 function recreateSelection() {
   const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
@@ -403,6 +404,8 @@ window.addEventListener('load', function () {
 recreateSelection();
 });
 
+
+
 function resetBookNotes() {
   // Clear the booknotes array from local storage
   localStorage.removeItem('bookNotes');
@@ -417,6 +420,15 @@ function resetBookNotes() {
     const textNode = document.createTextNode(span.textContent);
     span.parentNode.replaceChild(textNode, span);
   });
+
+  // Update the text inside the reset-settings-bn div
+  const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
+  resetSettingsBnDiv.textContent = 'No BookNotes saved';
+
+  // Update the text inside the instruction-bn div
+  const instructionBnDiv = document.getElementById('instruction-bn');
+  instructionBnDiv.textContent = 'Highlight then click text in the Earthbook to save it to your Booknotes';
 }
+
 
 
