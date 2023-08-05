@@ -248,8 +248,10 @@ function clearSelection() {
       
               // Log to console instead of alert
               console.log('BookNote saved:', bookNote);
+
+             
             }
-      
+            updateBNResetButton();
             e.target.title = "This quotation is saved in your Book Notes";
             window.getSelection().removeAllRanges();
           } else {
@@ -431,3 +433,12 @@ function resetBookNotes() {
 
 
 
+function updateBNResetButton() {
+  // Clear the content of the instruction-bn div
+  const instructionBnDiv = document.getElementById('instruction-bn');
+  instructionBnDiv.textContent = '';
+
+  // Add the text "⟲ Clear All BookNotes" to the reset-settings-bn div
+  const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
+  resetSettingsBnDiv.textContent = '⟲ Clear All BookNotes';
+}
