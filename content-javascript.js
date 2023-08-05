@@ -269,31 +269,40 @@ document.addEventListener('touchend', handleHighlightEvent);
 
 
 
+function removeHighlight() {
+  const highlightClass = 'highlight';
 
-function removeHighlight(e) {
-// Define a one-time click handler
-function handleClick(event) {
+  // Define the click handler function
+  function handleClick(event) {
     if (event.target.classList.contains(highlightClass)) {
-    const text = event.target.textContent; // Assuming you want to replace the element with its text content
-    const parentElementId = event.target.parentNode.id;
-    const textLength = text.length;
+      const text = event.target.textContent;
+      const parentElementId = event.target.parentNode.id;
+      const textLength = text.length;
 
-    event.target.replaceWith(document.createTextNode(text)); // Remove the highlight
+      event.target.replaceWith(document.createTextNode(text)); // Remove the highlight
 
-    // Remove the corresponding book note from the array
-    let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-    bookNotes = bookNotes.filter(note => {
+      // Remove the corresponding book note from the array
+      let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+      bookNotes = bookNotes.filter(note => {
         return !(note.startContainer === parentElementId && note.storedNoteText.length === textLength);
-    });
+      });
 
-    localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-    // Since we're using the `once` option, there's no need to manually remove the listener
+      localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
     }
+  }
+
+  // Add the click event listener to elements with the highlight class
+  const elementsWithHighlight = document.querySelectorAll('.' + highlightClass);
+  elementsWithHighlight.forEach(element => {
+    element.addEventListener('click', handleClick);
+  });
+
+  // Add the touchend event listener to elements with the highlight class
+  elementsWithHighlight.forEach(element => {
+    element.addEventListener('touchend', handleClick);
+  });
 }
-// Add the one-time click handler with the `once` option
-document.addEventListener('click', handleClick, { once: true });
-document.addEventListener('touchend', handleClick);
-}
+
 
 });
 
