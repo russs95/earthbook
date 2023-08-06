@@ -122,6 +122,8 @@ function openFooter2() {
     }, 10); // Adjust the interval value to control the smoothness of the animation
   }
 
+  
+
   window.addEventListener("DOMContentLoaded", function() {
     var hideNotice = localStorage.getItem("hideNotice");
     if (hideNotice === "true") {
