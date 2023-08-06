@@ -142,7 +142,7 @@ function openFooter2() {
   // Call the openWelcomeNotice function after 5 seconds of page load
   setTimeout(openWelcomeNotice, 5000);
 
-  
+
 
 
   window.addEventListener("DOMContentLoaded", function() {
@@ -201,7 +201,7 @@ function clearSelection() {
 
 
 function handleSelection() {
-    const spanDelay = 2000; // 2 seconds delay before removing user's text selection
+    const spanDelay = 3000; // 2 seconds delay before removing user's text selection
     const removeSpanDelay = 3000; // 3 seconds delay before removing the span formatting
 
     selectedRange = getSelectedRange();
@@ -217,7 +217,7 @@ function handleSelection() {
       selectedRange.deleteContents();
       selectedRange.insertNode(span);
 
-      // Remove the user's text selection after 2 seconds
+      // Remove the user's text selection after 3 seconds
       setTimeout(clearSelection, spanDelay);
 
       // Remove the span formatting after 3 seconds if not clicked

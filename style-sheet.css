@@ -631,8 +631,9 @@ h6 {
 
 .pre-highlight {
   background-color: grey;
-    transition: background-color 1s; /* Transition background-color over 1 second */
-  }
+cursor:pointer;
+color: inherit; 
+ }
 
 
 
