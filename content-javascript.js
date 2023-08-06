@@ -230,13 +230,16 @@ function handleDesktopSelection() {
     }
   }
 
-  // Add a click event listener to the document to detect if the span is clicked
-  document.addEventListener('click', function (event) {
-    if (event.target.classList.contains('pre-highlight')) {
-      event.target.clicked = true;
-      alert('pass to handledesktopselection');
-    }
-  });
+
+
+  // Add a mousedown event listener to the document to detect if the span is clicked
+document.addEventListener('mousedown', function(e) {
+  e.preventDefault();
+  if (e.target.classList.contains('pre-highlight')) {
+    // Set data attribute 'data-clicked' as true
+    e.target.setAttribute('data-click', 'true');
+  }
+});
 
 
 
