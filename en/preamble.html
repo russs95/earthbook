@@ -27,7 +27,7 @@ EARTHBOOK - An open source, Earth & Human Friendly Book format
 Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
  
 
-Landing page - version 1.2
+Landing page - version 1.3
 Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
 First EarthBook, the Tractatus Ayyew, published 22.12.22.
 
@@ -47,7 +47,7 @@ For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.e
 <link rel="canonical" href="https://book.earthen.io/en/preamble.html"> 
 <link rel="alternate" href="https://book.earthen.io/en/preamble.html" hreflang="en" >
 <link rel="alternate" href="http://book.earthen.io/en/preamble.html" hreflang="x-default" >
-<link rel="alternate" href="https://book.earthen.io/fr/preamble.html" hreflang="fr" >
+<link rel="alternate" href="https://book.earthen.io/fr/preambule.html" hreflang="fr" >
 <!--
 <link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
 <link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
@@ -57,7 +57,7 @@ For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.e
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
 
-<meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics, preamble, intro, "> 
+<meta name="keywords" content="Preamble, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics, preamble, intro, Earthbook, madalic"> 
 <meta name="description" content="An introduction to the Earthbook edition of the Tractatus Ayyew">
 	
 <meta property="article:publisher" content="Earthen.io" >
@@ -76,12 +76,15 @@ These tags will be consistent for the whole book-->
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1500px" >
 <meta property="og:locale" content="en_EN" >
-<meta property="og:url" content="https://book.earthen.io/en">
+<meta property="og:url" content="https://book.earthen.io/en/preamble.html">
 
 <script>
       // Declare the global variables
-    var chapNo = "Introduction";
+     var book = "Introduction";
+    var chapNo = "1";
     var chapName = "Preamble";
+    var chaptURL = "preamble.html"   // Declare the global variables
+  
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -146,7 +149,9 @@ All the page components required to build this page-->
 <!--10--><script src="includes/tour-curtain.js"  defer></script>
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
-<!--13--><script src="includes/chapter-footer2.js?V=2" defer></script>
+<!--13--><script src="includes/chap-foot.js?V=2" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+
 
 <style>
 
@@ -177,13 +182,6 @@ All the page components required to build this page-->
   src: url("../fonts/Mulish-Light.ttf");
   font-display: swap;
  }
-
- /*
- @font-face {
-  font-family: "MulishMedium";
-  src: url("fonts/Mulish-Medium.ttf");
-  font-display: swap;
- }*/
 
 </style>
 </HEAD>
@@ -233,26 +231,33 @@ All the page components required to build this page-->
 
 <!-- MAIN TEXT CONTENT of the Page-->
 
-<div class="lead-page-paragraph" id="p-1">
+<div class="lead-page-paragraph" id="EN-1-1-01">
 
   IN THE CULTURE of the Igorot people of Northern Luzon in the West Philippine Sea, story telling is central. In their <i>dap'ay</i>— stone plazas at the center of every village— stories are told to introduce people, lessons and ideas. It is an example that we will follow in the chapters ahead.</div>
 
 <div class="page-paragraph" >
-    <p id="p-2">To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader eager for an overview, in our <a href="summaries.php" title="Jump to the three short summaries of the theory">summaries section</a>, we provide a short sentence, a long sentence and a paragraph that each sum up the theory of Earthen ethics which we develop in the <i>Tractatus Ayyew</i>.</p>
+
+  <p id="EN-1-1-01">To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader eager for an overview, in our <a href="summaries.php" title="Jump to the three short summaries of the theory">summaries section</a>, we provide a short sentence, a long sentence and a paragraph that each sum up the theory of Earthen ethics which our journey has head us to.</p>
+
+  <p id="EN-1-1-02">Of course, <i>how</i> a story is told (or a theory for that matter) is just as important as the story itself.  In the dap'ay, both tale and telling were inseparably intertwined.  Stories were told after a dance and feast; the listeners gathered around a fire with rice wine in hand.<p>
+
+  <p id="EN-1-1-03">Alas, while our telling will never be quite so magnificent and meaningfull, wthe dap'ay has inspired us to put great care in our book's presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span class="java-link" onclick="openEarthbook()" title="Learn more about what an Earthbook is"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics that we'll be developing in the chapters ahead.</p>
+
+   <!-- <p id="p-2">To start, Banayan and I will share the story of the pollution, short-falls and questions that sparked this book's unlikely beginning. For the reader eager for an overview, in our <a href="summaries.php" title="Jump to the three short summaries of the theory">summaries section</a>, we provide a short sentence, a long sentence and a paragraph that each sum up the theory of Earthen ethics which we develop in the <i>Tractatus Ayyew</i>.</p>
 
     <p id="p-3">Of course, <i>how</i> a story is told (or a theory for that matter) is just as important as the sum of its sentences.  In the dap'ay, both tale and telling were inseparably intertwined.  Stories were told after a dance or a feast with the listeners gathered around a fire; rice wine in hand.<p>
 
-    <p id="p-4">Alas, while our telling will never achieve such a magnificent medium, we've nonetheless put great care into our book's presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span class="java-link" onclick="openEarthbook()" title="Learn more about what an Earthbook is"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics that we'll be developing in the chapters ahead.</p>
+    <p id="p-4">Alas, while our telling will never achieve such a magnificent medium, we've nonetheless put great care into our book's presentation and publication.  Consequently, the <i>Tractatus Ayyew</i> is published as an <span class="java-link" onclick="openEarthbook()" title="Learn more about what an Earthbook is"><i>Earthbook</i></span>—  an Earth and reader friendly format that embodies the principles of Earthen ethics that we'll be developing in the chapters ahead.</p>-->
 
-    <p id="p-5">Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced and shared. For example, this section of the book can be found at book.earthen.io/en/preamble</p>
+    <p id="EN-1-1-04">Like most theories, the <i>Tractatus Ayyew</i> progresses sequentially. However, unlike most books, the Earthbook format enables a modular arrangement of chapters each with its own URL. Consequently, each chapter of the book is written as a standalone essay so that its facet of the theory may be readily referenced and shared. For example, this section of the book can be found at book.earthen.io/en/preamble</p>
     
-    <p id="p-6">To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory (and each chapter’s integration within it) is represented by the mandala at the top of this page.</p>
+    <p id="EN-1-1-05">To represent the modular geometry of the <i>Tractatus Ayyew</i>, each chapter begins with a mandalic representation of its place within the whole. The full theory (and each chapter’s integration within it) is represented by the mandala at the top of this page.</p>
 
-    <p id="p-7">As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the print and eReader editions of the <i>Tractatus Ayyew</i> are <span class="java-link" rel="nofollow" onclick="openBuy()"  title="See book's purchase options and prices">for sale</span> here on the Earthbook site. Sales are independent of middle-men, with 97% of book sales going direct to the authors.</p>
+    <p id="EN-1-1-06">As an Earthbook, both the content and code of the book are made freely available.  Meanwhile, the print and eReader editions of the <i>Tractatus Ayyew</i> are <span class="java-link" rel="nofollow" onclick="openBuy()"  title="See book's purchase options and prices">for sale</span> here on the Earthbook site. Sales are independent of middle-men, with 97% of book sales going direct to the authors.</p>
 
-    <p id="p-8">As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's <span class="java-link" onclick="openEco()" title="View our impact accounting for the Earthbook's writing and publishing">regenerative reporting.</span></p>
+    <p id="EN-1-1-07">As a self-contained platform, the Earthbook format enables the authors to track the net-ecological impact of the book's reading and publishing. The book’s for-Earth intention and its ecological accounting are publicly disclosed in the Eartbook's <span class="java-link" onclick="openEco()" title="View our impact accounting for the Earthbook's writing and publishing">regenerative reporting.</span></p>
 
-    <p id="p-9">The full content of the <i>Tractatus Ayyew</i> is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook <a href="https://github.com/russs95/earthbook/blob/main/en/preamble.html" target="_blank" aria-label="Go to the Earthbook Github repository">code</a> (developed first for the <i>Tractatus Ayyew</i>) is made available under a GNU 3.0 license.</p>
+    <p id="EN-1-1-08">The full content of the <i>Tractatus Ayyew</i> is under a Creative Commons, Attribution-NoDerivatives 4.0 License.   The Earthbook <a href="https://github.com/russs95/earthbook/blob/main/en/preamble.html" target="_blank" aria-label="Go to the Earthbook Github repository">code</a> (developed first for the <i>Tractatus Ayyew</i>) is made available under a GNU 3.0 license.</p>
 
     </div>
           
@@ -290,6 +295,9 @@ All the page components required to build this page-->
 </div><!--Closes main content block-->
 
 
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
@@ -342,10 +350,13 @@ All the page components required to build this page-->
 
 <!-- CHAPTER FOOTER-->
 
-<chapter-footer></chapter-footer>
 
-<!--CHAP FOOTER CLOSE-->
-</BODY>
-</HTML>
+<chap-foot></chap-foot>
 
+
+
+</div><!--underlayer-->
+
+</body>
+</html>
 
