@@ -230,22 +230,49 @@ function handleDesktopSelection() {
     }
   }
 
-
-
-  // Add a mousedown event listener to the document to detect if the span is clicked
-document.addEventListener('mousedown', function(e) {
-  e.preventDefault();
-  if (e.target.classList.contains('pre-highlight')) {
-    // Set data attribute 'data-clicked' as true
-    e.target.setAttribute('data-click', 'true');
-  }
-});
+  // Add a click event listener to the document to detect if the span is clicked
+  document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('pre-highlight')) {
+      event.target.clicked = true;
+      alert('pass to handledesktopselection');
+    }
+  });
 
 
 
   function handleMobileSelection() {
     selectedRange = getSelectedRange();
   
+    const spanDelay = 3000; //  delay before removing user's text selection
+    const removeSpanDelay = 3000; //  delay before removing the span formatting
+
+    selectedRange = getSelectedRange();
+    if (selectedRange && selectedRange.toString().trim().length > 0) {
+      let span = document.createElement('span');
+      span.classList.add('pre-highlight'); // Add the class for the transition effect
+      span.title = "Double click this text to highlight and save.";
+      span.textContent = selectedRange.toString(); // Preserve the selected text content
+
+      // Add the alt attribute (optional but recommended for accessibility)
+      span.setAttribute('alt', "Doublelick this text to highlight and save.");
+
+      selectedRange.deleteContents();
+      selectedRange.insertNode(span);
+
+      // Remove the user's text selection after 3 seconds
+      setTimeout(clearSelection, spanDelay);
+
+      // Remove the span formatting after 3 seconds if not clicked
+      setTimeout(() => {
+        if (!span.clicked) {
+          const parent = span.parentNode;
+          parent.replaceChild(document.createTextNode(span.textContent), span);
+        }
+      }, removeSpanDelay);
+    }
+  
+
+    /*
     // Check if the selection is within the div with id 'ct-main'
     if (selectedRange && selectedRange.commonAncestorContainer.closest('#ct-main') && selectedRange.toString().trim().length > 0) {
       let span = document.createElement('span');
@@ -254,7 +281,7 @@ document.addEventListener('mousedown', function(e) {
       span.title = "Click this text to highlight and save.";
       selectedRange.surroundContents(span);
       clearSelection();
-    }
+    }*/
   }
 
   document.addEventListener('mouseup', handleDesktopSelection);
