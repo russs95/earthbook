@@ -257,6 +257,9 @@ function handleDesktopSelection() {
   document.addEventListener('touchend', handleMobileSelection);
 
 
+// Add both click and touchend listeners
+document.addEventListener('mouseup', handleHighlightEvent);
+document.addEventListener('touchend', handleHighlightEvent);
 
 
 
@@ -349,9 +352,6 @@ function handleHighlightEvent(e) {
 
 
 
-// Add both click and touchend listeners
-document.addEventListener('click', handleHighlightEvent);
-document.addEventListener('touchend', handleHighlightEvent);
 
 function removeHighlight() {
   const highlightClass = 'highlight';
