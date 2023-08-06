@@ -31,7 +31,7 @@ class ContentCurtain extends HTMLElement {
 
                     <div id="appx-book-one">
 
-                        <a href="preamble.php">
+                        <a href="preamble.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Preamble</div>
                             <div class="word-count-tc"><i>431 words</i></div>
@@ -198,20 +198,20 @@ class ContentCurtain extends HTMLElement {
 
                     <div id="appx-book-appx" style="display: none;">
                         
-                        <a href="summaries.php">
+                        <a href="summaries.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Summaries</div>
                             <div class="word-count-tc"><i>501 words</i></div>
                         </div></a>
 
-                        <a href="dedication.php">
+                        <a href="dedication.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Dedication</div>
                             <div class="word-count-tc"><i>26 words</i></div>
                         </div></a>
 
 
-                        <a href="for-earth.php">
+                        <a href="for-earth.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">For-Earth Declaration</div>
                             <div class="dotted-line"></div>
@@ -219,7 +219,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="acknowledgements.php">
+                        <a href="acknowledgements.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Grattitude</div>
                             <div class="dotted-line"></div>
@@ -227,7 +227,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="publishing.php">
+                        <a href="publishing.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Publishing</div>
                             <div class="dotted-line"></div>
@@ -235,7 +235,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="authors.php">
+                        <a href="authors.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Authors</div>
                             <div class="dotted-line"></div>
@@ -243,7 +243,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="declaration.php">
+                        <a href="declaration.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Declarations</div>
                             <div class="dotted-line"></div>
@@ -251,7 +251,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="bibliography.php">
+                        <a href="bibliography.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Bibliography</div>
                             <div class="dotted-line"></div>
@@ -259,7 +259,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="glossary.php">
+                        <a href="glossary.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Glossary</div>
                             <div class="dotted-line"></div>

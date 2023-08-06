@@ -200,7 +200,7 @@ function clearSelection() {
 
 
 
-function handleSelection() {
+function handleDesktopSelection() {
     const spanDelay = 3000; // 2 seconds delay before removing user's text selection
     const removeSpanDelay = 3000; // 3 seconds delay before removing the span formatting
 
@@ -237,8 +237,24 @@ function handleSelection() {
     }
   });
 
-  document.addEventListener('mouseup', handleSelection);
-  document.addEventListener('touchend', handleSelection);
+
+
+  function handleMobileSelection() {
+    selectedRange = getSelectedRange();
+  
+    // Check if the selection is within the div with id 'ct-main'
+    if (selectedRange && selectedRange.commonAncestorContainer.closest('#ct-main') && selectedRange.toString().trim().length > 0) {
+      let span = document.createElement('span');
+      span.style.cursor = 'pointer';
+      span.classList.add(preHighlightClass);
+      span.title = "Click this text to highlight and save.";
+      selectedRange.surroundContents(span);
+      clearSelection();
+    }
+  }
+
+  document.addEventListener('mouseup', handleDesktopSelection);
+  document.addEventListener('touchend', handleMobileSelection);
 
 
 
