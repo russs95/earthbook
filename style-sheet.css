@@ -632,6 +632,8 @@ h6 {
 .pre-highlight {
     background-color: grey;
     cursor:pointer;
+    transition: 1s;
+    opacity: 0;
 }
 
 
@@ -4711,6 +4713,7 @@ margin: auto;
       padding: 25px;
       color: var(--true);
       line-height: 1.3em;
+      display: none;
       
     }
 
