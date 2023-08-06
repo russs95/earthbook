@@ -630,11 +630,9 @@ h6 {
 }
 
 .pre-highlight {
-    background-color: grey;
-    cursor:pointer;
-    transition: 1s;
-    opacity: 0;
-}
+  background-color: rgba(130, 130, 130, 0); /* Start with 0 opacity */
+    transition: background-color 1s; /* Transition background-color over 1 second */
+  }
 
 
 
@@ -4700,11 +4698,12 @@ margin: auto;
     #chap-notice {
  
       width:100%;
-      height:fit-content;
+      height:0px;
       background-color: #458645;
-      display:block;
       border-radius: 10px;
+      display: none;
       margin-bottom: 20px;
+      transition: height 1s; /* Add the height transition for smooth animation */
     }
 
     #chap-notice-text {
@@ -4713,8 +4712,7 @@ margin: auto;
       padding: 25px;
       color: var(--true);
       line-height: 1.3em;
-      display: none;
-      
+
     }
 
     .chapt-notice-text a {

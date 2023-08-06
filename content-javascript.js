@@ -122,7 +122,28 @@ function openFooter2() {
     }, 10); // Adjust the interval value to control the smoothness of the animation
   }
 
+
+   // Function to open the welcome notice
+   function openWelcomeNotice() {
+    // Check if hideNotice is set to true in the browser cache (localStorage)
+    const hideNotice = localStorage.getItem("hideNotice");
+    if (!hideNotice || hideNotice !== "true") {
+      // Set the display property to block to show the notice
+      document.getElementById("chap-notice").style.display = "block";
+
+      // Trigger a reflow to force the transition to work
+      void document.getElementById("chap-notice").offsetHeight;
+
+      // Set the height property to 'fit-content' to smoothly transition the height
+      document.getElementById("chap-notice").style.height = "fit-content";
+    }
+  }
+
+  // Call the openWelcomeNotice function after 5 seconds of page load
+  setTimeout(openWelcomeNotice, 5000);
+
   
+
 
   window.addEventListener("DOMContentLoaded", function() {
     var hideNotice = localStorage.getItem("hideNotice");
@@ -177,37 +198,52 @@ function clearSelection() {
         }
     }
 
-    function handleSelection() {
-      selectedRange = getSelectedRange();
-      if (selectedRange && selectedRange.toString().trim().length > 0) {
-        // Define a function to apply the preHighlightClass
-        const applyPreHighlightClass = () => {
-          let span = document.createElement('span');
-          span.style.cursor = 'pointer';
-          span.classList.add(preHighlightClass);
-          span.title = "Click this text to highlight and save.";
-          selectedRange.surroundContents(span);
-    
-          // Define a function to remove the span and class after 3 seconds
-          const removePreHighlightClass = () => {
-            span.parentNode.replaceChild(document.createTextNode(span.textContent), span);
-          };
-    
-          // Add a delay of 3 seconds before removing the span and class
-          setTimeout(removePreHighlightClass, 3000);
-    
-          clearSelection(); // Move this line here
-        };
-    
-        // Add a delay of 1.5 seconds before applying the preHighlightClass
-        setTimeout(applyPreHighlightClass, 1500);
-    
-        // Remove clearSelection() from here
-      }
+
+
+function handleSelection() {
+    const spanDelay = 2000; // 2 seconds delay before removing user's text selection
+    const removeSpanDelay = 3000; // 3 seconds delay before removing the span formatting
+
+    selectedRange = getSelectedRange();
+    if (selectedRange && selectedRange.toString().trim().length > 0) {
+      let span = document.createElement('span');
+      span.classList.add('pre-highlight'); // Add the class for the transition effect
+      span.title = "Click this text to highlight and save.";
+      span.textContent = selectedRange.toString(); // Preserve the selected text content
+
+      // Add the alt attribute (optional but recommended for accessibility)
+      span.setAttribute('alt', "Click this text to highlight and save.");
+
+      selectedRange.deleteContents();
+      selectedRange.insertNode(span);
+
+      // Remove the user's text selection after 2 seconds
+      setTimeout(clearSelection, spanDelay);
+
+      // Remove the span formatting after 3 seconds if not clicked
+      setTimeout(() => {
+        if (!span.clicked) {
+          const parent = span.parentNode;
+          parent.replaceChild(document.createTextNode(span.textContent), span);
+        }
+      }, removeSpanDelay);
     }
-    
-    document.addEventListener('mouseup', handleSelection);
-    document.addEventListener('touchend', handleSelection);
+  }
+
+  // Add a click event listener to the document to detect if the span is clicked
+  document.addEventListener('click', function (event) {
+    if (event.target.classList.contains('pre-highlight')) {
+      event.target.clicked = true;
+    }
+  });
+
+  document.addEventListener('mouseup', handleSelection);
+  document.addEventListener('touchend', handleSelection);
+
+
+
+
+
         
     
   
