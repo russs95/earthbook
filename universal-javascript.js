@@ -832,5 +832,5 @@ function reset2Default() {
   //adjustFontSize('accessibility-plugin-ac', 'normal');
   document.getElementById('earthbook-navbar').style.minHeight = `${navbarHeight}px`;
 
-  document.getElementById("reset-settings").innerHTML = "&#10003; Paramètres réinitialisés";
+  document.getElementById("reset-settings").innerHTML = "&#10003; Settings Reset";
 }
