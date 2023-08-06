@@ -360,23 +360,21 @@ function removeHighlight() {
   function handleClick(event) {
     const span = event.target.closest('.' + highlightClass);
     if (span) {
-      // get the parent node of the span
-      const parent = span.parentNode;
+      const text = span.textContent; // Store the span's text content
 
-      // replace the span with a text node of the span's content
-      parent.replaceChild(document.createTextNode(span.textContent), span);
+      // Replace the span's outerHTML with its textContent
+      // This effectively removes the span and leaves only the text
+      span.outerHTML = text;
 
       // Remove the corresponding book note from the array
       let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
       bookNotes = bookNotes.filter(note => {
-        return !(note.startContainer === parent.id && note.storedNoteText.length === span.textContent.length);
+        return !(note.startContainer === span.parentNode.id && note.storedNoteText.length === text.length);
       });
 
       localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
     }
   }
-
-
 
   // Add the click event listener to elements with the highlight class
   const elementsWithHighlight = document.querySelectorAll('.' + highlightClass);
