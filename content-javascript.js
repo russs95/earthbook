@@ -193,18 +193,20 @@ function clearSelection() {
     
           // Add a delay of 3 seconds before removing the span and class
           setTimeout(removePreHighlightClass, 3000);
+    
+          clearSelection(); // Move this line here
         };
     
         // Add a delay of 1.5 seconds before applying the preHighlightClass
         setTimeout(applyPreHighlightClass, 1500);
     
-        clearSelection();
+        // Remove clearSelection() from here
       }
     }
     
     document.addEventListener('mouseup', handleSelection);
     document.addEventListener('touchend', handleSelection);
-    
+        
     
   
       function handleHighlightEvent(e) {
