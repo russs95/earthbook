@@ -353,28 +353,29 @@ function handleHighlightEvent(e) {
 document.addEventListener('click', handleHighlightEvent);
 document.addEventListener('touchend', handleHighlightEvent);
 
-
 function removeHighlight() {
   const highlightClass = 'highlight';
 
   // Define the click handler function
   function handleClick(event) {
-    if (event.target.classList.contains(highlightClass)) {
+    const span = event.target.closest('.' + highlightClass);
+    if (span) {
       // get the parent node of the span
-      const parent = event.target.parentNode;
+      const parent = span.parentNode;
 
       // replace the span with a text node of the span's content
-      parent.replaceChild(document.createTextNode(event.target.textContent), event.target);
+      parent.replaceChild(document.createTextNode(span.textContent), span);
 
       // Remove the corresponding book note from the array
       let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
       bookNotes = bookNotes.filter(note => {
-        return !(note.startContainer === parent.id && note.storedNoteText.length === event.target.textContent.length);
+        return !(note.startContainer === parent.id && note.storedNoteText.length === span.textContent.length);
       });
 
       localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
     }
   }
+
 
 
   // Add the click event listener to elements with the highlight class
