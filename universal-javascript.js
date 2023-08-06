@@ -806,14 +806,24 @@ document.querySelector("#information-six .back").onclick = function() {
 
 
 
-
 function reset2Default() {
+  // Reset the default values
+  const hideNotice = false;
   const brightness = 100;
   const contrast = 100;
   const sepia = 0;
   const userSetFontSize = 16;
   const navbarHeight = 60;
 
+  // Store the values in the browser cache (localStorage)
+  localStorage.setItem("hideNotice", hideNotice);
+  localStorage.setItem("brightness", brightness);
+  localStorage.setItem("contrast", contrast);
+  localStorage.setItem("sepia", sepia);
+  localStorage.setItem("userSetFontSize", userSetFontSize);
+  localStorage.setItem("navbarHeight", navbarHeight);
+
+  // Update the UI with the default values
   document.getElementById("brightness-range-scale").value = brightness;
   document.getElementById("contrast-range-scale").value = contrast;
   document.getElementById("sepia-range-scale").value = sepia;
