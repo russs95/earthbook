@@ -630,7 +630,7 @@ h6 {
 }
 
 .pre-highlight {
-  background-color: rgba(130, 130, 130, 0); /* Start with 0 opacity */
+  background-color: grey;
     transition: background-color 1s; /* Transition background-color over 1 second */
   }
 
