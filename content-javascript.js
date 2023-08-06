@@ -178,23 +178,33 @@ function clearSelection() {
     function handleSelection() {
       selectedRange = getSelectedRange();
       if (selectedRange && selectedRange.toString().trim().length > 0) {
-        // Define a function to apply the preHighlightClass after a delay
+        // Define a function to apply the preHighlightClass
         const applyPreHighlightClass = () => {
           let span = document.createElement('span');
           span.style.cursor = 'pointer';
           span.classList.add(preHighlightClass);
           span.title = "Click this text to highlight and save.";
           selectedRange.surroundContents(span);
-          clearSelection();
+    
+          // Define a function to remove the span and class after 3 seconds
+          const removePreHighlightClass = () => {
+            span.parentNode.replaceChild(document.createTextNode(span.textContent), span);
+          };
+    
+          // Add a delay of 3 seconds before removing the span and class
+          setTimeout(removePreHighlightClass, 3000);
         };
     
         // Add a delay of 1.5 seconds before applying the preHighlightClass
-        setTimeout(applyPreHighlightClass, 1100);
+        setTimeout(applyPreHighlightClass, 1500);
+    
+        clearSelection();
       }
     }
     
     document.addEventListener('mouseup', handleSelection);
     document.addEventListener('touchend', handleSelection);
+    
     
   
       function handleHighlightEvent(e) {
