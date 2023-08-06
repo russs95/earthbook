@@ -234,6 +234,7 @@ function handleDesktopSelection() {
   document.addEventListener('click', function (event) {
     if (event.target.classList.contains('pre-highlight')) {
       event.target.clicked = true;
+      alert('pass to handledesktopselection')
     }
   });
 
@@ -258,7 +259,7 @@ function handleDesktopSelection() {
 
 
 // Add both click and touchend listeners
-document.addEventListener('mouseup', handleHighlightEvent);
+document.addEventListener('click', handleHighlightEvent);
 document.addEventListener('touchend', handleHighlightEvent);
 
 
