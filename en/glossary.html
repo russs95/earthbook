@@ -81,7 +81,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <script>
      // Declare the global variables
      var book = "Appendix";
-    var chapNo = "9";
+    var chapNo = "10";
     var chapName = "Glossary";
     var chaptURL = "glossary.html"   // Declare the global variables
   
@@ -94,6 +94,76 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
         });
       });
     }
+</script>
+
+
+<script>
+    async function buildGlossary() {
+      // Load the JSON data
+      const response = await fetch('glossary.json?v=1.1');
+      const jsonData = await response.json();
+      // Sort the data alphabetically by title
+      jsonData.sort((a, b) => a.title.localeCompare(b.title));
+      // Get the container element
+      const container = document.querySelector('#glossary-container');
+      // Clear the previous contents of the container
+      container.innerHTML = '';
+      // Variable to keep track of the entry count for the ID
+      let entryCount = 1;
+      // Loop through the entries
+      for (let i = 0; i < jsonData.length; i++) {
+        const entry = jsonData[i];
+        // Create the glossary item element
+        const item = document.createElement('div');
+        item.classList.add('glossary-item');
+        item.id = entry.title;
+        // Create the title element
+        const title = document.createElement('i');
+        title.classList.add('glossary-title');
+        title.textContent = entry.title;
+        // Create the description element
+        const description = document.createElement('p');
+        // Increment the entry count and format it as 2 digits (e.g., 01, 02, etc.)
+        const entryID = entryCount.toString().padStart(2, '0');
+        description.id = `4-10-${entryID}`;
+        description.textContent = entry.chap_description;
+        // Increment the entry count for the next entry
+        entryCount++;
+        // Create the keywords element
+        const keywords = document.createElement('h6');
+        keywords.textContent = 'Related terms: ' + entry.keywords;
+        
+        // Create the glossary info element
+        const glossInfo = document.createElement('div');
+        glossInfo.classList.add('glossary-info');
+        glossInfo.appendChild(keywords);
+        
+        // Create the chapter element with URL if relevant_chap exists
+        if (entry.relevant_chap) {
+          const chapter = document.createElement('h6');
+          const chapterText = document.createTextNode('Introduced in chapter: ');
+          const chapterLink = document.createElement('a');
+          chapterLink.textContent = entry.relevant_chap;
+          chapterLink.href = entry.relevant_chap_url;
+          chapter.appendChild(chapterText);
+          chapter.appendChild(chapterLink);
+          // Append the chapter element to glossInfo
+          glossInfo.appendChild(chapter);
+        }
+        
+        // Append the elements to the item
+        item.appendChild(title);
+        //item.appendChild(document.createElement('br'));
+        item.appendChild(description);
+        item.appendChild(glossInfo);
+        // Append the item to the container
+        container.appendChild(item);
+      }
+    }
+    
+    window.addEventListener('load', function() {
+      buildGlossary();
+    });
 </script>
 
  <!--FONTS
@@ -175,13 +245,70 @@ All the page components required to build this page-->
  }
 
 
-
- #ct-chapter-title {
-      /*padding-top: 45px;
-      */font-size: 10vmin;
-      letter-spacing: 2px;
-      
+ @media screen and (max-width: 699px) {
+    .ct-chapter-quote {
+      width: 80%;
+      font-size: 1.4em;
     }
+    .ct-quote-source {
+      width: 80%;
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .ct-chapter-quote {
+      width: 50%;
+      font-size: 1.8em;
+    }
+    .ct-quote-source {
+      width: 70%;
+      font-size: 1em;
+    }
+  }
+    
+  @media screen and (min-width: 1325px) {
+    .ct-chapter-quote {
+    width: 40%;
+    font-size: 2em;
+    text-shadow: 0px 0px 12px var(--slider);
+    }
+    .ct-quote-source {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
+
+  #ct-chapter-title {
+      font-size: 10vmin;
+      letter-spacing: 2px;
+    }
+
+
+    .glossary-item {
+      padding-top: 30px;
+      }
+
+      .glossary-title {
+        font-family: 'CooperLt', Georgia, serif;
+        font-weight: bold;
+        decoration: italic;
+        font-size: xx-large;
+      }
+
+      .glossary_info {
+        font-size: medium;}
+      
+h6 {
+  margin-top: -15px;
+margin-bottom: 20px;
+color: var(--drop-cap);}
+
+p {
+  margin-top: 10px !important;
+}
+      
+
     
 </STYLE>
 
@@ -235,7 +362,7 @@ All the page components required to build this page-->
   <!-- MAIN TEXT CONTENT of the Page  -->
 
  
-<div class="lead-page-paragraph">
+<div class="lead-page-paragraph" id="EN-4-10-00">
     Key terms & their definitions as used throught the <i>Tractatus Ayyew</i> and on Earthen.io publications.<br><br><br>
         </div>
         <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 60px; width:100%; text-align:left;"></div>
@@ -247,7 +374,7 @@ All the page components required to build this page-->
     text-justify: none;"><i>Loading glossary...</i></div>
     
       
-        </div><!--closes page text content-->
+</div><!--closes page text content-->
     
               
   
@@ -257,8 +384,7 @@ All the page components required to build this page-->
       
       
     
-              
-      </div><!--Closes main content block-->
+</div><!--Closes main content block-->
 
 
     <!--BOOKNOTES-CURTAIN-->
