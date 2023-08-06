@@ -201,8 +201,8 @@ function clearSelection() {
 
 
 function handleDesktopSelection() {
-    const spanDelay = 3000; // 2 seconds delay before removing user's text selection
-    const removeSpanDelay = 3000; // 3 seconds delay before removing the span formatting
+    const spanDelay = 3000; //  delay before removing user's text selection
+    const removeSpanDelay = 3000; //  delay before removing the span formatting
 
     selectedRange = getSelectedRange();
     if (selectedRange && selectedRange.toString().trim().length > 0) {
@@ -263,18 +263,30 @@ function handleDesktopSelection() {
         
     
   
-      function handleHighlightEvent(e) {
-        if (e.target.classList.contains(preHighlightClass) || e.target.classList.contains(highlightClass)) {
-          e.target.classList.remove(preHighlightClass);
-          e.target.classList.toggle(highlightClass);
+     // This function is triggered when an event occurs. It checks if the event's target (the element that triggered the event)
+// has a certain CSS class (preHighlightClass or highlightClass). If it does, it removes preHighlightClass and toggles 
+// the highlightClass (adds the class if it doesn't have it, and removes it if it does).
+function handleHighlightEvent(e) {
+  if (e.target.classList.contains(preHighlightClass) || e.target.classList.contains(highlightClass)) {
+    e.target.classList.remove(preHighlightClass);
+    e.target.classList.toggle(highlightClass);
+
       
-          if (e.target.classList.contains(highlightClass)) {
-            const range = document.createRange();
-            range.selectNodeContents(e.target);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-      
+          // If the target element contains the highlight class, this means the text has been selected for highlighting. 
+// The function then creates a range object to select the contents of the target node and get the user's selection.
+// If there is a selection, it removes all ranges from the selection and adds the new range.
+    if (e.target.classList.contains(highlightClass)) {
+      const range = document.createRange();
+      range.selectNodeContents(e.target);
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+
+      // If there is a selection range, the function gets the first range and calculates the start offset of the selection, 
+// i.e., where the selection starts in the text. This is done by iterating over all text nodes in the parent node 
+// of the start container of the selected range and adding their lengths to the startOffset. The final startOffset 
+// is increased by the startOffset of the selectedRange itself.
+
             if (selection.rangeCount > 0) {
               const selectedRange = selection.getRangeAt(0);
               const startContainer = selectedRange.startContainer.parentNode.id;
@@ -324,6 +336,7 @@ function handleDesktopSelection() {
 
              
             }
+            
             //updateBNResetButton();
             e.target.title = "This quotation is saved in your Book Notes";
             window.getSelection().removeAllRanges();
@@ -341,28 +354,28 @@ document.addEventListener('click', handleHighlightEvent);
 document.addEventListener('touchend', handleHighlightEvent);
 
 
-
 function removeHighlight() {
   const highlightClass = 'highlight';
 
   // Define the click handler function
   function handleClick(event) {
     if (event.target.classList.contains(highlightClass)) {
-      const text = event.target.textContent;
-      const parentElementId = event.target.parentNode.id;
-      const textLength = text.length;
+      // get the parent node of the span
+      const parent = event.target.parentNode;
 
-      event.target.replaceWith(document.createTextNode(text)); // Remove the highlight
+      // replace the span with a text node of the span's content
+      parent.replaceChild(document.createTextNode(event.target.textContent), event.target);
 
       // Remove the corresponding book note from the array
       let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
       bookNotes = bookNotes.filter(note => {
-        return !(note.startContainer === parentElementId && note.storedNoteText.length === textLength);
+        return !(note.startContainer === parent.id && note.storedNoteText.length === event.target.textContent.length);
       });
 
       localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
     }
   }
+
 
   // Add the click event listener to elements with the highlight class
   const elementsWithHighlight = document.querySelectorAll('.' + highlightClass);
