@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<title>A Stellar Story | Tractatus Ayyew - An Earthbook</title>
+<meta charset="UTF-8"> 
+
+
+<!--
+o               .        ___- -___                    .                   
+       .              .-\          -.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,--'     / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___,--'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~- ___ ; ___-~       
+                 .          -_-         .              -JT
+
+
+EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+ 
+
+Landing page - version 1.3
+Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
+First EarthBook, the Tractatus Ayyew, published 22.12.22.
+
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
+For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
+*/
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/en/stellar.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/stellar.html" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/stellar.html" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/plastique1.html" hreflang="fr" >
+<!--
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="Plastic, 1.0, plastic pollution, petro-capital economy, human nature, nature of plastic, recycling, incineration, dumping"> 
+<meta name="description" content="Like no other material, plastic has been made entirely for the use and benefit of humans.">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-8-07T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="An Earthen Ethic - Tracatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="A Stellar Story - Tractatus Ayyew | An Earthen Ethics">
+<meta property="og:description"   content="Like no other material, plastic has been made entirely for the use and benefit of humans.">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
+<meta property="og:locale" content="en_EN" >
+<meta property="og:url" content="https://book.earthen.io/en/stellar.html">
+
+<script>
+      // Declare the global variables
+     var book = "Book One";
+    var chapNo = "3";
+    var chapName = "A Stellar Story";
+    var chaptURL = "stellar.html"   // Declare the global variables
+  
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+
+
+    
+</script>
+
+
+
+ <!--FONTS
+starts loading the fonts-->
+
+<link rel="preconnect" href="../fonts/">
+<link rel="preconnect" href="../fonts/" crossorigin> 
+
+<!-- PRELOADS-->
+<link rel="preload" as="image" href="../svgs/00-imagine-dark.svg">
+<link rel="preload" as="image" href="../svgs/00-imagine-white.svg">
+
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.3">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+
+ 
+ <!-- INCLUDES
+ Main Scripts-->   
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../content-javascript.js?v=2.2" defer></script>
+ <script src="../clip/dist/clipboard.min.js" defer></script>
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<!--13--><script src="includes/chap-foot.js?V=2" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+ #bookNotePalette {
+    position: fixed;  /* Changed from absolute to fixed */
+    bottom: -200px; 
+    background: var(--slider);
+    border: 1px solid grey;
+    transition: bottom 0.5s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 20; /* This ensures the palette is above other page content */
+ }
+
+ @media screen and (max-width: 700px) {
+
+ #bookNotePalette { 
+    bottom: -200px; 
+    left: 12.5%; 
+    width: 85%;
+    height: 120px; 
+    border-radius: 5px 5px 0px 0px;
+}
+ }
+
+ @media screen and (min-width: 700px) and (max-width: 1324px) {
+    
+    #bookNotePalette {
+        bottom: -200px; 
+        left: 25%; 
+        width: 300px;
+        height: 150px; 
+        border-radius: 7px 7px 0px 0px;
+}
+ }
+
+@media screen and (min-width: 1325px) {
+    #bookNotePalette {
+        bottom: -200px; 
+        left: 25%; 
+        width: 320px;
+        height: 150px; 
+        border-radius: 9px 9px 0px 0px;
+}
+
+}
+
+#closePalette {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    background: grey;
+    border: none;
+    color: black;
+    cursor: pointer;    
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+</style>
+</HEAD>
+
+
+
+<BODY class="accessibility-plugin-ac">
+
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
+
+  <div id="underlayer">
+
+    <div id="top"></div>
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+
+<div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+    <div id="ct-chapter-title">A Stellar Story</div>   
+    <div id="ct-book-title">Tractatus Ayyew</div>
+    <div id="ct-chap-location">Book One | Chapter Two</div>
+    <div id="ct-word-count"><i>578 words</i></div>
+  </div>
+</div> 
+
+<!-- Page Title Section-->
+
+<div id="ct-chapt-graphic" class="background-2">
+
+</div>
+
+
+<div id="up-arrow"></div>
+
+<div id="ct-main">
+
+
+<div id="chap-notice">
+<div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+<div id="chap-notice-text">
+  Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
+</div>
+</div>
+
+
+<!-- MAIN TEXT CONTENT of the Page
+For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
+-->
+
+<div class="lead-page-paragraph" id="en-1-2-00"></p>
+    LIKE NO OTHER MATERIAL, plastic has been made entirely for the use and benefit of humans.   For the last half-century we have loved it: steadily incorporating plastic into every aspect of our modern lives.  However, of no use to other creatures, plastic has come to clog ecological cycles on land, in river and at sea.  The polluting consequences of our human-centered creation is now the focus of great hate and humiliation.  Though our various other ecological crises— ocean acidification, climate change, species extinction— may be far more dire; nonetheless, as we survey sullied beaches, choked rivers and beached whales, it is plastic pollution that causes us the most shame.
+ </div>
+
+<div class="page-paragraph">
+
+<p id="en-1-2-01">However, through it, an awakening has begun.</p>
+
+  <p id="en-1-2-02">Around the globe we’re realizing where our plastic, oh-so carefully segregated, is actually ending up.<a href="#footnotes" onclick="openFootnotes()" title="A report by Global Web Index found that the 'Attenborough Effect', named after the narrator of the 2018 documentary Blue Planet II, led to a 53 percent reduction in single-use plastic usage over 2019.  See: Sustainable Packaging: Consumer View, (Global Web Index: 2020)">⁵</a>  Investigative journalism and scientific study has made the fate of all our plastics clear.<a href="#footnotes" onclick="openFootnotes()" title="In a comprehensive survey of all plastics ever made, it is estimated that 8300 million metric tons of virgin plastics have been produced worldwide; 9% of which have been recycled, 12% were incinerated and 79% have accumulated in landfills or the natural environment since 1950.  R. Geyer, et al., Production, use and fate of all plastics ever made (Science Advances, 2017) Vol. 3, no. 7.">⁶</a>  No matter how well we landfill it— microscopic plastic particles are ending up loose in the biosphere.<a href="#footnotes" onclick="openFootnotes()" title="“Worldwide there is a growing concern about the risks and possible adverse effects of (micro)plastics.”  See:   Ansje Lohr, Heidi Savelli, Raoul Beunen, Marco Kalz, Ad Ragas, Frank Van Belleghem, Solutions for global marine litter pollution,  (sciencedirect.com: Current opinion in Environmental Sustainability, Vol 28, October 2017) 90-99">⁷</a>  No matter how thoroughly we incinerate it—  plastic’s chemicals are leaching out into ecosystems and us.  No matter how much we recycle it— plastic’s usage, production and associated emissions<a href="#footnotes" onclick="openFootnotes()" title="“By 2030, CO2 emissions from the production, processing and disposal of plastic could reach 1.34 gigatons per year—equivalent to the emissions released by more than 295 new 500-megawatt coal-fired power plants.” Center for International Environmental Law, Plastic & Climate: The Hidden Costs of a Plastic Planet (CIEL, 2019).">⁸</a> rise unabated.<a href="#footnotes" onclick="openFootnotes()" title="In 2016 Russell spent time working in a Canadian recycling facility.  The experience and realizations of industrially recycling’s role in the generation of plastic pollution invigorated the authors dialogue. See:  Russell Maier, Recycling: The Evil Illusion (Medium.com, 2016).">⁹</a>
+  </p>
+
+
+  <p id="en-1-2-03">Our realization of the relentless ensuing pollution has evoked a generational despair.<a href="#footnotes" onclick="openFootnotes()">¹⁰</a>  It has led to a harsh judgment of both ourselves and of plastic as innately flawed and ecological damaging.  Many lament that both plastic and humanity seem destined to pollute, contaminate and deplete.<a href="#footnotes" onclick="openFootnotes()" title="“It's super painful to be a human being right now at this point in history.“ Mike Pearl, Climate Despair Is Making People Give Up on Life, (Vice Magazine, 2019).">¹¹</a></p>
+
+  <p id="en-1-2-04">However, such judgments are entirely misplaced.<a href="#footnotes" onclick="openFootnotes()" title="“Human beings are a disease, a cancer of this planet.” Agent Smith, The Matrix ( The Wachowskis, Warner Bros, 1999).  We observe that the common modern view of humans as a super virus, is a form of human-exceptionalism.  We observe that the categorical judgment of (human-made) plastic as bad is an extension of this ontology-- the very same human-centricism that underlies our modern ideologies.    The repudiation of this ontology as both empirically and rationally fallacious is one of the principal efforts of the Tractatus Ayyew in the chapters ahead.">¹²</a>
+  </p>
+
+  <p id="en-1-2-05">While we’re now seeing clearly where our plastic ends up, this is only half the story.  Our century-long account of plastic as human-made and managed has been woefully short-sighted. Until now, we haven’t truly grasped where our plastic <i>began</i>– both physically and philosophically.</p>
+
+  <p id="en-1-2-06">Oft-unknown: plastic’s matter is a by-product of the extraction and refinement of the fossil carbon that powers our modern age.  And the fossil carbon itself?  It is in fact the by-product of Earth’s epic unfolding of a greener and greener biosphere— an ecological act from which we have much to learn.</p>
+
+  <p id="en-1-2-07">So, while our slumber has been stirred by observing plastic’s destiny, our full awakening shall come with an understanding of its origins.  For therein plastic’s primordial story lies the key to the reversal of plastic's polluting— and, incidentally, to the reversal of all our other ecological crises.  For while plastic pollution, ocean acidification, climate change and  species extinction may seem disparate and unconnected, they share a common cause in the dissonance of Earth and modern humanity’s patterns of process.</p>
+
+  <!--<p id="en-1-2-0">From its petroleum derivation to its human-centered design; from its inevitable dispersal to its polluting consequences; our plastic embodies the root aspects of all modern ecological crises like nothing else.</p>-->
+
+  <p id="en-1-2-08">In this way, we shall see in the chapters that follow how plastic holds an ecological value that our modern society has completely overlooked.  </p>
+
+  <p id="en-1-2-09">For as plastic passes through our hands each day, through it we can quite literally touch the paradigm and pattern that powers our age of depletion.  Through this touch, we have a unique opportunity to shift plastic’s fate— and so too shift the parameters and pattern that looms unseen behind it and our modern world. </p>
+
+
+  <p id="en-1-2-010">But to grasp this momentous opportunity, we must first transcend our judgments and condemnations of plastic— and of ourselves.</p>
+
+  <p id="en-1-2-0">To do so we must go back and look at how plastic arrived into our hands in the first place.</p>
+
+  <p id="en-1-2-011">To do so we must go back to the interstellar origins of planet Earth and retell plastic’s story in a whole new way.</p>
+
+  <p id="en-1-2-012">As we shall see, only with a view of the stars can we gain the requisite planetary perspective to the glimpse the green way forward awaits us.</p>
+
+ <br><br><br>
+ </div><!--closes page text content-->
+
+<!-- BOOKNOTES BUTTON-->
+
+<div id="bookNotePalette" class="palette-hidden">
+    <span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>
+    <button id="highlightSaveButton" class="action-btn">Highlight & Save</button>
+    <button id="copyBtn" class="action-btn">Copy</button>
+</div>
+
+
+    <!--FOOTNOTES SECTION-->
+
+  <div class="footnote-section" style="z-index:8;">
+
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
+      
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+      
+        <a href="#en-1-2-01" class="footnote">   
+        <div class="footnote-number">5.</div>
+        <div class="footnote-text">A report by Global Web Index found that the 'Attenborough Effect', named after the narrator of the 2018 documentary Blue Planet II, led to a 53 percent reduction in single-use plastic usage over 2019.  See: <i>Sustainable Packaging: Consumer View</i> (Global Web Index: 2020)</div>
+        </a>
+
+        <a href="#en-1-2-01" class="footnote">   
+        <div class="footnote-number">6.</div>
+        <div class="footnote-text">In a comprehensive survey of all plastics ever made, it is estimated that 8300 million metric tons of virgin plastics have been produced worldwide; 9% of which have been recycled, 12% were incinerated and 79% have accumulated in landfills or the natural environment since 1950.  R. Geyer, et al., <i>Production, use and fate of all plastics ever made (Science Advances, 2017) Vol. 3, no. 7.</i></div>
+        </a>
+
+        <a href="#en-1-2-01" class="footnote">   
+        <div class="footnote-number">7.</div>
+        <div class="footnote-text">“Worldwide there is a growing concern about the risks and possible adverse effects of (micro)plastics.”  See:   Ansje Lohr, Heidi Savelli, Raoul Beunen, Marco Kalz, Ad Ragas, Frank Van Belleghem, <i>Solutions for global marine litter pollution</i>,  (sciencedirect.com: Current opinion in Environmental Sustainability, Vol 28, October 2017) 90-99</div>
+        </a>
+
+        <a href="#en-1-2-01" class="footnote">   
+        <div class="footnote-number">8.</div>
+        <div class="footnote-text">“By 2030, CO2 emissions from the production, processing and disposal of plastic could reach 1.34 gigatons per year—equivalent to the emissions released by more than 295 new 500-megawatt coal-fired power plants.” Center for International Environmental Law, <i>Plastic & Climate: The Hidden Costs of a Plastic Planet</i> (CIEL, 2019).</div>
+        </a>
+
+      <a href="#en-1-2-01" class="footnote">   
+      <div class="footnote-number" id="3-down">9.</div>
+      <div class="footnote-text">In 2016 Russell spent time working in a Canadian recycling facility.  The experience and realizations of industrially recycling’s role in the generation of plastic pollution invigorated the authors dialogue. See:  Russell Maier, <i>Recycling: The Evil Illusion</i> (Medium.com, 2016).</div>
+      </a>
+
+  
+      <a href="#en-1-2-03" class="footnote">   
+      <div class="footnote-number">10.</div>
+      <div class="footnote-text">“It's super painful to be a human being right now at this point in history." Mike Pearl, <i>Climate Despair Is Making People Give Up on Life</i>(Vice Magazine, 2019).</div>
+      </a>
+
+      
+      <a href="#10-up" class="footnote">   
+      <div class="footnote-number">11.</div>
+      <div class="footnote-text">Steven W. Running, <i>The 5 Stages of Climate Grief</i>(University of Montana, Missoula: Numerical Terradynamic Simulation Group Publications: 2007).</div>
+      </a>
+
+      
+      <a href="#12-up" class="footnote">   
+      <div class="footnote-number">12.</div>
+      <div class="footnote-text">“Human beings are a disease, a cancer of this planet.” Agent Smith in <i>The Matrix</i> ( The Wachowskis, Warner Bros, 1999).  We observe that the common modern view of humans as a super virus, is a form of human-exceptionalism.  We observe that the categorical judgment of (human-made) plastic as bad is an extension of this ontology-- the very same human-centricism that underlies our modern ideologies.    The repudiation of this ontology as both empirically and rationally fallacious is one of the principal efforts of the Tractatus Ayyew in the chapters ahead.</div>
+      </a>
+
+       
+
+
+      </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div><!--Closes footnote section-->
+              
+      </div><!--Closes main content block-->
+
+
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
+
+<!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
+
+
+<!--FOOTER Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+
+    <div class="footer-size">
+    
+      <div class="footer-left">
+
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+
+     
+        <div class="next-section">
+          <div class="next-sec">Next section:</div>
+          <div class="sec-name"><i>An Interstelar Story</i></div>
+        </div>
+
+      </div>
+  
+      <div class="footer-right">
+    
+        <a href="stellar.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+
+      </div>
+    </div>
+
+<!-- CHAPTER FOOTER-->
+
+
+<chap-foot></chap-foot>
+
+
+
+</div><!--underlayer-->
+
+<script>
+
+
+
+document.addEventListener('mouseup', function(e) {
+    let selectedText = window.getSelection().toString();
+    if (selectedText) { // If some text is selected
+        saveBookNotePalette();
+    }
+});
+
+function saveBookNotePalette() {
+    const palette = document.getElementById('bookNotePalette');
+    palette.style.bottom = '0'; // Slide up to show the palette
+}
+
+document.getElementById('closePalette').addEventListener('click', function() {
+    const palette = document.getElementById('bookNotePalette');
+    palette.style.bottom = '-200px'; // Slide down to hide the palette
+});
+
+
+document.getElementById('copyBtn').addEventListener('click', function() {
+    let selectedText = window.getSelection().toString();
+    copyToClipboard(selectedText);
+});
+
+function copyToClipboard(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+
+    // Change button text and style
+    const button = document.getElementById('copyBtn');
+    button.style.color = 'green';
+    button.textContent = '✓ Copied!';
+
+    // Slide down and hide the palette
+    setTimeout(() => {
+        const palette = document.getElementById('bookNotePalette');
+        palette.style.bottom = '-200px'; // Slide down to hide the palette
+
+        // After an additional second, reset the button text
+        setTimeout(() => {
+            button.textContent = 'Copy';
+            button.style.color = 'var(--text-color)';
+        }, 1000);
+    }, 800);
+}
+
+
+
+
+
+/*NEW HIGHLIGHT SYSTEM*/
+
+let currentId = 0;
+
+function generateId() {
+    currentId += 1;
+    return String(currentId).padStart(3, '0');
+}
+
+function highlightSaveBookNote() {
+    const selection = window.getSelection();
+
+    // If there's selected text
+    if (selection.rangeCount > 0) {
+        const selectedRange = selection.getRangeAt(0);
+
+        // Create a span element, add the highlight class to it, and surround the selected text with it
+        const span = document.createElement("span");
+        span.classList.add("highlight");
+        span.title = "Click to remove BookNote"; // Adding title attribute
+        span.alt = "Highlight"; // Adding alt attribute
+
+        // Generate and store a unique identifier
+        const id = generateId();
+        span.dataset.id = id;
+
+        selectedRange.surroundContents(span);
+
+        const startContainer = selectedRange.startContainer.parentNode.id;
+
+        // Calculate startOffset considering all text nodes inside the selected paragraph
+        let startOffset = 0;
+        let nodeIterator = document.createTreeWalker(
+            selectedRange.startContainer.parentNode,
+            NodeFilter.SHOW_TEXT,
+            null,
+            false
+        );
+        let node = nodeIterator.firstChild();
+
+        while (node && node !== selectedRange.startContainer) {
+            startOffset += node.textContent.length;
+            node = nodeIterator.nextNode();
+        }
+
+        startOffset += selectedRange.startOffset;
+
+        const storedNoteText = selection.toString();
+        const charCount = storedNoteText.length; // Counting characters
+        const now = new Date();
+        const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+        const noteChapter = chapName; // Using the global variable
+
+        // Retrieve existing bookNotes from local storage
+        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+        // New highlight object
+        const bookNote = {
+            id,
+            book,
+            chapNo,
+            chapName,
+            chaptURL,
+            startContainer,
+            startOffset,
+            storedNoteText,
+            noteChapter,
+            charCount,
+            BNdateTime
+        };
+
+        // Add the new highlight to the array
+        bookNotes.push(bookNote);
+
+        // Save the updated array back to local storage
+        localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+
+        // Log to console
+        console.log('BookNote saved:', bookNote);
+
+        // Clear the selection
+        selection.removeAllRanges();
+
+        // Update the button text
+        const button = document.getElementById('highlightSaveButton');
+        button.style.color = 'green';
+        button.style.fontWeight = 'bold';
+        button.textContent = '✓ Saved!';
+
+        // Hide the palette after 1 second
+        setTimeout(() => {
+            const palette = document.getElementById('bookNotePalette');
+            palette.style.bottom = '-200px'; // Slide down to hide the palette
+
+            // After an additional second, reset the button text
+            setTimeout(() => {
+                const button = document.getElementById('highlightSaveButton');
+                button.textContent = 'Highlight & Save';
+                button.style.color = 'var(--text-color)';
+                button.style.fontWeight = 'normal';
+            }, 1000);
+        }, 1000);
+    }
+}
+
+
+
+document.getElementById('highlightSaveButton').addEventListener('click', highlightSaveBookNote);
+
+
+function removeHighlight(event) {
+    const element = event.target;
+    
+    if (element.classList.contains('highlight')) {
+        const id = element.dataset.id;
+
+        // Get the bookNotes from local storage
+        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+        // Find the index of the bookNote with the given id
+        const index = bookNotes.findIndex(bookNote => bookNote.id === id);
+
+        if (index !== -1) {
+            // If the bookNote was found, remove it
+            bookNotes.splice(index, 1);
+
+            // Save the updated array back to local storage
+            localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+
+            console.log('BookNote removal success');
+        } else {
+            console.log('BookNote removal failed');
+        }
+
+        // Remove the span tag
+        const text = document.createTextNode(element.textContent);
+        element.parentNode.replaceChild(text, element);
+    }
+}
+
+
+// Add a click event listener to the document to call removeHighlight when a highlight span is clicked
+document.addEventListener('click', removeHighlight);
+
+
+
+function recreateSelection() {
+    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+    bookNotes.forEach(note => {
+        const { storedNoteText, startContainer, startOffset, id } = note;
+
+        if (storedNoteText && startContainer && startOffset !== null && id) {
+            try {
+                // Find the element by the saved ID
+                const container = document.getElementById(startContainer);
+
+                if (container) {
+                    // Traverse through text nodes to find the correct position
+                    let node = container.firstChild;
+                    let currentOffset = 0;
+
+                    while (node) {
+                        if (node.nodeType === Node.TEXT_NODE) {
+                            if (currentOffset + node.length >= startOffset) {
+                                break;
+                            }
+                            currentOffset += node.length;
+                        }
+                        node = node.nextSibling;
+                    }
+
+                    if (node) {
+                        const range = document.createRange();
+                        range.setStart(node, startOffset - currentOffset);
+                        range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
+
+                        const span = document.createElement('span');
+                        span.className = 'highlight';
+                        span.textContent = storedNoteText;
+                        span.dataset.id = id; // Reusing the same id
+                        span.title = "Click to remove BookNote";
+
+                        range.deleteContents();
+                        range.insertNode(span);
+                    } else {
+                        console.error('Error: Stored text not found for the following book note:', note);
+                    }
+                } else {
+                    console.error('Error: Container element not found for the following book note:', note);
+                }
+            } catch (err) {
+                console.error('An error occurred while recreating selection for the following book note:', note);
+                console.error(err);
+            }
+        } else {
+            console.warn('Warning: Incomplete book note data. Ignoring the following book note:', note);
+        }
+    });
+}
+window.addEventListener('load', recreateSelection);
+
+// Make sure this is after recreateSelection
+document.addEventListener('click', removeHighlight);
+</script>
+
+</body>
+</html>
+
