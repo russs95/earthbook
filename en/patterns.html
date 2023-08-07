@@ -336,7 +336,7 @@ button:hover {
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ¹⁰ ¹³
 -->
-<div class="lead-page-paragraph">
+<div class="lead-page-paragraph" id="en-1-4-00">
     OVER THE LAST FOUR BILLION YEARS, the singular combination of our planet's orbit, spin, composition and chemistry has played out.  As this unique configuration of matter and energy has unfolded, a once barren rock has transformed into the thriving biosphere that is our common home today.  Of all that we know of other planets in our solar system and galaxy, it is an extraordinary and epic story.  However, even more remarkable, the telling of the tale is now part of the story itself.
  </div>
 
@@ -351,7 +351,7 @@ button:hover {
 
 <div class="page-paragraph">
 
-<p id="en-1-4-0">The telling of Earth's tale is only possible through a vast and unique confluence of matter and energy; the spiral of carbon into ever more concentrated and complex configurations, the dispersion of the sun's energy into ever more diverse organisms and ecosystems; and through it all the inexorable unfolding of sentience in a myriad of forms.  Powered by ancient compacted carbon, our last centuries of civilization and science have been able to illuminate both Earth’s story and our own.</p>
+<p id="en-1-4-01">The telling of Earth's tale is only possible through a vast and unique confluence of matter and energy; the spiral of carbon into ever more concentrated and complex configurations, the dispersion of the sun's energy into ever more diverse organisms and ecosystems; and through it all the inexorable unfolding of sentience in a myriad of forms.  Powered by ancient compacted carbon, our last centuries of civilization and science have been able to illuminate both Earth’s story and our own.</p>
 
   <p id="en-1-4-0">From this vast vantage we must revisit our judgments of ourselves and of plastic.</p>
 
@@ -410,7 +410,7 @@ button:hover {
     <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
     <button id="highlightSaveButton" class="pallette-btn">Highlight & Save</button>
     <button id="copyBtn" class="pallette-btn">Copy</button>
-    <!--<button id="cancelBtn" class="pallette-btn">X</button>-->
+    <button id="cancelBtn" class="pallette-btn">X</button>
 </div>
 
 
@@ -567,14 +567,14 @@ button:hover {
      
         <div class="next-section">
           <div class="next-sec">Next section:</div>
-          <div class="sec-name"><i>Patterns of Process</i></div>
+          <div class="sec-name"><i>Kindred Relations</i></div>
         </div>
 
       </div>
   
       <div class="footer-right">
     
-        <a href="patterns.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+        <a href="kincentric.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
@@ -589,6 +589,8 @@ button:hover {
 </div><!--underlayer-->
 
 <script>
+
+    /*
 function checkSelectedText() {
     const selection = window.getSelection();
 
@@ -618,6 +620,18 @@ function checkSelectedText() {
 document.addEventListener('mouseup', checkSelectedText);
 document.addEventListener('touchend', checkSelectedText);
 
+*/
+
+
+function checkSelectedText() {
+    let selectedText = window.getSelection().toString();
+    if (selectedText) { // If some text is selected
+        saveBookNotePalette();
+    }
+}
+
+document.addEventListener('mouseup', checkSelectedText);
+document.addEventListener('touchend', checkSelectedText);
 
 
 
@@ -627,6 +641,7 @@ document.addEventListener('mouseup', function(e) {
         saveBookNotePalette();
     }
 });
+
 
 function saveBookNotePalette() {
     const palette = document.getElementById('bookNotePalette');
