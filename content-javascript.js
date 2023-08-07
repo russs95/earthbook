@@ -243,7 +243,7 @@ function handleDesktopSelection() {
   function handleMobileSelection() {
     selectedRange = getSelectedRange();
   
-    const spanDelay = 3000; //  delay before removing user's text selection
+    const spanDelay = 1000; //  delay before removing user's text selection
     const removeSpanDelay = 3000; //  delay before removing the span formatting
 
     selectedRange = getSelectedRange();
