@@ -70,6 +70,7 @@ class chapfoot extends HTMLElement {
       
 
     </div>
+    </div>
 
 
   
