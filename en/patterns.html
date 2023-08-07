@@ -313,9 +313,9 @@ All the page components required to build this page-->
 <div id="bookNotePalette" class="palette-hidden">
     <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
     <button id="highlightSaveButton" class="pallette-btn">Highlight</button>
-    <button id="copyBtn" class="pallette-btn"><img src="../svgs/icon-readfreely.svg" alt="Close page button" width="50"></button> 
-    <button id="booknotesBtn" class="pallette-btn"><img src="../icons/booknotes.svg" alt="Close page button" width="50"></button>
-    <button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></button>
+    <button id="copyBtn" class="pallette-btn"><img src="../svgs/icon-readfreely.svg" alt="Close page button" height="20px"></button> 
+    <button id="booknotesBtn" class="pallette-btn"><img src="../icons/booknotes.svg" alt="Close page button" height="20px"></button>
+    <button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="20"></button>
 </div>
 
 
@@ -623,18 +623,23 @@ function highlightSaveBookNote() {
 
         selectedRange.surroundContents(span);
 
-        // Store the positions and selected text in the local storage
-        const startContainer = selectedRange.startContainer.parentNode.id;
-        const endContainer = selectedRange.endContainer.parentNode.id;
+        // Find the closest p ancestor for startContainer and endContainer
+        let startContainerNode = selectedRange.startContainer;
+        while (startContainerNode.nodeName !== 'P' && startContainerNode.parentNode !== null) {
+            startContainerNode = startContainerNode.parentNode;
+        }
+        const startContainer = startContainerNode.id;
+
+        let endContainerNode = selectedRange.endContainer;
+        while (endContainerNode.nodeName !== 'P' && endContainerNode.parentNode !== null) {
+            endContainerNode = endContainerNode.parentNode;
+        }
+        const endContainer = endContainerNode.id;
+
         const startOffset = selectedRange.startOffset;
         const endOffset = selectedRange.endOffset;
         const storedText1 = selection.toString();
         
-        localStorage.setItem('startContainer', startContainer);
-        localStorage.setItem('endContainer', endContainer);
-        localStorage.setItem('startOffset', startOffset);
-        localStorage.setItem('endOffset', endOffset);
-        localStorage.setItem('storedText1', storedText1);
 
         // Display an alert with the stored variables
         alert(
@@ -702,6 +707,7 @@ function highlightSaveBookNote() {
         }, 1000);
     }
 }
+
 
 
 
