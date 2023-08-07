@@ -47,7 +47,7 @@ For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.e
 <link rel="canonical" href="https://book.earthen.io/en/plastic1.html"> 
 <link rel="alternate" href="https://book.earthen.io/en/plastic1.html" hreflang="en" >
 <link rel="alternate" href="http://book.earthen.io/en/plastic1.html" hreflang="x-default" >
-<link rel="alternate" href="https://book.earthen.io/fr/imaginer.html" hreflang="fr" >
+<link rel="alternate" href="https://book.earthen.io/fr/plastique1.html" hreflang="fr" >
 <!--
 <link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
 <link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
@@ -57,8 +57,8 @@ For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.e
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
 
-<meta name="keywords" content="Imagine, a green new world, plastic, green, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, permaculture, bill molison, green ethics, environment, deep ecology, ecological, ethics"> 
-<meta name="description" content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.">
+<meta name="keywords" content="Plastic, 1.0, plastic pollution, petro-capital economy, human nature, nature of plastic, recycling, incineration, dumping"> 
+<meta name="description" content="Like no other material, plastic has been made entirely for the use and benefit of humans.">
 	
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
@@ -69,8 +69,8 @@ These tags will be consistent for the whole book-->
 <meta property="og:site_name" content="An Earthen Ethic - Tracatus Ayyew">
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
-<meta property="og:title"         content="Imagine - Tractatus Ayyew | An Earthen Ethics">
-<meta property="og:description"   content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.">
+<meta property="og:title"         content="Plastic 1.0 - Tractatus Ayyew | An Earthen Ethics">
+<meta property="og:description"   content="Like no other material, plastic has been made entirely for the use and benefit of humans.">
 <meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
@@ -81,8 +81,8 @@ These tags will be consistent for the whole book-->
 <script>
       // Declare the global variables
      var book = "Introduction";
-    var chapNo = "2";
-    var chapName = "Imagine";
+    var chapNo = "3";
+    var chapName = "Plastic 1.0";
     var chaptURL = "plastic1.html"   // Declare the global variables
   
 
@@ -251,16 +251,16 @@ button:hover {
 <div id="ct-chapter-top">
   <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-    <div id="ct-chapter-title">Imagine</div>   
+    <div id="ct-chapter-title">Plastic 1.0</div>   
     <div id="ct-book-title">Tractatus Ayyew</div>
-    <div id="ct-chap-location">Book One | Chapter One</div>
-    <div id="ct-word-count"><i>1,095 words</i></div>
+    <div id="ct-chap-location">Book One | Chapter Two</div>
+    <div id="ct-word-count"><i>578 words</i></div>
   </div>
 </div> 
 
 <!-- Page Title Section-->
 
-<div id="ct-chapt-graphic" class="background-1">
+<div id="ct-chapt-graphic" class="background-2">
 
 </div>
 
@@ -522,6 +522,13 @@ function copyToClipboard(text) {
 
 /*NEW HIGHLIGHT SYSTEM*/
 
+let currentId = 0;
+
+function generateId() {
+    currentId += 1;
+    return String(currentId).padStart(3, '0');
+}
+
 function highlightSaveBookNote() {
     const selection = window.getSelection();
 
@@ -534,6 +541,11 @@ function highlightSaveBookNote() {
         span.classList.add("highlight");
         span.title = "Click to remove BookNote"; // Adding title attribute
         span.alt = "Highlight"; // Adding alt attribute
+
+        // Generate and store a unique identifier
+        const id = generateId();
+        span.dataset.id = id;
+
         selectedRange.surroundContents(span);
 
         const startContainer = selectedRange.startContainer.parentNode.id;
@@ -560,6 +572,7 @@ function highlightSaveBookNote() {
 
         // New highlight object
         const bookNote = {
+            id,
             book,
             chapNo,
             chapName,
@@ -591,24 +604,56 @@ function highlightSaveBookNote() {
         button.textContent = '✓ Saved!';
 
         // Hide the palette after 1 second
-        // Hide the palette after 1 second
-setTimeout(() => {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '-200px'; // Slide down to hide the palette
+        setTimeout(() => {
+            const palette = document.getElementById('bookNotePalette');
+            palette.style.bottom = '-200px'; // Slide down to hide the palette
 
-    // After an additional second, reset the button text
-    setTimeout(() => {
-        const button = document.getElementById('highlightSaveButton');
-        button.textContent = 'Highlight & Save';
-        button.style.color = 'var(--text-color)';
-        button.style.fontWeight = 'normal';
-    }, 1000);
-}, 1000);
+            // After an additional second, reset the button text
+            setTimeout(() => {
+                const button = document.getElementById('highlightSaveButton');
+                button.textContent = 'Highlight & Save';
+                button.style.color = 'var(--text-color)';
+                button.style.fontWeight = 'normal';
+            }, 1000);
+        }, 1000);
     }
 }
 
 
+
 document.getElementById('highlightSaveButton').addEventListener('click', highlightSaveBookNote);
+
+
+function removeHighlight(event) {
+    const element = event.target;
+    
+    if (element.classList.contains('highlight')) {
+        const id = element.dataset.id;
+
+        // Get the bookNotes from local storage
+        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+        // Find the index of the bookNote with the given id
+        const index = bookNotes.findIndex(bookNote => bookNote.id === id);
+
+        if (index !== -1) {
+            // If the bookNote was found, remove it
+            bookNotes.splice(index, 1);
+
+            // Save the updated array back to local storage
+            localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+
+            console.log('BookNote removal success');
+        } else {
+            console.log('BookNote removal failed');
+        }
+
+        // Remove the span tag
+        const text = document.createTextNode(element.textContent);
+        element.parentNode.replaceChild(text, element);
+    }
+}
+
 
 </script>
 
