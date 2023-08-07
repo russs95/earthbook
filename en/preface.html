@@ -97,13 +97,13 @@ These tags will be consistent for the whole book-->
     }
 
 
-
+/*
     document.addEventListener('mouseup', function(e) {
     let selectedText = window.getSelection().toString();
     if (selectedText) { // If some text is selected
         saveBookNotePalette();
     }
-});
+});*/
 
 function saveBookNotePalette() {
     const palette = document.getElementById('bookNotePalette');
@@ -231,11 +231,11 @@ All the page components required to build this page-->
 
 
  #bookNotePalette {
-    position: absolute;
-    bottom: -200px; /* start off the screen */
+    position: fixed;
+    bottom: 0px; /* start off the screen */
     left: 10%; /* centered */
     width: 80%;
-    height: 200px;
+    height: -200px;
     background: black;
     border: 1px solid grey;
     border-radius: 10px;
@@ -336,7 +336,7 @@ button:hover {
   <div class="page-paragraph">
      <p id="en-1-2-01">In 2011, the amount of discarded sandals, sodden diapers, used bags and tossed wrappers entering the Chico River had reached a breaking point. Overwhelmed by the ever arriving slew of plastic, the downriver Filipino province of Kalinga took action to sue the upriver town of Bontoc. The mayor and governor took the charges seriously. They set about shutting down the numerous dumpsites along the river's winding course through the remote region.</p>
        
-      <p id="en-1-2-02">But where was all our plastic to go?</p>
+      <p id="en-1-2-02">But where was all our plastic to go? <span class="java-link" rel="nofollow" onclick="saveBookNotePalette()"  title="See book's purchase options and prices">OPEN</span> </p>
   
       <p id="en-1-2-03">For those of us living along the river, the challenge was palpable.</p>
         
