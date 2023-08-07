@@ -560,7 +560,7 @@ button:hover {
 
 <script>
 
-    
+
 function checkSelectedText() {
     let selectedText = window.getSelection().toString();
     if (selectedText) { // If some text is selected
@@ -656,7 +656,7 @@ function highlightSaveBookNote() {
 
         const startContainer = selectedRange.startContainer.parentNode.id;
 
-        // Calculate startOffset considering only text nodes inside the selected paragraph
+        // Calculate startOffset considering only the selected div block 
         let startOffset = 0;
         let node = selectedRange.startContainer.parentNode.firstChild;
         while (node && node !== selectedRange.startContainer) {
