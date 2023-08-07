@@ -366,8 +366,8 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
 
 <div id="bookNotePalette" class="palette-hidden">
     <span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>
-    <button id="highlightSaveButton">Highlight & Save</button>
-    <button id="copyBtn">Copy</button>
+    <button id="highlightSaveButton" class="action-btn">Highlight & Save</button>
+    <button id="copyBtn" class="action-btn">Copy</button>
 </div>
 
 
@@ -589,10 +589,19 @@ function highlightSaveBookNote() {
         button.textContent = '✓ Saved!';
 
         // Hide the palette after 1 second
-        setTimeout(() => {
-            const palette = document.getElementById('bookNotePalette');
-            palette.style.bottom = '-200px'; // Slide down to hide the palette
-        }, 1000);
+        // Hide the palette after 1 second
+setTimeout(() => {
+    const palette = document.getElementById('bookNotePalette');
+    palette.style.bottom = '-200px'; // Slide down to hide the palette
+
+    // After an additional second, reset the button text
+    setTimeout(() => {
+        const button = document.getElementById('highlightSaveButton');
+        button.textContent = 'Highlight & Save';
+        button.style.color = 'var(--text-color)';
+        button.style.fontWeight = 'normal';
+    }, 1000);
+}, 1000);
     }
 }
 

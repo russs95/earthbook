@@ -19,7 +19,7 @@ class chapfoot extends HTMLElement {
             </div>
 
             <div class="footer-function-item">
-              <p>The Source Code</p>
+              <p>Source Code</p>
             </div>
 
             <div class="footer-function-item-icon"> 
@@ -70,8 +70,7 @@ class chapfoot extends HTMLElement {
       
 
     </div>
-    </div>
-</div>
+
 
   
 <div id="footer-settings">
