@@ -832,17 +832,17 @@ BOOK NOTE PALETTE
 
 #copyBtn {
   width: 12.5%;
-   border-radius: 4px;
+   border-radius: 25px;
 }
 
 #booknotesBtn {
   width: 12.5%;
-   border-radius: 4px;
+   border-radius: 25px;
 }
 
 #cancelBtn {
   width: 15%;
-  border-radius: 5px 25px 5px 5px;
+  border-radius: 25px;
 }
 
 

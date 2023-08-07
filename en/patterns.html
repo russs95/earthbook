@@ -313,10 +313,10 @@ All the page components required to build this page-->
 <div id="bookNotePalette" class="palette-hidden">
     <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
     <button id="highlightSaveButton" class="pallette-btn">Highlight</button>
-    <button id="copyBtn" class="pallette-btn"><img src="../icons/copy.svg" alt="Close page button" height="30px"></button> 
-    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="30px"></button>
-    <button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="30"></button>
-</div>
+    <button id="copyBtn" class="pallette-btn"><img src="../icons/copy.svg" alt="Close page button" height="24px"></button> 
+    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="24px"></button>
+    <button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="24"></button>
+</div>30
 
 
    
@@ -623,29 +623,20 @@ function highlightSaveBookNote() {
 
         selectedRange.surroundContents(span);
 
-      // Find the closest p ancestor for startContainer and endContainer
+     // Find the closest p ancestor for startContainer
 let startContainerNode = selectedRange.startContainer;
 while (startContainerNode.nodeName !== 'P' && startContainerNode.parentNode !== null) {
     startContainerNode = startContainerNode.parentNode;
 }
 const startContainer = startContainerNode.id;
-const totalStartContainerChars = startContainerNode.textContent.length; // total characters in the start container
-const charsBeforeHighlightInStartContainer = startContainerNode.textContent.indexOf(selection.toString());
-
-let endContainerNode = selectedRange.endContainer;
-while (endContainerNode.nodeName !== 'P' && endContainerNode.parentNode !== null) {
-    endContainerNode = endContainerNode.parentNode;
-}
-const endContainer = endContainerNode.id;
+const startOffset = startContainerNode.textContent.indexOf(selection.toString()); // offset of the highlight in the start container
 
 const storedText1 = selection.toString();
 
 // Display an alert with the stored variables
 alert(
     `Start Container: ${startContainer}\n` +
-    `Total characters in Start Container: ${totalStartContainerChars}\n` +
-    `Characters before Highlight in Start Container: ${charsBeforeHighlightInStartContainer}\n` +
-    `End Container: ${endContainer}\n` +
+    `Start Offset: ${startOffset}\n` +
     `Stored Text: ${storedText1}`
 );
 
