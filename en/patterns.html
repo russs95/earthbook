@@ -258,7 +258,7 @@ All the page components required to build this page-->
     border: var(--thin-border-color);
     background: var(--deeper-accent-color);
     border-style: solid;
-    border-radius: 25px;
+    border-radius: 20px;
     border-width: 1px;
     color: var(--text-color);
     font-family: "Mulish", Arial, Helvetica, sans-serif;
@@ -268,27 +268,22 @@ All the page components required to build this page-->
     cursor: pointer; 
     display: block;
     padding: 10px;
-    font-size: 1.3em;
+    font-size: 1em;
+    margin: 2%;
 }
 
 #highlightSaveButton {
-    width: 50%;
-    margin: 10px 10px 10px 10px;
-    cursor: pointer;    
+    width: 60%;
     border-radius: 25px 0px 0px 25px;
 }
 
 #copyBtn {
     width: 30%;
-    margin: 10px 10px 10px 10px;
-    cursor: pointer;    
-    border-radius: 0px;
+     border-radius: 0px;
 }
 
 #cancelBtn {
-    width: 20%;
-    margin: 10px 10px 10px 10px;
-    cursor: pointer;    
+    width: 10%;
     border-radius: 0px 25px 25px 0px;
 }
 
@@ -317,10 +312,10 @@ button:hover {
 <div id="ct-chapter-top">
   <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
   <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-    <div id="ct-chapter-title">Patterns of Process</div>   
+    <div id="ct-chapter-title">Patterns <i style="font-variant-caps:normal; font-size:0.8em">of</i> Process</div>   
     <div id="ct-book-title">Tractatus Ayyew</div>
     <div id="ct-chap-location">Book One | Chapter Four</div>
-    <div id="ct-word-count"><i>1,060 words</i></div>
+    <div id="ct-word-count"><i>837 words</i></div>
   </div>
 </div> 
 
@@ -349,8 +344,7 @@ button:hover {
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ¹⁰ ¹³
 -->
 
-<div class="lead-page-paragraph">
-    OVER THE LAST FOUR BILLION YEARS, the singular combination of our planet's orbit, spin, composition and chemistry has played out.  As this unique configuration of matter and energy has unfolded, a once barren rock has transformed into the thriving biosphere that is our common home today.  Of all that we know of other planets in our solar system and galaxy, it is an extraordinary and epic story.  However, even more remarkable, the telling of the tale is now part of the story itself.
+<div class="lead-page-paragraph">OVER THE LAST FOUR BILLION YEARS, the singular combination of our planet's orbit, spin, composition and chemistry has played out.  As this unique configuration of matter and energy has unfolded, a once barren rock has transformed into the thriving biosphere that is our common home today.  Of all that we know of other planets in our solar system and galaxy, it is an extraordinary and epic story.  However, even more remarkable, the telling of the tale is now part of the story itself.
  </div>
 
 <div class="page-paragraph">
@@ -411,10 +405,10 @@ button:hover {
 <!-- BOOKNOTES BUTTON-->
 
 <div id="bookNotePalette" class="palette-hidden">
-    <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>-->
-    <button id="highlightSaveButton" class="pallette-btn">⮷ Highlight & Save</button>
+    <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
+    <button id="highlightSaveButton" class="pallette-btn">Highlight & Save</button>
     <button id="copyBtn" class="pallette-btn">Copy</button>
-    <button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></button>
+    <button id="cancelBtn" class="pallette-btn">X</button>
 </div>
 
 
