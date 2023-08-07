@@ -366,7 +366,7 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
 
 <div id="bookNotePalette" class="palette-hidden">
     <span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>
-    <button id="highlightSaveBtn">Highlight & Save</button>
+    <button id="highlightSaveButton">Highlight & Save</button>
     <button id="copyBtn">Copy</button>
 </div>
 
@@ -502,9 +502,6 @@ document.getElementById('closePalette').addEventListener('click', function() {
     palette.style.bottom = '-200px'; // Slide down to hide the palette
 });
 
-document.getElementById('highlightSaveBtn').addEventListener('click', function() {
-    // Add your highlight & save functionality here
-});
 
 document.getElementById('copyBtn').addEventListener('click', function() {
     let selectedText = window.getSelection().toString();

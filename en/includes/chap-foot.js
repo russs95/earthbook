@@ -71,7 +71,7 @@ class chapfoot extends HTMLElement {
 
     </div>
     </div>
-
+</div>
 
   
 <div id="footer-settings">
@@ -96,7 +96,7 @@ class chapfoot extends HTMLElement {
   <div><button type="button" class="footer-settings-icon"><img src="../icons/booknotes.svg" alt="Booknotes icon" style="cursor:pointer" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Click to view your Book notes" title="Click to view your Booknotes"></button></div>
 
  
-  <div><button type="button" class="footer-settings-icon"><img src="../icons/eco-green.svg" alt="Our Ecological Tracking, Accounting and disclosure" title="Our Ecological Tracking, Accounting and disclosure" style="cursor:pointer;" aria-label="Open Ecological Accounting" onclick="openEco()"></button></div>
+  <div style="flex-grow:4; text-align: right;"><button type="button" class="footer-settings-icon"><img src="../icons/eco-green.svg" alt="Our Ecological Tracking, Accounting and disclosure" title="Our Ecological Tracking, Accounting and disclosure" style="cursor:pointer;" aria-label="Open Ecological Accounting" onclick="openEco()"></button></div>
 
 </div>
 
