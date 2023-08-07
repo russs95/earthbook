@@ -204,7 +204,7 @@ All the page components required to build this page-->
     transition: bottom 0.5s;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
     z-index: 20; /* This ensures the palette is above other page content */
  }
 
@@ -269,27 +269,27 @@ All the page components required to build this page-->
     display: block;
     padding: 10px;
     font-size: 1em;
-    margin: 2%;
+    margin: 1%;
 }
 
 #highlightSaveButton {
     width: 60%;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 25px 5px 5px 5px;
 }
 
 #copyBtn {
-    width: 30%;
-     border-radius: 0px;
+    width: 25%;
+     border-radius: 4px;
 }
 
 #cancelBtn {
-    width: 10%;
-    border-radius: 0px 25px 25px 0px;
+    width: 15%;
+    border-radius: 5px 25px 5px 5px;
 }
 
 
 button:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 </style>
@@ -332,13 +332,6 @@ button:hover {
 
 
 
-
-    <div id="chap-notice">
-        <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-        <div id="chap-notice-text">
-          Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
-        </div>
-        </div>
 <!-- MAIN TEXT CONTENT of the Page
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ¹⁰ ¹³
 -->
@@ -347,7 +340,15 @@ button:hover {
  </div>
 
 
-    
+
+
+ <div id="chap-notice">
+    <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+    <div id="chap-notice-text">
+      Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
+    </div>
+    </div>
+
 
 <div class="page-paragraph">
 
@@ -590,7 +591,7 @@ button:hover {
 
 <script>
 
-    /*
+    
 function checkSelectedText() {
     const selection = window.getSelection();
 
@@ -620,15 +621,15 @@ function checkSelectedText() {
 document.addEventListener('mouseup', checkSelectedText);
 document.addEventListener('touchend', checkSelectedText);
 
-*/
 
 
+/*
 function checkSelectedText() {
     let selectedText = window.getSelection().toString();
     if (selectedText) { // If some text is selected
         saveBookNotePalette();
     }
-}
+}*/
 
 document.addEventListener('mouseup', checkSelectedText);
 document.addEventListener('touchend', checkSelectedText);
@@ -645,7 +646,7 @@ document.addEventListener('mouseup', function(e) {
 
 function saveBookNotePalette() {
     const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '-10px'; // Slide up to show the palette
+    palette.style.bottom = '-30px'; // Slide up to show the palette
 }
 
 
