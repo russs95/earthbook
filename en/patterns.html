@@ -313,9 +313,9 @@ All the page components required to build this page-->
 <div id="bookNotePalette" class="palette-hidden">
     <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
     <button id="highlightSaveButton" class="pallette-btn">Highlight</button>
-    <button id="copyBtn" class="pallette-btn"><img src="../icons/copy.svg" alt="Close page button" height="20px"></button> 
-    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="20px"></button>
-    <button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="20"></button>
+    <button id="copyBtn" class="pallette-btn"><img src="../icons/copy.svg" alt="Close page button" height="30px"></button> 
+    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="30px"></button>
+    <button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="30"></button>
 </div>
 
 
@@ -623,32 +623,32 @@ function highlightSaveBookNote() {
 
         selectedRange.surroundContents(span);
 
-        // Find the closest p ancestor for startContainer and endContainer
-        let startContainerNode = selectedRange.startContainer;
-        while (startContainerNode.nodeName !== 'P' && startContainerNode.parentNode !== null) {
-            startContainerNode = startContainerNode.parentNode;
-        }
-        const startContainer = startContainerNode.id;
+      // Find the closest p ancestor for startContainer and endContainer
+let startContainerNode = selectedRange.startContainer;
+while (startContainerNode.nodeName !== 'P' && startContainerNode.parentNode !== null) {
+    startContainerNode = startContainerNode.parentNode;
+}
+const startContainer = startContainerNode.id;
+const totalStartContainerChars = startContainerNode.textContent.length; // total characters in the start container
+const charsBeforeHighlightInStartContainer = startContainerNode.textContent.indexOf(selection.toString());
 
-        let endContainerNode = selectedRange.endContainer;
-        while (endContainerNode.nodeName !== 'P' && endContainerNode.parentNode !== null) {
-            endContainerNode = endContainerNode.parentNode;
-        }
-        const endContainer = endContainerNode.id;
+let endContainerNode = selectedRange.endContainer;
+while (endContainerNode.nodeName !== 'P' && endContainerNode.parentNode !== null) {
+    endContainerNode = endContainerNode.parentNode;
+}
+const endContainer = endContainerNode.id;
 
-        const startOffset = selectedRange.startOffset;
-        const endOffset = selectedRange.endOffset;
-        const storedText1 = selection.toString();
-        
+const storedText1 = selection.toString();
 
-        // Display an alert with the stored variables
-        alert(
-            `Start Container: ${startContainer}\n` +
-            `End Container: ${endContainer}\n` +
-            `Start Offset: ${startOffset}\n` +
-            `End Offset: ${endOffset}\n` +
-            `Stored Text: ${storedText1}`
-        );
+// Display an alert with the stored variables
+alert(
+    `Start Container: ${startContainer}\n` +
+    `Total characters in Start Container: ${totalStartContainerChars}\n` +
+    `Characters before Highlight in Start Container: ${charsBeforeHighlightInStartContainer}\n` +
+    `End Container: ${endContainer}\n` +
+    `Stored Text: ${storedText1}`
+);
+
 
         const storedNoteText = selection.toString();
         const charCount = storedNoteText.length; // Counting characters
