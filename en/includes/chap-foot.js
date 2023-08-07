@@ -7,7 +7,6 @@ class chapfoot extends HTMLElement {
       this.innerHTML = `
   
      
-
 <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
 
 
@@ -70,9 +69,6 @@ class chapfoot extends HTMLElement {
       
 
     </div>
-    </div>
-    </div>
-    </div>
 
 
   
@@ -104,7 +100,7 @@ class chapfoot extends HTMLElement {
 
 <div class="footer-size" style="height:30px;">
 
-    <div><button type="button" class="footer-settings-icon" style="cursor:pointer; text-align:left; width:fit-content; padding-right:8px; padding-top: 10px;padding-bottom: 0px;" onclick="openEarthbook()" aria-label="Learn what an Earthbook is">What is an Earthbook?</button>
+    <div><button type="button" class="footer-settings-icon" style="cursor:pointer; text-align:left; flex-grow:1; padding-right:8px; padding-top: 10px;padding-bottom: 0px;" onclick="openEarthbook()" aria-label="Learn what an Earthbook is">What is an Earthbook?</button>
     </div>
 
     <div class="github-source" style="margin-right: 0px;">The Medium is the Message.
