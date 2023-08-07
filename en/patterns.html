@@ -562,11 +562,34 @@ button:hover {
 
 <script>
 function checkSelectedText() {
-    let selectedText = window.getSelection().toString();
-    if (selectedText) { // If some text is selected
-        saveBookNotePalette();
+    const selection = window.getSelection();
+
+    // Check if any text is selected
+    if (!selection.rangeCount || selection.isCollapsed) {
+        return;
     }
+
+    const selectedRange = selection.getRangeAt(0);
+    const startContainerParent = selectedRange.startContainer.parentNode;
+    const endContainerParent = selectedRange.endContainer.parentNode;
+
+    // Check if the selection is within the #ct-main element
+    const ctMainElement = document.getElementById('ct-main');
+    if (!ctMainElement.contains(startContainerParent) || !ctMainElement.contains(endContainerParent)) {
+        return;
+    }
+
+    // Check if the selection does not span more than one paragraph
+    if (startContainerParent !== endContainerParent) {
+        return;
+    }
+
+    saveBookNotePalette();
 }
+
+document.addEventListener('mouseup', checkSelectedText);
+document.addEventListener('touchend', checkSelectedText);
+
 
 document.addEventListener('mouseup', checkSelectedText);
 document.addEventListener('touchend', checkSelectedText);
@@ -582,7 +605,7 @@ document.addEventListener('mouseup', function(e) {
 
 function saveBookNotePalette() {
     const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '0'; // Slide up to show the palette
+    palette.style.bottom = '-10px'; // Slide up to show the palette
 }
 
 document.getElementById('closePalette').addEventListener('click', function() {
