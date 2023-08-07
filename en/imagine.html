@@ -391,7 +391,7 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
             
     
         
-          <a href="#en-1-2-0" class="footnote">   
+          <a href="#en-1-2-01" class="footnote">   
           <div class="footnote-number" id="3-down">3.</div>
           <div class="footnote-text">In particular the Igorot Ayyew ecological ethos.  See: Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).  </div>
           </a>
@@ -532,6 +532,8 @@ function highlightSaveBookNote() {
         // Create a span element, add the highlight class to it, and surround the selected text with it
         const span = document.createElement("span");
         span.classList.add("highlight");
+        span.title = "Click to remove BookNote"; // Adding title attribute
+        span.alt = "Highlight"; // Adding alt attribute
         selectedRange.surroundContents(span);
 
         const startContainer = selectedRange.startContainer.parentNode.id;
