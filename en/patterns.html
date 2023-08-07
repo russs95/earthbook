@@ -247,16 +247,30 @@ All the page components required to build this page-->
     cursor: pointer;
 }
 
+.pallette-btn { 
+    border: var(--thin-border-color);
+    background: var(--deeper-accent-color);
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 1px;
+    color: var(--text-color);
+    font-family: "Mulish", Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer; 
+    display: block;
+}
+
 #highlightSaveButton {
     width: 40%;
     margin: 10px;
     cursor: pointer;    
     border-radius: 5px 0px 0px 5px;
-
 }
 
-#highlightSaveButton {
-    width: 40%;
+#copyBtn{
+    width: 30%;
     margin: 10px;
     cursor: pointer;    
     border-radius: 0px 5px 5px 0px;
@@ -381,8 +395,8 @@ button:hover {
 
 <div id="bookNotePalette" class="palette-hidden">
     <span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>
-    <button id="highlightSaveButton" class="action-btn">Highlight & Save</button>
-    <button id="copyBtn" class="action-btn">Copy</button>
+    <button id="highlightSaveButton" class="pallette-btn">⮷ Highlight & Save</button>
+    <button id="copyBtn" class="pallette-btn">Copy</button>
 </div>
 
 
