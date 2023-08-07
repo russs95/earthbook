@@ -656,16 +656,25 @@ function highlightSaveBookNote() {
 
         const startContainer = selectedRange.startContainer.parentNode.id;
 
-        // Calculate startOffset considering only the selected div block 
-        let startOffset = 0;
-        let node = selectedRange.startContainer.parentNode.firstChild;
-        while (node && node !== selectedRange.startContainer) {
-            if (node.nodeType === Node.TEXT_NODE) {
-                startOffset += node.length;
-            }
-            node = node.nextSibling;
-        }
-        startOffset += selectedRange.startOffset;
+        // Calculate startOffset considering only the selected div block  
+       // Assuming "blockID" is the ID of the block you're working with...
+let block = document.getElementById(blockID);
+
+// Calculate startOffset considering only the selected block
+let startOffset = 0;
+let node = block.firstChild;
+
+// Traverse through the text nodes of the block until we reach the startContainer of the selection
+while (node && node !== selectedRange.startContainer) {
+    if (node.nodeType === Node.TEXT_NODE) {
+        startOffset += node.length;
+    }
+    node = node.nextSibling;
+}
+
+// Add the offset within the startContainer to the startOffset
+startOffset += selectedRange.startOffset;
+
 
         const storedNoteText = selection.toString();
         const charCount = storedNoteText.length; // Counting characters
