@@ -623,27 +623,27 @@ function highlightSaveBookNote() {
 
         selectedRange.surroundContents(span);
 
+        // Store the positions and selected text in the local storage
         const startContainer = selectedRange.startContainer.parentNode.id;
+        const endContainer = selectedRange.endContainer.parentNode.id;
+        const startOffset = selectedRange.startOffset;
+        const endOffset = selectedRange.endOffset;
+        const storedText1 = selection.toString();
+        
+        localStorage.setItem('startContainer', startContainer);
+        localStorage.setItem('endContainer', endContainer);
+        localStorage.setItem('startOffset', startOffset);
+        localStorage.setItem('endOffset', endOffset);
+        localStorage.setItem('storedText1', storedText1);
 
-        // Calculate startOffset considering only the selected div block  
-       // Assuming "blockID" is the ID of the block you're working with...
-let block = document.getElementById(startContainer);
-
-// Calculate startOffset considering only the selected block
-let startOffset = 0;
-let node = block.firstChild;
-
-// Traverse through the text nodes of the block until we reach the startContainer of the selection
-while (node && node !== selectedRange.startContainer) {
-    if (node.nodeType === Node.TEXT_NODE) {
-        startOffset += node.length;
-    }
-    node = node.nextSibling;
-}
-
-// Add the offset within the startContainer to the startOffset
-startOffset += selectedRange.startOffset;
-
+        // Display an alert with the stored variables
+        alert(
+            `Start Container: ${startContainer}\n` +
+            `End Container: ${endContainer}\n` +
+            `Start Offset: ${startOffset}\n` +
+            `End Offset: ${endOffset}\n` +
+            `Stored Text: ${storedText1}`
+        );
 
         const storedNoteText = selection.toString();
         const charCount = storedNoteText.length; // Counting characters
