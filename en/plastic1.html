@@ -188,24 +188,50 @@ All the page components required to build this page-->
   font-display: swap;
  }
 
-
-
  #bookNotePalette {
     position: fixed;  /* Changed from absolute to fixed */
     bottom: -200px; 
-    left: 10%; 
-    width: 80%;
-    height: 150px;
     background: var(--slider);
     border: 1px solid grey;
-    border-radius: 10px 10px 0px 0px;
     transition: bottom 0.5s;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 1000; /* This ensures the palette is above other page content */
+    z-index: 20; /* This ensures the palette is above other page content */
+ }
+
+ @media screen and (max-width: 700px) {
+
+ #bookNotePalette { 
+    bottom: -200px; 
+    left: 12.5%; 
+    width: 85%;
+    height: 120px; 
+    border-radius: 5px 5px 0px 0px;
+}
+ }
+
+ @media screen and (min-width: 700px) and (max-width: 1324px) {
+    
+    #bookNotePalette {
+        bottom: -200px; 
+        left: 25%; 
+        width: 300px;
+        height: 150px; 
+        border-radius: 7px 7px 0px 0px;
+}
+ }
+
+@media screen and (min-width: 1325px) {
+    #bookNotePalette {
+        bottom: -200px; 
+        left: 25%; 
+        width: 320px;
+        height: 150px; 
+        border-radius: 9px 9px 0px 0px;
 }
 
+}
 
 #closePalette {
     position: absolute;
@@ -671,9 +697,9 @@ function recreateSelection() {
     const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
 
     bookNotes.forEach(note => {
-        const { storedNoteText, startContainer, startOffset, UID } = note;
+        const { storedNoteText, startContainer, startOffset, id } = note;
 
-        if (storedNoteText && startContainer && startOffset !== null && UID) {
+        if (storedNoteText && startContainer && startOffset !== null && id) {
             try {
                 // Find the element by the saved ID
                 const container = document.getElementById(startContainer);
@@ -701,8 +727,8 @@ function recreateSelection() {
                         const span = document.createElement('span');
                         span.className = 'highlight';
                         span.textContent = storedNoteText;
-                        span.id = UID; // Setting id for the highlight
-                        span.title = "Click to remove BookNote"; // Setting title attribute
+                        span.dataset.id = id; // Reusing the same id
+                        span.title = "Click to remove BookNote";
 
                         range.deleteContents();
                         range.insertNode(span);
@@ -721,11 +747,10 @@ function recreateSelection() {
         }
     });
 }
-
-// Attach the recreateSelection function to the window load event
 window.addEventListener('load', recreateSelection);
 
-
+// Make sure this is after recreateSelection
+document.addEventListener('click', removeHighlight);
 </script>
 
 </body>
