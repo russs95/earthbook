@@ -580,3 +580,71 @@ function updateBNResetButton() {
   }
 }
 
+
+
+/*NEW HIGHLIGHT SYSTEM*/
+
+
+function highlightSaveBookNote() {
+  const selection = window.getSelection();
+
+  // If there's selected text
+  if (selection.rangeCount > 0) {
+      const selectedRange = selection.getRangeAt(0);
+      
+      // Create a span element, add the highlight class to it, and surround the selected text with it
+      const span = document.createElement("span");
+      span.classList.add("highlight");
+      selectedRange.surroundContents(span);
+      
+      const startContainer = selectedRange.startContainer.parentNode.id;
+
+      // Calculate startOffset considering only text nodes inside the selected paragraph
+      let startOffset = 0;
+      let node = selectedRange.startContainer.parentNode.firstChild;
+      while (node && node !== selectedRange.startContainer) {
+          if (node.nodeType === Node.TEXT_NODE) {
+              startOffset += node.length;
+          }
+          node = node.nextSibling;
+      }
+      startOffset += selectedRange.startOffset;
+
+      const storedNoteText = selection.toString();
+      const charCount = storedNoteText.length; // Counting characters
+      const now = new Date();
+      const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+      const noteChapter = chapName; // Using the global variable
+
+      // Retrieve existing bookNotes from local storage
+      let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+      // New highlight object
+      const bookNote = {
+          book,
+          chapNo,
+          chapName,
+          chaptURL,
+          startContainer,
+          startOffset,
+          storedNoteText,
+          noteChapter,
+          charCount,
+          BNdateTime
+      };
+
+      // Add the new highlight to the array
+      bookNotes.push(bookNote);
+
+      // Save the updated array back to local storage
+      localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+
+      // Log to console
+      console.log('BookNote saved:', bookNote);
+
+      // Clear the selection
+      selection.removeAllRanges();
+  }
+}
+
+document.getElementById('highlightSaveButton').addEventListener('click', highlightSaveBookNote);

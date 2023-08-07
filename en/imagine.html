@@ -117,7 +117,7 @@ starts loading the fonts-->
 All the css needed for this page-->
  
 <link rel="stylesheet" href="../style-sheet.css">
-<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.2">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.3">
 <link rel="stylesheet" href="../light.css">
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
@@ -190,9 +190,6 @@ All the page components required to build this page-->
 
 
 
-
-
-
  #bookNotePalette {
     position: fixed;  /* Changed from absolute to fixed */
     bottom: -200px; 
@@ -223,7 +220,9 @@ button {
     background: grey;
     border: none;
     color: black;
-    cursor: pointer;
+    cursor: pointer;    
+    border-radius: 5px 5px 5px 5px;
+
 }
 
 button:hover {
@@ -372,7 +371,6 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
 </div>
 
 
-<
     <!--FOOTNOTES SECTION-->
     
         <div class="footnote-section" style="z-index:8;">
@@ -393,12 +391,12 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
             
     
         
-          <a href="#1-2-01" class="footnote">   
+          <a href="#en-1-2-01" class="footnote">   
           <div class="footnote-number" id="3-down">3.</div>
           <div class="footnote-text">In particular the Igorot Ayyew ecological ethos.  See: Banayan Angway, <i>Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12</i>(Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014).  </div>
           </a>
     
-          <a href="#1-2-0" class="footnote">   
+          <a href="#en-1-2-09" class="footnote">   
           <div class="footnote-number">4.</div>
           <div class="footnote-text">The first principle of permaculture.  Bill Mollison, <i>Principles from Permaculture a Designers' Manual</i>, (Tagari Publishers: 1988).</div>
           </a>
