@@ -168,7 +168,7 @@ window.addEventListener("DOMContentLoaded", function() {
 */
 
 
-
+/*
 
 let highlightClass = 'highlight';
 let preHighlightClass = 'pre-highlight';
@@ -272,17 +272,10 @@ function handleDesktopSelection() {
     }
   
 
-    /*
-    // Check if the selection is within the div with id 'ct-main'
-    if (selectedRange && selectedRange.commonAncestorContainer.closest('#ct-main') && selectedRange.toString().trim().length > 0) {
-      let span = document.createElement('span');
-      span.style.cursor = 'pointer';
-      span.classList.add(preHighlightClass);
-      span.title = "Click this text to highlight and save.";
-      selectedRange.surroundContents(span);
-      clearSelection();
-    }*/
+  
   }
+
+  
 
   document.addEventListener('mouseup', handleDesktopSelection);
   document.addEventListener('touchend', handleMobileSelection);
@@ -421,6 +414,19 @@ function removeHighlight() {
 
 
 });
+
+*/
+
+  /*
+    // Check if the selection is within the div with id 'ct-main'
+    if (selectedRange && selectedRange.commonAncestorContainer.closest('#ct-main') && selectedRange.toString().trim().length > 0) {
+      let span = document.createElement('span');
+      span.style.cursor = 'pointer';
+      span.classList.add(preHighlightClass);
+      span.title = "Click this text to highlight and save.";
+      selectedRange.surroundContents(span);
+      clearSelection();
+    }*/
 
 function bookNotesCreator() {
 // Retrieve existing bookNotes from local storage
