@@ -843,7 +843,7 @@ BOOK NOTE PALETTE
   margin: 1%;
   width: 40px;
   height:40px;
-  border-radius: 25px 5px 5px 5px;
+  border-radius: 25px;
 }
 
 #highlightSaveButton {

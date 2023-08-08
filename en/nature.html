@@ -295,8 +295,8 @@ All the page components required to build this page-->
 
 <div id="bookNotePalette" class="palette-hidden">
     <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
-    <div>Save:</div>>
-    <button id="highlightSaveButton" class="color-btn"></button>
+    <div>Save:</div>
+    <button id="highlightSaveButton" class="color-btn"></button><div>|</div>
     <button id="copyBtn" class="pallette-btn"><img src="../icons/copy.svg" alt="Close page button" height="24px"></button> 
     <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="24px"></button>
     <button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="24"></button>
@@ -526,7 +526,7 @@ function copyToClipboard(text) {
 }
 
 
-function highlightSaveBookNote() {
+function highlightBooknote() {
     const selection = window.getSelection();
 
     // If there's selected text
