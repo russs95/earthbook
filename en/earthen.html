@@ -57,8 +57,8 @@ For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.e
 <!--BOOK META TAGS
 These tags will be consistent for the whole book-->
 
-<meta name="keywords" content="The Earthen Ways, nature, environment, problem with nature, humancentric, humancentricism, human, centric, kincentric, greek, roman, environ, harm reduction, natural, natural world, anthropocentric"> 
-<meta name="description" content="Beneath modern environmentalism and its 'conservation of nature' lies a fundamental error that destines even the greenest of intentions to grey.">
+<meta name="keywords" content="Earth, cosmological pattern, comsmological character, green, cycles, dissipation, concentraction, diversification, physics, biology and astronomy, consciounsness, character, contribution, vibrant, stable, resilient, abundant, conscious, Earthen ethics, five principles, Earthen principles, Earthen, cosmology, planetary character, Earth's character, Earthen ways, Earth's example"> 
+<meta name="description" content="In our planet's transition from a barren rock to a thriving biosphere we find five principles that compose Earth’s cosmological character and that guide our enterprises to be truly green.">
 	
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
@@ -416,15 +416,15 @@ All the page components required to build this page-->
 
      
         <div class="next-section">
-          <div class="next-sec">Next section:</div>
-          <div class="sec-name"><i>Earthen Ways</i></div>
+          <div class="next-sec">Next: Book Two</div>
+          <div class="sec-name"><i>Epigraph</i></div>
         </div>
 
       </div>
   
       <div class="footer-right">
     
-        <a href="earthen.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+        <a href="epigraph-2.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
 
       </div>
     </div>
@@ -563,17 +563,22 @@ function updateButtonAndPalette() {
     }, 1000);
 }
 
+
 function highlightBooknote(color) {
     const selection = window.getSelection();
+
+    // Variables for the new requirements
+    const highlightColor = color;
+    const userNote = "This is an example user note that can be added to the BookNotes for people to read";
+    const publicNote = "No";
 
     // If there's selected text
     if (selection.rangeCount > 0) {
         const selectedRange = selection.getRangeAt(0);
-
         const span = document.createElement("span");
 
         // Set the appropriate highlight class based on the color
-        switch (color) {
+        switch (highlightColor) {
             case 'green':
                 span.classList.add("highlight-green");
                 break;
@@ -584,7 +589,7 @@ function highlightBooknote(color) {
                 span.classList.add("highlight-yellow");
                 break;
             default:
-                console.warn(`Unknown highlight color: ${color}`);
+                console.warn(`Unknown highlight color: ${highlightColor}`);
                 return; // Exit the function
         }
 
@@ -593,13 +598,13 @@ function highlightBooknote(color) {
 
         const id = generateId();
         span.dataset.id = id;
-
         selectedRange.surroundContents(span);
 
         let startContainerNode = selectedRange.startContainer;
         while (startContainerNode.nodeName !== 'P' && startContainerNode.parentNode !== null) {
             startContainerNode = startContainerNode.parentNode;
         }
+
         const startContainer = startContainerNode.id;
         const containerHTML = startContainerNode.innerHTML;
         const storedText1 = selection.toString();
@@ -628,7 +633,10 @@ function highlightBooknote(color) {
             storedNoteText,
             noteChapter,
             charCount,
-            BNdateTime
+            BNdateTime,
+            highlightColor, // Added
+            userNote,       // Added
+            publicNote      // Added
         };
 
         bookNotes.push(bookNote);
@@ -639,6 +647,7 @@ function highlightBooknote(color) {
         updateButtonAndPalette();
     }
 }
+
 
 
 document.getElementById('highlightSaveButton').addEventListener('click', highlightBooknote);
