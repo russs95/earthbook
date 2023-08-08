@@ -623,11 +623,25 @@ h6 {
 
 
 
-.highlight {
+.highlight-green {
   background-color: green;
   color: var(--true);
   cursor:pointer;
 }
+
+.highlight-red {
+  background-color: red;
+  color: var(--true);
+  cursor:pointer;
+}
+
+.highlight-yellow {
+  background-color: yellow;
+  color: var(--true);
+  cursor:pointer;
+}
+
+
 
 .pre-highlight {
   background-color: grey;
