@@ -827,7 +827,29 @@ margin-top: 10px;
   width: fit-content;
   height:40px;
   border-radius: 25px;
+}
 
+.highlight-buttons { 
+  border: var(--thin-border-color);
+  background: var(--deeper-accent-color);
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 1px;
+  color: var(--text-color);
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer; 
+  display: block;
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px 5px auto 5px;
+margin-top: 10px;
+  width: fit-content;
+  height:40px;
+  border-radius: 25px;
+  display: flex;
 }
 
 .color-btn { 
