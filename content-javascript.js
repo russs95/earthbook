@@ -426,7 +426,7 @@ function removeHighlight() {
       span.title = "Click this text to highlight and save.";
       selectedRange.surroundContents(span);
       clearSelection();
-    }*/
+    }
 
 function bookNotesCreator() {
 // Retrieve existing bookNotes from local storage
@@ -471,7 +471,7 @@ bookNotesListDiv.appendChild(bookNoteDiv);
 });
 }
 
-
+*/
 
 
 

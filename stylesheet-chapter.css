@@ -808,11 +808,10 @@ BOOK NOTE PALETTE
 }
 
 .pallette-btn { 
-  /*border: var(--thin-border-color);
+  border: var(--thin-border-color);
   background: var(--deeper-accent-color);
   border-style: solid;
-  border-width: 0.5px;*/
-  background: var(--nav-bar-accent);
+  border-width: 0.25px;
   border: none;
   color: var(--thin-border-color);
   font-family: "Mulish", Arial, Helvetica, sans-serif;
@@ -826,8 +825,9 @@ BOOK NOTE PALETTE
   width: fit-content;
   height:40px;
   border-radius: 15px;
-  padding: 10px 15px 10px 15px;
   flex-grow: 1;
+  padding: 10px 15px 10px 45px;
+  background-position-x: 15px;
 }
 
 .highlight-buttons { 
@@ -852,7 +852,11 @@ BOOK NOTE PALETTE
   border-radius: 15px;
   display: flex;
   flex-grow: 4;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px 10px 45px;
+  background-position-x: 15px;
+  background: url(icons/booknotes.svg) left no-repeat;
+    background-size: 25px;
+    transition: 0.3s;
 }
 
 .color-btn { 
