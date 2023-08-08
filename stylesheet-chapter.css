@@ -811,8 +811,7 @@ BOOK NOTE PALETTE
   border: var(--thin-border-color);
   background: var(--deeper-accent-color);
   border-style: solid;
-  border-radius: 20px;
-  border-width: 1px;
+  border-width: 0.5px;
   color: var(--text-color);
   font-family: "Mulish", Arial, Helvetica, sans-serif;
   text-align: center;
@@ -824,18 +823,17 @@ BOOK NOTE PALETTE
   margin: 10px 5px auto 5px;
   width: fit-content;
   height:40px;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 10px 15px 10px 15px;
   flex-grow: 1;
 }
 
 .highlight-buttons { 
-  /*border: var(--thin-border-color);*/
+  border: var(--thin-border-color);
   border: none;
   background: var(--deeper-accent-color);
   border-style: solid;
-  border-radius: 20px;
-  border-width: 1px;
+  border-width: 0.5px;
   color: var(--text-color);
   font-family: "Mulish", Arial, Helvetica, sans-serif;
   text-align: center;
@@ -851,6 +849,8 @@ BOOK NOTE PALETTE
   border-radius: 15px;
   display: flex;
   flex-grow: 4;
+  padding: 10px 15px 10px 15px;
+
 
 }
 
@@ -865,7 +865,7 @@ BOOK NOTE PALETTE
   cursor: pointer; 
   display: block;
   padding: 10px;
-  margin: auto 10px;
+  margin: auto auto;
   width: 30px;
   height:30px;
   border-radius: 25px;
