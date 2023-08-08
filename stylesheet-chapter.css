@@ -1,5 +1,5 @@
 
-
+/*
 
 .highlight {
  
@@ -19,7 +19,7 @@ text-rendering: optimizeLegibility;
 font-weight: 300;
 text-align: justify;
 }
-
+*/
 
 
 @media screen and (max-width: 699px) {
@@ -824,7 +824,7 @@ BOOK NOTE PALETTE
   font-size: 1em;
   margin: 10px 5px auto 5px;
 margin-top: 10px;
-  width: 60px;
+  width: fit-content;
   height:40px;
   border-radius: 25px;
 

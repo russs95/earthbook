@@ -295,17 +295,18 @@ All the page components required to build this page-->
 
 <div id="bookNotePalette" class="palette-hidden">
     <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
-    <div class="pallette-btn"></div>
-    <div id="save-text" style="color: var(--thin-border-color);
-    font-family:Mulish, Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1em;">Save:</div>
-    <button class="color-btn" class="color-btn"  style="background:green"></button>
-    <button class="color-btn" onclick="highlightBooknote()" style="background:red"></button>
-    <button class="color-btn" onclick="highlightBooknote()" style="background:yellow"></button></div>
+    <div class="pallette-btn">
+        <div id="save-text" style="color: var(--thin-border-color);
+        font-family:Mulish, Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;">Save:
+        </div>
+        <button class="color-btn" onclick="highlightBooknote('green')" style="background:green"></button>
+        <button class="color-btn" onclick="highlightBooknote('red')" style="background:red"></button>
+        <button class="color-btn" onclick="highlightBooknote('yellow')" style="background:yellow"></button>
+        
     
-
     <button id="copyBtn" class="pallette-btn"><img src="../icons/copy.svg" alt="Close page button" height="24px"> Copy</button> 
     <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="24px"></button>
     <!--<button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="24"></button>-->
@@ -562,7 +563,7 @@ function updateButtonAndPalette() {
     }, 1000);
 }
 
-function highlightBooknote() {
+function highlightBooknote(color) {
     const selection = window.getSelection();
 
     // If there's selected text
@@ -570,7 +571,23 @@ function highlightBooknote() {
         const selectedRange = selection.getRangeAt(0);
 
         const span = document.createElement("span");
-        span.classList.add("highlight");
+
+        // Set the appropriate highlight class based on the color
+        switch (color) {
+            case 'green':
+                span.classList.add("highlight-green");
+                break;
+            case 'red':
+                span.classList.add("highlight-red");
+                break;
+            case 'yellow':
+                span.classList.add("highlight-yellow");
+                break;
+            default:
+                console.warn(`Unknown highlight color: ${color}`);
+                return; // Exit the function
+        }
+
         span.title = "Click to remove BookNote"; 
         span.alt = "Highlight"; 
 
