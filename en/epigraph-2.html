@@ -677,8 +677,10 @@ function removeHighlight(event) {
 document.addEventListener('click', removeHighlight);
 
 
+
 function recreateHighlights() {
     const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+    alert('Hi!');
 
     bookNotes.forEach(note => {
         const { containerHTML, startContainer, id } = note;
@@ -720,6 +722,7 @@ function createElementWithAttributes(type, attributes = {}) {
     return element;
 }
 
+
 function bookNotesCreator() {
     // Retrieve existing bookNotes from local storage
     let bookNotes;
@@ -744,7 +747,7 @@ function bookNotesCreator() {
 
         const chapterNameDiv = createElementWithAttributes('div', {
             className: 'chapter-name-bn',
-            textContent: bookNote.storedNoteText
+            textContent: bookNote.storedText
         });
 
         const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
