@@ -295,18 +295,21 @@ All the page components required to build this page-->
 
 <div id="bookNotePalette" class="palette-hidden">
     <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
-    <div style="color: var(--text-color);
+    <div class="pallette-btn"></div>
+    <div id="save-text" style="color: var(--thin-border-color);
     font-family:Mulish, Arial, Helvetica, sans-serif;
     text-align: center;
     text-decoration: none;
-    font-size: 1em;
-    margin: 10px 5px auto 5px;">Save:</div>
-    <button id="highlightSaveButton" class="color-btn"  style="background:green"></button>
+    font-size: 1em;">Save:</div>
+    <button class="color-btn" class="color-btn"  style="background:green"></button>
     <button class="color-btn" onclick="highlightBooknote()" style="background:red"></button>
-    <button class="color-btn" onclick="highlightBooknote()" style="background:yellow"></button><div>|</div>
-    <button id="copyBtn"><img src="../icons/copy.svg" alt="Close page button" height="24px"></button> 
+    <button class="color-btn" onclick="highlightBooknote()" style="background:yellow"></button></div>
+    
+
+    <button id="copyBtn" class="pallette-btn"><img src="../icons/copy.svg" alt="Close page button" height="24px"> Copy</button> 
     <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="24px"></button>
     <!--<button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="24"></button>-->
+    
 </div>
 
 
@@ -540,6 +543,24 @@ function copyToClipboard(text) {
     }, 800);
 }
 
+// Sub-function to update button visuals and behavior post-highlighting
+function updateButtonAndPalette() {
+    const button = document.getElementById('save-text');
+    button.style.color = 'green';
+    button.style.fontWeight = 'bold';
+    button.textContent = '✓ Saved!';
+
+    setTimeout(() => {
+        const palette = document.getElementById('bookNotePalette');
+        palette.style.bottom = '-200px';
+
+        setTimeout(() => {
+            button.textContent = 'Highlight & Save';
+            button.style.color = 'var(--text-color)';
+            button.style.fontWeight = 'normal';
+        }, 1000);
+    }, 1000);
+}
 
 function highlightBooknote() {
     const selection = window.getSelection();
@@ -548,43 +569,37 @@ function highlightBooknote() {
     if (selection.rangeCount > 0) {
         const selectedRange = selection.getRangeAt(0);
 
-        // Create a span element, add the highlight class to it, and surround the selected text with it
         const span = document.createElement("span");
         span.classList.add("highlight");
         span.title = "Click to remove BookNote"; 
         span.alt = "Highlight"; 
 
-        // Generate and store a unique identifier
         const id = generateId();
         span.dataset.id = id;
 
         selectedRange.surroundContents(span);
 
-        // Find the closest p ancestor for startContainer
         let startContainerNode = selectedRange.startContainer;
         while (startContainerNode.nodeName !== 'P' && startContainerNode.parentNode !== null) {
             startContainerNode = startContainerNode.parentNode;
         }
         const startContainer = startContainerNode.id;
-        const containerHTML = startContainerNode.innerHTML; // grab the inner HTML
+        const containerHTML = startContainerNode.innerHTML;
         const storedText1 = selection.toString();
 
-        // Display an alert with the stored variables
         alert(
             `Start Container: ${startContainer}\n` +
             `Stored Text: ${storedText1}\n` +
             `Container HTML: ${containerHTML}`
         );
 
-        const charCount = storedText1.length; // Counting characters
+        const charCount = storedText1.length;
         const now = new Date();
         const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
         const noteChapter = chapName;
 
-        // Retrieve existing bookNotes from local storage
-        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+        let bookNotes = getBookNotesFromLocalStorage();
 
-        // New highlight object
         const bookNote = {
             id,
             book,
@@ -592,49 +607,25 @@ function highlightBooknote() {
             chapName,
             chaptURL,
             startContainer,
-            containerHTML, // Store container's HTML
+            containerHTML,
             storedNoteText,
             noteChapter,
             charCount,
             BNdateTime
         };
 
-        // Add the new highlight to the array
         bookNotes.push(bookNote);
+        saveBookNotesToLocalStorage(bookNotes);
 
-        // Save the updated array back to local storage
-        localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-
-        // Log to console
         console.log('BookNote saved:', bookNote);
-
-        // Clear the selection
         selection.removeAllRanges();
-
-        // Update the button text
-        const button = document.getElementById('highlightSaveButton');
-        button.style.color = 'green';
-        button.style.fontWeight = 'bold';
-        button.textContent = '✓ Saved!';
-
-        // Hide the palette after 1 second
-        setTimeout(() => {
-            const palette = document.getElementById('bookNotePalette');
-            palette.style.bottom = '-200px'; // Slide down to hide the palette
-
-            // After an additional second, reset the button text
-            setTimeout(() => {
-                const button = document.getElementById('highlightSaveButton');
-                button.textContent = 'Highlight & Save';
-                button.style.color = 'var(--text-color)';
-                button.style.fontWeight = 'normal';
-            }, 1000);
-        }, 1000);
+        updateButtonAndPalette();
     }
 }
 
 
 document.getElementById('highlightSaveButton').addEventListener('click', highlightBooknote);
+
 
 
 function removeHighlight(event) {
