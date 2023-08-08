@@ -295,12 +295,18 @@ All the page components required to build this page-->
 
 <div id="bookNotePalette" class="palette-hidden">
     <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
-    <div>Save:</div>
-    <button id="highlightSaveButton" class="color-btn"></button><div>|</div>
+    <div style="color: var(--text-color);
+    font-family:Mulish, Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;">Save:</div>
+    <button id="highlightSaveButton" class="color-btn"  style="background:green"></button>
+    <button class="color-btn" style="background:red"></button>
+    <button class="color-btn" style="background:yellow"></button><div>|</div>
     <button id="copyBtn" class="pallette-btn"><img src="../icons/copy.svg" alt="Close page button" height="24px"></button> 
     <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="24px"></button>
-    <button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="24"></button>
-</div>30
+    <!--<button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="24"></button>-->
+</div>
 
 
    
@@ -428,6 +434,14 @@ All the page components required to build this page-->
 </div><!--underlayer-->
 
 <script>
+
+
+let currentId = 0;
+
+function generateId() {
+    currentId += 1;
+    return String(currentId).padStart(3, '0');
+}
 
     
 function checkSelectedText() {
@@ -684,7 +698,7 @@ function recreateHighlights() {
 }
 
 
-window.addEventListener('load', recreateSelection);
+window.addEventListener('load', recreatehighlights);
 
 // Make sure this is after recreateSelection
 document.addEventListener('click', removeHighlight);
