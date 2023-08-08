@@ -475,6 +475,8 @@ bookNotesListDiv.appendChild(bookNoteDiv);
 
 
 
+
+
 function resetBookNotes() {
   // Clear the booknotes array from local storage
   localStorage.removeItem('bookNotes');
@@ -517,3 +519,138 @@ function updateBNResetButton() {
 }
 
 
+
+/*NEW HIGHLIGHT SYSTEM
+
+
+
+function recreateSelection() {
+  const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+  bookNotes.forEach(note => {
+    const { storedNoteText, startContainer, startOffset } = note;
+
+    if (storedNoteText && startContainer && startOffset !== null) {
+      try {
+        // Find the element by the saved ID
+        const container = document.getElementById(startContainer);
+
+        if (container) {
+          // Traverse through text nodes to find the correct position
+          let node = container.firstChild;
+          let currentOffset = 0;
+
+          while (node) {
+            if (node.nodeType === Node.TEXT_NODE) {
+              if (currentOffset + node.length >= startOffset) {
+                break;
+              }
+              currentOffset += node.length;
+            }
+            node = node.nextSibling;
+          }
+
+          if (node) {
+            const range = document.createRange();
+            range.setStart(node, startOffset - currentOffset);
+            range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
+
+            const span = document.createElement('span');
+            span.className = 'highlight';
+            span.textContent = storedNoteText;
+
+            range.deleteContents();
+            range.insertNode(span);
+
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            selection.collapseToEnd();
+          } else {
+            console.error('Error: Stored text not found for the following book note:', note);
+          }
+        } else {
+          console.error('Error: Container element not found for the following book note:', note);
+        }
+      } catch (err) {
+        console.error('An error occurred while recreating selection for the following book note:', note);
+        console.error(err);
+      }
+    } else {
+      console.warn('Warning: Incomplete book note data. Ignoring the following book note:', note);
+    }
+  });
+}
+
+
+// Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
+window.addEventListener('load', function () {
+// showAlertWithCharacterCount();
+recreateSelection();
+});
+
+
+function highlightSaveBookNote() {
+  const selection = window.getSelection();
+
+  // If there's selected text
+  if (selection.rangeCount > 0) {
+      const selectedRange = selection.getRangeAt(0);
+      
+      // Create a span element, add the highlight class to it, and surround the selected text with it
+      const span = document.createElement("span");
+      span.classList.add("highlight");
+      selectedRange.surroundContents(span);
+      
+      const startContainer = selectedRange.startContainer.parentNode.id;
+
+      // Calculate startOffset considering only text nodes inside the selected paragraph
+      let startOffset = 0;
+      let node = selectedRange.startContainer.parentNode.firstChild;
+      while (node && node !== selectedRange.startContainer) {
+          if (node.nodeType === Node.TEXT_NODE) {
+              startOffset += node.length;
+          }
+          node = node.nextSibling;
+      }
+      startOffset += selectedRange.startOffset;
+
+      const storedNoteText = selection.toString();
+      const charCount = storedNoteText.length; // Counting characters
+      const now = new Date();
+      const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+      const noteChapter = chapName; // Using the global variable
+
+      // Retrieve existing bookNotes from local storage
+      let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+      // New highlight object
+      const bookNote = {
+          book,
+          chapNo,
+          chapName,
+          chaptURL,
+          startContainer,
+          startOffset,
+          storedNoteText,
+          noteChapter,
+          charCount,
+          BNdateTime
+      };
+
+      // Add the new highlight to the array
+      bookNotes.push(bookNote);
+
+      // Save the updated array back to local storage
+      localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+
+      // Log to console
+      console.log('BookNote saved:', bookNote);
+
+      // Clear the selection
+      selection.removeAllRanges();
+  }
+}
+
+document.getElementById('highlightSaveButton').addEventListener('click', highlightSaveBookNote);
+*/
