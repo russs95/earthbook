@@ -241,6 +241,12 @@ All the page components required to build this page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁰
 -->
 
+<div id="chap-notice">
+    <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+    <div id="chap-notice-text">
+    💡  Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
+    </div>
+  </div>
 
 <div class="lead-page-paragraph"><p id="1=7-00">
     FOR TOO LONG we have assumed the earth beneath us to be a static and stable constant. In fact, it is anything but.  The flow of cosmic matter and momentum that first formed our planet has never ceased its spin.  With no vestige of a beginning and no prospect of an end<a href="#footnotes" title="Thomas Hutton, 'A Theory of the Earth', Royal Society of Edinburgh, (Transactions of the Royal Society of Edinburgh, 1788) Vol. 1." onclick="openFootnotes()">⁵²</a>, the ever unfolding confluence of Earth’s unique combination of matter and energy, composes a cosmological pattern of process all its own.  Indeed, in our entire galaxy we know of no other entity that has so thoroughly realized the very ecological enrichment to which we now so long to manifest ourselves. </p>
@@ -314,10 +320,12 @@ All the page components required to build this page-->
         <button class="color-btn" onclick="highlightBooknote('green')" style="background:green"></button>
         <button class="color-btn" onclick="highlightBooknote('red')" style="background:red"></button>
         <button class="color-btn" onclick="highlightBooknote('yellow')" style="background:yellow"></button>
+        <button class="color-btn" onclick="highlightBooknote('yellow')" style="background:grey" onclick="highlightBooknote('yellow')">
+        </button>
         
     </div>
     <button id="copyBtn" class="pallette-btn">Copy</button> 
-    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="25px"></button>
+    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">Your Notes</button>
    
     
 </div>

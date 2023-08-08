@@ -812,7 +812,7 @@ BOOK NOTE PALETTE
   background: var(--deeper-accent-color);
   border-style: solid;
   border-width: 0.5px;*/
-  background: var(--deeper-accent-color);
+  background: var(--nav-bar-accent);
   border: none;
   color: var(--thin-border-color);
   font-family: "Mulish", Arial, Helvetica, sans-serif;
