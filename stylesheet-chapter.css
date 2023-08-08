@@ -826,7 +826,7 @@ BOOK NOTE PALETTE
   height:40px;
   border-radius: 15px;
   flex-grow: 1;
-  padding: 10px 15px 10px 45px;
+  padding: 10px 15px 10px 40px;
   background-position-x: 15px;
 }
 
@@ -847,7 +847,7 @@ BOOK NOTE PALETTE
   border-radius: 15px;
   display: flex; 
   flex-grow: 4;
-  padding: 10px 15px 10px 45px;
+  padding: 10px 15px 10px 38px;
   background: var(--nav-bar-accent) url(icons/booknotes.svg) 15px center no-repeat;
   background-size: 25px;
 }
@@ -871,13 +871,13 @@ BOOK NOTE PALETTE
 }
 
 #copyBtn {
-  background-image: url(icons/copy.svg) left no-repeat;
+  background: url(icons/copy.svg) left no-repeat;
     background-size: 25px;
     transition: 0.3s;
 }
 
 #booknotesBtn {
-  background-image: url(icons/booknotes.svg) left no-repeat;
+  background: url(icons/booknotes.svg) left no-repeat;
     background-size: 25px;
     transition: 0.3s;
 }

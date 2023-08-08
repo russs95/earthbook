@@ -702,9 +702,9 @@ function recreateHighlights() {
         }
     });
 }
-
-
-window.addEventListener('load', recreateHighlights);
+window.onload = function() {
+    recreateHighlights();
+}
 
 // Make sure this is after recreateSelection
 document.addEventListener('click', removeHighlight);
