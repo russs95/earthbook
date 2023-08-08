@@ -316,7 +316,7 @@ All the page components required to build this page-->
         <button class="color-btn" onclick="highlightBooknote('yellow')" style="background:yellow"></button>
         
     </div>
-    <button id="copyBtn" class="pallette-btn"><img src="../icons/copy.svg" alt="Close page button" height="25px"> Copy</button> 
+    <button id="copyBtn" class="pallette-btn">Copy</button> 
     <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="25px"></button>
     <!--<button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="24"></button>-->
     
@@ -431,8 +431,8 @@ All the page components required to build this page-->
 
      
         <div class="next-section">
-          <div class="next-sec">Next: Book Two</div>
-          <div class="sec-name"><i>Epigraph</i></div>
+          <div class="next-sec">Next: </div>
+          <div class="sec-name"><i>Book Two</i></div>
         </div>
 
       </div>
@@ -604,15 +604,15 @@ function highlightBooknote(color) {
 
         const startContainer = startContainerNode.id;
         const containerHTML = startContainerNode.innerHTML;
-        const storedText1 = selection.toString();
+        const storedText = selection.toString();
 
         alert(
             `Start Container: ${startContainer}\n` +
-            `Stored Text: ${storedText1}\n` +
+            `Stored Text: ${storedText}\n` +
             `Container HTML: ${containerHTML}`
         );
 
-        const charCount = storedText1.length;
+        const charCount = storedText.length;
         const now = new Date();
         const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
         const noteChapter = chapName;
@@ -627,7 +627,7 @@ function highlightBooknote(color) {
             chaptURL,
             startContainer,
             containerHTML,
-            storedNoteText,
+            storedText,
             noteChapter,
             charCount,
             BNdateTime,
