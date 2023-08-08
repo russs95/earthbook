@@ -822,15 +822,16 @@ BOOK NOTE PALETTE
   display: block;
   font-size: 1em;
   margin: 10px 5px auto 5px;
-margin-top: 10px;
   width: fit-content;
   height:40px;
   border-radius: 25px;
   padding: 10px 15px 10px 15px;
+  flex-grow: 1;
 }
 
 .highlight-buttons { 
   /*border: var(--thin-border-color);*/
+  border: none;
   background: var(--deeper-accent-color);
   border-style: solid;
   border-radius: 20px;
@@ -849,6 +850,7 @@ margin-top: 10px;
   height:30px;
   border-radius: 15px;
   display: flex;
+  flex-grow: 4;
 
 }
 

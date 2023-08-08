@@ -624,19 +624,19 @@ h6 {
 
 
 .highlight-green {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 0.786);
   color: var(--true);
   cursor:pointer;
 }
 
 .highlight-red {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.768);
   color: var(--true);
   cursor:pointer;
 }
 
 .highlight-yellow {
-  background-color: yellow;
+  background-color: rgba(255, 255, 0, 0.77);
   color: var(--true);
   cursor:pointer;
 }
