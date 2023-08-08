@@ -630,6 +630,7 @@ while (startContainerNode.nodeName !== 'P' && startContainerNode.parentNode !== 
 }
 const startContainer = startContainerNode.id;
 const startOffset = startContainerNode.textContent.indexOf(selection.toString()); // offset of the highlight in the start container
+const containerHTML = startContainerNode.innerHTML; // grab the inner HTML
 
 const storedText1 = selection.toString();
 
@@ -637,7 +638,8 @@ const storedText1 = selection.toString();
 alert(
     `Start Container: ${startContainer}\n` +
     `Start Offset: ${startOffset}\n` +
-    `Stored Text: ${storedText1}`
+    `Stored Text: ${storedText1}\n` +
+    `Container HTML: ${containerHTML}`
 );
 
 
