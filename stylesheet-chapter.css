@@ -894,7 +894,6 @@ BOOK NOTE PALETTE
         font-family:Mulish, Arial, Helvetica, sans-serif;
         text-align: center;
         text-decoration: none;
-    
 }
 
 @media screen and (min-width: 701px) {
@@ -905,7 +904,7 @@ BOOK NOTE PALETTE
 }
 @media screen and (max-width: 700px) {
   .pallette-text {
-    display: none;
+    display: none !important;
   }
 }
 
