@@ -879,6 +879,7 @@ BOOK NOTE PALETTE
     transition: 0.3s;
     background: var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;
     background-size: 30px;
+
 }
 
 #booknotesBtn {
@@ -893,9 +894,16 @@ BOOK NOTE PALETTE
         font-family:Mulish, Arial, Helvetica, sans-serif;
         text-align: center;
         text-decoration: none;
-        font-size: 1em;  margin: auto 10px;
+       
+
 }
 
+@media screen and (min-width: 701px) {
+  .pallette-text {
+    font-size: 1em;  
+    margin: auto 10px;
+  }
+}
 @media screen and (max-width: 700px) {
   .pallette-text {
     display: none;
