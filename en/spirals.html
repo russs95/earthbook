@@ -109,8 +109,8 @@ starts loading the fonts-->
 <link rel="preconnect" href="../fonts/" crossorigin> 
 
 <!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-imagine-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-imagine-white.svg">
+<link rel="preload" as="image" href="../svgs/08-cycles-dark.svg">
+<link rel="preload" as="image" href="..svgs/08-cycles-white.svg">
 
 
  <!-- STYLE SHEETS   
@@ -262,19 +262,19 @@ All the page components required to build this page-->
           </div>
       </div>
 
-
-   
-
 <!-- Page Title Section-->
 
-<div id="ct-chapt-graphic" class="background-000">
-    <div class="ct-chapter-quote" id="en-2-0-00">
-        “You see that hill over there?  Blackfellow law like that hill.  It never changes. Whitefellow law go this way, that way, all the time changing. Blackfellow law different.  It never changes. Like a stone, like that hill.  The law is in the ground.”
-        </div>
-</div>
+<div id="ct-chapt-graphic" class="background-8">
+    <div class="ct-chapter-quote">
+      <span style="background-color:var(--nav-bar-accent);
+ padding:0.1em 0.2em;">“Observe the way Earth tends its processes towards cycles that spiral.”</span>
+    </div>
+    <div class="ct-quote-source">
+     ― Earthen Ethic No.1
+    </div>
+  </div>
 
-
-<div id="up-arrow"></div>
+  <div id="up-arrow"></div>
 
 <div id="ct-main">
 
@@ -583,9 +583,24 @@ document.addEventListener('mouseup', function(e) {
 });
 
 
+let paletteTimeout;
+
 function saveBookNotePalette() {
     const palette = document.getElementById('bookNotePalette');
     palette.style.bottom = '-30px'; // Slide up to show the palette
+
+    // Set a timeout to slide down the palette after 5 seconds
+    paletteTimeout = setTimeout(() => {
+        palette.style.bottom = '-200px'; // Slide down to hide the palette
+    }, 5000);
+
+    // Event listeners to clear the timeout if there's interaction with the palette
+    palette.addEventListener('click', clearPaletteTimeout);
+    palette.addEventListener('mouseenter', clearPaletteTimeout);
+}
+
+function clearPaletteTimeout() {
+    clearTimeout(paletteTimeout);
 }
 
 
