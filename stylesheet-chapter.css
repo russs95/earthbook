@@ -825,9 +825,30 @@ BOOK NOTE PALETTE
   margin: 1%;
 }
 
-#highlightSaveButton {
-  width: 60%;
+.color-btn { 
+  border: var(--thin-border-color);
+  
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 1px;
+  color: var(--text-color);
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer; 
+  display: block;
+  padding: 10px;
+  font-size: 1em;
+  margin: 1%;
+  width: 40px;
+  height:40px;
   border-radius: 25px 5px 5px 5px;
+}
+
+#highlightSaveButton {
+  background: green;
+  
 }
 
 #copyBtn {
