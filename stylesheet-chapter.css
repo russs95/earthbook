@@ -824,7 +824,7 @@ BOOK NOTE PALETTE
   font-size: 1em;
   margin: 10px 5px auto 5px;
 margin-top: 10px;
-  width: fit-content;
+  width: 60px;
   height:40px;
   border-radius: 25px;
 }
@@ -847,9 +847,10 @@ margin-top: 10px;
   margin: 10px 5px auto 5px;
 margin-top: 10px;
   width: fit-content;
-  height:40px;
-  border-radius: 25px;
+  height:25px;
+  border-radius: 15px;
   display: flex;
+
 }
 
 .color-btn { 
