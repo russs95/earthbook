@@ -433,11 +433,7 @@ All the page components required to build this page-->
 <div id="bookNotePalette" class="palette-hidden">
     <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
     <div class="highlight-buttons">
-        <div id="save-text" style="color:var(--thin-border-color);
-        font-family:Mulish, Arial, Helvetica, sans-serif;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1em;  margin: auto 10px;">Save:
+        <div id="save-text" class="palette-text">Save:
         </div>
         <button class="color-btn" onclick="highlightBooknote('green')" style="background:green"></button>
         <button class="color-btn" onclick="highlightBooknote('red')" style="background:red"></button>
@@ -446,8 +442,12 @@ All the page components required to build this page-->
         </button>
         
     </div>
-    <button id="copyBtn" class="pallette-btn">Copy</button> 
-    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">Your Notes</button>
+    <button id="copyBtn" class="pallette-btn">
+        <div class="palette-text">Copy</div>
+    </button> 
+    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
+        <div class="palette-text">Your Booknotes</div>
+    </button>
    
     
 </div>
@@ -768,11 +768,14 @@ function updateButtonAndPalette() {
 document.getElementById('highlightSaveButton').addEventListener('click', highlightBooknote);
 
 
-
 function removeHighlight(event) {
     const element = event.target;
     
-    if (element.classList.contains('highlight')) {
+    // Check if the clicked element has any of the highlight classes
+    if (element.classList.contains('highlight-green') ||
+        element.classList.contains('highlight-red') ||
+        element.classList.contains('highlight-yellow')) {
+        
         const id = element.dataset.id;
 
         // Get the bookNotes from local storage
@@ -793,16 +796,14 @@ function removeHighlight(event) {
             console.log('BookNote removal failed');
         }
 
-        // Remove the span tag
+        // Replace the span with its text content
         const text = document.createTextNode(element.textContent);
         element.parentNode.replaceChild(text, element);
     }
 }
 
-
-// Add a click event listener to the document to call removeHighlight when a highlight span is clicked
+// Add a click event listener to the document
 document.addEventListener('click', removeHighlight);
-
 
 
 function recreateHighlights() {
@@ -892,6 +893,8 @@ function bookNotesCreator() {
         bookNotesListDiv.appendChild(bookNoteDiv);
     });
 }
+
+
 
 </script>
 

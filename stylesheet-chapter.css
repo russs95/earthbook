@@ -865,6 +865,15 @@ BOOK NOTE PALETTE
   border-radius: 25px;
 }
 
+@media screen and (max-width: 700px) {
+  .color-btn { 
+  width: 20px;
+  height:20px;
+  border-radius: 20px;
+}
+}
+
+
 #copyBtn {
     background-size: 25px;
     transition: 0.3s;
@@ -879,6 +888,19 @@ BOOK NOTE PALETTE
     background-size: 30px;
 }
  
+.pallette-text {
+  color:var(--thin-border-color);
+        font-family:Mulish, Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;  margin: auto 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .pallette-text {
+    display: none;
+  }
+}
 
 
 button:hover {
