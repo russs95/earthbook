@@ -806,10 +806,8 @@ BOOK NOTE PALETTE
   right: 10px;
   cursor: pointer;
 }
-
 .pallette-btn { 
   border: var(--thin-border-color);
-  background-color: var(--deeper-accent-color);
   border-style: solid;
   border-width: 0.25px;
   border: none;
@@ -823,11 +821,12 @@ BOOK NOTE PALETTE
   font-size: 1em;
   margin: 10px 5px auto 5px;
   width: fit-content;
-  height:40px;
+  height: 40px;
   border-radius: 15px;
   flex-grow: 1;
   padding: 10px 15px 10px 40px;
-  background-position-x: 15px;
+  background-size: 25px;
+  transition: 0.3s; /* Repeated property, consider consolidating with the other transition property */
 }
 
 .highlight-buttons { 
@@ -871,15 +870,17 @@ BOOK NOTE PALETTE
 }
 
 #copyBtn {
-  background: url(icons/copy.svg) left no-repeat;
     background-size: 25px;
     transition: 0.3s;
+    background: var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;
+
 }
 
 #booknotesBtn {
-  background: url(icons/booknotes.svg) left no-repeat;
     background-size: 25px;
     transition: 0.3s;
+    background: var(--deeper-accent-color) url(icons/booknotes.svg) 15px center no-repeat;
+
 }
  
 
