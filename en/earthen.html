@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<title>The Earthen Ways | Tractatus Ayyew - An Earthbook</title>
+<meta charset="UTF-8"> 
+
+
+<!--
+o               .        ___- -___                    .                   
+       .              .-\          -.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,--'     / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___,--'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~- ___ ; ___-~       
+                 .          -_-         .              -JT
+
+
+EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+ 
+
+Landing page - version 1.3
+Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
+First EarthBook, the Tractatus Ayyew, published 22.12.22.
+
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
+For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
+*/
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/en/earthen.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/earthen.html" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/earthen.html" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/patterne.html" hreflang="fr" >
+<!--
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="The Earthen Ways, nature, environment, problem with nature, humancentric, humancentricism, human, centric, kincentric, greek, roman, environ, harm reduction, natural, natural world, anthropocentric"> 
+<meta name="description" content="Beneath modern environmentalism and its 'conservation of nature' lies a fundamental error that destines even the greenest of intentions to grey.">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-8-07T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="An Earthen Ethic | Tracatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="The Earthen Ways">
+<meta property="og:description"   content="Beneath modern environmentalism and its 'conservation of nature' lies a fundamental error that destines even the greenest of intentions to grey.">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
+<meta property="og:locale" content="en_EN" >
+<meta property="og:url" content="https://book.earthen.io/en/earthen.html">
+
+<script>
+      // Declare the global variables
+     var book = "Book One";
+    var chapNo = "6";
+    var chapName = "The Earthen Ways";
+    var chaptURL = "earthen.html"   // Declare the global variables
+  
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+
+
+    
+</script>
+
+
+
+ <!--FONTS
+starts loading the fonts-->
+
+<link rel="preconnect" href="../fonts/">
+<link rel="preconnect" href="../fonts/" crossorigin> 
+
+<!-- PRELOADS-->
+<link rel="preload" as="image" href="../svgs/00-imagine-dark.svg">
+<link rel="preload" as="image" href="../svgs/00-imagine-white.svg">
+
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.3">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+
+ 
+ <!-- INCLUDES
+ Main Scripts-->   
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../content-javascript.js?v=2.2" defer></script>
+ <script src="../clip/dist/clipboard.min.js" defer></script>
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<!--13--><script src="includes/chap-foot.js?V=2" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+
+ #ct-chapter-title {
+      /*padding-top: 45px;
+      font-size: 10vmin;*/
+      letter-spacing: 4px;
+      
+    }
+
+
+</style>
+</HEAD>
+
+<BODY class="accessibility-plugin-ac">
+
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
+
+  <div id="underlayer">
+
+    <div id="top"></div>
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+
+<div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+    <div id="ct-chapter-title">The Earthen Ways</div>   
+    <div id="ct-book-title">Tractatus Ayyew</div>
+    <div id="ct-chap-location">Book One | Chapter Six</div>
+    <div id="ct-word-count"><i>973 words</i></div>
+  </div>
+</div> 
+
+<!-- Page Title Section-->
+
+<div id="ct-chapt-graphic" class="background-6">
+
+</div>
+
+
+<div id="up-arrow"></div>
+
+<div id="ct-main">
+
+
+
+<!-- MAIN TEXT CONTENT of the Page
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁰
+-->
+
+<div class="lead-page-paragraph">
+    <p id="en-1-6-00">
+    IN SHARP CONTRAST TO KINCENTRIC CULTURES ANCIENT AND ONGOING, our modern view of the world is based solely on the teachings of our fellow humans. From philosophers to prophets, priests to kings, scientists to seers, human teachers have entirely shaped our modern understanding and relationship to ‘the natural world’.  Upon this way of knowing, we have established the means by which we discern good from bad, right from wrong, green from grey— and, incidentally, centered our modern ideologies upon fulfilling human needs over those of all Earth's other inhabitants. However practical and successful this paradigm has been for the prosperity of humanity, it has wholly failed to achieve the ecological harmony we so long for today.</p>
+    
+    <!--IN SHARP CONTRAST TO KINCENTRIC NATIONS ANCIENT AND ONGOING, our modern view of the world is based solely on the teachings of our fellow humans. From philosophers to prophets, priests to kings, scientists to seers, human teachers have entirely shaped our modern relationship to the biosphere— what is known all too often as ‘nature’.  Upon this way of knowing, we have established the means by which we discern good from bad, right from wrong and, incidentally, focused our modern ideologies upon fulfilling human needs over those of all Earth's other inhabitants. However practical and successful this human-centric paradigm has been for the prosperity of humanity, the foundational fallacy at its core has meant that without an upgrade in our view of the world, we are wholly incapable of acheiving the ecological harmony we so long for today. -->
+    </div>
+
+   <div class="page-paragraph">
+
+   <p id="en-1-6-01">As we saw in our last chapter, kincentric cultures and cyclocentric civilizations were based on an altogether different way of knowing.  Rather than learn solely from humans, these societies recognized the plants and animals around them as kin, elders, and teachers.  Today, as we come to recognize the connection between their kincentric ontology and their pattern of ecological enrichment, we can glimpse the pattern of depletion within our own— and isolate the ontological error that distorts our modern view of the world. </p>
+
+     <p id="en-1-6-02">From Greek stories of human-gods ruling the world, to Roman legends of humans dominating it, western society has put humans upon a pedestal.  From early astronomers declaring that the sun spun around the earth, to biblical interpretations declaring man’s dominion over earth and all its creatures, humanity’s centrality and exceptionalism has become lodged in the depths of western collective consciousness.  Over the centuries, as modern philosophy, religion, ethics and science have evolved they have built layer upon layer on top of this ancient foundation.</p>
+
+
+     <p id="en-1-6-03">However, today, we know better.</p>
+
+     <p id="en-1-6-04">After centuries of science, biologists have long dismissed that humans are at the top of life’s tree.  Likewise, astronomers have long disproved that the Earth is the center of the cosmos.  Here, contemporary science and ancient kincentricism align.  Both agree that humans, plants and animals all share ancestry and origins, action and consequence, connection and dependence.  Both concur that no organism is central or separate to the others: like a tapestry each and every one are inextricable parts of the whole.</p>
+
+     <p id="en-1-6-05">However despite unequivocal dismissal, the axioms of man’s centrality and separateness have persisted, buried in the depths of our modern ideologies.  Just as a building is often built upon the forgotten foundations of one that came long before, these ancient errors tilt and incline our modern intellectual edifices that continue to stand upon them.</p>
+
+     <p id="en-1-6-06">Although our modern ideologies may claim vast differences and boast of scientific savvy, all too often they share a common foundation.  From capitalism to communism, our modern views of the world remain anchored in the same archaic axiom of human exceptionalism.</p>
+
+     <p id="en-1-6-07">Nowhere is this more clear than in the way our modern ideologies speak of the biosphere.   From neoliberalism to socialism, from libertarianism to communism, the very words that they use to describe the organisms and ecosystems that they so long to love (in their terms: ‘the natural world’), most reveals their deep moorings in antiquated human-centric assumption.</p>
+     
+     <p id="en-1-6-08">Indeed, there is no word more imbued with the cumbersome weight of ancient metaphysical misconception than that of ‘nature’.    This term, used so poetically by environmentalists and conservationists to protect and preserve ‘the natural’ world, is alas seeped in irredeemable dualistic fallacy:  the ancient error of delineating man and nature, culture and ecology, the natural and the human.</p>
+     <!--The preferred term of organizations as wide ranging as the World Economic Forum to the World Wildlife Federation, -->
+
+     <p id="47-up">Upon this stark division not only is modern society built, but so too our most fervent environmental attempts and endeavors.  Derived from the Middle-English term <i>environ</i>, meaning to circle or surround, ‘the environment’ has come to mean, that which is around us humans, but not that which is us.<a href="#footnotes" title="Russell received a personal account from Robert Muller, three time under-secretary of general of the UN, who in discussions with UN Secretary General U Thant during the 1960’s, selected the word ‘environment’ (which had no political meaning at the time) as a term for the world’s growing ecological concerns. The term was used for the 1972 <i>United Nations Conference on the Human Environment</i>, in Stockholm, giving ‘environmentalism’ its modern political meaning." onclick="openFootnotes()">⁴⁷</a></p>
+
+     <p id="48-up">Over the last decades, feminists<a href="#footnotes" title="Carolyn Merchant, 'The Death of Nature: Women, Ecology and the Scientific Revolution', (Harper & Row, 1980)." onclick="openFootnotes()">⁴⁸</a>, theologians<a href="#footnotes" title="“A tradition of translation [of the word ‘dominion’ in Genesis] has inscribed the dualistic, anthropocentric, and hierarchical cast of Western philosophy and theology into the biblical text. Careful attention to the world of the text, and translations that reflect that world authentically, can open up new (“old”) readings that are more ecologically sound and sensitive.” See: Theodore Hieber, 'Retranslating Genesis 1–2: Reconnecting Biblical Thought and Contemporary Experience', (Sage Journals, 2019) Vol 70, Issue 3." onclick="openFootnotes()">⁴⁹</a> and philosophers<a href="#footnotes" onclick="openFootnotes()" title="Timothy Morton, 'Ecology without Nature: Rethinking Environmental Aesthetics', (Harvard University Press, (2007).">⁵⁰</a> have observed that the modern environmental ethics that results from this foundation (laws, sustainability guidelines, UN goals, etc.) are thus locked into a perspective of human-time, human-space and human-needs, and consequently: of human rights, interests and economy. From this view, ‘nature’ is inevitably objectified as something with which humanity is ever interacting: managing, dominating, stewarding. Our environmental endeavors that follow, thus strive to reduce their harm, to protect and to conserve the ‘natural’ world from human touch— which is understood <i>a priori</i> as contaminating, depleting and destructive.</p>
+     
+     <p id="en-1-6-09">Alas, from this reasoning, human ecological integration is an impossibility.  As such, the very notion of human ecological contribution has remained all but unimagined by environmentalists and industrialists alike.</p>
+
+    <p id="51-up">Banayan and I observe that not only are the axioms of this logic flawed, its conclusions run contrary to the lived and ancestral experience of her people and that of countless other kincentric nations ancient and ongoing:  cultures in which the concept of ‘nature’ is both absent and fundamentally antithetical.<a href="#footnotes" onclick="openFootnotes()" title="In Banayan's Kan'kan'ue language there is no word for 'nature'.  The closest term is 'batawa' which denotes the world around without separating people from other beings.  This observation is shared by speakers of other indigenous languages.  See:  Seline Meijer, 'People and nature blur in the world's indigenous languages', (IUCN: Planet at the Crossroads, 2017).  Also see: E. Salmon, 'Kincentric Ecology', 2000.">⁵¹</a></p>
+
+    <p id="en-1-6-0">We also observe that the effort of preserving and protecting ‘nature’ is likewise doomed to the very fate it aims to avoid.  Conserving and protecting one part of a system (i.e. an organism or ecosystem) at the exclusion of others, in the end, always fails.  As the neighboring parts degrade, so too will the whole, and with it, inevitably, so too all its parts.</p>
+
+    <p id="en-1-6-10">To move forward towards authentic green contributions, we must thus first thoroughly excise human exceptionalism and its crooked conclusions from our view of the world.</p>
+
+    <p id="en-1-6-11">To do so, the concept of ‘nature’ must crumble like the ancient rusted chain that it is.</p>
+
+    <p id="en-1-6-12">Only then, can we shatter the mind forged manacles of antiquated, anthropocentric cosmology and open the door to the ecological regeneration to which our moment so urgently calls.</p>
+
+    <p id="en-1-6-13">Only then can we too see the plants and animals around us as kin, elders and masters of ecological integration– teachers from whom we can learn to vitalize our own contributive potential.</p>
+
+    <p id="en-1-6-14">And only then can we see that the greatest teacher of all has been waiting for us all a long.</p><br>
+   
+   
+ </div><!--closes page text content-->
+
+<!-- BOOKNOTES BUTTON-->
+
+<div id="bookNotePalette" class="palette-hidden">
+    <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
+    <div class="highlight-buttons">
+        <div id="save-text" style="color: var(--thin-border-color);
+        font-family:Mulish, Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1em;  margin: auto 10px;">Save:
+        </div>
+        <button class="color-btn" onclick="highlightBooknote('green')" style="background:green"></button>
+        <button class="color-btn" onclick="highlightBooknote('red')" style="background:red"></button>
+        <button class="color-btn" onclick="highlightBooknote('yellow')" style="background:yellow"></button>
+        
+    </div>
+    <button id="copyBtn" class="pallette-btn"><img src="../icons/copy.svg" alt="Close page button" height="25px"> Copy</button> 
+    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()"><img src="../icons/booknotes.svg" alt="Close page button" height="25px"></button>
+    <!--<button id="cancelBtn" class="pallette-btn"><img src="../svgs/right-x.svg" alt="Close page button" height="24"></button>-->
+    
+</div>
+
+
+   
+
+<!--FOOTNOTES SECTION-->
+
+<div class="footnote-section" style="z-index:8;">
+
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
+      
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+        <a href="#47-up" class="footnote">   
+        <div class="footnote-number">47.</div>
+        <div class="footnote-text">Russell received a personal account from Robert Muller, three time under-secretary of general of the UN, who in discussions with UN Secretary General U Thant during the 1960’s, selected the word ‘environment’ (which had no political meaning at the time) as a term for the world’s growing ecological concerns. The term was used for the 1972 <i>United Nations Conference on the Human Environment</i>, in Stockholm, giving ‘environmentalism’ its modern political meaning.</div>
+        </a>
+
+        <a href="#47-up" class="footnote">   
+        <div class="footnote-number">48.</div>
+        <div class="footnote-text">Carolyn Merchant, <i>The Death of Nature: Women, Ecology and the Scientific Revolution</i>, (Harper & Row, 1980).</div>
+        </a>
+
+        <a href="#47-up" class="footnote">   
+        <div class="footnote-number">49.</div>
+        <div class="footnote-text">“A tradition of translation [of the word ‘dominion’ in Genesis] has inscribed the dualistic, anthropocentric, and hierarchical cast of Western philosophy and theology into the biblical text. Careful attention to the world of the text, and translations that reflect that world authentically, can open up new (“old”) readings that are more ecologically sound and sensitive.” See: Theodore Hieber, <i>Retranslating Genesis 1–2: Reconnecting Biblical Thought and Contemporary Experience</i>, (Sage Journals, 2019) Vol 70, Issue 3.
+        </div>
+        </a>
+
+        <a href="#47-up" class="footnote">   
+        <div class="footnote-number">50.</div>
+        <div class="footnote-text">Timothy Morton, <i>Ecology without Nature: Rethinking Environmental Aesthetics</i>, (Harvard University Press, (2007).  
+        </div>
+        </a>
+
+        <a href="#51-up" class="footnote">   
+        <div class="footnote-number" id="3-down">51.</div>
+        <div class="footnote-text">In Banayan's Kan'kan'ue language there is no word for 'nature'.  The closest term is 'batawa' which denotes the world around without separating people from other beings.  This observation is shared by speakers of other indigenous languages.  See:  Seline Meijer, <i>People and nature blur in the world's indigenous languages</i>, (IUCN: Planet at the Crossroads, 2017).  Also see: E. Salmon, <i>Kincentric Ecology</i>, 2000.</div>
+        </a>
+
+        
+
+
+        </div>
+  </div>
+
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div><!--Closes footnote section-->
+          
+  </div><!--Closes main content block-->
+
+
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
+
+<!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
+
+
+<!--FOOTER Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+
+    <div class="footer-size">
+    
+      <div class="footer-left">
+
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+
+     
+        <div class="next-section">
+          <div class="next-sec">Next section:</div>
+          <div class="sec-name"><i>Earthen Ways</i></div>
+        </div>
+
+      </div>
+  
+      <div class="footer-right">
+    
+        <a href="earthen.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+
+      </div>
+    </div>
+
+<!-- CHAPTER FOOTER-->
+
+
+<chap-foot></chap-foot>
+
+
+
+</div><!--underlayer-->
+
+<script>
+
+
+let currentId = 0;
+
+function generateId() {
+    currentId += 1;
+    return String(currentId).padStart(3, '0');
+}
+
+    
+function checkSelectedText() {
+    const selection = window.getSelection();
+
+    // Check if any text is selected
+    if (!selection.rangeCount || selection.isCollapsed) {
+        return;
+    }
+
+    const selectedRange = selection.getRangeAt(0);
+    const startContainerParent = selectedRange.startContainer.parentNode;
+    const endContainerParent = selectedRange.endContainer.parentNode;
+
+    // Check if the selection is within the #ct-main element
+    const ctMainElement = document.getElementById('ct-main');
+    if (!ctMainElement.contains(startContainerParent) || !ctMainElement.contains(endContainerParent)) {
+        return;
+    }
+
+    // Check if the selection does not span more than one paragraph
+    if (startContainerParent !== endContainerParent) {
+        return;
+    }
+
+    saveBookNotePalette();
+}
+
+document.addEventListener('mouseup', checkSelectedText);
+document.addEventListener('touchend', checkSelectedText);
+
+
+
+/*
+function checkSelectedText() {
+    let selectedText = window.getSelection().toString();
+    if (selectedText) { // If some text is selected
+        saveBookNotePalette();
+    }
+}*/
+
+document.addEventListener('mouseup', checkSelectedText);
+document.addEventListener('touchend', checkSelectedText);
+
+
+
+document.addEventListener('mouseup', function(e) {
+    let selectedText = window.getSelection().toString();
+    if (selectedText) { // If some text is selected
+        saveBookNotePalette();
+    }
+});
+
+
+function saveBookNotePalette() {
+    const palette = document.getElementById('bookNotePalette');
+    palette.style.bottom = '-30px'; // Slide up to show the palette
+}
+
+
+document.getElementById('cancelBtn').addEventListener('click', function() {
+    const palette = document.getElementById('bookNotePalette');
+    palette.style.bottom = '-200px'; // Slide down to hide the palette
+});
+
+
+document.getElementById('copyBtn').addEventListener('click', function() {
+    let selectedText = window.getSelection().toString();
+    copyToClipboard(selectedText);
+});
+
+function copyToClipboard(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+
+    // Change button text and style
+    const button = document.getElementById('copyBtn');
+    button.style.color = 'green';
+    button.textContent = '✓ Copied!';
+
+    // Slide down and hide the palette
+    setTimeout(() => {
+        const palette = document.getElementById('bookNotePalette');
+        palette.style.bottom = '-200px'; // Slide down to hide the palette
+
+        // After an additional second, reset the button text
+        setTimeout(() => {
+            button.textContent = 'Copy';
+            button.style.color = 'var(--text-color)';
+        }, 1000);
+    }, 800);
+}
+
+// Sub-function to update button visuals and behavior post-highlighting
+function updateButtonAndPalette() {
+    const button = document.getElementById('save-text');
+    button.style.color = 'green';
+    button.style.fontWeight = 'bold';
+    button.textContent = '✓ Saved!';
+
+    setTimeout(() => {
+        const palette = document.getElementById('bookNotePalette');
+        palette.style.bottom = '-200px';
+
+        setTimeout(() => {
+            button.textContent = 'Highlight & Save';
+            button.style.color = 'var(--text-color)';
+            button.style.fontWeight = 'normal';
+        }, 1000);
+    }, 1000);
+}
+
+function highlightBooknote(color) {
+    const selection = window.getSelection();
+
+    // If there's selected text
+    if (selection.rangeCount > 0) {
+        const selectedRange = selection.getRangeAt(0);
+
+        const span = document.createElement("span");
+
+        // Set the appropriate highlight class based on the color
+        switch (color) {
+            case 'green':
+                span.classList.add("highlight-green");
+                break;
+            case 'red':
+                span.classList.add("highlight-red");
+                break;
+            case 'yellow':
+                span.classList.add("highlight-yellow");
+                break;
+            default:
+                console.warn(`Unknown highlight color: ${color}`);
+                return; // Exit the function
+        }
+
+        span.title = "Click to remove BookNote"; 
+        span.alt = "Highlight"; 
+
+        const id = generateId();
+        span.dataset.id = id;
+
+        selectedRange.surroundContents(span);
+
+        let startContainerNode = selectedRange.startContainer;
+        while (startContainerNode.nodeName !== 'P' && startContainerNode.parentNode !== null) {
+            startContainerNode = startContainerNode.parentNode;
+        }
+        const startContainer = startContainerNode.id;
+        const containerHTML = startContainerNode.innerHTML;
+        const storedText1 = selection.toString();
+
+        alert(
+            `Start Container: ${startContainer}\n` +
+            `Stored Text: ${storedText1}\n` +
+            `Container HTML: ${containerHTML}`
+        );
+
+        const charCount = storedText1.length;
+        const now = new Date();
+        const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+        const noteChapter = chapName;
+
+        let bookNotes = getBookNotesFromLocalStorage();
+
+        const bookNote = {
+            id,
+            book,
+            chapNo,
+            chapName,
+            chaptURL,
+            startContainer,
+            containerHTML,
+            storedNoteText,
+            noteChapter,
+            charCount,
+            BNdateTime
+        };
+
+        bookNotes.push(bookNote);
+        saveBookNotesToLocalStorage(bookNotes);
+
+        console.log('BookNote saved:', bookNote);
+        selection.removeAllRanges();
+        updateButtonAndPalette();
+    }
+}
+
+
+document.getElementById('highlightSaveButton').addEventListener('click', highlightBooknote);
+
+
+
+function removeHighlight(event) {
+    const element = event.target;
+    
+    if (element.classList.contains('highlight')) {
+        const id = element.dataset.id;
+
+        // Get the bookNotes from local storage
+        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+        // Find the index of the bookNote with the given id
+        const index = bookNotes.findIndex(bookNote => bookNote.id === id);
+
+        if (index !== -1) {
+            // If the bookNote was found, remove it
+            bookNotes.splice(index, 1);
+
+            // Save the updated array back to local storage
+            localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+
+            console.log('BookNote removal success');
+        } else {
+            console.log('BookNote removal failed');
+        }
+
+        // Remove the span tag
+        const text = document.createTextNode(element.textContent);
+        element.parentNode.replaceChild(text, element);
+    }
+}
+
+
+// Add a click event listener to the document to call removeHighlight when a highlight span is clicked
+document.addEventListener('click', removeHighlight);
+
+
+function recreateHighlights() {
+    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+    bookNotes.forEach(note => {
+        const { containerHTML, startContainer, id } = note;
+
+        if (containerHTML && startContainer && id) {
+            try {
+                // Find the element by the saved ID
+                const container = document.getElementById(startContainer);
+
+                if (container) {
+                    container.innerHTML = containerHTML; // Replace the innerHTML with the saved HTML (with highlights)
+                } else {
+                    console.error('Error: Container element not found for the following book note:', note);
+                }
+            } catch (err) {
+                console.error('An error occurred while recreating highlights for the following book note:', note);
+                console.error(err);
+            }
+        } else {
+            console.warn('Warning: Incomplete book note data. Ignoring the following book note:', note);
+        }
+    });
+}
+
+
+window.addEventListener('load', recreateHighlights);
+
+// Make sure this is after recreateSelection
+document.addEventListener('click', removeHighlight);
+</script>
+
+</body>
+</html>
+
