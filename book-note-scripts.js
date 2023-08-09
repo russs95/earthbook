@@ -501,3 +501,44 @@ function downloadBooknotes() {
     document.body.removeChild(a);
     window.URL.revokeObjectURL(url);
 }
+
+
+/*UPload Booknotes */
+
+function uploadBooknotes() {
+    const input = document.getElementById('jsonUpload');
+
+    if (!input.files.length) {
+        alert('Please select a file to upload.');
+        return;
+    }
+
+    const file = input.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(event) {
+        try {
+            // 3. Parse the data to ensure it's valid JSON
+            const jsonData = JSON.parse(event.target.result);
+
+            // Validation - Make sure the data is in the format you expect
+            // (Add more checks as needed based on your data structure)
+            if (Array.isArray(jsonData)) {
+                // 4. Save to localStorage
+                localStorage.setItem('bookNotes', JSON.stringify(jsonData));
+                alert('Booknotes uploaded successfully!');
+
+                // You might want to call your function to re-render the booknotes on the page
+                recreateBooknotes();
+
+            } else {
+                alert('Invalid file format. Please upload a valid booknotes JSON file.');
+            }
+        } catch (e) {
+            alert('There was an error reading the file. Please ensure it is a valid JSON file.');
+        }
+    };
+
+    // 2. Read the file
+    reader.readAsText(file);
+}
