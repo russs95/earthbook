@@ -840,9 +840,9 @@ BOOK NOTE PALETTE
   height: 30px;
   border-radius: 15px;
   display: flex; 
-  padding: 10px 15px 10px 38px;
+  padding: 10px 15px 10px 40px;
   background: var(--nav-bar-accent) url(icons/save.svg) 15px center no-repeat;
-  background-size: 25px;
+  background-size: 21px;
 }
 
 
