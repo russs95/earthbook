@@ -352,13 +352,13 @@ function recreateHighlights() {
         }
     });
 }
-window.onload = function() {
-    recreateHighlights();
-}
 
+
+
+/*
 // Make sure this is after recreateSelection
 document.addEventListener('click', removeHighlight);
-
+*/
 
 function createElementWithAttributes(type, attributes = {}) {
     const element = document.createElement(type);
