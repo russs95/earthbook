@@ -23,11 +23,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     function recreateHighlights() {
     
-    alert('Hi!');
     const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-    
-    
-    
     bookNotes.forEach(note => {
         const { containerHTML, startContainer, id } = note;
     
@@ -62,12 +58,15 @@ function generateId() {
     return String(currentId).padStart(3, '0');
 }
 
-    
 function checkSelectedText() {
     const selection = window.getSelection();
 
+    // Prepare palette for potential position adjustments
+    const palette = document.getElementById('bookNotePalette');
+
     // Check if any text is selected
     if (!selection.rangeCount || selection.isCollapsed) {
+        palette.style.bottom = '-200px';  // No text selected
         return;
     }
 
@@ -78,43 +77,32 @@ function checkSelectedText() {
     // Check if the selection is within the #ct-main element
     const ctMainElement = document.getElementById('ct-main');
     if (!ctMainElement.contains(startContainerParent) || !ctMainElement.contains(endContainerParent)) {
+        palette.style.bottom = '-200px';  // Selected text not within ct-main
         return;
     }
 
     // Check if the selection does not span more than one paragraph
     if (startContainerParent !== endContainerParent) {
+        palette.style.bottom = '-200px';  // Selected text spans multiple paragraphs
         return;
     }
 
-    saveBookNotePalette();
+    palette.style.bottom = '-30px';  // Valid text selected within constraints
 }
 
+// We only need one set of event listeners, so removing the duplicated ones
 document.addEventListener('mouseup', checkSelectedText);
 document.addEventListener('touchend', checkSelectedText);
 
 
-
-/* simple version
-
-function checkSelectedText() {
-    let selectedText = window.getSelection().toString();
-    if (selectedText) { // If some text is selected
-        saveBookNotePalette();
-    }
-}*/
-
-document.addEventListener('mouseup', checkSelectedText);
-document.addEventListener('touchend', checkSelectedText);
-
-
-
+/*
 document.addEventListener('mouseup', function(e) {
     let selectedText = window.getSelection().toString();
     if (selectedText) { // If some text is selected
         saveBookNotePalette();
     }
 });
-
+*/
 
 /* Show the Booknotes pallette on text selection, hides after 5 seconds.
 let paletteExpire;

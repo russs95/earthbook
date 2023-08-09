@@ -29,7 +29,7 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 	10.  	New
 
 */
-/*
+
 window.onload = function() {
   document.getElementById("search_input").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
@@ -38,7 +38,7 @@ window.onload = function() {
   });
 };
 
-*/
+
 
 
  // If `prefers-color-scheme` is not supported, fall back to light mode.
