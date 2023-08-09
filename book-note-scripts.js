@@ -74,21 +74,17 @@ document.addEventListener('mouseup', function(e) {
 
 /* Show the Booknotes pallette on text selection, hides after 5 seconds.*/
 let paletteExpire;
-let isPaletteShown = false;
 
 function saveBookNotePalette() {
     const palette = document.getElementById('bookNotePalette');
-    
-    // Check if palette is already shown, if so, return without doing anything.
-    if (isPaletteShown) return;
-
     palette.style.bottom = '-30px'; // Slide up to show the palette
-    isPaletteShown = true;
 
     // Set a timeout to slide down the palette after 5 seconds
     paletteExpire = setTimeout(() => {
         palette.style.bottom = '-200px'; // Slide down to hide the palette
-        isPaletteShown = false;
+        // Remove the event listeners once the palette has slid down
+        palette.removeEventListener('click', clearPaletteExpire);
+        palette.removeEventListener('mouseenter', clearPaletteExpire);
     }, 5000);
 
     // Attach event listeners to clear the timeout when there's interaction with the palette
@@ -98,6 +94,10 @@ function saveBookNotePalette() {
 
 function clearPaletteExpire() {
     clearTimeout(paletteExpire);
+    // Ensure event listeners are removed once the timeout is cleared
+    const palette = document.getElementById('bookNotePalette');
+    palette.removeEventListener('click', clearPaletteExpire);
+    palette.removeEventListener('mouseenter', clearPaletteExpire);
 }
 
 
@@ -278,7 +278,6 @@ document.getElementById('highlightSaveButton').addEventListener('click', highlig
 
 function removeHighlight(event) {
     const element = event.target;
-    alert('hello!');
     
     // Check if the clicked element has any of the highlight classes
     if (element.classList.contains('highlight-green') ||
