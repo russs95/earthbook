@@ -54,7 +54,6 @@ class bookNotes extends HTMLElement {
 <!-- BOOKNOTES MENU PALLETTE-->
 
 <div id="bookNotePalette" class="palette-hidden">
-    <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
     <div class="highlight-buttons">
         <div id="save-text" class="pallette-text">Save:
         </div>
