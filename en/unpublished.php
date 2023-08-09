@@ -44,7 +44,7 @@ Must be updated for each page-->
 
 <meta property="article:modified_time" content="2023-02-21T09:14:13+00:00">
 <meta name="keywords" content="not yet published, epigraph, introduction, stories, dapay, Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
-<meta name="description" content="This chapter hasn't yet been published.">
+<meta name="description" content="This chapter hasn't yet been published... but we're getting there!">
 
 
 <meta name="twitter:label1" content="Est. reading time" />

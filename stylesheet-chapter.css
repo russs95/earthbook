@@ -766,7 +766,7 @@ BOOK NOTE PALETTE
 @media screen and (max-width: 700px) {
 
 #bookNotePalette { 
-  width: 400px;
+  width: 380px;
   height: 90px; 
   border-radius: 25px 25px 0px 0px;
 }
@@ -819,7 +819,6 @@ BOOK NOTE PALETTE
   width: fit-content;
   height: 40px;
   border-radius: 15px;
-  padding: 10px 15px 10px 40px;
   background-size: 25px;
   transition: 0.3s; /* Repeated property, consider consolidating with the other transition property */
 }
@@ -879,6 +878,8 @@ BOOK NOTE PALETTE
 }
 .pallette-btn { 
   flex-grow: 1;
+  padding: 10px 15px 10px 40px;
+
 }
 }
 

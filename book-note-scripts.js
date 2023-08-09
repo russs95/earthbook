@@ -83,7 +83,9 @@ function checkSelectedText() {
 
     // Check if the selection does not span more than one paragraph
     if (startContainerParent !== endContainerParent) {
-        palette.style.bottom = '-200px';  // Selected text spans multiple paragraphs
+        //palette.style.bottom = '-200px';  // Selected text spans multiple paragraphs
+        alert("Sorry!  Currently you can't select and highlight text in more than one paragraph to make a book note");
+
         return;
     }
 
