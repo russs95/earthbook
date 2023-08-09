@@ -330,38 +330,6 @@ highlightClasses.forEach(className => {
 
 */
 
-/*ATTEMPT TO REESTABLISHED PAGE HIGHLIGHTS ON RELOAD*/
-
-function recreateHighlights() {
-
-    alert('Hi!');
-    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-    
-   
-
-    bookNotes.forEach(note => {
-        const { containerHTML, startContainer, id } = note;
-
-        if (containerHTML && startContainer && id) {
-            try {
-                // Find the element by the saved ID
-                const container = document.getElementById(startContainer);
-
-                if (container) {
-                    container.innerHTML = containerHTML; // Replace the innerHTML with the saved HTML (with highlights)
-                } else {
-                    console.error('Error: Container element not found for the following book note:', note);
-                }
-            } catch (err) {
-                console.error('An error occurred while recreating highlights for the following book note:', note);
-                console.error(err);
-            }
-        } else {
-            console.warn('Warning: Incomplete book note data. Ignoring the following book note:', note);
-        }
-    });
-}
-
 
 
 /*
