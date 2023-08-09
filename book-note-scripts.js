@@ -173,6 +173,7 @@ function highlightBooknote(color) {
 
         span.title = "Click to remove BookNote"; 
         span.alt = "Highlight"; 
+        span.setAttribute('onclick', 'removeHighlight(event)');
 
         const id = generateId();
         span.dataset.id = id;
@@ -310,6 +311,8 @@ function removeHighlight(event) {
     }
 }
 
+
+/*
 // Add click event listeners for each highlight class
 const highlightClasses = ['highlight-green', 'highlight-red', 'highlight-yellow'];
 
@@ -319,7 +322,7 @@ highlightClasses.forEach(className => {
     });
 });
 
-
+*/
 
 /*ATTEMPT TO REESTABLISHED PAGE HIGHLIGHTS ON RELOAD*/
 
