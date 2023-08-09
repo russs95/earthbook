@@ -9,11 +9,12 @@ BOOK NOTES FUNCTIONS
 
 ------------------------------------------------*/
 
+/*RECREATE from the cache the hilights*/
 
-alert('Script started');
+//alert('Script started');
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    alert('DOM fully loaded and parsed');
+   // alert('DOM fully loaded and parsed');
     recreateHighlights();
 });
      
