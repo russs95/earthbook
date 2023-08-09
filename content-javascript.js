@@ -123,6 +123,11 @@ function openFooter2() {
   }
 
 
+
+
+  /* WELCOME NOTICE for first time visitors */
+
+
    // Function to open the welcome notice
    function openWelcomeNotice() {
     // Check if hideNotice is set to true in the browser cache (localStorage)
@@ -153,328 +158,413 @@ function openFooter2() {
   });
 
 
-/*
-function closeWelcomeNotice() {
-  document.getElementById("chap-notice").style.display = "none";
-  localStorage.setItem("hideNotice", "true"); // Store the choice in localStorage
+
+
+/*---------------------------------------------------
+
+
+
+BOOK NOTES FUNCTIONS
+
+
+
+------------------------------------------------*/
+
+
+
+let currentId = 0;
+
+function generateId() {
+    currentId += 1;
+    return String(currentId).padStart(3, '0');
 }
 
-window.addEventListener("DOMContentLoaded", function() {
-  var hideNotice = localStorage.getItem("hideNotice");
-  if (hideNotice === "true") {
-    document.getElementById("chap-notice").style.display = "none";
-  }
-});
-*/
-
-
-/*
-
-let highlightClass = 'highlight';
-let preHighlightClass = 'pre-highlight';
-let selectedRange;
-
-
-document.addEventListener("DOMContentLoaded", function() {
-
-
-function getSelectedRange() {
-        if (window.getSelection) {
-            let sel = window.getSelection();
-            if (sel.rangeCount) {
-                return sel.getRangeAt(0);
-            }
-        } else if (document.selection && document.selection.createRange) {
-            return document.selection.createRange();
-        }
-        return null;
-    }
-
-function clearSelection() {
-        if (window.getSelection) {
-            window.getSelection().removeAllRanges();
-        } else if (document.selection) {
-            document.selection.empty();
-        }
-    }
-
-
-
-function handleDesktopSelection() {
-    const spanDelay = 1000; //  delay before removing user's text selection
-    const removeSpanDelay = 3000; //  delay before removing the span formatting
-
-    selectedRange = getSelectedRange();
-    if (selectedRange && selectedRange.toString().trim().length > 0) {
-      let span = document.createElement('span');
-      span.classList.add('pre-highlight'); // Add the class for the transition effect
-      span.title = "Click this text to highlight and save.";
-      span.textContent = selectedRange.toString(); // Preserve the selected text content
-
-      // Add the alt attribute (optional but recommended for accessibility)
-      span.setAttribute('alt', "Click this text to highlight and save.");
-
-      selectedRange.deleteContents();
-      selectedRange.insertNode(span);
-
-      // Remove the user's text selection after 3 seconds
-      setTimeout(clearSelection, spanDelay);
-
-      // Remove the span formatting after 3 seconds if not clicked
-      setTimeout(() => {
-        if (!span.clicked) {
-          const parent = span.parentNode;
-          parent.replaceChild(document.createTextNode(span.textContent), span);
-        }
-      }, removeSpanDelay);
-    }
-  }
-
-  // Add a click event listener to the document to detect if the span is clicked
-  document.addEventListener('click', function (event) {
-    if (event.target.classList.contains('pre-highlight')) {
-      event.target.clicked = true;
-      alert('pass to handledesktopselection');
-    }
-  });
-
-
-
-  function handleMobileSelection() {
-    selectedRange = getSelectedRange();
-  
-    const spanDelay = 5000; //  delay before removing user's text selection
-    const removeSpanDelay = 10000; //  delay before removing the span formatting
-
-    selectedRange = getSelectedRange();
-    if (selectedRange && selectedRange.toString().trim().length > 0) {
-      let span = document.createElement('span');
-      span.classList.add('pre-highlight'); // Add the class for the transition effect
-      span.title = "Double click this text to highlight and save.";
-      span.textContent = selectedRange.toString(); // Preserve the selected text content
-
-      // Add the alt attribute (optional but recommended for accessibility)
-      span.setAttribute('alt', "Doublelick this text to highlight and save.");
-
-      selectedRange.deleteContents();
-      selectedRange.insertNode(span);
-
-      // Remove the user's text selection after 3 seconds
-      setTimeout(clearSelection, spanDelay);
-
-      // Remove the span formatting after 3 seconds if not clicked
-      setTimeout(() => {
-        if (!span.clicked) {
-          const parent = span.parentNode;
-          parent.replaceChild(document.createTextNode(span.textContent), span);
-        }
-      }, removeSpanDelay);
-    }
-  
-
-  
-  }
-
-  
-
-  document.addEventListener('mouseup', handleDesktopSelection);
-  document.addEventListener('touchend', handleMobileSelection);
-
-
-// Add both click and touchend listeners
-document.addEventListener('click', handleHighlightEvent);
-document.addEventListener('touchend', handleHighlightEvent);
-
-
-
-        
     
-  
-     // This function is triggered when an event occurs. It checks if the event's target (the element that triggered the event)
-// has a certain CSS class (preHighlightClass or highlightClass). If it does, it removes preHighlightClass and toggles 
-// the highlightClass (adds the class if it doesn't have it, and removes it if it does).
-function handleHighlightEvent(e) {
-  if (e.target.classList.contains(preHighlightClass) || e.target.classList.contains(highlightClass)) {
-    e.target.classList.remove(preHighlightClass);
-    e.target.classList.toggle(highlightClass);
+function checkSelectedText() {
+    const selection = window.getSelection();
 
-      
-          // If the target element contains the highlight class, this means the text has been selected for highlighting. 
-// The function then creates a range object to select the contents of the target node and get the user's selection.
-// If there is a selection, it removes all ranges from the selection and adds the new range.
-    if (e.target.classList.contains(highlightClass)) {
-      const range = document.createRange();
-      range.selectNodeContents(e.target);
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-
-      // If there is a selection range, the function gets the first range and calculates the start offset of the selection, 
-// i.e., where the selection starts in the text. This is done by iterating over all text nodes in the parent node 
-// of the start container of the selected range and adding their lengths to the startOffset. The final startOffset 
-// is increased by the startOffset of the selectedRange itself.
-
-            if (selection.rangeCount > 0) {
-              const selectedRange = selection.getRangeAt(0);
-              const startContainer = selectedRange.startContainer.parentNode.id;
-      
-              // Calculate startOffset considering only text nodes inside the selected paragraph
-              let startOffset = 0;
-              let node = selectedRange.startContainer.parentNode.firstChild;
-              while (node && node !== selectedRange.startContainer) {
-                if (node.nodeType === Node.TEXT_NODE) {
-                  startOffset += node.length;
-                }
-                node = node.nextSibling;
-              }
-              startOffset += selectedRange.startOffset;
-      
-              const storedNoteText = selection.toString();
-              const charCount = storedNoteText.length; // Counting characters
-              const now = new Date();
-              const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
-              const noteChapter = chapName; // Using the global variable
-      
-              // Retrieve existing bookNotes from local storage
-              let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-      
-              // New highlight object
-              const bookNote = {
-                book,
-                chapNo,
-                chapName,
-                chaptURL,
-                startContainer,
-                startOffset,
-                storedNoteText,
-                noteChapter,
-                charCount,
-                BNdateTime
-              };
-      
-              // Add the new highlight to the array
-              bookNotes.push(bookNote);
-      
-              // Save the updated array back to local storage
-              localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-      
-              // Log to console instead of alert
-              console.log('BookNote saved:', bookNote);
-
-             
-            }
-            
-            //updateBNResetButton();
-            e.target.title = "This quotation is saved in your Book Notes";
-            window.getSelection().removeAllRanges();
-          } else {
-            setTimeout(() => removeHighlight(e), 1000);
-          }
-        }
-      }
-      
-
-
-
-
-function removeHighlight() {
-  const highlightClass = 'highlight';
-
-  // Define the click handler function
-  function handleClick(event) {
-    const span = event.target.closest('.' + highlightClass);
-    if (span) {
-      const text = span.textContent; // Store the span's text content
-
-      // Replace the span's outerHTML with its textContent
-      // This effectively removes the span and leaves only the text
-      span.outerHTML = text;
-
-      // Remove the corresponding book note from the array
-      let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-      bookNotes = bookNotes.filter(note => {
-        return !(note.startContainer === span.parentNode.id && note.storedNoteText.length === text.length);
-      });
-
-      localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+    // Check if any text is selected
+    if (!selection.rangeCount || selection.isCollapsed) {
+        return;
     }
-  }
 
-  // Add the click event listener to elements with the highlight class
-  const elementsWithHighlight = document.querySelectorAll('.' + highlightClass);
-  elementsWithHighlight.forEach(element => {
-    element.addEventListener('click', handleClick);
-  });
+    const selectedRange = selection.getRangeAt(0);
+    const startContainerParent = selectedRange.startContainer.parentNode;
+    const endContainerParent = selectedRange.endContainer.parentNode;
 
-  // Add the touchend event listener to elements with the highlight class
-  elementsWithHighlight.forEach(element => {
-    element.addEventListener('touchend', handleClick);
-  });
+    // Check if the selection is within the #ct-main element
+    const ctMainElement = document.getElementById('ct-main');
+    if (!ctMainElement.contains(startContainerParent) || !ctMainElement.contains(endContainerParent)) {
+        return;
+    }
+
+    // Check if the selection does not span more than one paragraph
+    if (startContainerParent !== endContainerParent) {
+        return;
+    }
+
+    saveBookNotePalette();
+}
+
+document.addEventListener('mouseup', checkSelectedText);
+document.addEventListener('touchend', checkSelectedText);
+
+
+
+/* simple version
+
+function checkSelectedText() {
+    let selectedText = window.getSelection().toString();
+    if (selectedText) { // If some text is selected
+        saveBookNotePalette();
+    }
+}*/
+
+document.addEventListener('mouseup', checkSelectedText);
+document.addEventListener('touchend', checkSelectedText);
+
+
+
+document.addEventListener('mouseup', function(e) {
+    let selectedText = window.getSelection().toString();
+    if (selectedText) { // If some text is selected
+        saveBookNotePalette();
+    }
+});
+
+
+/* Show the Booknotes pallette on text selection, hides after 5 seconds.*/
+
+let paletteTimeout;
+
+function saveBookNotePalette() {
+    const palette = document.getElementById('bookNotePalette');
+    palette.style.bottom = '-30px'; // Slide up to show the palette
+
+    // Set a timeout to slide down the palette after 5 seconds
+    paletteTimeout = setTimeout(() => {
+        palette.style.bottom = '-200px'; // Slide down to hide the palette
+    }, 5000);
+
+    // Event listeners to clear the timeout if there's interaction with the palette
+    palette.addEventListener('click', clearPaletteTimeout);
+    palette.addEventListener('mouseenter', clearPaletteTimeout);
+}
+
+function clearPaletteTimeout() {
+    clearTimeout(paletteTimeout);
 }
 
 
+
+/*COPY TEXT */
+
+document.getElementById('copyBtn').addEventListener('click', function() {
+    let selectedText = window.getSelection().toString();
+    copyToClipboard(selectedText);
 });
 
-*/
+function copyToClipboard(text) {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
 
-  /*
-    // Check if the selection is within the div with id 'ct-main'
-    if (selectedRange && selectedRange.commonAncestorContainer.closest('#ct-main') && selectedRange.toString().trim().length > 0) {
-      let span = document.createElement('span');
-      span.style.cursor = 'pointer';
-      span.classList.add(preHighlightClass);
-      span.title = "Click this text to highlight and save.";
-      selectedRange.surroundContents(span);
-      clearSelection();
+    // Change button text and style
+    const button = document.getElementById('copyBtn');
+    button.style.color = 'green';
+    button.textContent = '✓ Copied!';
+
+    // Slide down and hide the palette
+    setTimeout(() => {
+        const palette = document.getElementById('bookNotePalette');
+        palette.style.bottom = '-200px'; // Slide down to hide the palette
+
+        // After an additional second, reset the button text
+        setTimeout(() => {
+            button.textContent = 'Copy';
+            button.style.color = 'var(--text-color)';
+        }, 1000);
+    }, 800);
+}
+
+
+
+
+/* MAIN FUNCTION TO PROCESS A SELECTION HIGHLIGHT*/
+
+function highlightBooknote(color) {
+    const selection = window.getSelection();
+
+    // Variables for the new requirements
+    const highlightColor = color;
+    const userNote = "This is an example user note that can be added to the BookNotes for people to read";
+    const publicNote = "No";
+
+    // If there's selected text
+    if (selection.rangeCount > 0) {
+        const selectedRange = selection.getRangeAt(0);
+        const span = document.createElement("span");
+
+        // Set the appropriate highlight class based on the color
+        switch (highlightColor) {
+            case 'green':
+                span.classList.add("highlight-green");
+                break;
+            case 'red':
+                span.classList.add("highlight-red");
+                break;
+            case 'yellow':
+                span.classList.add("highlight-yellow");
+                break;
+            default:
+                console.warn(`Unknown highlight color: ${highlightColor}`);
+                return; // Exit the function
+        }
+
+        span.title = "Click to remove BookNote"; 
+        span.alt = "Highlight"; 
+
+        const id = generateId();
+        span.dataset.id = id;
+        selectedRange.surroundContents(span);
+
+        let startContainerNode = selectedRange.startContainer;
+        while (startContainerNode.nodeName !== 'P' && startContainerNode.parentNode !== null) {
+            startContainerNode = startContainerNode.parentNode;
+        }
+
+        const startContainer = startContainerNode.id;
+        const containerHTML = startContainerNode.innerHTML;
+        const storedText = selection.toString();
+
+        alert(
+            `Start Container: ${startContainer}\n` +
+            `Stored Text: ${storedText}\n` +
+            `Container HTML: ${containerHTML}`
+        );
+
+        const charCount = storedText.length;
+        const now = new Date();
+        const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
+        const noteChapter = chapName;
+
+        let bookNotes = getBookNotesFromLocalStorage();
+
+        const bookNote = {
+            id,
+            book,
+            chapNo,
+            chapName,
+            chaptURL,
+            startContainer,
+            containerHTML,
+            storedText,
+            noteChapter,
+            charCount,
+            BNdateTime,
+            highlightColor, // Added
+            userNote,       // Added
+            publicNote      // Added
+        };
+
+        bookNotes.push(bookNote);
+        saveBookNotesToLocalStorage(bookNotes);
+
+        console.log('BookNote saved:', bookNote);
+        selection.removeAllRanges();
+        updateButtonAndPalette();
     }
+}
+
+
+// Sub-function to get existing bookNotes or an empty array if none exist
+function getBookNotesFromLocalStorage() {
+    try {
+        return JSON.parse(localStorage.getItem('bookNotes')) || [];
+    } catch (error) {
+        console.error('Error reading bookNotes from local storage:', error);
+        return [];
+    }
+}
+
+// Sub-function to save bookNotes to local storage
+function saveBookNotesToLocalStorage(bookNotes) {
+    try {
+        localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+    } catch (error) {
+        console.error('Error saving bookNotes to local storage:', error);
+    }
+}
+
+
+// Sub-function to update button visuals and behavior post-highlighting
+
+function updateButtonAndPalette() {
+    const saveTextDiv = document.getElementById('save-text');
+    saveTextDiv.style.color = 'green';
+    saveTextDiv.style.fontWeight = 'bold';
+    saveTextDiv.textContent = '✓ Saved!';
+
+    setTimeout(() => {
+        const palette = document.getElementById('bookNotePalette');
+        palette.style.bottom = '-200px';
+
+        setTimeout(() => {
+            saveTextDiv.textContent = 'Save:';
+            saveTextDiv.style.color = 'var(--thin-border-color)';
+            saveTextDiv.style.fontWeight = 'normal';
+        }, 1000);
+    }, 1000);
+}
+
+
+document.getElementById('highlightSaveButton').addEventListener('click', highlightBooknote);
+
+
+
+
+/* ATTEMPT TO REMOVE HIGHLIGHTS AFTER A CLIC*/
+
+function removeHighlight(event) {
+    const element = event.target;
+    alert('hello!');
+    
+    // Check if the clicked element has any of the highlight classes
+    if (element.classList.contains('highlight-green') ||
+        element.classList.contains('highlight-red') ||
+        element.classList.contains('highlight-yellow')) {
+        
+        const id = element.dataset.id;
+
+        // Get the bookNotes from local storage
+        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+        // Find the index of the bookNote with the given id
+        const index = bookNotes.findIndex(bookNote => bookNote.id === id);
+
+        if (index !== -1) {
+            // If the bookNote was found, remove it
+            bookNotes.splice(index, 1);
+
+            // Save the updated array back to local storage
+            localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+
+            console.log('BookNote removal success');
+        } else {
+            console.log('BookNote removal failed');
+        }
+
+        // Replace the span with its text content
+        const text = document.createTextNode(element.textContent);
+        element.parentNode.replaceChild(text, element);
+    }
+}
+
+// Add a click event listener to the document
+document.addEventListener('click', removeHighlight);
+
+
+
+/*ATTEMPT TO REESTABLISHED PAGE HIGHLIGHTS ON RELOAD*/
+
+function recreateHighlights() {
+    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+    alert('Hi!');
+
+    bookNotes.forEach(note => {
+        const { containerHTML, startContainer, id } = note;
+
+        if (containerHTML && startContainer && id) {
+            try {
+                // Find the element by the saved ID
+                const container = document.getElementById(startContainer);
+
+                if (container) {
+                    container.innerHTML = containerHTML; // Replace the innerHTML with the saved HTML (with highlights)
+                } else {
+                    console.error('Error: Container element not found for the following book note:', note);
+                }
+            } catch (err) {
+                console.error('An error occurred while recreating highlights for the following book note:', note);
+                console.error(err);
+            }
+        } else {
+            console.warn('Warning: Incomplete book note data. Ignoring the following book note:', note);
+        }
+    });
+}
+window.onload = function() {
+    recreateHighlights();
+}
+
+// Make sure this is after recreateSelection
+document.addEventListener('click', removeHighlight);
+
+
+function createElementWithAttributes(type, attributes = {}) {
+    const element = document.createElement(type);
+    for (const key in attributes) {
+        if (attributes.hasOwnProperty(key)) {
+            element[key] = attributes[key];
+        }
+    }
+    return element;
+}
+
+
+
+/* THIS CREATES THE BOOK NOTES CURTAIN and list of svaed highlights*/
 
 function bookNotesCreator() {
-// Retrieve existing bookNotes from local storage
-const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+    // Retrieve existing bookNotes from local storage
+    let bookNotes;
+    try {
+        bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+    } catch (e) {
+        console.error('Error parsing bookNotes from localStorage:', e);
+        bookNotes = [];
+    }
 
-// Get the book-notes-list div
-const bookNotesListDiv = document.getElementById('book-notes-list');
+    // Get the book-notes-list div
+    const bookNotesListDiv = document.getElementById('book-notes-list');
 
-// Clear existing children
-bookNotesListDiv.innerHTML = '';
+    // Clear existing children
+    bookNotesListDiv.innerHTML = '';
 
-// Iterate through each book note and create the HTML structure
-bookNotes.forEach((bookNote, index) => {
-const bookNoteDiv = document.createElement('div');
-bookNoteDiv.id = `booknote-${index + 1}`;
+    // Iterate through each book note and create the HTML structure
+    bookNotes.forEach((bookNote, index) => {
+        const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}` });
 
-const tcItemDiv = document.createElement('div');
-tcItemDiv.className = 'tc-item';
+        const tcItemDiv = createElementWithAttributes('div', { className: 'tc-item' });
 
-const chapterNameDiv = document.createElement('div');
-chapterNameDiv.className = 'chapter-name-bn';
-chapterNameDiv.textContent = bookNote.storedNoteText;
+        const chapterNameDiv = createElementWithAttributes('div', {
+            className: 'chapter-name-bn',
+            textContent: bookNote.storedText
+        });
 
-const wordCountDiv = document.createElement('div');
-wordCountDiv.className = 'word-count-tc';
+        const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
 
-const chapterLink = document.createElement('a');
-chapterLink.href = bookNote.chaptURL;
-chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
-<span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
-${bookNote.charCount} characters<br>
-${bookNote.BNdateTime}</span>`;
+        const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
+        chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
+        <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
+        ${bookNote.charCount} characters<br>
+        ${bookNote.BNdateTime}</span>`;
 
-wordCountDiv.appendChild(chapterLink);
-
-tcItemDiv.appendChild(chapterNameDiv);
-tcItemDiv.appendChild(wordCountDiv);
-
-bookNoteDiv.appendChild(tcItemDiv);
-
-bookNotesListDiv.appendChild(bookNoteDiv);
-});
+        wordCountDiv.appendChild(chapterLink);
+        tcItemDiv.appendChild(chapterNameDiv);
+        tcItemDiv.appendChild(wordCountDiv);
+        bookNoteDiv.appendChild(tcItemDiv);
+        bookNotesListDiv.appendChild(bookNoteDiv);
+    });
 }
 
-*/
 
 
 
+/*RESETS all boonotes cache, clear page of highlights*/
 
 
 function resetBookNotes() {
@@ -519,138 +609,3 @@ function updateBNResetButton() {
 }
 
 
-
-/*NEW HIGHLIGHT SYSTEM
-
-
-
-function recreateSelection() {
-  const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-  bookNotes.forEach(note => {
-    const { storedNoteText, startContainer, startOffset } = note;
-
-    if (storedNoteText && startContainer && startOffset !== null) {
-      try {
-        // Find the element by the saved ID
-        const container = document.getElementById(startContainer);
-
-        if (container) {
-          // Traverse through text nodes to find the correct position
-          let node = container.firstChild;
-          let currentOffset = 0;
-
-          while (node) {
-            if (node.nodeType === Node.TEXT_NODE) {
-              if (currentOffset + node.length >= startOffset) {
-                break;
-              }
-              currentOffset += node.length;
-            }
-            node = node.nextSibling;
-          }
-
-          if (node) {
-            const range = document.createRange();
-            range.setStart(node, startOffset - currentOffset);
-            range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
-
-            const span = document.createElement('span');
-            span.className = 'highlight';
-            span.textContent = storedNoteText;
-
-            range.deleteContents();
-            range.insertNode(span);
-
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            selection.collapseToEnd();
-          } else {
-            console.error('Error: Stored text not found for the following book note:', note);
-          }
-        } else {
-          console.error('Error: Container element not found for the following book note:', note);
-        }
-      } catch (err) {
-        console.error('An error occurred while recreating selection for the following book note:', note);
-        console.error(err);
-      }
-    } else {
-      console.warn('Warning: Incomplete book note data. Ignoring the following book note:', note);
-    }
-  });
-}
-
-
-// Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-window.addEventListener('load', function () {
-// showAlertWithCharacterCount();
-recreateSelection();
-});
-
-
-function highlightSaveBookNote() {
-  const selection = window.getSelection();
-
-  // If there's selected text
-  if (selection.rangeCount > 0) {
-      const selectedRange = selection.getRangeAt(0);
-      
-      // Create a span element, add the highlight class to it, and surround the selected text with it
-      const span = document.createElement("span");
-      span.classList.add("highlight");
-      selectedRange.surroundContents(span);
-      
-      const startContainer = selectedRange.startContainer.parentNode.id;
-
-      // Calculate startOffset considering only text nodes inside the selected paragraph
-      let startOffset = 0;
-      let node = selectedRange.startContainer.parentNode.firstChild;
-      while (node && node !== selectedRange.startContainer) {
-          if (node.nodeType === Node.TEXT_NODE) {
-              startOffset += node.length;
-          }
-          node = node.nextSibling;
-      }
-      startOffset += selectedRange.startOffset;
-
-      const storedNoteText = selection.toString();
-      const charCount = storedNoteText.length; // Counting characters
-      const now = new Date();
-      const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
-      const noteChapter = chapName; // Using the global variable
-
-      // Retrieve existing bookNotes from local storage
-      let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-      // New highlight object
-      const bookNote = {
-          book,
-          chapNo,
-          chapName,
-          chaptURL,
-          startContainer,
-          startOffset,
-          storedNoteText,
-          noteChapter,
-          charCount,
-          BNdateTime
-      };
-
-      // Add the new highlight to the array
-      bookNotes.push(bookNote);
-
-      // Save the updated array back to local storage
-      localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-
-      // Log to console
-      console.log('BookNote saved:', bookNote);
-
-      // Clear the selection
-      selection.removeAllRanges();
-  }
-}
-
-document.getElementById('highlightSaveButton').addEventListener('click', highlightSaveBookNote);
-*/

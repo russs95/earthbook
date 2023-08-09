@@ -766,7 +766,7 @@ BOOK NOTE PALETTE
 @media screen and (max-width: 700px) {
 
 #bookNotePalette { 
-  width: 550px;
+  width: 400px;
   height: 90px; 
   border-radius: 25px 25px 0px 0px;
 }
@@ -819,7 +819,6 @@ BOOK NOTE PALETTE
   width: fit-content;
   height: 40px;
   border-radius: 15px;
-  flex-grow: 1;
   padding: 10px 15px 10px 40px;
   background-size: 25px;
   transition: 0.3s; /* Repeated property, consider consolidating with the other transition property */
@@ -841,7 +840,6 @@ BOOK NOTE PALETTE
   height: 30px;
   border-radius: 15px;
   display: flex; 
-  flex-grow: 4;
   padding: 10px 15px 10px 38px;
   background: var(--nav-bar-accent) url(icons/booknotes.svg) 15px center no-repeat;
   background-size: 25px;
@@ -850,19 +848,13 @@ BOOK NOTE PALETTE
 
 .color-btn { 
   border: var(--thin-border-color);
-
   border-style: solid;
   border-radius: 20px;
   border-width: 1px;
-  
   transition: 0.3s;
   cursor: pointer; 
   display: block;
   padding: 10px;
-  margin: auto auto;
-  width: 30px;
-  height:30px;
-  border-radius: 25px;
 }
 
 @media screen and (max-width: 700px) {
@@ -870,9 +862,25 @@ BOOK NOTE PALETTE
   width: 20px;
   height:20px;
   border-radius: 20px;
-}
+  margin: auto 10px;
 }
 
+}
+
+@media screen and (min-width: 700px) {
+  .color-btn { 
+  width: 30px;
+  height:30px;
+  border-radius: 25px;
+  margin: auto auto;
+}
+.highlight-buttons { 
+  flex-grow: 4;
+}
+.pallette-btn { 
+  flex-grow: 1;
+}
+}
 
 #copyBtn {
     background-size: 25px;
