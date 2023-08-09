@@ -74,25 +74,26 @@ document.addEventListener('mouseup', function(e) {
 
 /* Show the Booknotes pallette on text selection, hides after 5 seconds.*/
 
-let paletteTimeout;
+let paletteExpire;
 
 function saveBookNotePalette() {
     const palette = document.getElementById('bookNotePalette');
     palette.style.bottom = '-30px'; // Slide up to show the palette
 
     // Set a timeout to slide down the palette after 5 seconds
-    paletteTimeout = setTimeout(() => {
+    paletteExpire = setTimeout(() => {
         palette.style.bottom = '-200px'; // Slide down to hide the palette
     }, 5000);
 
-    // Event listeners to clear the timeout if there's interaction with the palette
-    palette.addEventListener('click', clearPaletteTimeout);
-    palette.addEventListener('mouseenter', clearPaletteTimeout);
+    // Attach event listeners to clear the timeout when there's interaction with the palette
+    palette.addEventListener('click', clearPaletteExpire);
+    palette.addEventListener('mouseenter', clearPaletteExpire);
 }
 
-function clearPaletteTimeout() {
-    clearTimeout(paletteTimeout);
+function clearPaletteExpire() {
+    clearTimeout(paletteExpire);
 }
+
 
 
 
