@@ -310,8 +310,14 @@ function removeHighlight(event) {
     }
 }
 
-// Add a click event listener to the document
-document.addEventListener('click', removeHighlight);
+// Add click event listeners for each highlight class
+const highlightClasses = ['highlight-green', 'highlight-red', 'highlight-yellow'];
+
+highlightClasses.forEach(className => {
+    document.querySelectorAll(`.${className}`).forEach(element => {
+        element.addEventListener('click', removeHighlight);
+    });
+});
 
 
 
