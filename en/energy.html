@@ -95,9 +95,7 @@ These tags will be consistent for the whole book-->
         });
       });
     }
-    window.onload = function() {
-    recreateBooknotes();
-    }
+
 </script>
 
  <!--FONTS
@@ -689,10 +687,13 @@ dynamic transfer of energy into and out of non-­equilibrium states is what has 
 
 </div><!--underlayer-->
 <script>    
-    alert('yo...');
-    window.onload = function() {
-        recreateBooknotes();
-        }
+    alert('Script started');
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    alert('DOM fully loaded and parsed');
+    recreateHighlights();
+});
+     
     
     
     /*ATTEMPT TO REESTABLISHED PAGE HIGHLIGHTS ON RELOAD*/

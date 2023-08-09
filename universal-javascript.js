@@ -29,6 +29,16 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 	10.  	New
 
 */
+/*
+window.onload = function() {
+  document.getElementById("search_input").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+      EarthbookSearch();
+    }
+  });
+};
+
+*/
 
 
  // If `prefers-color-scheme` is not supported, fall back to light mode.
@@ -681,13 +691,7 @@ function adjustFontSize(className, change) {
 }
 
 
-window.onload = function() {
-  document.getElementById("search_input").addEventListener("keypress", function(event) {
-    if (event.key === "Enter") {
-      EarthbookSearch();
-    }
-  });
-};
+
 
 
 function clearResults() {
