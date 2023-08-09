@@ -473,3 +473,31 @@ function updateBNResetButton() {
   }
 }
 
+
+
+
+/* Download Booknotes */
+
+
+function downloadBooknotes() {
+    // 1. Retrieve the data from localStorage
+    const bookNotes = localStorage.getItem('bookNotes');
+
+    // 2. Convert the JSON data to a Blob
+    const blob = new Blob([bookNotes], { type: "application/json" });
+
+    // 3. Generate a download link
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.style.display = 'none';  // Hide the link
+    a.href = url;
+    a.download = 'booknotes.json';  // Suggest a filename for the download
+
+    // Append the anchor to the document and trigger a click to start the download
+    document.body.appendChild(a);
+    a.click();
+
+    // 5. Clean up: remove the anchor and revoke the Blob URL
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+}
