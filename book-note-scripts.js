@@ -72,7 +72,7 @@ document.addEventListener('mouseup', function(e) {
 });
 
 
-/* Show the Booknotes pallette on text selection, hides after 5 seconds.*/
+/* Show the Booknotes pallette on text selection, hides after 5 seconds.
 let paletteExpire;
 
 function saveBookNotePalette() {
@@ -98,10 +98,17 @@ function clearPaletteExpire() {
     const palette = document.getElementById('bookNotePalette');
     palette.removeEventListener('click', clearPaletteExpire);
     palette.removeEventListener('mouseenter', clearPaletteExpire);
+}*/
+
+function saveBookNotePalette() {
+    const palette = document.getElementById('bookNotePalette');
+    palette.style.bottom = '-30px'; // Slide up to show the palette
+
+    // Set a timeout to slide down the palette after 5 seconds
+    paletteExpire = setTimeout(() => {
+        palette.style.bottom = '-200px'; // Slide down to hide the palette
+    }, 6000);
 }
-
-
-
 
 
 /*COPY TEXT */
@@ -326,9 +333,11 @@ highlightClasses.forEach(className => {
 /*ATTEMPT TO REESTABLISHED PAGE HIGHLIGHTS ON RELOAD*/
 
 function recreateHighlights() {
+
+    alert('Hi!');
     const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
     
-    alert('Hi!');
+   
 
     bookNotes.forEach(note => {
         const { containerHTML, startContainer, id } = note;
