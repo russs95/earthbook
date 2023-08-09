@@ -51,6 +51,40 @@ class bookNotes extends HTMLElement {
 </div>
 
 
+<!-- BOOKNOTES MENU PALLETTE-->
+
+<div id="bookNotePalette" class="palette-hidden">
+    <!--<span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>  -->
+    <div class="highlight-buttons">
+        <div id="save-text" class="pallette-text">Save:
+        </div>
+        <button class="color-btn" onclick="highlightBooknote('green')" style="background:green"></button>
+        <button class="color-btn" onclick="highlightBooknote('red')" style="background:red"></button>
+        <button class="color-btn" onclick="highlightBooknote('yellow')" style="background:yellow"></button>
+        <button class="color-btn" onclick="highlightBooknote('yellow')" style="background:grey" onclick="recreateHighlights()">
+        </button>
+        
+    </div>
+    <button id="copyBtn" class="pallette-btn">
+        <div class="pallette-text">Copy:</div>
+    </button> 
+    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
+        <div class="pallette-text">Your Booknotes:</div>
+    </button>
+   
+    
+</div>
+
+<!-- CHAPT NOTICE-->
+
+
+<div id="chap-notice">
+<div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+<div id="chap-notice-text">
+💡  Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
+</div>
+</div>
+
 
 
 
