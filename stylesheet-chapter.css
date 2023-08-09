@@ -841,7 +841,7 @@ BOOK NOTE PALETTE
   border-radius: 15px;
   display: flex; 
   padding: 10px 15px 10px 38px;
-  background: var(--nav-bar-accent) url(icons/booknotes.svg) 15px center no-repeat;
+  background: var(--nav-bar-accent) url(icons/save.svg) 15px center no-repeat;
   background-size: 25px;
 }
 
@@ -889,6 +889,7 @@ BOOK NOTE PALETTE
     background-size: 30px;
 
 }
+
 
 #booknotesBtn {
     background-size: 25px;
