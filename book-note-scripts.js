@@ -180,11 +180,11 @@ function highlightBooknote(color) {
         const containerHTML = startContainerNode.innerHTML;
         const storedText = selection.toString();
 
-        alert(
+      /*alert(
             `Start Container: ${startContainer}\n` +
             `Stored Text: ${storedText}\n` +
             `Container HTML: ${containerHTML}`
-        );
+        );*/
 
         const charCount = storedText.length;
         const now = new Date();
@@ -312,6 +312,7 @@ document.addEventListener('click', removeHighlight);
 
 function recreateHighlights() {
     const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+    
     alert('Hi!');
 
     bookNotes.forEach(note => {
