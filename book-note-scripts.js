@@ -323,7 +323,8 @@ function removeHighlight(event) {
     
     // Check if the clicked element has any of the highlight classes
     if (element.classList.contains('highlight-green') ||
-        element.classList.contains('highlight-red') ||
+    element.classList.contains('highlight-red') ||
+    element.classList.contains('highlight-blue') ||
         element.classList.contains('highlight-yellow')) {
         
         const id = element.dataset.id;
