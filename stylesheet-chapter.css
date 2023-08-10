@@ -863,6 +863,10 @@ BOOK NOTE PALETTE
   border-radius: 20px;
   margin: auto 10px;
 }
+.pallette-btn { 
+  flex-grow: 1;
+  padding: 10px 10px 10px 10px;
+}
 
 }
 
@@ -879,7 +883,6 @@ BOOK NOTE PALETTE
 .pallette-btn { 
   flex-grow: 1;
   padding: 10px 15px 10px 40px;
-
 }
 }
 
