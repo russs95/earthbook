@@ -4705,7 +4705,8 @@ margin: auto;
   
   #chap-notice  .java-link:hover {
     cursor:pointer; 
-    border-bottom: 1px solid;}
+    border-bottom: 1px solid;
+  }
 
 
     #chap-notice {
@@ -4721,6 +4722,7 @@ margin: auto;
       z-index: 30; /* This ensures the palette is above other page content */
       left: 50%;
       transform: translateX(-50%);
+      width: 80%;
     }
 
     #chap-notice-text {
