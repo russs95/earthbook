@@ -6,8 +6,8 @@ class chapfoot extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
   
-     
-      <div id="footer-functions-box" style="width:100%; padding-top: 5px;background-color:pink;">
+     <div style="background-color:blue;">
+      <div id="footer-functions-box" style="width:100%; padding-top: 5px;">
 
 
 
@@ -67,7 +67,7 @@ class chapfoot extends HTMLElement {
         </div>
       </div>
 
-
+    </div>
       
 
     </div>
