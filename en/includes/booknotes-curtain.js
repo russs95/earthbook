@@ -64,7 +64,7 @@ class bookNotes extends HTMLElement {
         </div>
         <button class="color-btn" onclick="highlightBooknote('green')" style="background:green" title="Highlight & Save Green"></button>
         <button class="color-btn" onclick="highlightBooknote('red')" style="background:red" alt="Highlight & Save Red"></button>
-        <button class="color-btn" onclick="highlightBooknote('blue')" style="background:blue"></button>
+        <button class="color-btn" onclick="highlightBooknote('blue')" style="background:#2daee5"></button>
         </button>
         
     </div>
