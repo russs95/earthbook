@@ -32,9 +32,15 @@ class bookNotes extends HTMLElement {
             <button id="reset-settings-bn" onclick="resetBookNotes()" style="width: 200px;
         margin: 30px auto 20px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
             <div id="instructions-bn" style="font-family:Mulish;color:grey;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
-        <div id="booknotes-export" style="width:380px; padding:10px,height:100px;background-color:grey;">
-            <input type="file" id="jsonUpload" accept=".json"><br>
-            <button onclick="uploadBooknotes()">Upload Booknotes</button>
+        
+        <hr>
+        <h3 style="font-family:Mulish;color:grey;">Collaborative Editing</h3>
+
+            <h5>Export or import a Booknotes file to see the notes and highlights of another reader</h5>
+
+            <div id="booknotes-export" style="width:380px; padding:10px,height:100px;background-color:var(--deeper-accent-color);">
+            
+            <input type="file" id="jsonUpload" accept=".json"><button onclick="uploadBooknotes()">Upload Booknotes</button>
         </div>
 
     </div>
