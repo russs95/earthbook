@@ -85,6 +85,7 @@ function checkSelectedText() {
     if (startContainerParent !== endContainerParent) {
         //palette.style.bottom = '-200px';  // Selected text spans multiple paragraphs
         alert("Sorry!  Currently you can't select and highlight text in more than one paragraph to make a book note");
+        selection.removeAllRanges();
 
         return;
     }

@@ -29,15 +29,13 @@ class bookNotes extends HTMLElement {
     </div>
 
         <div style="margin:auto;">
-        
-        <button onclick="downloadBooknotes()">Download Booknotes</button><br>
-
             <button id="reset-settings-bn" onclick="resetBookNotes()" style="width: 200px;
         margin: 30px auto 20px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
             <div id="instructions-bn" style="font-family:Mulish;color:grey;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
-<br>
-            <input type="file" id="jsonUpload" accept=".json">
-<button onclick="uploadBooknotes()">Upload Booknotes</button>
+        <div id="booknotes-export" style="width:380px; padding:10px,height:100px;background-color:grey;">
+            <input type="file" id="jsonUpload" accept=".json"><br>
+            <button onclick="uploadBooknotes()">Upload Booknotes</button>
+        </div>
 
     </div>
 
