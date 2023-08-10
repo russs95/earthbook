@@ -48,6 +48,7 @@ class bookNotes extends HTMLElement {
 
     </div>
 
+    <!--
     <div class="tc-button-row" style="margin-top:auto;">
         <a href="index.html" style="height: 24px; flex-grow: 1"><div id="tour-btn" class="action-btn" ><i style="background-image: url(../icons/home.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i></div></a>
 
@@ -60,7 +61,7 @@ class bookNotes extends HTMLElement {
         <div id="buy-btn" class="action-btn" onclick="openEco()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 0px; cursor:pointer;"></i></div>
         
         
-    </div>
+    </div>-->
 </div>
 </div>
 
@@ -77,13 +78,13 @@ class bookNotes extends HTMLElement {
         </button>
         
     </div>
-    <button id="copyBtn" class="pallette-btn">
+    <button aria-label="Copy Selection" id="copyBtn" class="pallette-btn">
         <div class="pallette-text">Copy:</div>
     </button> 
-    <button id="booknotesBtn" class="pallette-btn" onclick="">
+    <button aria-label="Add annotation"id="booknotesBtn" class="pallette-btn" onclick="">
         <div class="pallette-text">Annotate</div>
     </button>
-    <button id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
+    <button aria-label="View Your Booknotes" id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
     <div class="pallette-text">Booknotes</div>
 </button>
    
