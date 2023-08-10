@@ -64,17 +64,19 @@ class bookNotes extends HTMLElement {
         </div>
         <button class="color-btn" onclick="highlightBooknote('green')" style="background:green"></button>
         <button class="color-btn" onclick="highlightBooknote('red')" style="background:red"></button>
-        <button class="color-btn" onclick="highlightBooknote('yellow')" style="background:yellow"></button>
-        <button class="color-btn" style="background:grey" onclick="recreateHighlights()">
+        <button class="color-btn" onclick="highlightBooknote('blue')" style="background:blue"></button>
         </button>
         
     </div>
     <button id="copyBtn" class="pallette-btn">
         <div class="pallette-text">Copy:</div>
     </button> 
-    <button id="booknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
-        <div class="pallette-text">Your Booknotes</div>
+    <button id="booknotesBtn" class="pallette-btn" onclick="">
+        <div class="pallette-text">Annotate</div>
     </button>
+    <button id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
+    <div class="pallette-text">Your Booknotes</div>
+</button>
    
     
 </div>

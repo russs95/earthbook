@@ -894,6 +894,14 @@ BOOK NOTE PALETTE
 
 }
 
+#viewBooknotesBtn {
+  background-size: 25px;
+  transition: 0.3s;
+  background: var(--deeper-accent-color) url(icons/view-booknotes.svg) 15px center no-repeat;
+  background-size: 30px;
+
+}
+
 
 #booknotesBtn {
     background-size: 25px;

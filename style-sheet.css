@@ -637,6 +637,12 @@ h6 {
 
 .highlight-yellow {
   background-color: rgba(255, 255, 0, 0.77);
+  color: rgb(51, 51, 51);
+  cursor:pointer;
+}
+
+.highlight-blue {
+  background-color: rgba(1, 155, 221, 0.77);
   color: var(--true);
   cursor:pointer;
 }
