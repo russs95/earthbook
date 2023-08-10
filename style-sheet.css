@@ -4714,9 +4714,13 @@ margin: auto;
       height:0px;
       background-color: #458645;
       border-radius: 10px;
-      display: none;
       margin-bottom: 20px;
       transition: height 1s; /* Add the height transition for smooth animation */
+      position: fixed;
+      bottom: 30px;
+      z-index: 30; /* This ensures the palette is above other page content */
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     #chap-notice-text {
