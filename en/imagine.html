@@ -66,10 +66,10 @@ These tags will be consistent for the whole book-->
 <meta property="article:modified_time" content="2023-8-07T09:14:13+00:00" >
   
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:site_name" content="An Earthen Ethic - Tracatus Ayyew">
+<meta property="og:site_name" content="An Earthen Ethics | Tracatus Ayyew">
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
-<meta property="og:title"         content="Imagine - Tractatus Ayyew | An Earthen Ethics">
+<meta property="og:title"         content="Imagine">
 <meta property="og:description"   content="Imagine a world where the very way we live is steadily enriching the ecosystems of which we are part.">
 <meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
 <meta property="og:image:type" content="image/png" >
@@ -270,14 +270,6 @@ button:hover {
 <div id="ct-main">
 
 
-<div id="chap-notice">
-<div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-<div id="chap-notice-text">
-  Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
-</div>
-</div>
-
-
 <!-- MAIN TEXT CONTENT of the Page
 For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
 -->
@@ -362,13 +354,6 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
   
       </div><!--closes page text content-->
 
-<!-- BOOKNOTES BUTTON-->
-
-<div id="bookNotePalette" class="palette-hidden">
-    <span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button" width="50"></span>
-    <button id="highlightSaveButton" class="action-btn">Highlight & Save</button>
-    <button id="copyBtn" class="action-btn">Copy</button>
-</div>
 
 
     <!--FOOTNOTES SECTION-->
@@ -480,137 +465,8 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
 
 
 </div><!--underlayer-->
+<script src="../book-note-scripts.js" defer ></script>
 
-<script>
-
-
-
-document.addEventListener('mouseup', function(e) {
-    let selectedText = window.getSelection().toString();
-    if (selectedText) { // If some text is selected
-        saveBookNotePalette();
-    }
-});
-
-function saveBookNotePalette() {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '0'; // Slide up to show the palette
-}
-
-document.getElementById('closePalette').addEventListener('click', function() {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '-200px'; // Slide down to hide the palette
-});
-
-
-document.getElementById('copyBtn').addEventListener('click', function() {
-    let selectedText = window.getSelection().toString();
-    copyToClipboard(selectedText);
-});
-
-function copyToClipboard(text) {
-    const textarea = document.createElement('textarea');
-    textarea.value = text;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-}
-
-
-
-
-/*NEW HIGHLIGHT SYSTEM*/
-
-function highlightSaveBookNote() {
-    const selection = window.getSelection();
-
-    // If there's selected text
-    if (selection.rangeCount > 0) {
-        const selectedRange = selection.getRangeAt(0);
-
-        // Create a span element, add the highlight class to it, and surround the selected text with it
-        const span = document.createElement("span");
-        span.classList.add("highlight");
-        span.title = "Click to remove BookNote"; // Adding title attribute
-        span.alt = "Highlight"; // Adding alt attribute
-        selectedRange.surroundContents(span);
-
-        const startContainer = selectedRange.startContainer.parentNode.id;
-
-        // Calculate startOffset considering only text nodes inside the selected paragraph
-        let startOffset = 0;
-        let node = selectedRange.startContainer.parentNode.firstChild;
-        while (node && node !== selectedRange.startContainer) {
-            if (node.nodeType === Node.TEXT_NODE) {
-                startOffset += node.length;
-            }
-            node = node.nextSibling;
-        }
-        startOffset += selectedRange.startOffset;
-
-        const storedNoteText = selection.toString();
-        const charCount = storedNoteText.length; // Counting characters
-        const now = new Date();
-        const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
-        const noteChapter = chapName; // Using the global variable
-
-        // Retrieve existing bookNotes from local storage
-        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-        // New highlight object
-        const bookNote = {
-            book,
-            chapNo,
-            chapName,
-            chaptURL,
-            startContainer,
-            startOffset,
-            storedNoteText,
-            noteChapter,
-            charCount,
-            BNdateTime
-        };
-
-        // Add the new highlight to the array
-        bookNotes.push(bookNote);
-
-        // Save the updated array back to local storage
-        localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-
-        // Log to console
-        console.log('BookNote saved:', bookNote);
-
-        // Clear the selection
-        selection.removeAllRanges();
-
-        // Update the button text
-        const button = document.getElementById('highlightSaveButton');
-        button.style.color = 'green';
-        button.style.fontWeight = 'bold';
-        button.textContent = '✓ Saved!';
-
-        // Hide the palette after 1 second
-        // Hide the palette after 1 second
-setTimeout(() => {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '-200px'; // Slide down to hide the palette
-
-    // After an additional second, reset the button text
-    setTimeout(() => {
-        const button = document.getElementById('highlightSaveButton');
-        button.textContent = 'Highlight & Save';
-        button.style.color = 'var(--text-color)';
-        button.style.fontWeight = 'normal';
-    }, 1000);
-}, 1000);
-    }
-}
-
-
-document.getElementById('highlightSaveButton').addEventListener('click', highlightSaveBookNote);
-
-</script>
 
 </body>
 </html>

@@ -47,7 +47,7 @@ For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.e
 <link rel="canonical" href="https://book.earthen.io/en/stellar.html"> 
 <link rel="alternate" href="https://book.earthen.io/en/stellar.html" hreflang="en" >
 <link rel="alternate" href="http://book.earthen.io/en/stellar.html" hreflang="x-default" >
-<link rel="alternate" href="https://book.earthen.io/fr/plastique1.html" hreflang="fr" >
+<link rel="alternate" href="https://book.earthen.io/fr/stellaire.html" hreflang="fr" >
 <!--
 <link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
 <link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
@@ -63,13 +63,13 @@ These tags will be consistent for the whole book-->
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2023-8-07T09:14:13+00:00" >
+<meta property="article:modified_time" content="2023-8-10T09:14:13+00:00" >
   
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:site_name" content="An Earthen Ethic - Tracatus Ayyew">
+<meta property="og:site_name" content="An Earthen Ethics | Tracatus Ayyew">
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
-<meta property="og:title"         content="A Stellar Story - Tractatus Ayyew | An Earthen Ethics">
+<meta property="og:title"         content="A Stellar Story">
 <meta property="og:description"   content="A brief history of plastic's stellar origins, Earth's creation and the rise of modern humanity's ecological relationship.">
 <meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
 <meta property="og:image:type" content="image/png" >
@@ -109,8 +109,8 @@ starts loading the fonts-->
 <link rel="preconnect" href="../fonts/" crossorigin> 
 
 <!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-imagine-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-imagine-white.svg">
+<link rel="preload" as="image" href="../svgs/03-stellar-dark.svg">
+<link rel="preload" as="image" href="../svgs/03-stellar-white.svg">
 
 
  <!-- STYLE SHEETS   
@@ -194,74 +194,6 @@ All the page components required to build this page-->
   letter-spacing: 1px;
 }
 
- #bookNotePalette {
-    position: fixed;  /* Changed from absolute to fixed */
-    bottom: -200px; 
-    background: var(--slider);
-    border: 1px solid grey;
-    transition: bottom 0.5s;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 20; /* This ensures the palette is above other page content */
- }
-
- @media screen and (max-width: 700px) {
-
- #bookNotePalette { 
-    bottom: -200px; 
-    left: 10%; 
-    width: 80%;
-    height: 120px; 
-    border-radius: 10px 10px 0px 0px;
-}
- }
-
- @media screen and (min-width: 700px) and (max-width: 1324px) {
-    
-    #bookNotePalette {
-        bottom: -200px; 
-        left: 20%; 
-        width: 60%;
-        height: 150px; 
-        border-radius: 7px 7px 0px 0px;
-        padding: 10px;
-}
- }
-
-@media screen and (min-width: 1325px) {
-    #bookNotePalette {
-        bottom: -200px; 
-        left: 30%; 
-        width: 40%;
-        height: 120px; 
-        border-radius: 9px 9px 0px 0px;
-}
-
-}
-
-#closePalette {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-button {
-    width: 40%;
-    margin-top: 10px;
-    padding: 10px;
-    background: grey;
-    border: none;
-    color: black;
-    cursor: pointer;    
-    border-radius: 5px 5px 5px 5px;
-
-}
-
-button:hover {
-    opacity: 0.8;
-}
 
 </style>
 </HEAD>
@@ -300,15 +232,6 @@ button:hover {
 <div id="up-arrow"></div>
 
 <div id="ct-main">
-
-
-<div id="chap-notice">
-<div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-<div id="chap-notice-text">
-  Looks like its your first time opening this book!  Before you get going, consider taking the quick <a class="java-link" onclick="guidedTour(), closeWelcomeNotice()" aria-label="Open About Screen" title="Learn more about what an Earthbook is">Earthbook features tour</a> and be sure to <a class="java-link" onclick="openSettings(), closeWelcomeNotice()" aria-label="Open Settings" title="Adjust for your eyes">optimize ±</a> the page for your eyes.
-</div>
-</div>
-
 
 
 <!-- MAIN TEXT CONTENT of the Page
@@ -557,283 +480,8 @@ button:hover {
 
 
 </div><!--underlayer-->
+<script src="../book-note-scripts.js" defer ></script>
 
-<script>
-
-
-function checkSelectedText() {
-    let selectedText = window.getSelection().toString();
-    if (selectedText) { // If some text is selected
-        saveBookNotePalette();
-    }
-}
-
-document.addEventListener('mouseup', checkSelectedText);
-document.addEventListener('touchend', checkSelectedText);
-
-
-
-document.addEventListener('mouseup', function(e) {
-    let selectedText = window.getSelection().toString();
-    if (selectedText) { // If some text is selected
-        saveBookNotePalette();
-    }
-});
-
-function saveBookNotePalette() {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '0'; // Slide up to show the palette
-}
-
-document.getElementById('closePalette').addEventListener('click', function() {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '-200px'; // Slide down to hide the palette
-});
-
-
-document.getElementById('copyBtn').addEventListener('click', function() {
-    let selectedText = window.getSelection().toString();
-    copyToClipboard(selectedText);
-});
-
-function copyToClipboard(text) {
-    const textarea = document.createElement('textarea');
-    textarea.value = text;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-
-    // Change button text and style
-    const button = document.getElementById('copyBtn');
-    button.style.color = 'green';
-    button.textContent = '✓ Copied!';
-
-    // Slide down and hide the palette
-    setTimeout(() => {
-        const palette = document.getElementById('bookNotePalette');
-        palette.style.bottom = '-200px'; // Slide down to hide the palette
-
-        // After an additional second, reset the button text
-        setTimeout(() => {
-            button.textContent = 'Copy';
-            button.style.color = 'var(--text-color)';
-        }, 1000);
-    }, 800);
-}
-
-
-
-
-
-/*NEW HIGHLIGHT SYSTEM*/
-
-let currentId = 0;
-
-function generateId() {
-    currentId += 1;
-    return String(currentId).padStart(3, '0');
-}
-
-function highlightSaveBookNote() {
-    const selection = window.getSelection();
-
-    // If there's selected text
-    if (selection.rangeCount > 0) {
-        const selectedRange = selection.getRangeAt(0);
-
-        // Create a span element, add the highlight class to it, and surround the selected text with it
-        const span = document.createElement("span");
-        span.classList.add("highlight");
-        span.title = "Click to remove BookNote"; // Adding title attribute
-        span.alt = "Highlight"; // Adding alt attribute
-
-        // Generate and store a unique identifier
-        const id = generateId();
-        span.dataset.id = id;
-
-        selectedRange.surroundContents(span);
-
-        const startContainer = selectedRange.startContainer.parentNode.id;
-
-        // Calculate startOffset considering only the selected div block  
-       // Assuming "blockID" is the ID of the block you're working with...
-let block = document.getElementById(startContainer);
-
-// Calculate startOffset considering only the selected block
-let startOffset = 0;
-let node = block.firstChild;
-
-// Traverse through the text nodes of the block until we reach the startContainer of the selection
-while (node && node !== selectedRange.startContainer) {
-    if (node.nodeType === Node.TEXT_NODE) {
-        startOffset += node.length;
-    }
-    node = node.nextSibling;
-}
-
-// Add the offset within the startContainer to the startOffset
-startOffset += selectedRange.startOffset;
-
-
-        const storedNoteText = selection.toString();
-        const charCount = storedNoteText.length; // Counting characters
-        const now = new Date();
-        const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
-        const noteChapter = chapName; // Using the global variable
-
-        // Retrieve existing bookNotes from local storage
-        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-        // New highlight object
-        const bookNote = {
-            id,
-            book,
-            chapNo,
-            chapName,
-            chaptURL,
-            startContainer,
-            startOffset,
-            storedNoteText,
-            noteChapter,
-            charCount,
-            BNdateTime
-        };
-
-        // Add the new highlight to the array
-        bookNotes.push(bookNote);
-
-        // Save the updated array back to local storage
-        localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-
-        // Log to console
-        console.log('BookNote saved:', bookNote);
-
-        // Clear the selection
-        selection.removeAllRanges();
-
-        // Update the button text
-        const button = document.getElementById('highlightSaveButton');
-        button.style.color = 'green';
-        button.style.fontWeight = 'bold';
-        button.textContent = '✓ Saved!';
-
-        // Hide the palette after 1 second
-        setTimeout(() => {
-            const palette = document.getElementById('bookNotePalette');
-            palette.style.bottom = '-200px'; // Slide down to hide the palette
-
-            // After an additional second, reset the button text
-            setTimeout(() => {
-                const button = document.getElementById('highlightSaveButton');
-                button.textContent = 'Highlight & Save';
-                button.style.color = 'var(--text-color)';
-                button.style.fontWeight = 'normal';
-            }, 1000);
-        }, 1000);
-    }
-}
-
-
-
-document.getElementById('highlightSaveButton').addEventListener('click', highlightSaveBookNote);
-
-
-function removeHighlight(event) {
-    const element = event.target;
-    
-    if (element.classList.contains('highlight')) {
-        const id = element.dataset.id;
-
-        // Get the bookNotes from local storage
-        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-        // Find the index of the bookNote with the given id
-        const index = bookNotes.findIndex(bookNote => bookNote.id === id);
-
-        if (index !== -1) {
-            // If the bookNote was found, remove it
-            bookNotes.splice(index, 1);
-
-            // Save the updated array back to local storage
-            localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-
-            console.log('BookNote removal success');
-        } else {
-            console.log('BookNote removal failed');
-        }
-
-        // Remove the span tag
-        const text = document.createTextNode(element.textContent);
-        element.parentNode.replaceChild(text, element);
-    }
-}
-
-
-// Add a click event listener to the document to call removeHighlight when a highlight span is clicked
-document.addEventListener('click', removeHighlight);
-
-
-
-function recreateSelection() {
-    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-    bookNotes.forEach(note => {
-        const { storedNoteText, startContainer, startOffset, id } = note;
-
-        if (storedNoteText && startContainer && startOffset !== null && id) {
-            try {
-                // Find the element by the saved ID
-                const container = document.getElementById(startContainer);
-
-                if (container) {
-                    // Traverse through text nodes to find the correct position
-                    let node = container.firstChild;
-                    let currentOffset = 0;
-
-                    while (node) {
-                        if (node.nodeType === Node.TEXT_NODE) {
-                            if (currentOffset + node.length >= startOffset) {
-                                break;
-                            }
-                            currentOffset += node.length;
-                        }
-                        node = node.nextSibling;
-                    }
-
-                    if (node) {
-                        const range = document.createRange();
-                        range.setStart(node, startOffset - currentOffset);
-                        range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
-
-                        const span = document.createElement('span');
-                        span.className = 'highlight';
-                        span.textContent = storedNoteText;
-                        span.dataset.id = id; // Reusing the same id
-                        span.title = "Click to remove BookNote";
-
-                        range.deleteContents();
-                        range.insertNode(span);
-                    } else {
-                        console.error('Error: Stored text not found for the following book note:', note);
-                    }
-                } else {
-                    console.error('Error: Container element not found for the following book note:', note);
-                }
-            } catch (err) {
-                console.error('An error occurred while recreating selection for the following book note:', note);
-                console.error(err);
-            }
-        } else {
-            console.warn('Warning: Incomplete book note data. Ignoring the following book note:', note);
-        }
-    });
-}
-window.addEventListener('load', recreateSelection);
-
-// Make sure this is after recreateSelection
-document.addEventListener('click', removeHighlight);
-</script>
 
 </body>
 </html>

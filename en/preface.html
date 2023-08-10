@@ -63,13 +63,13 @@ These tags will be consistent for the whole book-->
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2023-7-23T09:14:13+00:00" >
+<meta property="article:modified_time" content="2023-8-10T09:14:13+00:00" >
   
 <!-- Facebook Open Graph Tags for social sharing-->
-<meta property="og:site_name" content="An Earthen Ethic - Tracatus Ayyew">
+<meta property="og:site_name" content="An Earthen Ethic | Tracatus Ayyew">
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
-<meta property="og:title"         content="Preface - Tractatus Ayyew | An Earthen Ethics">
+<meta property="og:title"         content="Preface">
 <meta property="og:description"   content="By Banayan Angway & Russell Maier  | Earthbook Edition.">
 <meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
 <meta property="og:image:type" content="image/png" >
@@ -81,7 +81,7 @@ These tags will be consistent for the whole book-->
 <script>
       // Declare the global variables
      var book = "Introduction";
-    var chapNo = "1";
+    var chapNo = "2";
     var chapName = "Preface";
     var chaptURL = "preface.html"   // Declare the global variables
   
@@ -225,46 +225,21 @@ All the page components required to build this page-->
  }
 
 
-
-
-
-
- #bookNotePalette {
-    position: fixed;  /* Changed from absolute to fixed */
-    bottom: -200px; 
-    left: 10%; 
-    width: 80%;
-    height: 200px;
-    background: var(--slider);
-    border: 1px solid grey;
-    border-radius: 10px 0px 10px 0px;
-    transition: bottom 0.5s;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 1000; /* This ensures the palette is above other page content */
+.lead-page-paragraph:first-child::first-letter {
+  color: var(--pre-link-color);
+  float: left;
+  font-family: "CooperLt";
+  font-size: 4.8em;
+  line-height: 0.85;
+  margin-top: -40px;
+  padding-right: 7px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  font-weight:400;
 }
+  
 
 
-#closePalette {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-button {
-    width: 40%;
-    padding: 10px;
-    background: grey;
-    border: none;
-    color: black;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.8;
-}
 
 </style>
 </HEAD>
@@ -298,14 +273,14 @@ button:hover {
 
 <!-- Page Title Section-->
 
-<div id="ct-chapt-graphic" class="background-8">
+<div id="ct-chapt-graphic" class="background-000">
   <div class="ct-chapter-quote">
-    <span style="background-color:var(--nav-bar-accent);
-padding:0.1em 0.2em;">“Observe the way Earth tends its processes towards cycles that spiral.”</span>
+    “Ayka ta man gagayam ta..."<br>
+    ( Come, let’s tell some stories... )
   </div>
   <div class="ct-quote-source">
-   ― Earthen Ethic No.1
-  </div>
+   ― Igorot expression
+   </div>
 </div>
 
 <div id="up-arrow"></div>
@@ -389,13 +364,6 @@ padding:0.1em 0.2em;">“Observe the way Earth tends its processes towards cycle
   
       </div><!--closes page text content-->
 
-<!-- BOOKNOTES BUTTON-->
-
-<div id="bookNotePalette" class="palette-hidden">
-    <span id="closePalette"><img src="../svgs/right-x.svg" alt="Close page button"></span>
-    <button id="highlightSaveBtn">Highlight & Save</button>
-    <button id="copyBtn">Copy</button>
-</div>
 
 
 <!--FOOTNOTES SECTION-->
@@ -478,7 +446,7 @@ padding:0.1em 0.2em;">“Observe the way Earth tends its processes towards cycle
 
      
         <div class="next-section">
-          <div class="next-sec">Next section:</div>
+          <div class="next-sec">Next: Book One:</div>
           <div class="sec-name"><i>Imagine</i></div>
         </div>
 
@@ -499,6 +467,7 @@ padding:0.1em 0.2em;">“Observe the way Earth tends its processes towards cycle
 
 
 </div><!--underlayer-->
+<script src="../book-note-scripts.js" defer ></script>
 
 </body>
 </html>
