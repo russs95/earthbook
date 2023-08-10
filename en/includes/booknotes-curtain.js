@@ -43,7 +43,8 @@ class bookNotes extends HTMLElement {
             border-radius: 10px;
             margin: auto;">
             
-            <input type="file" id="jsonUpload" accept=".json"><button onclick="uploadBooknotes()">Upload Booknotes</button>
+            <input id="booknotes-upload" type="file" id="jsonUpload" accept=".json" aria-label="Choose a Booknotes JSON file">
+            <button id="booknotes-upload-go" onclick="uploadBooknotes()" aria-label="Upload Booknotes file">Upload Booknotes</button>
         </div>
 
     </div>
@@ -72,9 +73,9 @@ class bookNotes extends HTMLElement {
     <div class="highlight-buttons">
         <div id="save-text" class="pallette-text">Save:
         </div>
-        <button class="color-btn" onclick="highlightBooknote('green')" style="background:green" title="Highlight & Save Green"></button>
-        <button class="color-btn" onclick="highlightBooknote('red')" style="background:red" alt="Highlight & Save Red"></button>
-        <button class="color-btn" onclick="highlightBooknote('blue')" style="background:#2daee5"></button>
+        <button class="color-btn" onclick="highlightBooknote('green')" style="background:green" aria-label="Highlight Text Green" title="Highlight & Save Green"></button>
+        <button class="color-btn" onclick="highlightBooknote('red')" style="background:red" aria-label="Highlight Text Green" alt="Highlight & Save Red"></button>
+        <button class="color-btn" onclick="highlightBooknote('blue')" style="background:#2daee5" aria-label="Highlight Text Blue"></button>
         </button>
         
     </div>
