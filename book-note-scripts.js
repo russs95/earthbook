@@ -175,7 +175,8 @@ function copyToClipboard(text) {
         // After an additional second, reset the button text
         setTimeout(() => {
             button.textContent = 'Copy';
-            button.style.color = 'var(--text-color)';
+            button.style.color = 'var(--thin-border-color)';
+            button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
         }, 1000);
     }, 800);
 }

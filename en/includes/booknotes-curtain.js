@@ -32,8 +32,9 @@ class bookNotes extends HTMLElement {
             <button id="reset-settings-bn" onclick="resetBookNotes()" style="width: 200px;
         margin: 30px auto 20px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
             <div id="instructions-bn" style="font-family:Mulish;color:grey;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
-        
+        <br><br>
         <hr>
+        <br>
         <h3 style="font-family:Mulish;">Collaborative Editing</h3>
 
             <h5>Export or import a Booknotes file to see the notes and highlights of another reader</h5>
@@ -83,7 +84,7 @@ class bookNotes extends HTMLElement {
         <div class="pallette-text">Annotate</div>
     </button>
     <button id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
-    <div class="pallette-text">Your Booknotes</div>
+    <div class="pallette-text">Booknotes</div>
 </button>
    
     
