@@ -34,11 +34,13 @@ class bookNotes extends HTMLElement {
             <div id="instructions-bn" style="font-family:Mulish;color:grey;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
         
         <hr>
-        <h3 style="font-family:Mulish;color:grey;">Collaborative Editing</h3>
+        <h3 style="font-family:Mulish;">Collaborative Editing</h3>
 
             <h5>Export or import a Booknotes file to see the notes and highlights of another reader</h5>
 
-            <div id="booknotes-export" style="width:380px; padding:10px,height:100px;background-color:var(--deeper-accent-color);">
+            <div id="booknotes-export" style="width:380px; padding:10px,height:100px;background-color:var(--true),padding: 10px;
+            border-radius: 10px;
+            margin: auto;">
             
             <input type="file" id="jsonUpload" accept=".json"><button onclick="uploadBooknotes()">Upload Booknotes</button>
         </div>
