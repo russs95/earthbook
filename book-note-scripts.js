@@ -205,8 +205,8 @@ function highlightBooknote(color) {
             case 'red':
                 span.classList.add("highlight-red");
                 break;
-            case 'yellow':
-                span.classList.add("highlight-yellow");
+            case 'blue':
+                span.classList.add("highlight-blue");
                 break;
             default:
                 console.warn(`Unknown highlight color: ${highlightColor}`);
