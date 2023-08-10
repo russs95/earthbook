@@ -161,10 +161,11 @@ function copyToClipboard(text) {
     document.execCommand('copy');
     document.body.removeChild(textarea);
 
-    // Change button text and style
+    // Change button text and style ✓
     const button = document.getElementById('copyBtn');
     button.style.color = 'green';
-    button.textContent = '✓ Copied!';
+    button.style.backgroundImage = 'none';
+    button.textContent = 'Copied!';
 
     // Slide down and hide the palette
     setTimeout(() => {
