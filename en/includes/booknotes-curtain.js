@@ -34,15 +34,15 @@ class bookNotes extends HTMLElement {
             <div id="instructions-bn" style="font-family:Mulish;color:grey;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
         </div>
 
-        <div id="collaborative-editing" style="width:80%; padding:20px;background:black; border-radius: 10px;margin: auto;margin-to:50px;">
+        <div id="collaborative-editing" style="width:80%; padding:20px;background:var(--background-color); border-radius: 10px;margin: auto;margin-to:50px;">
 
         <br></br>
             <h3 style="font-family:Mulish;">Collaborative Editing</h3>
 
             <h6>Export your Booknotes to share with another reader.</h6>
 
-            <div id="booknotes-export" style="width:380px; padding:10px,height:100px;background-color:var(--true),padding: 10px;
-            border-radius: 10px;
+            <div id="booknotes-export" style="width:380px; padding:10px;height:100px;background-color:var(--slider);padding:10px;
+            border-radius: 10px;width:fit-content;
             margin: auto;">
             
                 <input id="booknotes-upload" type="file" id="jsonUpload" accept=".json" aria-label="Choose a Booknotes JSON file">
@@ -51,9 +51,11 @@ class bookNotes extends HTMLElement {
 
             <br><br>
         
-            <h6>Import a Booknotes files to see the notes and highlights of another reader</h6>
+            <h6>Import a Booknotes files to see the notes and highlights of another reader:</h6>
 
-            <button id="booknotes-download" onclick="downloadBooknotes()" aria-label="Download Booknotes">Download Booknotes</button>
+            <button id="booknotes-download" onclick="downloadBooknotes()" aria-label="Download Booknotes">
+            Download Booknotes
+            </button>
 
     </div>
 
