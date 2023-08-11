@@ -460,7 +460,7 @@ function bookNotesCreator() {
         chapterNameDiv.appendChild(highlightSpan);
         chapterNameDiv.innerHTML += `${bookNote.storedText} — Noted: ${bookNote.BNdateTime}`;
 
-        const userNoteDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
+        const userNoteDiv = createElementWithAttributes('div', { className: 'chapter-name-bn2' });
         userNoteDiv.textContent = `— ${bookNote.userNote}`;
 
         const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
