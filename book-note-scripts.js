@@ -386,9 +386,6 @@ function createElementWithAttributes(type, attributes = {}) {
 }
 
 
-
-/* THIS CREATES THE BOOK NOTES CURTAIN and list of svaed highlights*/
-
 function bookNotesCreator() {
     // Retrieve existing bookNotes from local storage
     let bookNotes;
@@ -411,18 +408,21 @@ function bookNotesCreator() {
 
         const tcItemDiv = createElementWithAttributes('div', { className: 'tc-item' });
 
-        const chapterNameDiv = createElementWithAttributes('div', {
-            className: 'chapter-name-bn',
-            textContent: bookNote.storedText
-        });
+        const chapterNameDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
+        
+        // Colored bullet span
+        const bulletSpan = createElementWithAttributes('span', { style: `color:${bookNote.highlightColor};` });
+        bulletSpan.textContent = "●   ";
+        chapterNameDiv.appendChild(bulletSpan);
+        
+        chapterNameDiv.innerHTML += ` ${bookNote.storedText} — Noted: ${bookNote.BNdateTime}`;
 
         const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
 
         const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
         chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
         <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
-        ${bookNote.charCount} characters<br>
-        ${bookNote.BNdateTime}</span>`;
+        ${bookNote.charCount} characters</span>`;
 
         wordCountDiv.appendChild(chapterLink);
         tcItemDiv.appendChild(chapterNameDiv);
@@ -432,6 +432,17 @@ function bookNotesCreator() {
     });
 }
 
+function createElementWithAttributes(tag, attributes) {
+    const element = document.createElement(tag);
+    for (const key in attributes) {
+        if (key === 'textContent') {
+            element.textContent = attributes[key];
+        } else {
+            element.setAttribute(key, attributes[key]);
+        }
+    }
+    return element;
+}
 
 
 
