@@ -387,36 +387,89 @@ function createElementWithAttributes(type, attributes = {}) {
 
 
 
-/* THIS CREATES THE BOOK NOTES CURTAIN and list of svaed highlights*/
+/* THIS CREATES THE BOOK NOTES CURTAIN and list of svaed highlights
 
-function updateBookNotesPage(bookNotes) {
-    // Presuming bookNotesListDiv is defined or declared earlier in your code.
+function bookNotesCreator() {
+    // Retrieve existing bookNotes from local storage
+    let bookNotes;
+    try {
+        bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+    } catch (e) {
+        console.error('Error parsing bookNotes from localStorage:', e);
+        bookNotes = [];
+    }
+
+    // Get the book-notes-list div
+    const bookNotesListDiv = document.getElementById('book-notes-list');
+
+    // Clear existing children
+    bookNotesListDiv.innerHTML = '';
+
+    // • Iterate through each book note and create the HTML structure
     bookNotes.forEach((bookNote, index) => {
         const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}` });
 
         const tcItemDiv = createElementWithAttributes('div', { className: 'tc-item' });
 
-        // For storedText with bullet color
         const chapterNameDiv = createElementWithAttributes('div', {
             className: 'chapter-name-bn',
-            innerHTML: `<span style="color:${bookNote.highlightColor}">●</span>${bookNote.storedText} — Noted: ${bookNote.BNdateTime}`
-        });
-
-        // For userNote
-        const userNoteDiv = createElementWithAttributes('div', {
-            className: 'chapter-name-bn',
-            textContent: `— ${bookNote.userNote}`
+            textContent: bookNote.storedText
         });
 
         const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
-        const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
 
+        const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
         chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
         <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
         ${bookNote.charCount} characters<br>
-        </span>`;
+        ${bookNote.BNdateTime}</span>`;
 
         wordCountDiv.appendChild(chapterLink);
+        tcItemDiv.appendChild(chapterNameDiv);
+        tcItemDiv.appendChild(wordCountDiv);
+        bookNoteDiv.appendChild(tcItemDiv);
+        bookNotesListDiv.appendChild(bookNoteDiv);
+    });
+}
+*/
+function bookNotesCreator() {
+    // Retrieve existing bookNotes from local storage
+    let bookNotes;
+    try {
+        bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+    } catch (e) {
+        console.error('Error parsing bookNotes from localStorage:', e);
+        bookNotes = [];
+    }
+
+    // Get the book-notes-list div
+    const bookNotesListDiv = document.getElementById('book-notes-list');
+
+    // Clear existing children
+    bookNotesListDiv.innerHTML = '';
+
+    // Iterate through each book note and create the HTML structure
+    bookNotes.forEach((bookNote, index) => {
+        const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}` });
+
+        const tcItemDiv = createElementWithAttributes('div', { className: 'tc-item' });
+
+        const chapterNameDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
+        const highlightSpan = createElementWithAttributes('span', { style: `color:${bookNote.highlightColor}` });
+        highlightSpan.innerHTML = '●';
+        chapterNameDiv.appendChild(highlightSpan);
+        chapterNameDiv.innerHTML += `${bookNote.storedText} — Noted: ${bookNote.BNdateTime}`;
+
+        const userNoteDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
+        userNoteDiv.textContent = `— ${bookNote.userNote}`;
+
+        const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
+        const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
+        chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
+        <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
+        ${bookNote.charCount} characters<br></span>`;
+        wordCountDiv.appendChild(chapterLink);
+
         tcItemDiv.appendChild(chapterNameDiv);
         tcItemDiv.appendChild(userNoteDiv);
         tcItemDiv.appendChild(wordCountDiv);
@@ -424,6 +477,21 @@ function updateBookNotesPage(bookNotes) {
         bookNotesListDiv.appendChild(bookNoteDiv);
     });
 }
+
+// A helper function to create an element with attributes
+function createElementWithAttributes(tag, attributes) {
+    const element = document.createElement(tag);
+    for (let key in attributes) {
+        if (key === 'textContent') {
+            element.textContent = attributes[key];
+        } else {
+            element.setAttribute(key, attributes[key]);
+        }
+    }
+    return element;
+}
+
+
 
 // Assuming you have this function already, otherwise you'd need to define it.
 function createElementWithAttributes(tag, attributes) {
@@ -437,6 +505,7 @@ function createElementWithAttributes(tag, attributes) {
     }
     return element;
 }
+
 
 
 
