@@ -10,11 +10,11 @@ o               .        ___- -___                    .
        .              .-\          -.     .     .         .
                     ./.;_.\     __/~ \.     
                    /;  / `-'  __\    . \                            
- .        .       /  ,-'     / .   .;   \        |
+ .        .       / ,-'      / .   .;   \        |
                  | .|       /       __   |      -O-       .
                 |__/    __ |  . ;   \ | . |      |
                 |      /  \\_    . ;| \___|    
-   .    o       |      \  .~\\___,-'      |           .
+   .    o       |      \  .~\\___,--'     |           .
                  |     | . ; ~~~~\_    __|
     |             \    \   .  .  ; \  /_/   .
    -O-        .    \   /         . |  ~/                  .
@@ -27,7 +27,7 @@ EARTHBOOK - An open source, Earth & Human Friendly Book format
 Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
  
 
-Landing page - version 1.2
+Landing page - version 1.3.1
 Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
 First EarthBook, the Tractatus Ayyew, published 22.12.22.
 
@@ -81,6 +81,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 
 <script>
      // Declare the global variables
+     var lang = "en";
      var book = "Appendix";
     var chapNo = "1";
     var chapName = "Summaries";
@@ -144,6 +145,7 @@ All the page components required to build this page-->
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
 <!--14--><script src="includes/booknotes-curtain.js" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
 
 
 <style>
@@ -339,12 +341,19 @@ All the page components required to build this page-->
       </div>
     </div>
 
-    <chap-foot></chap-foot>
+  <!-- CHAPTER FOOTER-->
 
-</div>
+<chap-foot></chap-foot>
 
-</div><!--underlayer-->
+</div>  <!--footer functions close-->
 
-</body>
-</html>
+<footer-settings></footer-settings>
+
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>
 
