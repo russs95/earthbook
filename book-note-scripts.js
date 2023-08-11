@@ -412,7 +412,7 @@ function bookNotesCreator() {
         
         const bulletSpanHtml = `<span style="color:${bookNote.highlightColor};">●   </span>`;
         
-        chapterNameDiv.innerHTML = bulletSpanHtml + `${bookNote.storedText} — Noted: ${bookNote.BNdateTime}`;
+        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"<br><br>— Noted: ${bookNote.BNdateTime}`;
 
         const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
         const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });

@@ -52,7 +52,7 @@ class bookNotes extends HTMLElement {
             <div id="booknotes-export" style="width:380px; padding:10px;margin: 10px auto 15px auto;background-color:var(--slider);
             border-radius: 10px;width:fit-content;">
             
-                <input id="booknotes-upload" type="file" id="jsonUpload" accept=".json" aria-label="Choose a Booknotes JSON file">
+                <input id="jsonUpload" type="file" id="jsonUpload" accept=".json" aria-label="Choose a Booknotes JSON file">
                  <button id="booknotes-upload-go" onclick="uploadBooknotes()" aria-label="Upload Booknotes file">▲ Upload Booknotes</button>
             </div>
 
