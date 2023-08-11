@@ -911,8 +911,8 @@ BOOK NOTE PALETTE
 }
  
 .pallette-text {
-  color:var(--thin-border-color);
-        font-family:Mulish, Arial, Helvetica, sans-serif;
+  color:var(--subdued-text);
+        font-family: 'Mulish', Arial, Helvetica, sans-serif;
         text-align: center;
         text-decoration: none;
 }
