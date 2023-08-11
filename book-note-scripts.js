@@ -432,6 +432,7 @@ function bookNotesCreator() {
     });
 }
 */
+
 function bookNotesCreator() {
     // Retrieve existing bookNotes from local storage
     let bookNotes;
@@ -448,52 +449,48 @@ function bookNotesCreator() {
     // Clear existing children
     bookNotesListDiv.innerHTML = '';
 
-    // Helper function to create elements with attributes
-    function createElementWithAttributes(tag, attributes = {}) {
-        const element = document.createElement(tag);
-        for (let key in attributes) {
-            if (key === 'textContent') {
-                element.textContent = attributes[key];
-            } else {
-                element.setAttribute(key, attributes[key]);
-            }
-        }
-        return element;
-    }
-
-    // • Iterate through each book note and create the desired HTML structure
+    // Iterate through each book note and create the HTML structure
     bookNotes.forEach((bookNote, index) => {
-        const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}`, className: 'tc-item' });
+        const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}` });
+        const tcItemDiv = createElementWithAttributes('div', { className: 'tc-item' });
 
+        // Chapter name and text content with bullet and date/time
         const chapterNameDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
 
-        // Create colored bullet
-        const bulletSpan = createElementWithAttributes('span', {
-            style: `color:${bookNote.highlightColor}`,
-            textContent: '●'
-        });
+        const bulletSpan = createElementWithAttributes('span', { style: `color:${bookNote.highlightColor}` });
+        bulletSpan.textContent = "●   ";
         chapterNameDiv.appendChild(bulletSpan);
+
         chapterNameDiv.innerHTML += `${bookNote.storedText} — Noted: ${bookNote.BNdateTime}`;
-
-        if (bookNote.userNote) {
-            const userNoteP = createElementWithAttributes('p', { textContent: `— ${bookNote.userNote}` });
-            chapterNameDiv.appendChild(userNoteP);
-        }
-
+        
+        // Chapter link details
         const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
-
         const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
+        
         chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
         <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
-        ${bookNote.charCount} characters<br>
-        </span>`;
-
+        ${bookNote.charCount} characters<br></span>`;
+        
         wordCountDiv.appendChild(chapterLink);
-        bookNoteDiv.appendChild(chapterNameDiv);
-        bookNoteDiv.appendChild(wordCountDiv);
+        tcItemDiv.appendChild(chapterNameDiv);
+        tcItemDiv.appendChild(wordCountDiv);
+        bookNoteDiv.appendChild(tcItemDiv);
         bookNotesListDiv.appendChild(bookNoteDiv);
     });
 }
+
+function createElementWithAttributes(tag, attributes) {
+    const element = document.createElement(tag);
+    for (const key in attributes) {
+        if (key === 'textContent') {
+            element.textContent = attributes[key];
+        } else {
+            element.setAttribute(key, attributes[key]);
+        }
+    }
+    return element;
+}
+
 
 
 
