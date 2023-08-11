@@ -10,11 +10,11 @@ o               .        ___- -___                    .
        .              .-\          -.     .     .         .
                     ./.;_.\     __/~ \.     
                    /;  / `-'  __\    . \                            
- .        .       / ,--'     / .   .;   \        |
+ .        .       / ,-'      / .   .;   \        |
                  | .|       /       __   |      -O-       .
                 |__/    __ |  . ;   \ | . |      |
                 |      /  \\_    . ;| \___|    
-   .    o       |      \  .~\\___,--'     |           .
+   .    o       |      \  .~\\___,-'     |           .
                  |     | . ; ~~~~\_    __|
     |             \    \   .  .  ; \  /_/   .
    -O-        .    \   /         . |  ~/                  .
@@ -27,7 +27,7 @@ EARTHBOOK - An open source, Earth & Human Friendly Book format
 Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
  
 
-Landing page - version 1.3
+Landing page - version 1.3.1
 Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
 First EarthBook, the Tractatus Ayyew, published 22.12.22.
 
@@ -39,6 +39,7 @@ See full project repository at: https://github.com/russs95/earthbook
 For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
 */
 -->
+
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
@@ -69,7 +70,7 @@ These tags will be consistent for the whole book-->
 <meta property="og:site_name" content="An Earthen Ethic - Tracatus Ayyew">
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
-<meta property="og:title"         content="Plastic 1.0 - Tractatus Ayyew | An Earthen Ethics">
+<meta property="og:title"         content="Plastic 1.0 | An Earthen Ethics">
 <meta property="og:description"   content="Like no other material, plastic has been made entirely for the use and benefit of humans.">
 <meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
 <meta property="og:image:type" content="image/png" >
@@ -80,7 +81,8 @@ These tags will be consistent for the whole book-->
 
 <script>
       // Declare the global variables
-     var book = "Introduction";
+     var lang = "en";
+     var book = "Book One";
     var chapNo = "2";
     var chapName = "Plastic 1.0";
     var chaptURL = "plastic1.html"   // Declare the global variables
@@ -156,6 +158,7 @@ All the page components required to build this page-->
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js?V=2" defer></script>
 <!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
 
 
 <style>
@@ -188,72 +191,6 @@ All the page components required to build this page-->
   font-display: swap;
  }
 
- #bookNotePalette {
-    position: fixed;  /* Changed from absolute to fixed */
-    bottom: -200px; 
-    background: var(--slider);
-    border: 1px solid grey;
-    transition: bottom 0.5s;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 20; /* This ensures the palette is above other page content */
- }
-
- @media screen and (max-width: 700px) {
-
- #bookNotePalette { 
-    bottom: -200px; 
-    left: 12.5%; 
-    width: 85%;
-    height: 120px; 
-    border-radius: 5px 5px 0px 0px;
-}
- }
-
- @media screen and (min-width: 700px) and (max-width: 1324px) {
-    
-    #bookNotePalette {
-        bottom: -200px; 
-        left: 25%; 
-        width: 300px;
-        height: 150px; 
-        border-radius: 7px 7px 0px 0px;
-}
- }
-
-@media screen and (min-width: 1325px) {
-    #bookNotePalette {
-        bottom: -200px; 
-        left: 25%; 
-        width: 320px;
-        height: 150px; 
-        border-radius: 9px 9px 0px 0px;
-}
-
-}
-
-#closePalette {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-button {
-    width: 40%;
-    padding: 10px;
-    background: grey;
-    border: none;
-    color: black;
-    cursor: pointer;    
-    border-radius: 5px 5px 5px 5px;
-
-}
-
-button:hover {
-    opacity: 0.8;
-}
 
 </style>
 </HEAD>
@@ -489,276 +426,17 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
 
 <!-- CHAPTER FOOTER-->
 
-
 <chap-foot></chap-foot>
 
+</div>  <!--footer functions close-->
 
+<footer-settings></footer-settings>
 
-</div><!--underlayer-->
+</div> <!--underlayer close-->
 
-<script>
+<script src="../book-note-scripts.js" defer ></script>
 
+</BODY>
 
-
-document.addEventListener('mouseup', function(e) {
-    let selectedText = window.getSelection().toString();
-    if (selectedText) { // If some text is selected
-        saveBookNotePalette();
-    }
-});
-
-function saveBookNotePalette() {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '0'; // Slide up to show the palette
-}
-
-document.getElementById('closePalette').addEventListener('click', function() {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '-200px'; // Slide down to hide the palette
-});
-
-
-document.getElementById('copyBtn').addEventListener('click', function() {
-    let selectedText = window.getSelection().toString();
-    copyToClipboard(selectedText);
-});
-
-function copyToClipboard(text) {
-    const textarea = document.createElement('textarea');
-    textarea.value = text;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-
-    // Change button text and style
-    const button = document.getElementById('copyBtn');
-    button.style.color = 'green';
-    button.textContent = '✓ Copied!';
-
-    // Slide down and hide the palette
-    setTimeout(() => {
-        const palette = document.getElementById('bookNotePalette');
-        palette.style.bottom = '-200px'; // Slide down to hide the palette
-
-        // After an additional second, reset the button text
-        setTimeout(() => {
-            button.textContent = 'Copy';
-            button.style.color = 'var(--text-color)';
-        }, 1000);
-    }, 800);
-}
-
-
-
-
-
-/*NEW HIGHLIGHT SYSTEM*/
-
-let currentId = 0;
-
-function generateId() {
-    currentId += 1;
-    return String(currentId).padStart(3, '0');
-}
-
-function highlightSaveBookNote() {
-    const selection = window.getSelection();
-
-    // If there's selected text
-    if (selection.rangeCount > 0) {
-        const selectedRange = selection.getRangeAt(0);
-
-        // Create a span element, add the highlight class to it, and surround the selected text with it
-        const span = document.createElement("span");
-        span.classList.add("highlight");
-        span.title = "Click to remove BookNote"; // Adding title attribute
-        span.alt = "Highlight"; // Adding alt attribute
-
-        // Generate and store a unique identifier
-        const id = generateId();
-        span.dataset.id = id;
-
-        selectedRange.surroundContents(span);
-
-        const startContainer = selectedRange.startContainer.parentNode.id;
-
-        // Calculate startOffset considering all text nodes inside the selected paragraph
-        let startOffset = 0;
-        let nodeIterator = document.createTreeWalker(
-            selectedRange.startContainer.parentNode,
-            NodeFilter.SHOW_TEXT,
-            null,
-            false
-        );
-        let node = nodeIterator.firstChild();
-
-        while (node && node !== selectedRange.startContainer) {
-            startOffset += node.textContent.length;
-            node = nodeIterator.nextNode();
-        }
-
-        startOffset += selectedRange.startOffset;
-
-        const storedNoteText = selection.toString();
-        const charCount = storedNoteText.length; // Counting characters
-        const now = new Date();
-        const BNdateTime = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
-        const noteChapter = chapName; // Using the global variable
-
-        // Retrieve existing bookNotes from local storage
-        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-        // New highlight object
-        const bookNote = {
-            id,
-            book,
-            chapNo,
-            chapName,
-            chaptURL,
-            startContainer,
-            startOffset,
-            storedNoteText,
-            noteChapter,
-            charCount,
-            BNdateTime
-        };
-
-        // Add the new highlight to the array
-        bookNotes.push(bookNote);
-
-        // Save the updated array back to local storage
-        localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-
-        // Log to console
-        console.log('BookNote saved:', bookNote);
-
-        // Clear the selection
-        selection.removeAllRanges();
-
-        // Update the button text
-        const button = document.getElementById('highlightSaveButton');
-        button.style.color = 'green';
-        button.style.fontWeight = 'bold';
-        button.textContent = '✓ Saved!';
-
-        // Hide the palette after 1 second
-        setTimeout(() => {
-            const palette = document.getElementById('bookNotePalette');
-            palette.style.bottom = '-200px'; // Slide down to hide the palette
-
-            // After an additional second, reset the button text
-            setTimeout(() => {
-                const button = document.getElementById('highlightSaveButton');
-                button.textContent = 'Highlight & Save';
-                button.style.color = 'var(--text-color)';
-                button.style.fontWeight = 'normal';
-            }, 1000);
-        }, 1000);
-    }
-}
-
-
-
-document.getElementById('highlightSaveButton').addEventListener('click', highlightSaveBookNote);
-
-
-function removeHighlight(event) {
-    const element = event.target;
-    
-    if (element.classList.contains('highlight')) {
-        const id = element.dataset.id;
-
-        // Get the bookNotes from local storage
-        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-        // Find the index of the bookNote with the given id
-        const index = bookNotes.findIndex(bookNote => bookNote.id === id);
-
-        if (index !== -1) {
-            // If the bookNote was found, remove it
-            bookNotes.splice(index, 1);
-
-            // Save the updated array back to local storage
-            localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-
-            console.log('BookNote removal success');
-        } else {
-            console.log('BookNote removal failed');
-        }
-
-        // Remove the span tag
-        const text = document.createTextNode(element.textContent);
-        element.parentNode.replaceChild(text, element);
-    }
-}
-
-
-// Add a click event listener to the document to call removeHighlight when a highlight span is clicked
-document.addEventListener('click', removeHighlight);
-
-
-
-function recreateSelection() {
-    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-    bookNotes.forEach(note => {
-        const { storedNoteText, startContainer, startOffset, id } = note;
-
-        if (storedNoteText && startContainer && startOffset !== null && id) {
-            try {
-                // Find the element by the saved ID
-                const container = document.getElementById(startContainer);
-
-                if (container) {
-                    // Traverse through text nodes to find the correct position
-                    let node = container.firstChild;
-                    let currentOffset = 0;
-
-                    while (node) {
-                        if (node.nodeType === Node.TEXT_NODE) {
-                            if (currentOffset + node.length >= startOffset) {
-                                break;
-                            }
-                            currentOffset += node.length;
-                        }
-                        node = node.nextSibling;
-                    }
-
-                    if (node) {
-                        const range = document.createRange();
-                        range.setStart(node, startOffset - currentOffset);
-                        range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
-
-                        const span = document.createElement('span');
-                        span.className = 'highlight';
-                        span.textContent = storedNoteText;
-                        span.dataset.id = id; // Reusing the same id
-                        span.title = "Click to remove BookNote";
-
-                        range.deleteContents();
-                        range.insertNode(span);
-                    } else {
-                        console.error('Error: Stored text not found for the following book note:', note);
-                    }
-                } else {
-                    console.error('Error: Container element not found for the following book note:', note);
-                }
-            } catch (err) {
-                console.error('An error occurred while recreating selection for the following book note:', note);
-                console.error(err);
-            }
-        } else {
-            console.warn('Warning: Incomplete book note data. Ignoring the following book note:', note);
-        }
-    });
-}
-window.addEventListener('load', recreateSelection);
-
-// Make sure this is after recreateSelection
-document.addEventListener('click', removeHighlight);
-</script>
-
-</body>
-</html>
+</HTML>
 
