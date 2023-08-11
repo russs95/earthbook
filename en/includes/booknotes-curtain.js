@@ -51,7 +51,7 @@ class bookNotes extends HTMLElement {
 
             <br><br>
         
-            <h6>Import a Booknotes files to see the notes and highlights of another reader</h6
+            <h6>Import a Booknotes files to see the notes and highlights of another reader</h6>
 
             <button id="booknotes-download" onclick="downloadBooknotes()" aria-label="Download Booknotes">Download Booknotes</button>
 
