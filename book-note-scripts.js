@@ -432,7 +432,6 @@ function bookNotesCreator() {
     });
 }
 */
-
 function bookNotesCreator() {
     // Retrieve existing bookNotes from local storage
     let bookNotes;
