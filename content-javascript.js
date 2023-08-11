@@ -144,8 +144,8 @@ function openFooter2() {
     }
   }
 
-  // Call the openWelcomeNotice function after 5 seconds of page load
-  setTimeout(openWelcomeNotice, 5000);
+  // Call the openWelcomeNotice function after 15 seconds of page load
+  setTimeout(openWelcomeNotice, 15000);
 
 
 
