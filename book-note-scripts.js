@@ -387,8 +387,6 @@ function createElementWithAttributes(type, attributes = {}) {
 
 
 
-/* THIS CREATES THE BOOK NOTES CURTAIN and list of svaed highlights*/
-
 function bookNotesCreator() {
     // Retrieve existing bookNotes from local storage
     let bookNotes;
@@ -408,21 +406,19 @@ function bookNotesCreator() {
     // • Iterate through each book note and create the HTML structure
     bookNotes.forEach((bookNote, index) => {
         const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}` });
-
         const tcItemDiv = createElementWithAttributes('div', { className: 'tc-item' });
 
-        const chapterNameDiv = createElementWithAttributes('div', {
-            className: 'chapter-name-bn',
-            textContent: bookNote.storedText
-        });
+        const chapterNameDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
+        
+        const bulletSpanHtml = `<span style="color:${bookNote.highlightColor};">●   </span>`;
+        
+        chapterNameDiv.innerHTML = bulletSpanHtml + `${bookNote.storedText} — Noted: ${bookNote.BNdateTime}`;
 
         const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
-
         const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
         chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
         <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
-        ${bookNote.charCount} characters<br>
-        ${bookNote.BNdateTime}</span>`;
+        ${bookNote.charCount} characters</span>`;
 
         wordCountDiv.appendChild(chapterLink);
         tcItemDiv.appendChild(chapterNameDiv);
