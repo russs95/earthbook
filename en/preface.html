@@ -71,7 +71,7 @@ These tags will be consistent for the whole book-->
 <meta property="og:site_name" content="An Earthen Ethic | Tracatus Ayyew">
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
-<meta property="og:title"         content="Preface | An Earthen Ethic - Tractus Ayyew">
+<meta property="og:title"         content="Preface | An Earthen Ethic">
 <meta property="og:description"   content="Introduction to the Earthbook edition of the Tractatus Ayyew.">
 <meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
 <meta property="og:image:type" content="image/png" >
@@ -98,43 +98,6 @@ These tags will be consistent for the whole book-->
         });
       });
     }
-
-
-
-    document.addEventListener('mouseup', function(e) {
-    let selectedText = window.getSelection().toString();
-    if (selectedText) { // If some text is selected
-        saveBookNotePalette();
-    }
-});
-
-function saveBookNotePalette() {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '0'; // Slide up to show the palette
-}
-
-document.getElementById('closePalette').addEventListener('click', function() {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '-200px'; // Slide down to hide the palette
-});
-
-document.getElementById('highlightSaveBtn').addEventListener('click', function() {
-    // Add your highlight & save functionality here
-});
-
-document.getElementById('copyBtn').addEventListener('click', function() {
-    let selectedText = window.getSelection().toString();
-    copyToClipboard(selectedText);
-});
-
-function copyToClipboard(text) {
-    const textarea = document.createElement('textarea');
-    textarea.value = text;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-}
 
     
 </script>
