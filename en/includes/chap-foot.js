@@ -7,7 +7,7 @@ class chapfoot extends HTMLElement {
       this.innerHTML = `
   
      
-      <div id="footer-functions-box" style="width:100%; padding-top: 5px;background-color:pink;">
+      <div id="footer-functions-box" style="width:100%; padding-top: 5px;background-color:var(--header-footer);">
 
 
 
