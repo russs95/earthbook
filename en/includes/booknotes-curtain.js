@@ -39,22 +39,26 @@ class bookNotes extends HTMLElement {
         <br></br>
             <h3 style="font-family:Mulish;margin:0px">Collaborative Editing</h3>
 
-            <h6 style="margin: 15px 0px 0px 5px;">Upload the Booknotes of another reader to your device.</h6>
+
+        
+            <h6 style="margin:16px auto 10px auto;">Export your Booknotes to share your comments and highlights with another reader:</h6>
+
+            <button id="booknotes-download" onclick="downloadBooknotes()" aria-label="Download Booknotes">
+            ▼ Download Booknotes
+            </button>
+
+            <h6 style="margin: 15px 0px 0px 5px;">Upload the Booknotes of another reader to your device to view them.</h6>
 
             <div id="booknotes-export" style="width:380px; padding:10px;margin: 10px auto 15px auto;background-color:var(--slider);
             border-radius: 10px;width:fit-content;">
             
                 <input id="booknotes-upload" type="file" id="jsonUpload" accept=".json" aria-label="Choose a Booknotes JSON file">
-                 <button id="booknotes-upload-go" onclick="uploadBooknotes()" aria-label="Upload Booknotes file">&#129093; Upload Booknotes</button>
+                 <button id="booknotes-upload-go" onclick="uploadBooknotes()" aria-label="Upload Booknotes file">▲ Upload Booknotes</button>
             </div>
 
             <br><br>
-        
-            <h6 style="margin:0px auto 10px auto;">Export your Booknotes to share your comments and highlights with another reader:</h6>
 
-            <button id="booknotes-download" onclick="downloadBooknotes()" aria-label="Download Booknotes">
-            &#129095; Download Booknotes
-            </button>
+            
 
     </div>
 
