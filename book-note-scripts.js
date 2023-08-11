@@ -172,13 +172,13 @@ function copyToClipboard(text) {
         const palette = document.getElementById('bookNotePalette');
         palette.style.bottom = '-200px'; // Slide down to hide the palette
 
-        // After an additional second, reset the button text
+        // After an additional 2 second, reset the button text
         setTimeout(() => {
             button.textContent = 'Copy';
             button.style.color = 'var(--thin-border-color)';
             button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
         }, 1000);
-    }, 800);
+    }, 2000);
 }
 
 
@@ -309,7 +309,7 @@ function updateButtonAndPalette() {
             saveTextDiv.style.color = 'var(--thin-border-color)';
             saveTextDiv.style.fontWeight = 'normal';
         }, 1000);
-    }, 1000);
+    }, 2000);
 }
 
 

@@ -34,7 +34,7 @@ class bookNotes extends HTMLElement {
             <div id="instructions-bn" style="font-family:Mulish;color:grey;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
         </div>
 
-        <div id="collaborative-editing" style="width:80%; padding:20px;background:var(--background-color); border-radius: 10px;margin: auto;margin-top:50px;">
+        <div id="collaborative-editing" style="width:80%; padding:20px;background:var(--background-color); border-radius: 10px;margin: auto;margin-top:80px;">
 
         <br></br>
             <h3 style="font-family:Mulish;margin:0px">Collaborative Editing</h3>
