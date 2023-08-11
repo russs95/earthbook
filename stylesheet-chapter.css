@@ -807,7 +807,7 @@ BOOK NOTE PALETTE
   border-style: solid;
   border-width: 0.25px;
   border: none;
-  color: grey;
+  color: var(--subdued-text);
   font-family: "Mulish", Arial, Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
