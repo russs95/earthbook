@@ -51,7 +51,7 @@ class footSettings extends HTMLElement {
   }
   }
   
-  customElements.define('footer-setting', footSettings);
+  customElements.define('footer-settings', footSettings);
   
   
   
