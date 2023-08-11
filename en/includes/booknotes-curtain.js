@@ -41,13 +41,13 @@ class bookNotes extends HTMLElement {
 
 
         
-            <h6 style="margin:16px auto 10px auto;">Export your Booknotes to share your comments and highlights with another reader:</h6>
+            <h6 style="margin:16px auto 10px auto;">Earthbooks enable authors and editors to work together on the live publication by importing and export your saved highlights and comments.  Export your Booknotes to share with another reader:</h6>
 
             <button id="booknotes-download" onclick="downloadBooknotes()" aria-label="Download Booknotes">
             ▼ Download Booknotes
             </button>
 
-            <h6 style="margin: 15px 0px 0px 5px;">Upload the Booknotes of another reader to your device to view them.</h6>
+            <h6 style="margin: 25px 0px 0px 5px;">Upload the Booknotes of another reader to your device to view them.</h6>
 
             <div id="booknotes-export" style="width:380px; padding:10px;margin: 10px auto 15px auto;background-color:var(--slider);
             border-radius: 10px;width:fit-content;">
