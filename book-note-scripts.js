@@ -410,9 +410,9 @@ function bookNotesCreator() {
 
         const chapterNameDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
         
-        const bulletSpanHtml = `<span style="color:${bookNote.highlightColor};">●   </span>`;
+        const bulletSpanHtml = `<span style="padding-right:5px;color:${bookNote.highlightColor};">●   </span>`;
         
-        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"<br><br>— Noted: ${bookNote.BNdateTime}`;
+        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"<br><br><span style="color:grey;font-size:smaller">— Noted: ${bookNote.BNdateTime}</span>`;
 
         const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
         const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
