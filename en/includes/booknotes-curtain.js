@@ -29,23 +29,30 @@ class bookNotes extends HTMLElement {
     </div>
 
         <div style="margin:auto;">
-            <button id="reset-settings-bn" onclick="resetBookNotes()" style="width: 200px;
-        margin: 30px auto 20px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
-            <div id="instructions-bn" style="font-family:Mulish;color:grey;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
-        <br><br>
-        <hr>
-        <br>
-        <h3 style="font-family:Mulish;">Collaborative Editing</h3>
+            <button id="reset-settings-bn" onclick="resetBookNotes()" style="width: 200px;margin: 30px auto 20px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
 
-            <h5>Export or import a Booknotes file to see the notes and highlights of another reader</h5>
+            <div id="instructions-bn" style="font-family:Mulish;color:grey;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
+        </div>
+
+        <div id=collaborative-editing" style="width:80%; padding:20px;background-color:black,border-radius: 10px;margin: auto;>
+        <br>
+            <h3 style="font-family:Mulish;">Collaborative Editing</h3>
+
+            <h6>Export your Booknotes to share with another reader.</h6>
 
             <div id="booknotes-export" style="width:380px; padding:10px,height:100px;background-color:var(--true),padding: 10px;
             border-radius: 10px;
             margin: auto;">
             
-            <input id="booknotes-upload" type="file" id="jsonUpload" accept=".json" aria-label="Choose a Booknotes JSON file">
-            <button id="booknotes-upload-go" onclick="uploadBooknotes()" aria-label="Upload Booknotes file">Upload Booknotes</button>
-        </div>
+                <input id="booknotes-upload" type="file" id="jsonUpload" accept=".json" aria-label="Choose a Booknotes JSON file">
+                 <button id="booknotes-upload-go" onclick="uploadBooknotes()" aria-label="Upload Booknotes file">Upload Booknotes</button>
+            </div>
+
+            <br><br>
+        
+            <h6>Import a Booknotes files to see the notes and highlights of another reader</h6
+
+            <button onclick="downloadBooknotes()">Download Booknotes</button>
 
     </div>
 
