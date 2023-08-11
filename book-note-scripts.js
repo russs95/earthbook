@@ -298,7 +298,7 @@ function updateButtonAndPalette() {
     const saveTextDiv = document.getElementById('save-text');
     saveTextDiv.style.color = 'green';
     saveTextDiv.style.fontWeight = 'bold';
-    saveTextDiv.textContent = '✓ Saved!';
+    saveTextDiv.textContent = 'Saved!';
 
     setTimeout(() => {
         const palette = document.getElementById('bookNotePalette');

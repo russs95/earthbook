@@ -775,7 +775,7 @@ BOOK NOTE PALETTE
 @media screen and (min-width: 700px) and (max-width: 1324px) {
   
   #bookNotePalette {
-      width: 600px;
+      width: 700px;
       height: 90px; 
       border-radius:  25px 25px 0px 0px;
       padding: 10px;
@@ -789,7 +789,7 @@ BOOK NOTE PALETTE
 @media screen and (min-width: 1325px) {
   #bookNotePalette {
       bottom: -200px; 
-      width: 650px;
+      width: 750px;
       height: 100px; 
       border-radius:  25px 25px 0px 0px;
 }
