@@ -755,12 +755,16 @@ BOOK NOTE PALETTE
   border-color: var(--thin-border-color);
   box-shadow: var(--element-shadow);
   transition: bottom 0.5s;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+  
   z-index: 20; /* This ensures the palette is above other page content */
   left: 50%;
   transform: translateX(-50%);
+}
+
+.main-pallette-buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 @media screen and (max-width: 700px) {
