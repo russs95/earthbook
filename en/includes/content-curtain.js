@@ -59,7 +59,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="plastic-1.html">
+                        <a href="plastic1.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Plastic 1.0</div>
                             <div class="dotted-line"></div>

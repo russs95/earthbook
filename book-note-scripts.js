@@ -386,7 +386,6 @@ function createElementWithAttributes(type, attributes = {}) {
 }
 
 
-
 function bookNotesCreator() {
     // Retrieve existing bookNotes from local storage
     let bookNotes;
@@ -403,22 +402,23 @@ function bookNotesCreator() {
     // Clear existing children
     bookNotesListDiv.innerHTML = '';
 
-    // • Iterate through each book note and create the HTML structure
+    // Iterate through each book note and create the HTML structure
     bookNotes.forEach((bookNote, index) => {
         const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}` });
         const tcItemDiv = createElementWithAttributes('div', { className: 'tc-item' });
 
         const chapterNameDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
+
+        const bulletColor = bookNote.highlightColor === 'blue' ? '#2daee5' : bookNote.highlightColor;
         
-        const bulletSpanHtml = `<div style="display:flex;flex-flow:row;"><span style="padding-right:5px;color:${bookNote.highlightColor};">●   </span>`;
+        const bulletSpanHtml = `<div style="display:flex;flex-flow:row;"><span style="padding-right:5px;color:${bulletColor};">●   </span>`;
         
-        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"</div><span style="padding-top: 10px; color:grey;font-size:smaller">— Noted: ${bookNote.BNdateTime}</span>`;
+        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"</div><span style="padding-top: 10px; color:grey;">--Comment: ${bookNote.userNote}</span><span style="padding-top: 10px; color:grey;font-size:smaller">— Noted: ${bookNote.BNdateTime}</span>`;
 
         const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
         const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
         chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
-        <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
-        ${bookNote.charCount} characters</span>`;
+        <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}</span>`;
 
         wordCountDiv.appendChild(chapterLink);
         tcItemDiv.appendChild(chapterNameDiv);
@@ -426,6 +426,18 @@ function bookNotesCreator() {
         bookNoteDiv.appendChild(tcItemDiv);
         bookNotesListDiv.appendChild(bookNoteDiv);
     });
+}
+
+function createElementWithAttributes(tag, attributes) {
+    const element = document.createElement(tag);
+    for (const key in attributes) {
+        if (key === 'textContent') {
+            element.textContent = attributes[key];
+        } else {
+            element.setAttribute(key, attributes[key]);
+        }
+    }
+    return element;
 }
 
 
