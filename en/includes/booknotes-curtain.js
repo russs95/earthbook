@@ -79,32 +79,38 @@ class bookNotes extends HTMLElement {
 </div>
 </div>
 
+
 <!-- BOOKNOTES MENU PALLETTE-->
 
 <div id="bookNotePalette" class="palette-hidden">
     <div class="highlight-buttons">
-        <div id="save-text" class="pallette-text">Save:</div>
+        <div id="save-text" class="pallette-text">Save:
+        </div>
         <button class="color-btn" onclick="highlightBooknote('green')" style="background:green" aria-label="Highlight Text Green" title="Highlight & Save Green"></button>
-        <button class="color-btn" onclick="highlightBooknote('red')" style="background:red" aria-label="Highlight Text Red" title="Highlight & Save Red"></button>
-        <button class="color-btn" onclick="highlightBooknote('blue')" style="background:#2daee5" aria-label="Highlight Text Blue" title="Highlight & Save Blue"></button>
+        <button class="color-btn" onclick="highlightBooknote('red')" style="background:red" aria-label="Highlight Text Green" alt="Highlight & Save Red"></button>
+        <button class="color-btn" onclick="highlightBooknote('blue')" style="background:#2daee5" aria-label="Highlight Text Blue"></button>
+        </button>
+        
     </div>
-    
     <button aria-label="Copy Selection" id="copyBtn" class="pallette-btn">
         <div class="pallette-text">Copy:</div>
     </button> 
     <button aria-label="Add annotation" id="booknotesBtn" class="pallette-btn" onclick="revealAnnotationBox()">
-        <div class="pallette-text">Annotate</div>
-    </button>
+    <div class="pallette-text">Annotate</div>
+</button>
+
     <button aria-label="View Your Booknotes" id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
-        <div class="pallette-text">Booknotes</div>
-    </button>
-</div>
+    <div class="pallette-text">Booknotes</div>
+</button>
 
 <div id="annotationEntry" class="annotation-hidden">
     <textarea id="userAnnotation" placeholder="Add your annotation here..."></textarea>
     <button onclick="saveAnnotation()">Annotate</button>
 </div>
 
+   
+    
+</div>
 
 <!-- CHAPT NOTICE-->
 
