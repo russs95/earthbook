@@ -386,6 +386,60 @@ function createElementWithAttributes(type, attributes = {}) {
 }
 
 
+
+function bookNotesCreator() {
+    // Retrieve existing bookNotes from local storage
+    let bookNotes;
+    try {
+        bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+    } catch (e) {
+        console.error('Error parsing bookNotes from localStorage:', e);
+        bookNotes = [];
+    }
+
+    // Get the book-notes-list div
+    const bookNotesListDiv = document.getElementById('book-notes-list');
+
+    // Clear existing children
+    bookNotesListDiv.innerHTML = '';
+
+    // • Iterate through each book note and create the HTML structure
+    bookNotes.forEach((bookNote, index) => {
+        const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}` });
+        const tcItemDiv = createElementWithAttributes('div', { className: 'tc-item' });
+
+        const chapterNameDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
+
+        const bulletColor = bookNote.highlightColor === 'blue' ? '#2daee5' : bookNote.highlightColor;
+        
+        const bulletSpanHtml = `<div style="display:flex;flex-flow:row;"><span style="padding-right:5px;color:${bookNote.highlightColor};">●   </span>`;
+        
+        
+        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"</div><span style="padding-top: 10px; color:grey;font-size:smaller">----Comment: ${bookNote.userNote}  — Noted: ${bookNote.BNdateTime}</span>`;
+
+
+        
+
+        const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
+        const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
+        chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
+        <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
+        ${bookNote.charCount} characters</span>`;
+
+        wordCountDiv.appendChild(chapterLink);
+        tcItemDiv.appendChild(chapterNameDiv);
+        tcItemDiv.appendChild(wordCountDiv);
+        bookNoteDiv.appendChild(tcItemDiv);
+        bookNotesListDiv.appendChild(bookNoteDiv);
+    });
+}
+
+
+
+
+
+/*
+
 function bookNotesCreator() {
     // Retrieve existing bookNotes from local storage
     let bookNotes;
@@ -439,7 +493,7 @@ function createElementWithAttributes(tag, attributes) {
     }
     return element;
 }
-
+*/
 
 
 
