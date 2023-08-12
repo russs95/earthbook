@@ -37,13 +37,21 @@ class ContentCurtain extends HTMLElement {
                             <div class="word-count-tc"><i>431 words</i></div>
                         </div></a>
 
-                        <a href="preface.php">
+                        <a href="preface.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Preface</div>
                             <div class="word-count-tc"><i>1,220 words</i></div>
                         </div></a>
 
-                        <a href="imagine.php">
+                        <a href="epigraph-1.html">
+                        <div class="tc-item">
+                            <div class="chapter-name-tc">Epigraph</div>
+                            <div class="dotted-line"></div>
+                            <div class="word-count-tc"><i>65 words</i></div>
+                        </div>
+                        </a>
+                        
+                        <a href="imagine.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Imagine</div>
                             <div class="dotted-line"></div>
@@ -51,7 +59,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="plastic.php">
+                        <a href="plastic-1.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Plastic 1.0</div>
                             <div class="dotted-line"></div>
@@ -59,7 +67,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="stellar.php">
+                        <a href="stellar.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">An Interstellar Story</div>
                             <div class="dotted-line"></div>
@@ -67,7 +75,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="patterns.php">
+                        <a href="patterns.html">
                         <div class="tc-item">
                         <div class="chapter-name-tc">Patterns of Process</div>
                         <div class="dotted-line"></div>
@@ -75,7 +83,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="kincentric.php">
+                        <a href="kincentric.html">
                         <div class="tc-item">
                         <div class="chapter-name-tc">Kindred Relations</div>
                         <div class="dotted-line"></div>
@@ -83,7 +91,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="nature.php">
+                        <a href="nature.html">
                         <div class="tc-item">
                         <div class="chapter-name-tc">Nature's Fallacy</div>
                         <div class="dotted-line"></div>
@@ -91,7 +99,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="earthen.php">
+                        <a href="earthen.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Earthen Ways</div>
                             <div class="dotted-line"></div>
@@ -105,26 +113,26 @@ class ContentCurtain extends HTMLElement {
 
                     <div id="appx-book-two" style="display: none;">
 
-                    <a href="epigraph-2.php">
+                    <a href="epigraph-2.html">
                      <div class="tc-item">
                          <div class="chapter-name-tc">Epigraph II</div>
                          <div class="word-count-tc"><i>51 words</i></div>
                      </div></a>
 
 
-                        <a href="spirals.php">
+                        <a href="spirals.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Cycles that Spiral</div>
                             <div class="word-count-tc"><i>1,682 words</i></div>
                         </div></a>
 
-                        <a href="energy.php">
+                        <a href="energy.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Salmon's Spin</div>
                             <div class="word-count-tc"><i>2,294 words</i></div>
                         </div></a>
 
-                        <a href="unpublished.php">
+                        <a href="unpublished.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Manner of the Mollusk</div>
                             <div class="dotted-line"></div>
@@ -132,7 +140,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="unpublished.php">
+                        <a href="unpublished.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Polyp's Pattern</div>
                             <div class="dotted-line"></div>
@@ -140,7 +148,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="unpublished.php">
+                        <a href="unpublished.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Means of the Myccorhyzal</div>
                             <div class="dotted-line"></div>
@@ -152,25 +160,25 @@ class ContentCurtain extends HTMLElement {
 
                     <div id="appx-book-three" style="display: none;">
 
-                    <a href="epigraph-3.php">
+                    <a href="epigraph-3.html">
                      <div class="tc-item">
                          <div class="chapter-name-tc">Epigraph III</div>
                          <div class="word-count-tc"><i>58 words</i></div>
                      </div></a>
 
-                        <a href="unpublished.php">
+                        <a href="unpublished.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Plastic 2.0</div>
                             <div class="word-count-tc"><i>unpublished</i></div>
                         </div></a>
 
-                        <a href="unpublished.php">
+                        <a href="unpublished.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Plastic Sequestration</div>
                             <div class="word-count-tc"><i>unpublished</i></div>
                         </div></a>
 
-                        <a href="unpublished.php">
+                        <a href="unpublished.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Petro-Capital Transition</div>
                             <div class="dotted-line"></div>
@@ -178,7 +186,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="unpublished.php">
+                        <a href="unpublished.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">Ad Pax Ayyew</div>
                             <div class="dotted-line"></div>
@@ -186,7 +194,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="unpublished.php">
+                        <a href="unpublished.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Myccorhyzal's Means</div>
                             <div class="dotted-line"></div>

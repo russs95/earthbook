@@ -50,13 +50,25 @@ self.addEventListener('install', event => {
         '/svgs/my-book-header-logo-night.svg',
         '/svgs/my-book-header-logo-day.svg',
 
-        '/en/preamble.php',
-        '/en/preface.php',
-        '/en/epigraph.php',
-        '/en/imagine.php',
-        '/en/energy.php',
-        'https://book.earthen.io/en/kincentric.php'
+        '/en/preamble.html',
+        '/en/preface.html',
+        '/en/epigraph-1.html',
+        '/en/imagine.html',
+        '/en/plastic-1.html',
+        '/en/stellar.html',
+        '/en/patterns.html',
+        '/en/kincentric.html',
+        '/en/nature.html',
+        '/en/earthen.html',
+        '/en/epigraph-2.html',
+        '/en/cycles.html',
+        '/en/energy.html',
+        '/en/unpublished.html',
 
+        '/en/summaries.html',
+        '/en/dedicatin.html',
+        '/en/accounting.html',
+       
        
 
 
