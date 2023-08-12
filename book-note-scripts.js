@@ -412,10 +412,10 @@ function bookNotesCreator() {
 
         const bulletColor = bookNote.highlightColor === 'blue' ? '#2daee5' : bookNote.highlightColor;
         
-        const bulletSpanHtml = `<div style="display:flex;flex-flow:row;"><span style="padding-right:5px;color:${bookNote.highlightColor};">●   </span>`;
+        const bulletSpanHtml = `<div style="display:flex;flex-flow:row;"><span style="padding-right:5px;color:${bulletColor};">●   </span>`;
         
         
-        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"</div><span style="padding-top: 10px; color:grey;font-size:smaller">----Comment: ${bookNote.userNote}  — Noted: ${bookNote.BNdateTime}</span>`;
+        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"</div><span style="padding-top: 10px; color:grey;font-size:smaller">--Comment: ${bookNote.userNote} <br> — Noted: ${bookNote.BNdateTime}</span>`;
 
 
         
@@ -438,7 +438,7 @@ function bookNotesCreator() {
 
 
 
-/*
+
 
 function bookNotesCreator() {
     // Retrieve existing bookNotes from local storage
