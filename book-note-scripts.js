@@ -666,6 +666,8 @@ function createElementWithAttributes(tag, attributes) {
 function revealAnnotationBox() {
     const bookNotePalette = document.getElementById('bookNotePalette');
     bookNotePalette.style.bottom = "300px";  // Slide up the palette
+    bookNotePalette.style.height = "600px";  // pallette size palette
+
 
     const annotationBox = document.getElementById('annotationEntry');
     annotationBox.classList.remove('annotation-hidden');

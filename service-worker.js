@@ -68,7 +68,14 @@ self.addEventListener('install', event => {
 
         '/en/summaries.html',
         '/en/dedication.html',
-        '/en/accounting.html',
+        '/en/for-earth.html',
+        '/en/acknowledgements.html',
+        '/en/publishing.html',
+        '/en/authors.html',
+        '/en/declarations.html',
+        '/en/bibliography.html',
+        '/en/gloassary.html',
+
        
        
 
