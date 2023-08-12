@@ -246,8 +246,6 @@ margin: 12px auto 0px auto !important;
 
 /*	2. Typography
 
-/* -------------------------------------------------------------------------- */
-
 
 
 @font-face {
@@ -282,6 +280,10 @@ margin: 12px auto 0px auto !important;
   src: url("fonts/Mulish-Medium.ttf");
   font-display: swap;
  }
+ 
+/* -------------------------------------------------------------------------- */
+
+
 
 p {
   font-family: 'CooperLt', Georgia, serif;
@@ -3422,6 +3424,9 @@ border-bottom-color: var(--fainter-border-color);
   font-family: 'CooperLT';
 }
 
+#book-notes-list .word-count-tc {
+  margin-top: 2px !important;
+}
 
 @media screen and (max-width: 700px) {
   .word-count-tc {

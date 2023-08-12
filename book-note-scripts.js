@@ -415,7 +415,7 @@ function bookNotesCreator() {
         const bulletSpanHtml = `<div style="display:flex;flex-flow:row;"><span style="padding-right:5px;color:${bulletColor};">●   </span>`;
         
         
-        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"</div><span style="padding-top: 10px; color:grey;font-size:smaller">--Comment: ${bookNote.userNote} <br> — Noted: ${bookNote.BNdateTime}</span>`;
+        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"</div><span style="padding-top: 10px; color:grey;font-size:smaller"> — Noted ${bookNote.BNdateTime}: ${bookNote.userNote}</span>`;
 
 
         
@@ -424,7 +424,7 @@ function bookNotesCreator() {
         const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
         chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
         <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
-        ${bookNote.charCount} characters</span>`;
+        ${bookNote.charCount} chars.</span>`;
 
         wordCountDiv.appendChild(chapterLink);
         tcItemDiv.appendChild(chapterNameDiv);
