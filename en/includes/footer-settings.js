@@ -23,7 +23,7 @@ class footSettings extends HTMLElement {
       
         <div style=""><button type="button" class="footer-settings-icon"><img src="../icons/tour.svg" alt="Guided Tour" style="cursor:pointer" onclick="guidedTour()" aria-label="Click for a quick Earthbook features tour" title="Click for a quick Earthbook features tour"></button></div>
       
-        <div style=""><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of page" style="cursor:pointer" onclick="location.href='#top'" aria-label="Go to top of page"></button></div>
+        <!--<div style=""><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of page" style="cursor:pointer" onclick="location.href='#top'" aria-label="Go to top of page"></button></div>-->
       
         <div><button type="button" class="footer-settings-icon"><img src="../icons/booknotes.svg" alt="Booknotes icon" style="cursor:pointer" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Click to view your Book notes" title="Click to view your Booknotes"></button></div>
       
