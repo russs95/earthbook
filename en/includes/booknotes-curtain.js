@@ -95,12 +95,19 @@ class bookNotes extends HTMLElement {
     <button aria-label="Copy Selection" id="copyBtn" class="pallette-btn">
         <div class="pallette-text">Copy:</div>
     </button> 
-    <button aria-label="Add annotation"id="booknotesBtn" class="pallette-btn" onclick="">
-        <div class="pallette-text">Annotate</div>
-    </button>
+    <button aria-label="Add annotation" id="booknotesBtn" class="pallette-btn" onclick="revealAnnotationBox()">
+    <div class="pallette-text">Annotate</div>
+</button>
+
     <button aria-label="View Your Booknotes" id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
     <div class="pallette-text">Booknotes</div>
 </button>
+
+<div id="annotationEntry" class="annotation-hidden">
+    <textarea id="userAnnotation" placeholder="Add your annotation here..."></textarea>
+    <button onclick="saveAnnotation()">Annotate</button>
+</div>
+
    
     
 </div>

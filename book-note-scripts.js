@@ -387,56 +387,6 @@ function createElementWithAttributes(type, attributes = {}) {
 
 
 
-function bookNotesCreator() {
-    // Retrieve existing bookNotes from local storage
-    let bookNotes;
-    try {
-        bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-    } catch (e) {
-        console.error('Error parsing bookNotes from localStorage:', e);
-        bookNotes = [];
-    }
-
-    // Get the book-notes-list div
-    const bookNotesListDiv = document.getElementById('book-notes-list');
-
-    // Clear existing children
-    bookNotesListDiv.innerHTML = '';
-
-    // • Iterate through each book note and create the HTML structure
-    bookNotes.forEach((bookNote, index) => {
-        const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}` });
-        const tcItemDiv = createElementWithAttributes('div', { className: 'tc-item' });
-
-        const chapterNameDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
-
-        const bulletColor = bookNote.highlightColor === 'blue' ? '#2daee5' : bookNote.highlightColor;
-        
-        const bulletSpanHtml = `<div style="display:flex;flex-flow:row;"><span style="padding-right:5px;color:${bulletColor};">●   </span>`;
-        
-        
-        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"</div><span style="padding-top: 10px; color:grey;font-size:smaller"> — Noted ${bookNote.BNdateTime}: ${bookNote.userNote}</span>`;
-
-
-        
-
-        const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
-        const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
-        chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
-        <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
-        ${bookNote.charCount} chars.</span>`;
-
-        wordCountDiv.appendChild(chapterLink);
-        tcItemDiv.appendChild(chapterNameDiv);
-        tcItemDiv.appendChild(wordCountDiv);
-        bookNoteDiv.appendChild(tcItemDiv);
-        bookNotesListDiv.appendChild(bookNoteDiv);
-    });
-}
-
-
-
-
 
 
 
@@ -559,3 +509,181 @@ function uploadBooknotes() {
     // 2. Read the file
     reader.readAsText(file);
 }
+
+
+
+/*---------------------
+
+BOOK NOTES CREATOR SCRIPTS
+
+
+-------------------*/
+
+
+
+/*
+function bookNotesCreator() {
+    // Retrieve existing bookNotes from local storage
+    let bookNotes;
+    try {
+        bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+    } catch (e) {
+        console.error('Error parsing bookNotes from localStorage:', e);
+        bookNotes = [];
+    }
+
+    // Get the book-notes-list div
+    const bookNotesListDiv = document.getElementById('book-notes-list');
+
+    // Clear existing children
+    bookNotesListDiv.innerHTML = '';
+
+    // • Iterate through each book note and create the HTML structure
+    bookNotes.forEach((bookNote, index) => {
+        const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}` });
+        const tcItemDiv = createElementWithAttributes('div', { className: 'tc-item' });
+
+        const chapterNameDiv = createElementWithAttributes('div', { className: 'chapter-name-bn' });
+
+        const bulletColor = bookNote.highlightColor === 'blue' ? '#2daee5' : bookNote.highlightColor;
+        
+        const bulletSpanHtml = `<div style="display:flex;flex-flow:row;"><span style="padding-right:5px;color:${bulletColor};">●   </span>`;
+        
+        
+        chapterNameDiv.innerHTML = bulletSpanHtml + ` "${bookNote.storedText}"</div><span style="padding-top: 10px; color:grey;font-size:smaller"> — Noted ${bookNote.BNdateTime}: ${bookNote.userNote}</span>`;
+
+
+        
+
+        const wordCountDiv = createElementWithAttributes('div', { className: 'word-count-tc' });
+        const chapterLink = createElementWithAttributes('a', { href: bookNote.chaptURL });
+        chapterLink.innerHTML = `<i>${bookNote.chapName}</i><br>
+        <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}<br>
+        ${bookNote.charCount} chars.</span>`;
+
+        wordCountDiv.appendChild(chapterLink);
+        tcItemDiv.appendChild(chapterNameDiv);
+        tcItemDiv.appendChild(wordCountDiv);
+        bookNoteDiv.appendChild(tcItemDiv);
+        bookNotesListDiv.appendChild(bookNoteDiv);
+    });
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+function bookNotesCreator() {
+    const bookNotes = getBookNotesFromLocalStorage();
+
+    const bookNotesListDiv = document.getElementById('book-notes-list');
+    bookNotesListDiv.innerHTML = '';
+
+    bookNotes.forEach((bookNote, index) => {
+        const bookNoteDiv = createBookNoteDiv(bookNote, index);
+        bookNotesListDiv.appendChild(bookNoteDiv);
+    });
+}
+
+function getBookNotesFromLocalStorage() {
+    let bookNotes;
+    try {
+        bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+    } catch (e) {
+        console.error('Error parsing bookNotes from localStorage:', e);
+        bookNotes = [];
+    }
+    return bookNotes;
+}
+
+function createBookNoteDiv(bookNote, index) {
+    const bookNoteDiv = createElementWithAttributes('div', { id: `booknote-${index + 1}` });
+    const tcItemDiv = createElement('div', 'tc-item');
+    const chapterNameDiv = createElement('div', 'chapter-name-bn');
+
+    const bulletColor = bookNote.highlightColor === 'blue' ? '#2daee5' : bookNote.highlightColor;
+
+    chapterNameDiv.innerHTML = `
+        <div style="display:flex; flex-flow:row;">
+            <span style="padding-right:5px;color:${bulletColor};">●</span>
+            "${bookNote.storedText}"
+        </div>
+        <span style="padding-top: 10px; color:grey;">--Comment: ${bookNote.userNote}</span>
+        <span style="padding-top: 10px; color:grey; font-size:smaller">— Noted: ${bookNote.BNdateTime}</span>
+    `;
+
+    const wordCountDiv = createWordCountDiv(bookNote);
+
+    tcItemDiv.appendChild(chapterNameDiv);
+    tcItemDiv.appendChild(wordCountDiv);
+    bookNoteDiv.appendChild(tcItemDiv);
+
+    return bookNoteDiv;
+}
+
+function createWordCountDiv(bookNote) {
+    const div = createElement('div', 'word-count-tc');
+    div.innerHTML = `
+        <a href="${bookNote.chaptURL}">
+            <i>${bookNote.chapName}</i><br>
+            <span style="font-size:small;">${bookNote.book}, Chapt.${bookNote.chapNo}</span>
+        </a>
+    `;
+    return div;
+}
+
+function createElement(tag, className = '') {
+    const element = document.createElement(tag);
+    if (className) {
+        element.className = className;
+    }
+    return element;
+}
+
+function createElementWithAttributes(tag, attributes) {
+    const element = document.createElement(tag);
+    for (const key in attributes) {
+        if (key === 'textContent') {
+            element.textContent = attributes[key];
+        } else {
+            element.setAttribute(key, attributes[key]);
+        }
+    }
+    return element;
+}
+
+
+
+/*ANNOTATION*/
+
+function revealAnnotationBox() {
+    const bookNotePalette = document.getElementById('bookNotePalette');
+    bookNotePalette.style.bottom = "300px";  // Slide up the palette
+
+    const annotationBox = document.getElementById('annotationEntry');
+    annotationBox.classList.remove('annotation-hidden');
+}
+
+function saveAnnotation() {
+    const annotationText = document.getElementById('userAnnotation').value;
+
+    // Save the annotationText into your bookNote JSON as the userNote
+    // The logic for this will depend on how you're currently handling and storing your bookNote JSON
+    // Assuming there's a function saveBookNote that handles this:
+    saveBookNote({ userNote: annotationText });
+
+    // Optionally, close the annotation box once saved
+    const annotationBox = document.getElementById('annotationEntry');
+    annotationBox.classList.add('annotation-hidden');
+
+    const bookNotePalette = document.getElementById('bookNotePalette');
+    bookNotePalette.style.bottom = "-200px";
+}
+

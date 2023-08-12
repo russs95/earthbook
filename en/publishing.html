@@ -10,7 +10,7 @@ o               .        ___- -___                    .
        .              .-\          -.     .     .         .
                     ./.;_.\     __/~ \.     
                    /;  / `-'  __\    . \                            
- .        .       /  ,-'     / .   .;   \        |
+ .        .       / ,-'      / .   .;   \        |
                  | .|       /       __   |      -O-       .
                 |__/    __ |  . ;   \ | . |      |
                 |      /  \\_    . ;| \___|    
@@ -26,7 +26,8 @@ o               .        ___- -___                    .
 EARTHBOOK - An open source, Earth & Human Friendly Book format
 Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
  
-Landing page - version 1.2
+
+Landing page - version 1.3.1
 Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
 First EarthBook, the Tractatus Ayyew, published 22.12.22.
 
@@ -38,6 +39,7 @@ See full project repository at: https://github.com/russs95/earthbook
 For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
 */
 -->
+
 
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
@@ -80,6 +82,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 
 <script>
      // Declare the global variables
+     var lang = "en";
      var book = "Appendix";
     var chapNo = "6";
     var chapName = "Publishing";
@@ -143,6 +146,7 @@ All the page components required to build this page-->
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
 <!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
 
 
 <style>
@@ -263,15 +267,6 @@ All the page components required to build this page-->
   <div id="up-arrow"></div>
   <div id="ct-main">
 
-
-    <div id="chap-notice">
-        <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-        <div id="chap-notice-text">
-        💡  Looks like its your first time opening this book!  Before you get going, consider taking the quick <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="Learn more about what an Earthbook is">Earthbook features tour</span> and be sure to <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Adjust for your eyes">optimize ±</span> the page for your eyes.
-        </div>
-      </div>
-      
-  
   <!-- MAIN TEXT CONTENT of the Page  -->
 
   <div class="lead-page-paragraph" id="EN-4-6-00">
@@ -287,7 +282,7 @@ All the page components required to build this page-->
        <p id="EN-4-6-02">The book is type set in Cooper LT Light and Regular by Oswald Cooper and Bitstream as well as Mulish Light & Regular by Vernon Adams, Cyreal, Jacques Le Bailly.
       </p>
     
-      <p id="EN-4-6-03">The enterprise of publishing the Tracatus Ayyew is <a href="for-earth.php">for-Earth</a>.  This means we disclose our <a href="accounting.php" target="_blank">Ecological accounting</a> in annual Regenerative Reports.</p>
+      <p id="EN-4-6-03">The enterprise of publishing the Tracatus Ayyew is <a href="for-earth.html">for-Earth</a>.  This means we disclose our <a href="accounting.html" target="_blank">Ecological accounting</a> in annual Regenerative Reports.</p>
     
       
 
@@ -344,11 +339,18 @@ All the page components required to build this page-->
         </div>
 
 
-        <chap-foot></chap-foot>
+<!-- CHAPTER FOOTER-->
 
+<chap-foot></chap-foot>
 
+</div>  <!--footer functions close-->
 
-   </div><!--underlayer-->
+<footer-settings></footer-settings>
 
-</body>
-</html>
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>
