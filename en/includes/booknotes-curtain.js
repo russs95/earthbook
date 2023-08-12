@@ -98,11 +98,13 @@ class bookNotes extends HTMLElement {
     <button aria-label="View Your Booknotes" id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
         <div class="pallette-text">Booknotes</div>
     </button>
-</div>
+
 
 <div id="annotationEntry" class="annotation-hidden">
-    <textarea id="userAnnotation" placeholder="Add your annotation here..."></textarea>
-    <button onclick="saveAnnotation()">Annotate</button>
+<textarea id="userAnnotation" placeholder="Add your annotation here..."></textarea>
+<button onclick="saveAnnotation()">Annotate</button>
+</div>
+
 </div>
 
 
