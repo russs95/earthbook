@@ -654,6 +654,7 @@ function appendAnnotation() {
     }, 1000);
 }
 
+
 function appendAnnotationTitle(lastNote) {
     const spanWithLatestHighlight = document.querySelector(`span[data-id='${lastNote.id}']`);
     if (spanWithLatestHighlight) {
@@ -672,6 +673,7 @@ function appendAnnotationTitle(lastNote) {
         saveBookNotesToLocalStorage(bookNotes);
     }
 }
+
 
 
 document.getElementById("userAnnotation").addEventListener("keydown", function(e) {

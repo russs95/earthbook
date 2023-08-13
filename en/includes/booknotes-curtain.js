@@ -104,8 +104,8 @@ class bookNotes extends HTMLElement {
     <div id="annotationEntry" style="width: 90%;
     margin: 20px auto 20px auto;">
     <textarea id="userAnnotation" placeholder="Add your annotation here..."></textarea>
-    <button id="annotate-button" onclick="appendAnnotation()">Annotate</button>
-    <button id="annotate-cancel" onclick="cancelAnnotation()">Cancel</button>
+    <button id="annotate-button" style="padding: 8px 15px;" onclick="appendAnnotation()">Annotate</button>
+    <button id="annotate-cancel" style="padding: 8px 15px;"  onclick="cancelAnnotation()">Cancel</button>
     </div>
     
 
