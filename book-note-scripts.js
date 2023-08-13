@@ -580,7 +580,7 @@ function createBookNoteDiv(bookNote, index) {
             "${bookNote.storedText}"
         </div>
         
-        <span style="padding-top: 10px; color:grey; font-size:smaller">— Noted ${bookNote.BNdateTime}: : ${bookNote.userNote}</span>
+        <span style="padding-top: 10px; color:grey; font-size:smaller">— Noted ${bookNote.BNdateTime}: ${bookNote.userNote}</span>
     `;
 
     const wordCountDiv = createWordCountDiv(bookNote);
@@ -634,13 +634,12 @@ function appendAnnotation() {
         return;  // Return if the textarea is empty
     }
 
+   
+
     const bookNotes = getBookNotesFromLocalStorage();
-    const lastNote = bookNotes.reduce((prev, current) => (prev.id > current.id) ? prev : current);
+const lastNote = bookNotes.reduce((prev, current) => (prev.id > current.id) ? prev : current);
+appendAnnotationTitle(lastNote, bookNotes);
 
-    lastNote.userNote = userNoteText;
-    saveBookNotesToLocalStorage(bookNotes);
-
-    appendAnnotationTitle(lastNote);  // Update the title of the highlight span
 
     const annotateButton = document.getElementById("annotate-button");
     const bookNotePalette = document.getElementById("bookNotePalette");
@@ -654,24 +653,35 @@ function appendAnnotation() {
     }, 1000);
 }
 
-function appendAnnotationTitle(lastNote) {
+
+function appendAnnotationTitle(lastNote, bookNotes) {
     const spanWithLatestHighlight = document.querySelector(`span[data-id='${lastNote.id}']`);
     if (spanWithLatestHighlight) {
         spanWithLatestHighlight.title = `Noted: ${lastNote.userNote} --${lastNote.BNdateTime} (click to remove this Booknote)`;
         
         // Find the container of the span (assuming it's the nearest parent 'P' tag)
         let containerNode = spanWithLatestHighlight.parentNode;
-        while (containerNode.nodeName !== 'P' && containerNode.parentNode !== null) {
+        while (containerNode && containerNode.nodeName !== 'P' && containerNode.parentNode !== null) {
             containerNode = containerNode.parentNode;
         }
 
-        // Update the containerHTML attribute
-        lastNote.containerHTML = containerNode.outerHTML;
+        // Safety check
+        if (containerNode && containerNode.nodeName === 'P') {
+            // Update the containerHTML attribute
+            lastNote.containerHTML = containerNode.outerHTML;
 
-        // Save the updated bookNotes array back to local storage
-        saveBookNotesToLocalStorage(bookNotes);
+            // Find the book note in the array and update it (in case lastNote is not a reference)
+            const noteToUpdate = bookNotes.find(note => note.id === lastNote.id);
+            if (noteToUpdate) {
+                noteToUpdate.containerHTML = lastNote.containerHTML;
+            }
+
+            // Save the updated bookNotes array back to local storage
+            saveBookNotesToLocalStorage(bookNotes);
+        }
     }
 }
+
 
 
 document.getElementById("userAnnotation").addEventListener("keydown", function(e) {
@@ -680,3 +690,9 @@ document.getElementById("userAnnotation").addEventListener("keydown", function(e
         appendAnnotation();
     }
 });
+
+
+function cancelAnnotation() {
+    const bookNotePalette = document.getElementById("bookNotePalette");
+    bookNotePalette.style.bottom = "-500px";
+}
