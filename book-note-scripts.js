@@ -126,7 +126,7 @@ function copyToClipboard(text) {
     const button = document.getElementById('copyBtn');
     button.style.color = 'green';
     //button.style.backgroundImage = 'none';
-    button.textContent = 'Copied!';
+    button.textContent = 'Copied!!';
 
     // Slide down and hide the palette
     setTimeout(() => {
@@ -626,6 +626,7 @@ function createElementWithAttributes(tag, attributes) {
 
 
 /*ANNOTATION*/
+
 function appendAnnotation() {
     const userNoteText = document.getElementById("userAnnotation").value;
 
@@ -639,6 +640,8 @@ function appendAnnotation() {
     lastNote.userNote = userNoteText;
     saveBookNotesToLocalStorage(bookNotes);
 
+    appendAnnotationTitle(lastNote);  // Update the title of the highlight span
+
     const annotateButton = document.getElementById("annotate-button");
     const bookNotePalette = document.getElementById("bookNotePalette");
 
@@ -651,14 +654,16 @@ function appendAnnotation() {
     }, 1000);
 }
 
+function appendAnnotationTitle(lastNote) {
+    const spanWithLatestHighlight = document.querySelector(`span[data-id='${lastNote.id}']`);
+    if (spanWithLatestHighlight) {
+        spanWithLatestHighlight.title = `Noted: ${lastNote.userNote} --${lastNote.BNdateTime} (click to remove this Booknote)`;
+    }
+}
+
 document.getElementById("userAnnotation").addEventListener("keydown", function(e) {
     if (e.keyCode === 13 && e.target.value.trim() !== "") {
         e.preventDefault();
         appendAnnotation();
     }
 });
-
-function cancelAnnotation() {
-    const bookNotePalette = document.getElementById("bookNotePalette");
-    bookNotePalette.style.bottom = "-500px";
-}
