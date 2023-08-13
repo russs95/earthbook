@@ -962,7 +962,7 @@ button:hover {
 textarea#userAnnotation {
   width: 90%;
   width: -moz-available;
-  height: 300px;
+  height: 250px;
   padding: 10px;
   resize: none;
   border: 1px solid var(--thin-border-color);
