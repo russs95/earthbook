@@ -125,7 +125,7 @@ function copyToClipboard(text) {
     // Change button text and style ✓
     const button = document.getElementById('copyBtn');
     button.style.color = 'green';
-    button.style.backgroundImage = 'none';
+    //button.style.backgroundImage = 'none';
     button.textContent = 'Copied!';
 
     // Slide down and hide the palette
@@ -137,7 +137,7 @@ function copyToClipboard(text) {
         setTimeout(() => {
             button.textContent = 'Copy';
             button.style.color = 'var(--thin-border-color)';
-            button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
+            //button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
         }, 1000);
     }, 2000);
 }

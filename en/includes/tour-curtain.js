@@ -44,11 +44,10 @@ class TourCurtain extends HTMLElement {
     <button class="next">Next ➔</button>
   </div>
   
-  
   <div id="information-five" style="display:none;" class="information">
-  <div class="tour-image"><img src="../svgs/shareable.svg" title="Reading Tools" alt="Read Freely"></div>  
+  <div class="tour-image"><img src="../icons/booknotes.svg" title="Reading Tools" alt="Read Freely"></div>  
     <div class="modal-header">Reading Tools</div>
-    <div class="modal-description">Earthbooks have a powerful set of tools under the hood!  Click the top-right menu button to share or cite any chapter.  <!--Select, then click any text to highlight it.-->  Hover or click on any footnote to view or expand.  Open the tools section of every chapter's footer to acess the search, code and accounting panels.</div>
+    <div class="modal-description">Earthbooks have a powerful set of tools under the hood!   Select text to highlight, copy, save or annotate.  Hover or tap on any footnote to view.  Use the top right button to cite and share.  Open the toolbox in the page footer to access the search, source code or accounting panels.</div>
     <button class="back">↩ Back</button>
     <button class="next">Next ➔</button>
   </div>
