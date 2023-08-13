@@ -960,10 +960,14 @@ button:hover {
 }
 
 textarea#userAnnotation {
-  width: 100%;
+  width: 90%;
+  width: -moz-available;
   height: 300px;
   padding: 10px;
   resize: none;
   border: 1px solid var(--thin-border-color);
   border-radius: 5px;
+  margin-bottom: 15px;
+font-size: large;
+background: var(--background-color)
 }
