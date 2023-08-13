@@ -82,4 +82,15 @@ class chapfoot extends HTMLElement {
   customElements.define('chap-foot', chapfoot);
   
   
-  
+  function updateGitCodeURL() {
+
+    var gitURL = `https://github.com/russs95/earthbook/blob/main/${lang}/${chaptURL}`;
+    var gitDisplayURL = `github.com/russs95/earthbook/blob/main/${lang}/${chaptURL}`;
+    
+    var gitLinkHTML = `<a href="${gitURL}" target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br> ➔ ${gitDisplayURL}</a>`;
+    
+    document.getElementById("git-code-url").innerHTML = gitLinkHTML;
+}
+
+// Call the function to execute it
+updateGitCodeURL();

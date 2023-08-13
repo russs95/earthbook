@@ -658,8 +658,21 @@ function appendAnnotationTitle(lastNote) {
     const spanWithLatestHighlight = document.querySelector(`span[data-id='${lastNote.id}']`);
     if (spanWithLatestHighlight) {
         spanWithLatestHighlight.title = `Noted: ${lastNote.userNote} --${lastNote.BNdateTime} (click to remove this Booknote)`;
+        
+        // Find the container of the span (assuming it's the nearest parent 'P' tag)
+        let containerNode = spanWithLatestHighlight.parentNode;
+        while (containerNode.nodeName !== 'P' && containerNode.parentNode !== null) {
+            containerNode = containerNode.parentNode;
+        }
+
+        // Update the containerHTML attribute
+        lastNote.containerHTML = containerNode.outerHTML;
+
+        // Save the updated bookNotes array back to local storage
+        saveBookNotesToLocalStorage(bookNotes);
     }
 }
+
 
 document.getElementById("userAnnotation").addEventListener("keydown", function(e) {
     if (e.keyCode === 13 && e.target.value.trim() !== "") {
