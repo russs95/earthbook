@@ -106,14 +106,6 @@ document.addEventListener('mouseup', checkSelectedText);
 document.addEventListener('touchend', checkSelectedText);
 
 
-
-/*COPY TEXT */
-
-document.getElementById('copyBtn').addEventListener('click', function() {
-    let selectedText = window.getSelection().toString();
-    copyToClipboard(selectedText);
-});
-
 function copyToClipboard(text) {
     const textarea = document.createElement('textarea');
     textarea.value = text;
@@ -122,29 +114,30 @@ function copyToClipboard(text) {
     document.execCommand('copy');
     document.body.removeChild(textarea);
 
+    const button = document.getElementById('copyBtn'); // Move this line up here
+
     if (window.matchMedia("(max-width: 699px)").matches) {
         // Change button text and style for devices with a max-width of 699px
-        const button = document.getElementById('copyBtn');
         button.style.color = 'green';
         button.style.backgroundImage = 'none';
         button.textContent = '✓ Copied!';
     }
     
-
     // Slide down and hide the palette
     setTimeout(() => {
         const palette = document.getElementById('bookNotePalette');
         palette.style.bottom = '-500px'; // Slide down to hide the palette
 
-        // After an additional 2 second, reset the button text
+        // After an additional 1 second, reset the button text
         setTimeout(() => {
             if (window.matchMedia("(max-width: 699px)").matches) {
                 button.textContent = 'Copy';
-            button.style.color = 'var(--thin-border-color)';
+                button.style.color = 'var(--thin-border-color)';
             }
         }, 1000);
     }, 2000);
 }
+
 
 
 
