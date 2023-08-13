@@ -82,8 +82,8 @@ class bookNotes extends HTMLElement {
 <!-- BOOKNOTES MENU PALLETTE-->
 
 <div id="bookNotePalette" class="palette-hidden">
-   <div class="main-pallette-buttons">
-        <div id="palletteBar" class="highlight-buttons">
+   <div class="main-pallette-buttons" id="palletteBar">
+        <div  class="highlight-buttons">
             <div id="save-text" class="pallette-text">Save:</div>
             <button class="color-btn" onclick="highlightBooknote('green')" style="background:green" aria-label="Highlight Text Green" title="Highlight & Save Green"></button>
             <button class="color-btn" onclick="highlightBooknote('red')" style="background:red" aria-label="Highlight Text Red" title="Highlight & Save Red"></button>
