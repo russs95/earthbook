@@ -123,22 +123,25 @@ function copyToClipboard(text) {
     document.body.removeChild(textarea);
 
     // Change button text and style ✓
-   const button = document.getElementById('copyBtn');
-     button.style.color = 'green';
-    button.style.backgroundImage = 'none';
-    button.textContent = 'Copied!';
+    if (window.matchMedia("(min-width: 700px)").matches) {
+        // Change button text and style for devices with a max-width of 699px
+        const button = document.getElementById('copyBtn');
+        button.style.color = 'green';
+        button.style.backgroundImage = 'none';
+        button.textContent = ' ✓ Copied!';
+
+         // After an additional 2 second, reset the button text
+         setTimeout(() => {
+            button.textContent = 'Copy';
+            button.style.color = 'var(--thin-border-color)';
+            //button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
+        }, 1000);
+    }
 
     // Slide down and hide the palette
     setTimeout(() => {
         const palette = document.getElementById('bookNotePalette');
         palette.style.bottom = '-500px'; // Slide down to hide the palette
-
-        // After an additional 2 second, reset the button text
-        setTimeout(() => {
-            button.textContent = 'Copy';
-            button.style.color = 'var(--thin-border-color)';
-            //button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
-        }, 1000);
     }, 2000);
 }
 
