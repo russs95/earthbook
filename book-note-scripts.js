@@ -621,3 +621,39 @@ function createElementWithAttributes(tag, attributes) {
 
 
 /*ANNOTATION*/
+
+function appendAnnotation() {
+    // 1. Get the annotation from the textarea
+    const userAnnotationText = document.getElementById('userAnnotation').value;
+
+    // 2. Retrieve the bookNotes from the browser's cache (assuming localStorage)
+    let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
+
+    // 3. Find the bookNote with the highest ID
+    let maxId = -Infinity;
+    let mostRecentBookNote = null;
+
+    for (let bookNote of bookNotes) {
+        if (bookNote.id > maxId) {
+            maxId = bookNote.id;
+            mostRecentBookNote = bookNote;
+        }
+    }
+
+    // If we found the most recent bookNote
+    if (mostRecentBookNote) {
+        // 4. Update its userNote field
+        mostRecentBookNote.userNote = userAnnotationText;
+    }
+
+    // 5. Save the modified bookNotes back to the browser's cache
+    localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+
+    // 6. Update the button text and slide the palette down
+    const annotateButton = document.querySelector('#annotationEntry button');
+    annotateButton.textContent = "Saved!";
+    
+    setTimeout(() => {
+        document.getElementById('bookNotePalette').style.bottom = '-500px';
+    }, 1000);
+}
