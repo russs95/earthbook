@@ -83,7 +83,7 @@ class bookNotes extends HTMLElement {
 
 <div id="bookNotePalette" class="palette-hidden">
    <div class="main-pallette-buttons">
-        <div class="highlight-buttons">
+        <div id="palletteBar" class="highlight-buttons">
             <div id="save-text" class="pallette-text">Save:</div>
             <button class="color-btn" onclick="highlightBooknote('green')" style="background:green" aria-label="Highlight Text Green" title="Highlight & Save Green"></button>
             <button class="color-btn" onclick="highlightBooknote('red')" style="background:red" aria-label="Highlight Text Red" title="Highlight & Save Red"></button>

@@ -98,6 +98,7 @@ if (!selection.rangeCount || selection.isCollapsed) {
         return;
     }
 
+    document.getElementById('palletteBar').style.display = "flex";
     palette.style.bottom = '-390px';  // Valid text selected within constraints
 }
 
@@ -135,14 +136,14 @@ function copyToClipboard(text) {
             button.textContent = 'Copy';
             button.style.color = 'var(--thin-border-color)';
             //button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
-        }, 1000);
+        }, 2000);
     }
 
     // Slide down and hide the palette
     setTimeout(() => {
         const palette = document.getElementById('bookNotePalette');
         palette.style.bottom = '-500px'; // Slide down to hide the palette
-    }, 2000);
+    }, 1200);
 }
 
 
@@ -229,6 +230,7 @@ function highlightBooknote(color) {
         } else {
             // Adjust the height of the palette for 'yellow' case
             document.getElementById('bookNotePalette').style.bottom = "-10px";
+            document.getElementById('palletteBar').style.display = "none";
         }
     }
 }
