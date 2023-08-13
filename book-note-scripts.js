@@ -64,11 +64,18 @@ function checkSelectedText() {
     // Prepare palette for potential position adjustments
     const palette = document.getElementById('bookNotePalette');
 
-    // Check if any text is selected
-    if (!selection.rangeCount || selection.isCollapsed) {
+// Check if any text is selected
+if (!selection.rangeCount || selection.isCollapsed) {
+    // Get the current bottom value of the palette
+    const currentBottom = window.getComputedStyle(palette).bottom;
+
+    // If the current bottom isn't set to '-10px', set it to '-500px'
+    if (currentBottom !== "-10px") {
         palette.style.bottom = '-500px';  // No text selected
-        return;
     }
+    return;
+}
+
 
     const selectedRange = selection.getRangeAt(0);
     const startContainerParent = selectedRange.startContainer.parentNode;
@@ -217,7 +224,7 @@ function highlightBooknote(color) {
             updateButtonAndPalette();
         } else {
             // Adjust the height of the palette for 'yellow' case
-            document.getElementById('bookNotePalette').style.height = "600px";
+            document.getElementById('bookNotePalette').style.bottom = "-10px";
         }
     }
 }
