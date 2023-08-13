@@ -148,7 +148,7 @@ function copyToClipboard(text) {
 function highlightBooknote(color) {
     const selection = window.getSelection();
     const highlightColor = color;
-    const userNote = "This is an example user note that can be added to the BookNotes for people to read";
+    const userNote = "";
     const publicNote = "No";
 
     if (selection.rangeCount > 0) {
@@ -366,12 +366,16 @@ function resetBookNotes() {
   const bookNotesListDiv = document.getElementById('book-notes-list');
   bookNotesListDiv.innerHTML = '';
 
-  // Remove the span formatting from all spans with class "highlight"
-  const allHighlightSpans = document.querySelectorAll('span.highlight');
-  allHighlightSpans.forEach(span => {
+// Remove the span formatting from all spans with the specified highlight classes
+const highlightClasses = ['highlight-red', 'highlight-yellow', 'highlight-blue', 'highlight-green'];
+const selector = highlightClasses.map(cls => `span.${cls}`).join(', ');
+
+const allHighlightSpans = document.querySelectorAll(selector);
+allHighlightSpans.forEach(span => {
     const textNode = document.createTextNode(span.textContent);
     span.parentNode.replaceChild(textNode, span);
-  });
+});
+
 
   // Update the text inside the reset-settings-bn div
   const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
