@@ -749,7 +749,7 @@ BOOK NOTE PALETTE
 
 #bookNotePalette {
   position: fixed;  /* Changed from absolute to fixed */
-  bottom: -550px; 
+  bottom: -500px; 
   background: var(--header-footer);
   border: 1px solid;
   border-color: var(--thin-border-color);

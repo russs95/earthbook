@@ -66,7 +66,7 @@ function checkSelectedText() {
 
     // Check if any text is selected
     if (!selection.rangeCount || selection.isCollapsed) {
-        palette.style.bottom = '-200px';  // No text selected
+        palette.style.bottom = '-500px';  // No text selected
         return;
     }
 
@@ -77,7 +77,7 @@ function checkSelectedText() {
     // Check if the selection is within the #ct-main element
     const ctMainElement = document.getElementById('ct-main');
     if (!ctMainElement.contains(startContainerParent) || !ctMainElement.contains(endContainerParent)) {
-        palette.style.bottom = '-200px';  // Selected text not within ct-main
+        palette.style.bottom = '-500px';  // Selected text not within ct-main
         return;
     }
 
@@ -90,7 +90,7 @@ function checkSelectedText() {
         return;
     }
 
-    palette.style.bottom = '-30px';  // Valid text selected within constraints
+    palette.style.bottom = '-390px';  // Valid text selected within constraints
 }
 
 // We only need one set of event listeners, so removing the duplicated ones
