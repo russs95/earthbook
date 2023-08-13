@@ -280,7 +280,7 @@ margin: 12px auto 0px auto !important;
   src: url("fonts/Mulish-Medium.ttf");
   font-display: swap;
  }
- 
+
 /* -------------------------------------------------------------------------- */
 
 
@@ -4530,11 +4530,14 @@ GUIDED TOUR---*
   
 .tour-content {
   text-align: center;
+  transform: translateY(-50%);
+  margin: auto;
+margin-top: 40%;
 }
 
 @media screen and (max-width: 700px) {
   .tour-content {
-    margin: 10% auto 15% auto;
+   
     width: 90%;
   }
 
@@ -4542,7 +4545,6 @@ GUIDED TOUR---*
 
   @media screen and (min-width: 701px) {
     .tour-content {
-      margin: 5% auto 15% auto;
       width: 80%;
     }
 

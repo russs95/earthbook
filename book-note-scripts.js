@@ -128,13 +128,13 @@ function copyToClipboard(text) {
         // Change button text and style for devices with a max-width of 699px
         const button = document.getElementById('copyBtn');
         button.style.color = 'green';
-        button.style.backgroundImage = 'none';
+        //button.style.backgroundImage = 'none';
         button.textContent = ' ✓ Copied!';
 
          // After an additional 2 second, reset the button text
          setTimeout(() => {
             button.textContent = 'Copy';
-            button.style.color = 'var(--thin-border-color)';
+            button.style.color = 'var(--subdued-text)';
             //button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
         }, 2000);
     }
