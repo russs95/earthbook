@@ -749,12 +749,13 @@ BOOK NOTE PALETTE
 
 #bookNotePalette {
   position: fixed;  /* Changed from absolute to fixed */
-  bottom: -200px; 
+  bottom: -550px; 
   background: var(--header-footer);
   border: 1px solid;
   border-color: var(--thin-border-color);
   box-shadow: var(--element-shadow);
   transition: bottom 0.5s;
+  height: 450px;
   
   z-index: 20; /* This ensures the palette is above other page content */
   left: 50%;
@@ -771,7 +772,7 @@ BOOK NOTE PALETTE
 
 #bookNotePalette { 
   width: 380px;
-  height: 90px; 
+
   border-radius: 25px 25px 0px 0px;
 }
 }
@@ -780,7 +781,7 @@ BOOK NOTE PALETTE
   
   #bookNotePalette {
       width: 700px;
-      height: 90px; 
+
       border-radius:  25px 25px 0px 0px;
       padding: 10px;
 }
@@ -794,7 +795,7 @@ BOOK NOTE PALETTE
   #bookNotePalette {
       bottom: -200px; 
       width: 750px;
-      height: 100px; 
+
       border-radius:  25px 25px 0px 0px;
 }
 
