@@ -658,3 +658,7 @@ document.getElementById("userAnnotation").addEventListener("keydown", function(e
     }
 });
 
+function cancelAnnotation() {
+    const bookNotePalette = document.getElementById("bookNotePalette");
+    bookNotePalette.style.bottom = "-500px";
+}
