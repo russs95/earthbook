@@ -116,7 +116,7 @@ function copyToClipboard(text) {
 
     const button = document.getElementById('copyBtn'); // Move this line up here
 
-    if (window.matchMedia("(max-width: 699px)").matches) {
+    if (window.matchMedia("(min-width: 699px)").matches) {
         // Change button text and style for devices with a max-width of 699px
         button.style.color = 'green';
         button.style.backgroundImage = 'none';
@@ -130,7 +130,7 @@ function copyToClipboard(text) {
 
         // After an additional 1 second, reset the button text
         setTimeout(() => {
-            if (window.matchMedia("(max-width: 699px)").matches) {
+            if (window.matchMedia("(min-width: 699px)").matches) {
                 button.textContent = 'Copy';
                 button.style.color = 'var(--thin-border-color)';
             }
