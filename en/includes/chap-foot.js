@@ -79,6 +79,8 @@ class chapfoot extends HTMLElement {
   }
   }
   
+
+  
   customElements.define('chap-foot', chapfoot);
   
   
