@@ -85,6 +85,7 @@ if (!selection.rangeCount || selection.isCollapsed) {
     const ctMainElement = document.getElementById('ct-main');
     if (!ctMainElement.contains(startContainerParent) || !ctMainElement.contains(endContainerParent)) {
         palette.style.bottom = '-500px';  // Selected text not within ct-main
+        alert("text not in ct-main");
         return;
     }
 
@@ -130,7 +131,7 @@ function copyToClipboard(text) {
     // Slide down and hide the palette
     setTimeout(() => {
         const palette = document.getElementById('bookNotePalette');
-        palette.style.bottom = '-200px'; // Slide down to hide the palette
+        palette.style.bottom = '-500px'; // Slide down to hide the palette
 
         // After an additional 2 second, reset the button text
         setTimeout(() => {
@@ -261,7 +262,7 @@ function updateButtonAndPalette() {
 
     setTimeout(() => {
         const palette = document.getElementById('bookNotePalette');
-        palette.style.bottom = '-200px';
+        palette.style.bottom = '-500px';
 
         setTimeout(() => {
             saveTextDiv.textContent = 'Save:';
@@ -578,8 +579,8 @@ function createBookNoteDiv(bookNote, index) {
             <span style="padding-right:5px;color:${bulletColor};">●</span>
             "${bookNote.storedText}"
         </div>
-        <span style="padding-top: 10px; color:grey;">--Comment: ${bookNote.userNote}</span>
-        <span style="padding-top: 10px; color:grey; font-size:smaller">— Noted: ${bookNote.BNdateTime}</span>
+        
+        <span style="padding-top: 10px; color:grey; font-size:smaller">— Noted ${bookNote.BNdateTime}: : ${bookNote.userNote}</span>
     `;
 
     const wordCountDiv = createWordCountDiv(bookNote);
@@ -625,39 +626,35 @@ function createElementWithAttributes(tag, attributes) {
 
 
 /*ANNOTATION*/
-
 function appendAnnotation() {
-    // 1. Get the annotation from the textarea
-    const userAnnotationText = document.getElementById('userAnnotation').value;
+    const userNoteText = document.getElementById("userAnnotation").value;
 
-    // 2. Retrieve the bookNotes from the browser's cache (assuming localStorage)
-    let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-    // 3. Find the bookNote with the highest ID
-    let maxId = -Infinity;
-    let mostRecentBookNote = null;
-
-    for (let bookNote of bookNotes) {
-        if (bookNote.id > maxId) {
-            maxId = bookNote.id;
-            mostRecentBookNote = bookNote;
-        }
+    if (userNoteText.trim() === "") {
+        return;  // Return if the textarea is empty
     }
 
-    // If we found the most recent bookNote
-    if (mostRecentBookNote) {
-        // 4. Update its userNote field
-        mostRecentBookNote.userNote = userAnnotationText;
-    }
+    const bookNotes = getBookNotesFromLocalStorage();
+    const lastNote = bookNotes.reduce((prev, current) => (prev.id > current.id) ? prev : current);
 
-    // 5. Save the modified bookNotes back to the browser's cache
-    localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+    lastNote.userNote = userNoteText;
+    saveBookNotesToLocalStorage(bookNotes);
 
-    // 6. Update the button text and slide the palette down
-    const annotateButton = document.querySelector('#annotationEntry button');
+    const annotateButton = document.getElementById("annotate-button");
+    const bookNotePalette = document.getElementById("bookNotePalette");
+
     annotateButton.textContent = "Saved!";
     
     setTimeout(() => {
-        document.getElementById('bookNotePalette').style.bottom = '-500px';
+        bookNotePalette.style.bottom = "-500px";
+        annotateButton.textContent = "Annotate";
+        document.getElementById("userAnnotation").value = "";
     }, 1000);
 }
+
+document.getElementById("userAnnotation").addEventListener("keydown", function(e) {
+    if (e.keyCode === 13 && e.target.value.trim() !== "") {
+        e.preventDefault();
+        appendAnnotation();
+    }
+});
+
