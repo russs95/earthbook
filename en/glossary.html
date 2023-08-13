@@ -10,7 +10,7 @@ o               .        ___- -___                    .
        .              .-\          -.     .     .         .
                     ./.;_.\     __/~ \.     
                    /;  / `-'  __\    . \                            
- .        .       /  ,-'     / .   .;   \        |
+ .        .       / ,-'      / .   .;   \        |
                  | .|       /       __   |      -O-       .
                 |__/    __ |  . ;   \ | . |      |
                 |      /  \\_    . ;| \___|    
@@ -26,7 +26,8 @@ o               .        ___- -___                    .
 EARTHBOOK - An open source, Earth & Human Friendly Book format
 Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
  
-Landing page - version 1.2
+
+Landing page - version 1.3.1
 Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
 First EarthBook, the Tractatus Ayyew, published 22.12.22.
 
@@ -78,8 +79,22 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:locale" content="en_EN" >
 <meta property="og:url" content="https://book.earthen.io/en/glossary.html">
 
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css?v=2">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.2">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+
+
+
 <script>
      // Declare the global variables
+     var lang = "en";
      var book = "Appendix";
     var chapNo = "10";
     var chapName = "Glossary";
@@ -166,16 +181,6 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
     });
 </script>
 
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-white.svg">
-
 
  <!-- STYLE SHEETS   
 All the css needed for this page-->
@@ -186,6 +191,18 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css">
+
+
+ <!--FONTS
+starts loading the fonts-->
+
+<link rel="preconnect" href="../fonts/">
+<link rel="preconnect" href="../fonts/" crossorigin> 
+
+<!-- PRELOADS-->
+<link rel="preload" as="image" href="../svgs/00-dark.svg">
+<link rel="preload" as="image" href="../svgs/00-white.svg">
+
 
  
  <!-- INCLUDES
@@ -212,6 +229,7 @@ All the page components required to build this page-->
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
 <!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
 
 
 <style>
@@ -340,7 +358,7 @@ p {
 
 
 <div id="ct-chapt-graphic" class="background-000">
-    <img src="../icons/glossary.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+    <img src="../icons/glossary.svg" alt="Our Earthbook glossary" style="width:35%; height:35%; margin:auto;  text-align:center">
   </div>
   
   <div id="up-arrow"></div>
@@ -431,11 +449,18 @@ p {
         </div>
 
 
-        <chap-foot></chap-foot>
+<!-- CHAPTER FOOTER-->
 
+<chap-foot></chap-foot>
 
+</div>  <!--footer functions close-->
 
-   </div><!--underlayer-->
+<footer-settings></footer-settings>
 
-</body>
-</html>
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>
