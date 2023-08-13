@@ -101,12 +101,14 @@ class bookNotes extends HTMLElement {
         </button>
     </div>
 
-</div>
-
-<div id="annotationEntry" class="annotation-hidden">
+    <div id="annotationEntry" class="annotation-hidden">
 <textarea id="userAnnotation" placeholder="Add your annotation here..."></textarea>
 <button onclick="saveAnnotation()">Annotate</button>
 </div>
+
+
+</div>
+
 
 
 <!-- CHAPT NOTICE-->
