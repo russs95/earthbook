@@ -98,53 +98,6 @@ document.addEventListener('mouseup', checkSelectedText);
 document.addEventListener('touchend', checkSelectedText);
 
 
-/*
-document.addEventListener('mouseup', function(e) {
-    let selectedText = window.getSelection().toString();
-    if (selectedText) { // If some text is selected
-        saveBookNotePalette();
-    }
-});
-*/
-
-/* Show the Booknotes pallette on text selection, hides after 5 seconds.
-let paletteExpire;
-
-function saveBookNotePalette() {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '-30px'; // Slide up to show the palette
-
-    // Set a timeout to slide down the palette after 5 seconds
-    paletteExpire = setTimeout(() => {
-        palette.style.bottom = '-200px'; // Slide down to hide the palette
-        // Remove the event listeners once the palette has slid down
-        palette.removeEventListener('click', clearPaletteExpire);
-        palette.removeEventListener('mouseenter', clearPaletteExpire);
-    }, 5000);
-
-    // Attach event listeners to clear the timeout when there's interaction with the palette
-    palette.addEventListener('click', clearPaletteExpire);
-    palette.addEventListener('mouseenter', clearPaletteExpire);
-}
-
-function clearPaletteExpire() {
-    clearTimeout(paletteExpire);
-    // Ensure event listeners are removed once the timeout is cleared
-    const palette = document.getElementById('bookNotePalette');
-    palette.removeEventListener('click', clearPaletteExpire);
-    palette.removeEventListener('mouseenter', clearPaletteExpire);
-}*/
-
-function saveBookNotePalette() {
-    const palette = document.getElementById('bookNotePalette');
-    palette.style.bottom = '-30px'; // Slide up to show the palette
-
-    // Set a timeout to slide down the palette after 5 seconds
-    paletteExpire = setTimeout(() => {
-        palette.style.bottom = '-200px'; // Slide down to hide the palette
-    }, 6000);
-}
-
 
 /*COPY TEXT */
 
