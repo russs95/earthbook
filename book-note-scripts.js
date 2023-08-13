@@ -185,21 +185,16 @@ function copyToClipboard(text) {
 
 
 /* MAIN FUNCTION TO PROCESS A SELECTION HIGHLIGHT*/
-
 function highlightBooknote(color) {
     const selection = window.getSelection();
-
-    // Variables for the new requirements
     const highlightColor = color;
     const userNote = "This is an example user note that can be added to the BookNotes for people to read";
     const publicNote = "No";
 
-    // If there's selected text
     if (selection.rangeCount > 0) {
         const selectedRange = selection.getRangeAt(0);
         const span = document.createElement("span");
 
-        // Set the appropriate highlight class based on the color
         switch (highlightColor) {
             case 'green':
                 span.classList.add("highlight-green");
@@ -210,9 +205,12 @@ function highlightBooknote(color) {
             case 'blue':
                 span.classList.add("highlight-blue");
                 break;
+            case 'yellow': 
+                span.classList.add("highlight-yellow");
+                break;
             default:
                 console.warn(`Unknown highlight color: ${highlightColor}`);
-                return; // Exit the function
+                return; 
         }
 
         span.title = "Click to remove BookNote"; 
@@ -231,12 +229,6 @@ function highlightBooknote(color) {
         const startContainer = startContainerNode.id;
         const containerHTML = startContainerNode.innerHTML;
         const storedText = selection.toString();
-
-      /*alert(
-            `Start Container: ${startContainer}\n` +
-            `Stored Text: ${storedText}\n` +
-            `Container HTML: ${containerHTML}`
-        );*/
 
         const charCount = storedText.length;
         const now = new Date();
@@ -257,19 +249,26 @@ function highlightBooknote(color) {
             noteChapter,
             charCount,
             BNdateTime,
-            highlightColor, // Added
-            userNote,       // Added
-            publicNote      // Added
+            highlightColor,
+            userNote,
+            publicNote
         };
 
         bookNotes.push(bookNote);
         saveBookNotesToLocalStorage(bookNotes);
-
         console.log('BookNote saved:', bookNote);
+
         selection.removeAllRanges();
-        updateButtonAndPalette();
+
+        if (highlightColor !== 'yellow') {
+            updateButtonAndPalette();
+        } else {
+            // Adjust the height of the palette for 'yellow' case
+            document.getElementById('bookNotePalette').style.height = "600px";
+        }
     }
 }
+
 
 
 // Sub-function to get existing bookNotes or an empty array if none exist
@@ -662,30 +661,3 @@ function createElementWithAttributes(tag, attributes) {
 
 
 /*ANNOTATION*/
-
-function revealAnnotationBox() {
-    const bookNotePalette = document.getElementById('bookNotePalette');
-   //bookNotePalette.style.bottom = "300px";  // Slide up the palette
-    bookNotePalette.style.height = "600px";  // pallette size palette
-
-
-  //  const annotationBox = document.getElementById('annotationEntry');
-  //  annotationBox.classList.remove('annotation-hidden');
-}
-
-function saveAnnotation() {
-    const annotationText = document.getElementById('userAnnotation').value;
-
-    // Save the annotationText into your bookNote JSON as the userNote
-    // The logic for this will depend on how you're currently handling and storing your bookNote JSON
-    // Assuming there's a function saveBookNote that handles this:
-    saveBookNote({ userNote: annotationText });
-
-    // Optionally, close the annotation box once saved
-    const annotationBox = document.getElementById('annotationEntry');
-    annotationBox.classList.add('annotation-hidden');
-
-    const bookNotePalette = document.getElementById('bookNotePalette');
-    bookNotePalette.style.bottom = "-200px";
-}
-
