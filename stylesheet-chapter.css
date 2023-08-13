@@ -756,7 +756,6 @@ BOOK NOTE PALETTE
   box-shadow: var(--element-shadow);
   transition: bottom 0.5s;
   height: 450px;
-  
   z-index: 20; /* This ensures the palette is above other page content */
   left: 50%;
   transform: translateX(-50%);
@@ -772,7 +771,6 @@ BOOK NOTE PALETTE
 
 #bookNotePalette { 
   width: 380px;
-
   border-radius: 25px 25px 0px 0px;
 }
 }
@@ -781,7 +779,6 @@ BOOK NOTE PALETTE
   
   #bookNotePalette {
       width: 700px;
-
       border-radius:  25px 25px 0px 0px;
       padding: 10px;
 }
@@ -795,7 +792,6 @@ BOOK NOTE PALETTE
   #bookNotePalette {
       bottom: -200px; 
       width: 750px;
-
       border-radius:  25px 25px 0px 0px;
 }
 
