@@ -675,6 +675,12 @@ function appendAnnotation() {
         return;
     }
 
+    // Update the userNote property of the lastNote with the userNoteText
+    lastNote.userNote = userNoteText;
+
+    // Save the updated bookNotes back to local storage
+    saveBookNotesToLocalStorage(bookNotes);
+
     appendAnnotationTitle();
 
     const annotateButton = document.getElementById("annotate-button");
@@ -690,8 +696,8 @@ function appendAnnotation() {
 }
 
 
+
 function appendAnnotationTitle() {
-    console.log("appendAnnotationTitle triggered");
 
     const bookNotes = getBookNotesFromLocalStorage();
     
@@ -706,7 +712,7 @@ function appendAnnotationTitle() {
 
     const spanWithLatestHighlight = document.querySelector(`span[data-id='${lastNote.id}']`);
     if (spanWithLatestHighlight) {
-        spanWithLatestHighlight.title = `Noted: ${lastNote.userNote} --${lastNote.BNdateTime} (click to remove this Booknote)`;
+        spanWithLatestHighlight.title = `Noted: ${lastNote.userNote} ${lastNote.BNdateTime} (click to remove this Booknote)`;
         
         // Find the container of the span (assuming it's the nearest parent 'P' tag)
         let containerNode = spanWithLatestHighlight.parentNode;
