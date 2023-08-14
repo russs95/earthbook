@@ -247,6 +247,9 @@ function highlightBooknote(color) {
             // Adjust the height of the palette for 'yellow' case
             document.getElementById('bookNotePalette').style.bottom = "-10px";
             document.getElementById('palletteBar').style.display = "none";
+                // Update the "Annotate" button's onclick attribute to pass the new ID
+    const annotateButton = document.getElementById('annotate-button');
+    annotateButton.setAttribute('onclick', `appendAnnotation(${id})`);
         }
     }
 }
@@ -277,7 +280,7 @@ function saveBookNotesToLocalStorage(bookNotes) {
 
 function updateButtonAndPalette() {
     const saveTextDiv = document.getElementById('save-text');
-    saveTextDiv.style.color = 'green';
+    saveTextDiv.style.background = 'yellow';
     saveTextDiv.style.fontWeight = 'bold';
     saveTextDiv.textContent = 'Saved!';
 
@@ -287,7 +290,7 @@ function updateButtonAndPalette() {
 
         setTimeout(() => {
             saveTextDiv.textContent = 'Save:';
-            saveTextDiv.style.color = 'var(--thin-border-color)';
+            saveTextDiv.style.background = 'none';
             saveTextDiv.style.fontWeight = 'normal';
         }, 1000);
     }, 2000);
@@ -648,20 +651,26 @@ function createElementWithAttributes(tag, attributes) {
 
 /*ANNOTATION*/
 
-function appendAnnotation() {
-    console.log("appendAnnotation triggered");
+
+function appendAnnotation(bookNoteId) {
     const userNoteText = document.getElementById("userAnnotation").value;
-    console.log("User note:", userNoteText);
+
     if (userNoteText.trim() === "") {
         return;  // Return if the textarea is empty
     }
 
-   
-
     const bookNotes = getBookNotesFromLocalStorage();
-console.log("Book notes:", bookNotes);
-const lastNote = bookNotes.reduce((prev, current) => (prev.id > current.id) ? prev : current);
-appendAnnotationTitle(lastNote, bookNotes);
+
+    // Instead of using the reduce function, just find the book note using the provided ID
+    const lastNote = bookNotes.find(note => note.id === bookNoteId);
+
+    // Safety check
+    if (!lastNote) {
+        console.error(`No book note found with ID: ${bookNoteId}`);
+        return;
+    }
+
+    appendAnnotationTitle(lastNote, bookNotes);
 
 
     const annotateButton = document.getElementById("annotate-button");
@@ -679,6 +688,9 @@ appendAnnotationTitle(lastNote, bookNotes);
 
 function appendAnnotationTitle(lastNote, bookNotes) {
     console.log("appendAnnotationTitle triggered");
+    console.log("lastNote passed:", lastNote);
+    console.log("bookNotes passed:", bookNotes);
+
     const spanWithLatestHighlight = document.querySelector(`span[data-id='${lastNote.id}']`);
     if (spanWithLatestHighlight) {
         spanWithLatestHighlight.title = `Noted: ${lastNote.userNote} --${lastNote.BNdateTime} (click to remove this Booknote)`;

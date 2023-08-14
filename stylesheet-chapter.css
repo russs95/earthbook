@@ -844,6 +844,11 @@ BOOK NOTE PALETTE
   background-size: 21px;
 }
 
+#annotate-button {
+  padding: 8px 15px;
+  cursor:pointer;
+  margin-right:8px;
+}
 
 .color-btn { 
   border: var(--thin-border-color);
