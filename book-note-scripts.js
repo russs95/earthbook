@@ -152,7 +152,7 @@ function copyToClipboard(text) {
             button.style.backgroundColor = 'var(--deeper-accent-color)';
 
             //button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
-        }, 2000);
+        }, 200);
     }
 
     // Slide down and hide the palette
