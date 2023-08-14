@@ -9,6 +9,10 @@ BOOK NOTES FUNCTIONS
 
 ------------------------------------------------*/
 
+
+let lastUsedBookNoteId = null;
+
+
 /*RECREATE from the cache the hilights*/
 
 //alert('Script started');
@@ -250,6 +254,7 @@ function highlightBooknote(color) {
                 // Update the "Annotate" button's onclick attribute to pass the new ID
     const annotateButton = document.getElementById('annotate-button');
     annotateButton.setAttribute('onclick', `appendAnnotation(${id})`);
+    lastUsedBookNoteId = id;  // Store the last used ID
         }
     }
 }
@@ -723,9 +728,10 @@ function appendAnnotationTitle(lastNote, bookNotes) {
 document.getElementById("userAnnotation").addEventListener("keydown", function(e) {
     if (e.keyCode === 13 && e.target.value.trim() !== "") {
         e.preventDefault();
-        appendAnnotation();
+        appendAnnotation(lastUsedBookNoteId);
     }
 });
+
 
 
 function cancelAnnotation() {
