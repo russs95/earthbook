@@ -89,7 +89,6 @@ if (!selection.rangeCount || selection.isCollapsed) {
     const ctMainElement = document.getElementById('ct-main');
     if (!ctMainElement.contains(startContainerParent) || !ctMainElement.contains(endContainerParent)) {
         palette.style.bottom = '-500px';  // Selected text not within ct-main
-        alert("text not in ct-main");
         return;
     }
 

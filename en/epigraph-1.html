@@ -87,8 +87,32 @@ These tags will be consistent for the whole book-->
       var book = "";
     var chapNo = "";
     var chapName = "Epigraph - Book One";
-    var chaptURL = "epigraph-1.html"   
+    var chaptURL = "epigraph-1.html"  
+    
+    const registerServiceWorker = async () => {
+  if ("serviceWorker" in navigator) {
+    try {
+      const registration = await navigator.serviceWorker.register("../service-worker.js", {
+        scope: "/",
+      });
+      if (registration.installing) {
+        console.log("Service worker installing");
+      } else if (registration.waiting) {
+        console.log("Service worker installed");
+      } else if (registration.active) {
+        console.log("Service worker active");
+      }
+    } catch (error) {
+      console.error(`Registration failed with ${error}`);
+    }
+  }
+};
 
+
+registerServiceWorker();
+
+
+/*
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
@@ -97,7 +121,7 @@ These tags will be consistent for the whole book-->
           console.log('ServiceWorker registration failed:', error);
         });
       });
-    }
+    }*/
 
 </script>
 
