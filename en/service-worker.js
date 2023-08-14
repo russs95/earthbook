@@ -6,11 +6,12 @@ self.addEventListener('install', event => {
       return cache.addAll([
         
 '/',
-'/index.html',
-'/fonts/Mulish-Light.ttf',
-'/fonts/CooperMediumBT.ttf',
-'/fonts/CooperLtBTLightItalic.ttf',
-'/fonts/CooperLightBT.ttf',
+'../',
+'../index.html',
+'../fonts/Mulish-Light.ttf',
+'../fonts/CooperMediumBT.ttf',
+'../fonts/CooperLtBTLightItalic.ttf',
+'../fonts/CooperLightBT.ttf',
 '/favicons/apple-touch-icon.png',
 '/favicons/favicon-32x32.png',
 '/favicons/favicon-16x16.png',

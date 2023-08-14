@@ -1,1 +1,35 @@
-redirect only
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Redirect</title>
+</head>
+<body>
+
+<script>
+    // Register the service worker
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js?v=2').then(function(registration) {
+                console.log('ServiceWorker registration successful with scope:', registration.scope);
+            }, function(error) {
+                console.log('ServiceWorker registration failed:', error);
+            });
+        });
+    }
+
+    // Redirect based on language
+    const userLang = navigator.language || navigator.userLanguage;
+    
+    if (userLang.startsWith("fr")) {
+        window.location.href = "fr/";
+    } else {
+        window.location.href = "en/";
+    }
+
+</script>
+
+</body>
+</html>
