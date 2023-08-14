@@ -675,7 +675,7 @@ function appendAnnotation() {
         return;
     }
 
-    appendAnnotationTitle(lastNote, bookNotes);
+    appendAnnotationTitle();
 
     const annotateButton = document.getElementById("annotate-button");
     const bookNotePalette = document.getElementById("bookNotePalette");
@@ -690,11 +690,19 @@ function appendAnnotation() {
 }
 
 
-
-function appendAnnotationTitle(lastNote, bookNotes) {
+function appendAnnotationTitle() {
     console.log("appendAnnotationTitle triggered");
-    console.log("lastNote passed:", lastNote);
-    console.log("bookNotes passed:", bookNotes);
+
+    const bookNotes = getBookNotesFromLocalStorage();
+    
+    // Find the book note using the global lastUsedBookNoteId variable
+    const lastNote = bookNotes.find(note => note.id === lastUsedBookNoteId);
+    
+    // Safety check
+    if (!lastNote) {
+        console.error(`No book note found with ID: ${lastUsedBookNoteId}`);
+        return;
+    }
 
     const spanWithLatestHighlight = document.querySelector(`span[data-id='${lastNote.id}']`);
     if (spanWithLatestHighlight) {
@@ -722,6 +730,7 @@ function appendAnnotationTitle(lastNote, bookNotes) {
         }
     }
 }
+
 
 
 
