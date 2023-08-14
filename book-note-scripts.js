@@ -285,7 +285,8 @@ function saveBookNotesToLocalStorage(bookNotes) {
 
 function updateButtonAndPalette() {
     const saveTextDiv = document.getElementById('save-text');
-    saveTextDiv.style.background = 'yellow';
+    saveTextDiv.style.backgroundColor = 'yellow';
+    saveTextDiv.style.color = 'black';
     saveTextDiv.style.fontWeight = 'bold';
     saveTextDiv.textContent = 'Saved!';
 
@@ -295,8 +296,10 @@ function updateButtonAndPalette() {
 
         setTimeout(() => {
             saveTextDiv.textContent = 'Save:';
-            saveTextDiv.style.background = 'none';
+            saveTextDiv.style.backgroundColor = 'none';
             saveTextDiv.style.fontWeight = 'normal';
+            saveTextDiv.style.color = 'var(--text-color)';
+
         }, 1000);
     }, 2000);
 }
@@ -712,7 +715,7 @@ function appendAnnotationTitle() {
 
     const spanWithLatestHighlight = document.querySelector(`span[data-id='${lastNote.id}']`);
     if (spanWithLatestHighlight) {
-        spanWithLatestHighlight.title = `Noted: ${lastNote.userNote} ${lastNote.BNdateTime} (click to remove this Booknote)`;
+        spanWithLatestHighlight.title = `Noted: "${lastNote.userNote}" - ${lastNote.BNdateTime} (click to remove this Booknote)`;
         
         // Find the container of the span (assuming it's the nearest parent 'P' tag)
         let containerNode = spanWithLatestHighlight.parentNode;
