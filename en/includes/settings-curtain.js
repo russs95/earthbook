@@ -19,7 +19,7 @@ class SettingsCurtain extends HTMLElement {
                 <div class="language-selector">EN</div></a>
 
               
-                <a href="#" class="language-selector" title="Désolé, pas encore traduit!" aria-label="Désolé, pas encore traduit!" onclick="showFRTranslationAlert()">FR</a>
+                <a href="../fr/index.html" class="language-selector" title="Traduction en progres!" aria-label="Traduction en progres">FR</a>
 
                 <a href="#" class="language-selector" title="Maaf, belum diterjemahkan!" aria-label="Indonesian not active" onclick="showIDTranslationAlert()">IN</a>
 
@@ -70,7 +70,7 @@ class SettingsCurtain extends HTMLElement {
             id="dark-mode-toggle-5" style="padding:10px;font-size:small;"
             class="slider"
             legend=""
-            remember="Remember for all pages"
+            remember="Remember for all pages:"
             appearance="toggle">
             </dark-mode-toggle>
 
