@@ -107,9 +107,6 @@ class bookNotes extends HTMLElement {
     <button id="annotate-button" style="padding: 8px 15px;cursor:pointer;margin-right:8px;" onclick="appendAnnotation()">Annotate</button>
     <button id="annotate-cancel" style="padding: 8px 15px;cursor:pointer;"  onclick="cancelAnnotation()">Cancel</button>
     </div>
-    
-
-
 </div>
 
 
