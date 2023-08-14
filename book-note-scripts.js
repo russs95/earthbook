@@ -252,8 +252,8 @@ function highlightBooknote(color) {
             document.getElementById('bookNotePalette').style.bottom = "-10px";
             document.getElementById('palletteBar').style.display = "none";
                 // Update the "Annotate" button's onclick attribute to pass the new ID
-    const annotateButton = document.getElementById('annotate-button');
-    annotateButton.setAttribute('onclick', `appendAnnotation(${id})`);
+    //const annotateButton = document.getElementById('annotate-button');
+    //annotateButton.setAttribute('onclick', `appendAnnotation(${id})`);
     lastUsedBookNoteId = id;  // Store the last used ID
         }
     }
@@ -657,7 +657,7 @@ function createElementWithAttributes(tag, attributes) {
 /*ANNOTATION*/
 
 
-function appendAnnotation(bookNoteId) {
+function appendAnnotation() {
     const userNoteText = document.getElementById("userAnnotation").value;
 
     if (userNoteText.trim() === "") {
@@ -666,17 +666,16 @@ function appendAnnotation(bookNoteId) {
 
     const bookNotes = getBookNotesFromLocalStorage();
 
-    // Instead of using the reduce function, just find the book note using the provided ID
-    const lastNote = bookNotes.find(note => note.id === bookNoteId);
+    // Find the book note using the global lastUsedBookNoteId variable
+    const lastNote = bookNotes.find(note => note.id === lastUsedBookNoteId);
 
     // Safety check
     if (!lastNote) {
-        console.error(`No book note found with ID: ${bookNoteId}`);
+        console.error(`No book note found with ID: ${lastUsedBookNoteId}`);
         return;
     }
 
     appendAnnotationTitle(lastNote, bookNotes);
-
 
     const annotateButton = document.getElementById("annotate-button");
     const bookNotePalette = document.getElementById("bookNotePalette");
@@ -689,6 +688,7 @@ function appendAnnotation(bookNoteId) {
         document.getElementById("userAnnotation").value = "";
     }, 1000);
 }
+
 
 
 function appendAnnotationTitle(lastNote, bookNotes) {
