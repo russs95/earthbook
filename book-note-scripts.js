@@ -649,8 +649,9 @@ function createElementWithAttributes(tag, attributes) {
 /*ANNOTATION*/
 
 function appendAnnotation() {
+    console.log("appendAnnotation triggered");
     const userNoteText = document.getElementById("userAnnotation").value;
-
+    console.log("User note:", userNoteText);
     if (userNoteText.trim() === "") {
         return;  // Return if the textarea is empty
     }
@@ -658,6 +659,7 @@ function appendAnnotation() {
    
 
     const bookNotes = getBookNotesFromLocalStorage();
+console.log("Book notes:", bookNotes);
 const lastNote = bookNotes.reduce((prev, current) => (prev.id > current.id) ? prev : current);
 appendAnnotationTitle(lastNote, bookNotes);
 
@@ -676,6 +678,7 @@ appendAnnotationTitle(lastNote, bookNotes);
 
 
 function appendAnnotationTitle(lastNote, bookNotes) {
+    console.log("appendAnnotationTitle triggered");
     const spanWithLatestHighlight = document.querySelector(`span[data-id='${lastNote.id}']`);
     if (spanWithLatestHighlight) {
         spanWithLatestHighlight.title = `Noted: ${lastNote.userNote} --${lastNote.BNdateTime} (click to remove this Booknote)`;
