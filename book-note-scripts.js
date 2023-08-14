@@ -124,7 +124,7 @@ function copyToClipboard(text) {
     document.body.removeChild(textarea);
 
     // Change button text and style ✓
-    if (window.matchMedia("(min-width: 700px)").matches) {
+    if (window.matchMedia("(min-width: 701px)").matches) {
         // Change button text and style for devices with a max-width of 699px
         const button = document.getElementById('copyBtn');
         button.style.color = 'green';
@@ -135,6 +135,22 @@ function copyToClipboard(text) {
          setTimeout(() => {
             button.textContent = 'Copy';
             button.style.color = 'var(--subdued-text)';
+            //button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
+        }, 2000);
+    }
+
+      // Change button text and style ✓
+      if (window.matchMedia("(max-width: 700px)").matches) {
+        // Change button text and style for devices with a max-width of 699px
+        const button = document.getElementById('copyBtn');
+        button.style.backgroundColor = 'green';
+        //button.style.backgroundImage = 'none';
+        //button.textContent = ' ✓ Copied!';
+
+         // After an additional 2 second, reset the button text
+         setTimeout(() => {
+            button.style.backgroundColor = 'var(--deeper-accent-color)';
+
             //button.style.background = 'var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;';
         }, 2000);
     }

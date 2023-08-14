@@ -3208,7 +3208,7 @@ padding-top: 44px;
 
 @media screen and (min-width: 1325px) {
   .overlay-content-tc {
-      width: 55%;
+      width: 64%;
     }
   }
 
@@ -3369,7 +3369,7 @@ border-bottom-color: var(--fainter-border-color);
 
 @media screen and (min-width: 1325px) {
   .tc-item {
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 0px;
     }
   }
@@ -4532,13 +4532,14 @@ GUIDED TOUR---*
   text-align: center;
   transform: translateY(-50%);
   margin: auto;
-margin-top: 40%;
 }
 
 @media screen and (max-width: 700px) {
   .tour-content {
    
     width: 90%;
+    margin-top: 80%;
+
   }
 
 }
@@ -4546,6 +4547,8 @@ margin-top: 40%;
   @media screen and (min-width: 701px) {
     .tour-content {
       width: 80%;
+      margin-top: 40%;
+
     }
 
   }
