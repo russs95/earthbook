@@ -85,18 +85,18 @@ class bookNotes extends HTMLElement {
    <div class="main-pallette-buttons" id="palletteBar">
         <div  class="highlight-buttons">
             <div id="save-text" class="pallette-text">Save:</div>
-            <button class="color-btn"  style="background:green" aria-label="Highlight Text Green" title="Highlight & Save Green"></button>
-            <button class="color-btn"  style="background:red" aria-label="Highlight Text Red" title="Highlight & Save Red"></button>
-            <button class="color-btn"  style="background:#2daee5" aria-label="Highlight Text Blue" title="Highlight & Save Blue"></button>
+            <button class="color-btn" onclick="highlightBooknote('green')" style="background:green" aria-label="Highlight Text Green" title="Highlight & Save Green"></button>
+            <button class="color-btn" onclick="highlightBooknote('red')" style="background:red" aria-label="Highlight Text Red" title="Highlight & Save Red"></button>
+            <button class="color-btn" onclick="highlightBooknote('blue')" style="background:#2daee5" aria-label="Highlight Text Blue" title="Highlight & Save Blue"></button>
         </div>
         
         <button aria-label="Copy Selection" id="copyBtn" class="pallette-btn">
             <div class="pallette-text">Copy</div>
         </button> 
-        <button aria-label="Add annotation" id="booknotesBtn" class="pallette-btn">
+        <button aria-label="Add annotation" id="booknotesBtn" class="pallette-btn" onclick="highlightBooknote('yellow')">
             <div class="pallette-text">Annotate</div>
         </button>
-        <button aria-label="View Your Booknotes" id="viewBooknotesBtn" class="pallette-btn">
+        <button aria-label="View Your Booknotes" id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
             <div class="pallette-text">Booknotes</div>
         </button>
     </div>
