@@ -21,15 +21,14 @@ self.addEventListener('install', event => {
 '/svgs/up-arrow-dark.svg',
 '/svgs/up-arrow-light.svg',
 '/style-sheet.css',
-'/light.css?v1.7',
-'/dark.css?v1.9',
-'/slider.css?v1.1',
+'/light.css',
+'/dark.css',
+'/slider.css',
 '/universal-javascript.js',
 '/clip/dist/clipboard.min.js',
 '/dark-mode-toggle.mjs.js',
 
 '/index-javascripts.js',
-'/includes/footer-chapter.js',
 '/photos/cover-500px.webp',
 '/svgs/tractatus-mandala-full-grey.svg',
 '/icons/reader.svg',
@@ -40,6 +39,21 @@ self.addEventListener('install', event => {
 '/svgs/my-book-header-logo-day.svg',
 
 
+'/en/includes/header-component.js',
+'/en/includes/settings-curtain.js',
+'/en/includes/content-curtain.js',
+'/en/includes/share-curtain.js',
+'/en/includes/buy-curtain.js',
+'/en/includes/bookplate-curtain.js',
+'/en/includes/earthbook-curtain.js',
+'/en/includes/footer-component.js',
+'/en/includes/read-curtain.js',
+'/en/includes/tour-curtain.js',
+'/en/includes/search-curtain.js',
+'/en/includes/eco-curtain.js',
+'/en/includes/booknotes-curtain.js',
+'/en/includes/footer-settings.js',
+'/en/includes/chap-foot.js',
 
 
 
