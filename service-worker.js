@@ -55,6 +55,32 @@ self.addEventListener('install', event => {
 '/en/includes/footer-settings.js',
 '/en/includes/chap-foot.js',
 
+'/en/index.html',
+'/en/preamble.html',
+'/en/preface.html',
+'/en/epigraph-1.html',
+'/en/imagine.html',
+'/en/plastic1.html',
+'/en/stellar.html',
+'/en/patterns.html',
+'/en/kincentric.html',
+'/en/nature.html',
+'/en/earthen.html',
+'/en/epigraph-2.html',
+'/en/spirals.html',
+'/en/energy.html',
+'/en/unpublished.html',
+
+'/en/summaries.html',
+'/en/dedication.html',
+'/en/for-earth.html',
+'/en/acknowledgements.html',
+'/en/publishing.html',
+'/en/authors.html',
+'/en/declarations.html',
+'/en/bibliography.html',
+'/en/glossary.html',
+
 
 
       ]);

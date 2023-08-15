@@ -79,6 +79,20 @@ These tags will be consistent for the whole book-->
 <meta property="og:locale" content="en_EN" >
 <meta property="og:url" content="https://book.earthen.io/en/preamble.html">
 
+
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.2">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+
+ 
+ 
 <script>
       // Declare the global variables
       var lang = "en";
@@ -100,22 +114,13 @@ These tags will be consistent for the whole book-->
 </script>
 
 
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-preamble-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-preamble-white.svg">
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/00-preamble-dark.svg" media="(prefers-color-scheme: dark)">
+
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="../svgs/00-preamble-white.svg" media="(prefers-color-scheme: light)">
 
 
- <!-- STYLE SHEETS   
-All the css needed for this page-->
- 
-<link rel="stylesheet" href="../style-sheet.css">
-<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.2">
-<link rel="stylesheet" href="../light.css">
-<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
- <link rel="stylesheet" href="../slider.css">
-
- 
  <!-- INCLUDES
  Main Scripts-->   
  <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
