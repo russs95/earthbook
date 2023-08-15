@@ -306,7 +306,7 @@ function updateButtonAndPalette() {
 }
 
 
-document.getElementById('highlightSaveButton').addEventListener('click', highlightBooknote);
+//document.getElementById('highlightSaveButton').addEventListener('click', highlightBooknote);
 
 
 
