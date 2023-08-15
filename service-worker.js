@@ -1,4 +1,4 @@
-const CURRENT_CACHE = 'earthbook-cache-v4';
+const CURRENT_CACHE = 'earthbook-cache-v4.1';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -12,6 +12,22 @@ self.addEventListener('install', event => {
 '/fonts/CooperLtBTLightItalic.ttf',
 '/fonts/CooperLightBT.ttf',
 
+'/favicons/apple-touch-icon.png',
+'/favicons/favicon-32x32.png',
+'/favicons/favicon-16x16.png',
+'/covers/earth-book-cover-1000px.jpg',
+'/svgs/footer-settings-button.svg',
+'/svgs/footer-settings-button-over.svg',
+'/svgs/footer-settings-button-up.svg',
+'/svgs/up-arrow-dark.svg',
+'/svgs/up-arrow-light.svg',
+'/style-sheet.css',
+'/light.css?v1.7',
+'/dark.css?v1.9',
+'/slider.css?v1.1',
+'/universal-javascript.js',
+'/clip/dist/clipboard.min.js',
+'/dark-mode-toggle.mjs.js',
 
 
       ]);
