@@ -755,3 +755,43 @@ function cancelAnnotation() {
     const bookNotePalette = document.getElementById("bookNotePalette");
     bookNotePalette.style.bottom = "-500px";
 }
+
+
+
+
+document.getElementById('palletteBar').addEventListener('click', function(event) {
+    if (event.target && event.target.classList.contains('color-btn')) {
+        const colorStyle = event.target.style.backgroundColor;
+        let color;
+
+        // Mapping the background color to the color name
+        switch (colorStyle) {
+            case 'green':
+                color = 'green';
+                break;
+            case 'red':
+                color = 'red';
+                break;
+            case 'rgb(45, 174, 229)':  // This is the RGB equivalent of #2daee5
+                color = 'blue';
+                break;
+            default:
+                return;
+        }
+        highlightBooknote(color);
+    }
+    
+    if (event.target && event.target.id === 'copyBtn') {
+        // Place code to copy text here if any...
+    }
+
+    if (event.target && event.target.id === 'booknotesBtn') {
+        highlightBooknote('yellow');
+    }
+
+    if (event.target && event.target.id === 'viewBooknotesBtn') {
+        updateBNResetButton();
+        openBooknotes();
+        bookNotesCreator();
+    }
+});
