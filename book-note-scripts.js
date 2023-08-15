@@ -15,15 +15,13 @@ let lastUsedBookNoteId = null;
 
 /*RECREATE from the cache the hilights*/
 
-//alert('Script started');
-
 document.addEventListener("DOMContentLoaded", function(event) {
    // alert('DOM fully loaded and parsed');
     recreateHighlights();
 });
      
     
-    /*ATTEMPT TO REESTABLISHED PAGE HIGHLIGHTS ON RELOAD*/
+    /*RE-ESTABLISHED PAGE HIGHLIGHTS ON RELOAD*/
     
     function recreateHighlights() {
     
@@ -53,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-    
+// ID GENERATOR with 3 zeros
 
 let currentId = 0;
 
@@ -61,6 +59,10 @@ function generateId() {
     currentId += 1;
     return String(currentId).padStart(3, '0');
 }
+
+
+
+//CHECKS TO SEE IF THE TEXT CAN BE HIGHLIGHTED
 
 function checkSelectedText() {
     const selection = window.getSelection();
@@ -73,8 +75,8 @@ if (!selection.rangeCount || selection.isCollapsed) {
     // Get the current bottom value of the palette
     const currentBottom = window.getComputedStyle(palette).bottom;
 
-    // If the current bottom isn't set to '-10px', set it to '-500px'
-    if (currentBottom !== "-10px") {
+    // If the current bottom isn't set to '-10px' (annotation box is up and showing), set it to '-500px'
+    if (currentBottom !== "-10px") {   
         palette.style.bottom = '-500px';  // No text selected
     }
     return;
@@ -105,7 +107,7 @@ if (!selection.rangeCount || selection.isCollapsed) {
     palette.style.bottom = '-390px';  // Valid text selected within constraints
 }
 
-// We only need one set of event listeners, so removing the duplicated ones
+// Event listeners to listen for text being selected.  Is this sufficient for iphones?
 document.addEventListener('mouseup', checkSelectedText);
 document.addEventListener('touchend', checkSelectedText);
 
@@ -284,7 +286,7 @@ function saveBookNotesToLocalStorage(bookNotes) {
 
 function updateButtonAndPalette() {
     const saveTextDiv = document.getElementById('save-text');
-    saveTextDiv.style.backgroundColor = 'yellow';
+    saveTextDiv.style.backgroundColor = 'yellow !mportant';
     saveTextDiv.style.color = 'black';
     saveTextDiv.style.fontWeight = 'bold';
     saveTextDiv.textContent = 'Saved!';
@@ -308,8 +310,7 @@ document.getElementById('highlightSaveButton').addEventListener('click', highlig
 
 
 
-
-/* ATTEMPT TO REMOVE HIGHLIGHTS AFTER A CLIC*/
+/* REMOVE HIGHLIGHTS AFTER A CLIC ON THE HIGHLIGHT*/
 
 function removeHighlight(event) {
     const element = event.target;
@@ -347,24 +348,6 @@ function removeHighlight(event) {
 }
 
 
-/*
-// Add click event listeners for each highlight class
-const highlightClasses = ['highlight-green', 'highlight-red', 'highlight-yellow'];
-
-highlightClasses.forEach(className => {
-    document.querySelectorAll(`.${className}`).forEach(element => {
-        element.addEventListener('click', removeHighlight);
-    });
-});
-
-*/
-
-
-
-/*
-// Make sure this is after recreateSelection
-document.addEventListener('click', removeHighlight);
-*/
 
 function createElementWithAttributes(type, attributes = {}) {
     const element = document.createElement(type);
@@ -375,11 +358,6 @@ function createElementWithAttributes(type, attributes = {}) {
     }
     return element;
 }
-
-
-
-
-
 
 
 
@@ -438,6 +416,7 @@ function updateBNResetButton() {
 
 
 
+
 /* Download Booknotes */
 
 
@@ -453,7 +432,7 @@ function downloadBooknotes() {
     const a = document.createElement('a');
     a.style.display = 'none';  // Hide the link
     a.href = url;
-    a.download = 'booknotes.json';  // Suggest a filename for the download
+    a.download = 'booknotes-export.json';  // Suggest a filename for the download
 
     // Append the anchor to the document and trigger a click to start the download
     document.body.appendChild(a);
@@ -491,7 +470,7 @@ function uploadBooknotes() {
                 alert('Booknotes uploaded successfully!');
 
                 // You might want to call your function to re-render the booknotes on the page
-                recreateBooknotes();
+                recreateHighlights();
 
             } else {
                 alert('Invalid file format. Please upload a valid booknotes JSON file.');
@@ -568,12 +547,7 @@ function bookNotesCreator() {
 
 
 
-
-
-
-
-
-
+//Modular version
 
 function bookNotesCreator() {
     const bookNotes = getBookNotesFromLocalStorage();
