@@ -41,14 +41,6 @@ self.addEventListener('install', event => {
 
 
 
-'/en/includes/header-component.js',
-'/en/includes/settings-curtain.js',
-'/en/includes/content-curtain.js',
-'/en/includes/share-curtain.js',
-'/en/includes/buy-curtain.js',
-'/en/includes/bookplate-curtain.js',
-'/en/includes/earthbook-curtain.js',
-
 
 
       ]);
