@@ -6,7 +6,6 @@ self.addEventListener('install', event => {
       return cache.addAll([
         
 '/',
-'/en/index.html',
 '/fonts/Mulish-Light.ttf',
 '/fonts/CooperMediumBT.ttf',
 '/fonts/CooperLtBTLightItalic.ttf',
@@ -29,6 +28,31 @@ self.addEventListener('install', event => {
 '/clip/dist/clipboard.min.js',
 '/dark-mode-toggle.mjs.js',
 
+'/index-javascripts.js',
+'/includes/footer-chapter.js',
+'/photos/cover-500px.webp',
+'/svgs/tractatus-mandala-full-grey.svg',
+'/icons/reader.svg',
+'/icons/pdf.svg',
+'/icons/buy.svg',
+'/svgs/tractatus-mandala-full-white.svg',
+'/svgs/my-book-header-logo-night.svg',
+'/svgs/my-book-header-logo-day.svg',
+
+'/en/includes/header-component.js',
+'/en/includes/settings-curtain.js',
+'/en/includes/content-curtain.js',
+'/en/includes/share-curtain.js',
+'/en/includes/buy-curtain.js',
+'/en/includes/bookplate-curtain.js',
+'/en/includes/earthbook-curtain.js',
+'/en/includes/footer-component.js',
+'/en/includes/read-curtain.js',
+'/en/includes/tour-curtain.js',
+'/en/includes/search-curtain.js',
+'/en/includes/eco-curtain.js',
+'/en/includes/booknotes-curtain.js',
+'/en/includes/footer-settings.js',
 
       ]);
     })
