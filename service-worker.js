@@ -72,6 +72,15 @@ self.addEventListener('install', event => {
 '/en/unpublished.html',
 
 
+'/en/summaries.html',
+'/en/dedication.html',
+'/en/for-earth.html',
+'/en/acknowledgements.html',
+'/en/publishing.html',
+'/en/authors.html',
+'/en/declaration.html',
+'/en/bibliography.html',
+'/en/glossary.html',
 
 
       ]);
