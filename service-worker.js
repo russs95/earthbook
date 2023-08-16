@@ -85,12 +85,7 @@ self.addEventListener('install', event => {
 '/svgs/10-matter-dark.svg',
 '/svgs/up-arrow-dark.svg',
 
-//Light Scheme
 
-'/svgs/tractatus-mandala-full-white.svg',
-'/svgs/my-book-header-logo-day.svg',
-'/svgs/tractatus-mandala-full-light-grey.svg',
-'/svgs/content-arrow.svg',
 
 
       ]);
