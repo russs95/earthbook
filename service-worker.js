@@ -91,25 +91,6 @@ self.addEventListener('install', event => {
 '/svgs/my-book-header-logo-day.svg',
 '/svgs/tractatus-mandala-full-light-grey.svg',
 '/svgs/content-arrow.svg',
-'/svgs/content-arrow-45.svg',
-'/svgs/00-white.svg',
-'/svgs/tractatus-mandala-full-grey-grey.svg',
-'/svgs/00-preamble-white.svg',
-'/svgs/01-imagine-white.svg',
-'/svgs/02-plastic1-white.svg',
-'/svgs/03-stellar-white.svg',
-'/svgs/04-patterns-white.svg',
-'/svgs/05-kincentric-white.svg',
-'/svgs/06-nature-white.svg',
-'/svgs/07-earthen-white.svg',
-'/svgs/08-cycles-white.svg',
-'/svgs/09-energy-white.svg',
-'/svgs/10-matter-white.svg',
-'/svgs/up-arrow-light.svg',
-
-//INCLUDES
-
-
 
 
       ]);
