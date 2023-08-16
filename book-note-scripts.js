@@ -109,8 +109,17 @@ if (!selection.rangeCount || selection.isCollapsed) {
 
 // Event listeners to listen for text being selected.  Is this sufficient for iphones?
 document.addEventListener('mouseup', checkSelectedText);
-document.addEventListener('touchend', checkSelectedText);
+//document.addEventListener('touchend', checkSelectedText);
 
+document.addEventListener('touchend', function() {
+    setTimeout(function() {  // Using a timeout to ensure the selection is processed
+        const selection = window.getSelection().toString();
+        if (selection.length > 0) {
+            // Call your function here
+            checkSelectedText();
+        }
+    }, 1);
+});
 
 
 /*COPY TEXT */
