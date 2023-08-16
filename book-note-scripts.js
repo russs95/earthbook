@@ -84,10 +84,7 @@ if (!selection.rangeCount || selection.isCollapsed) {
     return;
 }
 
-
 lastSelectedText = window.getSelection().toString();
-
-
     const selectedRange = selection.getRangeAt(0);
     const startContainerParent = selectedRange.startContainer.parentNode;
     const endContainerParent = selectedRange.endContainer.parentNode;
@@ -183,15 +180,27 @@ function copyToClipboard(text) {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const colorButtons = document.querySelectorAll('.color-btn');
+
+    colorButtons.forEach(btn => {
+        btn.addEventListener('click', function(event) {
+            const bgColor = getComputedStyle(event.target).backgroundColor;
+            highlightBooknote(bgColor);
+        });
+    });
+});
+
 
 /* MAIN FUNCTION TO PROCESS A SELECTION HIGHLIGHT*/
 function highlightBooknote(color) {
-    const selection = window.getSelection();
+    // Directly use lastSelectedText
+    const textToHighlight = lastSelectedText;
     const highlightColor = color;
     const userNote = "";
     const publicNote = "No";
 
-    if (selection.rangeCount > 0) {
+    if (textToHighlight.length > 0) {
         const selectedRange = selection.getRangeAt(0);
         const span = document.createElement("span");
 
