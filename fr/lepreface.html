@@ -10,11 +10,11 @@ o               .        ___- -___                    .
        .              .-\          -.     .     .         .
                     ./.;_.\     __/~ \.     
                    /;  / `-'  __\    . \                            
- .        .       /  ,-'     / .   .;   \        |
+ .        .       / ,-'      / .   .;   \        |
                  | .|       /       __   |      -O-       .
                 |__/    __ |  . ;   \ | . |      |
                 |      /  \\_    . ;| \___|    
-   .    o       |      \  .~\\___,-'      |           .
+   .    o       |      \  .~\\___,--'     |           .
                  |     | . ; ~~~~\_    __|
     |             \    \   .  .  ; \  /_/   .
    -O-        .    \   /         . |  ~/                  .
@@ -27,7 +27,7 @@ EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
 Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
  
 
-Page de destination - version 1.2
+Page de destination - version 1.3.2
 Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
 Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
 
@@ -39,6 +39,7 @@ Voir le référentiel complet du projet sur : https://github.com/russs95/earthb
 Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.io
 */
 -->
+
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
@@ -69,23 +70,76 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:site_name" content="Tracatus Ayyew">
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
-<meta property="og:title"         content="D'une Éthique Terrestre - Tracatus Ayyew">
+<meta property="og:title"         content="Préface | D'une Éthique Terrestre">
 <meta property="og:description"   content="Par Banayan Angway & Russell Maier  | Edition Earthbook">
 <meta property="og:image"         content="../covers/TA-cover-french-1200px.png">
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1492px" >
-<meta property="og:locale" content="en_EN" >
+<meta property="og:locale" content="fr_FR" >
 <meta property="og:url" content="https://book.earthen.io/fr/lepreface.html">
 
+
+
+<style>
+
+
+
+  @font-face {
+    font-family: "CooperLt";
+    font-style: normal;
+    src: url("../fonts/CooperLightBT.ttf");
+    font-display: swap;
+   }
+  
+   @font-face {
+    font-family: "CooperLt";
+    font-style: italic;
+    src: url("../fonts/CooperLtBTLightItalic.ttf");
+    font-display: swap;
+   }
+  
+   @font-face {
+    font-family: "CooperLtMedium";
+    src: url("../fonts/CooperMediumBT.ttf");
+    font-display: swap;
+   }
+  
+   @font-face {
+    font-family: "Mulish";
+    src: url("../fonts/Mulish-Light.ttf");
+    font-display: swap;
+   }
+   
+  
+  .lead-page-paragraph:first-child::first-letter {
+    color: var(--pre-link-color);
+    float: left;
+    font-family: "CooperLt";
+    font-size: 4.8em;
+    line-height: 0.85;
+    margin-top: -40px;
+    padding-right: 7px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    font-weight:400;
+  }
+  
+  </STYLE>
+
+
 <script>
-      // Declare the global variables
-    var chapNo = "Introduction";
+     // Declare the global variables
+     var lang = "fr";
+      var book = "Introduction";
+    var chapNo = "2";
     var chapName = "Préface";
+    var chaptURL = "lepreface.html" 
+
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
           console.log('ServiceWorker registration successful with scope:', registration.scope);
         }, function(error) {
           console.log('ServiceWorker registration failed:', error);
@@ -94,16 +148,11 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
     }
 </script>
 
- <!--FONTS
-starts loading the fonts-->
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/00-dark.svg" media="(prefers-color-scheme: dark)">
 
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="..svgs/00-light.svg">
-
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="..svgs/00-light.svg" media="(prefers-color-scheme: light)">
 
  <!-- STYLE SHEETS   
 All the css needed for this page-->
@@ -139,51 +188,8 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
-<style>
-
-
-
-@font-face {
-  font-family: "CooperLt";
-  font-style: normal;
-  src: url("../fonts/CooperLightBT.ttf");
-  font-display: swap;
- }
-
- @font-face {
-  font-family: "CooperLt";
-  font-style: italic;
-  src: url("../fonts/CooperLtBTLightItalic.ttf");
-  font-display: swap;
- }
-
- @font-face {
-  font-family: "CooperLtMedium";
-  src: url("../fonts/CooperMediumBT.ttf");
-  font-display: swap;
- }
-
- @font-face {
-  font-family: "Mulish";
-  src: url("../fonts/Mulish-Light.ttf");
-  font-display: swap;
- }
- 
-
-.lead-page-paragraph:first-child::first-letter {
-  color: var(--pre-link-color);
-  float: left;
-  font-family: "CooperLt";
-  font-size: 4.8em;
-  line-height: 0.85;
-  margin-top: -40px;
-  padding-right: 7px;
-  margin-left: 0px;
-  margin-bottom: 5px;
-  font-weight:400;
-}
-
-</STYLE>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
 
 </HEAD>
 
@@ -231,13 +237,6 @@ All the page components required to build this page-->
   <div id="ct-main">
   
   
-  <div id="chap-notice">
-    <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-    <div id="chap-notice-text">
-        💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
-    </div>
-  </div>
-  
   
   <!-- MAIN TEXT CONTENT of the Page
     For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ 
@@ -248,60 +247,60 @@ All the page components required to build this page-->
   </div>
   </div>  
   <div class="page-paragraph">
-     <p>En 2011, la quantité de sandales jetées, de couches détrempées, de sacs usagés et d'emballages jetés dans la rivière Chico avait atteint un point de rupture. Submergée par l'arrivée constante de plastique, la province Philippine de Kalinga en aval prit des mesures pour incriminer la ville de Bontoc située en amont. Devant le sérieux des accusations, le maire et le gouverneur, ont entrepris la fermeture de nombreuses décharges le long des méandres capricieux dans cette région éloignée.</p>
+     <p id="en-0-2-01">En 2011, la quantité de sandales jetées, de couches détrempées, de sacs usagés et d'emballages jetés dans la rivière Chico avait atteint un point de rupture. Submergée par l'arrivée constante de plastique, la province Philippine de Kalinga en aval prit des mesures pour incriminer la ville de Bontoc située en amont. Devant le sérieux des accusations, le maire et le gouverneur, ont entrepris la fermeture de nombreuses décharges le long des méandres capricieux dans cette région éloignée.</p>
        
-      <p>Mais où allait donc tout notre plastique?</p>
+      <p id="en-0-2-0">Mais où allait donc tout notre plastique?</p>
   
-      <p>Pour ceux d'entre nous vivant le long de la rivière, le défi était palpable.</p>
+      <p id="en-0-2-0">Pour ceux d'entre nous vivant le long de la rivière, le défi était palpable.</p>
         
-      <p>Pendant des siècles, les tribus de la région, connues collectivement sous le nom d'Igorots, ont prospéré dans une indépendance féroce du reste de l'archipel Philippin. Isolés par une chaîne accidentée de montagnes verdoyantes, les Igorots sont restés largement immunisés face aux trois cents ans de colonisation espagnole plus au sud. Cependant, au cours des dernières décennies, les biens modernes ont atteint même les villages les plus reculés. Alors que les feuilles, le bois et les lianes, qui avaient longtemps servi de matériaux fonctionnels, étaient entièrement biodégradables, ces nouveaux matériaux modernes refusaient obstinément de se dégrader.</p>
+      <p id="en-0-2-0">Pendant des siècles, les tribus de la région, connues collectivement sous le nom d'Igorots, ont prospéré dans une indépendance féroce du reste de l'archipel Philippin. Isolés par une chaîne accidentée de montagnes verdoyantes, les Igorots sont restés largement immunisés face aux trois cents ans de colonisation espagnole plus au sud. Cependant, au cours des dernières décennies, les biens modernes ont atteint même les villages les plus reculés. Alors que les feuilles, le bois et les lianes, qui avaient longtemps servi de matériaux fonctionnels, étaient entièrement biodégradables, ces nouveaux matériaux modernes refusaient obstinément de se dégrader.</p>
   
-      <p>En dépit de ce malheureux constat, les Igorots ne resteraient pas les bras croisés.</p>
+      <p id="en-0-2-0">En dépit de ce malheureux constat, les Igorots ne resteraient pas les bras croisés.</p>
       
-      <p>Dans la société Igorot, au même rang que la peinture ou la sculpture dans d'autres cultures, l'art de l'intégration écologique y est hautement estimé. C’est ainsi que la région est devenue un foyer d'innovations du recyclage. En ville, de vieux pneus étaient découpés pour en faire des chaises et des tables remarquablement fonctionnelles. Dans les mines, les gaines de câbles de dynamite étaient tissées pour fabriquer des sacs à dos traditionnels. Dans les chaumières, pailles et emballages étaient tissés pour servir de nattes, sacoches et contenants de toutes sortes.</p>
+      <p id="en-0-2-0">Dans la société Igorot, au même rang que la peinture ou la sculpture dans d'autres cultures, l'art de l'intégration écologique y est hautement estimé. C’est ainsi que la région est devenue un foyer d'innovations du recyclage. En ville, de vieux pneus étaient découpés pour en faire des chaises et des tables remarquablement fonctionnelles. Dans les mines, les gaines de câbles de dynamite étaient tissées pour fabriquer des sacs à dos traditionnels. Dans les chaumières, pailles et emballages étaient tissés pour servir de nattes, sacoches et contenants de toutes sortes.</p>
   
-     <p>Banayan et moi étions tellement fascinés et enthousiasmés par ce mouvement de recyclage valorisant (le « upcycling » dans la vernaculaire moderne) que nous en fîmes activement partie. Alors que Banayan intégrait ces techniques de tissage et transformation dans les programmes scolaires, j'étais impliqué dans l'amélioration des concepts pour fabriquer des produits recyclés monnayables. Cependant, face au flux toujours croissant de déchets plastiques, nos prouesses n'ont eu que peu de conséquences. Alors que l'impasse juridique à Bontoc s'intensifiait, nous avons réalisé qu'il était bien plus vital de protéger des plastiques notre environnement plutôt que de promouvoir ou d'enseigner un nouvel artisanat.</p>
+     <p id="en-0-2-0">Banayan et moi étions tellement fascinés et enthousiasmés par ce mouvement de recyclage valorisant (le « upcycling » dans la vernaculaire moderne) que nous en fîmes activement partie. Alors que Banayan intégrait ces techniques de tissage et transformation dans les programmes scolaires, j'étais impliqué dans l'amélioration des concepts pour fabriquer des produits recyclés monnayables. Cependant, face au flux toujours croissant de déchets plastiques, nos prouesses n'ont eu que peu de conséquences. Alors que l'impasse juridique à Bontoc s'intensifiait, nous avons réalisé qu'il était bien plus vital de protéger des plastiques notre environnement plutôt que de promouvoir ou d'enseigner un nouvel artisanat.</p>
       
-      <p>Il se trouve que mes collègues et moi avions expérimenté une nouvelle technique d'Amérique du Sud dans laquelle des bouteilles plastiques étaient remplies de sable pour fabriquer des briques de construction. Comme par destinée, la sablière de la rivière et la décharge locale étaient côte à côte. Après avoir fabriqué plusieurs briques de bouteille de sable, nous décidions plutôt de les remplir de plastique à la place.</p>
+      <p id="en-0-2-0">Il se trouve que mes collègues et moi avions expérimenté une nouvelle technique d'Amérique du Sud dans laquelle des bouteilles plastiques étaient remplies de sable pour fabriquer des briques de construction. Comme par destinée, la sablière de la rivière et la décharge locale étaient côte à côte. Après avoir fabriqué plusieurs briques de bouteille de sable, nous décidions plutôt de les remplir de plastique à la place.</p>
   
-     <p>L'expérience fut instantanément un succès!</p>
+     <p id="en-0-2-0">L'expérience fut instantanément un succès!</p>
      
-     <p>Non seulement avons-nous pu fabriquer des bouteilles-briques aussi efficaces que celles remplies de sable, mais nous avons également pu séquestrer une grande quantité de plastiques qui, autrement, se seraient dispersés dans la rivière.</p>
+     <p id="en-0-2-0">Non seulement avons-nous pu fabriquer des bouteilles-briques aussi efficaces que celles remplies de sable, mais nous avons également pu séquestrer une grande quantité de plastiques qui, autrement, se seraient dispersés dans la rivière.</p>
   
-     <p>Chez moi, je commençais à appliquer cette nouvelle technique avec mes déchets plastiques du quotidien. En peu de temps, à ma grande joie et celle de mes voisins, j’avais construit un joli jardin. L'école voisine, qui peinait à se débarrasser du plastique de centaines d'élèves, a demandé qu'on lui montre comment procéder. Après une journée enthousiaste passée à emballer du plastique, fabriquer des briques et construire un composteur, les élèves, les enseignants et la communauté étaient ravis de découvrir cette alternative simple à la combustion et à la dispersion des plastiques.</p>
+     <p id="en-0-2-0">Chez moi, je commençais à appliquer cette nouvelle technique avec mes déchets plastiques du quotidien. En peu de temps, à ma grande joie et celle de mes voisins, j’avais construit un joli jardin. L'école voisine, qui peinait à se débarrasser du plastique de centaines d'élèves, a demandé qu'on lui montre comment procéder. Après une journée enthousiaste passée à emballer du plastique, fabriquer des briques et construire un composteur, les élèves, les enseignants et la communauté étaient ravis de découvrir cette alternative simple à la combustion et à la dispersion des plastiques.</p>
     
-     <p>Alors que la technique commençait à se répandre dans d'autres écoles, réalisant le fort potentiel de sensibilisation à l'impact écologique du plastique, Banayan décida de s’impliquer pleinement. Nous avons entamé un travail acharné à créer un système de comptes rendus et un guide pratique pédagogique. Grâce à sa coordination, ce qui allait bientôt s'appeler «l'écobrique» s'était répandu dans des centaines d'écoles de la province.</p>
+     <p id="en-0-2-0">Alors que la technique commençait à se répandre dans d'autres écoles, réalisant le fort potentiel de sensibilisation à l'impact écologique du plastique, Banayan décida de s’impliquer pleinement. Nous avons entamé un travail acharné à créer un système de comptes rendus et un guide pratique pédagogique. Grâce à sa coordination, ce qui allait bientôt s'appeler «l'écobrique» s'était répandu dans des centaines d'écoles de la province.</p>
   
-     <p>Et puis à des milliers.</p>
+     <p id="en-0-2-0">Et puis à des milliers.</p>
   
-     <p>En un an, alors que l'ensemble du département de l'éducation du nord des Philippines, les églises catholiques et protestantes, ainsi que les bureaux du maire de Bontoc et du gouverneur de la province se sont joints au mouvement, l'écobrique est rapidement devenue, pour des centaines de milliers de Philippins, une solution alternative de gestion de leur plastique.</p>
+     <p id="en-0-2-0">En un an, alors que l'ensemble du département de l'éducation du nord des Philippines, les églises catholiques et protestantes, ainsi que les bureaux du maire de Bontoc et du gouverneur de la province se sont joints au mouvement, l'écobrique est rapidement devenue, pour des centaines de milliers de Philippins, une solution alternative de gestion de leur plastique.</p>
   
-     <p>Banayan et moi observions la propagation du mouvement des écobriques avec joie et enthousiasme mais aussi une certaine inquiétude s’emparait de nous.</p>
+     <p id="en-0-2-0">Banayan et moi observions la propagation du mouvement des écobriques avec joie et enthousiasme mais aussi une certaine inquiétude s’emparait de nous.</p>
   
-     <p>Alors qu'au début, cela semblait une grande victoire que tant de plastique soit contenu et protégeait d’une contamination certaine la rivière, la question était loin d'être réglée. Nous avons appris que la persistance du plastique est un phénomène social et physique à multiples facettes: bien que nous puissions le souhaiter, il ne disparaît pas après que nous l'ayons jeté, ni lorsque nous le mettons dans une bouteille.</p>
+     <p id="en-0-2-0">Alors qu'au début, cela semblait une grande victoire que tant de plastique soit contenu et protégeait d’une contamination certaine la rivière, la question était loin d'être réglée. Nous avons appris que la persistance du plastique est un phénomène social et physique à multiples facettes: bien que nous puissions le souhaiter, il ne disparaît pas après que nous l'ayons jeté, ni lorsque nous le mettons dans une bouteille.</p>
   
-     <p>Au fur et à mesure que le mouvement se répandait, nous avons observé que parfois, en dépit d’apporter une solution au plastique, la consommation de plastique en devenait légitimée. Nous observions aussi des applications techniques troublantes.</p>
+     <p id="en-0-2-0">Au fur et à mesure que le mouvement se répandait, nous avons observé que parfois, en dépit d’apporter une solution au plastique, la consommation de plastique en devenait légitimée. Nous observions aussi des applications techniques troublantes.</p>
   
-     <p>Dans certaines écoles, nous constations un bond dans l'achat de boissons gazeuses afin de se procurer des bouteilles pour les écobriques. Dans d'autres endroits, nous notions une augmentation de la consommation de la malbouffe, de sorte qu'il y aurait des emballages à mettre en bouteille. Alors que dans certaines applications d'écobriques nous observions l'utilisation inappropriée du ciment (qui réagit mal avec le PET de la bouteille) comme mortier.</p>
+     <p id="en-0-2-0">Dans certaines écoles, nous constations un bond dans l'achat de boissons gazeuses afin de se procurer des bouteilles pour les écobriques. Dans d'autres endroits, nous notions une augmentation de la consommation de la malbouffe, de sorte qu'il y aurait des emballages à mettre en bouteille. Alors que dans certaines applications d'écobriques nous observions l'utilisation inappropriée du ciment (qui réagit mal avec le PET de la bouteille) comme mortier.</p>
   
-      <p>Banayan et moi, en constatant ces phénomènes inquiétants, étions dubitatifs et la question suivante pris forme: Les écobriques rendaient-elles vraiment un service écologique?</p>
+      <p id="en-0-2-0">Banayan et moi, en constatant ces phénomènes inquiétants, étions dubitatifs et la question suivante pris forme: Les écobriques rendaient-elles vraiment un service écologique?</p>
         
-      <p>Au cours de la dernière décennie, ces questions nous ont forcé à ré-évaluer non seulement les écobriques en tant que « solution au plastique », mais en premier lieu ce que doit constituer une « solution écologique ».</p>
+      <p id="en-0-2-0">Au cours de la dernière décennie, ces questions nous ont forcé à ré-évaluer non seulement les écobriques en tant que « solution au plastique », mais en premier lieu ce que doit constituer une « solution écologique ».</p>
   
-      <p>Comme une abréviation pour une solution écologique, le terme « vert » s'est imposé dans nos réflexions.</p> 
+      <p id="en-0-2-0">Comme une abréviation pour une solution écologique, le terme « vert » s'est imposé dans nos réflexions.</p> 
       
-      <p>Plus précisément, nous en sommes venus à nous demander: « En fait, que devrait signifier le mot vert? »</p>
+      <p id="en-0-2-0">Plus précisément, nous en sommes venus à nous demander: « En fait, que devrait signifier le mot vert? »</p>
   
-      <p>Tandis que nous continuons à écobriquer notre propre plastique usagé, nous soupçonnons de plus en plus que résoudre le problème du plastique (et être « vert ») ne se résume pas seulement aux nouvelles techniques et technologies. Tout aussi important, que ce que nous faisons, est la question de pourquoi et comment nous le faisons. C’est de là que nos convictions se sont cristallisées: les traditions de sagesse des anciennes cultures indigènes sont essentielles pour guider nos concepts contemporains de “vert”.</p>
+      <p id="en-0-2-0">Tandis que nous continuons à écobriquer notre propre plastique usagé, nous soupçonnons de plus en plus que résoudre le problème du plastique (et être « vert ») ne se résume pas seulement aux nouvelles techniques et technologies. Tout aussi important, que ce que nous faisons, est la question de pourquoi et comment nous le faisons. C’est de là que nos convictions se sont cristallisées: les traditions de sagesse des anciennes cultures indigènes sont essentielles pour guider nos concepts contemporains de “vert”.</p>
 
-        <p>Pour Banayan et moi même, le titre de l'ouvrage reflète une rencontre de nos racines modernes et ancestrales.</p>
-        <p>En Latin, le mot Tractatus fait référence à la tradition philosophique d'un traité - une exposition rationnelle d'un concept particulier. En Kan'kan'ue, la langue des Igorots, le mot Ayyew fait référence à la vertu d'intégration dans les cycles des écosystèmes qui guide leur culture.</p>
-        <p>C'est l'éthos Igorot qui inspirera et guidera la théorie du vert et du gris présentée dans les trois livres du Tractatus Ayyew plus avant.</p>
-        <p>Dans le premier livre, nous préparons le terrain et établissons les fondations de notre éthique basée sur les cinq facettes du caractère cosmologique de la planète Terre.</p>
-        <p>Dans le deuxième livre, nous consacrons un chapitre à chacune des cinq éthiques terrestres.</p>
-        <p>Dans le troisième livre, nous concluons par une solution à cinq volets pour le plastique.</p> 
-        <p>Ainsi, au travers des dix-huit chapitres présentant chacun une facette fonctionnelle de l'entreprise verte, le Tractatus Ayyew se veut une boîte à outils plutôt qu'un manifeste.</p>
-        <p>Nous espérons que, grâce à l'éthos des Igorots, l'éthique Terrestre, et l'exemple de la résolution du plastique, que d'autres défis apparemment gris insolubles pourront, avec confiance et clarté, passer à une profonde teinte de vert.</p>
+        <p id="en-0-2-0">Pour Banayan et moi même, le titre de l'ouvrage reflète une rencontre de nos racines modernes et ancestrales.</p>
+        <p id="en-0-2-0">En Latin, le mot Tractatus fait référence à la tradition philosophique d'un traité - une exposition rationnelle d'un concept particulier. En Kan'kan'ue, la langue des Igorots, le mot Ayyew fait référence à la vertu d'intégration dans les cycles des écosystèmes qui guide leur culture.</p>
+        <p id="en-0-2-0">C'est l'éthos Igorot qui inspirera et guidera la théorie du vert et du gris présentée dans les trois livres du Tractatus Ayyew plus avant.</p>
+        <p id="en-0-2-0">Dans le premier livre, nous préparons le terrain et établissons les fondations de notre éthique basée sur les cinq facettes du caractère cosmologique de la planète Terre.</p>
+        <p id="en-0-2-0">Dans le deuxième livre, nous consacrons un chapitre à chacune des cinq éthiques terrestres.</p>
+        <p id="en-0-2-0">Dans le troisième livre, nous concluons par une solution à cinq volets pour le plastique.</p> 
+        <p id="en-0-2-0">Ainsi, au travers des dix-huit chapitres présentant chacun une facette fonctionnelle de l'entreprise verte, le Tractatus Ayyew se veut une boîte à outils plutôt qu'un manifeste.</p>
+        <p id="en-0-2-0">Nous espérons que, grâce à l'éthos des Igorots, l'éthique Terrestre, et l'exemple de la résolution du plastique, que d'autres défis apparemment gris insolubles pourront, avec confiance et clarté, passer à une profonde teinte de vert.</p>
         
   
       </div><!--closes page text content, then loads page curtains:-->
@@ -347,6 +346,8 @@ All the page components required to build this page-->
 
 </div><!--Closes main content block-->
 
+ <!--BOOKNOTES-CURTAIN-->
+ <booknotes-curtain></booknotes-curtain>
 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
@@ -392,174 +393,26 @@ All the page components required to build this page-->
     </div>
   
 
+
 <!--PIED DE PAGE DU CHAPITRE
 -->
 
- <chap-foot></chap-foot>
+<chap-foot></chap-foot>
 
-  </div>
-</div>
-<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-   
- 
-  
+</div>  <!--footer functions close-->
 
-  <script>
-/*working
-document.addEventListener("DOMContentLoaded", function() {
-    let highlightClass = 'highlight';
-    let preHighlightClass = 'pre-highlight';
-    let selectedRange;
+<footer-settings></footer-settings>
 
-    function getSelectedRange() {
-        if (window.getSelection) {
-            let sel = window.getSelection();
-            if (sel.rangeCount) {
-                return sel.getRangeAt(0);
-            }
-        } else if (document.selection && document.selection.createRange) {
-            return document.selection.createRange();
-        }
-        return null;
-    }
+</div> <!--underlayer close-->
 
-    function clearSelection() {
-        if (window.getSelection) {
-            window.getSelection().removeAllRanges();
-        } else if (document.selection) {
-            document.selection.empty();
-        }
-    }
+<script src="../book-note-scripts.js" defer ></script>
 
-    document.addEventListener('mouseup', function() {
-        selectedRange = getSelectedRange();
-        if (selectedRange && selectedRange.toString().trim().length > 0) {
-            let span = document.createElement('span');
-            span.style.cursor = 'pointer';
-            span.classList.add(preHighlightClass);
-            span.title = "Click this text to save.";
-            selectedRange.surroundContents(span);
-            clearSelection();
+</BODY>
 
-            setTimeout(unHighlight, 1000);  // call unHighlight function after 1 second
-        }
-    });
-
-    document.addEventListener('click', function(e) {
-        if (e.target.classList.contains(preHighlightClass)) {
-            if (e.target.classList.contains(highlightClass)) {
-                let text = elem.textContent;
-                e.target.replaceWith(text);
-            } else {
-                e.target.classList.add(highlightClass);
-                e.target.title = "This quotation is saved in your Book Notes";
-            }
-        }
-    });
-
-    function unHighlight() {
-    function onClickHandler(e) {
-        if (!e.target.classList.contains(preHighlightClass) && !e.target.classList.contains(highlightClass)) {
-            let preHighlightedElems = document.querySelectorAll('.' + preHighlightClass);
-
-            preHighlightedElems.forEach(function(elem) {
-                if (elem.classList.contains(preHighlightClass)) {
-                    let text = elem.textContent;
-                    elem.replaceWith(text);
-                }
-            });
-
-            document.removeEventListener('click', onClickHandler); // Remove the listener after it's executed
-        }
-    }
-
-    document.addEventListener('click', onClickHandler);
-}
-
-});
+</HTML>
 
 
 
-
-
-
-
-
-
-  // Function to count characters in the entire HTML document
-  function countCharacters() {
-    const allTextElements = document.querySelectorAll('*');
-    let charCount = 0;
-
-    allTextElements.forEach(element => {
-      element.childNodes.forEach(child => {
-        if (child.nodeType === Node.TEXT_NODE) {
-          charCount += child.textContent.length;
-        }
-      });
-    });
-
-    return charCount;
-  }
-
-  // Function to display character count in an alert once the page has loaded
-  function showAlertWithCharacterCount() {
-    const totalCharacters = countCharacters();
-    //alert(`Total Characters in the HTML document: ${totalCharacters}`);
-  }
-
-  // Function to store selected text and its positions in the local storage
-  function storeSelectedText() {
-    const selection = window.getSelection();
-    if (selection.rangeCount > 0) {
-      const range = selection.getRangeAt(0);
-      localStorage.setItem('startContainer', range.startContainer.parentNode.id);
-      localStorage.setItem('endContainer', range.endContainer.parentNode.id);
-      localStorage.setItem('startOffset', range.startOffset);
-      localStorage.setItem('endOffset', range.endOffset);
-      localStorage.setItem('storedText-1', selection.toString());
-    }
-  }
-
-  // Function to recreate selection from stored data
-  function recreateSelection() {
-    const startContainer = document.getElementById(localStorage.getItem('startContainer'));
-    const endContainer = document.getElementById(localStorage.getItem('endContainer'));
-    const startOffset = parseInt(localStorage.getItem('startOffset'));
-    const endOffset = parseInt(localStorage.getItem('endOffset'));
-    const storedText = localStorage.getItem('storedText-1');
-
-    if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
-      const range = document.createRange();
-      range.setStart(startContainer.firstChild, startOffset);
-      range.setEnd(endContainer.firstChild, endOffset);
-
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-
-      alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
-    }
-  }
-
-  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-  window.addEventListener('load', function () {
-    showAlertWithCharacterCount();
-    recreateSelection();
-
-    // Attach the storeSelectedText function to the "mouseup" event
-    document.addEventListener("mouseup", storeSelectedText);
-  });
-
-  */
-</script>
-
-
-  
-  
-  
-  </BODY>
-  </HTML>
   
 
 
