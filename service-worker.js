@@ -64,28 +64,6 @@ self.addEventListener('install', event => {
 
 
 
-//Dark Scheme
-
-'/svgs/tractatus-mandala-full-black.svg',
-'/svgs/my-book-header-logo-night.svg',
-'/svgs/tractatus-mandala-full-grey.svg',
-'/svgs/content-arrow-night.svg',
-'/svgs/content-arrow-45-night.svg',
-'/svgs/00-dark.svg',
-'/svgs/00-preamble-dark.svg',
-'/svgs/01-imagine-dark.svg',
-'/svgs/01-plastic1-dark.svg',
-'/svgs/03-stellar-dark.svg',
-'/svgs/04-patterns-dark.svg',
-'/svgs/05-kincentric-dark.svg',
-'/svgs/06-nature-dark.svg',
-'/svgs/07-earthen-dark.svg',
-'/svgs/08-cycles-dark.svg',
-'/svgs/09-energy-dark.svg',
-'/svgs/10-matter-dark.svg',
-'/svgs/up-arrow-dark.svg',
-
-
 
 
       ]);
