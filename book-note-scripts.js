@@ -190,18 +190,18 @@ function copyToClipboard(text) {
 }
 
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const colorButtons = document.querySelectorAll('.color-btn');
 
     colorButtons.forEach(btn => {
         btn.addEventListener('click', function(event) {
-            const bgColor = getComputedStyle(event.target).backgroundColor;
-            alert('activated!');
-            highlightBooknote(bgColor);
+            const colorString = event.target.getAttribute('data-color');
+            highlightBooknote(colorString);
+            alert('activated?');
         });
     });
 });
+
 
 function highlightBooknote(color) {
     const textToHighlight = lastSelectedText;
