@@ -78,7 +78,6 @@ if (!selection.rangeCount || selection.isCollapsed) {
 
     // If the current bottom isn't set to '-10px' (annotation box is up and showing), set it to '-500px'
     if (currentBottom !== "-10px") {   
-       // alert('sending down!');
         palette.style.bottom = '-500px';  // No text selected
     }
     return;
@@ -187,6 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
     colorButtons.forEach(btn => {
         btn.addEventListener('click', function(event) {
             const bgColor = getComputedStyle(event.target).backgroundColor;
+            alert('activated!');
             highlightBooknote(bgColor);
         });
     });
