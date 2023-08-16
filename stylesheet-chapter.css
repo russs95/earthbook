@@ -858,19 +858,20 @@ BOOK NOTE PALETTE
   transition: 0.3s;
   cursor: pointer; 
   display: block;
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
 }
 
 @media screen and (max-width: 700px) {
   .color-btn { 
-  width: 20px;
-  height:20px;
+  width: 30px;
+  height:30px;
   border-radius: 20px;
   margin: auto 10px;
 }
 .pallette-btn { 
   flex-grow: 1;
   padding: 10px 10px 10px 10px;
+  font-size:medium;
 }
 
 }
@@ -888,6 +889,7 @@ BOOK NOTE PALETTE
 .pallette-btn { 
   flex-grow: 1;
   padding: 10px 15px 10px 40px;
+  font-size:medium;
 }
 }
 
