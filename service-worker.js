@@ -64,6 +64,47 @@ self.addEventListener('install', event => {
 
 
 
+//Dark Scheme
+
+'/svgs/tractatus-mandala-full-black.svg',
+'/svgs/my-book-header-logo-night.svg',
+'/svgs/tractatus-mandala-full-grey.svg',
+'/svgs/content-arrow-night.svg',
+'/svgs/content-arrow-45-night.svg',
+'/svgs/00-dark.svg',
+'/svgs/00-preamble-dark.svg',
+'/svgs/01-imagine-dark.svg',
+'/svgs/01-plastic1-dark.svg',
+'/svgs/03-stellar-dark.svg',
+'/svgs/04-patterns-dark.svg',
+'/svgs/05-kincentric-dark.svg',
+'/svgs/06-nature-dark.svg',
+'/svgs/07-earthen-dark.svg',
+'/svgs/08-cycles-dark.svg',
+'/svgs/09-energy-dark.svg',
+'/svgs/10-matter-dark.svg',
+
+//Light Scheme
+
+'/svgs/tractatus-mandala-full-white.svg',
+'/svgs/my-book-header-logo-day.svg',
+'/svgs/tractatus-mandala-full-light-grey.svg',
+'/svgs/content-arrow.svg',
+'/svgs/content-arrow-45.svg',
+'/svgs/00-white.svg',
+'/svgs/tractatus-mandala-full-grey-grey.svg',
+'/svgs/00-preamble-white.svg',
+'/svgs/01-imagine-white.svg',
+'/svgs/02-plastic1-white.svg',
+'/svgs/03-stellar-white.svg',
+'/svgs/04-patterns-white.svg',
+'/svgs/05-kincentric-white.svg',
+'/svgs/06-nature-white.svg',
+'/svgs/07-earthen-white.svg',
+'/svgs/08-cycles-white.svg',
+'/svgs/09-energy-white.svg',
+'/svgs/10-matter-white.svg',
+
 
 
       ]);
