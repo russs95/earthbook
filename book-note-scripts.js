@@ -60,54 +60,65 @@ function generateId() {
     return String(currentId).padStart(3, '0');
 }
 
-let lastSelectedText = '';
 
+
+
+
+let lastSelectedText = '';
+let lastSelectedRange = null;
 
 //CHECKS TO SEE IF THE TEXT CAN BE HIGHLIGHTED
-
 function checkSelectedText() {
     const selection = window.getSelection();
-
-    // Prepare palette for potential position adjustments
-    const palette = document.getElementById('bookNotePalette');
-
-// Check if any text is selected
-if (!selection.rangeCount || selection.isCollapsed) {
-    // Get the current bottom value of the palette
-    const currentBottom = window.getComputedStyle(palette).bottom;
-
-    // If the current bottom isn't set to '-10px' (annotation box is up and showing), set it to '-500px'
-    if (currentBottom !== "-10px") {   
-        palette.style.bottom = '-500px';  // No text selected
+    
+    // Reset the last selected range and text
+    lastSelectedRange = null;
+    lastSelectedText = '';
+    
+    // Check if any text is selected
+    if (!selection.rangeCount || selection.isCollapsed) {
+        hidePaletteIfNeeded();
+        return;
     }
-    return;
+    
+    lastSelectedText = selection.toString();
+    lastSelectedRange = selection.getRangeAt(0);
+
+    if (isSelectionValid(lastSelectedRange)) {
+        document.getElementById('palletteBar').style.display = "flex";
+        document.getElementById('bookNotePalette').style.bottom = '-390px';  // Valid text selected within constraints
+    } else {
+        selection.removeAllRanges();
+    }
 }
 
-lastSelectedText = window.getSelection().toString();
+function hidePaletteIfNeeded() {
+    const palette = document.getElementById('bookNotePalette');
+    const currentBottom = window.getComputedStyle(palette).bottom;
+    if (currentBottom !== "-10px") {
+        palette.style.bottom = '-500px';
+    }
+}
 
-    const selectedRange = selection.getRangeAt(0);
-    const startContainerParent = selectedRange.startContainer.parentNode;
-    const endContainerParent = selectedRange.endContainer.parentNode;
-
+function isSelectionValid(range) {
+    const startContainerParent = range.startContainer.parentNode;
+    const endContainerParent = range.endContainer.parentNode;
+    
     // Check if the selection is within the #ct-main element
     const ctMainElement = document.getElementById('ct-main');
     if (!ctMainElement.contains(startContainerParent) || !ctMainElement.contains(endContainerParent)) {
-        palette.style.bottom = '-500px';  // Selected text not within ct-main
-        return;
+        return false;
     }
 
     // Check if the selection does not span more than one paragraph
     if (startContainerParent !== endContainerParent) {
-        //palette.style.bottom = '-200px';  // Selected text spans multiple paragraphs
         alert("Sorry!  Currently you can't select and highlight text in more than one paragraph to make a book note");
-        selection.removeAllRanges();
-
-        return;
+        return false;
     }
-
-    document.getElementById('palletteBar').style.display = "flex";
-    palette.style.bottom = '-390px';  // Valid text selected within constraints
+    
+    return true;
 }
+
 
 // Event listeners to listen for text being selected.  Is this sufficient for iphones?
 document.addEventListener('mouseup', checkSelectedText);
@@ -192,20 +203,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-/* MAIN FUNCTION TO PROCESS A SELECTION HIGHLIGHT*/
 function highlightBooknote(color) {
-    // Directly use lastSelectedText
     const textToHighlight = lastSelectedText;
-    const highlightColor = color;
-    const userNote = "";
-    const publicNote = "No";
 
-    if (textToHighlight.length > 0) {
-        const selectedRange = selection.getRangeAt(0);
+    if (textToHighlight.length > 0 && lastSelectedRange) {
         const span = document.createElement("span");
 
-        switch (highlightColor) {
+        switch (color) {
             case 'green':
                 span.classList.add("highlight-green");
                 break;
@@ -215,12 +219,12 @@ function highlightBooknote(color) {
             case 'blue':
                 span.classList.add("highlight-blue");
                 break;
-            case 'yellow': 
+            case 'yellow':
                 span.classList.add("highlight-yellow");
                 break;
             default:
-                console.warn(`Unknown highlight color: ${highlightColor}`);
-                return; 
+                console.warn(`Unknown highlight color: ${color}`);
+                return;
         }
 
         span.title = "Click to remove BookNote"; 
@@ -229,16 +233,16 @@ function highlightBooknote(color) {
 
         const id = generateId();
         span.dataset.id = id;
-        selectedRange.surroundContents(span);
+        lastSelectedRange.surroundContents(span);
 
-        let startContainerNode = selectedRange.startContainer;
+        let startContainerNode = lastSelectedRange.startContainer;
         while (startContainerNode.nodeName !== 'P' && startContainerNode.parentNode !== null) {
             startContainerNode = startContainerNode.parentNode;
         }
 
         const startContainer = startContainerNode.id;
         const containerHTML = startContainerNode.innerHTML;
-        const storedText = selection.toString();
+        const storedText = textToHighlight;
 
         const charCount = storedText.length;
         const now = new Date();
@@ -259,28 +263,31 @@ function highlightBooknote(color) {
             noteChapter,
             charCount,
             BNdateTime,
-            highlightColor,
-            userNote,
-            publicNote
+            highlightColor: color,
+            userNote: "",
+            publicNote: "No"
         };
 
         bookNotes.push(bookNote);
         saveBookNotesToLocalStorage(bookNotes);
         console.log('BookNote saved:', bookNote);
 
-        selection.removeAllRanges();
+        window.getSelection().removeAllRanges();
 
-        if (highlightColor !== 'yellow') {
+        if (color !== 'yellow') {
             updateButtonAndPalette();
         } else {
             // Adjust the height of the palette for 'yellow' case
             document.getElementById('bookNotePalette').style.bottom = "-10px";
             document.getElementById('palletteBar').style.display = "none";
-                
-    lastUsedBookNoteId = id;  // Store the last used ID
+            lastUsedBookNoteId = id;  // Store the last used ID
         }
+
+        // Clear the lastSelectedRange to ensure no accidental re-highlighting.
+        lastSelectedRange = null;
     }
 }
+
 
 
 
