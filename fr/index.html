@@ -62,12 +62,12 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="article:modified_time" content="2023-7-23T09:14:13+00:00">
 
 <!--Balises Facebook Open Graph pour le partage social-->
-<meta property="og:site_name" content="D'une éthique terrestre - Tracatus Ayyew">
+<meta property="og:site_name" content="Tracatus Ayyew">
 <meta property="article:publisher" content="Earthen.io">
 <meta property="og:type" content="book">
 <meta property="og:title" content="Tractatus Ayyew - D'une éthique terrestre">
 <meta property="og:description" content="Par Banayan Angway & Russell Maier | Édition Terrestre.">
-<meta property="og:image" content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
+<meta property="og:image" content="../covers/TA-cover-french-1200px.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1000px">
 <meta property="og:image:height" content="1500px">
@@ -76,13 +76,17 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 
 
 <script>
-      // Declare the global variables
-    var chapNo = "Introduction";
-    var chapName = "";
+       // Declare the global variables
+       var lang = "fr";
+     var book = "";
+    var chapNo = "";
+    var chapName = "Bienvenue";
+    var chaptURL = "index.html"   // Declare the global variables
+ 
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
           console.log('ServiceWorker registration successful with scope:', registration.scope);
         }, function(error) {
           console.log('ServiceWorker registration failed:', error);
@@ -90,13 +94,6 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
       });
     }
 </script>
-
- <!--FONTS
-commence à charger les polices-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
 	
 <!-- PRELOADS-->
 <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
@@ -108,16 +105,6 @@ commence à charger les polices-->
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
 
-<!--<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
-<link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
-<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
-<link rel="preload" as="font" href="../fonts/CooperLightBT.ttf">
-<link rel="preload" as="font" href="../fonts/CooperLtBTLightItalic.ttf">
-<link rel="preload" as="font" href="../fonts/CooperMediumBT.ttf">
-<link rel="preload" as="font" href="../fonts/Mulish-Light.ttf"
-<link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
-<link rel="preload" as="image" href="../svgs/up-arrow-light.svg">> 
--->
 
  <!-- STYLE SHEETS   
 Tout le css nécessaire pour cette page -->
@@ -139,10 +126,6 @@ Tout le css nécessaire pour cette page -->
   <!--SPECIAL INDEX INCLUDES -->
   <script src="../index-javascripts.js"></script>
  
- 
- <!-- Arc CDN Script without delay
-<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
-
  <!--PAGE INCLUDES
 All the page components required to build this page-->
 
@@ -159,6 +142,8 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <script src="includes/footer-chapter.js" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js" defer></script>
+
 
 <style>
 
@@ -190,12 +175,6 @@ All the page components required to build this page-->
   font-display: swap;
  }
 
- /*
- @font-face {
-  font-family: "MulishMedium";
-  src: url("fonts/Mulish-Medium.ttf");
-  font-display: swap;
- }*/
 
 </style>
 </HEAD>
@@ -263,6 +242,9 @@ All the page components required to build this page-->
 
 <!--ECO-CURTAIN-->
 <eco-curtain></eco-curtain>
+
+<!--BOOKNOTES-CURTAIN-->
+<booknotes-curtain></booknotes-curtain>
 
 		<div id="main">
 
