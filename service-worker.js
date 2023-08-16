@@ -69,6 +69,11 @@ self.addEventListener('install', event => {
 
 //Dark Scheme
 
+'/svgs/tractatus-mandala-full-black.svg',
+'/svgs/my-book-header-logo-night.svg',
+'/svgs/tractatus-mandala-full-white.svg',
+'/svgs/tractatus-mandala-full-grey.svg',
+
 
 
 
