@@ -10,11 +10,11 @@ o               .        ___- -___                    .
        .              .-\          -.     .     .         .
                     ./.;_.\     __/~ \.     
                    /;  / `-'  __\    . \                            
- .        .       /  ,-'     / .   .;   \        |
+ .        .       / ,-'      / .   .;   \        |
                  | .|       /       __   |      -O-       .
                 |__/    __ |  . ;   \ | . |      |
                 |      /  \\_    . ;| \___|    
-   .    o       |      \  .~\\___,-'      |           .
+   .    o       |      \  .~\\___,--'     |           .
                  |     | . ; ~~~~\_    __|
     |             \    \   .  .  ; \  /_/   .
    -O-        .    \   /         . |  ~/                  .
@@ -27,7 +27,7 @@ EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
 Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
  
 
-Page de destination - version 1.2
+Page de destination - version 1.3.2
 Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
 Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
 
@@ -39,6 +39,9 @@ Voir le référentiel complet du projet sur : https://github.com/russs95/earthb
 Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.io
 */
 -->
+
+
+
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
@@ -75,34 +78,11 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1492px" >
-<meta property="og:locale" content="en_EN" >
+<meta property="og:locale" content="fr_FR" >
 <meta property="og:url" content="https://book.earthen.io/fr/imaginer.html">
 
-<script>
-      // Declare the global variables
-    var chapNo = "Livre Un";
-    var chapName = "Imaginer";
 
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope:', registration.scope);
-        }, function(error) {
-          console.log('ServiceWorker registration failed:', error);
-        });
-      });
-    }
-</script>
 
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/01-imagine-dark.svg">
-<link rel="preload" as="image" href="../svgs/01-imagine-white.svg">
 
 
  <!-- STYLE SHEETS   
@@ -114,6 +94,35 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css">
+
+
+
+<script>
+    // Declare the global variables
+    var lang = "fr";
+      var book = "Livre Un";
+    var chapNo = "1";
+    var chapName = "Imaginer";
+    var chaptURL = "imaginer.html"   
+
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+</script>
+
+
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/01-imagine-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="../svgs/01-imagine-white.svg" media="(prefers-color-scheme: light)">
+
 
  
  <!-- INCLUDES
@@ -139,6 +148,10 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+
+
 <style>
 
 
@@ -224,7 +237,7 @@ All the page components required to build this page-->
 -->
 
     
-      <div class="page-paragraph"><p><i>
+      <div class="page-paragraph"><p id="en-1-1-0"><i>
         Imaginez un monde où notre façon de vivre enrichit pérennement les écosystèmes dont nous faisons partie. C'est un monde où nos habitations et nos communautés, simplement en s'épanouissant, font de la biosphère un lieux plus abondant, dynamique et hospitalier pour nous et tous nos proches du monde vivant. Plutôt que de lutter à réduire nos dommages environnementaux, dans ce monde, nous nous sommes réunis pour maximiser notre contribution écologique. Pour y parvenir, notre gestion de la matière et de l'énergie a évolué. Dans ce monde, nos entreprises ne fonctionnent plus simplement en économie circulaire mais comme une spirale, où chaque révolution dépasse la dette environnementale et redistribue les surplus. Nos entreprises ne se contentent plus de réduire la quantité de carbone et d'autres éléments qu'elles libèrent, elles captent également plus qu'elles n'en rejettent. Nous ne nous contentons plus d'admirer la mosaïque d'organismes et d'écosystèmes qui nous entourent, nous participons également à sa vitalité et à sa diversification. Alors que nous prospérons tous ensemble dans cette maison commune, la conscience de notre interconnexion augmente sans cesse, et avec elle, la synchronisation de nos cycles d'entreprise et d'écosystème, d'économie et de biome, d'humanité et de biosphère - une harmonie qui s'élève avec nous vers les étoiles.</i></p>
      </div>
      <br><br>
@@ -241,22 +254,22 @@ All the page components required to build this page-->
      
 
 
-      <p id="3-up">Inspirés par l'héritage verdoyant du peuple de Banayan, les Igorots du nord de Luzon,<a href="#footnotes" title="En particulier la philosophie écologique d'Igorot Ayyew. Voir: Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12 (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)." onclick="openFootnotes()" >³</a>elle et moi arrivons à voir que le désir et le potentiel de contribution écologique nous unit tous sur la planète Terre.</p>
+    <p id="en-1-1-01">Inspirés par l'héritage verdoyant du peuple de Banayan, les Igorots du nord de Luzon,<a href="#footnotes" title="En particulier la philosophie écologique d'Igorot Ayyew. Voir: Banayan Angway, Cordillera Administrative Region Indigenous Peoples Education Curriculum K-12 (Bontoc, Mountain Prov., CAR; Philippines Department of Education, 2014)." onclick="openFootnotes()" >³</a>elle et moi arrivons à voir que le désir et le potentiel de contribution écologique nous unit tous sur la planète Terre.</p>
 
-      <p>À travers les cultures et les continents, nous désirons contribuer à ce dont nous faisons partie: pour ajouter aux communautés auxquelles nous appartenons, pour nous harmoniser avec nos voisins, pour nous unir à ceux avec qui nous chantons. Par conséquent, à mesure que nos rôles dans les écosystèmes locaux et les biomes régionaux se dévoilent, notre désir d'y participer positivement et de contribuer à leur harmonie, leur vitalité et leur abondance devient une évidence.</p>
+      <p id="en-1-1-02">À travers les cultures et les continents, nous désirons contribuer à ce dont nous faisons partie: pour ajouter aux communautés auxquelles nous appartenons, pour nous harmoniser avec nos voisins, pour nous unir à ceux avec qui nous chantons. Par conséquent, à mesure que nos rôles dans les écosystèmes locaux et les biomes régionaux se dévoilent, notre désir d'y participer positivement et de contribuer à leur harmonie, leur vitalité et leur abondance devient une évidence.</p>
 
-      <p>Banayan et moi percevons que la transition des habitations, des communautés et des entreprises vers des contributions écologiques, sera la prochaine étape d'une épopée planétaire dont la direction est, littéralement, entre nos mains.</p>
+      <p id="en-1-1-03">Banayan et moi percevons que la transition des habitations, des communautés et des entreprises vers des contributions écologiques, sera la prochaine étape d'une épopée planétaire dont la direction est, littéralement, entre nos mains.</p>
 
-      <p>Alors, comment arrivons-nous à cette maison commune prospère que nous tous aspirons à voir?</p>
+      <p id="en-1-1-0">Alors, comment arrivons-nous à cette maison commune prospère que nous tous aspirons à voir?</p>
 
-      <p>En deux mots:</p>
+      <p id="en-1-1-0">En deux mots:</p>
 
-      <p>Le plastique.</p>
+      <p id="en-1-1-0">Le plastique.</p>
 
-      <p>C'est dans ce matériau moderne problématique que réside la voie à suivre.
+      <p id="en-1-1-0">C'est dans ce matériau moderne problématique que réside la voie à suivre.
     </p>
 
-    <p>Comme il se doit.
+    <p id="en-1-1-0">Comme il se doit.
     </p>
 
     <p id="4-up">En effet, depuis longtemps, les jardiniers savent que le problème est toujours la solution - les mauvaises herbes, les nuisibles et les polluants sont toujours, avec un changement de perspective et d'approche, des éléments nutritifs, médicinaux et engrais qui permettent à un jardin en difficulté de devenir fécond.<a href="#footnotes" title="The problem is always the solution.  See: Bill Mollison, Principles from Permaculture a Designers' Manual, (Tagari Publishers: 1988)." onclick="openFootnotes()">⁴</a></p>
@@ -264,45 +277,45 @@ All the page components required to build this page-->
 
 
 
-      <p>Comme aucune autre matière, le plastique incarne définitivement les facettes de notre époque. Dérivé du carbone ancien, le plastique nous permet de toucher l'histoire fossile qui a permis la nôtre. Acheté et vendu, le plastique est une manifestation physique de l'économie pétro-capitaliste qui alimente notre époque mondialisée. Fabriqué par des humains, entièrement pour des humains, le plastique est un reflet lucide de notre civilisation moderne centrée sur l'humain.</p>
+      <p id="en-1-1-0">Comme aucune autre matière, le plastique incarne définitivement les facettes de notre époque. Dérivé du carbone ancien, le plastique nous permet de toucher l'histoire fossile qui a permis la nôtre. Acheté et vendu, le plastique est une manifestation physique de l'économie pétro-capitaliste qui alimente notre époque mondialisée. Fabriqué par des humains, entièrement pour des humains, le plastique est un reflet lucide de notre civilisation moderne centrée sur l'humain.</p>
 
-     <p>De cette façon, notre plastique est en fait un miroir.</p>
+     <p id="en-1-1-0">De cette façon, notre plastique est en fait un miroir.</p>
 
-     <p>Et une opportunité.</p>
+     <p id="en-1-1-0">Et une opportunité.</p>
      
-     <p>En affrontant l'histoire du plastique vieille d’un milliard d’années, nous pourrons affronter nôtre propre histoire dans le même cadre.</p>
+     <p id="en-1-1-0">En affrontant l'histoire du plastique vieille d’un milliard d’années, nous pourrons affronter nôtre propre histoire dans le même cadre.</p>
 
-     <p>Ensuite, en voyant notre réflexion avec une clarté sans précédent, nous pourrons comprendre notre plastique - et nous-mêmes - avec une perspective nouvelle.</p>
+     <p id="en-1-1-0">Ensuite, en voyant notre réflexion avec une clarté sans précédent, nous pourrons comprendre notre plastique - et nous-mêmes - avec une perspective nouvelle.</p>
 
-     <p>Surtout, nous pourrons renouveler notre compréhension de l'interaction écologique humaine positive: <i>ce que le vert devrait vraiment signifier.</i></p>
+     <p id="en-1-1-0">Surtout, nous pourrons renouveler notre compréhension de l'interaction écologique humaine positive: <i>ce que le vert devrait vraiment signifier.</i></p>
 
-     <p>En luttant pour gérer positivement notre propre plastique, Banayan et moi en venons à réaliser que le concept contemporain du vert fait défaut et est incomplet.</p>
+     <p id="en-1-1-0">En luttant pour gérer positivement notre propre plastique, Banayan et moi en venons à réaliser que le concept contemporain du vert fait défaut et est incomplet.</p>
      
-     <p>Vu à travers le prisme de l'éthos écologique Igorot, nous observons que l'éthique moderne du vert consiste simplement à réduire les dommages, tandis que le concept de contribution est pratiquement resté inimaginé et inimaginable.</p>
+     <p id="en-1-1-0">Vu à travers le prisme de l'éthos écologique Igorot, nous observons que l'éthique moderne du vert consiste simplement à réduire les dommages, tandis que le concept de contribution est pratiquement resté inimaginé et inimaginable.</p>
      
-     <p>Cette vision du potentiel écologique humain contredit fortement l'expérience vécue de Banayan et de ses ancêtres.</p>
+     <p id="en-1-1-0">Cette vision du potentiel écologique humain contredit fortement l'expérience vécue de Banayan et de ses ancêtres.</p>
 
-     <p>Comme nous le verrons dans les chapitres à venir, pour la Terre, la contribution écologique a de toujours été la tendance dominante - un modèle planétaire unique de matière et d'énergie qui, depuis le tout début, a imprégné tous les processus, cycles et systèmes de la Terre.</p>
+     <p id="en-1-1-0">Comme nous le verrons dans les chapitres à venir, pour la Terre, la contribution écologique a de toujours été la tendance dominante - un modèle planétaire unique de matière et d'énergie qui, depuis le tout début, a imprégné tous les processus, cycles et systèmes de la Terre.</p>
 
-     <p>Et le nôtre.</p>
+     <p id="en-1-1-0">Et le nôtre.</p>
 
-     <p>Nous verrons aussi que dans la mesure où ce modèle terrestre s'est reflété dans les valeurs et les vertus d'une culture, les sociétés qui en ont résulté ont systématiquement enrichi les écosystèmes dont elles font partie.</p>
+     <p id="en-1-1-0">Nous verrons aussi que dans la mesure où ce modèle terrestre s'est reflété dans les valeurs et les vertus d'une culture, les sociétés qui en ont résulté ont systématiquement enrichi les écosystèmes dont elles font partie.</p>
 
-     <p>Inversement, dans la mesure où le modèle d'une culture a différé de celui de la Terre, l'épuisement et les dégradations systématiques en ont été le résultat inexorable.</p>
+     <p id="en-1-1-0">Inversement, dans la mesure où le modèle d'une culture a différé de celui de la Terre, l'épuisement et les dégradations systématiques en ont été le résultat inexorable.</p>
 
-     <p>La distinction du modèle terrestre avec le modèle de profit anthropocentré sera notre tâche principale dans le <i>Tractatus Ayyew.</i></p>
+     <p id="en-1-1-0">La distinction du modèle terrestre avec le modèle de profit anthropocentré sera notre tâche principale dans le <i>Tractatus Ayyew.</i></p>
 
-     <p>Grâce à la combinaison de nos deux perspectives ancestrales : l'héritage Igorot de Banayan et ma culture Européenne; sa culture indigène et mon passé familial de pionnier; son éducation agraire et mon bagage industriel, nous enquêterons sur les lacunes de notre compréhension éthique moderne. En particulier, l'exceptionnalité humaine erronée que nous observons est à l'origine de tout notre malaise écologique moderne.</p>
+     <p id="en-1-1-0">Grâce à la combinaison de nos deux perspectives ancestrales : l'héritage Igorot de Banayan et ma culture Européenne; sa culture indigène et mon passé familial de pionnier; son éducation agraire et mon bagage industriel, nous enquêterons sur les lacunes de notre compréhension éthique moderne. En particulier, l'exceptionnalité humaine erronée que nous observons est à l'origine de tout notre malaise écologique moderne.</p>
 
-     <p>Cette erreur métaphysique excisée, nous exposerons alors une nouvelle théorie du vert ancrée sur le caractère cosmologique de notre planète.</p>
+     <p id="en-1-1-0">Cette erreur métaphysique excisée, nous exposerons alors une nouvelle théorie du vert ancrée sur le caractère cosmologique de notre planète.</p>
 
-     <p>Guidés par les idées de grandes nations vertes, l’exemple de créatures magnifiquement contributives et de la science de la Terre, nous exposerons chacun des principes qui composent les cinq volets d'enrichissement écologique de notre planète.</p>
+     <p id="en-1-1-0">Guidés par les idées de grandes nations vertes, l’exemple de créatures magnifiquement contributives et de la science de la Terre, nous exposerons chacun des principes qui composent les cinq volets d'enrichissement écologique de notre planète.</p>
 
-     <p>L'éthique terrestre qui en résultera nous aidera à donner un sens à nos processus, entreprises modernes et technologies en s'avérant un moyen par lequel nous pouvons discerner ce qui est enrichissant de ce qui est dégradant ; ce qui est un apport écologique de ce qui est un appauvrissement; et ce qui est vert de ce qui est gris.</p>
+     <p id="en-1-1-0">L'éthique terrestre qui en résultera nous aidera à donner un sens à nos processus, entreprises modernes et technologies en s'avérant un moyen par lequel nous pouvons discerner ce qui est enrichissant de ce qui est dégradant ; ce qui est un apport écologique de ce qui est un appauvrissement; et ce qui est vert de ce qui est gris.</p>
 
       <p id="5-up">De cette façon, avec le modèle de la Terre comme guide du vert, nous pouvons avancer et instaurer une clarté et une confiance sans précédent pour incarner la géométrie de la contribution dans tous nos processus, cycles et systèmes.<a href="#footnotes" title="'We can think of our current civilization-- its technical and sociopolitical infrastructure, its ideology and beliefs-- as an operating system, much like the software that runs our computers.  Now we need to reboot and install a new system software'.  Daniel Pinchbeck, How Soon is Now: From Personal Initiation to Global Transformation, (Publisher: Watkins Publishing, 2017) Chapter 2, p.105" onclick="openFootnotes()">⁵</a></p>
 
-     <p>Commençons donc par ce matériau gênant que nous adorons tant détester.</p>
+     <p id="en-1-1-0">Commençons donc par ce matériau gênant que nous adorons tant détester.</p>
      <br><br><br>
   
     
@@ -357,6 +370,9 @@ All the page components required to build this page-->
 </div><!--Closes main content block-->
 
 
+ <!--BOOKNOTES-CURTAIN-->
+ <booknotes-curtain></booknotes-curtain>
+ 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
 
@@ -401,189 +417,21 @@ All the page components required to build this page-->
     </div>
   
 
+
 <!--PIED DE PAGE DU CHAPITRE
 -->
 
- <chap-foot></chap-foot>
+<chap-foot></chap-foot>
 
-  </div>
-</div>
-<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-   
- 
-  
+</div>  <!--footer functions close-->
 
-  <script>
-document.addEventListener("DOMContentLoaded", function() {
-    let highlightClass = 'highlight';
-    let preHighlightClass = 'pre-highlight';
-    let selectedRange;
+<footer-settings></footer-settings>
 
-    function getSelectedRange() {
-        if (window.getSelection) {
-            let sel = window.getSelection();
-            if (sel.rangeCount) {
-                return sel.getRangeAt(0);
-            }
-        } else if (document.selection && document.selection.createRange) {
-            return document.selection.createRange();
-        }
-        return null;
-    }
+</div> <!--underlayer close-->
 
-    function clearSelection() {
-        if (window.getSelection) {
-            window.getSelection().removeAllRanges();
-        } else if (document.selection) {
-            document.selection.empty();
-        }
-    }
+<script src="../book-note-scripts.js" defer ></script>
 
-    document.addEventListener('mouseup', function() {
-    selectedRange = getSelectedRange();
-    if (selectedRange && selectedRange.toString().trim().length > 0) {
-        let span = document.createElement('span');
-        span.style.cursor = 'pointer';
-        span.classList.add(preHighlightClass);
-        span.title = "Click this text to save.";
-        // Add unique IDs to the span
-        let uniqueID = 'highlight-' + Date.now();
-        span.id = uniqueID;
-        selectedRange.surroundContents(span);
-        clearSelection();
-    }
-});
+</BODY>
 
-
-function removeHighlight(e) {
-    if (e.target.classList.contains(highlightClass) || e.target.classList.contains(preHighlightClass)) {
-        let text = e.target.textContent;
-        e.target.replaceWith(text);
-    }
-}
-
-function storeSelectedText() {
-    const selection = window.getSelection();
-    if (selection.rangeCount > 0) {
-        const range = selection.getRangeAt(0);
-        // Get the ID of the span element from the selected range
-        const uniqueID = range.startContainer.parentNode.id;
-
-        localStorage.setItem('container', uniqueID);
-        localStorage.setItem('startOffset', range.startOffset);
-        localStorage.setItem('endOffset', range.endOffset);
-        // Retrieve the text content of the element with the unique ID
-        const storedText = document.getElementById(uniqueID).textContent;
-        localStorage.setItem('storedText-1', storedText);
-
-        alert(`container: ${uniqueID}\n` +
-              `startOffset: ${range.startOffset}\n` +
-              `endOffset: ${range.endOffset}\n` +
-              `storedText-1: ${storedText}`);
-    }
-}
-
-
-
-
-
-    document.addEventListener('click', function(e) {
-        if (e.target.classList.contains(preHighlightClass)) {
-            if (e.target.classList.contains(highlightClass)) {
-                e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class, but keep the .highlight class
-            } else {
-                e.target.classList.add(highlightClass);
-                e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
-                e.target.title = "This quotation is saved in your Book Notes";
-                storeSelectedText(); // Call the storeSelectedText function to save the highlighted text
-            }
-        } else if (e.target.classList.contains(highlightClass)) {
-            removeHighlight(e);
-        }
-    });
-});
-
-
-
-
-/*
-  // Function to count characters in the entire HTML document
-  function countCharacters() {
-    const allTextElements = document.querySelectorAll('*');
-    let charCount = 0;
-
-    allTextElements.forEach(element => {
-      element.childNodes.forEach(child => {
-        if (child.nodeType === Node.TEXT_NODE) {
-          charCount += child.textContent.length;
-        }
-      });
-    });
-
-    return charCount;
-  }
-
-  // Function to display character count in an alert once the page has loaded
-  function showAlertWithCharacterCount() {
-    const totalCharacters = countCharacters();
-    //alert(`Total Characters in the HTML document: ${totalCharacters}`);
-  }
-
-  // Function to store selected text and its positions in the local storage
-  function storeSelectedText() {
-    const selection = window.getSelection();
-    if (selection.rangeCount > 0) {
-      const range = selection.getRangeAt(0);
-      localStorage.setItem('startContainer', range.startContainer.parentNode.id);
-      localStorage.setItem('endContainer', range.endContainer.parentNode.id);
-      localStorage.setItem('startOffset', range.startOffset);
-      localStorage.setItem('endOffset', range.endOffset);
-      localStorage.setItem('storedText-1', selection.toString());
-    }
-  }
-
-  // Function to recreate selection from stored data
-  function recreateSelection() {
-    const startContainer = document.getElementById(localStorage.getItem('startContainer'));
-    const endContainer = document.getElementById(localStorage.getItem('endContainer'));
-    const startOffset = parseInt(localStorage.getItem('startOffset'));
-    const endOffset = parseInt(localStorage.getItem('endOffset'));
-    const storedText = localStorage.getItem('storedText-1');
-
-    if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
-      const range = document.createRange();
-      range.setStart(startContainer.firstChild, startOffset);
-      range.setEnd(endContainer.firstChild, endOffset);
-
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-
-      alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
-    }
-  }
-
-  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-  window.addEventListener('load', function () {
-    showAlertWithCharacterCount();
-    recreateSelection();
-
-    // Attach the storeSelectedText function to the "mouseup" event
-    document.addEventListener("mouseup", storeSelectedText);
-  });
-
-*/
-
- 
-
-</script>
-
-
-  
-  
-  
-  </BODY>
-  </HTML>
-  
-
+</HTML>
 
