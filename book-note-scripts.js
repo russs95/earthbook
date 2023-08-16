@@ -63,6 +63,20 @@ function generateId() {
 
 
 
+/*
+document.getElementById('ct-main').addEventListener('mouseup', function() {
+    const selection = window.getSelection();
+
+    if (!selection.isCollapsed) {
+        lastSelectedText = selection.toString();
+        
+        if (selection.rangeCount > 0) {
+            lastSelectedRange = selection.getRangeAt(0);
+        }
+        alert(`Selected Text: ${lastSelectedText}, Range: ${lastSelectedRange}`);
+    }
+});*/
+
 
 let lastSelectedText = '';
 let lastSelectedRange = null;
@@ -72,8 +86,8 @@ function checkSelectedText() {
     const selection = window.getSelection();
     
     // Reset the last selected range and text
-    lastSelectedRange = null;
-    lastSelectedText = '';
+   // lastSelectedRange = null;
+  //  lastSelectedText = '';
     
     // Check if any text is selected
     if (!selection.rangeCount || selection.isCollapsed) {
@@ -189,18 +203,6 @@ function copyToClipboard(text) {
     }, 1200);
 }
 
-document.getElementById('ct-main').addEventListener('mouseup', function() {
-    const selection = window.getSelection();
-
-    if (!selection.isCollapsed) {
-        lastSelectedText = selection.toString();
-        
-        if (selection.rangeCount > 0) {
-            lastSelectedRange = selection.getRangeAt(0);
-        }
-        alert(`Selected Text: ${lastSelectedText}, Range: ${lastSelectedRange}`);
-    }
-});
 
 
 
