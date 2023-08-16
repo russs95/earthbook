@@ -213,11 +213,6 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function(event) {
             const colorString = event.target.getAttribute('data-color');
             highlightBooknote(colorString);
-
-            const X = colorString; // The highlight color
-            const Y = lastSelectedText; // The currently stored last selected text
-
-            alert(`Activated? Highlight color: ${X}, Selected Text: ${Y}`);
         });
     });
 });
