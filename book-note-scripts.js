@@ -60,30 +60,33 @@ function generateId() {
     return String(currentId).padStart(3, '0');
 }
 
+let lastSelectedText = '';
 
 
 //CHECKS TO SEE IF THE TEXT CAN BE HIGHLIGHTED
-function checkSelectedText(event) {  // Added 'event' parameter
+
+function checkSelectedText() {
     const selection = window.getSelection();
 
     // Prepare palette for potential position adjustments
     const palette = document.getElementById('bookNotePalette');
 
-    // Check if the touch was inside the palette
-    const wasTouchInsidePalette = event && palette.contains(event.target);
+// Check if any text is selected
+if (!selection.rangeCount || selection.isCollapsed) {
+    // Get the current bottom value of the palette
+    const currentBottom = window.getComputedStyle(palette).bottom;
 
-    // Check if any text is selected
-    if (!selection.rangeCount || selection.isCollapsed) {
-        // Get the current bottom value of the palette
-        const currentBottom = window.getComputedStyle(palette).bottom;
-
-        // If the current bottom isn't set to '-10px' and the touch wasn't inside the palette
-        if (currentBottom !== "-10px" && !wasTouchInsidePalette) {   
-            alert('sending down!');
-            palette.style.bottom = '-500px';  // No text selected
-        }
-        return;
+    // If the current bottom isn't set to '-10px' (annotation box is up and showing), set it to '-500px'
+    if (currentBottom !== "-10px") {   
+        alert('sending down!');
+        palette.style.bottom = '-500px';  // No text selected
     }
+    return;
+}
+
+
+lastSelectedText = window.getSelection().toString();
+
 
     const selectedRange = selection.getRangeAt(0);
     const startContainerParent = selectedRange.startContainer.parentNode;
@@ -98,8 +101,10 @@ function checkSelectedText(event) {  // Added 'event' parameter
 
     // Check if the selection does not span more than one paragraph
     if (startContainerParent !== endContainerParent) {
-        alert("Sorry! Currently you can't select and highlight text in more than one paragraph to make a book note");
+        //palette.style.bottom = '-200px';  // Selected text spans multiple paragraphs
+        alert("Sorry!  Currently you can't select and highlight text in more than one paragraph to make a book note");
         selection.removeAllRanges();
+
         return;
     }
 
@@ -109,25 +114,25 @@ function checkSelectedText(event) {  // Added 'event' parameter
 
 // Event listeners to listen for text being selected.  Is this sufficient for iphones?
 document.addEventListener('mouseup', checkSelectedText);
+//document.addEventListener('touchend', checkSelectedText);
 
-document.addEventListener('touchend', function(event) {
+document.addEventListener('touchend', function() {
     setTimeout(function() {  // Using a timeout to ensure the selection is processed
         const selection = window.getSelection().toString();
         if (selection.length > 0) {
-            // Call your function here and pass the event for checking where the touch occurred
-            checkSelectedText(event);
+            // Call your function here
+            checkSelectedText();
         }
     }, 1);
 });
 
 
-
 /*COPY TEXT */
-
 document.getElementById('copyBtn').addEventListener('click', function() {
-    let selectedText = window.getSelection().toString();
-    copyToClipboard(selectedText);
+    copyToClipboard(lastSelectedText);
 });
+
+
 
 function copyToClipboard(text) {
     const textarea = document.createElement('textarea');
@@ -261,9 +266,7 @@ function highlightBooknote(color) {
             // Adjust the height of the palette for 'yellow' case
             document.getElementById('bookNotePalette').style.bottom = "-10px";
             document.getElementById('palletteBar').style.display = "none";
-                // Update the "Annotate" button's onclick attribute to pass the new ID
-    //const annotateButton = document.getElementById('annotate-button');
-    //annotateButton.setAttribute('onclick', `appendAnnotation(${id})`);
+                
     lastUsedBookNoteId = id;  // Store the last used ID
         }
     }
