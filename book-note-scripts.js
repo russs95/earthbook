@@ -86,7 +86,7 @@ function checkSelectedText() {
 
     if (isSelectionValid(lastSelectedRange)) {
         document.getElementById('palletteBar').style.display = "flex";
-        document.getElementById('bookNotePalette').style.bottom = '-390px';  // Valid text selected within constraints
+        document.getElementById('bookNotePalette').style.bottom = '-370px';  // Valid text selected within constraints
     } else {
         selection.removeAllRanges();
     }
@@ -188,6 +188,19 @@ function copyToClipboard(text) {
         palette.style.bottom = '-500px'; // Slide down to hide the palette
     }, 1200);
 }
+
+document.getElementById('ct-main').addEventListener('mouseup', function() {
+    const selection = window.getSelection();
+
+    if (!selection.isCollapsed) {
+        lastSelectedText = selection.toString();
+        
+        if (selection.rangeCount > 0) {
+            lastSelectedRange = selection.getRangeAt(0);
+        }
+    }
+});
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
