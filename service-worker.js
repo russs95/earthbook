@@ -105,6 +105,55 @@ self.addEventListener('install', event => {
 '/svgs/09-energy-white.svg',
 '/svgs/10-matter-white.svg',
 
+//INCLUDES
+
+
+'/en/includes/header-component.js',
+'/en/includes/settings-curtain.js',
+'/en/includes/content-curtain.js',
+'/en/includes/share-curtain.js',
+'/en/includes/buy-curtain.js',
+'/en/includes/bookplate-curtain.js',
+'/en/includes/earthbook-curtain.js',
+'/en/includes/footer-component.js',
+'/en/includes/read-curtain.js',
+'/en/includes/tour-curtain.js',
+'/en/includes/search-curtain.js',
+'/en/includes/eco-curtain.js',
+'/en/includes/booknotes-curtain.js',
+'/en/includes/footer-settings.js',
+'/en/includes/chap-foot.js',
+
+
+//MAIN PAGES
+'/en/index.html',
+'/en/preamble.html',
+'/en/preface.html',
+'/en/epigraph-1.html',
+'/en/imagine.html',
+'/en/plastic1.html',
+'/en/stellar.html',
+'/en/patterns.html',
+'/en/kincentric.html',
+'/en/nature.html',
+'/en/earthen.html',
+'/en/epigraph-2.html',
+'/en/spirals.html',
+'/en/energy.html',
+'/en/unpublished.html',
+
+
+//APPENDIX  
+
+'/en/summaries.html',
+'/en/dedication.html',
+'/en/for-earth.html',
+'/en/acknowledgements.html',
+'/en/publishing.html',
+'/en/authors.html',
+'/en/declaration.html',
+'/en/bibliography.html',
+'/en/glossary.html',
 
 
       ]);
