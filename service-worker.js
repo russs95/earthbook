@@ -14,6 +14,27 @@ self.addEventListener('install', event => {
 '/fonts/CooperLtBTLightItalic.ttf',
 '/fonts/CooperLightBT.ttf',
 
+//Landing Images
+
+'/svgs/tractatus-mandala-full-grey.svg',
+'/svgs/tractatus-mandala-full-white.svg',
+'/photos/cover-500px.webp',
+'/icons/reader.svg',
+'/icons/pdf.svg',
+'/icons/buy.svg',
+'/svgs/my-book-header-logo-night.svg',
+'/svgs/my-book-header-logo-day.svg',
+'/favicons/apple-touch-icon.png',
+'/favicons/favicon-32x32.png',
+'/favicons/favicon-16x16.png',
+'/covers/earth-book-cover-1000px.jpg',
+'/svgs/footer-settings-button.svg',
+'/svgs/footer-settings-button-over.svg',
+'/svgs/footer-settings-button-up.svg',
+'/svgs/up-arrow-dark.svg',
+'/svgs/up-arrow-light.svg',
+
+
 
       ]);
     })
