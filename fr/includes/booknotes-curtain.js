@@ -15,7 +15,7 @@ class bookNotes extends HTMLElement {
     <img src="../icons/search.svg?v=3" alt="Rechercher" style="padding-left:12px;padding-right:15px;cursor:pointer" onclick="closeBooknotes(), openSearch()">
 </div>
    
-<div class="overlay-content-tc">
+<div class="overlay-content-tc" style="min-height:80%;">
 
     <div class="contents-title-box">
         <div class="contents-title">Your Saved</div>
@@ -27,10 +27,43 @@ class bookNotes extends HTMLElement {
 
 
     </div>
-    <button id="reset-settings" onclick="reset2Default()" style="width: 200px;
-            margin: 30px auto 50px auto; cursor:pointer; padding:6px;">⟲ Reset BookNotes + Settings.</button>
-  
-    <div class="tc-button-row">
+
+        <div style="margin:auto;">
+            <button id="reset-settings-bn" onclick="resetBookNotes()" style="width: 200px;margin: 30px auto 20px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
+
+            <div id="instructions-bn" style="font-family:Mulish;color:grey;">Highlight, then click any text in the Earthbook to save it to your Booknotes.</div>
+        </div>
+
+        <div id="collaborative-editing" style="width:80%; padding:20px;background:var(--background-color); border-radius: 10px;margin: auto;margin-top:80px;">
+
+        <br></br>
+            <h3 style="font-family:Mulish;margin:0px">Collaborative Editing</h3>
+
+
+        
+            <h6 style="margin:16px auto 10px auto;">Earthbooks enable authors and editors to work together on the live publication by importing and export your saved highlights and comments.  Export your Booknotes to share with another reader:</h6>
+
+            <button id="booknotes-download" onclick="downloadBooknotes()" aria-label="Download Booknotes">
+            ▼ Download Booknotes
+            </button>
+
+            <h6 style="margin: 25px 0px 0px 5px;">Upload the Booknotes of another reader to your device to view them.</h6>
+
+            <div id="booknotes-export" style="width:380px; padding:10px;margin: 10px auto 15px auto;background-color:var(--slider);
+            border-radius: 10px;width:fit-content;">
+            
+                <input id="jsonUpload" type="file" id="jsonUpload" accept=".json" aria-label="Choose a Booknotes JSON file">
+                 <button id="booknotes-upload-go" onclick="uploadBooknotes()" aria-label="Upload Booknotes file">▲ Upload Booknotes</button>
+            </div>
+
+            <br><br>
+
+            
+
+    </div>
+
+    <!--
+    <div class="tc-button-row" style="margin-top:auto;">
         <a href="index.html" style="height: 24px; flex-grow: 1"><div id="tour-btn" class="action-btn" ><i style="background-image: url(../icons/home.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i></div></a>
 
         <div id="buy-btn" class="action-btn" onclick="closeContents(), guidedTour()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> Tour</div>
@@ -42,9 +75,52 @@ class bookNotes extends HTMLElement {
         <div id="buy-btn" class="action-btn" onclick="openEco()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 0px; cursor:pointer;"></i></div>
         
         
+    </div>-->
+</div>
+</div>
+
+<!-- BOOKNOTES MENU PALLETTE-->
+
+<div id="bookNotePalette" class="palette-hidden">
+   <div class="main-pallette-buttons" id="palletteBar">
+        <div  class="highlight-buttons">
+            <div id="save-text" class="pallette-text">Save:</div>
+            <button class="color-btn" onclick="highlightBooknote('green')" style="background:green" aria-label="Highlight Text Green" title="Highlight & Save Green"></button>
+            <button class="color-btn" onclick="highlightBooknote('red')" style="background:red" aria-label="Highlight Text Red" title="Highlight & Save Red"></button>
+            <button class="color-btn" onclick="highlightBooknote('blue')" style="background:#2daee5" aria-label="Highlight Text Blue" title="Highlight & Save Blue"></button>
+        </div>
+        
+        <button aria-label="Copy Selection" id="copyBtn" class="pallette-btn">
+            <div class="pallette-text">Copy</div>
+        </button> 
+        <button aria-label="Add annotation" id="booknotesBtn" class="pallette-btn" onclick="highlightBooknote('yellow')">
+            <div class="pallette-text">Annotate</div>
+        </button>
+        <button aria-label="View Your Booknotes" id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
+            <div class="pallette-text">Booknotes</div>
+        </button>
+    </div>
+
+    <div id="annotationEntry" style="width: 90%;
+    margin: 20px auto 20px auto;">
+    <textarea id="userAnnotation" placeholder="Add your annotation here..."></textarea>
+    <button id="annotate-button" style="padding: 8px 15px;cursor:pointer;margin-right:8px;" onclick="appendAnnotation()">Annotate</button>
+    <button id="annotate-cancel" style="padding: 8px 15px;cursor:pointer;"  onclick="cancelAnnotation()">Cancel</button>
     </div>
 </div>
+
+
+
+<!-- CHAPT NOTICE-->
+
+
+<div id="chap-notice">
+<div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
+<div id="chap-notice-text">
+💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
 </div>
+</div>
+
 
       
       `;
@@ -52,5 +128,6 @@ class bookNotes extends HTMLElement {
   }
   
   customElements.define('booknotes-curtain', bookNotes);
+  
   
   
