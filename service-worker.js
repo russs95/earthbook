@@ -34,6 +34,29 @@ self.addEventListener('install', event => {
 '/svgs/up-arrow-dark.svg',
 '/svgs/up-arrow-light.svg',
 
+//Curtain IMages
+
+'/photos/cover-epub-400px.webp',
+'/photos/cover-print-400px.webp',
+'/photos/cover-grattitude-600px.webp',
+'/svgs/bottom-x.svg',
+
+'/icons/up-arrow.svg',
+'/icons/code.svg',
+'/icons/down-arrow.svg',
+'/icons/plus.svg',
+'/icons/comments.svg',
+'/icons/settings.svg',
+
+
+//Javascript
+
+'/dark-mode-toggle.mjs.js',
+'/universal-javascript.js',
+'/content-javascript.js',
+'/clip/dist/clipboard.min.js',
+'/index-javascripts.js',
+
 
 
       ]);
