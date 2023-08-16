@@ -63,26 +63,27 @@ function generateId() {
 
 
 //CHECKS TO SEE IF THE TEXT CAN BE HIGHLIGHTED
-
-function checkSelectedText() {
+function checkSelectedText(event) {  // Added 'event' parameter
     const selection = window.getSelection();
 
     // Prepare palette for potential position adjustments
     const palette = document.getElementById('bookNotePalette');
 
-// Check if any text is selected
-if (!selection.rangeCount || selection.isCollapsed) {
-    // Get the current bottom value of the palette
-    const currentBottom = window.getComputedStyle(palette).bottom;
+    // Check if the touch was inside the palette
+    const wasTouchInsidePalette = event && palette.contains(event.target);
 
-    // If the current bottom isn't set to '-10px' (annotation box is up and showing), set it to '-500px'
-    if (currentBottom !== "-10px") {   
-        alert('sending down!');
-        palette.style.bottom = '-500px';  // No text selected
+    // Check if any text is selected
+    if (!selection.rangeCount || selection.isCollapsed) {
+        // Get the current bottom value of the palette
+        const currentBottom = window.getComputedStyle(palette).bottom;
+
+        // If the current bottom isn't set to '-10px' and the touch wasn't inside the palette
+        if (currentBottom !== "-10px" && !wasTouchInsidePalette) {   
+            alert('sending down!');
+            palette.style.bottom = '-500px';  // No text selected
+        }
+        return;
     }
-    return;
-}
-
 
     const selectedRange = selection.getRangeAt(0);
     const startContainerParent = selectedRange.startContainer.parentNode;
@@ -97,10 +98,8 @@ if (!selection.rangeCount || selection.isCollapsed) {
 
     // Check if the selection does not span more than one paragraph
     if (startContainerParent !== endContainerParent) {
-        //palette.style.bottom = '-200px';  // Selected text spans multiple paragraphs
-        alert("Sorry!  Currently you can't select and highlight text in more than one paragraph to make a book note");
+        alert("Sorry! Currently you can't select and highlight text in more than one paragraph to make a book note");
         selection.removeAllRanges();
-
         return;
     }
 
@@ -110,17 +109,17 @@ if (!selection.rangeCount || selection.isCollapsed) {
 
 // Event listeners to listen for text being selected.  Is this sufficient for iphones?
 document.addEventListener('mouseup', checkSelectedText);
-//document.addEventListener('touchend', checkSelectedText);
 
-document.addEventListener('touchend', function() {
+document.addEventListener('touchend', function(event) {
     setTimeout(function() {  // Using a timeout to ensure the selection is processed
         const selection = window.getSelection().toString();
         if (selection.length > 0) {
-            // Call your function here
-            checkSelectedText();
+            // Call your function here and pass the event for checking where the touch occurred
+            checkSelectedText(event);
         }
     }, 1);
 });
+
 
 
 /*COPY TEXT */
