@@ -78,10 +78,25 @@ These tags will be consistent for the whole book-->
 <meta property="og:locale" content="en_EN" >
 <meta property="og:url" content="https://book.earthen.io/fr">
 
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+ 
+ 
 <script>
-      // Declare the global variables
-    var chapNo = "Introduction";
-    var chapName = "";
+           // Declare the global variables
+           var lang = "en";
+     var book = "";
+    var chapNo = "";
+    var chapName = "Welcome";
+    var chaptURL = "index.html"   // Declare the global variables
+ 
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -94,13 +109,8 @@ These tags will be consistent for the whole book-->
     }
 </script>
 
- <!--FONTS
-starts loading the fonts-->
 
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
 
-	
 <!-- PRELOADS-->
 <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
@@ -122,15 +132,6 @@ starts loading the fonts-->
 <link rel="preload" as="image" href="../svgs/up-arrow-light.svg">> 
 -->
 
- <!-- STYLE SHEETS   
-All the css needed for this page-->
- 
-<link rel="stylesheet" href="../style-sheet.css">
-<link rel="stylesheet" href="../light.css">
-<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
- <link rel="stylesheet" href="../slider.css">
- 
  <!-- INCLUDES
  Main Scripts-->   
 
