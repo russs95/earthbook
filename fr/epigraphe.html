@@ -10,11 +10,11 @@ o               .        ___- -___                    .
        .              .-\          -.     .     .         .
                     ./.;_.\     __/~ \.     
                    /;  / `-'  __\    . \                            
- .        .       /  ,-'     / .   .;   \        |
+ .        .       / ,-'      / .   .;   \        |
                  | .|       /       __   |      -O-       .
                 |__/    __ |  . ;   \ | . |      |
                 |      /  \\_    . ;| \___|    
-   .    o       |      \  .~\\___,-'      |           .
+   .    o       |      \  .~\\___,--'     |           .
                  |     | . ; ~~~~\_    __|
     |             \    \   .  .  ; \  /_/   .
    -O-        .    \   /         . |  ~/                  .
@@ -27,7 +27,7 @@ EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
 Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
  
 
-Page de destination - version 1.2
+Page de destination - version 1.3.2
 Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
 Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
 
@@ -39,6 +39,8 @@ Voir le référentiel complet du projet sur : https://github.com/russs95/earthb
 Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.io
 */
 -->
+
+
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
@@ -47,7 +49,7 @@ Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.
 <link rel="canonical" href="https://book.earthen.io/fr/epigraph-1.html"> 
 <link rel="alternate" href="https://book.earthen.io/en/epigraph.html" hreflang="en" >
 <link rel="alternate" href="http://book.earthen.io/en/epigraph.html" hreflang="x-default" >
-<link rel="alternate" href="https://book.earthen.io/fr/epigraph-1.html" hreflang="fr" >
+<link rel="alternate" href="https://book.earthen.io/fr/epigraphe-1.html" hreflang="fr" >
 <!--
 <link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
 <link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
@@ -70,39 +72,13 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
 <meta property="og:title"         content="D'une Éthique Terrestre - Tracatus Ayyew">
-<meta property="og:description"   content="Par Banayan Angway & Russell Maier  | Edition Earthbook">
+<meta property="og:description"   content="«Un autre monde est en train de naître devant nos yeux. Un autre esprit, dans nos façons de penser, d'espérer et d'avoir peur. L'angoisse écologique qui donne sa couleur au siècle nouveau n'annonce rien moins, pour notre civilisation, qu'un changement d'englobant. Ce fut l'Histoire, ce sera la Nature. De quoi prendre le vert au sérieux.»">
 <meta property="og:image"         content="../covers/TA-cover-french-1200px.png">
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1492px" >
-<meta property="og:locale" content="en_EN" >
-<meta property="og:url" content="https://book.earthen.io/fr/epigraphe.html">
-
-<script>
-      // Declare the global variables
-    var chapNo = "Introduction";
-    var chapName = "Épigraphe";
-
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope:', registration.scope);
-        }, function(error) {
-          console.log('ServiceWorker registration failed:', error);
-        });
-      });
-    }
-</script>
-
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="..svgs/00-light.svg">
+<meta property="og:locale" content="fr_FR" >
+<meta property="og:url" content="https://book.earthen.io/fr/epigraphe-1.html">
 
 
  <!-- STYLE SHEETS   
@@ -114,6 +90,35 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css">
+
+ 
+
+<script>
+       // Declare the global variables
+       var lang = "fr";
+      var book = "Livre Un";
+    var chapNo = "";
+    var chapName = "Épigraphe";
+    var chaptURL = "epigraphe-1.html"   
+
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+</script>
+
+
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/00-dark.svg" media="(prefers-color-scheme: dark)">
+
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="..svgs/00-light.svg" media="(prefers-color-scheme: light)">
 
  
  <!-- INCLUDES
@@ -139,6 +144,10 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+
+
 <style>
 
 
@@ -269,6 +278,9 @@ All the page components required to build this page-->
 </div><!--Closes main content block-->
 
 
+ <!--BOOKNOTES-CURTAIN-->
+ <booknotes-curtain></booknotes-curtain>
+ 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
 
@@ -320,22 +332,23 @@ All the page components required to build this page-->
 
   </div>
 </div>
-<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-   
- 
-  
-
-  <script>
 
 
-</script>
 
+<!--PIED DE PAGE DU CHAPITRE
+-->
 
-  
-  
-  
-  </BODY>
-  </HTML>
-  
+<chap-foot></chap-foot>
 
+</div>  <!--footer functions close-->
+
+<footer-settings></footer-settings>
+
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>
 
