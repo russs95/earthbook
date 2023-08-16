@@ -198,6 +198,7 @@ document.getElementById('ct-main').addEventListener('mouseup', function() {
         if (selection.rangeCount > 0) {
             lastSelectedRange = selection.getRangeAt(0);
         }
+        alert(`Selected Text: ${lastSelectedText}, Range: ${lastSelectedRange}`);
     }
 });
 
