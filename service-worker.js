@@ -89,7 +89,7 @@ self.addEventListener('install', event => {
 '/svgs/09-energy-dark.svg',
 '/svgs/10-matter-dark.svg',
 '/svgs/up-arrow-dark.svg',
-'../svgs/content-arrow-45-night.svg',
+'/svgs/content-arrow-45-night.svg',
 
 //Light Scheme
 
@@ -113,7 +113,7 @@ self.addEventListener('install', event => {
 '/svgs/09-energy-white.svg',
 '/svgs/10-matter-white.svg',
 '/svgs/up-arrow-light.svg',
-'../svgs/content-arrow-45.svg',
+'/svgs/content-arrow-45.svg',
 
 //INCLUDES
 
