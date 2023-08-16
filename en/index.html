@@ -27,7 +27,7 @@ EARTHBOOK - An open source, Earth & Human Friendly Book format
 Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
  
 
-Landing page - version 1.2
+Landing page - version 1.3.2
 Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
 First EarthBook, the Tractatus Ayyew, published 22.12.22.
 
@@ -76,7 +76,7 @@ These tags will be consistent for the whole book-->
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1500px" >
 <meta property="og:locale" content="en_EN" >
-<meta property="og:url" content="https://book.earthen.io/en">
+<meta property="og:url" content="https://book.earthen.io/fr">
 
 <script>
       // Declare the global variables
@@ -85,7 +85,7 @@ These tags will be consistent for the whole book-->
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=3').then(function(registration) {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
           console.log('ServiceWorker registration successful with scope:', registration.scope);
         }, function(error) {
           console.log('ServiceWorker registration failed:', error);
@@ -357,7 +357,6 @@ All the page components required to build this page-->
                 </div>
                 </a>
             
-
                 <div class="book-box-header">Book Two</div>
 
             
