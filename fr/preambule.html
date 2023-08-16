@@ -217,12 +217,6 @@ All the page components required to build this page-->
     
     <div id="ct-main">
     
-      <div id="chap-notice">
-        <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-        <div id="chap-notice-text">
-        💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
-        </div>
-      </div>
       
       <!-- MAIN TEXT CONTENT of the Page-->
       
@@ -289,6 +283,8 @@ All the page components required to build this page-->
 
 </div><!--Closes main content block-->
 
+ <!--BOOKNOTES-CURTAIN-->
+ <booknotes-curtain></booknotes-curtain>
 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
