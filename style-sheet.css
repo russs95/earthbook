@@ -523,7 +523,7 @@ h6 {
   padding-top: 20px;
 }
 
-.lead-page-paragraph:first-child::first-letter {
+.lead-page-paragraph p:first-child::first-letter {
   color: var(--pre-link-color);
   float: left;
   font-family: "CooperLt";
