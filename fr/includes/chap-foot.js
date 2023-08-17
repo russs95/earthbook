@@ -18,7 +18,7 @@ class chapfoot extends HTMLElement {
             </div>
 
             <div class="footer-function-item">
-              <p>The Source Code</p>
+              <p>Le code source</p>
             </div>
 
             <div class="footer-function-item-icon"> 
@@ -29,8 +29,8 @@ class chapfoot extends HTMLElement {
 
           <div id="footer-function-reveal-code" style="height:0px; opacity:0;">
               <div class="github-source2" style="font-size:0.8em; font-family:Mulish;color:grey;overflow: clip;">
-                Earthbook's are open source. Contribute, correct or fork this Earthbook's code on Github:
-                  <span id="git-code-url"><a href="https://github.com/russs95/earthbook/blob/main/ " target="_blank" aria-label="Contribute to the code. Go to the Earthbook Github repository for this page:"><br> ➔ github.com/russs95/earthbook/blob/main/</a></span>
+              Earthbook est open source. Contribuez, corrigez ou bifurquez le code de ce Earthbook sur Github :
+                  <span id="git-code-url"><a href="https://github.com/russs95/earthbook/blob/main/ " target="_blank" aria-label="Open source code"><br> ➔ github.com/russs95/earthbook/blob/main/</a></span>
               </div>
           </div>
         </div>
@@ -59,20 +59,13 @@ class chapfoot extends HTMLElement {
           
             <div id="footer-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center; background-size:contain;margin: auto 10px auto 0;"></div>
 
-            <div class="footer-function-item"><p>Tools & Resources</p></div>
+            <div class="footer-function-item"><p>Outils et ressources</p></div>
             <div class="footer-function-item-icon">
                 <i style="background-image: url(../icons/settings.svg);"></i>
             </div>
           </div>
         </div>
       </div>
-
-
-      
-
-
-
-  
 
       
       `;

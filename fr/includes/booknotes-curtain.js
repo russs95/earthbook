@@ -62,7 +62,7 @@ class bookNotes extends HTMLElement {
 <div id="bookNotePalette" class="palette-hidden">
    <div class="main-pallette-buttons" id="palletteBar">
         <div  class="highlight-buttons">
-            <div id="save-text" class="pallette-text">Sauvegarder :</div>
+            <div id="save-text" class="pallette-text">Sauvegarder:</div>
             <button class="color-btn" style="background:green" data-color="green" aria-label="Surligner le texte en vert" title="Surligner & Sauvegarder en vert"></button>
 <button class="color-btn" style="background:red" data-color="red" aria-label="Surligner le texte en rouge" title="Surligner & Sauvegarder en rouge"></button>
 <button class="color-btn" style="background:#2daee5" data-color="#2daee5" aria-label="Surligner le texte en bleu" title="Surligner & Sauvegarder en bleu"></button>
