@@ -154,7 +154,7 @@ document.addEventListener('touchend', function(event) {
         const selection = window.getSelection().toString();
         if (selection.length > 0) {
             // Prevent default behavior (like showing the context menu)
-            event.preventDefault();
+            //event.preventDefault();
 
             // Call your function here
             checkSelectedText();
