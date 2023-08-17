@@ -9,6 +9,33 @@ BOOK NOTES FUNCTIONS
 
 ------------------------------------------------*/
 
+document.addEventListener('DOMContentLoaded', function() {
+    const ctMain = document.getElementById('ct-main');
+
+    // The following listeners prevent the default behavior of text selection
+    ctMain.addEventListener('touchstart', function(event) {
+        event.preventDefault();
+    });
+
+    ctMain.addEventListener('touchmove', function(event) {
+        event.preventDefault();
+    });
+
+    ctMain.addEventListener('touchend', function(event) {
+        event.preventDefault();
+        checkSelectedText(); // Check selected text at touchend
+    });
+
+    // The following listener suppresses the context menu on long press for mobile
+    ctMain.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+    });
+});
+
+document.addEventListener('mouseup', checkSelectedText);
+
+
+
 
 let lastUsedBookNoteId = null;
 
@@ -140,13 +167,15 @@ document.addEventListener('touchend', function(event) {
         const selection = window.getSelection().toString();
         if (selection.length > 0) {
             // Prevent default behavior (like showing the context menu)
-            event.preventDefault();
+           // event.preventDefault();
 
             // Call your function here
             checkSelectedText();
         }
     }, 1);
 });
+
+
 
 
 
