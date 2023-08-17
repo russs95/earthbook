@@ -1,16 +1,27 @@
+# 1. Redirect all traffic to https://
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2. Redirect all request for .php files to .html
+RewriteRule ^(.*)\.php$ $1.html [R=301,L]
+
+# 3. Redirect all traffic that lands on https://book.earthen.io to https://book.earthen.io/en/
+RewriteCond %{HTTP_HOST} ^book\.earthen\.io$
+RewriteRule ^$ /en/ [R=301,L]
+
+# 4. Have all requests for https://book.earthen.io/en/ open the index.html file in that directory without showing it in the URL
+DirectoryIndex index.html
+
+# 5. Make an exception for browsers that are set to French as their default language. Redirect those browsers to https://book.earthen.io/fr/
+RewriteCond %{HTTP:Accept-Language} ^fr [NC]
+RewriteRule ^$ /fr/ [R=301,L]
+
+# Set Cache-Control for certain file types for performance
 <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|webp|gif|js|swf|svg)$">
 Header set Cache-Control "max-age=31536000, public"
 </FilesMatch>
 
-
-
-DirectoryIndex index.html
-
-DirectoryIndex en/index.html
-
-Redirect /index.php /en/
-
-Redirect /index.html /en/
 
 Redirect /preamble /en/preamble.php
 Redirect /preamble.html /en/preamble.php
@@ -133,7 +144,3 @@ Redirect /fr/preface.php /fr/lepreface.html
 
 
 
-
-AddType text/cache-manifest .appcache
-
-Redirect /writing /publishing.php
