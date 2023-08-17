@@ -465,6 +465,8 @@ display: none;
   display: flex;
 flex-direction: row;
 margin: auto;
+flex-wrap: row;
+
 }
 
 

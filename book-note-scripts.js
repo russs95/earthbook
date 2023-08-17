@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 if (container) {
                     container.innerHTML = containerHTML; // Replace the innerHTML with the saved HTML (with highlights)
                 } else {
-                    console.error('Error: Container element not found for the following book note:', note);
+                    //console.error('Error: Container element not found for the following book note:', note);
                 }
             } catch (err) {
                 console.error('An error occurred while recreating highlights for the following book note:', note);
