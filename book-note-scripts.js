@@ -134,14 +134,14 @@ function isSelectionValid(range) {
 }
 
 
+// Event listeners to listen for text being selected.  Is this sufficient for iphones?
+document.addEventListener('mouseup', checkSelectedText);
+//document.addEventListener('touchend', checkSelectedText);
 
-document.addEventListener('touchend', function(event) {
-    setTimeout(function() {
+document.addEventListener('touchend', function() {
+    setTimeout(function() {  // Using a timeout to ensure the selection is processed
         const selection = window.getSelection().toString();
         if (selection.length > 0) {
-            // Prevent default behavior (like showing the context menu)
-           // event.preventDefault();
-
             // Call your function here
             checkSelectedText();
         }
@@ -149,6 +149,18 @@ document.addEventListener('touchend', function(event) {
 });
 
 
+document.addEventListener('touchend', function(event) {
+    setTimeout(function() {
+        const selection = window.getSelection().toString();
+        if (selection.length > 0) {
+            // Prevent default behavior (like showing the context menu)
+            event.preventDefault();
+
+            // Call your function here
+            checkSelectedText();
+        }
+    }, 1);
+});
 
 
 
