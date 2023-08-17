@@ -331,8 +331,7 @@ function saveBookNotesToLocalStorage(bookNotes) {
 
 function updateButtonAndPalette() {
     const saveTextDiv = document.getElementById('save-text');
-    saveTextDiv.style.backgroundColor = 'yellow !mportant';
-    saveTextDiv.style.color = 'black';
+    saveTextDiv.style.color = 'green';
     saveTextDiv.style.fontWeight = 'bold';
     saveTextDiv.textContent = 'Saved!';
 
@@ -708,6 +707,9 @@ function appendAnnotation() {
     const bookNotePalette = document.getElementById("bookNotePalette");
 
     annotateButton.textContent = "Saved!";
+    annotateButton.style.backgroundColor = 'yellow !mportant';
+    annotateButton.style.color = 'black';
+    annotateButton.style.fontWeight = 'bold';
     
     setTimeout(() => {
         bookNotePalette.style.bottom = "-500px";
