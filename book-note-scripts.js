@@ -707,8 +707,7 @@ function appendAnnotation() {
     const bookNotePalette = document.getElementById("bookNotePalette");
 
     annotateButton.textContent = "Saved!";
-    annotateButton.style.backgroundColor = 'yellow !mportant';
-    annotateButton.style.color = 'black';
+    annotateButton.style.color = 'yellow';
     annotateButton.style.fontWeight = 'bold';
     
     setTimeout(() => {
