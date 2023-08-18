@@ -197,6 +197,9 @@ All the page components required to build this page-->
 .quotation-box {
     margin: 50px auto;
     max-width: 600px;
+    display: flex;
+flex-flow: row;
+font-size: 3em;
 }
 
 .quote-info {
@@ -401,24 +404,25 @@ All the page components required to build this page-->
         <div class="quote-marks" style="font-size:largest;color:grey;">“</div>
         <div id="the-quote" style="font-size:largest"></div>
         <div class="quote-marks" style="font-size:largest;color:grey;">”</div>
-        <div class="quote-info">
-            <div id="book"></div>
-            <div id="noteChapter"></div>
-            <div id="date"></div>
-            <div id="charCount"></div>
-            <div id="publicNote"></div>
-        </div>
-        <div id="userNote"></div>
     </div>
-    <div class="quotation-button-row">
+    <div class="quote-info">
+        <div id="book"></div>
+        <div id="noteChapter"></div>
+        <div id="date"></div>
+        <div id="charCount"></div>
+        <div id="publicNote"></div>
+    </div>
+    <div id="userNote"></div>
+  
+  <div class="quotation-button-row">
       <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn">
         <div class="pallette-text">Copier</div>
-    </button> 
-        <button id="clearBtn" aria-label="Clear Highlight"class="pallette-btn" action="Clear">Clear</button>
-        <button id="cancelBtn" aria-label="Cancel" class="pallette-btn" action="Cancel">Cancel</button>
-        <button id="citeBtn" aria-label="Cite" class="pallette-btn" action="Cancel">Cite</button>
-    </div>
+      </button> 
+      <button id="clearBtn" aria-label="Clear Highlight"class="pallette-btn" action="Clear">Clear</button>
+      <button id="cancelBtn" aria-label="Cancel" class="pallette-btn" action="Cancel">Cancel</button>
+      <button id="citeBtn" aria-label="Cite" class="pallette-btn" action="Cancel">Cite</button>
   </div>
+  
 </div>
 
 
