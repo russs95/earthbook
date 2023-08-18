@@ -260,7 +260,7 @@ function highlightBooknote(color) {
 
         span.title = "Click to remove BookNote"; 
         span.alt = "Highlight"; 
-        span.setAttribute('onclick', 'removeHighlight(event)');
+        span.setAttribute('onclick', 'viewHighlightInfo(this)');
 
         const id = generateId();
         span.dataset.id = id;
@@ -872,20 +872,16 @@ document.getElementById("copyBtn").addEventListener("click", function() {
     }, 2000);
 });
 
-document.getElementById("clearBtn").addEventListener("click", function() {
-    const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
-    clearHighlight2(dataId); // Passing the dataId to the clearHighlight2 function
-    document.getElementById("highlight-viewer").style.display = "none";
-});
+
 
 document.getElementById("cancelBtn").addEventListener("click", function() {
     document.getElementById("highlight-viewer").style.display = "none";
 });
 
-document.getElementById("citeBtn").addEventListener("click", function() {
-    const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
-    citeHighlight(dataId); // Passing the dataId to the citeHighlight function
-});
+
+
+
+
 
 
 
