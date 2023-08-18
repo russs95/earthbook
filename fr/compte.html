@@ -160,19 +160,23 @@ All the page components required to build this page-->
 
 #close-x {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 30px;
+    right: 30px;
     cursor: pointer;
     font-family: 'Mulish';
-    color: grey;
-    font-size: medium;
+    color: var(--text-color);
+    font-size: 3em;
+}
+
+#close-x:hover {
+  color: grey;
 }
 
 #quotation-title {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    font-family: 'CooperLT';
+    top: 30px;
+    left: 30px;
+    font-family: "CooperLtMedium";
     color: grey;
     font-size: small;
   }
@@ -211,7 +215,7 @@ All the page components required to build this page-->
 .quotation-button-row {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin: 20px auto 20px auto;
 }
 
 .action {
@@ -389,25 +393,27 @@ All the page components required to build this page-->
   </div>
 -->
 <div id="highlight-viewer" class="modal">
-  <div class="quotation-title">BookNote</div>
-  <div id="close-x">&times;</div>
-  <div class="quotation-box">
-      <div id="the-quote" style="font-size:larger"></div>
-      <div class="quote-info">
-          <div id="book"></div>
-          <div id="noteChapter"></div>
-          <div id="date"></div>
-          <div id="charCount"></div>
-          <div id="publicNote"></div>
-      </div>
-      <div id="userNote"></div>
-  </div>
-  <div class="quotation-button-row">
-    <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn">
-      <div class="pallette-text">Copier</div>
-  </button> 
-      <button id="clearBtn" aria-label="Clear Highlight"class="pallette-btn" action="Clear">Clear</button>
-      <button id="cancelBtn" aria-label="Cancel" class="pallette-btn" action="Cancel">Cancel</button>
+  <div class="highlight-viewer-content" style="display:flex;width:80%;margin:auto;height:100%;">
+    <div id="quotation-title">BookNote</div>
+    <div id="close-x">&times;</div>
+    <div class="quotation-box">
+        <div id="the-quote" style="font-size:larger"></div>
+        <div class="quote-info">
+            <div id="book"></div>
+            <div id="noteChapter"></div>
+            <div id="date"></div>
+            <div id="charCount"></div>
+            <div id="publicNote"></div>
+        </div>
+        <div id="userNote"></div>
+    </div>
+    <div class="quotation-button-row">
+      <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn">
+        <div class="pallette-text">Copier</div>
+    </button> 
+        <button id="clearBtn" aria-label="Clear Highlight"class="pallette-btn" action="Clear">Clear</button>
+        <button id="cancelBtn" aria-label="Cancel" class="pallette-btn" action="Cancel">Cancel</button>
+    </div>
   </div>
 </div>
 

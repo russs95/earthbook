@@ -13,7 +13,7 @@ class TourCurtain extends HTMLElement {
   
     <div id="information-one" class="information">
     <div class="tour-image"><img src="../svgs/earthbook.svg" title="Lire librement" alt="Bienvenue dans un Earthbook"></div>  
-      <div class="modal-header">Visite rapide</div>
+      <div class="modal-header">Visite guidée</div>
       <div class="modal-description">Bienvenue dans notre Earthbook ! Vous n'avez jamais lu un livre comme celui-ci auparavant. Découvrez comment fonctionne un Earthbook grâce à cette petite visite guidée...</div>
       <button class="next">Suivant ➔</button>
     </div>
