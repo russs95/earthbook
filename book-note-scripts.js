@@ -835,14 +835,12 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 //VIEW HIGHLIGHT
 
-
-function viewHighlightInfo(element) {
-    const dataId = element.getAttribute("data-id");
-    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')); // Assuming this is where your bookNotes are stored
-    const highlight = bookNotes.find(note => note.id === dataId);
+function viewHighlightInfo(bookNoteId) {
+    const bookNotes = JSON.parse(localStorage.getItem('bookNotes'));
+    const highlight = bookNotes.find(note => note.id === bookNoteId);
     
     if (highlight) {
-        document.getElementById("the-quote").textContent = `“${highlight.storedText}”`; // Added open and closed quotations
+        document.getElementById("the-quote").textContent = `“${highlight.storedText}”`;
         document.getElementById("the-quote").classList.add(`highlight-${highlight.highlightColor}`);
         document.getElementById("book").textContent = highlight.book;
         document.getElementById("noteChapter").textContent = highlight.noteChapter;
@@ -850,12 +848,20 @@ function viewHighlightInfo(element) {
         document.getElementById("charCount").textContent = `Characters: ${highlight.charCount}`;
         document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
         document.getElementById("userNote").textContent = highlight.userNote;
-        document.getElementById("highlight-viewer").style.display = "block"; // Assuming it's set to 'none' by default
+        document.getElementById("highlight-viewer").style.display = "block";
+        document.getElementById("bookNoteID").textContent = bookNoteId;
+        
+        // Add the blur class to the underlayer
+        document.getElementById("underlayer").classList.add("blur");
     }
 }
 
+
 document.getElementById("close-x").addEventListener("click", function() {
     document.getElementById("highlight-viewer").style.display = "none";
+    
+    // Remove the blur class from the underlayer
+    document.getElementById("underlayer").classList.remove("blur");
 });
 
 document.getElementById("copyBtn").addEventListener("click", function() {
