@@ -114,56 +114,51 @@ All the css needed for this page-->
       });
     }
 
+
     function viewHighlightInfo(element) {
-    // Darken out the viewport
-    let overlay = document.createElement("div");
-    overlay.id = "dark-overlay";
-    overlay.style.position = "fixed";
-    overlay.style.top = "0";
-    overlay.style.left = "0";
-    overlay.style.width = "100%";
-    overlay.style.height = "100%";
-    overlay.style.backgroundColor = "rgba(0,0,0,0.9)"; // nearly black with some opacity
-    overlay.style.zIndex = "1000";
-    document.body.appendChild(overlay);
-
-    // Create an "X" to close the overlay
-    let closeButton = document.createElement("div");
-    closeButton.innerHTML = "X";
-    closeButton.style.position = "absolute";
-    closeButton.style.top = "10px";
-    closeButton.style.right = "10px";
-    closeButton.style.zIndex = "1001";
-    closeButton.style.cursor = "pointer";
-    closeButton.onclick = function() {
-        // Remove the overlay and reset styles
-        document.body.removeChild(overlay);
-        document.body.style.overflow = "";
-        element.style.zIndex = "";
-    };
-    overlay.appendChild(closeButton);
-
-    // Scroll to position the highlight 50px from the top
-    window.scrollTo({
-        top: element.offsetTop - 50,
-        behavior: 'smooth'
-    });
-
-    // Display the note underneath the highlight
-    let note = document.createElement("div");
-    note.innerText = element.title;
-    note.style.position = "absolute";
-    note.style.top = (element.offsetTop + element.offsetHeight + 10) + "px"; // 10px space below the highlighted text
-    note.style.left = element.offsetLeft + "px";
-    note.style.zIndex = "1001";
-    overlay.appendChild(note);
-
-    // Make the highlighted text stand out
-    element.style.zIndex = "1002";
-
-    // Prevent scrolling
-    document.body.style.overflow = "hidden";
+    const dataId = element.getAttribute("data-id");
+    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')); // Assuming this is where your bookNotes are stored
+    const highlight = bookNotes.find(note => note.id === dataId);
+    
+    if (highlight) {
+        document.getElementById("the-quote").textContent = highlight.storedText;
+        document.getElementById("the-quote").classList.add(`highlight-${highlight.highlightColor}`);
+        document.getElementById("book").textContent = highlight.book;
+        document.getElementById("noteChapter").textContent = highlight.noteChapter;
+        document.getElementById("charCount").textContent = `Characters: ${highlight.charCount}`;
+        document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
+        document.getElementById("userNote").textContent = highlight.userNote;
+        document.getElementById("highlight-viewer").style.display = "block"; // Assuming it's set to 'none' by default
+    }
 }
+
+document.getElementById("close-x").addEventListener("click", function() {
+    document.getElementById("highlight-viewer").style.display = "none";
+});
+
+document.querySelector(".action[action='Copy']").addEventListener("click", function() {
+    const text = document.getElementById("the-quote").textContent;
+    const textarea = document.createElement("textarea");
+    textarea.textContent = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+
+    setTimeout(() => {
+        document.getElementById("highlight-viewer").style.display = "none";
+    }, 2000);
+});
+
+document.querySelector(".action[action='Clear']").addEventListener("click", function() {
+    const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
+    removeHighlight(dataId); // Assuming you have the function removeHighlight implemented
+    document.getElementById("highlight-viewer").style.display = "none";
+});
+
+document.querySelector(".action[action='Cancel']").addEventListener("click", function() {
+    document.getElementById("highlight-viewer").style.display = "none";
+});
 
 
 </script>
@@ -202,26 +197,77 @@ All the page components required to build this page-->
 
 <style>
 
-#darkOverlay {
+body {
+    font-family: Arial, sans-serif; /* default font; update if needed */
+}
+
+#highlight-viewer {
+    display: none; /* hidden by default */
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8); /* semi-transparent black */
-    display: none; /* hidden by default */
-    z-index: 1000; /* high z-index to make sure it's above other elements */
+    width: 100%;
+    height: 100%;
+    background: var(--background, rgba(0, 0, 0, 0.8)); /* 80% opacity by default if --background isn't defined */
+    z-index: 1000;
+    overflow: auto;
 }
 
-.closeHighlightInfo {
-    position: fixed;
+#close-x {
+    position: absolute;
     top: 10px;
     right: 10px;
-    background: white;
-    border-radius: 50%;
-    padding: 5px 10px;
     cursor: pointer;
-    z-index: 1001; /* above the overlay */
+}
+
+.highlight-color {
+    font-size: larger;
+    padding: 15px;
+}
+
+#the-quote.highlight-blue {
+    background-color: blue; /* replace with desired blue color */
+}
+
+#the-quote.highlight-green {
+    background-color: green; /* replace with desired green color */
+}
+
+.quotation-box {
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.quote-info {
+    font-family: 'Mulish', sans-serif;
+    font-size: smaller;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#userNote {
+    font-family: 'Mulish', sans-serif;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.quotation-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.action {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.action:hover {
+    background-color: #555;
 }
 
 
@@ -355,6 +401,30 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
       &nbsp;In sharp contrast, Earth's processes have tended towards just the opposite:  the concentration of carbon, the dispersal of energy, the increase of diversity and the cultivation of consciousness. Whereas our modern pattern of process has degraded ecosystems, Earth’s has systematically enriched them— making them ever more diverse, vibrant and abundant.<a href="#footnotes" onclick="openFootnotes()" title="Here and throughout the Tractatus Ayyew, we refer to the cumulative four billion years of the Earth’s history. Over the full period of Earth’s history, there have been tremendous swings in the abundance and diversity of the biosphere– extinctions, depletion and lulls where for millions of years life was severely stifled. However, despite these declines, we observe that on the whole the net-biodiversity and abundance of the biosphere has steadily increased.  We will examine each facet of the planet’s net-enrichment in the five chapters of book 2.">²⁹</a></p>
 
     <br><br><br>
+    <div id="highlight-viewer">
+      <div id="close-x">X</div>
+      <div class="quotation-box">
+          <div id="the-quote" class="highlight-color">[storedText]</div>
+          <div class="quote-info">
+              <div id="book">[Book]</div>
+              <div id="noteChapter">[noteChapter]</div>
+              <div id="noteChapter">Noted: [BNdateTime]</div>
+              <div id="charCount">Characters: [charCount]</div>
+              <div id="publicNote">Public note: [publicNote]</div>
+          </div>
+          <div id="userNote">userNote</div>
+      </div>
+      <div class="quotation-button-row">
+          <button class="action" action="Copy">Copy</button>
+          <button class="action" action="Clear">Clear</button>
+          <button class="action" action="Cancel">Cancel</button>
+      </div>
+  </div>
+  
+
+
+
+    </div>
 
   </div><!--closes page text content-->
         
