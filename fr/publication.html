@@ -26,8 +26,7 @@ o               .        ___- -___                    .
 EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
 Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
  
-
-Page de destination - version 1.2
+Page de destination - version 1.3.2
 Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
 Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
 
@@ -39,6 +38,8 @@ Voir le référentiel complet du projet sur : https://github.com/russs95/earthb
 Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.io
 */
 -->
+
+
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
@@ -63,7 +64,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2023-8-01T09:14:13+00:00" >
+<meta property="article:modified_time" content="2023-8-11T09:14:13+00:00" >
   
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:site_name" content="Tracatus Ayyew">
@@ -78,34 +79,6 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:locale" content="fr_FR" >
 <meta property="og:url" content="https://book.earthen.io/fr/publication.html">
 
-<script>
-          // Declare the global variables
-          var book = "Annex";
-    var chapNo = "6";
-    var chapName = "La publication";
-    var chaptURL = "publication.html"   // Declare the global variables
-  
-
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope:', registration.scope);
-        }, function(error) {
-          console.log('ServiceWorker registration failed:', error);
-        });
-      });
-    }
-</script>
-
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-white.svg">
 
 
  <!-- STYLE SHEETS   
@@ -117,6 +90,35 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css">
+
+
+<script>
+          // Declare the global variables
+    var lang = 'fr';
+    var book = "Annex";
+    var chapNo = "6";
+    var chapName = "La publication";
+    var chaptURL = "publication.html"   // Declare the global variables
+  
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+</script>
+
+
+<!-- PRELOADS-->
+<link rel="preload" as="image" href="../icons/publishing.svg">
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/00-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="..svgs/00-light.svg" media="(prefers-color-scheme: light)">
 
  
  <!-- INCLUDES
@@ -142,7 +144,8 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
-<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
 
 <style>
 
@@ -278,12 +281,6 @@ All the page components required to build this page-->
   </div>
 -->
 
-<div id="chap-notice">
-  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-  <div id="chap-notice-text">
-      💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
-  </div>
-</div>
 
 <div class="lead-page-paragraph" id="FR-4-6-00">
   
@@ -311,8 +308,9 @@ All the page components required to build this page-->
 </div><!--Closes main content block-->
 
 
-<!--SEARCH-CURTAIN-->
-<bookplate-curtain></bookplate-curtain>
+
+<!--BOOKNOTES-CURTAIN-->
+<booknotes-curtain></booknotes-curtain>
 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
@@ -358,184 +356,22 @@ All the page components required to build this page-->
     </div>
   
 
+
 <!--PIED DE PAGE DU CHAPITRE
 -->
 
- <chap-foot></chap-foot>
+<chap-foot></chap-foot>
 
-  </div>
-</div>
-<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-   
- 
+</div>  <!--footer functions close-->
+
+<footer-settings></footer-settings>
+
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>
   
-
-  <script>
-
-  let highlightClass = 'highlight';
-    let preHighlightClass = 'pre-highlight';
-    let selectedRange;
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  
-
-    function getSelectedRange() {
-        if (window.getSelection) {
-            let sel = window.getSelection();
-            if (sel.rangeCount) {
-                return sel.getRangeAt(0);
-            }
-        } else if (document.selection && document.selection.createRange) {
-            return document.selection.createRange();
-        }
-        return null;
-    }
-
-    function clearSelection() {
-        if (window.getSelection) {
-            window.getSelection().removeAllRanges();
-        } else if (document.selection) {
-            document.selection.empty();
-        }
-    }
-
-    document.addEventListener('mouseup', function() {
-        selectedRange = getSelectedRange();
-        if (selectedRange && selectedRange.toString().trim().length > 0) {
-            let span = document.createElement('span');
-            span.style.cursor = 'pointer';
-            span.classList.add(preHighlightClass);
-            span.title = "Click this text to save.";
-            selectedRange.surroundContents(span);
-            clearSelection();
-        }
-    });
-   
-    function removeHighlight(e) {
-  // Define a one-time click handler
-  function handleClick(event) {
-    if (event.target.classList.contains(highlightClass)) {
-      const text = event.target.textContent; // Assuming you want to replace the element with its text content
-      event.target.replaceWith(document.createTextNode(text));
-      // Since we're using the `once` option, there's no need to manually remove the listener
-    }
-  }
-
-  // Add the one-time click handler with the `once` option
-  document.addEventListener('click', handleClick, { once: true });
-}
-
-document.addEventListener('click', function(e) {
-  if (e.target.classList.contains(preHighlightClass)) {
-    if (e.target.classList.contains(highlightClass)) {
-      e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class, but keep the .highlight class
-    } else {
-      e.target.classList.add(highlightClass);
-      e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
-
-      // Select the text in the highlighted element
-      const range = document.createRange();
-      range.selectNodeContents(e.target);
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-
-      // Storing selected text and its positions in the local storage
-      if (selection.rangeCount > 0) {
-        const selectedRange = selection.getRangeAt(0);
-        const startContainer = selectedRange.startContainer.parentNode.id;
-        const charCount = selectedRange.startContainer.textContent.length;
-        const firstChar = selectedRange.startOffset;
-        const storedText1 = selection.toString();
-
-        localStorage.setItem('startContainer', startContainer);
-        localStorage.setItem('charCount', charCount);
-        localStorage.setItem('firstChar', firstChar);
-        localStorage.setItem('storedText1', storedText1);
-
-        // Alert to confirm storage
-        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, charCount:${charCount}, firstChar:${firstChar}`);
-      }
-
-      e.target.title = "This quotation is saved in your Book Notes";
-
-      // Clear the text selection
-      window.getSelection().removeAllRanges();
-    }
-  } else if (e.target.classList.contains(highlightClass)) {
-    setTimeout(() => removeHighlight(e), 1000);
-  }
-});
-
-});
-
-
-
-
-function recreateSelection() {
-  const storedText = localStorage.getItem('storedText1');
-
-  // Assuming you have a specific container where the text is located
-  const container = document.querySelector('.targetContainer'); // Adjust this selector to match your container
-
-  if (storedText && container) {
-    const textNode = container.firstChild;
-    const fullText = textNode.textContent;
-
-    // Find the start and end index of the stored text within the full text content
-    const startIndex = fullText.indexOf(storedText);
-    const endIndex = startIndex + storedText.length;
-
-    if (startIndex !== -1) {
-      const range = document.createRange();
-      range.setStart(textNode, startIndex);
-      range.setEnd(textNode, endIndex);
-
-      // Create a new span element with the 'highlight' class
-      const span = document.createElement('span');
-      span.className = 'highlight';
-      span.textContent = storedText;
-
-      // Replace the range with the new span element
-      range.deleteContents();
-      range.insertNode(span);
-
-      // Collapse the selection to ensure nothing is selected afterward
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      selection.collapseToEnd();
-
-      alert(`First char: ${startIndex}, Last char: ${endIndex}, Stored text: ${storedText}`);
-    } else {
-      alert('Stored text not found');
-    }
-  }
-}
-
-
-
-
-
-
-
-
-
-  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-  window.addEventListener('load', function () {
-   // showAlertWithCharacterCount();
-    recreateSelection();
-  });
-</script>
-
-
-
-  
-  
-  
-  </BODY>
-  </HTML>
-  
-
 

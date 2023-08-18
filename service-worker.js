@@ -1,4 +1,4 @@
-const CURRENT_CACHE = 'earthbook-cache-v4.2';
+const CURRENT_CACHE = 'earthbook-cache-v4.3';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -162,6 +162,7 @@ self.addEventListener('install', event => {
 '/icons/icon-for-earth.svg',
 '/banners/forearth-dark-350px.png',
 '/icons/thankyou.svg',
+'/icons/publishing.svg',
 
 
 

@@ -26,7 +26,7 @@ EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
 Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
  
 
-Page de destination - version 1.2
+Page de destination - version 1.3.2
 Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
 Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
 
@@ -153,92 +153,6 @@ All the page components required to build this page-->
 <style>
 
 
-#highlight-viewer {
-    display: none; /* hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    overflow: auto;
-}
-
-#close-x {
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    cursor: pointer;
-    font-family: 'Mulish';
-    color: var(--text-color);
-    font-size: 3em;
-}
-
-#close-x:hover {
-  color: grey;
-}
-
-#quotation-title {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    font-family: 'CooperLtMedium', serif;
-    color: grey;
-    font-size: medium;
-  }
-
-.highlight-color {
-    font-size: larger;
-    padding: 15px;
-}
-
-#the-quote.highlight-blue {
-    background-color: blue; /* replace with desired blue color */
-}
-
-#the-quote.highlight-green {
-    background-color: green; /* replace with desired green color */
-}
-
-.quotation-box {
-    margin: auto auto 30px auto;
-    max-width: 600px;
-    display: flex;
-    flex-flow: row;
-    font-size: 3em;
-}
-
-.quote-info {
-    font-family: 'Mulish', sans-serif;
-    text-align: left;
-    width: 600px;
-    margin: 20px auto;
-}
-
-#userNote {
-    font-family: 'Mulish', sans-serif;
-    font-size: medium;
-    margin-top: 15px;
-}
-
-.quotation-button-row {
-    display: flex;
-    justify-content: space-between;
-    margin: auto auto 50px auto;
-}
-
-.action {
-    cursor: pointer;
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    transition: background-color 0.3s;
-}
-
-.action:hover {
-    background-color: #555;
-}
 
 
 @font-face {
@@ -318,39 +232,7 @@ All the page components required to build this page-->
     <!--TOUR-CURTAIN-->
     <tour-curtain></tour-curtain>
     
-    
-<div id="highlight-viewer" class="modal">
-  <div id="quotation-title">Your BookNote</div>
-  <div id="close-x">&times;</div>
-  <div class="highlight-viewer-content" style="display:flex;width:80%;margin:auto;height:100%;flex-flow:column;justify-content: center;">
-   
-    <div class="quotation-box">
-        
-        <div id="the-quote"></div>
-    </div>
-    
-    <div class="quote-info">
-        <div id="book" style="font-size:medium"></div>
-        <div id="noteChapter" style="font-size:medium"></div>
-        <div id="date" style="font-size:small"></div>
-        <div id="charCount" style="font-size:small"></div>
-        <div id="publicNote" style="font-size:small"></div>
-        <div id="bookNoteID" style="font-size:small"></div>
-
-    </div>
-
-    <div id="userNote"></div>
-  
-    <div class="quotation-button-row">
-      <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn" class="pallette-text">
-        Copier
-      </button> 
-      <button id="clearBtn" aria-label="Clear Highlight" class="pallette-btn" action="Clear">Clear</button>
-      <button id="cancelBtn" aria-label="Cancel" class="pallette-btn">Cancel</button>
-      <button id="citeBtn" aria-label="Cite" class="pallette-btn">Cite</button>
-    </div>
-  </div>
-</div>
+ 
 
      
   <div id="underlayer" class="accessibility-plugin-ac" >
@@ -376,7 +258,7 @@ All the page components required to build this page-->
 <!-- Page Title Section-->
 
 <div id="ct-chapt-graphic" class="background-000">
-    <img src="../icons/thankyou.svg" style="width:35%; height:35%; margin:auto;  text-align:center">
+    <img src="../icons/thankyou.svg" style="width:35%; height:35%; margin:auto;  text-align:center" alt="Merci a toute">
   
     </div>
   
@@ -398,7 +280,7 @@ All the page components required to build this page-->
   For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
 -->
 <div class="lead-page-paragraph">
-  <p id="fr-4-5-01">
+  <p id="fr-4-5-00">
 
     CE QUI A D'ABORD COMMENCÉ comme une conversation, est devenu un projet scolaire, puis un programme, puis un curriculum. Finalement, un essai en a émergé. Puis un autre et un autre. Et enfin, le Earthbook devant vous. Tout au long de ce long voyage d'une décennie, nos pensées ont été touchées et propulsées par les innombrables contributions des personnes qui nous ont aidés et accompagnés tout au long de notre chemin. 
   </p>
@@ -435,7 +317,7 @@ All the page components required to build this page-->
     
             <p id="fr-4-5-012">Merci à Mark Donnovan et Donnie Maclurcan, avec qui une conversation a inspiré les idées du chapitre 9.</p>
     
-            <p id="fr-4-5-013">Merci à Stephen DeMeulenaere pour les conversations torrides sur les parallèles du capital et des glucides, les devises et les carbohydrates qui ont été inestimables pour façonner nos idées sur l'énergétique terrestre au chapitre 9.</a>.</p>
+            <p id="fr-4-5-013">Merci à Stephen DeMeulenaere pour les conversations torrides sur les parallèles du capital et des glucides, les devises et les carbohydrates qui ont été inestimables pour façonner nos idées sur l'énergétique terrestre au chapitre 9.</p>
             
             <p id="fr-4-5-014">Merci à Balaji Srinivasan. Si bon nombre de nos idées s'opposent directement, la version « web app » de son livre The Network State nous a néanmoins inspiré pour aligner notre plateforme d'édition et nos principes et a inspiré notre développement du concept Earthbook.</p>
     
@@ -472,9 +354,7 @@ All the page components required to build this page-->
   </div><!--closes page text content-->
 
 
-        
-</div><!--Closes main content block-->
-
+    
 
 </div><!--Closes main content block-->
 

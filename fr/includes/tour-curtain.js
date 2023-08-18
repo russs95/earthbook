@@ -69,6 +69,40 @@ class TourCurtain extends HTMLElement {
   </div>
   </div>
   
+     
+<div id="highlight-viewer" class="modal">
+<div id="quotation-title">Your BookNote</div>
+<div id="close-x">&times;</div>
+<div class="highlight-viewer-content" style="display:flex;width:80%;margin:auto;height:100%;flex-flow:column;justify-content: center;">
+ 
+  <div class="quotation-box">
+      
+      <div id="the-quote"></div>
+  </div>
+  
+  <div class="quote-info">
+      <div id="book" style="font-size:medium"></div>
+      <div id="noteChapter" style="font-size:medium"></div>
+      <div id="date" style="font-size:small"></div>
+      <div id="charCount" style="font-size:small"></div>
+      <div id="publicNote" style="font-size:small"></div>
+      <div id="bookNoteID" style="font-size:small"></div>
+
+  </div>
+
+  <div id="userNote"></div>
+
+  <div class="quotation-button-row">
+    <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn" class="pallette-text">
+      Copier
+    </button> 
+    <button id="clearBtn" aria-label="Clear Highlight" class="pallette-btn" action="Clear">Clear</button>
+    <button id="cancelBtn" aria-label="Cancel" class="pallette-btn">Cancel</button>
+    <button id="citeBtn" aria-label="Cite" class="pallette-btn">Cite</button>
+  </div>
+</div>
+</div>
+
       `;
     }
   }
