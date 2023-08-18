@@ -53,11 +53,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 // ID GENERATOR with 3 zeros
 
-let currentId = 0;
-
 function generateId() {
-    currentId += 1;
-    return String(currentId).padStart(3, '0');
+    const storedBookNotes = getBookNotesFromLocalStorage();
+
+    if (storedBookNotes && storedBookNotes.length > 0) {
+        // Convert all the existing IDs to numbers, find the maximum value, and add 1
+        const newIdNumber = Math.max(...storedBookNotes.map(note => Number(note.id))) + 1;
+        return String(newIdNumber).padStart(3, '0');
+    } else {
+        // If bookNotes is empty or doesn't exist, start with ID '001'
+        return '001';
+    }
+}
+
+function getBookNotesFromLocalStorage() {
+    return JSON.parse(localStorage.getItem('bookNotes')) || [];
 }
 
 
@@ -876,6 +886,8 @@ document.getElementById("copyBtn").addEventListener("click", function() {
 
     setTimeout(() => {
         document.getElementById("highlight-viewer").style.display = "none";
+         // Remove the blur class from the underlayer
+    document.getElementById("underlayer").classList.remove("blur");
     }, 2000);
 });
 
@@ -883,12 +895,9 @@ document.getElementById("copyBtn").addEventListener("click", function() {
 
 document.getElementById("cancelBtn").addEventListener("click", function() {
     document.getElementById("highlight-viewer").style.display = "none";
+     // Remove the blur class from the underlayer
+     document.getElementById("underlayer").classList.remove("blur");
 });
-
-
-
-
-
 
 
 
