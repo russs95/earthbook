@@ -160,7 +160,8 @@ self.addEventListener('install', event => {
 '/icons/eco.svg',
 '/webp/impact-report-100px.webp',
 '/icons/icon-for-earth.svg',
-'/banners/forearth-dark-350px.png'
+'/banners/forearth-dark-350px.png',
+'/icons/thankyou.svg',
 
 
 
