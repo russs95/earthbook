@@ -176,9 +176,9 @@ All the page components required to build this page-->
     position: absolute;
     top: 30px;
     left: 30px;
-    font-family: "CooperLtMedium";
+    font-family: 'CooperLtMedium', serif;
     color: grey;
-    font-size: small;
+    font-size: medium;
   }
 
 .highlight-color {
@@ -215,7 +215,7 @@ All the page components required to build this page-->
 .quotation-button-row {
     display: flex;
     justify-content: space-between;
-    margin: 20px auto 20px auto;
+    margin: auto auto 50px auto;
 }
 
 .action {
@@ -393,9 +393,9 @@ All the page components required to build this page-->
   </div>
 -->
 <div id="highlight-viewer" class="modal">
-  <div id="quotation-title">BookNote</div>
+  <div id="quotation-title">Your BookNote</div>
   <div id="close-x">&times;</div>
-  <div class="highlight-viewer-content" style="display:flex;width:80%;margin:auto;height:100%;flex-flow:column;">
+  <div class="highlight-viewer-content" style="display:flex;width:80%;margin:auto;height:100%;flex-flow:column;justify-content: center;">
    
     <div class="quotation-box">
         <div id="the-quote" style="font-size:larger"></div>
@@ -414,6 +414,7 @@ All the page components required to build this page-->
     </button> 
         <button id="clearBtn" aria-label="Clear Highlight"class="pallette-btn" action="Clear">Clear</button>
         <button id="cancelBtn" aria-label="Cancel" class="pallette-btn" action="Cancel">Cancel</button>
+        <button id="citeBtn" aria-label="Cite" class="pallette-btn" action="Cancel">Cite</button>
     </div>
   </div>
 </div>
