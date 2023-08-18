@@ -922,10 +922,13 @@ function removeHighlight2(dataId) {
 
 // Event listener for the clearBtn
 document.getElementById("clearBtn").addEventListener("click", function() {
-    const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
+    const dataId = document.getElementById("bookNoteID").textContent;
     removeHighlight2(dataId);
     document.getElementById("highlight-viewer").style.display = "none";
+    // Remove the blur class from the underlayer
+    document.getElementById("underlayer").classList.remove("blur");
 });
+
 
 
 
@@ -950,7 +953,9 @@ function citeHighlight(dataId) {
 
 // Event listener for the citeBtn
 document.getElementById("citeBtn").addEventListener("click", function() {
-    const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
+    const dataId = document.getElementById("bookNoteID").textContent;
     citeHighlight(dataId);
     document.getElementById("highlight-viewer").style.display = "none"; // Optional: close the highlight viewer after citation
+    // Remove the blur class from the underlayer
+    document.getElementById("underlayer").classList.remove("blur");
 });
