@@ -833,19 +833,17 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 
 
-
-//HIGHLIGHT VIEWER
-
 function viewHighlightInfo(element) {
     const dataId = element.getAttribute("data-id");
     const bookNotes = JSON.parse(localStorage.getItem('bookNotes')); // Assuming this is where your bookNotes are stored
     const highlight = bookNotes.find(note => note.id === dataId);
     
     if (highlight) {
-        document.getElementById("the-quote").textContent = highlight.storedText;
+        document.getElementById("the-quote").textContent = `“${highlight.storedText}”`; // Added open and closed quotations
         document.getElementById("the-quote").classList.add(`highlight-${highlight.highlightColor}`);
         document.getElementById("book").textContent = highlight.book;
         document.getElementById("noteChapter").textContent = highlight.noteChapter;
+        document.getElementById("date").textContent = `Noted: ${highlight.BNdateTime}`;
         document.getElementById("charCount").textContent = `Characters: ${highlight.charCount}`;
         document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
         document.getElementById("userNote").textContent = highlight.userNote;
@@ -857,7 +855,7 @@ document.getElementById("close-x").addEventListener("click", function() {
     document.getElementById("highlight-viewer").style.display = "none";
 });
 
-document.querySelector(".action[action='Copy']").addEventListener("click", function() {
+document.getElementById("copyBtn").addEventListener("click", function() {
     const text = document.getElementById("the-quote").textContent;
     const textarea = document.createElement("textarea");
     textarea.textContent = text;
@@ -871,12 +869,19 @@ document.querySelector(".action[action='Copy']").addEventListener("click", funct
     }, 2000);
 });
 
-document.querySelector(".action[action='Clear']").addEventListener("click", function() {
+document.getElementById("clearBtn").addEventListener("click", function() {
     const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
     removeHighlight(dataId); // Assuming you have the function removeHighlight implemented
     document.getElementById("highlight-viewer").style.display = "none";
 });
 
-document.querySelector(".action[action='Cancel']").addEventListener("click", function() {
+document.getElementById("cancelBtn").addEventListener("click", function() {
     document.getElementById("highlight-viewer").style.display = "none";
 });
+
+// Assuming you might need the functionality for "Cite" in the future:
+document.getElementById("citeBtn").addEventListener("click", function() {
+    // Add your functionality for citing here
+});
+
+
