@@ -232,8 +232,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
 function highlightBooknote(color) {
     const textToHighlight = lastSelectedText;
 
@@ -260,9 +258,11 @@ function highlightBooknote(color) {
 
         span.title = "Click to view BookNote"; 
         span.alt = "Highlight"; 
-        span.setAttribute('onclick', `viewHighlightInfo('${id}')`);
+
         const id = generateId();
         span.dataset.id = id;
+        span.setAttribute('onclick', `viewHighlightInfo('${id}')`);
+
         lastSelectedRange.surroundContents(span);
 
         let startContainerNode = lastSelectedRange.startContainer;
@@ -317,6 +317,7 @@ function highlightBooknote(color) {
         lastSelectedRange = null;
     }
 }
+
 
 
 
