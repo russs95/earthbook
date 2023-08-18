@@ -101,6 +101,3 @@ function getCitation() {
   document.getElementById("copy-type").innerHTML = '<h4>Or copy just <span href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;cursor:pointer;">the URL for this chapter</span>.</h4>';
 }
 
-
-
-

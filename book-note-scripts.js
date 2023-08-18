@@ -887,3 +887,58 @@ document.getElementById("citeBtn").addEventListener("click", function() {
     citeHighlight(dataId); // Passing the dataId to the citeHighlight function
 });
 
+
+
+
+
+// CLEAR HIGHLIGHT 2
+
+function removeHighlight2(dataId) {
+    // 1. Find and remove the highlight from the DOM
+    const spanToReplace = document.querySelector(`span[data-id="${dataId}"]`);
+    if (spanToReplace) {
+        const parent = spanToReplace.parentNode;
+        const spanContent = spanToReplace.innerHTML;
+        parent.innerHTML = parent.innerHTML.replace(spanToReplace.outerHTML, spanContent);
+    }
+
+    // 2. Remove the highlight from the localStorage
+    const bookNotes = JSON.parse(localStorage.getItem('bookNotes'));
+    const newBookNotes = bookNotes.filter(note => note.id !== dataId);
+    localStorage.setItem('bookNotes', JSON.stringify(newBookNotes));
+}
+
+// Event listener for the clearBtn
+document.getElementById("clearBtn").addEventListener("click", function() {
+    const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
+    removeHighlight2(dataId);
+    document.getElementById("highlight-viewer").style.display = "none";
+});
+
+
+
+// CITATION CLICK
+
+function citeHighlight(dataId) {
+    const bookNotes = JSON.parse(localStorage.getItem('bookNotes'));
+    const highlight = bookNotes.find(note => note.id === dataId);
+
+    if (highlight) {
+        const citation = `"${highlight.storedText}" -- Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), Chap. '${highlight.book}', '${highlight.noteChapter}' ${window.location.href}`;
+
+        // Copy the citation string to clipboard
+        const textarea = document.createElement("textarea");
+        textarea.textContent = citation;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+    }
+}
+
+// Event listener for the citeBtn
+document.getElementById("citeBtn").addEventListener("click", function() {
+    const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
+    citeHighlight(dataId);
+    document.getElementById("highlight-viewer").style.display = "none"; // Optional: close the highlight viewer after citation
+});
