@@ -80,7 +80,8 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 
 <script>
    // Declare the global variables
-   var book = "Annexe";
+    var lang = "fr";
+    var book = "Annexe";
     var chapNo = "3";
     var chapName = "Comptabilité écologique";
     var chaptURL = "compte.html"   // Declare the global variables
@@ -89,7 +90,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
           console.log('ServiceWorker registration successful with scope:', registration.scope);
         }, function(error) {
           console.log('ServiceWorker registration failed:', error);
@@ -98,16 +99,13 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
     }
 </script>
 
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
 
 <!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-white.svg">
-
+<link rel="preload" as="image" href="../icons/eco.svg">
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/00-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="..svgs/00-light.svg" media="(prefers-color-scheme: light)">
 
  <!-- STYLE SHEETS   
 All the css needed for this page-->
@@ -146,6 +144,78 @@ All the page components required to build this page-->
 <!--14--><script src="includes/booknotes-curtain.js" defer></script>
 
 <style>
+
+
+
+#highlight-viewer {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background); /* 80% opacity by default if --background isn't defined */
+    z-index: 1000;
+    overflow: auto;
+}
+
+#close-x {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.highlight-color {
+    font-size: larger;
+    padding: 15px;
+}
+
+#the-quote.highlight-blue {
+    background-color: blue; /* replace with desired blue color */
+}
+
+#the-quote.highlight-green {
+    background-color: green; /* replace with desired green color */
+}
+
+.quotation-box {
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.quote-info {
+    font-family: 'Mulish', sans-serif;
+    font-size: smaller;
+    text-align: left;
+    margin-top: 10px;
+}
+
+#userNote {
+    font-family: 'Mulish', sans-serif;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.quotation-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.action {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.action:hover {
+    background-color: #555;
+}
+
 
 
 
@@ -323,9 +393,11 @@ All the page components required to build this page-->
       <div id="userNote"></div>
   </div>
   <div class="quotation-button-row">
-      <button class="action" action="Copy">Copy</button>
-      <button class="action" action="Clear">Clear</button>
-      <button class="action" action="Cancel">Cancel</button>
+    <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn">
+      <div class="pallette-text">Copier</div>
+  </button> 
+      <button class="pallette-btn" action="Clear">Clear</button>
+      <button class="pallette-btn" action="Cancel">Cancel</button>
   </div>
 </div>
 
