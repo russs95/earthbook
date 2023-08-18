@@ -164,7 +164,19 @@ All the page components required to build this page-->
     top: 10px;
     right: 10px;
     cursor: pointer;
+    font-family: 'Mulish';
+    color: grey;
+    font-size: medium;
 }
+
+#booknote-title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'CooperLT';
+    color: grey;
+    font-size: small;
+  }
 
 .highlight-color {
     font-size: larger;
@@ -378,9 +390,10 @@ All the page components required to build this page-->
   </div>
 -->
 <div id="highlight-viewer">
+  <div class="quotation-title">BookNote</div>
   <div id="close-x">X</div>
   <div class="quotation-box">
-      <div id="the-quote" class="highlight-color"></div>
+      <div id="the-quote" style="font-size:larger"></div>
       <div class="quote-info">
           <div id="book"></div>
           <div id="noteChapter"></div>
@@ -394,8 +407,8 @@ All the page components required to build this page-->
     <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn">
       <div class="pallette-text">Copier</div>
   </button> 
-      <button class="pallette-btn" action="Clear">Clear</button>
-      <button class="pallette-btn" action="Cancel">Cancel</button>
+      <button id="clearBtn" aria-label="Clear Highlight"class="pallette-btn" action="Clear">Clear</button>
+      <button id="cancelBtn" aria-label="Cancel" class="pallette-btn" action="Cancel">Cancel</button>
   </div>
 </div>
 
@@ -404,7 +417,7 @@ All the page components required to build this page-->
     <p id="FR-4-3-01">
       TOUT AU LONG de l'entreprise d'écriture et de publication du <i>Tractatus Ayyew</i>, tous les impacts sur le carbone, le plastique et la biodiversité ont été suivis. La déclaration annuelle de la comptabilité écologique de l'entreprise peut être consultée dans les rapports en bas. Une déclaration complète de la biodiversité de l'espace physique de l'entreprise à Gianyar, Bali, Indonésie est disponible sur <a href="https://russs.net/forest" target="_blank">russs.net/forest</a></p>
 
-    <p id="2">Téléchargez nos rapports généraux annuels ici :
+    <p id="FR-4-3-02">Téléchargez nos rapports généraux annuels ici :
   </p><br>
   </div>
   
