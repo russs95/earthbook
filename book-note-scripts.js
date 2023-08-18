@@ -833,6 +833,9 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 
 
+
+//VIEW HIGHLIGHT
+
 function viewHighlightInfo(element) {
     const dataId = element.getAttribute("data-id");
     const bookNotes = JSON.parse(localStorage.getItem('bookNotes')); // Assuming this is where your bookNotes are stored
@@ -871,7 +874,7 @@ document.getElementById("copyBtn").addEventListener("click", function() {
 
 document.getElementById("clearBtn").addEventListener("click", function() {
     const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
-    removeHighlight(dataId); // Assuming you have the function removeHighlight implemented
+    clearHighlight2(dataId); // Passing the dataId to the clearHighlight2 function
     document.getElementById("highlight-viewer").style.display = "none";
 });
 
@@ -879,9 +882,8 @@ document.getElementById("cancelBtn").addEventListener("click", function() {
     document.getElementById("highlight-viewer").style.display = "none";
 });
 
-// Assuming you might need the functionality for "Cite" in the future:
 document.getElementById("citeBtn").addEventListener("click", function() {
-    // Add your functionality for citing here
+    const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
+    citeHighlight(dataId); // Passing the dataId to the citeHighlight function
 });
-
 
