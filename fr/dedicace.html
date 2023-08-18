@@ -14,7 +14,7 @@ o               .        ___- -___                    .
                  | .|       /       __   |      -O-       .
                 |__/    __ |  . ;   \ | . |      |
                 |      /  \\_    . ;| \___|    
-   .    o       |      \  .~\\___,--'     |           .
+   .    o       |      \  .~\\___,-'      |           .
                  |     | . ; ~~~~\_    __|
     |             \    \   .  .  ; \  /_/   .
    -O-        .    \   /         . |  ~/                  .
@@ -115,51 +115,8 @@ All the css needed for this page-->
     }
 
 
-    function viewHighlightInfo(element) {
-    const dataId = element.getAttribute("data-id");
-    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')); // Assuming this is where your bookNotes are stored
-    const highlight = bookNotes.find(note => note.id === dataId);
+
     
-    if (highlight) {
-        document.getElementById("the-quote").textContent = highlight.storedText;
-        document.getElementById("the-quote").classList.add(`highlight-${highlight.highlightColor}`);
-        document.getElementById("book").textContent = highlight.book;
-        document.getElementById("noteChapter").textContent = highlight.noteChapter;
-        document.getElementById("charCount").textContent = `Characters: ${highlight.charCount}`;
-        document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
-        document.getElementById("userNote").textContent = highlight.userNote;
-        document.getElementById("highlight-viewer").style.display = "block"; // Assuming it's set to 'none' by default
-    }
-}
-
-document.getElementById("close-x").addEventListener("click", function() {
-    document.getElementById("highlight-viewer").style.display = "none";
-});
-
-document.querySelector(".action[action='Copy']").addEventListener("click", function() {
-    const text = document.getElementById("the-quote").textContent;
-    const textarea = document.createElement("textarea");
-    textarea.textContent = text;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-
-    setTimeout(() => {
-        document.getElementById("highlight-viewer").style.display = "none";
-    }, 2000);
-});
-
-document.querySelector(".action[action='Clear']").addEventListener("click", function() {
-    const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
-    removeHighlight(dataId); // Assuming you have the function removeHighlight implemented
-    document.getElementById("highlight-viewer").style.display = "none";
-});
-
-document.querySelector(".action[action='Cancel']").addEventListener("click", function() {
-    document.getElementById("highlight-viewer").style.display = "none";
-});
-
 
 </script>
 
@@ -196,80 +153,6 @@ All the page components required to build this page-->
 <!--15--><script src="includes/footer-settings.js?v=2" defer></script>
 
 <style>
-
-body {
-    font-family: Arial, sans-serif; /* default font; update if needed */
-}
-
-#highlight-viewer {
-    display: none; /* hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--background, rgba(0, 0, 0, 0.8)); /* 80% opacity by default if --background isn't defined */
-    z-index: 1000;
-    overflow: auto;
-}
-
-#close-x {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-.highlight-color {
-    font-size: larger;
-    padding: 15px;
-}
-
-#the-quote.highlight-blue {
-    background-color: blue; /* replace with desired blue color */
-}
-
-#the-quote.highlight-green {
-    background-color: green; /* replace with desired green color */
-}
-
-.quotation-box {
-    margin: 50px auto;
-    max-width: 600px;
-}
-
-.quote-info {
-    font-family: 'Mulish', sans-serif;
-    font-size: smaller;
-    text-align: left;
-    margin-top: 10px;
-}
-
-#userNote {
-    font-family: 'Mulish', sans-serif;
-    font-size: medium;
-    margin-top: 15px;
-}
-
-.quotation-button-row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.action {
-    cursor: pointer;
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    transition: background-color 0.3s;
-}
-
-.action:hover {
-    background-color: #555;
-}
-
 
 
 
@@ -395,10 +278,6 @@ For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹
         <p style="text-align:center;">Accepter l'étreinte verdoyante,</p>
        <p style="text-align:center;">Et cultiver notre étreinte en retour.</p>
     </div>
-
-    <br><br><br>
-    <p id="upasasd">As we saw in plastic’s story, our modern processes have increasingly intended patterns of energy and matter that have dispersed carbon, concentrated energy, reduced <span class="highlight-yellow" title="Here's my annotation on this text" onclick="viewHighlightInfo(this)" data-id="002">biodiversity and stifled ecological awareness.</span>
-      &nbsp;In sharp contrast, Earth's processes have tended towards just the opposite:  the concentration of carbon, the dispersal of energy, the increase of diversity and the cultivation of consciousness. Whereas our modern pattern of process has degraded ecosystems, Earth’s has systematically enriched them— making them ever more diverse, vibrant and abundant.<a href="#footnotes" onclick="openFootnotes()" title="Here and throughout the Tractatus Ayyew, we refer to the cumulative four billion years of the Earth’s history. Over the full period of Earth’s history, there have been tremendous swings in the abundance and diversity of the biosphere– extinctions, depletion and lulls where for millions of years life was severely stifled. However, despite these declines, we observe that on the whole the net-biodiversity and abundance of the biosphere has steadily increased.  We will examine each facet of the planet’s net-enrichment in the five chapters of book 2.">²⁹</a></p>
 
     <br><br><br>
     <div id="highlight-viewer">

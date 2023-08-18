@@ -155,6 +155,12 @@ self.addEventListener('install', event => {
 '/en/bibliography.html',
 '/en/glossary.html',
 
+//APENDIX ICONS
+
+'/icons/eco.svg',
+'/webp/impact-report-100px.webp',
+
+
 
       ]);
     })

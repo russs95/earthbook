@@ -309,13 +309,26 @@ All the page components required to build this page-->
 
   </div>
 -->
-
-<div id="chap-notice">
-  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-  <div id="chap-notice-text">
-      💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
+<div id="highlight-viewer">
+  <div id="close-x">X</div>
+  <div class="quotation-box">
+      <div id="the-quote" class="highlight-color"></div>
+      <div class="quote-info">
+          <div id="book"></div>
+          <div id="noteChapter"></div>
+          <div id="date"></div>
+          <div id="charCount"></div>
+          <div id="publicNote"></div>
+      </div>
+      <div id="userNote"></div>
+  </div>
+  <div class="quotation-button-row">
+      <button class="action" action="Copy">Copy</button>
+      <button class="action" action="Clear">Clear</button>
+      <button class="action" action="Cancel">Cancel</button>
   </div>
 </div>
+
 
   <div class="page-paragraph">
     <p id="FR-4-3-01">
@@ -351,6 +364,10 @@ All the page components required to build this page-->
 -->
 
 
+<br><br><br>
+<p id="upasasd">As we saw in plastic’s story, our modern processes have increasingly intended patterns of energy and matter that have dispersed carbon, concentrated energy, reduced <span class="highlight-yellow" title="Here's my annotation on this text" onclick="viewHighlightInfo(this)" data-id="002">biodiversity and stifled ecological awareness.</span>
+  &nbsp;In sharp contrast, Earth's processes have tended towards just the opposite:  the concentration of carbon, the dispersal of energy, the increase of diversity and the cultivation of consciousness. Whereas our modern pattern of process has degraded ecosystems, Earth’s has systematically enriched them— making them ever more diverse, vibrant and abundant.<a href="#footnotes" onclick="openFootnotes()" title="Here and throughout the Tractatus Ayyew, we refer to the cumulative four billion years of the Earth’s history. Over the full period of Earth’s history, there have been tremendous swings in the abundance and diversity of the biosphere– extinctions, depletion and lulls where for millions of years life was severely stifled. However, despite these declines, we observe that on the whole the net-biodiversity and abundance of the biosphere has steadily increased.  We will examine each facet of the planet’s net-enrichment in the five chapters of book 2.">²⁹</a></p>
+
 
   <br><br><br><br><br><br>
 
@@ -362,7 +379,7 @@ All the page components required to build this page-->
 
 
 <!--BOOKNOTES-CURTAIN-->
-<search-curtain></search-curtain>
+<booknotes-curtain></booknotes-curtain>
 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
@@ -408,18 +425,20 @@ All the page components required to build this page-->
     </div>
   
 
+
 <!--PIED DE PAGE DU CHAPITRE
 -->
 
- <chap-foot></chap-foot>
+<chap-foot></chap-foot>
 
-  </div>
-</div>
-<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-   
+</div>  <!--footer functions close-->
 
-  </BODY>
-  </HTML>
-  
+<footer-settings></footer-settings>
 
+</div> <!--underlayer close-->
 
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>

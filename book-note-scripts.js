@@ -830,3 +830,53 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
         bookNotesCreator();
     }
 });
+
+
+
+
+//HIGHLIGHT VIEWER
+
+function viewHighlightInfo(element) {
+    const dataId = element.getAttribute("data-id");
+    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')); // Assuming this is where your bookNotes are stored
+    const highlight = bookNotes.find(note => note.id === dataId);
+    
+    if (highlight) {
+        document.getElementById("the-quote").textContent = highlight.storedText;
+        document.getElementById("the-quote").classList.add(`highlight-${highlight.highlightColor}`);
+        document.getElementById("book").textContent = highlight.book;
+        document.getElementById("noteChapter").textContent = highlight.noteChapter;
+        document.getElementById("charCount").textContent = `Characters: ${highlight.charCount}`;
+        document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
+        document.getElementById("userNote").textContent = highlight.userNote;
+        document.getElementById("highlight-viewer").style.display = "block"; // Assuming it's set to 'none' by default
+    }
+}
+
+document.getElementById("close-x").addEventListener("click", function() {
+    document.getElementById("highlight-viewer").style.display = "none";
+});
+
+document.querySelector(".action[action='Copy']").addEventListener("click", function() {
+    const text = document.getElementById("the-quote").textContent;
+    const textarea = document.createElement("textarea");
+    textarea.textContent = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+
+    setTimeout(() => {
+        document.getElementById("highlight-viewer").style.display = "none";
+    }, 2000);
+});
+
+document.querySelector(".action[action='Clear']").addEventListener("click", function() {
+    const dataId = document.querySelector(".highlight-yellow[onclick='viewHighlightInfo']").getAttribute("data-id");
+    removeHighlight(dataId); // Assuming you have the function removeHighlight implemented
+    document.getElementById("highlight-viewer").style.display = "none";
+});
+
+document.querySelector(".action[action='Cancel']").addEventListener("click", function() {
+    document.getElementById("highlight-viewer").style.display = "none";
+});
