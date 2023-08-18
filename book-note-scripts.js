@@ -258,10 +258,9 @@ function highlightBooknote(color) {
                 return;
         }
 
-        span.title = "Click to remove BookNote"; 
+        span.title = "Click to view BookNote"; 
         span.alt = "Highlight"; 
-        span.setAttribute('onclick', 'viewHighlightInfo(this)');
-
+        span.setAttribute('onclick', `viewHighlightInfo('${id}')`);
         const id = generateId();
         span.dataset.id = id;
         lastSelectedRange.surroundContents(span);
@@ -835,6 +834,7 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 
 //VIEW HIGHLIGHT
+
 
 function viewHighlightInfo(element) {
     const dataId = element.getAttribute("data-id");
