@@ -4,7 +4,6 @@
 <title>Gratitude | Tractatus Ayyew - Earthbook</title>
 <meta charset="UTF-8"> 
 
-
 <!--
 o               .        ___- -___                    .                   
        .              .-\          -.     .     .         .
@@ -39,6 +38,9 @@ Voir le référentiel complet du projet sur : https://github.com/russs95/earthb
 Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.io
 */
 -->
+
+
+
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
@@ -75,34 +77,9 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1492px" >
-<meta property="og:locale" content="en_EN" >
+<meta property="og:locale" content="fr_FR" >
 <meta property="og:url" content="https://book.earthen.io/fr/gratitude.html">
 
-<script>
-      // Declare the global variables
-    var chapNo = "Annexe";
-    var chapName = "Comptabilité écologique";
-
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope:', registration.scope);
-        }, function(error) {
-          console.log('ServiceWorker registration failed:', error);
-        });
-      });
-    }
-</script>
-
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-white.svg">
 
 
  <!-- STYLE SHEETS   
@@ -114,6 +91,35 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css">
+
+
+<script>
+     // Declare the global variables
+     var lang = "fr";
+    var book = "Annexe";
+    var chapNo = "5";
+    var chapName = "Gratitude";
+    var chaptURL = "gratitude.html"   // Declare the global variables
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+</script>
+
+ 
+ <!-- PRELOADS-->
+<link rel="preload" as="image" href="../svgs/icon-for-earth.svg">
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/00-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="..svgs/00-light.svg" media="(prefers-color-scheme: light)">
+
 
  
  <!-- INCLUDES
@@ -139,8 +145,100 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+
+
+
 <style>
 
+
+#highlight-viewer {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: auto;
+}
+
+#close-x {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    font-family: 'Mulish';
+    color: var(--text-color);
+    font-size: 3em;
+}
+
+#close-x:hover {
+  color: grey;
+}
+
+#quotation-title {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-family: 'CooperLtMedium', serif;
+    color: grey;
+    font-size: medium;
+  }
+
+.highlight-color {
+    font-size: larger;
+    padding: 15px;
+}
+
+#the-quote.highlight-blue {
+    background-color: blue; /* replace with desired blue color */
+}
+
+#the-quote.highlight-green {
+    background-color: green; /* replace with desired green color */
+}
+
+.quotation-box {
+    margin: auto auto 30px auto;
+    max-width: 600px;
+    display: flex;
+    flex-flow: row;
+    font-size: 3em;
+}
+
+.quote-info {
+    font-family: 'Mulish', sans-serif;
+    text-align: left;
+    width: 600px;
+    margin: 20px auto;
+}
+
+#userNote {
+    font-family: 'Mulish', sans-serif;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.quotation-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: auto auto 50px auto;
+}
+
+.action {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.action:hover {
+    background-color: #555;
+}
 
 
 @font-face {
@@ -261,10 +359,36 @@ All the page components required to build this page-->
   </div>
 -->
 
-<div id="chap-notice">
-  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-  <div id="chap-notice-text">
-      💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
+<div id="highlight-viewer" class="modal">
+  <div id="quotation-title">Your BookNote</div>
+  <div id="close-x">&times;</div>
+  <div class="highlight-viewer-content" style="display:flex;width:80%;margin:auto;height:100%;flex-flow:column;justify-content: center;">
+   
+    <div class="quotation-box">
+        
+        <div id="the-quote"></div>
+    </div>
+    
+    <div class="quote-info">
+        <div id="book" style="font-size:medium"></div>
+        <div id="noteChapter" style="font-size:medium"></div>
+        <div id="date" style="font-size:small"></div>
+        <div id="charCount" style="font-size:small"></div>
+        <div id="publicNote" style="font-size:small"></div>
+        <div id="bookNoteID" style="font-size:small"></div>
+
+    </div>
+
+    <div id="userNote"></div>
+  
+    <div class="quotation-button-row">
+      <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn" class="pallette-text">
+        Copier
+      </button> 
+      <button id="clearBtn" aria-label="Clear Highlight" class="pallette-btn" action="Clear">Clear</button>
+      <button id="cancelBtn" aria-label="Cancel" class="pallette-btn">Cancel</button>
+      <button id="citeBtn" aria-label="Cite" class="pallette-btn">Cite</button>
+    </div>
   </div>
 </div>
 
@@ -282,43 +406,43 @@ All the page components required to build this page-->
     
     <div class="page-paragraph">
     
-      <p id="p1">Avant tout, nous sommes reconnaissants pour notre plastique. Sans les épreuves et les tribulations à essayer de comprendre quoi en faire - les voyages physiques et philosophiques que les pollutions et les solutions ont déclenchés en nous - ce livre n'aurait jamais commencé.</p> 
+      <p id="fr-4-5-01">Avant tout, nous sommes reconnaissants pour notre plastique. Sans les épreuves et les tribulations à essayer de comprendre quoi en faire - les voyages physiques et philosophiques que les pollutions et les solutions ont déclenchés en nous - ce livre n'aurait jamais commencé.</p> 
     
-      <p id="p2">
+      <p id="fr-4-5-02">
         Cela dit, nous sommes reconnaissants envers nos débuts invisibles : nos ancêtres, à la fois de nos propres lignées et de ceux d'autres cultures cyclocentriques à travers le monde qui ont touché et inspiré notre lutte avec le sens du vert. Leur sagesse accumulée sert de fondement sur lequel nous avons bâti. 
       </p>
     
-        <p id="p3">Tout au long de notre parcours, d'innombrables amis, famille et collègues ont été d'une aide inestimable dans notre entreprise.</p>
+        <p id="fr-4-5-03">Tout au long de notre parcours, d'innombrables amis, famille et collègues ont été d'une aide inestimable dans notre entreprise.</p>
     
-        <p id="p4">Merci à Pi Villaraza qui a contribué à dynamiser notre connexion et notre collaboration précoce. Il nous a orientés vers l'utilisation des traditions de sagesse igorot et philippine pour à la fois étayer notre travail avec le plastique et guider la propagation sociale qui en a suivi.</p>
+        <p id="fr-4-5-04">Merci à Pi Villaraza qui a contribué à dynamiser notre connexion et notre collaboration précoce. Il nous a orientés vers l'utilisation des traditions de sagesse igorot et philippine pour à la fois étayer notre travail avec le plastique et guider la propagation sociale qui en a suivi.</p>
     
-        <p id="p5">Un grand merci à Fabrice Garrigues pour son dévouement et ses efforts dans la traduction française du Tractatus Ayyew et pour les riches soirées familiales, œnologiques et philosophiques qui ont accompagné notre collaboration. Merci à George Beurnier pour ses dîners qui ont complété nos efforts, et pour son amitié et ses encouragements dans la quête vers la résolution du plastique… et l'excellence aux billard!</p>
+        <p id="fr-4-5-05">Un grand merci à Fabrice Garrigues pour son dévouement et ses efforts dans la traduction française du Tractatus Ayyew et pour les riches soirées familiales, œnologiques et philosophiques qui ont accompagné notre collaboration. Merci à George Beurnier pour ses dîners qui ont complété nos efforts, et pour son amitié et ses encouragements dans la quête vers la résolution du plastique… et l'excellence aux billard!</p>
     
-        <p id="p6">Un grand merci aux deux frères Jacques de l'Abbaye de Scourmont. Tout d'abord, merci au Frère Jacques père pour son don de l'encyclique Laudato si' (dont le concept de "maison commune" a contribué à inspirer et à guider notre travail) et pour sa persévérance réconfortante à acquérir une première version de notre traduction française sans notre savoir! Merci au Frère Jacques junior pour son examen précoce et la recherche de commentaires et de critiques catholiques afin que nous puissions nous assurer que notre travail résonne avec le mouvement Laudato si'.</p>
+        <p id="fr-4-5-06">Un grand merci aux deux frères Jacques de l'Abbaye de Scourmont. Tout d'abord, merci au Frère Jacques père pour son don de l'encyclique Laudato si' (dont le concept de "maison commune" a contribué à inspirer et à guider notre travail) et pour sa persévérance réconfortante à acquérir une première version de notre traduction française sans notre savoir! Merci au Frère Jacques junior pour son examen précoce et la recherche de commentaires et de critiques catholiques afin que nous puissions nous assurer que notre travail résonne avec le mouvement Laudato si'.</p>
            
-        <p id="p7">Merci à Trisha pour son soutien, ses encouragements, son écoute et son amitié. Merci à Shiloh Vermaak et Richard Goldsmith pour les critiques incessantes de chaque chapitre, pas une mais deux fois et parfois trois fois. Merci à Nicole et Vaughn pour la lecture approfondie et les encouragements. Merci à Mel pour le rappel que notre ascendance, en particulier ses contrastes, n'était pas seulement une note secondaire, mais un thème principal. Merci à James et Ruth pour leur soutien et leurs idées de la vallée de Bulkley. Merci à Rolf et Chris pour leurs premières critiques cinglantes. Leurs critiques inestimables ont eu un effet profond sur notre direction. Merci à Ani pour sa patience insondable avec les piles de pages et les tasses à café infinies qui ont accompagné ce processus.
+        <p id="fr-4-5-07">Merci à Trisha pour son soutien, ses encouragements, son écoute et son amitié. Merci à Shiloh Vermaak et Richard Goldsmith pour les critiques incessantes de chaque chapitre, pas une mais deux fois et parfois trois fois. Merci à Nicole et Vaughn pour la lecture approfondie et les encouragements. Merci à Mel pour le rappel que notre ascendance, en particulier ses contrastes, n'était pas seulement une note secondaire, mais un thème principal. Merci à James et Ruth pour leur soutien et leurs idées de la vallée de Bulkley. Merci à Rolf et Chris pour leurs premières critiques cinglantes. Leurs critiques inestimables ont eu un effet profond sur notre direction. Merci à Ani pour sa patience insondable avec les piles de pages et les tasses à café infinies qui ont accompagné ce processus.
             </p> 
     
-            <p id="p8">Merci à nos frères et sœurs Igorot et Wet’su’weten dont les exemples nous ont inspirés : James, Jed, Sir Ernesto, Jake et les guides Sabangan.</p>
+            <p id="fr-4-5-08">Merci à nos frères et sœurs Igorot et Wet’su’weten dont les exemples nous ont inspirés : James, Jed, Sir Ernesto, Jake et les guides Sabangan.</p>
     
-            <p id="p9">Bannières de chapitre, Eagle & Salmon No.1 et No.2, Frog and Sun par l'artiste Wet'su'weten James Madam.</p>
+            <p id="fr-4-5-09">Bannières de chapitre, Eagle & Salmon No.1 et No.2, Frog and Sun par l'artiste Wet'su'weten James Madam.</p>
     
-            <p id="p10">Photos de la culture Igorot sur Earthen.io par Gladys Maxim. Photos du chapitre 9 par Robert Brodey.
+            <p id="fr-4-5-010">Photos de la culture Igorot sur Earthen.io par Gladys Maxim. Photos du chapitre 9 par Robert Brodey.
             </p>
     
-            <p id="p11">Merci à Thomas Hutton et Thomas Nail, qui ont tous deux écrit un livre intitulé « Une théorie de la Terre ». Bien que chaque livre ait été publié de manière assez indépendante (le premier en 1788 et le second en 2021 !), les deux ont grandement inspiré et encouragé notre propre travail théorique.</p>
+            <p id="fr-4-5-011">Merci à Thomas Hutton et Thomas Nail, qui ont tous deux écrit un livre intitulé « Une théorie de la Terre ». Bien que chaque livre ait été publié de manière assez indépendante (le premier en 1788 et le second en 2021 !), les deux ont grandement inspiré et encouragé notre propre travail théorique.</p>
     
-            <p id="p12">Merci à Mark Donnovan et Donnie Maclurcan, avec qui une conversation a inspiré les idées du chapitre 9.</p>
+            <p id="fr-4-5-012">Merci à Mark Donnovan et Donnie Maclurcan, avec qui une conversation a inspiré les idées du chapitre 9.</p>
     
-            <p id="p13">Merci à Stephen DeMeulenaere pour les conversations torrides sur les parallèles du capital et des glucides, les devises et les carbohydrates qui ont été inestimables pour façonner nos idées sur l'énergétique terrestre au chapitre 9.</a>.</p>
+            <p id="fr-4-5-013">Merci à Stephen DeMeulenaere pour les conversations torrides sur les parallèles du capital et des glucides, les devises et les carbohydrates qui ont été inestimables pour façonner nos idées sur l'énergétique terrestre au chapitre 9.</a>.</p>
             
-            <p id="p14">Merci à Balaji Srinivasan. Si bon nombre de nos idées s'opposent directement, la version « web app » de son livre The Network State nous a néanmoins inspiré pour aligner notre plateforme d'édition et nos principes et a inspiré notre développement du concept Earthbook.</p>
+            <p id="fr-4-5-014">Merci à Balaji Srinivasan. Si bon nombre de nos idées s'opposent directement, la version « web app » de son livre The Network State nous a néanmoins inspiré pour aligner notre plateforme d'édition et nos principes et a inspiré notre développement du concept Earthbook.</p>
     
-            <p id="p15">Merci à Enrique Salmon pour son travail de pionnier dans le développement du concept d'« écologie kincentrique » comme moyen de distinguer la métaphysique raramuri (et celle des autres premières nations) du concept moderne de « nature ». Son travail et son terme sous-tendent notre utilisation de l'expression «culture kincentrique» et ont été inestimables pour faire avancer notre théorie.</p>
+            <p id="fr-4-5-015">Merci à Enrique Salmon pour son travail de pionnier dans le développement du concept d'« écologie kincentrique » comme moyen de distinguer la métaphysique raramuri (et celle des autres premières nations) du concept moderne de « nature ». Son travail et son terme sous-tendent notre utilisation de l'expression «culture kincentrique» et ont été inestimables pour faire avancer notre théorie.</p>
     
-            <p id="p16">Russell est reconnaissant à la terre de Banjar Sumampan, Gianyar, Indonésie, la maison ancestrale des Balinais, comme base pour l'écriture et la publication de ce livre.</p>
+            <p id="fr-4-5-016">Russell est reconnaissant à la terre de Banjar Sumampan, Gianyar, Indonésie, la maison ancestrale des Balinais, comme base pour l'écriture et la publication de ce livre.</p>
             
-            <p id="p17">Banayan est reconnaissante à la terre du peuple Igorot et sa tradition de sagesse qui a inspiré, nourri et permis ce livre, sa supervision et sa contribution.</p>
+            <p id="fr-4-5-017">Banayan est reconnaissante à la terre du peuple Igorot et sa tradition de sagesse qui a inspiré, nourri et permis ce livre, sa supervision et sa contribution.</p>
             <div>
               
     
@@ -328,17 +452,17 @@ All the page components required to build this page-->
     
             <div class="page-paragraphe">
            
-            <p id="p20">Merci à <a href="www.fabiodeveloper.com">Fábio Almeida</a> pour son script CSS Accessibilidade qui permet aux lecteurs de <a class="java-link" onclick=" openSettings()" aria-label="Ouvrir les paramètres" title="Ouvrir les paramètres d'accessibilité"><i>augmenter et diminuer le texte</i></a> de l'EarthBook.</p>
+            <p id="fr-4-5-020">Merci à <a href="www.fabiodeveloper.com">Fábio Almeida</a> pour son script CSS Accessibilidade qui permet aux lecteurs de <a class="java-link" onclick=" openSettings()" aria-label="Ouvrir les paramètres" title="Ouvrir les paramètres d'accessibilité"><i>augmenter et diminuer le texte</i></a> de l'EarthBook.</p>
            
-            <p id="p21">Merci à Zeno Rocha pour son développement continu de <a href="https://clipboardjs.com">ClipboardJS</a>, l'élégant Javascript sur notre <a class="java- link" onclick="openShare()" aria-label="Ouvrir le partage" title="Ouvrir le partage"><i>Partager la page.</i></a></p>
+            <p id="fr-4-5-021">Merci à Zeno Rocha pour son développement continu de <a href="https://clipboardjs.com">ClipboardJS</a>, l'élégant Javascript sur notre <a class="java- link" onclick="openShare()" aria-label="Ouvrir le partage" title="Ouvrir le partage"><i>Partager la page.</i></a></p>
              
-            <p id="p22">Merci à <a href="https://dewaweb.com">DewaWeb Indonesia</a> qui héberge généreusement ce projet EarthBook gratuitement sur ses serveurs de Singapour.</p>
+            <p id="fr-4-5-022">Merci à <a href="https://dewaweb.com">DewaWeb Indonesia</a> qui héberge généreusement ce projet EarthBook gratuitement sur ses serveurs de Singapour.</p>
            
-            <p id="p23">Merci à <a href="https://www.websitecarbon.com">WebsiteCarbon </a> qui permet le <a class="java-link" onclick="openEco( )" aria-label="Ouvrir les paramètres" title="Ouvrir le suivi écologique"><i>audit d'impact carbone</i></a> de chaque page Earthbook.</p>
+            <p id="fr-4-5-023">Merci à <a href="https://www.websitecarbon.com">WebsiteCarbon </a> qui permet le <a class="java-link" onclick="openEco( )" aria-label="Ouvrir les paramètres" title="Ouvrir le suivi écologique"><i>audit d'impact carbone</i></a> de chaque page Earthbook.</p>
    
-            <p id="p24">Merci à Stephen pour sa base de code PHP <a href="https://commentics.com">Commentics</a> qui alimente les commentaires du chapitre Earthbook.</p>
+            <p id="fr-4-5-024">Merci à Stephen pour sa base de code PHP <a href="https://commentics.com">Commentics</a> qui alimente les commentaires du chapitre Earthbook.</p>
            
-            <p id="p25">Merci à Thomas Steiner pour son <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle">code de basculement en mode sombre</a> qui alimente le <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Changement de mode Nuit-Jour"> du Earthbook</a>.</p>
+            <p id="fr-4-5-025">Merci à Thomas Steiner pour son <a href="https://github.com/GoogleChromeLabs/dark-mode-toggle">code de basculement en mode sombre</a> qui alimente le <a class="java-link" onclick="openSettings()" aria-label="Open Settings" title="Changement de mode Nuit-Jour"> du Earthbook</a>.</p>
             </div>
         
 <br><br><br><br><br>
@@ -353,6 +477,9 @@ All the page components required to build this page-->
 
 </div><!--Closes main content block-->
 
+
+<!--BOOKNOTES-CURTAIN-->
+<booknotes-curtain></booknotes-curtain>
 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
@@ -398,177 +525,23 @@ All the page components required to build this page-->
     </div>
   
 
+
 <!--PIED DE PAGE DU CHAPITRE
 -->
 
- <chap-foot></chap-foot>
+<chap-foot></chap-foot>
 
-  </div>
-</div>
-<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-   
- 
-  
+</div>  <!--footer functions close-->
 
-  <script>
+<footer-settings></footer-settings>
 
-  let highlightClass = 'highlight';
-    let preHighlightClass = 'pre-highlight';
-    let selectedRange;
+</div> <!--underlayer close-->
 
+<script src="../book-note-scripts.js" defer ></script>
 
-document.addEventListener("DOMContentLoaded", function() {
-  
+</BODY>
 
-    function getSelectedRange() {
-        if (window.getSelection) {
-            let sel = window.getSelection();
-            if (sel.rangeCount) {
-                return sel.getRangeAt(0);
-            }
-        } else if (document.selection && document.selection.createRange) {
-            return document.selection.createRange();
-        }
-        return null;
-    }
-
-    function clearSelection() {
-        if (window.getSelection) {
-            window.getSelection().removeAllRanges();
-        } else if (document.selection) {
-            document.selection.empty();
-        }
-    }
-
-    document.addEventListener('mouseup', function() {
-        selectedRange = getSelectedRange();
-        if (selectedRange && selectedRange.toString().trim().length > 0) {
-            let span = document.createElement('span');
-            span.style.cursor = 'pointer';
-            span.classList.add(preHighlightClass);
-            span.title = "Click this text to save.";
-            selectedRange.surroundContents(span);
-            clearSelection();
-        }
-    });
-   
-    function removeHighlight(e) {
-  // Define a one-time click handler
-  function handleClick(event) {
-    if (event.target.classList.contains(highlightClass)) {
-      const text = event.target.textContent; // Assuming you want to replace the element with its text content
-      event.target.replaceWith(document.createTextNode(text));
-      // Since we're using the `once` option, there's no need to manually remove the listener
-    }
-  }
-
-  // Add the one-time click handler with the `once` option
-  document.addEventListener('click', handleClick, { once: true });
-}
-
-
-
-document.addEventListener('click', function(e) {
-  if (e.target.classList.contains(preHighlightClass)) {
-    if (e.target.classList.contains(highlightClass)) {
-      e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class, but keep the .highlight class
-    } else {
-      e.target.classList.add(highlightClass);
-      e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
-      
-      // Select the text in the highlighted element
-      const range = document.createRange();
-      range.selectNodeContents(e.target);
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      
-      // Storing selected text and its positions in the local storage
-      if (selection.rangeCount > 0) {
-        const selectedRange = selection.getRangeAt(0);
-        const startContainer = selectedRange.startContainer.parentNode.id;
-        const endContainer = selectedRange.endContainer.parentNode.id;
-        const startOffset = selectedRange.startOffset;
-        const endOffset = selectedRange.endOffset;
-        const storedText1 = selection.toString();
-        
-        localStorage.setItem('startContainer', startContainer);
-        localStorage.setItem('endContainer', endContainer);
-        localStorage.setItem('startOffset', startOffset);
-        localStorage.setItem('endOffset', endOffset);
-        localStorage.setItem('storedText1', storedText1);
-
-        // Alert to confirm storage
-        alert(`storedText1: ${storedText1}, startContainer:${startContainer}, endContainer:${endContainer}, startOffset:${startOffset}, endOffset:${endOffset}`);
-
-      }
-
-      e.target.title = "This quotation is saved in your Book Notes";
-
-      // Clear the text selection
-      window.getSelection().removeAllRanges();
-    }
-  } else if (e.target.classList.contains(highlightClass)) {
-    setTimeout(() => removeHighlight(e), 1000);
-  }
-});
-});
-
-function recreateSelection() {
-  const startContainerID = localStorage.getItem('startContainer');
-  const endContainerID = localStorage.getItem('endContainer');
-  const startOffset = parseInt(localStorage.getItem('startOffset'));
-  const endOffset = parseInt(localStorage.getItem('endOffset'));
-  const storedText = localStorage.getItem('storedText1');
-
-  const startContainer = document.getElementById(startContainerID);
-  const endContainer = document.getElementById(endContainerID);
-
-  if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
-    const range = document.createRange();
-    range.setStart(startContainer.firstChild, startOffset);
-    range.setEnd(endContainer.firstChild, endOffset);
-
-    // Create a new span element with the 'highlight' class
-    const span = document.createElement('span');
-    span.className = 'highlight';
-    span.textContent = storedText;
-
-    // Replace the range with the new span element
-    range.deleteContents();
-    range.insertNode(span);
-
-    // Collapse the selection to ensure nothing is selected afterward
-    const selection = window.getSelection();
-    selection.removeAllRanges();
-    selection.addRange(range);
-    selection.collapseToEnd();
-
-    alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
-  }
-}
-
-
-
-
-
-
-
-
-  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-  window.addEventListener('load', function () {
-   // showAlertWithCharacterCount();
-    recreateSelection();
-  });
-</script>
-
-
-
-  
-  
-  
-  </BODY>
-  </HTML>
+</HTML>
   
 
 

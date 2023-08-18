@@ -148,93 +148,6 @@ All the page components required to build this page-->
 
 <STYLE>
 
-#highlight-viewer {
-    display: none; /* hidden by default */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    overflow: auto;
-}
-
-#close-x {
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    cursor: pointer;
-    font-family: 'Mulish';
-    color: var(--text-color);
-    font-size: 3em;
-}
-
-#close-x:hover {
-  color: grey;
-}
-
-#quotation-title {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    font-family: 'CooperLtMedium', serif;
-    color: grey;
-    font-size: medium;
-  }
-
-.highlight-color {
-    font-size: larger;
-    padding: 15px;
-}
-
-#the-quote.highlight-blue {
-    background-color: blue; /* replace with desired blue color */
-}
-
-#the-quote.highlight-green {
-    background-color: green; /* replace with desired green color */
-}
-
-.quotation-box {
-    margin: auto auto 30px auto;
-    max-width: 600px;
-    display: flex;
-    flex-flow: row;
-    font-size: 3em;
-}
-
-.quote-info {
-    font-family: 'Mulish', sans-serif;
-    text-align: left;
-    width: 600px;
-    margin: 20px auto;
-}
-
-#userNote {
-    font-family: 'Mulish', sans-serif;
-    font-size: medium;
-    margin-top: 15px;
-}
-
-.quotation-button-row {
-    display: flex;
-    justify-content: space-between;
-    margin: auto auto 50px auto;
-}
-
-.action {
-    cursor: pointer;
-    padding: 10px 20px;
-    border: none;
-    background-color: #333;
-    color: #fff;
-    transition: background-color 0.3s;
-}
-
-.action:hover {
-    background-color: #555;
-}
-
 
 
 @font-face {
@@ -362,36 +275,6 @@ All the page components required to build this page-->
   </div>
 -->
 
-<div id="highlight-viewer" class="modal">
-  <div id="quotation-title">Your BookNote</div>
-  <div id="close-x">&times;</div>
-  <div class="highlight-viewer-content" style="display:flex;width:80%;margin:auto;height:100%;flex-flow:column;justify-content: center;">
-   
-    <div class="quotation-box">
-        
-        <div id="the-quote"></div>
-    </div>
-    
-    <div class="quote-info">
-        <div id="book" style="font-size:medium"></div>
-        <div id="noteChapter" style="font-size:medium"></div>
-        <div id="date" style="font-size:small"></div>
-        <div id="charCount" style="font-size:small"></div>
-        <div id="publicNote" style="font-size:small"></div>
-    </div>
-
-    <div id="userNote"></div>
-  
-    <div class="quotation-button-row">
-      <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn" class="pallette-text">
-        Copier
-      </button> 
-      <button id="clearBtn" aria-label="Clear Highlight" class="pallette-btn" action="Clear">Clear</button>
-      <button id="cancelBtn" aria-label="Cancel" class="pallette-btn">Cancel</button>
-      <button id="citeBtn" aria-label="Cite" class="pallette-btn">Cite</button>
-    </div>
-  </div>
-</div>
 
 
   <div class="page-paragraph">
@@ -434,10 +317,6 @@ All the page components required to build this page-->
 </div>
 
 <br><br><br><br><br>
-
-<p id="upasasd">As we saw in plastic’s story, our modern processes have increasingly intended patterns of energy and matter that have dispersed carbon, concentrated energy, reduced <span class="highlight-yellow" title="Here's my annotation on this text" onclick="viewHighlightInfo(this)" data-id="002">biodiversity and stifled ecological awareness.</span>
-  &nbsp;In sharp contrast, Earth's processes have tended towards just the opposite:  the concentration of carbon, the dispersal of energy, the increase of diversity and the cultivation of consciousness. Whereas our modern pattern of process has degraded ecosystems, Earth’s has systematically enriched them— making them ever more diverse, vibrant and abundant.<a href="#footnotes" onclick="openFootnotes()" title="Here and throughout the Tractatus Ayyew, we refer to the cumulative four billion years of the Earth’s history. Over the full period of Earth’s history, there have been tremendous swings in the abundance and diversity of the biosphere– extinctions, depletion and lulls where for millions of years life was severely stifled. However, despite these declines, we observe that on the whole the net-biodiversity and abundance of the biosphere has steadily increased.  We will examine each facet of the planet’s net-enrichment in the five chapters of book 2.">²⁹</a></p>
-
 
 
 
