@@ -39,6 +39,8 @@ Voir le référentiel complet du projet sur : https://github.com/russs95/earthb
 Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.io
 */
 -->
+
+
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
@@ -63,7 +65,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2023-8-01T09:14:13+00:00" >
+<meta property="article:modified_time" content="2023-8-18T09:14:13+00:00" >
   
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:site_name" content="Tracatus Ayyew">
@@ -75,17 +77,21 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:image:type" content="image/png" >
 <meta property="og:image:width" content="1000px" >
 <meta property="og:image:height" content="1492px" >
-<meta property="og:locale" content="en_EN" >
+<meta property="og:locale" content="fr_FR" >
 <meta property="og:url" content="https://book.earthen.io/fr/pour-terre.html">
 
 <script>
-      // Declare the global variables
-    var chapNo = "Annexe";
-    var chapName = "Comptabilité écologique";
+     // Declare the global variables
+     var lang = "fr";
+    var book = "Annexe";
+    var chapNo = "4";
+    var chapName = "Pour-Terre";
+    var chaptURL = "pour-terre.html"   // Declare the global variables
+
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
           console.log('ServiceWorker registration successful with scope:', registration.scope);
         }, function(error) {
           console.log('ServiceWorker registration failed:', error);
@@ -94,15 +100,12 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
     }
 </script>
 
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-white.svg">
+ <!-- PRELOADS-->
+<link rel="preload" as="image" href="../icons/icon-for-earth.svg">
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/00-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="..svgs/00-light.svg" media="(prefers-color-scheme: light)">
 
 
  <!-- STYLE SHEETS   
@@ -139,7 +142,98 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
-<style>
+<!--14--><script src="includes/booknotes-curtain.js" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+
+
+<STYLE>
+
+#highlight-viewer {
+    display: none; /* hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: auto;
+}
+
+#close-x {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    font-family: 'Mulish';
+    color: var(--text-color);
+    font-size: 3em;
+}
+
+#close-x:hover {
+  color: grey;
+}
+
+#quotation-title {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-family: 'CooperLtMedium', serif;
+    color: grey;
+    font-size: medium;
+  }
+
+.highlight-color {
+    font-size: larger;
+    padding: 15px;
+}
+
+#the-quote.highlight-blue {
+    background-color: blue; /* replace with desired blue color */
+}
+
+#the-quote.highlight-green {
+    background-color: green; /* replace with desired green color */
+}
+
+.quotation-box {
+    margin: auto auto 30px auto;
+    max-width: 600px;
+    display: flex;
+    flex-flow: row;
+    font-size: 3em;
+}
+
+.quote-info {
+    font-family: 'Mulish', sans-serif;
+    text-align: left;
+    width: 600px;
+    margin: 20px auto;
+}
+
+#userNote {
+    font-family: 'Mulish', sans-serif;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.quotation-button-row {
+    display: flex;
+    justify-content: space-between;
+    margin: auto auto 50px auto;
+}
+
+.action {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.action:hover {
+    background-color: #555;
+}
 
 
 
@@ -268,12 +362,37 @@ All the page components required to build this page-->
   </div>
 -->
 
-<div id="chap-notice">
-  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-  <div id="chap-notice-text">
-      💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
+<div id="highlight-viewer" class="modal">
+  <div id="quotation-title">Your BookNote</div>
+  <div id="close-x">&times;</div>
+  <div class="highlight-viewer-content" style="display:flex;width:80%;margin:auto;height:100%;flex-flow:column;justify-content: center;">
+   
+    <div class="quotation-box">
+        
+        <div id="the-quote" style="font-size:largest"></div>
+    </div>
+    
+    <div class="quote-info">
+        <div id="book" style="font-size:medium"></div>
+        <div id="noteChapter" style="font-size:medium"></div>
+        <div id="date" style="font-size:small"></div>
+        <div id="charCount" style="font-size:small"></div>
+        <div id="publicNote" style="font-size:small"></div>
+    </div>
+
+    <div id="userNote"></div>
+  
+    <div class="quotation-button-row">
+      <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn">
+        <div class="pallette-text">Copier</div>
+      </button> 
+      <button id="clearBtn" aria-label="Clear Highlight"class="pallette-btn" action="Clear">Clear</button>
+      <button id="cancelBtn" aria-label="Cancel" class="pallette-btn" action="Cancel">Cancel</button>
+      <button id="citeBtn" aria-label="Cite" class="pallette-btn" action="Cancel">Cite</button>
+    </div>
   </div>
 </div>
+
 
   <div class="page-paragraph">
     <p id="1">
@@ -316,6 +435,11 @@ All the page components required to build this page-->
 
 <br><br><br><br><br>
 
+<p id="upasasd">As we saw in plastic’s story, our modern processes have increasingly intended patterns of energy and matter that have dispersed carbon, concentrated energy, reduced <span class="highlight-yellow" title="Here's my annotation on this text" onclick="viewHighlightInfo(this)" data-id="002">biodiversity and stifled ecological awareness.</span>
+  &nbsp;In sharp contrast, Earth's processes have tended towards just the opposite:  the concentration of carbon, the dispersal of energy, the increase of diversity and the cultivation of consciousness. Whereas our modern pattern of process has degraded ecosystems, Earth’s has systematically enriched them— making them ever more diverse, vibrant and abundant.<a href="#footnotes" onclick="openFootnotes()" title="Here and throughout the Tractatus Ayyew, we refer to the cumulative four billion years of the Earth’s history. Over the full period of Earth’s history, there have been tremendous swings in the abundance and diversity of the biosphere– extinctions, depletion and lulls where for millions of years life was severely stifled. However, despite these declines, we observe that on the whole the net-biodiversity and abundance of the biosphere has steadily increased.  We will examine each facet of the planet’s net-enrichment in the five chapters of book 2.">²⁹</a></p>
+
+
+
 
 
   </div><!--closes page text content-->
@@ -327,6 +451,8 @@ All the page components required to build this page-->
 
 </div><!--Closes main content block-->
 
+<!--BOOKNOTES-CURTAIN-->
+<booknotes-curtain></booknotes-curtain>
 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
@@ -356,6 +482,7 @@ All the page components required to build this page-->
 
 
 
+
 <!--SECTION PIED DE PAGE Chapitre suivant: Nécessite une personnalisation-->
   <div id="footer-chapter" style="margin-bottom: 0px;">
     <div class="footer-size">
@@ -375,140 +502,19 @@ All the page components required to build this page-->
 <!--PIED DE PAGE DU CHAPITRE
 -->
 
- <chap-foot></chap-foot>
+<chap-foot></chap-foot>
 
-  </div>
-</div>
-<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-   
- 
-  
+</div>  <!--footer functions close-->
 
-  <script>
-  let highlightClass = 'highlight';
-    let preHighlightClass = 'pre-highlight';
-    let selectedRange;
+<footer-settings></footer-settings>
 
+</div> <!--underlayer close-->
 
-document.addEventListener("DOMContentLoaded", function() {
-  
+<script src="../book-note-scripts.js" defer ></script>
 
-    function getSelectedRange() {
-        if (window.getSelection) {
-            let sel = window.getSelection();
-            if (sel.rangeCount) {
-                return sel.getRangeAt(0);
-            }
-        } else if (document.selection && document.selection.createRange) {
-            return document.selection.createRange();
-        }
-        return null;
-    }
+</BODY>
 
-    function clearSelection() {
-        if (window.getSelection) {
-            window.getSelection().removeAllRanges();
-        } else if (document.selection) {
-            document.selection.empty();
-        }
-    }
-
-    document.addEventListener('mouseup', function() {
-        selectedRange = getSelectedRange();
-        if (selectedRange && selectedRange.toString().trim().length > 0) {
-            let span = document.createElement('span');
-            span.style.cursor = 'pointer';
-            span.classList.add(preHighlightClass);
-            span.title = "Click this text to save.";
-            selectedRange.surroundContents(span);
-            clearSelection();
-        }
-    });
-   
-    function removeHighlight(e) {
-  // Define a one-time click handler
-  function handleClick(event) {
-    if (event.target.classList.contains(highlightClass)) {
-      const text = event.target.textContent; // Assuming you want to replace the element with its text content
-      event.target.replaceWith(document.createTextNode(text));
-      // Remove the click listener after the action is complete
-      document.removeEventListener('click', handleClick);
-    }
-  }
-
-  // Add the one-time click handler
-  document.addEventListener('click', handleClick);
-}
-
-
-document.addEventListener('click', function(e) {
-  if (e.target.classList.contains(preHighlightClass)) {
-    if (e.target.classList.contains(highlightClass)) {
-      e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class, but keep the .highlight class
-    } else {
-      e.target.classList.add(highlightClass);
-      e.target.classList.remove(preHighlightClass); // Remove .pre-highlight class
-      storeSelectedText(e.target);
-      e.target.title = "This quotation is saved in your Book Notes";
-    }
-  } else if (e.target.classList.contains(highlightClass)) {
-    setTimeout(removeHighlight(e),1000); 
-  }
-});
-});
-
-
-
-
-
-// Function to store selected text and its positions in the local storage
-function storeSelectedText(targetElement) {
-  const textContent = targetElement.textContent;
-  const elementId = targetElement.id; // Assuming the element has an 'id' attribute
-
-  localStorage.setItem('storedElementId', elementId);
-  localStorage.setItem('storedText-1', textContent);
-
-  // Alert to confirm storage
-  alert(`storedElementId: ${elementId}`);
-}
-
-
-  // Function to recreate selection from stored data
-  function recreateSelection() {
-    const startContainer = document.getElementById(localStorage.getItem('startContainer'));
-    const endContainer = document.getElementById(localStorage.getItem('endContainer'));
-    const startOffset = parseInt(localStorage.getItem('startOffset'));
-    const endOffset = parseInt(localStorage.getItem('endOffset'));
-    const storedText = localStorage.getItem('storedText-1');
-
-    if (startContainer && endContainer && !isNaN(startOffset) && !isNaN(endOffset) && storedText) {
-      const range = document.createRange();
-      range.setStart(startContainer.firstChild, startOffset);
-      range.setEnd(endContainer.firstChild, endOffset);
-
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-
-      alert(`First char: ${startOffset}, Last char: ${endOffset}, Stored text: ${storedText}`);
-    }
-  }
-
-  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-  window.addEventListener('load', function () {
-   // showAlertWithCharacterCount();
-    //recreateSelection();
-  });
-</script>
-
-
-
-  
-  
-  
-  </BODY>
-  </HTML>
+</HTML>
   
 
 
