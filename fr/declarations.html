@@ -26,8 +26,7 @@ o               .        ___- -___                    .
 EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
 Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
  
-
-Page de destination - version 1.2
+Page de destination - version 1.3.2
 Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
 Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
 
@@ -39,6 +38,8 @@ Voir le référentiel complet du projet sur : https://github.com/russs95/earthb
 Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.io
 */
 -->
+
+
 <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
@@ -64,7 +65,7 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Russell Maier & Banayan Angway">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2023-8-01T09:14:13+00:00" >
+<meta property="article:modified_time" content="2023-8-18T09:14:13+00:00" >
   
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:site_name" content="Tracatus Ayyew">
@@ -79,31 +80,6 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:locale" content="fr_FR" >
 <meta property="og:url" content="https://book.earthen.io/fr/declaration.html">
 
-<script>
-      // Declare the global variables
-    var chapNo = "Annexe";
-    var chapName = "Déclarations d'intérêts";
-
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope:', registration.scope);
-        }, function(error) {
-          console.log('ServiceWorker registration failed:', error);
-        });
-      });
-    }
-</script>
-
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-white.svg">
 
 
  <!-- STYLE SHEETS   
@@ -115,6 +91,39 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css">
+
+
+
+<script>
+      // Declare the global variables
+       // Declare the global variables
+       var lang = "fr";
+    var book = "Annexe";
+    var chapNo = "8";
+    var chapName = "Déclarations d'intérêts";
+    var chaptURL = "declarations.html" 
+    
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+</script>
+
+
+
+<!-- PRELOADS-->
+<link rel="preload" as="image" href="../icons/authoring.svg">
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/00-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="..svgs/00-light.svg" media="(prefers-color-scheme: light)">
+
 
  
  <!-- INCLUDES
@@ -140,6 +149,9 @@ All the page components required to build this page-->
 <!--11--><script src="includes/search-curtain.js"  defer></script>
 <!--12--><script src="includes/eco-curtain.js"  defer></script>
 <!--13--><script src="includes/chap-foot.js" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+
 <style>
 
 
@@ -170,15 +182,11 @@ All the page components required to build this page-->
   font-display: swap;
  }
 
-
  #earthbook-navbar {
-
   background-color: var(--header-footer);
   border-color: var(--thin-border-color);
   box-shadow: var(--element-shadow);
 }
-
-
 
 #ct-chapter-title {
     font-size: 10vmin;
@@ -197,6 +205,41 @@ All the page components required to build this page-->
     <tour-curtain></tour-curtain>
     
     
+<div id="highlight-viewer" class="modal">
+  <div id="quotation-title">Your BookNote</div>
+  <div id="close-x">&times;</div>
+  <div class="highlight-viewer-content">
+   
+    <div class="quotation-box">
+        
+        <div id="the-quote"></div>
+    
+      </div>
+    
+    <div class="quote-info">
+      
+      <div id="book" style="font-size:medium"></div>
+        <div id="noteChapter" style="font-size:medium"></div>
+        <div id="date" style="font-size:small"></div>
+        <div id="charCount" style="font-size:small"></div>
+        <div id="publicNote" style="font-size:small"></div>
+        <div id="bookNoteID" style="font-size:small"></div>
+  
+    </div>
+    <div id="userNote" style="font-size:medium; padding:20px;"></div>
+  
+    
+  
+    <div class="quotation-button-row">
+      <button aria-label="Copier la sélection" id="copyBtn" class="quotation-btn" class="pallette-text">
+        Copier
+      </button> 
+      <button id="clearBtn" aria-label="Clear Highlight" class="quotation-btn" >Clear</button>
+     <!-- <button id="cancelBtn" aria-label="Cancel" class="pallette-btn">Cancel</button>-->
+      <button id="citeBtn" aria-label="Cite" class="quotation-btn">Cite</button>
+    </div>
+  </div>
+  </div>
      
   <div id="underlayer" class="accessibility-plugin-ac" >
 
@@ -238,20 +281,14 @@ All the page components required to build this page-->
   </div>
 -->
 
-<div id="chap-notice">
-  <div id="close-notice" onclick="closeWelcomeNotice()">&times;</div>
-  <div id="chap-notice-text">
-      💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le rapide <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
-  </div>
-</div>
 
 <div class="page-paragraphe" >
 
-    <p id="p0">Banayan et Russell sont cofondateurs de la Global Ecobrick Alliance. Banyan est une employée rémunérée de la région administrative de la Cordillère du ministère de l'Éducation des Philippines (province de Kalinga). Russell reçoit des commissions comme formateur GEA et est un directeur actif de l'organisation.</p>
+    <p id="fr-4-8-01">Banayan et Russell sont cofondateurs de la Global Ecobrick Alliance. Banyan est une employée rémunérée de la région administrative de la Cordillère du ministère de l'Éducation des Philippines (province de Kalinga). Russell reçoit des commissions comme formateur GEA et est un directeur actif de l'organisation.</p>
 
-    <p id="p2">Un don privé de Trisha Joe de 2500 $ USD a été reçu en 2020 pour acheter l'ordinateur portable Librem et sur lequel ce travail a été écrit. Un deuxième don de 3000$ USD du même soutien a été reçu pour publier l'édition Tractatus Ayyew Earthbook en 2022.</p>  
+    <p id="fr-4-8-02">Un don privé de Trisha Joe de 2500 $ USD a été reçu en 2020 pour acheter l'ordinateur portable Librem et sur lequel ce travail a été écrit. Un deuxième don de 3000$ USD du même soutien a été reçu pour publier l'édition Tractatus Ayyew Earthbook en 2022.</p>  
 
-    <p id="p3">En dehors de ce qui précède, aucune subvention, parrainage ou financement d'organisations, d'entreprises, de gouvernements ou de sociétés n'a été reçue par Russell ou Banayan pour soutenir la rédaction du Tractatus Ayyew ou à tout moment pour tout autre de leur travail.</p>
+    <p id="fr-4-8-03">En dehors de ce qui précède, aucune subvention, parrainage ou financement d'organisations, d'entreprises, de gouvernements ou de sociétés n'a été reçue par Russell ou Banayan pour soutenir la rédaction du Tractatus Ayyew ou à tout moment pour tout autre de leur travail.</p>
     <br><br><br><br>
     
   </div><!--Closes main content block-->
@@ -259,6 +296,9 @@ All the page components required to build this page-->
 
 </div><!--Closes main content block-->
 
+
+<!--BOOKNOTES-CURTAIN-->
+<booknotes-curtain></booknotes-curtain>
 
 <!--SEARCH-CURTAIN-->
 <search-curtain></search-curtain>
@@ -303,214 +343,20 @@ All the page components required to build this page-->
       </div>
     </div>
 
+
 <!--PIED DE PAGE DU CHAPITRE
 -->
 
- <chap-foot></chap-foot>
+<chap-foot></chap-foot>
 
-  </div>
-</div>
-<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-   
- 
-  
+</div>  <!--footer functions close-->
 
-<script>
+<footer-settings></footer-settings>
 
-  let highlightClass = 'highlight';
-    let preHighlightClass = 'pre-highlight';
-    let selectedRange;
+</div> <!--underlayer close-->
 
+<script src="../book-note-scripts.js" defer ></script>
 
-document.addEventListener("DOMContentLoaded", function() {
-  
+</BODY>
 
-    function getSelectedRange() {
-        if (window.getSelection) {
-            let sel = window.getSelection();
-            if (sel.rangeCount) {
-                return sel.getRangeAt(0);
-            }
-        } else if (document.selection && document.selection.createRange) {
-            return document.selection.createRange();
-        }
-        return null;
-    }
-
-    function clearSelection() {
-        if (window.getSelection) {
-            window.getSelection().removeAllRanges();
-        } else if (document.selection) {
-            document.selection.empty();
-        }
-    }
-
-    function handleSelection() {
-  selectedRange = getSelectedRange();
-  if (selectedRange && selectedRange.toString().trim().length > 0) {
-    let span = document.createElement('span');
-    span.style.cursor = 'pointer';
-    span.classList.add(preHighlightClass);
-    span.title = "Click this text to highlight and save.";
-    selectedRange.surroundContents(span);
-    clearSelection();
-  }
-}
-
-document.addEventListener('mouseup', handleSelection);
-document.addEventListener('touchend', handleSelection);
-
-   
-
-
-
-function removeHighlight(e) {
-  // Define a one-time click handler
-  function handleClick(event) {
-    if (event.target.classList.contains(highlightClass)) {
-      const text = event.target.textContent; // Assuming you want to replace the element with its text content
-      const parentElementId = event.target.parentNode.id;
-      const textLength = text.length;
-
-      event.target.replaceWith(document.createTextNode(text)); // Remove the highlight
-
-      // Remove the corresponding book note from the array
-      let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-      bookNotes = bookNotes.filter(note => {
-        return !(note.startContainer === parentElementId && note.storedNoteText.length === textLength);
-      });
-
-      localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-      // Since we're using the `once` option, there's no need to manually remove the listener
-    }
-  }
-  // Add the one-time click handler with the `once` option
-  document.addEventListener('click', handleClick, { once: true });
-  document.addEventListener('touchend', handleClick);
-}
-
-
-
-function handleHighlightEvent(e) {
-  if (e.target.classList.contains(preHighlightClass)) {
-    if (e.target.classList.contains(highlightClass)) {
-      e.target.classList.remove(preHighlightClass);
-    } else {
-      e.target.classList.add(highlightClass);
-      e.target.classList.remove(preHighlightClass);
-
-      const range = document.createRange();
-      range.selectNodeContents(e.target);
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-
-      if (selection.rangeCount > 0) {
-        const selectedRange = selection.getRangeAt(0);
-        const startContainer = selectedRange.startContainer.parentNode.id;
-
-        // Calculate startOffset considering only text nodes inside the selected paragraph
-        let startOffset = 0;
-        let node = selectedRange.startContainer.parentNode.firstChild;
-        while (node && node !== selectedRange.startContainer) {
-          if (node.nodeType === Node.TEXT_NODE) {
-            startOffset += node.length;
-          }
-          node = node.nextSibling;
-        }
-        startOffset += selectedRange.startOffset;
-
-        const storedNoteText = selection.toString();
-        const noteChapter = "Appendix";
-
-        // Retrieve existing bookNotes from local storage
-        let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-        // Add the new highlight to the array
-        bookNotes.push({ startContainer, startOffset, storedNoteText, noteChapter });
-
-        // Save the updated array back to local storage
-        localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-
-        alert(`storedNoteText: ${storedNoteText}, startContainer: ${startContainer}, startOffset: ${startOffset}, noteChapter: ${noteChapter}`);
-      }
-
-      e.target.title = "This quotation is saved in your Book Notes";
-      window.getSelection().removeAllRanges();
-    }
-  } else if (e.target.classList.contains(highlightClass)) {
-    setTimeout(() => removeHighlight(e), 1000);
-  }
-}
-
-// Add both click and touchend listeners
-document.addEventListener('click', handleHighlightEvent);
-document.addEventListener('touchend', handleHighlightEvent);
-
-
-
-});
-
-
-function recreateSelection() {
-  const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-
-  bookNotes.forEach(note => {
-    const { storedNoteText, startContainer, startOffset } = note;
-
-    if (storedNoteText && startContainer && startOffset !== null) {
-      // Find the element by the saved ID
-      const container = document.getElementById(startContainer);
-
-      if (container) {
-        // Traverse through text nodes to find the correct position
-        let node = container.firstChild;
-        let currentOffset = 0;
-
-        while (node) {
-          if (node.nodeType === Node.TEXT_NODE) {
-            if (currentOffset + node.length >= startOffset) {
-              break;
-            }
-            currentOffset += node.length;
-          }
-          node = node.nextSibling;
-        }
-
-        if (node) {
-          const range = document.createRange();
-          range.setStart(node, startOffset - currentOffset);
-          range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
-
-          const span = document.createElement('span');
-          span.className = 'highlight';
-          span.textContent = storedNoteText;
-
-          range.deleteContents();
-          range.insertNode(span);
-
-          const selection = window.getSelection();
-          selection.removeAllRanges();
-          selection.addRange(range);
-          selection.collapseToEnd();
-        } else {
-          alert('Stored text not found');
-        }
-      }
-    }
-  });
-}
-
-  // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-  window.addEventListener('load', function () {
-   // showAlertWithCharacterCount();
-    recreateSelection();
-  });
-</script>
-
-  
-  </BODY>
-  </HTML>
-  
-
-
+</HTML>

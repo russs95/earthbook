@@ -843,31 +843,28 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 
 //VIEW HIGHLIGHT
-function adjustFontSize(container) {
-    let fontSize = parseInt(window.getComputedStyle(container).fontSize);
+function adjustFontSize(container, targetSpan) {
+    let fontSize = parseInt(window.getComputedStyle(targetSpan).fontSize);
 
-    // Check if the content overflows the container
     const isOverflowing = () => container.scrollHeight > container.offsetHeight || container.scrollWidth > container.offsetWidth;
-
-    // Check if there's extra space and the font can be increased
     const hasExtraSpace = () => container.scrollHeight < container.offsetHeight * 0.8; // 0.8 can be adjusted
 
-    // Define the maximum and minimum font sizes for readability and design coherence
-    const maxFontSize = 72; // For example, 72px, but you can adjust it
-    const minFontSize = 10; // For example, 10px, but you can adjust it
+    const maxFontSize = 72; // Adjust as needed
+    const minFontSize = 10; // Adjust as needed
 
     // Increase font size if there's extra space
     while (hasExtraSpace() && fontSize < maxFontSize) {
         fontSize++;
-        container.style.fontSize = fontSize + "px";
+        targetSpan.style.fontSize = fontSize + "px";
     }
 
     // Reduce font size if content overflows
     while (isOverflowing() && fontSize > minFontSize) {
         fontSize--;
-        container.style.fontSize = fontSize + "px";
+        targetSpan.style.fontSize = fontSize + "px";
     }
 }
+
 
 
 function viewHighlightInfo(bookNoteId) {
