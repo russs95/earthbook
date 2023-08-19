@@ -1127,6 +1127,13 @@ flex-flow: row;
 height: 50%;
 }
 
+#the-quote  {
+  font-size: 1.9em;
+line-height: 1.3;
+width: 100%;
+height: 100%
+}
+
 .quote-info {
   font-family: 'Mulish', sans-serif;
   text-align: left;
