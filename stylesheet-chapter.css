@@ -937,23 +937,25 @@ Repeated property, consider consolidating with the other transition property */
 #copyBtn {
     background-size: 25px;
     transition: 0.3s;
-    background: var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;
+    background: var(--deeper-accent-color) url(icons/copy.svg) 22px center no-repeat;
     background-size: 21px;
+    margin-right: 10px;
 
 }
 
 #citeBtn {
   background-size: 25px;
   transition: 0.3s;
-  background: var(--deeper-accent-color) url(icons/cite.svg) 15px center no-repeat;
+  background: var(--deeper-accent-color) url(icons/cite.svg) 22px center no-repeat;
   background-size: 21px;
+  margin-left: 10px;
 
 }
 
 #clearBtn {
   background-size: 25px;
   transition: 0.3s;
-  background: var(--deeper-accent-color) url(icons/clear.svg) 15px center no-repeat;
+  background: var(--deeper-accent-color) url(icons/clear.svg) 22px center no-repeat;
   background-size: 21px;
 
 }
