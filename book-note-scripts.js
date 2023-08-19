@@ -964,7 +964,7 @@ function removeHighlight2(dataId) {
     dataId = String(dataId).trim();
     
     // 1. Find and remove the highlight from the DOM
-    const spanToReplace = document.querySelector(`span[data-id="${dataId}"]`);
+    const spanToReplace = document.querySelector(`span[data-id="008"]`);
 
     alert(`dataId: ${dataId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
         
