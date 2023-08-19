@@ -960,12 +960,13 @@ document.getElementById("cancelBtn").addEventListener("click", function() {
 // CLEAR HIGHLIGHT 2
 
 function removeHighlight2(dataId) {
-    // 1. Find and remove the highlight from the DOM
+    // Ensure dataId is a string and is trimmed
+    dataId = String(dataId).trim();
     
-        const spanToReplace = document.querySelector(`span[data-id="${dataId}"]`);
+    // 1. Find and remove the highlight from the DOM
+    const spanToReplace = document.querySelector(`span[data-id="${dataId}"]`);
 
-        alert(`dataId: ${dataId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
-
+    alert(`dataId: ${dataId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
         
     if (spanToReplace) {
         const parent = spanToReplace.parentNode;
@@ -981,7 +982,7 @@ function removeHighlight2(dataId) {
 
 // Event listener for the clearBtn
 document.getElementById("clearBtn").addEventListener("click", function() {
-    const dataId = document.getElementById("bookNoteID").textContent;
+    const dataId = document.getElementById("bookNoteID").textContent.trim(); // Also ensuring trim here
     removeHighlight2(dataId);
     document.getElementById("highlight-viewer").style.display = "none";
     // Remove the blur class from the underlayer
