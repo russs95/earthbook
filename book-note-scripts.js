@@ -846,6 +846,11 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 
 function adjustFontSize22(container, targetSpan) {
+    alert('hello!');
+    if (!targetSpan || targetSpan.nodeType !== 1) {
+        console.error('Invalid targetSpan provided to adjustFontSize()');
+        return;
+    }
     let fontSize = parseInt(window.getComputedStyle(targetSpan).fontSize);
 
     const isOverflowing = () => container.scrollHeight > container.offsetHeight || container.scrollWidth > container.offsetWidth;
