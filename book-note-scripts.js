@@ -844,13 +844,12 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 //VIEW HIGHLIGHT
 
-
 function adjustFontSize22(container, targetSpan) {
-    alert("Container: " + container.outerHTML + "\n\nTarget Span: " + targetSpan.outerHTML);
-    if (!targetSpan || targetSpan.nodeType !== 1) {
-        console.error('Invalid targetSpan provided to adjustFontSize()');
+    if (!container || !targetSpan) {
+        console.error("Missing or invalid arguments passed to adjustFontSize22.");
         return;
     }
+
     let fontSize = parseInt(window.getComputedStyle(targetSpan).fontSize);
 
     const isOverflowing = () => container.scrollHeight > container.offsetHeight || container.scrollWidth > container.offsetWidth;
@@ -858,7 +857,7 @@ function adjustFontSize22(container, targetSpan) {
 
     const maxFontSize = 72; // Adjust as needed
     const minFontSize = 10; // Adjust as needed
-    alert('hello!');
+
     // Increase font size if there's extra space
     while (hasExtraSpace() && fontSize < maxFontSize) {
         fontSize++;
@@ -870,6 +869,9 @@ function adjustFontSize22(container, targetSpan) {
         fontSize--;
         targetSpan.style.fontSize = fontSize + "px";
     }
+
+    // Logging the applied font size for debugging purposes
+    console.log(`Font size applied to targetSpan: ${fontSize}px`);
 }
 
 
