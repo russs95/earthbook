@@ -843,14 +843,15 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 
 //VIEW HIGHLIGHT
+function adjustFontSize22() {
+    const container = document.getElementById("the-quote");
 
-function adjustFontSize22(container, targetSpan) {
-    if (!container || !targetSpan) {
-        console.error("Missing or invalid arguments passed to adjustFontSize22.");
+    if (!container) {
+        console.error("Cannot find element with ID 'the-quote'.");
         return;
     }
 
-    let fontSize = parseInt(window.getComputedStyle(targetSpan).fontSize);
+    let fontSize = parseInt(window.getComputedStyle(container).fontSize);
 
     const isOverflowing = () => container.scrollHeight > container.offsetHeight || container.scrollWidth > container.offsetWidth;
     const hasExtraSpace = () => container.scrollHeight < container.offsetHeight * 0.8; // 0.8 can be adjusted
@@ -861,17 +862,17 @@ function adjustFontSize22(container, targetSpan) {
     // Increase font size if there's extra space
     while (hasExtraSpace() && fontSize < maxFontSize) {
         fontSize++;
-        targetSpan.style.fontSize = fontSize + "px";
+        container.style.fontSize = fontSize + "px";
     }
 
     // Reduce font size if content overflows
     while (isOverflowing() && fontSize > minFontSize) {
         fontSize--;
-        targetSpan.style.fontSize = fontSize + "px";
+        container.style.fontSize = fontSize + "px";
     }
 
     // Logging the applied font size for debugging purposes
-    console.log(`Font size applied to targetSpan: ${fontSize}px`);
+    console.log(`Font size applied to the-quote: ${fontSize}px`);
 }
 
 
@@ -905,7 +906,7 @@ function viewHighlightInfo(bookNoteId) {
         document.getElementById("underlayer").classList.add("blur");
 
        // Call the adjustFontSize function after setting the content
-adjustFontSize22(quoteContainer, highlightedSpan);
+adjustFontSize22();
 
     }
 }
