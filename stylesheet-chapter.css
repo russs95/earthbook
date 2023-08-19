@@ -1119,7 +1119,7 @@ color: grey;
 
 */
 
-#the-quote {
+.quotation-box {
 margin: 150px auto 30px auto;
 max-width: 100%;
 display: flex;
