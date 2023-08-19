@@ -893,13 +893,13 @@ document.getElementById("copyBtn").addEventListener("click", function() {
 });
 
 
-
+/*
 document.getElementById("cancelBtn").addEventListener("click", function() {
     document.getElementById("highlight-viewer").style.display = "none";
      // Remove the blur class from the underlayer
      document.getElementById("underlayer").classList.remove("blur");
 });
-
+*/
 
 
 

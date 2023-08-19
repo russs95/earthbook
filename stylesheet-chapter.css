@@ -904,7 +904,7 @@ BOOK NOTE PALETTE
   font-size:medium;
 }
 
-.highlight-btn { 
+.quotation-btn { 
   flex-grow: 1;
   padding: 10px 10px 10px 10px;
   font-size:medium;
@@ -927,7 +927,7 @@ BOOK NOTE PALETTE
   padding: 10px 15px 10px 40px;
   font-size:medium;
 }
-.highlight-btn { 
+.quotation-btn { 
   flex-grow: 1;
   padding: 10px 15px 10px 40px;
   font-size:medium;
