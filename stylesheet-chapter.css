@@ -808,12 +808,36 @@ BOOK NOTE PALETTE
   right: 10px;
   cursor: pointer;
 }
+
+
 .pallette-btn { 
   border: var(--thin-border-color);
   border-style: solid;
   border-width: 0.25px;
   border: none;
   color: var(--subdued-text);
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer; 
+  display: block;
+  font-size: 1em;
+  margin: 10px 5px auto 5px;
+  width: fit-content;
+  height: 40px;
+  border-radius: 15px;
+  background-size: 25px;
+  transition: 0.3s; /* Repeated property, consider consolidating with the other transition property */
+}
+
+
+.quotation-btn { 
+  border: var(--thin-border-color);
+  border-style: solid;
+  border-width: 0.25px;
+  border: none;
+  color: var(--text-color);
   font-family: "Mulish", Arial, Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
@@ -880,6 +904,12 @@ BOOK NOTE PALETTE
   font-size:medium;
 }
 
+.highlight-btn { 
+  flex-grow: 1;
+  padding: 10px 10px 10px 10px;
+  font-size:medium;
+}
+
 }
 
 @media screen and (min-width: 700px) {
@@ -897,6 +927,11 @@ BOOK NOTE PALETTE
   padding: 10px 15px 10px 40px;
   font-size:medium;
 }
+.highlight-btn { 
+  flex-grow: 1;
+  padding: 10px 15px 10px 40px;
+  font-size:medium;
+}
 }
 
 #copyBtn {
@@ -904,6 +939,22 @@ BOOK NOTE PALETTE
     transition: 0.3s;
     background: var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;
     background-size: 21px;
+
+}
+
+#citeBtn {
+  background-size: 25px;
+  transition: 0.3s;
+  background: var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;
+  background-size: 21px;
+
+}
+
+#clearBtn {
+  background-size: 25px;
+  transition: 0.3s;
+  background: var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;
+  background-size: 21px;
 
 }
 
@@ -1017,7 +1068,7 @@ color: grey;
   position: absolute;
   top: 30px;
   left: 30px;
-  font-family: 'CooperLtMedium', serif;
+  font-family: 'Mulish';
   color: grey;
   font-size: medium;
 }
