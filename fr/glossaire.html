@@ -389,6 +389,7 @@ p {
 <eco-curtain></eco-curtain>
 
 
+<div id="glossary-container"></div>
 
 
 
@@ -398,29 +399,102 @@ p {
       <div class="footer-left">
        <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
         <div class="next-section">
-          <div class="next-sec">Retour a l'accuel :</div>
-          <div class="sec-name"><i>Home</i></div>
+          <div class="next-sec">Annexe suivante :</div>
+          <div class="sec-name"><i>Bibliographie</i></div>
         </div>
       </div>
       <div class="footer-right">
-        <a href="index.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
+        <a href="biblio.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
       </div>
     </div>
 
+    <chap-foot></chap-foot>
 
-<!--PIED DE PAGE DU CHAPITRE
--->
+  </div>  <!--footer functions close-->
+  
+  <footer-settings></footer-settings>
+  
+  </div> <!--underlayer close-->
+  
+  <script src="../book-note-scripts.js" defer ></script>
+  
+ 
 
-<chap-foot></chap-foot>
+<script>
+    async function buildGlossary() {
+      // Load the JSON data
+      const response = await fetch('glossary.json?v=1.1');
+      const jsonData = await response.json();
+      // Sort the data alphabetically by title
+      jsonData.sort((a, b) => a.title.localeCompare(b.title));
+      // Get the container element
+      const container = document.querySelector('#glossary-container');
+      // Clear the previous contents of the container
+      container.innerHTML = '';
+      // Variable to keep track of the entry count for the ID
+      let entryCount = 1;
+      // Loop through the entries
+      for (let i = 0; i < jsonData.length; i++) {
+        const entry = jsonData[i];
+        // Create the glossary item element
+        const item = document.createElement('div');
+        item.classList.add('glossary-item');
+        item.id = entry.title;
+        // Create the title element
+        const title = document.createElement('i');
+        title.classList.add('glossary-title');
+        title.textContent = entry.title;
+        // Create the description element
+        const description = document.createElement('p');
+        // Increment the entry count and format it as 2 digits (e.g., 01, 02, etc.)
+        const entryID = entryCount.toString().padStart(2, '0');
+        description.id = `4-10-${entryID}`;
+        description.textContent = entry.chap_description;
+        // Increment the entry count for the next entry
+        entryCount++;
+        // Create the keywords element
+        const keywords = document.createElement('h6');
+        keywords.textContent = 'Related terms: ' + entry.keywords;
+        
+        // Create the glossary info element
+        const glossInfo = document.createElement('div');
+        glossInfo.classList.add('glossary-info');
+        glossInfo.appendChild(keywords);
+        
+        // Create the chapter element with URL if relevant_chap exists
+        if (entry.relevant_chap) {
+          const chapter = document.createElement('h6');
+          const chapterText = document.createTextNode('Introduced in chapter: ');
+          const chapterLink = document.createElement('a');
+          chapterLink.textContent = entry.relevant_chap;
+          chapterLink.href = entry.relevant_chap_url;
+          chapter.appendChild(chapterText);
+          chapter.appendChild(chapterLink);
+          // Append the chapter element to glossInfo
+          glossInfo.appendChild(chapter);
+        }
+        
+        // Append the elements to the item
+        item.appendChild(title);
+        //item.appendChild(document.createElement('br'));
+        item.appendChild(description);
+        item.appendChild(glossInfo);
+        // Append the item to the container
+        container.appendChild(item);
+      }
+    }
+    
+    window.addEventListener('load', function() {
+      buildGlossary();
+    });
+</script>
 
-</div>  <!--footer functions close-->
 
-<footer-settings></footer-settings>
 
-</div> <!--underlayer close-->
 
-<script src="../book-note-scripts.js" defer ></script>
+  
+  </BODY>
+  </HTML>
+  
 
-</BODY>
 
-</HTML>
