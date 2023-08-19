@@ -1100,7 +1100,7 @@ color: grey;
   top: 30px;
   left: 30px;
   font-family: 'Mulish';
-  color: var(--text-color);
+  color: var(te);
   font-size: medium;
 }
 /*
@@ -1119,7 +1119,7 @@ color: grey;
 
 */
 
-.quotation-box {
+#the-quote {
 margin: 150px auto 30px auto;
 max-width: 100%;
 display: flex;
