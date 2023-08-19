@@ -911,11 +911,13 @@ function viewHighlightInfo(bookNoteId) {
         document.getElementById("highlight-viewer").style.display = "block";
         document.getElementById("bookNoteID").textContent = highlight.id;
         
-        // Add the blur class to the underlayer
-        document.getElementById("underlayer").classList.add("blur");
-
+   
        // Call the adjustFontSize function after setting the content
 adjustFontSize22();
+
+     // Add the blur class to the underlayer
+     document.getElementById("underlayer").classList.add("blur");
+
 
     }
 }
@@ -982,14 +984,29 @@ function removeHighlight2(dataId) {
     localStorage.setItem('bookNotes', JSON.stringify(newBookNotes));
 }
 
-// Event listener for the clearBtn
 document.getElementById("clearBtn").addEventListener("click", function() {
-    const dataId = document.getElementById("bookNoteID").textContent.trim(); // Also ensuring trim here
+    const clearBtn = document.getElementById("clearBtn");
+    const dataId = document.getElementById("bookNoteID").textContent.trim(); // Ensuring trim here
     removeHighlight2(dataId);
-    document.getElementById("highlight-viewer").style.display = "none";
-    // Remove the blur class from the underlayer
-    document.getElementById("underlayer").classList.remove("blur");
+    
+    // Immediately change the button text and background color after it's clicked
+    clearBtn.textContent = "Cleared!";
+    clearBtn.style.background = "green";
+    
+    // Wait for 2 seconds before hiding the div and removing the blur
+    setTimeout(() => {
+        document.getElementById("highlight-viewer").style.display = "none";
+        document.getElementById("underlayer").classList.remove("blur");
+        
+        // After another 1 second (i.e., 3 seconds in total), reset the button
+        setTimeout(() => {
+            clearBtn.textContent = "Clear";
+            clearBtn.style.background = "var(--deeper-accent-color) url(icons/cite.svg) 15px center no-repeat";
+        }, 1000);
+    }, 2000);
 });
+
+
 
 
 

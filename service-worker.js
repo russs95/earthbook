@@ -164,7 +164,7 @@ self.addEventListener('install', event => {
 '/icons/thankyou.svg',
 '/icons/publishing.svg',
 '/icons/authoring.svg',
-
+'/icons/glossary.svg',
 
 
       ]);

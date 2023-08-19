@@ -81,38 +81,6 @@ Ces balises seront cohérentes pour l'ensemble du livre-->
 <meta property="og:locale" content="fr_FR" >
 <meta property="og:url" content="https://book.earthen.io/fr/glossaire.html">
 
-<script>
-         // Declare the global variables
-         var book = "Annex";
-    var chapNo = "10";
-    var chapName = "Glossaire";
-    var chaptURL = "glossaire.html"
-
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope:', registration.scope);
-        }, function(error) {
-          console.log('ServiceWorker registration failed:', error);
-        });
-      });
-    }
-
-    window.addEventListener('load', function() {
-     buildGlossary();
-    });
-</script>
-
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS
-<link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-white.svg">-->
-
 
  <!-- STYLE SHEETS   
 All the css needed for this page-->
@@ -125,6 +93,38 @@ All the css needed for this page-->
  <link rel="stylesheet" href="../slider.css">
 
  
+<script>
+         // Declare the global variables
+    var lang ='fr';
+    var book = "Annex";
+    var chapNo = "10";
+    var chapName = "Glossaire";
+    var chaptURL = "glossaire.html"
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+
+    window.addEventListener('load', function() {
+     buildGlossary();
+    });
+</script>
+
+ <!-- PRELOADS-->
+<link rel="preload" as="image" href="../icons/glossary.svg">
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/00-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="..svgs/00-light.svg" media="(prefers-color-scheme: light)">
+
+
+
  <!-- INCLUDES
  Main Scripts-->   
  <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
@@ -276,8 +276,6 @@ p {
   
     </div>
   
-    
-  
     <div class="quotation-button-row">
       <button aria-label="Copier la sélection" id="copyBtn" class="quotation-btn" class="pallette-text">
         Copier
@@ -400,355 +398,29 @@ p {
       <div class="footer-left">
        <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
         <div class="next-section">
-          <div class="next-sec">Annexe suivante :</div>
-          <div class="sec-name"><i>Bibliographie</i></div>
+          <div class="next-sec">Retour a l'accuel :</div>
+          <div class="sec-name"><i>Home</i></div>
         </div>
       </div>
       <div class="footer-right">
-        <a href="biblio.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
+        <a href="index.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
       </div>
     </div>
+
 
 <!--PIED DE PAGE DU CHAPITRE
 -->
 
- <chap-foot></chap-foot>
+<chap-foot></chap-foot>
 
-</div>
-<!--FERMETURE DU PIED DE PAGE DU CHAPITRE-->
-   
- 
-<div id="glossary-container"></div>
+</div>  <!--footer functions close-->
 
-<script>
-    async function buildGlossary() {
-      // Load the JSON data
-      const response = await fetch('glossary.json?v=1.1');
-      const jsonData = await response.json();
-      // Sort the data alphabetically by title
-      jsonData.sort((a, b) => a.title.localeCompare(b.title));
-      // Get the container element
-      const container = document.querySelector('#glossary-container');
-      // Clear the previous contents of the container
-      container.innerHTML = '';
-      // Variable to keep track of the entry count for the ID
-      let entryCount = 1;
-      // Loop through the entries
-      for (let i = 0; i < jsonData.length; i++) {
-        const entry = jsonData[i];
-        // Create the glossary item element
-        const item = document.createElement('div');
-        item.classList.add('glossary-item');
-        item.id = entry.title;
-        // Create the title element
-        const title = document.createElement('i');
-        title.classList.add('glossary-title');
-        title.textContent = entry.title;
-        // Create the description element
-        const description = document.createElement('p');
-        // Increment the entry count and format it as 2 digits (e.g., 01, 02, etc.)
-        const entryID = entryCount.toString().padStart(2, '0');
-        description.id = `4-10-${entryID}`;
-        description.textContent = entry.chap_description;
-        // Increment the entry count for the next entry
-        entryCount++;
-        // Create the keywords element
-        const keywords = document.createElement('h6');
-        keywords.textContent = 'Related terms: ' + entry.keywords;
-        
-        // Create the glossary info element
-        const glossInfo = document.createElement('div');
-        glossInfo.classList.add('glossary-info');
-        glossInfo.appendChild(keywords);
-        
-        // Create the chapter element with URL if relevant_chap exists
-        if (entry.relevant_chap) {
-          const chapter = document.createElement('h6');
-          const chapterText = document.createTextNode('Introduced in chapter: ');
-          const chapterLink = document.createElement('a');
-          chapterLink.textContent = entry.relevant_chap;
-          chapterLink.href = entry.relevant_chap_url;
-          chapter.appendChild(chapterText);
-          chapter.appendChild(chapterLink);
-          // Append the chapter element to glossInfo
-          glossInfo.appendChild(chapter);
-        }
-        
-        // Append the elements to the item
-        item.appendChild(title);
-        //item.appendChild(document.createElement('br'));
-        item.appendChild(description);
-        item.appendChild(glossInfo);
-        // Append the item to the container
-        container.appendChild(item);
-      }
-    }
-    
-    window.addEventListener('load', function() {
-      buildGlossary();
-    });
-</script>
+<footer-settings></footer-settings>
 
+</div> <!--underlayer close-->
 
+<script src="../book-note-scripts.js" defer ></script>
 
+</BODY>
 
-
-
-
-  <!--
-
-<script>
-
-    let highlightClass = 'highlight';
-      let preHighlightClass = 'pre-highlight';
-      let selectedRange;
-  
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    
-  
-      function getSelectedRange() {
-              if (window.getSelection) {
-                  let sel = window.getSelection();
-                  if (sel.rangeCount) {
-                      return sel.getRangeAt(0);
-                  }
-              } else if (document.selection && document.selection.createRange) {
-                  return document.selection.createRange();
-              }
-              return null;
-          }
-  
-      function clearSelection() {
-              if (window.getSelection) {
-                  window.getSelection().removeAllRanges();
-              } else if (document.selection) {
-                  document.selection.empty();
-              }
-          }
-  
-      
-  function handleSelection() {
-    selectedRange = getSelectedRange();
-  
-    // Check if the selection is within the div with id 'ct-main'
-    if (selectedRange && selectedRange.commonAncestorContainer.closest('#ct-main') && selectedRange.toString().trim().length > 0) {
-      let span = document.createElement('span');
-      span.style.cursor = 'pointer';
-      span.classList.add(preHighlightClass);
-      span.title = "Click this text to highlight and save.";
-      selectedRange.surroundContents(span);
-      clearSelection();
-    }
-  }
-  
-  document.addEventListener('mouseup', handleSelection);
-  document.addEventListener('touchend', handleSelection);
-  
-  function handleHighlightEvent(e) {
-    if (e.target.classList.contains(preHighlightClass)) {
-      if (e.target.classList.contains(highlightClass)) {
-        e.target.classList.remove(preHighlightClass);
-      } else {
-        e.target.classList.add(highlightClass);
-        e.target.classList.remove(preHighlightClass);
-  
-        const range = document.createRange();
-        range.selectNodeContents(e.target);
-        const selection = window.getSelection();
-        selection.removeAllRanges();
-        selection.addRange(range);
-  
-        if (selection.rangeCount > 0) {
-          const selectedRange = selection.getRangeAt(0);
-          const startContainer = selectedRange.startContainer.parentNode.id;
-  
-          // Calculate startOffset considering only text nodes inside the selected paragraph
-          let startOffset = 0;
-          let node = selectedRange.startContainer.parentNode.firstChild;
-          while (node && node !== selectedRange.startContainer) {
-            if (node.nodeType === Node.TEXT_NODE) {
-              startOffset += node.length;
-            }
-            node = node.nextSibling;
-          }
-          startOffset += selectedRange.startOffset;
-  
-          const storedNoteText = selection.toString();
-          const charCount = storedNoteText.length; // Counting characters
-          const BNdateTime = new Date().toISOString(); // Current date and time
-  
-          // Retrieve existing bookNotes from local storage
-          let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-  
-          // New highlight object
-          const bookNote = {
-            book,
-            chapNo,
-            chapName,
-            chaptURL,
-            startContainer,
-            startOffset,
-            storedNoteText,
-            charCount,
-            BNdateTime
-          };
-  
-          // Add the new highlight to the array
-          bookNotes.push(bookNote);
-  
-          // Save the updated array back to local storage
-          localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-  
-          // Log to console instead of alert
-          console.log('BookNote saved:', bookNote);
-        }
-  
-        e.target.title = "This quotation is saved in your Book Notes";
-        window.getSelection().removeAllRanges();
-      }
-    } else if (e.target.classList.contains(highlightClass)) {
-      setTimeout(() => removeHighlight(e), 1000);
-    }
-  }
-  
-  
-  
-      // Add both click and touchend listeners
-      document.addEventListener('click', handleHighlightEvent);
-      document.addEventListener('touchend', handleHighlightEvent);
-  
-  
-  
-  
-      function removeHighlight(e) {
-      // Define a one-time click handler
-      function handleClick(event) {
-          if (event.target.classList.contains(highlightClass)) {
-          const text = event.target.textContent; // Assuming you want to replace the element with its text content
-          const parentElementId = event.target.parentNode.id;
-          const textLength = text.length;
-  
-          event.target.replaceWith(document.createTextNode(text)); // Remove the highlight
-  
-          // Remove the corresponding book note from the array
-          let bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-          bookNotes = bookNotes.filter(note => {
-              return !(note.startContainer === parentElementId && note.storedNoteText.length === textLength);
-          });
-  
-          localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
-          // Since we're using the `once` option, there's no need to manually remove the listener
-          }
-      }
-      // Add the one-time click handler with the `once` option
-      document.addEventListener('click', handleClick, { once: true });
-      document.addEventListener('touchend', handleClick);
-      }
-  
-  });
-  
-  function bookNotesCreator() {
-    // Retrieve existing bookNotes from local storage
-    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-  
-    // Get the book-notes-list div
-    const bookNotesListDiv = document.getElementById('book-notes-list');
-  
-    // Clear existing children
-    bookNotesListDiv.innerHTML = '';
-  
-    // Iterate through each book note and create the HTML structure
-    bookNotes.forEach((bookNote, index) => {
-      const bookNoteDiv = document.createElement('div');
-      bookNoteDiv.id = `booknote-${index + 1}`;
-  
-      const tcItemDiv = document.createElement('div');
-      tcItemDiv.className = 'tc-item';
-  
-      const chapterNameDiv = document.createElement('div');
-      chapterNameDiv.className = 'chapter-name-bn';
-      chapterNameDiv.textContent = bookNote.storedNoteText;
-  
-      const wordCountDiv = document.createElement('div');
-      wordCountDiv.className = 'word-count-tc';
-  
-      const chapterLink = document.createElement('a');
-      chapterLink.href = bookNote.chaptURL;
-      chapterLink.innerHTML = `<i>Chapter ${bookNote.chapNo}: ${bookNote.chapName}</i> | ${bookNote.book} <br>${bookNote.charCount} characters | Saved ${bookNote.BNdateTime}`;
-  
-      wordCountDiv.appendChild(chapterLink);
-  
-      tcItemDiv.appendChild(chapterNameDiv);
-      tcItemDiv.appendChild(wordCountDiv);
-  
-      bookNoteDiv.appendChild(tcItemDiv);
-  
-      bookNotesListDiv.appendChild(bookNoteDiv);
-    });
-  }
-  
-  
-  function recreateSelection() {
-    const bookNotes = JSON.parse(localStorage.getItem('bookNotes')) || [];
-  
-    bookNotes.forEach(note => {
-      const { storedNoteText, startContainer, startOffset } = note;
-  
-      if (storedNoteText && startContainer && startOffset !== null) {
-        // Find the element by the saved ID
-        const container = document.getElementById(startContainer);
-  
-        if (container) {
-          // Traverse through text nodes to find the correct position
-          let node = container.firstChild;
-          let currentOffset = 0;
-  
-          while (node) {
-            if (node.nodeType === Node.TEXT_NODE) {
-              if (currentOffset + node.length >= startOffset) {
-                break;
-              }
-              currentOffset += node.length;
-            }
-            node = node.nextSibling;
-          }
-  
-          if (node) {
-            const range = document.createRange();
-            range.setStart(node, startOffset - currentOffset);
-            range.setEnd(node, startOffset - currentOffset + storedNoteText.length);
-  
-            const span = document.createElement('span');
-            span.className = 'highlight';
-            span.textContent = storedNoteText;
-  
-            range.deleteContents();
-            range.insertNode(span);
-  
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-            selection.collapseToEnd();
-          } else {
-            alert('Stored text not found');
-          }
-        }
-      }
-    });
-  }
-  
-    // Attach the showAlertWithCharacterCount and recreateSelection functions to the window load event
-    window.addEventListener('load', function () {
-     // showAlertWithCharacterCount();
-      recreateSelection();
-    });
-  
-  </script>-->
-
-  
-  </BODY>
-  </HTML>
-  
-
-
+</HTML>
