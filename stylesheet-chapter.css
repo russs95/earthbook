@@ -841,16 +841,16 @@ BOOK NOTE PALETTE
   font-family: "Mulish", Arial, Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
-  transition: 0.3s;
   cursor: pointer; 
   display: block;
   font-size: 1em;
-  margin: 10px 10px auto 10px;
   width: fit-content;
   height: 40px;
   border-radius: 15px;
   background-size: 25px;
-  transition: 0.3s; /* Repeated property, consider consolidating with the other transition property */
+  transition: 0.3s; /* 
+    margin: 10px 10px auto 10px;
+Repeated property, consider consolidating with the other transition property */
 }
 
 .highlight-buttons { 
@@ -1101,21 +1101,23 @@ color: grey;
   color: grey;
   font-size: medium;
 }
-
+/*
 .highlight-color {
   font-size: larger;
   padding: 15px;
 }
 
 #the-quote.highlight-blue {
-  background-color: blue; /* replace with desired blue color */
+  background-color: blue; 
 }
 
 #the-quote.highlight-green {
-  background-color: green; /* replace with desired green color */
+  background-color: green; 
 }
 
-.quotation-box {
+*/
+
+#the-quote {
 margin: 150px auto 30px auto;
 max-width: 100%;
 display: flex;
