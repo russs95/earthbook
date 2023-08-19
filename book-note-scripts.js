@@ -843,18 +843,26 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 
 //VIEW HIGHLIGHT
-function adjustFontSize22() {
-    const container = document.getElementById("the-quote");
 
-    if (!container) {
-        console.error("Cannot find element with ID 'the-quote'.");
+
+function adjustFontSizeForSpanContent() {
+    const container = document.getElementById("the-quote");
+    const targetSpan = container ? container.querySelector("span") : null;
+
+    if (!container || !targetSpan) {
+        console.error("Cannot find the necessary elements.");
         return;
     }
 
     let fontSize = parseInt(window.getComputedStyle(container).fontSize);
 
-    const isOverflowing = () => container.scrollHeight > container.offsetHeight || container.scrollWidth > container.offsetWidth;
-    const hasExtraSpace = () => container.scrollHeight < container.offsetHeight * 0.8; // 0.8 can be adjusted
+    const isOverflowing = () => 
+        targetSpan.scrollHeight > container.offsetHeight || 
+        targetSpan.scrollWidth > container.offsetWidth;
+    
+    const hasExtraSpace = () => 
+        targetSpan.scrollHeight < container.offsetHeight * 0.8 && 
+        targetSpan.scrollWidth < container.offsetWidth * 0.8; // 0.8 can be adjusted
 
     const maxFontSize = 72; // Adjust as needed
     const minFontSize = 10; // Adjust as needed
@@ -874,6 +882,7 @@ function adjustFontSize22() {
     // Logging the applied font size for debugging purposes
     console.log(`Font size applied to the-quote: ${fontSize}px`);
 }
+
 
 
 
