@@ -969,7 +969,7 @@ function removeHighlight2(dataId) {
     const spans = [...document.querySelectorAll('span')];
     const spanToReplace = spans.find(span => span.outerHTML.includes(spanId));
     
-    alert(`dataId: ${dataId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
+    alert(`dataId: ${dataId}\nspanId: ${spanId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
     
     if (spanToReplace) {
         const parent = spanToReplace.parentNode;
