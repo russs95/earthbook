@@ -846,7 +846,7 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 
 function adjustFontSize22(container, targetSpan) {
-    alert('hello!');
+    alert("Container: " + container.outerHTML + "\n\nTarget Span: " + targetSpan.outerHTML);
     if (!targetSpan || targetSpan.nodeType !== 1) {
         console.error('Invalid targetSpan provided to adjustFontSize()');
         return;
@@ -858,7 +858,7 @@ function adjustFontSize22(container, targetSpan) {
 
     const maxFontSize = 72; // Adjust as needed
     const minFontSize = 10; // Adjust as needed
-
+    alert('hello!');
     // Increase font size if there's extra space
     while (hasExtraSpace() && fontSize < maxFontSize) {
         fontSize++;
