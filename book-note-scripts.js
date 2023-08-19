@@ -960,16 +960,17 @@ document.getElementById("cancelBtn").addEventListener("click", function() {
 // CLEAR HIGHLIGHT 2
 
 function removeHighlight2(dataId) {
-    // Ensure dataId is a string and is trimmed
-    dataId = String(dataId).trim();
-
-    const spanId = dataId;
+    dataId = String(dataId).trim(); // Ensure it's a string and trim it
     
-    // 1. Find and remove the highlight from the DOM
-    const spanToReplace = document.querySelector(`span[data-id="${spanId}"]`);
-
-    alert(`dataId: ${dataId}\n spanId: ${spanId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
-        
+    // Construct the string you want to search for
+    const spanId = `id="${dataId}"`;
+    
+    // Get all spans and filter by the ones containing the spanId string
+    const spans = [...document.querySelectorAll('span')];
+    const spanToReplace = spans.find(span => span.outerHTML.includes(spanId));
+    
+    alert(`dataId: ${dataId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
+    
     if (spanToReplace) {
         const parent = spanToReplace.parentNode;
         const spanContent = spanToReplace.innerHTML;
