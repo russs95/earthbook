@@ -867,6 +867,7 @@ function adjustFontSize(container, targetSpan) {
 
 
 
+
 function viewHighlightInfo(bookNoteId) {
     const bookNotes = JSON.parse(localStorage.getItem('bookNotes'));
     const highlight = bookNotes.find(note => note.id === bookNoteId);
@@ -894,8 +895,9 @@ function viewHighlightInfo(bookNoteId) {
         // Add the blur class to the underlayer
         document.getElementById("underlayer").classList.add("blur");
 
-         // Call the adjustFontSize function after setting the content
-         adjustFontSize(quoteContainer);
+       // Call the adjustFontSize function after setting the content
+adjustFontSize(quoteContainer, highlightedSpan);
+
     }
 }
 
