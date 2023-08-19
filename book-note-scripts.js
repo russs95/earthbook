@@ -843,7 +843,9 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 
 //VIEW HIGHLIGHT
-function adjustFontSize(container, targetSpan) {
+
+
+function adjustFontSize22(container, targetSpan) {
     let fontSize = parseInt(window.getComputedStyle(targetSpan).fontSize);
 
     const isOverflowing = () => container.scrollHeight > container.offsetHeight || container.scrollWidth > container.offsetWidth;
@@ -896,7 +898,7 @@ function viewHighlightInfo(bookNoteId) {
         document.getElementById("underlayer").classList.add("blur");
 
        // Call the adjustFontSize function after setting the content
-adjustFontSize(quoteContainer, highlightedSpan);
+adjustFontSize22(quoteContainer, highlightedSpan);
 
     }
 }
