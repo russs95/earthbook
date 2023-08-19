@@ -34,7 +34,7 @@ class chapfoot extends HTMLElement {
               </div>
           </div>
         </div>
-
+<!--
         <div class="footer-function" >
           <div class="footer-function-main" onclick="openComments()" style="z-index:9;">
               
@@ -51,6 +51,7 @@ class chapfoot extends HTMLElement {
 
           </div> 
         </div>
+        -->
 
 
       

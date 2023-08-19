@@ -12,9 +12,8 @@ class footSettings extends HTMLElement {
   
     <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Retour à la page d'accueil" title="Retour à la page d'accueil" onclick="location.href='index.html'" ><img src="../icons/home.svg" alt="Icône de la page d'accueil"></button></div>
   
-    <!--
-    <div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Cliquez pour ouvrir la page de titre du livre"><img src="../svgs/my-book-header-logo-grey.svg" title="Page de titre du Tractatus Ayyew" alt="Mandala Tractatus Ayyew"></button></div>
-    -->
+    <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Cliquez pour ouvrir la page de titre du livre"><img src="../svgs/my-book-header-logo-grey.svg" title="Page de titre du Tractatus Ayyew" alt="Mandala Tractatus Ayyew"></button></div>
+    
     
     <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Icône d'achat" aria-label="Cliquez l'achat du livre" title="Cliquez pour accéder à la page d'achat"></button></div>
   
