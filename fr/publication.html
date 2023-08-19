@@ -243,6 +243,40 @@ All the page components required to build this page-->
     <!--TOUR-CURTAIN-->
     <tour-curtain></tour-curtain>
     
+
+     
+<div id="highlight-viewer" class="modal">
+  <div id="quotation-title">Your BookNote</div>
+  <div id="close-x">&times;</div>
+  <div class="highlight-viewer-content" style="display:flex;width:80%;margin:auto;height:100%;flex-flow:column;justify-content: center;">
+   
+    <div class="quotation-box">
+        
+        <div id="the-quote"></div>
+    </div>
+    
+    <div class="quote-info">
+        <div id="book" style="font-size:medium"></div>
+        <div id="noteChapter" style="font-size:medium"></div>
+        <div id="date" style="font-size:small"></div>
+        <div id="charCount" style="font-size:small"></div>
+        <div id="publicNote" style="font-size:small"></div>
+        <div id="bookNoteID" style="font-size:small"></div>
+  
+    </div>
+  
+    <div id="userNote"></div>
+  
+    <div class="quotation-button-row">
+      <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn" class="pallette-text">
+        Copier
+      </button> 
+      <button id="clearBtn" aria-label="Clear Highlight" class="pallette-btn" action="Clear">Clear</button>
+      <button id="cancelBtn" aria-label="Cancel" class="pallette-btn">Cancel</button>
+      <button id="citeBtn" aria-label="Cite" class="pallette-btn">Cite</button>
+    </div>
+  </div>
+  </div>
     
      
   <div id="underlayer" class="accessibility-plugin-ac" >
@@ -282,10 +316,11 @@ All the page components required to build this page-->
 -->
 
 
-<div class="lead-page-paragraph" id="FR-4-6-00">
+<div class="lead-page-paragraph">
+  <p id="FR-4-6-00">
   
     LE TRACTATUS AYYEW a été rédigé et publié à l'aide de matériel et de logiciels 100 % open source développés par des entreprises à but non lucratif. Écrit en utilisant <a href="https://www.libreoffice.org/" target="_blank">Libre Office</a>, en utilisant un <a href="https://puri.sm/" target=" _blank">Ordinateur portable Purism Librem 13</a> exécutant <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> et un <a href="https://frame. work/" target="_blank">Ordinateur portable Framework</a> exécutant <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>. Les fichiers cloud d'Earthbook pour l'écriture et tous les fichiers publiés finaux sont hébergés sur un serveur Ubuntu exécutant <a href="https://nextcloud.com" target="_blank">NextCloud</a>.
-   
+  </p>
     </div>
    
     <div class="page-paragraphe">
@@ -297,7 +332,7 @@ All the page components required to build this page-->
    
       <p id="FR-4-6-03">L'entreprise qui publie le Tracatus Ayyew est <a href="pour-terre.html">for-Earth</a>. Cela signifie que nous divulguons notre <a href="compte.html" target="_blank">comptabilité écologique</a> dans les rapports régénératifs annuels.</p>
    
-      <br><br><br><br>
+      <br><br><br><br> <br><br><br><br>
         </div><!--ferme le contenu du texte de la page-->
 
 
