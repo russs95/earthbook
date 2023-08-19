@@ -844,28 +844,29 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 
 
 
-//VIEW HIGHLIGHT
-
 function viewHighlightInfo(bookNoteId) {
     const bookNotes = JSON.parse(localStorage.getItem('bookNotes'));
     const highlight = bookNotes.find(note => note.id === bookNoteId);
     
     if (highlight) {
-        document.getElementById("the-quote").textContent = `“${highlight.storedText}”`;
-        document.getElementById("the-quote").classList.add(`highlight-${highlight.highlightColor}`);
+        // Surrounding the highlighted text with a span that has the highlight-color class
+        const highlightedText = `<span class="highlight-${highlight.highlightColor}">${highlight.storedText}</span>`;
+        document.getElementById("the-quote").innerHTML = `“${highlightedText}”`;
+
         document.getElementById("book").textContent = highlight.book;
         document.getElementById("noteChapter").textContent = highlight.noteChapter;
         document.getElementById("date").textContent = `Noted: ${highlight.BNdateTime}`;
         document.getElementById("charCount").textContent = `Characters: ${highlight.charCount}`;
         document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
-        document.getElementById("userNote").textContent = highlight.userNote;
+        document.getElementById("userNote").textContent = `Annotation: ${highlight.userNote}`;
         document.getElementById("highlight-viewer").style.display = "block";
-        document.getElementById("bookNoteID").textContent = bookNoteId;
+        document.getElementById("bookNoteID").textContent = `Not ID: ${bookNoteId}`;
         
         // Add the blur class to the underlayer
         document.getElementById("underlayer").classList.add("blur");
     }
 }
+
 
 
 document.getElementById("close-x").addEventListener("click", function() {
