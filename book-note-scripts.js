@@ -961,7 +961,12 @@ document.getElementById("cancelBtn").addEventListener("click", function() {
 
 function removeHighlight2(dataId) {
     // 1. Find and remove the highlight from the DOM
-    const spanToReplace = document.querySelector(`span[data-id="${dataId}"]`);
+    
+        const spanToReplace = document.querySelector(`span[data-id="${dataId}"]`);
+
+        alert(`dataId: ${dataId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
+
+        
     if (spanToReplace) {
         const parent = spanToReplace.parentNode;
         const spanContent = spanToReplace.innerHTML;
@@ -970,7 +975,7 @@ function removeHighlight2(dataId) {
 
     // 2. Remove the highlight from the localStorage
     const bookNotes = JSON.parse(localStorage.getItem('bookNotes'));
-    const newBookNotes = bookNotes.filter(note => note.id !== dataId);
+    const newBookNotes = bookNotes.filter(note => String(note.id) !== dataId);
     localStorage.setItem('bookNotes', JSON.stringify(newBookNotes));
 }
 
