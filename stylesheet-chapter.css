@@ -845,7 +845,7 @@ BOOK NOTE PALETTE
   cursor: pointer; 
   display: block;
   font-size: 1em;
-  margin: 10px 5px auto 5px;
+  margin: 10px 10px auto 10px;
   width: fit-content;
   height: 40px;
   border-radius: 15px;
@@ -945,7 +945,7 @@ BOOK NOTE PALETTE
 #citeBtn {
   background-size: 25px;
   transition: 0.3s;
-  background: var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;
+  background: var(--deeper-accent-color) url(icons/cite.svg) 15px center no-repeat;
   background-size: 21px;
 
 }
@@ -953,7 +953,7 @@ BOOK NOTE PALETTE
 #clearBtn {
   background-size: 25px;
   transition: 0.3s;
-  background: var(--deeper-accent-color) url(icons/copy.svg) 15px center no-repeat;
+  background: var(--deeper-accent-color) url(icons/clear.svg) 15px center no-repeat;
   background-size: 21px;
 
 }
@@ -1139,7 +1139,7 @@ height: 50%;
 .quotation-button-row {
   display: flex;
   justify-content: space-between;
-  margin: auto auto 50px auto;
+  margin: auto 0px 50px 0px;
 }
 
 .action {
