@@ -909,7 +909,7 @@ function viewHighlightInfo(bookNoteId) {
         document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
         document.getElementById("userNote").textContent = `Annotation: ${highlight.userNote}`;
         document.getElementById("highlight-viewer").style.display = "block";
-        document.getElementById("bookNoteID").textContent = {bookNoteId};
+        document.getElementById("bookNoteID").textContent = highlight.bookNoteId;
         
         // Add the blur class to the underlayer
         document.getElementById("underlayer").classList.add("blur");
