@@ -962,11 +962,13 @@ document.getElementById("cancelBtn").addEventListener("click", function() {
 function removeHighlight2(dataId) {
     // Ensure dataId is a string and is trimmed
     dataId = String(dataId).trim();
+
+    const spanId = dataId;
     
     // 1. Find and remove the highlight from the DOM
-    const spanToReplace = document.querySelector(`span[data-id="008"]`);
+    const spanToReplace = document.querySelector(`span[data-id="${spanId}"]`);
 
-    alert(`dataId: ${dataId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
+    alert(`dataId: ${dataId}\n spanId: ${spanId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
         
     if (spanToReplace) {
         const parent = spanToReplace.parentNode;
