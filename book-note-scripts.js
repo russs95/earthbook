@@ -892,6 +892,9 @@ function viewHighlightInfo(bookNoteId) {
     const highlight = bookNotes.find(note => note.id === bookNoteId);
     
     if (highlight) {
+
+     // Add the blur class to the underlayer
+     document.getElementById("underlayer").classList.add("blur");
         const quoteContainer = document.getElementById("the-quote");
         
         // Added code to wrap content with <span> and appropriate class
@@ -915,8 +918,6 @@ function viewHighlightInfo(bookNoteId) {
        // Call the adjustFontSize function after setting the content
 adjustFontSize22();
 
-     // Add the blur class to the underlayer
-     document.getElementById("underlayer").classList.add("blur");
 
 
     }
@@ -1001,7 +1002,8 @@ document.getElementById("clearBtn").addEventListener("click", function() {
         // After another 1 second (i.e., 3 seconds in total), reset the button
         setTimeout(() => {
             clearBtn.textContent = "Clear";
-            clearBtn.style.background = "var(--deeper-accent-color) url(icons/cite.svg) 15px center no-repeat";
+            clearBtn.style.setProperty("background", "var(--deeper-accent-color) url(icons/cite.svg) 15px center no-repeat");
+
         }, 1000);
     }, 2000);
 });
