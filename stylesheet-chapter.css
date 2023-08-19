@@ -906,7 +906,7 @@ Repeated property, consider consolidating with the other transition property */
 
 .quotation-btn { 
   flex-grow: 1;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 5px 10px 20px;
   font-size:medium;
 }
 
@@ -937,7 +937,7 @@ Repeated property, consider consolidating with the other transition property */
 #copyBtn {
     background-size: 25px;
     transition: 0.3s;
-    background: var(--deeper-accent-color) url(icons/copy.svg) 22px center no-repeat;
+    background: var(--deeper-accent-color) url(icons/copy.svg) 17px center no-repeat;
     background-size: 21px;
     margin-right: 10px;
 
@@ -946,7 +946,7 @@ Repeated property, consider consolidating with the other transition property */
 #citeBtn {
   background-size: 25px;
   transition: 0.3s;
-  background: var(--deeper-accent-color) url(icons/cite.svg) 22px center no-repeat;
+  background: var(--deeper-accent-color) url(icons/cite.svg) 15px center no-repeat;
   background-size: 21px;
   margin-left: 10px;
 
@@ -955,7 +955,7 @@ Repeated property, consider consolidating with the other transition property */
 #clearBtn {
   background-size: 25px;
   transition: 0.3s;
-  background: var(--deeper-accent-color) url(icons/clear.svg) 22px center no-repeat;
+  background: var(--deeper-accent-color) url(icons/clear.svg) 15px center no-repeat;
   background-size: 21px;
 
 }
@@ -1124,21 +1124,22 @@ margin: 150px auto 30px auto;
 max-width: 100%;
 display: flex;
 flex-flow: row;
-height: 50%;
+height: fit-content;
 }
 
 #the-quote  {
   font-size: 1.9em;
 line-height: 1.3;
 width: 100%;
-height: 100%
+height: fit-content;
+overflow-y: clip;
 }
 
 .quote-info {
   font-family: 'Mulish', sans-serif;
   text-align: left;
   width: 600px;
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 #userNote {
