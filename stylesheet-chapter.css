@@ -1050,6 +1050,35 @@ background: var(--background-color)
   overflow: auto;
 }
 
+.highlight-viewer-content {
+  display:flex;
+  width:80%;
+  margin:auto;
+  height:100%;
+  flex-flow:column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 699px) {
+  .highlight-viewer-content {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1324px) {
+  .highlight-viewer-content {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1324px) {
+  .highlight-viewer-content {
+    width: 60%;
+  }
+}
+
+
+
 #close-x {
   position: absolute;
   top: 10px;
@@ -1087,11 +1116,11 @@ color: grey;
 }
 
 .quotation-box {
-  margin: auto auto 30px auto;
-  max-width: 600px;
-  display: flex;
-  flex-flow: row;
-  font-size: 3em;
+margin: 150px auto 30px auto;
+max-width: 100%;
+display: flex;
+flex-flow: row;
+height: 50%;
 }
 
 .quote-info {
