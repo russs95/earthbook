@@ -163,6 +163,7 @@ self.addEventListener('install', event => {
 '/banners/forearth-dark-350px.png',
 '/icons/thankyou.svg',
 '/icons/publishing.svg',
+'/icons/authoring.svg',
 
 
 

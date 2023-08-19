@@ -10,11 +10,11 @@ o               .        ___- -___                    .
        .              .-\          -.     .     .         .
                     ./.;_.\     __/~ \.     
                    /;  / `-'  __\    . \                            
- .        .       / ,-'      / .   .;   \        |
+ .        .       /  ,-'     / .   .;   \        |
                  | .|       /       __   |      -O-       .
                 |__/    __ |  . ;   \ | . |      |
                 |      /  \\_    . ;| \___|    
-   .    o       |      \  .~\\___,--'     |           .
+   .    o       |      \  .~\\___,-'      |           .
                  |     | . ; ~~~~\_    __|
     |             \    \   .  .  ; \  /_/   .
    -O-        .    \   /         . |  ~/                  .
@@ -26,7 +26,6 @@ o               .        ___- -___                    .
 EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
 Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
  
-
 Page de destination - version 1.3.2
 Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
 Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
@@ -112,6 +111,10 @@ All the css needed for this page-->
     }
 </script>
 
+
+
+<!-- PRELOADS-->
+<link rel="preload" as="image" href="../icons/authoring.svg">
 <!-- Preload for dark mode -->
 <link rel="preload" as="image" href="../svgs/00-dark.svg" media="(prefers-color-scheme: dark)">
 <!-- Preload for light mode -->
@@ -204,6 +207,44 @@ All the page components required to build this page-->
     <tour-curtain></tour-curtain>
     
      
+     
+<div id="highlight-viewer" class="modal">
+  <div id="quotation-title">Your BookNote</div>
+  <div id="close-x">&times;</div>
+  <div class="highlight-viewer-content" style="display:flex;width:80%;margin:auto;height:100%;flex-flow:column;justify-content: center;">
+   
+    <div class="quotation-box">
+        
+        <div id="the-quote"></div>
+    
+      </div>
+    
+    <div class="quote-info">
+      <div id="userNote" style="font-size:medium; padding:20px;"></div>
+      <div id="book" style="font-size:medium"></div>
+        <div id="noteChapter" style="font-size:medium"></div>
+        <div id="date" style="font-size:small"></div>
+        <div id="charCount" style="font-size:small"></div>
+        <div id="publicNote" style="font-size:small"></div>
+        <div id="bookNoteID" style="font-size:small"></div>
+  
+    </div>
+  
+    
+  
+    <div class="quotation-button-row">
+      <button aria-label="Copier la sélection" id="copyBtn" class="quotation-btn" class="pallette-text">
+        Copier
+      </button> 
+      <button id="clearBtn" aria-label="Clear Highlight" class="quotation-btn" >Clear</button>
+     <!-- <button id="cancelBtn" aria-label="Cancel" class="pallette-btn">Cancel</button>-->
+      <button id="citeBtn" aria-label="Cite" class="quotation-btn">Cite</button>
+    </div>
+  </div>
+  </div>
+    
+
+
   <div id="underlayer" class="accessibility-plugin-ac" >
 
     <div id="top"></div>

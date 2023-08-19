@@ -842,6 +842,32 @@ document.getElementById('palletteBar').addEventListener('click', function(event)
 });
 
 
+//VIEW HIGHLIGHT
+function adjustFontSize(container) {
+    let fontSize = parseInt(window.getComputedStyle(container).fontSize);
+
+    // Check if the content overflows the container
+    const isOverflowing = () => container.scrollHeight > container.offsetHeight || container.scrollWidth > container.offsetWidth;
+
+    // Check if there's extra space and the font can be increased
+    const hasExtraSpace = () => container.scrollHeight < container.offsetHeight * 0.8; // 0.8 can be adjusted
+
+    // Define the maximum and minimum font sizes for readability and design coherence
+    const maxFontSize = 72; // For example, 72px, but you can adjust it
+    const minFontSize = 10; // For example, 10px, but you can adjust it
+
+    // Increase font size if there's extra space
+    while (hasExtraSpace() && fontSize < maxFontSize) {
+        fontSize++;
+        container.style.fontSize = fontSize + "px";
+    }
+
+    // Reduce font size if content overflows
+    while (isOverflowing() && fontSize > minFontSize) {
+        fontSize--;
+        container.style.fontSize = fontSize + "px";
+    }
+}
 
 
 function viewHighlightInfo(bookNoteId) {
@@ -849,10 +875,16 @@ function viewHighlightInfo(bookNoteId) {
     const highlight = bookNotes.find(note => note.id === bookNoteId);
     
     if (highlight) {
-        // Surrounding the highlighted text with a span that has the highlight-color class
-        const highlightedText = `<span class="highlight-${highlight.highlightColor}">${highlight.storedText}</span>`;
-        document.getElementById("the-quote").innerHTML = `“${highlightedText}”`;
-
+        const quoteContainer = document.getElementById("the-quote");
+        
+        // Added code to wrap content with <span> and appropriate class
+        const highlightedSpan = document.createElement('span');
+        highlightedSpan.classList.add(`highlight-${highlight.highlightColor}`);
+        highlightedSpan.textContent = highlight.storedText;
+        quoteContainer.textContent = '“';  // Start quote
+        quoteContainer.appendChild(highlightedSpan);
+        quoteContainer.append('”');  // End quote
+        
         document.getElementById("book").textContent = highlight.book;
         document.getElementById("noteChapter").textContent = highlight.noteChapter;
         document.getElementById("date").textContent = `Noted: ${highlight.BNdateTime}`;
@@ -864,6 +896,9 @@ function viewHighlightInfo(bookNoteId) {
         
         // Add the blur class to the underlayer
         document.getElementById("underlayer").classList.add("blur");
+
+         // Call the adjustFontSize function after setting the content
+         adjustFontSize(quoteContainer);
     }
 }
 
