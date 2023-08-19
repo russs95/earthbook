@@ -909,7 +909,7 @@ function viewHighlightInfo(bookNoteId) {
         document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
         document.getElementById("userNote").textContent = `Annotation: ${highlight.userNote}`;
         document.getElementById("highlight-viewer").style.display = "block";
-        document.getElementById("bookNoteID").textContent = `Not ID: ${bookNoteId}`;
+        document.getElementById("bookNoteID").textContent = {bookNoteId};
         
         // Add the blur class to the underlayer
         document.getElementById("underlayer").classList.add("blur");
@@ -960,17 +960,16 @@ document.getElementById("cancelBtn").addEventListener("click", function() {
 // CLEAR HIGHLIGHT 2
 
 function removeHighlight2(dataId) {
-    dataId = String(dataId).trim(); // Ensure it's a string and trim it
+    // Ensure dataId is a string and is trimmed
+    dataId = String(dataId).trim();
+
+    spanId = dataId;
     
-    // Construct the string you want to search for
-    const spanId = `id="${dataId}"`;
-    
-    // Get all spans and filter by the ones containing the spanId string
-    const spans = [...document.querySelectorAll('span')];
-    const spanToReplace = spans.find(span => span.outerHTML.includes(spanId));
-    
-    alert(`dataId: ${dataId}\nspanId: ${spanId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
-    
+    // 1. Find and remove the highlight from the DOM
+    const spanToReplace = document.querySelector(`span[data-id="${spanId}"]`);
+
+    alert(`dataId: ${dataId}\n spanId: ${spanId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
+        
     if (spanToReplace) {
         const parent = spanToReplace.parentNode;
         const spanContent = spanToReplace.innerHTML;
