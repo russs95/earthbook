@@ -1174,7 +1174,7 @@ overflow-y: clip;
   font-family: 'Mulish', sans-serif;
   text-align: left;
   width: 600px;
-  margin: 15px auto;
+  margin: 20px auto 10px auto;
 }
 
 #userNote {
