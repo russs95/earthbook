@@ -770,7 +770,7 @@ function appendAnnotationTitle() {
         while (containerNode && containerNode.nodeName !== 'P' && containerNode.parentNode !== null) {
             containerNode = containerNode.parentNode;
         }
-
+/*
         // Safety check
         if (containerNode && containerNode.nodeName === 'P') {
             // Update the containerHTML attribute
@@ -784,8 +784,10 @@ function appendAnnotationTitle() {
 
             // Save the updated bookNotes array back to local storage
             saveBookNotesToLocalStorage(bookNotes);
+
+            
         }
-    }
+   */ }
 }
 
 
