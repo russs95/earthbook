@@ -89,30 +89,7 @@ These tags will be consistent for the whole book-->
     var chapName = "Epigraph - Book One";
     var chaptURL = "epigraph-1.html"  
     
-    const registerServiceWorker = async () => {
-  if ("serviceWorker" in navigator) {
-    try {
-      const registration = await navigator.serviceWorker.register("https://book.earthen.io/service-worker.js", {
-        scope: "/",
-      });
-      if (registration.installing) {
-        console.log("Service worker installing");
-      } else if (registration.waiting) {
-        console.log("Service worker installed");
-      } else if (registration.active) {
-        console.log("Service worker active");
-      }
-    } catch (error) {
-      console.error(`Registration failed with ${error}`);
-    }
-  }
-};
-
-
-registerServiceWorker();
-
-
-/*
+    
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
@@ -121,18 +98,9 @@ registerServiceWorker();
           console.log('ServiceWorker registration failed:', error);
         });
       });
-    }*/
-
+    }
 </script>
 
- <!--FONTS
-starts loading the fonts-->
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/00-dark.svg">
-<link rel="preload" as="image" href="../svgs/00-white.svg">
 
 
  <!-- STYLE SHEETS   
@@ -143,6 +111,15 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css">
+
+
+
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/00-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="..svgs/00-light.svg" media="(prefers-color-scheme: light)">
+
+ 
 
  
  <!-- INCLUDES
@@ -284,7 +261,7 @@ All the page components required to build this page-->
 
 <div id="ct-chapt-graphic" class="background-000">
     <div class="ct-chapter-quote">
-        “Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.  First History passed, now Nature is next.  This is the moment to take green seriously.”
+        “Another world is being born right in front of our eyes...”
       </div>
       
     </div>
@@ -293,7 +270,9 @@ All the page components required to build this page-->
   
   <div id="ct-main">
   
-  <div class="ct-quote-source" style="width:100% !important;">
+    <div class="lead-page-paragraph" ><p id="en-1-1-00">“Another world is being born right in front of our eyes:  a whole new spirit in the way we think, hope and fear.  The ecological anguish that gives its color to this new age announces nothing less for our civilization than all-encompassing change.  First History passed, now Nature is next.  This is the moment to take green seriously.”</p> </div>
+
+  <div class="ct-quote-source" style="width:100% !important;" id="en-1-0-1">
       ― Régis Debray, <i>Le siècle vert. Un changement de civilisation</i><br><br>(<i>The Green Age: A Change of Civilizations</i>)
       </div>
       <br><br><br><br><br><br>
