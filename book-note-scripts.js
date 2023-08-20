@@ -747,7 +747,7 @@ function appendAnnotation() {
 function appendAnnotationTitle() {
 
     const bookNotes = getBookNotesFromLocalStorage();
-    
+    alert('hello!');
     // Find the book note using the global lastUsedBookNoteId variable
     const lastNote = bookNotes.find(note => note.id === lastUsedBookNoteId);
     
