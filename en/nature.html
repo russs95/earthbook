@@ -104,16 +104,11 @@ These tags will be consistent for the whole book-->
 </script>
 
 
-
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
 <!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/06-nature-dark.svg">
-<link rel="preload" as="image" href="../svgs/06-nature-white.svg">
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/06-nature-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="../svgs/06-nature-white.svg" media="(prefers-color-scheme: light)">
 
 
  <!-- STYLE SHEETS   

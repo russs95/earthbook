@@ -931,7 +931,7 @@ function styleUserNote() {
 
     if (!userNoteDiv.innerText.trim()) {
         userNoteDiv.setAttribute("data-placeholder", "Click to annotate this highlight...");
-        userNoteDiv.innerText = " "; // Ensure the div is empty
+        userNoteDiv.innerText = ""; // Ensure the div is empty
         annotationEditButton.style.display = "none";
     } else {
         userNoteDiv.removeAttribute("data-placeholder");

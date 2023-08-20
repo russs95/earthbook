@@ -955,11 +955,23 @@ Repeated property, consider consolidating with the other transition property */
 #saveBtn {
   background-size: 25px;
   transition: 0.3s;
-  background: var(--deeper-accent-color) url(icons/cite.svg) 15px center no-repeat;
   background-size: 21px;
   width: 100%;
-  padding: 10px;
-  height:fit-content;
+
+  color: var(--text-color);
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer; 
+  font-size: 1em;
+  margin: 5px 10px auto 10px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex; 
+  padding: 10px 15px 10px 40px;
+  background: var(--nav-bar-accent) url(icons/save.svg) 15px center no-repeat;
+  background-size: 21px;
 
 }
 
