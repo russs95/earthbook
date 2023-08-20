@@ -942,13 +942,13 @@ function styleUserNote() {
 
 //SHOW SAVE BUTTON
 const userNoteDiv = document.getElementById("userNote");
-const annotationEditButton = document.getElementById("saveBtn");
+const annotationEditButton = document.getElementById("annotation-edit");
 
 // Focus event: This triggers when the user clicks on (or focuses on) the userNoteDiv
 userNoteDiv.addEventListener("focus", function() {
     // Check if userNote's content is just the placeholder
     if (userNoteDiv.getAttribute("data-placeholder") === "Click to annotate this highlight...") {
-        userNoteDiv.innerText = " "; // Clear out the placeholder text for user input.  Leave one space
+        userNoteDiv.innerText = ""; // Clear out the placeholder text for user input
     }
     
     // Display the edit button when the user is editing userNote
@@ -958,10 +958,8 @@ userNoteDiv.addEventListener("focus", function() {
 // Blur event: This triggers when the user clicks away from (or loses focus on) the userNoteDiv
 userNoteDiv.addEventListener("blur", function() {
     styleUserNote();  // Call styleUserNote to reset placeholder if needed
-    
-    // Hide the edit button when the user stops editing userNote
-    annotationEditButton.style.display = "none";
 });
+
 
 
 

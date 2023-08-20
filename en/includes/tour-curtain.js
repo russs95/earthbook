@@ -91,11 +91,9 @@ margin-bottom: 20px;
 font-size: 1.5em;
 display: flex;
 flex-flow: row;
-color: gray;">
+color: gray;
+min-height:40px; padding:5px;">
 
-    
-   -->
-    
     </div>
     <button id="saveBtn" style="display:none;" aria-label="Save" >Save Annotation</button>
 
