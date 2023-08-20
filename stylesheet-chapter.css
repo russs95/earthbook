@@ -957,7 +957,7 @@ Repeated property, consider consolidating with the other transition property */
   transition: 0.3s;
   background-size: 21px;
   width: 100%;
-
+  border: none;
   color: var(--text-color);
   font-family: "Mulish", Arial, Helvetica, sans-serif;
   text-align: center;
@@ -965,12 +965,12 @@ Repeated property, consider consolidating with the other transition property */
   transition: 0.3s;
   cursor: pointer; 
   font-size: 1em;
-  margin: 5px 10px auto 10px;
+  margin: 10px 0px 5px 0px;
   height: fit-content;
   border-radius: 15px;
   display: flex; 
-  padding: 14px 15px 14px 40px;
-  background: var(--nav-bar-accent) url(icons/save.svg) 15px center no-repeat;
+  padding: 14px 15px 14px 15px;
+  background: var(--deeper-accent-color) url(icons/save.svg) 15px center no-repeat;
   background-size: 21px;
 
 }
