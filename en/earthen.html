@@ -27,7 +27,7 @@ EARTHBOOK - An open source, Earth & Human Friendly Book format
 Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
  
 
-Landing page - version 1.3.1
+Landing page - version 1.3.2
 Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
 First EarthBook, the Tractatus Ayyew, published 22.12.22.
 
@@ -80,40 +80,6 @@ These tags will be consistent for the whole book-->
 <meta property="og:locale" content="en_EN" >
 <meta property="og:url" content="https://book.earthen.io/en/earthen.html">
 
-<script>
-      // Declare the global variables
-     var lang = "en";
-     var book = "Book One";
-    var chapNo = "7";
-    var chapName = "The Earthen Ways";
-    var chaptURL = "earthen.html"   // Declare the global variables
-  
-
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope:', registration.scope);
-        }, function(error) {
-          console.log('ServiceWorker registration failed:', error);
-        });
-      });
-    }
-
-
-    
-</script>
-
-
-
- <!--FONTS
-starts loading the fonts-->
-
-<link rel="preconnect" href="../fonts/">
-<link rel="preconnect" href="../fonts/" crossorigin> 
-
-<!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/07-earthen-dark.svg">
-<link rel="preload" as="image" href="../svgs/07-earthen-white.svg">
 
 
  <!-- STYLE SHEETS   
@@ -125,6 +91,40 @@ All the css needed for this page-->
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css">
+
+
+
+<script>
+      // Declare the global variables
+     var lang = "en";
+     var book = "Book One";
+    var chapNo = "7";
+    var chapName = "The Earthen Ways";
+    var chaptURL = "earthen.html"   // Declare the global variables
+  
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+</script>
+
+
+
+
+<!-- PRELOADS-->
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/07-earthen-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="../svgs/07-earthen-white.svg" media="(prefers-color-scheme: light)">
+
+
+
 
  
  <!-- INCLUDES
