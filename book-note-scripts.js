@@ -941,7 +941,7 @@ function styleUserNote() {
 //SHOW SAVE BUTTON
 
 const userNoteDiv = document.getElementById("userNote");
-const annotationEditButton = document.getElementById("annotation-edit");
+const annotationEditButton = document.getElementById("annotation-save");
 
 userNoteDiv.addEventListener("focus", function() {
     // Display the button when the user is editing userNote
