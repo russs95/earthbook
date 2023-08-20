@@ -914,14 +914,28 @@ function viewHighlightInfo(bookNoteId) {
         document.getElementById("highlight-viewer").style.display = "block";
         document.getElementById("bookNoteID").textContent = highlight.id;
         
-   
+        styleUserNote();
        // Call the adjustFontSize function after setting the content
-adjustFontSize22();
+       adjustFontSizeForSpanContent();
 
 
 
     }
 }
+
+function styleUserNote() {
+    const userNoteDiv = document.getElementById("userNote");
+    const annotationEditButton = document.getElementById("annotation-edit");
+
+    // Check if userNote is empty or just contains white spaces
+    if (!userNoteDiv.innerText.trim()) {
+        userNoteDiv.innerText = "Click to annotate this highlight...";
+        annotationEditButton.style.display = "none"; // Hide the button if there's no annotation
+    } else {
+        annotationEditButton.style.display = "block"; // Show the button if there's an annotation
+    }
+}
+
 
 
 
