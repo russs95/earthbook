@@ -88,12 +88,15 @@ class TourCurtain extends HTMLElement {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    font-size: 1.5em">
+    font-size: 1.5em;
+    display: flex;
+    flex-flow:row;">
 
     <div id="userNote" contenteditable="true"></div>
     <button id="annotation-edit" aria-label="Save" style="display:none;">Click to edit text</button>
     
     <div class="quote-info">
+    </div>
       
       <div id="book" style="font-size:medium"></div>
         <div id="noteChapter" style="font-size:medium"></div>
