@@ -95,6 +95,8 @@ class TourCurtain extends HTMLElement {
     <div id="userNote" contenteditable="true"></div>
     <button id="annotation-edit" aria-label="Save" style="display:none;">Click to edit text</button>
     
+    </div>
+    
     <div class="quote-info">
     </div>
       
