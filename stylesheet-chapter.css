@@ -952,6 +952,15 @@ Repeated property, consider consolidating with the other transition property */
 
 }
 
+#saveBtn {
+  background-size: 25px;
+  transition: 0.3s;
+  background: var(--deeper-accent-color) url(icons/cite.svg) 15px center no-repeat;
+  background-size: 21px;
+  width: 100%;
+
+}
+
 #clearBtn {
   background-size: 25px;
   transition: 0.3s;
