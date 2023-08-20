@@ -1463,7 +1463,10 @@ left: 0;
 
 #check {display: none;}
 
-
+[contenteditable=true]:empty:not(:focus):before {
+  content: attr(data-placeholder);
+  color: #888; /* Placeholder text color, adjust as needed */
+}
 
 .btn {
   border: 2px solid #ddd;
