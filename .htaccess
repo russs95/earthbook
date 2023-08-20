@@ -140,6 +140,13 @@ Redirect /fr/preface.html /fr/lepreface.html
 Redirect /fr/preface.php /fr/lepreface.html
 
 
+<If "%{REQUEST_URI} =~ m#^/fr/.*#">
+    ErrorDocument 404 /fr/404.html
+</If>
+
+<If "%{REQUEST_URI} =~ m#^/en/.*#">
+    ErrorDocument 404 /en/404-draft.html
+</If>
 
 
 
