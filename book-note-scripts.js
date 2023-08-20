@@ -923,19 +923,35 @@ function viewHighlightInfo(bookNoteId) {
     }
 }
 
+
+//EDIT THE ANNOTATION FUNCTION 
 function styleUserNote() {
     const userNoteDiv = document.getElementById("userNote");
-    const annotationEditButton = document.getElementById("annotation-edit");
+    const annotationSaveButton = document.getElementById("annotation-save");
 
     // Check if userNote is empty or just contains white spaces
     if (!userNoteDiv.innerText.trim()) {
         userNoteDiv.innerText = "Click to annotate this highlight...";
         annotationEditButton.style.display = "none"; // Hide the button if there's no annotation
     } else {
-        //annotationEditButton.style.display = "block"; // Show the button if there's an annotation
+        annotationSaveButton.style.display = "block"; // Show the button if there's an annotation
     }
 }
 
+//SHOW SAVE BUTTON
+
+const userNoteDiv = document.getElementById("userNote");
+const annotationEditButton = document.getElementById("annotation-edit");
+
+userNoteDiv.addEventListener("focus", function() {
+    // Display the button when the user is editing userNote
+    annotationEditButton.style.display = "block";
+});
+
+userNoteDiv.addEventListener("blur", function() {
+    // Hide the button when the user stops editing userNote
+    annotationEditButton.style.display = "none";
+});
 
 
 

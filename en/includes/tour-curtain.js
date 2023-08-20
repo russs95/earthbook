@@ -93,10 +93,11 @@ display: flex;
 flex-flow: row;
 color: gray;">
 
-    <!--
-    <button id="annotation-edit" aria-label="Save" style="display:none;color:gray;border:none;background:none;">Click to edit text</button>-->
+    
+   -->
     
     </div>
+    <button id="annotation-save" style="display:none;" aria-label="Save" class="quotation-btn" >Click to edit text</button>
 
     <div class="quote-info">
       
