@@ -927,11 +927,11 @@ function viewHighlightInfo(bookNoteId) {
 //EDIT THE ANNOTATION FUNCTION 
 function styleUserNote() {
     const userNoteDiv = document.getElementById("userNote");
-    const annotationEditButton = document.getElementById("annotation-edit");
+    const annotationEditButton = document.getElementById("saveBtn");
 
     if (!userNoteDiv.innerText.trim()) {
         userNoteDiv.setAttribute("data-placeholder", "Click to annotate this highlight...");
-        userNoteDiv.innerText = ""; // Ensure the div is empty
+        userNoteDiv.innerText = " "; // Ensure the div is empty
         annotationEditButton.style.display = "none";
     } else {
         userNoteDiv.removeAttribute("data-placeholder");

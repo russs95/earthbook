@@ -958,6 +958,8 @@ Repeated property, consider consolidating with the other transition property */
   background: var(--deeper-accent-color) url(icons/cite.svg) 15px center no-repeat;
   background-size: 21px;
   width: 100%;
+  padding: 10px;
+  height:fit-content;
 
 }
 
