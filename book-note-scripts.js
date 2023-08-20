@@ -932,7 +932,7 @@ function styleUserNote() {
         userNoteDiv.innerText = "Click to annotate this highlight...";
         annotationEditButton.style.display = "none"; // Hide the button if there's no annotation
     } else {
-        annotationEditButton.style.display = "block"; // Show the button if there's an annotation
+        //annotationEditButton.style.display = "block"; // Show the button if there's an annotation
     }
 }
 
