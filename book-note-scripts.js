@@ -732,7 +732,7 @@ function appendAnnotation() {
     const bookNotePalette = document.getElementById("bookNotePalette");
 
     annotateButton.textContent = "Saved!";
-    annotateButton.style.color = 'yellow';
+    annotateButton.style.backgroundColor = 'yellow';
     annotateButton.style.fontWeight = 'bold';
     
     setTimeout(() => {
@@ -910,7 +910,7 @@ function viewHighlightInfo(bookNoteId) {
         document.getElementById("date").textContent = `Noted: ${highlight.BNdateTime}`;
         document.getElementById("charCount").textContent = `Characters: ${highlight.charCount}`;
         document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
-        document.getElementById("userNote").innerText = `: ${highlight.userNote}`;
+        document.getElementById("userNote").innerText = highlight.userNote;
         document.getElementById("highlight-viewer").style.display = "block";
         document.getElementById("bookNoteID").textContent = highlight.id;
         

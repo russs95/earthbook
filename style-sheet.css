@@ -626,7 +626,7 @@ h6 {
 
 
 .highlight-green {
-  background-color: rgba(0, 128, 0, 0.786);
+  background-color: rgba(1, 151, 1, 0.841);
   color: var(--true);
   cursor:pointer;
 }

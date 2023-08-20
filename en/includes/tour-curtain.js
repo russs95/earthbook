@@ -84,16 +84,17 @@ class TourCurtain extends HTMLElement {
     
     </div>
     <div class="user-annotation" style="font-size: medium;
-    background: gray;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    display: flex;
-    flex-flow:row;">
+    background: #80808026;
+padding: 20px;
+border-radius: 10px;
+margin-bottom: 20px;
+font-size: 1.5em;
+display: flex;
+flex-flow: row;
+color: gray;">
 
     <div id="userNote" contenteditable="true"></div>
-    <button id="annotation-edit" aria-label="Save" style="display:none;">Click to edit text</button>
+    <button id="annotation-edit" aria-label="Save" style="display:none;color:gray;border:none;background:none;">Click to edit text</button>
     
     </div>
 
