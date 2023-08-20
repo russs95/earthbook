@@ -95,7 +95,7 @@ color: gray;
 ">
 
     </div>
-    <button id="saveBtn" style="display:none;" aria-label="Save" >Save Annotation</button>
+   
 
     <div class="quote-info">
       
@@ -107,7 +107,7 @@ color: gray;
         <div id="bookNoteID" style="font-size:small"></div>
   
     </div>
-  
+    <button id="saveBtn" style="display:none;" aria-label="Save" >Save Annotation</button>
     <div class="quotation-button-row">
       <button aria-label="Copier la sélection" id="copyBtn" class="quotation-btn" class="pallette-text">
         Copier
