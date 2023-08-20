@@ -345,7 +345,12 @@ function getBookNotesFromLocalStorage() {
 // Sub-function to save bookNotes to local storage
 function saveBookNotesToLocalStorage(bookNotes) {
     try {
-        localStorage.setItem('bookNotes', JSON.stringify(bookNotes));
+        const containerHTML = JSON.stringify(bookNotes);
+        localStorage.setItem('bookNotes', containerHTML);
+        
+        // Alert the JSON value for the containerHTML
+        alert(containerHTML);
+        
     } catch (error) {
         console.error('Error saving bookNotes to local storage:', error);
     }
@@ -732,7 +737,7 @@ function appendAnnotation() {
     const bookNotePalette = document.getElementById("bookNotePalette");
 
     annotateButton.textContent = "Saved!";
-    annotateButton.style.backgroundColor = 'yellow';
+    annotateButton.style.color = 'yellow';
     annotateButton.style.fontWeight = 'bold';
     
     setTimeout(() => {
@@ -747,7 +752,6 @@ function appendAnnotation() {
 function appendAnnotationTitle() {
 
     const bookNotes = getBookNotesFromLocalStorage();
-    alert('hello!');
     // Find the book note using the global lastUsedBookNoteId variable
     const lastNote = bookNotes.find(note => note.id === lastUsedBookNoteId);
     
