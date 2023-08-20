@@ -348,9 +348,6 @@ function saveBookNotesToLocalStorage(bookNotes) {
         const containerHTML = JSON.stringify(bookNotes);
         localStorage.setItem('bookNotes', containerHTML);
         
-        // Alert the JSON value for the containerHTML
-        alert(containerHTML);
-        
     } catch (error) {
         console.error('Error saving bookNotes to local storage:', error);
     }
