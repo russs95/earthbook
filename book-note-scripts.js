@@ -136,7 +136,7 @@ function isSelectionValid(range) {
 
     // Check if the selection does not span more than one paragraph
     if (startContainerParent !== endContainerParent) {
-        alert("Sorry!  Currently you can't select and highlight text in more than one paragraph to make a book note");
+        alert("Sorry!  Currently you can't select and highlight text in more than one paragraph or that contains more than one style.");
         return false;
     }
     
@@ -501,7 +501,7 @@ function downloadBooknotes() {
     const a = document.createElement('a');
     a.style.display = 'none';  // Hide the link
     a.href = url;
-    a.download = 'booknotes-export.json';  // Suggest a filename for the download
+    a.download = 'my-tractatus-ayyew-booknotes.json';  // Suggest a filename for the download
 
     // Append the anchor to the document and trigger a click to start the download
     document.body.appendChild(a);
@@ -971,7 +971,7 @@ function removeHighlight2(dataId) {
     // 1. Find and remove the highlight from the DOM
     const spanToReplace = document.querySelector(`span[data-id="${spanId}"]`);
 
-    alert(`dataId: ${dataId}\n spanId: ${spanId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
+   // alert(`dataId: ${dataId}\n spanId: ${spanId}\nSpan Content: ${spanToReplace ? spanToReplace.textContent : 'Span not found!'}`);
         
     if (spanToReplace) {
         const parent = spanToReplace.parentNode;
