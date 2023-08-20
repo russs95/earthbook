@@ -83,16 +83,7 @@ class TourCurtain extends HTMLElement {
         <div id="the-quote"></div>
     
     </div>
-    <div id="userNote" contenteditable="true" class="user-annotation" style="font-size: medium;
-    background: #80808026;
-padding: 20px;
-border-radius: 10px;
-margin-bottom: 20px;
-font-size: 1.5em;
-display: flex;
-flex-flow: row;
-color: gray;
-">
+    <div id="userNote" contenteditable="true" class="user-annotation">
 
     </div>
    
