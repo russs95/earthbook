@@ -942,13 +942,13 @@ function styleUserNote() {
 
 //SHOW SAVE BUTTON
 const userNoteDiv = document.getElementById("userNote");
-const annotationEditButton = document.getElementById("annotation-edit");
+const annotationEditButton = document.getElementById("saveBtn");
 
 // Focus event: This triggers when the user clicks on (or focuses on) the userNoteDiv
 userNoteDiv.addEventListener("focus", function() {
     // Check if userNote's content is just the placeholder
     if (userNoteDiv.getAttribute("data-placeholder") === "Click to annotate this highlight...") {
-        userNoteDiv.innerText = ""; // Clear out the placeholder text for user input
+        userNoteDiv.innerText = " "; // Clear out the placeholder text for user input.  Leave one space
     }
     
     // Display the edit button when the user is editing userNote

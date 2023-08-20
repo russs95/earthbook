@@ -97,7 +97,7 @@ color: gray;">
    -->
     
     </div>
-    <button id="annotation-save" style="display:none;" aria-label="Save" class="quotation-btn" >Click to edit text</button>
+    <button id="saveBtn" style="display:none;" aria-label="Save" class="quotation-btn" >Save Annotation</button>
 
     <div class="quote-info">
       

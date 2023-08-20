@@ -952,7 +952,7 @@ Repeated property, consider consolidating with the other transition property */
 
 }
 
-#annotation-save {
+#saveBtn {
   background-size: 25px;
   transition: 0.3s;
   background: var(--deeper-accent-color) url(icons/cite.svg) 15px center no-repeat;
