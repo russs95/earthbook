@@ -9,7 +9,7 @@
     --link-color:  #030303 ;
     --pre-link-color:  #3c3c3c ;
     --nav-bar-accent: rgb(244, 242, 242); /*OBSOLETE? navbar, footer, button color*/
-    --deeper-accent-color: rgb(222, 222, 222) ; /*rgb(235, 235, 235) main chart hover, top menu button backgrounds, footer bottom bottom*/ 
+    --deeper-accent-color: rgb(225, 225, 225) ; /*rgb(235, 235, 235) main chart hover, top menu button backgrounds, footer bottom bottom*/ 
     --thin-border-color: rgb(163, 163, 163); /*border color for almost everything*/
     --fainter-border-color:  rgb(208, 207, 207); /*border color for the menu buttons*/
     --element-shadow: 0 1px 15px rgba(7, 7, 7, 0.15 );  /*whenever a shadow is added*/
@@ -20,7 +20,7 @@
     --modal-background: rgba(255, 255, 255, 0.735);
     --opposite: black;
     --true: white;
-    --highlight-modal: rgba(210, 210, 210, 0.856);
+    --highlight-modal: rgba(193, 193, 193, 0.856);
 
 
     --settings-background: rgba(222, 222, 222, 0.871) ;
