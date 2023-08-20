@@ -1035,27 +1035,29 @@ function citeHighlight(dataId) {
     }
 }
 
+
 // Event listener for the citeBtn
 document.getElementById("citeBtn").addEventListener("click", function() {
-    const dataId = document.getElementById("bookNoteID").textContent;
+    const citeBtn = document.getElementById("citeBtn");
+    const dataId = document.getElementById("bookNoteID").textContent.trim();  // Making sure to trim the text content
+    
     citeHighlight(dataId);
-    document.getElementById("highlight-viewer").style.display = "none"; // 
     
     // Change the button text and background color
     citeBtn.textContent = "Citation Copied!";
     citeBtn.style.backgroundColor = "green";
     
-   // Wait for 2 seconds
-   setTimeout(() => {
-    document.getElementById("highlight-viewer").style.display = "none";
-    // Remove the blur class from the underlayer
-    document.getElementById("underlayer").classList.remove("blur");
-}, 2000);
+    // Wait for 2 seconds
+    setTimeout(() => {
+        document.getElementById("highlight-viewer").style.display = "none";
+        // Remove the blur class from the underlayer
+        document.getElementById("underlayer").classList.remove("blur");
+    }, 2000);
 
-// Wait for 3 seconds, then revert the button text and background
-setTimeout(() => {
-    citeBtn.textContent = "Clear";
-    citeBtn.style.removeProperty("backgroundColor");
-}, 3000);
+    // Wait for 3 seconds, then revert the button text and background
+    setTimeout(() => {
+        citeBtn.textContent = "Cite";  // Change this to your original button label if it's different
+        citeBtn.style.removeProperty("background-color");  // note the hyphenated "background-color" instead of "backgroundColor"
+    }, 3000);
 });
 
