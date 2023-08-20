@@ -910,7 +910,7 @@ function viewHighlightInfo(bookNoteId) {
         document.getElementById("date").textContent = `Noted: ${highlight.BNdateTime}`;
         document.getElementById("charCount").textContent = `Characters: ${highlight.charCount}`;
         document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
-        document.getElementById("userNote").textContent = `Annotation: ${highlight.userNote}`;
+        document.getElementById("userNote").innerText = `: ${highlight.userNote}`;
         document.getElementById("highlight-viewer").style.display = "block";
         document.getElementById("bookNoteID").textContent = highlight.id;
         
@@ -933,20 +933,34 @@ document.getElementById("close-x").addEventListener("click", function() {
 });
 
 document.getElementById("copyBtn").addEventListener("click", function() {
+    const copyBtn = document.getElementById("copyBtn");
     const text = document.getElementById("the-quote").textContent;
+    
     const textarea = document.createElement("textarea");
     textarea.textContent = text;
     document.body.appendChild(textarea);
     textarea.select();
     document.execCommand("copy");
     document.body.removeChild(textarea);
+    
+    // Change the button text and background color
+    copyBtn.textContent = "Copied!";
+    copyBtn.style.backgroundColor = "green";
 
+    // Wait for 2 seconds
     setTimeout(() => {
         document.getElementById("highlight-viewer").style.display = "none";
-         // Remove the blur class from the underlayer
-    document.getElementById("underlayer").classList.remove("blur");
+        // Remove the blur class from the underlayer
+        document.getElementById("underlayer").classList.remove("blur");
     }, 2000);
+
+    // Wait for 3 seconds, then revert the button text and background
+    setTimeout(() => {
+        copyBtn.textContent = "Copy";  // Change this to your original button label if it's different
+        copyBtn.style.removeProperty("background-color");  // use the hyphenated "background-color" instead of "backgroundColor"
+    }, 2500);
 });
+
 
 
 /*
@@ -1007,7 +1021,7 @@ document.getElementById("clearBtn").addEventListener("click", function() {
     setTimeout(() => {
         clearBtn.textContent = "Clear";
         clearBtn.style.removeProperty("background");
-    }, 3000);
+    }, 2500);
 });
 
 

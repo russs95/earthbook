@@ -84,8 +84,10 @@ class TourCurtain extends HTMLElement {
     
     </div>
     
+    <div id="userNote" style="font-size:medium;" contenteditable="true"></div>
+    
     <div class="quote-info">
-      <div id="userNote" style="font-size:medium;"></div>
+      
       <div id="book" style="font-size:medium"></div>
         <div id="noteChapter" style="font-size:medium"></div>
         <div id="date" style="font-size:small"></div>
