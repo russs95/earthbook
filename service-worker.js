@@ -1,4 +1,4 @@
-const CURRENT_CACHE = 'earthbook-cache-v5';
+const CURRENT_CACHE = 'earthbook-cache-v5.1';
 
 self.addEventListener('install', event => {
   event.waitUntil(

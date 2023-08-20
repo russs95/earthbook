@@ -12,9 +12,9 @@ class footSettings extends HTMLElement {
     
       <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Return to the homepage" title="Return to the homepage" onclick="location.href='index.html'" ><img src="../icons/home.svg" alt="home page icon"></button></div>
     
-    <!--
+    <!--Bookplate -->
       <div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew title page" alt="Tractatus Ayyew Mandala"></button></div>
-      -->
+     
       
       <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Buy the book" title="Buy the book"></button></div>
     
