@@ -105,7 +105,7 @@ All the css needed for this page-->
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
           console.log('ServiceWorker registration successful with scope:', registration.scope);
         }, function(error) {
           console.log('ServiceWorker registration failed:', error);
@@ -120,8 +120,11 @@ All the css needed for this page-->
 
 
 <!-- PRELOADS-->
-<link rel="preload" as="image" href="../svgs/03-stellar-dark.svg">
-<link rel="preload" as="image" href="../svgs/03-stellar-white.svg">
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/03-stellar-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="../svgs/03-stellar-white.svg" media="(prefers-color-scheme: light)">
+
 
 
  
