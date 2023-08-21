@@ -74,7 +74,7 @@ class TourCurtain extends HTMLElement {
 
 
 <div id="highlight-viewer" class="modal" style="background:var(--highlight-modal);">
-  <div id="quotation-title">Your BookNote</div>
+  <div id="quotation-title">Your BookNote <div id="bookNoteID"></div></div>
   <div id="close-x">&times;</div>
   <div class="highlight-viewer-content">
    
@@ -94,13 +94,13 @@ class TourCurtain extends HTMLElement {
         <div id="date" style="font-size:small"></div>
         <div id="charCount" style="font-size:small"></div>
         <div id="publicNote" style="font-size:small"></div>
-        <div id="bookNoteID" style="font-size:small"></div>
+        
   
     </div>
     <div id="userNote" contenteditable="true" class="user-annotation">
 
     </div>
-    <button id="saveBtn" style="display:none;" aria-label="Save" >Save Annotation</button>
+    <button id="saveBtn" style="display:none;" aria-label="Save" onclick="appendAnnotation2()" >Save Annotation</button>
     <div class="quotation-button-row">
       <button aria-label="Copier la sélection" id="copyBtn" class="quotation-btn" class="pallette-text">
         Copier

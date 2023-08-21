@@ -1122,3 +1122,56 @@ document.getElementById("citeBtn").addEventListener("click", function() {
     }, 3000);
 });
 
+
+
+
+
+//SAVE ANNOTATION 2
+
+function appendAnnotation2() {
+    // Get the user's annotation from the div
+    const userNoteText = document.getElementById("userNote").innerText;
+
+    if (userNoteText.trim() === "" || userNoteText === "Click to annotate this highlight...") {
+        return;  // Return if the div is empty or just contains the placeholder
+    }
+
+    const bookNotes = getBookNotesFromLocalStorage();
+
+    // Get the bookNote ID from the HTML
+    const currentBookNoteId = document.getElementById("bookNoteID").innerText;
+
+    // Find the book note using the currentBookNoteId variable
+    const currentNote = bookNotes.find(note => note.id === currentBookNoteId);
+
+    // Safety check
+    if (!currentNote) {
+        console.error(`No book note found with ID: ${currentBookNoteId}`);
+        return;
+    }
+
+    // Update the userNote property of the currentNote with the userNoteText
+    currentNote.userNote = userNoteText;
+
+    // Save the updated bookNotes back to local storage
+    saveBookNotesToLocalStorage(bookNotes);
+
+    const saveButton = document.getElementById("saveBtn");
+
+    saveButton.textContent = "Saved!";
+    
+    setTimeout(() => {
+        saveButton.textContent = "Save Annotation";
+        document.getElementById("highlight-viewer").style.display = "none";
+    }, 2000);
+}
+
+// Assuming you have a function to get the book notes:
+function getBookNotesFromLocalStorage() {
+    try {
+        return JSON.parse(localStorage.getItem('bookNotes')) || [];
+    } catch (error) {
+        console.error('Error fetching bookNotes from local storage:', error);
+        return [];
+    }
+}
