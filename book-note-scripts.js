@@ -1163,6 +1163,8 @@ function appendAnnotation2() {
     setTimeout(() => {
         saveButton.textContent = "Save Annotation";
         document.getElementById("highlight-viewer").style.display = "none";
+        document.getElementById("underlayer").classList.remove("blur");
+
     }, 2000);
 }
 
