@@ -1042,7 +1042,7 @@ document.getElementById("clearBtn").addEventListener("click", function() {
     const dataId = document.getElementById("bookNoteID").textContent.trim();
 
     // Change the button text and background color
-    clearBtn.textContent = "Cleared!!";
+    clearBtn.textContent = "Cleared!";
     clearBtn.style.backgroundColor = "green";
     clearBtn.style.color = "white";
 
@@ -1061,7 +1061,7 @@ document.getElementById("clearBtn").addEventListener("click", function() {
         clearBtn.style.removeProperty("background-color");
         clearBtn.style.removeProperty("color");
 
-    }, 2500);
+    }, 1500);
 });
 
 
@@ -1163,9 +1163,10 @@ function appendAnnotation2() {
         document.getElementById("underlayer").classList.remove("blur");
         clearBtn.style.removeProperty("background-color");
         clearBtn.style.removeProperty("color");
+        userNoteText.innerText = ""; // Clear out the placehol
 
 
-    }, 2000);
+    }, 1500);
 }
 
 // Assuming you have a function to get the book notes:

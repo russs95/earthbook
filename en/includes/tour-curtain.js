@@ -85,7 +85,7 @@ class TourCurtain extends HTMLElement {
     </div>
    
     <div class="quote-info">
-      <span style="font-size:small; color:grey;padding-bottom:10px;">Source Data:</span>
+      <span style="font-size:small; color:grey;padding-bottom:10px;">Highlight source:</span>
       <div style="font-size:medium;padding-bottom:10px;">
         <div id="noteChapter"></div>
         <div id="book"></div>
