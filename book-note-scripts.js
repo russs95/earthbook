@@ -918,44 +918,6 @@ function viewHighlightInfo(bookNoteId) {
 }
 
 
-//EDIT THE ANNOTATION FUNCTION 
-function styleUserNote() {
-    const userNoteDiv = document.getElementById("userNote");
-    const annotationEditButton = document.getElementById("saveBtn");
-
-    if (!userNoteDiv.innerText.trim()) {
-        userNoteDiv.setAttribute("data-placeholder", "Click to annotate this highlight...");
-        userNoteDiv.innerText = ""; // Ensure the div is empty
-        annotationEditButton.style.display = "none";
-    } else {
-        userNoteDiv.removeAttribute("data-placeholder");
-        annotationEditButton.style.display = "block";
-    }
-}
-
-
-//SHOW SAVE BUTTON
-const userNoteDiv = document.getElementById("userNote");
-const annotationEditButton = document.getElementById("saveBtn");
-
-// Focus event: This triggers when the user clicks on (or focuses on) the userNoteDiv
-userNoteDiv.addEventListener("focus", function() {
-    // Check if userNote's content is just the placeholder
-    if (userNoteDiv.getAttribute("data-placeholder") === "Click to annotate this highlight...") {
-        userNoteDiv.innerText = ""; // Clear out the placeholder text for user input
-    }
-    
-    // Display the edit button when the user is editing userNote
-    annotationEditButton.style.display = "block";
-});
-
-// Blur event: This triggers when the user clicks away from (or loses focus on) the userNoteDiv
-userNoteDiv.addEventListener("blur", function() {
-    styleUserNote();  // Call styleUserNote to reset placeholder if needed
-});
-
-
-
 
 
 
@@ -1160,3 +1122,44 @@ function appendAnnotation2() {
 }
 
 
+
+
+
+/*
+//EDIT THE ANNOTATION FUNCTION 
+function styleUserNote() {
+    const userNoteDiv = document.getElementById("userNote");
+    const annotationEditButton = document.getElementById("saveBtn");
+
+    if (!userNoteDiv.innerText.trim()) {
+        userNoteDiv.setAttribute("data-placeholder", "Click to annotate this highlight...");
+        userNoteDiv.innerText = ""; // Ensure the div is empty
+        annotationEditButton.style.display = "none";
+    } else {
+        userNoteDiv.removeAttribute("data-placeholder");
+        annotationEditButton.style.display = "block";
+    }
+}
+
+
+//SHOW SAVE BUTTON
+const userNoteDiv = document.getElementById("userNote");
+const annotationEditButton = document.getElementById("saveBtn");
+
+// Focus event: This triggers when the user clicks on (or focuses on) the userNoteDiv
+userNoteDiv.addEventListener("focus", function() {
+    // Check if userNote's content is just the placeholder
+    if (userNoteDiv.getAttribute("data-placeholder") === "Click to annotate this highlight...") {
+        userNoteDiv.innerText = ""; // Clear out the placeholder text for user input
+    }
+    
+    // Display the edit button when the user is editing userNote
+    annotationEditButton.style.display = "block";
+});
+
+// Blur event: This triggers when the user clicks away from (or loses focus on) the userNoteDiv
+userNoteDiv.addEventListener("blur", function() {
+    styleUserNote();  // Call styleUserNote to reset placeholder if needed
+});
+
+*/
