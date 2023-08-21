@@ -1042,7 +1042,7 @@ document.getElementById("clearBtn").addEventListener("click", function() {
     const dataId = document.getElementById("bookNoteID").textContent.trim();
 
     // Change the button text and background color
-    clearBtn.textContent = "Cleared!";
+    clearBtn.textContent = "Cleared!!";
     clearBtn.style.backgroundColor = "green";
     clearBtn.style.color = "white";
 
