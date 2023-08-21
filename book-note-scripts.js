@@ -951,7 +951,7 @@ const annotationEditButton = document.getElementById("saveBtn");
 userNoteDiv.addEventListener("focus", function() {
     // Check if userNote's content is just the placeholder
     if (userNoteDiv.getAttribute("data-placeholder") === "Click to annotate this highlight...") {
-        userNoteDiv.innerText = "Record comment..."; // Clear out the placeholder text for user input
+        userNoteDiv.innerText = ""; // Clear out the placeholder text for user input
     }
     
     // Display the edit button when the user is editing userNote
