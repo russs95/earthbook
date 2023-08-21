@@ -101,8 +101,7 @@ class TourCurtain extends HTMLElement {
     
     <button id="saveBtn" aria-label="Save" onclick="appendAnnotation2()">Save Annotation</button>
     <div class="quotation-button-row">
-      <button aria-label="Copier la sélection" id="copyBtn" class="quotation-btn" class="pallette-text">
-        Copier
+      <button aria-label="Copier la sélection" id="copyBtn" class="quotation-btn" class="pallette-text">Copy
       </button> 
       <button id="clearBtn" aria-label="Clear Highlight" class="quotation-btn" >Clear</button>
      <!-- <button id="cancelBtn" aria-label="Cancel" class="pallette-btn">Cancel</button>-->

@@ -913,15 +913,13 @@ function viewHighlightInfo(bookNoteId) {
         document.getElementById("date").textContent = `Noted: ${highlight.BNdateTime}`;
         document.getElementById("charCount").textContent = `Characters: ${highlight.charCount}`;
         document.getElementById("publicNote").textContent = `Public note: ${highlight.publicNote}`;
-        document.getElementById("userNote").innerText = highlight.userNote;
+        document.getElementById("userNote").value = highlight.userNote;
         document.getElementById("highlight-viewer").style.display = "block";
         document.getElementById("bookNoteID").textContent = highlight.id;
         
         styleUserNote();
        // Call the adjustFontSize function after setting the content
        adjustFontSizeForSpanContent();
-
-
 
     }
 }
@@ -952,9 +950,6 @@ userNoteTextarea.addEventListener("focus", function() {
 
 // The blur event will call the modified styleUserNote function
 userNoteTextarea.addEventListener("blur", styleUserNote);
-
-
-
 
 
 
@@ -1053,7 +1048,7 @@ document.getElementById("clearBtn").addEventListener("click", function() {
         document.getElementById("highlight-viewer").style.display = "none";
         // Remove the blur class from the underlayer
         document.getElementById("underlayer").classList.remove("blur");
-    }, 2000);
+    }, 1500);
 
     // Wait for 3 seconds, then revert the button text and background
     setTimeout(() => {
@@ -1061,7 +1056,7 @@ document.getElementById("clearBtn").addEventListener("click", function() {
         clearBtn.style.removeProperty("background-color");
         clearBtn.style.removeProperty("color");
 
-    }, 1500);
+    }, 2000);
 });
 
 
@@ -1121,7 +1116,6 @@ document.getElementById("citeBtn").addEventListener("click", function() {
 
 //SAVE ANNOTATION 2
 function appendAnnotation2() {
-    console.log("appendAnnotation2 function called!"); // Add this
     // Get the user's annotation from the textarea
     const userNoteText = document.getElementById("userNote").value;
 
@@ -1161,8 +1155,8 @@ function appendAnnotation2() {
         saveButton.textContent = "Save Annotation";
         document.getElementById("highlight-viewer").style.display = "none";
         document.getElementById("underlayer").classList.remove("blur");
-        clearBtn.style.removeProperty("background-color");
-        clearBtn.style.removeProperty("color");
+        saveButton.style.removeProperty("background-color");
+        saveButton.style.removeProperty("color");
         document.getElementById("userNote").value = "";  // Clear out the textarea
 
 
