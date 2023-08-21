@@ -1145,10 +1145,14 @@ function appendAnnotation2() {
 
     // Save the updated bookNotes back to local storage
     saveBookNotesToLocalStorage(bookNotes);
+    appendAnnotationTitle();
 
     const saveButton = document.getElementById("saveBtn");
 
     saveButton.textContent = "Annotation Saved!";
+    button.style.backgroundColor = 'green';
+    button.style.color = 'white';
+
     
     setTimeout(() => {
         saveButton.textContent = "Save Annotation";
