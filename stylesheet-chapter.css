@@ -1056,8 +1056,9 @@ textarea#userAnnotation {
   border: 1px solid var(--thin-border-color);
   border-radius: 5px;
   margin-bottom: 15px;
-font-size: large;
-background: var(--background-color)
+font-size: 1.5em;
+background: var(--background-color);
+color: var(--text-color);
 }
 
 .user-annotation {
