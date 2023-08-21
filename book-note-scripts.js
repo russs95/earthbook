@@ -1058,7 +1058,7 @@ document.getElementById("clearBtn").addEventListener("click", function() {
     // Wait for 3 seconds, then revert the button text and background
     setTimeout(() => {
         clearBtn.textContent = "Clear";
-        clearBtn.style.removeProperty("backgroundColor");
+        clearBtn.style.removeProperty("background-color");
         clearBtn.style.removeProperty("color");
 
     }, 2500);
@@ -1161,6 +1161,9 @@ function appendAnnotation2() {
         saveButton.textContent = "Save Annotation";
         document.getElementById("highlight-viewer").style.display = "none";
         document.getElementById("underlayer").classList.remove("blur");
+        clearBtn.style.removeProperty("background-color");
+        clearBtn.style.removeProperty("color");
+
 
     }, 2000);
 }
