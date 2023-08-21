@@ -1043,7 +1043,8 @@ document.getElementById("clearBtn").addEventListener("click", function() {
 
     // Change the button text and background color
     clearBtn.textContent = "Cleared!";
-    clearBtn.style.background = "green";
+    clearBtn.style.backgroundColor = "green";
+    clearBtn.style.color = "white";
 
     removeHighlight2(dataId);
 
@@ -1057,7 +1058,9 @@ document.getElementById("clearBtn").addEventListener("click", function() {
     // Wait for 3 seconds, then revert the button text and background
     setTimeout(() => {
         clearBtn.textContent = "Clear";
-        clearBtn.style.removeProperty("background");
+        clearBtn.style.removeProperty("backgroundColor");
+        clearBtn.style.removeProperty("color");
+
     }, 2500);
 });
 
