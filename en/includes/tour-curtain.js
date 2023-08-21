@@ -99,7 +99,7 @@ class TourCurtain extends HTMLElement {
     </div>
     <textarea id="userNote" class="user-annotation" placeholder="Click to annotate this highlight..."></textarea>
     
-    <button id="saveBtn" style="display:none;" aria-label="Save" onclick="appendAnnotation2()" >Save Annotation</button>
+    <button id="saveBtn" style="display:none;" aria-label="Save" onclick="appendAnnotation2(), alert('hello!)">Save Annotation</button>
     <div class="quotation-button-row">
       <button aria-label="Copier la sélection" id="copyBtn" class="quotation-btn" class="pallette-text">
         Copier
