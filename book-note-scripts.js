@@ -1133,7 +1133,7 @@ function appendAnnotation2() {
 
     // Get the bookNote ID from the HTML
     const currentBookNoteId = document.getElementById("bookNoteID").innerText;
-
+    lastUsedBookNoteId = currentBookNoteId; 
     // Find the book note using the currentBookNoteId variable
     const currentNote = bookNotes.find(note => note.id === currentBookNoteId);
 
