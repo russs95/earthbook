@@ -342,17 +342,6 @@ function getBookNotesFromLocalStorage() {
     }
 }
 
-// Sub-function to save bookNotes to local storage
-function saveBookNotesToLocalStorage(bookNotes) {
-    try {
-        const containerHTML = JSON.stringify(bookNotes);
-        localStorage.setItem('bookNotes', containerHTML);
-        
-    } catch (error) {
-        console.error('Error saving bookNotes to local storage:', error);
-    }
-}
-
 
 // Sub-function to update button visuals and behavior post-highlighting
 
@@ -632,6 +621,8 @@ function bookNotesCreator() {
     });
 }
 
+
+//KEEP!
 function getBookNotesFromLocalStorage() {
     let bookNotes;
     try {
@@ -1128,6 +1119,7 @@ document.getElementById("citeBtn").addEventListener("click", function() {
 
 //SAVE ANNOTATION 2
 function appendAnnotation2() {
+    console.log("appendAnnotation2 function called!");
     // Get the user's annotation from the textarea
     const userNoteText = document.getElementById("userNote").value;
 
@@ -1167,12 +1159,4 @@ function appendAnnotation2() {
     }, 2000);
 }
 
-// Assuming you have a function to get the book notes:
-function getBookNotesFromLocalStorage() {
-    try {
-        return JSON.parse(localStorage.getItem('bookNotes')) || [];
-    } catch (error) {
-        console.error('Error fetching bookNotes from local storage:', error);
-        return [];
-    }
-}
+
