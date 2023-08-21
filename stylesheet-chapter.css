@@ -1137,6 +1137,7 @@ color: grey;
   font-family: 'Mulish';
   color: var(--text-color);
   font-size: medium;
+  display: flex;
 }
 /*
 .highlight-color {

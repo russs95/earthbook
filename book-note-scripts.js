@@ -1127,13 +1127,12 @@ document.getElementById("citeBtn").addEventListener("click", function() {
 
 
 //SAVE ANNOTATION 2
-
 function appendAnnotation2() {
-    // Get the user's annotation from the div
-    const userNoteText = document.getElementById("userNote").innerText;
+    // Get the user's annotation from the textarea
+    const userNoteText = document.getElementById("userNote").value;
 
     if (userNoteText.trim() === "" || userNoteText === "Click to annotate this highlight...") {
-        return;  // Return if the div is empty or just contains the placeholder
+        return;  // Return if the textarea is empty or just contains the placeholder
     }
 
     const bookNotes = getBookNotesFromLocalStorage();
@@ -1158,7 +1157,7 @@ function appendAnnotation2() {
 
     const saveButton = document.getElementById("saveBtn");
 
-    saveButton.textContent = "Saved!";
+    saveButton.textContent = "Annotation Saved!";
     
     setTimeout(() => {
         saveButton.textContent = "Save Annotation";
