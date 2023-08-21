@@ -1163,7 +1163,7 @@ function appendAnnotation2() {
         document.getElementById("underlayer").classList.remove("blur");
         clearBtn.style.removeProperty("background-color");
         clearBtn.style.removeProperty("color");
-        userNoteText.innerText = ""; // Clear out the placehol
+        document.getElementById("userNote").value = "";  // Clear out the textarea
 
 
     }, 1500);
