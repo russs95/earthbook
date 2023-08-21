@@ -1150,8 +1150,8 @@ function appendAnnotation2() {
     const saveButton = document.getElementById("saveBtn");
 
     saveButton.textContent = "Annotation Saved!";
-    button.style.backgroundColor = 'green';
-    button.style.color = 'white';
+    saveButton.style.backgroundColor = 'green';
+    saveButton.style.color = 'white';
 
     
     setTimeout(() => {
