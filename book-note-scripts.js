@@ -342,6 +342,17 @@ function getBookNotesFromLocalStorage() {
     }
 }
 
+// Sub-function to save bookNotes to local storage
+function saveBookNotesToLocalStorage(bookNotes) {
+    try {
+        const containerHTML = JSON.stringify(bookNotes);
+        localStorage.setItem('bookNotes', containerHTML);
+        
+    } catch (error) {
+        console.error('Error saving bookNotes to local storage:', error);
+    }
+}
+
 
 // Sub-function to update button visuals and behavior post-highlighting
 
@@ -621,8 +632,6 @@ function bookNotesCreator() {
     });
 }
 
-
-//KEEP!
 function getBookNotesFromLocalStorage() {
     let bookNotes;
     try {
@@ -918,6 +927,34 @@ function viewHighlightInfo(bookNoteId) {
 }
 
 
+//EDIT THE ANNOTATION FUNCTION 
+function styleUserNote() {
+    const userNoteTextarea = document.getElementById("userNote");
+    const annotationEditButton = document.getElementById("saveBtn");
+
+    if (!userNoteTextarea.value.trim()) {
+        annotationEditButton.style.display = "none"; // Hide the button if the textarea is empty
+    } else {
+        annotationEditButton.style.display = "block"; // Show the button if there's content
+    }
+}
+
+
+
+//SHOW SAVE BUTTON
+const userNoteTextarea = document.getElementById("userNote");
+const annotationEditButton = document.getElementById("saveBtn");
+
+// The focus event remains mostly the same, just ensuring that the button is shown
+userNoteTextarea.addEventListener("focus", function() {
+    annotationEditButton.style.display = "block";
+});
+
+// The blur event will call the modified styleUserNote function
+userNoteTextarea.addEventListener("blur", styleUserNote);
+
+
+
 
 
 
@@ -1081,7 +1118,7 @@ document.getElementById("citeBtn").addEventListener("click", function() {
 
 //SAVE ANNOTATION 2
 function appendAnnotation2() {
-    console.log("appendAnnotation2 function called!");
+    console.log("appendAnnotation2 function called!"); // Add this
     // Get the user's annotation from the textarea
     const userNoteText = document.getElementById("userNote").value;
 
@@ -1121,45 +1158,12 @@ function appendAnnotation2() {
     }, 2000);
 }
 
-
-
-
-
-/*
-//EDIT THE ANNOTATION FUNCTION 
-function styleUserNote() {
-    const userNoteDiv = document.getElementById("userNote");
-    const annotationEditButton = document.getElementById("saveBtn");
-
-    if (!userNoteDiv.innerText.trim()) {
-        userNoteDiv.setAttribute("data-placeholder", "Click to annotate this highlight...");
-        userNoteDiv.innerText = ""; // Ensure the div is empty
-        annotationEditButton.style.display = "none";
-    } else {
-        userNoteDiv.removeAttribute("data-placeholder");
-        annotationEditButton.style.display = "block";
+// Assuming you have a function to get the book notes:
+function getBookNotesFromLocalStorage() {
+    try {
+        return JSON.parse(localStorage.getItem('bookNotes')) || [];
+    } catch (error) {
+        console.error('Error fetching bookNotes from local storage:', error);
+        return [];
     }
 }
-
-
-//SHOW SAVE BUTTON
-const userNoteDiv = document.getElementById("userNote");
-const annotationEditButton = document.getElementById("saveBtn");
-
-// Focus event: This triggers when the user clicks on (or focuses on) the userNoteDiv
-userNoteDiv.addEventListener("focus", function() {
-    // Check if userNote's content is just the placeholder
-    if (userNoteDiv.getAttribute("data-placeholder") === "Click to annotate this highlight...") {
-        userNoteDiv.innerText = ""; // Clear out the placeholder text for user input
-    }
-    
-    // Display the edit button when the user is editing userNote
-    annotationEditButton.style.display = "block";
-});
-
-// Blur event: This triggers when the user clicks away from (or loses focus on) the userNoteDiv
-userNoteDiv.addEventListener("blur", function() {
-    styleUserNote();  // Call styleUserNote to reset placeholder if needed
-});
-
-*/
