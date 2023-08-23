@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<title>The Manner of the Molluscs | Tractatus Ayyew - An Earthbook</title>
+<meta charset="UTF-8"> 
+
+
+<!--
+o               .        ___- -___                    .                   
+       .              .-\          -.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,-'      / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___, -'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~- ___ ; ___-~       
+                 .          -_-         .              -JT
+
+
+EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+ 
+
+Landing page - version 1.3.2
+Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
+First EarthBook, the Tractatus Ayyew, published 22.12.22.
+
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
+For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
+*/
+-->
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/en/matter.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/matter.html" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/matter.html" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/matière.html" hreflang="fr" >
+<!--
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="igorots, ayyew, cycles, spirals, energy, matter, entropy, thermodynamics, mollusc, means, matter, spiral, principle 3, amonite"> 
+<meta name="description" content="Earthen Principle No.3: Earth’s cycles tend towards the inwards concentration of matter.">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-8-21T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="An Earthen Ethic | Tracatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="The Mollusc's Means of Matter | Book Two  | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="Earthen Principle No.3: Earth’s cycles tend towards the inwards concentration of matter.">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
+<meta property="og:locale" content="en_EN" >
+<meta property="og:url" content="https://book.earthen.io/en/matter.html">
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.4">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+
+ 
+
+<script>
+      // Declare the global variables
+     var lang = "en";
+     var book = "Book Two";
+    var chapNo = "3";
+    var chapName = "The Manner of the Molluscs";
+    var chaptURL = "matter.html"   // Declare the global variables
+  
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+
+</script>
+
+
+    <!-- PRELOADS-->
+    <!-- Preload for dark mode -->
+    <link rel="preload" as="image" href="../svgs/10-matter-dark.svg" media="(prefers-color-scheme: dark)">
+    <!-- Preload for light mode -->
+    <link rel="preload" as="image" href="../svgs/10-matter-white.svg" media="(prefers-color-scheme: light)">
+    
+
+ <!-- INCLUDES
+ Main Scripts-->   
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../content-javascript.js?v=2.2" defer></script>
+ <script src="../clip/dist/clipboard.min.js" defer></script>
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<!--13--><script src="includes/chap-foot.js?V=2" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+
+
+ @media screen and (max-width: 699px) {
+    .ct-chapter-quote {
+      width: 87%;
+      font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 80%;
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .ct-chapter-quote {
+      width: 70%;
+      font-size: 1.8em;
+    }
+    .ct-quote-source {
+      width: 70%;
+      font-size: 1em;
+    }
+  }
+    
+  @media screen and (min-width: 1325px) {
+    .ct-chapter-quote {
+    width: 50%;
+    font-size: 2em;
+    text-shadow: 0px 0px 12px var(--slider);
+    }
+    .ct-quote-source {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
+
+
+
+    #ct-chapter-title {
+      padding-top: 30px;
+      font-size: 9vmin;
+      letter-spacing: 2px;
+      line-height: 1em;
+      
+    }
+
+  
+  
+
+
+</style>
+</HEAD>
+
+<BODY class="accessibility-plugin-ac">
+
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
+
+  <div id="underlayer">
+
+    <div id="top"></div>
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+
+<div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+        <div id="ct-chapter-title">The Mollusc's Means</div>   
+        <div id="ct-book-title">Tractatus Ayyew</div>
+        <div id="ct-chap-location">Earthen Principle No. 3</div>
+        <div id="ct-word-count"><i>Book Two | 2,307 words</i></div>
+      </div>
+  </div>
+
+<!-- Page Title Section-->
+
+  <div id="ct-chapt-graphic" class="background-10">
+    <div class="ct-chapter-quote">
+      <span style="background-color:var(--nav-bar-accent);
+ padding:0.1em 0.2em;">“Earth’s cycles tend towards the inwards concentration of matter.”</span>
+    </div>
+    <div class="ct-quote-source">
+     ― Earthen Ethic No.3
+    </div>
+  </div>
+
+  <div id="up-arrow"></div>
+
+
+  <div id="ct-main">
+
+
+<!-- MAIN TEXT CONTENT of the Page
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
+-->
+  
+
+<div class="page-paragraph">
+    <p id="58-up"><i>
+    Three hundred million years ago, Earth’s oceans were full of swimming swirls of carbon and calcium.  Just as fish are ubiquitous in every ocean today, for millions of years the ancient ammonite, were equally widespread.  Famous for its fossilized shell, the now extinct mollusk had much in common with today’s clams and oysters.  Similar to its modern mollusks descendants, the ammonite sieved loose minerals out of the water to synthesis its shell.  And just like its descendants, so too did every ammonite share the same fate.  At the end of its life, it would fall to the bottom of the ocean where over time its shell was buried by the constant rain of other carcasses and excretions.  As the accumulation of detritus on the sea floor grew, so do its pressure on all the matter below.  Steadily, all the carbon and calcium that each ammonite and other marine organisms had gathered was compacted into stone. Over millions of years, the lives of trillions of ammonites, spun countless tons of bicarbonate into geological sequestration.  Not only did this contribute to the vast limestone deposits of today, over time, this relentless subtraction of carbon reduced the net acidity of the oceans, making the waters more hospitable, and livable for countless other creatures. <a href="#footnotes">⁵⁸</a> </i>
+     </p></div>
+    <br><br>
+     <div id="line" style="margin-bottom: 30px;"></div>
+<br><br>
+    <div>
+    <div class="lead-page-paragraph">
+    THE WAY IN WHICH THE ANCIENT AMMONITE managed its matter to make its home, while steadily enriching the common home that it shared with other creatures, is an example that can guide and inspire us today.  In our last chapter, we saw how the outward spin of energy is characteristic of Earth’s pattern.  Now, observing the pattern of the Amonite and countless other molluscs we can discern Earth’s characteristic inwards spin of matter towards subtraction and concentration-- the third facet of Earth’s cosmological pattern.  With the help of this earthen Ethic we can make sense of the enrichment wrought by the way kincentric cultures managed their material resources and surpluses.  Learning from them, the Ammonite and Earth we gain a guide to manage our own material processes and cycles.  With the help of this third Earthen ethic we can evaluate our modern use of carbon and other elements to be sure they are green.</div>
+      </div>
+
+    <div class="page-paragraph">
+
+      <p>To fully understand this third aspect of Earth's cosmological character, let us return one more time to the primordial beginnings of our planet for a closer look.</p>
+
+
+      <p>As we saw earlier, Earth and its planetary siblings formed five billion years ago as stellar debris steadily swirled together-- a process of material coalescence that has in fact, has never ceased.  Even today, asteroids of all sizes continue to rain down upon Earth, adding to its mass.</p>
+
+
+      <p id="59-up">And even today the swirl has never ceased.</p>
+
+
+      <p>On our planet, as on others, geology, atmosphere and oceans all continue to spin and spiral– powered by the ever arriving blaze of the sun.<a href="#footnotes" title="text", onclick="openFootnotes()">⁶⁰</a></p>
+
+      <p id="60-up">On every planet, vortexes unfold with their own unique geometry determined by their unique combination of matter and energy (its orbit, spin, chemistry, magnetosphere, mass, momentum and more). From Venus sulfuric acid dipole vortexes, to Jupiters' polygonal vortex patterns of hydrogen and helium, to Saturn's hexagonal hydrogen polar vortex, the way each planet spirals its matter is a direct reflection of its cosmological character-- in particular the swirl of its primary elements.</p>
+      
+      <p>Just as on Venus, Jupiter and Saturn the particular chemistry of certain elements dominated their character, so too on Earth.    </p>
+
+     <p>As the early Earthen cycles of atmosphere and ocean spin they tended towards ever more concentrated carbon configurations that ever better dissipated the sun's blaze.  Steadily, as early cellular systems unfurled, they figured out how to gather loose carbon from the atmosphere to build their bodies.  Steadily, as early organisms evolved, their own intricate patterns of carbon began to unfurl.  Steadily,  as generations of plants, fungi animals and insects lived and died, their biomass was covered up by the fall of the next.</p>
+
+     <p>Although these organisms all added CO2 back into their environment through their exhalations and excretions, with each cycle of life and death, they tended to concentrate slightly more carbon than they let out loose.  Be it on the floor of an ocean or  a forest, slowly and steadily, layers of life were buried one upon the other.  Over hundreds of millions of years, the inexorable accumulation of these ancient organisms became  compacted deep underground.</p>
+
+     <p>With the life cycles of innumerable organisms systematically subtracting more carbon than they added, soon vast quantities were stored out of the atmosphere and into geological storage.  With so much carbon removed from Earth’s early atmosphere, its climate began to cool.</p>
+
+     <p>During the reign of the Ammonites, the subtraction of carbon from the cycles of plants, trees, forests and algae was so substantial that it lead to million of year ice ages.  Despite such extremes however, this pattern of steady subtraction served to counter balance inevitable planetary moments of release– such as forest fires, volcanoes and meteor strikes.  In this way, over the course of the planet's last 600 million years, as trillions of carbon-based organisms lived and died, on the whole the planet's climate tended steadily towards stabilization.  </p>
+
+     <p>And even more life was able to flourish in abundance and diversity.</p>
+
+     <p>The ammonite, was a particularly magnificent embodiment of this Earthen pattern.  </p>
+
+     <p>Just like Earth, the cycles of the Ammonite were net-subtractive role.  As their shells, bodies and excretions fell downwards, more and more carbon was subtracted and secured under the ocean floor.  This enabled the ocean to absorb more carbon from the atmosphere.  Over time the spiral of the Ammonite’s life-cycle lead to the sequestration of countless tons of carbon into geological storage.  Today, parts of Earth's vast limestone deposits are their legacy— as well as atmosphere and oceans containing far less carbon than before.  In this way,  the Ammonite made not only made their own home, they made their common home livable and more hospitable for others.</p>
+
+     <p>We find also this Earth pattern reflected within the processes of kincentric cultures.</p>
+
+     <p>As we saw in our first Earthen Ethic, the lives of the Igorot people of Northern Luzon are guided by their Ayyew ethos.  Within the Igorot culture one of the most respected virtues is the degree to a which a man or women’s efforts are in sync the cycles of life around them.  This ethos applied especially to foraging and farming and excess matter that would result from them. </p>
+
+     <p>Whether rice stalks, burned rice, leaves, or excrement there was always something left over.  Throughout their villages, there were however, always pig pens-- Lomeng.  Most homes in fact, had their own Lomeng, but these were much more than pig stalls.  There left over food, overcooked rice, grass clippings were fed to the pigs-- and used as toilets.  The pigs would consume almost everything given to them, growing fat and providing rich manure to fertilize the gardens. In this way, the pigs further consumed and condensed all the excess matter that was fed them.  In so doing, the excess matter from their daily routines and agricultural cycles was consumed and concentrated by the pigs, generating both rich pig manure and eventually pork.</p>
+
+     <p>As we strive to ensure our human enterprises are green, the ways of the Igorots, the Mollusks and of the Earth show us the way forward.</p>
+
+     <p>Just as the Earth tended it’s cycles towards the inward and downward spiral of matter, so must we intend and achieve the same with our own.  Only when the intention and the result of our cycles is the net concentration of their active elements, are we following the pattern of our planet.  Only then is the third Earthen ethic met. Only then can our acts and enterprises be considered ecological contributions— and green.</p>
+
+     <p>This third earthen ethic provides a geometric means of evaluating the management of matter within our human processes.  In particular the way our modern civilization has been using one its principal elements:</p>
+
+     <p>Carbon.</p>
+
+     <p>For the last century, our modern civilization has come to use the ancient compacted carbon deposits of the earth– what we have called "fossil fuels".  From dense geological deposit to the fumes emitted by their burning, our process of using carbon has decidedly been one of dispersal.</p>
+
+     <p>There is no more better example than the plastic that passes trough our hands on a daily basis.  As we saw in Plastic's Stellar story, plastic is a by-product of the refinement of petroleum to make fuels.  As we send our used plastic off to far off factories to be processed, dumped or incinerated, our industrial processes begin again with new material.  Having originated from a concentrated form under the earth to be dispersed over the surface of the planet, we can clearly observe that the outwards spin of plastic industrial cycles is contrary to the inward spiral of the Earth's.</p>
+
+     <p>However, the spin of our human processes need not be so!</p>
+
+     <p>As we saw in the example of the Igorots, every molecule of matter in the processes of the Igorots, once its nutrient energy had been extracted, was returned back into the cycles of life around in them in a denser form than before.  With the rice plants extracting loose carbon from the air, condensing it in to rice, and Igorot cultivation continuing the downward spiral into further concentration, steadily more and more carbon was sequestered into biomass and into the soil itself.</p>
+
+     <p>As we develop enterprises, technologies and industries to be green, the requisite geometry by which they must manage their matter is made clear by both the Igorots and Earth.</p>
+
+     <p>Whether the process’s primary element is carbon or calcium, lithium or silicone, water or  cement, the process must embody the third Earthen Ethic.</p>
+
+     <p>First, the process must accumulate its principal element.  Second, the cycle of the process must concentrate these elements.  Third, the spiral of these cycles must then lead to the net-subtraction of the element and its sequestration.</p>
+
+     <p>Circular, for-Earth processes that can achieve this, embody both the inward spiral of their matter and the outward spiral of their energy and fulfill the first three Earthen ethics.</p>
+
+     <p>In so doing, the tension between their distribution of energy and their concentration of matter, unfurls through space and time.</p>
+
+     <p>Like those cycles of the Igorot, Salmon, Ammonite and the Earth.</p>
+
+     <p>In sharp contrast to the desolation that unfolded on the surfaces our fellow planets, the geometry of this Earthen double spiral has led to just the opposite: </p>
+
+     <p>A never ending spin towards ever more vibrant and diverse systems.</p>
+
+     <p>Our fourth Earthen ethic.</p>
+
+     <br><br><br>
+  
+    
+  </div><!--closes page text content, then loads page curtains:-->
+
+
+
+<!--FOOTNOTES SECTION-->
+
+  <div class="footnote-section" style="z-index:8;">
+
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
+      
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+      
+        <a href="#58-up" class="footnote">   
+        <div class="footnote-number">58.</div>
+        <div class="footnote-text">For an an account of the Igorots remarkable ecological synchrony with the cycles of the living world around them: William Henry Scott, (1959) <i>Some Calendars of Northern Luzon</i>, American Anthropologist 60(3):563 - 570 </div>
+        </a>
+
+        <a href="#59-up" class="footnote">   
+        <div class="footnote-number">59.</div>
+        <div class="footnote-text">Entropy research by theoretical physicists posit a pattern of adaptive dissipation in the way matter organizes itself in the presence of sustained energy inputs. Meanwhile, parallel breakthroughs in cosmological epistemology help make sense of Earth’s unfolding kinetic character. </div>
+        </a>
+
+        <a href="#60-up" class="footnote">   
+        <div class="footnote-number">60.</div>
+        <div class="footnote-text">“The earth is more like an eddy in a river through which flows of matter continuously stream. It is replenished and depleted in a vortical cosmic dance. — Thomas Nail, (2021) <i>A Theory of the Earth</i>
+        </div>
+        </a>
+
+        <a href="#55-up" class="footnote">   
+        <div class="footnote-number">61.</div>
+        <div class="footnote-text">Jeremy L. England et al., <i>Dissipative adaptation in driven self-assembly</i>, (Nature Nanotechnology, 2015)  
+        </div>
+        </a>
+
+        <a href="#56-up" class="footnote">   
+        <div class="footnote-number">62.</div>
+        <div class="footnote-text">The term ‘technical nutrient’ was first proposed by William McDonough in a theory of circular design that embodies the conceptual geometric problem we highlight here.  See: William McDonough, Michael Braungart (2002), <i>Cradle to Cradle - Remaking the Way We Make Things</i>, North Point Press.   
+        </div>
+        </a>
+
+        <br><br><br><br>
+
+
+
+
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div><!--Closes footnote section-->
+
+
+
+
+   
+          
+  </div><!--Closes main content block-->
+
+
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
+
+<!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
+
+
+<!--FOOTER Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+
+    <div class="footer-size">
+    
+      <div class="footer-left">
+
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+
+     
+        <div class="next-section">
+            <div class="next-sec">Next Chapter:</div>
+            <div class="sec-name"><i>2 | The Salmon's Spin</i></div>
+        </div>
+
+      </div>
+  
+      <div class="footer-right">
+    
+        <a href="energy.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+
+      </div>
+    </div>
+
+<!-- CHAPTER FOOTER-->
+
+<chap-foot></chap-foot>
+
+</div>  <!--footer functions close-->
+
+<footer-settings></footer-settings>
+
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>
+
