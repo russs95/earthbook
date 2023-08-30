@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<HEAD>
+<title>Une histoire interstellaire | Tractatus Ayyew - Earthbook</title>
+<meta charset="UTF-8"> 
+
+
+<!--
+o               .        ___- -___                    .                   
+       .              .-\          -.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,-'      / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___,-'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~- ___ ; ___-~       
+                 .          -_-         .              -JT
+
+
+EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
+Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
+ 
+
+Page de destination - version 1.3.2
+Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
+Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
+
+Licence : Licence publique générale GNU v2 ou ultérieure
+URI de la licence : https://www.gnu.org/licenses/gpl-2.0.html
+Tous les fichiers, sauf indication contraire, sont publiés sous GNU General Public
+Licence version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+Voir le référentiel complet du projet sur : https://github.com/russs95/earthbook
+Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.io
+*/
+-->
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/fr/stellaire.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/stellar.html" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/stellar.html" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/stellaire.html" hreflang="fr" >
+<!--
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="cosmologie, caractère cosmologique, entropie, thermodynamique, dissipation, carbone, spirale, combustibles fossiles, pétrocapital, économie, polymères, plastique, boules de billard, profit, recycler, recyclage, technologie, industrie, gris, histoire, humanité, humain"> 
+<meta name="description" content="Une brève histoire des origines stellaires du plastique, de la création de la Terre et de la montée des relations écologiques de l'humanité moderne.">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-8-10T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="Tractatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="Une histoire interstellaire | An Earthen Ethics">
+<meta property="og:description"   content="Une brève histoire des origines stellaires du plastique, de la création de la Terre et de la montée des relations écologiques de l'humanité moderne.">
+<meta property="og:image"         content="../covers/TA-cover-french-1200px.png">
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
+<meta property="og:locale" content="fr_FR" >
+<meta property="og:url" content="https://book.earthen.io/fr/stellaire.html">
+
+
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.3">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+
+
+
+<script>
+      // Declare the global variables
+    var lang = "en";
+    var book = "Book One";
+    var chapNo = "3";
+    var chapName = "Une histoire interstellaire";
+    var chaptURL = "stellar.html"   // Declare the global variables
+  
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+
+
+    
+</script>
+
+
+
+<!-- PRELOADS-->
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/03-stellar-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="../svgs/03-stellar-white.svg" media="(prefers-color-scheme: light)">
+
+
+
+ 
+ <!-- INCLUDES
+ Main Scripts-->   
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../content-javascript.js?v=2.2" defer></script>
+ <script src="../clip/dist/clipboard.min.js" defer></script>
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<!--13--><script src="includes/chap-foot.js?V=2" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+ #ct-chapter-title {
+  
+  font-size: 10vmin;
+  letter-spacing: 1px;
+}
+
+
+</style>
+</HEAD>
+
+<BODY class="accessibility-plugin-ac">
+
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
+
+  <div id="underlayer">
+
+    <div id="top"></div>
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+
+<div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+    <div id="ct-chapter-title">Une histoire interstellaire</div>   
+    <div id="ct-book-title">Tractatus Ayyew</div>
+    <div id="ct-chap-location">Livre Un | Chapitre Trois</div>
+    <div id="ct-word-count"><i>1,060 mots</i></div>
+  </div>
+</div> 
+
+<!-- Page Title Section-->
+
+<div id="ct-chapt-graphic" class="background-3">
+
+</div>
+
+
+<div id="up-arrow"></div>
+
+<div id="ct-main">
+
+
+<!-- MAIN TEXT CONTENT of the Page
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ¹⁰ ¹³
+-->
+
+<div class="lead-page-paragraph">
+  <p id="fr-1-3-00">
+    IL Y A PLUS DE 5 MILLIARDS D'ANNÉES, DANS UN NUAGE DE POUSSIÈRES STELLAIRES, l’ensemble de notre système solaire tourbillonnait. Alors que la matière et les mouvements cosmiques entraient en collision, devenant de plus en plus dense, notre soleil s'est enflammé. Dans cet élan en spirale, les débris et la matière restante ont commencé à fusionner, se positionnant en orbite sous forme de touffes denses autour de notre jeune étoile. Au fur et à mesure que chacune gagnait en cohésion et en cohérence, les planètes de notre système solaire ont émergé. Progressivement, chaque planète est arrivée à sa propre combinaison unique de matière et d'énergie - de distance et de spin solaire, d'abondance élémentaire et de composition chimique, d'inclinaison axiale et de température de surface - une configuration planétaire qui, tout comme elle s'est fusionnée, a également commencé à se déployer.<a href="#footnotes" title="Genèse - Le grand récit des origines, trans. Erica Segre, Simon Carnell (Farrar, Straus and Giroux, 2021)" onclick="openFootnotes()">¹³</a>
+ </p>
+</div>
+
+<div class="page-paragraph">
+
+<p id="fr-1-3-01">Comme tous ses frères et sœurs du système solaire, la Terre a commencé comme un endroit stérile et désolé. Pendant les deux premiers milliards d'années de notre planète, son atmosphère était majoritairement constituée de dioxyde de carbone, rendant son climat chaud, rude et instable.<a href="#footnotes" title="“On estime que les niveaux de CO2 dans l'atmosphère étaient 100 fois supérieurs à ce qu'ils sont aujourd'hui il y a 2,2 milliards d'années..“  Rye, R., Kuo, P.HO., and Holland, H.D., Atmospheric carbon dioxide concentrations before 2.2 billion years ago. (Nature,  1995), 379, 6013-75." onclick="openFootnotes()">¹⁴</a> Pendant des éons, sa surface s'est distinguée uniquement par le flux et le reflux des plaques tectoniques, des courants océaniques et des flux atmosphériques. Cependant, alors que ces cycles primordiaux tournaient sous l'éclat incessant du soleil, la Terre telle que nous la connaissons aujourd’hui a commencé à émerger.</p>
+
+  <p id="fr-1-3-02">Avec le flamboiement incessant du soleil, l'entropie exigeait la dissipation.<a href="#footnotes" title="“La terre ressemble plus à un tourbillon dans une rivière à travers laquelle s'écoule continuellement de la matière. Il se reconstitue et s'épuise dans une danse de vortex cosmique.“ Thomas Nail, Theory of the Earth (Stanford University Press, 2021)." onclick="openFootnotes()">¹⁵</a>  Comme la pluie ruisselant d'un flanc de montagne et cascadant dans les méandres d'une rivière, le torrent d'énergie solaire cascadait sur la surface de la Terre. Tout comme le caractère profilé d'une montagne conduit à des rivières et des vallées qui lui sont propres, le caractère planétaire de la Terre a également conduit à des flux d'énergie qui lui sont propres.</p>
+
+
+  <p id="fr-1-3-03">Guidé et suscité par son unique configuration planétaire, le caractère cosmologique terrestre commença à éclore.</p>
+  
+  <p id="fr-1-3-04">Progressivement, des processus, des cycles et des systèmes ont commencé à se dérouler avec le caractère distinctement terrestre. Parallèlement aux diktats de la thermodynamique, les cycles de la Terre ont tendu leur rotation vers des dissipations d'énergie toujours meilleures. Progressivement, de nouvelles combinaisons chimiques se sont développées pour mieux disperser l'éclat du soleil. Progressivement, les cycles les plus minuscules tourbillonnaient ensemble dans des systèmes plus vastes qui commençaient à avancer d'eux-mêmes.<a href="#footnotes" title="Dylan T. Holden, Nicolás M. Morato et R. Graham Cooks, Les micro gouttelettes aqueuses permettent la synthèse abiotique et l'extension de chaîne d'isomères peptidiques uniques à partir d'acides aminés libres (Actes de l'Académie nationale des sciences, vol. 119 | n° 42, octobre 18, 2022)" onclick="openFootnotes()">¹⁶</a>  Progressivement, ces systèmes se déployaient dans les cellules, les organismes et finalement, dans les écosystèmes.<a href="#footnotes" title="Ce point de vue est inspiré par notre interprétation ayyew des implications biologiques de la deuxième loi de la thermodynamique. Nous approfondirons cela dans le chapitre 7. Voir: Jeremy L. England et al. (2015), Dissipative adaptation in driven self-assembly (Nature Nanotechnology, 2015)." onclick="openFootnotes()">¹⁷</a></p>
+
+  <p id="fr-1-3-05">Alors que des schémas de dissipation de plus en plus efficaces émergeaient, les plantes se dispersaient rapidement à la surface de la planète. En capturant le carbone de l'air, elles  l'ont utilisé pour construire leur corps et pour rassembler et retenir l'énergie. Les plantes ont commencé à composer des feuilles, des fleurs et des troncs imposants tandis que d'autres organismes apprenaient à les décomposer.</p>
+  
+  <p id="fr-1-3-06">Ce faisant, ils ont interagi et se sont adaptés – et à mesure qu'ils se sont adaptés, ils se sont diversifiés et entremêlés. Une matrice vibrante de soutien mutuel a commencé à se tisser sur la surface de la Terre.</p>
+  
+  <p id="fr-1-3-07">Bientôt, les forêts, les champs et les champignons couvraient la planète. Des animaux, des algues et des dinosaures, tous crées à partir de motifs complexes de carbone, ont émergé. Au fur et à mesure que ces créatures vivaient et mouraient, leur matière carbonée passait d'un organisme à un autre tandis que leur énergie nutritive se déplaçait vers l'extérieur à travers le réseau d'écosystèmes qui en sont venus à englober la biosphère terrestre.<a href="#footnotes" title="“Les événements des 3,5 premiers milliards d'années d'évolution sont enfin révélés et ils incluent bien plus de drames et d'intrigues que nous ne l'aurions jamais imaginé.” Michael Marshall, In the beginning: The full story of life on Earth can finally be told. (NewScientist, 2019)." onclick="openFootnotes()">¹⁸</a></p>
+
+  <p id="fr-1-3-08">Les organismes passaient continuellement des cycles de la vie à la mort, et les restes de chaque génération étaient recouverts par la suivante. Que ce soit les fonds des océans ou les sols des forêts, lentement et régulièrement des couches de vie passée y étaient enterrées sous le limon et les sédiments. Pendant des centaines de millions d'années, la Terre a comprimé et compacté la biomasse de ces organismes anciens, concentrant et sécurisant indéfiniment leur carbone de plus en plus profondément sous terre.</p>
+
+  <p id ="fr-1-3-09">Bien que les organismes terrestres aient expiré du dioxyde de carbone, l’aspect soustractif de leurs cycles a eu tendance à séquestrer plus de carbone dans le sol qu'ils n'en ont ajouté dans l'air. Avec de plus en plus d'organismes vivant et mourant, bientôt de grandes quantités de carbone ont été retirées de l'atmosphère. Avec toujours plus de carbone séquestré, le climat de la Terre s'est stabilisé et la biosphère s'est épanouie.<a href="#footnotes" title="Bekker, A., Holland,Wang, P. et al., Dating the rise of atmospheric oxygen, (Nature, 2004) 427, 117-20." onclick="openFootnotes()">¹⁹</a>.</p>
+
+  <p id="fr-1-3-10">Bercés par l'abondance verdoyante, au cours des 30 derniers millions d'années, des variétés de primates bipèdes ont émergé des forêts - et nous, sapiens, sommes entrés en scène.</p>
+
+  <p id="fr-1-3-11">Alors que nous luttions pour survivre, nous avons découvert le feu.</p>
+  
+  <p id="fr-1-3-12">Tout d'abord, nous avons commencé par brûler du bois pour réchauffer nos grottes, puis nos maisons puis enfin pour alimenter nos forges. Il ne nous fallut que peu de temps avant de découvrir les réserves de carbone enfouies sous terre.</p>
+
+  <p id="fr-1-3-13">Nous avons réalisé que les ‘combustibles fossiles’ étaient beaucoup plus riches en énergie.</p>
+
+ <p id="fr-1-3-14">Cependant, malgré le nom astucieux, ces gisements fossiles n'ont jamais été destinés par quiconque d'autre que nous à être combustibles. Pour les fabriquer, il a fallu les raffiner : un processus intensif qui entraînait toujours des restes inutilisables.<a href="#footnotes" title="Nos recherches indiquent que 4 à 14 % du pétrole brut qui est traité ne peut pas être raffiné en carburant. Ce taux varie avec la source géologique et la composition chimique du brut. Voir : Consommation de pétrole au Royaume-Uni, (British Plastics Federation, 2008), Ref PD/LFH/19/8/08. Aussi: Russell Maier, Ani Himawati, The Rise of the Regenerative Ecobrick Movement, (Université du Havre : Bandung Spirit Conférence, 2019)." onclick="openFootnotes()">²⁰</a>  N'ayant nulle part où aller, ces produits chimiques ont commencé à s'accumuler.<a href="#footnotes" title="“Les raffineries de pétrole fonctionnent 24 heures sur 24 et 7 jours sur 7 et génèrent en permanence des sous-produits qui doivent être éliminés, tels que le gaz éthylène, le propylène, l'acrylonitrile [et d'autres produits chimiques idéaux pour la fabrication du plastique]. Les plastiques sont un petit morceau de l'industrie pétrolière, représentant une fraction mineure des combustibles fossiles que nous consommons. Mais les impératifs économiques de l'industrie pétrolière ont alimenté l'essor de Plasticville.” Susan Freinkel, Plastic: A Toxic Love Story, (Houghton Mifflin Publishing Company, 2011), p7." onclick="openFootnotes()">²¹</a></p>
+
+
+ <p id="fr-1-3-15">On s'est vite rendu compte que les résidus de raffinement pouvaient aussi être utilisés. Avec un peu de chimie, des polymères pourraient être produits – et avec un peu plus; une gamme infinie de matériaux merveilleux.</p>
+
+ <p id="fr-1-3-16">Les plastiques étaient arrivés.</p>
+
+ <p id="fr-1-3-17">Bientôt, nous résolvions toutes sortes de problèmes en faisant une myriade de choses incroyables. Il n'était plus nécessaire de tuer des éléphants pour fabriquer des boules de billard en ivoire<a href="#footnotes" title="Avec la montée en popularité du billard dans les années 1850, les éléphants d'Afrique étaient massacrés pour que leur ivoire produise des balles. Un concours pour trouver un matériau alternatif a inspiré les premières expériences avec des sous-produits pétroliers." onclick="openFootnotes()">²²</a>  Les plastiques ont révolutionné le début de l'industrie de la photographie qui était sévèrement limitée par des équipements encombrants et coûteux, permettant à la prise de photos de devenir une activité domestique.<a href="#footnotes" title="Les plastiques ont révolutionné le début de l'industrie de la photographie qui était sévèrement limitée par des équipements encombrants et coûteux, permettant à la prise de photos de devenir une activité domestique." onclick="openFootnotes()">²³</a>  No longer was the shelf life of fresh food limited to a few days.<a href="#footnotes" title="Le film plastique transparent, développé à l'origine par l'industrie de la cigarette, a permis d'augmenter considérablement la durée de conservation des aliments frais. Carmen Nobel, Comment la cellophane a changé la façon dont nous achetons de la nourriture, (Harvard Business School, 2017)." onclick="openFootnotes()">²⁴</a> Les plastiques ont permis une multitude de nouveaux produits et de technologies — et de nouvelles façons de réduire les dépenses, d'augmenter les revenus et d'accumuler du capital.
+ </p>
+
+ <p id="fr-1-3-18">Propulsées par le flux toujours croissant de pétrole et de profit, les industries se sont développées de façon exponentielle. Au fur et à mesure de leur expansion, l'extraction du carbone, le raffinage et les économies engendrées sur tout cela ont explosé. Comme tout tournait de plus en plus vite, il y avait toujours ces résidus qui ne pouvaient pas être traités. Cela a conduit l'industrie à produire de plus en plus de plastique à un coût de moins en moins élevé.</p>
+
+ <p id="fr-1-3-19">Alors que nous consommions des produits plastiques en quantité croissante nous avons fait de notre mieux pour réutiliser et recycler. Cependant, il y avait déjà tellement de nouveau plastique bon marché qu'il y avait peu de profit à transformer l'ancien - il valait mieux le brûler, le jeter ou l'envoyer ailleurs.</p>
+
+ <p id="fr-1-3-20">Bientôt, il y eut tellement de plastique qu'il débordait de nos maisons, entreprises et industries. De plus en plus alarmés, nous avons vu notre plastique obstruer les rivières, remplir les mers et s'entasser en de grandes montagnes fumantes.<a href="#footnotes" title="L'observation de la pollution plastique et des conditions météorologiques extrêmes a un impact émotionnel croissant.  Voir: Beyond Storms & Droughts: The Psychological Impacts of Climate (American Psychologists Association, 2014). Et aussi: Mental Health and Our Changing Climate: Impacts, Implications, and Guidance (American Psychologists Association, 2017)." onclick="openFootnotes()">²⁵</a>  Les particules de plastique étaient partout - à l'intérieur des corps des poissons, des animaux et sur les plus hauts névés- et maintenant en nous.<a href="#footnotes" title="'Notre étude est la première indication de la présence de particules de polymère dans notre sang.' Heather A. Leslie, et al, Discovery and quantification of plastic particle pollution in human blood, (Environment International, 2022) Volume 163, 107199, ISSN 0160-4120" onclick="openFootnotes()">²⁶</a></p>
+
+ <p id="fr-1-3-21">Choquée, honteuse et déterminée, l'industrie s'est efforcée de corriger ses erreurs et d'améliorer ses méthodes. L'industrie a fait de son mieux pour se convaincre, et convaincre tout le monde, qu'il y avait une solution juste au coin de la rue. Les entreprises se sont vaillamment efforcées de rendre leurs procédés, produits et emballages moins nocifs, moins polluants.</p>
+
+ <p id="fr-1-3-22">Pourtant, après avoir essayé d'innombrables alternatives, et bien qu'ils soient moins nocifs et polluants, les résidus perdurent.</p>
+
+ <p id="fr-1-3-23">Sans relâche, les flux gris de plastique et de pollution ont continué de croître.</p>
+
+ <p id="fr-1-3-24">Et avec elle, notre désespoir, nos frustrations et notre pessimisme.</p>
+
+
+ <br><br><br>
+</div><!--closes page text content-->
+
+
+   
+<!--FOOTNOTES SECTION-->
+
+  <div class="footnote-section" style="z-index:8;">
+
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
+      
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+      
+        
+        <a href="#fr-1-3-00" class="footnote">   
+        <div class="footnote-number">13.</div>
+        <div class="footnote-text">Guido Tonelli, Genesis: The Story of How Everything Began, trans. Erica Segre, Simon Carnell (Farrar, Straus and Giroux, 2021)</div>
+        </a>
+
+        <a href="#fr-1-3-01" class="footnote">   
+        <div class="footnote-number">14.</div>
+        <div class="footnote-text">“Atmospheric CO2 levels are estimated to have been 100 times what they are today 2.2 billion years ago”.  Rye, R., Kuo, P.HO., and Holland, H.D., Atmospheric carbon dioxide concentrations before 2.2 billion years ago. (Nature,  1995), 379, 6013-75. </div>
+        </a>
+
+        <a href="#fr-1-3-02" class="footnote">   
+        <div class="footnote-number">15.</div>
+        <div class="footnote-text">“La terre ressemble plus à un tourbillon dans une rivière à travers laquelle s'écoule continuellement de la matière. Il se reconstitue et s'épuise dans une danse de vortex cosmique.“ Thomas Nail, Theory of the Earth (Stanford University Press, 2021).
+        </div>
+        </a>
+
+        <a href="#fr-1-3-04" class="footnote">   
+        <div class="footnote-number">16.</div>
+        <div class="footnote-text">Dylan T. Holden, Nicolás M. Morato et R. Graham Cooks, Les micro gouttelettes aqueuses permettent la synthèse abiotique et l'extension de chaîne d'isomères peptidiques uniques à partir d'acides aminés libres (Actes de l'Académie nationale des sciences, vol. 119 | n° 42, octobre 18, 2022)</div>
+        </a>
+
+        <a href="#fr-1-3-04" class="footnote">   
+        <div class="footnote-number">17.</div>
+        <div class="footnote-text">Ce point de vue est inspiré par notre interprétation ayyew des implications biologiques de la deuxième loi de la thermodynamique. Nous approfondirons cela dans le chapitre 7. Voir: Jeremy L. England et al. (2015), Dissipative adaptation in driven self-assembly (Nature Nanotechnology, 2015). </div>
+        </a>
+
+        <a href="#fr-1-3-07" class="footnote">   
+        <div class="footnote-number">18.</div>
+        <div class="footnote-text">“Les événements des 3,5 premiers milliards d'années d'évolution sont enfin révélés et ils incluent bien plus de drames et d'intrigues que nous ne l'aurions jamais imaginé.” Michael Marshall, In the beginning: The full story of life on Earth can finally be told. (NewScientist, 2019).        </div>
+        </a>
+
+        <a href="#fr-1-3-09" class="footnote">   
+        <div class="footnote-number">19.</div>
+        <div class="footnote-text">Bekker, A., Holland,Wang, P. et al., Dating the rise of atmospheric oxygen, (Nature, 2004) 427, 117-20. </div>
+        </a>
+
+        <a href="#fr-1-3-14" class="footnote">   
+        <div class="footnote-number">20.</div>
+        <div class="footnote-text">Nos recherches indiquent que 4 à 14 % du pétrole brut qui est traité ne peut pas être raffiné en carburant. Ce taux varie avec la source géologique et la composition chimique du brut. Voir : Consommation de pétrole au Royaume-Uni, (British Plastics Federation, 2008), Ref PD/LFH/19/8/08. Aussi: Russell Maier, Ani Himawati, The Rise of the Regenerative Ecobrick Movement, (Université du Havre : Bandung Spirit Conférence, 2019).</div>
+        </a>
+
+        <a href="#fr-1-3-14" class="footnote">   
+        <div class="footnote-number">21.</div>
+        <div class="footnote-text">“Les raffineries de pétrole fonctionnent 24 heures sur 24 et 7 jours sur 7 et génèrent en permanence des sous-produits qui doivent être éliminés, tels que le gaz éthylène, le propylène, l'acrylonitrile [et d'autres produits chimiques idéaux pour la fabrication du plastique]. Les plastiques sont un petit morceau de l'industrie pétrolière, représentant une fraction mineure des combustibles fossiles que nous consommons. Mais les impératifs économiques de l'industrie pétrolière ont alimenté l'essor de Plasticville.” Susan Freinkel, Plastic: A Toxic Love Story, (Houghton Mifflin Publishing Company, 2011), p7.</div>
+        </a>
+
+  
+        <a href="#fr-1-3-17" class="footnote">   
+        <div class="footnote-number">22.</div>
+        <div class="footnote-text">Avec la montée en popularité du billard dans les années 1850, les éléphants d'Afrique étaient massacrés pour que leur ivoire produise des balles. Un concours pour trouver un matériau alternatif a inspiré les premières expériences avec des sous-produits pétroliers.</div>
+        </a>
+
+      
+      <a href="#fr-1-3-17" class="footnote">   
+      <div class="footnote-number">23.</div>
+      <div class="footnote-text">Les plastiques ont révolutionné le début de l'industrie de la photographie qui était sévèrement limitée par des équipements encombrants et coûteux, permettant à la prise de photos de devenir une activité domestique.</div>
+      </a>
+
+      
+      <a href="#fr-1-3-17" class="footnote">   
+      <div class="footnote-number">24.</div>
+      <div class="footnote-text">Le film plastique transparent, développé à l'origine par l'industrie de la cigarette, a permis d'augmenter considérablement la durée de conservation des aliments frais. Carmen Nobel, Comment la cellophane a changé la façon dont nous achetons de la nourriture, (Harvard Business School, 2017).</div>
+      </a>
+
+      <a href="#fr-1-3-20" class="footnote">   
+    <div class="footnote-number">25.</div>
+    <div class="footnote-text">L'observation de la pollution plastique et des conditions météorologiques extrêmes a un impact émotionnel croissant.  Voir: Beyond Storms & Droughts: The Psychological Impacts of Climate (American Psychologists Association, 2014). Et aussi: Mental Health and Our Changing Climate: Impacts, Implications, and Guidance (American Psychologists Association, 2017).
+    </div>
+    </a>
+
+    <a href="#fr-1-3-20" class="footnote">   
+    <div class="footnote-number">26.</div>
+    <div class="footnote-text">"Notre étude est la première indication de la présence de particules de polymère dans notre sang." Heather A. Leslie, et al, <i>Discovery and quantification of plastic particle pollution in human blood</i> (Environment International, 2022) Volume 163, 107199, ISSN 0160-4120</div>
+    </a>
+
+
+
+    
+
+       
+
+    </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div><!--Closes footnote section-->
+          
+  </div><!--Closes main content block-->
+
+
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
+
+<!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
+
+
+<!--SECTION PIED DE PAGE Chapitre suivant: Nécessite une personnalisation-->
+<div id="footer-chapter" style="margin-bottom: 0px;">
+    <div class="footer-size">
+      <div class="footer-left">
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+        <div class="next-section">
+          <div class="next-sec">Section suivante :</div>
+          <div class="sec-name"><i>Une caractère cosmologique</i></div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <a href="caractere.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
+      </div>
+    </div>
+  
+
+
+<!--PIED DE PAGE DU CHAPITRE
+-->
+
+<chap-foot></chap-foot>
+
+</div>  <!--footer functions close-->
+
+<footer-settings></footer-settings>
+
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>
