@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<title>Plastic 1.0 | Tractatus Ayyew - An Earthbook</title>
+<meta charset="UTF-8"> 
+
+
+<!--
+o               .        ___- -___                    .                   
+       .              .-\          -.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,-'      / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___,--'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~- ___ ; ___-~       
+                 .          -_-         .              -JT
+
+
+EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
+Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
+ 
+
+Page de destination - version 1.3.2
+Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
+Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
+
+Licence : Licence publique générale GNU v2 ou ultérieure
+URI de la licence : https://www.gnu.org/licenses/gpl-2.0.html
+Tous les fichiers, sauf indication contraire, sont publiés sous GNU General Public
+Licence version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+Voir le référentiel complet du projet sur : https://github.com/russs95/earthbook
+Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.io
+*/
+-->
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/en/plastique1.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/plastic1.html" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/plastic1.html" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/plastique1.html" hreflang="fr" >
+<!--
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="Plastic, 1.0, plastic pollution, petro-capital economy, human nature, nature of plastic, recycling, incineration, dumping"> 
+<meta name="description" content="Like no other material, plastic has been made entirely for the use and benefit of humans.">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-8-07T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="An Earthen Ethic - Tracatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="Plasti 1.0 | An Earthen Ethics">
+<meta property="og:description"   content="Like no other material, plastic has been made entirely for the use and benefit of humans.">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
+<meta property="og:locale" content="en_EN" >
+<meta property="og:url" content="https://book.earthen.io/en/plastique1.html">
+
+
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css?v=2">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.4">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+
+
+<script>
+      // Declare the global variables
+     var lang = "en";
+     var book = "Book One";
+    var chapNo = "2";
+    var chapName = "Plastic 1.0";
+    var chaptURL = "plastique1.html"   // Declare the global variables
+  
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+
+
+    
+</script>
+
+
+
+<!-- PRELOADS-->
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/01-plastic1-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="../svgs/02-plastic1-white.svg" media="(prefers-color-scheme: light)">
+
+
+
+
+ 
+ <!-- INCLUDES
+ Main Scripts-->   
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../content-javascript.js?v=2.2" defer></script>
+ <script src="../clip/dist/clipboard.min.js" defer></script>
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<!--13--><script src="includes/chap-foot.js?V=2" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+
+</style>
+
+
+</HEAD>
+
+
+
+<BODY class="accessibility-plugin-ac">
+
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
+
+  <div id="underlayer">
+
+    <div id="top"></div>
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+
+<div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+    <div id="ct-chapter-title">Plastique 1.0</div>   
+    <div id="ct-book-title">Tractatus Ayyew</div>
+    <div id="ct-chap-location">Livre Un | Chapter Deux</div>
+    <div id="ct-word-count"><i>578 words</i></div>
+  </div>
+</div> 
+
+<!-- Page Title Section-->
+
+<div id="ct-chapt-graphic" class="background-2">
+
+</div>
+
+
+<div id="up-arrow"></div>
+
+<div id="ct-main">
+
+
+<!-- MAIN TEXT CONTENT of the Page
+For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹  ⁰
+-->
+
+<div class="lead-page-paragraph">
+  <p id="fr-1-2-00">
+    COMME AUCUN AUTRE MATÉRIAU, le plastique a été entièrement et uniquement fabriqué pour l'usage et le bénéfice des humains. Depuis un demi-siècle, nous l’adorons jusqu'à l'incorporer régulièrement dans tous les aspects de nos vies modernes. Pourtant, si inutile aux autres créatures, le plastique est venu obstruer les cycles écologiques sur terre, en rivière et en mer. Aujourd’hui, les conséquences polluantes de notre création anthropocentrique font l'objet d'une grande détestation. Bien que nos diverses autres crises écologiques - l'acidification des océans, le changement climatique, l'extinction des espèces - puissent être bien plus graves; c’est la vision des plages souillées, des rivières étouffées et des baleines échouées, qui nous fait le plus honte.
+    </p>
+ </div>
+
+<div class="page-paragraph">
+
+    <p id="fr-1-2-01">Cependant, de part cette honte, un réveil a commencé.<a href="#footnotes" onclick="openFootnotes()" title="Un rapport de Global Web Index a révélé que «l'effet Attenborough», du nom du narrateur du documentaire Blue Planet II de 2018, a entraîné une réduction de 53% de l'utilisation de plastique à usage unique en 2019. Voir: Sustainable Packaging: Consumer View, (Global Web Index: 2020)
+    ">⁵</a></p>
+
+    <p id="fr-1-2-02">Partout dans le monde, nous réalisons où finit notre plastique, si soigneusement issu du tri sélectif, le journalisme d'investigation et les études scientifiques ont rendu clair le sort néfaste de tous nos plastiques.<a href="#footnotes" onclick="openFootnotes()" title="Dans une étude complète de tous les plastiques jamais fabriqués, on estime que 8300 millions de tonnes métriques de plastiques vierges ont été produites dans le monde ; Dont 9% ont été recyclés, 12% ont été incinérés et 79% se sont accumulés dans les décharges ou dans le milieu naturel depuis 1950.R. Geyer, et al., Production, use and fate of all plastics ever made (Science Advances, 2017) Vol. 3, no. 7.">⁶</a> Quel que soit l’effort de notre mise en décharge, des particules de plastique microscopiques finissent en vrac dans la biosphère.<a href="#footnotes" onclick="openFootnotes()" title="'Dans le monde entier, les risques et les éventuels effets néfastes des microplastiques suscitent une inquiétude croissante.'' Voir: Ansje Lohr, Heidi Savelli, Raoul Beunen, Marco Kalz, Ad Ragas, Frank Van Belleghem, 'Solutions for global marine litter pollution', (sciencedirect.com: Current opinion in Environmental Sustainability, Vol 28, October 2017) 90-99">⁷</a> Peu importe à quel point nous l'incinérons, les produits chimiques du plastique nous empoisonnent, ainsi que les écosystèmes. Peu importe à quel point nous le recyclons<a href="#footnotes" onclick="openFootnotes()" title="En 2016, Russell a passé du temps à travailler dans une usine de recyclage canadienne. L'expérience et les réalisations du rôle du recyclage industriel dans la génération de pollution plastique ont revigoré le dialogue des auteurs. Voir:  Russell Maier, Recycling: The Evil Illusion, (Medium.com, 2016).">⁸</a>, la production et les émissions de plastique augmentent sans relâche.<a href="#footnotes" onclick="openFootnotes()" title="«D'ici 2030, les émissions de CO2 provenant de la production, du traitement et de l'élimination du plastique pourraient atteindre 1,34 gigatonnes par an, soit l'équivalent des émissions de plus de 295 nouvelles centrales électriques au charbon de 500 mégawatts.» Plastic & Climate: The Hidden Costs of a Plastic Planet (Center for International Environmental Law, 2019).">⁹</a></p>
+
+
+
+    <p id="fr-1-2-03">Notre prise de conscience de la pollution incessante qui en a résulté a suscité un désespoir et un pessimisme générationnel.<a href="#footnotes" onclick="openFootnotes()" title="«C'est super douloureux d'être un être humain en ce moment à ce stade de l'histoire.» Voir: Mike Pearl, Climate Despair' Is Making People Give Up on Life (Vice Magazine, 2019).">¹⁰</a>  Cela a conduit à un jugement sévère de nous-mêmes et du plastique comme étant intrinsèquement défectueux et dommageable pour l'environnement. Beaucoup déplorent que le plastique et l'humanité semblent destinés à polluer, contaminer et épuiser.<a href="#footnotes" onclick="openFootnotes()" title="Steven W. Running, The 5 Stages of Climate Grief (University of Montana, Missoula: Numerical Terradynamic Simulation Group Publications: 2007).">¹¹</a></p>
+
+
+  <p id="fr-1-2-04">Cependant, de tels jugements sont trop hâtifs.<a href="#footnotes" onclick="openFootnotes()" title="«L'être humain est une maladie, un cancer pour cette planète.» dit Agent Smith, The Matrix (Warner Brothers, 1999). Nous observons que la vision moderne commune de l'homme en tant que super virus est une forme d'humain-exceptionnel. Nous observons que le jugement catégorique du plastique (fabriqué par l'homme) comme mauvais est une extension de cette ontologie - le même anthropocentrisme qui sous-tend nos idéologies modernes. La répudiation de cette ontologie comme étant à la fois empiriquement et rationnellement fallacieuse est l'un des principaux efforts du Tractatus Ayyew dans les chapitres suivants.
+    ">¹²</a>
+  </p>
+
+  <p id="fr-1-2-05">Alors que nous voyons maintenant clairement où finit notre plastique, ce n'est que la moitié de l'histoire. Notre récit centenaire du plastique comme étant fabriqué et géré par l'homme n’a été qu’étroitesse de vue. Jusqu'à présent, nous n'avons pas vraiment compris où <i>commence</i> le plastique - à la fois physiquement et philosophiquement.</p>
+
+  <p id="fr-1-2-06">Souvent inconnu : la matière plastique est un sous-produit de l'extraction et du raffinement du carbone fossile qui alimente notre époque moderne. Et le carbone fossile lui-même? C'est en fait le sous-produit d’une transformation planétaire, d’une biosphère de plus en plus verte - un acte écologique fondamental dont nous avons encore beaucoup à apprendre.</p>
+
+  <p id="fr-1-2-07">Ainsi, alors que nos nuits sont agitées par l'observation du destin du plastique, notre plein éveil ne viendra qu’avec une compréhension de ses origines. Car c'est là que se trouve l'histoire fossile du plastique, la clé de l'inversion de la pollution du plastique - et, accessoirement, de l'inversion de toutes nos autres crises écologiques. Car si la pollution plastique, l'acidification des océans, le changement climatique et l'extinction des espèces peuvent sembler disparates et sans lien, ils partagent une cause commune dans la dissonance des schémas de processus de la Terre et de l'humanité moderne.</p>
+
+  <p id="fr-1-2-08a">De sa dérivation du pétrole à sa conception centrée sur l'humain; de sa dispersion inévitable à ses conséquences polluantes; comme rien d'autre, notre plastique incarne les aspects fondamentaux de toutes les crises écologiques modernes.</p>
+
+  <p id="fr-1-2-08">Ceci dit, nous allons voir, qu'en fait le plastique détient une valeur écologique que notre société moderne a complètement ignorée.</p>
+
+  <p id="fr-1-2-09">Car alors que le plastique passe entre nos mains chaque jour, nous pouvons littéralement toucher le paradigme et le modèle qui alimentent notre époque d'épuisement. Grâce au toucher, nous avons une occasion unique de changer le destin du plastique - et donc aussi de changer les valeurs qui se cachent derrière lui et notre monde moderne.</p>
+
+
+  <p id="fr-1-2-010">Mais pour saisir cette immense opportunité, nous devons d'abord transcender nos jugements, condamnations du plastique et tendances à l'auto flagellation.</p>
+
+  <p id="fr-1-2-0">Pour ce faire, nous devons revenir en arrière et regarder comment le plastique est arrivé entre nos mains en premier lieu.</p>
+
+  <p id="fr-1-2-011">C’est ainsi que nous devons remonter aux origines interstellaires de la planète Terre et raconter l'histoire du plastique d'une toute nouvelle manière.</p>
+
+  <p id="fr-1-2-012">Comme nous le verrons, ce n'est qu'avec la vision des étoiles que nous saisirons la perspective de notre de notre planète et de notre plastique pour nous mener sur le chemin vert qui nous attend.</p>
+
+ <br><br><br>
+ </div><!--closes page text content-->
+
+    <!--FOOTNOTES SECTION-->
+
+  <div class="footnote-section" style="z-index:8;">
+
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotes()">
+          
+      <div id="footnotes-arrow"></div>
+      
+      <div class="footnotes-title">Notes de bas de chapitre</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+      
+        <a href="#fr-1-2-01" class="footnote">   
+        <div class="footnote-number">5.</div>
+        <div class="footnote-text">Un rapport de Global Web Index a révélé que «l'effet Attenborough», du nom du narrateur du documentaire Blue Planet II de 2018, a entraîné une réduction de 53% de l'utilisation de plastique à usage unique en 2019. Voir: Sustainable Packaging: Consumer View, (Global Web Index: 2020)
+        </div>
+        </a>
+
+        <a href="#fr-1-2-01" class="footnote">   
+        <div class="footnote-number">6.</div>
+        <div class="footnote-text">Dans une étude complète de tous les plastiques jamais fabriqués, on estime que 8300 millions de tonnes métriques de plastiques vierges ont été produites dans le monde ; Dont 9% ont été recyclés, 12% ont été incinérés et 79% se sont accumulés dans les décharges ou dans le milieu naturel depuis 1950.R. Geyer, et al., Production, use and fate of all plastics ever made (Science Advances, 2017) Vol. 3, no. 7.</i></div>
+        </a>
+
+        <a href="#fr-1-2-01" class="footnote">   
+        <div class="footnote-number">7.</div>
+        <div class="footnote-text">"Dans le monde entier, les risques et les éventuels effets néfastes des microplastiques suscitent une inquiétude croissante." Voir: Ansje Lohr, Heidi Savelli, Raoul Beunen, Marco Kalz, Ad Ragas, Frank Van Belleghem, 'Solutions for global marine litter pollution', (sciencedirect.com: Current opinion in Environmental Sustainability, Vol 28, October 2017) 90-99</div>
+        </a>
+
+        <a href="#fr-1-2-01" class="footnote">   
+        <div class="footnote-number">8.</div>
+        <div class="footnote-text">En 2016, Russell a passé du temps à travailler dans une usine de recyclage canadienne. L'expérience et les réalisations du rôle du recyclage industriel dans la génération de pollution plastique ont revigoré le dialogue des auteurs. Voir:  Russell Maier, Recycling: The Evil Illusion, (Medium.com, 2016).</div>
+        </a>
+
+      <a href="#fr-1-2-01" class="footnote">   
+      <div class="footnote-number" id="3-down">9.</div>
+      <div class="footnote-text">"D'ici 2030, les émissions de CO2 provenant de la production, du traitement et de l'élimination du plastique pourraient atteindre 1,34 gigatonnes par an, soit l'équivalent des émissions de plus de 295 nouvelles centrales électriques au charbon de 500 mégawatts." Plastic & Climate: The Hidden Costs of a Plastic Planet (Center for International Environmental Law, 2019).</div>
+      </a>
+
+  
+      <a href="#fr-1-2-03" class="footnote">   
+      <div class="footnote-number">10.</div>
+      <div class="footnote-text">"C'est super douloureux d'être un être humain en ce moment à ce stade de l'histoire." Voir: Mike Pearl, <i>Climate Despair Is Making People Give Up on Life</i>(Vice Magazine, 2019).</div>
+      </a>
+
+      
+      <a href="#10-up" class="footnote">   
+      <div class="footnote-number">11.</div>
+      <div class="footnote-text">Steven W. Running, <i>The 5 Stages of Climate Grief</i>(University of Montana, Missoula: Numerical Terradynamic Simulation Group Publications: 2007).</div>
+      </a>
+
+      
+      <a href="#12-up" class="footnote">   
+      <div class="footnote-number">12.</div>
+      <div class="footnote-text">"L'être humain est une maladie, un cancer pour cette planète." Agent Smith, The Matrix (Warner Brothers, 1999). Nous observons que la vision moderne commune de l'homme en tant que super virus est une forme d'humain-exceptionnel. Nous observons que le jugement catégorique du plastique (fabriqué par l'homme) comme mauvais est une extension de cette ontologie - le même anthropocentrisme qui sous-tend nos idéologies modernes. La répudiation de cette ontologie comme étant à la fois empiriquement et rationnellement fallacieuse est l'un des principaux efforts du Tractatus Ayyew dans les chapitres suivants.
+    </div>
+      </a>
+
+       
+
+
+      </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div><!--Closes footnote section-->
+              
+      </div><!--Closes main content block-->
+
+
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
+
+<!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
+
+
+
+<!--SECTION PIED DE PAGE Chapitre suivant: Nécessite une personnalisation-->
+<div id="footer-chapter" style="margin-bottom: 0px;">
+    <div class="footer-size">
+      <div class="footer-left">
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+        <div class="next-section">
+          <div class="next-sec">Section suivante :</div>
+          <div class="sec-name"><i>Une histoire interstellaire</i></div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <a href="stellaire.html" title="Aller au prochain chapitre" aria-label="Aller au prochain chapitre"><div class="next-button">Suivant ➔</div></a>
+      </div>
+    </div>
+  
+
+
+<!--PIED DE PAGE DU CHAPITRE
+-->
+
+<chap-foot></chap-foot>
+
+</div>  <!--footer functions close-->
+
+<footer-settings></footer-settings>
+
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>
