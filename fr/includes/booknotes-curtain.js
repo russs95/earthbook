@@ -68,7 +68,7 @@ class bookNotes extends HTMLElement {
 <button class="color-btn" style="background:#2daee5" data-color="#2daee5" aria-label="Surligner le texte en bleu" title="Surligner & Sauvegarder en bleu"></button>
 </div>
         
-        <button aria-label="Copier la sélection" id="copyBtn" class="pallette-btn">
+        <button aria-label="Copier la sélection" id="copyBtn2" class="pallette-btn">
             <div class="pallette-text">Copier</div>
         </button> 
         <button aria-label="Ajouter une annotation" id="booknotesBtn" class="pallette-btn" onclick="highlightBooknote('yellow')">

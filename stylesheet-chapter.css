@@ -949,8 +949,8 @@ Repeated property, consider consolidating with the other transition property */
   background: var(--deeper-accent-color) url(icons/copy.svg) 17px center no-repeat;
   background-size: 21px;
   margin-right: 10px;
-
 }
+
 
 #citeBtn {
   background-size: 25px;
