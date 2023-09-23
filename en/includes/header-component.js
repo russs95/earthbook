@@ -25,7 +25,7 @@ class Header extends HTMLElement {
         </div>
 
         <div id="share-menu">
-        <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openShare()" aria-label="Open Share Link"><img src="../svgs/right-menu.svg" alt="Share icon"></button>
+        <button type="button" style="cursor:pointer; background:none;border:none;" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Open Share Link"><img src="../svgs/right-menu.svg" alt="Share icon"></button>
         </div>
     </div>
       
