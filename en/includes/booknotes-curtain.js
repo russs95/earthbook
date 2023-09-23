@@ -41,19 +41,19 @@ class bookNotes extends HTMLElement {
 
 
         
-            <h6 style="margin:16px auto 10px auto;">Booknotes enable authors and editors to work together on the live earthbook.  Import another reader's booknotes to see all their highlights and annotations.  Or, export your own booknotes and share the file for another reader to import.</h6>
+            <h6 style="margin:16px auto 10px auto;">Booknotes enable authors and editors to work together on the live earthbook.  Export and download your booknotes to share all your highlights and annotations with another reader.</h6>
 
-            <button id="booknotes-download" onclick="downloadBooknotes()" aria-label="Download Booknotes">
-            ▼ Download Booknotes
+            <button id="booknotes-download" onclick="downloadBooknotes()" aria-label="Export Booknotes">
+            ▼ Export Booknotes
             </button>
 
-            <h6 style="margin: 25px 0px 0px 5px;">Upload the Booknotes of another reader to your device to view them.</h6>
+            <h6 style="margin: 25px 0px 0px 5px;">Import and upload the Booknotes of another reader to your device to view them.</h6>
 
             <div id="booknotes-export" style="width:380px; padding:10px;margin: 10px auto 15px auto;background-color:var(--slider);
             border-radius: 10px;width:fit-content;">
             
                 <input id="jsonUpload" type="file" id="jsonUpload" accept=".json" aria-label="Choose a Booknotes JSON file">
-                 <button id="booknotes-upload-go" onclick="uploadBooknotes()" aria-label="Upload Booknotes file">▲ Upload Booknotes</button>
+                 <button id="booknotes-upload-go" onclick="uploadBooknotes()" aria-label="Import Booknotes file">▲ Import Booknotes</button>
             </div>
 
             <br><br>
