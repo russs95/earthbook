@@ -139,6 +139,38 @@ Redirect /fr/preface /fr/lepreface.html
 Redirect /fr/preface.html /fr/lepreface.html
 Redirect /fr/preface.php /fr/lepreface.html
 
+Redirect /imaginer /fr/imaginer.html
+Redirect /fr/imaginer /fr/imaginer.html
+Redirect /fr/imaginer /fr/imaginer.html
+Redirect /fr/imagine /fr/imaginer.html
+Redirect /fr/imagine.html /fr/imaginer.html
+Redirect /fr/imaginer.php /fr/imaginer.html
+
+Redirect /plastique /fr/plastique1.html
+Redirect /plastique1 /fr/plastique1.html
+Redirect /fr/plastique1 /fr/plastique1.html
+Redirect /fr/plastique /fr/plastique1.html
+Redirect /fr/plastique1 /fr/plastique1.html
+Redirect /fr/plastique1.php /fr/plastique1.html
+
+Redirect /stellaire /fr/stellaire.html
+Redirect /interstellaire /fr/stellaire.html
+Redirect /fr/stellaire /fr/stellaire.html
+Redirect /fr/interstellaire /fr/stellaire.html
+Redirect /fr/stellaire.php /fr/stellaire.html
+
+Redirect /caractere /fr/caractere.html
+Redirect /charactere /fr/caractere.html
+Redirect /caractere.html /fr/caractere.html
+Redirect /fr/caractere /fr/caractere.html
+Redirect /fr/caractere.php /fr/caractere.html
+
+Redirect /cyclocentrique /fr/cyclocentrique.html
+Redirect /kincentrique /fr/cyclocentrique.html
+Redirect /cyclocentrique.html /fr/cyclocentrique.html
+Redirect /fr/cyclocentrique /fr/cyclocentrique.html
+Redirect /fr/caraccyclocentrique.php /fr/cyclocentrique.html
+
 
 <If "%{REQUEST_URI} =~ m#^/fr/.*#">
     ErrorDocument 404 /fr/404.html
