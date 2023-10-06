@@ -51,7 +51,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="inedite.html">
+                         <a href="plastique1.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Plastique 1.0</div>
                              <div class="ligne pointillée"></div>
@@ -59,7 +59,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="stellaire.php">
+                         <a href="stellaire.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Une histoire interstellaire</div>
                              <div class="ligne pointillée"></div>
@@ -67,15 +67,15 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="motifs.php">
+                         <a href="caractere.html">
                          <div class="tc-item">
-                         <div class="chapter-name-tc">Modèles de processus</div>
+                         <div class="chapter-name-tc">Une caractère cosmologique</div>
                          <div class="ligne pointillée"></div>
                          <div class="word-count-tc"><i>837 mots</i></div>
                          </div>
                          </a>
 
-                         <a href="kincentric.php">
+                         <a href="cyclocentrique.html">
                          <div class="tc-item">
                          <div class="chapter-name-tc">Relations apparentées</div>
                          <div class="ligne pointillée"></div>
@@ -83,7 +83,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="nature.php">
+                         <a href="la-nature.html">
                          <div class="tc-item">
                          <div class="chapter-name-tc">Le sophisme de la nature</div>
                          <div class="ligne pointillée"></div>
@@ -91,7 +91,7 @@ class ContentCurtain extends HTMLElement {
                          </div>
                          </a>
 
-                         <a href="terre.php">
+                         <a href="terrestre.html">
                          <div class="tc-item">
                              <div class="chapter-name-tc">Les chemins terrestres</div>
                              <div class="ligne pointillée"></div>

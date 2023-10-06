@@ -48,6 +48,26 @@ function openFootnotes() {
 
   
 
+    w.style.height = "100%";
+    x.style.height = "100%";
+    x.style.marginBottom = "230px";
+    y.style.background = "url(../icons/up-arrow.svg) no-repeat center";
+    y.style.backgroundSize = "contain";
+    z.style.opacity = "0";
+    
+
+
+}
+
+
+function openFootnotesFooter() {
+  var w = document.getElementById("footer-reveal-container");
+  var x = document.getElementById("footnotes-reveal");
+  var y = document.getElementById("footnotes-arrow");
+  var z = document.getElementById("footnotes-concealer");
+
+  
+
 
   if (x.style.height === "200px") {
     w.style.height = "100%";

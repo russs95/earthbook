@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<HEAD>
+<title>L’exemple Terrestre | Tractatus Ayyew - Earthbook</title>
+<meta charset="UTF-8"> 
+
+
+<!--
+o               .        ___- -___                    .                   
+       .              .-\          -.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,-'      / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___,--'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~- ___ ; ___-~       
+                 .          -_-         .              -JT
+
+
+EARTHBOOK - Un format de livre open source, human-friendly et Earth-friendly.
+Lis le livre. Améliorez, traduisez ou commentez le contenu. Ou bifurquez le code et publiez le vôtre.
+ 
+
+Page de destination - version 1.3.2
+Créé par Russell Maier en tant que format d'édition qui incarne pleinement les principes de l'éthique Earthen pour permettre l'édition de livres verts en ligne.
+Premier EarthBook, le Tractatus Ayyew, publié le 22.12.22.
+
+Licence : Licence publique générale GNU v2 ou ultérieure
+URI de la licence : https://www.gnu.org/licenses/gpl-2.0.html
+Tous les fichiers, sauf indication contraire, sont publiés sous GNU General Public
+Licence version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+Voir le référentiel complet du projet sur : https://github.com/russs95/earthbook
+Pour les principes du Earthbook, voir le Tractatus Ayyew : https://book.earthe.io
+*/
+-->
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/en/terrestre.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/earthen.html" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/earthen.html" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/terrestre.html" hreflang="fr" >
+<!--
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="Terre, schéma cosmologique, caractère comsmologique, vert, cycles, dissipation, concentration, diversification, physique, biologie et astronomie, conscience, caractère, contribution, vibrant, stable, résilient, abondant, conscient, éthique terrestre, cinq principes, principes terrestres, terrestre , cosmologie, caractère planétaire, caractère de la Terre, voies terrestres, exemple de la Terre"> 
+<meta name="description" content="Dans la transition de notre planète d'une roche stérile à une biosphère prospère, nous trouvons cinq principes qui composent le caractère cosmologique de la Terre et qui guident nos entreprises pour qu'elles soient véritablement vertes.">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-8-07T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="An Earthen Ethic | Tracatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="The Earthen Ways | An Earthen Ethics">
+<meta property="og:description"   content="Dans la transition de notre planète d'une roche stérile à une biosphère prospère, nous trouvons cinq principes qui composent le caractère cosmologique de la Terre et qui guident nos entreprises pour qu'elles soient véritablement vertes.">
+<meta property="og:image"         content="../covers/TA-cover-french-1200px.png">
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
+<meta property="og:locale" content="fr_FR" >
+<meta property="og:url" content="https://book.earthen.io/fr/terrestre">
+
+
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.3">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+
+
+
+<script>
+      // Declare the global variables
+     var lang = "fr";
+     var book = "Book One";
+    var chapNo = "7";
+    var chapName = "L'example Terrestre";
+    var chaptURL = "terrestre.html"   // Declare the global variables
+  
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+</script>
+
+
+
+
+<!-- PRELOADS-->
+<!-- Preload for dark mode -->
+<link rel="preload" as="image" href="../svgs/07-earthen-dark.svg" media="(prefers-color-scheme: dark)">
+<!-- Preload for light mode -->
+<link rel="preload" as="image" href="../svgs/07-earthen-white.svg" media="(prefers-color-scheme: light)">
+
+
+
+
+ 
+ <!-- INCLUDES
+ Main Scripts-->   
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../content-javascript.js?v=2.2" defer></script>
+ <script src="../clip/dist/clipboard.min.js" defer></script>
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<!--13--><script src="includes/chap-foot.js?V=2" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+
+ #ct-chapter-title {
+      padding-top: 30px;
+      font-size: 10vmin;
+      letter-spacing: 5px;
+      line-height: 1em;
+      
+    }
+
+
+</style>
+</HEAD>
+
+<BODY class="accessibility-plugin-ac">
+
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
+
+  <div id="underlayer">
+
+    <div id="top"></div>
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+
+<div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()"  aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+    <div id="ct-chapter-title">L'example Terrestre</div>   
+    <div id="ct-book-title">Tractatus Ayyew</div>
+    <div id="ct-chap-location">Livre Un | Chapitre 7</div>
+    <div id="ct-word-count"><i>784 mots</i></div>
+  </div>
+</div> 
+
+<!-- Page Title Section-->
+
+<div id="ct-chapt-graphic" class="background-7">
+
+</div>
+
+
+<div id="up-arrow"></div>
+
+<div id="ct-main">
+
+
+
+<!-- MAIN TEXT CONTENT of the Page
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁰
+-->
+
+
+<div class="lead-page-paragraph"><p id="fr-1-7-00">
+    PENDANT TROP LONGTEMPS, nous avons supposé que sous nos pieds, la terre était une constante statique et stable. En fait, c'est tout sauf cela. Le flux de matière et d'impulsion cosmiques qui a formé notre planète n'a jamais cessé sa spirale. Sans vestige de début et sans perspective de fin,<a href="#footnotes" title="Thomas Hutton, 'A Theory of the Earth', (Une théorie de la Terre) Royal Society of Edinburgh, (Transactions of the Royal Society of Edinburgh, 1788) Vol. 1." onclick="openFootnotes()">⁵²</a> avec la confluence de la combinaison unique de matière et d'énergie en constante évolution, la Terre compose un modèle cosmologique de processus qui lui est propre. En effet, dans toute notre galaxie, aucune autre entité a si bien réalisé l'enrichissement écologique auquel nous aspirons maintenant tant à reproduire.</p>
+ </div>
+
+ <div class="page-paragraph">
+
+    <p id="fr-1-7-01">Vraiment, la transformation de notre planète autrefois stérile en une biosphère prospère est le pinacle ultime du <i>vert</i>.</p>
+
+      <p id="fr-1-7-02">De la même manière que les sociétés cyclocentriques ont été guidées par l'exemple des anciens maîtres de l'intégration écologique, nous pouvons nous aussi être guidés par l'exemple de Terre.
+    </p>
+
+      <p id="fr-1-7-03">En observant le passage de la planète au cours des éons de stérile à abondant, du gris au vert, nous pouvons discerner un modèle sous-jacent dans les voies de la Terre.<a href="#footnotes" onclick="openFootnotes()" title="Comme indiqué au chapitre 6, nous considérons la Terre comme un système planétaire autonome dans lequel les humains et leurs systèmes sont des sous-ensembles. De cette façon, lorsque nous faisons allusion à « suivre l'exemple de la Terre », nous sommes conscients de « l'erreur naturaliste » (c'est-à-dire parce qu'il est naturel de faire les choses d'une certaine manière, nous devons faire les choses de cette façon). Bien que cette erreur se rapporte certainement à des arguments est / devrait entre deux systèmes indépendants (c'est-à-dire « le monde humain » et « le monde naturel »), l'erreur perd en pertinence lorsqu'un système est reconnu comme un sous-ensemble de l'autre. Dans un tel cas, une déclaration en trois parties est/doit/si est possible sur certaines caractéristiques de l'ensemble : un système est d'une certaine manière ; ses parties doivent s'incarner de cette façon si les deux doivent fonctionner comme elles le devraient. c'est-à-dire que le mur est solide et fort, et ses briques doivent l'être aussi si les briques et le mur doivent tenir debout. La plante pousse vers le soleil, et il en va de même pour ses feuilles si elle veut prospérer. Par conséquent, nous évitons catégoriquement la dichotomie entre systèmes « naturels » et systèmes humains. Au lieu de cela, tout au long du Tractatus Ayyew, nous considérons les processus humains comme un sous-ensemble écologique de la biosphère terrestre.">⁵³</a>  Dans la résonance de notre connaissance scientifique et cyclocentriques, nous pouvons discerner cinq principes qui composent le modèle sous-jacent de processus de Terre:</p>
+    </div>
+
+    <div class="page-paragraph" style="padding:15px">
+      <p id="fr-1-7-04">1. <i>Les processus terrestres ont tendance à faire des cycles et à tourner en spirale.</i></p>
+  
+      <p id="fr-1-7-05">2. <i>Les cycles de la Terre ont tendance à faire tourner leur énergie vers l'extérieur.</i></p>
+
+      <p id="fr-1-7-06">3.<i>Les cycles de la Terre ont tendance à faire tourner leur matière vers l'intérieur</i></p>
+      
+      <p id="fr-1-7-07">4. <i>Les spirales d'énergie et de matière de la Terre tendent vers des systèmes divers.</i></p>
+      
+      <p id="fr-1-7-08">5. <i>Les systèmes terrestres tendent vers une prise de conscience toujours plus grande de leur interconnexion.</i></p>
+</div>
+
+    <div class="page-paragraph">
+
+      <p id="54-up">De l'organisme à l'écosystème, du biome à la biosphère, nous sommes entourés des conséquences verdoyantes de ces principes primordiaux qui se déploient à travers l'espace et le temps. Que le processus soit infime ou massif, ancien ou en cours, en y regardant de plus près, nous pouvons entrevoir les mêmes voies terrestres reflétées et incarnées - un microcosme du macro - dans chaque organisme et écosystème. Dans les cycles de vie de tout, d'une forêt à un arbre, d'un oiseau à une puce, nous pouvons observer les tendances du caractère de la Terre exprimées - une vaste symphonie d'un billion de processus, de cycles et de systèmes tendant tous vers un environnement plus résilient, vivable, une biosphère vibrante et abondante pour tous.<a href="#footnotes" onclick="openFootnotes()" title="Il est important de noter que nous ne prétendons pas pourquoi ou comment la Terre est arrivée à son caractère cosmologique particulier. Nous observons simplement le changement net de la planète de son état stérile (gris) à son état de biosphère (vert). Que les voies caractéristiques de la Terre aient été tracées par coïncidence, un être divin, de nombreux êtres ou une planète sensible est une question distincte.">⁵⁴</a></p>
+
+      <p id="55-up">Bien qu'il y ait des indices de ces tendances sur d'autres planètes, le caractère des dynamiques Terriennes induit définitivement les cycles de la matière et de l'énergie dans leur expression et leurs conséquences propres.<a href="#footnotes" onclick="openFootnotes()" title="Ici, nous ne sommes pas inconscients des grandes extinctions, des cataclysmes et des périodes glaciaires qui se sont produites au cours de l'histoire de la Terre. Nous examinons plutôt l'histoire complète de la Terre et observons ses tendances nettes. On observe que même en prenant en compte les grandes régressions de la biosphère, celles-ci sont secondaires à un processus global de verdissement.
+">⁵⁵</a></p>
+      
+      <p id="fr-1-7-09">Pourtant, la Terre, en ayant un caractère, n'est pas une exception. Étant donné la coalescence unique de chaque planète, chacune a sa propre configuration cosmologique et son déploiement. Des tempêtes sans fin de Jupiter aux volcans endémiques de Vénus, en passant par la couleur même de Mars, le caractère de chaque planète tend vers ses propres expressions de surface, d'océan et d'atmosphère.</p>
+
+     <p id="56-up">Cela dit, les tendances de chaque planète ne sont pas des règles strictes et rapides. Toutes les tempêtes joviennes ne se transforment pas en taches rouges géantes, toutes les montagnes vénusiennes ne sont pas toutes volcaniques et toutes les roches martiennes ne sont pas rouges. De même, tous les systèmes terrestres n'expriment pas les tendances terrestres avec la même clarté et les mêmes conséquences.<a href="#footnotes" title="En fait, certains processus peuvent en fait aller à l'encontre de la tendance cyclique globale. Cependant, ces processus sont toujours minoritaires, sinon ils seraient eux-mêmes la tendance." onclick="openFootnotes()">⁵⁶</a></p>
+
+     <p id="57-up">De cette façon, au fil des éons, certains organismes et écosystèmes de la Terre en sont venus à exprimer des tendances terrestres plus que d'autres.<a href="#footnotes" title="Bien que cela dépasse le cadre du Tractatus, une extension logique de notre argument est que les modèles de la Terre sont en fait les tendances requises pour le déploiement de la vie sur n'importe quelle planète. Dans cette interprétation, les voies de la Terre ne sont pas uniques à la Terre, mais plutôt la Terre incarne le contexte cosmologique idéal pour que ces tendances s'expriment. Bien que cela nécessite d'établir beaucoup plus de preuves que ce qui est disponible, si cela devait être vrai, cela ne serait pas contraire à l'éthique terrestre développée dans le Tractatus Ayyew. Au contraire, cela les placerait simplement dans un contexte plus large et fournirait une justification supplémentaire de leur mérite en tant que guide éthique pour les êtres sensibles.
+">⁵⁷</a></p>
+
+     <p id="fr-1-7-10">Il en va de même pour certaines cultures et sociétés humaines.</p>
+
+     <p id="fr-1-7-11">Dans les cinq chapitres suivants, nous examinerons cinq phénomènes terrestres qui ont atteint une magnificence exceptionnelle dans leur expression géométrique de l'une des cinq facettes du caractère cosmologique de la Terre. Avec l'aide de diverses cultures cyclocentriques et les conseils de la physique, de la biologie et de l'astronomie contemporaines, nous examinerons les moeurs Igorots, les cycles du saumon, les usages  des mollusques, la multiplication d'un polype corallien et les capacités d'une forêt mycorhizienne. Chacun devant nous aider à discerner l'essence d'un principe terrestre particulier et, ensemble, dévoiler le plein caractère de la contribution écologique.</p>
+
+     <p id="fr-1-7-12">Ce que nous appelons une éthique terrestre.</i></p>
+
+     <p id="fr-1-7-13">En appliquant ces éthiques terrestres, nous pouvons discerner et définir en confiance ce qui est vert (ce qui est une contribution écologique) et ce qui est gris (ce qui ne l'est pas).</p>
+
+     <p id="fr-1-7-14">Ce qui est vert est ce qui incarne la géométrie à cinq volets des principes terrestres et conduit à des processus, des cycles et des systèmes toujours plus dynamiques, stables, résilients, abondants et conscients.</p>
+
+     <p id="fr-1-7-15">Ce qui est gris est ce qui entre en conflit avec l'un des principes terrestres, conduisant à l'opposé - abaissement de la conscience, réduction de l'abondance, du dynamisme et de la stabilité du biome, et diminution de la résilience.</p>
+
+     <p id="fr-1-7-16">Avançons maintenant pour discerner en détail les paramètres de l'enrichissement écologique sur la planète Terre - les cinq piliers requis d'une nouvelle ère verte et d'une biosphère partagée, prospère pour nous et pour tous.</p>
+    
+     <br><br><br>
+  
+    
+  </div><!--closes page text content-->
+
+
+
+
+   
+
+<!--FOOTNOTES SECTION-->
+
+<div class="footnote-section" style="z-index:8;">
+
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotesFooter()">
+          
+      <div id="footnotes-arrow"></div>
+      
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+
+        <a href="#52-up" class="footnote">   
+        <div class="footnote-number">52.</div>
+        <div class="footnote-text">Thomas Hutton, <i>A Theory of the Earth</i> (Une théorie de la Terre), Royal Society of Edinburgh, (Transactions of the Royal Society of Edinburgh, 1788) Vol. 1.</div>
+        </a>
+
+        <a href="#53-up" class="footnote">   
+        <div class="footnote-number">53.</div>
+        <div class="footnote-text">Comme indiqué au chapitre 6, nous considérons la Terre comme un système planétaire autonome dans lequel les humains et leurs systèmes sont des sous-ensembles. De cette façon, lorsque nous faisons allusion à « suivre l'exemple de la Terre », nous sommes conscients de « l'erreur naturaliste » (c'est-à-dire parce qu'il est naturel de faire les choses d'une certaine manière, nous devons faire les choses de cette façon). Bien que cette erreur se rapporte certainement à des arguments est / devrait entre deux systèmes indépendants (c'est-à-dire « le monde humain » et « le monde naturel »), l'erreur perd en pertinence lorsqu'un système est reconnu comme un sous-ensemble de l'autre. Dans un tel cas, une déclaration en trois parties est/doit/si est possible sur certaines caractéristiques de l'ensemble : un système est d'une certaine manière ; ses parties doivent s'incarner de cette façon si les deux doivent fonctionner comme elles le devraient. c'est-à-dire que le mur est solide et fort, et ses briques doivent l'être aussi si les briques et le mur doivent tenir debout. La plante pousse vers le soleil, et il en va de même pour ses feuilles si elle veut prospérer. Par conséquent, nous évitons catégoriquement la dichotomie entre systèmes « naturels » et systèmes humains. Au lieu de cela, tout au long du Tractatus Ayyew, nous considérons les processus humains comme un sous-ensemble écologique de la biosphère terrestre.</div>
+        </a>
+
+        <a href="#54-up" class="footnote">   
+        <div class="footnote-number">54.</div>
+        <div class="footnote-text">Il est important de noter que nous ne prétendons pas pourquoi ou comment la Terre est arrivée à son caractère cosmologique particulier. Nous observons simplement le changement net de la planète de son état stérile (gris) à son état de biosphère (vert). Que les voies caractéristiques de la Terre aient été tracées par coïncidence, un être divin, de nombreux êtres ou une planète sensible est une question distincte.
+
+        </div>
+        </a>
+
+        <a href="#55-up" class="footnote">   
+        <div class="footnote-number">55.</div>
+        <div class="footnote-text">Ici, nous ne sommes pas inconscients des grandes extinctions, des cataclysmes et des périodes glaciaires qui se sont produites au cours de l'histoire de la Terre. Nous examinons plutôt l'histoire complète de la Terre et observons ses tendances nettes. On observe que même en prenant en compte les grandes régressions de la biosphère, celles-ci sont secondaires à un processus global de verdissement.
+        </div>
+        </a>
+
+        <a href="#56-up" class="footnote">   
+        <div class="footnote-number">56.</div>
+        <div class="footnote-text">En fait, certains processus peuvent en fait aller à l'encontre de la tendance cyclique globale. Cependant, ces processus sont toujours minoritaires, sinon ils seraient eux-mêmes la tendance.
+        </div>
+        </a>
+
+        <a href="#55-up" class="footnote">   
+        <div class="footnote-number">57.</div>
+        <div class="footnote-text">Bien que cela dépasse le cadre du Tractatus, une extension logique de notre argument est que les modèles de la Terre sont en fait les tendances requises pour le déploiement de la vie sur n'importe quelle planète. Dans cette interprétation, les voies de la Terre ne sont pas uniques à la Terre, mais plutôt la Terre incarne le contexte cosmologique idéal pour que ces tendances s'expriment. Bien que cela nécessite d'établir beaucoup plus de preuves que ce qui est disponible, si cela devait être vrai, cela ne serait pas contraire à l'éthique terrestre développée dans le Tractatus Ayyew. Au contraire, cela les placerait simplement dans un contexte plus large et fournirait une justification supplémentaire de leur mérite en tant que guide éthique pour les êtres sensibles.
+        </div>
+        </a>
+
+
+
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div><!--Closes footnote section-->
+          
+  </div><!--Closes main content block-->
+
+
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
+
+<!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
+
+
+<!--FOOTER Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+
+    <div class="footer-size">
+    
+      <div class="footer-left">
+
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+
+     
+        <div class="next-section">
+          <div class="next-sec">Suivant: </div>
+          <div class="sec-name"><i>Livre Deux</i></div>
+        </div>
+
+      </div>
+  
+      <div class="footer-right">
+    
+        <a href="epigraphe-2.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Suivant ➔</div></a>
+
+      </div>
+    </div>
+
+<!-- CHAPTER FOOTER-->
+
+<chap-foot></chap-foot>
+
+</div>  <!--footer functions close-->
+
+<footer-settings></footer-settings>
+
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>
+
