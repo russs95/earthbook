@@ -495,31 +495,59 @@ bookNotesListDiv.appendChild(bookNoteDiv);
 
 
 
-
-
 function resetBookNotes() {
-  // Clear the booknotes array from local storage
-  localStorage.removeItem('bookNotes');
+  // Ask for confirmation before proceeding
+  const confirmation = window.confirm("Careful! Are you sure you want to delete all your highlights and annotations made on this Earthbook?");
+  
+  if (confirmation) {
+    // Clear the booknotes array from local storage
+    localStorage.removeItem('bookNotes');
 
-  // Clear the content of the book-notes-list div
-  const bookNotesListDiv = document.getElementById('book-notes-list');
-  bookNotesListDiv.innerHTML = '';
+    // Clear the content of the book-notes-list div
+    const bookNotesListDiv = document.getElementById('book-notes-list');
+    bookNotesListDiv.innerHTML = '';
 
-  // Remove the span formatting from all spans with class "highlight"
-  const allHighlightSpans = document.querySelectorAll('span.highlight');
-  allHighlightSpans.forEach(span => {
-    const textNode = document.createTextNode(span.textContent);
-    span.parentNode.replaceChild(textNode, span);
-  });
+    // Remove the span formatting from all spans with class "highlight"
+    const allHighlightSpans = document.querySelectorAll('span.highlight');
+    allHighlightSpans.forEach(span => {
+      const textNode = document.createTextNode(span.textContent);
+      span.parentNode.replaceChild(textNode, span);
+    });
 
-  // Update the text inside the reset-settings-bn div
-  const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
-  resetSettingsBnDiv.textContent = 'No BookNotes saved';
+    // Update the text inside the reset-settings-bn div
+    const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
+    resetSettingsBnDiv.textContent = 'No BookNotes saved';
 
-  // Update the text inside the instruction-bn div
-  const instructionBnDiv = document.getElementById('instructions-bn');
-  instructionBnDiv.textContent = 'Highlight then click text in the Earthbook to save it to your Booknotes';
+    // Update the text inside the instruction-bn div
+    const instructionBnDiv = document.getElementById('instructions-bn');
+    instructionBnDiv.textContent = 'Highlight then click text in the Earthbook to save it to your Booknotes';
+  }
 }
+
+
+// function resetBookNotes() {
+//   // Clear the booknotes array from local storage
+//   localStorage.removeItem('bookNotes');
+
+//   // Clear the content of the book-notes-list div
+//   const bookNotesListDiv = document.getElementById('book-notes-list');
+//   bookNotesListDiv.innerHTML = '';
+
+//   // Remove the span formatting from all spans with class "highlight"
+//   const allHighlightSpans = document.querySelectorAll('span.highlight');
+//   allHighlightSpans.forEach(span => {
+//     const textNode = document.createTextNode(span.textContent);
+//     span.parentNode.replaceChild(textNode, span);
+//   });
+
+//   // Update the text inside the reset-settings-bn div
+//   const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
+//   resetSettingsBnDiv.textContent = 'No BookNotes saved';
+
+//   // Update the text inside the instruction-bn div
+//   const instructionBnDiv = document.getElementById('instructions-bn');
+//   instructionBnDiv.textContent = 'Highlight then click text in the Earthbook to save it to your Booknotes';
+// }
 
 function updateBNResetButton() {
   // Check if there are any entries in the bookNotes array

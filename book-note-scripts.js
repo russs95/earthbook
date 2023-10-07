@@ -538,10 +538,11 @@ function uploadBooknotes() {
             if (Array.isArray(jsonData)) {
                 // 4. Save to localStorage
                 localStorage.setItem('bookNotes', JSON.stringify(jsonData));
-                alert('Booknotes uploaded successfully!');
+                alert('Booknotes uploaded successfully!  All imported annotations and highlights will now be added to the Earthbook.');
 
                 // You might want to call your function to re-render the booknotes on the page
                 recreateHighlights();
+                closeBooknotes();
 
             } else {
                 alert('Invalid file format. Please upload a valid booknotes JSON file.');
