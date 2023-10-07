@@ -95,6 +95,9 @@ class bookNotes extends HTMLElement {
 💡  Il semble que c'est votre première fois à ouvrir ce livre! Avant de commencer, envisagez de prendre le <span class="java-link" onclick="guidedTour(), closeWelcomeNotice()" title="En savoir plus sur ce qu'est un Earthbook">tour des fonctionnalités de Earthbook</span> rapide et assurez-vous de <span class="java-link"  onclick="openSettings(), closeWelcomeNotice()"  title="Ajuster pour vos yeux">optimiser ±</span> la page pour vos yeux.
 </div>
 </div>
+
+
+
       
       `;
   }

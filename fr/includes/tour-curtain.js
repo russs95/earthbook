@@ -69,11 +69,13 @@ class TourCurtain extends HTMLElement {
   </div>
   </div>
   
+
+
 <!--HIGHLIGHTER-->
 
 
 <div id="highlight-viewer" class="modal" style="background:var(--highlight-modal);">
-  <div id="quotation-title">Your BookNote</div>
+  <div id="quotation-title">Votre BookNote &nbsp;<div id="bookNoteID"></div></div>
   <div id="close-x">&times;</div>
   <div class="highlight-viewer-content">
    
@@ -82,25 +84,29 @@ class TourCurtain extends HTMLElement {
         <div id="the-quote"></div>
     
     </div>
-    
+   
     <div class="quote-info">
-      <div id="userNote" style="font-size:medium;"></div>
-      <div id="book" style="font-size:medium"></div>
-        <div id="noteChapter" style="font-size:medium"></div>
+      <span style="font-size:small; color:grey;padding-bottom:10px;">Source:</span>
+      <div style="font-size:medium;padding-bottom:10px;">
+        <div id="noteChapter"></div>
+        <div id="book"></div>
+        
+      </div>
         <div id="date" style="font-size:small"></div>
         <div id="charCount" style="font-size:small"></div>
         <div id="publicNote" style="font-size:small"></div>
-        <div id="bookNoteID" style="font-size:small"></div>
+        
   
     </div>
-  
+    <textarea id="userNote" class="user-annotation" placeholder="Cliquez pour annoter ce surlignage..."></textarea>
+    
+    <button id="saveBtn" aria-label="Save" onclick="appendAnnotation2()">Guarder Annotation</button>
     <div class="quotation-button-row">
-      <button aria-label="Copier la sélection" id="copyBtn" class="quotation-btn" class="pallette-text">
-        Copier
+      <button aria-label="Copier la sélection" id="copyBtn" class="quotation-btn" class="pallette-text">Copier
       </button> 
-      <button id="clearBtn" aria-label="Clear Highlight" class="quotation-btn" >Clear</button>
-     <!-- <button id="cancelBtn" aria-label="Cancel" class="pallette-btn">Cancel</button>-->
-      <button id="citeBtn" aria-label="Cite" class="quotation-btn">Cite</button>
+      <button id="clearBtn" aria-label="Clear Highlight" class="quotation-btn" >Retirer</button>
+     <!-- <button id="cancelBtn" aria-label="Cancel" class="pallette-btn">Annuler</button>-->
+      <button id="citeBtn" aria-label="Cite" class="quotation-btn">Citer</button>
     </div>
   </div>
   </div>
