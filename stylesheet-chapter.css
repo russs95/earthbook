@@ -1004,7 +1004,7 @@ Repeated property, consider consolidating with the other transition property */
 #booknotesBtn {
     background-size: 25px;
     transition: 0.3s;
-    background: var(--deeper-accent-color) url(icons/booknotes.svg) 15px center no-repeat;
+    background: var(--deeper-accent-color) url(icons/booknotes-old.svg) 15px center no-repeat;
     background-size: 21px;
 }
  
