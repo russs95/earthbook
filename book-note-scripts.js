@@ -761,7 +761,8 @@ function appendAnnotationTitle() {
 
     const spanWithLatestHighlight = document.querySelector(`span[data-id='${lastNote.id}']`);
     if (spanWithLatestHighlight) {
-        spanWithLatestHighlight.title = `Noted: "${lastNote.userNote}" - ${lastNote.BNdateTime} (click to remove this Booknote)`;
+        spanWithLatestHighlight.title = `Noted: "${lastNote.userNote}" - ${lastNote.BNdateTime}
+        `;
         
         // Find the container of the span (assuming it's the nearest parent 'P' tag)
         let containerNode = spanWithLatestHighlight.parentNode;

@@ -74,9 +74,9 @@ class bookNotes extends HTMLElement {
         <button aria-label="Ajouter une annotation" id="booknotesBtn" class="pallette-btn" onclick="highlightBooknote('yellow')">
             <div class="pallette-text">Annoter</div>
         </button>
-        <button aria-label="Voir vos notes de livre" id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
+        <!--<button aria-label="Voir vos notes de livre" id="viewBooknotesBtn" class="pallette-btn" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()">
             <div class="pallette-text">Mes notes</div>
-        </button>
+        </button>-->
     </div>
 
     <div id="annotationEntry" style="width: 90%;
