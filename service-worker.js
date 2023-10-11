@@ -1,4 +1,4 @@
-const CURRENT_CACHE = 'earthbook-cache-v5.1';
+const CURRENT_CACHE = 'earthbook-cache-v6';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -30,6 +30,9 @@ self.addEventListener('install', event => {
 '/svgs/footer-settings-button-up.svg',
 '/svgs/up-arrow-dark.svg',
 '/svgs/up-arrow-light.svg',
+'/svgs/left-menu.svg',
+'/icons/booknotes-topmenu.svg',
+
 
 //Curtain IMages
 
@@ -124,6 +127,22 @@ self.addEventListener('install', event => {
 '/en/includes/footer-settings.js',
 '/en/includes/chap-foot.js',
 
+'/fr/includes/header-component.js',
+'/fr/includes/settings-curtain.js',
+'/fr/includes/content-curtain.js',
+'/fr/includes/share-curtain.js',
+'/fr/includes/buy-curtain.js',
+'/fr/includes/bookplate-curtain.js',
+'/fr/includes/earthbook-curtain.js',
+'/fr/includes/footer-component.js',
+'/fr/includes/read-curtain.js',
+'/fr/includes/tour-curtain.js',
+'/fr/includes/search-curtain.js',
+'/fr/includes/eco-curtain.js',
+'/fr/includes/booknotes-curtain.js',
+'/fr/includes/footer-settings.js',
+'/fr/includes/chap-foot.js',
+
 
 //MAIN PAGES
 '/en/index.html',
@@ -142,6 +161,22 @@ self.addEventListener('install', event => {
 '/en/energy.html',
 '/en/unpublished.html',
 
+'/fr/index.html',
+'/fr/preambule.html',
+'/fr/lepreface.html',
+'/fr/epigraphe-1.html',
+'/fr/imagine.html',
+'/fr/plastique1.html',
+'/fr/stellaire.html',
+'/fr/caratere.html',
+'/fr/cyclocentrique.html',
+'/fr/la-nature.html',
+'/fr/terrestre.html',
+'/fr/epigraphe-2.html',
+// '/fr/spirales.html',
+// '/fr/energie.html',
+'/fr/inedit.html',
+
 
 //APPENDIX  
 
@@ -154,6 +189,16 @@ self.addEventListener('install', event => {
 '/en/declaration.html',
 '/en/bibliography.html',
 '/en/glossary.html',
+
+'/fr/resumes.html',
+'/fr/dedice.html',
+'/fr/pour-terre.html',
+'/fr/gratitude.html',
+'/fr/publication.html',
+'/fr/auteurs.html',
+'/fr/declarations.html',
+'/fr/biblio.html',
+'/fr/glossaire.html',
 
 //APENDIX ICONS
 

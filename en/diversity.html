@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<title>The Polyp's Process | Tractatus Ayyew - An Earthbook</title>
+<meta charset="UTF-8"> 
+
+
+<!--
+o               .        ___- -___                    .                   
+       .              .-\          -.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,-'      / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___, -'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~- ___ ; ___-~       
+                 .          -_-         .              -JT
+
+
+EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+ 
+
+Landing page - version 1.3.2
+Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
+First EarthBook, the Tractatus Ayyew, published 22.12.22.
+
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
+For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
+*/
+-->
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/en/matter.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/matter.html" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/matter.html" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/matière.html" hreflang="fr" >
+<!--
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="coral, polyp, earthen, principle 5, four, diversity, biodiversity, support, space, human space, shared space, common home"> 
+<meta name="description" content="Earthen Principle No.4: Earth’s spirals of energy and matter tend toward diverse systems.">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-8-21T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="An Earthen Ethic | Tracatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="The Polyp's Process | Book Two  | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="Earthen Principle No.4: Earth’s spirals of energy and matter tend toward diverse systems.">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
+<meta property="og:locale" content="en_EN" >
+<meta property="og:url" content="https://book.earthen.io/en/diversity.html">
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.4">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+
+ 
+
+<script>
+      // Declare the global variables
+     var lang = "en";
+     var book = "Book Two";
+    var chapNo = "4";
+    var chapName = "The Polyp's Process";
+    var chaptURL = "diversity.html"   // Declare the global variables
+  
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+
+</script>
+
+
+    <!-- PRELOADS-->
+    <!-- Preload for dark mode -->
+    <link rel="preload" as="image" href="../svgs/10-matter-dark.svg" media="(prefers-color-scheme: dark)">
+    <!-- Preload for light mode -->
+    <link rel="preload" as="image" href="../svgs/10-matter-white.svg" media="(prefers-color-scheme: light)">
+    
+
+ <!-- INCLUDES
+ Main Scripts-->   
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../universal-javascript.js" defer></script>
+ <script src="../content-javascript.js?v=2.2" defer></script>
+ <script src="../clip/dist/clipboard.min.js" defer></script>
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<!--13--><script src="includes/chap-foot.js?V=2" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+
+
+ @media screen and (max-width: 699px) {
+    .ct-chapter-quote {
+      width: 87%;
+      font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 80%;
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .ct-chapter-quote {
+      width: 70%;
+      font-size: 1.8em;
+    }
+    .ct-quote-source {
+      width: 70%;
+      font-size: 1em;
+    }
+  }
+    
+  @media screen and (min-width: 1325px) {
+    .ct-chapter-quote {
+    width: 50%;
+    font-size: 2em;
+    text-shadow: 0px 0px 12px var(--slider);
+    }
+    .ct-quote-source {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
+
+
+
+    #ct-chapter-title {
+      padding-top: 30px;
+      font-size: 9vmin;
+      letter-spacing: 2px;
+      line-height: 1em;
+      
+    }
+
+  
+  
+
+
+</style>
+</HEAD>
+
+<BODY class="accessibility-plugin-ac">
+
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+
+
+  <div id="underlayer">
+
+    <div id="top"></div>
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+
+<div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+        <div id="ct-chapter-title">The Polyp's Process</div>   
+        <div id="ct-book-title">Tractatus Ayyew</div>
+        <div id="ct-chap-location">Earthen Principle No. 4</div>
+        <div id="ct-word-count"><i>Book Two | 2,307 words</i></div>
+      </div>
+  </div>
+
+<!-- Page Title Section-->
+
+  <div id="ct-chapt-graphic" class="background-10">
+    <div class="ct-chapter-quote">
+      <span style="background-color:var(--nav-bar-accent);
+ padding:0.1em 0.2em;">“Earth’s spirals of energy and matter tend toward diverse systems.”</span>
+    </div>
+    <div class="ct-quote-source">
+     ― Earthen Ethic No.4
+    </div>
+  </div>
+
+  <div id="up-arrow"></div>
+
+
+  <div id="ct-main">
+
+
+<!-- MAIN TEXT CONTENT of the Page
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
+-->
+  
+
+<div class="page-paragraph">
+  <p id="en-2-4-00"><i>
+      On the floor of oceans around the world, a tiny wormlike creature builds its home, and with it the home of countless other creatures.  While few have seen a coral polyp (they are only a few millimeters wide and a centimeter or two long), their tiny process multiplied by their masses has lead to some of the vast, intricate and colorful coral reefs. By gathering carbon and calcium from the ocean water with the help of symobiotic bateria within their tentacles, coral polyps are able to to steadily secrete a bicarbonate paste to shelter themselves.  As one polyp amongst thousands in its colony steadily adds to its enclosure, geometric fractals emerge in the form of plates, brains, domes, fans and more.  These structures, then provide shelter in turn for fish, molusks and other marine creatures of all kinds.  As the coral structures flourish, so does the marine community, the capture of nutrients and the diversification of the ecosystem.  Hiding, resting and hunting intricate ecosystems have emerge and continue to emerge around the carbonate palaces crafted by the humble polyp.
+      
+      In shallow oceans and seas around the planet, tiny coral polyps build their holds.  Gathering carbon and calcium out of the water and nutrients energy from passing plankton, the secrete a bicarbonate paste that steadily builds their home-- and in so doing creates a common home for countless other creatures.  In flourishes of geometry and fractal unfoldings the homes they build, build out upon the one's they built before, and as the polyp's proliferate, their process unfolds larger and larger colonies, that steadily spread, seeding yetmore. <a href="#footnotes">⁵⁸</a> </i>
+     </p></div>
+    <br><br>
+     <div id="line" style="margin-bottom: 30px;"></div>
+<br><br>
+    
+    <div class="lead-page-paragraph"><p id="en-2-4-00">
+      The process of the coral polyp is an example that can inspire and guide our human attempts at green.  The way that the polyp spiral its matter into sequestration and the way in which it uses its energy in a way to benefit the whole, eloquently illustrates both our second and third Earthen ethics.  In this confluence of spirals, we also observe a third phenomenon: the support for other species and their diversification.  In the coming together of the inward spiral of matter and the outward spiral of energy we can discern the fourth Earthen ethics: the way that Earthen systems tend towards the support and edification of diversity. With the help of this fourth earthen Ethic we can further make sense of the enrichment wrought by by kincentric cultures as they integrated with their ecosystems.  And, we gain a new tool to evaluate our modern enterprises to be sure they truly are green.</p>
+
+      </div>
+
+    <div class="page-paragraph">
+
+
+      <p id="en-2-4-00">Let us return one more time to Earth's primordial beginnings for a closer look.</p>
+
+      <p id="en-2-4-00">As we saw in Earth's stellar story, over the course of the last four billion years, the way in which energy and matter have swirled together has lead to the steady greening of the planet's surface.  However, not only did Earth's systems steadily augment their use of energy and matter, they also adapted to an infinity of localized conditions to do so.  As they did so, they diversified.  The very conditions of the earth (what we refered to as Earth's cosmological character) lent themselves to support and edify this process of diversifiction.</p>
+    
+    <p id="en-2-4-00">Nowhere is this Earthen characteristic more evident than in the oceans.</p>
+    
+    <p id="en-2-4-00">In 1998, paleontologist Joseph Sepkoski completed a comprehensive database of marine life over the last 541 million years. The database compiled over 30,000 fossil genera, representing the finds and categorization of millions of species. By recording each genus’s appearance and disappearance in the fossil timeline, he was able to chart for how long each were active and when they died off.</p>
+    
+    <p id="en-2-4-00">Sepkoski was particularly interested in showing the Earth’s great rises and falls in diversity — such as the explosion of life in the Carboniferous to the rise and fall of the dinosaurs. Indeed, his timeline of extinctions correlates directly with the dating of great meteors and volcanoes by geologists. However, just as important as showing declines in diversity, his curve rises — demonstrating a phenomenon far more fundamental. Over the history of the Earth the diversity of the biosphere has steadily increased.</p>
+
+    <p id="en-2-4-00">This had much to with the conditions on planet Earth (compared to say the surface of Venus or Mars).  However, as the process steadily unfolded, it had more and more to do with Earthen systems themselves reflecting and embodying this characteristic.</p>
+
+    <p id="en-2-4-00">From ancient carboniferous forests that sheltered the emergent dinausaurs, to coral reefs that sheltered and supported the diversifitication of the oceans, as Earthen ecosystems and biomes have become more abundant, vital and resilient, they have done so through the same inexorable process of diversification.  Indeed, this phenomen can be observed in organisms themselves!  From mamals to coral polyps within our digestive systems are a whole of host of flourishing microbiomes that reflect the support of diversity on the outside.</p>
+
+    <p id="en-2-4-00">Such a support for diversity is also reflected in the ecological integration of cyclocentric cultures.</p>
+
+    <p id="en-2-4-00">Around the Great Lakes of North America, the first nation of the Iroquois planted corn along with pumpkins and beans. The cultivation of these three plants together was so complimentary that they were known as the three sisters — providing shade, nitrogen and structure for each other. With sufficient support, the participation of insects, fungi and other plants did not detract from the yield, but added to it. Rather than being closed to diversity, the Iroquois spaces were open and invited participation. Rather than restrictive, it was tended to the benefit of all — corn, pumpkin, bean, humans and anyone else who willing to join the in the fray — thus fully embodying the principal of diversification.</p>
+
+    <p id="en-2-4-00">Today, as we strive to make our human enterprises green, the Iroquois, the polyp and Earth’s example shows us the way forward.</p>
+
+    <p id="en-2-4-00">Just as Earth’s processes tended towards diversification, cooperation and resiliency, so too must we intend and achieve with ours. Only when the intention and the result of our process is the flourishing of life’s diversity is the principle of diversification met. Only then can our acts and enterprises be considered ecological contributions — and green.</p>
+
+    <p id="en-2-4-00">This fourth earthen ethic provides yet another means of evaluating and guiding our human enterprises.</p>
+
+    <p id="en-2-4-00">When we evaluate our acts and enterprises we must thus ask: is our process open to the participation of other species? Does it vitalize the diversification of connected ecologies towards resiliency and cooperation? 
+        
+    <p id="en-2-4-00">Only if a process is supporting life’s inherent tendency towards diversity can it be considered an ecological contribution.</p>
+
+    <p id="en-2-4-00">Often our modern green endeavours involve planting trees, cultivating fields, tending gardens and even regenerating spaces that have been contaminated or poisoned.  While these endeavours are a step in the right direction however, they can fall short of Earth's example.  If a process or enterprise is tended first and foremost for the benefit of one species (i.e. humans) in such a way that other species are intentionally excluded, then the fourth Earthen ethic is not met.  Here again, we can draw inspiration and guidance from the example of the polyp-- although polyps create a home that is specifically their own space, this space does not preclude a much larger ratio of their created space to be used by any other organism or creature.</p>
+
+    <p id="en-2-4-00">To acheive the fourth Earthen ethic, our green enterprises must therefore account for their space and their support for biodiversity.</p>
+    
+    <p id="en-2-4-00">In his undertaking to understand ancient marine diversity, Sepkoski reviewed thousands of scientific journals by paleontologists and biologists to survey the number of species at the outset of an age and at its end. Only by surveying, naming and listing the species within over a certain period of time and in a certain space, could he demonstrate the process of diversification.</p>
+
+    <p id="en-2-4-00">Consequently, our own processes, to be green must likewise demonstrate through a process of naming, listing and accounting, that their space is supportive of diversity.  Only by accounting for the net space used by our enterprises (<i>S</i> in cubic meters) and their gradual increase in the net amount of species supported (<i>N</i>number of species) over a period of time (<i>Y</i> years) can we know whether our process, projects and enterprises are in fact supporting biodiversity.</p>
+    
+    <p id="en-2-4-00">Such a process of accounting, must also involve the naming and knowing the species within our spaces.  The naming and knowing of contributors — or not — expresses the depth of a process’s intention to supporting life.  And the gradual accumulation of names, demonstrates tangibly the steady welcoming, support and vitalization of biodiversity within our spaces.</p>
+
+    <p id="en-2-4-00">In this way, we can intentionally follow the path of Earth, the Igorots and the Coral Polyp in tending an ever increasing diversity and vitality of life within our shared spaces.</p>
+
+    <p id="en-2-4-00">However, it is important to note that this third Earthen ethic need not be be the result of physical effort or the energetic restructuring that we see in our first three ethics.  As Earth's inexorably multi-billion year process shows us, diversification is geometric consequence of Earth's double spiral of matter and energy tendencies.  Thus, by meeting the first three Earthen ethics, our door has been opened to the support of our fellow species.  The full force of the Earth’s tendency towards diversity can then express itself and re-vitalize our spaces!
+    
+    <p id="en-2-4-00">As our life-lists focus our attention to our ecological community, we will find that there were far more creatures at work with us than we ever imagined — species small and mighty enriching the soil and cleaning the air. As we discover creatures that have long been our unnamed friends, their addition become a legitimate boon for our life-lists ratios— and an indication of a phenomenon even more profound unfolding.</p>
+
+    <p id="en-2-4-00">For as our garden green spaces transform to forests, and as our forests transform to wild and wondrous sanctums, so too is the consciousness of our connection to it all blossoming like a spring flower. As we will see in our next Earthen Ethic, just as important as diversification is our awareness of our place in the process itself.</p>
+
+    <p id="en-2-4-00">Our fifth Earthen ethic.</p>
+
+<!--
+
+    <p id="en-2-4-00">In so doing, the tension between their distribution of energy and their concentration of matter, unfurls through space and time.</p>
+
+    <p id="en-2-4-00">Like those cycles of the Igorot, Salmon, Ammonite and the Earth.</p>
+
+    <p id="en-2-4-00">In sharp contrast to the desolation that unfolded on the surfaces our fellow planets, the geometry of this Earthen double spiral has led to just the opposite: </p>
+
+    <p id="en-2-4-00">A never ending spin towards ever more vibrant and diverse systems.</p>
+
+    
+    <!--It’s a little like the last time you found yourselves gathering with a group of strangers — perhaps for a party, a team or a meetup around a common intention.
+    
+    After all, how can we work together if we don’t know the names and needs of our fellows? How can we assist each the other if we don’t know our respective preferences, skills and strengths?
+    
+    Unlike the previous principle of net-subtraction, achieving the Earth’s way of diversification is simpler. No outset investments are needed to reduce grey impacts or enhance green ones. Putting out the welcome mat requires only courage.
+    
+    Whereas achieving net-zero carbon and beyond is the result of a process, diversification is a property of the process. As such it is fundamentally relative. A rain-forest preserve, though it may host thousands of species, may fail the principle of diversification if it’s space (and thus the number of species it hosts) is reduced by government or industry. Meanwhile, a mono-crop farm that has for decades been restricting its space, can — with a courageous change of heart — on-ramp overnight onto the road of diversification.
+    
+    Embodying the principle of diversity begins with the slightest pivot. By shifting our spaces from restricting to welcoming, the most desolate landscrapes of our petro-capital age are put on a road towards hosting the most dramatic regenerations.
+    
+    For our planet, it’s never been about the number of species. Rather the ongoing effort to provide them a home. Following the Earth’s example, step by step, our human-only spaces can become common homes.  -->
+
+
+    <!--
+    <p id="en-2-4-00">First, we assess. We observe in square meters just how much of our space has been restricted to humans and how much need not be any longer. We then take stock of what creatures are already with us — a list, a database, a registry ready to be ever expanded.</p>
+
+    <p id="en-2-4-00">Second, we welcome. Slowly and steadily, our ratio of closed to open space can be increased. While the first tiny steps may seem trivial — planting a tree, adding some potted plants, building a bird feeder — what is key is our direction.</p>
+
+    <p id="en-2-4-00">Third, we allow, guide and harvest. With our fellow participants accounted for and honored their efforts will be coupled with ours towards everyone’s benefit. Mindfully, we give our attention, gratitude and assistance. By allowing them to pursue their parameters of purpose, and by harvesting in a way that enriches everyone else, diversification will further manifest. In the branches of our first tree, birds will roost, the fruits enjoyed by us and all, and the seeds of the next trees will spread.</p>
+
+Fourth, we compensate. As more and more species join our space we will still need our human only spaces. For those closed spaces we must make, we expand an equivalent open one. A new cement foundation or paved parking can be matched with an equal green space. In this way, we can be sure to continue increasing our ratio of open: closed space and maintain our overall welcome. Little by little, to make up for our grey-spaces we can let our lawns go to gardens, replace fences with hedges, our old factories with fields.
+
+And finally… we discover!
+
+With our door wide open, the full force of the Earth’s tendency towards diversity can express itself and re-vitalize our spaces. As our life-lists focus our attention to our ecological community, we will find that there were far more creatures at work with us than we ever imagined — species small and mighty enriching the soil and cleaning the air. As we discover creatures that have long been our unnamed friends, their addition become a legitimate boon for our life-lists ratios— and an indication of a phenomenon even more profound unfolding.
+
+As our garden green spaces transform to forests, and as our forests transform to wild and wondrous sanctums, so too is the consciousness of our connection to it all blossoming like a spring flower. As we will see in our next Earthen Ethic, just as important as diversification is our awareness of our place in the process itself.
+
+
+
+
+
+
+
+
+      <p id="en-2-4-00">Sepkoski's famous graph helps to lay out . The correlation between the greening of the biosphere and the rise in planetary biodiversity, presents us with a fifth principle of ecological contribution. Like our other principles, it is a phenomenon that we observe from the micro to the macro. In everything from cellular life to continental biomes, by tending its processes towards diversification, the Earth cultivated systems with an ever wider variety of participants. Soon, organisms and ecolosystems were making overlapping contributions, spiraling matter into ever more concentrated configurations and spiraling nutrients upwards to the benefit of all. </p>
+
+      <p id="en-2-4-00">On our planet, as on others, geology, atmosphere and oceans all continue to spin and spiral– powered by the ever arriving blaze of the sun and added to by an unending rain of meteors of all shapes and sizes.<a href="#footnotes" title="text", onclick="openFootnotes()">⁶⁰</a></p>
+
+      <p id="60-up">However, on each planet, the way that this matter comes together is unique.  On each planet, vortexes unfold with their own unique geometry determined by their unique combination of matter and energy (its orbit, spin, chemistry, magnetosphere, mass, momentum and more). From Venus sulfuric acid dipole vortexes, to Jupiters' polygonal vortex patterns of hydrogen and helium, to Saturn's hexagonal hydrogen polar vortex, the way each planet spirals its matter is a direct reflection of its cosmological character-- in particular the swirl of its primary elements.</p>
+      
+      <p id="en-2-4-00">Just as on Venus, Jupiter and Saturn the prevalence of certain principal elements— sulfur, hydrogen and helium— dominated and determinin the character of their spirals, on Earth the spin of carbon, oxygen and hydrongen has determined ours.</p>
+
+     <p id="en-2-4-00">On Earth, the cycles of atmosphere and ocean that emerged on Earth's surface tended in their own Earthen direction.  In particular, towards ever better dissipations of the Sun's energy by concentrating carbon into ever more complex systems.  Steadily, as early cellular systems unfurled, they figured out how to gather the abundant loose carbon from the atmosphere to build their bodies.  Steadily, as early organisms evolved, their own intricate patterns of carbon began to unfurl.</p>
+     
+     <p id="en-2-4-00">Like the ammonite!</p>
+     
+     <p id="en-2-4-00">But also, just like trees, fish and fungi.  Steadily, as generations of mollusks, plants, fungi animals and insects lived and died, their biomass, whether on land or sea, was covered up by the fall of the next.</p>
+
+     <p id="en-2-4-00">Although these organisms all added CO2 back into their environment through their exhalations and excretions, with each cycle of life and death, they tended to concentrate more carbon than they let out loose.  Be it on the floor of an ocean or  a forest, slowly and steadily, layers of life were buried one upon the other.  Over hundreds of millions of years, the inexorable accumulation of these ancient organisms became compacted deep underground.  In the case of the ammonite, as their shells, bodies and excretions fell downwards, more and more carbon was subtracted and secured under the ocean floor.</p>
+
+     <p id="en-2-4-00">With the life cycles of innumerable organisms systematically subtracting more carbon than they added, soon vast quantities were stored out of the atmosphere and into geological storage.  With so much carbon removed from Earth’s early atmosphere, its ocean's reduced in acidity and the atmospheric carbon content declined.</p>
+
+     <p id="en-2-4-00">During the reign of the Ammonites, the subtraction of carbon from the cycles of plants, trees, forests and algae was so substantial that it lead to million of year ice ages.  Despite such extremes however, this pattern of steady subtraction served to counter balance inevitable planetary moments of release– such as forest fires, volcanoes and meteor strikes.  In this way, over the course of the planet's last 600 million years, as trillions of carbon-based organisms lived and died, on the whole the planet's climate tended steadily towards stabilization.  </p>
+
+     <p id="en-2-4-00">And even more life was able to flourish in abundance and diversity.</p>
+
+  
+      
+      <p id="en-2-4-00"> Over time the spiral of the Ammonite’s life-cycle lead to the sequestration of countless tons of carbon into geological storage.  Today, parts of Earth's vast limestone deposits are their legacy— as well as atmosphere and oceans containing far less carbon than before.  In this way,  the Ammonite made not only made their own home, they made their common home livable and more hospitable for others.</p>-->
+
+     <p id="en-2-4-00">This dynamic of matter management can be fund in kincentric cultures and cyclocentric nations around the world.(see our definition of the term cyclocentic in Chapter 5)</p>
+
+     <p id="en-2-4-00">As we saw earlier, the lives of the Igorot people of Northern Luzon are guided by their <i>ayyew</i> ecological ethos.  This ethos guided the way that the Igorts managed the matter that passed through their hands and bodies. From farming, to eating; from discarding, to defecating, the way in the Igorots embodied ayyew in their process resulted not in "waste" (their is no such concept in the Igorot language) but in "logits" (or, roughly translated "fertilizer").</p>
+
+     <p id="en-2-4-00">Each Igorot household home had a <i>lomeng</i>— a submerged enclosure where the family pig was kept.  However, these were much more than pig stalls.  Lomeng were used to discard everthing from overcooked rice, grass clippings.  They were also used as a toilet.  The pigs would consume almost everything given to them!  They would grow fat and provide rich manure to fertilize the families gardens and field— essentially concentrating the various forms of carbon biomass given to them into even more concentrated and nutrient rich biomass.</p>
+     
+     <p id="en-2-4-00">Over, countless lifecycles of humans and pigs, this process lead to the steadily concentration of carbon, nitogen and phosphos— the prinpal elements of their ecosystem.  This lead to ever more fertile fields and healthy and well nourished Igorot communities.</p>
+
+     <p id="en-2-4-00">As we strive to ensure our human enterprises are green, the ways of Igorots, the Ammonites and of the Earth show us the way forward.</p>
+
+     <p id="en-2-4-00">Just as the Earth tended it’s cycles towards the inward spiral of matter, so must we intend and achieve the same with our own.  Only when the intention and the result of our cycles is the net concentration of their active elements, are we following the pattern of our planet.  Only then is the third Earthen ethic met. Only then can our acts and enterprises be considered ecological contributions— and green.</p>
+
+     <p id="en-2-4-00">This third earthen ethic provides a geometric means of evaluating the management of matter within our human processes.  It applies to the principal elements used in any of our processes— but most notably to our usage of carbon.</p>
+
+     <!--
+     <p id="en-2-4-00">For the last century, we can observe that our modern civilization's usage of carbon has been in opposition to the Earth's pattern.  The extraction and burning of Earth's ancient compacted carbon deposits (w)hat we have called "fossil fuels") has come to power our modern nations.  From dense geological deposit to the fumes emitted by their burning, our process of using carbon has decidedly been one of dispersal.</p>
+     -->
+     <p id="en-2-4-00">Perhaps the most tangible example is that of our modern plastic.  As we saw in Plastic's Stellar story, plastic is a by-product of the refinement of petroleum to make fuels.  As we send our used plastic off to far off factories to be processed, dumped or incinerated, our industrial processes begin again with new material.  Having originated from a concentrated form under the earth to be dispersed over the surface of the planet, we can clearly observe that the outwards spin of plastic industrial cycles is contrary to the inward spiral of the Earth's.</p>
+
+     <p id="en-2-4-00">What then are we to make of modern attempts at green— such goals as "net-zero" and "zero-waste"?</p>
+
+     <p id="en-2-4-00">In so far as these goals seek to reduce and balance the outputs of our process to zero, they are a step in the right direction.  However, from an Earthen perspective we can see that they are fundatmentally insufficient.</p>
+
+     <p id="en-2-4-00">As we saw in the example of the Igorots, every molecule of matter in the processes of the Igorots, once its nutrient energy had been extracted, was returned back into the cycles of life around in them in a denser form than before.  With the rice plants extracting loose carbon from the air, condensing it in to rice, and Igorot cultivation continuing the downward spiral into further concentration, steadily more and more carbon was sequestered into biomass and into the soil itself.</p>
+
+     <p id="en-2-4-00">As we develop enterprises, technologies and industries to be green, the requisite geometry by which they must manage their matter is clear.</p>
+
+     <p id="en-2-4-00">Whether the process’s primary element is carbon or calcium, lithium or silicone, water or cement, the process must embody the third Earthen Ethic.</p>
+
+     <p id="en-2-4-00">First, the process must accumulate its principal elements.  Second, the cycle of the process must concentrate these elements.  Third, the spiral of these cycles must then lead to the net-subtraction of the element and tend, over the long-term, to its sequestration.</p>
+
+     <p id="en-2-4-00">Circular, for-Earth processes that can achieve this, embody both the inward spiral of their matter and the outward spiral of their energy and fulfill the first three Earthen ethics.</p>
+
+     <p id="en-2-4-00">In so doing, the tension between their distribution of energy and their concentration of matter, unfurls through space and time.</p>
+
+     <p id="en-2-4-00">Like those cycles of the Igorot, Salmon, Ammonite and the Earth.</p>
+
+     <p id="en-2-4-00">In sharp contrast to the desolation that unfolded on the surfaces our fellow planets, the geometry of this Earthen double spiral has led to just the opposite: </p>
+
+     <p id="en-2-4-00">A never ending spin towards ever more vibrant and diverse systems.</p>
+
+     <p id="en-2-4-00">Our fourth Earthen ethic.</p>
+
+     <br><br><br>
+  
+    
+  </div><!--closes page text content, then loads page curtains:-->
+
+
+
+<!--FOOTNOTES SECTION-->
+
+  <div class="footnote-section" style="z-index:8;">
+
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotesFooter()">
+          
+      <div id="footnotes-arrow"></div>
+      
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+      
+        <a href="#58-up" class="footnote">   
+        <div class="footnote-number">58.</div>
+        <div class="footnote-text">For an an account of the Igorots remarkable ecological synchrony with the cycles of the living world around them: William Henry Scott, (1959) <i>Some Calendars of Northern Luzon</i>, American Anthropologist 60(3):563 - 570 </div>
+        </a>
+
+        <a href="#59-up" class="footnote">   
+        <div class="footnote-number">59.</div>
+        <div class="footnote-text">Entropy research by theoretical physicists posit a pattern of adaptive dissipation in the way matter organizes itself in the presence of sustained energy inputs. Meanwhile, parallel breakthroughs in cosmological epistemology help make sense of Earth’s unfolding kinetic character. </div>
+        </a>
+
+        <a href="#60-up" class="footnote">   
+        <div class="footnote-number">60.</div>
+        <div class="footnote-text">“The earth is more like an eddy in a river through which flows of matter continuously stream. It is replenished and depleted in a vortical cosmic dance. — Thomas Nail, (2021) <i>A Theory of the Earth</i>
+        </div>
+        </a>
+
+        <a href="#55-up" class="footnote">   
+        <div class="footnote-number">61.</div>
+        <div class="footnote-text">Jeremy L. England et al., <i>Dissipative adaptation in driven self-assembly</i>, (Nature Nanotechnology, 2015)  
+        </div>
+        </a>
+
+        <a href="#56-up" class="footnote">   
+        <div class="footnote-number">62.</div>
+        <div class="footnote-text">The term ‘technical nutrient’ was first proposed by William McDonough in a theory of circular design that embodies the conceptual geometric problem we highlight here.  See: William McDonough, Michael Braungart (2002), <i>Cradle to Cradle - Remaking the Way We Make Things</i>, North Point Press.   
+        </div>
+        </a>
+
+        <br><br><br><br>
+
+
+
+
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div><!--Closes footnote section-->
+
+
+
+
+   
+          
+  </div><!--Closes main content block-->
+
+
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
+
+<!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
+
+
+<!--FOOTER Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+
+    <div class="footer-size">
+    
+      <div class="footer-left">
+
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+
+     
+        <div class="next-section">
+            <div class="next-sec">Next Chapter:</div>
+            <div class="sec-name"><i>2 | The Salmon's Spin</i></div>
+        </div>
+
+      </div>
+  
+      <div class="footer-right">
+    
+        <a href="energy.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+
+      </div>
+    </div>
+
+<!-- CHAPTER FOOTER-->
+
+<chap-foot></chap-foot>
+
+</div>  <!--footer functions close-->
+
+<footer-settings></footer-settings>
+
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+
+</BODY>
+
+</HTML>
+
