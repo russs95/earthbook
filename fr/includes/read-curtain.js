@@ -45,7 +45,7 @@ class ReadCurtain extends HTMLElement {
                         <i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>eBook</a>
                         </div>
                           
-                        <a href="../books/french.pdf" target="_blank">
+                        <a href="../books/Tractatus-Ayyew _d’une-éthique terrestre_|_Livre Premier_|_Angway-&-Maier.pdf" target="_blank">
                         <div id="pdf-btn" class="action-btn"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</div>
                         </a>
   
