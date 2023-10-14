@@ -33,7 +33,7 @@ function updateHighlightColor() {
   }
 }
 
-
+//important for world map
 function updateLunarMonths() {
   const svg = document.querySelector("svg");
   const elementsWithColor = svg.querySelectorAll("[fill='#999'], [stroke='#999']");
