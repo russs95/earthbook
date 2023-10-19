@@ -7,7 +7,7 @@
    viewBox="0 0 128.20555 128.20555"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
    sodipodi:docname="08-cycles-dark.svg"
    inkscape:export-filename="/home/russs/Documents/Russs Files/Tractatus Ayyew/2022 Penta Page Mandala/00 penta mandala.png"
    inkscape:export-xdpi="61.759998"
@@ -29,30 +29,36 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:zoom="1.0851214"
-     inkscape:cx="328.99545"
-     inkscape:cy="301.80955"
-     inkscape:window-width="1920"
-     inkscape:window-height="1016"
+     inkscape:cx="287.52543"
+     inkscape:cy="302.7311"
+     inkscape:window-width="1503"
+     inkscape:window-height="874"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4499">
+     inkscape:current-layer="g59125"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
     <sodipodi:guide
        position="27.103775,11.402458"
        orientation="1,0"
-       id="guide1166" />
+       id="guide1166"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="62.700133,80.138794"
        orientation="1,0"
-       id="guide47323" />
+       id="guide47323"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="118.30393,64.621455"
        orientation="0,-1"
-       id="guide47325" />
+       id="guide47325"
+       inkscape:locked="false" />
     <sodipodi:guide
        position="160.1952,114.55116"
        orientation="0,-1"
-       id="guide286953" />
+       id="guide286953"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <defs
      id="defs2" />
@@ -190,7 +196,7 @@
            transform="translate(0.35628301,-0.14966453)"
            style="stroke:#858585;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843">
           <circle
-             style="display:inline;fill:none;stroke:#fafafa;stroke-width:0.575164;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.56470591"
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.575164;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.90283662"
              id="path1298"
              cx="169.72188"
              cy="93.92292"
@@ -198,7 +204,7 @@
              transform="matrix(-1.7104654,0,0,1.7104654,524.73447,-86.067561)" />
           <path
              sodipodi:type="spiral"
-             style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#fafafa;stroke-width:3.7888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.56470591"
+             style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.7888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.90283662"
              id="path1437"
              sodipodi:cx="221.35513"
              sodipodi:cy="282.80667"

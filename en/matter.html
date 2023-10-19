@@ -235,6 +235,62 @@ All the page components required to build this page-->
     }
 
   
+
+ @media screen and (min-width: 700px) {
+  .chart-image-desktop {
+    width: 100%;
+    padding: 18px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--slider);
+    border-radius: 8px;
+    margin-left: -20px;
+  }
+
+  .chart-image-desktop img {
+    width: 100%;
+  }
+
+  .chart-image-mobile {
+
+display: none;
+}
+}
+
+
+@media screen and (max-width: 699px) {
+
+  .chart-image-mobile {
+    width: 100%;
+    padding: 6px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--slider);
+    border-radius: 8px;
+    
+  }
+
+
+  .chart-image-mobile img {
+    width: 100%;
+    height: auto;
+  }
+
+  .chart-image-desktop {
+
+    display: none;
+  }
+  }
+
+  .chart-caption  {
+    padding: 15px 5px 15px 5px; 
+    text-align: left;
+    font-size: smaller;
+    font-family:'Mulish', sans-serif;
+    color: var(--subdued-text);
+  }
+
+
   
 
 
@@ -284,29 +340,38 @@ All the page components required to build this page-->
 
 
 <!-- MAIN TEXT CONTENT of the Page
-  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴ —
 -->
 <div class="page-paragraph">
-
-<div class="ct-chapter-quote" style="width:100%;padding:20px;margin-top:30px;">
-  <span style="background-color:var(--nav-bar-accent);
-padding:0.1em 0.2em;" id="en-2-3-00">“Earth’s cycles tend towards the inwards concentration of matter.”</span>
-<div class="ct-quote-source" style="font-size:small;text-align: center;margin:auto;">
- ― Earthen Ethic No.3
+  <div class="ct-chapter-quote" style="width:100%;padding:20px;margin-top:30px;">
+      <span style="background-color:var(--nav-bar-accent);padding:0.1em 0.2em;" id="en-2-3-00">“Earth’s cycles tend towards the inwards concentration of matter.”</span>
+      <div class="ct-quote-source" style="font-size:small;text-align:right;margin:auto;">― Earthen Ethic No.3
+  </div>
 </div>
+
+<div class="chart-image-desktop">
+    <img src="../photos/ammonite-lead-photo.webp" style="width:100%" alt="A variety of ammonite forms, from Ernst Haeckel's 1904 Kunstformen der Natur.">
+          
+    <div class="chart-caption" >A variety of ammonite forms, from Ernst Haeckel's 1904 Kunstformen der Natur.</div>
+</div>
+
+<div class="chart-image-mobile">
+  <img src="../photos/ammonite-lead-photo.webp" style="width:100%" alt="A variety of ammonite forms, from Ernst Haeckel's 1904 Kunstformen der Natur.">
+        
+  <div class="chart-caption" >A variety of ammonite forms, from Ernst Haeckel's 1904 Kunstformen der Natur.</div>
 
 </div>
 
 <div class="page-paragraph">
     <p id="en-2-3-01"><i>
-    Three hundred million years ago, Earth’s oceans were full of swirls of spiralling matter swiming merrily about.  Just as fish are ubiquitous in our oceans today, for millions of years the ancient ammonite swam abundantly in the seas of the Mezoic.  Famous for its spiral fossilized shell, the now extinct amonite had much in common with its Moluskan descendants today.  Like the clams and oysters that we know well, the ammonite sieved loose particles of carbon and calcium out of the water to synthesis its shell.  And just like the mollusks of today, at the end of its life, its shell and corpse floated down to to the ocean floor.  Over time, the relentless rain of expired ammonites, accompanied by the carcasses of other marine creatures and their excretions, accumulated at the bottom of the ocean.  As layer upon layer of sediment pressed down upon another, steadily, all the carbon and calcium that each ammonite had gathered was compacted into stone. Over millions of years, the lives of trillions of marine creatues such as the amonite, spun countless tons of bicarbonate into geological sequestration.  Today, in its fossil form we can hold an ammoniate's ecological contribution in our hand. In helping to add to the vast limestone deposits of today, over time, the ammonite's relentless subtraction of carbon helped reduced the net acidity of the oceans, making the waters more hospitable homes for countless other creatures to thrive.</i>
+    Three hundred million years ago, Earth’s oceans were full of swirls of spiralling matter swiming merrily about.  Just as fish are ubiquitous in our oceans today, for millions of years the ancient ammonite swam abundantly in the seas of the Mezoic.  Famous for its spiral fossilized shell, the now extinct amonite had much in common with its Moluskan descendants today.  Like the clams and oysters that we know well, the ammonite sieved loose particles of carbon and calcium out of the water to synthesis its shell.  And just like the mollusks of today, its defecations, shell and corpose would inevitably float down to the ocean floor.  Over time, the relentless rain of expired ammonites, accompanied by the carcasses of other marine creatures and their excretions, accumulated.  As layer upon layer of sediment pressed down upon another, steadily, all the carbon and calcium that each ammonite had gathered was compacted into stone. Over millions of years, the lives of trillions of marine creatues such as the amonite, spun countless tons of bicarbonate into geological sequestration.  Today, in its fossil form we can hold an ammoniate's ecological contribution in our hand. In helping to add to the vast limestone deposits of today, over time, the ammonite's relentless subtraction of carbon helped reduced the net acidity of the oceans, making the waters more hospitable homes for countless other creatures to thrive.</i>
      </p></div>
     <br><br>
      <div id="line" style="margin-bottom: 30px;"></div>
 <br><br>
     <div>
     <div class="lead-page-paragraph"><p id="en-2-3-02">
-    THE WAY IN WHICH THE ANCIENT AMMONITE managed it matter to build its own home and steadily enrich the common home that it shared with other creatures, is an example that can guide and inspire us today.  In our last chapter, we saw how the outward spin of <i>energy</i> is characteristic of Earth’s pattern.  Now, looking closely at the life cycles of the ammonite and modern mollusks we can discern the geometry of Earth's spin of matter. As we shall see by looking closely at the amonite and other Earthen organisms, over the last billion years they have tended to inexorably spin their principal elements towards concentration and sequestration.  This tendency forms our third Earthen ethic.  With its help we can deepen our appreciation of the ecological enrichment wrought by by cyclocentric cultures.  More importantly, by understanding their example, we gain a new tool to evaluate our modern management of matter-- most notably the carbon, whose burning, is principal element of our modern processes.  With the Earth's example as a guide, we can be sure our processes, products and systems are truly are green.</p>
+    THE WAY IN WHICH THE ANCIENT AMMONITE managed it matter to build its own home and steadily enrich the common home that it shared with other creatures, is an example that can guide and inspire us today.  In our last chapter, we saw how the outward spin of <i>energy</i> is characteristic of Earth’s pattern.  Now, looking closely at the life cycles of the ammonite and modern mollusks we can discern the geometry of Earth's spin of matter. As we shall see by looking closely at the amonite and other Earthen organisms, over the last billion years they have tended to inexorably spin their principal elements towards concentration and sequestration.  This tendency forms our third Earthen ethic.  With its help we can deepen our appreciation of the ecological enrichment wrought by the way the Igorots managed their defacations and residuals.  More importantly, by understanding their example, we gain a new tool to evaluate our modern management of matter and our modern goals of "net-zero" and "zero-waste".  With the Earth's example as a guide, we can be sure the way our processes, products and systems manage their carbon and other elements are truly are green.</p>
       </div>
 
     <div class="page-paragraph">
@@ -315,9 +380,23 @@ padding:0.1em 0.2em;" id="en-2-3-00">“Earth’s cycles tend towards the inward
 
       <p id="en-2-3-04">As we saw in Earth's <a href="stellar.html">stellar story</a>, our solar system's planets formed five billion years ago as interstellar debris steadily swirled together.  This coalescence of matter into planet Earth is in fact a process that has never ceased. 
 
-      <p id="en-2-3-05">On our planet, as on all others, meteors continue to fall; geology, atmosphere and oceans all continue to spin and spiral– ever churned by the ever arriving blaze of the sun.<a href="#footnotes" title="text", onclick="openFootnotes()">⁶⁰</a></p>
+      <p id="en-2-3-05">On our planet, as on all others, meteors continue to fall; geology, atmosphere and oceans all continue to spin and spiral– ever churned by the ever arriving blaze of the sun.<a href="#footnotes" onclick="openFootnotes()" title="‘The world is a vampire’ as The Smashing Pumpkins sang: a vampire living from the death of the sun. The universe must die to keep living.” Thomas Nail (2021), Theory of the Earth, Standford University Press.">⁷⁷</a></p>
 
-      <p id="en-2-3-06">However, on each planet, the way that this matter comes together and spirals is unique.  On each planet, vortexes unfold with their own unique geometric character.  Determined by a planet's unique configuration (its orbit, spin, chemistry, magnetosphere, mass, momentum and more). From Venus sulfuric acid dipole vortexes, to Jupiters' polygonal vortex patterns of hydrogen and helium, to Saturn's hexagonal hydrogen polar vortex, the way each planet spirals its matter is a direct reflection of its cosmological character-- in particular the swirl of its primary elements.</p>
+      <div class="chart-image-desktop">
+        <img src="../photos/planet-vortexes.png" style="width:100%" alt="Spirals of matter with geometry unique to their planet form on Saturn, Jupiter and Mars.">
+              
+        <div class="chart-caption" >Spirals of matter with geometry unique to their planet form on Saturn, Jupiter and Mars.</div>
+      </div>
+
+      <div class="chart-image-mobile">
+        <img src="../photos/planet-vortexes-mobile.png" style="width:100%" alt="Spirals of matter with geometry unique to their planet form on Saturn, Jupiter and Mars.">
+              
+        <div class="chart-caption" >Spirals of matter with geometry unique to their planet form on Saturn, Jupiter and Mars.</div>
+      </div>
+
+      <p id="en-2-3-06">However, on each and every planet, the way that matter comes together and spirals is unique.</p>
+      
+      <p id="en-2-3-06">On every planet, vortexes unfold with their own unique geometric character.  Determined by a planet's unique configuration (its orbit, spin, chemistry, magnetosphere, mass, momentum and more). From Venus sulfuric acid dipole vortexes, to Jupiters' polygonal vortex patterns of hydrogen and helium, to Saturn's hexagonal hydrogen polar vortex, the way each planet spirals its matter is a direct reflection of its cosmological character-- in particular the swirl of its primary elements.</p>
       
       <p id="en-2-3-07">On Venus, Jupiter and Saturn, the prevalence of certain principal elements— sulfur, hydrogen and helium— dominated and determinined the character of their spirals. On Earth, the spin of carbon, oxygen and hydrongen has determined ours.</p>
 
@@ -328,6 +407,20 @@ padding:0.1em 0.2em;" id="en-2-3-00">“Earth’s cycles tend towards the inward
      <p id="en-2-3-10">But also, just like trees, fish and fungi.  Steadily, as generations of mollusks, plants, fungi animals and insects lived and died, their biomass, whether on land or sea, was covered up by the fall of the next.</p>
 
      <p id="en-2-3-11">Although these organisms all added CO2 back into their environment through their exhalations and excretions, with each cycle of life and death, they tended to concentrate more carbon than they let out loose.  Be it on the floor of an ocean or of a forest, slowly and steadily, layers of life were buried one upon the other.  Over hundreds of millions of years, the inexorable accumulation of these ancient organisms became compacted deep underground.  In the case of the ammonite, as more and more of their carbonate shells, bodies and excretions fell downwards, it meant that more and more carbon was being effectively subtracted from the water's themselves.  This in turn enabled the ocean's to absorb more carbon dioxide from the atmosphere above.</p>
+
+     
+<div class="chart-image-desktop">
+  <img src="../photos/carbon-sequestration-desktop.png" style="width:100%" alt="The Carboniferous age, its trees and forests, embody in dramatic fashion the fourth phenomenon that has characterized the Earth’s greening of the biosphere.">
+        
+  <div class="chart-caption" >Figure 1*78.</div>
+</div>
+
+<div class="chart-image-mobile">
+  <img src="../photos/carbon-sequestration-mobile.webp" style="width:100%" alt="The Carboniferous age, its trees and forests, embody in dramatic fashion the fourth phenomenon that has characterized the Earth’s greening of the biosphere">
+        
+  <div class="chart-caption" >Figure 1. Over the last 600 million years, the net amount of carbon dioxide in Earth's atmosphere has declined while the amount of carbon sequestered into biomass and earthen stores has increased (green line).  From:  <i>A History of Atmosphere CO2 and its Effects on Plants, Animals and Ecosystems</i>, by James R. Ehleringer et al., University of Utah, 2005.  Green emphasis ours.  </div>
+
+</div>
 
      <p id="en-2-3-12">With the life cycles of innumerable organisms systematically subtracting more carbon than they added, soon vast quantities were stored out of the atmosphere and into geological storage.  With so much carbon sequestered into geological storage, its ocean's reduced in acidity and the atmospheric carbon content declined.</p>
 
@@ -407,14 +500,14 @@ padding:0.1em 0.2em;" id="en-2-3-00">“Earth’s cycles tend towards the inward
 
       <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
       
-        <a href="#58-up" class="footnote">   
-        <div class="footnote-number">58.</div>
-        <div class="footnote-text">For an an account of the Igorots remarkable ecological synchrony with the cycles of the living world around them: William Henry Scott, (1959) <i>Some Calendars of Northern Luzon</i>, American Anthropologist 60(3):563 - 570 </div>
+        <a href="#en-2-3-05" class="footnote">   
+        <div class="footnote-number">77.</div>
+        <div class="footnote-text">"'The world is a vampire' as The Smashing Pumpkins sang: a vampire living from the death of the sun. The universe must die to keep living.” Thomas Nail (2021), Theory of the Earth, Standford University Press.</div>
         </a>
 
         <a href="#59-up" class="footnote">   
-        <div class="footnote-number">59.</div>
-        <div class="footnote-text">Entropy research by theoretical physicists posit a pattern of adaptive dissipation in the way matter organizes itself in the presence of sustained energy inputs. Meanwhile, parallel breakthroughs in cosmological epistemology help make sense of Earth’s unfolding kinetic character. </div>
+        <div class="footnote-number">78.</div>
+        <div class="footnote-text"><i>A History of Atmosphere CO2 and its Effects on Plants, Animals and Ecosystems</i> by James R. Ehleringer et al., University of Utah, 2005. </div>
         </a>
 
         <a href="#60-up" class="footnote">   

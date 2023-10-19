@@ -155,6 +155,16 @@
   background-size: contain;
 }
 
+.background-11 {
+  background: url(svgs/10-diversification-white.svg) no-repeat center;
+  background-size: contain;
+}
+
+.background-12 {
+  background: url(svgs/10-awareness-white.svg) no-repeat center;
+  background-size: contain;
+}
+
 #up-arrow {
   background: url(svgs/up-arrow-light.svg) center no-repeat;
   background-size: 140px;

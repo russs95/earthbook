@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
-   sodipodi:docname="10-matter-dark.svg"
+   sodipodi:docname="11-diversification-dark.svg"
    inkscape:export-filename="/home/russs/Documents/Russs Files/Tractatus Ayyew/2022 Penta Page Mandala/00 penta mandala.png"
    inkscape:export-xdpi="61.759998"
    inkscape:export-ydpi="61.759998"
@@ -36,7 +36,7 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g65351"
+     inkscape:current-layer="g59266"
      inkscape:showpageshadow="2"
      inkscape:deskcolor="#d1d1d1">
     <sodipodi:guide
@@ -113,7 +113,7 @@
          cy="117.47395"
          r="15.766978" />
       <circle
-         style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.491733;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843"
+         style="display:inline;fill:none;stroke:#858585;stroke-width:0.491733;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843"
          id="circle2257"
          cx="134.63925"
          cy="-240.36122"
@@ -121,7 +121,7 @@
          transform="rotate(88.559334)" />
       <path
          sodipodi:type="spiral"
-         style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.7888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843"
+         style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#858585;stroke-width:3.7888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.99607843"
          id="path2259"
          sodipodi:cx="221.35513"
          sodipodi:cy="282.80667"
@@ -234,7 +234,7 @@
            transform="translate(-0.20578873,0.28880577)"
            style="stroke:#212121;stroke-width:0.983798;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
           <circle
-             style="display:inline;fill:none;stroke:#212121;stroke-width:0.575164;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             style="display:inline;fill:none;stroke:#ffffff;stroke-width:0.575164;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="circle2265"
              cx="-30.34091"
              cy="258.35876"
@@ -242,7 +242,7 @@
              transform="matrix(1.2730025,1.1424346,-1.1424346,1.2730025,524.73447,-86.067561)" />
           <path
              sodipodi:type="spiral"
-             style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#212121;stroke-width:3.7888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:3.7888;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="path2267"
              sodipodi:cx="221.35513"
              sodipodi:cy="282.80667"

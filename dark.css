@@ -160,9 +160,19 @@
   background: url(svgs/09-energy-dark.svg) no-repeat center;
   background-size: contain;
 }
-
+ 
 .background-10 {
   background: url(svgs/10-matter-dark.svg) no-repeat center;
+  background-size: contain;
+}
+
+.background-11 {
+  background: url(svgs/11-diversification-dark.svg) no-repeat center;
+  background-size: contain;
+}
+
+.background-12 {
+  background: url(svgs/12-awareness-dark.svg) no-repeat center;
   background-size: contain;
 }
 
