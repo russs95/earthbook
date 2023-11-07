@@ -1050,7 +1050,7 @@ document.getElementById("clearBtn").addEventListener("click", function() {
         document.getElementById("highlight-viewer").style.display = "none";
         // Remove the blur class from the underlayer
         document.getElementById("underlayer").classList.remove("blur");
-    }, 1500);
+    }, 900);
 
     // Wait for 3 seconds, then revert the button text and background
     setTimeout(() => {
