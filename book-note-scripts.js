@@ -438,34 +438,42 @@ function createElementWithAttributes(type, attributes = {}) {
 
 /*RESETS all boonotes cache, clear page of highlights*/
 
-
 function resetBookNotes() {
-  // Clear the booknotes array from local storage
-  localStorage.removeItem('bookNotes');
-
-  // Clear the content of the book-notes-list div
-  const bookNotesListDiv = document.getElementById('book-notes-list');
-  bookNotesListDiv.innerHTML = '';
-
-// Remove the span formatting from all spans with the specified highlight classes
-const highlightClasses = ['highlight-red', 'highlight-yellow', 'highlight-blue', 'highlight-green'];
-const selector = highlightClasses.map(cls => `span.${cls}`).join(', ');
-
-const allHighlightSpans = document.querySelectorAll(selector);
-allHighlightSpans.forEach(span => {
-    const textNode = document.createTextNode(span.textContent);
-    span.parentNode.replaceChild(textNode, span);
-});
-
-
-  // Update the text inside the reset-settings-bn div
-  const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
-  resetSettingsBnDiv.textContent = 'No BookNotes saved';
-
-  // Update the text inside the instruction-bn div
-  const instructionBnDiv = document.getElementById('instructions-bn');
-  instructionBnDiv.textContent = 'Highlight then click text in the Earthbook to save it to your Booknotes';
-}
+    // Ask the user for confirmation before proceeding
+    const confirmation = window.confirm("This will delete all your saved highlights and annotations for all chapters of the Earthbook. Are you sure you want to proceed?");
+    
+    // If the user clicks "OK", proceed with the reset
+    if (confirmation) {
+      // Clear the booknotes array from local storage
+      localStorage.removeItem('bookNotes');
+  
+      // Clear the content of the book-notes-list div
+      const bookNotesListDiv = document.getElementById('book-notes-list');
+      bookNotesListDiv.innerHTML = '';
+  
+      // Remove the span formatting from all spans with the specified highlight classes
+      const highlightClasses = ['highlight-red', 'highlight-yellow', 'highlight-blue', 'highlight-green'];
+      const selector = highlightClasses.map(cls => `span.${cls}`).join(', ');
+  
+      const allHighlightSpans = document.querySelectorAll(selector);
+      allHighlightSpans.forEach(span => {
+          const textNode = document.createTextNode(span.textContent);
+          span.parentNode.replaceChild(textNode, span);
+      });
+  
+      // Update the text inside the reset-settings-bn div
+      const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
+      resetSettingsBnDiv.textContent = 'No BookNotes saved';
+  
+      // Update the text inside the instruction-bn div
+      const instructionBnDiv = document.getElementById('instructions-bn');
+      instructionBnDiv.textContent = 'Highlight then click text in the Earthbook to save it to your Booknotes';
+    } else {
+      // If the user clicks "Cancel", do nothing
+      console.log('Reset cancelled by the user.');
+    }
+  }
+  
 
 function updateBNResetButton() {
   // Check if there are any entries in the bookNotes array
