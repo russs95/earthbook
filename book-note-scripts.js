@@ -463,7 +463,7 @@ function resetBookNotes() {
   
       // Update the text inside the reset-settings-bn div
       const resetSettingsBnDiv = document.getElementById('reset-settings-bn');
-      resetSettingsBnDiv.textContent = 'No BookNotes saved';
+      resetSettingsBnDiv.textContent = 'No BookNotes are saved';
   
       // Update the text inside the instruction-bn div
       const instructionBnDiv = document.getElementById('instructions-bn');
