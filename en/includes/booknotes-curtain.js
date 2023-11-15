@@ -90,9 +90,9 @@ class bookNotes extends HTMLElement {
             <button class="color-btn" onclick="highlightBooknote('blue')" style="background:#2daee5" aria-label="Highlight Text Blue" title="Highlight & Save Blue"></button>
         </div>
         
-        // <button aria-label="Copy Selection" id="copyBtn" class="pallette-btn">
-        //     <div class="pallette-text">Copy</div>
-        // </button> 
+        <!--><button aria-label="Copy Selection" id="copyBtn" class="pallette-btn">
+        <div class="pallette-text">Copy</div>
+       </button> -->
         <button aria-label="Add annotation" id="booknotesBtn" class="pallette-btn" onclick="highlightBooknote('yellow')">
             <div class="pallette-text" style="color:yellow">Annotate</div>
         </button>
