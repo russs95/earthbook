@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <title>Dynamic Header and Progress Bar Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 5000px; /* Page height */
+            background-color: white; /* Background color */
+        }
+        #header {
+            width: 100%;
+            height: 50vh; /* Initial height */
+            background-color: grey; /* Header color */
+            position: fixed;
+            top: 0; /* Start in the middle of the page */
+            transition: top 0.3s, height 0.3s, transform 0.3s; /* Smooth transitions */
+        }
+        #header:hover {
+            height: 60px; /* Height on hover */
+            transform: translateY(0); /* Reset transform on hover */
+        }
+        #footer {
+            width: 100%;
+            height: 10px; /* Footer height */
+            background-color: grey; /* Footer color */
+            position: fixed;
+            bottom: 0;
+            color: white;
+            text-align: center;
+            transition: height 0.3s; /* Smooth transition for height */
+        }
+        #footer {
+    width: 100%;
+    height: 10px; /* Footer height */
+    background-color: grey; /* Footer color */
+    position: fixed;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    transition: height 0.3s; /* Smooth transition for height */
+    overflow: hidden; /* Hide overflow content */
+}
+#footer:hover {
+    height: 150px; /* Increased height on hover */
+}
+#progress-bar {
+    height: 10px;
+    background-color: green;
+    width: 0%; /* Initial width */
+}
+#email-registration {
+    display: none; /* Initially hidden */
+    color: black; /* Text color for visibility */
+    text-align: left;
+    padding: 10px;
+}
+#footer:hover #email-registration {
+    display: block; /* Show on hover */
+}
+#email-input {
+    margin: 10px 0;
+}
+#register-button {
+    cursor: pointer; /* Cursor style for the button */
+}
+
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="footer">
+        <div id="progress-bar"></div>
+        <div id="email-registration">
+            <p>Please signup to go deeper</p>
+            <input type="text" placeholder="What is your email?" id="email-input">
+            <button id="register-button">Register</button>
+        </div>
+    </div>
+
+    
+    
+    <script>
+        let lastScrollTop = 0;
+
+        window.onscroll = function() {
+            scrollLessThan40();
+            scrollMoreThan40();
+            showHideHeader();
+            pageMeasureBar();
+        };
+
+        function scrollLessThan40() {
+    if (window.pageYOffset <= 40) {
+        document.getElementById("header").style.height = "50vh";
+        document.getElementById("header").style.top = "0"; // Set top to 0
+    }
+}
+
+function scrollMoreThan40() {
+    if (window.pageYOffset >= 40) {
+        document.getElementById("header").style.height = "60px";
+        document.getElementById("header").style.top = "0"; // Set top to 0
+    }
+}
+
+        function showHideHeader() {
+            let currentScrollPos = window.pageYOffset;
+            if (currentScrollPos > 1000) {
+                if (lastScrollTop > currentScrollPos) {
+                    // Scroll up - show header
+                    document.getElementById("header").style.height = "60px";
+                    document.getElementById("header").style.top = "0";
+                    document.getElementById("header").style.transform = "translateY(0)";
+                } else {
+                    // Scroll down - partially hide header
+                    document.getElementById("header").style.height = "10px";
+                    document.getElementById("header").style.top = "0";
+                    document.getElementById("header").style.transform = "translateY(0)";
+                }
+            }
+            lastScrollTop = currentScrollPos;
+        }
+
+        function pageMeasureBar() {
+            let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+            document.getElementById("progress-bar").style.width = scrollPercentage + "%";
+        }
+    </script>
+</body>
+</html>

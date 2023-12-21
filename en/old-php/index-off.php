@@ -130,7 +130,7 @@ All the css needed for this page-->
  Main Scripts-->   
 
  <script src="../universal-javascript.js" defer></script>
- <script src="../clip/dist/clipboard.min.js"></script>
+ <script src="../clipboard.min.js"></script>
  <!--<script src="../accessibility.js" defer></script>-->
  <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
  
