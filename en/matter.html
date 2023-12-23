@@ -296,16 +296,18 @@ display: none;
 #registration-footer {
     width: 100%;
     height: 18px; /* Footer height */
-    background-color: var(--slider);
+    background-color: var(--slider); /* Ensure this variable is defined */
     position: fixed;
     bottom: 0;
-    color: var(--subdued-text);
+    color: var(--subdued-text); /* Ensure this variable is defined */
     text-align: center;
-    transition: height 0.3s; /* Smooth transition for height */
+    transition: margin-bottom 0.3s; /* Transition for margin-bottom */
     overflow: hidden; /* Hide overflow content */
     cursor: pointer;
     z-index: 100;
+    margin-bottom: -18px; /* Start off-screen */
 }
+
 #registration-footer:hover {
     height: 150px; /* Increased height on hover */
 }

@@ -1,12 +1,12 @@
 // let lastScrollTop = 0;
 // let headerHidden = false;
 
-// window.onscroll = function() {
+window.onscroll = function() {
 //     scrollLessThan40();
 //     scrollMoreThan1000();
 //     scrollBack();
 pageMeasureBar();
-// };
+};
 
 // function scrollLessThan40() {
 //     if (window.pageYOffset <= 40) {
@@ -37,8 +37,23 @@ pageMeasureBar();
 function pageMeasureBar() {
     let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
     document.getElementById("progress-bar").style.width = scrollPercentage + "%";
+
+    let windowHeight = window.innerHeight;
+    let scrollPosition = window.pageYOffset;
+
+    // Show footer after scrolling first 100vh
+    if (scrollPosition > windowHeight) {
+        document.getElementById("registration-footer").style.marginBottom = "0px";
+    }
+
+    // Hide footer when scrolled back up past the first 1000vh
+    if (scrollPosition < windowHeight * 10) {
+        document.getElementById("registration-footer").style.marginBottom = "-18px";
+    }
 }
-    
+
+
+
     
     window.onscroll = function() {scrollFunction()};
 
