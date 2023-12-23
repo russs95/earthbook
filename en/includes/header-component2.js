@@ -6,6 +6,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 
+   
     <div id="earthbook-navbar">
         <div id="settings-menu" >
             <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openSettings()" aria-label="Open Settings"><img src="../svgs/left-menu.svg" alt="Settings icon"></button>
@@ -28,7 +29,7 @@ class Header extends HTMLElement {
         <button type="button" style="cursor:pointer; background:none;border:none;" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Open Booknotes Link"><img src="../icons/booknotes-topmenu.svg" alt="Share icon"></button>
         </div>
     </div>
-
+      
 
     <div id="registration-footer">
         <div id="progress-bar"></div>
@@ -39,6 +40,7 @@ class Header extends HTMLElement {
         </div>
     </div>
 
+    
       
     `;
 }
