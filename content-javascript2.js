@@ -30,37 +30,8 @@
 // }
 
 
-let isThrottled = false, delay = 100; // delay in milliseconds
 
-window.onscroll = function() {
-    if (!isThrottled) {
-        pageMeasureBar();
-        isThrottled = true;
-        setTimeout(function() {
-            isThrottled = false;
-        }, delay);
-    }
-};
-
-function pageMeasureBar() {
-    alert('hello!')
-    let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-    document.getElementById("progress-bar").style.width = scrollPercentage + "%";
-
-    let windowHeight = window.innerHeight;
-    let scrollPosition = window.pageYOffset;
-
-    // Show footer after scrolling first 100vh
-    if (scrollPosition > windowHeight) {
-        document.getElementById("registration-footer").style.marginBottom = "0px";
-    }
-
-    // Hide footer when scrolled back up past the first 1000vh
-    if (scrollPosition < windowHeight) {
-        document.getElementById("registration-footer").style.marginBottom = "-18px";
-    }
-}
-
+window.onscroll = function() {alert('hello');};
 
 
     
@@ -69,7 +40,6 @@ function pageMeasureBar() {
 function scrollFunction() {
 
   if ( document.body.scrollTop > 40 || document.documentElement.scrollTop > 40 ) {
-    
     //AFTERmargin-top: -67px;
     document.getElementById("earthbook-navbar").style.height = "60px";
     document.getElementById("ct-chapter-title").style.fontSize = "1.0em";
