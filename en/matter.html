@@ -299,11 +299,12 @@ display: none;
     background-color: var(--slider);
     position: fixed;
     bottom: 0;
-    color: white;
+    color: var(--subdued-text);
     text-align: center;
     transition: height 0.3s; /* Smooth transition for height */
     overflow: hidden; /* Hide overflow content */
     cursor: pointer;
+    z-index: 100;
 }
 #registration-footer:hover {
     height: 150px; /* Increased height on hover */
@@ -312,6 +313,7 @@ display: none;
     height: 10px;
     background-color: green;
     width: 0%; /* Initial width */
+    z-index: 10;
 }
 #email-registration {
     display: none; /* Initially hidden */
@@ -347,6 +349,18 @@ display: none;
 
 <!--HEADER NAVBAR-->
 <header-component></header-component>
+
+
+
+<div id="registration-footer">
+  <div id="progress-bar"></div>
+  <div id="email-registration">
+      <p>Please signup to go deeper</p>
+      <input type="text" placeholder="What is your email?" id="email-input">
+      <button id="register-button">Register</button>
+  </div>
+</div>
+
 
 
 <div id="ct-chapter-top">
@@ -664,14 +678,6 @@ display: none;
 <eco-curtain></eco-curtain>
 
 
-<div id="registration-footer">
-  <div id="progress-bar"></div>
-  <div id="email-registration">
-      <p>Please signup to go deeper</p>
-      <input type="text" placeholder="What is your email?" id="email-input">
-      <button id="register-button">Register</button>
-  </div>
-</div>
 
 
 <!--FOOTER Next Chapter Section: Requires customization-->
