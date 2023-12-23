@@ -31,7 +31,7 @@
 
 
 
-window.onscroll = function() {alert('hello');};
+window.onscroll = function() {alert('hello')};
 
 
     
@@ -41,6 +41,7 @@ function scrollFunction() {
 
   if ( document.body.scrollTop > 40 || document.documentElement.scrollTop > 40 ) {
     //AFTERmargin-top: -67px;
+    alert('scrollFunction');
     document.getElementById("earthbook-navbar").style.height = "60px";
     document.getElementById("ct-chapter-title").style.fontSize = "1.0em";
     document.getElementById("ct-book-title").style.fontSize = "0.66em";
