@@ -35,7 +35,7 @@ text-align: justify;
 
 #earthbook-navbar {
   height: 50vh;
-  min-height: fit-content;
+  /* min-height: fit-content; */
   border-bottom-color: var(--strong-border);
 }
 
