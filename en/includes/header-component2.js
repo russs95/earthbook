@@ -31,19 +31,17 @@ class Header extends HTMLElement {
 
 
     <div id="registration-footer">
-    <div id="progress-bar"></div>
-    <div id="email-registration">
-        <p>Please signup to go deeper</p>
-        <input type="text" placeholder="What is your email?" id="email-input">
-        <button id="register-button">Register</button>
+        <div id="progress-bar"></div>
+        <div id="email-registration">
+            <p>Please signup to go deeper</p>
+            <input type="text" placeholder="What is your email?" id="email-input">
+            <button id="register-button">Register</button>
+        </div>
     </div>
-</div>
 
       
     `;
 }
 }
 
-customElements.define('header-component2', Header);
-
-
+customElements.define('header-component', Header);
