@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <HEAD>
-<title>The Manner of the Molluscs | Tractatus Ayyew - An Earthbook</title>
+<title>The Manner of the Molusks | Tractatus Ayyew - An Earthbook</title>
 <meta charset="UTF-8"> 
 
 
@@ -103,15 +103,15 @@ All the css needed for this page-->
     var chaptURL = "matter.html"   // Declare the global variables
   
 
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope:', registration.scope);
-        }, function(error) {
-          console.log('ServiceWorker registration failed:', error);
-        });
-      });
-    }
+    // if ('serviceWorker' in navigator) {
+    //   window.addEventListener('load', function() {
+    //     navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+    //       console.log('ServiceWorker registration successful with scope:', registration.scope);
+    //     }, function(error) {
+    //       console.log('ServiceWorker registration failed:', error);
+    //     });
+    //   });
+    // }
 
 </script>
 
@@ -127,7 +127,7 @@ All the css needed for this page-->
  Main Scripts-->   
  <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
  <script src="../universal-javascript.js" defer></script>
- <script src="../content-javascript.js?v=2.2" defer></script>
+ <script src="../content-javascript2.js?v=2.2" defer></script>
  <script src="../clipboard.min.js" defer></script>
  <!--Carbon Badge script
  <script src="../b.min.js" defer></script>
@@ -141,7 +141,7 @@ All the css needed for this page-->
  <!--PAGE INCLUDES
 All the page components required to build this page-->
 
-<!--1--><script src="includes/header-component.js"  async></script>
+<!--1--><script src="includes/header-component2.js"  async></script>
 <!--2--><script src="includes/settings-curtain.js"  defer></script>
 <!--3--><script src="includes/content-curtain.js"  defer></script>
 <!--4--><script src="includes/share-curtain.js"  defer></script>
@@ -291,6 +291,43 @@ display: none;
   }
 
 
+/*NEW CSS*/
+
+#footer {
+    width: 100%;
+    height: 10px; /* Footer height */
+    background-color: grey; /* Footer color */
+    position: fixed;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    transition: height 0.3s; /* Smooth transition for height */
+    overflow: hidden; /* Hide overflow content */
+}
+#footer:hover {
+    height: 150px; /* Increased height on hover */
+}
+#progress-bar {
+    height: 10px;
+    background-color: green;
+    width: 0%; /* Initial width */
+}
+#email-registration {
+    display: none; /* Initially hidden */
+    color: black; /* Text color for visibility */
+    text-align: left;
+    padding: 10px;
+}
+#footer:hover #email-registration {
+    display: block; /* Show on hover */
+}
+#email-input {
+    margin: 10px 0;
+}
+#register-button {
+    cursor: pointer; /* Cursor style for the button */
+}
+
   
 
 
@@ -308,7 +345,7 @@ display: none;
     <div id="top"></div>
 
 <!--HEADER NAVBAR-->
-<header-component></header-component>
+<header-component2></header-component2>
 
 
 <div id="ct-chapter-top">
