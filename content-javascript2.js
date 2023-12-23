@@ -1,12 +1,12 @@
 let lastScrollTop = 0;
 let headerHidden = false;
 
-// window.onscroll = function() {
-//     scrollLessThan40();
-//     scrollMoreThan1000();
-//     scrollBack();
-//     pageMeasureBar();
-// };
+window.onscroll = function() {
+    // scrollLessThan40();
+    // scrollMoreThan1000();
+    // scrollBack();
+    pageMeasureBar();
+};
 
 // function scrollLessThan40() {
 //     if (window.pageYOffset <= 40) {
