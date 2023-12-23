@@ -727,18 +727,20 @@ display: none;
 
 <script>
 
+window.onscroll = function() {pageMeasureBar()};
 
-let isThrottled = false, delay = 100; // delay in milliseconds
 
-window.onscroll = function() {
-    if (!isThrottled) {
-        pageMeasureBar();
-        isThrottled = true;
-        setTimeout(function() {
-            isThrottled = false;
-        }, delay);
-    }
-};
+// let isThrottled = false, delay = 100; // delay in milliseconds
+
+// window.onscroll = function() {
+//     if (!isThrottled) {
+//         pageMeasureBar();
+//         isThrottled = true;
+//         setTimeout(function() {
+//             isThrottled = false;
+//         }, delay);
+//     }
+// };
 
 function pageMeasureBar() {
     let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
@@ -753,7 +755,7 @@ function pageMeasureBar() {
     }
 
     // Hide footer when scrolled back up past the first 1000vh
-    if (scrollPosition < windowHeight * 10) {
+    if (scrollPosition < windowHeight) {
         document.getElementById("registration-footer").style.marginBottom = "-18px";
     }
 }
