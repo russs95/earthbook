@@ -1,12 +1,18 @@
 // let lastScrollTop = 0;
 // let headerHidden = false;
 
+let isThrottled = false, delay = 100; // delay in milliseconds
+
 window.onscroll = function() {
-//     scrollLessThan40();
-//     scrollMoreThan1000();
-//     scrollBack();
-pageMeasureBar();
+    if (!isThrottled) {
+        pageMeasureBar();
+        isThrottled = true;
+        setTimeout(function() {
+            isThrottled = false;
+        }, delay);
+    }
 };
+
 
 // function scrollLessThan40() {
 //     if (window.pageYOffset <= 40) {
