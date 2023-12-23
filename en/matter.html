@@ -99,7 +99,7 @@ All the css needed for this page-->
      var lang = "en";
      var book = "Book Two";
     var chapNo = "3";
-    var chapName = "The Manner of the Molluscs";
+    var chapName = "The Manner of the Mollusks";
     var chaptURL = "matter.html"   // Declare the global variables
   
 
@@ -127,7 +127,7 @@ All the css needed for this page-->
  Main Scripts-->   
  <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
  <script src="../universal-javascript.js" defer></script>
- <script src="../content-javascript2.js?v=2.2" defer></script>
+ <script src="../content-javascript2.js?v=3" defer></script>
  <script src="../clipboard.min.js" defer></script>
  <!--Carbon Badge script
  <script src="../b.min.js" defer></script>
@@ -301,19 +301,29 @@ display: none;
     bottom: 0;
     color: var(--subdued-text); /* Ensure this variable is defined */
     text-align: center;
-    transition: margin-bottom 0.3s; /* Transition for margin-bottom */
+    transition: margin-bottom 0.3s, height 0.3s; /* Transition for margin-bottom and height */
     overflow: hidden; /* Hide overflow content */
     cursor: pointer;
     z-index: 100;
     margin-bottom: -18px; /* Start off-screen */
+    display: flex;
+  flex-flow: column;
 }
 
-#registration-footer:hover {
-    height: 150px; /* Increased height on hover */
+/* #registration-footer:hover {
+    height: 350px; 
 }
+#registration-footer:hover #email-registration {
+    display: block; 
+} 
+
+
+#registration-footer:active {
+    height: 350px; 
+}*/
 #progress-bar {
     height: 10px;
-    background-color: green;
+    background-color: grey;
     width: 0%; /* Initial width */
     z-index: 10;
 }
@@ -322,16 +332,40 @@ display: none;
     color: black; /* Text color for visibility */
     text-align: left;
     padding: 10px;
+    margin: auto;
 }
-#registration-footer:hover #email-registration {
-    display: block; /* Show on hover */
-}
+
 #email-input {
-    margin: 10px 0;
+    margin-right: 0px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    width:75%;
+    
 }
 #register-button {
-    cursor: pointer; /* Cursor style for the button */
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    border-radius:  0px 10px 0px auto;
+    width:25%;
+    background-color: green;
 }
+
+#reg-up-button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0;
+            display:none;
+            width:20%;
+            margin: 20px 0px 10px auto;
+            height: 20px;
+            z-index: 20;
+        }
+        #reg-down-button img {
+            height: 20px;
+        }
 
   
 
@@ -346,12 +380,34 @@ display: none;
 
 
 <div id="registration-footer">
+
   <div id="progress-bar"></div>
-  <div id="email-registration">
-    <div class="registration-box" style="margin:auto;width:80%">
-      <p>Please signup to go deeper</p>
-      <input type="text" placeholder="What is your email?" id="email-input">
-      <button id="register-button">Register</button>
+
+  <button id="reg-up-button" onclick="sendDownRegistration()" >
+    <img src="../svgs/up-arrow.svg" alt="No Register" style="height:25px">
+  </button>
+    
+    <div id="email-registration" style="margin-top:-20px">
+    <div class="registration-box" style="padding: 12px;margin:auto;width:75%;color: var(--text-color);display:flex;flex-flow:row;">
+      <div class="reg-img" style="padding-right: 10px;height:160px;width:160px; justify-content: center;
+      display: flex;"><div style="height:fit-content;width:fit-content; margin: 20px;"><img src="../svgs/earthcal-banner.svg" height="150" width="150"></div></div>
+      <div class="reg-texts" style="display:flex; flex-flow:column; ">
+        <div class="reg-header" style="font-family: 'CooperLtMedium'; font-size: 2.4em; padding:10px;">Go deeper.</div>
+       
+        
+          <form id="emailForm" class="reg-field" style="display:flex; flex-flow:row;">
+            <label for="email"></label>
+            <input type="email" name="email" required placeholder="What is your email?" id="email-input">
+            <input type="submit" value="Register" id="register-button">
+        </form>
+
+        <div class="reg-sub" style="font-family: 'Mulish'; font-size: 1em;padding:10px;">Signup to Earthen.io to get access to our newsletter and to EarthCal, our revolutionary calendar based on Igorot and Earthen principles.</div>
+
+       
+      </div>
+
+      
+      
     </div>
   </div>
 </div>
@@ -719,38 +775,6 @@ display: none;
 <footer-settings></footer-settings>
 
 <script>
-
-
-// let isThrottled = false, delay = 100; // delay in milliseconds
-
-// window.onscroll = function() {
-//     if (!isThrottled) {
-//         pageMeasureBar();
-//         isThrottled = true;
-//         setTimeout(function() {
-//             isThrottled = false;
-//         }, delay);
-//     }
-// };
-
-
-function pageMeasureBar() {
-  alert('pageMeasureBar');
-    let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-    document.getElementById("progress-bar").style.width = scrollPercentage + "%";
-
-    let scrollPosition = window.pageYOffset;
-
-    // Show footer after scrolling first 1000px
-    if (scrollPosition > 1000) {
-        document.getElementById("registration-footer").style.marginBottom = "0px";
-    }
-
-    // Hide footer when scrolled back up past the first 1000px
-    if (scrollPosition <= 1000) {
-        document.getElementById("registration-footer").style.marginBottom = "-18px";
-    }
-}
 
 
 </script>

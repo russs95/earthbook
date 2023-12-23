@@ -1,3 +1,21 @@
+
+
+
+function sendDataToWebhook(data) {
+    fetch('https://hook.eu1.make.com/s48m91tiktmt4y8osnh4oht1cfatuqh9', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => console.log('Success:', data))
+    .catch((error) => console.error('Error:', error));
+}
+
+
+
 // let lastScrollTop = 0;
 // let headerHidden = false;
 
@@ -31,17 +49,73 @@
 
 
 
-window.onscroll = function() {alert('hello')};
+
+function sendUpRegistration() {
+   
+        var footer = document.getElementById("registration-footer");
+        var emailRegistration = document.getElementById("email-registration");
+        var upArrow = document.getElementById("reg-up-button");
+
+        // Adjust the height of the registration footer
+        footer.style.height = "350px";
+
+        // Make the email registration section visible
+        emailRegistration.style.display = "block";
+        upArrow.style.display = "block";
+
+}
+
+document.getElementById('progress-bar').addEventListener('click', function() {
+    sendUpRegistration();
+});
+
+function sendDownRegistration() {
+   
+    var footer = document.getElementById("registration-footer");
+    var emailRegistration = document.getElementById("email-registration");
+    var upArrow = document.getElementById("reg-up-button");
 
 
+    // Adjust the height of the registration footer
+    footer.style.height = "38px";
+
+    // Make the email registration section visible
+    emailRegistration.style.display = "none";
+    upArrow.style.display = "none";
+
+}
+
+
+
+
+function pageMeasureBar() {
+      let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      document.getElementById("progress-bar").style.width = scrollPercentage + "%";
+  
+      let scrollPosition = window.pageYOffset;
+  
+      // Show footer after scrolling first 1000px
+      if (scrollPosition > 1000) {
+          document.getElementById("registration-footer").style.marginBottom = "0px";
+      }
+  
+      // Hide footer when scrolled back up past the first 1000px
+      if (scrollPosition <= 1000) {
+          document.getElementById("registration-footer").style.marginBottom = "-18px";
+      }
+  }
+
+  
+window.onload = function() {
+
+  }
     
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {scrollFunction(),pageMeasureBar() };
 
 function scrollFunction() {
 
   if ( document.body.scrollTop > 40 || document.documentElement.scrollTop > 40 ) {
     //AFTERmargin-top: -67px;
-    alert('scrollFunction');
     document.getElementById("earthbook-navbar").style.height = "60px";
     document.getElementById("ct-chapter-title").style.fontSize = "1.0em";
     document.getElementById("ct-book-title").style.fontSize = "0.66em";
