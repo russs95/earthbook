@@ -348,9 +348,11 @@ display: none;
 <div id="registration-footer">
   <div id="progress-bar"></div>
   <div id="email-registration">
+    <div class="registration-box" style="margin:auto;width:80%">
       <p>Please signup to go deeper</p>
       <input type="text" placeholder="What is your email?" id="email-input">
       <button id="register-button">Register</button>
+    </div>
   </div>
 </div>
 
@@ -723,7 +725,42 @@ display: none;
 
 <script src="../book-note-scripts.js" defer ></script>
 
+<script>
 
+
+let isThrottled = false, delay = 100; // delay in milliseconds
+
+window.onscroll = function() {
+    if (!isThrottled) {
+        pageMeasureBar();
+        isThrottled = true;
+        setTimeout(function() {
+            isThrottled = false;
+        }, delay);
+    }
+};
+
+function pageMeasureBar() {
+    let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById("progress-bar").style.width = scrollPercentage + "%";
+
+    let windowHeight = window.innerHeight;
+    let scrollPosition = window.pageYOffset;
+
+    // Show footer after scrolling first 100vh
+    if (scrollPosition > windowHeight) {
+        document.getElementById("registration-footer").style.marginBottom = "0px";
+    }
+
+    // Hide footer when scrolled back up past the first 1000vh
+    if (scrollPosition < windowHeight * 10) {
+        document.getElementById("registration-footer").style.marginBottom = "-18px";
+    }
+}
+
+
+
+</script>
 </BODY>
 
 </HTML>
