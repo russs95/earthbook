@@ -1,12 +1,12 @@
-let lastScrollTop = 0;
-let headerHidden = false;
+// let lastScrollTop = 0;
+// let headerHidden = false;
 
-window.onscroll = function() {
-    // scrollLessThan40();
-    // scrollMoreThan1000();
-    // scrollBack();
-    pageMeasureBar();
-};
+// window.onscroll = function() {
+//     scrollLessThan40();
+//     scrollMoreThan1000();
+//     scrollBack();
+//     pageMeasureBar();
+// };
 
 // function scrollLessThan40() {
 //     if (window.pageYOffset <= 40) {
@@ -34,10 +34,10 @@ window.onscroll = function() {
 //     lastScrollTop = currentScrollPos;
 // }
 
-function pageMeasureBar() {
-    let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-    document.getElementById("progress-bar").style.width = scrollPercentage + "%";
-}
+// function pageMeasureBar() {
+//     let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+//     document.getElementById("progress-bar").style.width = scrollPercentage + "%";
+// }
     
     
     window.onscroll = function() {scrollFunction()};
