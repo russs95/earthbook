@@ -5,7 +5,7 @@
 //     scrollLessThan40();
 //     scrollMoreThan1000();
 //     scrollBack();
-//     pageMeasureBar();
+pageMeasureBar();
 // };
 
 // function scrollLessThan40() {
@@ -34,10 +34,10 @@
 //     lastScrollTop = currentScrollPos;
 // }
 
-// function pageMeasureBar() {
-//     let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-//     document.getElementById("progress-bar").style.width = scrollPercentage + "%";
-// }
+function pageMeasureBar() {
+    let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById("progress-bar").style.width = scrollPercentage + "%";
+}
     
     
     window.onscroll = function() {scrollFunction()};
