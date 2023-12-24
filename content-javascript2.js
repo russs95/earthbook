@@ -236,7 +236,7 @@ function sendDownRegistration() {
 
 
     // Adjust the height of the registration footer
-    footer.style.height = "38px";
+    footer.style.height = "35px";
 
     // Make the email registration section visible
     emailRegistration.style.display = "none";
@@ -255,12 +255,12 @@ function pageMeasureBar() {
       let scrollPosition = window.pageYOffset;
   
       // Show footer after scrolling first 1000px
-      if (scrollPosition > 1000) {
+      if (scrollPosition > 800) {
           document.getElementById("registration-footer").style.marginBottom = "0px";
       }
   
       // Hide footer when scrolled back up past the first 1000px
-      if (scrollPosition <= 1000) {
+      if (scrollPosition <= 800) {
           document.getElementById("registration-footer").style.marginBottom = "-60px";
       }
   }
