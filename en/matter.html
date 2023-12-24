@@ -397,6 +397,7 @@ display: none;
     width:100%;
     height: fit-content;
     cursor: pointer;
+    z-index:30;
 }
 
 @media screen and (max-width: 699px) {
@@ -406,14 +407,14 @@ display: none;
         background-color: transparent;
         cursor: pointer;
         padding: 0;
-        z-index: 20;
-        margin: 0px 5% -4px auto;
+        z-index: 30;
+        margin: 0px 5% -6px auto;
         width: 25%;
 
     }
 
     #reg-up-button img {
-        height: 25px;
+        height: 30px;
     }
 
     #reg-down-button {
@@ -550,7 +551,7 @@ display: none;
 <div id="registration-footer">
   <div class="reg-top-section" onclick="sendUpRegistration()">
     <button id="reg-up-button" >
-      <img src="../svgs/up-arrow.svg" alt="Register with Earthen.io" style="height:26px">
+      <img src="../svgs/up-arrow.svg?v=2" alt="Register with Earthen.io" style="height:26px">
     </button>
   </div>
   <div class="registration-footer-holder">
