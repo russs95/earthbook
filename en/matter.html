@@ -295,7 +295,7 @@ display: none;
 
 #registration-footer {
     width: 100%;
-    height: 30px; /* Footer height */
+    height: 28px; /* Footer height */
     /* Ensure this variable is defined */
     position: fixed;
     bottom: 0;
@@ -317,6 +317,7 @@ display: none;
   height: 100%;
   border-top: 1px grey solid;
 
+
 }
 
 /* #registration-footer:hover {
@@ -334,7 +335,7 @@ display: none;
     height: 10px;
     background-color: grey;
     width: 0%; /* Initial width */
-    z-index: 10;
+    z-index: 21;
 }
 #email-registration {
     display: none; /* Initially hidden */
@@ -373,16 +374,17 @@ display: none;
 
 
 #reg-up-button {
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            padding: 0;
-            z-index: 20;
-            margin: 0px 50px -4px auto;
-        }
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    z-index: 20;
+    margin: 0px 50px -6px auto;
+
+}
 
 #reg-up-button img {
-    height: 20px;
+    height: 25px;
 }
 
 #reg-down-button {
@@ -457,6 +459,7 @@ display: none;
   font-family: 'CooperLtMedium'; 
   font-size: 1.4em;
   padding:12px;
+  margin-bottom:10px;
   
   
 }
@@ -503,8 +506,8 @@ display: none;
         
           <form id="emailForm" class="reg-field" style="display:flex; flex-flow:row;">
             <label for="email"></label>
-            <input type="email" name="email" required placeholder="What is your email?" class="email-input">
-            <input type="submit" value="Register ➔" class="register-button">
+            <input type="email" name="email" required placeholder="Your e-mail..." class="email-input">
+            <input type="submit" value="Go ➔" class="register-button">
           </form>
 
           <div class="reg-sub">Get access to our newsletter and to EarthCal, our revolutionary calendar based on Igorot and Earthen principles.</div>
