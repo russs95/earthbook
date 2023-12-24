@@ -1,42 +1,59 @@
-document.getElementById("emailForm").addEventListener("submit", handleFormSubmit);
 
 let submissionPhase = 1;
 
 function handleFormSubmit(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Select the form using its ID
+    const form = document.getElementById("emailForm");
+    const emailInput = form.elements["email"];
+    const nameInput = form.elements["name"];
+
     switch (submissionPhase) {
         case 1:
-            handlePhase1(event);
+            handlePhase1(emailInput, nameInput);
             break;
         case 2:
-            handlePhase2(event);
+            handlePhase2(emailInput, nameInput);
             break;
         case 3:
-            handlePhase3And4(event);
+            handlePhase3(emailInput, nameInput, form);
             break;
     }
 }
+function handlePhase1(emailInput, nameInput) {
+    // Animate email input to shrink to 0% width
+    emailInput.style.transition = 'width 0.3s';
+    emailInput.style.width = '0%';
 
+    // Wait for the email input shrink animation to complete
+    setTimeout(() => {
+        emailInput.style.display = 'none'; // Hide the email input after transition
 
-function handlePhase1(event) {
-    event.preventDefault();
-    const form = event.target;
-    const nameInput = form.elements["name"];
+        // Prepare name input for animation
+        nameInput.style.display = 'block';
+        nameInput.style.width = '0';
+        nameInput.style.transition = 'width 0.3s';
 
-    // Slide out email input and slide in name input
-    nameInput.style.display = 'block';
-    nameInput.style.width = '0'; // Start from 0 width
-    setTimeout(() => nameInput.style.width = '70%', 0); // Slide in effect
+        // Delay the start of the name input expansion to allow for transition setup
+        setTimeout(() => {
+            nameInput.style.width = '70%';
+        }, 10); // A short delay to ensure the transition is applied
+
+    }, 300); // Delay corresponds to the duration of the email input shrink animation
+
+    // Update button text
+    const submitButton = document.querySelector('.register-button');
+    submitButton.value = 'Register ➔';
 
     // Update the phase
     submissionPhase = 2;
 }
 
 
-function handlePhase2(event) {
-    const form = event.target;
-    const emailInput = form.elements["email"];
-    const nameInput = form.elements["name"];
 
+function handlePhase2(emailInput, nameInput, form) {
     // Store data in browser cache and log
     const earthenRegistration = {
         email: emailInput.value,
@@ -47,47 +64,101 @@ function handlePhase2(event) {
     localStorage.setItem('earthenRegistration', JSON.stringify(earthenRegistration));
     console.log(earthenRegistration);
 
-    // Update the phase
-    submissionPhase = 3;
+    // Animate name input to shrink to 0% width
+    nameInput.style.transition = 'width 0.3s';
+    nameInput.style.width = '0%';
+
+    // Wait for the name input shrink animation to complete
+    setTimeout(() => {
+        nameInput.style.display = 'none'; // Hide the name input after transition
+
+        // Get the reg-complete-text div and prepare it for animation
+        const regCompleteText = document.querySelector('.reg-complete-text');
+        regCompleteText.innerHTML = "Processing registration"; // Set the text
+        regCompleteText.style.display = 'block';
+        regCompleteText.style.width = '0';
+        regCompleteText.style.transition = 'width 0.3s';
+
+        // Animate reg-complete-text div to increase to 70% width
+        setTimeout(() => {
+            regCompleteText.style.width = '70%';
+        }, 10); // A short delay to ensure the transition is applied
+
+    }, 300); // Delay corresponds to the duration of the name input shrink animation
+
+    // Update button text
+    const submitButton = document.querySelector('.register-button');
+    submitButton.value = '...';
+
+   // Automatically move to the next phase after the UI updates
+   setTimeout(() => {
+    handlePhase3(emailInput, nameInput, form);
+}, 300 + 10); // Adjust the timeout to match the total animation duration
+
 }
 
 
-function handlePhase3And4(event) {
-    event.preventDefault();
-    const form = event.target;
-    const nameInput = form.elements["name"];
+
+function handlePhase3(emailInput, nameInput, form) {
+    // Prepare data for the webhook
+    alert('probing...');
+    const data = {
+        email: emailInput.value,
+        name: nameInput.value,
+        notes: 'registered on earthbook'
+    };
 
     // Send data to the webhook
-    sendDataToWebhook({
-        email: form.elements["email"].value,
-        name: form.elements["name"].value,
-        notes: 'registered on earthbook'
+    fetch('https://hook.eu1.make.com/s48m91tiktmt4y8osnh4oht1cfatuqh9', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Success:', data);
+        updateUIOnSuccess(form);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+        updateUIOnError(form);
     });
+}
 
-    // Slide out name input and show confirmation
-    nameInput.style.width = '0';
-    setTimeout(() => {
-        form.innerHTML = "<div>You're registered!</div>";
-    }, 500); // Wait for slide out effect to complete
+function updateUIOnSuccess() {
+    // Get the elements by their IDs
+    const regStatus = document.getElementById('reg-status');
+    const regStatusIcon = document.getElementById('reg-status-icon');
+
+    // Update reg-status text and color
+    regStatus.innerHTML = "You're successfully signed up!";
+    regStatus.style.color = 'green';
+
+    // Update reg-status-icon to a check mark
+    regStatusIcon.value = '✔️';
+}
+
+function updateUIOnError() {
+    // Get the elements by their IDs
+    const regStatus = document.getElementById('reg-status');
+    const regStatusIcon = document.getElementById('reg-status-icon');
+
+    // Update reg-status text and color
+    regStatus.innerHTML = "Registration failed. Please try again.";
+    regStatus.style.color = 'red';
+
+    // Update reg-status-icon to a cross mark
+    regStatusIcon.value = '❌';
 }
 
 
-
-
-
-
-// function sendDataToWebhook(data) {
-//     fetch('https://hook.eu1.make.com/s48m91tiktmt4y8osnh4oht1cfatuqh9', {
-//         method: 'POST',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(data),
-//     })
-//     .then(response => response.json())
-//     .then(data => console.log('Success:', data))
-//     .catch((error) => console.error('Error:', error));
-// }
 
 
 

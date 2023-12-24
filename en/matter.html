@@ -355,13 +355,27 @@ display: none;
 }
 
 .name-input {
-    display: none; /* Hide the name input initially */
+  display: none;
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    width: 0%;
+    transition: width 0.5s; /* Smooth transition for sliding effect */
+}
+
+
+.reg-complete-text {
+  display: none;/* Hide the name input initially */
+    font-family: 'Mulish';
+    color: rgb(128, 122, 0);
     margin-left: 10px;
     font-size: 18px;
     padding: 10px;
     border-radius: 10px 0px 0px 10px;
     width: 70%;
     transition: width 0.5s; /* Smooth transition for sliding effect */
+    background: var(--background-color);
 }
 
 
@@ -561,7 +575,8 @@ display: none;
             <label for="email"></label>
             <input type="email" name="email" required placeholder="Your e-mail..." class="email-input">
             <input type="text" name="name" required placeholder="Your name..." class="name-input">
-            <input type="submit" value="Go ➔" class="register-button">
+            <div class="reg-complete-text" id="reg-status"></div>
+            <input type="submit" value="Go ➔" class="register-button" id="reg-status-icon" onclick="handleFormSubmit(event)">
           </form>
 
           <div class="reg-sub">Get access to our newsletter and to EarthCal, our revolutionary calendar based on Igorot and Earthen principles.</div>
@@ -937,6 +952,7 @@ display: none;
 <footer-settings></footer-settings>
 
 <script>
+
 
 
 </script>
