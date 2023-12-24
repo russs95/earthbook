@@ -101,11 +101,10 @@ function handlePhase2(emailInput, nameInput, form) {
 
 function handlePhase3(emailInput, nameInput, form) {
     // Prepare data for the webhook
-    alert('probing...');
     const data = {
         email: emailInput.value,
         name: nameInput.value,
-        notes: 'registered on earthbook'
+        notes: 'earthbook'
     };
 
    
