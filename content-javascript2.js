@@ -45,7 +45,7 @@ function handlePhase1(emailInput, nameInput) {
 
     // Update button text
     const submitButton = document.querySelector('.register-button');
-    submitButton.value = 'Register ➔';
+    submitButton.value = 'Sign up';
 
     // Update the phase
     submissionPhase = 2;
@@ -74,7 +74,7 @@ function handlePhase2(emailInput, nameInput, form) {
 
         // Get the reg-complete-text div and prepare it for animation
         const regCompleteText = document.querySelector('.reg-complete-text');
-        regCompleteText.innerHTML = "Processing registration"; // Set the text
+        regCompleteText.innerHTML = "Processing registration..."; // Set the text
         regCompleteText.style.display = 'block';
         regCompleteText.style.width = '0';
         regCompleteText.style.transition = 'width 0.3s';
@@ -88,7 +88,7 @@ function handlePhase2(emailInput, nameInput, form) {
 
     // Update button text
     const submitButton = document.querySelector('.register-button');
-    submitButton.value = '...';
+    submitButton.value = '⌛';
 
    // Automatically move to the next phase after the UI updates
    setTimeout(() => {
@@ -96,7 +96,6 @@ function handlePhase2(emailInput, nameInput, form) {
 }, 300 + 10); // Adjust the timeout to match the total animation duration
 
 }
-
 
 function handlePhase3(emailInput, nameInput, form) {
     // Prepare data for the webhook
@@ -118,20 +117,29 @@ function handlePhase3(emailInput, nameInput, form) {
         body: JSON.stringify(data),
     })
     .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+        // Check if the response status is 200
+        if (response.status === 200) {
+            // Handle successful response (text response)
+            return response.text();
+        } else {
+            // Handle non-200 responses as errors
+            return response.text().then(text => {
+                throw new Error(`HTTP error! status: ${response.status}, response: ${text}`);
+            });
         }
-        return response.json();
     })
-    .then(data => {
-        console.log('Success:', data);
+    .then(text => {
+        // Log the successful text response
+        console.log('Success:', text);
         updateUIOnSuccess(); // Update UI for success
     })
     .catch((error) => {
+        // Log and handle errors
         console.error('Error:', error);
         updateUIOnError(); // Update UI for error
     });
 }
+
 
 
 function updateUIOnSuccess() {
