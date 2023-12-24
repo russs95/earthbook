@@ -354,6 +354,18 @@ display: none;
     
 }
 
+.name-input {
+    display: none; /* Hide the name input initially */
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    width: 70%;
+    transition: width 0.5s; /* Smooth transition for sliding effect */
+}
+
+
+
 
 .register-button {
     cursor: pointer;
@@ -381,7 +393,7 @@ display: none;
         cursor: pointer;
         padding: 0;
         z-index: 20;
-        margin: 0px 50px -7px auto;
+        margin: 0px 5% -4px auto;
         width: 25%;
 
     }
@@ -548,6 +560,7 @@ display: none;
           <form id="emailForm" class="reg-field" style="display:flex; flex-flow:row;">
             <label for="email"></label>
             <input type="email" name="email" required placeholder="Your e-mail..." class="email-input">
+            <input type="text" name="name" required placeholder="Your name..." class="name-input">
             <input type="submit" value="Go ➔" class="register-button">
           </form>
 

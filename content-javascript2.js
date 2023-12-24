@@ -1,18 +1,93 @@
+document.getElementById("emailForm").addEventListener("submit", handleFormSubmit);
 
+let submissionPhase = 1;
 
-
-function sendDataToWebhook(data) {
-    fetch('https://hook.eu1.make.com/s48m91tiktmt4y8osnh4oht1cfatuqh9', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-    .then(response => response.json())
-    .then(data => console.log('Success:', data))
-    .catch((error) => console.error('Error:', error));
+function handleFormSubmit(event) {
+    switch (submissionPhase) {
+        case 1:
+            handlePhase1(event);
+            break;
+        case 2:
+            handlePhase2(event);
+            break;
+        case 3:
+            handlePhase3And4(event);
+            break;
+    }
 }
+
+
+function handlePhase1(event) {
+    event.preventDefault();
+    const form = event.target;
+    const nameInput = form.elements["name"];
+
+    // Slide out email input and slide in name input
+    nameInput.style.display = 'block';
+    nameInput.style.width = '0'; // Start from 0 width
+    setTimeout(() => nameInput.style.width = '70%', 0); // Slide in effect
+
+    // Update the phase
+    submissionPhase = 2;
+}
+
+
+function handlePhase2(event) {
+    const form = event.target;
+    const emailInput = form.elements["email"];
+    const nameInput = form.elements["name"];
+
+    // Store data in browser cache and log
+    const earthenRegistration = {
+        email: emailInput.value,
+        name: nameInput.value,
+        dateTimeSubmitted: new Date().toISOString(),
+        notes: 'registered on earthbook'
+    };
+    localStorage.setItem('earthenRegistration', JSON.stringify(earthenRegistration));
+    console.log(earthenRegistration);
+
+    // Update the phase
+    submissionPhase = 3;
+}
+
+
+function handlePhase3And4(event) {
+    event.preventDefault();
+    const form = event.target;
+    const nameInput = form.elements["name"];
+
+    // Send data to the webhook
+    sendDataToWebhook({
+        email: form.elements["email"].value,
+        name: form.elements["name"].value,
+        notes: 'registered on earthbook'
+    });
+
+    // Slide out name input and show confirmation
+    nameInput.style.width = '0';
+    setTimeout(() => {
+        form.innerHTML = "<div>You're registered!</div>";
+    }, 500); // Wait for slide out effect to complete
+}
+
+
+
+
+
+
+// function sendDataToWebhook(data) {
+//     fetch('https://hook.eu1.make.com/s48m91tiktmt4y8osnh4oht1cfatuqh9', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(data),
+//     })
+//     .then(response => response.json())
+//     .then(data => console.log('Success:', data))
+//     .catch((error) => console.error('Error:', error));
+// }
 
 
 
