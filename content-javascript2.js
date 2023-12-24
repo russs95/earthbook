@@ -55,13 +55,15 @@ function sendUpRegistration() {
         var footer = document.getElementById("registration-footer");
         var emailRegistration = document.getElementById("email-registration");
         var upArrow = document.getElementById("reg-up-button");
+        var downArrow = document.getElementById("reg-down-button");
 
         // Adjust the height of the registration footer
         footer.style.height = "350px";
 
         // Make the email registration section visible
         emailRegistration.style.display = "block";
-        upArrow.style.display = "block";
+        upArrow.style.display = "none";
+        downArrow.style.display = "block";
 
 }
 
@@ -74,6 +76,7 @@ function sendDownRegistration() {
     var footer = document.getElementById("registration-footer");
     var emailRegistration = document.getElementById("email-registration");
     var upArrow = document.getElementById("reg-up-button");
+    var downArrow = document.getElementById("reg-down-button");
 
 
     // Adjust the height of the registration footer
@@ -81,7 +84,8 @@ function sendDownRegistration() {
 
     // Make the email registration section visible
     emailRegistration.style.display = "none";
-    upArrow.style.display = "none";
+    upArrow.style.display = "block";
+    downArrow.style.display = "up";
 
 }
 

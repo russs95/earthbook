@@ -295,8 +295,8 @@ display: none;
 
 #registration-footer {
     width: 100%;
-    height: 18px; /* Footer height */
-    background-color: var(--slider); /* Ensure this variable is defined */
+    height: 60px; /* Footer height */
+    /* Ensure this variable is defined */
     position: fixed;
     bottom: 0;
     color: var(--subdued-text); /* Ensure this variable is defined */
@@ -308,6 +308,15 @@ display: none;
     margin-bottom: -18px; /* Start off-screen */
     display: flex;
   flex-flow: column;
+}
+
+.registration-footer-holder {
+  background-color: var(--true);
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  border-top: 1px;
 }
 
 /* #registration-footer:hover {
@@ -352,7 +361,27 @@ display: none;
     background-color: green;
 }
 
+.reg-top-section {
+    display: flex;
+    flex-flow: column;
+    width:100%;
+    height: fit-content;
+}
+
+
 #reg-up-button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0;
+            z-index: 20;
+            margin: 0px 50px -4px auto;
+        }
+        #reg-up-button img {
+            height: 20px;
+        }
+
+        #reg-down-button {
             border: none;
             background-color: transparent;
             cursor: pointer;
@@ -380,31 +409,39 @@ display: none;
 
 
 <div id="registration-footer">
-
-  <div id="progress-bar"></div>
-
-  <button id="reg-up-button" onclick="sendDownRegistration()" >
-    <img src="../svgs/up-arrow.svg" alt="No Register" style="height:25px">
-  </button>
+  <div class="reg-top-section">
+    <button id="reg-up-button" onclick="sendUpRegistration()" >
+      <img src="../svgs/up-arrow.svg" alt="Register with Earthen.io" style="height:25px">
+    </button>
+  </div>
+  <div class="registration-footer-holder">
+    <div id="progress-bar"></div>
+    <button id="reg-down-button" onclick="sendDownRegistration()" >
+      <img src="../svgs/down-arrow.svg" alt="No Register" style="height:25px">
+    </button>
     
     <div id="email-registration" style="margin-top:-20px">
-    <div class="registration-box" style="padding: 12px;margin:auto;width:75%;color: var(--text-color);display:flex;flex-flow:row;">
-      <div class="reg-img" style="padding-right: 10px;height:160px;width:160px; justify-content: center;
-      display: flex;"><div style="height:fit-content;width:fit-content; margin: 20px;"><img src="../svgs/earthcal-banner.svg" height="150" width="150"></div></div>
-      <div class="reg-texts" style="display:flex; flex-flow:column; ">
-        <div class="reg-header" style="font-family: 'CooperLtMedium'; font-size: 2.4em; padding:10px;">Go deeper.</div>
+      <div class="registration-box" style="padding: 12px;margin:auto;width:75%;color: var(--text-color);display:flex;flex-flow:row;">
+      
+        <div class="reg-img" style="padding-right: 10px;height:160px;width:160px; justify-content: center;
+      display: flex;">
+          <div style="height:fit-content;width:fit-content; margin: 20px;"><img src="../svgs/earthcal-banner.svg" height="150" width="150">
+          </div>
+        </div>
+      
+        <div class="reg-texts" style="display:flex; flex-flow:column; ">
+          <div class="reg-header" style="font-family: 'CooperLtMedium'; font-size: 2.4em; padding:10px;">Go deeper.</div>
        
         
           <form id="emailForm" class="reg-field" style="display:flex; flex-flow:row;">
             <label for="email"></label>
             <input type="email" name="email" required placeholder="What is your email?" id="email-input">
             <input type="submit" value="Register" id="register-button">
-        </form>
+          </form>
 
-        <div class="reg-sub" style="font-family: 'Mulish'; font-size: 1em;padding:10px;">Signup to Earthen.io to get access to our newsletter and to EarthCal, our revolutionary calendar based on Igorot and Earthen principles.</div>
-
-       
+          <div class="reg-sub" style="font-family: 'Mulish'; font-size: 1em;padding:10px;">Signup to Earthen.io to get access to our newsletter and to EarthCal, our revolutionary calendar based on Igorot and Earthen principles.</div>
       </div>
+    </div>
 
       
       
