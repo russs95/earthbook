@@ -295,7 +295,7 @@ display: none;
 
 #registration-footer {
     width: 100%;
-    height: 60px; /* Footer height */
+    height: 30px; /* Footer height */
     /* Ensure this variable is defined */
     position: fixed;
     bottom: 0;
@@ -303,20 +303,20 @@ display: none;
     text-align: center;
     transition: margin-bottom 0.3s, height 0.3s; /* Transition for margin-bottom and height */
     overflow: hidden; /* Hide overflow content */
-    cursor: pointer;
     z-index: 100;
-    margin-bottom: -18px; /* Start off-screen */
+    margin-bottom: -60px; /* Start off-screen */
     display: flex;
   flex-flow: column;
 }
 
 .registration-footer-holder {
-  background-color: var(--true);
+  background-color: var(--slider);
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 100%;
-  border-top: 1px;
+  border-top: 1px grey solid;
+
 }
 
 /* #registration-footer:hover {
@@ -344,21 +344,24 @@ display: none;
     margin: auto;
 }
 
-#email-input {
-    margin-right: 0px;
+.email-input {
+    margin-left: 10px;
     font-size: 18px;
     padding: 10px;
     border-radius: 10px 0px 0px 10px;
-    width:75%;
+    width:70%;
     
 }
-#register-button {
+
+
+.register-button {
     cursor: pointer;
     font-size: 18px;
     padding: 10px;
-    border-radius:  0px 10px 0px auto;
+    border-radius:  0px 10px 10px 0px;
     width:25%;
     background-color: green;
+    min-width: 100px;
 }
 
 .reg-top-section {
@@ -377,26 +380,92 @@ display: none;
             z-index: 20;
             margin: 0px 50px -4px auto;
         }
-        #reg-up-button img {
-            height: 20px;
-        }
 
-        #reg-down-button {
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            padding: 0;
-            display:none;
-            width:20%;
-            margin: 20px 0px 10px auto;
-            height: 20px;
-            z-index: 20;
-        }
-        #reg-down-button img {
-            height: 20px;
-        }
+#reg-up-button img {
+    height: 20px;
+}
 
+#reg-down-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: none;
+    width:20%;
+    margin: 20px 0px 10px auto;
+    height: 20px;
+    z-index: 20;
+}
+#reg-down-button img {
+    height: 20px;
+}
+
+#email-registration {
+  margin-top: -20px;
+}
+
+.registration-box {
+  padding: 12px;
+  margin:auto;
+  width:75%;
+  color: var(--text-color);
+  display:flex;
+  flex-flow:row;
+}
+
+
+@media screen and (max-width: 699px) {
+
+.reg-img {
+  display: none;
+}
+}
+
+@media screen and (min-width: 700px) {
+.reg-img {
+  padding-right: 20px;
+  height:160px;
+  width:160px; 
+  justify-content: center;
+  display: flex;
+}
+}
+
+
+.reg-img img {
+  height:fit-content;
+  width:fit-content; 
+  margin: 25px;
+  height:160px;
+  width:160px; 
+
+}
+
+.reg-texts {
+  display:flex; 
+  flex-flow:column;
+}
+
+.reg-header {
+  font-family: 'CooperLtMedium'; 
+  font-size: 2.7em;
+  padding:12px;
+  margin-bottom: -15px;
+}
+
+.reg-subtitle {
+  font-family: 'CooperLtMedium'; 
+  font-size: 1.4em;
+  padding:12px;
   
+  
+}
+
+.reg-sub {
+  font-family: 'Mulish'; 
+  font-size: 1em;
+  padding:10px;
+}
 
 
 </style>
@@ -420,26 +489,25 @@ display: none;
       <img src="../svgs/down-arrow.svg" alt="No Register" style="height:25px">
     </button>
     
-    <div id="email-registration" style="margin-top:-20px">
-      <div class="registration-box" style="padding: 12px;margin:auto;width:75%;color: var(--text-color);display:flex;flex-flow:row;">
-      
-        <div class="reg-img" style="padding-right: 10px;height:160px;width:160px; justify-content: center;
-      display: flex;">
-          <div style="height:fit-content;width:fit-content; margin: 20px;"><img src="../svgs/earthcal-banner.svg" height="150" width="150">
-          </div>
+    <div id="email-registration">
+      <div class="registration-box">
+        <div class="reg-img">
+          <img src="../svgs/earthcal-banner.svg" height="150" width="150">
         </div>
+       
       
-        <div class="reg-texts" style="display:flex; flex-flow:column; ">
-          <div class="reg-header" style="font-family: 'CooperLtMedium'; font-size: 2.4em; padding:10px;">Go deeper.</div>
+        <div class="reg-texts">
+          <div class="reg-header">Go deeper.</div>
+          <div class="reg-subtitle">Sign up to Earthen.io</div>
        
         
           <form id="emailForm" class="reg-field" style="display:flex; flex-flow:row;">
             <label for="email"></label>
-            <input type="email" name="email" required placeholder="What is your email?" id="email-input">
-            <input type="submit" value="Register" id="register-button">
+            <input type="email" name="email" required placeholder="What is your email?" class="email-input">
+            <input type="submit" value="Register ➔" class="register-button">
           </form>
 
-          <div class="reg-sub" style="font-family: 'Mulish'; font-size: 1em;padding:10px;">Signup to Earthen.io to get access to our newsletter and to EarthCal, our revolutionary calendar based on Igorot and Earthen principles.</div>
+          <div class="reg-sub">Get access to our newsletter and to EarthCal, our revolutionary calendar based on Igorot and Earthen principles.</div>
       </div>
     </div>
 

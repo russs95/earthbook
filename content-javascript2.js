@@ -58,7 +58,7 @@ function sendUpRegistration() {
         var downArrow = document.getElementById("reg-down-button");
 
         // Adjust the height of the registration footer
-        footer.style.height = "350px";
+        footer.style.height = "50vh";
 
         // Make the email registration section visible
         emailRegistration.style.display = "block";
@@ -85,7 +85,7 @@ function sendDownRegistration() {
     // Make the email registration section visible
     emailRegistration.style.display = "none";
     upArrow.style.display = "block";
-    downArrow.style.display = "up";
+    downArrow.style.display = "none";
 
 }
 
@@ -105,7 +105,7 @@ function pageMeasureBar() {
   
       // Hide footer when scrolled back up past the first 1000px
       if (scrollPosition <= 1000) {
-          document.getElementById("registration-footer").style.marginBottom = "-18px";
+          document.getElementById("registration-footer").style.marginBottom = "-60px";
       }
   }
 
