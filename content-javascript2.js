@@ -108,6 +108,7 @@ function handlePhase3(emailInput, nameInput, form) {
         notes: 'registered on earthbook'
     };
 
+   
     // Send data to the webhook
     fetch('https://hook.eu1.make.com/s48m91tiktmt4y8osnh4oht1cfatuqh9', {
         method: 'POST',
@@ -118,17 +119,17 @@ function handlePhase3(emailInput, nameInput, form) {
     })
     .then(response => {
         if (!response.ok) {
-            throw new Error('Network response was not ok');
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
         return response.json();
     })
     .then(data => {
         console.log('Success:', data);
-        updateUIOnSuccess(form);
+        updateUIOnSuccess(); // Update UI for success
     })
     .catch((error) => {
         console.error('Error:', error);
-        updateUIOnError(form);
+        updateUIOnError(); // Update UI for error
     });
 }
 
