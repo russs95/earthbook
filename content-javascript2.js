@@ -98,7 +98,6 @@ function handlePhase2(emailInput, nameInput, form) {
 }
 
 
-
 function handlePhase3(emailInput, nameInput, form) {
     // Prepare data for the webhook
     const data = {
@@ -107,7 +106,9 @@ function handlePhase3(emailInput, nameInput, form) {
         notes: 'earthbook'
     };
 
-   
+    // Log the data to be sent
+    console.log('Sending data to webhook:', JSON.stringify(data));
+
     // Send data to the webhook
     fetch('https://hook.eu1.make.com/s48m91tiktmt4y8osnh4oht1cfatuqh9', {
         method: 'POST',
@@ -131,6 +132,7 @@ function handlePhase3(emailInput, nameInput, form) {
         updateUIOnError(); // Update UI for error
     });
 }
+
 
 function updateUIOnSuccess() {
     // Get the elements by their IDs
