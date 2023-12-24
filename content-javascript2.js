@@ -161,7 +161,7 @@ function updateUIOnError() {
     const regStatusIcon = document.getElementById('reg-status-icon');
 
     // Update reg-status text and color
-    regStatus.innerHTML = "Registration failed. Please try again.";
+    regStatus.innerHTML = "Registration failed.";
     regStatus.style.color = 'red';
 
     // Update reg-status-icon to a cross mark
