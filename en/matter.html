@@ -370,38 +370,78 @@ display: none;
     flex-flow: column;
     width:100%;
     height: fit-content;
-}
-
-
-#reg-up-button {
-    border: none;
-    background-color: transparent;
     cursor: pointer;
-    padding: 0;
-    z-index: 20;
-    margin: 0px 50px -7px auto;
-    width: 25%;
-
 }
 
-#reg-up-button img {
-    height: 25px;
+@media screen and (max-width: 699px) {
+      
+    #reg-up-button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0;
+        z-index: 20;
+        margin: 0px 50px -7px auto;
+        width: 25%;
+
+    }
+
+    #reg-up-button img {
+        height: 25px;
+    }
+
+    #reg-down-button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0;
+        display: none;
+        width:15%;
+        margin: 10px 15px 0px auto;
+        height: 19px;
+        z-index: 20;
+    }
+    
+    #reg-down-button img {
+        height: 19px;
+    }
 }
 
-#reg-down-button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 0;
-    display: none;
-    width:20%;
-    margin: 20px 0px 10px auto;
-    height: 20px;
-    z-index: 20;
-}
-#reg-down-button img {
-    height: 20px;
-}
+
+
+@media screen and (min-width: 700px) {
+      
+      #reg-up-button {
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          padding: 0;
+          z-index: 20;
+          margin: 0px 50px -5px auto;
+          width: 25%;
+  
+      }
+  
+      #reg-up-button img {
+          height: 25px;
+      }
+  
+      #reg-down-button {
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+          padding: 0;
+          display: none;
+          width:20%;
+          margin: 20px 0px 10px auto;
+          height: 20px;
+          z-index: 20;
+      }
+      #reg-down-button img {
+          height: 20px;
+      }
+  }
+
 
 #email-registration {
   margin-top: -20px;
@@ -482,15 +522,15 @@ display: none;
 
 
 <div id="registration-footer">
-  <div class="reg-top-section">
-    <button id="reg-up-button" onclick="sendUpRegistration()" >
+  <div class="reg-top-section" onclick="sendUpRegistration()">
+    <button id="reg-up-button" >
       <img src="../svgs/up-arrow.svg" alt="Register with Earthen.io" style="height:25px">
     </button>
   </div>
   <div class="registration-footer-holder">
     <div id="progress-bar"></div>
     <button id="reg-down-button" onclick="sendDownRegistration()" >
-      <img src="../svgs/down-arrow.svg" alt="No Register" style="height:25px">
+      <img src="../svgs/down-arrow.svg" alt="No Register">
     </button>
     
     <div id="email-registration">
