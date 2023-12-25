@@ -153,7 +153,14 @@ function updateUIOnSuccess() {
 
     // Update reg-status-icon to a check mark
     regStatusIcon.value = '✔️';
+
+    // Set the onclick event of reg-status-icon to trigger sendDownRegistration()
+    regStatusIcon.onclick = function() {
+        sendDownRegistration();
+    };
 }
+
+
 
 function updateUIOnError() {
     // Get the elements by their IDs
@@ -214,7 +221,7 @@ function sendUpRegistration() {
         var downArrow = document.getElementById("reg-down-button");
 
         // Adjust the height of the registration footer
-        footer.style.height = "50vh";
+        footer.style.height = "55vh";
 
         // Make the email registration section visible
         emailRegistration.style.display = "block";
@@ -236,7 +243,7 @@ function sendDownRegistration() {
 
 
     // Adjust the height of the registration footer
-    footer.style.height = "35px";
+    footer.style.height = "58px";
 
     // Make the email registration section visible
     emailRegistration.style.display = "none";

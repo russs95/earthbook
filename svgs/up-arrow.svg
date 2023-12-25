@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="113.23003mm"
-   height="35.250832mm"
-   viewBox="0 0 113.23003 35.250831"
+   width="113.39977mm"
+   height="36.219524mm"
+   viewBox="0 0 113.39978 36.219524"
    version="1.1"
    id="svg5"
    inkscape:version="1.3.2 (1:1.3.2+202311252150+091e20ef0f)"
@@ -25,7 +25,7 @@
      showgrid="false"
      inkscape:zoom="1.4396184"
      inkscape:cx="233.04787"
-     inkscape:cy="143.44079"
+     inkscape:cy="144.13542"
      inkscape:window-width="1503"
      inkscape:window-height="869"
      inkscape:window-x="0"
@@ -40,19 +40,19 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-53.177138,-106.18413)">
+     transform="translate(-53.093013,-106.01663)">
     <path
-       style="fill:#18181a;fill-opacity:1;stroke:#808080;stroke-width:1.365;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#18181a;fill-opacity:1;stroke:#808080;stroke-width:1.7;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 53.519914,139.94338 56.950226,-33.07676 55.58813,33.06307"
        id="path857"
        sodipodi:nodetypes="ccc" />
     <rect
-       style="fill:#18181a;fill-opacity:1;stroke-width:0.266225;stroke-opacity:0.878431"
+       style="fill:#18181a;fill-opacity:1;stroke-width:0.319095;stroke-opacity:0.878431"
        id="rect1"
        width="110.33403"
-       height="1.8350011"
+       height="2.636198"
        x="54.642517"
        y="139.59996"
-       ry="0.82263708" />
+       ry="1.1818163" />
   </g>
 </svg>
