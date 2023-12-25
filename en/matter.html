@@ -295,18 +295,17 @@ display: none;
 
 #registration-footer {
     width: 100%;
-    height: 58px; /* Footer height */
-    /* Ensure this variable is defined */
+    height: 58px; 
     position: fixed;
     bottom: 0;
-    color: var(--subdued-text); /* Ensure this variable is defined */
+    color: var(--subdued-text); 
     text-align: center;
-    transition: margin-bottom 0.3s, height 0.3s; /* Transition for margin-bottom and height */
-    overflow: hidden; /* Hide overflow content */
-    z-index: 100;
-    margin-bottom: -60px; /* Start off-screen */
+    transition: margin-bottom 0.3s, height 0.3s;
+    overflow: hidden; 
+    z-index: 18;
+    margin-bottom: -60px;
     display: flex;
-  flex-flow: column;
+    flex-flow: column;
 }
 
 .registration-footer-holder {
@@ -335,7 +334,7 @@ display: none;
     height: 10px;
     background-color: grey;
     width: 0%; /* Initial width */
-    z-index: 21;
+    z-index: 10;
 }
 #email-registration {
     display: none; /* Initially hidden */
@@ -397,34 +396,30 @@ display: none;
     width:100%;
     height: fit-content;
     cursor: pointer;
-    z-index:30;
+    z-index:10;
 }
 
 #reg-up-button {
         border: none;
-        background-color: transparent;
         cursor: pointer;
-        padding: 0;
-        z-index: 30;
+        z-index: 10;
+        width: 110px;
+        height:28px;
     }
 
-    #reg-up-button:hover {
-      fill: green;
-      opacity:1;
-      filter:brightness(4)
-    }
+
+
+#reg-up-button:hover {
+  background: url(../svgs/up-reg-arrow-over.svg) center no-repeat;
+  background-size: contain;
+  opacity: 1;
+}
 
 @media screen and (max-width: 699px) {
       
     #reg-up-button {
-  
         margin: 0px 5% -6px auto;
-        width: 25%;
-
-    }
-
-    #reg-up-button img {
-        height: 30px;
+        
     }
 
     #reg-down-button {
@@ -436,7 +431,7 @@ display: none;
         width:15%;
         margin: 10px 15px 0px auto;
         height: 19px;
-        z-index: 20;
+        z-index: 10;
     }
 
     #reg-down-button img {
@@ -449,14 +444,10 @@ display: none;
 @media screen and (min-width: 700px) {
       
       #reg-up-button {
- 
-          margin: 0px 50px -6px auto;
+          margin: 0px 10px -3px auto;
           width: 25%;
       }
   
-      #reg-up-button img {
-          height: 25px;
-      }
   
       #reg-down-button {
           border: none;
@@ -467,7 +458,7 @@ display: none;
           width:20%;
           margin: 20px 0px 10px auto;
           height: 20px;
-          z-index: 20;
+          z-index: 10;
       }
       #reg-down-button img {
           height: 20px;
@@ -568,7 +559,7 @@ display: none;
   <div class="reg-top-section" onclick="sendUpRegistration()">
     <div class="reg-buffer" style="width:100%;height:30px"></div>
     <button id="reg-up-button" >
-      <img src="../svgs/up-arrow.svg?v=2" alt="Register with Earthen.io" style="height:26px">
+    
     </button>
   </div>
   <div class="registration-footer-holder">

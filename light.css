@@ -176,6 +176,11 @@
 background-size: contain;
 }
 
+#reg-up-button {
+  background: url(svgs/up-reg-arrow-light.svg) center no-repeat;
+  background-size: contain;
+}
+
 /*
 body {
   background-color: rgb(250, 250, 250) !important;

@@ -202,6 +202,11 @@ background-size: contain;
 }
 
 
+#reg-up-button {
+  background: url(svgs/up-reg-arrow-dark.svg) center no-repeat;
+  background-size: contain;
+}
+
 /*
   #settings-menu {
     background: var(--deeper-accent-color) !important;
