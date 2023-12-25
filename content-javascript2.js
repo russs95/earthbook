@@ -1,7 +1,5 @@
 
 
-
-
 // let lastScrollTop = 0;
 // let headerHidden = false;
 
