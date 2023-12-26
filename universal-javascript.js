@@ -30,6 +30,8 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 
 */
 
+
+
 window.onload = function() {
   document.getElementById("search_input").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
@@ -808,8 +810,6 @@ document.querySelector("#information-six .back").onclick = function() {
 
 }
 
-
-
 function reset2Default() {
   // Reset the default values
   const hideNotice = false;
@@ -818,6 +818,8 @@ function reset2Default() {
   const sepia = 0;
   const userSetFontSize = 16;
   const navbarHeight = 60;
+
+  
 
   // Store the values in the browser cache (localStorage)
   localStorage.setItem("hideNotice", hideNotice);
@@ -837,6 +839,13 @@ function reset2Default() {
   document.getElementById('earthbook-navbar').style.minHeight = `${navbarHeight}px`;
 
   document.getElementById("reset-settings").innerHTML = "&#10003; Settings Reset";
+  
+  //remove tokens
+  localStorage.removeItem('showCounter');
+  localStorage.removeItem('earthenRegistration');
+
+  console.log("showCounter and earthenRegistration data cleared from local storage.");
+
 }
 
 
@@ -848,6 +857,27 @@ function reset2Default() {
 SUBSCRIPTION SYSTEM
 
 -----------------------------*/
+
+
+function checkRegistrationStatus() {
+  const earthenRegistration = localStorage.getItem('earthenRegistration');
+
+  // Check if the token exists
+  if (earthenRegistration) {
+      // Hide .reg-top-section
+      const regTopSection = document.querySelector('.reg-top-section');
+      if (regTopSection) {
+          regTopSection.style.display = 'none';
+      }
+
+      // Set the margin-top of .registration-footer-holder to 70px
+      const registrationFooterHolder = document.querySelector('.registration-footer-holder');
+      if (registrationFooterHolder) {
+          registrationFooterHolder.style.marginTop = '70px';
+      }
+  }
+}
+
 
 
 

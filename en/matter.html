@@ -127,13 +127,15 @@ All the css needed for this page-->
  Main Scripts-->   
  <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
  <script src="../universal-javascript.js?v=2" defer></script>
- <script src="../content-javascript2.js?v=4" defer></script>
  <script src="../clipboard.min.js" defer></script>
  <!--Carbon Badge script
  <script src="../b.min.js" defer></script>
  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
 -->
-
+<script>window.onload = function() {
+  alert('hellloo!');
+  checkRegistrationStatus();
+}</script>
  
  <!-- Arc CDN Script without delay
 <script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
@@ -156,6 +158,7 @@ All the page components required to build this page-->
 <!--13--><script src="includes/chap-foot.js?V=2" defer></script>
 <!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
 <!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+<!--16--><script src="includes/subscription-curtain.js?v=2" defer></script>
 
 
 <style>
@@ -291,241 +294,6 @@ display: none;
   }
 
 
-/* REGISTRATION CSS*/
-
-#registration-footer {
-    width: 100%;
-    height: 77px; 
-    position: fixed;
-    bottom: 0;
-    color: var(--subdued-text); 
-    text-align: center;
-    transition: margin-bottom 0.3s, height 0.3s;
-    overflow: hidden; 
-    z-index: 18;
-    margin-bottom: -60px;
-    display: flex;
-    flex-flow: column;
-}
-
-.registration-footer-holder {
-  background-color: var(--slider);
-  display: flex;
-  flex-flow: column;
-  width: 100%;
-  height: 100%;
-  border-top: 1px grey solid;
-}
-
-#progress-bar {
-    height: 10px;
-    background-color: grey;
-    width: 0%; 
-    z-index: 10;
-}
-
-#email-registration {
-    display: none; 
-    color: black; 
-    text-align: left;
-    padding: 10px;
-    margin: auto;
-}
-
-.email-input {
-    margin-left: 10px;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 10px 0px 0px 10px;
-    width:100%;
-}
-
-.name-input {
-    display: none;
-    margin-left: 10px;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 10px 0px 0px 10px;
-    width: 0%;
-    transition: width 0.5s; 
-}
-
-.reg-complete-text {
-    display: none;
-    font-family: 'Mulish';
-    color: rgb(128, 122, 0);
-    margin-left: 10px;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 10px 0px 0px 10px;
-    width: 70%;
-    transition: width 0.5s;
-    background: var(--background-color);
-}
-
-.register-button {
-    cursor: pointer;
-    font-size: 18px;
-    padding: 10px;
-    border-radius:  0px 10px 10px 0px;
-    width: fit-content;
-    background-color: green;
-    min-width: 100px;
-}
-
-.reg-top-section {
-    display: flex;
-    flex-flow: column;
-    width:100%;
-    height: fit-content;
-    cursor: pointer;
-    z-index:10;
-}
-
-#reg-up-button {
-    border: none;
-    cursor: pointer;
-    z-index: 10;
-    width: 110px;
-    height:25px;
-    }
-
-/* Target the reg-up-button when reg-top-section is hovered */
-.reg-top-section:hover #reg-up-button {
-    background: url(../svgs/up-reg-arrow-over.svg) center no-repeat;
-    background-size: contain;
-    opacity: 1;
-}
-
-#reg-down-button {
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        padding: 0;
-        display: none;
-        z-index: 10;
-    }
-
-
-
-@media screen and (max-width: 699px) {
-      
-    #reg-up-button {
-        margin: 0px 5% -4px auto;
-        
-    }
-
-    #reg-down-button {
-        width:15%;
-        margin: 10px 15px 0px auto;
-        height: 19px;
-    }
-
-    #reg-down-button img {
-        height: 19px;
-    }
-}
-
-
-
-@media screen and (min-width: 700px) {
-      
-      #reg-up-button {
-          margin: 0px 10px -3px auto;
-          width: 25%;
-      }
-  
-      #reg-down-button {
-          width:20%;
-          margin: 20px 0px 10px auto;
-          height: 20px;
-      }
-
-      #reg-down-button img {
-          height: 20px;
-      }
-  }
-
-
-
-#email-registration {
-  margin-top: -20px;
-}
-
-.registration-box {
-  padding: 12px;
-  margin:auto;
-
-  color: var(--text-color);
-  display:flex;
-  flex-flow:row;
-}
-
-
-@media screen and (max-width: 699px) {
-
-      .registration-box {
-        width:82%;
-        margin-top: 30px;
-      }
-      .reg-img {
-        display: none;
-      }
-}
-
-
-
-@media screen and (min-width: 700px) {
-
-    .registration-box {
-      width:75%;
-  }
-
-    .reg-img {
-      padding-right: 20px;
-      height:160px;
-      width:160px; 
-      justify-content: center;
-      display: flex;
-  }
-}
-
-
-.reg-img img {
-  height:fit-content;
-  width:fit-content; 
-  margin: 25px;
-  height:160px;
-  width:160px; 
-
-}
-
-.reg-texts {
-  display:flex; 
-  flex-flow:column;
-}
-
-.reg-header {
-  font-family: 'CooperLtMedium'; 
-  font-size: 2.7em;
-  padding:12px;
-  margin-bottom: -15px;
-}
-
-.reg-subtitle {
-  font-family: 'CooperLtMedium'; 
-  font-size: 1.4em;
-  padding:12px;
-  margin-bottom:10px;
-  
-  
-}
-
-.reg-sub {
-  font-family: 'Mulish'; 
-  font-size: 1em;
-  padding:10px;
-}
 
 
 </style>
@@ -535,51 +303,8 @@ display: none;
 
 <!--TOUR-CURTAIN-->
 <tour-curtain></tour-curtain>
-
-
-<div id="registration-footer">
-  <div class="reg-top-section" onclick="sendUpRegistration()">
-    <div class="reg-buffer" style="width:100%;height:50px"></div>
-    <button id="reg-up-button" >
-    
-    </button>
-  </div>
-  <div class="registration-footer-holder">
-    <div id="progress-bar"></div>
-    <button id="reg-down-button" onclick="sendDownRegistration()" >
-      <img src="../svgs/down-arrow.svg" alt="No Register">
-    </button>
-    
-    <div id="email-registration">
-      <div class="registration-box">
-        <div class="reg-img">
-          <img src="../svgs/earthcal-banner.svg" height="150" width="150" alt="EarthCycles Calendar from Earthen.io">
-        </div>
-       
-      
-        <div class="reg-texts">
-          <div class="reg-header">Go deeper.</div>
-          <div class="reg-subtitle">Sign up to Earthen.io</div>
-       
-        
-          <form id="emailForm" class="reg-field" style="display:flex; flex-flow:row;">
-            <label for="email"></label>
-            <input type="email" name="email" required placeholder="Your e-mail..." class="email-input">
-            <input type="text" name="name" required placeholder="Your name..." class="name-input">
-            <div class="reg-complete-text" id="reg-status"></div>
-            <input type="submit" value="➔" class="register-button" id="reg-status-icon" onclick="handleFormSubmit(event)">
-          </form>
-
-          <div class="reg-sub">Get access to our newsletter and to EarthCal, our revolutionary calendar based on Igorot and Earthen principles.</div>
-      </div>
-    </div>
-
-      
-      
-    </div>
-  </div>
-</div>
-
+<subscription-curtain></subscription-curtain> 
+  
 
   <div id="underlayer">
 
@@ -945,15 +670,18 @@ display: none;
 <footer-settings></footer-settings>
 
 <script>
-
-
-
+  document.addEventListener('DOMContentLoaded', function() {
+      checkRegistrationStatus();
+      invite2Register();
+  });
 </script>
-
 
 </div> <!--underlayer close-->
 
 <script src="../book-note-scripts.js" defer ></script>
+<script src="../content-javascript2.js?v=4" defer></script>
+
+
 
 </BODY>
 

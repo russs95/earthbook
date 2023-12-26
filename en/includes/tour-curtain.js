@@ -111,6 +111,7 @@ class TourCurtain extends HTMLElement {
   </div>
 
 
+  
 
     `;
 }

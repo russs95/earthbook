@@ -33,6 +33,62 @@
 
 
 
+function invite2Register() {
+    const earthenRegistrationData = localStorage.getItem('earthenRegistration');
+    
+    if (!earthenRegistrationData) {
+        updateShowCounter();
+
+        let showCounter = parseInt(localStorage.getItem('showCounter'));
+        let delayDuration;
+
+        // Determine the delay duration based on showCounter value
+        switch (showCounter) {
+            case 1:
+            case 2:
+                delayDuration = 300000; // 5 minutes
+                break;
+            case 3:
+                delayDuration = 360000; // 6 minutes
+                break;
+            case 4:
+                delayDuration = 420000; // 7 minutes
+                break;
+            case 5:
+                delayDuration = 480000; // 8 minutes
+                break;
+            default:
+                delayDuration = 240000; // 4 minutes (default for new or > 5)
+        }
+
+        // Wait for the determined duration before triggering sendUpRegistration
+        setTimeout(() => {
+            sendUpRegistration();
+        }, delayDuration);
+    }
+}
+
+
+function updateShowCounter() {
+    let showCounter = localStorage.getItem('showCounter');
+    showCounter = showCounter ? parseInt(showCounter) + 1 : 1;
+    localStorage.setItem('showCounter', showCounter);
+}
+
+function sendUpRegistration() {
+    console.log("sendUpRegistration function triggered");
+    // Add the logic for sendUpRegistration here
+}
+
+// ... (Any other function definitions)
+
+// Run invite2Register on page load
+document.addEventListener('DOMContentLoaded', invite2Register);
+
+
+
+
+
 
 function sendUpRegistration() {
    
