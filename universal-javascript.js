@@ -879,15 +879,12 @@ function checkRegistrationStatus() {
 }
 
 
-
-
 let submissionPhase = 1;
 
 function handleFormSubmit(event) {
     // Prevent the default form submission behavior
-    event.preventDefault();
+    if (event) event.preventDefault();
 
-    // Select the form using its ID
     const form = document.getElementById("emailForm");
     const emailInput = form.elements["email"];
     const nameInput = form.elements["name"];
@@ -897,45 +894,114 @@ function handleFormSubmit(event) {
             handlePhase1(emailInput, nameInput);
             break;
         case 2:
-            handlePhase2(emailInput, nameInput);
+            animateEmailInput(emailInput, nameInput);
             break;
         case 3:
-            handlePhase3(emailInput, nameInput, form);
+            checkNameInput(nameInput);
             break;
+        case 4:
+            saveRegData2Cache(emailInput, nameInput, form);
+            break;
+        case 5:
+            sendData2WebHook(emailInput, nameInput, form);
+            break;
+        case 6:
+          sendDownRegistration();
+          checkRegistrationStatus();
     }
 }
+
+
 function handlePhase1(emailInput, nameInput) {
-    // Animate email input to shrink to 0% width
-    emailInput.style.transition = 'width 0.3s';
-    emailInput.style.width = '0%';
+  // Validate email address
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(emailInput.value)) {
+      // If invalid, clear the input and display error message with red placeholder
+      emailInput.value = ''; // Clear the input
+      emailInput.setAttribute('style', 'color: red;'); // Change text color to red for placeholder
+      emailInput.placeholder = "Please enter a proper e-mail address"; // Display error message
 
-    // Wait for the email input shrink animation to complete
-    setTimeout(() => {
-        emailInput.style.display = 'none'; // Hide the email input after transition
+      // Reset placeholder color after 1 second
+      setTimeout(() => {
+          emailInput.setAttribute('style', 'color: inherit;'); // Reset to default color
+          emailInput.placeholder = "Your e-mail..."; // Reset placeholder text
+      }, 1000);
 
-        // Prepare name input for animation
-        nameInput.style.display = 'block';
-        nameInput.style.width = '0';
-        nameInput.style.transition = 'width 0.3s';
+      return; // Do not proceed further
+  }
 
-        // Delay the start of the name input expansion to allow for transition setup
-        setTimeout(() => {
-            nameInput.style.width = '70%';
-        }, 10); // A short delay to ensure the transition is applied
-
-    }, 300); // Delay corresponds to the duration of the email input shrink animation
-
-    // Update button text
-    const submitButton = document.querySelector('.register-button');
-    submitButton.value = 'Sign up';
-
-    // Update the phase
+    // Update submission phase to 2.1 for email animation
     submissionPhase = 2;
+    handleFormSubmit(new Event('submit')); // Proceed to animate email input
+
+}
+
+
+function animateEmailInput(emailInput, nameInput) {
+  emailInput.style.transition = 'width 0.3s';
+  emailInput.style.width = '0%';
+
+  setTimeout(() => {
+      emailInput.style.display = 'none'; // Hide the email input after transition
+
+      nameInput.style.display = 'block';
+      nameInput.style.width = '0';
+      nameInput.style.transition = 'width 0.3s';
+
+      // After the email input animation completes, update the phase to check the name input
+      setTimeout(() => {
+          nameInput.style.width = '70%';
+          submissionPhase = 3;
+          // handleFormSubmit(new Event('submit')); // Proceed to check name input
+      }, 10);
+  }, 300);
+}
+
+function checkNameInput(nameInput) {
+  if (nameInput.value.length < 2) {
+      // If invalid, clear the input and display error message with red placeholder
+      nameInput.value = ''; // Clear the input
+      nameInput.style.color = 'red'; // Change text color to red for placeholder
+      nameInput.style.display = 'block'; // Ensure it's displayed
+      nameInput.style.width = '70%'; // Set width
+      nameInput.style.transition = 'width 0.3s ease 0s'; // Set transition
+      nameInput.placeholder = "Please enter a valid name"; // Display error message
+
+      // Reset placeholder and styles after 1 second
+      setTimeout(() => {
+          nameInput.style.color = 'inherit'; // Reset text color to default
+          nameInput.placeholder = "Your name..."; // Reset placeholder text
+          // Note: No need to reset 'display', 'width', and 'transition' as they should remain
+      }, 1000);
+
+      return false; // Do not proceed further
+  }
+
+  // If name input is valid, proceed to the next phase
+  submissionPhase = 4;
+  handleFormSubmit(new Event('submit')); // Proceed to the next phase
 }
 
 
 
-function handlePhase2(emailInput, nameInput, form) {
+// function completeSubmission() {
+//   // Update button text
+//   const submitButton = document.querySelector('.register-button');
+//   submitButton.value = 'Sign up';
+
+//   // Update the phase
+//   submissionPhase = 2;
+
+//   // Additional logic for form submission if required
+// }
+
+
+
+
+
+
+
+function saveRegData2Cache(emailInput, nameInput, form) {
     // Store data in browser cache and log
     const earthenRegistration = {
         email: emailInput.value,
@@ -974,12 +1040,12 @@ function handlePhase2(emailInput, nameInput, form) {
 
    // Automatically move to the next phase after the UI updates
    setTimeout(() => {
-    handlePhase3(emailInput, nameInput, form);
+    sendData2WebHook(emailInput, nameInput, form);
 }, 300 + 10); // Adjust the timeout to match the total animation duration
 
 }
 
-function handlePhase3(emailInput, nameInput, form) {
+function sendData2WebHook(emailInput, nameInput, form) {
     // Prepare data for the webhook
     const data = {
         email: emailInput.value,
@@ -1013,6 +1079,7 @@ function handlePhase3(emailInput, nameInput, form) {
     .then(text => {
         // Log the successful text response
         console.log('Success:', text);
+        submissionPhase = 6;
         updateUIOnSuccess(); // Update UI for success
     })
     .catch((error) => {
@@ -1031,15 +1098,11 @@ function updateUIOnSuccess() {
 
     // Update reg-status text and color
     regStatus.innerHTML = "You're successfully signed up!";
-    regStatus.style.color = 'green';
+    regStatus.style.color = '#06f806';
 
     // Update reg-status-icon to a check mark
     regStatusIcon.value = '✔️';
 
-    // Set the onclick event of reg-status-icon to trigger sendDownRegistration()
-    regStatusIcon.onclick = function() {
-        sendDownRegistration();
-    };
 }
 
 

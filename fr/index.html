@@ -174,6 +174,65 @@ All the page components required to build this page-->
  }
 
 
+
+/* REGISTRATION CSS*/
+
+.email-input {
+    margin-left: 10px;
+    font-size: 1em;
+    padding: 10px 10px 10px 8px;
+    border-radius: 25px 0px 0px 25px;
+    width:100%;
+    border:1px grey solid;
+    border-right: 0px;
+}
+
+.name-input {
+    display: none;
+    margin-left: 10px;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    width: 0%;
+    transition: width 0.5s; 
+}
+
+
+.reg-complete-text {
+  display: none;
+  font-family: 'Mulish';
+  color: rgb(198, 188, 5);
+  margin-left: 10px;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  width: 70%;
+  transition: width 0.5s;
+  background: var(--strong-border);
+  border: 1px gray solid;
+
+}
+
+.register-button {
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 10px 8px 10px 8px;
+    border-radius:  0px 25px 25px 0px;
+    width: fit-content;
+    background-color:var(--deeper-accent-color);
+  
+    border:1px grey solid;
+    border-left: 0px;
+    margin-right:5px;
+}
+
+.register-button:hover {
+    background-color:green;
+    color: white;
+
+}
+
+
 </style>
 </HEAD>
 
@@ -215,6 +274,18 @@ All the page components required to build this page-->
                  
             </div>
 
+
+            <div>
+
+                <form id="emailForm" class="reg-field" style="margin-top:18px;display:flex; flex-flow:row;">
+                  <label for="email"></label>
+                  <input type="email" name="email" required placeholder="Go deeper..." class="email-input">
+                  <input type="text" name="name" required placeholder="Your name..." class="name-input">
+                  <div class="reg-complete-text" id="reg-status"></div>
+                  <input type="submit" value="Subscribe" class="register-button" id="reg-status-icon" onclick="handleFormSubmit(event)">
+                </form>
+      
+                  </div>
 
         </div>
  

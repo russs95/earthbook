@@ -1279,14 +1279,14 @@ border-top: 1px grey solid;
 .reg-complete-text {
   display: none;
   font-family: 'Mulish';
-  color: rgb(128, 122, 0);
+  color: rgb(198, 188, 5);
   margin-left: 10px;
   font-size: 18px;
   padding: 10px;
   border-radius: 10px 0px 0px 10px;
   width: 70%;
   transition: width 0.5s;
-  background: var(--background-color);
+  background: var(--strong-border);
 }
 
 .register-button {
