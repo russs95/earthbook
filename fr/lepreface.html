@@ -171,7 +171,7 @@ All the css needed for this page-->
  Main Scripts-->   
  <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
  <script src="../universal-javascript.js" defer></script>
- <script src="../content-javascript.js?v=2.2" defer></script>
+
  <script src="../clipboard.min.js" defer></script>
 
  <!--PAGE INCLUDES
@@ -192,13 +192,14 @@ All the page components required to build this page-->
 <!--13--><script src="includes/chap-foot.js" defer></script>
 <!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
 <!--15--><script src="includes/footer-settings.js?v=2" defer></script>
-
+<!--16--><script src="includes/subscription-curtain.js?v=2" defer></script>
 </HEAD>
 
 <BODY class="accessibility-plugin-ac">
 
     <!--TOUR-CURTAIN-->
     <tour-curtain></tour-curtain>
+<subscription-curtain></subscription-curtain>
     
     
       <div id="underlayer" class="accessibility-plugin-ac">
@@ -411,6 +412,7 @@ All the page components required to build this page-->
 </div> <!--underlayer close-->
 
 <script src="../book-note-scripts.js" defer ></script>
+<script src="../content-javascript.js?v=3" defer></script>
 
 </BODY>
 

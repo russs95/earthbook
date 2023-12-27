@@ -121,6 +121,7 @@ color: var(--drop-cap);}
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;" onload="buildGlossary()">
 <!--TOUR-CURTAIN-->
 <tour-curtain></tour-curtain>
+<subscription-curtain></subscription-curtain>
 
 
   <div id="underlayer">

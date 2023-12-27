@@ -113,6 +113,7 @@ Must be updated for each page-->
 
 <!--TOUR-CURTAIN-->
 <tour-curtain></tour-curtain>
+<subscription-curtain></subscription-curtain>
 
 
   <div id="underlayer">

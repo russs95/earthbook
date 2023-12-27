@@ -145,6 +145,7 @@ Must be updated for each page-->
 <BODY class="accessibility-plugin-ac" style="max-width:100%; overflow-x:hidden;">
 <!--TOUR-CURTAIN-->
 <tour-curtain></tour-curtain>
+<subscription-curtain></subscription-curtain>
 
 
   <div id="underlayer">

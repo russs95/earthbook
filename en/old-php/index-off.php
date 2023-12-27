@@ -212,6 +212,7 @@ Must be updated for each page-->
 <BODY class="accessibility-plugin-ac">
 
 <tour-curtain></tour-curtain>
+<subscription-curtain></subscription-curtain>
 
     <div id="underlayer">
 
