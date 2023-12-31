@@ -858,7 +858,7 @@ SUBSCRIPTION SYSTEM
 
 -----------------------------*/
 
-
+ 
 function checkRegistrationStatus() {
   const earthenRegistration = localStorage.getItem('earthenRegistration');
 
