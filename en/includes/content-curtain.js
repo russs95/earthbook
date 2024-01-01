@@ -132,11 +132,11 @@ class ContentCurtain extends HTMLElement {
                             <div class="word-count-tc"><i>2,294 words</i></div>
                         </div></a>
 
-                        <a href="unpublished.html">
+                        <a href="matter.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Manner of the Mollusk</div>
                             <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>unpublished</i></div>
+                            <div class="word-count-tc"><i>1989</i></div>
                         </div>
                         </a>
 
