@@ -7,7 +7,7 @@ self.addEventListener('install', event => {
         
 '/',
 
-//FONTS
+//FONTS 
 
 '/fonts/Mulish-Light.ttf',
 '/fonts/CooperMediumBT.ttf',
