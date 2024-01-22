@@ -1,9 +1,9 @@
 [
-
+  
   {
     "postID": "26",
     "title": "Biome",
-    "keywords": "biome, biomes",
+    "keywords": "biome, biomes, ecosystem, biosphere",
     "chap_description": "An ecosystem of ecosystems: the principal ecosystem of a biosphere.",
     "url": "..\/en\/glossary.php#biome",
     "language": "English",
@@ -11,7 +11,7 @@
     "chapter": "Term in Glossary",
     "words": "",
     "relevant_chap": "Chap. 1: Imagine",
-  "relevant_chap_url":"imagine.html",
+    "relevant_chap_url":"imagine.html",
     "image_url": "..\/icons\/glossary.svg"
   },
   
@@ -35,7 +35,7 @@
 {
   "postID": "27",
   "title": "Biosphere",
-  "keywords": "biosphere, biospheres",
+  "keywords": "biosphere, biospheres, ecosystem, biome",
   "chap_description": "The all-encompassing ecology of a planet (usually that of Earth).",
   "url": "..\/en\/glossary.php#biosphere",
   "language": "English",
@@ -49,7 +49,7 @@
 {
   "postID": "28",
   "title": "Biodiversity",
-  "keywords": "biodiversity",
+  "keywords": "biodiversity, ecology, species, ecosystem",
   "chap_description": "The variety and plurality of species in a biological system.",
   "url": "..\/en\/glossary.php#biodiversity",
   "language": "English",
@@ -74,6 +74,7 @@
   "relevant_chap_url":"earthen.html",
   "image_url": "..\/icons\/glossary.svg"
 },
+
 {
   "postID": "30",
   "title": "Dap'ay",
@@ -92,7 +93,7 @@
 {
     "postID": "31",
     "title": "earth",
-    "keywords": "earth,",
+    "keywords": "earth, Earth",
     "chap_description": "Soil, ground [lowercase ‘e’]. Used with an article (i.e. “the”)",
     "url": "..\/en\/glossary.php#earth",
     "language": "English",
@@ -103,7 +104,7 @@
   },
   {
     "postID": "32",
-    "title": "Earth",
+    "title": "Earth, earth",
     "keywords": "Earth,",
     "chap_description": "The third planet orbiting the sun [uppercase ‘E’]. Used without an article.",
     "url": "..\/en\/glossary.php#Earth",
@@ -118,7 +119,7 @@
   {
     "postID": "33",
     "title": "Earthen",
-    "keywords": "Earthen,",
+    "keywords": "Earthen, earthen",
     "chap_description": "Of the character of the Earth. [Capital ‘E’]",
     "url": "..\/en\/glossary.php#earthen",
     "language": "English",
@@ -133,7 +134,7 @@
   {
     "postID": "34",
     "title": "earthen",
-    "keywords": "earthen,",
+    "keywords": "earthen, Earthen",
     "chap_description": "Of the earth (i.e. soil, ground) [lowercase ‘e’]",
     "url": "..\/en\/glossary.php#earthenethics",
     "language": "English",
@@ -255,8 +256,8 @@
 },
 {
   "postID": "42",
-  "title": "Igorot",
-  "keywords": "Igorot, highlands, northern Luzon, West Philippines Sea",
+  "title": "Igorots",
+  "keywords": "Igorot, igorots, highlands, northern Luzon, West Philippines Sea",
   "chap_description": "The people of the highlands of northern Luzon, in the West Philippines Sea.",
   "url": "..\/en\/glossary.php#igorot",
   "language": "English",
@@ -284,7 +285,7 @@
 {
   "postID": "44",
   "title": "Cyclocentric",
-  "keywords": "cyclocentric, cycle, kincentric, ecocentric, biocentric, synchony, William Henry Scott, Igorot Ayyew culture, calendar, time, cycles",
+  "keywords": "cyclocentric, cycle, kincentric, ecocentric, biocentric, synchony, William Henry Scott, Igorot Ayyew culture",
   "chap_description": "From the Greek Κύκλος for 'Cycle', we introduce the term 'cyclocentric' to describe kincentric cultures and their propensity to self organize around the sync and celebration of Earthen cycles.",
   "url": "..\/en\/glossary.php#cyclocentric",
   "language": "English",
@@ -299,7 +300,7 @@
 {
   "postID": "45",
   "title": "Kincentric",
-  "keywords": "kincentric, humancentric, anthropocentric, plants, animals, Earth, ecosystems",
+  "keywords": "kincentric, humancentric, anthropocentric, kin",
   "chap_description": "In opposition to humancentric; a view of the world in which plants, humans, animals and all Earthen organisms share ancestry and origins, cycles and ecosystems.",
   "url": "../en/glossary.php#kincentric",
   "language": "English",
@@ -412,8 +413,8 @@
 
 {
   "postID": "54",
-  "title": "Cylical Design",
-  "keywords": "cycles, spiral, circular, regenerative,",
+  "title": "Spiral Design",
+  "keywords": "cycles, spiral, circular, cyclical, regenerative,design, principles",
   "chap_description": "The Earthen principle of crafting indefinite cycles that ever enriching, both socially and ecologically.",
   "url": "..\/fr\/glossary.php#cyclical",
   "language": "English",
@@ -437,6 +438,21 @@
   "words": "",
   "relevant_chap": "Chap. 9: The Cycle of the Salmon",
   "relevant_chap_url":"energy.html",
+  "image_url": "..\/icons\/glossary.svg"
+},
+
+{
+  "postID": "54",
+  "title": "Ecobrick",
+  "keywords": "ecobrick, eco, eco-brique, ecobrique, ecoladrillo, Ecobrick, eco-brick, brik, ecobrik",
+  "chap_description": "An ecobrick is a plastic bottle densely packed with used plastic to create a reusable building block that achieves plastic sequestration. ",
+  "url": "..\/en\/glossary.php#earthenterprise",
+  "language": "English",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "",
+  "relevant_chap": "Chap. 9: The Cycle of the Salmon",
+  "relevant_chap_url":"what.php",
   "image_url": "..\/icons\/glossary.svg"
 }
 ]
