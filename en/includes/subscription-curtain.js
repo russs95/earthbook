@@ -35,6 +35,10 @@ class subscriptionCurtain extends HTMLElement {
           <input type="submit" value="➔" class="register-button" id="reg-status-icon" onclick="handleFormSubmit(event)">
         </form>
         <div class="reg-sub">Get access to our newsletter and to EarthCal, our revolutionary calendar based on Igorot and Earthen principles.</div>
+        <div class="reg-sub" id="reg-sub-checker">
+        <input type="checkbox" id="reg-sub-checkbox" onclick="checkBoxActivated()">
+        <label for="reg-sub-checkbox">I've already signed up or I am not interested - don't show again</label>
+        </div>
       </div>
     </div>
   </div>
