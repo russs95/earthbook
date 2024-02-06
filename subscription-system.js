@@ -21,10 +21,10 @@ function checkRegistrationStatus() {
         }
   
         // Set the margin-top of .registration-footer-holder to 70px
-        const registrationFooterHolder = document.querySelector('.registration-footer-holder');
-        if (registrationFooterHolder) {
-            registrationFooterHolder.style.marginTop = '70px';
-        }
+        // const registrationFooterHolder = document.querySelector('.registration-footer-holder');
+        // if (registrationFooterHolder) {
+        //     registrationFooterHolder.style.marginTop = '70px';
+        // }
     }
   }
   
