@@ -24,6 +24,11 @@
 
 
     --settings-background: rgba(222, 222, 222, 0.871) ;
+    --side-overlays: rgb(225, 225, 225);
+    --top-header: #fff;  
+    --h1: black;
+    --header-accent: rgb(133, 133, 133);
+
 
    }
    
@@ -181,6 +186,11 @@ background-size: contain;
   background-size: contain;
 }
 
+.registration-footer-holder {
+  background: url(webp/earthen-subscription-background-light.webp) top center, var(--top-header);
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 /*
 body {
   background-color: rgb(250, 250, 250) !important;

@@ -22,6 +22,12 @@
   --highlight-modal: rgba(70, 70, 70, 0.856);
 
   --settings-background: #17181bd7 ;
+  --top-header: #21232f;
+  --h1: #fff;
+  --subdued-text: rgb(158, 162, 184);
+  --side-overlays: rgb(24, 26, 38);
+
+
 
  }
 
@@ -206,6 +212,13 @@ background-size: contain;
   background: url(svgs/up-reg-arrow-dark.svg) center no-repeat;
   background-size: contain;
 }
+
+.registration-footer-holder {
+  background: url(webp/earthen-subscription-background-dark.webp) top center, var(--side-overlays);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 /*
   #settings-menu {
