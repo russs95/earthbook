@@ -1,10 +1,10 @@
 const addResourcesToCache = async (resources) => {
-    const cache = await caches.open("v1");
+    const cache = await caches.open("v2");
     await cache.addAll(resources);
   };
   
   const putInCache = async (request, response) => {
-    const cache = await caches.open("v1");
+    const cache = await caches.open("v2");
     await cache.put(request, response);
   };
   
@@ -135,6 +135,14 @@ const addResourcesToCache = async (resources) => {
 '/en/declarations.html',
 '/en/bibliography.html',
 '/en/glossary.html',
+
+        //Registration images
+
+        'webp/earthen-logo-icon.webp',
+        'svgs/subscription-side-image.svg',
+        'webp/earthen-subscription-background-dark.webp',
+        'webp/earthen-subscription-background-light.webp'
+
       ]),
     );
   });
