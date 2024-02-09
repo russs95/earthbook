@@ -140,7 +140,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="unpublished.html">
+                        <a href="diversification.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Polyp's Pattern</div>
                             <div class="dotted-line"></div>
