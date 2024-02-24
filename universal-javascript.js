@@ -31,8 +31,18 @@ Here are all the scripts useScripts used on all Earthbook pages to pull in the v
 */
 
 
+/*ROLL CALL*/
+
+  // setPageLanguageFromCache();
+  // alert(currentLanguage);
+  // var currentLanguage = 'en';
+  // switchLanguage(currentLanguage);
+
+  
 
 window.onload = function() {
+  // var siteName = 'tractatus-ayyew'; 
+  window.subSource = 'tractatus-ayyew'; // Make subSource globally accessible
   document.getElementById("search_input").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
       EarthbookSearch();
