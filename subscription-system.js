@@ -3,7 +3,7 @@
 
  
 EARTHEN SUBSCRIPTION SYSTEM
-Version 1.0  | Febrauary 4th, 2024
+Version 1.1  | April 28, 2024
 https://api.earthen.io
 
 -----------------------------*/
@@ -19,47 +19,53 @@ function checkRegistrationStatus() {
         if (regTopSection) {
             regTopSection.style.display = 'none';
         }
-  
-        // Set the margin-top of .registration-footer-holder to 70px
-        // const registrationFooterHolder = document.querySelector('.registration-footer-holder');
-        // if (registrationFooterHolder) {
-        //     registrationFooterHolder.style.marginTop = '70px';
-        // }
+        console.log('User is registered');
+    } else {
+        // If the user is not registered
+        console.log('User not yet registered, embarking on subscription sequence');
     }
-  }
-  
+}
+
   
   let submissionPhase = 1;
-  
-  function handleFormSubmit(event) {
-      // Prevent the default form submission behavior
-      if (event) event.preventDefault();
-  
-      const form = document.getElementById("emailForm");
-      const emailInput = form.elements["email"];
-      const nameInput = form.elements["name"];
-  
-      switch (submissionPhase) {
-          case 1:
-              handlePhase1(emailInput, nameInput);
-              break;
-          case 2:
-              animateEmailInput(emailInput, nameInput);
-              break;
-          case 3:
-              checkNameInput(nameInput);
-              break;
-          case 4:
-              saveRegData2Cache(emailInput, nameInput, form);
-              break;
-          case 5:
-              sendData2WebHook(emailInput, nameInput, form);
-              break;
-          case 6:
+
+  function handleSubscriptionSubmit(event) {
+    // Prevent the default form submission behavior
+    if (event) event.preventDefault();
+    const form = document.getElementById("emailForm");
+    const emailInput = form.elements["email"];
+    const nameInput = form.elements["name"];
+    console.log("The sub source is: " + window.subSource);
+
+
+
+    switch (submissionPhase) {
+        case 1:
+            handlePhase1(emailInput, nameInput);
+            break;
+        case 2:
+            animateEmailInput(emailInput, nameInput);
+            break;
+        case 3:
+            checkNameInput(nameInput);
+            break;
+        case 4:
+            saveRegData2Cache(emailInput, nameInput, form);
+            break;
+        case 5:
+            // Ensure some delay if needed or directly call
+            sendData2WebHook(emailInput, nameInput, form);
+            break;
+        case 6:
             sendDownRegistration();
             checkRegistrationStatus();
-      }
-  }
+            break;
+        default:
+            console.error("Invalid submission phase");
+    }
+}
+
+
   
   
   function handlePhase1(emailInput, nameInput) {
@@ -82,7 +88,7 @@ function checkRegistrationStatus() {
   
       // Update submission phase to 2.1 for email animation
       submissionPhase = 2;
-      handleFormSubmit(new Event('submit')); // Proceed to animate email input
+      handleSubscriptionSubmit(new Event('submit')); // Proceed to animate email input
   
   }
   
@@ -102,7 +108,7 @@ function checkRegistrationStatus() {
         setTimeout(() => {
             nameInput.style.width = '70%';
             submissionPhase = 3;
-            // handleFormSubmit(new Event('submit')); // Proceed to check name input
+            // handleSubscriptionSubmit(new Event('submit')); // Proceed to check name input
         }, 10);
     }, 300);
   }
@@ -129,7 +135,7 @@ function checkRegistrationStatus() {
   
     // If name input is valid, proceed to the next phase
     submissionPhase = 4;
-    handleFormSubmit(new Event('submit')); // Proceed to the next phase
+    handleSubscriptionSubmit(new Event('submit')); // Proceed to the next phase
   }
   
 
@@ -139,15 +145,17 @@ function checkRegistrationStatus() {
   
   
   function saveRegData2Cache(emailInput, nameInput, form) {
-      // Store data in browser cache and log
-      const earthenRegistration = {
-          email: emailInput.value,
-          name: nameInput.value,
-          dateTimeSubmitted: new Date().toISOString(),
-          notes: 'registered on earthbook'
-      };
-      localStorage.setItem('earthenRegistration', JSON.stringify(earthenRegistration));
-      console.log(earthenRegistration);
+    console.log("subSource in saveRegData2Cache:", window.subSource);
+
+    const earthenRegistration = {
+        email: emailInput.value,
+        name: nameInput.value,
+        dateTimeSubmitted: new Date().toISOString(),
+        source: window.subSource, // Use the passed notes value
+        language: window.currentLanguage
+    };
+    localStorage.setItem('earthenRegistration', JSON.stringify(earthenRegistration));
+    console.log(earthenRegistration);
   
       // Animate name input to shrink to 0% width
       nameInput.style.transition = 'width 0.3s';
@@ -183,18 +191,20 @@ function checkRegistrationStatus() {
   }
   
   function sendData2WebHook(emailInput, nameInput, form) {
-      // Prepare data for the webhook
-      const data = {
-          email: emailInput.value,
-          name: nameInput.value,
-          notes: 'earthbook'
-      };
-  
+    // Use the notes parameter to set the value of 'notes'
+    const data = {
+        email: emailInput.value,
+        name: nameInput.value,
+        source: window.subSource, // Use the global value
+        language: window.currentLanguage
+
+    };
+    console.log('subSource before sending:', window.subSource);
       // Log the data to be sent
       console.log('Sending data to webhook:', JSON.stringify(data));
   
-      // Send data to the webhook
-      fetch('https://hook.eu1.make.com/xtlexd0girt9ua3hnsfuzwlrjgrsmqgt', {
+      // Send data to the webhook for Tractatus Ayyew 
+      fetch('https://hook.eu1.make.com/s48m91tiktmt4y8osnh4oht1cfatuqh9', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
@@ -268,7 +278,7 @@ function invite2Register() {
     const earthenRegistrationData = localStorage.getItem('earthenRegistration');
     
     if (!earthenRegistrationData) {
-        updateShowCounter();
+        // updateShowCounter();
   
         let showCounter = parseInt(localStorage.getItem('showCounter'));
         let delayDuration;
@@ -300,14 +310,22 @@ function invite2Register() {
     }
   }
   
-  
+
   function updateShowCounter() {
     let showCounter = localStorage.getItem('showCounter');
     showCounter = showCounter ? parseInt(showCounter) + 1 : 1;
     localStorage.setItem('showCounter', showCounter);
-  }
 
-  function displayCheckBoxToHideSubscription() {
+    // Post the value of showCounter to the console
+    console.log("showCounter: " + showCounter);
+
+    // Check if showCounter is higher than 3 and trigger the function
+    if (showCounter > 4) {
+        displayCheckBoxToHideSubscription();
+    }
+}
+
+function displayCheckBoxToHideSubscription() {
     const regSubChecker = document.getElementById('reg-sub-checker');
     if (regSubChecker) {
         regSubChecker.style.display = 'block';
@@ -335,7 +353,7 @@ var guidedTourModal = document.querySelector('#guided-tour .modal');
 // Check if the guidedTourModal is defined and visible
 if (guidedTourModal && guidedTourModal.style.display !== "none") {
     // If it's visible, show an alert and exit the function
-    alert('nope');
+    // alert('nope');
     return;
 }
 
@@ -352,6 +370,7 @@ if (guidedTourModal && guidedTourModal.style.display !== "none") {
     emailRegistration.style.display = "block";
     upArrow.style.display = "none";
     downArrow.style.display = "block";
+    updateShowCounter();
 }
 
   
@@ -381,12 +400,12 @@ if (guidedTourModal && guidedTourModal.style.display !== "none") {
 
   
       // Change the text of the checkbox div
-      checkerDiv.innerText = "Ok! You won't see the subscribe option again-- but you can always find it again in the main menu.";
+      checkerDiv.innerText = "Ok! You won't see the subscription box again. However, you can always find it again in the main menu.";
   
       // Update styles
       checkerDiv.style.backgroundColor = 'var(--emblem-blue)';
-      checkerDiv.style.color = 'var(--main-background)';
-      checkerDiv.style.fontSize = 'normal';
+      checkerDiv.style.color = 'var(--h1)';
+      checkerDiv.style.fontSize = 'large';
       explaDiv.style.display = 'none';
   
       // Show this text for 2 seconds, then call sendDownRegistration
@@ -396,7 +415,7 @@ if (guidedTourModal && guidedTourModal.style.display !== "none") {
         checkerDiv.style.color = 'var(--text-color)';
         checkerDiv.style.fontSize = 'small';
         explaDiv.style.display = 'block';
-      }, 8000);
+      }, 4000);
   
       // Check for earthenRegistration in browser cache
       if (localStorage.getItem('earthenRegistration')) {
