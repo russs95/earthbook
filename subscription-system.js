@@ -241,47 +241,82 @@ function checkRegistrationStatus() {
 //   }
 
 
+// function sendData2WebHook(emailInput, nameInput, form) {
+//     const ghostAdminApiUrl = 'https://earthen.io/ghost/api/v3/admin/members/';
+//     const apiKey = '662e2789d27acf008a250c99:cd1a8de113c3e3d984c6926727b2a7c1ed671b425f616119b3b37a377254634a'; // Caution: Exposing API keys client-side is risky
+
+//     const data = {
+//         members: [{
+//             email: emailInput.value,
+//             name: nameInput.value,
+//             subscribed: true,
+//             labels: ['Tractatus Ayyew Signup'], // Example label, you can customize this
+//             note: 'Signed up via test JS form'
+//         }]
+//     };
+
+//     console.log('Sending data to Ghost:', JSON.stringify(data));
+
+//     fetch(ghostAdminApiUrl, {
+//         method: 'POST',
+//         headers: {
+//             'Authorization': `Ghost ${btoa(apiKey)}`,
+//             'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify(data)
+//     })
+//     .then(response => {
+//         if (response.ok) {
+//             return response.json(); // Ghost API should return JSON
+//         }
+//         return response.text().then(text => {
+//             throw new Error(`HTTP error! status: ${response.status}, response: ${text}`);
+//         });
+//     })
+//     .then(json => {
+//         console.log('Success:', json);
+//         updateUIOnSuccess(); // Update UI for success
+//     })
+//     .catch((error) => {
+//         console.error('Error:', error);
+//         updateUIOnError(); // Update UI for error
+//     });
+// }
+
 function sendData2WebHook(emailInput, nameInput, form) {
-    const ghostAdminApiUrl = 'https://earthen.io/ghost/api/v3/admin/members/';
-    const apiKey = '662e2789d27acf008a250c99:cd1a8de113c3e3d984c6926727b2a7c1ed671b425f616119b3b37a377254634a'; // Caution: Exposing API keys client-side is risky
 
-    const data = {
-        members: [{
-            email: emailInput.value,
-            name: nameInput.value,
-            subscribed: true,
-            labels: ['Tractatus Ayyew Signup'], // Example label, you can customize this
-            note: 'Signed up via test JS form'
-        }]
-    };
+const proxyUrl = 'https://ecobricks.org/newsletter-registration-proxy.php'; // URL to your PHP proxy
 
-    console.log('Sending data to Ghost:', JSON.stringify(data));
+const data = {
+    members: [{
+        email: emailInput.value,
+        name: nameInput.value,
+        subscribed: true,
+        labels: ['From JS Site'],
+        note: 'Signed up via JS form'
+    }]
+};
 
-    fetch(ghostAdminApiUrl, {
-        method: 'POST',
-        headers: {
-            'Authorization': `Ghost ${btoa(apiKey)}`,
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => {
-        if (response.ok) {
-            return response.json(); // Ghost API should return JSON
-        }
-        return response.text().then(text => {
-            throw new Error(`HTTP error! status: ${response.status}, response: ${text}`);
-        });
-    })
-    .then(json => {
-        console.log('Success:', json);
-        updateUIOnSuccess(); // Update UI for success
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        updateUIOnError(); // Update UI for error
-    });
+console.log('Sending data to proxy:', JSON.stringify(data));
+
+fetch(proxyUrl, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+})
+.then(response => response.json())
+.then(json => {
+    console.log('Success:', json);
+    updateUIOnSuccess(); // Update UI for success
+})
+.catch((error) => {
+    console.error('Error:', error);
+    updateUIOnError(); // Update UI for error
+});
 }
+
 
   
   
