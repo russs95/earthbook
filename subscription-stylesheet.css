@@ -199,13 +199,13 @@ version 1.0
 @media screen and (min-width: 1201px) {
     
   #reg-up-button {
-      margin: 0px -230px 6px auto;
+      margin: 0px -88px 6px auto;
       width: 25%;
       height: 40px;
   }
 
   #reg-up-button:hover {
-      margin: 0px -185px 5px auto;    
+      margin: 0px -66px 5px auto;    
       opacity: 1 !important;
   }
 
