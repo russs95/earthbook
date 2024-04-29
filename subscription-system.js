@@ -291,9 +291,8 @@ const data = {
     members: [{
         email: emailInput.value,
         name: nameInput.value,
+        note: 'Signed up via JS form',
         subscribed: true,
-        labels: ['From JS Site'],
-        note: 'Signed up via JS form'
     }]
 };
 
