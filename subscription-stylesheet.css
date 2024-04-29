@@ -133,7 +133,7 @@ version 1.0
   z-index: 10;
   width: 100px;
   bottom: 0;
-  height: 50px;
+
   position: fixed;
   right: 0;
   transition: 0.3s;
@@ -151,11 +151,13 @@ version 1.0
 @media screen and (max-width: 699px) {
     
   #reg-up-button {
-      margin:0px -20px -2px auto;
+      margin:0px -20px 6px auto;
+      height: 30px;
   }
 
   #reg-up-button:hover {
-      margin:0px 0px -2px auto;    
+      margin:0px 0px 6px auto;    
+            opacity: 1 !important;
   }
 
   #reg-down-button {
@@ -169,16 +171,42 @@ version 1.0
   }
 }
 
+@media screen and (min-width: 701px) and (max-width: 1200px) {
+  #reg-up-button {
+    margin: 0px -77px 6px auto;
+    width: 25%;
+    height: 40px;
+}
 
-@media screen and (min-width: 700px) {
+#reg-up-button:hover {
+  margin: 0px -85px 5px auto;    
+  opacity: 1 !important;
+}
+
+#reg-down-button {
+  width:15%;
+  margin: 10px auto 0px auto;
+  height: 19px;
+}
+
+#reg-down-button img {
+  height: 19px;
+}
+}
+
+
+
+@media screen and (min-width: 1201px) {
     
   #reg-up-button {
-      margin: 0px -100px 6px auto;
+      margin: 0px -230px 6px auto;
       width: 25%;
+      height: 40px;
   }
 
   #reg-up-button:hover {
-      margin:0px -50px 6px auto;    
+      margin: 0px -185px 5px auto;    
+      opacity: 1 !important;
   }
 
   #reg-down-button {
@@ -247,7 +275,7 @@ flex-flow:column;
 }
 
 .reg-header {
-  font-family: 'Arvo',serif; 
+  font-family: 'Arvo','CooperLT', serif; 
   color:var(--h1);
 }
 
@@ -362,4 +390,17 @@ text-decoration: underline;
     width:fit-content;
     font-size:0.8em;
     padding:10px 15px 10px 15px;
+    text-decoration: underline;
+    color: var(--text-color);
   }
+
+  .full-privacy-policy-link a {
+    color: var(--h1) !important;
+    text-decoration: underline;
+  }
+
+  .full-privacy-policy-link a:hover {
+    color: var(--emblem-organge) !important;
+    text-decoration: none;
+  }
+
