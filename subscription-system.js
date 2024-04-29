@@ -285,7 +285,7 @@ function checkRegistrationStatus() {
 
 function sendData2WebHook(emailInput, nameInput, form) {
 
-const proxyUrl = 'https://ecobricks.org/newsletter-registration-proxy.php'; // URL to your PHP proxy
+const proxyUrl = 'https://ecobricks.org/scripts/newsletter-registration-proxy.php'; // URL to your PHP proxy
 
 const data = {
     members: [{
