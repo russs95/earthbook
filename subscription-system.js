@@ -193,96 +193,6 @@ function checkRegistrationStatus() {
 
 
 
-
-//   function sendData2WebHook(emailInput, nameInput, form) {
-//     // Use the notes parameter to set the value of 'notes'
-//     const data = {
-//         email: emailInput.value,
-//         name: nameInput.value,
-//         source: window.subSource, // Use the global value
-//         language: window.currentLanguage
-
-//     };
-//     console.log('subSource before sending:', window.subSource);
-//       // Log the data to be sent
-//       console.log('Sending data to webhook:', JSON.stringify(data));
-  
-//       // Send data to the webhook for Tractatus Ayyew 
-//       fetch('https://hook.eu1.make.com/s48m91tiktmt4y8osnh4oht1cfatuqh9', {
-//           method: 'POST',
-//           headers: {
-//               'Content-Type': 'application/json',
-//           },
-//           body: JSON.stringify(data),
-//       })
-//       .then(response => {
-//           // Check if the response status is 200
-//           if (response.status === 200) {
-//               // Handle successful response (text response)
-//               return response.text();
-//           } else {
-//               // Handle non-200 responses as errors
-//               return response.text().then(text => {
-//                   throw new Error(`HTTP error! status: ${response.status}, response: ${text}`);
-//               });
-//           }
-//       })
-//       .then(text => {
-//           // Log the successful text response
-//           console.log('Success:', text);
-//           submissionPhase = 6;
-//           updateUIOnSuccess(); // Update UI for success
-//       })
-//       .catch((error) => {
-//           // Log and handle errors
-//           console.error('Error:', error);
-//           updateUIOnError(); // Update UI for error
-//       });
-//   }
-
-
-// function sendData2WebHook(emailInput, nameInput, form) {
-//     const ghostAdminApiUrl = 'https://earthen.io/ghost/api/v3/admin/members/';
-//     const apiKey = '662e2789d27acf008a250c99:cd1a8de113c3e3d984c6926727b2a7c1ed671b425f616119b3b37a377254634a'; // Caution: Exposing API keys client-side is risky
-
-//     const data = {
-//         members: [{
-//             email: emailInput.value,
-//             name: nameInput.value,
-//             subscribed: true,
-//             labels: ['Tractatus Ayyew Signup'], // Example label, you can customize this
-//             note: 'Signed up via test JS form'
-//         }]
-//     };
-
-//     console.log('Sending data to Ghost:', JSON.stringify(data));
-
-//     fetch(ghostAdminApiUrl, {
-//         method: 'POST',
-//         headers: {
-//             'Authorization': `Ghost ${btoa(apiKey)}`,
-//             'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify(data)
-//     })
-//     .then(response => {
-//         if (response.ok) {
-//             return response.json(); // Ghost API should return JSON
-//         }
-//         return response.text().then(text => {
-//             throw new Error(`HTTP error! status: ${response.status}, response: ${text}`);
-//         });
-//     })
-//     .then(json => {
-//         console.log('Success:', json);
-//         updateUIOnSuccess(); // Update UI for success
-//     })
-//     .catch((error) => {
-//         console.error('Error:', error);
-//         updateUIOnError(); // Update UI for error
-//     });
-// }
-
 function sendData2WebHook(emailInput, nameInput, form) {
 
 const proxyUrl = 'https://ecobricks.org/scripts/newsletter-registration-proxy.php'; // URL to your PHP proxy
@@ -291,7 +201,7 @@ const data = {
     members: [{
         email: emailInput.value,
         name: nameInput.value,
-        note: 'Signed up via JS form',
+        note: 'Signed up Tractatus Ayyew',
         subscribed: true,
     }]
 };
