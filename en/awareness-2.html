@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<title>The Means of the Mycorryzal | Tractatus Ayyew - An Earthbook</title>
+<meta charset="UTF-8"> 
+
+                               
+<!--
+o               .        ___- -___                    .                   
+       .              .-\          -.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,-'      / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___, -'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~- ___ ; ___-~       
+                 .          -_-         .              -JT
+
+
+EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+ 
+
+Landing page - version 1.3.2
+Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
+First EarthBook, the Tractatus Ayyew, published 22.12.22.
+
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
+For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
+*/
+-->
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/en/matter.html"> 
+<link rel="alternate" href="https://book.earthen.io/en/matter.html" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/matter.html" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/matière.html" hreflang="fr" >
+<!--
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="igorots, ayyew, cycles, spirals, energy, matter, entropy, thermodynamics, mollusc, means, matter, spiral, principle 3, amonite"> 
+<meta name="description" content="Earthen Principle No.5: Earth’s systems tend towards ever greater awareness of their interconnection.">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-10-10T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="An Earthen Ethic | Tracatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="The Means of the Mycorryzal | Book Two  | Tratatus Ayyew - Earthbook.">
+<meta property="og:description"   content="Earthen Principle No.5: Earth’s systems tend towards ever greater awareness of their interconnection..">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
+<meta property="og:locale" content="en_EN" >
+<meta property="og:url" content="https://book.earthen.io/en/awareness.html">
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.4">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+
+ 
+
+<script>
+      // Declare the global variables
+     var lang = "en";
+     var book = "Book Two";
+    var chapNo = "5";
+    var chapName = "The Means of the Mycorrhizal";
+    var chaptURL = "awareness.html"   // Declare the global variables
+  
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+
+</script>
+
+
+    <!-- PRELOADS-->
+    <!-- Preload for dark mode -->
+    <link rel="preload" as="image" href="../svgs/10-matter-dark.svg" media="(prefers-color-scheme: dark)">
+    <!-- Preload for light mode -->
+    <link rel="preload" as="image" href="../svgs/10-matter-white.svg" media="(prefers-color-scheme: light)">
+    
+
+ <!-- INCLUDES
+ Main Scripts-->   
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../universal-javascript.js" defer></script>
+
+<script src="../clipboard.min.js" defer></script>
+ <script src="../subscription-system.js?v=4"></script>
+ <link rel="stylesheet" type="text/css" href="../subscription-stylesheet.css">
+
+ 
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<!--13--><script src="includes/chap-foot.js?V=2" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+<!--16--><script src="includes/subscription-curtain.js?v=2" defer></script>
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+
+
+ @media screen and (max-width: 699px) {
+    .ct-chapter-quote {
+      width: 87%;
+      font-size: 1.4em;
+    }
+    .ct-quote-source {
+      width: 80%;
+      font-size: 0.8em;
+    }
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1324px) {
+    .ct-chapter-quote {
+      width: 70%;
+      font-size: 1.8em;
+    }
+    .ct-quote-source {
+      width: 70%;
+      font-size: 1em;
+    }
+  }
+    
+  @media screen and (min-width: 1325px) {
+    .ct-chapter-quote {
+    width: 50%;
+    font-size: 2em;
+    text-shadow: 0px 0px 12px var(--slider);
+    }
+    .ct-quote-source {
+      width: 50%;
+      font-size: 1em;
+    }
+  }
+
+
+
+    #ct-chapter-title {
+      padding-top: 30px;
+      font-size: 9vmin;
+      letter-spacing: 2px;
+      line-height: 1em;
+      
+    }
+
+
+
+ @media screen and (min-width: 700px) {
+  .chart-image-desktop {
+    width: 100%;
+    padding: 18px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--slider);
+    border-radius: 8px;
+    margin-left: -20px;
+  }
+
+  .chart-image-desktop img {
+    width: 100%;
+  }
+
+  .chart-image-mobile {
+
+display: none;
+}
+}
+
+
+@media screen and (max-width: 699px) {
+
+  .chart-image-mobile {
+    width: 100%;
+    padding: 6px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--slider);
+    border-radius: 8px;
+    
+  }
+
+
+  .chart-image-mobile img {
+    width: 100%;
+    height: auto;
+  }
+
+  .chart-image-desktop {
+
+    display: none;
+  }
+  }
+
+  .chart-caption  {
+    padding: 15px 5px 15px 5px; 
+    text-align: left;
+    font-size: smaller;
+    font-family:'Mulish', sans-serif;
+    color: var(--subdued-text);
+  }
+
+  
+
+  
+
+</style>
+</HEAD>
+
+<BODY class="accessibility-plugin-ac">
+
+<!--TOUR-CURTAIN-->
+<tour-curtain></tour-curtain>
+<subscription-curtain></subscription-curtain>
+
+
+  <div id="underlayer">
+
+    <div id="top"></div>
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+
+<div id="ct-chapter-top">
+  <button type=button id="ct-tc-menu" onclick="openContents()" style="background-color:var(--header-footer);" aria-label="Open Table of Contents"></button>
+  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+        <div id="ct-chapter-title">The Mycorrhizal's Means</div>   
+        <div id="ct-book-title">Tractatus Ayyew</div>
+        <div id="ct-chap-location">Earthen Principle No. 5</div>
+        <div id="ct-word-count"><i>Book Two | 2,307 words</i></div>
+      </div>
+  </div>
+
+<!-- Page Title Section-->
+
+  <div id="ct-chapt-graphic" class="background-12">
+  
+  </div> 
+
+  <div id="up-arrow"></div>
+
+
+  <div id="ct-main">
+
+
+<!-- MAIN TEXT CONTENT of the Page
+  For footnotes, use these numbers:  ¹ ² ³ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁶⁰  “ ” ³¹⁰ ²⁶ ⁴⁷ ⁵⁴
+
+  Observing the lush verdant splendor above, it is easy to overlook that the secret to the forest’s well-being lies below.
+
+  Affectionately known by scientists as the ‘wood wide web’, 
+
+
+  Within a forest, an intricate web of life exists, with trees and various organisms coexisting in a delicate balance. Beneath the soil, mycorrhizal fungi play a crucial role in facilitating communication and nutrient exchange between trees. These fungal networks connect tree roots, enabling them to share resources, information, and warnings about potential threats. In doing so, these fungi create a complex system that enhances the awareness of individual trees and, by extension, the entire forest. This interconnectedness mirrors the broader process that has unfolded over Earth's history, cultivating a steadily more aware biosphere.
+
+  .  As an individual gains and abundance or a deficit of a particular nutrient, through the network this can be sensed.  Rather than wait to soak of nitrogen or phosphorous from the soil, the tree can seek (or share) it with its neighbours. As trees share nutrients, they also share valuable information. The rates a tree takes and gives tells the others about itself and its environment.
+
+  In doing so, these fungi create a complex system that enhances the awareness of individual trees and, by extension, the entire forest.
+
+  Through their roots they can also share resources, information, and warnings about potential threats.
+
+  , the Often, these signals can result in forest wide adaptions — such as the collective release of defensive toxins to fend off an infestation. 
+
+  Douglas fir attacked by insects alerts its neighbours by a sudden shift in its pattern of give and take. 
+-->
+
+
+<div class="page-paragraph">
+  <div class="ct-chapter-quote" style="width:100%;padding:20px;margin-top:30px;">
+      <span style="background-color:var(--nav-bar-accent);padding:0.1em 0.2em;" id="en-2-3-00">“Earth’s systems tend towards ever greater awareness of their interconnection.”</span>
+      <div class="ct-quote-source" style="font-size:small;text-align:right;width:90%;">― Earthen Ethic No.5
+  </div>
+</div>
+
+
+<div class="chart-image-desktop">
+  <img src="../photos/mycorrhizal-lead.webp" style="width:100%" alt="A variety of fungal and mycellial forms, from Ernst Haeckel's 1904 Kunstformen der Natur.">
+        
+  <div class="chart-caption" >A variety of fungal and mycellial forms, from Ernst Haeckel's 1904 Kunstformen der Natur.</div>
+</div>
+
+<div class="chart-image-mobile">
+<img src="../mycorrhizal-lead.webp" style="width:100%" alt="A variety of fungal and mycellial forms, from Ernst Haeckel's 1904 Kunstformen der Natur.">
+      
+<div class="chart-caption" >A variety of fungal and mycellial forms, from Ernst Haeckel's 1904 Kunstformen der Natur.</div>
+
+</div>
+
+<div class="page-paragraph">
+    <p id="en-2-5-00"><i>
+        Beneath the mossy floor of North American temperate forests lies an intricate network exchanging the needs and nutrients of its trees.  Just under the soil, a multitude of fungal species attach to the roots of Spruce, Firs, Populars and Pines. From one root system to another, these mycorrhizal fungi weave thin threads that interconnect the forest's trees like a fiber-optic web. This mycellial tapestry enables a tree to sense the give and take of nutrients by others around it and the forest as a collective to synchoronize. A Spruce short on water lets the others know by its added draw. A Birch catching sun through a break in the canopy informs the others by the sugars flowing into its roots. A douglas fir attacked by insects alerts its neighbours by a sudden surge in its pattern of give and take.  As the night falls, as the moon ebbs; as the seasons change; the mycellium matrix allows the collective to mutualistically maximize their adaption to both planetary cycles and to individual events.  As new saplings plug in at the edge of the forest, the awareness of the collective expands. Node by node, tree by tree, as forest and fungi augments collective its awareness so too does it collective resiliency, vibrancy and abundance.</i>
+     </p></div>
+    <br><br>
+     <div id="line" style="margin-bottom: 30px;"></div>
+<br><br>
+    <div>
+      
+    <div class="lead-page-paragraph"><p id="en-2-5-00">
+    THE WAY THAT a forest and its fungi work together to enrich both the parts and the whole of their ecosystem provides us with our fifth and final Earthen ethic.  Already emobdying our first four ethics, temperate forests and their mycorhirzal networks exemplify the enriching spiral of matter and energy towards ever more diverse organisms and ecosystems.  Under the forest canopy, thousands of species thrive together, each a contribuant to their common home.  However, the intricate 'wood wide web' that interconnects the forests trees like nodes in a network, reveals a further, all encompassing phenonon.  As we shall see, <i>the tendency by which organisms and ecosystems steadily increase their awareness of their interconnection</i> underlies the billion year process by which Earth's has transformed from barren to biosphere.  By looking closely at how this pheonomon has unfolded over Earth's history, we shall lay out our fith and final Earthen ethic of awaring.  With its help we can not only ensure that our enterprise are green, we can begin to steadily make them greener and greener.</p>
+        
+       
+      
+      
+      
+      
+      <!--good!!
+        
+        AS WE ENDEAVOUR TO understand the parameters of ecological contribution we arrive at the fifth facet of Earth's cosmological character.  Thus far we have observed that Earthen process tend towards ecological enrichment through the sprial cycle of matter and energy towards ever increasing vitality and diversity.  Our fifth Earth ethic, encapsulates the entire dynamic, precipitating a phenonomenon which sets Earth apart from all its fellow planets in the solar system: consciousness.  More specifically: <i>an ever increasing awareness of one's connection to others and the cycles of life As we shall see, the tendency towards steadily increasingly ecological awareness, is a fundamental aspect of Earth's character-- of which the mycorrhizal forest is a magnificient example.  By looking closely at both, we shall see how the communication of give and take allow Earthen systems to steadily deepen their harmony with Earth's cycles.</i>.  
+    
+    move to book three:
+
+ <p>As we shall see, the way in which Earthen systems cyclically share their give and take of nutrients with each other, increases the health, resiliency and abundance of both organism and ecosystem.  This dynamic of 'awaring' is an example that our modern enterprises may follow to ensure that they too are green.  Through impact accounting and cyclical disclosure, this final Earthen ethic, encompasses each of the other four.  With its help we can not only ensure that our enterprise are green, we can begin to steadily make them greener and greener.</p>-->
+      
+       
+      </div>
+
+      <div class="page-paragraph">
+        <p>To begin, let us return one more time to Earth's primordial story.</p>
+<!-- 
+
+    Good summary for book three
+
+
+        <p>In the Earth's slow and steady progress from barren to biosphere over the last four billion years, we have observed thus far four intertwined tendencies guiding the Earth's cycles to steadily spiral towards .  
+
+            <p>First, Earthen processes have tended their cycles into spirals of matter and energy than have systematically greened the planet.  Second, we observed that this greening process has entailed a tendency of energy to spiral outwards to the benefit of the whole.  Third, we have observed that it has entailed the spiral of the principal elements of Earthen processes into greater and greater concentration.  Fourth, we have observed that the process by which these spirals of matter and energy intertwine, has entailed ever greater systemic diversity.  Finally, through the relentless diversification of organisms and ecosystems, we observe that these organisms and ecosystems and biomes have tended towards each becoming ever more aware of their interelation with the other.</p>
+        </p> -->
+
+        <p>Reviewing our planet's <a href="stellar.html">stellar story</a>, we have observed how Earth's unique cosmological character tended its planetary cycles towards ever greater complexity, vitality and abundance.  We also observed that this process comprised a characteristic spin of matter and energy towards the diversification of Earthen systems-- the organisms and ecosystems that emerged across the planet's surface.</p>
+
+        <p></p>
+
+
+   
+         <p>
+          Crucial to the survival or early organism was their ability to sense their environment and to respond and adapt to changes.  In particular, those changes that cyclically repeat.  Consequently, early multicelluar organisms became particularly adept at responding to light and dark cycles. They developed photoreceptors, such as phytochromes and cryptochromes, to detect varying wavelengths and intensities of light. Being aware of the cycles of their environment allowed them to optimize their patterns of life to the availability of energy.</p>
+          
+          <p>To the extent that organisms were aware of the cycles around them, organisms could flourish.  Plants learned to open their stomata for gas exchange during the day and closing them at night to conserve water.   Certain mamals learned to be nocturnal, avoiding daytime heat and predation while foraging for seeds and insects under the cover of darkness. Other learned to hibernate during the winter months when daylight hours are shorter and temperatures drop, conserving energy until spring.  Diurnal predators, like lions hunt during the cooler hours of dawn and dusk, capitalizing on low-light conditions for successful hunting while avoiding midday heat.</p>
+
+          <p>The more aware a collective of organisms became of cyclical fluctuations, the more they could thrive by integrating with these cycles.  Coral reefs release their gametes during specific phases of the lunar cycle, synchronizing reproduction to optimize fertilization success.  Swarms of fireflies coordinate their bioluminescent displays with the phases of the moon, utilizing lunar brightness as a cue for optimal mating times.  Mangrove trees time their seed dispersal to coincide with low tides influenced by the lunar cycle, enhancing the chances of seed survival and successful establishment in coastal ecosystems.</p>
+          
+        <p>
+          Even more sophisticated forms of environmental awareness arose. Migratory birds, for instance, developed an acute sensitivity to seasonal changes, using cues from the length of the day and the angle of the sun to navigate vast distances. This ensured they could exploit different habitats at optimal times for feeding and breeding. Predators like wolves honed their senses to detect prey and threats, creating intricate social structures and communication networks to share this vital information. Such developments illustrate a trend toward a more interconnected and responsive biosphere, mirroring the mycorrhizal networks in forests.
+        </p>
+          
+        <p>The mycorrhizal connected forest is a vivid microcosm of the way Earth's systems steadily evolved towards ever more sophisticated awareness, and transformed from barren to biosphere. This transition has been marked by a gradual increase in the sophistication with which life forms interact with and respond to the planet's endemic cycles. The mycorrhizal connected forest, with its intricate network of fungal threads linking trees in a symbiotic dance of nutrient exchange, serves as a microcosm of this grand evolutionary journey. It exemplifies how Earth’s inhabitants have developed an ever-more nuanced awareness of their environment, enabling them to adapt, thrive, and contribute to the planet’s ecological vitality.</p>
+
+        <p>While each of these forms of consciousness trade in various forms of information, they arise fundamentally from an awareness of the give and take of needs and nutrients.  The difference of a give and take, of a having and not, being a cyclical process, connected with the planet's own cycles of day and night, moon phase and season.  From this base of exchangehrough networking, mutual dependencies, coordinated responses, adaptation, and ongoing evolution, both the forest and the biosphere reflect the intricate journey of life's increasing awareness and interconnectedness on our planet. This parallel underscores the remarkable and ongoing story of life's awareness and interdependence throughout Earth's history.</p>
+<!--         
+          <p>The mycorrhizal connected forest stands as a pinnacle of ecological sophistication, showcasing how far Earth’s biosphere has come in terms of awareness and adaptability. Trees, through their symbiotic relationships with fungi, have created a communication network that allows them to share resources, warn of threats, and adapt to changing conditions. This system mirrors the evolutionary journey of the planet, highlighting how life has steadily increased its capacity to sense, respond to, and even anticipate environmental changes.</p> -->
+          
+          
+          <!-- <p>The evolution of life on Earth has been marked by a steady progression toward greater ecological awareness and interconnectedness. From the temperature-sensitive Cyanobacteria to the light-attuned plants and the seasonally-aware animals, each step in this journey has contributed to the rich tapestry of life we see today. The mycorrhizal connected forest, with its intricate network of communication and mutual support, stands as a testament to this legacy, showcasing the incredible adaptability and resilience of life on our planet. </p> 
+          
+          <p>Key to this process has been a gradual increase in ability of organisms to sense their environment and to respond and adapt to changes.</p>
+        
+        <p>In many ways, the mycorrhizal connected forest is a vivid microcosm of the way Earth's systems steadily evolved towards ever more sophisticated awareness, and transformed from barren to biosphere. This transition has been marked by a gradual increase in the sophistication with which life forms interact with and respond to the planet's endemic cycles. The mycorrhizal connected forest, with its intricate network of fungal threads linking trees in a symbiotic dance of nutrient exchange, serves as a microcosm of this grand evolutionary journey. It exemplifies how Earth’s inhabitants have developed an ever-more nuanced awareness of their environment, enabling them to adapt, thrive, and contribute to the planet’s ecological vitality.</p>
+
+        <p>Just as individual trees in a forest can the give and take of others, early single-celled organisms developed sensitivity to heat and cold. For example, the thermophile bacterium, which thrives in the extremes of heat around deep sea hydrothermal vents. They have evolved to detect and respond to variations in temperature, allowing them to colonize niches that would be inhospitable to most life forms.  Likewise cyanobacteria, developed a sensitivity to temperature fluctuations, as extreme conditions could hinder their metabolic processes. By evolving membrane proteins that could detect temperature changes, Cyanobacteria were able to modulate their enzymatic activity, ensuring survival and paving the way for future life forms.</p>-->
+
+        <!-- <p>While each of these forms of consciousness trade in various forms of information, they arise fundamentally from an awareness and an informing of the give and and take, needs and nutrients.  The difference of a give and take, of a having and not, being a cyclical process, connected with the planet's own cycles of day and night, moon phase and season.  From this base of exchangehrough networking, mutual dependencies, coordinated responses, adaptation, and ongoing evolution, both the forest and the biosphere reflect the intricate journey of life's increasing awareness and interconnectedness on our planet. This parallel underscores the remarkable and ongoing story of life's awareness and interdependence throughout Earth's history.</p> -->
+
+        <p>The way that both Earth and the mycorrhizal connected forest have steadily cultivated awareness by sensing, interacting and sharing about their cyclical give and take to enrich the ecosystems of which they are a part, is an example that we can follow today.</p>
+      
+    
+      <p>As we strive to ensure our human enterprises are green, the Earth shows us the way forward. Just as the Earth tended its processes towards awareness, we are called to intend with our own. When our enterprises cyclically share their ecological give and take, then the awareness of all involved is raised. Enterprises that increase ecological consciousness, fulfill the principle of awareness raising. These processes can then be considered to be an ecological contribution — and green.</p>
+
+    <!-- <p>Today, more and more of our enterprises are taking steps to account for their ecological impacts and to disclose them.  While this is an important step in the right direction, unless our enterprise are following Earth's example in raising ecological awareness, they will fail to be an ecological contribution-- and green.
+   
+    <p>Let’s take the example of our creation and consumption of organic and sustainable clothing.</p> -->
+    <p>To see how this principle applies, let us take the example of an enterprise striving to make green and sustainable clothing products.</p>
+
+    <p>Much like a tree within a forest, clothing enterprises give and take from the ecosystems that they touch.  The resources they require to make clothing and the by-products they generate from the process all have ecological impacts. From the deforestation caused by cotton crops, to the micro-plastics produced by polyesters, more and more we are becoming aware that our clothing’s creation has far reaching consequences. Alarmed, clothing’s creators are striving to green their products and consumers their choices.</p>
+
+    <p>When clothing is sold, certain basic product information is provided: its price, its care-taking, its country of origin, its type of material. Often, however, green-intended clothing does not inform of its ecological give and take. Often, information about the product’s ecological character is absent.  As we have seen in our past chapter,  its next life-cycle, its prioritization of benefit, its support of biodiversity, its carbon impacts. Without this information, there is no way to know the ecological consequences of the clothing’s consumption nor the ecological character of its creator. As such, the principle of raising awareness is not met and the clothing cannot be considered an ecological contribution — nor green.</p>
+
+    <p>In this way, no matter how organic, up-cycled, natural or net-zero a product may be, if it fails to fully inform how it is green, it fails to be green. Its a little like judging a tree only by it’s leaves — as trees themselves know, what’s going on under the surface of the soil is far more telling.</p>
+
+    <p>After all, a dress may appear green because it is made with organically grown material — but a forest may have been cut for the cotton crop. A sandal may appear green because it is made with up-cycled rubber — but it may have no plan for its own next cycle. A swim-suit may appear green because it was made with net-zero emissions — but it may degrade at the end of its life into micro-plastics or tons of carbon may have been dispersed in its shipping.</p>
+
+    <p>When evaluating the greenness of an act, product or process we must ask: Are the ecological impacts of the process accounted for and clearly disclosed? Has the effort been made to raise the ecological consciousness of all those involved?</p>
+
+    <p>Often the lack of disclosure by an enterprise is simply because it is not aware of its own ecological impacts. In this way the process and effort of disclosure — counting one’s carbon, surveying one’s support of species and green space, decanting one’s principles — is essential in raising its own awareness of these very things. After all, without the courage to face one’s own ecological impact, the effort to track it, and the discipline to manage it, how can one ever know really know it? And if one’s own impact is not known, how can it be shared with others? Disclosure points to the deeper direction and character of an enterprise.</p>
+
+    <p>Indeed, authentic green all comes down to character.</p>
+
+    <p>We can well imagine that trees, through their networked neighborhoods, can sense and discern each other. Rather than words and deeds, the character of one tree becomes clear to another by its give and take of nutrients. Perhaps it is gluttonous with its glucose or finicky with its phosphorus. Perhaps it is caring with its carbon or nurturing with its nitrogen! Either way, a tree’s pattern not only let’s its neighbours know whether it is a sapling or a Spruce, but also determines the tree’s engagement with others: whether more roots and mycellium go its way, whether its nutrients flow, whether its needs are met, and indeed, whether it and the forest thrive.</p>
+
+    <p>The Earth calls us to aspire to the ways of the wood wide web.</p>
+
+    <p>As we saw in the planet’s primordial story, the Earth’s greening of the biosphere was characterized by five fundamental principles. We can evaluate the ecological character of our own processes, acts and enterprises by how well they have embodied these Earthen principles — and in particular: by how well everyone involved is informed that they have done so.</p>
+
+    <p>As we saw in our first principle, the Earth works in spiralling cycles that enrich. Following the Earth’s example, a sandal maker ensures that its products are cyclical too — for instance, by making its footwear returnable, transformable or biodegradable. Then, they let everyone know! Perhaps on the sandal’s tag or by etching on its sole, the next life of the product is made clear. This way, all involved are aware of their role in furthering the sandal’s cycles.</p>
+
+    <p>As we saw in our second principle, the Earth and its processes are first and foremost of benefit to the biosphere. Following the Earth’s example, a t-shirt creator makes sure to prioritize its benefit to the biosphere over its proprietary profit. Then, they let everyone know! Whether in the footer of its website or on its product’s tags, the enterprise is sure to announce its for-Earth commitment. This way, all those involved are aware of the ethos they are energizing.</p>
+
+    <p>As we saw in our third principle, the Earth and its processes concentrate carbon into sequestration over the long-term. Following the Earth’s example, a dress-maker ensures that any organic or synthetic materials used can eventually biodegrade or be sequestered. Then, they let everyone know! This way, all involved are aware of the long-term plan that they are part of.</p>
+
+    <!-- <p>As we saw in our fourth principle, the Earth and its processes subtract more carbon into sequestration than they add back to the biosphere. Following the Earth’s example, a swim-wear enterprise accounts for their additive and subtractive carbon impacts. Then, they let everyone know! Whether through an annual newsletter or a tag-summary, the enterprise fully discloses their impact accounting and their net-subtraction. This way both the creator and consumer grow aware of the carbon impact they are vitalizing. -->
+
+    <p>As we saw in our fifth principle, the Earth and its processes tend towards the support of life and its diversification. Following the Earth’s example, a jacket maker ensures that its spaces and operations are increasingly supporting biodiversity. Then, they let everyone know! Whether on a website life-list or in annually shared species and green space report, they make sure that all involved are informed. This way, creator and consumer are aware of the biodiversity they are vitalizing.</p>
+
+    <p>With the Earth’s example setting the parameters for green, the path ahead to the green world for all that we all long to see, is clear. Dutifully our enterprise can let us all know their contributions — and proudly!</p>
+
+    <p>A dress maker can proudly declare how its organic fabric is biodegradeable — and also the biodiversity it has supported that year. A sandal maker re-using rubber can proudly declare the amount of pollution its up-cycling prevents — and also its circular plan for the sandal’s soles. A swim-wear maker can proudly showcase its for-Earth business priority —along with its plan for the sequestration of its polyesters and its net-carbon subtraction for the year.</p>
+
+    <p>Through ecological accounting and disclosure, the color of our enterprises, products and processes will scintillate like a tree’s first Spring buds — their fresh and vivid green a beacon to eyes weary of a long grey winter.</p>
+
+    <p>With unprecedented confidence, we can make our choices sure of the color, character and the well-being vitalized. With our support, enterprises can steadily increase their give to vastly exceed their take — for their well being, ours and everyone’s.</p>
+
+    <p>Just like the forest.</p>
+
+    <p>A just like Earth.</p>
+
+     <br><br><br>
+  
+    
+  </div><!--closes page text content, then loads page curtains:-->
+
+
+
+<!--FOOTNOTES SECTION-->
+
+  <div class="footnote-section" style="z-index:8;">
+
+    <div class="footnote-line" style="border-style: dotted; border-color: grey; border-width: 1px; margin-bottom: 20px; width:100%; text-align:left;"></div>
+
+    <div id="footnotes" style="cursor:pointer;display:flex;font-variant-caps: all-petite-caps; color:grey;" onclick="openFootnotesFooter()">
+          
+      <div id="footnotes-arrow"></div>
+      
+      <div class="footnotes-title">Chapter Footnotes</div>
+    
+    </div>
+
+    <div id="footer-reveal-container" style="height:200px;transition:0.4s;" >
+
+      <div id="footnotes-reveal" style="height:200px; overflow-y: clip; transition:0.4s;margin-bottom:0px;transition-delay: 0.4s;">
+      
+        <a href="#58-up" class="footnote">   
+        <div class="footnote-number">58.</div>
+        <div class="footnote-text">For an an account of the Igorots remarkable ecological synchrony with the cycles of the living world around them: William Henry Scott, (1959) <i>Some Calendars of Northern Luzon</i>, American Anthropologist 60(3):563 - 570 </div>
+        </a>
+
+        <a href="#59-up" class="footnote">   
+        <div class="footnote-number">59.</div>
+        <div class="footnote-text">Entropy research by theoretical physicists posit a pattern of adaptive dissipation in the way matter organizes itself in the presence of sustained energy inputs. Meanwhile, parallel breakthroughs in cosmological epistemology help make sense of Earth’s unfolding kinetic character. </div>
+        </a>
+
+        <a href="#60-up" class="footnote">   
+        <div class="footnote-number">60.</div>
+        <div class="footnote-text">“The earth is more like an eddy in a river through which flows of matter continuously stream. It is replenished and depleted in a vortical cosmic dance. — Thomas Nail, (2021) <i>A Theory of the Earth</i>
+        </div>
+        </a>
+
+        <a href="#55-up" class="footnote">   
+        <div class="footnote-number">61.</div>
+        <div class="footnote-text">Jeremy L. England et al., <i>Dissipative adaptation in driven self-assembly</i>, (Nature Nanotechnology, 2015)  
+        </div>
+        </a>
+
+        <a href="#56-up" class="footnote">   
+        <div class="footnote-number">62.</div>
+        <div class="footnote-text">The term ‘technical nutrient’ was first proposed by William McDonough in a theory of circular design that embodies the conceptual geometric problem we highlight here.  See: William McDonough, Michael Braungart (2002), <i>Cradle to Cradle - Remaking the Way We Make Things</i>, North Point Press.   
+        </div>
+        </a>
+
+        <br><br><br><br>
+
+
+
+
+        </div>
+  </div>
+
+
+
+    <div id="footnotes-concealer"></div>
+
+    </div><!--Closes footnote section-->
+
+
+
+
+   
+          
+  </div><!--Closes main content block-->
+
+
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
+
+<!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
+
+
+<!--FOOTER Next Chapter Section: Requires customization-->
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+
+    <div class="footer-size">
+    
+      <div class="footer-left">
+
+       <!-- <div id="footer-icon-left" style="cursor:pointer;" onclick="openFooter()"></div>-->
+
+     
+        <div class="next-section">
+            <div class="next-sec">Next:</div>
+            <div class="sec-name"><i>Book 3 | Epigraph</i></div>
+        </div>
+
+      </div>
+  
+      <div class="footer-right">
+    
+        <a href="unpublished.html" title="Go to the next chapter" aria-label="Go to the next chapter"><div class="next-button">Next ➔</div></a>
+
+      </div>
+    </div>
+
+<!-- CHAPTER FOOTER-->
+
+<chap-foot></chap-foot>
+
+</div>  <!--footer functions close-->
+
+<footer-settings></footer-settings>
+
+</div> <!--underlayer close-->
+
+<script src="../book-note-scripts.js" defer ></script>
+<script src="../content-javascript.js?v=3" defer></script>
+
+</BODY>
+
+</HTML>
+
