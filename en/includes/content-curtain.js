@@ -144,7 +144,7 @@ class ContentCurtain extends HTMLElement {
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Polyp's Pattern</div>
                             <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>unpublished</i></div>
+                            <div class="word-count-tc"><i>1,782 words</i></div>
                         </div>
                         </a>
 
@@ -152,7 +152,7 @@ class ContentCurtain extends HTMLElement {
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Means of the Myccorhyzal</div>
                             <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>nnpublished</i></div>
+                            <div class="word-count-tc"><i>1,685</i></div>
                         </div>
                         </a>
 
