@@ -148,7 +148,7 @@ class ContentCurtain extends HTMLElement {
                         </div>
                         </a>
 
-                        <a href="unpublished.html">
+                        <a href="awareness.html">
                         <div class="tc-item">
                             <div class="chapter-name-tc">The Means of the Myccorhyzal</div>
                             <div class="dotted-line"></div>
