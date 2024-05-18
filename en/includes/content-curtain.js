@@ -150,7 +150,7 @@ class ContentCurtain extends HTMLElement {
 
                         <a href="awareness.html">
                         <div class="tc-item">
-                            <div class="chapter-name-tc">The Means of the Myccorhyzal</div>
+                            <div class="chapter-name-tc">The Myccorrhyzals' Means</div>
                             <div class="dotted-line"></div>
                             <div class="word-count-tc"><i>1,685</i></div>
                         </div>
