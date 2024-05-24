@@ -3,9 +3,9 @@
 /* dark.css: 👉 light-on-dark */
 
 :root {
-  --text-color: rgb(250, 250, 250);
+  --text-color: rgb(255, 255, 255);
   --drop-cap: rgb(200, 200, 200); /*drop cap, bookbox text*/
-  --background-color: #222326 ;
+  --background-color: #1e1f21 ;
   --link-color:  rgb(250, 250, 250);
   --pre-link-color:  #d5d5d5 ;
   --nav-bar-accent: rgb(43, 43, 48); /*navbar, footer, button color*/
@@ -178,7 +178,7 @@
 }
 
 .background-12 {
-  background: url(svgs/12-awareness-dark.svg) no-repeat center;
+  background: url(svgs/12-awareness-dark.svg?v=2) no-repeat center;
   background-size: contain;
 }
 

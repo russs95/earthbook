@@ -4,7 +4,7 @@
 
 
    :root {
-    --text-color: #242424;
+    --text-color: #060606;
     --background-color: rgb(250, 250, 250) ; /*button hover*/
     --link-color:  #030303 ;
     --pre-link-color:  #3c3c3c ;
@@ -161,12 +161,12 @@
 }
 
 .background-11 {
-  background: url(svgs/10-diversification-white.svg) no-repeat center;
+  background: url(svgs/11-diversification-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-12 {
-  background: url(svgs/10-awareness-white.svg) no-repeat center;
+  background: url(svgs/12-awareness-white.svg) no-repeat center;
   background-size: contain;
 }
 

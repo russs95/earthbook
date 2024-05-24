@@ -1,11 +1,7 @@
 
 /*---------------------------------------------------
 
-
-
 BOOK NOTES FUNCTIONS
-
-
 
 ------------------------------------------------*/
 
@@ -71,21 +67,6 @@ function getBookNotesFromLocalStorage() {
 }
 
 
-
-
-/*
-document.getElementById('ct-main').addEventListener('mouseup', function() {
-    const selection = window.getSelection();
-
-    if (!selection.isCollapsed) {
-        lastSelectedText = selection.toString();
-        
-        if (selection.rangeCount > 0) {
-            lastSelectedRange = selection.getRangeAt(0);
-        }
-        alert(`Selected Text: ${lastSelectedText}, Range: ${lastSelectedRange}`);
-    }
-});*/
 
 
 let lastSelectedText = '';
@@ -429,10 +410,6 @@ function createElementWithAttributes(type, attributes = {}) {
     }
     return element;
 }
-
-
-
-
 
 
 
