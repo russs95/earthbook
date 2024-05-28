@@ -1,4 +1,4 @@
-class FooterComponent extends HTMLElement {
+class FooterComponentOrder extends HTMLElement {
   constructor() {
     super();
   }
@@ -38,6 +38,6 @@ class FooterComponent extends HTMLElement {
 }
 }
 
-customElements.define('footer-component', FooterComponent);
+customElements.define('footer-component-order', FooterComponentOrder);
 
 

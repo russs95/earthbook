@@ -1658,7 +1658,7 @@ left: 0;
   justify-content: center;
   flex-direction: row;
   margin: 0px auto 0px auto;
-  width: 90%;
+  width: 100%;
 
 }
 
@@ -1677,6 +1677,7 @@ left: 0;
   font-family: 'Mulish';
   height: fit-content;
   font-weight: 300;
+  color: var(--subdued-text)
 
 }
 
@@ -1687,6 +1688,8 @@ left: 0;
     flex-direction: column;
     align-self: center;
     /*margin-top: 6%;*/
+    width: 90%;
+
   }
 
   .book-buy-info  {
@@ -1706,8 +1709,8 @@ left: 0;
   }
 
   .book-listing img  {
-    width: 120px;
-    height: 140px;
+    width: 101px;
+    height: 150px;
     text-align:center;
     
   }
@@ -1723,9 +1726,10 @@ left: 0;
 @media screen and (min-width: 701px) and (max-width: 1324px) {
 
   .book-listing img  {
-    width: 280px;
-    height: 332px;
+    width: 250px;
+    height: 370px;
     text-align:right;
+    margin: auto;
     
   }
 }
@@ -1739,7 +1743,7 @@ left: 0;
   }
 
   .buy-book-info-text {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin-bottom: 10px;
   }
 
