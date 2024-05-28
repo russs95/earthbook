@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<HEAD>
+<title>Tractatus Ayyew | An Earthen Ethic - Earthbook Edition</title>
+<meta charset="UTF-8"> 
+
+
+<!--
+o               .        ___- -___                    .                   
+       .              .--\        --.     .     .         .
+                    ./.;_.\     __/~ \.     
+                   /;  / `-'  __\    . \                            
+ .        .       / ,--'     / .   .;   \        |
+                 | .|       /       __   |      -O-       .
+                |__/    __ |  . ;   \ | . |      |
+                |      /  \\_    . ;| \___|    
+   .    o       |      \  .~\\___,--'     |           .
+                 |     | . ; ~~~~\_    __|
+    |             \    \   .  .  ; \  /_/   .
+   -O-        .    \   /         . |  ~/                  .
+    |    .          ~\ \   .      /  /~          o
+  .                   ~--___ ; ___--~       
+                 .          -_-         .              -JT
+
+
+EARTHBOOK - An open source, Earth & Human Friendly Book format
+Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.  
+ 
+
+Landing page - version 1.3.2
+Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
+First EarthBook, the Tractatus Ayyew, published 22.12.22.
+
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+See full project repository at: https://github.com/russs95/earthbook
+For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
+*/
+-->
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/en/"> 
+<link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" >
+<link rel="alternate" href="http://book.earthen.io/en/" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/" hreflang="fr" >
+<!--
+<link rel="alternate" href="https://book.earthen.io/es/" hreflang="es" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >-->
+
+
+
+<!--BOOK META TAGS
+These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="description" content="A Theory of Grey & Green based on Earth's example.">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2023-7-23T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="An Earthen Ethic - Tracatus Ayyew">
+<meta property="article:publisher" content="Earthen.io" >
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="Tractatus Ayyew - An Earthen Ethics">
+<meta property="og:description"   content="By Banayan Angway & Russell Maier  | Earthbook Edition.">
+<meta property="og:image"         content="https://book.earthen.io/covers/earth-book-cover-1000px.jpg">
+<meta property="og:image:type" content="image/png" >
+<meta property="og:image:width" content="1000px" >
+<meta property="og:image:height" content="1500px" >
+<meta property="og:locale" content="en_EN" >
+<meta property="og:url" content="https://book.earthen.io/fr">
+
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+ 
+ 
+<script>
+           // Declare the global variables
+           var lang = "en";
+     var book = "";
+    var chapNo = "";
+    var chapName = "Welcome";
+    var chaptURL = "index.html"   // Declare the global variables
+ 
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+</script>
+
+
+
+<!-- PRELOADS-->
+<link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
+<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
+<link rel="preload" as="image" href="../icons/reader.svg">
+<link rel="preload" as="image" href="../icons/pdf.svg">
+<link rel="preload" as="image" href="../icons/buy.svg">
+<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
+<link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
+<link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
+
+<!--<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
+<link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
+<link rel="preload" as="font" href="../fonts/CooperLightBT.ttf">
+<link rel="preload" as="font" href="../fonts/CooperLtBTLightItalic.ttf">
+<link rel="preload" as="font" href="../fonts/CooperMediumBT.ttf">
+<link rel="preload" as="font" href="../fonts/Mulish-Light.ttf"
+<link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
+<link rel="preload" as="image" href="../svgs/up-arrow-light.svg">> 
+-->
+
+ <!-- INCLUDES
+ Main Scripts-->   
+
+ <script src="../universal-javascript.js?v=2" defer></script>
+ <script src="../clipboard.min.js"></script>
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+<script src="../subscription-system.js?v=4"></script>
+ <link rel="stylesheet" type="text/css" href="../subscription-stylesheet.css">
+
+  <!--SPECIAL INDEX INCLUDES -->
+  <script src="../index-javascripts.js"></script>
+ 
+ 
+ <!-- Arc CDN Script without delay
+<script async src="https://arc.io/widget.min.js#Z7EC7Cze"></script>-->
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--5--><script src="includes/buy-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component-order.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<script src="includes/footer-chapter.js" defer></script>
+
+<!--14<script src="includes/booknotes-curtain.js?v=2" defer></script>-->
+
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+ /*
+ @font-face {
+  font-family: "MulishMedium";
+  src: url("fonts/Mulish-Medium.ttf");
+  font-display: swap;
+ }*/
+
+ #bookNotePalette {
+    display:none;
+ }
+
+
+  .order-caption {  color: gray;
+  font-family: Mulish;
+  font-size: 1em;
+
+ }
+
+
+
+/* REGISTRATION CSS*/
+
+.email-input {
+    margin-left: 10px;
+    font-size: 1.1em;
+    padding: 10px 10px 10px 8px;
+    border-radius: 25px 0px 0px 25px;
+    width:100%;
+    border:1px grey solid;
+    border-right: 0px;
+}
+
+.name-input {
+    display: none;
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    width: 0%;
+    transition: width 0.5s; 
+}
+
+
+.register-button {
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 10px 8px 10px 8px;
+    border-radius:  0px 25px 25px 0px;
+    width: fit-content;
+    background-color:var(--deeper-accent-color);
+  
+    border:1px grey solid;
+    border-left: 0px;
+    margin-right:5px;
+}
+
+.register-button:hover {
+    background-color:green;
+    color: white;
+
+}
+
+
+.reg-complete-text {
+  display: none;
+  font-family: 'Mulish';
+  color: rgb(198, 188, 5);
+  margin-left: 10px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px 0px 0px 10px;
+  width: 70%;
+  transition: width 0.5s;
+  background: rgb(80, 80, 80);
+}
+
+
+</style>
+</HEAD>
+
+
+
+<BODY class="accessibility-plugin-ac">
+
+  <tour-curtain></tour-curtain>
+  <subscription-curtain></subscription-curtain>
+  
+      <div id="underlayer">
+  
+      <div id="top"></div>
+  
+  
+  <!--HEADER NAVBAR-->
+  <header-component></header-component>
+  
+  <!--READ CURTAIN-->
+  
+  <read-curtain></read-curtain>
+  
+  
+  <!-- PAGE CONTENT-->
+  
+  <div id="main-page" class="accessibility-plugin-ac">
+<!-- The flexible grid (content) -->
+	
+ 
+        <!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+
+
+<!--BUY-CURTAIN-->
+<buy-curtain></buy-curtain>
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
+    
+    <div class="buy-overlay-content">
+    
+          <div class="three-books">
+            <div class="buy-book">
+              <div class="book-listing">
+
+                <img src="../webp/epub.webp" loading="lazy" alt="The Epub version of the book is best for iphone and android eReaders." title="The Epub version of the book is best for iphone and android eReaders.">
+
+                <div class="book-buy-info">
+                  <div class="buy-book-info-title">eBook Edition</div>
+                  <div class="buy-book-info-text">EPUB format. Ideal for Kindles, iPhones, eReaders & Android viewers</div>
+
+                  <a href="https://buy.stripe.com/28og1Z9OS3f7eqc6op" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the epub book for 10$"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
+
+                </div>
+              </div>
+            </div>
+            
+
+            
+            <div class="buy-book">
+              <div class="book-listing">
+                <img src="../webp/print.webp" loading="lazy" alt="The print version of the book" title="The print version of the book">
+                <div class="book-buy-info">
+                  <div class="buy-book-info-title">Print Edition</div>
+
+                  <div class="buy-book-info-text">A meticulously typeset softcover booklet.  80 pages, 15cm x 27.5cm.  Recycled book paper.</div>
+
+                  <a href="https://buy.stripe.com/9AQ2b90eicPH3LyfZ0" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the print version of the book for 10$ USD"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Order: 10$</a>
+                  <div class="order-caption">+ Shipping</div>
+
+                </div>
+              </div>
+            </div>
+            
+
+           
+            <div class="buy-book">
+              <div class="book-listing">
+                <img src="../webp/pdf.webp" loading="lazy" alt="Retroactive purcase to support and thank the authors" title="Retroactive purcase to support and thank the authors" >
+                  
+                <div class="book-buy-info">
+                <div class="buy-book-info-title">PDF Edition</div>
+                <div class="buy-book-info-text">Print or screen ready for full page reading.  Can be directly printed to A4 sheets.</div>
+                    <a href="https://buy.stripe.com/aEU7vt3qu9Dveqc5kn" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Make a retroactive gratitude purchase"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div>
+
+
+
+    <div class="buy-overlay-content">
+    
+    
+        
+      <div class="three-books">
+
+        
+        <div class="buy-book">
+          <div class="book-listing">
+            <img src="../webp/bundle.webp" loading="lazy" alt="The print version of the book" title="The print version of the book">
+            <div class="book-buy-info">
+              <div class="buy-book-info-title">Print & Digital Bundle</div>
+
+              <div class="buy-book-info-text">A bundle of the Epub, PDF and Print versions.</div>
+
+              <a href="https://buy.stripe.com/7sI7vtaSW9Dvci428c" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the print version of the book for 10$ USD"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Order: 20$</a>
+              <div class="order-caption">+ Shipping</div>
+
+
+            </div>
+          </div>
+        </div>
+        
+
+       
+        <div class="buy-book">
+          <div class="book-listing">
+            <img src="../webp/gratitude.webp" loading="lazy" alt="Retroactive purcase to support and thank the authors" title="Retroactive purcase to support and thank the authors" >
+              
+            <div class="book-buy-info">
+            <div class="buy-book-info-title">Retroactive Gratitude</div>
+            <div class="buy-book-info-text">Already read the free version? Make a retroactive purchase to support the authors.</div>
+                <a href="https://buy.stripe.com/aEU7vt3qu9Dveqc5kn" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Make a retroactive gratitude purchase"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>± Payment</a>
+                <div class="order-caption">Suggested 10$</div>
+
+            </div>
+            
+          </div>
+
+          <div class="buy-book">
+            <div class="book-listing">
+              <img src="../webp/dozen.webp" loading="lazy" alt="Retroactive purcase to support and thank the authors" title="Retroactive purcase to support and thank the authors" >
+                
+              <div class="book-buy-info">
+              <div class="buy-book-info-title">Baker's Dozen</div>
+              <div class="buy-book-info-text">A bundle of a dozen + 1 prints of the Tractatus Ayyew</div>
+                  <a href="https://buy.stripe.com/aEU7vt3qu9Dveqc5kn" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Make a retroactive gratitude purchase"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Order: 100$</a>
+                  <div class="order-caption">+ Shipping</div>
+  
+              </div>
+              
+            </div>
+        </div>
+      </div>
+
+      <div>
+        
+        </div>
+    </div>
+          
+  </div>
+
+
+
+
+            <br><br>
+            <!-- <div class="button-column">
+                <div id="search-btn" class="action-btn"  style="cursor:pointer;" onclick="openSearch()"><i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Search</div>
+                <div id="bookplate-btn" class="action-btn" style="cursor:pointer;" onclick="openBookplate()"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Book Plate</div>
+                <div id="principles-btn" class="action-btn" style="cursor:pointer;" onclick="openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Principles</div>
+                <div id="eco-btn" class="action-btn" style="cursor:pointer;" onclick="openEco()"><i style="background-image: url(../icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Green Disclosure</div>
+                <br>
+            </div> -->
+
+            <div id="row">
+              <div id="side"></div>
+              <div id="main"></div>
+          </div>
+        </div>
+    </div>            
+</div>
+</div>
+
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
+ <!--FOOTER-->
+<footer-component-order></footer-component-order>
+
+
+<!-- <script src="../book-note-scripts.js" defer ></script> -->
+
+
+</BODY>
+
+</HTML>
+
