@@ -37,28 +37,23 @@ class SettingsCurtain extends HTMLElement {
           
             
 
-
-            <div class="settings-label" >
-            <div class="accessibility-plugin-ac">Contrast</div>
-          </div>
-          <input aria-label="Contrast" type="range" id="contrast-range-scale" min="0" max="100" value="100" onchange="setReadability()">
-          
           <div class="settings-label">
-            <div class="accessibility-plugin-ac">Sepia</div>
-          </div>
-          <input aria-label="Sepia" type="range" id="sepia-range-scale" min="0" max="100" value="0" onchange="setReadability()">
-          
-          <div class="settings-label">
-            <div class="accessibility-plugin-ac">Brightness</div>
-          </div>
-          <input aria-label="Brightness" type="range" id="brightness-range-scale" min="0" max="100" value="100" onchange="setReadability()">
-
-          
+          <div class="accessibility-plugin-ac">Contrast</div>
+        </div>
+        <input aria-label="Contrast" type="range" id="contrast-range-scale" min="0" max="100" value="60" onchange="setReadability()">
         
-          
-          <button id="reset-settings" onclick="reset2Default()" style="width: 200px;
-          margin: 30px auto 50px auto; cursor:pointer; padding:6px;">⟲ Reset to Defaults</button>
-
+        <div class="settings-label">
+          <div class="accessibility-plugin-ac">Sepia</div>
+        </div>
+        <input aria-label="Sepia" type="range" id="sepia-range-scale" min="0" max="100" value="0" onchange="setReadability()">
+        
+        <div class="settings-label">
+          <div class="accessibility-plugin-ac">Brightness</div>
+        </div>
+        <input aria-label="Brightness" type="range" id="brightness-range-scale" min="0" max="100" value="60" onchange="setReadability()">
+        
+        <button id="reset-settings" onclick="reset2Default()" style="width: 200px; margin: 30px auto 50px auto; cursor:pointer; padding:6px;">⟲ Reset to Defaults</button>
+        
 
           <div class="compro-toggle">
 

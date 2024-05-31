@@ -544,38 +544,43 @@ function closeBooknotes() {
  
  /* -------------------------------------------------------------------------- */
  
- 
-
-function setReadability() {
-  const brightness = document.getElementById("brightness-range-scale").value;
-  const contrast = document.getElementById("contrast-range-scale").value;
+ function setReadability() {
+  const brightnessInput = document.getElementById("brightness-range-scale").value;
+  const contrastInput = document.getElementById("contrast-range-scale").value;
   const sepia = document.getElementById("sepia-range-scale").value;
+
+  const brightness = 40 + (brightnessInput / 100) * 100;
+  const contrast = 40 + (contrastInput / 100) * 100;
 
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 
-  localStorage.setItem('brightness', brightness);
-  localStorage.setItem('contrast', contrast);
+  localStorage.setItem('brightnessInput', brightnessInput);
+  localStorage.setItem('contrastInput', contrastInput);
   localStorage.setItem('sepia', sepia);
-
 }
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  const brightness = localStorage.getItem('brightness') || 100;
-  const contrast = localStorage.getItem('contrast') || 100;
+  const brightnessInput = localStorage.getItem('brightnessInput') || 60;
+  const contrastInput = localStorage.getItem('contrastInput') || 60;
   const sepia = localStorage.getItem('sepia') || 0;
   const userSetFontSize = localStorage.getItem('userSetFontSize') || 16;
   const navbarHeight = localStorage.getItem('navbarHeight') || 60;
 
-  document.getElementById("brightness-range-scale").value = brightness;
-  document.getElementById("contrast-range-scale").value = contrast;
+  document.getElementById("brightness-range-scale").value = brightnessInput;
+  document.getElementById("contrast-range-scale").value = contrastInput;
   document.getElementById("sepia-range-scale").value = sepia;
+
+  const brightness = 40 + (brightnessInput / 100) * 100;
+  const contrast = 40 + (contrastInput / 100) * 100;
 
   document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
 
   adjustFontSize('accessibility-plugin-ac', null);
   setNavbarHeight(navbarHeight);
 });
+
+
 
 function adjustFontSize(className, change) {
   const elements = document.querySelectorAll(`.${className}`);
@@ -820,43 +825,46 @@ document.querySelector("#information-six .back").onclick = function() {
 
 }
 
+
 function reset2Default() {
   // Reset the default values
   const hideNotice = false;
-  const brightness = 100;
-  const contrast = 100;
+  const brightnessInput = 60;
+  const contrastInput = 60;
   const sepia = 0;
   const userSetFontSize = 16;
   const navbarHeight = 60;
 
-  
-
   // Store the values in the browser cache (localStorage)
   localStorage.setItem("hideNotice", hideNotice);
-  localStorage.setItem("brightness", brightness);
-  localStorage.setItem("contrast", contrast);
+  localStorage.setItem("brightnessInput", brightnessInput);
+  localStorage.setItem("contrastInput", contrastInput);
   localStorage.setItem("sepia", sepia);
   localStorage.setItem("userSetFontSize", userSetFontSize);
   localStorage.setItem("navbarHeight", navbarHeight);
 
   // Update the UI with the default values
-  document.getElementById("brightness-range-scale").value = brightness;
-  document.getElementById("contrast-range-scale").value = contrast;
+  document.getElementById("brightness-range-scale").value = brightnessInput;
+  document.getElementById("contrast-range-scale").value = contrastInput;
   document.getElementById("sepia-range-scale").value = sepia;
-  document.documentElement.style.filter = `brightness(${brightness}%) contrast(${contrast}%) sepia(${sepia}%)`;
+  
+  const brightness = 40 + (brightnessInput / 100) * 100;
+  const contrast = 40 + (contrastInput / 100) * 100;
+
+  document.documentElement.style.filter = `brightness(100%) contrast(100%) sepia(${sepia}%)`;
 
   //adjustFontSize('accessibility-plugin-ac', 'normal');
   document.getElementById('earthbook-navbar').style.minHeight = `${navbarHeight}px`;
 
   document.getElementById("reset-settings").innerHTML = "&#10003; Settings Reset";
-  
+
   //remove tokens
   localStorage.removeItem('showCounter');
   localStorage.removeItem('earthenRegistration');
 
   console.log("showCounter and earthenRegistration data cleared from local storage.");
-
 }
+
 
 
 
