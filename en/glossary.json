@@ -386,8 +386,8 @@
 {
   "postID": "51",
   "title": "Regenerative",
-  "keywords": "regenerative, greening process, subtractive impact, additive impact",
-  "chap_description": "A greening process whose subtractive impact is over twice that of its additive impact.",
+  "keywords": "regenerative, greening process, subtractive impact, additive impact, updated",
+  "chap_description": "The paradigm of revitalizing depleted ecological zones through direct human action.  From an Earthen perspective we observe that though this paradigm allows for human ecological contribution it doesn’t not lay out its parameters.",
   "url": "../en/glossary.php#regen",
   "language": "English",
   "book": "Definition",
@@ -399,7 +399,7 @@
 {
   "postID": "52",
   "title": "Wetʼsuwetʼen",
-  "keywords": "Wet'suwet'en, Wet'suwet'en Nation, First Nations, Bulkley River",
+  "keywords": "Wet'suwet'en, Wet'suwet'en Nation, First Nations, Bulkley River, updated",
   "chap_description": "Wetʼsuwetʼen are a First Nations people of the interior coast of northwestern North America, along the Bulkley Valley. The Wet'suwet'en nation is composed of five clans, each of which has its own traditional territory and hereditary leaders.",
   "url": "..\/en\/glossary.php#wet",
   "language": "English",
@@ -454,5 +454,25 @@
   "relevant_chap": "Chap. 9: The Cycle of the Salmon",
   "relevant_chap_url":"what.php",
   "image_url": "..\/icons\/glossary.svg"
+},
+
+
+{
+  "postID": "55",
+  "title": "Sustainability",
+  "keywords": "sustainability, regenerative, green, grey, harm, paradigm, updated",
+  "chap_description": "The paradigm of striving reduce human ecological harm to the environment.  From an Earthen perspective, we observe that this paradigm excludes the possibility of ecological contribution.",
+  "language": "English",
+  "book": "Definition",
+  "chapter": "Term in Glossary",
+  "words": "",
+  "relevant_chap": "Chap. 6: Nature's Fallacy",
+  "relevant_chap_url":"nature.php",
+  "image_url": "..\/icons\/glossary.svg"
 }
+
+
+
+
+
 ]

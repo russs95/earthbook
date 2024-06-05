@@ -396,26 +396,32 @@ function closeBooknotes() {
    
  Triggers the right buy panel*/
  
- function openBuy() {
-   document.getElementById("buy-curtain").style.height = "100%";
-   document.body.style.overflowY = "hidden";
+//  function openBuy() {
+//    document.getElementById("buy-curtain").style.height = "100%";
+//    document.body.style.overflowY = "hidden";
    
- var modal = document.getElementById('buy-curtain');
+//  var modal = document.getElementById('buy-curtain');
  
- function modalShow () {
-    modal.setAttribute('tabindex', '0');
-    modal.focus();
- }
+//  function modalShow () {
+//     modal.setAttribute('tabindex', '0');
+//     modal.focus();
+//  }
  
- function focusRestrict ( event ) {
-   document.addEventListener('focus', function( event ) {
-     if ( modalOpen && !modal.contains( event.target ) ) {
-       event.stopPropagation();
-       modal.focus();
-     }
-   }, true);
- }
- }
+ 
+//  function focusRestrict ( event ) {
+//    document.addEventListener('focus', function( event ) {
+//      if ( modalOpen && !modal.contains( event.target ) ) {
+//        event.stopPropagation();
+//        modal.focus();
+//      }
+//    }, true);
+//  }
+//  }
+
+function openBuy() {
+  window.location.href = 'buy.html';
+}
+
  
  /* Close when someone clicks on the "x" symbol inside the overlay */
  function closeBuy() {
