@@ -279,6 +279,133 @@ All the page components required to build this page-->
 }
 
 
+
+
+/*-----------------------------------------
+
+INFO MODAL
+
+--------------------------------------*/
+
+#form-modal-message {
+position: fixed; 
+top: 0px; 
+left: 0px; 
+width: 100%; 
+height: 100%; 
+background-color: var(--show-hide); 
+justify-content: center; 
+align-items: center; 
+z-index: 1000;
+display: none;
+}
+
+.modal-content-box {
+
+  position: relative; 
+  padding: 20px; 
+  background-color: var(--emblem-pink); 
+  border-radius: 10px; 
+  max-width: 90%; 
+  max-height: 80vh; 
+  min-height: 50%;
+  min-width: 70%; 
+  width: 50%; 
+  color: var(--h1);
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.4em;
+  display: flex;
+  margin: auto;
+}
+
+.modal-message {
+  margin: auto;
+}
+
+.modal-content-box .x-button {
+  margin-right: 8%;
+}
+
+.modal-hidden {
+    display: none;
+}
+
+.modal-shown {
+    display: flex;
+}
+
+/* CSS for the gallery of images */
+.buy-overlay-content {
+  width: 100%;
+}
+
+.print-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.print-photo {
+  width: 25%;
+  cursor: pointer;
+}
+
+.print-photo img {
+  width: 100%;
+}
+
+/* Responsive adjustments for smaller viewports */
+@media (max-width: 769px) {
+  .print-photo {
+    width: 50%;
+    
+  }
+
+  #main-page {
+  padding-top: 70px !important;
+}
+}
+
+.x-button {
+  position: absolute;
+  transition: .5s;
+  right: 0;
+  top: 0;
+  margin-right: 30px;
+  margin-top: 30px;
+  border: none;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  background: url(../svgs/x-button-night.svg?v=2) no-repeat center;
+  background-size: contain;
+}
+
+.blurred {
+  filter:blur(7px)
+}
+body.modal-open {
+  overflow:hidden;
+  max-height:100vh
+}
+.modal {
+  display:none;
+  position:fixed;
+  z-index:50;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:clip;
+  background-color:var(--modal-background);
+  max-height:100%;
+  justify-content:center
+}
+
+
+
 </style>
 </HEAD>
 
@@ -288,6 +415,20 @@ All the page components required to build this page-->
 
   <tour-curtain></tour-curtain>
   <subscription-curtain></subscription-curtain>
+
+
+
+<div id="form-modal-message" class="modal-hidden">
+  <div class="modal-content-box">
+  <button type="button" onclick="closeInfoModal()" aria-label="Click to close modal" class="x-button"></button>
+      <div class="modal-message"></div>
+  </div>
+  <div class="modal-photo-box">
+      <button type="button" onclick="closeInfoModal()" aria-label="Click to close modal" class="x-button"></button>
+      <div class ="modal-photo"></div>
+  </div>
+
+</div>
   
       <div id="underlayer">
   
@@ -309,12 +450,21 @@ All the page components required to build this page-->
   <div id="main-page" class="accessibility-plugin-ac">
 
     <div class="buy-overlay-content">
-      <div class="print-gallery" style="display:flex; flex-flow:horizontal; width:100%">
-        <div class="print-photo" style="width:25%"><img src="../photos/print-preview-03.webp" style="width:100%"></div>
-        <div class="print-photo" style="width:25%"><img src="../photos/print-preview-02.webp" style="width:100%"></div>
-        <div class="print-photo" style="width:25%"><img src="../photos/print-preview-01.webp" style="width:100%"></div>
-        <div class="print-photo" style="width:25%"><img src="../photos/print-preview-04.webp" style="width:100%"></div>
-      </div>
+      <div class="print-gallery">
+        <div class="print-photo">
+            <img src="../photos/print-preview-03.webp" alt="Tractatus Cover" onclick="viewGalleryImage('../photos/print-preview-03.webp', 'Tractatus Cover')">
+        </div>
+        <div class="print-photo">
+            <img src="../photos/print-preview-02.webp" alt="Tractatus Bookplate page" onclick="viewGalleryImage('../photos/print-preview-02.webp', 'Tractatus Bookplate page')">
+        </div>
+        <div class="print-photo">
+            <img src="../photos/print-preview-01.webp" alt="Tractatus bonus chapter Cycles that Spiral" onclick="viewGalleryImage('../photos/print-preview-01.webp', 'Tractatus bonus chapter Cycles that Spiral')">
+        </div>
+        <div class="print-photo">
+            <img src="../photos/print-preview-04.webp" alt="Tractatus Back cover" onclick="viewGalleryImage('../photos/print-preview-04.webp', 'Tractatus Back cover')">
+        </div>
+    </div>
+    
 <!-- The flexible grid (content) -->
 	
  
@@ -346,7 +496,7 @@ All the page components required to build this page-->
     
 
 <h2>Print sales of the Tractatus are now open!</h2>
-    <div class="intro-to-sales" style="font-family:'Mulish'; font-size: 1.4em; color:var(--text-color); margin-top: 10px;margin-bottom:30px;">World Environment Day launch! Help us reach our first 100 orders.  Once reached, prints will be shipped.  Meanwhile, PDF and Ebook orders are live and delivered immediately.</div>
+    <div class="intro-to-sales" style="font-family:'Mulish'; font-size: 1.4em; color:var(--text-color); margin-top: 10px;margin-bottom:50px;">World Environment Day launch! Help us reach our first 100 orders.  Once reached, prints will be shipped.  Meanwhile, PDF and Ebook orders are live and delivered immediately.</div>
     
           <div class="three-books">
             <div class="buy-book">
@@ -486,6 +636,63 @@ All the page components required to build this page-->
     </div>            
 </div>
 </div>
+
+
+<script>
+
+function viewGalleryImage(imageSrc, altText) {
+    const modal = document.getElementById('form-modal-message');
+    const contentBox = modal.querySelector('.modal-content-box'); // This is the part we want to hide
+    const photoBox = modal.querySelector('.modal-photo-box'); // This is where we'll show the image
+    const photoContainer = modal.querySelector('.modal-photo'); // The container for the image
+
+    // Hide the content box and show the photo box
+    contentBox.style.display = 'none'; // Hide the content box
+    photoBox.style.display = 'block'; // Make sure the photo box is visible
+
+    // Clear previous images from the photo container
+    photoContainer.innerHTML = '';
+
+    // Create and append the new image
+    const img = document.createElement('img');
+    img.src = imageSrc;
+    img.alt = altText;
+    img.style.maxWidth = '90%';
+    img.style.maxHeight = '80vh';
+    img.style.margin = 'auto';
+    img.style.minHeight = '400px';
+    img.style.minWidth = '400px';
+
+    // Create and append the caption
+    const caption = document.createElement('p');
+    caption.textContent = altText;
+    caption.style.textAlign = 'center';
+
+    // Append image and caption to the photo container
+    photoContainer.appendChild(img);
+    photoContainer.appendChild(caption);
+
+    // Show the modal
+    modal.style.display = 'flex';
+
+    // adjust other page divs
+    document.getElementById('underlayer')?.classList.add('blurred');
+    document.getElementById('navbar-bottom-day')?.classList.add('blurred');
+    document.body.classList.add('modal-open');
+}
+
+// Function to close the modal
+function closeInfoModal() {
+    var modal = document.getElementById("form-modal-message");
+    modal.style.display = "none";
+
+    // Remove blur effect and restore overflow on page-content and footer-full
+    document.getElementById('underlayer').classList.remove('blurred');
+    document.getElementById('navbar-bottom-day').classList.remove('blurred');
+    document.body.classList.remove('modal-open');
+}
+
+</script>
 
 
     <!--BOOKNOTES-CURTAIN-->
