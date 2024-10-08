@@ -29,13 +29,14 @@ function pageMeasureBar() {
 }
 
 
+let lastScrollTop = 0;
 
-window.onload = function() {
+window.onscroll = function() {
     scrollMoreThan800();
     scrollLessThan800();
-}
+};
   
-  window.onscroll = function() {scrollFunction(),pageMeasureBar() };
+window.onscroll = function() {scrollFunction(),pageMeasureBar() };
 
 
 function scrollFunction() {
