@@ -1,5 +1,12 @@
 
 
+window.onscroll = function() {
+    scrollMoreThan800();
+    scrollLessThan800();
+    scrollFunction();
+    pageMeasureBar();
+};
+
 
 
 function pageMeasureBar() {
@@ -29,14 +36,7 @@ function pageMeasureBar() {
 }
 
 
-let lastScrollTop = 0;
 
-window.onscroll = function() {
-    scrollMoreThan800();
-    scrollLessThan800();
-};
-  
-window.onscroll = function() {scrollFunction(),pageMeasureBar() };
 
 
 function scrollFunction() {
