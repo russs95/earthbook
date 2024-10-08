@@ -1191,3 +1191,12 @@ overflow-y: clip;
 }
 
 
+// smooth header roll up
+
+#earthbook-navbar {
+    transition: margin-top 0.5s ease; /* Adjust the duration as needed */
+}
+
+.ct-holder {
+    transition: margin 0.5s ease; /* Adjust the duration as needed */
+}
