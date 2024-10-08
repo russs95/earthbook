@@ -1,35 +1,5 @@
 
 
-// let lastScrollTop = 0;
-// let headerHidden = false;
-
-
-
-// function scrollLessThan40() {
-//     if (window.pageYOffset <= 40) {
-//         document.getElementById("header").style.height = "50vh";
-//     }
-// }
-
-// function scrollMoreThan1000() {
-//     let currentScrollPos = window.pageYOffset;
-//     if (currentScrollPos >= 1000 && !headerHidden) {
-//         document.getElementById("header").style.marginTop = "-100vh";
-//         headerHidden = true;
-//     } else if (currentScrollPos > 40 && currentScrollPos < 1000) {
-//         document.getElementById("header").style.height = "60px";
-//         headerHidden = false;
-//     }
-// }
-
-// function scrollBack() {
-//     let currentScrollPos = window.pageYOffset;
-//     if (headerHidden && lastScrollTop > currentScrollPos) {
-//         document.getElementById("header").style.marginTop = "0";
-//         headerHidden = false;
-//     }
-//     lastScrollTop = currentScrollPos;
-// }
 
 
 function pageMeasureBar() {
@@ -61,10 +31,12 @@ function pageMeasureBar() {
 
 
 window.onload = function() {
-
+    scrollMoreThan800();
+    scrollLessThan800();
 }
   
   window.onscroll = function() {scrollFunction(),pageMeasureBar() };
+
 
 function scrollFunction() {
 
@@ -103,6 +75,24 @@ if ( document.body.scrollTop > 40 || document.documentElement.scrollTop > 40 ) {
 
 }
 }
+
+
+function scrollMoreThan800() {
+    if (window.pageYOffset >= 800) {
+        // Hide the header completely
+        document.getElementById("earthbook-navbar").style.marginTop = "-70px";
+    }
+}
+
+function scrollLessThan800() {
+    if (window.pageYOffset < 800) {
+        // Show the header again
+         document.getElementById("earthbook-navbar").style.marginTop = "0px";
+    }
+}
+
+
+
 
 
 function openFootnotes() {
