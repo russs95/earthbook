@@ -81,7 +81,6 @@ if ( document.body.scrollTop > 40 || document.documentElement.scrollTop > 40 ) {
 function scrollMoreThan800() {
     if (window.pageYOffset >= 800) {
         // Hide the header completely
-        alert('Hello!');
         document.getElementById("earthbook-navbar").style.marginTop = "-70px";
     }
 }
