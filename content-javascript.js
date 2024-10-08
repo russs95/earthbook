@@ -82,15 +82,28 @@ function scrollMoreThan800() {
     if (window.pageYOffset >= 800) {
         // Hide the header completely
         document.getElementById("earthbook-navbar").style.marginTop = "-70px";
+
+        // Reset margin for ct-holder when scrolling more than 800px
+        let holders = document.getElementsByClassName("ct-holder");
+        for (let i = 0; i < holders.length; i++) {
+            holders[i].style.margin = "0px"; // Reset margin
+        }
     }
 }
 
 function scrollLessThan800() {
     if (window.pageYOffset < 800) {
         // Show the header again
-         document.getElementById("earthbook-navbar").style.marginTop = "0px";
+        document.getElementById("earthbook-navbar").style.marginTop = "0px";
+
+        // Apply margin of -50px to ct-holder when scrolling less than 800px
+        let holders = document.getElementsByClassName("ct-holder");
+        for (let i = 0; i < holders.length; i++) {
+            holders[i].style.margin = "-50px";
+        }
     }
 }
+
 
 
 
