@@ -19,7 +19,7 @@ class Header extends HTMLElement {
         <div id="book-title" style="background-size: 60%;">
           <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openContents()" aria-label="Open Table of Contents">
             <div id="main-title" style="padding: 40px 10px 18px; font-size: 3.2em;" >Tractatus Ayyew</div>
-            <div id="sub-title"><i>An Earthen Ethics</i></div>
+            <div id="sub-title"><i>Earthen Ethics</i></div>
             <div id="sub-earthbook">earthbook edition</div>
           </button>
         </div>
