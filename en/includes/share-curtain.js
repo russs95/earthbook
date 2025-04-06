@@ -73,7 +73,7 @@ clipboard.on('error', function (e) {
 
     // Inject the variables into the inner HTML
     document.getElementById("page-url").innerHTML =
-        "Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), Chap. '" + chapNo + "', '" + chapName + "' " + window.location.href;
+        "Banayan Angway, Russell Maier, 'Tractatus Ayyew: Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), Chap. '" + chapNo + "', '" + chapName + "' " + window.location.href;
 
 
 
@@ -97,7 +97,7 @@ function getMainurl() {
 
 function getCitation() {
   document.getElementById("page-url").innerHTML =
-  "Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), Chap. '" + chapNo + "', '" + chapName + "' " + window.location.href;
+  "Banayan Angway, Russell Maier, 'Tractatus Ayyew: Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), Chap. '" + chapNo + "', '" + chapName + "' " + window.location.href;
   document.getElementById("copy-type").innerHTML = '<h4>Or copy just <span href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;cursor:pointer;">the URL for this chapter</span>.</h4>';
 }
 

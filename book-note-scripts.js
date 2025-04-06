@@ -1059,7 +1059,7 @@ function citeHighlight(dataId) {
     const highlight = bookNotes.find(note => note.id === dataId);
 
     if (highlight) {
-        const citation = `"${highlight.storedText}" -- Banayan Angway, Russell Maier, 'Tractatus Ayyew: An Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), Chap. '${highlight.book}', '${highlight.noteChapter}' ${window.location.href}`;
+        const citation = `"${highlight.storedText}" -- Banayan Angway, Russell Maier, 'Tractatus Ayyew: Earthen Ethics' (Earthen.io, Philippines, Indonesia, 2022), Chap. '${highlight.book}', '${highlight.noteChapter}' ${window.location.href}`;
 
         // Copy the citation string to clipboard
         const textarea = document.createElement("textarea");

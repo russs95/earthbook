@@ -15,7 +15,7 @@ class Bookplate extends HTMLElement {
         <div id="bookplate-content" style="margin-bottom:35px;"> 
           <h1 class="bookplate-title">Tractatus Ayyew</h1>
 
-          <h2 class="bookplate-subtitle"><i>An Earthen Ethics</i></h2>
+          <h2 class="bookplate-subtitle"><i>Earthen Ethics</i></h2>
 
           <h3 class="bookplate-authors">Banayan Angway & Russell Maier</h3>
 
@@ -59,7 +59,7 @@ customElements.define('bookplate-curtain', Bookplate);
                 <div>
                 <h1 class="bookplate-title">Tractatus Ayyew</h1>
             
-                <h2 class="bookplate-subtitle"><i>An Earthen Ethics</i></h2>
+                <h2 class="bookplate-subtitle"><i>Earthen Ethics</i></h2>
             
                 <h3 class="bookplate-authors">Banayan & Russell Maier</h3>
             
@@ -92,7 +92,7 @@ customElements.define('bookplate-curtain', Bookplate);
 <div>
 <h1 class="bookplate-title">Tractatus Ayyew</h1>
 
-<h2 class="bookplate-subtitle"><i>An Earthen Ethics</i></h2>
+<h2 class="bookplate-subtitle"><i>Earthen Ethics</i></h2>
 
 <h3 class="bookplate-authors">Banayan & Russell Maier</h3>
 
