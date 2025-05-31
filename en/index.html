@@ -224,6 +224,11 @@ All the page components required to build this page-->
     border-right: 0px;
 }
 
+.email-input, .name-input {
+    transition: all 0.6s ease;
+}
+
+
 .name-input {
     display: none;
     margin-left: 10px;
@@ -311,12 +316,14 @@ All the page components required to build this page-->
 
             <div>
 
-          <form id="emailForm" class="reg-field" style="margin-top:18px;display:flex; flex-flow:row;">
+          <form id="email-registration-form" class="reg-field" style="margin-top:18px;display:flex; flex-flow:row;">
             <label for="email"></label>
-            <input type="email" name="email" required placeholder="Go deeper..." class="email-input">
+            <input type="email" name="email" required placeholder="Your email..." class="email-input">
             <input type="text" name="name" required placeholder="Your name..." class="name-input">
-            <div class="reg-complete-text" id="reg-status"></div>
-            <input type="submit" value="Subscribe" class="register-button" id="reg-status-icon" onclick="handleFormSubmit(event)">
+              <input type="text" name="name" required placeholder="Your country..." class="country-input">
+
+              <div class="reg-complete-text" id="reg-status"></div>
+            <input type="submit" value="Subscribe" class="register-button" id="reg-status-icon" onclick="startSubProces(event)">
           </form>
 
             </div>
@@ -602,6 +609,111 @@ All the page components required to build this page-->
 
 
 <script src="../book-note-scripts.js" defer ></script>
+
+<script>
+    let formStep = 0;
+    let subscriberData = {
+        email: '',
+        name: '',
+        country: ''
+    };
+
+    function startSubProces(event) {
+        event.preventDefault();
+
+        const emailInput = document.querySelector('.email-input');
+        const nameInput = document.querySelector('.name-input');
+        const submitButton = document.getElementById('reg-status-icon');
+        const form = document.getElementById('email-registration-form');
+
+        if (formStep === 0) {
+            const email = emailInput.value.trim();
+            if (!validateEmail(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            subscriberData.email = email;
+
+            animateButton(submitButton, () => {
+                emailInput.value = '';
+                emailInput.placeholder = 'Your name please...';
+                nameInput.style.display = 'inline-block';
+                nameInput.style.width = '100%';
+                emailInput.style.width = '0%';
+                formStep++;
+            });
+
+        } else if (formStep === 1) {
+            const name = nameInput.value.trim();
+            if (!name) {
+                alert('Please enter your name.');
+                return;
+            }
+            subscriberData.name = name;
+
+            animateButton(submitButton, () => {
+                nameInput.value = '';
+                nameInput.placeholder = 'Your country please...';
+                nameInput.setAttribute('name', 'country');
+                formStep++;
+            });
+
+        } else if (formStep === 2) {
+            const country = nameInput.value.trim();
+            if (!country) {
+                alert('Please enter your country.');
+                return;
+            }
+            subscriberData.country = country;
+
+            // Final animation and submission
+            animateButton(submitButton, () => {
+                nameInput.style.display = 'none';
+                nameInput.style.width = '0%';
+                emailInput.style.width = '100%';
+                emailInput.placeholder = 'Submitting...';
+                emailInput.disabled = true;
+
+                // Send to API
+                fetch('https://buwana.ecobricks.org/api/earthen_registration.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(subscriberData)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('reg-status').innerText = "🎉 You're subscribed!";
+                        document.getElementById('reg-status').style.display = 'block';
+                        submitButton.style.display = 'none';
+                    })
+                    .catch(error => {
+                        document.getElementById('reg-status').innerText = "⚠️ Error subscribing. Please try again.";
+                        document.getElementById('reg-status').style.display = 'block';
+                        emailInput.disabled = false;
+                    });
+            });
+        }
+    }
+
+    function animateButton(button, callback) {
+        button.style.transition = 'transform 0.6s ease';
+        button.style.transform = 'translateX(-200%)';
+
+        setTimeout(() => {
+            callback();
+            button.style.transform = 'translateX(200%)';
+            setTimeout(() => {
+                button.style.transform = 'translateX(0)';
+            }, 600);
+        }, 600);
+    }
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+</script>
+
 
 
 </BODY>
