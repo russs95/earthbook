@@ -129,7 +129,7 @@ Media Query parameters used throughout:
 
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 769px) {
 
   .desktop {
     display: none;
@@ -145,15 +145,16 @@ Media Query parameters used throughout:
       padding-top: 200px;
   }
 }
-@media screen and (min-width: 700px) and (max-width: 1324px) {
+@media screen and (min-width: 770px) and (max-width: 1324px) {
 
   .desktop {
-    display: none;
+    display: block;
   }
 
   .mobile {
-    display: block;
+    display: none;
   }
+
 
   #main-page {
       margin-left: 5%;
