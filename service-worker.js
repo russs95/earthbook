@@ -1,4 +1,4 @@
-const CURRENT_CACHE = 'earthbook-cache-v7.2';
+const CURRENT_CACHE = 'earthbook-cache-v7.3';
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -36,10 +36,10 @@ self.addEventListener('install', event => {
 
 //Curtain IMages
 
-'/photos/cover-epub-400px.webp',
-'/photos/cover-print-400px.webp',
-'/photos/cover-grattitude-600px.webp',
-'/svgs/bottom-x.svg',
+'/photos/print-preview-01-400px.webp',
+'/photos/print-preview-02-400px.webp',
+'/photos/print-preview-04-400px.webp',
+'/photos/print-preview-04-400px.webp',
 
 '/icons/up-arrow.svg',
 '/icons/code.svg',
