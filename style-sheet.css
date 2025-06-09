@@ -135,6 +135,10 @@ Media Query parameters used throughout:
     display: none;
   }
 
+  #landing-view-buy {
+    height: 100vh;
+  }
+
   .mobile {
     display: block;
   }
