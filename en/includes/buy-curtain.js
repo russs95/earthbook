@@ -46,7 +46,7 @@ class BuyCurtain extends HTMLElement {
              
               <div class="buy-book">
                 <div class="book-listing">
-                  <img src="../photos/cover-grattitude-600px.webp" loading="lazy" alt="Retroactive purcase to support and thank the authors" title="Retroactive purcase to support and thank the authors" >
+                  <img src="../photos/cover-grattitude-400px.webp" loading="lazy" alt="Retroactive purcase to support and thank the authors" title="Retroactive purcase to support and thank the authors" >
                     
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Retroactive Buy</div>
