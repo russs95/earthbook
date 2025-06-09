@@ -16,8 +16,8 @@
 <!--SHARE-MENU-->
 <share-curtain></share-curtain>
 
-<!--BUY-CURTAIN-->
-<buy-curtain></buy-curtain>
+<!--BUY-CURTAIN
+<buy-curtain></buy-curtain>-->
 
 
 
