@@ -130,6 +130,15 @@ Media Query parameters used throughout:
 }
 
 @media screen and (max-width: 699px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
   #main-page {
       margin-left: 3%;
       margin-right: 3%;
@@ -137,6 +146,15 @@ Media Query parameters used throughout:
   }
 }
 @media screen and (min-width: 700px) and (max-width: 1324px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
   #main-page {
       margin-left: 5%;
       margin-right: 5%;
@@ -144,6 +162,15 @@ Media Query parameters used throughout:
   }
 }
 @media screen and (min-width: 1325px) {
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
     #main-page {
       margin-left: 15%;
       margin-right: 15%;
