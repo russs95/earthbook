@@ -5,139 +5,115 @@ class ContentCurtain extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-    <nav id="table-of-contents" class="overlay-tc"
+    <nav id="table-of-contents"
+         class="overlay-tc"
+         role="navigation"
+         aria-label="Table of Contents for Tractatus Ayyew"
          itemscope itemtype="https://schema.org/TableOfContents"
-         role="navigation" aria-label="Table of Contents">
+         aria-live="polite">
 
-      <div id="top-close-button">
-        <a href="index.html"><img src="../icons/home.svg" alt="Home Button" style="padding-right:10px;padding-left:10px;"></a> 
-        <img src="../svgs/bottom-x.svg" alt="Close Button" style="padding-left:10px;cursor:pointer" onclick="closeContents()">
-        <img src="../icons/search.svg?v=3" alt="Search" style="padding-left:12px;padding-right:15px;cursor:pointer" onclick="closeContents(), openSearch()">
+      <!-- Top Buttons -->
+      <div id="top-close-button" role="toolbar" aria-label="Top controls">
+        <a href="index.html" role="button" aria-label="Go to Home">
+          <img src="../icons/home.svg" alt="Home" style="padding-right:10px;padding-left:10px;">
+        </a> 
+        <img src="../svgs/bottom-x.svg" alt="Close Table of Contents"
+             role="button" tabindex="0" aria-pressed="false"
+             style="padding-left:10px;cursor:pointer"
+             onclick="closeContents()" onkeydown="if(event.key==='Enter'||event.key===' ')closeContents()">
+        <img src="../icons/search.svg?v=3" alt="Search this book"
+             role="button" tabindex="0"
+             style="padding-left:12px;padding-right:15px;cursor:pointer"
+             onclick="closeContents(); openSearch()"
+             onkeydown="if(event.key==='Enter'||event.key===' ') {closeContents(); openSearch();}">
       </div>
-      
+
       <div class="overlay-content-tc">
 
+        <p role="doc-subtitle" aria-label="About the Table of Contents">
+          Navigate the three books of <cite>Tractatus Ayyew</cite>. Use the arrow keys to switch books and the Tab key to move through chapters.
+        </p>
+
+        <!-- Book Tabs -->
         <div class="contents-title-box">
           <div class="contents-title" itemprop="name">Tractatus Ayyew | Table of Contents</div>
-          <div class="contents-books123" role="tablist">
-            <button id="button-one" role="tab" aria-controls="appx-book-one" aria-selected="true">Book One</button>
-            <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false">Book Two</button>
-            <button id="button-three" role="tab" aria-controls="appx-book-three" aria-selected="false">Book Three</button>
-            <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false">Appendix</button>
+          <div class="contents-books123"
+               role="tablist"
+               aria-label="Book Sections of Tractatus Ayyew">
+            <button id="button-one" role="tab" aria-controls="appx-book-one" aria-selected="true" tabindex="0">Book One</button>
+            <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false" tabindex="-1">Book Two</button>
+            <button id="button-three" role="tab" aria-controls="appx-book-three" aria-selected="false" tabindex="-1">Book Three</button>
+            <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false" tabindex="-1">Appendix</button>
           </div>
         </div>
 
         <!-- BOOK ONE -->
-        <div id="appx-book-one" itemscope itemtype="https://schema.org/ItemList" itemprop="hasPart" aria-label="Book One chapters">
+        <div id="appx-book-one"
+             role="tabpanel"
+             aria-labelledby="button-one"
+             aria-label="Chapters in Book One"
+             itemscope itemtype="https://schema.org/ItemList"
+             itemprop="hasPart">
           <meta itemprop="name" content="Book One | The Beginning">
 
-          <a href="preamble.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="position" content="1" />
-            <div class="tc-item">
-              <div class="chapter-name-tc" itemprop="name">Preamble</div>
-              <div class="word-count-tc"><i itemprop="wordCount">431 words</i></div>
-              <meta itemprop="item" content="https://book.earthen.io/en/preamble.html" />
-            </div>
-          </a>
-
-          <a href="preface.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="position" content="2" />
-            <div class="tc-item">
-              <div class="chapter-name-tc" itemprop="name">Preface</div>
-              <div class="word-count-tc"><i itemprop="wordCount">1,220 words</i></div>
-              <meta itemprop="item" content="https://book.earthen.io/en/preface.html" />
-            </div>
-          </a>
-
-          <a href="epigraph-1.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="position" content="3" />
-            <div class="tc-item">
-              <div class="chapter-name-tc" itemprop="name">Epigraph</div>
-              <div class="word-count-tc"><i itemprop="wordCount">65 words</i></div>
-              <meta itemprop="item" content="https://book.earthen.io/en/epigraph-1.html" />
-            </div>
-          </a>
-
-          <a href="imagine.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="position" content="4" />
-            <div class="tc-item">
-              <div class="chapter-name-tc" itemprop="name">Imagine</div>
-              <div class="word-count-tc"><i itemprop="wordCount">1,095 words</i></div>
-              <meta itemprop="item" content="https://book.earthen.io/en/imagine.html" />
-            </div>
-          </a>
-
-          <a href="plastic1.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="position" content="5" />
-            <div class="tc-item">
-              <div class="chapter-name-tc" itemprop="name">Plastic 1.0</div>
-              <div class="word-count-tc"><i itemprop="wordCount">623 words</i></div>
-              <meta itemprop="item" content="https://book.earthen.io/en/plastic1.html" />
-            </div>
-          </a>
-
-          <a href="stellar.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="position" content="6" />
-            <div class="tc-item">
-              <div class="chapter-name-tc" itemprop="name">An Interstellar Story</div>
-              <div class="word-count-tc"><i itemprop="wordCount">1,021 words</i></div>
-              <meta itemprop="item" content="https://book.earthen.io/en/stellar.html" />
-            </div>
-          </a>
-
-          <a href="patterns.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="position" content="7" />
-            <div class="tc-item">
-              <div class="chapter-name-tc" itemprop="name">Patterns of Process</div>
-              <div class="word-count-tc"><i itemprop="wordCount">837 words</i></div>
-              <meta itemprop="item" content="https://book.earthen.io/en/patterns.html" />
-            </div>
-          </a>
-
-          <a href="kincentric.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="position" content="8" />
-            <div class="tc-item">
-              <div class="chapter-name-tc" itemprop="name">Kindred Relations</div>
-              <div class="word-count-tc"><i itemprop="wordCount">1,508 words</i></div>
-              <meta itemprop="item" content="https://book.earthen.io/en/kincentric.html" />
-            </div>
-          </a>
-
-          <a href="nature.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="position" content="9" />
-            <div class="tc-item">
-              <div class="chapter-name-tc" itemprop="name">Nature's Fallacy</div>
-              <div class="word-count-tc"><i itemprop="wordCount">973 words</i></div>
-              <meta itemprop="item" content="https://book.earthen.io/en/nature.html" />
-            </div>
-          </a>
-
-          <a href="earthen.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <meta itemprop="position" content="10" />
-            <div class="tc-item">
-              <div class="chapter-name-tc" itemprop="name">The Earthen Ways</div>
-              <div class="word-count-tc"><i itemprop="wordCount">784 words</i></div>
-              <meta itemprop="item" content="https://book.earthen.io/en/earthen.html" />
-            </div>
-          </a>
+          ${this.chapterLink(1,"Preamble",431,"https://book.earthen.io/en/preamble.html")}
+          ${this.chapterLink(2,"Preface",1220,"https://book.earthen.io/en/preface.html")}
+          ${this.chapterLink(3,"Epigraph",65,"https://book.earthen.io/en/epigraph-1.html")}
+          ${this.chapterLink(4,"Imagine",1095,"https://book.earthen.io/en/imagine.html")}
+          ${this.chapterLink(5,"Plastic 1.0",623,"https://book.earthen.io/en/plastic1.html")}
+          ${this.chapterLink(6,"An Interstellar Story",1021,"https://book.earthen.io/en/stellar.html")}
+          ${this.chapterLink(7,"Patterns of Process",837,"https://book.earthen.io/en/patterns.html")}
+          ${this.chapterLink(8,"Kindred Relations",1508,"https://book.earthen.io/en/kincentric.html")}
+          ${this.chapterLink(9,"Nature's Fallacy",973,"https://book.earthen.io/en/nature.html")}
+          ${this.chapterLink(10,"The Earthen Ways",784,"https://book.earthen.io/en/earthen.html")}
         </div>
 
-        <!-- Continue: Book Two, Book Three, Appendix sections -->
-        <!-- You can copy the Book One markup and replace chapter names, positions, and links accordingly -->
+        <!-- Future Books -->
+        <div id="appx-book-two" role="tabpanel" aria-labelledby="button-two" aria-label="Chapters in Book Two" hidden></div>
+        <div id="appx-book-three" role="tabpanel" aria-labelledby="button-three" aria-label="Chapters in Book Three" hidden></div>
+        <div id="appx-book-appx" role="tabpanel" aria-labelledby="button-appx" aria-label="Appendix Chapters" hidden></div>
 
-        <!-- Bottom Button Row -->
-        <div class="tc-button-row" role="group" aria-label="Quick actions">
-          <a href="index.html" aria-label="Home button"><div id="tour-btn" class="action-btn"><i style="background-image:url(../icons/home.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:3px;"></i></div></a>
-          <div id="buy-btn" class="action-btn" onclick="closeContents(), guidedTour()" aria-label="Take the guided tour"><i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>Tour</div>
-          <div id="buy-btn" class="action-btn" onclick="openBuy()" aria-label="Buy the book"><i style="background-image:url(../icons/buy.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i></div>
-          <div id="buy-btn" class="action-btn" onclick="openBookplate()" aria-label="About this book"><i style="background-image:url(../icons/about.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i></div>
-          <div id="buy-btn" class="action-btn" onclick="openEco()" aria-label="See ecological report"><i style="background-image:url(../icons/eco-green.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:0px;"></i></div>
+        <!-- Bottom Buttons -->
+        <div class="tc-button-row" role="group" aria-label="Quick access controls">
+          <a href="index.html" role="button" aria-label="Return to home page">
+            <div id="tour-btn" class="action-btn">
+              <i style="background-image:url(../icons/home.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:3px;"></i>
+            </div>
+          </a>
+          <div id="tour-button" class="action-btn"
+               role="button" tabindex="0"
+               aria-label="Take a guided tour"
+               onclick="closeContents(); guidedTour();"
+               onkeydown="if(event.key==='Enter'||event.key===' ') {closeContents(); guidedTour();}">
+            <i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>Tour
+          </div>
+          <div id="buy-button" class="action-btn"
+               role="button" tabindex="0"
+               aria-label="Buy the book"
+               onclick="openBuy();"
+               onkeydown="if(event.key==='Enter'||event.key===' ') openBuy();">
+            <i style="background-image:url(../icons/buy.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
+          </div>
+          <div id="about-button" class="action-btn"
+               role="button" tabindex="0"
+               aria-label="About this book"
+               onclick="openBookplate();"
+               onkeydown="if(event.key==='Enter'||event.key===' ') openBookplate();">
+            <i style="background-image:url(../icons/about.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
+          </div>
+          <div id="eco-button" class="action-btn"
+               role="button" tabindex="0"
+               aria-label="View ecological report"
+               onclick="openEco();"
+               onkeydown="if(event.key==='Enter'||event.key===' ') openEco();">
+            <i style="background-image:url(../icons/eco-green.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:0px;"></i>
+          </div>
         </div>
       </div>
     </nav>
     `;
 
-        // --- JSON-LD for AI / Search engines ---
+        // Inject JSON-LD into <head> for AI parsing
         const tocJSONLD = {
             "@context": "https://schema.org",
             "@type": "TableOfContents",
@@ -156,16 +132,16 @@ class ContentCurtain extends HTMLElement {
                     "name": "Book One",
                     "itemListOrder": "Ascending",
                     "itemListElement": [
-                        {"@type": "BookChapter","position":1,"name":"Preamble","url":"https://book.earthen.io/en/preamble.html","wordCount":431},
-                        {"@type": "BookChapter","position":2,"name":"Preface","url":"https://book.earthen.io/en/preface.html","wordCount":1220},
-                        {"@type": "BookChapter","position":3,"name":"Epigraph","url":"https://book.earthen.io/en/epigraph-1.html","wordCount":65},
-                        {"@type": "BookChapter","position":4,"name":"Imagine","url":"https://book.earthen.io/en/imagine.html","wordCount":1095},
-                        {"@type": "BookChapter","position":5,"name":"Plastic 1.0","url":"https://book.earthen.io/en/plastic1.html","wordCount":623},
-                        {"@type": "BookChapter","position":6,"name":"An Interstellar Story","url":"https://book.earthen.io/en/stellar.html","wordCount":1021},
-                        {"@type": "BookChapter","position":7,"name":"Patterns of Process","url":"https://book.earthen.io/en/patterns.html","wordCount":837},
-                        {"@type": "BookChapter","position":8,"name":"Kindred Relations","url":"https://book.earthen.io/en/kincentric.html","wordCount":1508},
-                        {"@type": "BookChapter","position":9,"name":"Nature's Fallacy","url":"https://book.earthen.io/en/nature.html","wordCount":973},
-                        {"@type": "BookChapter","position":10,"name":"The Earthen Ways","url":"https://book.earthen.io/en/earthen.html","wordCount":784}
+                        {"@type":"BookChapter","position":1,"name":"Preamble","url":"https://book.earthen.io/en/preamble.html","wordCount":431},
+                        {"@type":"BookChapter","position":2,"name":"Preface","url":"https://book.earthen.io/en/preface.html","wordCount":1220},
+                        {"@type":"BookChapter","position":3,"name":"Epigraph","url":"https://book.earthen.io/en/epigraph-1.html","wordCount":65},
+                        {"@type":"BookChapter","position":4,"name":"Imagine","url":"https://book.earthen.io/en/imagine.html","wordCount":1095},
+                        {"@type":"BookChapter","position":5,"name":"Plastic 1.0","url":"https://book.earthen.io/en/plastic1.html","wordCount":623},
+                        {"@type":"BookChapter","position":6,"name":"An Interstellar Story","url":"https://book.earthen.io/en/stellar.html","wordCount":1021},
+                        {"@type":"BookChapter","position":7,"name":"Patterns of Process","url":"https://book.earthen.io/en/patterns.html","wordCount":837},
+                        {"@type":"BookChapter","position":8,"name":"Kindred Relations","url":"https://book.earthen.io/en/kincentric.html","wordCount":1508},
+                        {"@type":"BookChapter","position":9,"name":"Nature's Fallacy","url":"https://book.earthen.io/en/nature.html","wordCount":973},
+                        {"@type":"BookChapter","position":10,"name":"The Earthen Ways","url":"https://book.earthen.io/en/earthen.html","wordCount":784}
                     ]
                 }
             ]
@@ -174,26 +150,54 @@ class ContentCurtain extends HTMLElement {
         script.type = 'application/ld+json';
         script.textContent = JSON.stringify(tocJSONLD, null, 2);
         document.head.appendChild(script);
+
+        // Initialize accessibility logic
+        this.setupTabs();
+    }
+
+    // Helper to create chapter links
+    chapterLink(pos, name, words, url) {
+        return `
+    <a href="${url}"
+       role="link"
+       aria-label="Chapter ${pos}: ${name} — ${words} words"
+       itemprop="itemListElement"
+       itemscope itemtype="https://schema.org/ListItem">
+      <meta itemprop="position" content="${pos}" />
+      <div class="tc-item">
+        <div class="chapter-name-tc" itemprop="name">${name}</div>
+        <div class="word-count-tc"><i itemprop="wordCount">${words} words</i></div>
+        <meta itemprop="item" content="${url}" />
+      </div>
+    </a>`;
+    }
+
+    setupTabs() {
+        const tabButtons = document.querySelectorAll('[role="tab"]');
+        const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+
+        // Keyboard navigation between tabs
+        tabButtons.forEach((tab, idx) => {
+            tab.addEventListener("click", () => this.activateTab(idx));
+            tab.addEventListener("keydown", e => {
+                if (e.key === "ArrowRight") this.activateTab((idx + 1) % tabButtons.length);
+                if (e.key === "ArrowLeft") this.activateTab((idx - 1 + tabButtons.length) % tabButtons.length);
+                if (e.key === "Enter" || e.key === " ") tab.click();
+            });
+        });
+
+        this.activateTab(0);
+
+        // Helper to activate tab by index
+        this.activateTab = (index) => {
+            tabButtons.forEach((tab, i) => {
+                const selected = i === index;
+                tab.setAttribute("aria-selected", selected);
+                tab.setAttribute("tabindex", selected ? "0" : "-1");
+                tabPanels[i].hidden = !selected;
+            });
+        };
     }
 }
 
 customElements.define('content-curtain', ContentCurtain);
-
-// --- Interaction Logic ---
-document.addEventListener("DOMContentLoaded", function() {
-    showContent("one");
-
-    document.getElementById("button-one").addEventListener("click", () => showContent("one"));
-    document.getElementById("button-two").addEventListener("click", () => showContent("two"));
-    document.getElementById("button-three").addEventListener("click", () => showContent("three"));
-    document.getElementById("button-appx").addEventListener("click", () => showContent("appx"));
-});
-
-function showContent(content) {
-    ["one","two","three","appx"].forEach(id => {
-        document.getElementById(`appx-book-${id}`).style.display = "none";
-        document.getElementById(`button-${id}`).setAttribute("aria-selected","false");
-    });
-    document.getElementById(`appx-book-${content}`).style.display = "block";
-    document.getElementById(`button-${content}`).setAttribute("aria-selected","true");
-}
