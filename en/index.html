@@ -300,66 +300,57 @@ All the page components required to build this page-->
           role="main"
           aria-label="Main content of Tractatus Ayyew, Earthbook Edition">
 
-        <!-- ========================== -->
-        <!-- 📖 MAIN CONTENT REGION -->
-        <!-- ========================== -->
-        <main id="main-page"
-              class="accessibility-plugin-ac"
-              role="main"
-              aria-label="Main content of Tractatus Ayyew, Earthbook Edition">
+<!-- The flexible grid (content) -->
+	<div id="row">
+        <div id="side">
 
-            <div id="row">
-                <!-- ========================== -->
-                <!-- 📗 LEFT SIDEBAR -->
-                <!-- ========================== -->
-                <aside id="side" role="complementary" aria-label="Book cover and subscription form">
+            <img src="../photos/cover-500px-en.webp" width="300" height="415" alt="Tractatus Ayyew - EarthBook Cover">
 
-                    <figure>
-                        <img src="../photos/cover-500px-en.webp"
-                             width="300"
-                             height="415"
-                             alt="Cover of Tractatus Ayyew - Earthbook Edition">
-                        <figcaption>
-                            Welcome to the <button type="button"
-                                                   onclick="guidedTour()"
-                                                   aria-label="Take a guided tour of the Earthbook"
-                                                   style="cursor:pointer;text-decoration:none !important;border-bottom:grey 1px dashed;background:none;border:none;color:inherit;font:inherit;">Earthbook</button>
-                            edition of the <em>Tractatus Ayyew</em>.
-                        </figcaption>
-                    </figure>
+            <div class="welcome-to">Welcome to the <span style="cursor:pointer; text-decoration: none !important;  border-bottom: grey 1px dashed ;" onclick="guidedTour()">Earthbook</span> edition of the <i>Tractatus Ayyew</i>.</div>
 
-                    <!-- Action buttons -->
-                    <nav class="button-row" aria-label="Book access options">
-                        <button id="read-btn" class="action-btn" type="button"
-                                onclick="openRead()" aria-label="Read Tractatus Ayyew">
-                            <i style="background-image:url(../icons/reader.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i> Read
-                        </button>
-                        <button id="buy-btn" class="action-btn" type="button"
-                                onclick="openBuy()" aria-label="Buy Tractatus Ayyew">
-                            <i style="background-image:url(../icons/buy.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i> Buy
-                        </button>
-                        <button id="tour-btn" class="action-btn" type="button"
-                                onclick="guidedTour()" aria-label="Take a guided tour">
-                            <i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:2px;"></i> Tour
-                        </button>
-                    </nav>
+            <div class="button-row">
+                <div id="read-btn" class="action-btn"  style="cursor:pointer;" onclick="openRead()"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</div>
+                <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</div>
+                <div id="tour-btn" class="action-btn" style="cursor:pointer;" onclick="guidedTour()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Tour</div>
+            </div>
 
-                    <!-- Subscription form -->
-                    <section aria-labelledby="subscribe-heading" class="subscription-section">
-                        <h2 id="subscribe-heading" class="visually-hidden">Subscribe to updates</h2>
-                        <form id="email-registration-form"
-                              class="reg-field"
-                              aria-label="Email subscription form"
-                              style="margin-top:18px;display:flex;flex-flow:row;"
-                              onsubmit="startSubProces(event)">
-                            <label for="email" class="visually-hidden">Email address</label>
-                            <input type="email" name="email" required placeholder="Your email..." class="email-input" id="email">
-                            <input type="text" name="name" placeholder="Your name" class="name-input" id="name">
-                            <div class="reg-complete-text" id="reg-status" role="status" aria-live="polite"></div>
-                            <input type="submit" value="Subscribe" class="register-button" id="reg-status-icon">
-                        </form>
-                    </section>
-                </aside>
+            <div>
+
+                <form id="email-registration-form" class="reg-field" style="margin-top:18px;display:flex; flex-flow:row;">
+                    <label for="email"></label>
+                    <input type="email" name="email" required placeholder="Your email..." class="email-input">
+                    <input type="text" name="name" placeholder="Your name" class="name-input">
+                    <div class="reg-complete-text" id="reg-status"></div>
+                    <input type="submit" value="Subscribe" class="register-button" id="reg-status-icon" onclick="startSubProces(event)">
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+        <!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
 
 		<div id="main">
 
