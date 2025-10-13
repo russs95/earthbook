@@ -12,6 +12,55 @@ class ContentCurtain extends HTMLElement {
          itemscope itemtype="https://schema.org/TableOfContents"
          aria-live="polite">
 
+      <style>
+        #table-of-contents .contents-books123 button {
+          border: none;
+          background: none;
+          font: inherit;
+          color: grey;
+          padding: 0;
+          cursor: pointer;
+        }
+
+        #table-of-contents .contents-books123 button.tc-a-book {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        #table-of-contents .contents-books123 button:not(:last-child) {
+          border-right: 1px solid gray;
+        }
+
+        #table-of-contents .contents-books123 button[aria-selected="true"] {
+          color: var(--text-color);
+        }
+
+        #table-of-contents .contents-books123 button:focus-visible {
+          outline: 2px solid var(--link-color);
+          outline-offset: 2px;
+        }
+
+        #table-of-contents .tc-button-row > a,
+        #table-of-contents .tc-button-row > div {
+          flex-grow: 1;
+          display: flex;
+          align-items: stretch;
+          height: 24px;
+        }
+
+        #table-of-contents .tc-button-row > a {
+          text-decoration: none;
+        }
+
+        #table-of-contents .tc-button-row .action-btn {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      </style>
+
       <!-- Top Buttons -->
       <div id="top-close-button" role="toolbar" aria-label="Top controls">
         <a href="index.html" role="button" aria-label="Go to Home">
@@ -30,7 +79,7 @@ class ContentCurtain extends HTMLElement {
 
       <div class="overlay-content-tc">
 
-        <p role="doc-subtitle" aria-label="About the Table of Contents">
+        <p role="doc-subtitle" aria-label="About the Table of Contents" class="visually-hidden">
           Navigate the three books of <cite>Tractatus Ayyew</cite>. Use the arrow keys to switch books and the Tab key to move through chapters.
         </p>
 
@@ -40,10 +89,10 @@ class ContentCurtain extends HTMLElement {
           <div class="contents-books123"
                role="tablist"
                aria-label="Book Sections of Tractatus Ayyew">
-            <button id="button-one" role="tab" aria-controls="appx-book-one" aria-selected="true" tabindex="0">Book One</button>
-            <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false" tabindex="-1">Book Two</button>
-            <button id="button-three" role="tab" aria-controls="appx-book-three" aria-selected="false" tabindex="-1">Book Three</button>
-            <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false" tabindex="-1">Appendix</button>
+            <button id="button-one" type="button" class="tc-a-book content-button" role="tab" aria-controls="appx-book-one" aria-selected="true" tabindex="0">Book One</button>
+            <button id="button-two" type="button" class="tc-a-book content-button" role="tab" aria-controls="appx-book-two" aria-selected="false" tabindex="-1">Book Two</button>
+            <button id="button-three" type="button" class="tc-a-book content-button" role="tab" aria-controls="appx-book-three" aria-selected="false" tabindex="-1">Book Three</button>
+            <button id="button-appx" type="button" class="tc-a-book content-button" role="tab" aria-controls="appx-book-appx" aria-selected="false" tabindex="-1">Appendix</button>
           </div>
         </div>
 
