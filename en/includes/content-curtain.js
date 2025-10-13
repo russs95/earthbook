@@ -40,16 +40,16 @@ class ContentCurtain extends HTMLElement {
           <div class="contents-books123"
                role="tablist"
                aria-label="Book Sections of Tractatus Ayyew">
-            <button id="button-one" role="tab" aria-controls="appx-book-one" aria-selected="true" tabindex="0" aria-label="Book One">
+            <button id="button-one" role="tab" aria-controls="appx-book-one" aria-selected="true" tabindex="0" aria-label="Book One" class="tc-a-book content-button">
               <span aria-hidden="true">Book 1</span>
             </button>
-            <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false" tabindex="-1" aria-label="Book Two">
+            <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false" tabindex="-1" aria-label="Book Two" class="tc-a-book content-button">
               <span aria-hidden="true">2</span>
             </button>
             <button id="button-three" role="tab" aria-controls="appx-book-three" aria-selected="false" tabindex="-1" aria-label="Book Three">
-              <span aria-hidden="true">3</span>
+              <span aria-hidden="true" class="tc-a-book content-button">3</span>
             </button>
-            <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false" tabindex="-1" aria-label="Appendix">
+            <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false" tabindex="-1" aria-label="Appendix" class="tc-a-book content-button">
               <span aria-hidden="true">Apx</span>
             </button>
           </div>
