@@ -84,12 +84,12 @@ class ContentCurtain extends HTMLElement {
         <!-- Bottom Buttons -->
         <div class="tc-button-row" role="group" aria-label="Quick access controls">
          
-          <div id="tour-button" class="action-btn"
+          <div id="tour-button" 
                role="button" tabindex="0"
                aria-label="Take a guided tour"
                onclick="closeContents(); guidedTour();"
                onkeydown="if(event.key==='Enter'||event.key===' ') {closeContents(); guidedTour();}">
-            <i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
+            <i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;" class="action-btn"></i>
             <span class="action-btn-label">Tour</span>
           </div>
           <div id="buy-button" class="action-btn"
