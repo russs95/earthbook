@@ -31,6 +31,7 @@ For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.e
 <link rel="alternate" href="https://book.earthen.io/en/preamble.html" hreflang="en" >
 <link rel="alternate" href="https://book.earthen.io/en/preamble.html" hreflang="x-default" >
 <link rel="alternate" href="https://book.earthen.io/fr/preambule.html" hreflang="fr" >
+<link rel="alternate" href="https://book.earthen.io/id/preamble.html" hreflang="id" >
 
 
 <!--BOOK META TAGS
@@ -43,8 +44,13 @@ These tags will be consistent for the whole book-->
 <meta name="author" content="Russell Maier & Banayan Angway">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="article:modified_time" content="2025-03-30T09:14:13+00:00" >
+<meta name="content-type" content="essay">
+<meta property="article:section" content="Introduction">
+<meta name="genre" content="Philosophy, Indigenous Ethics">
+<meta name="reading-level" content="General public">
+<meta name="license" content="CC BY-ND 4.0">
 
-<!-- Facebook Open Graph Tags for social sharing-->
+    <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:site_name" content="Tractatus Ayyew | Earthen Ethics">
 <meta property="og:type"          content="book">
 <meta property="og:title"         content="Preamble | Earthen Ethic">
@@ -57,6 +63,38 @@ These tags will be consistent for the whole book-->
 <meta property="og:url" content="https://book.earthen.io/en/preamble.html">
 
 
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BookChapter",
+            "name": "Preamble",
+            "inLanguage": "en",
+            "wordCount": 453,
+            "url": "https://book.earthen.io/en/preamble.html",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "Russell Maier"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Banayan Angway"
+                }
+            ],
+            "isPartOf": {
+                "@type": "Book",
+                "name": "Tractatus Ayyew",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Earthen.io"
+                },
+                "bookFormat": "EBook",
+                "license": "https://creativecommons.org/licenses/by-nd/4.0/",
+                "url": "https://book.earthen.io"
+            },
+            "description": "Introduction to the Earthbook edition of the Tractatus Ayyew, a philosophical exploration of Earthen ethics and indigenous wisdom."
+        }
+    </script>
 
  <!-- STYLE SHEETS
 All the css needed for this page-->
@@ -77,7 +115,6 @@ All the css needed for this page-->
     var chapNo = "1";
     var chapName = "Preamble";
     var chaptURL = "preamble.html";  //hope it works now
-
 
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
@@ -176,16 +213,34 @@ All the page components required to build this page-->
 <!--HEADER NAVBAR-->
 <header-component></header-component>
 
+      <article itemscope itemtype="https://schema.org/BookChapter">
+          <header id="ct-chapter-top">
+              <button type="button" id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
+              <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+                  <!-- Chapter title -->
+                  <h1 id="ct-chapter-title" itemprop="name">Preamble</h1>
+                  <!-- Book title -->
+                  <p id="ct-book-title">
+        <span itemprop="isPartOf" itemscope itemtype="https://schema.org/Book">
+          <span itemprop="name">Tractatus Ayyew</span>
+        </span>
+                  </p>
+                  <!-- Authors -->
+                  <p id="ct-chap-location">
+        <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Russell Maier</span>
+        </span>
+                      &amp;
+                      <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <span itemprop="name">Banayan Angway</span>
+        </span>
+                  </p>
+                  <!-- Optional metadata -->
+                  <p id="ct-word-count"><i itemprop="wordCount">453 words</i></p>
+              </div>
+          </header>
+      </article>
 
-<header id="ct-chapter-top">
-  <button type="button" id="ct-tc-menu" onclick="openContents()" aria-label="Open Table of Contents"></button>
-  <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
-    <h1 id="ct-chapter-title">Preamble</h1>
-    <p id="ct-book-title">Tractatus Ayyew</p>
-    <p id="ct-chap-location">Russell Maier &amp; Banayan Angway</p>
-    <p id="ct-word-count"><i>453 Words</i></p>
-  </div>
-</header>
 
 <!-- Page Title Section-->
 
