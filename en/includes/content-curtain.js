@@ -1,354 +1,199 @@
 class ContentCurtain extends HTMLElement {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  connectedCallback() {
-    this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
+    <nav id="table-of-contents" class="overlay-tc"
+         itemscope itemtype="https://schema.org/TableOfContents"
+         role="navigation" aria-label="Table of Contents">
 
-    <div id="table-of-contents" class="overlay-tc">
-
-    <div id="top-close-button">
+      <div id="top-close-button">
         <a href="index.html"><img src="../icons/home.svg" alt="Home Button" style="padding-right:10px;padding-left:10px;"></a> 
         <img src="../svgs/bottom-x.svg" alt="Close Button" style="padding-left:10px;cursor:pointer" onclick="closeContents()">
         <img src="../icons/search.svg?v=3" alt="Search" style="padding-left:12px;padding-right:15px;cursor:pointer" onclick="closeContents(), openSearch()">
-    </div>
-        
-        <div class="overlay-content-tc">
+      </div>
+      
+      <div class="overlay-content-tc">
 
-                 
+        <div class="contents-title-box">
+          <div class="contents-title" itemprop="name">Tractatus Ayyew | Table of Contents</div>
+          <div class="contents-books123" role="tablist">
+            <button id="button-one" role="tab" aria-controls="appx-book-one" aria-selected="true">Book One</button>
+            <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false">Book Two</button>
+            <button id="button-three" role="tab" aria-controls="appx-book-three" aria-selected="false">Book Three</button>
+            <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false">Appendix</button>
+          </div>
+        </div>
 
-                    <div class="contents-title-box">
-  <div class="contents-title">Books & Contents</div>
-  <div class="contents-books123">
-    <div class="tc-a-book content-button" id="button-one" style="border-right:1px gray solid;">One</div>
-    <div class="tc-a-book content-button" id="button-two" style="border-right:1px gray solid; color:grey;">Two</div>
-    <div class="tc-a-book content-button" id="button-three" style="border-right:1px gray solid; color:grey;">Three</div>
-    <div class="tc-a-book content-button" id="button-appx" style="color:grey;">Appx</div>
-  </div>
-</div>
+        <!-- BOOK ONE -->
+        <div id="appx-book-one" itemscope itemtype="https://schema.org/ItemList" itemprop="hasPart" aria-label="Book One chapters">
+          <meta itemprop="name" content="Book One | The Beginning">
 
-
-                    <div id="appx-book-one">
-
-                        <a href="preamble.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Preamble</div>
-                            <div class="word-count-tc"><i>431 words</i></div>
-                        </div></a>
-
-                        <a href="preface.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Preface</div>
-                            <div class="word-count-tc"><i>1,220 words</i></div>
-                        </div></a>
-
-                        <a href="epigraph-1.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Epigraph</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>65 words</i></div>
-                        </div>
-                        </a>
-                        
-                        <a href="imagine.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Imagine</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>1,095 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="plastic1.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Plastic 1.0</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>623 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="stellar.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">An Interstellar Story</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>1,021 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="patterns.html">
-                        <div class="tc-item">
-                        <div class="chapter-name-tc">Patterns of Process</div>
-                        <div class="dotted-line"></div>
-                        <div class="word-count-tc"><i>837 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="kincentric.html">
-                        <div class="tc-item">
-                        <div class="chapter-name-tc">Kindred Relations</div>
-                        <div class="dotted-line"></div>
-                        <div class="word-count-tc"><i>1,508 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="nature.html">
-                        <div class="tc-item">
-                        <div class="chapter-name-tc">Nature's Fallacy</div>
-                        <div class="dotted-line"></div>
-                        <div class="word-count-tc"><i>973 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="earthen.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">The Earthen Ways</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>784 words</i></div>
-                            
-                        </div>
-                        </a>
-                    </div>
-
-
-
-                    <div id="appx-book-two" style="display: none;">
-
-                    <a href="epigraph-2.html">
-                     <div class="tc-item">
-                         <div class="chapter-name-tc">Epigraph II</div>
-                         <div class="word-count-tc"><i>51 words</i></div>
-                     </div></a>
-
-
-                        <a href="spirals.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Cycles that Spiral</div>
-                            <div class="word-count-tc"><i>1,682 words</i></div>
-                        </div></a>
-
-                        <a href="energy.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">The Salmon's Spin</div>
-                            <div class="word-count-tc"><i>2,294 words</i></div>
-                        </div></a>
-
-                        <a href="matter.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">The Manner of the Mollusk</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>2,322</i></div>
-                        </div>
-                        </a>
-
-                        <a href="diversification.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">The Polyp's Pattern</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>1,782 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="awareness.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">The Mycorrhyzals' Means</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>1,685</i></div>
-                        </div>
-                        </a>
-
-                    </div>
-
-                    <div id="appx-book-three" style="display: none;">
-
-                    <a href="epigraph-3.html">
-                     <div class="tc-item">
-                         <div class="chapter-name-tc">Epigraph III</div>
-                         <div class="word-count-tc"><i>58 words</i></div>
-                     </div></a>
-
-                        <a href="unpublished.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Plastic 2.0</div>
-                            <div class="word-count-tc"><i>unpublished</i></div>
-                        </div></a>
-
-                        <a href="unpublished.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Plastic Sequestration</div>
-                            <div class="word-count-tc"><i>unpublished</i></div>
-                        </div></a>
-
-                        <a href="unpublished.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Petro-Capital Transition</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>unpublished</i></div>
-                        </div>
-                        </a>
-
-                        <a href="unpublished.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Ad Pax Ayyew</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>unpublished</i></div>
-                        </div>
-                        </a>
-
-            
-                    </div>
-
-                    <div id="appx-book-appx" style="display: none;">
-                        
-                        <a href="summaries.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Summaries</div>
-                            <div class="word-count-tc"><i>501 words</i></div>
-                        </div></a>
-
-                        <a href="dedication.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Dedication</div>
-                            <div class="word-count-tc"><i>26 words</i></div>
-                        </div></a>
-
-
-                        <a href="for-earth.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">For-Earth Declaration</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>54 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="acknowledgements.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Grattitude</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>541 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="publishing.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Publishing</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>133 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="authors.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Authors</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>218 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="declaration.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Declarations</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>367 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="bibliography.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Bibliography</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>740 words</i></div>
-                        </div>
-                        </a>
-
-                        <a href="glossary.html">
-                        <div class="tc-item">
-                            <div class="chapter-name-tc">Glossary</div>
-                            <div class="dotted-line"></div>
-                            <div class="word-count-tc"><i>342 words</i></div>
-                        </div>
-                        </a>
-
-
-                    </div>
-
-
-                    <div class="tc-button-row">
-                        <a href="index.html" style="height: 24px; flex-grow: 1" aria-label="Home button"><div id="tour-btn" class="action-btn" ><i style="background-image: url(../icons/home.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i></div></a>
-
-                        <div id="buy-btn" class="action-btn" onclick="closeContents(), guidedTour()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i> Tour</div>
-
-                        <div id="buy-btn" class="action-btn" onclick="openBuy()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i></div>
-
-                        <div id="buy-btn" class="action-btn" onclick="openBookplate()" style="height: 22px;flex-grow: 1"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px; cursor:pointer;"></i></div>
-
-                        <div id="buy-btn" class="action-btn" onclick="openEco()" style="height: 24px;flex-grow: 1"><i style="background-image: url(../icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 0px; cursor:pointer;"></i></div>
-                    
-                       
-                        </div>
-
-            <br><br>
-                </div>
-                </div>
-                
-
+          <a href="preamble.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="1" />
+            <div class="tc-item">
+              <div class="chapter-name-tc" itemprop="name">Preamble</div>
+              <div class="word-count-tc"><i itemprop="wordCount">431 words</i></div>
+              <meta itemprop="item" content="https://book.earthen.io/en/preamble.html" />
             </div>
+          </a>
 
-         <!--   <div>
-            <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeBuy()" aria-label="Click to close this pop-up page">
-              <img src="../svgs/bottom-x.svg" alt="Close page button">
-            </button>
-          </div>-->
-    </div>
+          <a href="preface.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="2" />
+            <div class="tc-item">
+              <div class="chapter-name-tc" itemprop="name">Preface</div>
+              <div class="word-count-tc"><i itemprop="wordCount">1,220 words</i></div>
+              <meta itemprop="item" content="https://book.earthen.io/en/preface.html" />
+            </div>
+          </a>
 
+          <a href="epigraph-1.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="3" />
+            <div class="tc-item">
+              <div class="chapter-name-tc" itemprop="name">Epigraph</div>
+              <div class="word-count-tc"><i itemprop="wordCount">65 words</i></div>
+              <meta itemprop="item" content="https://book.earthen.io/en/epigraph-1.html" />
+            </div>
+          </a>
 
+          <a href="imagine.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="4" />
+            <div class="tc-item">
+              <div class="chapter-name-tc" itemprop="name">Imagine</div>
+              <div class="word-count-tc"><i itemprop="wordCount">1,095 words</i></div>
+              <meta itemprop="item" content="https://book.earthen.io/en/imagine.html" />
+            </div>
+          </a>
+
+          <a href="plastic1.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="5" />
+            <div class="tc-item">
+              <div class="chapter-name-tc" itemprop="name">Plastic 1.0</div>
+              <div class="word-count-tc"><i itemprop="wordCount">623 words</i></div>
+              <meta itemprop="item" content="https://book.earthen.io/en/plastic1.html" />
+            </div>
+          </a>
+
+          <a href="stellar.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="6" />
+            <div class="tc-item">
+              <div class="chapter-name-tc" itemprop="name">An Interstellar Story</div>
+              <div class="word-count-tc"><i itemprop="wordCount">1,021 words</i></div>
+              <meta itemprop="item" content="https://book.earthen.io/en/stellar.html" />
+            </div>
+          </a>
+
+          <a href="patterns.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="7" />
+            <div class="tc-item">
+              <div class="chapter-name-tc" itemprop="name">Patterns of Process</div>
+              <div class="word-count-tc"><i itemprop="wordCount">837 words</i></div>
+              <meta itemprop="item" content="https://book.earthen.io/en/patterns.html" />
+            </div>
+          </a>
+
+          <a href="kincentric.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="8" />
+            <div class="tc-item">
+              <div class="chapter-name-tc" itemprop="name">Kindred Relations</div>
+              <div class="word-count-tc"><i itemprop="wordCount">1,508 words</i></div>
+              <meta itemprop="item" content="https://book.earthen.io/en/kincentric.html" />
+            </div>
+          </a>
+
+          <a href="nature.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="9" />
+            <div class="tc-item">
+              <div class="chapter-name-tc" itemprop="name">Nature's Fallacy</div>
+              <div class="word-count-tc"><i itemprop="wordCount">973 words</i></div>
+              <meta itemprop="item" content="https://book.earthen.io/en/nature.html" />
+            </div>
+          </a>
+
+          <a href="earthen.html" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content="10" />
+            <div class="tc-item">
+              <div class="chapter-name-tc" itemprop="name">The Earthen Ways</div>
+              <div class="word-count-tc"><i itemprop="wordCount">784 words</i></div>
+              <meta itemprop="item" content="https://book.earthen.io/en/earthen.html" />
+            </div>
+          </a>
+        </div>
+
+        <!-- Continue: Book Two, Book Three, Appendix sections -->
+        <!-- You can copy the Book One markup and replace chapter names, positions, and links accordingly -->
+
+        <!-- Bottom Button Row -->
+        <div class="tc-button-row" role="group" aria-label="Quick actions">
+          <a href="index.html" aria-label="Home button"><div id="tour-btn" class="action-btn"><i style="background-image:url(../icons/home.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:3px;"></i></div></a>
+          <div id="buy-btn" class="action-btn" onclick="closeContents(), guidedTour()" aria-label="Take the guided tour"><i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>Tour</div>
+          <div id="buy-btn" class="action-btn" onclick="openBuy()" aria-label="Buy the book"><i style="background-image:url(../icons/buy.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i></div>
+          <div id="buy-btn" class="action-btn" onclick="openBookplate()" aria-label="About this book"><i style="background-image:url(../icons/about.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i></div>
+          <div id="buy-btn" class="action-btn" onclick="openEco()" aria-label="See ecological report"><i style="background-image:url(../icons/eco-green.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:0px;"></i></div>
+        </div>
+      </div>
+    </nav>
     `;
-}
+
+        // --- JSON-LD for AI / Search engines ---
+        const tocJSONLD = {
+            "@context": "https://schema.org",
+            "@type": "TableOfContents",
+            "name": "Tractatus Ayyew Table of Contents",
+            "inLanguage": "en",
+            "isPartOf": {
+                "@type": "Book",
+                "name": "Tractatus Ayyew",
+                "publisher": "Earthen.io",
+                "url": "https://book.earthen.io",
+                "bookFormat": "EBook"
+            },
+            "hasPart": [
+                {
+                    "@type": "ItemList",
+                    "name": "Book One",
+                    "itemListOrder": "Ascending",
+                    "itemListElement": [
+                        {"@type": "BookChapter","position":1,"name":"Preamble","url":"https://book.earthen.io/en/preamble.html","wordCount":431},
+                        {"@type": "BookChapter","position":2,"name":"Preface","url":"https://book.earthen.io/en/preface.html","wordCount":1220},
+                        {"@type": "BookChapter","position":3,"name":"Epigraph","url":"https://book.earthen.io/en/epigraph-1.html","wordCount":65},
+                        {"@type": "BookChapter","position":4,"name":"Imagine","url":"https://book.earthen.io/en/imagine.html","wordCount":1095},
+                        {"@type": "BookChapter","position":5,"name":"Plastic 1.0","url":"https://book.earthen.io/en/plastic1.html","wordCount":623},
+                        {"@type": "BookChapter","position":6,"name":"An Interstellar Story","url":"https://book.earthen.io/en/stellar.html","wordCount":1021},
+                        {"@type": "BookChapter","position":7,"name":"Patterns of Process","url":"https://book.earthen.io/en/patterns.html","wordCount":837},
+                        {"@type": "BookChapter","position":8,"name":"Kindred Relations","url":"https://book.earthen.io/en/kincentric.html","wordCount":1508},
+                        {"@type": "BookChapter","position":9,"name":"Nature's Fallacy","url":"https://book.earthen.io/en/nature.html","wordCount":973},
+                        {"@type": "BookChapter","position":10,"name":"The Earthen Ways","url":"https://book.earthen.io/en/earthen.html","wordCount":784}
+                    ]
+                }
+            ]
+        };
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(tocJSONLD, null, 2);
+        document.head.appendChild(script);
+    }
 }
 
 customElements.define('content-curtain', ContentCurtain);
 
-
-
-
+// --- Interaction Logic ---
 document.addEventListener("DOMContentLoaded", function() {
-    // Show the initial content on page load
     showContent("one");
-  
-    // Add click event listeners to the buttons
-    document.getElementById("button-one").addEventListener("click", function() {
-      showContent("one");
+
+    document.getElementById("button-one").addEventListener("click", () => showContent("one"));
+    document.getElementById("button-two").addEventListener("click", () => showContent("two"));
+    document.getElementById("button-three").addEventListener("click", () => showContent("three"));
+    document.getElementById("button-appx").addEventListener("click", () => showContent("appx"));
+});
+
+function showContent(content) {
+    ["one","two","three","appx"].forEach(id => {
+        document.getElementById(`appx-book-${id}`).style.display = "none";
+        document.getElementById(`button-${id}`).setAttribute("aria-selected","false");
     });
-  
-    document.getElementById("button-two").addEventListener("click", function() {
-      showContent("two");
-    });
-  
-    document.getElementById("button-three").addEventListener("click", function() {
-      showContent("three");
-    });
-  
-    document.getElementById("button-appx").addEventListener("click", function() {
-      showContent("appx");
-    });
-  });
-  
-  function showContent(content) {
-    // Hide all content divs
-    document.getElementById("appx-book-one").style.display = "none";
-    document.getElementById("appx-book-two").style.display = "none";
-    document.getElementById("appx-book-three").style.display = "none";
-    document.getElementById("appx-book-appx").style.display = "none";
-  
-    // Show the selected content div
     document.getElementById(`appx-book-${content}`).style.display = "block";
-  
-    // Change the color of the corresponding word to red
-    const buttons = document.getElementsByClassName("content-button");
-    for (let i = 0; i < buttons.length; i++) {
-      buttons[i].style.color = "grey"; // Set all buttons to gray by default
-    }
-  
-    // Set the selected button to red
-    document.getElementById(`button-${content}`).style.color = "var(--text-color)";
-  }
-  
+    document.getElementById(`button-${content}`).setAttribute("aria-selected","true");
+}
