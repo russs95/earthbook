@@ -271,35 +271,29 @@ All the page components required to build this page-->
 </style>
 </HEAD>
 
-<body class="accessibility-plugin-ac" lang="en">
 
-<!-- Global Overlay Components (ARIA-hidden by default) -->
-<tour-curtain aria-hidden="true"></tour-curtain>
-<subscription-curtain aria-hidden="true"></subscription-curtain>
-<read-curtain aria-hidden="true"></read-curtain>
-<search-curtain aria-hidden="true"></search-curtain>
-<content-curtain aria-hidden="true"></content-curtain>
-<settings-curtain aria-hidden="true"></settings-curtain>
-<bookplate-curtain aria-hidden="true"></bookplate-curtain>
-<earthbook-curtain aria-hidden="true"></earthbook-curtain>
-<share-curtain aria-hidden="true"></share-curtain>
-<eco-curtain aria-hidden="true"></eco-curtain>
-<booknotes-curtain aria-hidden="true"></booknotes-curtain>
 
-<div id="underlayer">
+<BODY class="accessibility-plugin-ac">
+
+<tour-curtain></tour-curtain>
+<subscription-curtain></subscription-curtain>
+
+    <div id="underlayer">
+
     <div id="top"></div>
 
-    <!-- 🧭 Global Header Navigation -->
-    <header-component role="banner" aria-label="Site Header and Main Navigation"></header-component>
 
-    <!-- ========================== -->
-    <!-- 📖 MAIN CONTENT REGION -->
-    <!-- ========================== -->
-    <main id="main-page"
-          class="accessibility-plugin-ac"
-          role="main"
-          aria-label="Main content of Tractatus Ayyew, Earthbook Edition">
+<!--HEADER NAVBAR-->
+<header-component></header-component>
 
+<!--READ CURTAIN-->
+
+<read-curtain></read-curtain>
+
+
+<!-- PAGE CONTENT-->
+
+<div id="main-page" class="accessibility-plugin-ac">
 <!-- The flexible grid (content) -->
 	<div id="row">
         <div id="side">
