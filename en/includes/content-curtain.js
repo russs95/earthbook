@@ -55,7 +55,7 @@ class ContentCurtain extends HTMLElement {
                  aria-selected="false"
                  tabindex="-1"
                  aria-label="Book Two"
-                 style="border-right:1px gray solid;">Book 2</div>
+                 style="border-right:1px gray solid;">2</div>
             <div class="tc-a-book content-button"
                  id="button-three"
                  role="tab"
@@ -63,14 +63,14 @@ class ContentCurtain extends HTMLElement {
                  aria-selected="false"
                  tabindex="-1"
                  aria-label="Book Three"
-                 style="border-right:1px gray solid;">Book 3</div>
+                 style="border-right:1px gray solid;">3</div>
             <div class="tc-a-book content-button"
                  id="button-appx"
                  role="tab"
                  aria-controls="appx-book-appx"
                  aria-selected="false"
                  tabindex="-1"
-                 aria-label="Appendix">Appendix</div>
+                 aria-label="Appendix">Apx</div>
           </div>
         </div>
 
@@ -102,35 +102,50 @@ class ContentCurtain extends HTMLElement {
 
         <!-- Bottom Buttons -->
         <div class="tc-button-row" role="group" aria-label="Quick access controls">
-         
-          <div id="tour-button" 
+          <a href="index.html"
+             style="height:24px;flex-grow:1"
+             aria-label="Go to Home">
+            <div id="home-button" class="action-btn">
+              <i style="background-image:url(../icons/home.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:3px;"></i>
+            </div>
+          </a>
+
+          <div id="tour-button" class="action-btn"
                role="button" tabindex="0"
                aria-label="Take a guided tour"
                onclick="closeContents(); guidedTour();"
-               onkeydown="if(event.key==='Enter'||event.key===' ') {closeContents(); guidedTour();}" style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;">
+               onkeydown="if(event.key==='Enter'||event.key===' ') {closeContents(); guidedTour();}"
+               style="height:24px;flex-grow:1">
+            <i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
             <span class="action-btn-label">Tour</span>
           </div>
+
           <div id="buy-button" class="action-btn"
                role="button" tabindex="0"
                aria-label="Buy the book"
                onclick="openBuy();"
-               onkeydown="if(event.key==='Enter'||event.key===' ') openBuy();">
+               onkeydown="if(event.key==='Enter'||event.key===' ') openBuy();"
+               style="height:24px;flex-grow:1">
             <i style="background-image:url(../icons/buy.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
             <span class="action-btn-label">Buy</span>
           </div>
+
           <div id="about-button" class="action-btn"
                role="button" tabindex="0"
                aria-label="About this book"
                onclick="openBookplate();"
-               onkeydown="if(event.key==='Enter'||event.key===' ') openBookplate();">
+               onkeydown="if(event.key==='Enter'||event.key===' ') openBookplate();"
+               style="height:24px;flex-grow:1">
             <i style="background-image:url(../icons/about.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
             <span class="action-btn-label">About</span>
           </div>
+
           <div id="eco-button" class="action-btn"
                role="button" tabindex="0"
                aria-label="View ecological report"
                onclick="openEco();"
-               onkeydown="if(event.key==='Enter'||event.key===' ') openEco();">
+               onkeydown="if(event.key==='Enter'||event.key===' ') openEco();"
+               style="height:24px;flex-grow:1">
             <i style="background-image:url(../icons/eco-green.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:0px;"></i>
             <span class="action-btn-label">Eco</span>
           </div>
