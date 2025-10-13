@@ -149,6 +149,7 @@ display: none;
     font-variant-caps: petite-caps;
     display: block;
     transition: 0.3s;
+      text-align: center;
   }
 
   #ct-chap-location {
@@ -158,12 +159,14 @@ display: none;
     font-variant-caps: petite-caps;
     display: block;
     transition: 0.3s;
+      text-align: center;
   }
   
   #ct-word-count {
     font-family: 'CooperLt';
     font-weight: 300;
     display: block;
+      text-align: center;
   }
 
   #ct-tc-menu {
@@ -1191,7 +1194,6 @@ overflow-y: clip;
 }
 
 
-// smooth header roll up
 
 #earthbook-navbar {
     transition: margin-top 0.5s ease; /* Adjust the duration as needed */
