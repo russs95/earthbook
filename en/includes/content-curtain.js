@@ -41,9 +41,9 @@ class ContentCurtain extends HTMLElement {
                role="tablist"
                aria-label="Book Sections of Tractatus Ayyew">
             <button id="button-one" role="tab" aria-controls="appx-book-one" aria-selected="true" tabindex="0">Book One</button>
-            <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false" tabindex="-1">Book Two</button>
-            <button id="button-three" role="tab" aria-controls="appx-book-three" aria-selected="false" tabindex="-1">Book Three</button>
-            <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false" tabindex="-1">Appendix</button>
+            <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false" tabindex="-1">Two</button>
+            <button id="button-three" role="tab" aria-controls="appx-book-three" aria-selected="false" tabindex="-1">Three</button>
+            <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false" tabindex="-1">Appx</button>
           </div>
         </div>
 
@@ -75,11 +75,7 @@ class ContentCurtain extends HTMLElement {
 
         <!-- Bottom Buttons -->
         <div class="tc-button-row" role="group" aria-label="Quick access controls">
-          <a href="index.html" role="button" aria-label="Return to home page">
-            <div id="tour-btn" class="action-btn">
-              <i style="background-image:url(../icons/home.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:3px;"></i>
-            </div>
-          </a>
+         
           <div id="tour-button" class="action-btn"
                role="button" tabindex="0"
                aria-label="Take a guided tour"
