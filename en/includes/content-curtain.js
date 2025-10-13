@@ -30,7 +30,7 @@ class ContentCurtain extends HTMLElement {
 
       <div class="overlay-content-tc">
 
-        <p role="doc-subtitle" aria-label="About the Table of Contents">
+        <p role="doc-subtitle" aria-label="About the Table of Contents" class="visually-hidden">
           Navigate the three books of <cite>Tractatus Ayyew</cite>. Use the arrow keys to switch books and the Tab key to move through chapters.
         </p>
 
@@ -40,10 +40,18 @@ class ContentCurtain extends HTMLElement {
           <div class="contents-books123"
                role="tablist"
                aria-label="Book Sections of Tractatus Ayyew">
-            <button id="button-one" role="tab" aria-controls="appx-book-one" aria-selected="true" tabindex="0">Book One</button>
-            <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false" tabindex="-1">Two</button>
-            <button id="button-three" role="tab" aria-controls="appx-book-three" aria-selected="false" tabindex="-1">Three</button>
-            <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false" tabindex="-1">Appx</button>
+            <button id="button-one" role="tab" aria-controls="appx-book-one" aria-selected="true" tabindex="0" aria-label="Book One">
+              <span aria-hidden="true">Book 1</span>
+            </button>
+            <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false" tabindex="-1" aria-label="Book Two">
+              <span aria-hidden="true">2</span>
+            </button>
+            <button id="button-three" role="tab" aria-controls="appx-book-three" aria-selected="false" tabindex="-1" aria-label="Book Three">
+              <span aria-hidden="true">3</span>
+            </button>
+            <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false" tabindex="-1" aria-label="Appendix">
+              <span aria-hidden="true">Apx</span>
+            </button>
           </div>
         </div>
 
@@ -81,7 +89,8 @@ class ContentCurtain extends HTMLElement {
                aria-label="Take a guided tour"
                onclick="closeContents(); guidedTour();"
                onkeydown="if(event.key==='Enter'||event.key===' ') {closeContents(); guidedTour();}">
-            <i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>Tour
+            <i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
+            <span class="action-btn-label">Tour</span>
           </div>
           <div id="buy-button" class="action-btn"
                role="button" tabindex="0"
@@ -89,6 +98,7 @@ class ContentCurtain extends HTMLElement {
                onclick="openBuy();"
                onkeydown="if(event.key==='Enter'||event.key===' ') openBuy();">
             <i style="background-image:url(../icons/buy.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
+            <span class="action-btn-label">Buy</span>
           </div>
           <div id="about-button" class="action-btn"
                role="button" tabindex="0"
@@ -96,6 +106,7 @@ class ContentCurtain extends HTMLElement {
                onclick="openBookplate();"
                onkeydown="if(event.key==='Enter'||event.key===' ') openBookplate();">
             <i style="background-image:url(../icons/about.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
+            <span class="action-btn-label">About</span>
           </div>
           <div id="eco-button" class="action-btn"
                role="button" tabindex="0"
@@ -103,6 +114,7 @@ class ContentCurtain extends HTMLElement {
                onclick="openEco();"
                onkeydown="if(event.key==='Enter'||event.key===' ') openEco();">
             <i style="background-image:url(../icons/eco-green.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:0px;"></i>
+            <span class="action-btn-label">Eco</span>
           </div>
         </div>
       </div>
