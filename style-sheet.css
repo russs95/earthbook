@@ -3323,6 +3323,8 @@ padding-top: 44px;
     font-family: 'CooperLt';
     font-variant-caps: small-caps;
     cursor: pointer;
+      border: none;
+      background: none;
   }
 
  /* @media screen and (max-width: 700px) {

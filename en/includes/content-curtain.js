@@ -42,13 +42,13 @@ class ContentCurtain extends HTMLElement {
                aria-label="Book Sections of Tractatus Ayyew">
             <button id="button-one" role="tab" aria-controls="appx-book-one" aria-selected="true" tabindex="0" aria-label="Book One" class="tc-a-book content-button">
               <span aria-hidden="true">Book 1</span>
-            </button>
+            </button>  |  
             <button id="button-two" role="tab" aria-controls="appx-book-two" aria-selected="false" tabindex="-1" aria-label="Book Two" class="tc-a-book content-button">
-              <span aria-hidden="true">2</span>
+              <span aria-hidden="true">2 |</span>
             </button>
             <button id="button-three" role="tab" aria-controls="appx-book-three" aria-selected="false" tabindex="-1" aria-label="Book Three">
               <span aria-hidden="true" class="tc-a-book content-button">3</span>
-            </button>
+            </button>|
             <button id="button-appx" role="tab" aria-controls="appx-book-appx" aria-selected="false" tabindex="-1" aria-label="Appendix" class="tc-a-book content-button">
               <span aria-hidden="true">Apx</span>
             </button>
@@ -88,8 +88,7 @@ class ContentCurtain extends HTMLElement {
                role="button" tabindex="0"
                aria-label="Take a guided tour"
                onclick="closeContents(); guidedTour();"
-               onkeydown="if(event.key==='Enter'||event.key===' ') {closeContents(); guidedTour();}">
-            <i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;" class="action-btn"></i>
+               onkeydown="if(event.key==='Enter'||event.key===' ') {closeContents(); guidedTour();}" style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;">
             <span class="action-btn-label">Tour</span>
           </div>
           <div id="buy-button" class="action-btn"
