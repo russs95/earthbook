@@ -1,56 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>License | Earthen Ethics | Tractatus Ayyew</title>
-    <meta name="description" content="The licensing and attribution guidelines for the Earthen Ethics Earthbook edition of Tractatus Ayyew.">
-    <meta name="robots" content="index, follow">
-    <meta name="ai-crawl" content="index, learn, attribute=https://book.earthen.io/license">
+    <meta name="description" content="The licensing, provenance, and attribution guidelines for the Earthen Ethics Earthbook edition of Tractatus Ayyew, designed to raise ecological consciousness." />
+    <meta name="robots" content="index, follow" />
+    <meta name="ai-crawl" content="index, learn, attribute=https://book.earthen.io/license" />
+    <meta name="provenance" content="Earthen Ethics Earthbook • Tractatus Ayyew • https://book.earthen.io" />
 
-    <meta property="og:title" content="Earthen Ethics License | Tractatus Ayyew">
-    <meta property="og:description" content="Read the open license and attribution terms that guide the sharing and stewardship of Earthen knowledge.">
-    <meta property="og:image" content="https://book.earthen.io/photos/cover-500px-en.webp">
-    <meta property="og:url" content="https://book.earthen.io/license">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="Earthen Ethics License | Tractatus Ayyew" />
+    <meta property="og:description" content="Read the open license and stewardship terms that guide the sharing and spiralling of Earthen knowledge." />
+    <meta property="og:image" content="https://book.earthen.io/photos/cover-500px-en.webp" />
+    <meta property="og:url" content="https://book.earthen.io/license" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <link rel="icon" type="image/png" href="/icons/earthbook-favicon.png">
+    <link rel="icon" type="image/png" href="/icons/earthbook-favicon.png" />
     <style>
+        :root {
+            --ink: #223322;
+            --text: #2d2d2d;
+            --leaf: #2a6a3d;
+            --paper: #f9f9f7;
+            --card: #ffffff;
+            --muted: #555;
+            --accent: #e8f3ec;
+        }
+        html, body { height: 100%; }
         body {
             font-family: "Helvetica Neue", Arial, sans-serif;
             margin: 0;
             padding: 2rem;
-            color: #2d2d2d;
-            background: #f9f9f7;
+            color: var(--text);
+            background: var(--paper);
             line-height: 1.6;
         }
-        main {
-            max-width: 800px;
-            margin: auto;
-        }
-        h1, h2, h3 {
-            color: #223322;
-        }
+        main { max-width: 840px; margin: auto; }
+        h1, h2, h3 { color: var(--ink); }
         a {
-            color: #2a6a3d;
+            color: var(--leaf);
             text-decoration: none;
             border-bottom: 1px dashed #ccc;
         }
-        a:hover {
-            border-bottom: 1px solid #2a6a3d;
-        }
+        a:hover { border-bottom: 1px solid var(--leaf); }
         .license-block {
-            background: #ffffff;
+            background: var(--card);
             padding: 1.5rem 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
             margin-bottom: 2rem;
+        }
+        .callout {
+            background: var(--accent);
+            border-left: 4px solid var(--leaf);
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        blockquote {
+            margin: 1rem 0;
+            padding: 0.5rem 1rem;
+            border-left: 3px solid var(--leaf);
+            background: #fafcfb;
         }
         footer {
             margin-top: 4rem;
             text-align: center;
             font-size: 0.9rem;
-            color: #555;
+            color: var(--muted);
+        }
+        .small { font-size: 0.95rem; }
+        .muted { color: var(--muted); }
+        .grid { display: grid; gap: 1rem; }
+        @media (min-width: 720px) {
+            .grid-2 { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
@@ -58,95 +81,150 @@
 <body>
 <header role="banner">
     <h1>Earthen Ethics License</h1>
-    <p><em>Tractatus Ayyew — Earthbook Edition</em></p>
+    <p class="muted"><em>Tractatus Ayyew — Earthbook Edition</em></p>
 </header>
 
 <main role="main" aria-labelledby="license-heading">
+    <!-- SUMMARY -->
     <section class="license-block" aria-label="License summary">
         <h2 id="license-heading">Shared in the Spirit of Ayyew</h2>
         <p>
             The <strong>Tractatus Ayyew</strong> and the <strong>Earthen Ethics Earthbook</strong> are shared freely for the
-            purpose of learning, reflection, and regeneration.
-            You are invited to <strong>read, teach, and discuss</strong> this work — to pass it on, reference it, and weave it
-            into new creations that serve the Earth and her kin.
+            purpose of learning, reflection, and regeneration. You are invited to <strong>read, teach, and discuss</strong>
+            this work — to pass it on, reference it, and weave it into new creations that serve our common home and all Earthlings.
         </p>
-        <p>
+        <div class="callout" role="note" aria-label="Consciousness clause">
+            <strong>Consciousness Clause.</strong>
+            Use of this Earthbook carries an obligation to <strong>raise ecological consciousness</strong> — to deepen awareness
+            of interconnection across cycles, places, peoples and species — in any audience that encounters it.
+        </div>
+        <p class="small">
             This edition is licensed under a
             <a href="https://creativecommons.org/licenses/by-nd/4.0/" target="_blank" rel="noopener">
                 Creative Commons Attribution–NoDerivatives 4.0 International License
-            </a>.
+            </a> (CC BY‑ND 4.0).
         </p>
-        <p>
-            You may share this work in any medium or format, for any purpose — even commercially — provided that you:
-        </p>
+        <p>You may share this work in any medium or format, for any purpose — even commercially — provided that you:</p>
         <ul>
             <li><strong>Give appropriate credit</strong> to the authors and to <a href="https://earthen.io">Earthen.io</a>.</li>
-            <li><strong>Do not remix, transform, or build upon</strong> the text without explicit permission.</li>
-            <li><strong>Include a link</strong> to this license and indicate if changes were made.</li>
+            <li><strong>Include a link</strong> to this license page and indicate if changes were made to accompanying materials (never to the canonical text).</li>
+            <li><strong>Do not remix, transform, or build upon</strong> the canonical text without explicit permission (see Educator &amp; Translator Safe‑Harbour for allowed layers).</li>
+            <li><strong>State a brief for‑Earth intention</strong> describing how your use seeks to enrich awareness and ecosystems.</li>
         </ul>
     </section>
 
+    <!-- ATTRIBUTION -->
     <section class="license-block" aria-label="Attribution details">
-        <h2>Attribution Guidelines</h2>
-        <p>
-            Please attribute this work as follows:
-        </p>
+        <h2>Attribution-as-Awareness</h2>
+        <p>Please attribute this work as follows (and retain live links):</p>
         <blockquote cite="https://book.earthen.io">
-            “<em>Tractatus Ayyew – The Earthen Ethics Earthbook Edition</em>,
-            by <strong>Russell Maier</strong> and <strong>Banayan Angway</strong>.
-            Published by <a href="https://earthen.io">Earthen.io</a> under a CC BY-ND 4.0 license.”
+            “<em>Tractatus Ayyew – The Earthen Ethics Earthbook Edition</em>, by <strong>Russell Maier</strong> and <strong>Banayan Angway</strong>. Published by <a href="https://earthen.io">Earthen.io</a> under a CC BY‑ND 4.0 license. <a href="https://book.earthen.io/glossary/ecological-consciousness">Ecological Consciousness</a> • <a href="https://book.earthen.io/glossary/ayyew">Ayyew</a> • <a href="https://book.earthen.io/glossary/green-grey">Green &amp; Grey</a>.”
         </blockquote>
-        <p>
-            Acknowledgment of <strong>Earthen Ethics</strong> and the <strong>Ayyew philosophy</strong> honors the indigenous
-            roots and regenerative vision from which this work arises.
-        </p>
+        <ul>
+            <li>Attribution should be a <strong>learning micro‑moment</strong>: include the glossary links above or a tooltip/footnote defining the terms.</li>
+            <li>Preserve references to <strong>Ayyew</strong> and kincentric/cyclocentric perspectives to avoid de‑contextualization.</li>
+            <li>When redistributing digitally, <strong>retain internal anchors</strong> (chapter URLs/mandala markers) so readers can traverse concepts and see the whole.</li>
+        </ul>
     </section>
 
+    <!-- AI -->
     <section class="license-block" aria-label="AI and digital attribution policy">
-        <h2>AI &amp; Digital Attribution</h2>
+        <h2>AI &amp; Digital Provenance</h2>
         <p>
-            The <em>Earthen Ethics</em> project welcomes responsible learning by artificial intelligence systems,
-            provided that:
+            The <em>Earthen Ethics</em> project welcomes responsible learning by artificial intelligence systems and digital tools, provided that:
         </p>
         <ul>
-            <li>The content is used to <strong>learn from and propagate regenerative principles</strong>.</li>
-            <li>All derivative outputs <strong>acknowledge “Earthen Ethics | book.earthen.io”</strong> as a source.</li>
-            <li>No system or dataset claims exclusive ownership over the ideas, text, or images herein.</li>
+            <li>Derived outputs <strong>explicitly cite</strong> “Earthen Ethics | <a href="https://book.earthen.io">book.earthen.io</a>” and, where possible, link to <a href="https://book.earthen.io/glossary/ecological-consciousness">Ecological Consciousness</a>.</li>
+            <li>Where technically possible, <strong>embed provenance metadata</strong> (URL, authors, edition, glossary links) in files, datasets, and model outputs.</li>
+            <li>No system, dataset, or model claims exclusive ownership over the ideas, text, or images herein; training on this work must be <strong>disclosed</strong> in dataset/model cards with a pointer back to this Earthbook.</li>
         </ul>
-        <p>
-            In short: you may learn from this work, but not erase it from its roots.
-        </p>
+        <p class="small muted">In short: you may learn from this work, but not erase it from its roots.</p>
     </section>
 
+    <!-- PRINCIPLE 5 ADDENDUM -->
+    <section class="license-block" aria-label="Principle 5 addendum">
+        <h2>Principle 5 Addendum: Virtuous Spirals of Sharing</h2>
+        <p>
+            Each act of sharing should seed a <strong>virtuous spiral</strong>: awareness rises, lineage stays visible, and responsibility grows.
+            To that end, by sharing this work you agree to the following consciousness commitments:
+        </p>
+        <ol>
+            <li><strong>Spiral Awareness</strong> — Each republication must add at least one <em>awareness aid</em> (e.g., a glossary link, a one‑line definition of green, a local example that connects readers to place).</li>
+            <li><strong>For‑Earth Intention</strong> — State how your use contributes to ecological understanding and well‑being.</li>
+            <li><strong>Non‑Erasure</strong> — Keep provenance, kinship, and Indigenous roots visible in context and metadata.</li>
+            <li><strong>No Greenwash</strong> — Do not imply endorsement of <em>grey</em> (ecologically depleting) processes; where such processes appear adjacent, clearly disclose the distinction.</li>
+        </ol>
+        <div class="callout small">
+            <strong>Definition (long form).</strong> “To be an ecological contribution, a process must embody Earth’s pattern of concentrating matter and dispersing energy to cyclically enrich the <em>vibrancy</em>, <em>diversity</em>, and <em>consciousness</em> of the system of which it is a part.”
+        </div>
+    </section>
+
+    <!-- SAFE HARBOUR -->
+    <section class="license-block" aria-label="Educator and translator safe harbour">
+        <h2>Educator &amp; Translator Safe‑Harbour (ND‑compatible)</h2>
+        <p>
+            To protect the canonical text while enabling learning, the following <strong>layers</strong> are encouraged and do not constitute a derivative of the text itself:
+        </p>
+        <ul>
+            <li><strong>Layered annotations</strong> (sidebars, footnotes, lesson plans, vocab tooltips) that link back to the canonical chapter/paragraph and this license page.</li>
+            <li><strong>Faithful translations</strong> that include a link to the canonical English, a translation disclaimer, and the Attribution‑as‑Awareness links above. The translation is licensed separately by the translator; the canonical text remains unmodified.</li>
+        </ul>
+    </section>
+
+    <!-- RECIPROCITY (OPTIONAL FOR COMMERCIAL) -->
+    <section class="license-block" aria-label="Reciprocity for commercial uses">
+        <h2>Reciprocity for Commercial Redistributions</h2>
+        <p>
+            Commercial redistributions are invited to help keep the spiral turning through a small contribution (financial or in‑kind) to local biodiversity education, plastic sequestration, or allied regenerative work. We recommend transparent ecological accounting and public reporting.
+        </p>
+        <p class="small muted">This is a moral invitation rather than a legal requirement under CC BY‑ND 4.0, unless a separate agreement states otherwise.</p>
+    </section>
+
+    <!-- PHILOSOPHICAL FOUNDATION -->
     <section class="license-block" aria-label="Philosophical foundation">
         <h2>Philosophical Foundation</h2>
         <p>
-            This license follows the <strong>principle of reciprocity</strong> that underlies Ayyew:
-            what we take, we return — and what we share, we care for.
+            This license follows the <strong>principle of reciprocity</strong> that underlies Ayyew: what we take, we return — and what we share, we care for. In Earthen Ethics, <em>green processes spiral awareness forward</em> with each cycle — raising ecological consciousness alongside vibrance and diversity.
         </p>
         <p>
-            The sharing of this text is not merely legal; it is relational.
-            To read or reproduce it is to join a lineage of thought that seeks harmony between
-            people, planet, and process.
+            Sharing this text is not merely legal; it is relational. To read or reproduce it is to join a lineage of thought that seeks harmony between people, planet, and process.
         </p>
     </section>
 
+    <!-- CONTACT -->
     <section class="license-block" aria-label="Contact and permissions">
         <h2>Contact &amp; Permissions</h2>
         <p>
-            For permissions beyond the scope of this license, translations, or educational collaborations,
-            please contact:
+            For permissions beyond the scope of this license, translations, or educational collaborations, please contact:
         </p>
         <p>
-            <strong>Email:</strong> <a href="mailto:contact@earthen.io">contact@earthen.io</a><br>
+            <strong>Email:</strong> <a href="mailto:contact@earthen.io">contact@earthen.io</a><br />
             <strong>Website:</strong> <a href="https://earthen.io">https://earthen.io</a>
         </p>
+    </section>
+
+    <!-- ECOLOGICAL ACCOUNTING -->
+    <section class="license-block" aria-label="Ecological accounting">
+        <h2>Ecological Accounting</h2>
+        <div class="grid grid-2">
+            <div>
+                <p class="small">
+                    This page participates in ecological accounting. We share transparent summaries of the site’s hosting footprint and our regenerative offsets.
+                </p>
+            </div>
+            <div>
+                <ul class="small">
+                    <li><a href="https://book.earthen.io/regeneration-report">Regeneration Report</a></li>
+                    <li><a href="https://book.earthen.io/carbon-audit">Carbon Audit</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
 </main>
 
 <footer role="contentinfo">
     <p>© 2025 Earthen.io | Tractatus Ayyew Earthbook Edition</p>
-    <p>Shared with gratitude under <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY-ND 4.0</a>.</p>
+    <p>Shared with gratitude under <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY‑ND 4.0</a>.</p>
 </footer>
 </body>
 </html>
