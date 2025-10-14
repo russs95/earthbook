@@ -214,30 +214,63 @@ class ContentCurtain extends HTMLElement {
     }
 
     setupTabs() {
-        const tabButtons = document.querySelectorAll('[role="tab"]');
-        const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+        const tabButtons = Array.from(this.querySelectorAll('[role="tab"]'));
+        const tabPanels = tabButtons.map(tab => {
+            const panelId = tab.getAttribute("aria-controls");
+            return this.querySelector(`#${panelId}`);
+        });
+
+        const activateTab = (index) => {
+            tabButtons.forEach((tab, i) => {
+                const selected = i === index;
+                tab.setAttribute("aria-selected", selected ? "true" : "false");
+                tab.setAttribute("tabindex", selected ? "0" : "-1");
+                const panel = tabPanels[i];
+                if (panel) {
+                    panel.hidden = !selected;
+                }
+            });
+        };
+
+        const focusTab = (index) => {
+            const tab = tabButtons[index];
+            if (tab) {
+                tab.focus();
+            }
+        };
 
         // Keyboard navigation between tabs
         tabButtons.forEach((tab, idx) => {
-            tab.addEventListener("click", () => this.activateTab(idx));
+            tab.addEventListener("click", () => activateTab(idx));
             tab.addEventListener("keydown", e => {
-                if (e.key === "ArrowRight") this.activateTab((idx + 1) % tabButtons.length);
-                if (e.key === "ArrowLeft") this.activateTab((idx - 1 + tabButtons.length) % tabButtons.length);
-                if (e.key === "Enter" || e.key === " ") tab.click();
+                if (e.key === "ArrowRight") {
+                    e.preventDefault();
+                    const nextIndex = (idx + 1) % tabButtons.length;
+                    activateTab(nextIndex);
+                    focusTab(nextIndex);
+                } else if (e.key === "ArrowLeft") {
+                    e.preventDefault();
+                    const prevIndex = (idx - 1 + tabButtons.length) % tabButtons.length;
+                    activateTab(prevIndex);
+                    focusTab(prevIndex);
+                } else if (e.key === "Home") {
+                    e.preventDefault();
+                    activateTab(0);
+                    focusTab(0);
+                } else if (e.key === "End") {
+                    e.preventDefault();
+                    const lastIndex = tabButtons.length - 1;
+                    activateTab(lastIndex);
+                    focusTab(lastIndex);
+                } else if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    activateTab(idx);
+                }
             });
         });
 
-        this.activateTab(0);
-
-        // Helper to activate tab by index
-        this.activateTab = (index) => {
-            tabButtons.forEach((tab, i) => {
-                const selected = i === index;
-                tab.setAttribute("aria-selected", selected);
-                tab.setAttribute("tabindex", selected ? "0" : "-1");
-                tabPanels[i].hidden = !selected;
-            });
-        };
+        activateTab(0);
+        this.activateTab = activateTab;
     }
 }
 

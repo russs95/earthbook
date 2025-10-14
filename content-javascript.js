@@ -86,7 +86,8 @@ function scrollMoreThan800() {
         // Reset margin for ct-holder when scrolling more than 800px
         let holders = document.getElementsByClassName("ct-holder");
         for (let i = 0; i < holders.length; i++) {
-            holders[i].style.margin = "-50px"; // Reset margin
+            holders[i].style.margin = "";
+            holders[i].style.marginTop = "-50px"; // Lift content without shifting horizontally
         }
     }
 }
@@ -99,7 +100,7 @@ function scrollLessThan800() {
         // Apply margin of -50px to ct-holder when scrolling less than 800px
         let holders = document.getElementsByClassName("ct-holder");
         for (let i = 0; i < holders.length; i++) {
-            holders[i].style.margin = "0px";
+            holders[i].style.marginTop = "";
         }
     }
 }
