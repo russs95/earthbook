@@ -3082,6 +3082,18 @@ a:active {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .tc-button-row .action-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tc-button-row .action-btn-label {
+    display: none;
+  }
+}
+
   
   @media screen and (min-width: 700px) and (max-width: 1324px) {
 
@@ -3339,12 +3351,16 @@ padding-top: 44px;
     .tc-a-book {
     letter-spacing: 5px;
     padding: 3px 15px 2px 15px;
-    font-size: 1.5em;
+    font-size: 1.35em;
     margin: 3px 0px 1px 0px;
 
-    
+
     }
   }
+
+#button-one {
+  white-space: nowrap;
+}
 
     @media screen and (min-width: 700px) and (max-width: 1324px) {
     .tc-a-book {
