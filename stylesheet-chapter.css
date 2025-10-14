@@ -1202,3 +1202,29 @@ overflow-y: clip;
 .ct-holder {
     transition: margin 0.5s ease; /* Adjust the duration as needed */
 }
+
+
+@import url("./stylesheet-chapter.css");
+
+#ct-chapter-title,
+#ct-book-title,
+#ct-chap-location,
+#ct-word-count {
+    margin: 0;
+}
+
+.chapter-article {
+    display: block;
+}
+
+.chapter-section {
+    margin: 0;
+}
+
+.chapter-section + .chapter-section {
+    margin-top: 2.5rem;
+}
+
+.chapter-heading {
+    margin: 0;
+}

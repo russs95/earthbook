@@ -36,7 +36,7 @@ class ContentCurtain extends HTMLElement {
 
         <!-- Book Tabs -->
         <div class="contents-title-box">
-          <div class="contents-title" itemprop="name">Tractatus Ayyew | Table of Contents</div>
+          <div class="contents-title" itemprop="name">Table of Contents</div>
           <div class="contents-books123"
                role="tablist"
                aria-label="Book Sections of Tractatus Ayyew">
@@ -102,13 +102,13 @@ class ContentCurtain extends HTMLElement {
 
         <!-- Bottom Buttons -->
         <div class="tc-button-row" role="group" aria-label="Quick access controls">
-          <a href="index.html"
+          <!--<a href="index.html"
              style="height:24px;flex-grow:1"
              aria-label="Go to Home">
             <div id="home-button" class="action-btn">
               <i style="background-image:url(../icons/home.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:3px;"></i>
             </div>
-          </a>
+          </a>-->
 
           <div id="tour-button" class="action-btn"
                role="button" tabindex="0"
