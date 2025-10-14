@@ -10,7 +10,7 @@
 
 <link rel="canonical" href="https://book.earthen.io/en/"> 
 <link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" >
-<link rel="alternate" href="http://book.earthen.io/en/" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/en/" hreflang="x-default" >
 <link rel="alternate" href="https://book.earthen.io/fr/" hreflang="fr" >
 <link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >
 
@@ -41,12 +41,11 @@
     Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
     First EarthBook, the Tractatus Ayyew, published 22.12.22.
 
-    License: GNU General Public License v2 or later
-    License URI: https://www.gnu.org/licenses/gpl-2.0.html
-    All files, unless otherwise stated, are released under the GNU General Public
-    License version 2.0 (https://www.gnu.org/licenses/gpl-2.0.html)
+    License: Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)
+    License URI: https://creativecommons.org/licenses/by-nd/4.0/
+    All files, unless otherwise stated, are released under the CC BY-ND 4.0 licence
     See full project repository at: https://github.com/russs95/earthbook
-    For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
+    For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthen.io
     */
     -->
 
@@ -60,11 +59,10 @@
 <meta property="article:publisher" content="Earthen.io" >
 <meta name="author" content="Banayan Angway & Russell Maier">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="article:modified_time" content="2025-3-30T09:14:13+00:00" >
+<meta property="article:modified_time" content="2025-03-30T09:14:13+00:00" >
   
 <!-- Facebook Open Graph Tags for social sharing-->
 <meta property="og:site_name" content="Tractatus Ayyew | Earthen Ethics - Earthbook Edition">
-<meta property="article:publisher" content="Earthen.io" >
 <meta property="og:type"          content="book">
 <meta property="og:title"         content="Tractatus Ayyew | Earthen Ethics - Earthbook Edition">
 <meta property="og:description"   content="A Theory of Green & Grey based on Earth's example by Banayan Angway & Russell Maier  | Earthbook Edition.">
@@ -94,7 +92,6 @@
 All the css needed for this page-->
  
 <link rel="stylesheet" href="../style-sheet.css">
-<link rel="stylesheet" href="../light.css">
 <link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
  <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
  <link rel="stylesheet" href="../slider.css">
@@ -136,13 +133,13 @@ All the css needed for this page-->
  Main Scripts-->   
 
  <script src="../universal-javascript.js?v=2" defer></script>
- <script src="../clipboard.min.js"></script>
+ <script src="../clipboard.min.js" defer></script>
  <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
  <!--Carbon Badge script
  <script src="../b.min.js" defer></script>
  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
 -->
-<script src="../subscription-system.js?v=4"></script>
+<script src="../subscription-system.js?v=4" defer></script>
  <link rel="stylesheet" type="text/css" href="../subscription-stylesheet.css">
 
   <!--SPECIAL INDEX INCLUDES -->
@@ -208,65 +205,72 @@ All the page components required to build this page-->
 
 /* REGISTRATION CSS*/
 
-.email-input {
-    margin-left: 10px;
-    font-size: 1.1em;
-    padding: 10px 10px 10px 8px;
-    border-radius: 25px 0px 0px 25px;
-    width:100%;
-    border:1px grey solid;
-    border-right: 0px;
+.reg-field {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
 }
 
-.email-input, .name-input {
-    transition: all 0.6s ease;
+.email-input,
+.name-input,
+.country-input {
+    flex: 1 1 200px;
+    font-size: 1em;
+    padding: 10px 14px;
+    border-radius: 25px;
+    border: 1px solid grey;
+    min-width: 0;
 }
-
-
-.name-input {
-    display: none;
-    margin-left: 10px;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 10px 0px 0px 10px;
-    width: 0%;
-    transition: width 0.5s; 
-}
-
 
 .register-button {
     cursor: pointer;
-    font-size: 0.9em;
-    padding: 10px 8px 10px 8px;
-    border-radius:  0px 25px 25px 0px;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: var(--deeper-accent-color);
+    border: 1px solid grey;
     width: fit-content;
-    background-color:var(--deeper-accent-color);
-  
-    border:1px grey solid;
-    border-left: 0px;
-    margin-right:5px;
+    transition: background-color 0.3s ease;
 }
 
 .register-button:hover {
-    background-color:green;
+    background-color: green;
     color: white;
-
 }
 
+.register-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
 
 .reg-complete-text {
   display: none;
   font-family: 'Mulish';
-  color: rgb(198, 188, 5);
-  margin-left: 10px;
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 10px 0px 0px 10px;
-  width: 70%;
-  transition: width 0.5s;
-  background: rgb(80, 80, 80);
+  color: var(--deeper-accent-color);
+  width: 100%;
 }
 
+.reg-complete-text.error {
+  color: #b00020;
+}
+
+.reg-complete-text.success {
+  color: #2e7d32;
+}
+
+@media (max-width: 600px) {
+  .reg-field {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .register-button {
+      width: 100%;
+      text-align: center;
+  }
+}
 
 </style>
 </HEAD>
@@ -310,12 +314,15 @@ All the page components required to build this page-->
 
             <div>
 
-                <form id="email-registration-form" class="reg-field" style="margin-top:18px;display:flex; flex-flow:row;">
-                    <label for="email"></label>
-                    <input type="email" name="email" required placeholder="Your email..." class="email-input">
-                    <input type="text" name="name" placeholder="Your name" class="name-input">
-                    <div class="reg-complete-text" id="reg-status"></div>
-                    <input type="submit" value="Subscribe" class="register-button" id="reg-status-icon" onclick="startSubProces(event)">
+                <form id="email-registration-form" class="reg-field">
+                    <label class="visually-hidden" for="subscription-email">Email address</label>
+                    <input type="email" id="subscription-email" name="email" required autocomplete="email" placeholder="Your email" class="email-input">
+                    <label class="visually-hidden" for="subscription-name">Your name</label>
+                    <input type="text" id="subscription-name" name="name" required autocomplete="name" placeholder="Your name" class="name-input">
+                    <label class="visually-hidden" for="subscription-country">Country</label>
+                    <input type="text" id="subscription-country" name="country" required autocomplete="country-name" placeholder="Your country" class="country-input">
+                    <button type="submit" class="register-button" id="reg-submit-button">Subscribe</button>
+                    <div class="reg-complete-text" id="reg-status" role="status" aria-live="polite"></div>
                 </form>
 
 
@@ -593,102 +600,97 @@ All the page components required to build this page-->
 <script src="../book-note-scripts.js" defer ></script>
 
 <script>
-    let formStep = 0;
-    let subscriberData = {
-        email: '',
-        name: '',
-        country: ''
-    };
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('email-registration-form');
+        if (!form) {
+            return;
+        }
 
-    function startSubProces(event) {
-        event.preventDefault();
-
-        const emailInput = document.querySelector('.email-input');
-        const nameInput = document.querySelector('.name-input');
-        const submitButton = document.getElementById('reg-status-icon');
+        const emailInput = document.getElementById('subscription-email');
+        const nameInput = document.getElementById('subscription-name');
+        const countryInput = document.getElementById('subscription-country');
+        const submitButton = document.getElementById('reg-submit-button');
         const statusText = document.getElementById('reg-status');
 
-        if (formStep === 0) {
+        const inputs = [emailInput, nameInput, countryInput];
+
+        const clearStatus = () => {
+            statusText.textContent = '';
+            statusText.style.display = 'none';
+            statusText.classList.remove('error', 'success');
+        };
+
+        const setStatus = (message, type) => {
+            statusText.textContent = message;
+            statusText.style.display = 'block';
+            statusText.classList.remove('error', 'success');
+            if (type) {
+                statusText.classList.add(type);
+            }
+        };
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            clearStatus();
+
             const email = emailInput.value.trim();
-            if (!validateEmail(email)) {
-                alert('Please enter a valid email address.');
-                return;
-            }
-            subscriberData.email = email;
-
-            animateButton(submitButton, () => {
-                emailInput.value = '';
-                emailInput.style.width = '0%';
-                nameInput.style.display = 'inline-block';
-                nameInput.setAttribute('name', 'name');
-                nameInput.placeholder = 'Your name';
-                nameInput.style.width = '100%';
-                formStep++;
-            });
-
-        } else if (formStep === 1) {
             const name = nameInput.value.trim();
+            const country = countryInput.value.trim();
+
+            if (!validateEmail(email)) {
+                setStatus('Please enter a valid email address.', 'error');
+                emailInput.focus();
+                return;
+            }
+
             if (!name) {
-                alert('Please enter your name.');
+                setStatus('Please enter your name.', 'error');
+                nameInput.focus();
                 return;
             }
-            subscriberData.name = name;
 
-            animateButton(submitButton, () => {
-                nameInput.value = '';
-                nameInput.placeholder = 'Your country';
-                nameInput.setAttribute('name', 'country');
-                formStep++;
-            });
-
-        } else if (formStep === 2) {
-            const country = nameInput.value.trim();
             if (!country) {
-                alert('Please enter your country.');
+                setStatus('Please enter your country.', 'error');
+                countryInput.focus();
                 return;
             }
-            subscriberData.country = country;
 
-            animateButton(submitButton, () => {
-                nameInput.style.display = 'none';
-                nameInput.style.width = '0%';
-                emailInput.style.width = '100%';
-                emailInput.placeholder = 'Submitting...';
-                emailInput.disabled = true;
+            const payload = { email, name, country };
+            let submissionSucceeded = false;
 
-                // Send data to API
-                fetch('https://buwana.ecobricks.org/api/earthen_registration.php', {
+            try {
+                submitButton.disabled = true;
+                submitButton.textContent = 'Submitting…';
+                inputs.forEach((input) => { input.disabled = true; });
+
+                const response = await fetch('https://buwana.ecobricks.org/api/earthen_registration.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(subscriberData)
-                })
-                    .then(response => response.json())
-                    .then(data => {
-                        statusText.innerText = "🎉 You're subscribed!";
-                        statusText.style.display = 'block';
-                        submitButton.style.display = 'none';
-                    })
-                    .catch(error => {
-                        statusText.innerText = "⚠️ Error subscribing. Please try again.";
-                        statusText.style.display = 'block';
-                        emailInput.disabled = false;
-                    });
-            });
-        }
-    }
+                    body: JSON.stringify(payload)
+                });
 
-    function animateButton(button, callback) {
-        button.style.transition = 'transform 0.6s ease';
-        button.style.transform = 'translateX(-200%)';
+                if (!response.ok) {
+                    throw new Error(`Request failed with status ${response.status}`);
+                }
 
-        setTimeout(() => {
-            callback();
-            button.style.transform = 'translateX(200%)';
-            setTimeout(() => {
-                button.style.transform = 'translateX(0)';
-            }, 600);
-        }, 600);
-    }
+                await response.json().catch(() => ({}));
+
+                setStatus("🎉 You're subscribed!", 'success');
+                form.reset();
+                submissionSucceeded = true;
+            } catch (error) {
+                console.error('Subscription error:', error);
+                setStatus('⚠️ Error subscribing. Please try again.', 'error');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Subscribe';
+                inputs.forEach((input) => { input.disabled = false; });
+                if (submissionSucceeded) {
+                    emailInput.focus();
+                }
+            }
+        });
+    });
 
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
