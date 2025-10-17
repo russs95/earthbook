@@ -71,10 +71,6 @@
         }
         .small { font-size: 0.95rem; }
         .muted { color: var(--muted); }
-        .grid { display: grid; gap: 1rem; }
-        @media (min-width: 720px) {
-            .grid-2 { grid-template-columns: 1fr 1fr; }
-        }
     </style>
 </head>
 
@@ -141,6 +137,23 @@
         <p class="small muted">In short: you may learn from this work, but not erase it from its roots.</p>
     </section>
 
+    <!-- CODE LICENSE (NEW) -->
+    <section class="license-block" aria-label="Earthbook code license">
+        <h2>Earthbook Code License (GNU GPLv3)</h2>
+        <p>
+            The <strong>Earthbook codebase</strong> that powers this site is Free/Libre software released under the
+            <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener">GNU General Public License, version 3 (GPLv3)</a>.
+            This ensures everyone can use, study, modify, and share improvements, so the tooling can spiral outward while the canonical text remains stable.
+        </p>
+        <ul>
+            <li><strong>Source repository:</strong> <a href="https://github.com/russs95/earthbook" target="_blank" rel="noopener">github.com/russs95/earthbook</a></li>
+            <li><strong>License file:</strong> <a href="https://earthbook.io/license.txt" target="_blank" rel="noopener">earthbook.io/license.txt</a></li>
+            <li><strong>SPDX identifier:</strong> <code>GPL-3.0-only</code> (recommended for code headers)</li>
+            <li><strong>Contributions:</strong> by contributing, you agree to license your changes under GPLv3 to keep freedoms intact.</li>
+        </ul>
+        <p class="small muted">Note: the <em>text/content</em> of the Earthbook (Tractatus Ayyew) is licensed separately under CC BY‑ND 4.0. The GPLv3 applies only to the software.</p>
+    </section>
+
     <!-- PRINCIPLE 5 ADDENDUM -->
     <section class="license-block" aria-label="Principle 5 addendum">
         <h2>Principle 5 Addendum: Virtuous Spirals of Sharing</h2>
@@ -190,41 +203,11 @@
             Sharing this text is not merely legal; it is relational. To read or reproduce it is to join a lineage of thought that seeks harmony between people, planet, and process.
         </p>
     </section>
-
-    <!-- CONTACT -->
-    <section class="license-block" aria-label="Contact and permissions">
-        <h2>Contact &amp; Permissions</h2>
-        <p>
-            For permissions beyond the scope of this license, translations, or educational collaborations, please contact:
-        </p>
-        <p>
-            <strong>Email:</strong> <a href="mailto:contact@earthen.io">contact@earthen.io</a><br />
-            <strong>Website:</strong> <a href="https://earthen.io">https://earthen.io</a>
-        </p>
-    </section>
-
-    <!-- ECOLOGICAL ACCOUNTING -->
-    <section class="license-block" aria-label="Ecological accounting">
-        <h2>Ecological Accounting</h2>
-        <div class="grid grid-2">
-            <div>
-                <p class="small">
-                    This page participates in ecological accounting. We share transparent summaries of the site’s hosting footprint and our regenerative offsets.
-                </p>
-            </div>
-            <div>
-                <ul class="small">
-                    <li><a href="https://book.earthen.io/regeneration-report">Regeneration Report</a></li>
-                    <li><a href="https://book.earthen.io/carbon-audit">Carbon Audit</a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
 </main>
 
 <footer role="contentinfo">
     <p>© 2025 Earthen.io | Tractatus Ayyew Earthbook Edition</p>
-    <p>Shared with gratitude under <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY‑ND 4.0</a>.</p>
+    <p>Text: <a href="https://creativecommons.org/licenses/by-nd/4.0/">CC BY‑ND 4.0</a> • Code: <a href="https://www.gnu.org/licenses/gpl-3.0.html">GPL‑3.0</a></p>
 </footer>
 </body>
 </html>

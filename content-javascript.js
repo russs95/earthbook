@@ -9,12 +9,6 @@ window.onscroll = function() {
 
 
 
-function pageMeasureBar() {
-  let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-  document.getElementById("progress-bar").style.width = scrollPercentage + "%";
-}
-
-
 
 function pageMeasureBar() {
   let scrollPercentage = (window.pageYOffset / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
