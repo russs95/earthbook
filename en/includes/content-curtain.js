@@ -4,6 +4,56 @@ class ContentCurtain extends HTMLElement {
     }
 
     connectedCallback() {
+        const bookOneChapters = [
+            { position: 1, name: "Preamble", wordCount: 431, url: "https://book.earthen.io/en/preamble.html" },
+            { position: 2, name: "Preface", wordCount: 1220, url: "https://book.earthen.io/en/preface.html" },
+            { position: 3, name: "Epigraph", wordCount: 65, url: "https://book.earthen.io/en/epigraph-1.html" },
+            { position: 4, name: "Imagine", wordCount: 1095, url: "https://book.earthen.io/en/imagine.html" },
+            { position: 5, name: "Plastic 1.0", wordCount: 623, url: "https://book.earthen.io/en/plastic1.html" },
+            { position: 6, name: "An Interstellar Story", wordCount: 1021, url: "https://book.earthen.io/en/stellar.html" },
+            { position: 7, name: "Patterns of Process", wordCount: 837, url: "https://book.earthen.io/en/patterns.html" },
+            { position: 8, name: "Kindred Relations", wordCount: 1508, url: "https://book.earthen.io/en/kincentric.html" },
+            { position: 9, name: "Nature's Fallacy", wordCount: 973, url: "https://book.earthen.io/en/nature.html" },
+            { position: 10, name: "The Earthen Ways", wordCount: 784, url: "https://book.earthen.io/en/earthen.html" }
+        ];
+
+        const bookTwoChapters = [
+            { position: 1, name: "Epigraph II", wordCount: 51, url: "https://book.earthen.io/en/epigraph-2.html" },
+            { position: 2, name: "Cycles that Spiral", wordCount: 1682, url: "https://book.earthen.io/en/spirals.html" },
+            { position: 3, name: "The Salmon's Spin", wordCount: 2294, url: "https://book.earthen.io/en/energy.html" },
+            { position: 4, name: "The Manner of the Mollusk", wordCount: 2322, url: "https://book.earthen.io/en/matter.html" },
+            { position: 5, name: "The Polyp's Pattern", wordCount: 1782, url: "https://book.earthen.io/en/diversification.html" },
+            { position: 6, name: "The Means of the Myccorhyzal", wordCount: 1685, url: "https://book.earthen.io/en/awareness.html" }
+        ];
+
+        const bookThreeChapters = [
+            { position: 1, name: "Epigraph III", wordCount: 58, url: "https://book.earthen.io/en/epigraph-3.html" },
+            { position: 2, name: "Plastic 2.0", url: "https://book.earthen.io/en/unpublished.html", wordText: "Unpublished" },
+            { position: 3, name: "Plastic Sequestration", url: "https://book.earthen.io/en/unpublished.html", wordText: "Unpublished" },
+            { position: 4, name: "Petro-Capital Transition", url: "https://book.earthen.io/en/unpublished.html", wordText: "Unpublished" },
+            { position: 5, name: "Ad Pax Ayyew", url: "https://book.earthen.io/en/unpublished.html", wordText: "Unpublished" },
+            { position: 6, name: "The Myccorhyzal's Means", url: "https://book.earthen.io/en/unpublished.html", wordText: "Unpublished" }
+        ];
+
+        const appendixChapters = [
+            { position: 1, name: "Summaries", wordCount: 501, url: "https://book.earthen.io/en/summaries.html" },
+            { position: 2, name: "Dedication", wordCount: 26, url: "https://book.earthen.io/en/dedication.html" },
+            { position: 3, name: "For-Earth Declaration", wordCount: 54, url: "https://book.earthen.io/en/for-earth.html" },
+            { position: 4, name: "Acknowledgements", wordCount: 541, url: "https://book.earthen.io/en/acknowledgements.html" },
+            { position: 5, name: "Publishing", wordCount: 133, url: "https://book.earthen.io/en/publishing.html" },
+            { position: 6, name: "Authors", wordCount: 218, url: "https://book.earthen.io/en/authors.html" },
+            { position: 7, name: "Declarations", wordCount: 367, url: "https://book.earthen.io/en/declaration.html" },
+            { position: 8, name: "Bibliography", wordCount: 740, url: "https://book.earthen.io/en/bibliography.html" },
+            { position: 9, name: "Glossary", wordCount: 342, url: "https://book.earthen.io/en/glossary.html" }
+        ];
+
+        const bookSections = [
+            { name: "Book One", metaName: "Book One | The Beginning", chapters: bookOneChapters },
+            { name: "Book Two", metaName: "Book Two", chapters: bookTwoChapters },
+            { name: "Book Three", metaName: "Book Three", chapters: bookThreeChapters },
+            { name: "Appendix", metaName: "Appendix", chapters: appendixChapters }
+        ];
+
         this.innerHTML = `
     <nav id="table-of-contents"
          class="overlay-tc"
@@ -83,22 +133,47 @@ class ContentCurtain extends HTMLElement {
              itemprop="hasPart">
           <meta itemprop="name" content="Book One | The Beginning">
 
-          ${this.chapterLink(1,"Preamble",431,"https://book.earthen.io/en/preamble.html")}
-          ${this.chapterLink(2,"Preface",1220,"https://book.earthen.io/en/preface.html")}
-          ${this.chapterLink(3,"Epigraph",65,"https://book.earthen.io/en/epigraph-1.html")}
-          ${this.chapterLink(4,"Imagine",1095,"https://book.earthen.io/en/imagine.html")}
-          ${this.chapterLink(5,"Plastic 1.0",623,"https://book.earthen.io/en/plastic1.html")}
-          ${this.chapterLink(6,"An Interstellar Story",1021,"https://book.earthen.io/en/stellar.html")}
-          ${this.chapterLink(7,"Patterns of Process",837,"https://book.earthen.io/en/patterns.html")}
-          ${this.chapterLink(8,"Kindred Relations",1508,"https://book.earthen.io/en/kincentric.html")}
-          ${this.chapterLink(9,"Nature's Fallacy",973,"https://book.earthen.io/en/nature.html")}
-          ${this.chapterLink(10,"The Earthen Ways",784,"https://book.earthen.io/en/earthen.html")}
+          ${bookOneChapters.map(chapter => this.chapterLink(chapter)).join("\n          ")}
         </div>
 
-        <!-- Future Books -->
-        <div id="appx-book-two" role="tabpanel" aria-labelledby="button-two" aria-label="Chapters in Book Two" hidden></div>
-        <div id="appx-book-three" role="tabpanel" aria-labelledby="button-three" aria-label="Chapters in Book Three" hidden></div>
-        <div id="appx-book-appx" role="tabpanel" aria-labelledby="button-appx" aria-label="Appendix Chapters" hidden></div>
+        <!-- BOOK TWO -->
+        <div id="appx-book-two"
+             role="tabpanel"
+             aria-labelledby="button-two"
+             aria-label="Chapters in Book Two"
+             itemscope itemtype="https://schema.org/ItemList"
+             itemprop="hasPart"
+             hidden>
+          <meta itemprop="name" content="Book Two">
+
+          ${bookTwoChapters.map(chapter => this.chapterLink(chapter)).join("\n          ")}
+        </div>
+
+        <!-- BOOK THREE -->
+        <div id="appx-book-three"
+             role="tabpanel"
+             aria-labelledby="button-three"
+             aria-label="Chapters in Book Three"
+             itemscope itemtype="https://schema.org/ItemList"
+             itemprop="hasPart"
+             hidden>
+          <meta itemprop="name" content="Book Three">
+
+          ${bookThreeChapters.map(chapter => this.chapterLink(chapter)).join("\n          ")}
+        </div>
+
+        <!-- APPENDIX -->
+        <div id="appx-book-appx"
+             role="tabpanel"
+             aria-labelledby="button-appx"
+             aria-label="Appendix Chapters"
+             itemscope itemtype="https://schema.org/ItemList"
+             itemprop="hasPart"
+             hidden>
+          <meta itemprop="name" content="Appendix">
+
+          ${appendixChapters.map(chapter => this.chapterLink(chapter)).join("\n          ")}
+        </div>
 
         <!-- Bottom Buttons -->
         <div class="tc-button-row" role="group" aria-label="Quick access controls">
@@ -167,25 +242,7 @@ class ContentCurtain extends HTMLElement {
                 "url": "https://book.earthen.io",
                 "bookFormat": "EBook"
             },
-            "hasPart": [
-                {
-                    "@type": "ItemList",
-                    "name": "Book One",
-                    "itemListOrder": "Ascending",
-                    "itemListElement": [
-                        {"@type":"BookChapter","position":1,"name":"Preamble","url":"https://book.earthen.io/en/preamble.html","wordCount":431},
-                        {"@type":"BookChapter","position":2,"name":"Preface","url":"https://book.earthen.io/en/preface.html","wordCount":1220},
-                        {"@type":"BookChapter","position":3,"name":"Epigraph","url":"https://book.earthen.io/en/epigraph-1.html","wordCount":65},
-                        {"@type":"BookChapter","position":4,"name":"Imagine","url":"https://book.earthen.io/en/imagine.html","wordCount":1095},
-                        {"@type":"BookChapter","position":5,"name":"Plastic 1.0","url":"https://book.earthen.io/en/plastic1.html","wordCount":623},
-                        {"@type":"BookChapter","position":6,"name":"An Interstellar Story","url":"https://book.earthen.io/en/stellar.html","wordCount":1021},
-                        {"@type":"BookChapter","position":7,"name":"Patterns of Process","url":"https://book.earthen.io/en/patterns.html","wordCount":837},
-                        {"@type":"BookChapter","position":8,"name":"Kindred Relations","url":"https://book.earthen.io/en/kincentric.html","wordCount":1508},
-                        {"@type":"BookChapter","position":9,"name":"Nature's Fallacy","url":"https://book.earthen.io/en/nature.html","wordCount":973},
-                        {"@type":"BookChapter","position":10,"name":"The Earthen Ways","url":"https://book.earthen.io/en/earthen.html","wordCount":784}
-                    ]
-                }
-            ]
+            "hasPart": bookSections.map(section => this.itemListJSONLD(section.name, section.chapters))
         };
         const script = document.createElement('script');
         script.type = 'application/ld+json';
@@ -197,20 +254,50 @@ class ContentCurtain extends HTMLElement {
     }
 
     // Helper to create chapter links
-    chapterLink(pos, name, words, url) {
+    chapterLink({ position, name, url, wordCount, wordText, wordLabel = 'words' }) {
+        const hasNumericCount = typeof wordCount === 'number' && !Number.isNaN(wordCount);
+        const displayText = hasNumericCount ? `${wordCount} ${wordLabel}` : (wordText || '');
+        const wordCountMarkup = displayText ? `
+        <div class="word-count-tc"><i${hasNumericCount ? ' itemprop="wordCount"' : ''}>${displayText}</i></div>` : '';
+
         return `
     <a href="${url}"
        role="link"
-       aria-label="Chapter ${pos}: ${name} — ${words} words"
+       aria-label="Chapter ${position}: ${name}${displayText ? ` — ${displayText}` : ''}"
        itemprop="itemListElement"
        itemscope itemtype="https://schema.org/ListItem">
-      <meta itemprop="position" content="${pos}" />
+      <meta itemprop="position" content="${position}" />
       <div class="tc-item">
-        <div class="chapter-name-tc" itemprop="name">${name}</div>
-        <div class="word-count-tc"><i itemprop="wordCount">${words} words</i></div>
+        <div class="chapter-name-tc" itemprop="name">${name}</div>${wordCountMarkup}
         <meta itemprop="item" content="${url}" />
       </div>
     </a>`;
+    }
+
+    itemListJSONLD(name, chapters) {
+        return {
+            "@type": "ItemList",
+            "name": name,
+            "itemListOrder": "Ascending",
+            "itemListElement": chapters.map(chapter => this.chapterJSONLD(chapter))
+        };
+    }
+
+    chapterJSONLD({ position, name, url, wordCount, wordText }) {
+        const entry = {
+            "@type": "BookChapter",
+            "position": position,
+            "name": name,
+            "url": url
+        };
+
+        if (typeof wordCount === 'number' && !Number.isNaN(wordCount)) {
+            entry.wordCount = wordCount;
+        } else if (wordText) {
+            entry.description = wordText;
+        }
+
+        return entry;
     }
 
     setupTabs() {
