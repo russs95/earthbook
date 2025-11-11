@@ -14,7 +14,9 @@ class subscriptionCurtain extends HTMLElement {
         <button id="reg-up-button"  onclick="sendUpRegistration()" aria-label="Newsletter Registration" data-lang-id="105-subscription-registration"></button>
     </div>
     <div class="registration-footer-holder">
-        <div id="progress-bar"></div>
+        <div id="progress-track">
+            <div id="progress-bar"></div>
+        </div>
         <button id="reg-down-button" onclick="sendDownRegistration()" aria-label="Hide Newsletter Registration" data-lang-id="106-hide-subscription-registration">
             <img src="../svgs/down-arrow.svg" alt="Hide Earthen Newsletter registration" data-lang-id="107-hide-subscription-image-alt">
         </button>
