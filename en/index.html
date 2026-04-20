@@ -203,73 +203,103 @@ All the page components required to build this page-->
  }
 
 
-/* REGISTRATION CSS*/
+/* NEWSLETTER MODAL CSS */
 
-.reg-field {
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
+.newsletter-content {
+    background: var(--modal-content-background, var(--side-overlays));
+    border-radius: 12px;
+    padding: 36px 40px 32px;
+    text-align: left;
+    margin: auto;
+    position: relative;
 }
 
-.email-input,
-.name-input,
-.country-input {
-    flex: 1 1 200px;
+@media screen and (max-width: 700px) {
+    .newsletter-content {
+        width: 88%;
+        margin-top: 15%;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1324px) {
+    .newsletter-content {
+        width: 60%;
+        margin-top: 12%;
+    }
+}
+
+@media screen and (min-width: 1325px) {
+    .newsletter-content {
+        width: 44%;
+        margin-top: 10%;
+    }
+}
+
+.nl-description {
+    font-family: 'Mulish', sans-serif;
+    color: var(--subdued-text);
+    font-size: 1em;
+    margin-bottom: 22px;
+    line-height: 1.5;
+}
+
+.nl-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.nl-field label {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.85em;
+    color: var(--subdued-text);
+    margin-bottom: 5px;
+}
+
+.nl-input {
+    font-family: 'Mulish', sans-serif;
     font-size: 1em;
     padding: 10px 14px;
-    border-radius: 25px;
+    border-radius: 8px;
     border: 1px solid grey;
-    min-width: 0;
+    background: var(--background-color, #fff);
+    color: var(--text-color);
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.register-button {
+.nl-input:focus {
+    outline: 2px solid var(--header-accent);
+    border-color: transparent;
+}
+
+#nl-status {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.95em;
+    min-height: 1.4em;
+    margin-bottom: 10px;
+}
+
+.nl-submit-btn {
     cursor: pointer;
+    font-family: 'Mulish', sans-serif;
     font-size: 1em;
-    padding: 10px 20px;
+    padding: 11px 28px;
     border-radius: 25px;
-    background-color: var(--deeper-accent-color);
-    border: 1px solid grey;
-    width: fit-content;
-    transition: background-color 0.3s ease;
-}
-
-.register-button:hover {
-    background-color: green;
+    background-color: #2db337;
+    border: none;
     color: white;
+    transition: background-color 0.2s ease;
+    margin-top: 4px;
 }
 
-.register-button:disabled {
+.nl-submit-btn:hover {
+    background-color: #1e8c27;
+}
+
+.nl-submit-btn:disabled {
     opacity: 0.6;
     cursor: not-allowed;
-}
-
-.reg-complete-text {
-  display: none;
-  font-family: 'Mulish';
-  color: var(--deeper-accent-color);
-  width: 100%;
-}
-
-.reg-complete-text.error {
-  color: #b00020;
-}
-
-.reg-complete-text.success {
-  color: #2e7d32;
-}
-
-@media (max-width: 600px) {
-  .reg-field {
-      flex-direction: column;
-      align-items: stretch;
-  }
-
-  .register-button {
-      width: 100%;
-      text-align: center;
-  }
 }
 
 </style>

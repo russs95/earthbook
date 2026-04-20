@@ -4634,12 +4634,12 @@ GUIDED TOUR---*
 
 .close {
   color: var(--subdued-text);
-  float: right;
   font-size: 28px;
   font-weight: bold;
-  margin: -15px 40px auto auto;
-  position: absolute;
-  right: 0;
+  position: fixed;
+  top: 16px;
+  right: 24px;
+  z-index: 9999;
 }
 .close:hover,
 .close:focus {
