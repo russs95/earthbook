@@ -52,7 +52,7 @@ class TourCurtain extends HTMLElement {
     <button class="next">Next ➔</button>
   </div>
 
-  <div id="information-six" style="display:none;" class="information" class="information">
+  <div id="information-six" style="display:none;" class="information">
   <div class="tour-image"><img src="../svgs/icon-revenue.svg"  title="Buy the eBook" alt="But the eBook"></div>  
 
     <div class="modal-header">Buyable</div>

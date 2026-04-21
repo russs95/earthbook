@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<HEAD>
+<title>Penerbitan | Tractatus Ayyew - Earthbook</title>
+<meta charset="UTF-8">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+
+<link rel="canonical" href="https://book.earthen.io/id/penerbitan.html">
+<link rel="alternate" href="https://book.earthen.io/en/publishing.html" hreflang="en">
+<link rel="alternate" href="https://book.earthen.io/en/publishing.html" hreflang="x-default">
+<link rel="alternate" href="https://book.earthen.io/fr/publication.html" hreflang="fr">
+<link rel="alternate" href="https://book.earthen.io/id/penerbitan.html" hreflang="id">
+
+<meta name="keywords" content="penulisan, penerbitan, perangkat lunak, akuntansi, font, toko, pembelian, brikcoins">
+<meta name="description" content="Perangkat keras dan perangkat lunak sumber terbuka yang digunakan dalam penulisan dan penerbitan Earthbook.">
+<meta property="article:publisher" content="Earthen.io">
+<meta name="author" content="Russell Maier & Banayan Angway">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:site_name" content="Tractatus Ayyew">
+<meta property="og:type" content="book">
+<meta property="og:title" content="Penerbitan - Tractatus Ayyew">
+<meta property="og:description" content="Perangkat keras dan perangkat lunak sumber terbuka yang digunakan dalam penulisan dan penerbitan Earthbook.">
+<meta property="og:image" content="../covers/TA-cover-french-1200px.png">
+<meta property="og:locale" content="id_ID">
+<meta property="og:url" content="https://book.earthen.io/id/penerbitan.html">
+
+<script>
+    var lang = "id";
+    var book = "Lampiran";
+    var chapNo = "6";
+    var chapName = "Penerbitan";
+    var chaptURL = "penerbitan.html";
+
+    const registerServiceWorker = async () => {
+      if ("serviceWorker" in navigator) {
+        try {
+          const registration = await navigator.serviceWorker.register("/service-worker.js", { scope: "/" });
+          if (registration.installing) { console.log("Service worker installing"); }
+          else if (registration.waiting) { console.log("Service worker installed"); }
+          else if (registration.active) { console.log("Service worker active"); }
+        } catch (error) {
+          console.error(`Registration failed with ${error}`);
+        }
+      }
+    };
+    registerServiceWorker();
+</script>
+
+<link rel="preconnect" href="../fonts/">
+<link rel="preconnect" href="../fonts/" crossorigin>
+<link rel="preload" as="image" href="../svgs/00-dark.svg">
+<link rel="preload" as="image" href="../svgs/00-white.svg">
+
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../stylesheet-chapter.css?v=1.2">
+<link rel="stylesheet" href="../light.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="../slider.css">
+
+<script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+<script src="../universal-javascript.js" defer></script>
+<script src="../clipboard.min.js" defer></script>
+<script src="../subscription-system.js?v=4"></script>
+<link rel="stylesheet" type="text/css" href="../subscription-stylesheet.css">
+
+<!--1--><script src="includes/header-component.js" async></script>
+<!--2--><script src="includes/settings-curtain.js" defer></script>
+<!--3--><script src="includes/content-curtain.js" defer></script>
+<!--4--><script src="includes/share-curtain.js" defer></script>
+<!--6--><script src="includes/bookplate-curtain.js" defer></script>
+<!--7--><script src="includes/earthbook-curtain.js" defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js" defer></script>
+<!--11--><script src="includes/search-curtain.js" defer></script>
+<!--12--><script src="includes/eco-curtain.js" defer></script>
+<!--13--><script src="includes/chap-foot.js" defer></script>
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+<!--15--><script src="includes/footer-settings.js?v=2" defer></script>
+<!--16--><script src="includes/subscription-curtain.js?v=2" defer></script>
+
+<style>
+@font-face { font-family: "CooperLt"; font-style: normal; src: url("../fonts/CooperLightBT.ttf"); font-display: swap; }
+@font-face { font-family: "CooperLt"; font-style: italic; src: url("../fonts/CooperLtBTLightItalic.ttf"); font-display: swap; }
+@font-face { font-family: "CooperLtMedium"; src: url("../fonts/CooperMediumBT.ttf"); font-display: swap; }
+@font-face { font-family: "Mulish"; src: url("../fonts/Mulish-Light.ttf"); font-display: swap; }
+#ct-chapter-title { font-size: 10vmin; letter-spacing: 2px; }
+.bullet { width:22px; height:22px; display: inline-block; padding-right: 6px; margin-bottom: -3px; }
+</style>
+</HEAD>
+
+<BODY class="accessibility-plugin-ac">
+<tour-curtain></tour-curtain>
+<subscription-curtain></subscription-curtain>
+
+<div id="underlayer" class="accessibility-plugin-ac">
+  <div id="top"></div>
+  <header-component></header-component>
+
+  <div id="ct-chapter-top">
+    <button type=button id="ct-tc-menu" onclick="openContents()" aria-label="Buka Daftar Isi"></button>
+    <div class="ct-holder" style="cursor:pointer;" onclick="openContents()">
+      <div id="ct-chapter-title">Penerbitan</div>
+      <div id="ct-chap-location">dari</div>
+      <div id="ct-book-title">Tractatus Ayyew</div>
+      <div id="ct-word-count"><i>Lampiran</i></div>
+    </div>
+  </div>
+
+  <div id="ct-chapt-graphic" class="background-000">
+    <img src="../icons/publishing.svg" style="width:35%; height:35%; margin:auto; text-align:center">
+  </div>
+
+  <div id="up-arrow"></div>
+  <div id="ct-main">
+
+    <div class="lead-page-paragraph" id="ID-4-6-00">
+      TRACTATUS AYYEW ditulis dan diterbitkan menggunakan 100% perangkat keras dan perangkat lunak sumber terbuka yang dikembangkan oleh perusahaan nirlaba. Ditulis menggunakan <a href="https://www.libreoffice.org/" target="_blank">Libre Office</a>, menggunakan laptop <a href="https://puri.sm/" target="_blank">Purism Librem 13</a> yang menjalankan <a href="https://ubuntu.org/" target="_blank">Ubuntu</a> dan laptop <a href="https://frame.work/" target="_blank">Framework</a> yang menjalankan <a href="https://linuxmint.com/" target="_blank">Linux Mint</a>. File cloud Earthbook untuk penulisan dan semua file yang diterbitkan di-hosting di server Ubuntu yang menjalankan <a href="https://nextcloud.com" target="_blank">NextCloud</a>.
+    </div>
+
+    <div class="page-paragraph">
+      <p id="ID-4-6-01">Buku ini dijual di <a href="https://gobrik.com/go.php#regen" target="_blank">toko GoBrik</a> di mana penjualannya dalam Brikcoins secara langsung sesuai dengan sekuestrasi plastik dari biosfer.</p>
+
+      <p id="ID-4-6-02">Buku ini diset dalam Cooper LT Light dan Regular oleh Oswald Cooper dan Bitstream serta Mulish Light &amp; Regular oleh Vernon Adams, Cyreal, Jacques Le Bailly.</p>
+
+      <p id="ID-4-6-03">Perusahaan penerbitan Tractatus Ayyew bersifat <a href="untuk-bumi.html">untuk-Bumi</a>. Ini berarti kami mengungkapkan <a href="akuntansi.html" target="_blank">akuntansi ekologis</a> kami dalam Laporan Regeneratif tahunan.</p>
+
+      <br><br><br><br><br><br><br><br>
+    </div>
+
+  </div>
+
+  <booknotes-curtain></booknotes-curtain>
+  <search-curtain></search-curtain>
+  <content-curtain></content-curtain>
+  <settings-curtain></settings-curtain>
+  <bookplate-curtain></bookplate-curtain>
+  <earthbook-curtain></earthbook-curtain>
+  <share-curtain></share-curtain>
+  <buy-curtain></buy-curtain>
+  <eco-curtain></eco-curtain>
+
+  <div id="footer-chapter" style="margin-bottom: 0px;">
+    <div class="footer-size">
+      <div class="footer-left">
+        <div class="next-section">
+          <div class="next-sec">Lampiran berikutnya:</div>
+          <div class="sec-name"><i>Para Penulis</i></div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <a href="penulis.html" title="Pergi ke lampiran berikutnya" aria-label="Pergi ke lampiran berikutnya"><div class="next-button">Berikutnya ➔</div></a>
+      </div>
+    </div>
+    <chap-foot></chap-foot>
+  </div>
+
+  <footer-settings></footer-settings>
+</div>
+
+<script src="../book-note-scripts.js" defer></script>
+<script src="../content-javascript.js?v=3" defer></script>
+</BODY>
+</HTML>

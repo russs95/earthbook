@@ -14,7 +14,7 @@ class FooterChapter extends HTMLElement {
 
   <div class="footer-size" style="height:70px;">
 
-    <div class="footer-settings-icon" style="cursor:pointer" aria-label="Click to return to the homepage" ><a href="index.php"><img src="../icons/home.svg" alt="home page icon"></a></div>
+    <div class="footer-settings-icon" style="cursor:pointer" aria-label="Click to return to the homepage" ><a href="index.html"><img src="../icons/home.svg" alt="home page icon"></a></div>
 
     <div class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew bookplate" alt="Tractatus Ayyew Mandala"></div>
     
@@ -31,7 +31,7 @@ class FooterChapter extends HTMLElement {
    
    
 
-    <div class="footer-settings-icon" style="flex-grow:4; align-self:center;"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;" aria-label="Go to the top of the page"></div></a>
+    <div class="footer-settings-icon" style="flex-grow:4; align-self:center;"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;" aria-label="Go to the top of the page"></a></div>
 
   </div>
   

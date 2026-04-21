@@ -36,7 +36,7 @@ class bookNotes extends HTMLElement {
         <div style="margin:auto;">
             <button id="reset-settings-bn" onclick="resetBookNotes()" style="width: 200px;margin: 30px auto 20px auto; cursor:pointer; padding:6px;">No Booknotes Saved</button>
 
-            <div id="instructions-bn" style="font-family:Mulish;color:grey;">Welcome to your Booknotes panel!  It looks like you don't have any notes or annotations yet.  When reading, highlight any of the book's content text.  Look for the pop-up panel at the bottom of your screen and choose a color or hoose the pencil to annotate.  Later, click any highlighted text to add additional notes or to copy or generate a citation.</div>
+            <div id="instructions-bn" style="font-family:Mulish;color:grey;">Welcome to your Booknotes panel!  It looks like you don't have any notes or annotations yet.  When reading, highlight any of the book's content text.  Look for the pop-up panel at the bottom of your screen and choose a color or choose the pencil to annotate.  Later, click any highlighted text to add additional notes or to copy or generate a citation.</div>
         </div>
 
         <div id="collaborative-editing" style="width:80%; padding:20px;background:var(--background-color); border-radius: 10px;margin: auto;margin-top:80px;">
@@ -57,7 +57,7 @@ class bookNotes extends HTMLElement {
             <div id="booknotes-export" style="width:380px; padding:10px;margin: 10px auto 15px auto;background-color:var(--slider);
             border-radius: 10px;width:fit-content;">
             
-                <input id="jsonUpload" type="file" id="jsonUpload" accept=".json" aria-label="Choose a Booknotes JSON file">
+                <input id="jsonUpload" type="file" accept=".json" aria-label="Choose a Booknotes JSON file">
                  <button id="booknotes-upload-go" onclick="uploadBooknotes()" aria-label="Import Booknotes file">▲ Import Booknotes</button>
             </div>
 
