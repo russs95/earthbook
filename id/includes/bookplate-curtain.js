@@ -15,7 +15,7 @@ class Bookplate extends HTMLElement {
         <div id="bookplate-content" style="margin-bottom:35px;">
           <h1 class="bookplate-title">Tractatus Ayyew</h1>
 
-          <h2 class="bookplate-subtitle"><i>Etika Earthen</i></h2>
+          <h2 class="bookplate-subtitle"><i>Silbumi</i></h2>
 
           <h3 class="bookplate-authors">Banayan Angway &amp; Russell Maier</h3>
 
