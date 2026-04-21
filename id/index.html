@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="id">
+<HEAD>
+    <title>Tractatus Ayyew | Earthen Ethics - Earthbook Edition</title>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
+<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+
+<link rel="canonical" href="https://book.earthen.io/en/"> 
+<link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" >
+<link rel="alternate" href="https://book.earthen.io/en/" hreflang="x-default" >
+<link rel="alternate" href="https://book.earthen.io/fr/" hreflang="fr" >
+<link rel="alternate" href="https://book.earthen.io/id/" hreflang="id" >
+
+
+    <!--
+    o               .        ___- -___                    .
+           .              .--\        --.     .     .         .
+                        ./.;_.\     __/~ \.
+                       /;  / `-'  __\    . \
+     .        .       / ,--'     / .   .;   \        |
+                     | .|       /       __   |      -O-       .
+                    |__/    __ |  . ;   \ | . |      |
+                    |      /  \\_    . ;| \___|
+       .    o       |      \  .~\\___,--'     |           .
+                     |     | . ; ~~~~\_    __|
+        |             \    \   .  .  ; \  /_/   .
+       -O-        .    \   /         . |  ~/                  .
+        |    .          ~\ \   .      /  /~          o
+      .                   ~--___ ; ___--~
+                     .          -_-         .              -JT
+
+
+    EARTHBOOK - An open source, Earth & Human Friendly Book format
+    Read the book.  Improve, translate or comment on the content.  Or fork the code and publish your own.
+
+
+    Landing page - version 1.3.2
+    Created by Russell Maier as a publishing format that fully embodies the principles of Earthen ethics to enable net-green book publishing.
+    First EarthBook, the Tractatus Ayyew, published 22.12.22.
+
+    License: Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)
+    License URI: https://creativecommons.org/licenses/by-nd/4.0/
+    All files, unless otherwise stated, are released under the CC BY-ND 4.0 licence
+    See full project repository at: https://github.com/russs95/earthbook
+    For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthen.io
+    */
+    -->
+
+
+    <!--BOOK META TAGS
+    These tags will be consistent for the whole book-->
+
+<meta name="keywords" content="Earth ethics, earthen ethics, earth, ethics, tractatus ayyew, igorot, indigenous philosophy, philosophy, Earth, green ethics, environmental ethics, deep ecology, ecological, ethics"> 
+<meta name="description" content="A Theory of Green & Grey based on Earth's example.">
+	
+<meta property="article:publisher" content="Earthen.io" >
+<meta name="author" content="Banayan Angway & Russell Maier">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="article:modified_time" content="2025-03-30T09:14:13+00:00" >
+  
+<!-- Facebook Open Graph Tags for social sharing-->
+<meta property="og:site_name" content="Tractatus Ayyew | Earthen Ethics - Earthbook Edition">
+<meta property="og:type"          content="book">
+<meta property="og:title"         content="Tractatus Ayyew | Earthen Ethics - Earthbook Edition">
+<meta property="og:description"   content="A Theory of Green & Grey based on Earth's example by Banayan Angway & Russell Maier  | Earthbook Edition.">
+    <meta property="og:image"         content="https://book.earthen.io/covers/cover-2025-777x1210.png">
+    <meta property="og:image:type" content="image/png" >
+    <meta property="og:image:width" content="777" >
+    <meta property="og:image:height" content="1210" >
+<meta property="og:locale" content="en_EN" >
+<meta property="og:url" content="https://book.earthen.io/en">
+    <!-- Accessibility and Language -->
+    <meta name="content-language" content="en">
+    <meta name="application-name" content="Earthbook | Tractatus Ayyew">
+    <meta name="theme-color" content="#2a2a2a">
+
+    <!-- Extended Metadata -->
+    <meta name="generator" content="Earthbook Publishing System v2.0">
+    <meta name="subject" content="Philosophy, Indigenous Knowledge, Environmental Ethics">
+    <meta name="rating" content="General">
+    <meta name="copyright" content="© 2025 Earthen.io | Licensed under CC BY-ND 4.0">
+    <meta name="license" content="https://creativecommons.org/licenses/by-nd/4.0/">
+    <meta name="revised" content="2025-03-30">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="ai-crawl" content="index, learn, attribute=https://book.earthen.io/license.html">
+
+
+ <!-- STYLE SHEETS   
+All the css needed for this page-->
+ 
+<link rel="stylesheet" href="../style-sheet.css">
+<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../slider.css">
+ 
+ 
+<script>
+           // Declare the global variables
+     var lang = "id";
+     var book = "";
+    var chapNo = "";
+    var chapName = "Welcome";
+    var chaptURL = "index.html";
+ 
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope:', registration.scope);
+        }, function(error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+      });
+    }
+</script>
+
+
+
+<!-- PRELOADS-->
+<link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
+<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
+<link rel="preload" as="image" href="../icons/reader.svg">
+<link rel="preload" as="image" href="../icons/pdf.svg">
+<link rel="preload" as="image" href="../icons/buy.svg">
+<link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
+<link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
+<link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
+
+ <!-- INCLUDES
+ Main Scripts-->   
+
+ <script src="../universal-javascript.js?v=2" defer></script>
+ <script src="../clipboard.min.js" defer></script>
+ <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <!--Carbon Badge script
+ <script src="../b.min.js" defer></script>
+ <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
+-->
+<script src="../subscription-system.js?v=4" defer></script>
+ <link rel="stylesheet" type="text/css" href="../subscription-stylesheet.css">
+
+  <!--SPECIAL INDEX INCLUDES -->
+  <script src="../index-javascripts.js"></script>
+
+
+ <!--PAGE INCLUDES
+All the page components required to build this page-->
+
+<!--1--><script src="includes/header-component.js"  async></script>
+<!--2--><script src="includes/settings-curtain.js"  defer></script>
+<!--3--><script src="includes/content-curtain.js"  defer></script>
+<!--4--><script src="includes/share-curtain.js"  defer></script>
+<!--6--><script src="includes/bookplate-curtain.js"  defer></script>
+<!--7--><script src="includes/earthbook-curtain.js"  defer></script>
+<!--8--><script src="includes/footer-component.js" defer></script>
+<!--9--><script src="includes/read-curtain.js" defer></script>
+<!--10--><script src="includes/tour-curtain.js"  defer></script>
+<!--11--><script src="includes/search-curtain.js"  defer></script>
+<!--12--><script src="includes/eco-curtain.js"  defer></script>
+<script src="includes/footer-chapter.js" defer></script>
+
+<!--14--><script src="includes/booknotes-curtain.js?v=2" defer></script>
+
+
+
+
+<style>
+
+
+
+@font-face {
+  font-family: "CooperLt";
+  font-style: normal;
+  src: url("../fonts/CooperLightBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLt";
+  font-style: italic;
+  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "CooperLtMedium";
+  src: url("../fonts/CooperMediumBT.ttf");
+  font-display: swap;
+ }
+
+ @font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-Light.ttf");
+  font-display: swap;
+ }
+
+
+ #bookNotePalette {
+    display:none;
+ }
+
+
+/* NEWSLETTER MODAL CSS */
+
+#newsletter-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,0.72);
+    overflow-y: auto;
+}
+
+#newsletter-modal.nl-open {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.newsletter-content {
+    background: var(--side-overlays, #fff);
+    border-radius: 14px;
+    padding: 38px 40px 34px;
+    text-align: left;
+    position: relative;
+    margin: 8vh auto 4vh;
+}
+
+@media screen and (max-width: 700px) {
+    .newsletter-content { width: 88%; }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1324px) {
+    .newsletter-content { width: 58%; }
+}
+
+@media screen and (min-width: 1325px) {
+    .newsletter-content { width: 42%; }
+}
+
+.nl-close-btn {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--text-color, #333);
+    line-height: 1;
+    padding: 4px 8px;
+}
+
+.nl-close-btn:hover { opacity: 0.6; }
+
+.nl-title {
+    font-family: 'CooperLt', serif;
+    font-size: 1.6em;
+    margin-bottom: 8px;
+    color: var(--h1, #222);
+}
+
+.nl-description {
+    font-family: 'Mulish', sans-serif;
+    color: var(--subdued-text, #555);
+    font-size: 0.95em;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.nl-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.nl-field label {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.83em;
+    color: var(--subdued-text, #666);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.nl-input {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1em;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    background: var(--background-color, #fff);
+    color: var(--text-color, #222);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nl-input:focus {
+    outline: 2px solid #2db337;
+    border-color: transparent;
+}
+
+#nl-status {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.95em;
+    min-height: 1.4em;
+    margin-bottom: 12px;
+}
+
+.nl-submit-btn {
+    cursor: pointer;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1em;
+    padding: 12px 30px;
+    border-radius: 25px;
+    background-color: #2db337;
+    border: none;
+    color: white;
+    transition: background-color 0.2s ease;
+    margin-top: 6px;
+}
+
+.nl-submit-btn:hover { background-color: #1e8c27; }
+
+.nl-submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.nl-privacy {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.8em;
+    color: var(--subdued-text, #888);
+    margin-top: 16px;
+    line-height: 1.5;
+}
+
+</style>
+</HEAD>
+
+
+
+<BODY class="accessibility-plugin-ac">
+
+<tour-curtain></tour-curtain>
+<subscription-curtain></subscription-curtain>
+
+    <div id="underlayer">
+
+    <div id="top"></div>
+
+
+<!--HEADER NAVBAR-->
+<header-component></header-component>
+
+<!--READ CURTAIN-->
+
+<read-curtain></read-curtain>
+
+
+<!-- PAGE CONTENT-->
+
+<div id="main-page" class="accessibility-plugin-ac">
+<!-- The flexible grid (content) -->
+	<div id="row">
+        <div id="side">
+
+            <img src="../photos/cover-500px-en.webp" width="300" height="415" alt="Tractatus Ayyew - EarthBook Cover" title="v1.0.0">
+
+            <div class="welcome-to">Welcome to the <span style="cursor:pointer; text-decoration: none !important;  border-bottom: grey 1px dashed ;" onclick="guidedTour()">Earthbook</span> edition of the <i>Tractatus Ayyew</i>.</div>
+
+            <div class="button-row">
+                <div id="read-btn" class="action-btn"  style="cursor:pointer;" onclick="openRead()"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</div>
+                <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</div>
+                <div id="tour-btn" class="action-btn" style="cursor:pointer;" onclick="guidedTour()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Tour</div>
+            </div>
+
+            <div style="margin-top:18px;">
+                <div id="newsletter-btn" class="action-btn" style="cursor:pointer; width:100%; text-align:center;" onclick="openNewsletter()"><i style="background-image: url(../icons/share.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Earthen Newsletter</div>
+            </div>
+
+
+        </div>
+
+        <!--SEARCH-CURTAIN-->
+<search-curtain></search-curtain>
+
+<!--CONTENTS MENU-->
+<content-curtain></content-curtain>
+
+<!--SETTINGS-MENU-->
+<settings-curtain></settings-curtain>
+
+<!--BOOK PLATE-->
+<bookplate-curtain></bookplate-curtain>
+
+<!--ABOUT EARTHBOOK-->
+<earthbook-curtain></earthbook-curtain>
+
+<!--SHARE-MENU-->
+<share-curtain></share-curtain>
+
+
+<!--ECO-CURTAIN-->
+<eco-curtain></eco-curtain>
+
+                <article id="main" role="region" aria-label="Overview of Tractatus Ayyew chapters">
+
+          <!-- Intro paragraph -->
+          <section id="intro" role="region" aria-label="Introduction">
+            <p class="lead-text">
+              As we become more and more aware of the ecological crises triggered by our modern age, we long to go 'green'.
+              However, what exactly should green mean and what should it require?
+              Inspired by magnificent creatures, great cultures and our planet's pattern, the
+              <em>Tractatus Ayyew</em> lays out an ethics anchored in Earth's example.
+            </p>
+            <div id="line" style="margin-top:15px" class="no-mobile"></div>
+          </section>
+
+          <!-- ========================== -->
+          <!-- 🪶 BOOK CONTENT LIST -->
+          <!-- ========================== -->
+          <section id="book-box" class="book-box-day"
+                   role="region"
+                   aria-label="Chapters and books list of Tractatus Ayyew"
+                   itemscope itemtype="https://schema.org/Book">
+            <meta itemprop="name" content="Tractatus Ayyew">
+            <meta itemprop="inLanguage" content="en">
+
+            <!-- INTRODUCTION SECTION -->
+            <h2 class="book-box-header" id="intro-section">Introduction</h2>
+            <nav role="navigation" aria-labelledby="intro-section">
+              <a href="pembuka.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-top">
+                  <div class="chapter-name" itemprop="name">Preamble</div>
+                  <div class="word-count"><i itemprop="wordCount">454 words</i></div>
+                </div>
+              </a>
+              <a href="prakata.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Preface</div>
+                  <div class="word-count"><i itemprop="wordCount">1,140 words</i></div>
+                </div>
+              </a>
+              <a href="epigraf-1.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-bottom">
+                  <div class="chapter-name" itemprop="name">Epigraph</div>
+                  <div class="word-count"><i itemprop="wordCount">67 words</i></div>
+                </div>
+              </a>
+            </nav>
+
+            <!-- BOOK ONE -->
+            <h2 class="book-box-header" id="book-one">Book One</h2>
+            <nav role="navigation" aria-labelledby="book-one">
+              <a href="bayangkan.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-top">
+                  <div class="chapter-name" itemprop="name">Imagine</div>
+                  <div class="word-count"><i itemprop="wordCount">1,095 words</i></div>
+                </div>
+              </a>
+              <a href="plastik1.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Plastic 1.0</div>
+                  <div class="word-count"><i itemprop="wordCount">623 words</i></div>
+                </div>
+              </a>
+              <a href="bintang.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">An Interstellar Story</div>
+                  <div class="word-count"><i itemprop="wordCount">1,033 words</i></div>
+                </div>
+              </a>
+              <a href="pola.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Patterns of Process</div>
+                  <div class="word-count"><i itemprop="wordCount">837 words</i></div>
+                </div>
+              </a>
+              <a href="kinosentrik.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Kindred Relations</div>
+                  <div class="word-count"><i itemprop="wordCount">1,508 words</i></div>
+                </div>
+              </a>
+              <a href="alam.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Nature's Fallacy</div>
+                  <div class="word-count"><i itemprop="wordCount">973 words</i></div>
+                </div>
+              </a>
+              <a href="kebumian.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-bottom">
+                  <div class="chapter-name" itemprop="name">The Earthen Ways</div>
+                  <div class="word-count"><i itemprop="wordCount">784 words</i></div>
+                </div>
+              </a>
+            </nav>
+
+            <!-- BOOK TWO -->
+            <h2 class="book-box-header" id="book-two">Book Two</h2>
+            <nav role="navigation" aria-labelledby="book-two">
+              <a href="spiral.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-top">
+                  <div class="chapter-name" itemprop="name">1  |  Cycles that Spiral</div>
+                  <div class="word-count"><i itemprop="wordCount">1,682 words</i></div>
+                </div>
+              </a>
+              <a href="energi.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">2  |  The Salmon's Spin</div>
+                  <div class="word-count"><i itemprop="wordCount">2,294 words</i></div>
+                </div>
+              </a>
+              <a href="materi.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">3  |  The Manner of the Mollusk</div>
+                  <div class="word-count"><i itemprop="wordCount">2,322 words</i></div>
+                </div>
+              </a>
+              <a href="diversifikasi.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">4  |  The Polyp's Pattern</div>
+                  <div class="word-count"><i itemprop="wordCount">2,036 words</i></div>
+                </div>
+              </a>
+              <a href="kesadaran.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-bottom">
+                  <div class="chapter-name" itemprop="name">5  |  The Mycorrhyzals' Means</div>
+                  <div class="word-count"><i itemprop="wordCount">in progress</i></div>
+                </div>
+              </a>
+            </nav>
+
+            <!-- BOOK THREE -->
+            <h2 class="book-box-header" id="book-three">Book Three</h2>
+            <nav role="navigation" aria-labelledby="book-three">
+              <a href="belum-diterbitkan.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-top">
+                  <div class="chapter-name" itemprop="name">Plastic 2.0</div>
+                  <div class="word-count"><i itemprop="wordCount">not yet published</i></div>
+                </div>
+              </a>
+              <a href="belum-diterbitkan.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Plastic Sequestration</div>
+                  <div class="word-count"><i itemprop="wordCount">not yet published</i></div>
+                </div>
+              </a>
+              <a href="belum-diterbitkan.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Petro-capital Transition</div>
+                  <div class="word-count"><i itemprop="wordCount">not yet published</i></div>
+                </div>
+              </a>
+              <a href="belum-diterbitkan.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-bottom">
+                  <div class="chapter-name" itemprop="name">Ad Pax Ayyew</div>
+                  <div class="word-count"><i itemprop="wordCount">not yet published</i></div>
+                </div>
+              </a>
+            </nav>
+
+            <!-- APPENDIX -->
+            <h2 class="book-box-header" id="appendix">Appendix</h2>
+            <nav role="navigation" aria-labelledby="appendix">
+              <a href="ringkasan.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-top">
+                  <div class="chapter-name" itemprop="name">Summaries</div>
+                  <div class="word-count"><i itemprop="wordCount">501 words</i></div>
+                </div>
+              </a>
+              <a href="dedikasi.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Dedication</div>
+                  <div class="word-count"><i itemprop="wordCount">26 words</i></div>
+                </div>
+              </a>
+              <a href="akuntansi.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Ecological Accounting | Regen Reports</div>
+                  <div class="word-count"><i itemprop="wordCount">48 words</i></div>
+                </div>
+              </a>
+              <a href="untuk-bumi.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">For-Earth Enterprise Declaration</div>
+                  <div class="word-count"><i itemprop="wordCount">56 words</i></div>
+                </div>
+              </a>
+              <a href="penghargaan.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Acknowledgements</div>
+                  <div class="word-count"><i itemprop="wordCount">682 words</i></div>
+                </div>
+              </a>
+              <a href="penerbitan.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Publishing</div>
+                  <div class="word-count"><i itemprop="wordCount">133 words</i></div>
+                </div>
+              </a>
+              <a href="penulis.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Authors & Authorship</div>
+                  <div class="word-count"><i itemprop="wordCount">218 words</i></div>
+                </div>
+              </a>
+              <a href="deklarasi.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Declaration of Interests & Income</div>
+                  <div class="word-count"><i itemprop="wordCount">367 words</i></div>
+                </div>
+              </a>
+              <a href="bibliografi.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-middle">
+                  <div class="chapter-name" itemprop="name">Select Bibliography</div>
+                  <div class="word-count"><i itemprop="wordCount">740 words</i></div>
+                </div>
+              </a>
+              <a href="glosarium.html" itemprop="hasPart" itemscope itemtype="https://schema.org/BookChapter">
+                <div class="chapter-bottom">
+                  <div class="chapter-name" itemprop="name">Glossary</div>
+                  <div class="word-count"><i itemprop="wordCount">342 words</i></div>
+                </div>
+              </a>
+            </nav>
+          </section>
+                    <div class="button-column">
+                        <div id="search-btn" class="action-btn"  style="cursor:pointer;" onclick="openSearch()"><i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Search</div>
+                        <div id="bookplate-btn" class="action-btn" style="cursor:pointer;" onclick="openBookplate()"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Book Plate</div>
+                        <div id="principles-btn" class="action-btn" style="cursor:pointer;" onclick="openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Principles</div>
+                        <div id="eco-btn" class="action-btn" style="cursor:pointer;" onclick="openEco()"><i style="background-image: url(../icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Green Disclosure</div>
+                        <br>
+                    </div>
+        </article>
+            <br><br>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- NEWSLETTER MODAL -->
+<div id="newsletter-modal" role="dialog" aria-modal="true" aria-labelledby="nl-modal-title">
+    <div class="newsletter-content">
+        <button class="nl-close-btn" onclick="closeNewsletter()" aria-label="Close newsletter signup">&#x2715;</button>
+        <div class="nl-title" id="nl-modal-title">Earthen Newsletter</div>
+        <p class="nl-description">Follow the Tractatus Ayyew and the Global Ecobrick Alliance's regenerative work. We send news once a month or so — no spam, strict privacy.</p>
+
+        <form id="newsletter-modal-form" novalidate>
+            <div id="nl-status" role="status" aria-live="polite"></div>
+
+            <div class="nl-field">
+                <label for="nl-firstname">First Name</label>
+                <input type="text" id="nl-firstname" name="firstname" autocomplete="given-name" class="nl-input" placeholder="Your first name">
+            </div>
+
+            <div class="nl-field">
+                <label for="nl-country">Country</label>
+                <select id="nl-country" name="country" class="nl-input">
+                    <option value="">— select your country —</option>
+                    <option>Afghanistan</option><option>Albania</option><option>Algeria</option><option>Andorra</option><option>Angola</option><option>Argentina</option><option>Armenia</option><option>Australia</option><option>Austria</option><option>Azerbaijan</option>
+                    <option>Bahamas</option><option>Bahrain</option><option>Bangladesh</option><option>Belarus</option><option>Belgium</option><option>Belize</option><option>Benin</option><option>Bhutan</option><option>Bolivia</option><option>Bosnia and Herzegovina</option><option>Botswana</option><option>Brazil</option><option>Brunei</option><option>Bulgaria</option><option>Burkina Faso</option><option>Burundi</option>
+                    <option>Cambodia</option><option>Cameroon</option><option>Canada</option><option>Chad</option><option>Chile</option><option>China</option><option>Colombia</option><option>Congo</option><option>Costa Rica</option><option>Croatia</option><option>Cuba</option><option>Cyprus</option><option>Czech Republic</option>
+                    <option>Denmark</option><option>Dominican Republic</option>
+                    <option>Ecuador</option><option>Egypt</option><option>El Salvador</option><option>Estonia</option><option>Ethiopia</option>
+                    <option>Finland</option><option>France</option>
+                    <option>Georgia</option><option>Germany</option><option>Ghana</option><option>Greece</option><option>Guatemala</option>
+                    <option>Haiti</option><option>Honduras</option><option>Hungary</option>
+                    <option>Iceland</option><option>India</option><option>Indonesia</option><option>Iran</option><option>Iraq</option><option>Ireland</option><option>Israel</option><option>Italy</option>
+                    <option>Jamaica</option><option>Japan</option><option>Jordan</option>
+                    <option>Kazakhstan</option><option>Kenya</option><option>Kosovo</option><option>Kuwait</option><option>Kyrgyzstan</option>
+                    <option>Laos</option><option>Latvia</option><option>Lebanon</option><option>Libya</option><option>Lithuania</option><option>Luxembourg</option>
+                    <option>Madagascar</option><option>Malawi</option><option>Malaysia</option><option>Mali</option><option>Malta</option><option>Mexico</option><option>Moldova</option><option>Mongolia</option><option>Morocco</option><option>Mozambique</option><option>Myanmar</option>
+                    <option>Namibia</option><option>Nepal</option><option>Netherlands</option><option>New Zealand</option><option>Nicaragua</option><option>Niger</option><option>Nigeria</option><option>North Macedonia</option><option>Norway</option>
+                    <option>Oman</option>
+                    <option>Pakistan</option><option>Palestine</option><option>Panama</option><option>Papua New Guinea</option><option>Paraguay</option><option>Peru</option><option>Philippines</option><option>Poland</option><option>Portugal</option>
+                    <option>Qatar</option>
+                    <option>Romania</option><option>Russia</option><option>Rwanda</option>
+                    <option>Saudi Arabia</option><option>Senegal</option><option>Serbia</option><option>Sierra Leone</option><option>Singapore</option><option>Slovakia</option><option>Slovenia</option><option>Somalia</option><option>South Africa</option><option>South Korea</option><option>Spain</option><option>Sri Lanka</option><option>Sudan</option><option>Sweden</option><option>Switzerland</option><option>Syria</option>
+                    <option>Taiwan</option><option>Tajikistan</option><option>Tanzania</option><option>Thailand</option><option>Togo</option><option>Trinidad and Tobago</option><option>Tunisia</option><option>Turkey</option><option>Turkmenistan</option>
+                    <option>Uganda</option><option>Ukraine</option><option>United Arab Emirates</option><option>United Kingdom</option><option>United States</option><option>Uruguay</option><option>Uzbekistan</option>
+                    <option>Venezuela</option><option>Vietnam</option>
+                    <option>Yemen</option>
+                    <option>Zambia</option><option>Zimbabwe</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="nl-field">
+                <label for="nl-email">Email Address</label>
+                <input type="email" id="nl-email" name="email" autocomplete="email" class="nl-input" placeholder="your@email.com">
+            </div>
+
+            <button type="submit" class="nl-submit-btn" id="nl-submit-btn">Subscribe</button>
+        </form>
+
+        <p class="nl-privacy">We send news once a month or so. Your data is never sold or shared. <a href="https://earthen.io/privacy/" target="_blank" rel="noopener">Privacy policy</a>.</p>
+    </div>
+</div>
+
+    <!--BOOKNOTES-CURTAIN-->
+    <booknotes-curtain></booknotes-curtain>
+ <!--FOOTER-->
+<footer-component></footer-component>
+
+
+<script src="../book-note-scripts.js" defer></script>
+
+<script>
+    function openNewsletter() {
+        const modal = document.getElementById('newsletter-modal');
+        modal.classList.add('nl-open');
+        document.getElementById('nl-firstname').focus();
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeNewsletter() {
+        const modal = document.getElementById('newsletter-modal');
+        modal.classList.remove('nl-open');
+        document.body.style.overflow = '';
+        document.getElementById('nl-status').textContent = '';
+        document.getElementById('nl-status').style.color = '';
+    }
+
+    document.getElementById('newsletter-modal').addEventListener('click', function(e) {
+        if (e.target === this) closeNewsletter();
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeNewsletter();
+    });
+
+    document.getElementById('newsletter-modal-form').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const statusEl = document.getElementById('nl-status');
+        const submitBtn = document.getElementById('nl-submit-btn');
+        const firstname = document.getElementById('nl-firstname').value.trim();
+        const country = document.getElementById('nl-country').value;
+        const email = document.getElementById('nl-email').value.trim();
+
+        statusEl.style.color = 'red';
+
+        if (firstname.length < 2) {
+            statusEl.textContent = 'Please enter your first name.';
+            document.getElementById('nl-firstname').focus();
+            return;
+        }
+        if (!country) {
+            statusEl.textContent = 'Please select your country.';
+            document.getElementById('nl-country').focus();
+            return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            statusEl.textContent = 'Please enter a valid email address.';
+            document.getElementById('nl-email').focus();
+            return;
+        }
+
+        submitBtn.disabled = true;
+        statusEl.style.color = 'var(--text-color, #333)';
+        statusEl.textContent = 'Processing…';
+
+        const payload = {
+            members: [{
+                email,
+                name: firstname,
+                note: 'Signed up Tractatus Ayyew | Country: ' + country,
+                subscribed: true,
+            }]
+        };
+
+        try {
+            const response = await fetch('https://ecobricks.org/scripts/newsletter-registration-proxy.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (!response.ok) throw new Error('Request failed: ' + response.status);
+
+            const json = await response.json().catch(() => ({}));
+            if (json && Array.isArray(json.errors) && json.errors.length > 0) {
+                throw new Error(json.errors[0].message || 'Subscription error');
+            }
+
+            localStorage.setItem('earthenRegistration', JSON.stringify({
+                email, name: firstname, country,
+                dateTimeSubmitted: new Date().toISOString(),
+                source: window.subSource || 'tractatus-ayyew',
+                language: window.lang || 'en'
+            }));
+
+            statusEl.style.color = '#2db337';
+            statusEl.textContent = "You're successfully subscribed! 🌿";
+            submitBtn.textContent = '✔ Subscribed';
+            setTimeout(closeNewsletter, 2400);
+
+        } catch (err) {
+            console.error('Newsletter error:', err);
+            statusEl.style.color = 'red';
+            statusEl.textContent = 'Registration failed. Please try again.';
+            submitBtn.disabled = false;
+        }
+    });
+</script>
+
+
+
+
+</BODY>
+
+</HTML>
+
