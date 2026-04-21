@@ -419,7 +419,11 @@ function closeBooknotes() {
 //  }
 
 function openBuy() {
-  window.location.href = 'buy.html';
+  if (typeof lang !== 'undefined' && lang === 'id') {
+    window.location.href = 'beli.html';
+  } else {
+    window.location.href = 'buy.html';
+  }
 }
 
  
