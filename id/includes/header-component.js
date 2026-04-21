@@ -19,7 +19,7 @@ class Header extends HTMLElement {
         <div id="book-title" style="background-size: 60%;">
           <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openContents()" aria-label="Buka Daftar Isi">
             <div id="main-title" style="padding: 40px 10px 18px; font-size: 3.2em;" >Tractatus Ayyew</div>
-            <div id="sub-title"><i>Etika Earthen</i></div>
+            <div id="sub-title"><i>Silabumi</i></div>
             <div id="sub-earthbook">edisi earthbook</div>
           </button>
         </div>
