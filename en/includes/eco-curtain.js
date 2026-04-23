@@ -17,7 +17,7 @@ class EcoCurtain extends HTMLElement {
       </div>
   
       <a href="https://files.earthen.io/s/ioobYWRRKGEpPp4" target="_blank" aria-label="The Regen Report for our book">
-      <div><img src="../banners/forearth-dark-350px.png" alt="Banner declaring our For-Earth intention" style="width:300px;"></div></a>
+      <div><img src="../assets/banners/forearth-dark-350px.png" alt="Banner declaring our For-Earth intention" style="width:300px;"></div></a>
   
        <div id="wcb" class="carbonbadge wcb-d"></div>
   

@@ -39,7 +39,7 @@ class ShareCurtain extends HTMLElement {
               <h4>Ou copiez simplement <span href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;cursor:pointer;">l'URL de ce chapitre</span>.</h4>
             </div>
   
-        <div><img src="../icons/cc-by-sa.svg" alt="Icône Creative Commons CC-BY-SA" style="height: 25px" title="Le contenu de l'Earthbook est sous licence Creative-Commons ND-SA-AT 4.0, ce qui signifie que vous pouvez librement partager les liens vers cette page, citer des passages, télécharger et partager le PDF - assurez-vous simplement d'attribuer l'œuvre, de partager dans les mêmes conditions et d'enregistrer votre citation."></div>
+        <div><img src="../assets/icons/cc-by-sa.svg" alt="Icône Creative Commons CC-BY-SA" style="height: 25px" title="Le contenu de l'Earthbook est sous licence Creative-Commons ND-SA-AT 4.0, ce qui signifie que vous pouvez librement partager les liens vers cette page, citer des passages, télécharger et partager le PDF - assurez-vous simplement d'attribuer l'œuvre, de partager dans les mêmes conditions et d'enregistrer votre citation."></div>
   
           <!--<h6>Assurez-vous d'utiliser l'outil de <span style="cursor:pointer;text-decoration:underline;" onclick="openComments()">citation</span> (trouvé en bas de chaque chapitre) pour enregistrer vos adaptations et références.</h6>-->
           

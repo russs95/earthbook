@@ -25,7 +25,7 @@ class Header extends HTMLElement {
         </div>
 
         <div id="share-menu">
-        <button type="button" style="cursor:pointer; background:none;border:none;" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Buka Catatan Buku"><img src="../icons/booknotes-topmenu.svg" alt="Ikon berbagi"></button>
+        <button type="button" style="cursor:pointer; background:none;border:none;" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Buka Catatan Buku"><img src="../assets/icons/booknotes-topmenu.svg" alt="Ikon berbagi"></button>
         </div>
     </div>
 

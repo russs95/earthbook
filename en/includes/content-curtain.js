@@ -65,13 +65,13 @@ class ContentCurtain extends HTMLElement {
       <!-- Top Buttons -->
       <div id="top-close-button" role="toolbar" aria-label="Top controls">
         <a href="index.html" role="button" aria-label="Go to Home">
-          <img src="../icons/home.svg" alt="Home" style="padding-right:10px;padding-left:10px;">
+          <img src="../assets/icons/home.svg" alt="Home" style="padding-right:10px;padding-left:10px;">
         </a> 
         <img src="../svgs/bottom-x.svg" alt="Close Table of Contents"
              role="button" tabindex="0" aria-pressed="false"
              style="padding-left:10px;cursor:pointer"
              onclick="closeContents()" onkeydown="if(event.key==='Enter'||event.key===' ')closeContents()">
-        <img src="../icons/search.svg?v=3" alt="Search this book"
+        <img src="../assets/icons/search.svg?v=3" alt="Search this book"
              role="button" tabindex="0"
              style="padding-left:12px;padding-right:15px;cursor:pointer"
              onclick="closeContents(); openSearch()"
@@ -181,7 +181,7 @@ class ContentCurtain extends HTMLElement {
              style="height:24px;flex-grow:1"
              aria-label="Go to Home">
             <div id="home-button" class="action-btn">
-              <i style="background-image:url(../icons/home.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:3px;"></i>
+              <i style="background-image:url(../assets/icons/home.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:3px;"></i>
             </div>
           </a>-->
 
@@ -191,7 +191,7 @@ class ContentCurtain extends HTMLElement {
                onclick="closeContents(); guidedTour();"
                onkeydown="if(event.key==='Enter'||event.key===' ') {closeContents(); guidedTour();}"
                style="height:24px;flex-grow:1">
-            <i style="background-image:url(../icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
+            <i style="background-image:url(../assets/icons/tour.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
             <span class="action-btn-label">Tour</span>
           </div>
 
@@ -201,7 +201,7 @@ class ContentCurtain extends HTMLElement {
                onclick="openBuy();"
                onkeydown="if(event.key==='Enter'||event.key===' ') openBuy();"
                style="height:24px;flex-grow:1">
-            <i style="background-image:url(../icons/buy.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
+            <i style="background-image:url(../assets/icons/buy.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
             <span class="action-btn-label">Buy</span>
           </div>
 
@@ -211,7 +211,7 @@ class ContentCurtain extends HTMLElement {
                onclick="openBookplate();"
                onkeydown="if(event.key==='Enter'||event.key===' ') openBookplate();"
                style="height:24px;flex-grow:1">
-            <i style="background-image:url(../icons/about.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
+            <i style="background-image:url(../assets/icons/about.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:5px;"></i>
             <span class="action-btn-label">About</span>
           </div>
 
@@ -221,7 +221,7 @@ class ContentCurtain extends HTMLElement {
                onclick="openEco();"
                onkeydown="if(event.key==='Enter'||event.key===' ') openEco();"
                style="height:24px;flex-grow:1">
-            <i style="background-image:url(../icons/eco-green.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:0px;"></i>
+            <i style="background-image:url(../assets/icons/eco-green.svg);width:22px;height:22px;display:inline-block;background-size:22px;margin-bottom:-3px;margin-right:0px;"></i>
             <span class="action-btn-label">Eco</span>
           </div>
         </div>

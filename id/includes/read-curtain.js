@@ -19,7 +19,7 @@ class ReadCurtain extends HTMLElement {
                   </div>
 
                   <div class="read-book-icon">
-                     <img src="../icons/reader.svg" width="100px" height="100px" alt="Baca Tractatus Ayyew dalam berbagai format." title="Baca Tractatus Ayyew dalam berbagai format.">
+                     <img src="../assets/icons/reader.svg" width="100px" height="100px" alt="Baca Tractatus Ayyew dalam berbagai format." title="Baca Tractatus Ayyew dalam berbagai format.">
                   </div>
 
 
@@ -33,7 +33,7 @@ class ReadCurtain extends HTMLElement {
                       <a href="preamble.html">
                       <div id="read-btn" class="action-btn">
 
-                        <i style="background-image: url(../icons/web.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Earthbook (Baca di web)
+                        <i style="background-image: url(../assets/icons/web.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>Earthbook (Baca di web)
 
                       </div>
                       </a>
@@ -42,11 +42,11 @@ class ReadCurtain extends HTMLElement {
                     <div class="button-row-read">
 
                       <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()">
-                      <i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>eBook
+                      <i style="background-image: url(../assets/icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i>eBook
                       </div>
 
                       <a href="../books/Tractatus Ayyew - Earthen Ethics - Book 1.pdf" target="_blank">
-                      <div id="pdf-btn" class="action-btn"><i style="background-image: url(../icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</div>
+                      <div id="pdf-btn" class="action-btn"><i style="background-image: url(../assets/icons/pdf.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> PDF</div>
                       </a>
 
 

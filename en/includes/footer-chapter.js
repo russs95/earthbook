@@ -14,19 +14,19 @@ class FooterChapter extends HTMLElement {
 
   <div class="footer-size" style="height:70px;">
 
-    <div class="footer-settings-icon" style="cursor:pointer" aria-label="Click to return to the homepage" ><a href="index.html"><img src="../icons/home.svg" alt="home page icon"></a></div>
+    <div class="footer-settings-icon" style="cursor:pointer" aria-label="Click to return to the homepage" ><a href="index.html"><img src="../assets/icons/home.svg" alt="home page icon"></a></div>
 
     <div class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew bookplate" alt="Tractatus Ayyew Mandala"></div>
     
-    <div class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to ebook purchase page"></div>
+    <div class="footer-settings-icon"><img src="../assets/icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to ebook purchase page"></div>
 
-    <div class="footer-settings-icon"><img src="../icons/settings.svg" alt="Settings icon" style="cursor:pointer" onclick="openSettings()" aria-label="Click to adjust book reading settings"></div>
+    <div class="footer-settings-icon"><img src="../assets/icons/settings.svg" alt="Settings icon" style="cursor:pointer" onclick="openSettings()" aria-label="Click to adjust book reading settings"></div>
 
-    <div class="footer-settings-icon"><img src="../icons/share.svg" alt="share icon" style="cursor:pointer" onclick="openShare()" aria-label="Click to copy the link of the earthBook to share"></div>
+    <div class="footer-settings-icon"><img src="../assets/icons/share.svg" alt="share icon" style="cursor:pointer" onclick="openShare()" aria-label="Click to copy the link of the earthBook to share"></div>
 
-    <div class="footer-settings-icon"><img src="../icons/eco.svg" alt="Eco Accounting icon" style="cursor:pointer" onclick="openEco()" aria-label="Click to view CO2 site audit"></div>
+    <div class="footer-settings-icon"><img src="../assets/icons/eco.svg" alt="Eco Accounting icon" style="cursor:pointer" onclick="openEco()" aria-label="Click to view CO2 site audit"></div>
 
-    <div class="footer-settings-icon"><img src="../icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents"></div>
+    <div class="footer-settings-icon"><img src="../assets/icons/content.svg" alt="Table of Contents icon" style="cursor:pointer" onclick="openContents()" aria-label="Click to view EarthBook Table of Contents"></div>
 
    
    

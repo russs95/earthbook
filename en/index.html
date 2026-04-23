@@ -3,10 +3,9 @@
 <HEAD>
     <title>Tractatus Ayyew | Earthen Ethics - Earthbook Edition</title>
     <meta charset="UTF-8">
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
-<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
 
 <link rel="canonical" href="https://book.earthen.io/en/"> 
 <link rel="alternate" href="https://book.earthen.io/en/" hreflang="en" >
@@ -91,10 +90,10 @@
  <!-- STYLE SHEETS   
 All the css needed for this page-->
  
-<link rel="stylesheet" href="../style-sheet.css">
-<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
- <link rel="stylesheet" href="../slider.css">
+<link rel="stylesheet" href="../css/style-sheet.css">
+<link rel="stylesheet" href="../css/light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../css/dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../css/slider.css">
  
  
 <script>
@@ -122,9 +121,9 @@ All the css needed for this page-->
 <!-- PRELOADS-->
 <link rel="preload" as="image" href="https://book.earthen.io/photos/cover-500px.webp">
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
-<link rel="preload" as="image" href="../icons/reader.svg">
-<link rel="preload" as="image" href="../icons/pdf.svg">
-<link rel="preload" as="image" href="../icons/buy.svg">
+<link rel="preload" as="image" href="../assets/icons/reader.svg">
+<link rel="preload" as="image" href="../assets/icons/pdf.svg">
+<link rel="preload" as="image" href="../assets/icons/buy.svg">
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
@@ -132,18 +131,18 @@ All the css needed for this page-->
  <!-- INCLUDES
  Main Scripts-->   
 
- <script src="../universal-javascript.js?v=2" defer></script>
- <script src="../clipboard.min.js" defer></script>
- <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../js/universal-javascript.js?v=2" defer></script>
+ <script src="../js/clipboard.min.js" defer></script>
+ <script type="module" src="../js/dark-mode-toggle.mjs.js" async></script>
  <!--Carbon Badge script
- <script src="../b.min.js" defer></script>
+ <script src="../js/b.min.js" defer></script>
  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
 -->
-<script src="../subscription-system.js?v=4" defer></script>
- <link rel="stylesheet" type="text/css" href="../subscription-stylesheet.css">
+<script src="../js/subscription-system.js?v=4" defer></script>
+ <link rel="stylesheet" type="text/css" href="../css/subscription-stylesheet.css">
 
   <!--SPECIAL INDEX INCLUDES -->
-  <script src="../index-javascripts.js"></script>
+  <script src="../js/index-javascripts.js"></script>
 
 
  <!--PAGE INCLUDES
@@ -174,26 +173,26 @@ All the page components required to build this page-->
 @font-face {
   font-family: "CooperLt";
   font-style: normal;
-  src: url("../fonts/CooperLightBT.ttf");
+  src: url("../assets/fonts/CooperLightBT.ttf");
   font-display: swap;
  }
 
  @font-face {
   font-family: "CooperLt";
   font-style: italic;
-  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  src: url("../assets/fonts/CooperLtBTLightItalic.ttf");
   font-display: swap;
  }
 
  @font-face {
   font-family: "CooperLtMedium";
-  src: url("../fonts/CooperMediumBT.ttf");
+  src: url("../assets/fonts/CooperMediumBT.ttf");
   font-display: swap;
  }
 
  @font-face {
   font-family: "Mulish";
-  src: url("../fonts/Mulish-Light.ttf");
+  src: url("../assets/fonts/Mulish-Light.ttf");
   font-display: swap;
  }
 
@@ -370,13 +369,13 @@ All the page components required to build this page-->
             <div class="welcome-to">Welcome to the <span style="cursor:pointer; text-decoration: none !important;  border-bottom: grey 1px dashed ;" onclick="guidedTour()">Earthbook</span> edition of the <i>Tractatus Ayyew</i>.</div>
 
             <div class="button-row">
-                <div id="read-btn" class="action-btn"  style="cursor:pointer;" onclick="openRead()"><i style="background-image: url(../icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</div>
-                <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</div>
-                <div id="tour-btn" class="action-btn" style="cursor:pointer;" onclick="guidedTour()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Tour</div>
+                <div id="read-btn" class="action-btn"  style="cursor:pointer;" onclick="openRead()"><i style="background-image: url(../assets/icons/reader.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Read</div>
+                <div id="buy-btn" class="action-btn" style="cursor:pointer;" onclick="openBuy()"><i style="background-image: url(../assets/icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Buy</div>
+                <div id="tour-btn" class="action-btn" style="cursor:pointer;" onclick="guidedTour()"><i style="background-image: url(../assets/icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Tour</div>
             </div>
 
             <div style="margin-top:18px;">
-                <div id="newsletter-btn" class="action-btn" style="cursor:pointer; width:100%; text-align:center;" onclick="openNewsletter()"><i style="background-image: url(../icons/share.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Earthen Newsletter</div>
+                <div id="newsletter-btn" class="action-btn" style="cursor:pointer; width:100%; text-align:center;" onclick="openNewsletter()"><i style="background-image: url(../assets/icons/share.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Earthen Newsletter</div>
             </div>
 
 
@@ -627,10 +626,10 @@ All the page components required to build this page-->
             </nav>
           </section>
                     <div class="button-column">
-                        <div id="search-btn" class="action-btn"  style="cursor:pointer;" onclick="openSearch()"><i style="background-image: url(../icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Search</div>
-                        <div id="bookplate-btn" class="action-btn" style="cursor:pointer;" onclick="openBookplate()"><i style="background-image: url(../icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Book Plate</div>
-                        <div id="principles-btn" class="action-btn" style="cursor:pointer;" onclick="openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Principles</div>
-                        <div id="eco-btn" class="action-btn" style="cursor:pointer;" onclick="openEco()"><i style="background-image: url(../icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Green Disclosure</div>
+                        <div id="search-btn" class="action-btn"  style="cursor:pointer;" onclick="openSearch()"><i style="background-image: url(../assets/icons/search.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Search</div>
+                        <div id="bookplate-btn" class="action-btn" style="cursor:pointer;" onclick="openBookplate()"><i style="background-image: url(../assets/icons/about.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 5px;"></i> Book Plate</div>
+                        <div id="principles-btn" class="action-btn" style="cursor:pointer;" onclick="openEarthbook()"><i style="background-image: url(../assets/icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Principles</div>
+                        <div id="eco-btn" class="action-btn" style="cursor:pointer;" onclick="openEco()"><i style="background-image: url(../assets/icons/eco-green.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 2px;"></i> Green Disclosure</div>
                         <br>
                     </div>
         </article>
@@ -707,7 +706,7 @@ All the page components required to build this page-->
 <footer-component></footer-component>
 
 
-<script src="../book-note-scripts.js" defer></script>
+<script src="../js/book-note-scripts.js" defer></script>
 
 <script>
     function openNewsletter() {

@@ -39,7 +39,7 @@ class ShareCurtain extends HTMLElement {
             <h4>Atau salin hanya <span href="javascript:void(0)" onclick="getMainurl()" style="text-decoration:underline;cursor:pointer;">URL untuk bab ini</span>.</h4>
           </div>
 
-      <div><img src="../icons/cc-by-sa.svg" alt="Ikon Creative Commons CC-BY-SA" style="height: 25px" title="Konten Earthbook berada di bawah lisensi Creative Commons ND-SA-AT 4.0 yang berarti Anda bebas berbagi tautan ke halaman ini, mengutip bagian teks, mengunduh dan berbagi PDF — pastikan untuk memberikan atribusi, berbagi-serupa, dan mencatat kutipan Anda."></div>
+      <div><img src="../assets/icons/cc-by-sa.svg" alt="Ikon Creative Commons CC-BY-SA" style="height: 25px" title="Konten Earthbook berada di bawah lisensi Creative Commons ND-SA-AT 4.0 yang berarti Anda bebas berbagi tautan ke halaman ini, mengutip bagian teks, mengunduh dan berbagi PDF — pastikan untuk memberikan atribusi, berbagi-serupa, dan mencatat kutipan Anda."></div>
 
   </div>
 </div>

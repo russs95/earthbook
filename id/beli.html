@@ -39,10 +39,9 @@ See full project repository at: https://github.com/russs95/earthbook
 For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
 */
 -->
-<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
-<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
 
 <link rel="canonical" href="https://book.earthen.io/id/beli.html"> 
 <link rel="alternate" href="https://book.earthen.io/en/buy.html" hreflang="en" >
@@ -83,11 +82,11 @@ These tags will be consistent for the whole book-->
  <!-- STYLE SHEETS   
 All the css needed for this page-->
  
-<link rel="stylesheet" href="../style-sheet.css">
-<link rel="stylesheet" href="../light.css">
-<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
- <link rel="stylesheet" href="../slider.css">
+<link rel="stylesheet" href="../css/style-sheet.css">
+<link rel="stylesheet" href="../css/light.css">
+<link rel="stylesheet" href="../css/light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../css/dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../css/slider.css">
  
  
 <script>
@@ -114,9 +113,9 @@ All the css needed for this page-->
 
 <!-- PRELOADS-->
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
-<link rel="preload" as="image" href="../icons/reader.svg">
-<link rel="preload" as="image" href="../icons/pdf.svg">
-<link rel="preload" as="image" href="../icons/buy.svg">
+<link rel="preload" as="image" href="../assets/icons/reader.svg">
+<link rel="preload" as="image" href="../assets/icons/pdf.svg">
+<link rel="preload" as="image" href="../assets/icons/buy.svg">
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
@@ -129,10 +128,10 @@ All the css needed for this page-->
 <!--<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
 <link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
 <link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
-<link rel="preload" as="font" href="../fonts/CooperLightBT.ttf">
-<link rel="preload" as="font" href="../fonts/CooperLtBTLightItalic.ttf">
-<link rel="preload" as="font" href="../fonts/CooperMediumBT.ttf">
-<link rel="preload" as="font" href="../fonts/Mulish-Light.ttf"
+<link rel="preload" as="font" href="../assets/fonts/CooperLightBT.ttf">
+<link rel="preload" as="font" href="../assets/fonts/CooperLtBTLightItalic.ttf">
+<link rel="preload" as="font" href="../assets/fonts/CooperMediumBT.ttf">
+<link rel="preload" as="font" href="../assets/fonts/Mulish-Light.ttf"
 <link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
 <link rel="preload" as="image" href="../svgs/up-arrow-light.svg">> 
 -->
@@ -140,18 +139,18 @@ All the css needed for this page-->
  <!-- INCLUDES
  Main Scripts-->   
 
- <script src="../universal-javascript.js?v=2" defer></script>
- <script src="../clipboard.min.js"></script>
- <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../js/universal-javascript.js?v=2" defer></script>
+ <script src="../js/clipboard.min.js"></script>
+ <script type="module" src="../js/dark-mode-toggle.mjs.js" async></script>
  <!--Carbon Badge script
- <script src="../b.min.js" defer></script>
+ <script src="../js/b.min.js" defer></script>
  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
 -->
-<script src="../subscription-system.js?v=4"></script>
- <link rel="stylesheet" type="text/css" href="../subscription-stylesheet.css">
+<script src="../js/subscription-system.js?v=4"></script>
+ <link rel="stylesheet" type="text/css" href="../css/subscription-stylesheet.css">
 
   <!--SPECIAL INDEX INCLUDES -->
-  <script src="../index-javascripts.js"></script>
+  <script src="../js/index-javascripts.js"></script>
  
  
  <!-- Arc CDN Script without delay
@@ -184,26 +183,26 @@ All the page components required to build this page-->
 @font-face {
   font-family: "CooperLt";
   font-style: normal;
-  src: url("../fonts/CooperLightBT.ttf");
+  src: url("../assets/fonts/CooperLightBT.ttf");
   font-display: swap;
  }
 
  @font-face {
   font-family: "CooperLt";
   font-style: italic;
-  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  src: url("../assets/fonts/CooperLtBTLightItalic.ttf");
   font-display: swap;
  }
 
  @font-face {
   font-family: "CooperLtMedium";
-  src: url("../fonts/CooperMediumBT.ttf");
+  src: url("../assets/fonts/CooperMediumBT.ttf");
   font-display: swap;
  }
 
  @font-face {
   font-family: "Mulish";
-  src: url("../fonts/Mulish-Light.ttf");
+  src: url("../assets/fonts/Mulish-Light.ttf");
   font-display: swap;
  }
 
@@ -569,7 +568,7 @@ body.modal-open {
                   <div class="buy-book-info-title">Edisi eBook</div>
                   <div class="buy-book-info-text">Format EPUB. Edisi Indonesia. Ideal untuk Kindle, iPhone, eReader & perangkat Android</div>
 
-                  <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Klik untuk membeli buku epub seharga 70k IDR"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Beli: 70k IDR</a>
+                  <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Klik untuk membeli buku epub seharga 70k IDR"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Beli: 70k IDR</a>
 
                 </div>
               </div>
@@ -585,7 +584,7 @@ body.modal-open {
 
                   <div class="buy-book-info-text">Buku saku softcover yang tersusun dengan cermat. Edisi Indonesia. 80 halaman, 15x27.5cm. Kertas buku daur ulang.</div>
 
-                  <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Klik untuk memesan versi cetak buku seharga 70k IDR"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Pesan: 70k IDR</a>
+                  <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Klik untuk memesan versi cetak buku seharga 70k IDR"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Pesan: 70k IDR</a>
                   <div class="order-caption">+ Pengiriman</div>
 
                 </div>
@@ -600,7 +599,7 @@ body.modal-open {
                 <div class="book-buy-info">
                 <div class="buy-book-info-title">Edisi PDF</div>
                 <div class="buy-book-info-text">Siap cetak atau layar untuk membaca halaman penuh. Edisi Indonesia. Dapat langsung dicetak ke lembar A4.</div>
-                    <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Klik untuk membeli edisi PDF seharga 70k IDR"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Beli: 70k IDR</a>
+                    <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Klik untuk membeli edisi PDF seharga 70k IDR"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Beli: 70k IDR</a>
                 </div>
                 
               </div>
@@ -621,7 +620,7 @@ body.modal-open {
 
                   <div class="buy-book-info-text">Paket berisi versi Epub, PDF, dan Cetak Edisi Indonesia.</div>
 
-                  <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Klik untuk memesan paket seharga 150k IDR"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Pesan: 150k IDR</a>
+                  <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Klik untuk memesan paket seharga 150k IDR"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Pesan: 150k IDR</a>
                   <div class="order-caption">+ Pengiriman</div>
 
 
@@ -637,7 +636,7 @@ body.modal-open {
             <div class="book-buy-info">
             <div class="buy-book-info-title">Rasa Syukur Retroaktif</div>
             <div class="buy-book-info-text">Sudah membaca versi gratis? Lakukan pembelian retroaktif untuk mendukung para penulis.</div>
-                <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Lakukan pembelian rasa syukur retroaktif"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>± Pembayaran</a>
+                <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Lakukan pembelian rasa syukur retroaktif"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>± Pembayaran</a>
                 <div class="order-caption">Disarankan 77k</div>
 
             </div>
@@ -653,7 +652,7 @@ body.modal-open {
               <div class="book-buy-info">
               <div class="buy-book-info-title">Paket Lusin</div>
               <div class="buy-book-info-text">Paket selusin cetakan Tractatus Ayyew Edisi Indonesia</div>
-                  <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Klik untuk memesan paket lusin seharga 700k IDR"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Pesan: 700k IDR</a>
+                  <a href="#" onclick="showPaymentAlert(); return false;" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Klik untuk memesan paket lusin seharga 700k IDR"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Pesan: 700k IDR</a>
                   <div class="order-caption">+ Pengiriman</div>
 
                   
@@ -754,7 +753,7 @@ function closeInfoModal() {
 <footer-component-order></footer-component-order>
 
 
-<!-- <script src="../book-note-scripts.js" defer ></script> -->
+<!-- <script src="../js/book-note-scripts.js" defer ></script> -->
 
 
 </BODY>

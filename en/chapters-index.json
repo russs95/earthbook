@@ -205,7 +205,7 @@
     "book": "Appendix",
     "chapter": "Accounting",
     "words": "133",
-    "image_url": "../icons/eco.svg"
+    "image_url": "../assets/icons/eco.svg"
   },
   
   {
@@ -231,7 +231,7 @@
     "book": "Appendix",
     "chapter": "Acknowledgements",
     "words": "600",
-    "image_url": "../icons/thankyou.svg"
+    "image_url": "../assets/icons/thankyou.svg"
   },
   
   {
@@ -244,7 +244,7 @@
     "book": "Appendix",
     "chapter": "Details",
     "words": "400",
-    "image_url": "../icons/publishing.svg"
+    "image_url": "../assets/icons/publishing.svg"
   },
   
   {
@@ -257,7 +257,7 @@
     "book": "Appendix",
     "chapter": "Authors",
     "words": "300",
-    "image_url": "../icons/glossary.svg"
+    "image_url": "../assets/icons/glossary.svg"
   },
   
   {
@@ -270,7 +270,7 @@
     "book": "Appendix",
     "chapter": "Sources",
     "words": "500",
-    "image_url": "../icons/openbook.svg"
+    "image_url": "../assets/icons/openbook.svg"
   },
   
   {
@@ -283,7 +283,7 @@
     "book": "Appendix",
     "chapter": "Terms",
     "words": "440",
-    "image_url": "../icons/glossary.svg"
+    "image_url": "../assets/icons/glossary.svg"
   },
   
   {
@@ -296,7 +296,7 @@
     "book": "Appendix",
     "chapter": "Statement",
     "words": "323",
-    "image_url": "../icons/openbook.svg"
+    "image_url": "../assets/icons/openbook.svg"
   }
   
   

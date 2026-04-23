@@ -10,26 +10,26 @@ class footSettings extends HTMLElement {
 
   <div class="footer-size" style="height:58px;">
   
-    <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Retour à la page d'accueil" title="Retour à la page d'accueil" onclick="location.href='index.html'" ><img src="../icons/home.svg" alt="Icône de la page d'accueil"></button></div>
+    <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Retour à la page d'accueil" title="Retour à la page d'accueil" onclick="location.href='index.html'" ><img src="../assets/icons/home.svg" alt="Icône de la page d'accueil"></button></div>
   
     <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Cliquez pour ouvrir la page de titre du livre"><img src="../svgs/my-book-header-logo-grey.svg" title="Page de titre du Tractatus Ayyew" alt="Mandala Tractatus Ayyew"></button></div>
     
     
-    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Icône d'achat" aria-label="Cliquez l'achat du livre" title="Cliquez pour accéder à la page d'achat"></button></div>
+    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Icône d'achat" aria-label="Cliquez l'achat du livre" title="Cliquez pour accéder à la page d'achat"></button></div>
   
-    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../icons/search.svg?v=2" alt="Cherche" style="cursor:pointer" onclick="openSearch()" aria-label="Cherchez dans le livre" title="Cherchez dans le livre"></button></div>
+    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/search.svg?v=2" alt="Cherche" style="cursor:pointer" onclick="openSearch()" aria-label="Cherchez dans le livre" title="Cherchez dans le livre"></button></div>
   
-    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../icons/share.svg" alt="Icône de partage" style="cursor:pointer" onclick="openShare()" aria-label="Cliquez pour copier le lien de l'Earthbook à partager" title="Cliquez pour copier le lien de l'Earthbook à partager"></button></div>
+    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/share.svg" alt="Icône de partage" style="cursor:pointer" onclick="openShare()" aria-label="Cliquez pour copier le lien de l'Earthbook à partager" title="Cliquez pour copier le lien de l'Earthbook à partager"></button></div>
   
-    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../icons/tour.svg" alt="Visite guidée" style="cursor:pointer" onclick="guidedTour()" aria-label="Cliquez pour une visite guidée rapide des fonctionnalités d'Earthbook" title="Cliquez pour une visite guidée rapide des fonctionnalités d'Earthbook"></button></div>
+    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/tour.svg" alt="Visite guidée" style="cursor:pointer" onclick="guidedTour()" aria-label="Cliquez pour une visite guidée rapide des fonctionnalités d'Earthbook" title="Cliquez pour une visite guidée rapide des fonctionnalités d'Earthbook"></button></div>
   
     <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="Haut de la page" style="cursor:pointer" onclick="location.href='#top'" aria-label="Aller en haut de la page"></button></div>
   
-    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../icons/booknotes.svg" alt="Icône de notes de livre" style="cursor:pointer" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Cliquez pour afficher vos notes de livre" title="Cliquez pour afficher vos notes de livre"></button></div>
+    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/booknotes.svg" alt="Icône de notes de livre" style="cursor:pointer" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Cliquez pour afficher vos notes de livre" title="Cliquez pour afficher vos notes de livre"></button></div>
   
    
     <div class="footer-icon" style="text-align: right;">
-    <button type="button" class="footer-settings-icon"><img src="../icons/eco-green.svg" alt="Notre suivi, comptabilité et divulgation écologiques" title="Notre suivi, comptabilité et divulgation écologiques" style="cursor:pointer;" aria-label="Ouvrir la comptabilité écologique" onclick="openEco()"></button></div>
+    <button type="button" class="footer-settings-icon"><img src="../assets/icons/eco-green.svg" alt="Notre suivi, comptabilité et divulgation écologiques" title="Notre suivi, comptabilité et divulgation écologiques" style="cursor:pointer;" aria-label="Ouvrir la comptabilité écologique" onclick="openEco()"></button></div>
   
   </div>
   

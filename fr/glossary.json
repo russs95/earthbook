@@ -27,7 +27,7 @@
     "words": "",
     "relevant_chap": "Chapitre 6 : L'illusion de la nature",
     "relevant_chap_url": "nature.html",
-    "image_url": "../icons/glossary.svg"
+    "image_url": "../assets/icons/glossary.svg"
   },
   
 
@@ -199,7 +199,7 @@
     "book": "Définition",
     "chapter": "Terme dans le glossaire",
     "words": "",
-    "image_url": "../icons/glossary.svg"
+    "image_url": "../assets/icons/glossary.svg"
   },
   {
     "postID": "40",
@@ -213,7 +213,7 @@
     "words": "",
     "relevant_chap": "Intro : Préface",
     "relevant_chap_url": "preface.html",
-    "image_url": "../icons/glossary.svg"
+    "image_url": "../assets/icons/glossary.svg"
   },
   {
     "postID": "41",
@@ -227,7 +227,7 @@
     "words": "",
     "relevant_chap": "Chap. 1 : Imagine",
     "relevant_chap_url": "imagine.html",
-    "image_url": "../icons/glossary.svg"
+    "image_url": "../assets/icons/glossary.svg"
   },
   
 {
@@ -299,7 +299,7 @@
   "words": "",
   "relevant_chap": "Chapitre 5 : Relations apparentées",
   "relevant_chap_url": "kincentrique.html",
-  "image_url": "../icons/glossary.svg"
+  "image_url": "../assets/icons/glossary.svg"
 },
 {
   "postID": "46",
@@ -313,7 +313,7 @@
   "words": "",
   "relevant_chap": "Chap. 3 : Une histoire interstellaire",
   "relevant_chap_url": "interstellaire.html",
-  "image_url": "../icons/glossary.svg"
+  "image_url": "../assets/icons/glossary.svg"
 },
 {
   "postID": "47",
@@ -327,7 +327,7 @@
   "words": "",
   "relevant_chap": "Chapitre 14 : Séquestration du plastique",
   "relevant_chap_url": "nonpublie.html",
-  "image_url": "../icons/glossary.svg"
+  "image_url": "../assets/icons/glossary.svg"
 },
 {
   "postID": "48",
@@ -341,7 +341,7 @@
   "words": "",
   "relevant_chap": "Chap. 3 : Une histoire interstellaire",
   "relevant_chap_url": "interstellaire.html",
-  "image_url": "../icons/glossary.svg"
+  "image_url": "../assets/icons/glossary.svg"
 },
 
 {
@@ -356,7 +356,7 @@
   "words": "",
   "relevant_chap": "Chap. 2 : Plastic 1.0",
   "relevant_chap_url": "plastique.html",
-  "image_url": "../icons/glossary.svg"
+  "image_url": "../assets/icons/glossary.svg"
 },
 
 {
@@ -371,7 +371,7 @@
   "words": "",
   "relevant_chap": "Chap. 13 : Plastic 2.0",
   "relevant_chap_url": "plastique2.html",
-  "image_url": "../icons/glossary.svg"
+  "image_url": "../assets/icons/glossary.svg"
 },
 {
   "postID": "51",
@@ -383,7 +383,7 @@
   "book": "Définition",
   "chapter": "Terme dans le glossaire",
   "words": "",
-  "image_url": "../icons/glossary.svg"
+  "image_url": "../assets/icons/glossary.svg"
 },
 
 
@@ -399,7 +399,7 @@
   "words": "",
   "relevant_chap": "Chapitre 9 : Le cycle du saumon",
   "relevant_chap_url": "energie.html",
-  "image_url": "../icons/glossary.svg"
+  "image_url": "../assets/icons/glossary.svg"
 },
 
 {

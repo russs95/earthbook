@@ -45,7 +45,7 @@ class TourCurtain extends HTMLElement {
   </div>
   
   <div id="information-five" style="display:none;" class="information">
-  <div class="tour-image"><img src="../icons/booknotes.svg" title="Reading Tools" alt="Read Freely"></div>  
+  <div class="tour-image"><img src="../assets/icons/booknotes.svg" title="Reading Tools" alt="Read Freely"></div>  
     <div class="modal-header">Reading Tools</div>
     <div class="modal-description">Earthbooks have a powerful set of tools under the hood!   Select text to highlight, copy, save or annotate.  Hover or tap on any footnote to view.  Use the top right button to cite and share.  Open the toolbox in the page footer to access the search, source code or accounting panels.</div>
     <button class="back">↩ Back</button>
@@ -58,8 +58,8 @@ class TourCurtain extends HTMLElement {
     <div class="modal-header">Buyable</div>
     <div class="modal-description">Like this Earthbook?  You <span class="java-link" onclick="closeTour(),openBuy()"> can buy</span> the eBook version for your digital library and eReader.  Earthbooks are 100% independent of corporate middlemen. 97% of the proceeds of Ebook sales go to the authors.</div>
     <button class="back">↩ Back</button>
-    <button class="back" onclick="closeTour(),openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Earthbook Principles</button>
-    <button class="back" onclick="closeTour(),openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Buy</button>
+    <button class="back" onclick="closeTour(),openEarthbook()"><i style="background-image: url(../assets/icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Earthbook Principles</button>
+    <button class="back" onclick="closeTour(),openBuy()"><i style="background-image: url(../assets/icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Buy</button>
     <button class="next">✓ Finish</button>
 
 

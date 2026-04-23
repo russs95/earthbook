@@ -14,7 +14,7 @@ class chapfoot extends HTMLElement {
         <div class="footer-function" >
           <div class="footer-function-main" onclick="openCode()" style="z-index:8;">
             
-            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../icons/up-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
+            <div id="code-down-arrow" style="width: 18px; height: 18px;background: url(../assets/icons/up-arrow.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
             </div>
 
             <div class="footer-function-item">
@@ -22,7 +22,7 @@ class chapfoot extends HTMLElement {
             </div>
 
             <div class="footer-function-item-icon"> 
-                <i style="background-image: url(../icons/code.svg);"></i>
+                <i style="background-image: url(../assets/icons/code.svg);"></i>
             </div>
 
           </div>
@@ -38,7 +38,7 @@ class chapfoot extends HTMLElement {
         <div class="footer-function" >
           <div class="footer-function-main" onclick="openComments()" style="z-index:9;">
               
-              <div id="comments-out" style="width: 18px; height: 18px;background: url(../icons/plus.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
+              <div id="comments-out" style="width: 18px; height: 18px;background: url(../assets/icons/plus.svg) no-repeat center;background-size:contain;margin: auto 15px auto 0;">
               </div>
 
               <div class="footer-function-item">
@@ -46,7 +46,7 @@ class chapfoot extends HTMLElement {
               </div>
 
               <div class="footer-function-item-icon"> 
-                  <i style="background-image: url(../icons/comments.svg);"></i>
+                  <i style="background-image: url(../assets/icons/comments.svg);"></i>
               </div>
 
           </div> 
@@ -58,11 +58,11 @@ class chapfoot extends HTMLElement {
         <div class="footer-function">
           <div class="footer-function-main" style="z-index:10;" onclick="openFooter2()">
           
-            <div id="footer-arrow" style="width:18px;height:18px;background:url(../icons/down-arrow.svg) no-repeat center; background-size:contain;margin: auto 10px auto 0;"></div>
+            <div id="footer-arrow" style="width:18px;height:18px;background:url(../assets/icons/down-arrow.svg) no-repeat center; background-size:contain;margin: auto 10px auto 0;"></div>
 
             <div class="footer-function-item"><p>Outils et ressources</p></div>
             <div class="footer-function-item-icon">
-                <i style="background-image: url(../icons/settings.svg);"></i>
+                <i style="background-image: url(../assets/icons/settings.svg);"></i>
             </div>
           </div>
         </div>

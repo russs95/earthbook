@@ -39,10 +39,9 @@ See full project repository at: https://github.com/russs95/earthbook
 For the principles behind the Earthbook see the Tractatus Ayyew:  https://book.earthe.io
 */
 -->
-<link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
-<!--<link rel="manifest" href="../favicons/site.webmanifest">-->
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
 
 <link rel="canonical" href="https://book.earthen.io/en/buy.html"> 
 <link rel="alternate" href="https://book.earthen.io/en/buy.html" hreflang="en" >
@@ -82,11 +81,11 @@ These tags will be consistent for the whole book-->
  <!-- STYLE SHEETS   
 All the css needed for this page-->
  
-<link rel="stylesheet" href="../style-sheet.css">
-<link rel="stylesheet" href="../light.css">
-<link rel="stylesheet" href="../light.css" media="(prefers-color-scheme: light)">
- <link rel="stylesheet" href="../dark.css" media="(prefers-color-scheme: dark)">
- <link rel="stylesheet" href="../slider.css">
+<link rel="stylesheet" href="../css/style-sheet.css">
+<link rel="stylesheet" href="../css/light.css">
+<link rel="stylesheet" href="../css/light.css" media="(prefers-color-scheme: light)">
+ <link rel="stylesheet" href="../css/dark.css" media="(prefers-color-scheme: dark)">
+ <link rel="stylesheet" href="../css/slider.css">
  
  
 <script>
@@ -113,9 +112,9 @@ All the css needed for this page-->
 
 <!-- PRELOADS-->
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-grey.svg">
-<link rel="preload" as="image" href="../icons/reader.svg">
-<link rel="preload" as="image" href="../icons/pdf.svg">
-<link rel="preload" as="image" href="../icons/buy.svg">
+<link rel="preload" as="image" href="../assets/icons/reader.svg">
+<link rel="preload" as="image" href="../assets/icons/pdf.svg">
+<link rel="preload" as="image" href="../assets/icons/buy.svg">
 <link rel="preload" as="image" href="../svgs/tractatus-mandala-full-white.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-night.svg">
 <link rel="preload" as="image" href="../svgs/my-book-header-logo-day.svg">
@@ -128,10 +127,10 @@ All the css needed for this page-->
 <!--<link rel="preload" as="image" href="../svgs/footer-settings-button.svg">
 <link rel="preload" as="image" href="../svgs/footer-settings-button-over.svg">
 <link rel="preload" as="image" href="../svgs/footer-settings-button-up.svg">
-<link rel="preload" as="font" href="../fonts/CooperLightBT.ttf">
-<link rel="preload" as="font" href="../fonts/CooperLtBTLightItalic.ttf">
-<link rel="preload" as="font" href="../fonts/CooperMediumBT.ttf">
-<link rel="preload" as="font" href="../fonts/Mulish-Light.ttf"
+<link rel="preload" as="font" href="../assets/fonts/CooperLightBT.ttf">
+<link rel="preload" as="font" href="../assets/fonts/CooperLtBTLightItalic.ttf">
+<link rel="preload" as="font" href="../assets/fonts/CooperMediumBT.ttf">
+<link rel="preload" as="font" href="../assets/fonts/Mulish-Light.ttf"
 <link rel="preload" as="image" href="../svgs/up-arrow-dark.svg">
 <link rel="preload" as="image" href="../svgs/up-arrow-light.svg">> 
 -->
@@ -139,18 +138,18 @@ All the css needed for this page-->
  <!-- INCLUDES
  Main Scripts-->   
 
- <script src="../universal-javascript.js?v=2" defer></script>
- <script src="../clipboard.min.js"></script>
- <script type="module" src="../dark-mode-toggle.mjs.js" async></script>
+ <script src="../js/universal-javascript.js?v=2" defer></script>
+ <script src="../js/clipboard.min.js"></script>
+ <script type="module" src="../js/dark-mode-toggle.mjs.js" async></script>
  <!--Carbon Badge script
- <script src="../b.min.js" defer></script>
+ <script src="../js/b.min.js" defer></script>
  <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js?v=2" defer></script>
 -->
-<script src="../subscription-system.js?v=4"></script>
- <link rel="stylesheet" type="text/css" href="../subscription-stylesheet.css">
+<script src="../js/subscription-system.js?v=4"></script>
+ <link rel="stylesheet" type="text/css" href="../css/subscription-stylesheet.css">
 
   <!--SPECIAL INDEX INCLUDES -->
-  <script src="../index-javascripts.js"></script>
+  <script src="../js/index-javascripts.js"></script>
  
  
  <!-- Arc CDN Script without delay
@@ -183,26 +182,26 @@ All the page components required to build this page-->
 @font-face {
   font-family: "CooperLt";
   font-style: normal;
-  src: url("../fonts/CooperLightBT.ttf");
+  src: url("../assets/fonts/CooperLightBT.ttf");
   font-display: swap;
  }
 
  @font-face {
   font-family: "CooperLt";
   font-style: italic;
-  src: url("../fonts/CooperLtBTLightItalic.ttf");
+  src: url("../assets/fonts/CooperLtBTLightItalic.ttf");
   font-display: swap;
  }
 
  @font-face {
   font-family: "CooperLtMedium";
-  src: url("../fonts/CooperMediumBT.ttf");
+  src: url("../assets/fonts/CooperMediumBT.ttf");
   font-display: swap;
  }
 
  @font-face {
   font-family: "Mulish";
-  src: url("../fonts/Mulish-Light.ttf");
+  src: url("../assets/fonts/Mulish-Light.ttf");
   font-display: swap;
  }
 
@@ -519,7 +518,7 @@ body.modal-open {
                   <div class="buy-book-info-title">eBook Edition</div>
                   <div class="buy-book-info-text">EPUB format. 2nd edition. Ideal for Kindles, iPhones, eReaders & Android viewers</div>
 
-                  <a href="https://buy.stripe.com/28og1Z9OS3f7eqc6op" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the epub book for 10$"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
+                  <a href="https://buy.stripe.com/28og1Z9OS3f7eqc6op" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the epub book for 10$"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
 
                 </div>
               </div>
@@ -535,7 +534,7 @@ body.modal-open {
 
                   <div class="buy-book-info-text">A meticulously typeset softcover booklet.  2nd Edition. 80 pages, 15x27.5cm.  Recycled book paper.</div>
 
-                  <a href="https://buy.stripe.com/9AQ2b90eicPH3LyfZ0" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the print version of the book for 10$ USD"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Order: 10$</a>
+                  <a href="https://buy.stripe.com/9AQ2b90eicPH3LyfZ0" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the print version of the book for 10$ USD"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Order: 10$</a>
                   <div class="order-caption">+ Shipping</div>
 
                 </div>
@@ -550,7 +549,7 @@ body.modal-open {
                 <div class="book-buy-info">
                 <div class="buy-book-info-title">PDF Edition</div>
                 <div class="buy-book-info-text">Print or screen ready for full page reading.  2nd edition. Can be directly printed to A4 sheets.</div>
-                    <a href="https://buy.stripe.com/4gw9DB7GK8zr3LyeV0" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Make a retroactive gratitude purchase"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
+                    <a href="https://buy.stripe.com/4gw9DB7GK8zr3LyeV0" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Make a retroactive gratitude purchase"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
                 </div>
                 
               </div>
@@ -571,7 +570,7 @@ body.modal-open {
 
                   <div class="buy-book-info-text">A bundle of the Epub, PDF and Print 2nd ed. versions.</div>
 
-                  <a href="https://buy.stripe.com/7sI7vtaSW9Dvci428c" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the bundle for 20$ USD"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Order: 20$</a>
+                  <a href="https://buy.stripe.com/7sI7vtaSW9Dvci428c" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the bundle for 20$ USD"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Order: 20$</a>
                   <div class="order-caption">+ Shipping</div>
 
 
@@ -587,7 +586,7 @@ body.modal-open {
             <div class="book-buy-info">
             <div class="buy-book-info-title">Retroactive Gratitude</div>
             <div class="buy-book-info-text">Already read the free version? Make a retroactive purchase to support the authors.</div>
-                <a href="https://buy.stripe.com/aEU7vt3qu9Dveqc5kn" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Make a retroactive gratitude purchase"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>± Payment</a>
+                <a href="https://buy.stripe.com/aEU7vt3qu9Dveqc5kn" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Make a retroactive gratitude purchase"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>± Payment</a>
                 <div class="order-caption">Suggested 10$</div>
 
             </div>
@@ -603,7 +602,7 @@ body.modal-open {
               <div class="book-buy-info">
               <div class="buy-book-info-title">Dozen Bundle</div>
               <div class="buy-book-info-text">A bundle of a dozen 2nd ed. prints of the Tractatus Ayyew</div>
-                  <a href="https://buy.stripe.com/bIYcPN4uyaHz3LydQV" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Make a retroactive gratitude purchase"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Order: 100$</a>
+                  <a href="https://buy.stripe.com/bIYcPN4uyaHz3LydQV" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Make a retroactive gratitude purchase"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Order: 100$</a>
                   <div class="order-caption">+ Shipping</div>
 
                   
@@ -700,7 +699,7 @@ function closeInfoModal() {
 <footer-component-order></footer-component-order>
 
 
-<!-- <script src="../book-note-scripts.js" defer ></script> -->
+<!-- <script src="../js/book-note-scripts.js" defer ></script> -->
 
 
 </BODY>

@@ -20,7 +20,7 @@ class BuyCurtain extends HTMLElement {
                     <div class="buy-book-info-title">eBook Edition</div>
                     <div class="buy-book-info-text">Ideal for Kindles, iPhones & Android readers.  Only available in English.</div>
 
-                    <a href="https://buy.stripe.com/28og1Z9OS3f7eqc6op" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the epub book for 10$"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
+                    <a href="https://buy.stripe.com/28og1Z9OS3f7eqc6op" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the epub book for 10$"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Buy: 10$</a>
 
                   </div>
                 </div>
@@ -36,7 +36,7 @@ class BuyCurtain extends HTMLElement {
 
                     <div class="buy-book-info-text">The English print edition of Book One of the Tractatus Ayyew is on its way.</div>
 
-                    <a href="https://buy.stripe.com/9AQ2b90eicPH3LyfZ0" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the print version of the book for 10$ USD"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Pre-order: 10$</a>
+                    <a href="https://buy.stripe.com/9AQ2b90eicPH3LyfZ0" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Click to buy the print version of the book for 10$ USD"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>Pre-order: 10$</a>
 
                   </div>
                 </div>
@@ -50,7 +50,7 @@ class BuyCurtain extends HTMLElement {
                 <div class="book-buy-info">
                   <div class="buy-book-info-title">Achat rétroactif</div>
                   <div class="buy-book-info-text">Avez vous déjà lu la version gratuite? Effectuez un achat rétroactif pour soutenir les auteurs.</div>
-                  <a href="https://buy.stripe.com/aEU7vt3qu9Dveqc5kn" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Effectuer un achat de gratitude rétroactif"><i style="background-image: url(../icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>± Paiement</a>
+                  <a href="https://buy.stripe.com/aEU7vt3qu9Dveqc5kn" class="action-btn" style="cursor:pointer; width:90%;" aria-label="Effectuer un achat de gratitude rétroactif"><i style="background-image: url(../assets/icons/buy.svg); width:20px; height:20px;display: inline-block;background-size: 20px;margin-bottom: -3px;margin-right: 5px;"></i>± Paiement</a>
                 </div>
                               
               </div>

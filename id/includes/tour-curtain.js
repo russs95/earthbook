@@ -45,7 +45,7 @@ class TourCurtain extends HTMLElement {
   </div>
 
   <div id="information-five" style="display:none;" class="information">
-  <div class="tour-image"><img src="../icons/booknotes.svg" title="Alat Membaca" alt="Baca Bebas"></div>
+  <div class="tour-image"><img src="../assets/icons/booknotes.svg" title="Alat Membaca" alt="Baca Bebas"></div>
     <div class="modal-header">Alat Membaca</div>
     <div class="modal-description">Earthbook memiliki seperangkat alat yang canggih! Pilih teks untuk menyorot, menyalin, menyimpan, atau memberi anotasi. Arahkan atau ketuk catatan kaki mana pun untuk melihatnya. Gunakan tombol kanan atas untuk mengutip dan berbagi. Buka kotak alat di footer halaman untuk mengakses panel pencarian, kode sumber, atau akuntansi.</div>
     <button class="back">↩ Kembali</button>
@@ -58,8 +58,8 @@ class TourCurtain extends HTMLElement {
     <div class="modal-header">Dapat Dibeli</div>
     <div class="modal-description">Suka Earthbook ini? Anda <span class="java-link" onclick="closeTour(),openBuy()">dapat membeli</span> versi eBook untuk perpustakaan digital dan eReader Anda. Earthbook 100% independen dari perantara korporat. 97% hasil penjualan eBook diberikan kepada para penulis.</div>
     <button class="back">↩ Kembali</button>
-    <button class="back" onclick="closeTour(),openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Prinsip Earthbook</button>
-    <button class="back" onclick="closeTour(),openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Beli</button>
+    <button class="back" onclick="closeTour(),openEarthbook()"><i style="background-image: url(../assets/icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Prinsip Earthbook</button>
+    <button class="back" onclick="closeTour(),openBuy()"><i style="background-image: url(../assets/icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Beli</button>
     <button class="next">✓ Selesai</button>
 
   </div>

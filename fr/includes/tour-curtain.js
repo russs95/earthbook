@@ -59,8 +59,8 @@ class TourCurtain extends HTMLElement {
       <div class="modal-header">Achetable</div>
       <div class="modal-description">Vous aimez cet Earthbook ? Vous <span class="java-link" onclick="closeTour(),openBuy()">pouvez l'acheter</span> en version eBook pour votre bibliothèque numérique et votre liseuse. Les Earthbooks sont 100% indépendants des intermédiaires d'entreprise. 97% des recettes des ventes d'eBooks vont aux auteurs.</div>
       <button class="back">↩ Retour</button>
-      <button class="back" onclick="closeTour(),openEarthbook()"><i style="background-image: url(../icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Principes de l'Earthbook</button>
-      <button class="back" onclick="closeTour(),openBuy()"><i style="background-image: url(../icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Acheter</button>
+      <button class="back" onclick="closeTour(),openEarthbook()"><i style="background-image: url(../assets/icons/tour.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Principes de l'Earthbook</button>
+      <button class="back" onclick="closeTour(),openBuy()"><i style="background-image: url(../assets/icons/buy.svg); width:22px; height:22px;display: inline-block;background-size: 22px;margin-bottom: -3px;margin-right: 3px;"></i> Acheter</button>
       <button class="next">✓ Terminer</button>
   
   

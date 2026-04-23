@@ -1,29 +1,28 @@
-const CURRENT_CACHE = 'earthbook-cache-v7.3';
+const CURRENT_CACHE = 'earthbook-cache-v7.4';
 
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CURRENT_CACHE).then(cache => {
       return cache.addAll([
-        
+
 '/',
 
-//FONTS 
+//FONTS
 
-'/fonts/Mulish-Light.ttf',
-'/fonts/CooperMediumBT.ttf',
-'/fonts/CooperLtBTLightItalic.ttf',
-'/fonts/CooperLightBT.ttf',
+'/assets/fonts/Mulish-Light.ttf',
+'/assets/fonts/CooperMediumBT.ttf',
+'/assets/fonts/CooperLtBTLightItalic.ttf',
+'/assets/fonts/CooperLightBT.ttf',
 
 //Landing Images
 
-
 '/photos/cover-500px.webp',
-'/icons/reader.svg',
-'/icons/pdf.svg',
-'/icons/buy.svg',
-'/favicons/apple-touch-icon.png',
-'/favicons/favicon-32x32.png',
-'/favicons/favicon-16x16.png',
+'/assets/icons/reader.svg',
+'/assets/icons/pdf.svg',
+'/assets/icons/buy.svg',
+'/assets/favicons/apple-touch-icon.png',
+'/assets/favicons/favicon-32x32.png',
+'/assets/favicons/favicon-16x16.png',
 '/covers/earth-book-cover-1000px.jpg',
 '/svgs/footer-settings-button.svg',
 '/svgs/footer-settings-button-over.svg',
@@ -31,40 +30,38 @@ self.addEventListener('install', event => {
 '/svgs/up-arrow-dark.svg',
 '/svgs/up-arrow-light.svg',
 '/svgs/left-menu.svg',
-'/icons/booknotes-topmenu.svg',
+'/assets/icons/booknotes-topmenu.svg',
 
 
-//Curtain IMages
+//Curtain Images
 
 '/photos/print-preview-01-400px.webp',
 '/photos/print-preview-02-400px.webp',
 '/photos/print-preview-04-400px.webp',
-'/photos/print-preview-04-400px.webp',
 
-'/icons/up-arrow.svg',
-'/icons/code.svg',
-'/icons/down-arrow.svg',
-'/icons/plus.svg',
-'/icons/comments.svg',
-'/icons/settings.svg',
+'/assets/icons/up-arrow.svg',
+'/assets/icons/code.svg',
+'/assets/icons/down-arrow.svg',
+'/assets/icons/plus.svg',
+'/assets/icons/comments.svg',
+'/assets/icons/settings.svg',
 
 
 //Javascript
 
-'/dark-mode-toggle.mjs.js',
-'/universal-javascript.js',
-'/content-javascript.js',
-'/clip/dist/clipboard.min.js',
-'/index-javascripts.js',
+'/js/dark-mode-toggle.mjs.js',
+'/js/universal-javascript.js',
+'/js/content-javascript.js',
+'/js/clipboard.min.js',
+'/js/index-javascripts.js',
 
 //CSS
 
-'/style-sheet.css',
-'/light.css',
-'/dark.css',
-'/slider.css',
-'/stylesheet-chapter.css',
-
+'/css/style-sheet.css',
+'/css/light.css',
+'/css/dark.css',
+'/css/slider.css',
+'/css/stylesheet-chapter.css',
 
 
 //Dark Scheme
@@ -109,7 +106,6 @@ self.addEventListener('install', event => {
 '/svgs/10-matter-white.svg',
 
 //INCLUDES
-
 
 '/en/includes/header-component.js',
 '/en/includes/settings-curtain.js',
@@ -165,20 +161,18 @@ self.addEventListener('install', event => {
 '/fr/preambule.html',
 '/fr/lepreface.html',
 '/fr/epigraphe-1.html',
-'/fr/imagine.html',
+'/fr/imaginer.html',
 '/fr/plastique1.html',
 '/fr/stellaire.html',
-'/fr/caratere.html',
+'/fr/caractere.html',
 '/fr/cyclocentrique.html',
 '/fr/la-nature.html',
 '/fr/terrestre.html',
 '/fr/epigraphe-2.html',
-// '/fr/spirales.html',
-// '/fr/energie.html',
 '/fr/inedit.html',
 
 
-//APPENDIX  
+//APPENDIX
 
 '/en/summaries.html',
 '/en/dedication.html',
@@ -191,7 +185,7 @@ self.addEventListener('install', event => {
 '/en/glossary.html',
 
 '/fr/resumes.html',
-'/fr/dedice.html',
+'/fr/dedicace.html',
 '/fr/pour-terre.html',
 '/fr/gratitude.html',
 '/fr/publication.html',
@@ -200,16 +194,16 @@ self.addEventListener('install', event => {
 '/fr/biblio.html',
 '/fr/glossaire.html',
 
-//APENDIX ICONS
+//APPENDIX ICONS
 
-'/icons/eco.svg',
+'/assets/icons/eco.svg',
 '/webp/impact-report-100px.webp',
-'/icons/icon-for-earth.svg',
-'/banners/forearth-dark-350px.png',
-'/icons/thankyou.svg',
-'/icons/publishing.svg',
-'/icons/authoring.svg',
-'/icons/glossary.svg',
+'/assets/icons/icon-for-earth.svg',
+'/assets/banners/forearth-dark-350px.png',
+'/assets/icons/thankyou.svg',
+'/assets/icons/publishing.svg',
+'/assets/icons/authoring.svg',
+'/assets/icons/glossary.svg',
 
 
       ]);
@@ -255,8 +249,3 @@ self.addEventListener('fetch', event => {
     })
   );
 });
-
-
-
-
-
