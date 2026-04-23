@@ -58,7 +58,7 @@ class BuyCurtain extends HTMLElement {
 
             <div>
             <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeBuy()" aria-label="Klik untuk menutup halaman pop-up ini">
-              <img src="../svgs/bottom-x.svg" alt="Tombol tutup halaman">
+              <img src="../assets/svgs/bottom-x.svg" alt="Tombol tutup halaman">
             </button>
           </div>
       </div>

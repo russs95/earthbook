@@ -9,7 +9,7 @@ class ShareCurtain extends HTMLElement {
       <div id="right-share-overlay" class="share-overlay">
   
       <div id="right-close-button">
-          <span style="cursor:pointer" onclick="closeShare()"><img src="../svgs/right-x.svg" alt="Bouton de fermeture de la page"></span>
+          <span style="cursor:pointer" onclick="closeShare()"><img src="../assets/svgs/right-x.svg" alt="Bouton de fermeture de la page"></span>
       </div>
       
         <div class="share-overlay-content">

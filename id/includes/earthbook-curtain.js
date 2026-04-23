@@ -18,39 +18,39 @@ class Earthbook extends HTMLElement {
             <div class="virtue-box-box">
               <div id="virtue-box-mobile">
 
-                <div class="virtue"><img src="../svgs/icon-opensource.svg" width="100%" height="100%" title="Kode EarthBook sepenuhnya sumber terbuka" alt="Kode EarthBook sepenuhnya sumber terbuka" style="cursor:pointer" onclick="openOS()"><div id="OS" class="virtue-desc">Kode sumber EarthBook terbuka untuk ditinjau, ditingkatkan, dan dimodifikasi <a href="https://github.com/russs95/earthbook" aria-label="Klik untuk pergi ke repositori Github kami" target="_blank">di Github</a>. Ini berarti menerbitkan Earthbook terbuka untuk siapa saja di mana saja.</div>
+                <div class="virtue"><img src="../assets/svgs/icon-opensource.svg" width="100%" height="100%" title="Kode EarthBook sepenuhnya sumber terbuka" alt="Kode EarthBook sepenuhnya sumber terbuka" style="cursor:pointer" onclick="openOS()"><div id="OS" class="virtue-desc">Kode sumber EarthBook terbuka untuk ditinjau, ditingkatkan, dan dimodifikasi <a href="https://github.com/russs95/earthbook" aria-label="Klik untuk pergi ke repositori Github kami" target="_blank">di Github</a>. Ini berarti menerbitkan Earthbook terbuka untuk siapa saja di mana saja.</div>
                 </div>
 
-                <div class="virtue"><img src="../svgs/icon-biodiversity.svg"  width="100%" height="100%" title="Mendukung, Mencatat &amp; Melacak Keanekaragaman Hayati" alt="Mendukung, Mencatat &amp; Melacak Keanekaragaman Hayati" style="cursor:pointer" onclick="openBio()"><div id="bio" class="virtue-desc">Selama penulisan dan penerbitan buku ini, spesies yang didukung oleh ruang fisik perusahaan dilacak dan dicatat. <a href="https://russs.net/forest" target="_blank" aria-label="Pergi ke daftar kehidupan lengkap penerbit">Lihat daftar kehidupan lengkap penerbit.</a></div>
+                <div class="virtue"><img src="../assets/svgs/icon-biodiversity.svg"  width="100%" height="100%" title="Mendukung, Mencatat &amp; Melacak Keanekaragaman Hayati" alt="Mendukung, Mencatat &amp; Melacak Keanekaragaman Hayati" style="cursor:pointer" onclick="openBio()"><div id="bio" class="virtue-desc">Selama penulisan dan penerbitan buku ini, spesies yang didukung oleh ruang fisik perusahaan dilacak dan dicatat. <a href="https://russs.net/forest" target="_blank" aria-label="Pergi ke daftar kehidupan lengkap penerbit">Lihat daftar kehidupan lengkap penerbit.</a></div>
                 </div>
 
-                <div class="virtue"><img src="../svgs/icon-ecoaccounting.svg"  width="100%" height="100%" title="Pengungkapan Akuntansi Ekologis" alt="Pengungkapan Akuntansi Ekologis" style="cursor:pointer" onclick="openAcc()"><div id="acc" class="virtue-desc">Sepanjang penulisan dan penerbitan Earthbook, dampak karbon, plastik, dan keanekaragaman hayati dilacak, dicatat, dan diungkapkan setiap tahun. Lihat <a href="accounting.php" aria-label="Klik untuk membuka laporan PDF Regen untuk Earthbook">laporan akuntansi ekologis Earthbook ini.</a></div>
+                <div class="virtue"><img src="../assets/svgs/icon-ecoaccounting.svg"  width="100%" height="100%" title="Pengungkapan Akuntansi Ekologis" alt="Pengungkapan Akuntansi Ekologis" style="cursor:pointer" onclick="openAcc()"><div id="acc" class="virtue-desc">Sepanjang penulisan dan penerbitan Earthbook, dampak karbon, plastik, dan keanekaragaman hayati dilacak, dicatat, dan diungkapkan setiap tahun. Lihat <a href="accounting.php" aria-label="Klik untuk membuka laporan PDF Regen untuk Earthbook">laporan akuntansi ekologis Earthbook ini.</a></div>
                 </div>
 
               </div>
 
               <div id="virtue-box-mobile">
 
-                <div class="virtue"><img src="../svgs/icon-for-earth.svg"  width="100%" height="100%" title="Perusahaan Untuk-Bumi" alt="Perusahaan Untuk-Bumi"  onclick="openForE()"><div id="fore" class="virtue-desc" style="display:block;">Medium adalah pesan: Earthbook adalah untuk pembaca, penulis, &amp; Bumi. Klik ikon untuk mempelajari prinsip-prinsip regeneratif yang memandu proyek ini.</div>
+                <div class="virtue"><img src="../assets/svgs/icon-for-earth.svg"  width="100%" height="100%" title="Perusahaan Untuk-Bumi" alt="Perusahaan Untuk-Bumi"  onclick="openForE()"><div id="fore" class="virtue-desc" style="display:block;">Medium adalah pesan: Earthbook adalah untuk pembaca, penulis, &amp; Bumi. Klik ikon untuk mempelajari prinsip-prinsip regeneratif yang memandu proyek ini.</div>
                 </div>
 
-                <div class="virtue"><img src="../svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Dampak Karbon Net-Subtraktif" alt="Dampak Karbon Net-Subtraktif"  onclick="openCo2()"><div id="co2" class="virtue-desc">Earthbook memiliki jejak terkecil dari semua format membaca. Optimasi pemuatan dan caching menempatkan emisi digital Earthbook di 10% teratas situs terbersih. <span style="cursor:pointer; text-decoration:underline;" onclick="openEco()" aria-label="Lihat audit CO2 halaman langsung kami">Lihat audit CO2e langsung.</span></div>
+                <div class="virtue"><img src="../assets/svgs/icon-carbonseq.svg"  width="100%" height="100%" title="Dampak Karbon Net-Subtraktif" alt="Dampak Karbon Net-Subtraktif"  onclick="openCo2()"><div id="co2" class="virtue-desc">Earthbook memiliki jejak terkecil dari semua format membaca. Optimasi pemuatan dan caching menempatkan emisi digital Earthbook di 10% teratas situs terbersih. <span style="cursor:pointer; text-decoration:underline;" onclick="openEco()" aria-label="Lihat audit CO2 halaman langsung kami">Lihat audit CO2e langsung.</span></div>
                 </div>
 
-                <div class="virtue"><img src="../svgs/icon-creativecommons.svg"  width="100%" height="100%" title="Creative Commons" alt="Lisensi Creative Commons"  onclick="openCc()"><div id="cc" class="virtue-desc">Kode dan konten buku ini dilisensikan di bawah Lisensi Creative Commons BY-SA-ND 4.0. <a href="https://github.com/russs95/earthbook/" target="_blank" aria-label="Akses repositori Github Earthbook"> Akses repositori Github.</a></div>
+                <div class="virtue"><img src="../assets/svgs/icon-creativecommons.svg"  width="100%" height="100%" title="Creative Commons" alt="Lisensi Creative Commons"  onclick="openCc()"><div id="cc" class="virtue-desc">Kode dan konten buku ini dilisensikan di bawah Lisensi Creative Commons BY-SA-ND 4.0. <a href="https://github.com/russs95/earthbook/" target="_blank" aria-label="Akses repositori Github Earthbook"> Akses repositori Github.</a></div>
                 </div>
 
             </div>
 
             <div id="virtue-box-mobile" style="margin-bottom:170px;">
 
-              <div class="virtue"><img src="../svgs/icon-readfreely.svg"  width="100%" height="100%" title="Baca Bebas" alt="Baca Bebas"  onclick="openFree()"><div id="free" class="virtue-desc">Buku ini tersedia untuk dibaca <a href="preamble.html">secara bebas daring</a> dan sebagai <a href="https://files.earthen.io/s/ZjS9TgWk5Tr7b4q" target="_blank" aria-label="Klik untuk mengunduh versi PDF gratis Earthbook">PDF yang dapat diunduh gratis</a>.</div>
+              <div class="virtue"><img src="../assets/svgs/icon-readfreely.svg"  width="100%" height="100%" title="Baca Bebas" alt="Baca Bebas"  onclick="openFree()"><div id="free" class="virtue-desc">Buku ini tersedia untuk dibaca <a href="preamble.html">secara bebas daring</a> dan sebagai <a href="https://files.earthen.io/s/ZjS9TgWk5Tr7b4q" target="_blank" aria-label="Klik untuk mengunduh versi PDF gratis Earthbook">PDF yang dapat diunduh gratis</a>.</div>
               </div>
 
-              <div class="virtue"><img src="../svgs/icon-revenue.svg"  width="100%" height="100%" title="Dukung Penerbitan Independen" alt="Dukung Penerbitan Independen" onclick="openRev()"><div id="rev" class="virtue-desc">Earthbook 100% independen dari perantara korporat. 97% hasil <span style="cursor:pointer; text-decoration:underline;" onclick="openBuy()" aria-label="Klik untuk pergi ke halaman pembelian">penjualan eBook</span> diberikan kepada para penulis.</div>
+              <div class="virtue"><img src="../assets/svgs/icon-revenue.svg"  width="100%" height="100%" title="Dukung Penerbitan Independen" alt="Dukung Penerbitan Independen" onclick="openRev()"><div id="rev" class="virtue-desc">Earthbook 100% independen dari perantara korporat. 97% hasil <span style="cursor:pointer; text-decoration:underline;" onclick="openBuy()" aria-label="Klik untuk pergi ke halaman pembelian">penjualan eBook</span> diberikan kepada para penulis.</div>
               </div>
 
-              <div class="virtue"><img src="../svgs/icon-accessibility.svg"  width="100%" height="100%" title="Dibuat semudah mungkin untuk manusia" alt="Aksesibilitas Maksimal"  style="cursor:pointer" onclick="openMax()"><div id="max" class="virtue-desc">Earthbook dirancang dari awal untuk nyaman di mata, mudah diakses, dan multibahasa. <span style="cursor:pointer; text-decoration:underline;" onclick="openSettings()" aria-label="Klik untuk menyesuaikan pengaturan Earthbook">Coba sesuaikan pengaturan Earthbook.</span></div>
+              <div class="virtue"><img src="../assets/svgs/icon-accessibility.svg"  width="100%" height="100%" title="Dibuat semudah mungkin untuk manusia" alt="Aksesibilitas Maksimal"  style="cursor:pointer" onclick="openMax()"><div id="max" class="virtue-desc">Earthbook dirancang dari awal untuk nyaman di mata, mudah diakses, dan multibahasa. <span style="cursor:pointer; text-decoration:underline;" onclick="openSettings()" aria-label="Klik untuk menyesuaikan pengaturan Earthbook">Coba sesuaikan pengaturan Earthbook.</span></div>
 
             </div>
           </div>
@@ -62,7 +62,7 @@ class Earthbook extends HTMLElement {
 
           <div>
             <button type="button" class="bottom-close-button" style="cursor:pointer" onclick="closeEarthbook()" aria-label="Klik untuk menutup halaman pop-up ini">
-              <img src="../svgs/bottom-x.svg" alt="Tombol tutup halaman">
+              <img src="../assets/svgs/bottom-x.svg" alt="Tombol tutup halaman">
             </button>
           </div>
 

@@ -31,7 +31,7 @@ class Bookplate extends HTMLElement {
          
           <div>
           <button type="button" class="bottom-close-button" style="cursor:pointer; bottom:-20px;z-index:100;" onclick="closeBookplate()" aria-label="Cliquez pour fermer cette page pop-up">
-            <img src="../svgs/bottom-x.svg" alt="Fermer le bouton du rideau">
+            <img src="../assets/svgs/bottom-x.svg" alt="Fermer le bouton du rideau">
           </bouton>
         </div>
                                                                  
@@ -53,7 +53,7 @@ customElements.define('bookplate-curtain', Bookplate);
             
 
                 <div id="mandala-day" class="tc-list">
-                    <img src="../svgs/tractatus-mandala-full-black.svg">
+                    <img src="../assets/svgs/tractatus-mandala-full-black.svg">
                 </div>
                 
                 <div>
@@ -86,7 +86,7 @@ customElements.define('bookplate-curtain', Bookplate);
 
 
 <div id="mandala-day" class="tc-list">
-<img src="../svgs/tractatus-mandala-full-black.svg">
+<img src="../assets/svgs/tractatus-mandala-full-black.svg">
 </div>
 
 <div>

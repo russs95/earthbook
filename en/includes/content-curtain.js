@@ -67,7 +67,7 @@ class ContentCurtain extends HTMLElement {
         <a href="index.html" role="button" aria-label="Go to Home">
           <img src="../assets/icons/home.svg" alt="Home" style="padding-right:10px;padding-left:10px;">
         </a> 
-        <img src="../svgs/bottom-x.svg" alt="Close Table of Contents"
+        <img src="../assets/svgs/bottom-x.svg" alt="Close Table of Contents"
              role="button" tabindex="0" aria-pressed="false"
              style="padding-left:10px;cursor:pointer"
              onclick="closeContents()" onkeydown="if(event.key==='Enter'||event.key===' ')closeContents()">

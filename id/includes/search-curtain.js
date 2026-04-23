@@ -9,7 +9,7 @@ class SearchCurtain extends HTMLElement {
     <div id="right-search-overlay" class="search-overlay">
 
     <div id="right-close-button">
-        <span style="cursor:pointer" onclick="closeSearch(), clearResults()"><img src="../svgs/right-x.svg" alt="Tutup halaman"></span>
+        <span style="cursor:pointer" onclick="closeSearch(), clearResults()"><img src="../assets/svgs/right-x.svg" alt="Tutup halaman"></span>
     </div>
       <div class="search-overlay-content">
 

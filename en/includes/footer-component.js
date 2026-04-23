@@ -10,7 +10,7 @@ class FooterComponent extends HTMLElement {
 
         <div class="footer-left" style="cursor:pointer;" onclick="openBookplate()" aria-label="About this Earthbook">
              <div class="footer-icon-left">
-             <img src="../svgs/tractatus-simple-mandala-grey.svg" width="40px" title="Tractatus Ayyew Bookplate" alt="Tractatus Ayyew Mandala">
+             <img src="../assets/svgs/tractatus-simple-mandala-grey.svg" width="40px" title="Tractatus Ayyew Bookplate" alt="Tractatus Ayyew Mandala">
             </div> <div class="footer-word">about</div>
         </div>
 
@@ -24,7 +24,7 @@ class FooterComponent extends HTMLElement {
         <div class="footer-right">
         
             <div class="footer-icon-right">
-            <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="Up arrow" width="35px" title="Back to the top of the page" aria-label="Click to go back to the top of the page"></div></a>
+            <a href="#top"><img src="../assets/svgs/to-the-top-arrow.svg" alt="Up arrow" width="35px" title="Back to the top of the page" aria-label="Click to go back to the top of the page"></div></a>
             <div class="footer-word">top</div>
         </div>
 </div>

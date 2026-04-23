@@ -18,13 +18,13 @@ class subscriptionCurtain extends HTMLElement {
             <div id="progress-bar"></div>
         </div>
         <button id="reg-down-button" onclick="sendDownRegistration()" aria-label="Sembunyikan Pendaftaran Newsletter" data-lang-id="106-hide-subscription-registration">
-            <img src="../svgs/down-arrow.svg" alt="Sembunyikan pendaftaran Newsletter Earthen" data-lang-id="107-hide-subscription-image-alt">
+            <img src="../assets/svgs/down-arrow.svg" alt="Sembunyikan pendaftaran Newsletter Earthen" data-lang-id="107-hide-subscription-image-alt">
         </button>
 
           <div id="email-registration">
               <div class="registration-box">
                   <div class="reg-img">
-                      <img src="../svgs/subscription-side-image.svg" data-lang-id="108-subscription-image-alt-desktop" class="desktop" height="200" width="200" alt="Langganan Newsletter Earthen Ecobrick">
+                      <img src="../assets/svgs/subscription-side-image.svg" data-lang-id="108-subscription-image-alt-desktop" class="desktop" height="200" width="200" alt="Langganan Newsletter Earthen Ecobrick">
                   </div>
 
                   <!--TEKS PENDAFTARAN-->

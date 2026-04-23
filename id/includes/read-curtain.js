@@ -57,7 +57,7 @@ class ReadCurtain extends HTMLElement {
 
 
             <div class="bottom-close-button" style="cursor:pointer; bottom: -56px;" onclick="closeRead()" aria-label="Klik untuk menutup halaman pop-up ini">
-            <img src="../svgs/left-x.svg" alt="Tombol tutup halaman beli">
+            <img src="../assets/svgs/left-x.svg" alt="Tombol tutup halaman beli">
         </div>
       </div>
 

@@ -29,7 +29,7 @@ class Bookplate extends HTMLElement {
 
           <div>
           <button type="button" class="bottom-close-button" style="cursor:pointer; bottom:-20px;z-index:100;" onclick="closeBookplate()" aria-label="Klik untuk menutup halaman pop-up ini">
-            <img src="../svgs/bottom-x.svg" alt="Tombol tutup">
+            <img src="../assets/svgs/bottom-x.svg" alt="Tombol tutup">
           </button>
         </div>
 

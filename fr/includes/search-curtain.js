@@ -8,7 +8,7 @@ class SearchCurtain extends HTMLElement {
     <div id="right-search-overlay" class="search-overlay">
 
       <div id="right-close-button">
-        <span style="cursor:pointer" onclick="closeSearch(), clearResults()"><img src="../svgs/right-x.svg" alt="Bouton de fermeture de la page"></span>
+        <span style="cursor:pointer" onclick="closeSearch(), clearResults()"><img src="../assets/svgs/right-x.svg" alt="Bouton de fermeture de la page"></span>
       </div>
       
       <div class="search-overlay-content">

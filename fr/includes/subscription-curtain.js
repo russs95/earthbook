@@ -16,14 +16,14 @@ class subscriptionCurtain extends HTMLElement {
             <div id="progress-bar"></div>
         </div>
     <button id="reg-down-button" onclick="sendDownRegistration()" aria-label="Masquer l'inscription à la Newsletter" data-lang-id="106-hide-subscription-registration">
-        <img src="../svgs/down-arrow.svg" alt="Masquer l'inscription à la Newsletter Earthen" data-lang-id="107-hide-subscription-image-alt">
+        <img src="../assets/svgs/down-arrow.svg" alt="Masquer l'inscription à la Newsletter Earthen" data-lang-id="107-hide-subscription-image-alt">
     </button>
     
       <div id="email-registration">
           <div class="registration-box">
               <div class="reg-img">
-                  <img src="../svgs/subscription-side-image.svg" data-lang-id="108-subscription-image-alt-desktop" class="desktop" height="200" width="200" alt="Inscription à la Newsletter Ecobrick Earthen">
-                <!-- <img src="../svgs/richard-and-team-night.svg" data-lang-id="109-subscription-image-alt-mobile" class="mobile" height="140" width="200" alt="Inscription à la Newsletter Ecobrick Earthen"> -->
+                  <img src="../assets/svgs/subscription-side-image.svg" data-lang-id="108-subscription-image-alt-desktop" class="desktop" height="200" width="200" alt="Inscription à la Newsletter Ecobrick Earthen">
+                <!-- <img src="../assets/svgs/richard-and-team-night.svg" data-lang-id="109-subscription-image-alt-mobile" class="mobile" height="140" width="200" alt="Inscription à la Newsletter Ecobrick Earthen"> -->
               </div>
 
               <!--REGISTRATION TEXTS-->

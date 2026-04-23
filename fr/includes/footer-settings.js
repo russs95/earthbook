@@ -12,7 +12,7 @@ class footSettings extends HTMLElement {
   
     <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Retour à la page d'accueil" title="Retour à la page d'accueil" onclick="location.href='index.html'" ><img src="../assets/icons/home.svg" alt="Icône de la page d'accueil"></button></div>
   
-    <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Cliquez pour ouvrir la page de titre du livre"><img src="../svgs/my-book-header-logo-grey.svg" title="Page de titre du Tractatus Ayyew" alt="Mandala Tractatus Ayyew"></button></div>
+    <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Cliquez pour ouvrir la page de titre du livre"><img src="../assets/svgs/my-book-header-logo-grey.svg" title="Page de titre du Tractatus Ayyew" alt="Mandala Tractatus Ayyew"></button></div>
     
     
     <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Icône d'achat" aria-label="Cliquez l'achat du livre" title="Cliquez pour accéder à la page d'achat"></button></div>
@@ -23,7 +23,7 @@ class footSettings extends HTMLElement {
   
     <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/tour.svg" alt="Visite guidée" style="cursor:pointer" onclick="guidedTour()" aria-label="Cliquez pour une visite guidée rapide des fonctionnalités d'Earthbook" title="Cliquez pour une visite guidée rapide des fonctionnalités d'Earthbook"></button></div>
   
-    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="Haut de la page" style="cursor:pointer" onclick="location.href='#top'" aria-label="Aller en haut de la page"></button></div>
+    <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/svgs/to-the-top-arrow.svg" alt="Haut de la page" style="cursor:pointer" onclick="location.href='#top'" aria-label="Aller en haut de la page"></button></div>
   
     <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/booknotes.svg" alt="Icône de notes de livre" style="cursor:pointer" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Cliquez pour afficher vos notes de livre" title="Cliquez pour afficher vos notes de livre"></button></div>
   

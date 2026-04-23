@@ -25,7 +25,7 @@ class EcoCurtain extends HTMLElement {
   
       
               <button type="button" class="bottom-close-button" style="cursor:pointer;z-index:100;" onclick="closeEco()" aria-label="Click to close this pop-up page">
-                <img src="../svgs/bottom-x.svg" alt="Close page button">
+                <img src="../assets/svgs/bottom-x.svg" alt="Close page button">
               </button>
             </div>
     

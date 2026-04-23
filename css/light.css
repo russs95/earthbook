@@ -40,11 +40,11 @@
 
 
 #book-title {
-  background: url(svgs/tractatus-mandala-full-white.svg) center no-repeat;
+  background: url(../assets/svgs/tractatus-mandala-full-white.svg) center no-repeat;
 }
 
 #book-header-logo {  
-  background: url(svgs/my-book-header-logo-day.svg) center no-repeat;
+  background: url(../assets/svgs/my-book-header-logo-day.svg) center no-repeat;
   width: 100%;
   background-size: contain;
   transition: 0.3s;
@@ -59,7 +59,7 @@
 }
 
 #bookplate-img {
-  background: url(svgs/tractatus-mandala-full-black.svg) center no-repeat;
+  background: url(../assets/svgs/tractatus-mandala-full-black.svg) center no-repeat;
   width: 100%;
   background-size: contain;
   transition: 0.3s;
@@ -67,27 +67,27 @@
 
 
 #table-of-contents {
-  background: url(svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
+  background: url(../assets/svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
   background-size: contain;
   background-color: var(--slider); 
 }
 
 #booknotes-curtain {
-  background: url(svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
+  background: url(../assets/svgs/tractatus-mandala-full-light-grey.svg) center no-repeat;
   background-size: contain;
   background-color: var(--slider); 
 }
 
 #book-box a {  
 
-  background: url(svgs/content-arrow.svg) left center no-repeat var(--background-color);
+  background: url(../assets/svgs/content-arrow.svg) left center no-repeat var(--background-color);
   background-size: 30px;
   background-position-x: 18px;
 }
 
 #book-box a:hover {  
 
-  background: url(svgs/content-arrow-45.svg) left center no-repeat var(--deeper-accent-color);
+  background: url(../assets/svgs/content-arrow-45.svg) left center no-repeat var(--deeper-accent-color);
   background-size: 30px;
   background-position-x: 18px;
   ;
@@ -97,93 +97,93 @@
 /*CHAPTERS*/
 
 .background-000 {
-  background: url(svgs/00-white.svg) no-repeat center;
+  background: url(../assets/svgs/00-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-00 {
-  background: url(svgs/tractatus-mandala-full-grey-grey.svg) no-repeat center;
+  background: url(../assets/svgs/tractatus-mandala-full-grey-grey.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-0 {
-  background: url(svgs/00-preamble-white.svg) no-repeat center;
+  background: url(../assets/svgs/00-preamble-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-1 {
-  background: url(svgs/01-imagine-white.svg) no-repeat center;
+  background: url(../assets/svgs/01-imagine-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-2 {
-  background: url(svgs/02-plastic1-white.svg) no-repeat center;
+  background: url(../assets/svgs/02-plastic1-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-3 {
-  background: url(svgs/03-stellar-white.svg) no-repeat center;
+  background: url(../assets/svgs/03-stellar-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-4 {
-  background: url(svgs/04-patterns-white.svg) no-repeat center;
+  background: url(../assets/svgs/04-patterns-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-5 {
-  background: url(svgs/05-kincentric-white.svg) no-repeat center;
+  background: url(../assets/svgs/05-kincentric-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-6 {
-  background: url(svgs/06-nature-white.svg) no-repeat center;
+  background: url(../assets/svgs/06-nature-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-7 {
-  background: url(svgs/07-earthen-white.svg) no-repeat center;
+  background: url(../assets/svgs/07-earthen-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-8 {
-  background: url(svgs/08-cycles-white.svg) no-repeat center;
+  background: url(../assets/svgs/08-cycles-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-9 {
-  background: url(svgs/09-energy-white.svg) no-repeat center;
+  background: url(../assets/svgs/09-energy-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-10 {
-  background: url(svgs/10-matter-white.svg) no-repeat center;
+  background: url(../assets/svgs/10-matter-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-11 {
-  background: url(svgs/11-diversification-white.svg) no-repeat center;
+  background: url(../assets/svgs/11-diversification-white.svg) no-repeat center;
   background-size: contain;
 }
 
 .background-12 {
-  background: url(svgs/12-awareness-white.svg) no-repeat center;
+  background: url(../assets/svgs/12-awareness-white.svg) no-repeat center;
   background-size: contain;
 }
 
 #up-arrow {
-  background: url(svgs/up-arrow-light.svg) center no-repeat;
+  background: url(../assets/svgs/up-arrow-light.svg) center no-repeat;
   background-size: 140px;
 
 }
 
 .bullet {
-  background: url(../svgs/content-arrow-45.svg) left center no-repeat;
+  background: url(../assets/svgs/content-arrow-45.svg) left center no-repeat;
 background-size: contain;
 }
 
 #reg-up-button {
-  background: url(svgs/up-reg-arrow-light.svg) center no-repeat;
+  background: url(../assets/svgs/up-reg-arrow-light.svg) center no-repeat;
   background-size: contain;
 }
 

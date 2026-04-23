@@ -58,7 +58,7 @@ class ReadCurtain extends HTMLElement {
   
   
               <div class="bottom-close-button" style="cursor:pointer; bottom: -56px;" onclick="closeRead()" aria-label="Cliquez pour fermer cette fenêtre contextuelle">
-              <img src="../svgs/left-x.svg" alt="Bouton de fermeture de la page d'achat">
+              <img src="../assets/svgs/left-x.svg" alt="Bouton de fermeture de la page d'achat">
           </div>
         </div>
               

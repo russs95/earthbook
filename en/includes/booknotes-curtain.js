@@ -16,7 +16,7 @@ class bookNotes extends HTMLElement {
 
 <div class="top-close-button">
     <a href="index.html"><img src="../assets/icons/home.svg" alt="Bouton d'accueil" style="padding-right:10px;padding-left:10px;"></a>
-    <img src="../svgs/bottom-x.svg" alt="Fermer le bouton" style="padding-left:10px;cursor:pointer" onclick="closeBooknotes()">
+    <img src="../assets/svgs/bottom-x.svg" alt="Fermer le bouton" style="padding-left:10px;cursor:pointer" onclick="closeBooknotes()">
     <img src="../assets/icons/search.svg?v=3" alt="Rechercher" style="padding-left:12px;padding-right:15px;cursor:pointer" onclick="closeBooknotes(), openSearch()">
 </div>
    

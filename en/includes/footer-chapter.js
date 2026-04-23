@@ -16,7 +16,7 @@ class FooterChapter extends HTMLElement {
 
     <div class="footer-settings-icon" style="cursor:pointer" aria-label="Click to return to the homepage" ><a href="index.html"><img src="../assets/icons/home.svg" alt="home page icon"></a></div>
 
-    <div class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew bookplate" alt="Tractatus Ayyew Mandala"></div>
+    <div class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Click to open the bookplate"><img src="../assets/svgs/my-book-header-logo-grey.svg" title="Tractatus Ayyew bookplate" alt="Tractatus Ayyew Mandala"></div>
     
     <div class="footer-settings-icon"><img src="../assets/icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Buy icon" aria-label="Click to go to ebook purchase page"></div>
 
@@ -31,7 +31,7 @@ class FooterChapter extends HTMLElement {
    
    
 
-    <div class="footer-settings-icon" style="flex-grow:4; align-self:center;"> <a href="#top"><img src="../svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;" aria-label="Go to the top of the page"></a></div>
+    <div class="footer-settings-icon" style="flex-grow:4; align-self:center;"> <a href="#top"><img src="../assets/svgs/to-the-top-arrow.svg" alt="To the top of the page" title="To the top of the page" style="cursor:pointer;" aria-label="Go to the top of the page"></a></div>
 
   </div>
   
@@ -69,13 +69,13 @@ function openFooter() {
   var y = document.getElementById("footer-icon-left");
   if (x.style.marginBottom === "0px") {
     x.style.marginBottom = "150px";
-    y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
+    y.style.background = "url(../assets/svgs/footer-settings-button-up.svg) no-repeat left";
     y.style.backgroundSize = "contain";
  
   
   } else {
     x.style.marginBottom = "0px";
-    y.style.background = "url(../svgs/footer-settings-button.svg) no-repeat left";
+    y.style.background = "url(../assets/svgs/footer-settings-button.svg) no-repeat left";
     y.style.backgroundSize = "contain";
 
 }
@@ -85,11 +85,11 @@ function openFooter() {
 function arrowUp() {
 var y = document.getElementById("footer-icon-left");
 if (y.style.backgroundSize === "45px") {
-  y.style.background = "url(../svgs/footer-settings-button-up.svg) no-repeat left";
+  y.style.background = "url(../assets/svgs/footer-settings-button-up.svg) no-repeat left";
   y.style.backgroundSize = "46px";
 
 } else {
-  y.style.background = "url(../svgs/footer-settings-button.svg) no-repeat left";
+  y.style.background = "url(../assets/svgs/footer-settings-button.svg) no-repeat left";
   y.style.backgroundSize = "45px";
 
 }

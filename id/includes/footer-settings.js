@@ -13,7 +13,7 @@ class footSettings extends HTMLElement {
       <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Kembali ke beranda" title="Kembali ke beranda" onclick="location.href='index.html'" ><img src="../assets/icons/home.svg" alt="ikon beranda"></button></div>
 
     <!--Bookplate -->
-      <div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Klik untuk membuka halaman judul"><img src="../svgs/my-book-header-logo-grey.svg" title="Halaman judul Tractatus Ayyew" alt="Mandala Tractatus Ayyew"></button></div>
+      <div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Klik untuk membuka halaman judul"><img src="../assets/svgs/my-book-header-logo-grey.svg" title="Halaman judul Tractatus Ayyew" alt="Mandala Tractatus Ayyew"></button></div>
 
 
       <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/buy.svg" style="cursor:pointer" onclick="openBuy()" alt="Ikon beli" aria-label="Beli buku" title="Beli buku"></button></div>
@@ -24,7 +24,7 @@ class footSettings extends HTMLElement {
 
       <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/tour.svg" alt="Tur Terpandu" style="cursor:pointer" onclick="guidedTour()" aria-label="Klik untuk tur fitur Earthbook singkat" title="Klik untuk tur fitur Earthbook singkat"></button></div>
 
-      <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../svgs/to-the-top-arrow.svg" alt="Ke atas halaman" style="cursor:pointer" onclick="location.href='#top'" aria-label="Pergi ke atas halaman"></button></div>
+      <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/svgs/to-the-top-arrow.svg" alt="Ke atas halaman" style="cursor:pointer" onclick="location.href='#top'" aria-label="Pergi ke atas halaman"></button></div>
 
       <div class="footer-icon"><button type="button" class="footer-settings-icon"><img src="../assets/icons/booknotes.svg" alt="Ikon catatan buku" style="cursor:pointer" onclick="updateBNResetButton(),openBooknotes(), bookNotesCreator()" aria-label="Klik untuk melihat Catatan Buku Anda" title="Klik untuk melihat Catatan Buku Anda"></button></div>
 

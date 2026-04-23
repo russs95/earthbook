@@ -115,7 +115,7 @@ display: none;
     justify-content: center;
 
     /*overflow-x: hidden;
-    background: url(svgs/tractatus-mandala-full-white.svg) no-repeat center;
+    background: url(../assets/svgs/tractatus-mandala-full-white.svg) no-repeat center;
     background-size: contain;
     */
     
@@ -124,7 +124,7 @@ display: none;
   
   /*
   .book-title-night {
-    background: url(svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
+    background: url(../assets/svgs/tractatus-mandala-full-grey.svg) center no-repeat !important;
   }*/
 
   .ct-holder {
@@ -175,7 +175,7 @@ display: none;
     width: 40px;
     height: 55px;
     cursor: pointer;
-    background: url(svgs/tc-button.svg) center no-repeat;
+    background: url(../assets/svgs/tc-button.svg) center no-repeat;
     background-size: contain;
     border: none;
     transition: 2s;
@@ -183,12 +183,12 @@ display: none;
   }
 
   #ct-tc-menu:hover {
-    background: url(svgs/tc-button-hover.svg) center no-repeat;
+    background: url(../assets/svgs/tc-button-hover.svg) center no-repeat;
     background-size: contain;
   }
 
   #ct-tc-menu:focus {
-    background: url(svgs/tc-button.svg) center no-repeat;
+    background: url(../assets/svgs/tc-button.svg) center no-repeat;
     background-size: contain;
   }
 
@@ -392,13 +392,13 @@ display: none;
       width: 60px;
       border-right: 1px solid grey;
       height: 45px;
-      background: url(svgs/footer-settings-button.svg) no-repeat left;
+      background: url(../assets/svgs/footer-settings-button.svg) no-repeat left;
       background-size: contain;
       margin-top: 8px;
     }
 
     #footer-icon-left:hover { 
-      background: url(svgs/footer-settings-button-over.svg) no-repeat left;
+      background: url(../assets/svgs/footer-settings-button-over.svg) no-repeat left;
       background-size: contain;
     }
 
@@ -630,13 +630,13 @@ flex-wrap: row;
   #footer-icon-left { 
     padding: 12px 20px 20px 0px;
     width: 36px;
-    background: url(svgs/footer-settings-button.svg) no-repeat left;
+    background: url(../assets/svgs/footer-settings-button.svg) no-repeat left;
     background-size: contain;
  
   }
 
   #footer-icon-left:hover { 
-    background: url(svgs/footer-settings-button-over.svg) no-repeat left;
+    background: url(../assets/svgs/footer-settings-button-over.svg) no-repeat left;
     background-size: contain;
   }
 

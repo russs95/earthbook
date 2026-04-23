@@ -8,7 +8,7 @@ class Header extends HTMLElement {
 
     <div id="earthbook-navbar" style="background-color: var(--header-footer);">
     <div id="settings-menu">
-        <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openSettings()" aria-label="Ouvrir les paramètres"><img src="../svgs/left-menu.svg" alt="Icône des paramètres"></button>
+        <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openSettings()" aria-label="Ouvrir les paramètres"><img src="../assets/svgs/left-menu.svg" alt="Icône des paramètres"></button>
     </div>
 
     <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openContents()" aria-label="Ouvrir le sommaire">

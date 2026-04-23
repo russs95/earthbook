@@ -8,7 +8,7 @@ class Header extends HTMLElement {
 
     <div id="earthbook-navbar">
         <div id="settings-menu" >
-            <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openSettings()" aria-label="Buka Pengaturan"><img src="../svgs/left-menu.svg" alt="Ikon pengaturan"></button>
+            <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openSettings()" aria-label="Buka Pengaturan"><img src="../assets/svgs/left-menu.svg" alt="Ikon pengaturan"></button>
         </div>
 
         <button type="button" style="cursor:pointer; background:none;border:none;" onclick="openContents()" aria-label="Buka Daftar Isi">

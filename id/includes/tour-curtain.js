@@ -12,14 +12,14 @@ class TourCurtain extends HTMLElement {
   <span class="close">&times;</span>
 
   <div id="information-one" class="information">
-  <div class="tour-image"><img src="../svgs/earthbook.svg" title="Baca Bebas" alt="Selamat datang di Earthbook"></div>
+  <div class="tour-image"><img src="../assets/svgs/earthbook.svg" title="Baca Bebas" alt="Selamat datang di Earthbook"></div>
     <div class="modal-header">Tur Singkat</div>
     <div class="modal-description">Selamat datang di Earthbook kami! Anda belum pernah membaca buku seperti ini sebelumnya. Kenali cara kerja Earthbook dengan tur terpandu singkat ini...</div>
     <button class="next">Berikutnya ➔</button>
   </div>
 
   <div id="information-two" style="display:none;" class="information">
-  <div class="tour-image"><img src="../svgs/icon-accessibility.svg"  style="margin:auto" title="Ramah Manusia" alt="Baca Bebas"></div>
+  <div class="tour-image"><img src="../assets/svgs/icon-accessibility.svg"  style="margin:auto" title="Ramah Manusia" alt="Baca Bebas"></div>
     <div class="modal-header">Ramah Pengguna</div>
     <div class="modal-description">Earthbook dirancang dari awal untuk nyaman di mata, mudah diakses, dan multibahasa. Gunakan tombol <b>±</b> di sudut kiri atas untuk menyesuaikan pengaturan aksesibilitas Earthbook.</div>
     <button class="back">↩ Kembali</button>
@@ -27,7 +27,7 @@ class TourCurtain extends HTMLElement {
   </div>
 
   <div id="information-three" style="display:none;" class="information">
-  <div class="tour-image"><img src="../svgs/icon-ecoaccounting.svg"    title="Ramah Bumi" alt="Baca Bebas"></div>
+  <div class="tour-image"><img src="../assets/svgs/icon-ecoaccounting.svg"    title="Ramah Bumi" alt="Baca Bebas"></div>
 
     <div class="modal-header">Ramah Bumi</div>
     <div class="modal-description">Sepanjang penulisan dan penerbitan Earthbook, dampak karbon, plastik, dan keanekaragaman hayati dilacak secara langsung dan tahunan. Untuk melihat sendiri, cari ikon hijau di bagian alat di bagian bawah setiap bab.</div>
@@ -37,7 +37,7 @@ class TourCurtain extends HTMLElement {
 
 
   <div id="information-four" style="display:none;" class="information">
-  <div class="tour-image"><img src="../svgs/icon-opensource.svg" title="Baca Bebas" alt="Baca Bebas"></div>
+  <div class="tour-image"><img src="../assets/svgs/icon-opensource.svg" title="Baca Bebas" alt="Baca Bebas"></div>
     <div class="modal-header">Sumber Terbuka</div>
     <div class="modal-description">Kode sumber EarthBook terbuka untuk ditinjau, ditingkatkan, dan dimodifikasi di <a class="java-link" href="https://github.com/russs95/earthbook/" target="_blank">Github</a>. Ini berarti menerbitkan Earthbook terbuka untuk siapa saja di mana saja. Cari tautan kode sumber di bagian alat di bagian bawah setiap bab.</div>
     <button class="back">↩ Kembali</button>
@@ -53,7 +53,7 @@ class TourCurtain extends HTMLElement {
   </div>
 
   <div id="information-six" style="display:none;" class="information">
-  <div class="tour-image"><img src="../svgs/icon-revenue.svg"  title="Beli eBook" alt="Beli eBook"></div>
+  <div class="tour-image"><img src="../assets/svgs/icon-revenue.svg"  title="Beli eBook" alt="Beli eBook"></div>
 
     <div class="modal-header">Dapat Dibeli</div>
     <div class="modal-description">Suka Earthbook ini? Anda <span class="java-link" onclick="closeTour(),openBuy()">dapat membeli</span> versi eBook untuk perpustakaan digital dan eReader Anda. Earthbook 100% independen dari perantara korporat. 97% hasil penjualan eBook diberikan kepada para penulis.</div>

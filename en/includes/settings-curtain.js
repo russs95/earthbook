@@ -9,7 +9,7 @@ class SettingsCurtain extends HTMLElement {
     <div id="left-settings-overlay" class="overlay-settings">
 
     <div id="left-close-button">
-            <span style="cursor:pointer" onclick="closeSettings()" aria-label="Click to close settings page"><img src="../svgs/left-x.svg" alt="Close settings button"></span>
+            <span style="cursor:pointer" onclick="closeSettings()" aria-label="Click to close settings page"><img src="../assets/svgs/left-x.svg" alt="Close settings button"></span>
         </div>
     
     <div class="overlay-content-settings">
