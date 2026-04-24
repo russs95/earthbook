@@ -14,7 +14,7 @@ class BuyCurtain extends HTMLElement {
               <div class="buy-book">
                 <div class="book-listing">
 
-                  <img src="../photos/cover-epub-400px.webp" loading="lazy" alt="Versi Epub buku ini terbaik untuk eReader iPhone dan Android." title="Versi Epub buku ini terbaik untuk eReader iPhone dan Android.">
+                  <img src="../assets/photos/cover-epub-400px.webp" loading="lazy" alt="Versi Epub buku ini terbaik untuk eReader iPhone dan Android." title="Versi Epub buku ini terbaik untuk eReader iPhone dan Android.">
 
                   <div class="book-buy-info">
                     <div class="buy-book-info-title">Edisi eBook</div>
@@ -29,7 +29,7 @@ class BuyCurtain extends HTMLElement {
 
               <div class="buy-book">
                 <div class="book-listing">
-                  <img src="../photos/cover-print-400px.webp" loading="lazy" alt="Versi cetak buku" title="Versi cetak buku">
+                  <img src="../assets/photos/cover-print-400px.webp" loading="lazy" alt="Versi cetak buku" title="Versi cetak buku">
                   <div class="book-buy-info">
                     <div class="buy-book-info-title">Edisi Cetak</div>
 
@@ -44,7 +44,7 @@ class BuyCurtain extends HTMLElement {
 
               <div class="buy-book">
                 <div class="book-listing">
-                  <img src="../photos/cover-grattitude-400px.webp" loading="lazy" alt="Pembelian retroaktif untuk mendukung dan berterima kasih kepada penulis" title="Pembelian retroaktif untuk mendukung dan berterima kasih kepada penulis" >
+                  <img src="../assets/photos/cover-grattitude-400px.webp" loading="lazy" alt="Pembelian retroaktif untuk mendukung dan berterima kasih kepada penulis" title="Pembelian retroaktif untuk mendukung dan berterima kasih kepada penulis" >
 
                   <div class="book-buy-info">
                   <div class="buy-book-info-title">Beli Retroaktif</div>

@@ -14,7 +14,7 @@ class BuyCurtain extends HTMLElement {
               <div class="buy-book">
                 <div class="book-listing">
 
-                  <img src="../photos/cover-epub-400px.webp" loading="lazy" alt="The Epub version of the book is best for iphone and android eReaders." title="The Epub version of the book is best for iphone and android eReaders.">
+                  <img src="../assets/photos/cover-epub-400px.webp" loading="lazy" alt="The Epub version of the book is best for iphone and android eReaders." title="The Epub version of the book is best for iphone and android eReaders.">
 
                   <div class="book-buy-info">
                     <div class="buy-book-info-title">eBook Edition</div>
@@ -30,7 +30,7 @@ class BuyCurtain extends HTMLElement {
               
               <div class="buy-book">
                 <div class="book-listing">
-                  <img src="../photos/cover-print-400px.webp" loading="lazy" alt="The print version of the book" title="The print version of the book">
+                  <img src="../assets/photos/cover-print-400px.webp" loading="lazy" alt="The print version of the book" title="The print version of the book">
                   <div class="book-buy-info">
                     <div class="buy-book-info-title">Print Edition</div>
 

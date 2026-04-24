@@ -16,7 +16,7 @@ self.addEventListener('install', event => {
 
 //Landing Images
 
-'/photos/cover-500px.webp',
+'/assets/photos/cover-500px.webp',
 '/assets/icons/reader.svg',
 '/assets/icons/pdf.svg',
 '/assets/icons/buy.svg',
@@ -35,9 +35,9 @@ self.addEventListener('install', event => {
 
 //Curtain Images
 
-'/photos/print-preview-01-400px.webp',
-'/photos/print-preview-02-400px.webp',
-'/photos/print-preview-04-400px.webp',
+'/assets/photos/print-preview-01-400px.webp',
+'/assets/photos/print-preview-02-400px.webp',
+'/assets/photos/print-preview-04-400px.webp',
 
 '/assets/icons/up-arrow.svg',
 '/assets/icons/code.svg',

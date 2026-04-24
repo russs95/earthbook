@@ -1,0 +1,15 @@
+# Normalize line endings to LF for all text files
+* text=auto eol=lf
+
+# Treat SVGs as text so their line endings are also normalized
+*.svg text eol=lf
+
+# Treat binary files as binary (no line-ending conversion)
+*.png binary
+*.jpg binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.ico binary
