@@ -14,7 +14,7 @@ class ReadCurtain extends HTMLElement {
            
                 <div class="read-book-pic">
 
-                  <img src="../covers/read-cover.webp" loading="lazy" alt="Read the Tractatus Ayyew in a variety of formats." title="Read the Tractatus Ayyew in a variety of formats.">
+                  <img src="../assets/covers/read-cover.webp" loading="lazy" alt="Read the Tractatus Ayyew in a variety of formats." title="Read the Tractatus Ayyew in a variety of formats.">
                 
                   </div>
 

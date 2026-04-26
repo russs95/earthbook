@@ -23,7 +23,7 @@ self.addEventListener('install', event => {
 '/assets/favicons/apple-touch-icon.png',
 '/assets/favicons/favicon-32x32.png',
 '/assets/favicons/favicon-16x16.png',
-'/covers/earth-book-cover-1000px.jpg',
+'/assets/covers/earth-book-cover-1000px.jpg',
 '/assets/svgs/footer-settings-button.svg',
 '/assets/svgs/footer-settings-button-over.svg',
 '/assets/svgs/footer-settings-button-up.svg',
@@ -197,7 +197,7 @@ self.addEventListener('install', event => {
 //APPENDIX ICONS
 
 '/assets/icons/eco.svg',
-'/webp/impact-report-100px.webp',
+'/assets/webp/impact-report-100px.webp',
 '/assets/icons/icon-for-earth.svg',
 '/assets/banners/forearth-dark-350px.png',
 '/assets/icons/thankyou.svg',

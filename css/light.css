@@ -188,7 +188,7 @@ background-size: contain;
 }
 
 .registration-footer-holder {
-  background: url(webp/earthen-subscription-background-light.webp) top center, var(--top-header);
+  background: url(../assets/webp/earthen-subscription-background-light.webp) top center, var(--top-header);
   background-repeat: no-repeat;
   background-size: cover;
   }

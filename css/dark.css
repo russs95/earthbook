@@ -216,7 +216,7 @@ background-size: contain;
 }
 
 .registration-footer-holder {
-  background: url(webp/earthen-subscription-background-dark.webp) top center, var(--side-overlays);
+  background: url(../assets/webp/earthen-subscription-background-dark.webp) top center, var(--side-overlays);
   background-repeat: no-repeat;
   background-size: cover;
 }
