@@ -10,7 +10,7 @@ class footSettings extends HTMLElement {
 
     <div class="footer-size" style="height:58px;">
 
-      <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Kembali ke beranda" title="Kembali ke beranda" onclick="location.href='index.html'" ><img src="../assets/icons/home.svg" alt="ikon beranda"></button></div>
+      <div class="footer-icon"><button type="button" class="footer-settings-icon" style="cursor:pointer" aria-label="Kembali ke beranda" title="Kembali ke beranda" onclick="location.href='indeks.html'" ><img src="../assets/icons/home.svg" alt="ikon beranda"></button></div>
 
     <!--Bookplate -->
       <div style=""><button type="button" class="footer-settings-icon" style="cursor:pointer" onclick="openBookplate()" aria-label="Klik untuk membuka halaman judul"><img src="../assets/svgs/my-book-header-logo-grey.svg" title="Halaman judul Tractatus Ayyew" alt="Mandala Tractatus Ayyew"></button></div>

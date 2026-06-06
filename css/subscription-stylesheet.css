@@ -164,13 +164,12 @@ version 1.0
 @media screen and (max-width: 699px) {
     
   #reg-up-button {
-      margin:0px -20px 6px auto;
+      margin:0px -20px 10px auto;
       height: 30px;
   }
 
   #reg-up-button:hover {
-      margin:0px 0px 6px auto;    
-            opacity: 1 !important;
+      opacity: 1 !important;
   }
 
   #reg-down-button {
@@ -186,13 +185,12 @@ version 1.0
 
 @media screen and (min-width: 701px) and (max-width: 1200px) {
   #reg-up-button {
-    margin: 0px -77px 6px auto;
+    margin: 0px -77px 10px auto;
     width: 25%;
     height: 40px;
 }
 
 #reg-up-button:hover {
-  margin: 0px -50px 5px auto;    
   opacity: 1 !important;
 }
 
@@ -212,13 +210,12 @@ version 1.0
 @media screen and (min-width: 1201px) {
     
   #reg-up-button {
-      margin: 0px -88px 6px auto;
+      margin: 0px -88px 10px auto;
       width: 25%;
       height: 40px;
   }
 
   #reg-up-button:hover {
-      margin: 0px -66px 5px auto;    
       opacity: 1 !important;
   }
 

@@ -5,47 +5,47 @@ class ContentCurtain extends HTMLElement {
 
     connectedCallback() {
         const bookOneChapters = [
-            { position: 1, name: "Pembukaan", wordCount: 431, url: "https://book.earthen.io/en/preamble.html" },
-            { position: 2, name: "Kata Pengantar", wordCount: 1220, url: "https://book.earthen.io/en/preface.html" },
-            { position: 3, name: "Epigraf", wordCount: 65, url: "https://book.earthen.io/id/epigraf-1.html" },
-            { position: 4, name: "Bayangkan", wordCount: 1095, url: "https://book.earthen.io/en/imagine.html" },
-            { position: 5, name: "Plastik 1.0", wordCount: 623, url: "https://book.earthen.io/en/plastic1.html" },
-            { position: 6, name: "Kisah Antarbintang", wordCount: 1021, url: "https://book.earthen.io/en/stellar.html" },
-            { position: 7, name: "Pola-Pola Proses", wordCount: 837, url: "https://book.earthen.io/en/patterns.html" },
-            { position: 8, name: "Hubungan Kerabat", wordCount: 1508, url: "https://book.earthen.io/en/kincentric.html" },
-            { position: 9, name: "Kekeliruan Alam", wordCount: 973, url: "https://book.earthen.io/en/nature.html" },
-            { position: 10, name: "Cara-Cara Earthen", wordCount: 784, url: "https://book.earthen.io/en/earthen.html" }
+            { position: 1, name: "Pembukaan", wordCount: 431, url: "pembukaan.html" },
+            { position: 2, name: "Kata Pengantar", wordCount: 1220, url: "pengantar.html" },
+            { position: 3, name: "Epigraf", wordCount: 65, url: "epigraf1.html" },
+            { position: 4, name: "Bayangkan", wordCount: 1095, url: "bayangkan.html" },
+            { position: 5, name: "Plastik 1.0", wordCount: 623, url: "plastik1.html" },
+            { position: 6, name: "Kisah Antarbintang", wordCount: 1021, url: "kosmis.html" },
+            { position: 7, name: "Pola-Pola Proses", wordCount: 837, url: "pola.html" },
+            { position: 8, name: "Hubungan Kerabat", wordCount: 1508, url: "kinsentris.html" },
+            { position: 9, name: "Kekeliruan Alam", wordCount: 973, url: "alam.html" },
+            { position: 10, name: "Cara-Cara Earthen", wordCount: 784, url: "kebumian.html" }
         ];
 
         const bookTwoChapters = [
-            { position: 1, name: "Epigraf II", wordCount: 51, url: "https://book.earthen.io/id/epigraf-2.html" },
-            { position: 2, name: "Siklus yang Berputar", wordCount: 1682, url: "https://book.earthen.io/en/spirals.html" },
-            { position: 3, name: "Putaran Salmon", wordCount: 2294, url: "https://book.earthen.io/en/energy.html" },
-            { position: 4, name: "Cara Moluska", wordCount: 2322, url: "https://book.earthen.io/en/matter.html" },
-            { position: 5, name: "Pola Polip", wordCount: 1782, url: "https://book.earthen.io/en/diversification.html" },
-            { position: 6, name: "Cara Mikoriza", wordCount: 1685, url: "https://book.earthen.io/en/awareness.html" }
+            { position: 1, name: "Epigraf II", wordCount: 51, url: "epigraf2.html" },
+            { position: 2, name: "Siklus yang Berputar", wordCount: 1682, url: "spiral.html" },
+            { position: 3, name: "Putaran Salmon", wordCount: 2294, url: "energi.html" },
+            { position: 4, name: "Cara Moluska", wordCount: 2322, url: "materi.html" },
+            { position: 5, name: "Pola Polip", wordCount: 1782, url: "diversifikasi.html" },
+            { position: 6, name: "Cara Mikoriza", wordCount: 1685, url: "kesadaran.html" }
         ];
 
         const bookThreeChapters = [
-            { position: 1, name: "Epigraf III", wordCount: 58, url: "https://book.earthen.io/en/epigraph-3.html" },
-            { position: 2, name: "Plastik 2.0", url: "https://book.earthen.io/id/belum-diterbitkan.html", wordText: "Belum Diterbitkan" },
-            { position: 3, name: "Sekuestrasi Plastik", url: "https://book.earthen.io/id/belum-diterbitkan.html", wordText: "Belum Diterbitkan" },
-            { position: 4, name: "Transisi Petro-Modal", url: "https://book.earthen.io/id/belum-diterbitkan.html", wordText: "Belum Diterbitkan" },
-            { position: 5, name: "Ad Pax Ayyew", url: "https://book.earthen.io/id/belum-diterbitkan.html", wordText: "Belum Diterbitkan" },
-            { position: 6, name: "Cara Mikoriza", url: "https://book.earthen.io/id/belum-diterbitkan.html", wordText: "Belum Diterbitkan" }
+            { position: 1, name: "Epigraf III", wordCount: 58, url: "belum-diterbitkan.html" },
+            { position: 2, name: "Plastik 2.0", url: "belum-diterbitkan.html", wordText: "Belum Diterbitkan" },
+            { position: 3, name: "Sekuestrasi Plastik", url: "belum-diterbitkan.html", wordText: "Belum Diterbitkan" },
+            { position: 4, name: "Transisi Petro-Modal", url: "belum-diterbitkan.html", wordText: "Belum Diterbitkan" },
+            { position: 5, name: "Ad Pax Ayyew", url: "belum-diterbitkan.html", wordText: "Belum Diterbitkan" },
+            { position: 6, name: "Cara Mikoriza", url: "belum-diterbitkan.html", wordText: "Belum Diterbitkan" }
         ];
 
         const appendixChapters = [
-            { position: 1, name: "Ringkasan", wordCount: 501, url: "https://book.earthen.io/en/summaries.html" },
-            { position: 2, name: "Dedikasi", wordCount: 26, url: "https://book.earthen.io/id/dedikasi.html" },
-            { position: 3, name: "Akuntansi Ekologis", wordCount: 54, url: "https://book.earthen.io/id/akuntansi.html" },
-            { position: 4, name: "Deklarasi Untuk-Bumi", wordCount: 54, url: "https://book.earthen.io/id/untuk-bumi.html" },
-            { position: 5, name: "Ucapan Terima Kasih", wordCount: 541, url: "https://book.earthen.io/id/penghargaan.html" },
-            { position: 6, name: "Penerbitan", wordCount: 133, url: "https://book.earthen.io/id/penerbitan.html" },
-            { position: 7, name: "Para Penulis", wordCount: 218, url: "https://book.earthen.io/id/penulis.html" },
-            { position: 8, name: "Deklarasi", wordCount: 367, url: "https://book.earthen.io/id/deklarasi.html" },
-            { position: 9, name: "Bibliografi", wordCount: 740, url: "https://book.earthen.io/id/bibliografi.html" },
-            { position: 10, name: "Glosarium", wordCount: 342, url: "https://book.earthen.io/id/glosarium.html" }
+            { position: 1, name: "Ringkasan", wordCount: 501, url: "ringkasan.html" },
+            { position: 2, name: "Dedikasi", wordCount: 26, url: "dedikasi.html" },
+            { position: 3, name: "Akuntansi Ekologis", wordCount: 54, url: "akuntansi.html" },
+            { position: 4, name: "Deklarasi Untuk-Bumi", wordCount: 54, url: "untuk-bumi.html" },
+            { position: 5, name: "Ucapan Terima Kasih", wordCount: 541, url: "penghargaan.html" },
+            { position: 6, name: "Penerbitan", wordCount: 133, url: "penerbitan.html" },
+            { position: 7, name: "Para Penulis", wordCount: 218, url: "penulis.html" },
+            { position: 8, name: "Deklarasi", wordCount: 367, url: "deklarasi.html" },
+            { position: 9, name: "Bibliografi", wordCount: 740, url: "bibliografi.html" },
+            { position: 10, name: "Glosarium", wordCount: 342, url: "glosarium.html" }
         ];
 
         const bookSections = [

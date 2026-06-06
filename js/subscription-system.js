@@ -356,7 +356,7 @@ if (guidedTourModal && guidedTourModal.style.display !== "none") {
     var downArrow = document.getElementById("reg-down-button");
 
     // Adjust the height of the registration footer
-    footer.style.height = "70vh";
+    footer.style.height = "77vh";
 
     // Make the email registration section visible
     emailRegistration.style.display = "block";

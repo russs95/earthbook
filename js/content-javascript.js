@@ -225,8 +225,8 @@ function closeWelcomeNotice() {
   }
 }
 
-// Call the openWelcomeNotice function after 15 seconds of page load
-setTimeout(openWelcomeNotice, 15000);
+// Call the openWelcomeNotice function after 5 minutes of reading
+setTimeout(openWelcomeNotice, 300000);
 
 
 
